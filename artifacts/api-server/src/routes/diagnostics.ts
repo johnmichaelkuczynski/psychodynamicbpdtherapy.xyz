@@ -409,4 +409,16 @@ router.post("/diagnostics/synthetic-run", async (_req, res) => {
   res.json({ ok, generatedAt: new Date().toISOString(), steps });
 });
 
+// ---------- Reset: wipe all student progress, keep course content ----------
+router.post("/diagnostics/reset", async (_req, res) => {
+  // Delete in dependency order. Course content (topics, lectures, assignments,
+  // problems) is preserved; only student progress / generated practice is wiped.
+  await db.delete(practiceAttemptsTable);
+  await db.delete(practiceProblemsTable);
+  await db.delete(practiceSessionsTable);
+  await db.delete(answersTable);
+  await db.delete(attemptsTable);
+  res.json({ ok: true, resetAt: new Date().toISOString() });
+});
+
 export default router;

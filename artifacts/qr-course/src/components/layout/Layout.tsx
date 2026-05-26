@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
-import { LayoutDashboard, PenTool, BarChart3, Activity } from "lucide-react";
+import { LayoutDashboard, PenTool, BarChart3, Activity, RotateCcw } from "lucide-react";
+import { useQueryClient } from "@tanstack/react-query";
 
 export function Sidebar() {
   const [location] = useLocation();
@@ -52,10 +53,43 @@ export function Sidebar() {
 }
 
 function TopBar() {
-  const [location] = useLocation();
+  const [location, setLocation] = useLocation();
   const active = location.startsWith("/diagnostics");
+  const qc = useQueryClient();
+  const [resetting, setResetting] = useState(false);
+
+  async function handleReset() {
+    if (
+      !confirm(
+        "Reset the course? This deletes every assignment attempt, answer, and practice session, but keeps lectures and assignments.",
+      )
+    )
+      return;
+    setResetting(true);
+    try {
+      const res = await fetch("/api/diagnostics/reset", { method: "POST" });
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      await qc.invalidateQueries();
+      setLocation("/");
+    } catch (e) {
+      alert(`Reset failed: ${(e as Error).message}`);
+    } finally {
+      setResetting(false);
+    }
+  }
+
   return (
     <div className="sticky top-0 z-10 flex items-center justify-end gap-2 px-6 py-3 border-b border-border bg-background/80 backdrop-blur">
+      <button
+        onClick={handleReset}
+        disabled={resetting}
+        className="inline-flex items-center gap-2 px-3 py-1.5 rounded-md text-sm font-medium border border-border hover:bg-secondary disabled:opacity-50"
+        data-testid="button-reset"
+        title="Wipe all student progress (keeps lectures and assignments)"
+      >
+        <RotateCcw className={`w-4 h-4 ${resetting ? "animate-spin" : ""}`} />
+        {resetting ? "Resetting…" : "Reset course"}
+      </button>
       <Link href="/diagnostics">
         <button
           className={`inline-flex items-center gap-2 px-3 py-1.5 rounded-md text-sm font-medium transition-colors ${
