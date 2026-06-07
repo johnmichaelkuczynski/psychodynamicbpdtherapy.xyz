@@ -1,59 +1,73 @@
 # ⚖️ EthosReason
 
-**The Ethics Studio — Executable College Coursework**
+**A Four-Unit College Ethics Course — From the Nature of Goodness to Moral Truth Itself**
 
 ---
 
 ## 🧩 Overview
 
-EthosReason is a full-service self-paced learning platform that delivers a complete four-unit college Ethics course — taught, tutored, drilled, graded, and integrity-checked entirely by AI.
+EthosReason is a self-paced, single-user web course that asks the question most ethics classes rush past: *what are these things, really?* What is goodness? What makes an act right, or wrong? When we praise or condemn someone, what exactly are we judging? Is there such a thing as moral truth — and if so, can you ever derive it from plain facts?
 
-It performs end-to-end coursework: depth-adjustable lectures, section-scoped Socratic tutoring, adaptive problem generation, and rubric-faithful AI grading — from a 90-second concept skim all the way to a full midterm and final with per-problem rationales.
+It is a complete, taught-and-graded Ethics course delivered end to end by AI: depth-adjustable lectures, a tutor that answers questions about the exact passage you're reading, adaptive practice that meets you at your level, and homework, tests, a midterm, and a final that are graded with written feedback. The curriculum is built around one connected arc of moral philosophy — the same backbone an undergraduate eventually meets in a semester ethics seminar, presented in four focused units.
 
-Designed for **students, instructors evaluating AI-taught coursework, and academic-integrity researchers**, it merges a real 27-topic Ethics syllabus — grounded in "Some Fundamental Principles Relating to Ethics" — with two layers of AI-authorship detection, producing a course that students can trust to be fair and that instructors can trust to be honest.
+Designed for **students, self-learners, and instructors evaluating AI-taught coursework**, EthosReason pairs a real 27-topic syllabus with a built-in academic-integrity layer — so the course is one students can trust to be fair, and instructors can trust to be honest.
 
 ---
 
 ## 🧠 What It Does
 
-- **Four-Unit Structured Curriculum** — A complete Ethics syllabus across 27 topics: the foundations of value (normative vs. descriptive, intrinsic vs. instrumental goodness, commendableness, non-privative attributes); obligation, right, and wrong; acts, agents, and judgment (intention, the Hitler problem, autonomy); and metaethics and moral truth (is/ought, Moore's open question, ethical realism). Each unit ships with lectures, homework, and a test; Unit 2 adds a midterm and Unit 4 a final.
-- **Three-Depth Lectures** — Every lecture is available at **Short / Medium / Long** length, AI-rewritten while preserving the same examples and learning objectives. Skim the concept, expand it on demand, or read the textbook-style deep cut.
-- **Section-Scoped AI Tutor** — Ask a question about the paragraph you're reading and the answer streams back token-by-token, grounded in that exact lecture section. Suggested starter questions are pre-generated per lecture.
-- **Adaptive Topic Practice** — Generated problem sets that move difficulty up after a streak and down after a miss, with explanations on every answer. Per-session difficulty persists, so each drill picks up where the last one left off.
-- **AI-Graded Assignments** — Homework, tests, midterm, and final are scored by an LLM grader that judges semantic equivalence to a model answer, returns per-problem correctness *plus* a written rationale, then rolls up to a percent score on the attempt.
-- **Two-Layer AI-Authorship Detection** — Each submitted answer is screened by both a static text classifier (GPTZero) and a diachronic keystroke-pattern detector. Each verdict ships with a human-readable rationale.
-- **Live Analytics** — Dashboard KPIs (attempts, accuracy, streak), per-topic mastery percentages, and a recent-activity feed — so progress, weak spots, and momentum are all visible at a glance.
-- **Operator Diagnostics** — Three one-click self-tests verify the entire stack — database, OpenAI, GPTZero, detection pipeline, the practice/grade loop, and the legitimacy of every answer key — before you trust a session.
+- **Four-Unit Curriculum of 27 Topics** — A complete ethics syllabus, organized by theme:
+  - **Unit 1 — Foundations of Value.** What ethics is and how it differs from description; normative categories; instrumental vs. intrinsic goodness; goodness vs. commendableness; the two kinds of intrinsic badness; the morally complex structure of real situations; and why moral attributes are positive, not merely the absence of their opposites.
+  - **Unit 2 — Obligation, Right, and Wrong.** Why moral obligations carry weight; how outweighing differs from canceling; "right" as *least bad* and "wrong" as *least good*; why "ought" implies "can"; and why legality is not the same thing as morality.
+  - **Unit 3 — Acts, Agents, and Judgment.** Judging an act vs. judging the person; why intention is what truly counts; why attempts are punished less severely; the Hitler problem; whether one can act immorally toward oneself; and self-harm, punishment, and autonomy.
+  - **Unit 4 — Metaethics and Moral Truth.** Whether you can derive an "ought" from an "is"; Moore's open-question argument; ampliative entailment; the genetic fallacy in ethics; moral truth vs. its uses; bad reasons to reject ethical realism; disagreement, fact, and value; and a capstone on what ethical truths really are.
+- **One Real Example per Lecture** — Every topic grounds its idea in a concrete case — a pianist waking a sick roommate, freeing slaves before the Civil War, the Hitler problem — so abstractions always land on something you can picture.
+- **Three-Depth Lectures** — Every lecture reads at **Short / Medium / Long** length, preserving the same examples and learning objectives. Skim the concept in a minute, expand it on demand, or read the full deep cut.
+- **Section-Scoped AI Tutor** — Ask a question about the exact paragraph you're on and the answer streams back live, grounded in that lecture section. Suggested starter questions come ready for each lecture.
+- **Adaptive Practice** — Problem sets that get harder as you build a streak and ease off after a miss, with an explanation on every answer. Your level carries over, so each drill picks up where the last left off.
+- **Graded Assignments** — Each unit ships with homework and a test; Unit 2 adds a midterm and Unit 4 a cumulative final. Every submission is graded with per-problem feedback and a percent score on the attempt.
+- **Built-In Academic-Integrity Check** — Every submitted answer is screened for signs of AI authorship, and each verdict comes with a plain-language explanation rather than an opaque flag.
+- **Live Analytics** — A dashboard of progress at a glance: attempts, accuracy, and streak; per-topic mastery; and a recent-activity feed that surfaces weak spots and momentum.
+- **Built-In Product Demo Video** — A short screencast of the live product ships alongside the course, so it can show itself without anyone narrating it.
 
 ---
 
 ## ⚙️ Technical Features
 
-- **Static Text Detection (GPTZero):** Every submitted answer is sent to GPTZero's `predict/text` endpoint; the per-document AI probability is blended `0.85 × GPTZero + 0.15 × structural-heuristic` for the final score. If GPTZero is unavailable, the system silently falls back to an LLM scorer plus heuristic — submissions never block.
-- **Diachronic Keystroke Detection:** The student textarea captures keystroke count, erase count, bulk-insert events, longest bulk insert, rewrite segments, and total duration. A scorer penalizes paste-then-reword behavior, low keystroke-to-output ratios, and impossibly sustained typing speeds — catching AI use even when the final text is reworded enough to pass GPTZero.
-- **System Diagnostic (`/diagnostics/system`):** Eight ordered checks — environment, database round-trip, course-seed integrity, OpenAI chat completion, OpenAI JSON mode, detection pipeline, AI-positive control sample, and GPTZero connectivity. Each step returns pass/fail, timing, and a raw error string.
-- **Synthetic-Student Diagnostic (`/diagnostics/synthetic-run`):** Spins up a fake student, runs a practice session (wrong → adjust ↓ → right → adjust ↑), takes a full assignment attempt, submits it, and verifies grading + detection + analytics all reflect the run. End-to-end stack proof in one click.
-- **Answer-Key Quality-Control Diagnostic (`/diagnostics/quality-control`):** Samples problems evenly across all four units and uses OpenAI to independently re-derive each answer, verifying the seeded answer key is a legitimate, correct, gradeable answer to its prompt. Each review returns legitimate/flagged with a confidence and rationale — catching wrong, off-topic, or ambiguous keys before any student is graded against them.
-- **Contract-First API:** A single OpenAPI document is the source of truth; React Query hooks for the UI and Zod validators for the server are generated from it. Request and response shapes can't drift between client and server because both come from the same spec.
-- **Streaming AI Tutor:** Token-by-token Server-Sent-Event streaming for tutor answers, with a section-scoped system prompt so responses stay grounded in the lecture the student is reading.
-- **Adaptive Practice Engine:** Per-session difficulty (1–4 continuous) adjusts after each attempt; the next-problem generator takes the current difficulty and the topic as input, so the question pool is generated on demand instead of pre-baked.
-- **Real-React Demo Video:** The product walkthrough is a real React app, not a slideshow: persistent sidebar, animated SVG cursor, character-by-character typing, word-by-word streaming responses, and scene-synced background audio — all exported as MP4 from a single browser tab.
+- **AI That Teaches at Your Depth** — Lectures rewrite themselves to the length you want without losing the examples or the point, so the same topic works for a quick refresher or a deep study session.
+- **A Tutor That Stays on Topic** — Answers stream in live and stay anchored to the section you're reading, instead of wandering off into the whole syllabus.
+- **Practice That Adapts in Real Time** — Difficulty tracks your performance from problem to problem, keeping you in the productive zone between "too easy" and "overwhelming."
+- **Grading You Can Read** — Assignments are scored on whether your answer *means* the right thing, not whether it matches a string — and every result comes with a written rationale.
+- **A Two-Layer Integrity Check** — Submissions are screened both for AI-style writing and for telltale authoring behavior, catching misuse that simple text checks miss — always with a human-readable reason.
+- **Three One-Click Self-Tests** — The course can verify its own health end to end before you trust a session: a full system check, a simulated student run through the whole course, and an answer-key quality review that confirms every graded answer is sound.
+- **A Real Demo, Not a Slideshow** — The walkthrough video is the actual product in motion — live typing, streaming answers, and synced audio — captured straight from the running app.
 
 ---
 
-## ⚖️ Designed For
+## 🔒 Required Secrets
 
-- **College Students & Self-Learners:** A complete Ethics course delivered with on-demand tutoring and adaptive practice — no instructor required.
-- **Instructors & Curriculum Designers:** A working reference for what AI-taught, AI-graded, AI-detection-screened coursework actually looks like end-to-end.
-- **Academic-Integrity Researchers:** A live testbed for layered AI-authorship detection that combines text-based classification with behavioral keystroke evidence.
-- **Product & Engineering Teams:** A reference implementation of contract-first full-stack architecture, streaming AI UX, and self-diagnostic operator tooling in a pnpm monorepo.
+Configuration values the app expects at startup:
+
+- `DATABASE_URL` — connection string for the course database.
+- `OPENAI_API_KEY` — powers the tutor, the practice generator, and the AI grader.
+- `GPTZERO_API_KEY` — powers the AI-authorship detection layer.
+- `SESSION_SECRET` — signed-session cookie secret.
+
+---
+
+## 🎓 Designed For
+
+- **College Students & Self-Learners** — A complete ethics course with on-demand tutoring and adaptive practice, no instructor required.
+- **Anyone Who Ever Argued About Right and Wrong and Wanted to Argue Better** — A structured tour of the concepts behind the arguments: goodness, obligation, intention, and moral truth.
+- **Instructors Evaluating AI-Taught Coursework** — A working example of what an AI-taught, AI-graded, integrity-screened course actually looks like from the student's seat.
+- **Curious Minds Who Want the Ideas, Not Just the Vocabulary** — Read the idea, see it in a real case, then write the defining judgment in your own words.
 
 ---
 
 ## 💡 Core Idea
 
-EthosReason redefines an AI-taught course as a *closed accountability loop*.
+Most ethics talk argues the *verdicts* — was this act right, was that person to blame. Far fewer go back to the *concepts* underneath: what goodness is, what "right" and "wrong" actually mean, what we judge when we judge a person, and whether moral claims can be true at all. This course is built around that second list.
 
-It doesn't just teach the material and grade the homework — it **teaches**, **tutors**, **drills**, **grades**, **detects misuse**, and **proves the whole pipeline still works** with a single click. The result is a self-paced course students can actually trust to be fair, and that instructors can actually trust to be honest.
+Read the idea, ground it in a real example, then state the moral judgment in your own words — and let the course check your reasoning fairly every step of the way.
 
-**EthosReason — where the curriculum, the tutor, the grader, and the integrity check all live in one room.**
+**EthosReason — read the idea, ground the idea, write the idea.**
