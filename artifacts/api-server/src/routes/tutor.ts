@@ -24,14 +24,20 @@ router.get("/tutor/suggestions/:lectureId", async (req, res): Promise<void> => {
   try {
     const out = await chatJson<{ questions: string[] }>(
       'You are a rigorous college ethics tutor writing study questions. Reply as strict JSON of the form {"questions": string[]} with NO other keys.',
-      `From the lecture below, write 6 starter questions a thoughtful student would ask to deepen their UNDERSTANDING of the material — questions that probe reasoning, distinctions, justification, or application, not trivia or recall.\n\n` +
-        `Cover several different major ideas in the reading (not just the first one).\n\n` +
-        `RULES FOR EVERY QUESTION — no exceptions:\n` +
-        `1. Be precise and well-formed. Do NOT presuppose a single answer when several exist. Never write "What is THE difference between X and Y?" when X and Y differ in several ways — instead ask "How do X and Y differ?" or "What distinguishes X from Y, and why does it matter for ethics?".\n` +
-        `2. Probe understanding, not memorization. Prefer "why", "how", "what follows if", "how would you decide", "what is an example of", "how does X relate to Y". Avoid yes/no questions and avoid questions answerable by quoting one sentence.\n` +
-        `3. Be specific to THIS lecture's actual concepts and examples — name them. No generic filler that could apply to any reading.\n` +
-        `4. One clear sentence each, roughly 8–22 words, in the student's own voice. No compound double-questions.\n` +
-        `5. Use $...$ for any inline math.\n\n` +
+      `From the lecture below, write 6 starter questions that make the student APPLY the lecture's ideas to a CONCRETE EXAMPLE. Every question must hang on a specific case and ask the student to reason about that case.\n\n` +
+        `THE SINGLE MOST IMPORTANT RULE: every question must contain an explicit, concrete example — a named person, a particular act, or a specific situation (e.g. "Alex lies to win a scholarship", "a doctor breaks a promise to save a stranger", "someone feels grief after a loss"). The question must ask the student to analyze, judge, classify, or predict something about THAT example. Reuse the lecture's own examples when it has them; otherwise invent a vivid, specific one.\n\n` +
+        `ABSOLUTELY FORBIDDEN — never produce any of these:\n` +
+        `- Questions that ask for a definition ("What is X?", "What does X mean?", "Define X").\n` +
+        `- Questions that ask to distinguish or compare concepts in the abstract ("How do X and Y differ?", "What is the difference between X and Y?", "How does X relate to Y?").\n` +
+        `- Questions about terminology, labels, or what something is "called".\n` +
+        `- Any question that could be answered without referring to a specific case.\n\n` +
+        `If a question does not name a concrete example and ask the student to reason about it, REWRITE it until it does.\n\n` +
+        `GOOD vs BAD:\n` +
+        `- BAD: "What's the difference between calling an act right and calling it good?"\n` +
+        `- GOOD: "A soldier falls on a grenade to save his squad — is his act good, right, both, or neither, and why?"\n` +
+        `- BAD: "What makes a category normative rather than descriptive?"\n` +
+        `- GOOD: "Someone calls Maria 'generous' for giving away her bonus — is that describing her or evaluating her, and how can you tell?"\n\n` +
+        `Cover several different major ideas from the reading across the 6 questions. One clear sentence each (roughly 12–28 words), in the student's own voice, no compound double-questions. Use $...$ for any inline math.\n\n` +
         `Return exactly 6 questions.\n\nLECTURE TITLE: ${lecture.title}\n\nLECTURE BODY:\n"""\n${lecture.body}\n"""`,
       FAST_MODEL,
     );
