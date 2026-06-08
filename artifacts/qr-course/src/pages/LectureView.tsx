@@ -293,7 +293,7 @@ function TutorPane({
     setSuggestionsDismissed(false);
     setDismissed(new Set());
     setSuggestionsLoading(true);
-    fetch(`/api/tutor/suggestions/${lectureId}`)
+    fetch(`/api/tutor/suggestions/${lectureId}?t=${Date.now()}`, { cache: "no-store" })
       .then((r) => r.json())
       .then((data: { questions?: string[] }) => {
         setSuggestions(data.questions ?? []);
