@@ -239,14 +239,13 @@ router.post("/reasoning/assessments/:assessmentId/start", async (req, res): Prom
     return;
   }
 
-  // The first take uses the seeded template; every retake gets a freshly
-  // generated set of questions of the same kind (different scenarios/items).
-  const hadPriorAttempt = existing.length > 0;
-  if (hadPriorAttempt) {
-    const template = await loadTemplateItems(id);
-    const variant = await generateVariantItems(a.instrument as Instrument, template);
-    await insertAttemptItems(id, created.id, variant);
-  }
+  // Every occurrence of the assessment presents freshly generated questions of
+  // the same kind (different scenarios/items) — including the very first take
+  // and any take after a course reset. The seeded template is only the
+  // structural blueprint, and the fallback if generation fails.
+  const template = await loadTemplateItems(id);
+  const variant = await generateVariantItems(a.instrument as Instrument, template);
+  await insertAttemptItems(id, created.id, variant);
   const items = await loadItemsForAttempt(id, created.id);
 
   res.json(
@@ -286,19 +285,18 @@ router.post("/reasoning/assessments/:assessmentId/submit", async (req, res): Pro
   const responses = parsed.data.responses as ResponseInput[];
 
   // Attach to the in-progress attempt if present, else create one. Score
-  // against THAT attempt's items (retakes have their own generated items;
-  // a first take falls back to the seeded template).
-  const existing = await db
+  // against THAT attempt's own generated items. Prefer the in-progress attempt;
+  // if none (e.g. a resubmit), fall back to the most recent attempt for this
+  // assessment. The seeded template is used only when the assessment has never
+  // been attempted (in which case the client has no generated item IDs anyway).
+  const attempts = await db
     .select()
     .from(diagnosticAttemptsTable)
-    .where(
-      and(
-        eq(diagnosticAttemptsTable.assessmentId, id),
-        eq(diagnosticAttemptsTable.status, "in_progress"),
-      ),
-    )
+    .where(eq(diagnosticAttemptsTable.assessmentId, id))
     .orderBy(asc(diagnosticAttemptsTable.id));
-  const target = existing[0];
+  const target =
+    attempts.find((x) => x.status === "in_progress") ??
+    attempts[attempts.length - 1];
 
   const items = target
     ? await loadItemsForAttempt(id, target.id)
