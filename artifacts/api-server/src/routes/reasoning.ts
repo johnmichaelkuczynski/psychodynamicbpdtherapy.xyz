@@ -1,5 +1,5 @@
 import { Router, type IRouter } from "express";
-import { and, asc, eq } from "drizzle-orm";
+import { and, asc, eq, isNull } from "drizzle-orm";
 import {
   db,
   assignmentsTable,
@@ -21,8 +21,10 @@ import {
 import {
   scoreAssessment,
   generateFeedback,
+  generateVariantItems,
   publicItem,
   type DiagnosticItemRow,
+  type GeneratedItemContent,
   type ResponseInput,
 } from "../lib/reasoning";
 
@@ -39,12 +41,9 @@ function parseIdParam(raw: unknown): number {
 type Instrument = "ethical" | "critical";
 type Phase = "baseline" | "unit1" | "unit2" | "unit3" | "unit4";
 
-async function loadItems(assessmentId: number): Promise<DiagnosticItemRow[]> {
-  const rows = await db
-    .select()
-    .from(diagnosticItemsTable)
-    .where(eq(diagnosticItemsTable.assessmentId, assessmentId))
-    .orderBy(asc(diagnosticItemsTable.position));
+type ItemRowRaw = typeof diagnosticItemsTable.$inferSelect;
+
+function mapItemRows(rows: ItemRowRaw[]): DiagnosticItemRow[] {
   return rows.map((r) => ({
     id: r.id,
     position: r.position,
@@ -53,6 +52,58 @@ async function loadItems(assessmentId: number): Promise<DiagnosticItemRow[]> {
     payload: r.payload,
     scoring: r.scoring,
   }));
+}
+
+// The seeded "template" items for an assessment (attemptId IS NULL). Used for
+// the first take, the assessment preview, and as the blueprint for retake
+// generation.
+async function loadTemplateItems(assessmentId: number): Promise<DiagnosticItemRow[]> {
+  const rows = await db
+    .select()
+    .from(diagnosticItemsTable)
+    .where(
+      and(
+        eq(diagnosticItemsTable.assessmentId, assessmentId),
+        isNull(diagnosticItemsTable.attemptId),
+      ),
+    )
+    .orderBy(asc(diagnosticItemsTable.position));
+  return mapItemRows(rows);
+}
+
+// The items to present/score for a specific attempt: its own generated items if
+// it has any (retakes), otherwise the seeded template (first take).
+async function loadItemsForAttempt(
+  assessmentId: number,
+  attemptId: number,
+): Promise<DiagnosticItemRow[]> {
+  const rows = await db
+    .select()
+    .from(diagnosticItemsTable)
+    .where(eq(diagnosticItemsTable.attemptId, attemptId))
+    .orderBy(asc(diagnosticItemsTable.position));
+  if (rows.length > 0) return mapItemRows(rows);
+  return loadTemplateItems(assessmentId);
+}
+
+// Persist freshly generated items, tagged to an attempt.
+async function insertAttemptItems(
+  assessmentId: number,
+  attemptId: number,
+  contents: GeneratedItemContent[],
+): Promise<void> {
+  if (contents.length === 0) return;
+  await db.insert(diagnosticItemsTable).values(
+    contents.map((c, i) => ({
+      assessmentId,
+      attemptId,
+      position: i,
+      type: c.type,
+      prompt: c.prompt,
+      payload: c.payload,
+      scoring: c.scoring,
+    })),
+  );
 }
 
 router.get("/reasoning/assessments", async (_req, res) => {
@@ -65,7 +116,12 @@ router.get("/reasoning/assessments", async (_req, res) => {
       const items = await db
         .select({ id: diagnosticItemsTable.id })
         .from(diagnosticItemsTable)
-        .where(eq(diagnosticItemsTable.assessmentId, a.id));
+        .where(
+          and(
+            eq(diagnosticItemsTable.assessmentId, a.id),
+            isNull(diagnosticItemsTable.attemptId),
+          ),
+        );
       const attempts = await db
         .select()
         .from(diagnosticAttemptsTable)
@@ -108,7 +164,7 @@ router.get("/reasoning/assessments/:assessmentId", async (req, res): Promise<voi
     res.status(404).json({ error: "not found" });
     return;
   }
-  const items = await loadItems(id);
+  const items = await loadTemplateItems(id);
   res.json(
     GetReasoningAssessmentResponse.parse({
       id: a.id,
@@ -158,6 +214,7 @@ router.post("/reasoning/assessments/:assessmentId/start", async (req, res): Prom
     : existing.find((x) => x.status === "in_progress") ??
       existing.find((x) => x.status === "submitted");
   if (reusable) {
+    const items = await loadItemsForAttempt(id, reusable.id);
     res.json(
       StartReasoningAttemptResponse.parse({
         id: reusable.id,
@@ -167,6 +224,7 @@ router.post("/reasoning/assessments/:assessmentId/start", async (req, res): Prom
         submittedAt: reusable.submittedAt?.toISOString() ?? null,
         passed: reusable.passed,
         feedback: reusable.feedback,
+        items: items.map(publicItem),
       }),
     );
     return;
@@ -180,6 +238,17 @@ router.post("/reasoning/assessments/:assessmentId/start", async (req, res): Prom
     res.status(500).json({ error: "failed to create" });
     return;
   }
+
+  // The first take uses the seeded template; every retake gets a freshly
+  // generated set of questions of the same kind (different scenarios/items).
+  const hadPriorAttempt = existing.length > 0;
+  if (hadPriorAttempt) {
+    const template = await loadTemplateItems(id);
+    const variant = await generateVariantItems(a.instrument as Instrument, template);
+    await insertAttemptItems(id, created.id, variant);
+  }
+  const items = await loadItemsForAttempt(id, created.id);
+
   res.json(
     StartReasoningAttemptResponse.parse({
       id: created.id,
@@ -189,6 +258,7 @@ router.post("/reasoning/assessments/:assessmentId/start", async (req, res): Prom
       submittedAt: null,
       passed: null,
       feedback: null,
+      items: items.map(publicItem),
     }),
   );
 });
@@ -214,15 +284,10 @@ router.post("/reasoning/assessments/:assessmentId/submit", async (req, res): Pro
   }
 
   const responses = parsed.data.responses as ResponseInput[];
-  const items = await loadItems(id);
-  const instrument = a.instrument as Instrument;
-  const summary = scoreAssessment(instrument, items, responses);
-  const feedback = await generateFeedback(instrument, a.title, summary);
 
-  // Pass/Fail policy: submitting the assessment is a pass.
-  const passed = true;
-
-  // Attach to the in-progress attempt if present, else create one.
+  // Attach to the in-progress attempt if present, else create one. Score
+  // against THAT attempt's items (retakes have their own generated items;
+  // a first take falls back to the seeded template).
   const existing = await db
     .select()
     .from(diagnosticAttemptsTable)
@@ -233,8 +298,19 @@ router.post("/reasoning/assessments/:assessmentId/submit", async (req, res): Pro
       ),
     )
     .orderBy(asc(diagnosticAttemptsTable.id));
-  let attemptId: number;
   const target = existing[0];
+
+  const items = target
+    ? await loadItemsForAttempt(id, target.id)
+    : await loadTemplateItems(id);
+  const instrument = a.instrument as Instrument;
+  const summary = scoreAssessment(instrument, items, responses);
+  const feedback = await generateFeedback(instrument, a.title, summary);
+
+  // Pass/Fail policy: submitting the assessment is a pass.
+  const passed = true;
+
+  let attemptId: number;
   if (target) {
     attemptId = target.id;
     await db

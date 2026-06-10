@@ -171,6 +171,15 @@ export const diagnosticItemsTable = pgTable("diagnostic_items", {
   assessmentId: integer("assessment_id")
     .notNull()
     .references(() => diagnosticAssessmentsTable.id, { onDelete: "cascade" }),
+  // Null for the seeded "template" items (the canonical question bank used for
+  // the first take and as the generation template). For a retake, fresh items
+  // are generated per attempt and tagged with that attempt's id so every
+  // retake gets different questions of the same kind. These cascade-delete
+  // with their attempt.
+  attemptId: integer("attempt_id").references(
+    () => diagnosticAttemptsTable.id,
+    { onDelete: "cascade" },
+  ),
   position: integer("position").notNull(),
   type: text("type").notNull(), // dilemma | mcq
   prompt: text("prompt").notNull(),

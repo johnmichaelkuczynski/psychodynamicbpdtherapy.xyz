@@ -1114,7 +1114,7 @@ components:
 
     ReasoningAttemptState:
       type: object
-      required: [id, assessmentId, status, startedAt]
+      required: [id, assessmentId, status, startedAt, items]
       properties:
         id: { type: integer }
         assessmentId: { type: integer }
@@ -1125,6 +1125,14 @@ components:
         submittedAt: { type: ["string", "null"], format: date-time }
         passed: { type: ["boolean", "null"] }
         feedback: { type: ["string", "null"] }
+        items:
+          type: array
+          description: >-
+            The exact items to present for THIS attempt. The first take uses the
+            seeded template; each retake returns freshly generated questions of
+            the same kind (same instrument, skill areas, and structure).
+          items:
+            $ref: "#/components/schemas/ReasoningItem"
 
     ReasoningResponseInput:
       type: object

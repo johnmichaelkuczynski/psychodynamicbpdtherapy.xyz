@@ -34,6 +34,10 @@ export default function ReasoningRunner() {
   const [result, setResult] = useState<ReasoningResult | null>(null);
   const [alreadyPassed, setAlreadyPassed] = useState<{ feedback: string | null } | null>(null);
 
+  // The items to present for THIS attempt. The first take uses the seeded
+  // template; each retake returns freshly generated questions of the same kind.
+  const [items, setItems] = useState<ReasoningItem[] | null>(null);
+
   // MCQ selections: itemId -> optionIndex
   const [mcqAnswers, setMcqAnswers] = useState<Record<number, number>>({});
   // Dilemma state: itemId -> state
@@ -46,6 +50,7 @@ export default function ReasoningRunner() {
       { assessmentId },
       {
         onSuccess: (data) => {
+          setItems(data.items);
           if (data.status === "submitted") {
             setAlreadyPassed({ feedback: data.feedback ?? null });
           }
@@ -130,7 +135,8 @@ export default function ReasoningRunner() {
     startAttempt.mutate(
       { assessmentId, data: { retake: true } },
       {
-        onSuccess: () => {
+        onSuccess: (data) => {
+          setItems(data.items);
           setResult(null);
           setAlreadyPassed(null);
           setMcqAnswers({});
@@ -141,20 +147,20 @@ export default function ReasoningRunner() {
   }
 
   function handleSubmit() {
-    if (!assessment) return;
-    const v = validate(assessment.items);
+    if (!items) return;
+    const v = validate(items);
     if (v) {
       setError(v);
       return;
     }
     setError(null);
     submitAttempt.mutate(
-      { assessmentId, data: { responses: buildResponses(assessment.items) } },
+      { assessmentId, data: { responses: buildResponses(items) } },
       { onSuccess: (data) => setResult(data) },
     );
   }
 
-  if (isLoading || !assessment) {
+  if (isLoading || !assessment || (!items && !alreadyPassed && !result)) {
     return (
       <Layout>
         <div className="p-8 max-w-3xl mx-auto w-full flex flex-col gap-8">
@@ -229,7 +235,7 @@ export default function ReasoningRunner() {
         </div>
 
         <div className="flex flex-col gap-8">
-          {assessment.items.map((item, idx) =>
+          {(items ?? []).map((item, idx) =>
             item.type === "mcq" ? (
               <McqQuestion
                 key={item.id}

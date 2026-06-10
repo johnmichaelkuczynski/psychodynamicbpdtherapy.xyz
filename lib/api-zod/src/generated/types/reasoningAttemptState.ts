@@ -6,6 +6,7 @@
  * OpenAPI spec version: 0.1.0
  */
 import type { ReasoningAttemptStateStatus } from './reasoningAttemptStateStatus';
+import type { ReasoningItem } from './reasoningItem';
 
 export interface ReasoningAttemptState {
   id: number;
@@ -18,4 +19,6 @@ export interface ReasoningAttemptState {
   passed?: boolean | null;
   /** @nullable */
   feedback?: string | null;
+  /** The exact items to present for THIS attempt. The first take uses the seeded template; each retake returns freshly generated questions of the same kind (same instrument, skill areas, and structure). */
+  items: ReasoningItem[];
 }

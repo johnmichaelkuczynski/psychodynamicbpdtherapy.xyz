@@ -650,7 +650,17 @@ export const StartReasoningAttemptResponse = zod.object({
   "startedAt": zod.coerce.date(),
   "submittedAt": zod.coerce.date().nullish(),
   "passed": zod.boolean().nullish(),
-  "feedback": zod.string().nullish()
+  "feedback": zod.string().nullish(),
+  "items": zod.array(zod.object({
+  "id": zod.number(),
+  "position": zod.number(),
+  "type": zod.enum(['dilemma', 'mcq']),
+  "prompt": zod.string(),
+  "options": zod.array(zod.string()).nullish().describe('For mcq items — the answer choices.'),
+  "decisionOptions": zod.array(zod.string()).nullish().describe('For dilemma items — the possible decisions on the scenario.'),
+  "considerations": zod.array(zod.string()).nullish().describe('For dilemma items — statements to rate by importance and rank.'),
+  "rankCount": zod.number().nullish().describe('For dilemma items — how many top considerations to rank.')
+})).describe('The exact items to present for THIS attempt. The first take uses the seeded template; each retake returns freshly generated questions of the same kind (same instrument, skill areas, and structure).')
 })
 
 
