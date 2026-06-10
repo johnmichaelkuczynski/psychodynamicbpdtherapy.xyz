@@ -205,6 +205,12 @@ paths:
           in: path
           required: true
           schema: { type: integer }
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/SubmitAttemptInput"
       responses:
         "200":
           description: OK
@@ -212,6 +218,25 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/AttemptResult"
+
+  /admin/grader-lab:
+    post:
+      operationId: runGraderLab
+      tags: [admin]
+      summary: Admin debug — generate a spread of candidate answers for a problem and grade each (no AI detection)
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/GraderLabInput"
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/GraderLabResult"
 
   /assignments/{assignmentId}/practice:
     post:
@@ -663,6 +688,45 @@ components:
       required: [ok]
       properties:
         ok: { type: boolean }
+
+    SubmitAttemptInput:
+      type: object
+      properties:
+        skipDetection:
+          type: boolean
+          default: false
+          description: Admin mode — grade the attempt but skip AI/diachronic detection.
+
+    GraderLabInput:
+      type: object
+      description: Provide a problemId to audit a real problem, or a custom prompt + correctAnswer.
+      properties:
+        problemId: { type: ["integer", "null"] }
+        prompt: { type: ["string", "null"] }
+        correctAnswer: { type: ["string", "null"] }
+
+    GraderLabResult:
+      type: object
+      required: [prompt, correctAnswer, cases]
+      properties:
+        prompt: { type: string }
+        correctAnswer: { type: string }
+        cases:
+          type: array
+          items:
+            $ref: "#/components/schemas/GraderLabCase"
+
+    GraderLabCase:
+      type: object
+      required: [label, kind, expectedCorrect, answer, gradedCorrect, explanation, match]
+      properties:
+        label: { type: string }
+        kind: { type: string }
+        expectedCorrect: { type: boolean }
+        answer: { type: string }
+        gradedCorrect: { type: boolean }
+        explanation: { type: string }
+        match: { type: boolean }
 
     AttemptResult:
       type: object

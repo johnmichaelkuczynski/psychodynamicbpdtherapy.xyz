@@ -249,6 +249,8 @@ router.post("/assignments/attempts/:attemptId/submit", async (req, res): Promise
     res.status(400).json({ error: "invalid id" });
     return;
   }
+  const skipDetection =
+    (req.body as { skipDetection?: boolean } | undefined)?.skipDetection === true;
   const [attempt] = await db
     .select()
     .from(attemptsTable)
@@ -288,7 +290,7 @@ router.post("/assignments/attempts/:attemptId/submit", async (req, res): Promise
       explanation: graded.explanation || p.explanation,
     });
 
-    if (a && userAnswer.trim().length > 0) {
+    if (a && userAnswer.trim().length > 0 && !skipDetection) {
       const det = await detect(userAnswer, {
         keystrokeCount: a.keystrokeCount,
         eraseCount: a.eraseCount,

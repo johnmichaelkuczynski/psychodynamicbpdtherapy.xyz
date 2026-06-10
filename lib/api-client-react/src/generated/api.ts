@@ -33,6 +33,8 @@ import type {
   DetectionResult,
   DetectionScanInput,
   Gradebook,
+  GraderLabInput,
+  GraderLabResult,
   HealthStatus,
   Lecture,
   NextProblemInput,
@@ -48,6 +50,7 @@ import type {
   ReasoningAssessmentSummary,
   ReasoningAttemptState,
   ReasoningResult,
+  SubmitAttemptInput,
   SubmitReasoningBody,
   Topic,
   TopicAnalytics,
@@ -837,14 +840,16 @@ export const getSubmitAttemptUrl = (attemptId: number,) => {
 /**
  * @summary Submit the attempt for grading (also runs AI + diachronic detection)
  */
-export const submitAttempt = async (attemptId: number, options?: RequestInit): Promise<AttemptResult> => {
+export const submitAttempt = async (attemptId: number,
+    submitAttemptInput?: SubmitAttemptInput, options?: RequestInit): Promise<AttemptResult> => {
 
   return customFetch<AttemptResult>(getSubmitAttemptUrl(attemptId),
   {
     ...options,
-    method: 'POST'
-
-
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', ...options?.headers },
+    body: JSON.stringify(
+      submitAttemptInput,)
   }
 );}
 
@@ -852,8 +857,8 @@ export const submitAttempt = async (attemptId: number, options?: RequestInit): P
 
 
 export const getSubmitAttemptMutationOptions = <TError = ErrorType<unknown>,
-    TContext = unknown>(options?: { mutation?:UseMutationOptions<Awaited<ReturnType<typeof submitAttempt>>, TError,{attemptId: number}, TContext>, request?: SecondParameter<typeof customFetch>}
-): UseMutationOptions<Awaited<ReturnType<typeof submitAttempt>>, TError,{attemptId: number}, TContext> => {
+    TContext = unknown>(options?: { mutation?:UseMutationOptions<Awaited<ReturnType<typeof submitAttempt>>, TError,{attemptId: number;data?: BodyType<SubmitAttemptInput>}, TContext>, request?: SecondParameter<typeof customFetch>}
+): UseMutationOptions<Awaited<ReturnType<typeof submitAttempt>>, TError,{attemptId: number;data?: BodyType<SubmitAttemptInput>}, TContext> => {
 
 const mutationKey = ['submitAttempt'];
 const {mutation: mutationOptions, request: requestOptions} = options ?
@@ -865,10 +870,10 @@ const {mutation: mutationOptions, request: requestOptions} = options ?
 
 
 
-      const mutationFn: MutationFunction<Awaited<ReturnType<typeof submitAttempt>>, {attemptId: number}> = (props) => {
-          const {attemptId} = props ?? {};
+      const mutationFn: MutationFunction<Awaited<ReturnType<typeof submitAttempt>>, {attemptId: number;data?: BodyType<SubmitAttemptInput>}> = (props) => {
+          const {attemptId,data} = props ?? {};
 
-          return  submitAttempt(attemptId,requestOptions)
+          return  submitAttempt(attemptId,data,requestOptions)
         }
 
 
@@ -879,21 +884,92 @@ const {mutation: mutationOptions, request: requestOptions} = options ?
   return  { mutationFn, ...mutationOptions }}
 
     export type SubmitAttemptMutationResult = NonNullable<Awaited<ReturnType<typeof submitAttempt>>>
-
+    export type SubmitAttemptMutationBody = BodyType<SubmitAttemptInput> | undefined
     export type SubmitAttemptMutationError = ErrorType<unknown>
 
     /**
  * @summary Submit the attempt for grading (also runs AI + diachronic detection)
  */
 export const useSubmitAttempt = <TError = ErrorType<unknown>,
-    TContext = unknown>(options?: { mutation?:UseMutationOptions<Awaited<ReturnType<typeof submitAttempt>>, TError,{attemptId: number}, TContext>, request?: SecondParameter<typeof customFetch>}
+    TContext = unknown>(options?: { mutation?:UseMutationOptions<Awaited<ReturnType<typeof submitAttempt>>, TError,{attemptId: number;data?: BodyType<SubmitAttemptInput>}, TContext>, request?: SecondParameter<typeof customFetch>}
  ): UseMutationResult<
         Awaited<ReturnType<typeof submitAttempt>>,
         TError,
-        {attemptId: number},
+        {attemptId: number;data?: BodyType<SubmitAttemptInput>},
         TContext
       > => {
       return useMutation(getSubmitAttemptMutationOptions(options));
+    }
+
+export const getRunGraderLabUrl = () => {
+
+
+
+
+  return `/api/admin/grader-lab`
+}
+
+/**
+ * @summary Admin debug — generate a spread of candidate answers for a problem and grade each (no AI detection)
+ */
+export const runGraderLab = async (graderLabInput: GraderLabInput, options?: RequestInit): Promise<GraderLabResult> => {
+
+  return customFetch<GraderLabResult>(getRunGraderLabUrl(),
+  {
+    ...options,
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', ...options?.headers },
+    body: JSON.stringify(
+      graderLabInput,)
+  }
+);}
+
+
+
+
+export const getRunGraderLabMutationOptions = <TError = ErrorType<unknown>,
+    TContext = unknown>(options?: { mutation?:UseMutationOptions<Awaited<ReturnType<typeof runGraderLab>>, TError,{data: BodyType<GraderLabInput>}, TContext>, request?: SecondParameter<typeof customFetch>}
+): UseMutationOptions<Awaited<ReturnType<typeof runGraderLab>>, TError,{data: BodyType<GraderLabInput>}, TContext> => {
+
+const mutationKey = ['runGraderLab'];
+const {mutation: mutationOptions, request: requestOptions} = options ?
+      options.mutation && 'mutationKey' in options.mutation && options.mutation.mutationKey ?
+      options
+      : {...options, mutation: {...options.mutation, mutationKey}}
+      : {mutation: { mutationKey, }, request: undefined};
+
+
+
+
+      const mutationFn: MutationFunction<Awaited<ReturnType<typeof runGraderLab>>, {data: BodyType<GraderLabInput>}> = (props) => {
+          const {data} = props ?? {};
+
+          return  runGraderLab(data,requestOptions)
+        }
+
+
+
+
+
+
+  return  { mutationFn, ...mutationOptions }}
+
+    export type RunGraderLabMutationResult = NonNullable<Awaited<ReturnType<typeof runGraderLab>>>
+    export type RunGraderLabMutationBody = BodyType<GraderLabInput>
+    export type RunGraderLabMutationError = ErrorType<unknown>
+
+    /**
+ * @summary Admin debug — generate a spread of candidate answers for a problem and grade each (no AI detection)
+ */
+export const useRunGraderLab = <TError = ErrorType<unknown>,
+    TContext = unknown>(options?: { mutation?:UseMutationOptions<Awaited<ReturnType<typeof runGraderLab>>, TError,{data: BodyType<GraderLabInput>}, TContext>, request?: SecondParameter<typeof customFetch>}
+ ): UseMutationResult<
+        Awaited<ReturnType<typeof runGraderLab>>,
+        TError,
+        {data: BodyType<GraderLabInput>},
+        TContext
+      > => {
+      return useMutation(getRunGraderLabMutationOptions(options));
     }
 
 export const getGeneratePracticeAssignmentUrl = (assignmentId: number,) => {

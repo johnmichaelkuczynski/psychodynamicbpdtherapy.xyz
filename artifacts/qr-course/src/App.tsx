@@ -31,6 +31,7 @@ import TopicPractice from "@/pages/TopicPractice";
 import Reasoning from "@/pages/Reasoning";
 import ReasoningRunner from "@/pages/ReasoningRunner";
 import Grades from "@/pages/Grades";
+import AdminMode from "@/pages/AdminMode";
 
 // Resolves the key from window.location.hostname so the same build serves
 // multiple Clerk custom domains. Do not inline the env var or leave undefined.
@@ -201,6 +202,7 @@ function Router() {
         component={protectedComponent(ReasoningRunner)}
       />
       <Route path="/grades" component={protectedComponent(Grades)} />
+      <Route path="/admin" component={protectedComponent(AdminMode)} />
       <Route path="/diagnostics" component={protectedComponent(Diagnostics)} />
       <Route
         path="/weeks/:weekNumber"

@@ -1,13 +1,15 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
-import { LayoutDashboard, PenTool, BarChart3, Activity, RotateCcw, Sparkles, LogOut, Scale, GraduationCap } from "lucide-react";
+import { LayoutDashboard, PenTool, BarChart3, Activity, RotateCcw, Sparkles, LogOut, Scale, GraduationCap, ShieldCheck } from "lucide-react";
 import { useQueryClient } from "@tanstack/react-query";
 import { useClerk, useUser } from "@clerk/react";
+import { useAdminMode } from "@/lib/adminMode";
 
 const basePath = import.meta.env.BASE_URL.replace(/\/$/, "");
 
 export function Sidebar() {
   const [location] = useLocation();
+  const [adminMode] = useAdminMode();
 
   const navItems = [
     { href: "/dashboard", label: "Dashboard", icon: LayoutDashboard },
@@ -15,6 +17,9 @@ export function Sidebar() {
     { href: "/reasoning", label: "Assessments", icon: Scale },
     { href: "/grades", label: "Grades", icon: GraduationCap },
     { href: "/analytics", label: "Analytics", icon: BarChart3 },
+    ...(adminMode
+      ? [{ href: "/admin", label: "Administrator", icon: ShieldCheck }]
+      : []),
   ];
 
   return (
@@ -60,6 +65,7 @@ export function Sidebar() {
 function TopBar() {
   const [location, setLocation] = useLocation();
   const active = location.startsWith("/diagnostics");
+  const [adminMode, setAdminMode] = useAdminMode();
   const qc = useQueryClient();
   const { signOut } = useClerk();
   const { user } = useUser();
@@ -166,6 +172,20 @@ function TopBar() {
           Diagnostic
         </button>
       </Link>
+
+      <button
+        onClick={() => setAdminMode(!adminMode)}
+        className={`inline-flex items-center gap-2 px-3 py-1.5 rounded-md text-sm font-medium transition-colors ${
+          adminMode
+            ? "bg-chart-4 text-white"
+            : "border border-border hover:bg-secondary"
+        }`}
+        data-testid="button-admin-toggle"
+        title="Administrator mode disables AI detection, enables pasting, and unlocks the Grader Lab"
+      >
+        <ShieldCheck className="w-4 h-4" />
+        {adminMode ? "Admin: On" : "Admin: Off"}
+      </button>
 
       <div className="mx-1 h-6 w-px bg-border" />
 

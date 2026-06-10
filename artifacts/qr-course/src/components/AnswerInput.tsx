@@ -1,5 +1,6 @@
 import React, { useRef, useState, useEffect, useCallback } from "react";
 import { KeystrokeTrace } from "@workspace/api-client-react";
+import { useAdminMode } from "@/lib/adminMode";
 
 interface AnswerInputProps {
   value: string;
@@ -9,6 +10,7 @@ interface AnswerInputProps {
 }
 
 export function AnswerInput({ value, onChange, placeholder, disabled }: AnswerInputProps) {
+  const [adminMode] = useAdminMode();
   const [sessionValue, setSessionValue] = useState(value);
   const textareaRef = useRef<HTMLTextAreaElement | null>(null);
 
@@ -69,8 +71,12 @@ export function AnswerInput({ value, onChange, placeholder, disabled }: AnswerIn
     }
   };
 
-  const handlePaste = (e: React.ClipboardEvent) => e.preventDefault();
-  const handleDrop = (e: React.DragEvent) => e.preventDefault();
+  const handlePaste = (e: React.ClipboardEvent) => {
+    if (!adminMode) e.preventDefault();
+  };
+  const handleDrop = (e: React.DragEvent) => {
+    if (!adminMode) e.preventDefault();
+  };
 
   return (
     <div className="flex flex-col gap-2 w-full">
@@ -85,7 +91,9 @@ export function AnswerInput({ value, onChange, placeholder, disabled }: AnswerIn
         disabled={disabled}
         className="w-full min-h-[180px] p-5 bg-card border border-input rounded-md focus:outline-none focus:ring-2 focus:ring-primary text-lg leading-relaxed resize-y"
       />
-      <span className="text-xs text-muted-foreground px-1">Pasting is disabled.</span>
+      <span className="text-xs text-muted-foreground px-1">
+        {adminMode ? "Administrator mode — pasting enabled." : "Pasting is disabled."}
+      </span>
     </div>
   );
 }

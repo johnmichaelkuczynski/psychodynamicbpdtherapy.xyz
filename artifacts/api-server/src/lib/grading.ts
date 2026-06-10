@@ -47,12 +47,36 @@ export async function gradeAnswer(opts: {
     }
   }
 
+  if (!user.trim()) {
+    return {
+      correct: false,
+      explanation: `No answer was provided.`,
+    };
+  }
+
   try {
     const out = await chatJson<{ correct: boolean; explanation: string }>(
-      "You grade short college ethics answers. Decide if the student's answer is semantically equivalent to the correct/model answer — accept paraphrases, synonyms, and answers that capture the same key idea or reach the same verdict (e.g. 'descriptive' vs 'it's descriptive', 'no, because origin doesn't affect truth' vs 'no'). Be lenient about wording but strict about the substantive point. Output strict JSON {\"correct\": boolean, \"explanation\": string} where explanation is 1-3 short sentences and includes the correct answer.",
+      [
+        "You grade short college ethics answers. Score ONLY whether the student supplied the content the QUESTION actually asks for, judged on substance alone.",
+        "",
+        "How to decide `correct`:",
+        "- First work out what the question stem actually requires. The model answer often contains MORE than the question asks for; treat anything in the model answer that the stem did not demand as optional bonus, NOT a requirement.",
+        "- Mark `correct` = true when the student correctly supplies what the question requires — even if they omit bonus material that is in the model answer, and even if they phrase it completely differently. If two answers do not differ in substance, they MUST get the same grade.",
+        "- Mark `correct` = false only when the answer is substantively wrong, or genuinely fails to provide the content the question requires.",
+        "",
+        "NEVER lower the grade for any of these — they do not affect correctness at all:",
+        "- Grammar, spelling, punctuation, or capitalization (ALL CAPS is completely fine).",
+        "- Sentence fragments, notes, bullet points, shorthand, abbreviations, 'e.g.' examples, or otherwise incomplete sentences. Content expressed in fragments earns the same grade as content in full prose.",
+        "- Not following formatting or length instructions (e.g. 'write 4-6 sentences'). Only correctness of content matters — never obedience to form or instructions.",
+        "- Wording, structure, or examples that differ from the model answer while meaning the same thing.",
+        "",
+        "Keep `explanation` neutral, factual, and respectful — never snippy, sarcastic, or dismissive. 1-3 short sentences stating what a correct answer needed to contain.",
+        "",
+        'Output strict JSON {"correct": boolean, "explanation": string}.',
+      ].join("\n"),
       JSON.stringify({
-        prompt: opts.prompt,
-        correct_answer: correct,
+        question_asked: opts.prompt,
+        reference_model_answer: correct,
         student_answer: user,
       }),
     );
@@ -93,10 +117,20 @@ export async function gradePracticeEssay(opts: {
       correct: boolean;
       feedback: string;
     }>(
-      "You are a warm, rigorous college ethics tutor grading a PRACTICE answer (never penalized — the goal is to help the student improve before the real graded version). Compare the student's answer to the model answer. Decide `correct` = true if it captures the substantive point (accept paraphrases and equivalent reasoning), false otherwise. Then write `feedback` as encouraging Markdown with these sections: **What you got right** (be specific, cite their wording), **What's missing or off** (the key gaps vs. the model answer), and **How to strengthen it** (1-2 concrete next steps). 4-8 sentences total. Always weave in the core idea of the model answer so they can compare. Output strict JSON {\"correct\": boolean, \"feedback\": string}.",
+      [
+        "You are a warm, rigorous college ethics tutor giving feedback on a PRACTICE answer (never penalized — the goal is to help the student improve before the real graded version).",
+        "",
+        "Decide `correct` on SUBSTANCE alone: first work out what the question actually asks for, then mark `correct` = true if the student correctly supplies what the question requires. The model answer often contains more than the question asks; treat that extra material as optional bonus, not a requirement. Accept paraphrases, different wording, different examples, and equivalent reasoning. If two answers do not differ in substance they get the same result.",
+        "",
+        "NEVER lower `correct` for grammar, spelling, capitalization (ALL CAPS is fine), sentence fragments, notes, bullet points, shorthand, abbreviations, incomplete sentences, or for not following formatting/length instructions. Only correctness of content matters — never form or obedience.",
+        "",
+        "Then write `feedback` as encouraging Markdown with these sections: **What you got right** (be specific, cite their wording), **What's missing or off** (only genuine gaps in the REQUIRED content — never nitpick form, grammar, or omitted bonus material), and **How to strengthen it** (1-2 concrete next steps). 4-8 sentences total, neutral and supportive in tone — never snippy. Weave in the core idea of the model answer so they can compare.",
+        "",
+        'Output strict JSON {"correct": boolean, "feedback": string}.',
+      ].join("\n"),
       JSON.stringify({
-        prompt: opts.prompt,
-        model_answer: correct,
+        question_asked: opts.prompt,
+        reference_model_answer: correct,
         student_answer: user,
       }),
     );

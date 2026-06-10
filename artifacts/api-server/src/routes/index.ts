@@ -9,6 +9,7 @@ import detectionRouter from "./detection";
 import analyticsRouter from "./analytics";
 import diagnosticsRouter from "./diagnostics";
 import reasoningRouter from "./reasoning";
+import adminRouter from "./admin";
 
 const router: IRouter = Router();
 
@@ -22,5 +23,6 @@ router.use(detectionRouter);
 router.use(analyticsRouter);
 router.use(diagnosticsRouter);
 router.use(reasoningRouter);
+router.use(adminRouter);
 
 export default router;

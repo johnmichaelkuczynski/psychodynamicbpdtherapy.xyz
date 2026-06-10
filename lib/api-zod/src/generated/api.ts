@@ -243,6 +243,12 @@ export const SubmitAttemptParams = zod.object({
   "attemptId": zod.coerce.number()
 })
 
+export const submitAttemptBodySkipDetectionDefault = false;
+
+export const SubmitAttemptBody = zod.object({
+  "skipDetection": zod.boolean().default(submitAttemptBodySkipDetectionDefault).describe('Admin mode — grade the attempt but skip AI\/diachronic detection.')
+})
+
 export const SubmitAttemptResponse = zod.object({
   "attemptId": zod.number(),
   "score": zod.number(),
@@ -262,6 +268,30 @@ export const SubmitAttemptResponse = zod.object({
   "diachronicScore": zod.number().describe('0..1 probability the user is rewording AI output (based on keystroke pattern)'),
   "diachronicFlagged": zod.boolean(),
   "rationale": zod.string()
+}))
+})
+
+
+/**
+ * @summary Admin debug — generate a spread of candidate answers for a problem and grade each (no AI detection)
+ */
+export const RunGraderLabBody = zod.object({
+  "problemId": zod.number().nullish(),
+  "prompt": zod.string().nullish(),
+  "correctAnswer": zod.string().nullish()
+}).describe('Provide a problemId to audit a real problem, or a custom prompt + correctAnswer.')
+
+export const RunGraderLabResponse = zod.object({
+  "prompt": zod.string(),
+  "correctAnswer": zod.string(),
+  "cases": zod.array(zod.object({
+  "label": zod.string(),
+  "kind": zod.string(),
+  "expectedCorrect": zod.boolean(),
+  "answer": zod.string(),
+  "gradedCorrect": zod.boolean(),
+  "explanation": zod.string(),
+  "match": zod.boolean()
 }))
 })
 

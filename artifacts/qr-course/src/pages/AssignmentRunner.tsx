@@ -14,6 +14,7 @@ import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
 import { AnswerInput } from "@/components/AnswerInput";
 import { MarkdownRenderer } from "@/components/MarkdownRenderer";
+import { isAdminMode } from "@/lib/adminMode";
 
 export default function AssignmentRunner() {
   const params = useParams();
@@ -61,7 +62,7 @@ export default function AssignmentRunner() {
 
   const handleSubmit = () => {
     if (!attemptId) return;
-    submitAttempt.mutate({ attemptId }, {
+    submitAttempt.mutate({ attemptId, data: { skipDetection: isAdminMode() } }, {
       onSuccess: (data) => {
         setResult(data);
       }

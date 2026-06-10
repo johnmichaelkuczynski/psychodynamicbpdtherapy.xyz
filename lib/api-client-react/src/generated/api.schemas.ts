@@ -169,6 +169,39 @@ export interface AnswerSaved {
   ok: boolean;
 }
 
+export interface SubmitAttemptInput {
+  /** Admin mode — grade the attempt but skip AI/diachronic detection. */
+  skipDetection?: boolean;
+}
+
+/**
+ * Provide a problemId to audit a real problem, or a custom prompt + correctAnswer.
+ */
+export interface GraderLabInput {
+  /** @nullable */
+  problemId?: number | null;
+  /** @nullable */
+  prompt?: string | null;
+  /** @nullable */
+  correctAnswer?: string | null;
+}
+
+export interface GraderLabCase {
+  label: string;
+  kind: string;
+  expectedCorrect: boolean;
+  answer: string;
+  gradedCorrect: boolean;
+  explanation: string;
+  match: boolean;
+}
+
+export interface GraderLabResult {
+  prompt: string;
+  correctAnswer: string;
+  cases: GraderLabCase[];
+}
+
 export interface ProblemResult {
   problemId: number;
   correct: boolean;
