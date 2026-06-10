@@ -651,6 +651,25 @@ export const StartReasoningAttemptResponse = zod.object({
   "submittedAt": zod.coerce.date().nullish(),
   "passed": zod.boolean().nullish(),
   "feedback": zod.string().nullish(),
+  "headline": zod.string().nullish().describe('For a submitted attempt being reviewed — the score headline.'),
+  "metrics": zod.array(zod.object({
+  "label": zod.string(),
+  "value": zod.string(),
+  "detail": zod.string().nullish()
+})).nullish().describe('For a submitted attempt being reviewed — the score metrics.'),
+  "review": zod.array(zod.object({
+  "itemId": zod.number(),
+  "type": zod.enum(['dilemma', 'mcq']),
+  "prompt": zod.string(),
+  "options": zod.array(zod.string()).nullish().describe('mcq — the answer choices shown.'),
+  "selectedIndex": zod.number().nullish().describe('mcq — the option index the student chose.'),
+  "correctIndex": zod.number().nullish().describe('mcq — the correct option index.'),
+  "isCorrect": zod.boolean().nullish().describe('mcq — whether the student\'s choice was correct.'),
+  "decisionOptions": zod.array(zod.string()).nullish().describe('dilemma — the possible decisions.'),
+  "decisionIndex": zod.number().nullish().describe('dilemma — the decision the student chose.'),
+  "considerations": zod.array(zod.string()).nullish().describe('dilemma — the considerations presented.'),
+  "ranking": zod.array(zod.number()).nullish().describe('dilemma — consideration indices the student ranked most-important first.')
+})).nullish().describe('For a submitted attempt being reviewed — per-question review with the student\'s answer and the correct answer.'),
   "items": zod.array(zod.object({
   "id": zod.number(),
   "position": zod.number(),
@@ -690,7 +709,20 @@ export const SubmitReasoningAttemptResponse = zod.object({
   "label": zod.string(),
   "value": zod.string(),
   "detail": zod.string().nullish()
-}))
+})),
+  "review": zod.array(zod.object({
+  "itemId": zod.number(),
+  "type": zod.enum(['dilemma', 'mcq']),
+  "prompt": zod.string(),
+  "options": zod.array(zod.string()).nullish().describe('mcq — the answer choices shown.'),
+  "selectedIndex": zod.number().nullish().describe('mcq — the option index the student chose.'),
+  "correctIndex": zod.number().nullish().describe('mcq — the correct option index.'),
+  "isCorrect": zod.boolean().nullish().describe('mcq — whether the student\'s choice was correct.'),
+  "decisionOptions": zod.array(zod.string()).nullish().describe('dilemma — the possible decisions.'),
+  "decisionIndex": zod.number().nullish().describe('dilemma — the decision the student chose.'),
+  "considerations": zod.array(zod.string()).nullish().describe('dilemma — the considerations presented.'),
+  "ranking": zod.array(zod.number()).nullish().describe('dilemma — consideration indices the student ranked most-important first.')
+})).describe('Per-question review — each item with the student\'s answer and the correct answer.')
 })
 
 

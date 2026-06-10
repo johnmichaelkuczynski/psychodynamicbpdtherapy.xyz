@@ -68,6 +68,8 @@ export * from './reasoningItemType';
 export * from './reasoningMetric';
 export * from './reasoningResponseInput';
 export * from './reasoningResult';
+export * from './reasoningReviewItem';
+export * from './reasoningReviewItemType';
 export * from './rewriteLectureInput';
 export * from './rewriteLectureInputBaseLevel';
 export * from './savedAnswer';

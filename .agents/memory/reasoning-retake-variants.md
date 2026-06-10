@@ -43,3 +43,11 @@ any AI/validation failure.
 **How to apply:** any change to generation must keep these invariants; the
 client-facing item response intentionally omits `scoring` (the answer key), so
 verify skill order / correctness via the submit metrics breakdown, not the GET.
+
+**Per-question review on the results screen:** submit and revisit (start without
+retake on a submitted attempt) both return a `review[]` (question + student's
+answer + correct answer), built from the attempt's items and stored `responses`
+jsonb. An UNANSWERED MCQ (no selectedIndex) must report `isCorrect: null`, NOT
+`false` — submit validation does not force every item answered, and partial/
+historical responses exist, so treating "no answer" as "incorrect" mislabels it.
+The UI renders null as a neutral "No answer" badge, true=green, false=red.

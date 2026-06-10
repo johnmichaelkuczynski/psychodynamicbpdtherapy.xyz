@@ -10,10 +10,12 @@ import type {
   ReasoningItem,
   ReasoningResponseInput,
   ReasoningResult,
+  ReasoningReviewItem,
+  ReasoningMetric,
 } from "@workspace/api-client-react";
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
-import { CheckCircle2, AlertCircle } from "lucide-react";
+import { CheckCircle2, AlertCircle, XCircle } from "lucide-react";
 
 const RATING_LABELS = ["No importance", "Little", "Some", "Much", "Great"];
 
@@ -32,7 +34,12 @@ export default function ReasoningRunner() {
   const submitAttempt = useSubmitReasoningAttempt();
 
   const [result, setResult] = useState<ReasoningResult | null>(null);
-  const [alreadyPassed, setAlreadyPassed] = useState<{ feedback: string | null } | null>(null);
+  const [alreadyPassed, setAlreadyPassed] = useState<{
+    feedback: string | null;
+    headline: string | null;
+    metrics: ReasoningMetric[] | null;
+    review: ReasoningReviewItem[] | null;
+  } | null>(null);
 
   // The items to present for THIS attempt. The first take uses the seeded
   // template; each retake returns freshly generated questions of the same kind.
@@ -52,7 +59,12 @@ export default function ReasoningRunner() {
         onSuccess: (data) => {
           setItems(data.items);
           if (data.status === "submitted") {
-            setAlreadyPassed({ feedback: data.feedback ?? null });
+            setAlreadyPassed({
+              feedback: data.feedback ?? null,
+              headline: data.headline ?? null,
+              metrics: data.metrics ?? null,
+              review: data.review ?? null,
+            });
           }
         },
       },
@@ -174,6 +186,9 @@ export default function ReasoningRunner() {
   // Result / already-passed screen
   if (result || alreadyPassed) {
     const feedback = result?.feedback ?? alreadyPassed?.feedback ?? "";
+    const headline = result?.headline ?? alreadyPassed?.headline ?? null;
+    const metrics = result?.metrics ?? alreadyPassed?.metrics ?? [];
+    const review = result?.review ?? alreadyPassed?.review ?? [];
     return (
       <Layout>
         <div className="p-8 max-w-3xl mx-auto w-full flex flex-col gap-8">
@@ -198,15 +213,15 @@ export default function ReasoningRunner() {
             </div>
           </div>
 
-          {result?.headline && (
+          {headline && (
             <div className="rounded-lg border border-border bg-card p-5">
-              <p className="font-serif text-lg">{result.headline}</p>
+              <p className="font-serif text-lg">{headline}</p>
             </div>
           )}
 
-          {result?.metrics && result.metrics.length > 0 && (
+          {metrics.length > 0 && (
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-              {result.metrics.map((m) => (
+              {metrics.map((m) => (
                 <div key={m.label} className="rounded-md border border-border p-4">
                   <div className="text-xs uppercase tracking-wider text-muted-foreground">{m.label}</div>
                   <div className="text-xl font-semibold">{m.value}</div>
@@ -220,6 +235,15 @@ export default function ReasoningRunner() {
             <h3 className="font-serif font-semibold mb-2">Feedback</h3>
             <p className="text-sm leading-relaxed whitespace-pre-line">{feedback}</p>
           </div>
+
+          {review.length > 0 && (
+            <div className="flex flex-col gap-4">
+              <h3 className="font-serif font-semibold text-lg">Your answers</h3>
+              {review.map((r, i) => (
+                <ReviewCard key={r.itemId} item={r} index={i} />
+              ))}
+            </div>
+          )}
         </div>
       </Layout>
     );
@@ -414,6 +438,94 @@ function DilemmaQuestion({
           ))}
         </div>
       </div>
+    </div>
+  );
+}
+
+function ReviewCard({ item, index }: { item: ReasoningReviewItem; index: number }) {
+  if (item.type === "mcq") {
+    const options = item.options ?? [];
+    return (
+      <div className="rounded-lg border border-border bg-card p-5" data-testid={`review-item-${item.itemId}`}>
+        <div className="flex items-start justify-between gap-3 mb-3">
+          <p className="font-medium">
+            <span className="text-muted-foreground mr-2">{index + 1}.</span>
+            {item.prompt}
+          </p>
+          {item.isCorrect === null ? (
+            <span className="inline-flex items-center gap-1 text-muted-foreground text-sm font-medium shrink-0">
+              <AlertCircle className="w-4 h-4" /> No answer
+            </span>
+          ) : item.isCorrect ? (
+            <span className="inline-flex items-center gap-1 text-chart-2 text-sm font-medium shrink-0">
+              <CheckCircle2 className="w-4 h-4" /> Correct
+            </span>
+          ) : (
+            <span className="inline-flex items-center gap-1 text-destructive text-sm font-medium shrink-0">
+              <XCircle className="w-4 h-4" /> Incorrect
+            </span>
+          )}
+        </div>
+        <div className="flex flex-col gap-2">
+          {options.map((opt, oi) => {
+            const isCorrect = oi === item.correctIndex;
+            const isSelected = oi === item.selectedIndex;
+            const cls = isCorrect
+              ? "border-chart-2 bg-chart-2/10"
+              : isSelected
+                ? "border-destructive bg-destructive/10"
+                : "border-border";
+            return (
+              <div
+                key={oi}
+                className={`flex items-center justify-between gap-3 rounded-md border px-3 py-2 text-sm ${cls}`}
+              >
+                <span>{opt}</span>
+                <span className="flex items-center gap-2 text-xs shrink-0">
+                  {isSelected && <span className="text-muted-foreground">Your answer</span>}
+                  {isCorrect && (
+                    <span className="inline-flex items-center gap-1 text-chart-2 font-medium">
+                      <CheckCircle2 className="w-3.5 h-3.5" /> Correct answer
+                    </span>
+                  )}
+                </span>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    );
+  }
+
+  const decisionOptions = item.decisionOptions ?? [];
+  const considerations = item.considerations ?? [];
+  const ranking = item.ranking ?? [];
+  const chosen =
+    item.decisionIndex !== null && item.decisionIndex !== undefined
+      ? decisionOptions[item.decisionIndex]
+      : null;
+  return (
+    <div className="rounded-lg border border-border bg-card p-5" data-testid={`review-item-${item.itemId}`}>
+      <p className="font-medium mb-3">
+        <span className="text-muted-foreground mr-2">{index + 1}.</span>
+        {item.prompt}
+      </p>
+      <div className="mb-3">
+        <div className="text-xs uppercase tracking-wider text-muted-foreground mb-1">Your decision</div>
+        <p className="text-sm">{chosen ?? "No decision recorded"}</p>
+      </div>
+      {ranking.length > 0 && (
+        <div>
+          <div className="text-xs uppercase tracking-wider text-muted-foreground mb-1">
+            Your ranked considerations
+          </div>
+          <ol className="list-decimal list-inside text-sm flex flex-col gap-1">
+            {ranking.map((ci, i) => (
+              <li key={i}>{considerations[ci] ?? `Consideration ${ci + 1}`}</li>
+            ))}
+          </ol>
+        </div>
+      )}
     </div>
   );
 }

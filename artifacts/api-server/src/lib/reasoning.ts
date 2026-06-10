@@ -435,6 +435,67 @@ export async function generateVariantItems(
   return templateContent(templateItems);
 }
 
+// A per-question review row: the item, what the student answered, and the
+// correct answer. Built after submission so the student can see their work.
+export interface ReviewItem {
+  itemId: number;
+  type: "mcq" | "dilemma";
+  prompt: string;
+  options: string[] | null;
+  selectedIndex: number | null;
+  correctIndex: number | null;
+  isCorrect: boolean | null;
+  decisionOptions: string[] | null;
+  decisionIndex: number | null;
+  considerations: string[] | null;
+  ranking: number[] | null;
+}
+
+export function buildReview(
+  items: DiagnosticItemRow[],
+  responses: ResponseInput[],
+): ReviewItem[] {
+  const byItem = new Map(responses.map((r) => [r.itemId, r]));
+  return items.map((item) => {
+    const resp = byItem.get(item.id);
+    if (item.type === "mcq") {
+      const payload = item.payload as { options: string[] };
+      const scoring = item.scoring as McqScoring;
+      const selectedIndex =
+        typeof resp?.selectedIndex === "number" ? resp.selectedIndex : null;
+      return {
+        itemId: item.id,
+        type: "mcq" as const,
+        prompt: item.prompt,
+        options: payload.options,
+        selectedIndex,
+        correctIndex: scoring.correctIndex,
+        isCorrect:
+          selectedIndex === null ? null : selectedIndex === scoring.correctIndex,
+        decisionOptions: null,
+        decisionIndex: null,
+        considerations: null,
+        ranking: null,
+      };
+    }
+    const payload = item.payload as DilemmaPayload;
+    return {
+      itemId: item.id,
+      type: "dilemma" as const,
+      prompt: item.prompt,
+      options: null,
+      selectedIndex: null,
+      correctIndex: null,
+      isCorrect: null,
+      decisionOptions: payload.decisionOptions,
+      decisionIndex:
+        typeof resp?.decisionIndex === "number" ? resp.decisionIndex : null,
+      considerations: payload.considerations,
+      ranking: resp?.ranking ?? null,
+    };
+  });
+}
+
 // Strip the hidden scoring key before sending an item to the client.
 export function publicItem(item: DiagnosticItemRow) {
   const base = {

@@ -6,6 +6,7 @@
  * OpenAPI spec version: 0.1.0
  */
 import type { ReasoningMetric } from './reasoningMetric';
+import type { ReasoningReviewItem } from './reasoningReviewItem';
 
 export interface ReasoningResult {
   attemptId: number;
@@ -13,4 +14,6 @@ export interface ReasoningResult {
   feedback: string;
   headline: string;
   metrics: ReasoningMetric[];
+  /** Per-question review — each item with the student's answer and the correct answer. */
+  review: ReasoningReviewItem[];
 }

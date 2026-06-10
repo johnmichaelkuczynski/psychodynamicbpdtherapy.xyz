@@ -22,10 +22,13 @@ import {
   scoreAssessment,
   generateFeedback,
   generateVariantItems,
+  buildReview,
   publicItem,
   type DiagnosticItemRow,
   type GeneratedItemContent,
   type ResponseInput,
+  type ReasoningMetric,
+  type ScoreSummary,
 } from "../lib/reasoning";
 
 const router: IRouter = Router();
@@ -215,6 +218,13 @@ router.post("/reasoning/assessments/:assessmentId/start", async (req, res): Prom
       existing.find((x) => x.status === "submitted");
   if (reusable) {
     const items = await loadItemsForAttempt(id, reusable.id);
+    const reviewed = reusable.status === "submitted";
+    const summary = reviewed
+      ? (reusable.scoreSummary as ScoreSummary | null)
+      : null;
+    const storedResponses = reviewed
+      ? ((reusable.responses as ResponseInput[] | null) ?? [])
+      : [];
     res.json(
       StartReasoningAttemptResponse.parse({
         id: reusable.id,
@@ -224,6 +234,9 @@ router.post("/reasoning/assessments/:assessmentId/start", async (req, res): Prom
         submittedAt: reusable.submittedAt?.toISOString() ?? null,
         passed: reusable.passed,
         feedback: reusable.feedback,
+        headline: summary?.headline ?? null,
+        metrics: (summary?.metrics as ReasoningMetric[] | undefined) ?? null,
+        review: reviewed ? buildReview(items, storedResponses) : null,
         items: items.map(publicItem),
       }),
     );
@@ -378,6 +391,7 @@ router.post("/reasoning/assessments/:assessmentId/submit", async (req, res): Pro
       feedback,
       headline: summary.headline,
       metrics: summary.metrics,
+      review: buildReview(items, responses),
     }),
   );
 });

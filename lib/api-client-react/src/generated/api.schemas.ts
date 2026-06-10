@@ -552,6 +552,67 @@ export const ReasoningAttemptStateStatus = {
   submitted: 'submitted',
 } as const;
 
+export interface ReasoningMetric {
+  label: string;
+  value: string;
+  /** @nullable */
+  detail?: string | null;
+}
+
+export type ReasoningReviewItemType = typeof ReasoningReviewItemType[keyof typeof ReasoningReviewItemType];
+
+
+export const ReasoningReviewItemType = {
+  dilemma: 'dilemma',
+  mcq: 'mcq',
+} as const;
+
+export interface ReasoningReviewItem {
+  itemId: number;
+  type: ReasoningReviewItemType;
+  prompt: string;
+  /**
+     * mcq — the answer choices shown.
+     * @nullable
+     */
+  options?: string[] | null;
+  /**
+     * mcq — the option index the student chose.
+     * @nullable
+     */
+  selectedIndex?: number | null;
+  /**
+     * mcq — the correct option index.
+     * @nullable
+     */
+  correctIndex?: number | null;
+  /**
+     * mcq — whether the student's choice was correct.
+     * @nullable
+     */
+  isCorrect?: boolean | null;
+  /**
+     * dilemma — the possible decisions.
+     * @nullable
+     */
+  decisionOptions?: string[] | null;
+  /**
+     * dilemma — the decision the student chose.
+     * @nullable
+     */
+  decisionIndex?: number | null;
+  /**
+     * dilemma — the considerations presented.
+     * @nullable
+     */
+  considerations?: string[] | null;
+  /**
+     * dilemma — consideration indices the student ranked most-important first.
+     * @nullable
+     */
+  ranking?: number[] | null;
+}
+
 export interface ReasoningAttemptState {
   id: number;
   assessmentId: number;
@@ -563,6 +624,21 @@ export interface ReasoningAttemptState {
   passed?: boolean | null;
   /** @nullable */
   feedback?: string | null;
+  /**
+     * For a submitted attempt being reviewed — the score headline.
+     * @nullable
+     */
+  headline?: string | null;
+  /**
+     * For a submitted attempt being reviewed — the score metrics.
+     * @nullable
+     */
+  metrics?: ReasoningMetric[] | null;
+  /**
+     * For a submitted attempt being reviewed — per-question review with the student's answer and the correct answer.
+     * @nullable
+     */
+  review?: ReasoningReviewItem[] | null;
   /** The exact items to present for THIS attempt. The first take uses the seeded template; each retake returns freshly generated questions of the same kind (same instrument, skill areas, and structure). */
   items: ReasoningItem[];
 }
@@ -624,19 +700,14 @@ export interface SubmitReasoningBody {
   responses: ReasoningResponseInput[];
 }
 
-export interface ReasoningMetric {
-  label: string;
-  value: string;
-  /** @nullable */
-  detail?: string | null;
-}
-
 export interface ReasoningResult {
   attemptId: number;
   passed: boolean;
   feedback: string;
   headline: string;
   metrics: ReasoningMetric[];
+  /** Per-question review — each item with the student's answer and the correct answer. */
+  review: ReasoningReviewItem[];
 }
 
 export interface GradeComponent {

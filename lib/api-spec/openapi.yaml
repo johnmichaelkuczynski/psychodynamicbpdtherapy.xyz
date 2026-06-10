@@ -1125,6 +1125,19 @@ components:
         submittedAt: { type: ["string", "null"], format: date-time }
         passed: { type: ["boolean", "null"] }
         feedback: { type: ["string", "null"] }
+        headline:
+          type: ["string", "null"]
+          description: For a submitted attempt being reviewed — the score headline.
+        metrics:
+          type: ["array", "null"]
+          description: For a submitted attempt being reviewed — the score metrics.
+          items:
+            $ref: "#/components/schemas/ReasoningMetric"
+        review:
+          type: ["array", "null"]
+          description: For a submitted attempt being reviewed — per-question review with the student's answer and the correct answer.
+          items:
+            $ref: "#/components/schemas/ReasoningReviewItem"
         items:
           type: array
           description: >-
@@ -1194,9 +1207,47 @@ components:
         value: { type: string }
         detail: { type: ["string", "null"] }
 
+    ReasoningReviewItem:
+      type: object
+      required: [itemId, type, prompt]
+      properties:
+        itemId: { type: integer }
+        type:
+          type: string
+          enum: [dilemma, mcq]
+        prompt: { type: string }
+        options:
+          type: ["array", "null"]
+          items: { type: string }
+          description: mcq — the answer choices shown.
+        selectedIndex:
+          type: ["integer", "null"]
+          description: mcq — the option index the student chose.
+        correctIndex:
+          type: ["integer", "null"]
+          description: mcq — the correct option index.
+        isCorrect:
+          type: ["boolean", "null"]
+          description: mcq — whether the student's choice was correct.
+        decisionOptions:
+          type: ["array", "null"]
+          items: { type: string }
+          description: dilemma — the possible decisions.
+        decisionIndex:
+          type: ["integer", "null"]
+          description: dilemma — the decision the student chose.
+        considerations:
+          type: ["array", "null"]
+          items: { type: string }
+          description: dilemma — the considerations presented.
+        ranking:
+          type: ["array", "null"]
+          items: { type: integer }
+          description: dilemma — consideration indices the student ranked most-important first.
+
     ReasoningResult:
       type: object
-      required: [attemptId, passed, feedback, headline, metrics]
+      required: [attemptId, passed, feedback, headline, metrics, review]
       properties:
         attemptId: { type: integer }
         passed: { type: boolean }
@@ -1206,6 +1257,11 @@ components:
           type: array
           items:
             $ref: "#/components/schemas/ReasoningMetric"
+        review:
+          type: array
+          description: Per-question review — each item with the student's answer and the correct answer.
+          items:
+            $ref: "#/components/schemas/ReasoningReviewItem"
 
     GradeComponent:
       type: object
