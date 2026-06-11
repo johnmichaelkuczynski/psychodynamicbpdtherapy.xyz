@@ -110,7 +110,7 @@ export default function Grades() {
                       <div className="flex flex-col">
                         <span className="font-medium">{r.title}</span>
                         <span className="text-xs uppercase tracking-wider text-muted-foreground">
-                          {r.instrument === "ethical" ? "Ethical Reasoning" : "Critical Reasoning"} ·{" "}
+                          {r.instrument === "ethical" ? "Professional Judgment" : "Critical Reasoning"} ·{" "}
                           {PHASE_SHORT[r.phase] ?? r.phase}
                         </span>
                       </div>

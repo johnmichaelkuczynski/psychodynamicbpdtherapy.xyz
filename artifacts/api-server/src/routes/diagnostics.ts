@@ -116,7 +116,7 @@ router.get("/diagnostics/system", async (_req, res) => {
       if (!process.env.GPTZERO_API_KEY)
         throw new Error("GPTZERO_API_KEY is not set");
       const score = await gptzeroAiScore(
-        "In conclusion, the multifaceted tapestry of ethical reasoning is paramount to navigating the labyrinthine landscape of contemporary moral discourse and its many implications.",
+        "In conclusion, the multifaceted tapestry of data-driven decision-making is paramount to navigating the labyrinthine landscape of contemporary business intelligence and its many implications.",
       );
       if (score == null)
         throw new Error("GPTZero returned no score (key invalid or API down)");
@@ -380,7 +380,7 @@ router.post("/diagnostics/synthetic-run", async (_req, res) => {
   steps.push(
     await run("AI detection scan (pasted-style text should flag)", async () => {
       const r = await detect(
-        "In conclusion, the multifaceted tapestry of ethical reasoning is paramount to navigating the labyrinthine landscape of contemporary moral discourse.",
+        "In conclusion, the multifaceted tapestry of data-driven decision-making is paramount to navigating the labyrinthine landscape of contemporary business intelligence.",
         {
           keystrokeCount: 8,
           eraseCount: 0,

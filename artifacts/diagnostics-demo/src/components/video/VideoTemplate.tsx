@@ -78,9 +78,9 @@ export default function VideoTemplate({
           transition={{ duration: 20, repeat: Infinity, ease: 'easeInOut' }}
         />
 
-        {/* Balance scale image layer, fades in for outro */}
+        {/* Data-viz accent image layer, fades in for outro */}
         <motion.img
-          src={`${import.meta.env.BASE_URL}images/bg-balance-scale.png`}
+          src={`${import.meta.env.BASE_URL}images/bg-data-grid.png`}
           className="absolute inset-0 w-full h-full object-cover mix-blend-screen"
           alt=""
           animate={{

@@ -1,6 +1,6 @@
 kind = "web"
 previewPath = "/"
-title = "Ethics 101"
+title = "Data 101"
 version = "1.0.0"
 id = "artifacts/qr-course"
 router = "path"

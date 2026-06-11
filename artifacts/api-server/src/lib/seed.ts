@@ -14,7 +14,7 @@ import { logger } from "./logger";
 // the value stored in seed_meta; a mismatch forces a full re-seed, so content
 // edits self-heal in every environment (including a republished production)
 // without a manual database wipe.
-const SEED_CONTENT_VERSION = "2026-06-11-data-analytics-v1";
+const SEED_CONTENT_VERSION = "2026-06-11-data-analytics-v2";
 
 type SeedTopic = {
   slug: string;
@@ -590,7 +590,7 @@ When you justify a decision, the *kind* of reason you appeal to matters:
 - **Maintaining-norms reasons** — what the rules, the law, or one's role formally require. ("Company policy says to.") These keep order, but a rule can itself be inadequate.
 - **Principle-based reasons** — appeals to honesty, fairness, and the impartial interests of *everyone affected*, justifiable to any reasonable person. ("The people relying on this report deserve an accurate picture.")
 
-The diagnostic's **principled-reasoning index** rises when you give the most weight to principle-based considerations rather than to convenience or to "because that's the rule."
+The diagnostic's **principled-judgment index** rises when you give the most weight to principle-based considerations rather than to convenience or to "because that's the rule."
 
 ## How to take the instrument well
 

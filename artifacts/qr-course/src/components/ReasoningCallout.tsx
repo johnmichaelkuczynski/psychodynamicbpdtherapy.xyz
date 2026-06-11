@@ -4,7 +4,7 @@ import type { ReasoningAssessmentSummary } from "@workspace/api-client-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
-import { Scale, Brain, CheckCircle2 } from "lucide-react";
+import { Compass, Brain, CheckCircle2 } from "lucide-react";
 
 type Phase = "baseline" | "unit1";
 
@@ -21,7 +21,7 @@ const BLURBS: Record<Phase, string> = {
 
 function Row({ a }: { a: ReasoningAssessmentSummary }) {
   const isEthical = a.instrument === "ethical";
-  const Icon = isEthical ? Scale : Brain;
+  const Icon = isEthical ? Compass : Brain;
   const passed = a.status === "passed";
   return (
     <Link href={`/reasoning/${a.id}`}>
@@ -32,7 +32,7 @@ function Row({ a }: { a: ReasoningAssessmentSummary }) {
         <div className="flex items-center gap-3 min-w-0">
           <Icon className="w-4 h-4 text-primary shrink-0" />
           <span className="text-sm font-medium truncate">
-            {isEthical ? "Ethical Reasoning" : "Critical Reasoning"}
+            {isEthical ? "Professional Judgment" : "Critical Reasoning"}
           </span>
         </div>
         {passed ? (

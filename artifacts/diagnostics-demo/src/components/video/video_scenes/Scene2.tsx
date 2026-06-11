@@ -35,15 +35,15 @@ export function Scene2() {
           animate={phase >= 2 ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.6 }}
         >
-          <h3 className="text-[1.8vw] font-display text-[var(--color-accent)] font-semibold mb-2">Ethical Reasoning</h3>
-          <p className="text-[1vw] text-[var(--color-text-secondary)] mb-6 uppercase tracking-wider font-semibold opacity-70">Defining Issues Test (DIT)</p>
+          <h3 className="text-[1.8vw] font-display text-[var(--color-accent)] font-semibold mb-2">Professional Judgment</h3>
+          <p className="text-[1vw] text-[var(--color-text-secondary)] mb-6 uppercase tracking-wider font-semibold opacity-70">Data-Work Judgment Scenarios</p>
           <div className="space-y-4">
             <div className="h-[2px] w-12 bg-[var(--color-accent)]" />
             <p className="text-[1.1vw] text-[var(--color-text-primary)] font-light leading-relaxed">
-              Read moral dilemmas. Rate considerations. Rank your top 4.
+              Read data-work scenarios. Rate considerations. Rank your top 4.
             </p>
             <p className="text-[1.1vw] text-[var(--color-text-secondary)] font-light leading-relaxed italic">
-              Surfaces your moral reasoning schema (personal-interest vs. principled).
+              Surfaces how you weigh considerations (convenience vs. principle).
             </p>
           </div>
         </motion.div>

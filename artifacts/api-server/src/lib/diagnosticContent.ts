@@ -3,9 +3,9 @@
 //
 // Two instruments, each administered twice (a baseline before the course and a
 // checkpoint after the single unit) with MUTUALLY UNIQUE items:
-//   - Ethical Reasoning  (DIT-style): a workplace data-ethics dilemma; the
+//   - Professional Judgment (DIT-style): a realistic data-work scenario; the
 //     student rates ~12 considerations by importance and ranks the most
-//     important few. A principled-reasoning ("P") index is computed from how
+//     important few. A principled-judgment ("P") index is computed from how
 //     postconventional considerations are ranked. Stages: P = personal
 //     interest, M = maintaining norms/rules/approval, PC = postconventional/
 //     principled, X = meaningless (a reliability check — ranking it high
@@ -60,7 +60,7 @@ const CRITICAL_INSTRUCTIONS =
   "Answer each question by selecting the single best option. Work carefully — these questions measure reasoning, not recall. Submitting completes the assessment and you'll receive written feedback on your performance.";
 
 // ===========================================================================
-// ETHICAL REASONING — two unique data-work dilemmas
+// PROFESSIONAL JUDGMENT — two unique data-work scenarios
 // ===========================================================================
 
 const DILEMMA_BASELINE: DilemmaItem = {
@@ -343,7 +343,7 @@ export const DIAGNOSTIC_SEED: DiagnosticSeed[] = [
   {
     instrument: "ethical",
     phase: "baseline",
-    title: "Ethical Reasoning Inventory — Baseline",
+    title: "Professional Judgment Inventory — Baseline",
     subtitle: "Before the course",
     instructions: ETHICAL_INSTRUCTIONS,
     dilemmas: [DILEMMA_BASELINE],
@@ -359,7 +359,7 @@ export const DIAGNOSTIC_SEED: DiagnosticSeed[] = [
   {
     instrument: "ethical",
     phase: "unit1",
-    title: "Ethical Reasoning Inventory — Course Checkpoint",
+    title: "Professional Judgment Inventory — Course Checkpoint",
     subtitle: "After Unit 1: Foundations of Data Analytics",
     instructions: ETHICAL_INSTRUCTIONS,
     dilemmas: [DILEMMA_UNIT1],

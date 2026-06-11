@@ -6,7 +6,7 @@ import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { Link } from "wouter";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Button } from "@/components/ui/button";
-import { Scale, Brain } from "lucide-react";
+import { Compass, Brain } from "lucide-react";
 
 const PHASE_LABELS: Record<string, string> = {
   baseline: "Baseline — before the course",
@@ -31,14 +31,14 @@ function statusBadge(status: string) {
 
 function InstrumentCard({ a }: { a: ReasoningAssessmentSummary }) {
   const isEthical = a.instrument === "ethical";
-  const Icon = isEthical ? Scale : Brain;
+  const Icon = isEthical ? Compass : Brain;
   return (
     <Card className="flex flex-col justify-between" data-testid={`card-reasoning-${a.id}`}>
       <CardHeader>
         <div className="flex justify-between items-start mb-2">
           <span className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-muted-foreground">
             <Icon className="w-3.5 h-3.5" />
-            {isEthical ? "Ethical Reasoning" : "Critical Reasoning"}
+            {isEthical ? "Professional Judgment" : "Critical Reasoning"}
           </span>
           {statusBadge(a.status)}
         </div>
@@ -47,7 +47,7 @@ function InstrumentCard({ a }: { a: ReasoningAssessmentSummary }) {
       <CardContent className="flex flex-col gap-4">
         <p className="text-sm text-muted-foreground">
           {isEthical
-            ? "Decide a moral dilemma, then rate and rank the considerations behind your choice."
+            ? "Work through a realistic data-work scenario, then rate and rank the considerations behind your decision."
             : `${a.itemCount} multiple-choice questions across five reasoning skills.`}
         </p>
         <Link href={`/reasoning/${a.id}`}>
@@ -80,7 +80,7 @@ export default function Reasoning() {
             Diagnostic Assessments
           </h1>
           <p className="text-muted-foreground">
-            Two short instruments — Ethical Reasoning and Critical Reasoning — taken
+            Two short instruments — Professional Judgment and Critical Reasoning — taken
             once at the start and again after the unit. Submitting an assessment
             earns a pass; together they count for 20% of your course grade.
           </p>

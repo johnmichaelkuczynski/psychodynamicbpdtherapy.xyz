@@ -133,7 +133,7 @@ export default function ReasoningRunner() {
         if (mcqAnswers[item.id] === undefined) return "Please answer every question before submitting.";
       } else {
         const st = dilemma[item.id];
-        if (!st || st.decisionIndex === null) return "Please choose a decision for the dilemma.";
+        if (!st || st.decisionIndex === null) return "Please choose a decision for the scenario.";
         const rankCount = item.rankCount ?? 4;
         const ranked = st ? Object.values(st.ranks).filter((v) => v >= 1 && v <= rankCount).length : 0;
         if (ranked < rankCount) return `Please rank your top ${rankCount} considerations.`;
