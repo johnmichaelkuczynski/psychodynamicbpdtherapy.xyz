@@ -8,3 +8,4 @@
 - [video-js scaffold gotchas](video-js-scaffold-gotchas.md) — fresh video builds break on sceneTransitions named-import, font @import order, and tsconfig missing dom lib; fix before post-build steps.
 - [Orval request-body naming](orval-request-body-naming.md) — name OpenAPI requestBody component schemas `*Input`, never `<OperationId>Body`, or the zod barrel collides with orval's generated operation-body symbol.
 - [Reasoning instrument label](reasoning-instrument-label.md) — instrument enum stays `"ethical"` internally (db/openapi/codegen stability); ALWAYS map it to display label "Professional Judgment" at every render point, never print the raw enum.
+- [Course design mandates](course-design-mandates.md) — math keyboard required on ALL inputs incl. tutor (even no-math course); every question (incl. adaptive drill) must be scenario-reasoning, never one-word/recitation.

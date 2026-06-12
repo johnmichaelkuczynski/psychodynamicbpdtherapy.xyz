@@ -17,6 +17,7 @@ import { useParams, Link } from "wouter";
 import { Skeleton } from "@/components/ui/skeleton";
 import { MarkdownRenderer } from "@/components/MarkdownRenderer";
 import { AnswerInput } from "@/components/AnswerInput";
+import { MathKeyboard, insertAtTextareaCursor } from "@/components/MathKeyboard";
 import { StarterQuestionCard } from "@/components/StarterQuestionCard";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, MessageSquare, Sparkles, Send, X, RefreshCw, CheckCircle2, XCircle, Wand2, RotateCcw } from "lucide-react";
@@ -468,6 +469,21 @@ function TutorPane({
   const [input, setInput] = useState("");
   const ask = useAskTutor();
   const scrollRef = useRef<HTMLDivElement | null>(null);
+  const inputRef = useRef<HTMLTextAreaElement | null>(null);
+
+  const handleMathInsert = (text: string, cursorBack = 0) => {
+    const el = inputRef.current;
+    if (!el) {
+      setInput((v) => v + text);
+      return;
+    }
+    const { value, cursor } = insertAtTextareaCursor(el, text, cursorBack);
+    setInput(value);
+    requestAnimationFrame(() => {
+      el.focus();
+      el.setSelectionRange(cursor, cursor);
+    });
+  };
 
   // Preloaded starter questions for this lecture
   const [suggestions, setSuggestions] = useState<string[] | null>(null);
@@ -553,24 +569,28 @@ function TutorPane({
 
   return (
     <div className="flex-1 flex flex-col min-h-0">
-      <div className="border-b border-border bg-background p-3 flex gap-2 items-end">
-        <textarea
-          value={input}
-          onChange={(e) => setInput(e.target.value)}
-          onKeyDown={(e) => {
-            if (e.key === "Enter" && !e.shiftKey) {
-              e.preventDefault();
-              send();
-            }
-          }}
-          placeholder={placeholder}
-          rows={4}
-          className="flex-1 bg-secondary border-none rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-1 focus:ring-primary resize-y min-h-[96px] max-h-[280px]"
-          data-testid="input-tutor-question"
-        />
-        <Button size="lg" onClick={send} disabled={!input.trim() || ask.isPending}>
-          <Send className="w-4 h-4" />
-        </Button>
+      <div className="border-b border-border bg-background p-3 flex flex-col gap-2">
+        <div className="flex gap-2 items-end">
+          <textarea
+            ref={inputRef}
+            value={input}
+            onChange={(e) => setInput(e.target.value)}
+            onKeyDown={(e) => {
+              if (e.key === "Enter" && !e.shiftKey) {
+                e.preventDefault();
+                send();
+              }
+            }}
+            placeholder={placeholder}
+            rows={4}
+            className="flex-1 bg-secondary border-none rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-1 focus:ring-primary resize-y min-h-[96px] max-h-[280px]"
+            data-testid="input-tutor-question"
+          />
+          <Button size="lg" onClick={send} disabled={!input.trim() || ask.isPending}>
+            <Send className="w-4 h-4" />
+          </Button>
+        </div>
+        <MathKeyboard onInsert={handleMathInsert} />
       </div>
       <div ref={scrollRef} className="flex-1 overflow-y-auto p-4 flex flex-col gap-3">
         {showSuggestions && (

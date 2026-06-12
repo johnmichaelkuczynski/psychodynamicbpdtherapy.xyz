@@ -12,6 +12,7 @@ import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
 import { AnswerInput } from "@/components/AnswerInput";
+import { MathKeyboard, insertAtTextareaCursor } from "@/components/MathKeyboard";
 import { MarkdownRenderer } from "@/components/MarkdownRenderer";
 import {
   ArrowLeft,
@@ -311,10 +312,25 @@ function TutorPane({
 }) {
   const [input, setInput] = useState("");
   const scrollRef = useRef<HTMLDivElement | null>(null);
+  const inputRef = useRef<HTMLTextAreaElement | null>(null);
 
   useEffect(() => {
     scrollRef.current?.scrollTo({ top: 1e9, behavior: "smooth" });
   }, [history.length, pending]);
+
+  const handleMathInsert = (text: string, cursorBack = 0) => {
+    const el = inputRef.current;
+    if (!el) {
+      setInput((v) => v + text);
+      return;
+    }
+    const { value, cursor } = insertAtTextareaCursor(el, text, cursorBack);
+    setInput(value);
+    requestAnimationFrame(() => {
+      el.focus();
+      el.setSelectionRange(cursor, cursor);
+    });
+  };
 
   function send() {
     const msg = input.trim();
@@ -333,23 +349,27 @@ function TutorPane({
         </span>
       </div>
 
-      <div className="border-b border-border bg-background p-3 flex gap-2 items-end">
-        <textarea
-          value={input}
-          onChange={(e) => setInput(e.target.value)}
-          onKeyDown={(e) => {
-            if (e.key === "Enter" && !e.shiftKey) {
-              e.preventDefault();
-              send();
-            }
-          }}
-          placeholder="Ask the tutor anything about these problems or your feedback… (Shift+Enter for newline)"
-          rows={4}
-          className="flex-1 bg-secondary border-none rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-1 focus:ring-primary resize-y min-h-[96px] max-h-[280px]"
-        />
-        <Button size="lg" onClick={send} disabled={!input.trim() || pending}>
-          <Send className="w-4 h-4" />
-        </Button>
+      <div className="border-b border-border bg-background p-3 flex flex-col gap-2">
+        <div className="flex gap-2 items-end">
+          <textarea
+            ref={inputRef}
+            value={input}
+            onChange={(e) => setInput(e.target.value)}
+            onKeyDown={(e) => {
+              if (e.key === "Enter" && !e.shiftKey) {
+                e.preventDefault();
+                send();
+              }
+            }}
+            placeholder="Ask the tutor anything about these problems or your feedback… (Shift+Enter for newline)"
+            rows={4}
+            className="flex-1 bg-secondary border-none rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-1 focus:ring-primary resize-y min-h-[96px] max-h-[280px]"
+          />
+          <Button size="lg" onClick={send} disabled={!input.trim() || pending}>
+            <Send className="w-4 h-4" />
+          </Button>
+        </div>
+        <MathKeyboard onInsert={handleMathInsert} />
       </div>
 
       <div

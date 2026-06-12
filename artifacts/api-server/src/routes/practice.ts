@@ -157,16 +157,18 @@ router.post("/practice/sessions/:sessionId/next", async (req, res): Promise<void
     }>(
       `You generate a single introductory data analytics practice problem for a curious beginner. The problem MUST be on the topic "${topic.title}" and at difficulty "${difficultyLabel}" (${difficulty.toFixed(
         1,
-      )}/5). Test general knowledge of the SUBJECT of data analytics, not recall of any particular book, lecture, or course. The question MUST be fully self-contained and answerable by anyone who knows the discipline: do NOT reference "the lecture", "the text", "the course", "the example", "the case", or any named character or example a student would only recognize from a specific reading. If you use a scenario, state it in full inside the question itself. Favor concept-identification, short self-contained scenario, and true/false-with-reason questions. The answer must be a short string (a single word, a term, "yes"/"no", or one short phrase) — never multi-paragraph. Respond as strict JSON: {"prompt": string, "correctAnswer": string, "explanation": string}. Avoid these recent prompts: ${JSON.stringify(
+      )}/5). Test general knowledge of the SUBJECT of data analytics, not recall of any particular book, lecture, or course. The question MUST be fully self-contained and answerable by anyone who knows the discipline: do NOT reference "the lecture", "the text", "the course", "the example", "the case", or any named character or example a student would only recognize from a specific reading.\n\nSTRICT QUESTION RULES (no exceptions):\n- Every question must present a SPECIFIC, concrete everyday scenario (e.g. a tally of classmates' favorite lunches, a week of bedtimes, a bar chart whose axis starts at 90) and ask the student to APPLY the topic's idea to THAT scenario — to judge, sort, compare, count, interpret, or decide.\n- NEVER ask for a definition, a term, or what something is "called"; NEVER ask the student to recite an abstract formulation from any reading.\n- NEVER write a question whose answer is a single word, a single term, or a bare "yes"/"no". The answer must require reasoning that is HARD TO SHARE: the student must explain their thinking about the specific scenario in 2-4 sentences.\n- The "correctAnswer" is the model answer (2-4 sentences) showing the operational reasoning a strong student would give for THIS scenario. The "explanation" briefly says what earns full credit.\n\nRespond as strict JSON: {"prompt": string, "correctAnswer": string, "explanation": string}. Avoid these recent prompts: ${JSON.stringify(
         lastProblems.map((p) => p.prompt),
       )}.`,
       userRequest || `Generate a new ${difficultyLabel} problem on ${topic.title}.`,
     );
   } catch {
     generated = {
-      prompt: `Practice (${topic.title}): In one sentence, explain the central idea of "${topic.title}" and give an example.`,
-      correctAnswer: "A clear statement of the key idea with a relevant example.",
-      explanation: "Re-read the lecture for this topic and state its main claim in your own words.",
+      prompt: `Practice (${topic.title}): A classmate collected some everyday data but isn't sure what to make of it. Using the idea behind "${topic.title}", walk through how you'd help them make sense of it, and explain your reasoning in 2-4 sentences about that situation.`,
+      correctAnswer:
+        "A strong answer applies the topic to the concrete situation step by step — saying what to look at, what it would mean, and what to do next — rather than just naming or defining the idea.",
+      explanation:
+        "Full credit reasons about the specific situation and shows operational understanding; restating a definition does not earn credit.",
     };
   }
 
