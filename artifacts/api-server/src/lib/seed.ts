@@ -14,7 +14,7 @@ import { logger } from "./logger";
 // the value stored in seed_meta; a mismatch forces a full re-seed, so content
 // edits self-heal in every environment (including a republished production)
 // without a manual database wipe.
-const SEED_CONTENT_VERSION = "2026-06-11-data-analytics-v2";
+const SEED_CONTENT_VERSION = "2026-06-12-data-for-everyone-v1";
 
 type SeedTopic = {
   slug: string;
@@ -26,314 +26,275 @@ type SeedTopic = {
 };
 
 const TOPICS: SeedTopic[] = [
-  // Unit 1 — Foundations of Data Analytics
+  // Unit 1 — Data Analytics for Everyone
   {
-    slug: "what-is-data-analytics",
-    title: "What data analytics is and the analytics workflow",
+    slug: "what-is-data",
+    title: "What is data, really?",
     weekNumber: 1,
-    blurb: "What analytics is, its four types, and the end-to-end workflow.",
-    lectureTitle: "1.1 What data analytics is and the analytics workflow",
-    body: `# What data analytics is
+    blurb: "Data is just things you notice, written down — and you use it every day.",
+    lectureTitle: "1.1 What is data, really? (you already think in data every day)",
+    body: `# What is data, really?
 
-**Data analytics** is the practice of examining raw data in order to answer a question, support a decision, or reveal a pattern. The goal is to turn **data** (raw, unorganized facts and figures) into **information** (data placed in context so it means something), and finally into **insight** that someone can act on.
+People hear the word **data** and picture spreadsheets, scientists, or giant computers. But the real idea is much smaller and much friendlier: **data is just facts you notice about the world, recorded so you can use them later.**
 
-A useful slogan: *data is not the point — decisions are.* An analysis that never changes what anyone does has failed, no matter how clever the math.
+A score in a game is data. The temperature outside is data. How many slices of pizza are left is data. None of that needs a computer — it just needs someone paying attention.
 
-## The four types of analysis
+## You already think in data
 
-Most analytics questions fall into one of four levels, in increasing order of value and difficulty:
+You use data constantly without calling it that:
 
-- **Descriptive** — *What happened?* Summaries of the past: total sales last quarter, average response time. This is reporting.
-- **Diagnostic** — *Why did it happen?* Drilling into the descriptive numbers to find causes: sales fell because one region underperformed.
-- **Predictive** — *What is likely to happen next?* Using patterns in past data to forecast: this customer is likely to churn.
-- **Prescriptive** — *What should we do about it?* Recommending an action: offer this customer a discount now.
+- You check the weather and decide whether to bring a jacket.
+- You notice the bus is usually late on rainy days, so you leave earlier.
+- You remember that your phone dies by lunch, so you charge it at night.
 
-A beginner course like this one lives mostly in the **descriptive** and **diagnostic** levels — the foundation everything else is built on.
+Each of those is the same move: you **noticed something**, you **remembered it**, and you **used it to make a choice**. That is the whole heart of data analytics, just done in your head.
 
-## The analytics workflow
+## From data to a decision
 
-Real analytics is a repeatable process, not a single calculation. A common version of the workflow has six steps:
+There is a simple ladder that turns raw facts into something useful:
 
-1. **Ask** — state the question or decision precisely. A vague question ("how are we doing?") produces a vague answer.
-2. **Acquire** — collect the data you need from spreadsheets, databases, files, or APIs.
-3. **Clean** — fix the errors, gaps, and inconsistencies that real data always has. This is usually the most time-consuming step.
-4. **Analyze** — filter, aggregate, compare, and look for patterns.
-5. **Visualize / Communicate** — present the result so a decision-maker can understand it quickly.
-6. **Act** — use the result to make a decision, then often loop back with a new question.
+- **Data** — a plain fact: "It rained Monday, Wednesday, and Friday."
+- **Information** — the fact placed in context: "It rained on 3 of the 5 school days last week."
+- **Insight** — what it means for you: "Most of this week was wet, so I should keep an umbrella in my bag."
 
-The rest of this course walks through the tools for these steps: spreadsheets and SQL to acquire and query, Excel and Python to clean and analyze, and Tableau or Power BI to visualize.
+The point of the ladder is the last rung. A fact that never changes a choice is just trivia. **Data is only worth collecting when it can help you decide something.**
+
+## Where everyday data comes from
+
+You can gather data the same ways grown-up analysts do, only simpler:
+
+- **Counting** — how many people brought lunch today.
+- **Measuring** — how long it takes you to walk to school.
+- **Asking** — a quick survey of which movie your friends want to see.
+- **Watching over time** — writing down your bedtime every night for a week.
+
+The trick is to write it down. A memory is fuzzy and changes; a written record stays put and can be checked.
 
 ## In the real world
 
-In 1854 a cholera outbreak killed hundreds in London's Soho district. Physician John Snow **acquired** data by marking each death on a street map, **analyzed** the clustering, and saw the deaths ringed a single public water pump on Broad Street. He **communicated** the finding and the pump handle was removed; the outbreak subsided. Snow had no computer — but he ran the entire analytics workflow, and the *decision* (close the pump), not the map itself, is what saved lives.`,
+Long before fancy tools existed, a nurse named Florence Nightingale collected data during a war in the 1850s. She simply wrote down what soldiers were dying from — and noticed that far more were dying from dirty conditions and infection than from battle wounds. That was just careful counting, written down. Her records convinced leaders to clean up the hospitals, and far fewer soldiers died. She didn't have a computer. She had the habit of noticing, recording, and acting — which is all data really is.`,
   },
   {
-    slug: "data-types-spreadsheets",
-    title: "Data types, structure, and spreadsheets",
+    slug: "spotting-patterns",
+    title: "Spotting patterns: how noticing turns into knowing",
     weekNumber: 1,
-    blurb: "Structured data, variable types, tidy tables, and Excel fundamentals.",
-    lectureTitle: "1.2 Data types, structure, and spreadsheets (Excel fundamentals)",
-    body: `# Data types, structure, and spreadsheets
+    blurb: "A pattern is something that repeats or stands out — and patterns are how data becomes knowledge.",
+    lectureTitle: "1.2 Spotting patterns: how noticing turns into knowing",
+    body: `# Spotting patterns: how noticing turns into knowing
 
-Before you can analyze data you have to understand how it is *shaped* and what *kind* of values it holds.
+One fact on its own rarely tells you much. The magic happens when you have a few facts and you start to see how they fit together. That fitting-together is called a **pattern** — and spotting patterns is how a pile of data turns into something you actually *know*.
 
-## Structured vs. unstructured data
+## What a pattern is
 
-**Structured data** is organized into a table of rows and columns — like a spreadsheet or a database table. **Unstructured data** has no predefined shape: free-form text, images, audio. This course works almost entirely with structured data, the kind spreadsheets and SQL were built for.
+A **pattern** is anything that repeats, trends, or clearly stands out. Three kinds show up again and again:
 
-In a structured table:
+- **A trend** — things moving in one direction over time. "Every week this month, more kids signed up for the club than the week before."
+- **A group difference** — one group behaving differently from another. "People who ate breakfast got higher quiz scores than people who skipped it."
+- **An outlier** — one thing that doesn't fit the rest. "Everyone scored around 80 on the test, but one paper had a 12."
 
-- a **row** is one **observation** (one customer, one sale, one day);
-- a **column** is one **variable** (an attribute measured for every observation, such as "price" or "city").
+Once you can name these three, you start seeing them everywhere.
 
-## Variable types
+## Noticing, then comparing
 
-Each column holds one *type* of value, and the type determines what you can do with it:
+Patterns almost always come from **comparing**. A single number ("I made 6 free throws") means little. Compared to something, it comes alive:
 
-- **Numeric** — numbers you can do arithmetic on (price, age, quantity). Split into *continuous* (can take any value, like weight) and *discrete* (whole counts, like number of orders).
-- **Categorical** — labels from a fixed set (country, payment method). You can count and group them but not average them.
-- **Datetime** — dates and timestamps, which you can sort and compute durations from.
-- **Boolean** — true/false (is_subscriber).
-- **Text** — free-form strings (a review comment).
+- Compared to *yesterday* (you made 3) — you're improving.
+- Compared to *your friend* (who made 12) — you have room to grow.
+- Compared to *your goal* (10) — you're getting close.
 
-Treating a variable as the wrong type is a classic error: storing a price as text means you cannot sum it; storing a ZIP code as a number drops the leading zero.
+So the habit to build is: don't just look at a number, ask **"compared to what?"** That question turns a fact into a pattern.
 
-## Tidy data
+## Why outliers matter
 
-Analysis is far easier when data is **tidy**:
+The thing that *doesn't* fit is often the most interesting. An outlier is a clue:
 
-- each variable is its own column,
-- each observation is its own row,
-- each cell holds a single value.
+- Sometimes it's a **mistake** — that 12 might be a kid who left half the test blank, not a real score.
+- Sometimes it's the **real story** — a sudden spike in sick kids might be the first sign of a flu going around.
 
-Untidy data — totals mixed into the rows, two values jammed in one cell, the same category spelled three ways — has to be cleaned before it can be analyzed (the subject of section 1.4).
+Good pattern-spotters don't ignore the odd one out; they stop and ask why it's there.
 
-## Excel fundamentals
+## Careful: a pattern is not always a cause
 
-A **spreadsheet** is a grid of **cells** addressed by column letter and row number (e.g. \`B2\`). Cells can hold values or **formulas**, which begin with \`=\`.
-
-- **Functions** are built-in calculations: \`=SUM(B2:B10)\`, \`=AVERAGE(B2:B10)\`, \`=COUNT(...)\`, \`=IF(B2>100,"big","small")\`.
-- **Cell references** can be **relative** (\`B2\`, which shifts when you copy the formula) or **absolute** (\`$B$2\`, which stays fixed). Mixing these up is the most common spreadsheet bug.
-- **Lookups** — \`VLOOKUP\` and the newer \`XLOOKUP\` pull a matching value from another table, the spreadsheet equivalent of a join.
-- **PivotTables** summarize a table by grouping on one field and aggregating another — e.g. total sales by region — without writing any formula.
+This is the trap that fools almost everyone. Two things can move together without one causing the other. Ice cream sales and sunburns both go up in summer — but ice cream doesn't cause sunburn; hot, sunny weather causes both. Seeing a pattern is the *start* of understanding, not the end. The right reaction to a pattern is curiosity: "Interesting — I wonder *why*?"
 
 ## In the real world
 
-In 2012 JPMorgan Chase lost over six billion dollars in the "London Whale" trading episode. A contributing factor, later documented, was a risk model run in **Excel** where a value was accidentally divided by a *sum* instead of an *average*, understating risk. The lesson is not that spreadsheets are bad — they run much of the financial world — but that knowing exactly what a formula and a cell reference do is not optional.`,
+In 1854, a deadly outbreak of a disease called cholera hit a neighborhood in London. A doctor named John Snow marked every death on a map of the streets. Looking at the map, a pattern jumped out: the deaths were clustered tightly around one public water pump. That single pattern — deaths bunched in one spot — pointed straight at the cause: bad water from that pump. The handle was removed, and the outbreak faded. He didn't run any complicated math. He noticed, he compared, and he spotted the pattern that mattered.`,
   },
   {
-    slug: "sql-queries",
-    title: "Querying data with SQL",
+    slug: "asking-good-questions",
+    title: "Asking a good question",
     weekNumber: 1,
-    blurb: "SELECT, WHERE, ORDER BY, JOIN, and GROUP BY aggregation.",
-    lectureTitle: "1.3 Querying data with SQL (SELECT, filter, join, aggregate)",
-    body: `# Querying data with SQL
+    blurb: "The whole game is the question: a sharp, answerable question is half the analysis.",
+    lectureTitle: "1.3 Asking a good question (the whole game is the question)",
+    body: `# Asking a good question
 
-When data lives in a **relational database** — many tables that relate to one another — you retrieve it with **SQL** (Structured Query Language). SQL is *declarative*: you describe the result you want and the database figures out how to produce it.
+Here is a secret that professional analysts know and beginners often miss: **the hardest and most important part isn't the answer — it's the question.** A clear question practically tells you what data to collect and when you're done. A fuzzy question sends you wandering forever.
 
-## SELECT and filtering
+## Fuzzy questions vs. sharp questions
 
-The core statement is \`SELECT\`. It names the columns you want and the table they come from:
+Compare these:
 
-\`\`\`sql
-SELECT name, price
-FROM products;
-\`\`\`
+- Fuzzy: *"Is our class healthy?"*
+- Sharp: *"How many kids in our class eat breakfast on school days?"*
 
-Add a \`WHERE\` clause to **filter** rows to the ones you care about, and \`ORDER BY\` to sort:
+The fuzzy one sounds important but you can't actually answer it — "healthy" could mean a hundred things. The sharp one is **specific** (it names exactly what to look at) and **answerable** (you can imagine the exact number that would answer it). 
 
-\`\`\`sql
-SELECT name, price
-FROM products
-WHERE price > 50
-ORDER BY price DESC;
-\`\`\`
+A good question usually has three qualities:
 
-\`WHERE\` keeps only rows where the condition is true. Conditions can combine with \`AND\` / \`OR\`.
+- **Specific** — it names *who* and *what* clearly.
+- **Measurable** — you can picture the data that would answer it.
+- **Useful** — knowing the answer would actually help someone decide something.
 
-## Joining tables
+## The question decides the data
 
-Data is split across tables to avoid repetition. A **JOIN** recombines them by matching a column they share (a *key*). An **inner join** keeps only rows that match in both tables:
+The reason the question comes first is that it controls everything after it. The question *"How many kids eat breakfast?"* tells you:
 
-\`\`\`sql
-SELECT orders.id, customers.name
-FROM orders
-JOIN customers ON orders.customer_id = customers.id;
-\`\`\`
+- **Who** to ask (kids in the class),
+- **What** to record (yes/no, did you eat breakfast today),
+- **When** you're finished (when you've asked everyone).
 
-A **left join** keeps every row from the left table even when there is no match on the right (filling the missing side with nulls) — useful for finding, say, customers who have never ordered.
+If you collect data *before* you have a question, you usually end up with a messy pile that doesn't quite answer anything. Question first, data second.
 
-## Aggregating
+## Narrowing a big question
 
-To answer "how many?" or "what is the total/average?", use an **aggregate function** (\`COUNT\`, \`SUM\`, \`AVG\`, \`MIN\`, \`MAX\`) together with \`GROUP BY\`, which collapses rows that share a value into one summary row per group:
+Big questions aren't bad — they're just starting points. The skill is **narrowing** them into something you can actually check. "Is our school spending too much on snacks?" is huge. Narrow it down:
 
-\`\`\`sql
-SELECT category, COUNT(*) AS n, AVG(price) AS avg_price
-FROM products
-GROUP BY category;
-\`\`\`
+- "How much do we spend on snacks each month?"
+- "Which snack costs the most per student?"
+- "Did snack spending go up or down since last year?"
 
-To filter on an aggregated value, use \`HAVING\` (not \`WHERE\`, which acts on individual rows before grouping):
+Each smaller question is answerable, and together they chip away at the big one.
 
-\`\`\`sql
-SELECT category, COUNT(*) AS n
-FROM products
-GROUP BY category
-HAVING COUNT(*) > 10;
-\`\`\`
+## Watch out for sneaky questions
 
-The order the database evaluates the pieces — \`FROM\` → \`WHERE\` → \`GROUP BY\` → \`HAVING\` → \`SELECT\` → \`ORDER BY\` — explains why \`WHERE\` cannot see an aggregate and \`HAVING\` can.
+Some questions secretly assume their own answer. *"Why is our cafeteria food so bad?"* has already decided the food is bad before looking at any data. A fairer version — *"What do students think of the cafeteria food?"* — lets the data speak instead of forcing it. Honest questions don't tilt the answer before you start.
 
 ## In the real world
 
-Every time you check a bank balance, search a flight, or load a product page, a SQL query runs behind the scenes against a relational database. Analysts at companies from Amazon to small startups spend much of their day writing \`SELECT\` statements to pull exactly the slice of data a question needs — which is why SQL remains, decades after its invention, the single most requested skill in data-analyst job postings.`,
+When the company that became Netflix wanted to grow, it didn't ask a vague question like "How do we make people happy?" It asked something sharp and answerable: "When does a new viewer decide whether to keep watching a show?" By focusing on that exact, measurable question, they could collect the right data — how far into an episode people stopped — and act on it. The sharp question is what made the data useful. A vague question would have buried them in numbers that pointed nowhere.`,
   },
   {
-    slug: "data-cleaning",
-    title: "Cleaning and transforming data",
+    slug: "sorting-grouping-counting",
+    title: "Sorting, grouping, and counting",
     weekNumber: 1,
-    blurb: "Fixing missing values, duplicates, types, and inconsistent categories.",
-    lectureTitle: "1.4 Cleaning and transforming data (Excel/Python)",
-    body: `# Cleaning and transforming data
+    blurb: "The only 'math' you really need: put things in order, gather like with like, and count.",
+    lectureTitle: "1.4 Sorting, grouping, and counting (the only \"math\" you need)",
+    body: `# Sorting, grouping, and counting
 
-Real data is **dirty**. Analysts commonly spend the majority of a project not analyzing but cleaning — getting the data into a state where the analysis can be trusted. The principle behind it all is **garbage in, garbage out**: a flawless calculation on flawed data gives a confident wrong answer.
+People assume data analytics is full of scary math. The truth is that the most useful moves are ones you learned as a little kid: **putting things in order, gathering things that are alike, and counting.** Master these three and you can answer a surprising number of real questions.
 
-## Common data problems
+## Sorting: put things in order
 
-- **Missing values** — empty cells, often shown as blanks, \`NA\`, or \`null\`.
-- **Duplicates** — the same observation recorded more than once, which inflates counts and totals.
-- **Wrong types** — numbers stored as text, dates stored as strings, so they cannot be computed on.
-- **Inconsistent categories** — "USA", "U.S.A.", and "United States" treated as three different groups.
-- **Outliers and impossible values** — an age of 200, a negative price; sometimes real, sometimes a data-entry error.
+**Sorting** means arranging your data from highest to lowest, oldest to newest, A to Z — whatever order fits the question. Sorting instantly answers "what's the most?" and "what's the least?"
 
-## Handling missing values
+If you sort the kids in your class by how far they live from school, the top and bottom of that sorted list immediately tell you who's farthest and closest — no calculation needed. Sorting also makes patterns easier to see, because similar values end up next to each other.
 
-There are two basic strategies:
+## Grouping: gather like with like
 
-- **Drop** the rows (or columns) with missing data — safe when they are few and random.
-- **Impute** (fill in) a reasonable value — for example the column's mean or median, or a category like "Unknown" — when dropping would throw away too much.
+**Grouping** means putting things that belong together into the same bucket. You sort a bag of candy into "red," "green," and "yellow" piles. You split a survey into "kids who walk" and "kids who ride the bus."
 
-The wrong move is to silently let blanks be treated as zero, which quietly distorts averages and sums.
+Grouping is powerful because it lets you compare. Once your data is in groups, you can ask, "Which group is biggest?" or "Does this group behave differently from that one?" — the exact pattern-spotting from section 1.2.
 
-## Other transformations
+## Counting and simple summaries
 
-- **Deduplicate** — remove repeated rows (Excel's *Remove Duplicates*; pandas' \`drop_duplicates\`).
-- **Convert types** — parse text into real numbers or dates so they sort and compute correctly.
-- **Standardize text** — trim stray spaces (\`TRIM\`), fix capitalization, and map variant spellings to one canonical label so categories group correctly.
-- **Reshape** — split a combined column ("City, State") into two, or restructure so the data is tidy.
+Once things are grouped, you **count** them. How many reds? How many bus-riders? That count is often the whole answer.
 
-In Excel these are done with tools like *Text to Columns*, \`TRIM\`, and *Remove Duplicates*; in Python with pandas methods like \`fillna\`, \`drop_duplicates\`, and \`astype\`.
+A few simple summaries go a little further, and none of them need real math:
+
+- **Total** — add everything up. (How many snacks did the whole class eat?)
+- **Most common** — the value that shows up the most. (What's the most popular pizza topping?)
+- **Typical (the average)** — roughly the "middle" value, what you'd expect from a normal one. If three friends read 2, 4, and 6 books, the typical number is 4 — right in the middle.
+
+That's it. Sort, group, count, and summarize. Almost every chart and report you'll ever see is built from these few moves stacked together.
+
+## Why this is enough
+
+A grown-up analyst with a powerful computer doing "sales by region" is doing exactly this: grouping sales by region, then counting (totaling) each group, then sorting to see which region is on top. The computer just does it faster and with more rows. The *idea* is the candy piles.
 
 ## In the real world
 
-In 2020 Public Health England under-reported nearly 16,000 COVID-19 cases because case data was collated in an older Excel file format that silently capped the number of rows it could hold — rows beyond the limit were simply dropped. No analysis step was wrong; the *data* was incomplete and no one validated it. It is a textbook reminder that cleaning and checking data is not busywork before the "real" analysis — it *is* the real analysis.`,
+Every election night, the entire country watches sorting, grouping, and counting in action. Votes are **grouped** by candidate, **counted** within each group, and the totals are **sorted** to see who's ahead. There's no advanced math involved in deciding who won — just careful counting of groups. The reason it feels so dramatic is that everyone understands exactly what's being measured. That clarity is the gift of keeping the "math" simple.`,
   },
   {
-    slug: "pandas-analysis",
-    title: "Analysis with Python (pandas basics)",
+    slug: "seeing-the-story",
+    title: "Seeing the story: pictures that make data obvious",
     weekNumber: 1,
-    blurb: "DataFrames, selecting, filtering, grouping, and merging in pandas.",
-    lectureTitle: "1.5 Analysis with Python (pandas basics)",
-    body: `# Analysis with Python (pandas basics)
+    blurb: "A good chart lets your eyes grasp in a second what a table of numbers hides.",
+    lectureTitle: "1.5 Seeing the story: pictures that make data obvious",
+    body: `# Seeing the story: pictures that make data obvious
 
-When data outgrows a spreadsheet, or when you need a repeatable, automated analysis, analysts reach for **Python** and its data library **pandas**. pandas brings spreadsheet-style tables into code, where every step is written down and can be re-run.
+You can have the perfect answer buried in a list of numbers and still have no one understand it. That's because our eyes are far better at reading *pictures* than columns of digits. Turning data into a picture — a **chart** — is how you make the story obvious in a single glance.
 
-## The DataFrame
+## Why a picture beats a list
 
-The central object is the **DataFrame**: a table of rows and columns, just like a spreadsheet or a SQL result. A single column is a **Series**. You usually start by loading a file:
+Read these numbers: 4, 11, 6, 23, 7. To find the biggest, you have to check each one. Now imagine those as five bars of different heights — the tallest one jumps out instantly, no reading required. That's the entire point of a chart: it moves the work from your slow, careful brain to your fast, automatic eyes.
 
-\`\`\`python
-import pandas as pd
-df = pd.read_csv("sales.csv")
-\`\`\`
+## Picking the right picture for the question
 
-To get oriented, three methods do most of the work:
+The kind of question decides the kind of chart:
 
-- \`df.head()\` — show the first few rows.
-- \`df.info()\` — column names, types, and how many values are missing.
-- \`df.describe()\` — quick summary statistics (count, mean, min, max) for numeric columns.
+- **Bar chart** — for **comparing groups**. Taller bar means more. ("Which fruit is most popular in our class?") The eye compares heights effortlessly.
+- **Line chart** — for showing **change over time**. The line goes up or down as you move left to right. ("How did the temperature change over the week?")
+- **Pictograph** — a friendly version of a bar chart that uses little pictures (one apple = 5 apples) instead of bars. Great for getting started.
+- **Pie chart** — for showing **parts of a whole**, and only when there are just a few slices. ("What fraction of my allowance goes to snacks?")
 
-## Selecting and filtering
+Picking the wrong picture hides the story. A line chart only makes sense when the left-to-right order *means* something, like time — using one to compare unrelated groups just confuses people.
 
-Pick a column with \`df["price"]\`. **Filter** rows with a boolean condition (a *boolean mask*), the pandas equivalent of SQL's \`WHERE\`:
+## What makes a chart good
 
-\`\`\`python
-expensive = df[df["price"] > 50]
-\`\`\`
+A good chart is honest and clear:
 
-The condition produces True/False for every row, and pandas keeps the True rows.
+- It has a **title** that says what you're looking at.
+- Its parts are **labeled** so you know what each bar or slice means.
+- It shows **one main idea**, not everything at once.
 
-## Grouping and aggregating
+If someone has to study your chart for a minute to figure out what it says, the chart has failed at its one job.
 
-\`groupby\` is the pandas counterpart of SQL's \`GROUP BY\`: split the data into groups, then aggregate each one:
+## Charts can lie (even by accident)
 
-\`\`\`python
-df.groupby("category")["price"].mean()
-\`\`\`
-
-This gives the average price per category. You can aggregate with \`sum\`, \`count\`, \`min\`, \`max\`, and more.
-
-## Combining tables
-
-\`pd.merge\` joins two DataFrames on a shared key, exactly like a SQL join:
-
-\`\`\`python
-pd.merge(orders, customers, on="customer_id", how="left")
-\`\`\`
-
-And \`sort_values\` orders the result:
-
-\`\`\`python
-df.sort_values("price", ascending=False)
-\`\`\`
-
-Notice the deliberate parallel to SQL and to spreadsheets: select columns, filter rows, group-and-aggregate, join, sort. The *concepts* are the same across all three tools — only the syntax changes.
+Because pictures are so persuasive, they can also mislead. The most common trick is **stretching the scale**: if a bar chart starts its bottom line at 90 instead of 0, a tiny difference between 91 and 94 suddenly looks enormous. The numbers are technically true, but the picture exaggerates. An honest chart usually starts at zero so the *sizes* you see match the *sizes* that are real. Being able to spot a stretched chart protects you from being fooled by one.
 
 ## In the real world
 
-pandas was created in 2008 by Wes McKinney at a quantitative investment firm that needed to analyze financial data faster than spreadsheets allowed. It is now one of the most downloaded packages in the world and a standard tool on data teams at companies large and small — the bridge between knowing what analysis you want and being able to repeat it on a million rows without touching a mouse.`,
+In 1986, the space shuttle *Challenger* launched on an unusually cold morning and broke apart, killing all seven astronauts. Engineers had worried beforehand that cold weather might cause a critical part to fail — and the data showing the danger actually existed. But it was trapped in dense tables of numbers, and no one could see the pattern in time. Experts later showed that a single clear chart of damage versus temperature would have made the risk obvious at a glance. It's a heartbreaking reminder that *how you show data* can matter as much as the data itself.`,
   },
   {
-    slug: "data-visualization",
-    title: "Data visualization and dashboards",
+    slug: "hunch-to-decision",
+    title: "From hunch to decision: tiny analytics in real life",
     weekNumber: 1,
-    blurb: "Choosing the right chart, building dashboards, and avoiding distortion.",
-    lectureTitle: "1.6 Data visualization and dashboards (Tableau/Power BI)",
-    body: `# Data visualization and dashboards
+    blurb: "Turn a guess into a decision with a tiny loop: question, gather, look, decide.",
+    lectureTitle: "1.6 From hunch to decision: tiny analytics in real life",
+    body: `# From hunch to decision: tiny analytics in real life
 
-The last step of the workflow is **communication**. A correct analysis that no one understands changes no decisions. Good visualization turns a table of numbers into a picture a decision-maker grasps in seconds.
+You now have all the pieces: data is noticed facts, patterns are how facts connect, a good question points the way, sorting and counting do the work, and a chart shows the story. This last section ties them together into a habit you can use for the rest of your life — turning a **hunch** into a **decision**.
 
-## Choosing the right chart
+## What a hunch is, and why it isn't enough
 
-The chart should match the *question*:
+A **hunch** is a guess that *feels* true: "I think I sleep worse when I have soda at night." "I bet the morning bus is faster." Hunches are great — they're where most good questions come from. But a hunch is just a feeling, and feelings can be wrong. The whole point of tiny analytics is to **check the hunch against real data** before betting on it.
 
-- **Bar chart** — compare a value across **categories** (sales by region).
-- **Line chart** — show a **trend over time** (revenue by month).
-- **Scatter plot** — show the **relationship** between two numeric variables (ad spend vs. sales).
-- **Histogram** — show the **distribution** of a single numeric variable (how ages are spread).
-- **Pie chart** — show parts of a whole, and only with a few slices (use sparingly; bars are usually clearer).
+## The tiny loop
 
-Picking the wrong type — a line chart across unordered categories, a pie chart with twenty slices — hides the very pattern you are trying to show.
+Every analysis, from a kid's experiment to a giant company's report, follows the same small loop:
 
-## Dashboards
+1. **Question** — turn the hunch into a sharp, answerable question. ("Do I fall asleep faster on nights without soda?")
+2. **Gather** — collect a little data. (Write down each night: had soda? how long to fall asleep?)
+3. **Look** — sort, group, count, and maybe chart it. (Compare soda nights to no-soda nights.)
+4. **Decide** — use what you found to make a choice. (If no-soda nights were clearly faster, skip the late soda.)
 
-A **dashboard** collects several related charts and **KPIs** (key performance indicators — the few headline numbers that matter, like monthly active users) onto one screen that updates as new data arrives. Tools like **Tableau** and **Power BI** let analysts build interactive dashboards by dragging fields onto a canvas, with filters the viewer can adjust — no code required.
+Then you often loop back with a new question. That's it — that's the engine behind all of data analytics, shrunk down to fit your life.
 
-A good dashboard answers a specific audience's recurring questions at a glance; a bad one is a wall of every chart that could be made.
+## Honesty is the whole point
 
-## Honest visualization
+The loop only works if you're willing to be **proven wrong**. The danger is collecting data just to confirm what you already believe — noticing only the nights that fit your hunch and ignoring the rest. Real analysis means letting the data change your mind. If you check your free-throw practice and it turns out practice *didn't* help your shooting, that's not a failure — that's the data doing its job, saving you from a false belief.
 
-Charts can mislead, sometimes by accident:
+## Small loops, big stakes
 
-- **Truncated axes** — starting a bar chart's y-axis above zero exaggerates small differences.
-- **Dual axes and 3-D effects** — distort comparisons and should usually be avoided.
-- **Cherry-picked ranges** — showing only the window that supports a conclusion.
-
-The analyst's duty is the same as in section 1.1: serve the decision honestly. A chart designed to *persuade* past what the data supports is the visualization version of garbage out.
+The same four steps scale up to decisions that matter enormously: Should a city add a new bus route? Is a new medicine safe? Where should we build a hospital? In every case it's still question, gather, look, decide — just with more data and more care. Learning the loop on small, everyday questions is exactly how you build the judgment to trust it on big ones.
 
 ## In the real world
 
-The night before the 1986 *Challenger* launch, engineers worried that cold weather would cause O-ring failure. The data existed, but it was presented in dense tables that buried the relationship between temperature and damage. A clear scatter plot of damage versus launch temperature would have made the danger obvious. The shuttle launched in record cold and broke apart, killing seven astronauts. Edward Tufte later used the case to argue that how data is *shown* can be a matter of life and death.`,
+A hospital noticed a hunch among its nurses: patients seemed to recover faster when they could see a window. Instead of just trusting the feeling, someone ran the tiny loop — they asked the question, gathered records of which rooms patients stayed in and how quickly they healed, looked at the two groups, and found the window-room patients really did tend to go home sooner. That checked hunch changed how hospitals are designed. It started exactly where yours will: with a quiet feeling that *something might be true* — and the willingness to actually look.`,
   },
 ];
 
@@ -356,209 +317,209 @@ type SeedAssignment = {
 const ASSIGNMENTS: SeedAssignment[] = [
   {
     kind: "homework",
-    title: "Homework 1.1 — Analytics, data structure, and SQL",
+    title: "Homework 1.1 — Data, patterns, and good questions",
     weekNumber: 1,
     isTimed: false,
     timeLimitMinutes: null,
     instructions:
-      "Untimed practice covering sections 1.1–1.3. Answer each question in a short paragraph (about 3–5 sentences) in your own words; one-word answers will not receive credit.",
+      "Untimed practice covering sections 1.1–1.3. Answer each question in a few sentences (about 3–5) in your own words. There's no need for any math — just explain your thinking clearly. One-word answers won't receive credit.",
     problems: [
       {
-        topicSlug: "what-is-data-analytics",
+        topicSlug: "what-is-data",
         prompt:
-          "Distinguish descriptive from diagnostic analysis, give one original example of each, and explain why a business might need both. (3–5 sentences.)",
+          "Give one example of data you used today without thinking of it as 'data,' and explain how it helped you make a choice. Then explain the difference between a plain fact and an insight. (3–5 sentences.)",
         correctAnswer:
-          "Descriptive analysis answers 'what happened' by summarizing past data — for example, reporting that website sign-ups fell 12% last month. Diagnostic analysis answers 'why it happened' by drilling into those numbers to find a cause — for example, discovering the drop was concentrated on mobile devices after a checkout redesign. A business needs both because the descriptive number tells it something is wrong while the diagnostic step tells it what to fix; knowing the decline without knowing the cause does not point to an action.",
+          "An everyday example is checking the weather: seeing that it was cold and cloudy is data, and I used it to decide to bring a jacket. The cold temperature by itself is just a plain fact — a single piece of recorded information about the world. An insight is what that fact means for a decision, like 'it's cold enough that I'll be uncomfortable without a jacket, so I should grab one.' The difference is that a fact just describes something, while an insight tells you what to actually do about it.",
         explanation:
-          "Full credit: separates 'what happened' (descriptive) from 'why' (diagnostic), gives a valid example of each, and notes that descriptive surfaces the issue while diagnostic guides action.",
+          "Full credit: gives a real everyday use of data tied to a choice, and distinguishes a plain fact (raw recorded information) from an insight (what the fact means for a decision).",
       },
       {
-        topicSlug: "what-is-data-analytics",
+        topicSlug: "what-is-data",
         prompt:
-          "The analytics workflow begins with 'Ask' before any data is collected. Explain why starting with a precise question matters, and what tends to go wrong when an analysis skips this step. (3–5 sentences.)",
+          "Why is it better to write data down than to just remember it? Describe a situation where relying on memory instead of a written record could lead you to the wrong conclusion. (3–5 sentences.)",
         correctAnswer:
-          "Starting with a precise question defines what data you need, what analysis is relevant, and what a useful answer looks like, so the rest of the workflow stays focused. A vague question like 'how are we doing?' gives no guidance on which data to acquire or how to judge the result. Analyses that skip this step tend to collect whatever is handy, produce charts no one asked for, and end without changing any decision. Because the point of analytics is to support a decision, an unclear question usually yields an unactionable answer.",
+          "Writing data down keeps it accurate and unchanging, while memory is fuzzy and tends to drift over time. For example, if I try to remember whether the morning or afternoon bus is usually faster, my memory might just recall the one really bad trip that stuck out, and I'd wrongly conclude the morning bus is always slow. If I had written down each trip's time, I could check the actual record instead of trusting a single dramatic memory. Written records let you check the real pattern rather than the one your memory happened to keep.",
         explanation:
-          "Full credit: ties a precise question to scoping data/analysis and notes that skipping it leads to unfocused, unactionable work.",
+          "Full credit: explains that written records stay accurate while memory drifts/is selective, and gives a concrete case where trusting memory would mislead.",
       },
       {
-        topicSlug: "data-types-spreadsheets",
+        topicSlug: "spotting-patterns",
         prompt:
-          "Explain what 'tidy data' means and why a ZIP code is usually better stored as text than as a number. (3–5 sentences.)",
+          "Explain what an 'outlier' is in your own words, and describe a case where an outlier turns out to be a mistake versus a case where it turns out to be the real story. (3–5 sentences.)",
         correctAnswer:
-          "Tidy data is structured so that each variable is its own column, each observation is its own row, and each cell holds a single value, which makes it straightforward to filter, group, and analyze. A ZIP code should be stored as text because it is an identifier label, not a quantity you do arithmetic on. Stored as a number, a leading-zero ZIP like 02134 loses its zero and becomes 2134. Choosing the type by how the value is used, not by what characters it contains, prevents this kind of silent corruption.",
+          "An outlier is a piece of data that clearly doesn't fit with the rest, like one very high or very low value among a group of similar ones. Sometimes an outlier is a mistake: if everyone in class scored around 80 but one paper shows a 12, that low score might just be someone who left half the test blank rather than a true measure of what they know. Other times the outlier is the real story: a sudden spike of kids out sick on one day might be the first sign of a flu spreading. The point is not to ignore the odd value but to stop and ask why it's there.",
         explanation:
-          "Full credit: states the three tidy-data rules and explains the ZIP-as-text point via leading zeros / identifier-not-quantity.",
+          "Full credit: defines an outlier as a value that doesn't fit the rest, and gives one example of an outlier-as-error and one of an outlier-as-real-signal.",
       },
       {
-        topicSlug: "sql-queries",
+        topicSlug: "asking-good-questions",
         prompt:
-          "A query needs the number of orders per customer, but only for customers with more than five orders. Explain why this requires GROUP BY together with HAVING rather than WHERE. (3–5 sentences.)",
+          "Take the fuzzy question 'Is our class doing well in school?' and rewrite it into a sharper, answerable question. Explain what makes your version better. (3–5 sentences.)",
         correctAnswer:
-          "Counting orders per customer is an aggregation, so you GROUP BY the customer and use COUNT(*) to get one count per group. The condition 'more than five orders' tests that aggregated count, not an individual row. WHERE is evaluated before grouping and therefore cannot see an aggregate, so filtering on COUNT(*) in WHERE would fail. HAVING is evaluated after the grouping, so it is the clause that can filter groups by their aggregated value.",
+          "A sharper version is 'How many kids in our class turned in last week's homework on time?' This is better because it is specific — it names exactly who (kids in our class) and what (turning in homework on time) — instead of the vague idea of 'doing well.' It is also measurable, since I can picture the exact number that answers it, and I'd know when I'm done collecting the data. The original question sounds important but you can't actually answer it because 'doing well' could mean a hundred different things.",
         explanation:
-          "Full credit: identifies the need for GROUP BY + an aggregate and explains that WHERE runs pre-aggregation while HAVING filters on the aggregate.",
-        hint: "Think about the order the database evaluates clauses: WHERE comes before GROUP BY; HAVING comes after.",
+          "Full credit: turns the vague question into a specific, measurable, answerable one and explains that the improvement is specificity/measurability, not just rewording.",
+        hint: "A good question names exactly who and what, and lets you picture the data that would answer it.",
       },
     ],
   },
   {
     kind: "homework",
-    title: "Homework 1.2 — Cleaning, pandas, and visualization",
+    title: "Homework 1.2 — Counting, charts, and decisions",
     weekNumber: 1,
     isTimed: false,
     timeLimitMinutes: null,
     instructions:
-      "Untimed practice covering sections 1.4–1.6. Answer each question in a short paragraph (about 3–5 sentences) in your own words; one-word answers will not receive credit.",
+      "Untimed practice covering sections 1.4–1.6. Answer each question in a few sentences (about 3–5) in your own words. No math is required — explain your reasoning. One-word answers won't receive credit.",
     problems: [
       {
-        topicSlug: "data-cleaning",
+        topicSlug: "sorting-grouping-counting",
         prompt:
-          "A dataset has a few rows with missing income values. Explain the trade-off between dropping those rows and imputing the missing values, and name one situation favoring each choice. (3–5 sentences.)",
+          "Imagine you have a survey of everyone's favorite school lunch. Explain how you would use grouping and counting to find the most popular lunch, and why sorting the results afterward helps. (3–5 sentences.)",
         correctAnswer:
-          "Dropping rows is simple and avoids inventing data, but it throws away whatever else those rows contained and can bias results if the missingness is not random. Imputing fills the gaps — for example with the column's median — so you keep the rest of each row, but it introduces estimated values that can distort the analysis if overused. Dropping is reasonable when the missing rows are few and appear random; imputing is preferable when the missing values are numerous and dropping would discard too much useful data. The choice depends on how much data is missing and whether the missingness is random.",
+          "First I would group the responses by putting all the same answers together — all the 'pizza' votes in one pile, all the 'tacos' votes in another, and so on. Then I would count how many responses are in each group to see how many people picked each lunch. To find the most popular, I'd look for the group with the highest count. Sorting the groups from most votes to fewest afterward helps because it instantly shows the ranking — the winner is right at the top and the least popular is at the bottom — without having to scan every number.",
         explanation:
-          "Full credit: states that dropping loses data/can bias and imputing invents values, and gives an appropriate situation for each.",
+          "Full credit: describes grouping identical responses, counting each group, and notes that sorting orders the groups so the most/least popular stand out immediately.",
       },
       {
-        topicSlug: "data-cleaning",
+        topicSlug: "sorting-grouping-counting",
         prompt:
-          "Explain the principle 'garbage in, garbage out' and why an analyst should validate data before, not after, running the analysis. (3–5 sentences.)",
+          "Three friends read 2, 4, and 6 books over the summer. Explain what the 'typical' (average) number of books is and what 'typical' is trying to tell you. (3–5 sentences.)",
         correctAnswer:
-          "'Garbage in, garbage out' means that flawed input data produces flawed results no matter how correct the analysis itself is. A perfectly executed calculation on duplicated, mistyped, or incomplete data yields a confident but wrong answer. Validating data first — checking for duplicates, missing values, and wrong types — catches these problems before they propagate into the conclusions. Validating only afterward risks acting on results that were corrupted from the start, which is far more costly than cleaning up front.",
+          "The typical number is 4, which is the middle value you'd get by evening out the three numbers — 2, 4, and 6 balance around 4. 'Typical' is trying to tell you roughly what to expect from a normal one of the group, a single number that stands in for the whole set. It's useful because instead of listing every value, you can say 'a typical friend read about 4 books.' It doesn't mean everyone read exactly 4; it's just the central, representative amount.",
         explanation:
-          "Full credit: defines garbage-in-garbage-out and argues that up-front validation prevents flawed data from invalidating an otherwise-correct analysis.",
+          "Full credit: identifies the average as 4 and explains that 'typical' is a single central value representing what to expect from the group, not a claim that every value equals it.",
+        hint: "Think of the average as the 'middle' or 'evened-out' value that stands in for the whole group.",
       },
       {
-        topicSlug: "pandas-analysis",
+        topicSlug: "seeing-the-story",
         prompt:
-          "Describe what df.groupby(\"region\")[\"sales\"].sum() does in pandas, and name the SQL operation it corresponds to. (3–5 sentences.)",
+          "You want to show how the temperature changed across the days of one week. Which chart type fits best, and why would a bar chart comparing five friends' heights use a different type? (3–5 sentences.)",
         correctAnswer:
-          "It splits the DataFrame into groups, one per distinct value of the region column, and then sums the sales column within each group, returning total sales per region. The result is one number per region rather than one per original row. This is the pandas equivalent of a SQL GROUP BY region with SUM(sales). Both express the same split-apply-combine idea: group rows by a key, then aggregate a column for each group.",
+          "A line chart fits the temperature best because it shows change over time, with the days in order from left to right and the line rising or falling to show how the temperature moved. Comparing five friends' heights is a different situation — those are separate groups, not a sequence over time — so a bar chart fits better, since the eye can compare the heights of the bars side by side. The reason they differ is that a line chart's left-to-right order has to mean something, like time, while a bar chart just compares separate groups. Picking the chart that matches the question is what makes the story clear.",
         explanation:
-          "Full credit: explains group-by-region then sum-of-sales producing per-region totals, and maps it to SQL GROUP BY with SUM.",
-        hint: "groupby corresponds directly to one specific SQL clause used with an aggregate function.",
+          "Full credit: chooses a line chart for change over time and a bar chart for comparing separate groups, and explains the distinction (ordered sequence vs. independent categories).",
       },
       {
-        topicSlug: "data-visualization",
+        topicSlug: "hunch-to-decision",
         prompt:
-          "You want to show how monthly revenue changed over the past year. Which chart type fits best, and explain why starting the y-axis above zero could mislead the viewer. (3–5 sentences.)",
+          "You have a hunch that you do better on tests when you study the night before. Walk through how you'd use the tiny loop (question, gather, look, decide) to check it. (3–5 sentences.)",
         correctAnswer:
-          "A line chart fits best because the goal is to show a trend over time, and a line naturally connects ordered time points to reveal rises and falls. Starting the y-axis above zero is misleading because it exaggerates the visual size of small changes: a modest increase can look dramatic when the baseline is cut off. The viewer reads the height of the line as the magnitude of change, so a truncated axis distorts that judgment. An honest chart usually starts the axis at zero or clearly signals that it does not.",
+          "First, I'd turn the hunch into a sharp question: 'Do I score higher on tests when I studied the night before than when I didn't?' Next, I'd gather data by writing down, for each test, whether I studied the night before and what score I got. Then I'd look at it by grouping the tests into 'studied' and 'didn't study' and comparing the typical scores of the two groups. Finally, I'd decide based on what I found — if the studied group scored clearly higher, I'd commit to studying the night before, and I'd stay honest by trusting the data even if it surprised me.",
         explanation:
-          "Full credit: chooses a line chart for a time trend and explains that a truncated y-axis exaggerates small differences and misleads.",
+          "Full credit: applies all four steps (sharp question, gather relevant data, group/compare, decide) to the hunch and ideally notes the willingness to be proven wrong.",
       },
     ],
   },
   {
     kind: "test",
-    title: "Unit Test — Foundations of Data Analytics",
+    title: "Unit Test — Data Analytics for Everyone",
     weekNumber: 1,
     isTimed: true,
     timeLimitMinutes: 30,
     instructions:
-      "Timed. 30 minutes. Covers sections 1.1–1.6. Answer each question in a short paragraph (about 4–6 sentences) in your own words. Pasting is disabled; keystrokes are screened for AI use.",
+      "Timed. 30 minutes. Covers sections 1.1–1.6. Answer each question in a few sentences (about 4–6) in your own words. No math is required. Pasting is disabled; keystrokes are screened for AI use.",
     problems: [
       {
-        topicSlug: "what-is-data-analytics",
+        topicSlug: "what-is-data",
         prompt:
-          "Name the four types of analysis in order of increasing value, define predictive and prescriptive analysis, and give an example that shows how the two differ. (4–6 sentences.)",
+          "Explain the ladder from data to information to insight using one original example of your own. Then explain why an insight is the rung that actually matters. (4–6 sentences.)",
         correctAnswer:
-          "The four types, in increasing order, are descriptive, diagnostic, predictive, and prescriptive. Predictive analysis uses patterns in past data to forecast what is likely to happen — for example, estimating that a particular customer has a high probability of canceling their subscription. Prescriptive analysis goes one step further and recommends an action to take in response — for example, advising that this at-risk customer be offered a discount now. The difference is that prediction tells you what will probably happen while prescription tells you what to do about it. Prescriptive analysis is harder and more valuable because it must weigh options and consequences, not just project a trend.",
+          "Take walking to school as an example. The data is a plain fact: it took me 8, 12, 9, 7, and 13 minutes on five days. The information is that fact placed in context: on average it takes me about 10 minutes, but it was much slower on two days. The insight is what it means for me: those slow days were when it rained, so on rainy mornings I should leave a few minutes earlier. The insight is the rung that matters because it's the only one that changes what I actually do — the raw times and even the average are just trivia until they help me make the choice to leave earlier.",
         explanation:
-          "Full credit: lists the four types in order, defines predictive (forecast) vs prescriptive (recommended action), and gives a contrasting example.",
+          "Full credit: gives an original example showing data (raw fact) → information (fact in context) → insight (what to do), and argues the insight matters because it drives a decision.",
       },
       {
-        topicSlug: "data-types-spreadsheets",
+        topicSlug: "spotting-patterns",
         prompt:
-          "Explain the difference between a relative and an absolute cell reference in a spreadsheet, and describe a situation where using the wrong one produces an incorrect result. (4–6 sentences.)",
+          "Explain why seeing two things rise together does not prove one causes the other. Give an example of two things that move together for a third, hidden reason. (4–6 sentences.)",
         correctAnswer:
-          "A relative reference like B2 shifts when the formula is copied to another cell, so copying it down a column makes it point to B3, B4, and so on. An absolute reference like $B$2 stays fixed no matter where the formula is copied. The two behave differently because relative references are meant to repeat a calculation across rows while absolute references are meant to always point at one fixed cell. A common error is dividing each row's value by a single total stored in one cell using a relative reference: when copied down, the divisor drifts to empty cells and the percentages come out wrong. Using an absolute reference for the total fixes it.",
+          "Two things moving together is called a pattern, but a pattern only shows that they're linked somehow, not that one makes the other happen. Often both are being driven by a third, hidden cause. For example, ice cream sales and sunburns both go up at the same time of year, but eating ice cream doesn't cause sunburn — hot, sunny weather causes both. If you mistook the pattern for cause, you might wrongly think banning ice cream would stop sunburns. The right response to a pattern is curiosity about why it's happening, not jumping straight to 'one causes the other.'",
         explanation:
-          "Full credit: defines relative (shifts on copy) vs absolute ($, fixed) and gives a concrete case where a relative reference to a fixed total breaks when copied.",
+          "Full credit: distinguishes correlation from causation, gives a valid example with a hidden third cause (e.g., weather), and notes the danger of assuming cause from a pattern.",
       },
       {
-        topicSlug: "sql-queries",
+        topicSlug: "asking-good-questions",
         prompt:
-          "Explain what a JOIN does in SQL and how an inner join differs from a left join. Give an example question that specifically requires a left join. (4–6 sentences.)",
+          "What are the qualities of a good analytics question, and why does the question have to come before collecting data? Give an example of a question that is too fuzzy to answer. (4–6 sentences.)",
         correctAnswer:
-          "A JOIN combines rows from two tables by matching a shared key column, letting you bring related data together. An inner join keeps only the rows that have a match in both tables. A left join keeps every row from the left table even when there is no matching row on the right, filling the missing columns with nulls. They differ in how they treat unmatched left-side rows: an inner join discards them while a left join preserves them. A question that requires a left join is 'list all customers and how many orders each has placed, including customers who have never ordered,' because the never-ordered customers have no rows in the orders table and would vanish under an inner join.",
+          "A good question is specific (it names exactly who and what), measurable (you can picture the data that would answer it), and useful (the answer would help someone decide something). The question has to come first because it controls everything after it — it tells you who to ask, what to record, and when you're finished collecting. If you gather data before having a question, you usually end up with a messy pile that doesn't quite answer anything. A question that's too fuzzy to answer is something like 'Is our school good?' — 'good' could mean a hundred different things, so you couldn't picture the data that would settle it.",
         explanation:
-          "Full credit: defines JOIN by key matching, distinguishes inner (matches only) from left (all left rows + nulls), and gives a question needing unmatched left rows.",
+          "Full credit: lists qualities (specific/measurable/useful), explains the question scopes the data and signals completion, and gives a genuinely unanswerable fuzzy question.",
       },
       {
-        topicSlug: "data-cleaning",
+        topicSlug: "sorting-grouping-counting",
         prompt:
-          "A sales table lists the same country as 'USA', 'U.S.A.', and 'United States'. Explain what problem this causes for analysis and how you would fix it. (4–6 sentences.)",
+          "A company says it found its 'best-selling product by region.' Explain how sorting, grouping, and counting produce that answer, even with a powerful computer. (4–6 sentences.)",
         correctAnswer:
-          "These are inconsistent category labels for a single real category. When you group or count by country, the database treats the three spellings as three separate groups, so the United States total is split three ways and every per-country comparison is wrong. The fix is to standardize the text by mapping all the variants to one canonical label, for example converting 'U.S.A.' and 'United States' to 'USA'. In Excel this is done with find-and-replace or a lookup table, and in pandas by replacing the variant strings. After standardizing, grouping by country produces one correct total per country.",
+          "Even with a powerful computer, the underlying moves are the simple ones. First the sales are grouped by region, putting all the sales from each region into its own bucket. Within each region, the products are grouped again and the sales are counted (totaled) to see how much of each product sold there. Then the products are sorted from most to least sold so the top one stands out. The 'best-selling product by region' is just the product at the top of each region's sorted list. The computer only makes this faster and handles more rows — the idea is the same as sorting candy into piles and counting them.",
         explanation:
-          "Full credit: identifies that inconsistent categories split a single group and fragment aggregations, and proposes standardizing variants to one canonical label.",
+          "Full credit: maps the business result to grouping (by region/product), counting (totals), and sorting (to find the top), noting the computer only scales the same simple moves.",
       },
       {
-        topicSlug: "pandas-analysis",
+        topicSlug: "seeing-the-story",
         prompt:
-          "Describe how filtering rows with a boolean mask works in pandas, and explain how the same idea appears in both SQL and Excel. (4–6 sentences.)",
+          "Explain one way a chart can mislead even when its numbers are true, and describe how an honest chart avoids it. (4–6 sentences.)",
         correctAnswer:
-          "In pandas you write a condition such as df['price'] > 50, which produces a True/False value for every row — a boolean mask. Passing that mask back into the DataFrame, df[df['price'] > 50], keeps only the rows where the condition is True. The underlying idea is row filtering: keep the observations that satisfy a test and drop the rest. In SQL the same idea is the WHERE clause, which keeps rows meeting a condition, and in Excel it appears as a filter on a column or an IF test. So the concept is identical across the three tools and only the syntax changes.",
+          "A common way a chart misleads is by stretching the scale — starting the bottom of a bar chart at, say, 90 instead of 0. When the baseline is cut off, a tiny real difference between 91 and 94 suddenly looks like a huge gap, because the eye reads the *sizes* of the bars as the sizes of the values. The numbers printed on it might be perfectly true, but the picture exaggerates the difference. An honest chart usually starts at zero so that the heights you see actually match the amounts they represent. Knowing this lets you spot a stretched chart and avoid being fooled by one.",
         explanation:
-          "Full credit: explains the True/False mask selecting rows and maps the same filtering concept to SQL WHERE and Excel filters/IF.",
+          "Full credit: names a real distortion (e.g., truncated/stretched scale), explains why it misleads despite true numbers, and says the honest fix (start at zero so sizes match values).",
       },
       {
-        topicSlug: "data-visualization",
+        topicSlug: "hunch-to-decision",
         prompt:
-          "Choose the appropriate chart for (a) comparing total sales across five regions and (b) showing the relationship between advertising spend and sales, and justify each choice. (4–6 sentences.)",
+          "Describe the four steps of the 'tiny loop' for turning a hunch into a decision, and explain why being willing to be proven wrong is essential to it. (4–6 sentences.)",
         correctAnswer:
-          "For comparing total sales across five regions, a bar chart is appropriate because bars compare a single value across distinct categories and their heights are easy to read side by side. For showing the relationship between advertising spend and sales, a scatter plot is appropriate because it plots two numeric variables against each other so you can see whether they move together. The choices follow from the questions: one is a comparison across categories and the other is a relationship between two numbers. A line chart would be wrong for the regions because the categories are not ordered over time, and a bar chart would hide the spend-versus-sales relationship a scatter plot reveals.",
+          "The four steps are: turn the hunch into a sharp question, gather a little data, look at it by sorting/grouping/counting or charting it, and decide what to do based on what you found. The loop only works if you're genuinely willing to be proven wrong, because the danger is collecting data just to confirm what you already believe and ignoring anything that doesn't fit. If you only notice the evidence that agrees with your hunch, you haven't really checked it — you've just decorated your guess. Letting the data change your mind is the whole point; it's what saves you from acting on a false belief. So honesty about the result is as important as the steps themselves.",
         explanation:
-          "Full credit: picks bar for category comparison and scatter for a two-variable relationship, justifying each by the question type.",
+          "Full credit: names all four steps (question, gather, look, decide) and explains that willingness to be wrong prevents cherry-picking/confirmation and is what makes the check meaningful.",
       },
     ],
   },
   {
     kind: "final",
-    title: "Final Exam — Foundations of Data Analytics",
+    title: "Final — Data Analytics for Everyone",
     weekNumber: 1,
     isTimed: true,
     timeLimitMinutes: 45,
     instructions:
-      "Timed cumulative final. 45 minutes. Covers the whole course (sections 1.1–1.6). Answer each question in a paragraph (about 5–7 sentences) in your own words. Pasting is disabled; keystrokes are screened for AI use.",
+      "Timed cumulative final. 45 minutes. Covers the whole course (sections 1.1–1.6). Answer each question in a paragraph (about 5–7 sentences) in your own words. No math is required. Pasting is disabled; keystrokes are screened for AI use.",
     problems: [
       {
-        topicSlug: "what-is-data-analytics",
+        topicSlug: "hunch-to-decision",
         prompt:
-          "Walk through the six-step analytics workflow for a concrete question of your choosing, naming each step and saying what you would do at it. Then explain why the final 'Act' step is what makes the whole effort worthwhile. (5–7 sentences.)",
+          "Pick a real everyday hunch of your own and walk it all the way through the tiny loop (question, gather, look, decide), naming each step and what you'd do at it. Then explain why the final 'decide' step is what makes the whole effort worthwhile. (5–7 sentences.)",
         correctAnswer:
-          "Take the question 'why did customer churn rise last quarter?' First, Ask: state the question precisely, including what counts as churn and the time window. Second, Acquire: pull the relevant subscription and cancellation data from the database. Third, Clean: remove duplicate accounts, fix mistyped dates, and handle missing fields. Fourth, Analyze: filter to the quarter, group churn by plan and region, and compare against prior periods. Fifth, Visualize and communicate: chart churn over time and by segment so the pattern is clear to decision-makers. Sixth, Act: use the finding — say, churn concentrated in one plan — to change that plan, which is the point, because an analysis that changes no decision has produced no value no matter how rigorous the earlier steps were.",
+          "Take the hunch that I play video games better in the afternoon than late at night. First, Question: turn it into something sharp — 'Do I win more matches in the afternoon than after 10pm?' Second, Gather: for two weeks I write down, for each session, the time of day and how many matches I won. Third, Look: I group the sessions into 'afternoon' and 'late night' and compare the typical wins in each group, maybe even sketching a quick bar chart. Fourth, Decide: if afternoon sessions clearly had more wins, I'd schedule my serious games for the afternoon. The decide step is what makes it worthwhile because everything before it is just gathering and looking — if I never change what I do, all that effort produced no value. Analysis only pays off when it actually changes a choice.",
         explanation:
-          "Full credit: names all six steps (Ask, Acquire, Clean, Analyze, Visualize/Communicate, Act) applied to one question, and argues that Act is what delivers value because analytics exists to support decisions.",
+          "Full credit: applies all four steps to a concrete hunch and argues the 'decide' step delivers the value because analysis exists to change a choice.",
       },
       {
-        topicSlug: "sql-queries",
+        topicSlug: "what-is-data",
         prompt:
-          "Explain how SQL, pandas, and spreadsheets express the same core analytics operations (filtering, grouping/aggregating, joining). Use one operation to show the parallel concretely. (5–7 sentences.)",
+          "Some people think data analytics requires computers and advanced math. Using ideas from across the course, argue that the core of it is really noticing, comparing, and counting. Use one concrete example. (5–7 sentences.)",
         correctAnswer:
-          "All three tools support the same small set of core operations: filtering rows to those that meet a condition, grouping rows and aggregating a value per group, and joining tables on a shared key. The concepts are identical and only the syntax differs. Take grouping and aggregating: in SQL you write GROUP BY category with an aggregate like AVG(price); in pandas you write df.groupby('category')['price'].mean(); in Excel you build a PivotTable that groups on category and averages price. Each produces one summary value per category from many rows. Filtering shows the same parallel — SQL's WHERE, a pandas boolean mask, and an Excel filter all keep rows that satisfy a test. Because the underlying ideas transfer, learning one tool makes the others much faster to pick up.",
+          "At its heart, data analytics is just paying attention to facts and using them to decide something, which people do without any computer at all. Data is simply things you notice, written down; patterns come from comparing those facts; and the real work is the simple moves of sorting, grouping, and counting. For example, a kid wondering which recess game is most popular can ask classmates, group the answers, count each group, and see the winner — that's a complete analysis with no math beyond counting. Computers and fancy math don't change the ideas; they just let you handle millions of rows faster. The doctor John Snow stopped a deadly outbreak in 1854 by marking deaths on a map and noticing they clustered around one water pump — pure noticing and comparing. So the tools have grown, but the core skill is the same one you already use every day.",
         explanation:
-          "Full credit: states that filtering, grouping/aggregating, and joining are shared across the three tools, and demonstrates one operation (e.g., group-and-aggregate) in all three with matching meaning.",
+          "Full credit: argues the core is noticing/comparing/counting (not tools), supports it with a concrete no-computer example, and notes that technology only scales the same ideas.",
       },
       {
-        topicSlug: "data-cleaning",
+        topicSlug: "asking-good-questions",
         prompt:
-          "Using a real or invented example, explain how dirty data can lead to a confidently wrong conclusion, and describe the cleaning steps that would prevent it. Connect this to the 'garbage in, garbage out' principle. (5–7 sentences.)",
+          "Explain why a vague question can ruin an analysis before it even starts, and describe how you would take a big, fuzzy question and narrow it into something answerable. Use an example. (5–7 sentences.)",
         correctAnswer:
-          "Suppose an analyst reports average order value, but the order table contains duplicate rows for some orders and a batch of prices accidentally stored as text. The duplicates inflate the count and totals, and the text prices are dropped from the average, so the reported figure is wrong even though the AVG calculation itself is flawless. This is garbage in, garbage out: the formula is correct but the input is corrupt, so the output is a confident wrong number. Cleaning prevents it: remove duplicate rows so each order is counted once, convert the text prices to real numbers so they are included, and check for missing or impossible values before computing. Validating the data before the analysis, not after, ensures the average reflects reality. The lesson is that data cleaning is not preliminary busywork but part of producing a trustworthy result.",
+          "A vague question ruins an analysis because the question controls everything after it — what data to collect, who to ask, and when you're done — so if it's fuzzy, the whole effort wanders without a target. For example, 'Is our school spending too much on snacks?' is too big and undefined to answer directly, since 'too much' isn't measurable. To narrow it, I'd break it into specific, answerable pieces: 'How much do we spend on snacks each month?', 'Which snack costs the most per student?', and 'Did snack spending go up or down since last year?' Each smaller question names exactly what to measure and could actually be answered with data. Together they chip away at the big question without ever requiring me to guess what the vague version meant. Starting with a sharp question is what keeps the data focused and useful.",
         explanation:
-          "Full credit: gives a concrete way dirty data (duplicates, wrong types, missing) skews a correct calculation, prescribes the matching cleaning steps, and ties it explicitly to garbage-in-garbage-out and up-front validation.",
+          "Full credit: explains that the question scopes the whole analysis so vagueness derails it, then narrows a big fuzzy question into specific measurable sub-questions with an example.",
       },
       {
-        topicSlug: "data-visualization",
+        topicSlug: "seeing-the-story",
         prompt:
-          "An analyst has a correct result but presents it in a chart that misleads the audience. Explain two specific ways a chart can distort honest data, and argue why honest visualization is part of the analyst's responsibility. (5–7 sentences.)",
+          "Someone has a correct set of numbers but presents them in a misleading chart. Explain two specific ways a chart can distort honest data, and argue why showing data honestly is part of doing analytics responsibly. (5–7 sentences.)",
         correctAnswer:
-          "Even correct numbers can be distorted by how they are drawn. One way is a truncated y-axis: starting a bar or line chart above zero magnifies small differences so a trivial change looks dramatic. A second way is choosing the wrong chart or a cherry-picked range — for instance a 3-D pie with many slices, or showing only the time window that supports a desired conclusion — which hides the real pattern. Both let a technically accurate dataset tell a false story. Honest visualization is the analyst's responsibility because the purpose of the whole workflow is to help someone make a good decision, and a chart engineered to persuade beyond what the data supports defeats that purpose. It is the visualization version of garbage out: misleading communication corrupts the decision just as surely as bad input data would. Choosing a fitting chart, a zero baseline, and the full relevant range keeps the presentation faithful to the analysis.",
+          "Even correct numbers can be twisted by how they're drawn. One way is stretching the scale: if a bar chart starts at 90 instead of 0, a tiny real difference looks like a huge gap because the eye reads bar sizes as value sizes. A second way is choosing the wrong chart for the question — like using a line chart to compare unrelated groups, or a pie chart crammed with so many slices that no pattern is visible — which hides the real story. Both let technically true numbers tell a false story. Showing data honestly is part of responsible analytics because the whole point of a chart is to help someone understand and decide; a chart built to persuade past what the data supports corrupts that decision. It's the picture version of getting the right answer and then lying about it. Choosing a fitting chart and a zero baseline keeps the picture faithful to the facts.",
         explanation:
-          "Full credit: names two concrete distortions (e.g., truncated axis, misleading chart type / cherry-picked range), explains how each misleads despite correct data, and argues honest visualization serves the decision the analysis exists to support.",
+          "Full credit: names two concrete distortions (e.g., stretched scale, wrong/overloaded chart), explains how each misleads despite true numbers, and argues honest visualization serves the decision the analysis exists for.",
       },
     ],
   },
@@ -569,66 +530,66 @@ type SeedPrimer = SeedTopic;
 const REASONING_PRIMERS: SeedPrimer[] = [
   {
     slug: "reasoning-primer-ethical",
-    title: "How to reason about data-judgment dilemmas",
+    title: "How to reason about everyday data dilemmas",
     weekNumber: 1,
     blurb:
-      "Assessment primer: weighing considerations in real data-work decisions.",
-    lectureTitle: "Primer: How to reason about data-judgment dilemmas",
-    body: `# How to reason about data-judgment dilemmas
+      "Assessment primer: weighing what matters when data and fairness collide.",
+    lectureTitle: "Primer: How to reason about everyday data dilemmas",
+    body: `# How to reason about everyday data dilemmas
 
-This short primer prepares you for the **Professional Judgment** diagnostic. That instrument does not ask for the "right" answer — it asks *which considerations you give weight to* when you decide. Here is the method it rewards.
+This short primer prepares you for the **Professional Judgment** check. That activity does not ask for the "right" answer — it asks *which reasons you give weight to* when you decide. Here is the kind of thinking it rewards.
 
-## A dilemma is a clash of considerations
+## A dilemma is a clash of reasons
 
-A genuine dilemma in data work is a situation where several real considerations pull in different directions: a privacy duty, pressure to deliver a result, a stakeholder's interest, the accuracy of what you report. Reasoning well does not mean ignoring the considerations you act against — it means being honest that they had weight, and saying why other considerations outweighed them.
+A real dilemma is a situation where several honest reasons pull in different directions: a promise you made, pressure to make something look good, what's easiest for you, and the truth of what you show others. Reasoning well does not mean pretending the reasons you act against don't exist — it means being honest that they had some weight, and saying why other reasons mattered more.
 
-## Three levels of consideration
+## Three kinds of reasons
 
-When you justify a decision, the *kind* of reason you appeal to matters:
+When you justify a decision, the *kind* of reason you lean on matters:
 
-- **Personal-interest reasons** — what is easiest, safest, or most rewarding *for the decider*. ("It would be awkward to flag the error.")
-- **Maintaining-norms reasons** — what the rules, the law, or one's role formally require. ("Company policy says to.") These keep order, but a rule can itself be inadequate.
-- **Principle-based reasons** — appeals to honesty, fairness, and the impartial interests of *everyone affected*, justifiable to any reasonable person. ("The people relying on this report deserve an accurate picture.")
+- **What's-easiest-for-me reasons** — what is most comfortable, safe, or rewarding for the person deciding. ("It would be awkward to say no.")
+- **Just-following-the-rule reasons** — what the rules, the grown-ups, or your role say to do. ("I was told to.") Rules keep order, but a rule can itself be unfair.
+- **Fairness reasons** — appeals to honesty, keeping promises, and the interests of *everyone affected*, the kind of reason you could defend to anyone. ("The people trusting this deserve the truth.")
 
-The diagnostic's **principled-judgment index** rises when you give the most weight to principle-based considerations rather than to convenience or to "because that's the rule."
+The check's score rises when you give the most weight to fairness reasons rather than to convenience or to "because those are the rules."
 
-## How to take the instrument well
+## How to do this activity well
 
-1. **Decide the action** the person should take.
-2. **Rate every consideration** by how much it actually weighed on you — be honest, not strategic.
+1. **Decide** what the person should do.
+2. **Rate every reason** by how much it actually weighed on you — be honest, not strategic.
 3. **Rank your top few.** Ranking is where you say what *most* drove the decision.
-4. **Read each consideration carefully.** Some are deliberately hollow or jargon-filled and reward nothing; ranking one high is a reliability flag.
+4. **Read each reason carefully.** Some are deliberately empty or fancy-sounding and reward nothing; ranking one of those high is a sign of careless answering.
 
-There is no penalty for the action you choose. What is measured is the *quality of the reasons* you stand behind.`,
+There is no penalty for the choice you make. What's measured is the *quality of the reasons* you stand behind.`,
   },
   {
     slug: "reasoning-primer-critical",
-    title: "Core critical-thinking skills",
+    title: "Core clear-thinking skills",
     weekNumber: 1,
     blurb:
       "Assessment primer: analysis, inference, evaluation, deduction, and induction.",
-    lectureTitle: "Primer: Core critical-thinking skills",
-    body: `# Core critical-thinking skills
+    lectureTitle: "Primer: Core clear-thinking skills",
+    body: `# Core clear-thinking skills
 
-This short primer prepares you for the **Critical Reasoning** diagnostic — a set of multiple-choice items that test five distinct reasoning skills. These are the same skills you use when you decide what a dataset really shows, so they matter directly for analytics.
+This short primer prepares you for the **Critical Reasoning** check — a set of multiple-choice questions that test five different thinking skills. These are the same skills you use when you decide what a set of facts really shows, so they matter directly for working with data.
 
 ## The five skills
 
-- **Analysis** — break an argument into parts: identify its **conclusion**, its stated **premises**, and any **unstated assumption** it depends on. Ask: "What is this arguing *for*, and what does it take for granted?"
-- **Inference** — work out what *follows* from given information, and how strongly. Distinguish what must be true, what is likely, and what is merely possible.
-- **Evaluation** — judge how much support the reasons actually give the conclusion. Spot when evidence is irrelevant, a source is unreliable, or a step does not connect.
-- **Deduction** — reason where a true set of premises *guarantees* the conclusion. In a valid deduction, the conclusion cannot be false if the premises are true. Watch for invalid forms (e.g. affirming the consequent).
-- **Induction** — reason from evidence or examples to a *probable* generalization or prediction. Good induction has a large, representative sample; weak induction over-generalizes from too little.
+- **Analysis** — break an argument into parts: find its **point** (the conclusion), the **reasons** given for it, and any hidden assumption it leans on. Ask: "What is this trying to convince me of, and what does it take for granted?"
+- **Inference** — work out what *follows* from what you're told, and how strongly. Tell apart what *must* be true, what is *likely*, and what is only *possible*.
+- **Evaluation** — judge how much the reasons actually support the point. Notice when evidence is beside the point, a source isn't trustworthy, or a step doesn't really connect.
+- **Deduction** — reasoning where true starting facts *guarantee* the conclusion. If the starting facts are true, the conclusion can't be false. Watch for sneaky forms that only *look* airtight.
+- **Induction** — reasoning from a few examples to a *probable* general rule or prediction. Strong induction uses many fair examples; weak induction over-generalizes from too few.
 
-## A recurring trap: correlation is not causation
+## A recurring trap: things that move together
 
-Most wrong answers are statements that are *plausible* or sound data-driven but are **not actually supported by the evidence given**. The discipline this instrument rewards is the same one analytics demands: keep apart what the data **shows**, what you are **assuming**, and what only *sounds* reasonable. Two things rising together does not prove one causes the other.
+Most wrong answers are statements that *sound* reasonable or data-driven but are **not actually backed up by what you were told**. The discipline this check rewards is the same one data work demands: keep apart what the facts **show**, what you're **assuming**, and what only *sounds* right. Two things happening together does not prove one causes the other.
 
-## How to take the instrument well
+## How to do this activity well
 
-1. Find the **conclusion** first, then the premises.
-2. Ask which of the five skills the question targets (an assumption question is analysis; a "what follows" question is inference or deduction; a "how good is this reasoning" question is evaluation).
-3. Choose the option that follows **only** from what is given — not the one that is merely true or appealing.`,
+1. Find the **point** (conclusion) first, then the reasons.
+2. Ask which of the five skills the question is testing (a hidden-assumption question is analysis; a "what follows" question is inference or deduction; a "how good is this reasoning" question is evaluation).
+3. Pick the option that follows **only** from what you were given — not the one that merely sounds true or appealing.`,
   },
 ];
 
@@ -670,15 +631,15 @@ export async function seedReasoningPrimersIfMissing(): Promise<void> {
 }
 
 export async function seedIfEmpty(): Promise<void> {
-  // The course was migrated to the Foundations of Data Analytics syllabus.
+  // The course was migrated to the Data Analytics for Everyone syllabus.
   // Detect the marker topic; if present and the content version matches, the
   // content is current and we skip. This makes the seed self-healing across
-  // environments: a database that still holds older content (e.g. the previous
-  // Ethics curriculum) is detected and replaced on boot.
+  // environments: a database that still holds older content (e.g. a previous
+  // curriculum) is detected and replaced on boot.
   const markerTopic = await db
     .select({ id: topicsTable.id })
     .from(topicsTable)
-    .where(eq(topicsTable.slug, "what-is-data-analytics"));
+    .where(eq(topicsTable.slug, "what-is-data"));
   // Read the stored content version. Tolerate the seed_meta table not yet
   // existing (e.g. a boot that races ahead of schema migration): treat that as
   // "no version recorded", which forces a reseed once the table is present.
@@ -719,7 +680,7 @@ export async function seedIfEmpty(): Promise<void> {
     const row = (existing.rows[0] ?? {}) as { n?: number };
     if ((row.n ?? 0) > 0) {
       logger.warn(
-        "Seed: stale course content detected — replacing with the Data Analytics curriculum",
+        "Seed: stale course content detected — replacing with the Data Analytics for Everyone curriculum",
       );
       await tx.execute(
         sql`TRUNCATE TABLE answers, attempts, practice_attempts, practice_problems, practice_sessions, problems, assignments, lectures, topics, diagnostic_responses, diagnostic_attempts, diagnostic_items, diagnostic_assessments RESTART IDENTITY CASCADE`,

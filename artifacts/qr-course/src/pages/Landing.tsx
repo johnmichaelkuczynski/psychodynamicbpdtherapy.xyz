@@ -6,13 +6,14 @@ import {
   Target,
   ClipboardCheck,
   ShieldCheck,
+  Search,
 } from "lucide-react";
 
 const features = [
   {
     icon: BookOpen,
-    title: "Three-Depth Lectures",
-    body: "Read any topic Short, Medium, or Long — same examples, your pace.",
+    title: "Three-Depth Lessons",
+    body: "Read any topic Short, Medium, or Long — same ideas, your pace.",
   },
   {
     icon: MessagesSquare,
@@ -22,7 +23,7 @@ const features = [
   {
     icon: Target,
     title: "Adaptive Practice",
-    body: "Problems that get harder on a streak and ease off after a miss.",
+    body: "Questions that get harder on a streak and ease off after a miss.",
   },
   {
     icon: ClipboardCheck,
@@ -37,17 +38,17 @@ const features = [
   {
     icon: BarChart3,
     title: "One Unit, 6 Topics",
-    body: "From the analytics workflow to SQL, pandas, and data visualization.",
+    body: "From what data really is all the way to turning a hunch into a decision.",
   },
 ];
 
 const topics = [
-  { n: "1.1", title: "What data analytics is and the workflow" },
-  { n: "1.2", title: "Data types, structure, and spreadsheets" },
-  { n: "1.3", title: "Querying data with SQL" },
-  { n: "1.4", title: "Cleaning and transforming data" },
-  { n: "1.5", title: "Analysis with Python (pandas)" },
-  { n: "1.6", title: "Data visualization and dashboards" },
+  { n: "1.1", title: "What is data, really?" },
+  { n: "1.2", title: "Spotting patterns: how noticing turns into knowing" },
+  { n: "1.3", title: "Asking a good question" },
+  { n: "1.4", title: "Sorting, grouping, and counting" },
+  { n: "1.5", title: "Seeing the story: pictures that make data obvious" },
+  { n: "1.6", title: "From hunch to decision: tiny analytics in real life" },
 ];
 
 export default function Landing() {
@@ -55,11 +56,11 @@ export default function Landing() {
     <div className="min-h-[100dvh] bg-background text-foreground flex flex-col">
       <header className="flex items-center justify-between px-6 py-4 border-b border-border">
         <div className="flex items-center gap-3">
-          <div className="w-8 h-8 bg-primary rounded-md flex items-center justify-center text-primary-foreground font-serif font-bold text-sm">
-            101
+          <div className="w-8 h-8 bg-primary rounded-md flex items-center justify-center text-primary-foreground">
+            <Search className="w-4 h-4" />
           </div>
           <span className="font-serif font-semibold text-lg tracking-tight">
-            Data 101
+            Data Detective
           </span>
         </div>
         <div className="flex items-center gap-2">
@@ -86,15 +87,15 @@ export default function Landing() {
         <section className="max-w-4xl mx-auto px-6 pt-20 pb-16 text-center">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary text-secondary-foreground text-xs font-medium mb-6">
             <BarChart3 className="w-3.5 h-3.5" />
-            A one-unit foundations of data analytics course
+            A friendly, one-unit intro to data analytics
           </div>
           <h1 className="text-4xl md:text-5xl font-serif font-bold text-primary leading-tight mb-5">
-            Ask the question. Work the data. Tell the story.
+            Ask the question. Notice the pattern. Tell the story.
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
-            A self-paced data analytics course that teaches, tutors, drills, and
-            grades you — from the analytics workflow all the way to SQL, pandas,
-            and data visualization.
+            A self-paced course that teaches, tutors, drills, and grades you —
+            data analytics in plain language, no math or coding required. Perfect
+            for curious students and grown-ups alike.
           </p>
           <div className="flex items-center justify-center gap-3">
             <Link href="/sign-up">
@@ -159,7 +160,7 @@ export default function Landing() {
       </main>
 
       <footer className="border-t border-border px-6 py-6 text-center text-sm text-muted-foreground">
-        Data 101 — where the curriculum, the tutor, the grader, and the
+        Data Detective — where the curriculum, the tutor, the grader, and the
         integrity check all live in one room.
       </footer>
     </div>

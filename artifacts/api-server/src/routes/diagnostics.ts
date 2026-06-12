@@ -331,7 +331,7 @@ router.post("/diagnostics/synthetic-run", async (_req, res) => {
           correctAnswer: string;
           explanation: string;
         }>(
-          `You generate a single college data analytics practice problem on "${topic.title}" at easy difficulty, with a short answer (a word, term, "yes"/"no", or short phrase). Respond as strict JSON: {"prompt": string, "correctAnswer": string, "explanation": string}.`,
+          `You generate a single introductory data analytics practice problem on "${topic.title}" at easy difficulty, with a short answer (a word, term, "yes"/"no", or short phrase). Respond as strict JSON: {"prompt": string, "correctAnswer": string, "explanation": string}.`,
           `New problem on ${topic.title}.`,
         );
         const [stored] = await db
@@ -517,7 +517,7 @@ router.post("/diagnostics/quality-control", async (_req, res) => {
           // course's own lecture, blind to the seeded key, so the verdict can't
           // just rubber-stamp the key.
           const derived = await chatText(
-            "You are a strong college data analytics student answering a short-answer problem. " +
+            "You are a strong introductory data analytics student answering a short-answer problem. " +
               "Base your answer on the course lecture provided, using its framework and terminology rather than outside theories. " +
               "Answer the prompt directly and concisely (one or two sentences, or just the requested word). " +
               "Do not restate the prompt or add commentary.\n\n=== COURSE LECTURE ===\n" +
@@ -533,7 +533,7 @@ router.post("/diagnostics/quality-control", async (_req, res) => {
             confidence: number;
             rationale: string;
           }>(
-            "You are an academic quality-control reviewer for a college data analytics course. " +
+            "You are an academic quality-control reviewer for a introductory data analytics course. " +
               "You are given the course lecture the problem is drawn from, a problem prompt, the SHORT answer key the course grades students against, and an independently derived answer produced without seeing the key. " +
               "Judge the key ONLY against what THIS lecture teaches — its definitions, framework, and terminology — not against outside or mainstream treatments that the lecture does not use. " +
               "Answers are graded by semantic equivalence: a key is legitimate if it is a correct, on-topic answer that a fair grader would accept given the lecture — it does NOT have to be the only possible answer, the most general phrasing, exhaustive, or identical to the independent answer. " +
@@ -639,7 +639,7 @@ router.post("/diagnostics/expand-lectures", async (req, res) => {
       : "Noticeably more explanation: clarify each definition, motivate each rule, and add a short 'why this works' note where useful.";
 
   const sys =
-    `You are a college data analytics lecturer producing the ${level.toUpperCase()} version of a lecture. ` +
+    `You are a introductory data analytics lecturer producing the ${level.toUpperCase()} version of a lecture. ` +
     "You are given the SHORT version of the lecture. Rewrite it as a longer teaching version. RULES, no exceptions:\n" +
     "1. KEEP every heading and every concept from the SHORT version, in the same order, with the same names. You may add new sub-sections only when needed to introduce additional examples — but no new top-level topics.\n" +
     `2. ${moreExplanation}\n` +

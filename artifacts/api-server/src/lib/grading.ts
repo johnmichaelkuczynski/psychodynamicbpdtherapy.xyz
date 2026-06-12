@@ -57,7 +57,7 @@ export async function gradeAnswer(opts: {
   try {
     const out = await chatJson<{ correct: boolean; explanation: string }>(
       [
-        "You grade short college data analytics answers. Judge whether the student's answer is ACTUALLY CORRECT as an answer to the question, using your own expert knowledge of data analytics and reasoning. Judge on substance alone.",
+        "You grade short introductory data analytics answers. Judge whether the student's answer is ACTUALLY CORRECT as an answer to the question, using your own expert knowledge of data analytics and reasoning. Judge on substance alone.",
         "",
         "About the reference answer:",
         "- A `reference_answer` is provided. It is only a FALLIBLE HINT from the course materials — it may be incomplete, narrow, or simply WRONG. It is NOT ground truth.",
@@ -123,7 +123,7 @@ export async function gradePracticeEssay(opts: {
       feedback: string;
     }>(
       [
-        "You are a warm, rigorous college data analytics tutor giving feedback on a PRACTICE answer (never penalized — the goal is to help the student improve before the real graded version).",
+        "You are a warm, rigorous introductory data analytics tutor giving feedback on a PRACTICE answer (never penalized — the goal is to help the student improve before the real graded version).",
         "",
         "Decide `correct` by whether the student's answer is ACTUALLY CORRECT on the merits, using your own expert knowledge of data analytics — not by similarity to any reference. A `reference_answer` is provided, but it is only a FALLIBLE HINT from the course materials: it may be incomplete, narrow, or simply WRONG, and is NOT ground truth. If the student is actually correct but differs from or contradicts the reference, mark `correct` = true; if the reference is wrong, ignore it.",
         "",

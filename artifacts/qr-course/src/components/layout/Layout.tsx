@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
-import { LayoutDashboard, PenTool, BarChart3, Activity, RotateCcw, Sparkles, LogOut, Scale, GraduationCap, ShieldCheck } from "lucide-react";
+import { LayoutDashboard, PenTool, BarChart3, Activity, RotateCcw, Sparkles, LogOut, Scale, GraduationCap, ShieldCheck, Search } from "lucide-react";
 import { useQueryClient } from "@tanstack/react-query";
 import { useClerk, useUser } from "@clerk/react";
 import { useAdminMode } from "@/lib/adminMode";
@@ -27,10 +27,10 @@ export function Sidebar() {
       <div className="p-6 border-b border-border">
         <Link href="/dashboard">
           <div className="flex items-center gap-3 cursor-pointer">
-            <div className="w-8 h-8 bg-primary rounded-md flex items-center justify-center text-primary-foreground font-serif font-bold text-sm">
-              101
+            <div className="w-8 h-8 bg-primary rounded-md flex items-center justify-center text-primary-foreground">
+              <Search className="w-4 h-4" />
             </div>
-            <span className="font-serif font-semibold text-lg tracking-tight">Data 101</span>
+            <span className="font-serif font-semibold text-lg tracking-tight">Data Detective</span>
           </div>
         </Link>
       </div>
@@ -56,7 +56,7 @@ export function Sidebar() {
       </div>
 
       <div className="p-4 border-t border-border text-xs text-muted-foreground text-center">
-        Data Analytics Course MVP
+        Data Detective
       </div>
     </div>
   );

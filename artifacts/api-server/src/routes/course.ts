@@ -20,9 +20,9 @@ const router: IRouter = Router();
 
 const WEEK_TITLES: Record<number, { title: string; summary: string }> = {
   1: {
-    title: "Foundations of Data Analytics",
+    title: "Data Analytics for Everyone",
     summary:
-      "What analytics is and the workflow, data types and spreadsheets, querying with SQL, cleaning and transforming data, analysis with Python (pandas), and data visualization and dashboards.",
+      "What data really is, spotting patterns, asking a good question, the simple moves of sorting, grouping, and counting, seeing the story with charts, and turning a hunch into a decision — no technical skills required.",
   },
 };
 
@@ -111,7 +111,7 @@ router.get("/course/overview", async (_req, res) => {
 
   res.json(
     GetCourseOverviewResponse.parse({
-      title: "Data 101",
+      title: "Data Detective",
       weeks,
       totals: { assignmentsCompleted, assignmentsTotal, practiceCount },
     }),
@@ -202,7 +202,7 @@ router.post(
     const sourceBody = (base && base.trim().length > 0 ? base : lecture.body).trim();
 
     const sys =
-      "You are a college data analytics lecturer revising your own lecture at a student's request. " +
+      "You are a introductory data analytics lecturer revising your own lecture at a student's request. " +
       "You are given the CURRENT lecture and ONE instruction from the student about how to revise it. " +
       "Apply the instruction faithfully. ABSOLUTE RULES, no exceptions:\n" +
       "1. KEEP every concept, claim, and learning objective from the current lecture. Never drop material or change what the lecture teaches — only adjust how it is presented per the instruction.\n" +

@@ -235,13 +235,13 @@ function ClerkProviderWithRoutes() {
         signIn: {
           start: {
             title: "Welcome back",
-            subtitle: "Sign in to continue your Data Analytics course",
+            subtitle: "Sign in to continue your Data Detective course",
           },
         },
         signUp: {
           start: {
             title: "Create your account",
-            subtitle: "Start your Data Analytics course with Data 101",
+            subtitle: "Start your data analytics journey with Data Detective",
           },
         },
       }}
