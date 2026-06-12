@@ -443,6 +443,15 @@ router.post("/diagnostics/quality-control", async (_req, res) => {
     lectureBody: string;
   }[] = [];
 
+  // For cumulative assessments (test/midterm/final), the answer key legitimately
+  // draws on examples from across the whole unit, not just the single topic the
+  // problem is tagged to. Grounding such a key in only its own topic's lecture
+  // false-flags correct keys that cite content taught in a sibling topic. We
+  // therefore build a per-unit combined lecture text and use it for cumulative
+  // problems, while keeping homework scoped to its own topic's lecture.
+  const unitLectures = new Map<number, string>();
+  const CUMULATIVE_KINDS = new Set(["test", "midterm", "final"]);
+
   steps.push(
     await run("Collect course problems for review", async () => {
       const rows = await db
@@ -493,6 +502,34 @@ router.post("/diagnostics/quality-control", async (_req, res) => {
         }
         sample = picked;
       }
+
+      // Build the per-unit combined lecture text used to ground cumulative
+      // assessment keys. Each topic's lecture is truncated and concatenated
+      // (with its title) so a Final/test key can be judged against everything
+      // the unit actually taught, not just one topic.
+      const allLectures = await db
+        .select({
+          weekNumber: lecturesTable.weekNumber,
+          title: lecturesTable.title,
+          body: lecturesTable.body,
+        })
+        .from(lecturesTable)
+        .innerJoin(topicsTable, eq(topicsTable.id, lecturesTable.topicId))
+        .orderBy(asc(lecturesTable.weekNumber), asc(topicsTable.position));
+      const PER_LECTURE_CAP = 2200;
+      const byUnitText = new Map<number, string[]>();
+      for (const l of allLectures) {
+        const list = byUnitText.get(l.weekNumber) ?? [];
+        list.push(`### ${l.title}\n${l.body.slice(0, PER_LECTURE_CAP)}`);
+        byUnitText.set(l.weekNumber, list);
+      }
+      // Cap the combined per-unit text so token cost stays bounded if the
+      // curriculum grows to many topics per unit.
+      const UNIT_TEXT_CAP = 12000;
+      for (const [week, parts] of byUnitText) {
+        unitLectures.set(week, parts.join("\n\n").slice(0, UNIT_TEXT_CAP));
+      }
+
       return `reviewing ${sample.length} of ${rows.length} problems`;
     }),
   );
@@ -508,41 +545,53 @@ router.post("/diagnostics/quality-control", async (_req, res) => {
         }"`,
         async () => {
           // The course is grounded in a specific source text, whose framework and
-          // terminology can differ from mainstream treatments. Both phases are
-          // grounded in THIS lecture so the check judges keys against what the
-          // course actually teaches — not generic textbook data analytics.
-          const lecture = p.lectureBody.slice(0, 3500);
+          // terminology can differ from mainstream treatments. The check judges
+          // keys against what the course actually teaches — not generic textbook
+          // data analytics. Homework is scoped to its own topic's lecture, but
+          // cumulative assessments (test/midterm/final) draw on examples from
+          // across the whole unit, so they are grounded in every lecture in the
+          // unit; otherwise a correct key citing a sibling topic's example
+          // (e.g. one lecture's case study reused on the final) is false-flagged
+          // as "not in this lecture".
+          const isCumulative = CUMULATIVE_KINDS.has(p.kind);
+          const lecture = isCumulative
+            ? (unitLectures.get(p.weekNumber) ?? p.lectureBody.slice(0, 3500))
+            : p.lectureBody.slice(0, 3500);
+          const sourceLabel = isCumulative
+            ? "the course lectures for this unit"
+            : "the course lecture";
 
           // Phase 1 — independently re-derive the answer from the prompt + the
-          // course's own lecture, blind to the seeded key, so the verdict can't
-          // just rubber-stamp the key.
+          // course's own lecture material, blind to the seeded key, so the
+          // verdict can't just rubber-stamp the key.
           const derived = await chatText(
             "You are a strong introductory data analytics student answering a short-answer problem. " +
-              "Base your answer on the course lecture provided, using its framework and terminology rather than outside theories. " +
+              `Base your answer on ${sourceLabel} provided, using its framework and terminology rather than outside theories. ` +
               "Answer the prompt directly and concisely (one or two sentences, or just the requested word). " +
-              "Do not restate the prompt or add commentary.\n\n=== COURSE LECTURE ===\n" +
+              "Do not restate the prompt or add commentary.\n\n=== COURSE LECTURE MATERIAL ===\n" +
               lecture,
             p.prompt,
           );
 
           // Phase 2 — judge whether the seeded key is a legitimate answer, given
-          // the course lecture, the prompt, and our independent answer, using the
-          // grader's semantic-equivalence philosophy.
+          // the course lecture material, the prompt, and our independent answer,
+          // using the grader's semantic-equivalence philosophy.
           const verdict = await chatJson<{
             legitimate: boolean;
             confidence: number;
             rationale: string;
           }>(
             "You are an academic quality-control reviewer for a introductory data analytics course. " +
-              "You are given the course lecture the problem is drawn from, a problem prompt, the SHORT answer key the course grades students against, and an independently derived answer produced without seeing the key. " +
-              "Judge the key ONLY against what THIS lecture teaches — its definitions, framework, and terminology — not against outside or mainstream treatments that the lecture does not use. " +
-              "Answers are graded by semantic equivalence: a key is legitimate if it is a correct, on-topic answer that a fair grader would accept given the lecture — it does NOT have to be the only possible answer, the most general phrasing, exhaustive, or identical to the independent answer. " +
+              `You are given ${sourceLabel} the problem is drawn from, a problem prompt, the SHORT answer key the course grades students against, and an independently derived answer produced without seeing the key. ` +
+              "Judge the key ONLY against what the provided course material teaches — its definitions, framework, terminology, and examples — not against outside or mainstream treatments that the course does not use. " +
+              "When the provided material contains multiple lectures, an example or term taught in ANY of them counts as taught by the course; do not flag a key merely because the example appears in a different lecture than the one most associated with the prompt. " +
+              "Answers are graded by semantic equivalence: a key is legitimate if it is a correct, on-topic answer that a fair grader would accept given the course material — it does NOT have to be the only possible answer, the most general phrasing, exhaustive, or identical to the independent answer. " +
               "Use the independent answer only as a cross-check; the key and the independent answer can both be correct while differing in wording or emphasis. Watch for polarity on yes/no and negated prompts. " +
-              "Mark a key NOT legitimate ONLY when it is genuinely defective relative to the lecture: factually wrong by the lecture's own account, off-topic, self-contradictory, or so ambiguous it could not be graded fairly. " +
-              "Do not penalize a key merely for being brief, for being one of several acceptable answers, for omitting nuance the short format can't carry, or for using the lecture's terminology instead of mainstream terms. " +
+              "Mark a key NOT legitimate ONLY when it is genuinely defective relative to the course material: factually wrong by the course's own account, off-topic, self-contradictory, or so ambiguous it could not be graded fairly. " +
+              "Do not penalize a key merely for being brief, for being one of several acceptable answers, for omitting nuance the short format can't carry, or for using the course's terminology instead of mainstream terms. " +
               'Respond as strict JSON: {"legitimate": boolean, "confidence": number between 0 and 1, "rationale": string (1-2 sentences)}.',
             JSON.stringify({
-              course_lecture: lecture,
+              course_lecture_material: lecture,
               prompt: p.prompt,
               answer_key: p.correctAnswer,
               independently_derived_answer: derived.trim(),
