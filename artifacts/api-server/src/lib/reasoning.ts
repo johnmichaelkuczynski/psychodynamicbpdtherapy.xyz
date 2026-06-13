@@ -270,7 +270,7 @@ function deterministicFeedback(
     return `Thank you for completing this critical-reasoning checkpoint. ${overall?.value ? `You scored ${overall.value}.` : ""}${weakLine} Remember that a strong answer follows only from the reasons given — distinguish what is stated, what is assumed, and what is merely plausible.`;
   }
   const p = summary.metrics.find((m) => m.label.startsWith("Principled"));
-  return `Thank you for working through this data-work scenario. ${p ? `Your principled-judgment index was ${p.value}.` : ""} A high index means you gave the most weight to considerations about data integrity, honest reporting, and the people who rely on your work rather than to convenience or self-interest. There is no single correct answer here — what matters is whether your decision rests on reasons you could defend to anyone affected by it.`;
+  return `Thank you for working through this everyday-judgment scenario. ${p ? `Your principled-judgment index was ${p.value}.` : ""} A high index means you gave the most weight to considerations about honesty, fairness, and the people affected by your choice rather than to convenience or self-interest. There is no single correct answer here — what matters is whether your decision rests on reasons you could defend to anyone affected by it.`;
 }
 
 export async function generateFeedback(
@@ -283,7 +283,7 @@ export async function generateFeedback(
     .join("\n");
   const system =
     instrument === "ethical"
-      ? "You are a data-analytics instructor giving warm, specific feedback on a student's professional-judgment self-assessment about a realistic data-work scenario. 2-4 sentences. Explain what their principled-judgment index reflects and offer one concrete way to deepen their reasoning. Do not invent numbers; use only the metrics provided. Plain prose, no markdown headings."
+      ? "You are an instructor giving warm, specific feedback on a student's professional-judgment self-assessment about a realistic everyday-judgment scenario. 2-4 sentences. Explain what their principled-judgment index reflects and offer one concrete way to deepen their reasoning. Do not invent numbers; use only the metrics provided. Plain prose, no markdown headings."
       : "You are a critical-thinking instructor giving warm, specific feedback on a student's reasoning assessment. 2-4 sentences. Note overall performance and the skill areas to strengthen, using only the metrics provided. Plain prose, no markdown headings.";
   const user = `Assessment: ${assessmentTitle}\nResult summary: ${summary.headline}\nMetrics:\n${metricsText}`;
   try {
@@ -404,12 +404,12 @@ async function generateEthicalVariant(
   const considerationCount = stages.length;
   const decisionCount = payload.decisionOptions.length;
   const system =
-    "You are an assessment author writing an ORIGINAL data-work judgment scenario. " +
-    "Produce a realistic, self-contained scenario about a named data professional (e.g. a data analyst, BI developer, or data scientist) facing a hard decision where legitimate considerations conflict — think data privacy, honest reporting, chart/metric integrity, deadline pressure, or stakeholder requests. Then write a set of considerations someone might weigh. " +
+    "You are an assessment author writing an ORIGINAL everyday-judgment scenario. " +
+    "Produce a realistic, self-contained scenario about a named person (e.g. a student, a friend, a teammate) facing a hard decision where legitimate considerations conflict — think honesty, fairness, loyalty, privacy, peer pressure, or owning up to a mistake. Then write a set of considerations someone might weigh. " +
     "Each consideration is tagged with a hidden stage you must honor:\n" +
     "- P = appeals to the decider's personal interest, image, convenience, or job security\n" +
     "- M = appeals to company policy, rules, a manager's request, or one's formal role (maintaining norms)\n" +
-    "- PC = appeals to impartial principles: honesty, data integrity, accuracy, and the rights and interests of everyone affected by the data or analysis (principled)\n" +
+    "- PC = appeals to impartial principles: honesty, fairness, and the rights and interests of everyone affected by the decision (principled)\n" +
     "- X = a nonsensical or irrelevant statement that sounds sophisticated but says nothing (a reliability check)\n" +
     "Write a DISTINCT scenario from any example. " +
     'Respond ONLY as JSON: {"prompt":"scenario text ending with the yes/no decision question","decisionOptions":["do X","Can\'t decide","do opposite"],"considerations":[{"text":"...","stage":"PC"}]}.';

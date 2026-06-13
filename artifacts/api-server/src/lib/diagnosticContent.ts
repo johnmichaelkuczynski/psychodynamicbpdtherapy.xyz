@@ -3,7 +3,7 @@
 //
 // Two instruments, each administered twice (a baseline before the course and a
 // checkpoint after the single unit) with MUTUALLY UNIQUE items:
-//   - Professional Judgment (DIT-style): a realistic data-work scenario; the
+//   - Professional Judgment (DIT-style): a realistic everyday scenario; the
 //     student rates ~12 considerations by importance and ranks the most
 //     important few. A principled-judgment ("P") index is computed from how
 //     postconventional considerations are ranked. Stages: P = personal
@@ -60,29 +60,29 @@ const CRITICAL_INSTRUCTIONS =
   "Answer each question by selecting the single best option. Work carefully — these questions measure reasoning, not recall. Submitting completes the assessment and you'll receive written feedback on your performance.";
 
 // ===========================================================================
-// PROFESSIONAL JUDGMENT — two unique data-work scenarios
+// PROFESSIONAL JUDGMENT — two unique everyday scenarios
 // ===========================================================================
 
 const DILEMMA_BASELINE: DilemmaItem = {
   prompt:
-    "Mia made a chart for her group's science-fair project showing that their class's recycling went up only a little — about 1% — after a new bin was added. The day before judging, a teammate asks Mia to start the chart's bottom line high up the scale so the tiny rise 'looks like a huge jump.' The actual numbers wouldn't change — only how the chart is drawn.\n\nShould Mia refuse and show the chart with an honest baseline?",
+    "Mia helped run a small experiment for her group's science-fair project, testing whether people spot a snake in a photo faster than a flower. The real difference her group found was tiny. The day before judging, a teammate asks Mia to describe the result on their poster as a 'huge, dramatic difference,' even though it was barely there, because it 'sounds more impressive.' The actual numbers wouldn't change — only how they're described.\n\nShould Mia refuse and present the result honestly?",
   decisionOptions: [
-    "Mia should refuse and show the chart honestly",
+    "Mia should refuse and present the result honestly",
     "Can't decide",
-    "Mia should stretch the chart to look more impressive, as asked",
+    "Mia should exaggerate the result to sound impressive, as asked",
   ],
   considerations: [
     { text: "Whether refusing would make Mia look difficult and upset her teammates.", stage: "P" },
-    { text: "Whether the judges and audience deserve an accurate picture so they can judge fairly.", stage: "PC" },
+    { text: "Whether the judges and audience deserve an accurate description so they can judge fairly.", stage: "PC" },
     { text: "Whether Mia's job is simply to do whatever the group decides.", stage: "M" },
-    { text: "Whether a stretched chart, even with the same numbers, misleads the people looking at it.", stage: "PC" },
+    { text: "Whether calling a tiny difference 'huge,' even with the same numbers, misleads the people listening.", stage: "PC" },
     { text: "Whether Mia would feel more comfortable just going along with the request.", stage: "P" },
-    { text: "Whether the science-fair rules call for charts that don't distort the data.", stage: "M" },
+    { text: "Whether the science-fair rules call for honest reporting of results.", stage: "M" },
     { text: "Whether Mia might be thanked by the group for being a cooperative 'team player'.", stage: "P" },
-    { text: "Whether stretching the scale chips away at the honesty the whole project depends on.", stage: "PC" },
+    { text: "Whether exaggerating the result chips away at the honesty the whole project depends on.", stage: "PC" },
     { text: "Whether the group should have used nicer poster colors.", stage: "X" },
-    { text: "Whether 'everyone tweaks their charts to look good anyway.'", stage: "M" },
-    { text: "Whether the people reading the chart deserve a faithful view of what really happened.", stage: "PC" },
+    { text: "Whether 'everyone hypes up their results anyway.'", stage: "M" },
+    { text: "Whether the people reading the poster deserve a faithful account of what really happened.", stage: "PC" },
     { text: "Whether refusing might cost Mia a good grade from her teammates' point of view.", stage: "P" },
   ],
   rankCount: 4,
@@ -360,7 +360,7 @@ export const DIAGNOSTIC_SEED: DiagnosticSeed[] = [
     instrument: "ethical",
     phase: "unit1",
     title: "Professional Judgment Inventory — Course Checkpoint",
-    subtitle: "After the unit: Data Analytics for Everyone",
+    subtitle: "After the unit: Evolutionary Psychology for Everyone",
     instructions: ETHICAL_INSTRUCTIONS,
     dilemmas: [DILEMMA_UNIT1],
   },
@@ -368,7 +368,7 @@ export const DIAGNOSTIC_SEED: DiagnosticSeed[] = [
     instrument: "critical",
     phase: "unit1",
     title: "Critical Reasoning Assessment — Course Checkpoint",
-    subtitle: "After the unit: Data Analytics for Everyone",
+    subtitle: "After the unit: Evolutionary Psychology for Everyone",
     instructions: CRITICAL_INSTRUCTIONS,
     mcqs: CRITICAL_UNIT1,
   },

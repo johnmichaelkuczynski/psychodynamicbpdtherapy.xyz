@@ -38,17 +38,17 @@ const features = [
   {
     icon: BarChart3,
     title: "One Unit, 6 Topics",
-    body: "From what data really is all the way to turning a hunch into a decision.",
+    body: "From why your mind has a history all the way to why we fight — and believe.",
   },
 ];
 
 const topics = [
-  { n: "1.1", title: "What is data, really?" },
-  { n: "1.2", title: "Spotting patterns: how noticing turns into knowing" },
-  { n: "1.3", title: "Asking a good question" },
-  { n: "1.4", title: "Sorting, grouping, and counting" },
-  { n: "1.5", title: "Seeing the story: pictures that make data obvious" },
-  { n: "1.6", title: "From hunch to decision: tiny analytics in real life" },
+  { n: "1.1", title: "The mind has a history" },
+  { n: "1.2", title: "Built to survive: cravings, fears, and beauty" },
+  { n: "1.3", title: "The logic of attraction" },
+  { n: "1.4", title: "Love, jealousy, and keeping a mate" },
+  { n: "1.5", title: "Why we cooperate" },
+  { n: "1.6", title: "Why we fight — and believe" },
 ];
 
 export default function Landing() {
@@ -60,7 +60,7 @@ export default function Landing() {
             <Search className="w-4 h-4" />
           </div>
           <span className="font-serif font-semibold text-lg tracking-tight">
-            Data Analytics for Children
+            Evolutionary Psychology for Children
           </span>
         </div>
         <div className="flex items-center gap-2">
@@ -87,15 +87,15 @@ export default function Landing() {
         <section className="max-w-4xl mx-auto px-6 pt-20 pb-16 text-center">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary text-secondary-foreground text-xs font-medium mb-6">
             <BarChart3 className="w-3.5 h-3.5" />
-            A friendly, one-unit intro to data analytics
+            A friendly, one-unit intro to evolutionary psychology
           </div>
           <h1 className="text-4xl md:text-5xl font-serif font-bold text-primary leading-tight mb-5">
-            Ask the question. Notice the pattern. Tell the story.
+            Your mind has a history. Let's read it together.
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
             A self-paced course that teaches, tutors, drills, and grades you —
-            data analytics in plain language, no math or coding required. Perfect
-            for curious students and grown-ups alike.
+            evolutionary psychology in plain language, no math or coding required.
+            Perfect for curious students and grown-ups alike.
           </p>
           <div className="flex items-center justify-center gap-3">
             <Link href="/sign-up">
@@ -160,7 +160,7 @@ export default function Landing() {
       </main>
 
       <footer className="border-t border-border px-6 py-6 text-center text-sm text-muted-foreground">
-        Data Analytics for Children — where the curriculum, the tutor, the grader, and the
+        Evolutionary Psychology for Children — where the curriculum, the tutor, the grader, and the
         integrity check all live in one room.
       </footer>
     </div>

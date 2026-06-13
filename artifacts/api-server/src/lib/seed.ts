@@ -14,7 +14,7 @@ import { logger } from "./logger";
 // the value stored in seed_meta; a mismatch forces a full re-seed, so content
 // edits self-heal in every environment (including a republished production)
 // without a manual database wipe.
-const SEED_CONTENT_VERSION = "2026-06-12-data-for-everyone-v1";
+const SEED_CONTENT_VERSION = "2026-06-13-evo-psych-for-children-v1";
 
 type SeedTopic = {
   slug: string;
@@ -26,275 +26,190 @@ type SeedTopic = {
 };
 
 const TOPICS: SeedTopic[] = [
-  // Unit 1 — Data Analytics for Everyone
+  // Unit 1 — Evolutionary Psychology for Everyone
   {
-    slug: "what-is-data",
-    title: "What is data, really?",
+    slug: "mind-has-history",
+    title: "The mind has a history",
     weekNumber: 1,
-    blurb: "Data is just things you notice, written down — and you use it every day.",
-    lectureTitle: "1.1 What is data, really? (you already think in data every day)",
-    body: `# What is data, really?
+    blurb: "Your brain is an evolved body part that comes pre-loaded — not a blank page.",
+    lectureTitle: "1.1 The mind has a history (your thoughts and feelings are tools, not accidents)",
+    body: `# The mind has a history
 
-People hear the word **data** and picture spreadsheets, scientists, or giant computers. But the real idea is much smaller and much friendlier: **data is just facts you notice about the world, recorded so you can use them later.**
+When you think about where your body came from, the answer is easy: you grew it over years, and before that it was shaped over a very long time by living things slowly changing. Here is the surprising part — **your mind has the same kind of history.** Your brain is a body part, just like your heart or your hands, and it was shaped across countless generations to help your ancestors survive and care for their families.
 
-A score in a game is data. The temperature outside is data. How many slices of pizza are left is data. None of that needs a computer — it just needs someone paying attention.
+## The brain is an organ with a job
 
-## You already think in data
+Your heart has a job: pump blood. Your stomach has a job: digest food. Your **brain** has a job too — to take in what's happening around you and quickly choose what to do. Like every other body part, it was built up slowly over a very long time, because the versions that worked best got passed on. So the brain isn't a blank notebook waiting to be filled in. It arrives already good at certain things.
 
-You use data constantly without calling it that:
+## Not a blank slate
 
-- You check the weather and decide whether to bring a jacket.
-- You notice the bus is usually late on rainy days, so you leave earlier.
-- You remember that your phone dies by lunch, so you charge it at night.
+People used to think a baby's mind was a totally empty page, and that everything we feel and think is just written on later by the world. But that isn't quite right. A newborn already knows how to suck, cry, and grip a finger. A baby will stare longer at a face than at a random pattern. Nobody taught them that. They came **pre-loaded** — born ready for a few important things, the way a new phone comes with a few apps already installed.
 
-Each of those is the same move: you **noticed something**, you **remembered it**, and you **used it to make a choice**. That is the whole heart of data analytics, just done in your head.
+## Feelings are tools, not accidents
 
-## From data to a decision
+Here is the big idea of this whole course: your thoughts and feelings aren't random, and they aren't mistakes. They are **tools** that helped your ancestors. Fear makes you freeze or run from danger. Disgust makes you spit out rotten food before it makes you sick. Love makes you take care of the people closest to you. Each feeling is like a tool in a toolbox, shaped because it once helped people stay alive and look after their families.
 
-There is a simple ladder that turns raw facts into something useful:
+## Why "shaped over time"?
 
-- **Data** — a plain fact: "It rained Monday, Wednesday, and Friday."
-- **Information** — the fact placed in context: "It rained on 3 of the 5 school days last week."
-- **Insight** — what it means for you: "Most of this week was wet, so I should keep an umbrella in my bag."
-
-The point of the ladder is the last rung. A fact that never changes a choice is just trivia. **Data is only worth collecting when it can help you decide something.**
-
-## Where everyday data comes from
-
-You can gather data the same ways grown-up analysts do, only simpler:
-
-- **Counting** — how many people brought lunch today.
-- **Measuring** — how long it takes you to walk to school.
-- **Asking** — a quick survey of which movie your friends want to see.
-- **Watching over time** — writing down your bedtime every night for a week.
-
-The trick is to write it down. A memory is fuzzy and changes; a written record stays put and can be checked.
+Long ago, tiny differences between people mattered. Someone who felt afraid of a growling animal was more likely to live than someone who felt nothing. The ones who lived had children, and those children often inherited the same useful feeling through their **genes** — the instructions passed from parent to child. Repeat that for a very, very long time and you get a mind that comes ready with helpful instincts. The mind even seems to have different "parts" for different jobs — a bit for faces, a bit for danger, a bit for language — like separate tools each shaped for one task.
 
 ## In the real world
 
-Long before fancy tools existed, a nurse named Florence Nightingale collected data during a war in the 1850s. She simply wrote down what soldiers were dying from — and noticed that far more were dying from dirty conditions and infection than from battle wounds. That was just careful counting, written down. Her records convinced leaders to clean up the hospitals, and far fewer soldiers died. She didn't have a computer. She had the habit of noticing, recording, and acting — which is all data really is.`,
+Babies all over the world, in every country, start to fear strangers at about the same age — around eight months old. No parent teaches this; it shows up on its own, right around the time a crawling baby could wander off into danger. That timing is a clue. A feeling that appears on schedule, everywhere, without being taught, looks a lot like something the mind came **pre-loaded** with — a small piece of history you can actually watch happen.`,
   },
   {
-    slug: "spotting-patterns",
-    title: "Spotting patterns: how noticing turns into knowing",
+    slug: "built-to-survive",
+    title: "Built to survive",
     weekNumber: 1,
-    blurb: "A pattern is something that repeats or stands out — and patterns are how data becomes knowledge.",
-    lectureTitle: "1.2 Spotting patterns: how noticing turns into knowing",
-    body: `# Spotting patterns: how noticing turns into knowing
+    blurb: "Why we crave sugar, fear snakes faster than cars, and find certain places beautiful.",
+    lectureTitle: "1.2 Built to survive (the easiest proof the past engineered your mind)",
+    body: `# Built to survive
 
-One fact on its own rarely tells you much. The magic happens when you have a few facts and you start to see how they fit together. That fitting-together is called a **pattern** — and spotting patterns is how a pile of data turns into something you actually *know*.
+The easiest way to see that your mind has a history is to look at the things you want, fear, and find beautiful — without ever deciding to. A lot of those reactions don't fully make sense for the world *today*, but they make perfect sense for the world your ancestors lived in. In many ways, your mind is **built for the past.**
 
-## What a pattern is
+## Why sweet and fatty food tastes amazing
 
-A **pattern** is anything that repeats, trends, or clearly stands out. Three kinds show up again and again:
+Sugar and fat taste wonderful to almost everyone. That isn't an accident. Long ago, food was often scarce, and sweet, fatty food was packed with the energy a body needed to survive. People who loved that food ate it whenever they found it and were more likely to live through hungry times. Today food is everywhere, so the same craving can lead us to eat too much candy — but the craving itself is an old survival tool that once kept people alive.
 
-- **A trend** — things moving in one direction over time. "Every week this month, more kids signed up for the club than the week before."
-- **A group difference** — one group behaving differently from another. "People who ate breakfast got higher quiz scores than people who skipped it."
-- **An outlier** — one thing that doesn't fit the rest. "Everyone scored around 80 on the test, but one paper had a 12."
+## Fearing the right things (and the wrong ones)
 
-Once you can name these three, you start seeing them everywhere.
+People learn to fear snakes and spiders incredibly fast — often after a single scare, or even just a warning. But we *don't* pick up fears of cars, electricity, or junk food nearly as easily, even though those hurt far more people today. Why? Snakes and spiders were dangers for millions of years, so the mind comes ready to fear them quickly. Cars are brand new in the history of humans, so there was never time to build in a fast fear of them. Your fears are tuned to your **ancestors'** dangers, not always your own.
 
-## Noticing, then comparing
+## Why certain places feel beautiful
 
-Patterns almost always come from **comparing**. A single number ("I made 6 free throws") means little. Compared to something, it comes alive:
+Picture a calm scene people call "beautiful": open grassy land, a few scattered trees, some water in the distance, maybe a hill to look out from. People across the whole world tend to like that same kind of view — it shows up in paintings, parks, and postcards everywhere. That's the kind of place where early humans could find water, spot food, and watch for danger. A landscape that meant *safety and supplies* long ago still feels pleasant and "right" to us now.
 
-- Compared to *yesterday* (you made 3) — you're improving.
-- Compared to *your friend* (who made 12) — you have room to grow.
-- Compared to *your goal* (10) — you're getting close.
+## The mind can be a little out of date
 
-So the habit to build is: don't just look at a number, ask **"compared to what?"** That question turns a fact into a pattern.
-
-## Why outliers matter
-
-The thing that *doesn't* fit is often the most interesting. An outlier is a clue:
-
-- Sometimes it's a **mistake** — that 12 might be a kid who left half the test blank, not a real score.
-- Sometimes it's the **real story** — a sudden spike in sick kids might be the first sign of a flu going around.
-
-Good pattern-spotters don't ignore the odd one out; they stop and ask why it's there.
-
-## Careful: a pattern is not always a cause
-
-This is the trap that fools almost everyone. Two things can move together without one causing the other. Ice cream sales and sunburns both go up in summer — but ice cream doesn't cause sunburn; hot, sunny weather causes both. Seeing a pattern is the *start* of understanding, not the end. The right reaction to a pattern is curiosity: "Interesting — I wonder *why*?"
+Notice the pattern in all three examples: a reaction that was smart long ago can be a little off today. We crave sugar in a world already full of it. We fear snakes more than cars. We relax at the sight of open grassland even from a city apartment. None of this means your mind is broken — it means it was **tuned for a different world.** Spotting that gap is one of the most useful things this whole field teaches.
 
 ## In the real world
 
-In 1854, a deadly outbreak of a disease called cholera hit a neighborhood in London. A doctor named John Snow marked every death on a map of the streets. Looking at the map, a pattern jumped out: the deaths were clustered tightly around one public water pump. That single pattern — deaths bunched in one spot — pointed straight at the cause: bad water from that pump. The handle was removed, and the outbreak faded. He didn't run any complicated math. He noticed, he compared, and he spotted the pattern that mattered.`,
+Scientists ran a clever test with babies and a glass floor — a clear, strong surface with a deep drop visible underneath, called a "visual cliff." Even crawling babies who had never fallen far would stop at the edge and refuse to crawl over the drop, no matter how much their parents waved them on. Nobody taught them to fear heights. A fall was deadly to our ancestors for millions of years, so the caution comes **built in** — survival wisdom showing up before a baby could ever learn it the hard way.`,
   },
   {
-    slug: "asking-good-questions",
-    title: "Asking a good question",
+    slug: "logic-of-attraction",
+    title: "The logic of attraction",
     weekNumber: 1,
-    blurb: "The whole game is the question: a sharp, answerable question is half the analysis.",
-    lectureTitle: "1.3 Asking a good question (the whole game is the question)",
-    body: `# Asking a good question
+    blurb: "Beauty is really a set of clues — the mind quietly reading signs of health and character.",
+    lectureTitle: "1.3 The logic of attraction (why \"beautiful\" is really a bunch of clues)",
+    body: `# The logic of attraction
 
-Here is a secret that professional analysts know and beginners often miss: **the hardest and most important part isn't the answer — it's the question.** A clear question practically tells you what data to collect and when you're done. A fuzzy question sends you wandering forever.
+Of all the things an evolved mind does, choosing who to like, trust, and team up with is one of the most powerful — and one of the most interesting. This section is about **attraction**: why people find some others appealing, and why "beauty" turns out to be less about magic and more about clues.
 
-## Fuzzy questions vs. sharp questions
+## Beauty is really a bunch of clues
 
-Compare these:
+When we call someone "beautiful" or "handsome," our mind is quietly reading **clues** about health. Clear skin, bright eyes, a healthy smile, and plenty of energy all tend to signal that a person is healthy and well. Long ago, choosing a healthy partner meant a better chance of a healthy family. So the things we find attractive are, underneath, signs of health and strength — the mind reading a kind of report card without us realizing it.
 
-- Fuzzy: *"Is our class healthy?"*
-- Sharp: *"How many kids in our class eat breakfast on school days?"*
+## Why faces matter so much
 
-The fuzzy one sounds important but you can't actually answer it — "healthy" could mean a hundred things. The sharp one is **specific** (it names exactly what to look at) and **answerable** (you can imagine the exact number that would answer it). 
+People everywhere pay huge attention to faces, and tend to like faces that are **even and balanced** — where the left side looks much like the right. A balanced face can be a small sign that a body grew up healthy, without too many troubles along the way. We aren't doing this on purpose; the preference just feels automatic — which is exactly what you'd expect from something the mind came ready with.
 
-A good question usually has three qualities:
+## It's not only looks
 
-- **Specific** — it names *who* and *what* clearly.
-- **Measurable** — you can picture the data that would answer it.
-- **Useful** — knowing the answer would actually help someone decide something.
+Attraction isn't just about appearance. People across the world also rate **kindness, fairness, and being a good helper** as some of the most attractive things in a friend or partner. That makes sense too: a kind, dependable person is a wonderful teammate for the long job of raising a family and surviving together. So "the logic of attraction" includes character, not just faces — and the character clues often matter most.
 
-## The question decides the data
+## Different clues for different jobs
 
-The reason the question comes first is that it controls everything after it. The question *"How many kids eat breakfast?"* tells you:
-
-- **Who** to ask (kids in the class),
-- **What** to record (yes/no, did you eat breakfast today),
-- **When** you're finished (when you've asked everyone).
-
-If you collect data *before* you have a question, you usually end up with a messy pile that doesn't quite answer anything. Question first, data second.
-
-## Narrowing a big question
-
-Big questions aren't bad — they're just starting points. The skill is **narrowing** them into something you can actually check. "Is our school spending too much on snacks?" is huge. Narrow it down:
-
-- "How much do we spend on snacks each month?"
-- "Which snack costs the most per student?"
-- "Did snack spending go up or down since last year?"
-
-Each smaller question is answerable, and together they chip away at the big one.
-
-## Watch out for sneaky questions
-
-Some questions secretly assume their own answer. *"Why is our cafeteria food so bad?"* has already decided the food is bad before looking at any data. A fairer version — *"What do students think of the cafeteria food?"* — lets the data speak instead of forcing it. Honest questions don't tilt the answer before you start.
+The mind seems to weigh different clues depending on what it's looking for. For a quick teammate on a class project, we might look for skill and energy. For a lifelong partner, people tend to care more about kindness, loyalty, and steadiness — clues that someone will *stick around and help.* The point is that attraction isn't random; it's the mind sorting people by the clues that mattered for each kind of relationship.
 
 ## In the real world
 
-When the company that became Netflix wanted to grow, it didn't ask a vague question like "How do we make people happy?" It asked something sharp and answerable: "When does a new viewer decide whether to keep watching a show?" By focusing on that exact, measurable question, they could collect the right data — how far into an episode people stopped — and act on it. The sharp question is what made the data useful. A vague question would have buried them in numbers that pointed nowhere.`,
+Researchers showed people lots of photos of faces, then quietly blended several real faces together into one "average" face. Again and again, people picked the blended, average face as *more* attractive than the individual ones. It sounds strange, but it fits: an average face is balanced and has none of the unusual features that can hint at illness, so the mind reads it as a healthy, safe choice. People in many different countries show the very same preference — another sign of a clue-reading system we all share.`,
   },
   {
-    slug: "sorting-grouping-counting",
-    title: "Sorting, grouping, and counting",
+    slug: "love-and-jealousy",
+    title: "Love, jealousy, and keeping a mate",
     weekNumber: 1,
-    blurb: "The only 'math' you really need: put things in order, gather like with like, and count.",
-    lectureTitle: "1.4 Sorting, grouping, and counting (the only \"math\" you need)",
-    body: `# Sorting, grouping, and counting
+    blurb: "Love is the glue that keeps partners together; jealousy is the alarm that protects the bond.",
+    lectureTitle: "1.4 Love, jealousy, and keeping a mate (a matched pair of feelings)",
+    body: `# Love, jealousy, and keeping a mate
 
-People assume data analytics is full of scary math. The truth is that the most useful moves are ones you learned as a little kid: **putting things in order, gathering things that are alike, and counting.** Master these three and you can answer a surprising number of real questions.
+Finding someone is only half the story. The evolved mind also has tools for **bonding** with a partner and for *protecting* that bond. Two of the strongest feelings humans have — love and jealousy — turn out to be a matched pair, built for the same job.
 
-## Sorting: put things in order
+## Love as glue
 
-**Sorting** means arranging your data from highest to lowest, oldest to newest, A to Z — whatever order fits the question. Sorting instantly answers "what's the most?" and "what's the least?"
+Raising a human child is a huge, slow job — human babies are helpless for years, far longer than the young of most animals. A child does much better when *two* caring adults stick together to help. **Love** — that strong pull to stay close to one special person — works like glue that keeps partners together through that long job. A feeling that kept caregivers working as a team would have helped their children survive, so the feeling got passed on.
 
-If you sort the kids in your class by how far they live from school, the top and bottom of that sorted list immediately tell you who's farthest and closest — no calculation needed. Sorting also makes patterns easier to see, because similar values end up next to each other.
+## Jealousy as an alarm
 
-## Grouping: gather like with like
+If love is the glue, **jealousy** is the alarm. Jealousy is an uncomfortable feeling that flares up when an important bond seems threatened — when someone you're close to might be pulled away. It's unpleasant on purpose: the bad feeling pushes a person to pay attention and protect the relationship. Like fear, jealousy is a tool — an alarm that says, "something you depend on is at risk."
 
-**Grouping** means putting things that belong together into the same bucket. You sort a bag of candy into "red," "green," and "yellow" piles. You split a survey into "kids who walk" and "kids who ride the bus."
+## Tools can misfire
 
-Grouping is powerful because it lets you compare. Once your data is in groups, you can ask, "Which group is biggest?" or "Does this group behave differently from that one?" — the exact pattern-spotting from section 1.2.
+Here is the tricky part: an alarm that is too sensitive causes problems. A little jealousy can make someone notice and protect a friendship; too much can make them controlling, unfair, or unkind. Understanding that jealousy is an **old alarm system** doesn't make it always right — it helps us notice when the alarm is overreacting, so we can choose to act better than the raw feeling alone would.
 
-## Counting and simple summaries
+## Strategies, not scripts
 
-Once things are grouped, you **count** them. How many reds? How many bus-riders? That count is often the whole answer.
-
-A few simple summaries go a little further, and none of them need real math:
-
-- **Total** — add everything up. (How many snacks did the whole class eat?)
-- **Most common** — the value that shows up the most. (What's the most popular pizza topping?)
-- **Typical (the average)** — roughly the "middle" value, what you'd expect from a normal one. If three friends read 2, 4, and 6 books, the typical number is 4 — right in the middle.
-
-That's it. Sort, group, count, and summarize. Almost every chart and report you'll ever see is built from these few moves stacked together.
-
-## Why this is enough
-
-A grown-up analyst with a powerful computer doing "sales by region" is doing exactly this: grouping sales by region, then counting (totaling) each group, then sorting to see which region is on top. The computer just does it faster and with more rows. The *idea* is the candy piles.
+People don't all bond in exactly the same way, and that's expected. Depending on their situation, people lean toward different **strategies** — some bond fast and deep, some take their time, some stay more independent. None of these is the one true "human program." The mind comes with a range of settings, and life nudges the dial. Evolution gave us flexible tools, not a single fixed script.
 
 ## In the real world
 
-Every election night, the entire country watches sorting, grouping, and counting in action. Votes are **grouped** by candidate, **counted** within each group, and the totals are **sorted** to see who's ahead. There's no advanced math involved in deciding who won — just careful counting of groups. The reason it feels so dramatic is that everyone understands exactly what's being measured. That clarity is the gift of keeping the "math" simple.`,
+Around the world, in cultures that have never met, people tell remarkably similar love stories — songs and tales about two people drawn together, kept apart, and aching to reunite. Anthropologists who studied hundreds of different societies found romantic love in nearly every single one. A feeling that appears in almost every human group, with no one spreading it between them, is strong evidence that it's part of the **shared toolkit** our minds were built with.`,
   },
   {
-    slug: "seeing-the-story",
-    title: "Seeing the story: pictures that make data obvious",
+    slug: "why-we-cooperate",
+    title: "Why we cooperate",
     weekNumber: 1,
-    blurb: "A good chart lets your eyes grasp in a second what a table of numbers hides.",
-    lectureTitle: "1.5 Seeing the story: pictures that make data obvious",
-    body: `# Seeing the story: pictures that make data obvious
+    blurb: "Sharing, fairness, gratitude, and friendship are some of evolution's smartest survival tools.",
+    lectureTitle: "1.5 Why we cooperate (kin, fairness, and the scorecard in your head)",
+    body: `# Why we cooperate
 
-You can have the perfect answer buried in a list of numbers and still have no one understand it. That's because our eyes are far better at reading *pictures* than columns of digits. Turning data into a picture — a **chart** — is how you make the story obvious in a single glance.
+If evolution is about surviving and having families, you might expect people to be selfish all the time. But humans are some of the most **cooperative** creatures on Earth — we share, help, take turns, and care deeply about fairness. This isn't a contradiction. Cooperation turns out to be one of the smartest survival tools of all.
 
-## Why a picture beats a list
+## Helping family first
 
-Read these numbers: 4, 11, 6, 23, 7. To find the biggest, you have to check each one. Now imagine those as five bars of different heights — the tallest one jumps out instantly, no reading required. That's the entire point of a chart: it moves the work from your slow, careful brain to your fast, automatic eyes.
+The easiest cooperation to explain is helping **family.** Your relatives share many of the same genes you carry, so helping them survive helps your own "instructions" carry on, even if you never have children yourself. That's why people will sacrifice the most for parents, brothers, sisters, and their own kids. The strong, automatic pull to protect family is one of the clearest tools the evolved mind comes with.
 
-## Picking the right picture for the question
+## Taking turns: "I help you, you help me"
 
-The kind of question decides the kind of chart:
+We also help people who *aren't* family, through something simple: **taking turns.** If I share my food today and you share yours tomorrow, we both do better than if we each hoarded. This "I help you, you help me" deal works fine as long as people pay each other back. That's also why being helped and *not* returning the favor feels so wrong — our minds keep a quiet scorecard of who's fair and who isn't.
 
-- **Bar chart** — for **comparing groups**. Taller bar means more. ("Which fruit is most popular in our class?") The eye compares heights effortlessly.
-- **Line chart** — for showing **change over time**. The line goes up or down as you move left to right. ("How did the temperature change over the week?")
-- **Pictograph** — a friendly version of a bar chart that uses little pictures (one apple = 5 apples) instead of bars. Great for getting started.
-- **Pie chart** — for showing **parts of a whole**, and only when there are just a few slices. ("What fraction of my allowance goes to snacks?")
+## Why fairness and gratitude feel so strong
 
-Picking the wrong picture hides the story. A line chart only makes sense when the left-to-right order *means* something, like time — using one to compare unrelated groups just confuses people.
+Feelings like **gratitude, guilt, and anger** are the tools that keep cooperation running. Gratitude makes you want to repay a kindness. Guilt nudges you to fix things when you've let someone down. Anger flares when someone cheats you, pushing you to stop being taken advantage of. These feelings aren't random moods — they're the mind's way of protecting fair trade between people.
 
-## What makes a chart good
+## Friendship and status
 
-A good chart is honest and clear:
-
-- It has a **title** that says what you're looking at.
-- Its parts are **labeled** so you know what each bar or slice means.
-- It shows **one main idea**, not everything at once.
-
-If someone has to study your chart for a minute to figure out what it says, the chart has failed at its one job.
-
-## Charts can lie (even by accident)
-
-Because pictures are so persuasive, they can also mislead. The most common trick is **stretching the scale**: if a bar chart starts its bottom line at 90 instead of 0, a tiny difference between 91 and 94 suddenly looks enormous. The numbers are technically true, but the picture exaggerates. An honest chart usually starts at zero so the *sizes* you see match the *sizes* that are real. Being able to spot a stretched chart protects you from being fooled by one.
+Humans also build **friendships** — long-term partners you can count on — and care about **status**, meaning being respected and valued by the group. Both made sense for survival: a person with loyal friends and a good reputation got help in hard times, while someone known as a cheater got left out. Caring what others think of you can be uncomfortable, but it's an old tool for staying part of a group you needed.
 
 ## In the real world
 
-In 1986, the space shuttle *Challenger* launched on an unusually cold morning and broke apart, killing all seven astronauts. Engineers had worried beforehand that cold weather might cause a critical part to fail — and the data showing the danger actually existed. But it was trapped in dense tables of numbers, and no one could see the pattern in time. Experts later showed that a single clear chart of damage versus temperature would have made the risk obvious at a glance. It's a heartbreaking reminder that *how you show data* can matter as much as the data itself.`,
+Scientists play a sharing game with young children: they give one child some treats and let them choose how many, if any, to give to another child. Long before anyone teaches them about "being fair," children start sharing — and they get visibly upset when *they* are the ones treated unfairly. This sense of fairness shows up early, across very different cultures, which suggests cooperation isn't only taught manners. It's part of the **equipment** humans are born ready to use.`,
   },
   {
-    slug: "hunch-to-decision",
-    title: "From hunch to decision: tiny analytics in real life",
+    slug: "why-we-fight",
+    title: "Why we fight — and believe",
     weekNumber: 1,
-    blurb: "Turn a guess into a decision with a tiny loop: question, gather, look, decide.",
-    lectureTitle: "1.6 From hunch to decision: tiny analytics in real life",
-    body: `# From hunch to decision: tiny analytics in real life
+    blurb: "The same evolved mind that makes us loyal can make us fight — and it's the source of culture and religion.",
+    lectureTitle: "1.6 Why we fight — and believe (us, them, culture, and the open questions)",
+    body: `# Why we fight — and believe
 
-You now have all the pieces: data is noticed facts, patterns are how facts connect, a good question points the way, sorting and counting do the work, and a chart shows the story. This last section ties them together into a habit you can use for the rest of your life — turning a **hunch** into a **decision**.
+The same mind that makes us loving and cooperative can also make us fight. And the same mind builds the giant shared ideas we call culture and religion. This last section ties the whole course together — and leaves you with the biggest questions still open.
 
-## What a hunch is, and why it isn't enough
+## Us and them
 
-A **hunch** is a guess that *feels* true: "I think I sleep worse when I have soda at night." "I bet the morning bus is faster." Hunches are great — they're where most good questions come from. But a hunch is just a feeling, and feelings can be wrong. The whole point of tiny analytics is to **check the hunch against real data** before betting on it.
+Humans are quick to split the world into **"us" and "them."** We bond tightly with our own group and grow wary of outsiders. Long ago, your group was your protection — your family, your team, your safety — and rival groups could be a real danger. So the mind came ready to feel loyalty inside the group and caution toward outsiders. This tool helped people survive, but it's also behind a lot of conflict, from playground teams to wars between nations.
 
-## The tiny loop
+## Status and conflict
 
-Every analysis, from a kid's experiment to a giant company's report, follows the same small loop:
+Remember status from the last section? The same desire to be respected can also spark **conflict.** People compete for rank, fairness disputes turn into fights, and whole groups clash over land, food, or pride. None of this means fighting is "good" — it means the very drives that help us cooperate inside a group can also pull groups *against* each other. Seeing that clearly is the first step to handling it better.
 
-1. **Question** — turn the hunch into a sharp, answerable question. ("Do I fall asleep faster on nights without soda?")
-2. **Gather** — collect a little data. (Write down each night: had soda? how long to fall asleep?)
-3. **Look** — sort, group, count, and maybe chart it. (Compare soda nights to no-soda nights.)
-4. **Decide** — use what you found to make a choice. (If no-soda nights were clearly faster, skip the late soda.)
+## Where culture comes from
 
-Then you often loop back with a new question. That's it — that's the engine behind all of data analytics, shrunk down to fit your life.
+Now zoom out. Humans are the only animal that builds **culture** — shared stories, rules, tools, songs, and customs passed down and improved over generations. Culture isn't separate from the evolved mind; it's something the evolved mind *produces.* A brain built to learn from others, copy the best ideas, and follow group rules naturally creates culture. Our biggest invention grows straight out of our oldest instincts.
 
-## Honesty is the whole point
+## Even religion?
 
-The loop only works if you're willing to be **proven wrong**. The danger is collecting data just to confirm what you already believe — noticing only the nights that fit your hunch and ignoring the rest. Real analysis means letting the data change your mind. If you check your free-throw practice and it turns out practice *didn't* help your shooting, that's not a failure — that's the data doing its job, saving you from a false belief.
+Many thinkers argue that **religion**, too, grows from features of the evolved mind: our habit of sensing a "who" behind events, our deep need to belong to a group, and our trust in what elders teach us. This is one of the field's boldest and most debated ideas. It does not claim to settle what is true about the universe — it only asks where the *human tendency* to believe might come from.
 
-## Small loops, big stakes
+## The biggest questions stay open
 
-The same four steps scale up to decisions that matter enormously: Should a city add a new bus route? Is a new medicine safe? Where should we build a hospital? In every case it's still question, gather, look, decide — just with more data and more care. Learning the loop on small, everyday questions is exactly how you build the judgment to trust it on big ones.
+That's the honest place to end. Evolutionary psychology gives us powerful clues about why we crave, fear, love, cooperate, fight, and believe. But it doesn't answer everything — how far we can rise above our instincts, how to build a fair and peaceful world, what our minds might one day become. Those questions are still wide open. Now you have a new way to think about them: by asking, every time, "What might this part of the mind have been *for*?"
 
 ## In the real world
 
-A hospital noticed a hunch among its nurses: patients seemed to recover faster when they could see a window. Instead of just trusting the feeling, someone ran the tiny loop — they asked the question, gathered records of which rooms patients stayed in and how quickly they healed, looked at the two groups, and found the window-room patients really did tend to go home sooner. That checked hunch changed how hospitals are designed. It started exactly where yours will: with a quiet feeling that *something might be true* — and the willingness to actually look.`,
+When researchers split strangers into groups for an experiment — even using something as silly as a coin flip — people quickly start favoring their own group and competing with the other, though they were total strangers minutes before. In the famous "Robbers Cave" study, two groups of ordinary boys at a summer camp turned into bitter rivals within days, then made peace only when they were given a shared goal they had to work toward together. It shows how fast the "us and them" switch can flip on — and, hopefully, how a bigger shared purpose can switch it back off.`,
   },
 ];
 
@@ -317,7 +232,7 @@ type SeedAssignment = {
 const ASSIGNMENTS: SeedAssignment[] = [
   {
     kind: "homework",
-    title: "Homework 1.1 — Data, patterns, and good questions",
+    title: "Homework 1.1 — The evolved mind, survival, and attraction",
     weekNumber: 1,
     isTimed: false,
     timeLimitMinutes: null,
@@ -325,47 +240,47 @@ const ASSIGNMENTS: SeedAssignment[] = [
       "Untimed practice covering sections 1.1–1.3. Answer each question in a few sentences (about 3–5) in your own words. There's no need for any math — just explain your thinking clearly. One-word answers won't receive credit.",
     problems: [
       {
-        topicSlug: "what-is-data",
+        topicSlug: "mind-has-history",
         prompt:
-          "Give one example of data you used today without thinking of it as 'data,' and explain how it helped you make a choice. Then explain the difference between a plain fact and an insight. (3–5 sentences.)",
+          "Some people say a baby's mind is a totally blank page that the world fills in later. Use one example to explain why evolutionary psychology says the mind comes 'pre-loaded' instead. (3–5 sentences.)",
         correctAnswer:
-          "An everyday example is checking the weather: seeing that it was cold and cloudy is data, and I used it to decide to bring a jacket. The cold temperature by itself is just a plain fact — a single piece of recorded information about the world. An insight is what that fact means for a decision, like 'it's cold enough that I'll be uncomfortable without a jacket, so I should grab one.' The difference is that a fact just describes something, while an insight tells you what to actually do about it.",
+          "A blank-page view says babies start with nothing and learn everything from scratch, but newborns clearly arrive already able to do important things. For example, a newborn knows how to suck and grip a finger, and babies will stare longer at a face than at a random pattern even though no one taught them to. Those abilities show up too early and too reliably to have been learned. So the mind comes 'pre-loaded' — born ready for a few important things — the way a new phone arrives with some apps already installed.",
         explanation:
-          "Full credit: gives a real everyday use of data tied to a choice, and distinguishes a plain fact (raw recorded information) from an insight (what the fact means for a decision).",
+          "Full credit: contrasts the blank-slate view with the pre-loaded view and gives a concrete inborn ability (e.g. grasping, face preference, fearing strangers) that appears without being taught.",
       },
       {
-        topicSlug: "what-is-data",
+        topicSlug: "mind-has-history",
         prompt:
-          "Why is it better to write data down than to just remember it? Describe a situation where relying on memory instead of a written record could lead you to the wrong conclusion. (3–5 sentences.)",
+          "Pick a feeling like fear, disgust, or love and explain what 'job' it might have done for our ancestors. Then explain what it means to call a feeling a 'tool' rather than an accident. (3–5 sentences.)",
         correctAnswer:
-          "Writing data down keeps it accurate and unchanging, while memory is fuzzy and tends to drift over time. For example, if I try to remember whether the morning or afternoon bus is usually faster, my memory might just recall the one really bad trip that stuck out, and I'd wrongly conclude the morning bus is always slow. If I had written down each trip's time, I could check the actual record instead of trusting a single dramatic memory. Written records let you check the real pattern rather than the one your memory happened to keep.",
+          "Take disgust: it makes us wrinkle our nose and spit out rotten or spoiled food. For our ancestors, that reaction helped them avoid eating things that could make them sick, which helped them survive. Calling disgust a 'tool' means it isn't a random or pointless reaction — it does a useful job, the way a tool in a toolbox is shaped for a task. It got passed down through the generations precisely because it kept people alive, not by accident.",
         explanation:
-          "Full credit: explains that written records stay accurate while memory drifts/is selective, and gives a concrete case where trusting memory would mislead.",
+          "Full credit: ties a specific feeling to an ancestral survival job and explains that 'tool' means the feeling serves a purpose (and was passed on for it), not that it is random.",
       },
       {
-        topicSlug: "spotting-patterns",
+        topicSlug: "built-to-survive",
         prompt:
-          "Explain what an 'outlier' is in your own words, and describe a case where an outlier turns out to be a mistake versus a case where it turns out to be the real story. (3–5 sentences.)",
+          "People learn to fear snakes far faster than they learn to fear cars, even though cars hurt many more people today. Explain why an evolved mind would be 'tuned' this way. (3–5 sentences.)",
         correctAnswer:
-          "An outlier is a piece of data that clearly doesn't fit with the rest, like one very high or very low value among a group of similar ones. Sometimes an outlier is a mistake: if everyone in class scored around 80 but one paper shows a 12, that low score might just be someone who left half the test blank rather than a true measure of what they know. Other times the outlier is the real story: a sudden spike of kids out sick on one day might be the first sign of a flu spreading. The point is not to ignore the odd value but to stop and ask why it's there.",
+          "Snakes were a real danger to humans and their ancestors for millions of years, so minds that quickly learned to fear them survived better and passed that readiness on. Cars, by contrast, have only existed for about a hundred years — far too short a time for a fast, built-in fear of them to develop. So our fears are tuned to the dangers of the *ancestral* world, not always the dangers of today. That's why a quick, easy fear of snakes feels natural while fearing a car takes real effort.",
         explanation:
-          "Full credit: defines an outlier as a value that doesn't fit the rest, and gives one example of an outlier-as-error and one of an outlier-as-real-signal.",
+          "Full credit: explains snakes were ancient threats (so readiness to fear them was selected for) while cars are too recent for a built-in fear, and connects this to fears being tuned to ancestral dangers.",
+        hint: "Think about how LONG snakes have been a danger to humans compared to how long cars have existed.",
       },
       {
-        topicSlug: "asking-good-questions",
+        topicSlug: "logic-of-attraction",
         prompt:
-          "Take the fuzzy question 'Is our class doing well in school?' and rewrite it into a sharper, answerable question. Explain what makes your version better. (3–5 sentences.)",
+          "Evolutionary psychology says 'beauty is really a bunch of clues.' Explain what that means using one example, and why the mind would read such clues automatically. (3–5 sentences.)",
         correctAnswer:
-          "A sharper version is 'How many kids in our class turned in last week's homework on time?' This is better because it is specific — it names exactly who (kids in our class) and what (turning in homework on time) — instead of the vague idea of 'doing well.' It is also measurable, since I can picture the exact number that answers it, and I'd know when I'm done collecting the data. The original question sounds important but you can't actually answer it because 'doing well' could mean a hundred different things.",
+          "It means that when we find someone attractive, our mind is quietly reading signs of health rather than responding to magic. For example, clear skin, bright eyes, and a balanced face can all hint that a person grew up healthy and well. Long ago, choosing a healthy partner meant a better chance of a healthy family, so people who paid attention to those clues tended to have more children who survived. That's why the reading feels automatic — it's an inherited habit of noticing health, not a choice we make on purpose.",
         explanation:
-          "Full credit: turns the vague question into a specific, measurable, answerable one and explains that the improvement is specificity/measurability, not just rewording.",
-        hint: "A good question names exactly who and what, and lets you picture the data that would answer it.",
+          "Full credit: explains attraction as the mind reading health clues, gives a concrete clue (skin, eyes, facial balance, energy), and ties the automatic preference to better ancestral outcomes.",
       },
     ],
   },
   {
     kind: "homework",
-    title: "Homework 1.2 — Counting, charts, and decisions",
+    title: "Homework 1.2 — Love, cooperation, and conflict",
     weekNumber: 1,
     isTimed: false,
     timeLimitMinutes: null,
@@ -373,47 +288,47 @@ const ASSIGNMENTS: SeedAssignment[] = [
       "Untimed practice covering sections 1.4–1.6. Answer each question in a few sentences (about 3–5) in your own words. No math is required — explain your reasoning. One-word answers won't receive credit.",
     problems: [
       {
-        topicSlug: "sorting-grouping-counting",
+        topicSlug: "love-and-jealousy",
         prompt:
-          "Imagine you have a survey of everyone's favorite school lunch. Explain how you would use grouping and counting to find the most popular lunch, and why sorting the results afterward helps. (3–5 sentences.)",
+          "The lecture calls love 'glue' and jealousy 'an alarm.' Explain how these two feelings work together to do one job. (3–5 sentences.)",
         correctAnswer:
-          "First I would group the responses by putting all the same answers together — all the 'pizza' votes in one pile, all the 'tacos' votes in another, and so on. Then I would count how many responses are in each group to see how many people picked each lunch. To find the most popular, I'd look for the group with the highest count. Sorting the groups from most votes to fewest afterward helps because it instantly shows the ranking — the winner is right at the top and the least popular is at the bottom — without having to scan every number.",
+          "Love acts like glue because it pulls two people to stay close and keep helping each other through the long, hard job of raising a child. Jealousy acts like an alarm because it flares up, uncomfortably, when that important bond seems threatened — pushing the person to notice and protect the relationship. Together they do one job: forming a partnership and then guarding it. One builds the bond and the other defends it, which is why they're described as a matched pair.",
         explanation:
-          "Full credit: describes grouping identical responses, counting each group, and notes that sorting orders the groups so the most/least popular stand out immediately.",
+          "Full credit: explains love as the bonding/keeping-together feeling and jealousy as the protective alarm, and ties both to the shared job of forming and defending a partnership.",
       },
       {
-        topicSlug: "sorting-grouping-counting",
+        topicSlug: "why-we-cooperate",
         prompt:
-          "Three friends read 2, 4, and 6 books over the summer. Explain what the 'typical' (average) number of books is and what 'typical' is trying to tell you. (3–5 sentences.)",
+          "Why would an evolved, 'survival of the fittest' mind make people willing to share food with relatives? Explain the idea of helping family. (3–5 sentences.)",
         correctAnswer:
-          "The typical number is 4, which is the middle value you'd get by evening out the three numbers — 2, 4, and 6 balance around 4. 'Typical' is trying to tell you roughly what to expect from a normal one of the group, a single number that stands in for the whole set. It's useful because instead of listing every value, you can say 'a typical friend read about 4 books.' It doesn't mean everyone read exactly 4; it's just the central, representative amount.",
+          "Relatives share many of the same genes you carry, so helping a relative survive also helps copies of your own 'instructions' continue, even if you never have children yourself. That means sharing food with family isn't really the opposite of survival — it's another way the same inherited information gets carried forward. This is why people will sacrifice the most for parents, siblings, and their own kids. A strong, automatic urge to protect family is exactly the tool an evolved mind would come with.",
         explanation:
-          "Full credit: identifies the average as 4 and explains that 'typical' is a single central value representing what to expect from the group, not a claim that every value equals it.",
-        hint: "Think of the average as the 'middle' or 'evened-out' value that stands in for the whole group.",
+          "Full credit: explains kin sharing genes, so helping family carries one's own genes forward, making family-helping consistent with (not against) evolution.",
+        hint: "Think about what your relatives share with you that gets passed down through generations.",
       },
       {
-        topicSlug: "seeing-the-story",
+        topicSlug: "why-we-cooperate",
         prompt:
-          "You want to show how the temperature changed across the days of one week. Which chart type fits best, and why would a bar chart comparing five friends' heights use a different type? (3–5 sentences.)",
+          "A friend borrows your snack every day but never shares anything back. Explain why this feels unfair, and what feelings like gratitude and anger are 'for' in cooperation. (3–5 sentences.)",
         correctAnswer:
-          "A line chart fits the temperature best because it shows change over time, with the days in order from left to right and the line rising or falling to show how the temperature moved. Comparing five friends' heights is a different situation — those are separate groups, not a sequence over time — so a bar chart fits better, since the eye can compare the heights of the bars side by side. The reason they differ is that a line chart's left-to-right order has to mean something, like time, while a bar chart just compares separate groups. Picking the chart that matches the question is what makes the story clear.",
+          "Cooperation between non-family works through taking turns — 'I help you, you help me' — and our minds keep a quiet scorecard of who pays back. A friend who always takes and never gives breaks that deal, so it feels unfair because the scorecard is one-sided. Feelings are the tools that protect the deal: gratitude makes us want to repay a kindness, while anger flares at someone who cheats, pushing us to stop being taken advantage of. So those feelings aren't random moods — they keep trading between people fair.",
         explanation:
-          "Full credit: chooses a line chart for change over time and a bar chart for comparing separate groups, and explains the distinction (ordered sequence vs. independent categories).",
+          "Full credit: identifies reciprocity/taking turns and the mental scorecard, and explains gratitude (repay kindness) and anger (punish/stop cheating) as tools that keep cooperation fair.",
       },
       {
-        topicSlug: "hunch-to-decision",
+        topicSlug: "why-we-fight",
         prompt:
-          "You have a hunch that you do better on tests when you study the night before. Walk through how you'd use the tiny loop (question, gather, look, decide) to check it. (3–5 sentences.)",
+          "In the 'Robbers Cave' study, ordinary boys split into two camp groups quickly became rivals. Explain what this shows about the 'us and them' part of the mind, and what finally reduced the conflict. (3–5 sentences.)",
         correctAnswer:
-          "First, I'd turn the hunch into a sharp question: 'Do I score higher on tests when I studied the night before than when I didn't?' Next, I'd gather data by writing down, for each test, whether I studied the night before and what score I got. Then I'd look at it by grouping the tests into 'studied' and 'didn't study' and comparing the typical scores of the two groups. Finally, I'd decide based on what I found — if the studied group scored clearly higher, I'd commit to studying the night before, and I'd stay honest by trusting the data even if it surprised me.",
+          "It shows how fast the mind's 'us and them' switch can flip on: total strangers, sorted into groups, quickly grew loyal to their own side and hostile to the other within just days. That fits the idea that we came ready to bond tightly inside a group and feel wary of outsiders, because long ago your group was your protection. The conflict finally eased when the two groups were given a shared goal they had to work toward together. A bigger, common purpose effectively switched the 'us and them' line to include everyone.",
         explanation:
-          "Full credit: applies all four steps (sharp question, gather relevant data, group/compare, decide) to the hunch and ideally notes the willingness to be proven wrong.",
+          "Full credit: explains the rapid in-group/out-group split as evidence of an evolved 'us and them' tendency, and notes that a shared/superordinate goal reduced the conflict.",
       },
     ],
   },
   {
     kind: "test",
-    title: "Unit Test — Data Analytics for Everyone",
+    title: "Unit Test — Evolutionary Psychology for Everyone",
     weekNumber: 1,
     isTimed: true,
     timeLimitMinutes: 30,
@@ -421,64 +336,64 @@ const ASSIGNMENTS: SeedAssignment[] = [
       "Timed. 30 minutes. Covers sections 1.1–1.6. Answer each question in a few sentences (about 4–6) in your own words. No math is required. Pasting is disabled; keystrokes are screened for AI use.",
     problems: [
       {
-        topicSlug: "what-is-data",
+        topicSlug: "mind-has-history",
         prompt:
-          "Explain the ladder from data to information to insight using one original example of your own. Then explain why an insight is the rung that actually matters. (4–6 sentences.)",
+          "Explain what it means to say 'the mind has a history,' and why this view treats the brain like any other body part. Use one original example of an inborn reaction. (4–6 sentences.)",
         correctAnswer:
-          "Take walking to school as an example. The data is a plain fact: it took me 8, 12, 9, 7, and 13 minutes on five days. The information is that fact placed in context: on average it takes me about 10 minutes, but it was much slower on two days. The insight is what it means for me: those slow days were when it rained, so on rainy mornings I should leave a few minutes earlier. The insight is the rung that matters because it's the only one that changes what I actually do — the raw times and even the average are just trivia until they help me make the choice to leave earlier.",
+          "Saying 'the mind has a history' means the brain was shaped over a very long time, across many generations, to help our ancestors survive and raise families — not built fresh in each person from a blank start. It treats the brain like any other body part because, just like the heart pumps blood or the stomach digests food, the brain has a job (deciding what to do) and was shaped by the same slow process that shaped the rest of the body. The versions that worked best got passed down through genes, so the mind arrives already good at certain things. For example, a newborn will grip tightly onto a finger placed in its palm without anyone teaching it — a reflex that helped infants hold on to a caregiver. That kind of reaction shows up too early and too reliably to be learned, which is exactly what an evolved, pre-loaded mind would look like.",
         explanation:
-          "Full credit: gives an original example showing data (raw fact) → information (fact in context) → insight (what to do), and argues the insight matters because it drives a decision.",
+          "Full credit: defines 'the mind has a history' as the brain being shaped over generations to solve ancestral problems, compares the brain to other purpose-built organs, and gives an original inborn reaction that appears without teaching.",
       },
       {
-        topicSlug: "spotting-patterns",
+        topicSlug: "built-to-survive",
         prompt:
-          "Explain why seeing two things rise together does not prove one causes the other. Give an example of two things that move together for a third, hidden reason. (4–6 sentences.)",
+          "Our cravings and fears are described as sometimes being 'out of date.' Explain what that means, using two different examples, and why it doesn't mean the mind is broken. (4–6 sentences.)",
         correctAnswer:
-          "Two things moving together is called a pattern, but a pattern only shows that they're linked somehow, not that one makes the other happen. Often both are being driven by a third, hidden cause. For example, ice cream sales and sunburns both go up at the same time of year, but eating ice cream doesn't cause sunburn — hot, sunny weather causes both. If you mistook the pattern for cause, you might wrongly think banning ice cream would stop sunburns. The right response to a pattern is curiosity about why it's happening, not jumping straight to 'one causes the other.'",
+          "'Out of date' means a reaction that was smart in the ancestral world can be a little unhelpful in today's world. One example is craving sugar and fat: that craving kept ancestors alive when food was scarce, but in a world full of candy it can push us to eat too much. A second example is fear: we learn to fear snakes very quickly but barely fear cars, even though cars are far more dangerous now, because snakes were a threat for millions of years and cars are brand new. It doesn't mean the mind is broken — it means the mind was tuned for a different world than the one we live in. The tools still work as designed; the world around them simply changed faster than they could.",
         explanation:
-          "Full credit: distinguishes correlation from causation, gives a valid example with a hidden third cause (e.g., weather), and notes the danger of assuming cause from a pattern.",
+          "Full credit: explains the mismatch between ancestral tuning and the modern world with two valid examples (e.g. sugar cravings, snake vs. car fear, landscape preference) and notes the mind is mistuned, not defective.",
       },
       {
-        topicSlug: "asking-good-questions",
+        topicSlug: "logic-of-attraction",
         prompt:
-          "What are the qualities of a good analytics question, and why does the question have to come before collecting data? Give an example of a question that is too fuzzy to answer. (4–6 sentences.)",
+          "Explain why evolutionary psychology says attraction is about 'reading clues,' and why people also rate kindness and loyalty as attractive, not just looks. (4–6 sentences.)",
         correctAnswer:
-          "A good question is specific (it names exactly who and what), measurable (you can picture the data that would answer it), and useful (the answer would help someone decide something). The question has to come first because it controls everything after it — it tells you who to ask, what to record, and when you're finished collecting. If you gather data before having a question, you usually end up with a messy pile that doesn't quite answer anything. A question that's too fuzzy to answer is something like 'Is our school good?' — 'good' could mean a hundred different things, so you couldn't picture the data that would settle it.",
+          "Attraction is described as 'reading clues' because the things we find appealing tend to be signs of something useful underneath. Physical clues like clear skin, bright eyes, and a balanced face hint that a person is healthy, and long ago choosing a healthy partner meant a better chance of a healthy family. But raising a family is a long job that needs a dependable teammate, so people across the world also rate kindness, fairness, and loyalty as highly attractive. Those traits are clues too — clues that someone will stick around and help rather than just look good. So attraction sorts people by the clues that mattered for each kind of relationship, which is why character can matter as much as appearance.",
         explanation:
-          "Full credit: lists qualities (specific/measurable/useful), explains the question scopes the data and signals completion, and gives a genuinely unanswerable fuzzy question.",
+          "Full credit: explains attraction as the mind reading health/quality clues, gives physical clue examples, and explains kindness/loyalty as clues to a dependable long-term partner.",
       },
       {
-        topicSlug: "sorting-grouping-counting",
+        topicSlug: "love-and-jealousy",
         prompt:
-          "A company says it found its 'best-selling product by region.' Explain how sorting, grouping, and counting produce that answer, even with a powerful computer. (4–6 sentences.)",
+          "Jealousy is called a 'tool' that can also 'misfire.' Explain both ideas and why understanding jealousy this way could help someone act better. (4–6 sentences.)",
         correctAnswer:
-          "Even with a powerful computer, the underlying moves are the simple ones. First the sales are grouped by region, putting all the sales from each region into its own bucket. Within each region, the products are grouped again and the sales are counted (totaled) to see how much of each product sold there. Then the products are sorted from most to least sold so the top one stands out. The 'best-selling product by region' is just the product at the top of each region's sorted list. The computer only makes this faster and handles more rows — the idea is the same as sorting candy into piles and counting them.",
+          "Jealousy is called a tool because it works like an alarm: it flares up uncomfortably when an important bond seems threatened, pushing a person to pay attention and protect the relationship. That alarm once helped keep partnerships together, which mattered for raising children, so it got passed on. But like any alarm, it can misfire — if it is too sensitive, a person may become controlling, suspicious, or unfair even when nothing is really wrong. Understanding jealousy as an old, sometimes-overreacting alarm helps someone pause and ask whether the feeling is matching reality. That gap between noticing the feeling and acting on it is where a person can choose to behave better than the raw alarm alone would.",
         explanation:
-          "Full credit: maps the business result to grouping (by region/product), counting (totals), and sorting (to find the top), noting the computer only scales the same simple moves.",
+          "Full credit: explains jealousy as a protective alarm (a tool) that evolved to guard bonds, that an oversensitive alarm causes harm (misfire), and that recognizing this allows more deliberate, better behavior.",
       },
       {
-        topicSlug: "seeing-the-story",
+        topicSlug: "why-we-cooperate",
         prompt:
-          "Explain one way a chart can mislead even when its numbers are true, and describe how an honest chart avoids it. (4–6 sentences.)",
+          "Humans are very cooperative even though evolution is often summed up as 'survival of the fittest.' Explain two different reasons an evolved mind would make people cooperate. (4–6 sentences.)",
         correctAnswer:
-          "A common way a chart misleads is by stretching the scale — starting the bottom of a bar chart at, say, 90 instead of 0. When the baseline is cut off, a tiny real difference between 91 and 94 suddenly looks like a huge gap, because the eye reads the *sizes* of the bars as the sizes of the values. The numbers printed on it might be perfectly true, but the picture exaggerates the difference. An honest chart usually starts at zero so that the heights you see actually match the amounts they represent. Knowing this lets you spot a stretched chart and avoid being fooled by one.",
+          "Cooperation isn't really the opposite of survival — it's one of the smartest survival tools, and there are at least two reasons it evolved. The first is helping family: relatives share many of your genes, so helping them survive helps copies of your own 'instructions' carry on, which is why people sacrifice most for close kin. The second is taking turns with non-family: 'I help you, you help me' leaves both people better off than hoarding, as long as the favor gets returned. Our minds keep a quiet scorecard of who's fair, and feelings like gratitude, guilt, and anger keep that trading honest. So an evolved mind cooperates both to protect its own genes in relatives and to gain from fair, repeated exchanges with others.",
         explanation:
-          "Full credit: names a real distortion (e.g., truncated/stretched scale), explains why it misleads despite true numbers, and says the honest fix (start at zero so sizes match values).",
+          "Full credit: gives two distinct mechanisms — kin selection (helping relatives who share genes) and reciprocity (taking turns, enforced by emotions/reputation) — and explains why each pays off.",
       },
       {
-        topicSlug: "hunch-to-decision",
+        topicSlug: "why-we-fight",
         prompt:
-          "Describe the four steps of the 'tiny loop' for turning a hunch into a decision, and explain why being willing to be proven wrong is essential to it. (4–6 sentences.)",
+          "The lecture says the same evolved mind that makes us cooperate can also make us fight, and that it produces culture. Explain how 'us and them' thinking leads to conflict, and what it means to say culture is a 'product' of the evolved mind. (4–6 sentences.)",
         correctAnswer:
-          "The four steps are: turn the hunch into a sharp question, gather a little data, look at it by sorting/grouping/counting or charting it, and decide what to do based on what you found. The loop only works if you're genuinely willing to be proven wrong, because the danger is collecting data just to confirm what you already believe and ignoring anything that doesn't fit. If you only notice the evidence that agrees with your hunch, you haven't really checked it — you've just decorated your guess. Letting the data change your mind is the whole point; it's what saves you from acting on a false belief. So honesty about the result is as important as the steps themselves.",
+          "Humans came ready to split the world into 'us' and 'them' — bonding tightly with their own group and feeling wary of outsiders — because long ago your group was your protection and rival groups could be dangerous. That same readiness, useful inside a group, turns into conflict when groups compete over status, fairness, land, or pride, pushing them against each other. Saying culture is a 'product' of the evolved mind means culture isn't separate from biology: a brain built to learn from others, copy the best ideas, and follow group rules naturally creates shared stories, customs, and tools. So our greatest invention grows directly out of our oldest instincts. The same equipment, in other words, can build both our togetherness and our conflicts.",
         explanation:
-          "Full credit: names all four steps (question, gather, look, decide) and explains that willingness to be wrong prevents cherry-picking/confirmation and is what makes the check meaningful.",
+          "Full credit: explains in-group/out-group loyalty as evolved protection that fuels between-group conflict, and explains culture as something the evolved (social, imitative, rule-following) mind produces rather than something separate from it.",
       },
     ],
   },
   {
     kind: "final",
-    title: "Final — Data Analytics for Everyone",
+    title: "Final — Evolutionary Psychology for Everyone",
     weekNumber: 1,
     isTimed: true,
     timeLimitMinutes: 45,
@@ -486,40 +401,40 @@ const ASSIGNMENTS: SeedAssignment[] = [
       "Timed cumulative final. 45 minutes. Covers the whole course (sections 1.1–1.6). Answer each question in a paragraph (about 5–7 sentences) in your own words. No math is required. Pasting is disabled; keystrokes are screened for AI use.",
     problems: [
       {
-        topicSlug: "hunch-to-decision",
+        topicSlug: "why-we-fight",
         prompt:
-          "Pick a real everyday hunch of your own and walk it all the way through the tiny loop (question, gather, look, decide), naming each step and what you'd do at it. Then explain why the final 'decide' step is what makes the whole effort worthwhile. (5–7 sentences.)",
+          "Using ideas from across the whole course, argue that one single idea — that the mind was shaped to solve ancestral problems — can explain things as different as craving sugar, falling in love, sharing with family, and forming rival groups. Use at least three of those examples. (5–7 sentences.)",
         correctAnswer:
-          "Take the hunch that I play video games better in the afternoon than late at night. First, Question: turn it into something sharp — 'Do I win more matches in the afternoon than after 10pm?' Second, Gather: for two weeks I write down, for each session, the time of day and how many matches I won. Third, Look: I group the sessions into 'afternoon' and 'late night' and compare the typical wins in each group, maybe even sketching a quick bar chart. Fourth, Decide: if afternoon sessions clearly had more wins, I'd schedule my serious games for the afternoon. The decide step is what makes it worthwhile because everything before it is just gathering and looking — if I never change what I do, all that effort produced no value. Analysis only pays off when it actually changes a choice.",
+          "The one idea tying the course together is that the mind is an evolved organ shaped over a very long time to solve the problems our ancestors faced, so each part of it once did a useful job. Craving sugar and fat made sense when food was scarce, because that energy helped people survive hungry times. Falling in love made sense because the strong pull to stay with one partner kept two caregivers together through the long, hard job of raising a helpless child. Sharing with family made sense because relatives carry copies of your own genes, so helping them helps those instructions carry on. Even forming rival groups fits: bonding with 'us' and guarding against 'them' protected people when their group was their safety. None of these look related on the surface, but each is the same move — a tool built because it solved an ancestral problem. That shared logic is what makes evolutionary psychology so powerful.",
         explanation:
-          "Full credit: applies all four steps to a concrete hunch and argues the 'decide' step delivers the value because analysis exists to change a choice.",
+          "Full credit: states the unifying principle (mind shaped to solve ancestral problems) and applies it to at least three distinct examples, showing each behavior once served survival or reproduction.",
       },
       {
-        topicSlug: "what-is-data",
+        topicSlug: "mind-has-history",
         prompt:
-          "Some people think data analytics requires computers and advanced math. Using ideas from across the course, argue that the core of it is really noticing, comparing, and counting. Use one concrete example. (5–7 sentences.)",
+          "Some people insist that everything about how we think and feel is learned from the world around us — a totally blank slate. Using evidence from the course, argue why the mind is better described as 'pre-loaded.' Use one concrete example. (5–7 sentences.)",
         correctAnswer:
-          "At its heart, data analytics is just paying attention to facts and using them to decide something, which people do without any computer at all. Data is simply things you notice, written down; patterns come from comparing those facts; and the real work is the simple moves of sorting, grouping, and counting. For example, a kid wondering which recess game is most popular can ask classmates, group the answers, count each group, and see the winner — that's a complete analysis with no math beyond counting. Computers and fancy math don't change the ideas; they just let you handle millions of rows faster. The doctor John Snow stopped a deadly outbreak in 1854 by marking deaths on a map and noticing they clustered around one water pump — pure noticing and comparing. So the tools have grown, but the core skill is the same one you already use every day.",
+          "A pure blank-slate view says we start with nothing and learn everything, but a lot of human reactions appear too early, too reliably, and too universally to have simply been taught. Babies arrive already able to suck, grip a finger, and prefer looking at faces over random patterns, none of which anyone trains them to do. Across the whole world, infants begin to fear strangers around eight months old — right when a crawling baby could wander into danger — without any lesson. In the 'visual cliff' experiment, even crawling babies who had never been hurt refused to cross over a visible drop, showing a caution that was clearly not learned the hard way. These reactions show up on a schedule, everywhere, which is exactly what you'd expect if the mind comes 'pre-loaded' like a phone with a few apps already installed. So the world certainly shapes us, but it writes onto a mind that already arrives prepared.",
         explanation:
-          "Full credit: argues the core is noticing/comparing/counting (not tools), supports it with a concrete no-computer example, and notes that technology only scales the same ideas.",
+          "Full credit: argues against the blank slate using inborn, early-appearing, cross-cultural evidence (e.g. visual cliff, stranger fear, face preference) and concludes the mind comes prepared, not empty.",
       },
       {
-        topicSlug: "asking-good-questions",
+        topicSlug: "logic-of-attraction",
         prompt:
-          "Explain why a vague question can ruin an analysis before it even starts, and describe how you would take a big, fuzzy question and narrow it into something answerable. Use an example. (5–7 sentences.)",
+          "Explain why finding someone 'beautiful' can be described as the mind reading clues it isn't even aware of, and why this clue-reading would have helped our ancestors. Then explain why people in very different countries often agree about what looks attractive. (5–7 sentences.)",
         correctAnswer:
-          "A vague question ruins an analysis because the question controls everything after it — what data to collect, who to ask, and when you're done — so if it's fuzzy, the whole effort wanders without a target. For example, 'Is our school spending too much on snacks?' is too big and undefined to answer directly, since 'too much' isn't measurable. To narrow it, I'd break it into specific, answerable pieces: 'How much do we spend on snacks each month?', 'Which snack costs the most per student?', and 'Did snack spending go up or down since last year?' Each smaller question names exactly what to measure and could actually be answered with data. Together they chip away at the big question without ever requiring me to guess what the vague version meant. Starting with a sharp question is what keeps the data focused and useful.",
+          "When we find someone beautiful, our mind is quietly noticing signals of health rather than reacting to anything magical, and it does this automatically without our deciding to. Clear skin, bright eyes, energy, and a balanced face are all small clues that a person grew up healthy and well. This clue-reading would have helped our ancestors because choosing a healthy partner meant a better chance of healthy children who survived, so people who paid attention to those signs tended to leave more descendants. Over many generations, that inherited habit of noticing health clues became part of the mind. Because all humans share the same evolved equipment, people in very different countries tend to agree about many of the same clues — for instance, preferring balanced, 'average' faces, which research finds across cultures. That shared agreement, among groups that never taught it to each other, is a strong sign the preference is built in rather than just a local fashion.",
         explanation:
-          "Full credit: explains that the question scopes the whole analysis so vagueness derails it, then narrows a big fuzzy question into specific measurable sub-questions with an example.",
+          "Full credit: explains attraction as automatic reading of health clues, ties it to better ancestral reproduction, and uses cross-cultural agreement (e.g. averaged/symmetrical faces) as evidence the preference is evolved, not merely learned.",
       },
       {
-        topicSlug: "seeing-the-story",
+        topicSlug: "why-we-cooperate",
         prompt:
-          "Someone has a correct set of numbers but presents them in a misleading chart. Explain two specific ways a chart can distort honest data, and argue why showing data honestly is part of doing analytics responsibly. (5–7 sentences.)",
+          "Pick a real everyday situation where you would help someone, and use it to show how 'helping family' and 'taking turns' are two different reasons an evolved mind cooperates. Then explain why feelings like gratitude or anger are part of how cooperation works. (5–7 sentences.)",
         correctAnswer:
-          "Even correct numbers can be twisted by how they're drawn. One way is stretching the scale: if a bar chart starts at 90 instead of 0, a tiny real difference looks like a huge gap because the eye reads bar sizes as value sizes. A second way is choosing the wrong chart for the question — like using a line chart to compare unrelated groups, or a pie chart crammed with so many slices that no pattern is visible — which hides the real story. Both let technically true numbers tell a false story. Showing data honestly is part of responsible analytics because the whole point of a chart is to help someone understand and decide; a chart built to persuade past what the data supports corrupts that decision. It's the picture version of getting the right answer and then lying about it. Choosing a fitting chart and a zero baseline keeps the picture faithful to the facts.",
+          "Imagine I share my lunch — in one case with my little brother, in another with a classmate. Helping my brother fits the 'helping family' reason: he shares many of my genes, so helping him survive helps copies of my own instructions carry on, even though I get nothing back directly. Helping my classmate fits the 'taking turns' reason: I share today expecting that they'll share with me another day, so we both end up better off than if we each kept everything. These are genuinely different reasons — one is about shared genes, the other about fair exchange between non-relatives. Feelings keep the second kind honest: gratitude makes my classmate want to repay the favor, while anger would flare in me if they always took and never gave back, pushing me to stop being used. So gratitude and anger aren't random moods — they are the tools that protect fair trade and keep cooperation from being exploited.",
         explanation:
-          "Full credit: names two concrete distortions (e.g., stretched scale, wrong/overloaded chart), explains how each misleads despite true numbers, and argues honest visualization serves the decision the analysis exists for.",
+          "Full credit: distinguishes kin selection (helping relatives who share genes) from reciprocity (fair exchange with non-kin) in a concrete example, and explains gratitude/anger as emotions that enforce fair reciprocal cooperation.",
       },
     ],
   },
@@ -530,18 +445,18 @@ type SeedPrimer = SeedTopic;
 const REASONING_PRIMERS: SeedPrimer[] = [
   {
     slug: "reasoning-primer-ethical",
-    title: "How to reason about everyday data dilemmas",
+    title: "How to reason about everyday fairness dilemmas",
     weekNumber: 1,
     blurb:
-      "Assessment primer: weighing what matters when data and fairness collide.",
-    lectureTitle: "Primer: How to reason about everyday data dilemmas",
-    body: `# How to reason about everyday data dilemmas
+      "Assessment primer: weighing what matters when honesty, fairness, and pressure collide.",
+    lectureTitle: "Primer: How to reason about everyday fairness dilemmas",
+    body: `# How to reason about everyday fairness dilemmas
 
 This short primer prepares you for the **Professional Judgment** check. That activity does not ask for the "right" answer — it asks *which reasons you give weight to* when you decide. Here is the kind of thinking it rewards.
 
 ## A dilemma is a clash of reasons
 
-A real dilemma is a situation where several honest reasons pull in different directions: a promise you made, pressure to make something look good, what's easiest for you, and the truth of what you show others. Reasoning well does not mean pretending the reasons you act against don't exist — it means being honest that they had some weight, and saying why other reasons mattered more.
+A real dilemma is a situation where several honest reasons pull in different directions: a promise you made, pressure to make something look better than it is, what's easiest for you, and the truth you owe to other people. Reasoning well does not mean pretending the reasons you act against don't exist — it means being honest that they had some weight, and saying why other reasons mattered more.
 
 ## Three kinds of reasons
 
@@ -571,7 +486,7 @@ There is no penalty for the choice you make. What's measured is the *quality of 
     lectureTitle: "Primer: Core clear-thinking skills",
     body: `# Core clear-thinking skills
 
-This short primer prepares you for the **Critical Reasoning** check — a set of multiple-choice questions that test five different thinking skills. These are the same skills you use when you decide what a set of facts really shows, so they matter directly for working with data.
+This short primer prepares you for the **Critical Reasoning** check — a set of multiple-choice questions that test five different thinking skills. These are the same skills you use to decide what a set of facts really shows, so they matter directly for thinking clearly about why people act the way they do.
 
 ## The five skills
 
@@ -583,7 +498,7 @@ This short primer prepares you for the **Critical Reasoning** check — a set of
 
 ## A recurring trap: things that move together
 
-Most wrong answers are statements that *sound* reasonable or data-driven but are **not actually backed up by what you were told**. The discipline this check rewards is the same one data work demands: keep apart what the facts **show**, what you're **assuming**, and what only *sounds* right. Two things happening together does not prove one causes the other.
+Most wrong answers are statements that *sound* reasonable but are **not actually backed up by what you were told**. The discipline this check rewards is the same one careful thinking about human behavior demands: keep apart what the facts **show**, what you're **assuming**, and what only *sounds* right. Two things happening together does not prove one causes the other.
 
 ## How to do this activity well
 
@@ -631,15 +546,15 @@ export async function seedReasoningPrimersIfMissing(): Promise<void> {
 }
 
 export async function seedIfEmpty(): Promise<void> {
-  // The course was migrated to the Data Analytics for Everyone syllabus.
-  // Detect the marker topic; if present and the content version matches, the
-  // content is current and we skip. This makes the seed self-healing across
-  // environments: a database that still holds older content (e.g. a previous
-  // curriculum) is detected and replaced on boot.
+  // The course was migrated to the Evolutionary Psychology for Children
+  // syllabus. Detect the marker topic; if present and the content version
+  // matches, the content is current and we skip. This makes the seed
+  // self-healing across environments: a database that still holds older content
+  // (e.g. a previous curriculum) is detected and replaced on boot.
   const markerTopic = await db
     .select({ id: topicsTable.id })
     .from(topicsTable)
-    .where(eq(topicsTable.slug, "what-is-data"));
+    .where(eq(topicsTable.slug, "mind-has-history"));
   // Read the stored content version. Tolerate the seed_meta table not yet
   // existing (e.g. a boot that races ahead of schema migration): treat that as
   // "no version recorded", which forces a reseed once the table is present.
@@ -680,7 +595,7 @@ export async function seedIfEmpty(): Promise<void> {
     const row = (existing.rows[0] ?? {}) as { n?: number };
     if ((row.n ?? 0) > 0) {
       logger.warn(
-        "Seed: stale course content detected — replacing with the Data Analytics for Everyone curriculum",
+        "Seed: stale course content detected — replacing with the Evolutionary Psychology for Children curriculum",
       );
       await tx.execute(
         sql`TRUNCATE TABLE answers, attempts, practice_attempts, practice_problems, practice_sessions, problems, assignments, lectures, topics, diagnostic_responses, diagnostic_attempts, diagnostic_items, diagnostic_assessments RESTART IDENTITY CASCADE`,

@@ -22,11 +22,11 @@ router.get("/tutor/suggestions/:lectureId", async (req, res): Promise<void> => {
   }
 
   const SYSTEM_PROMPT =
-    'You are a rigorous introductory data analytics tutor writing study questions. Reply as strict JSON of the form {"questions": string[]} with NO other keys.';
+    'You are a rigorous introductory evolutionary psychology tutor writing study questions. Reply as strict JSON of the form {"questions": string[]} with NO other keys.';
   const buildUserPrompt = (extra: string) =>
     extra +
     `From the lecture below, write 6 starter questions that make the student APPLY the lecture's ideas to a CONCRETE EXAMPLE. Every question must hang on a specific case and ask the student to reason about that case.\n\n` +
-    `THE SINGLE MOST IMPORTANT RULE: every question must contain an explicit, concrete, EVERYDAY example — a specific relatable situation (e.g. "a tally of which lunch your classmates picked", "a week of bedtimes you wrote down", "a bar chart of recycling where the bottom line starts at 90 instead of 0"). Keep examples plain-language and non-technical — no spreadsheets, code, SQL, or jargon. The question must ask the student to analyze, judge, sort, count, or predict something about THAT example. Reuse the lecture's own examples when it has them; otherwise invent a vivid, specific one.\n\n` +
+    `THE SINGLE MOST IMPORTANT RULE: every question must contain an explicit, concrete, EVERYDAY example — a specific relatable situation (e.g. "a baby who refuses to crawl across a glass floor with a drop visible underneath", "people spotting a snake in a photo faster than a flower", "a friend who borrows your snack every day but never shares anything back"). Keep examples plain-language and non-technical — no technical terms, study citations, or jargon. The question must ask the student to analyze, explain, judge, or predict something about THAT example. Reuse the lecture's own examples when it has them; otherwise invent a vivid, specific one.\n\n` +
     `ABSOLUTELY FORBIDDEN — never produce any of these:\n` +
     `- Questions that ask for a definition ("What is X?", "What does X mean?", "Define X").\n` +
     `- Questions that ask to distinguish or compare concepts in the abstract ("How do X and Y differ?", "What is the difference between X and Y?", "How does X relate to Y?").\n` +
@@ -34,10 +34,10 @@ router.get("/tutor/suggestions/:lectureId", async (req, res): Promise<void> => {
     `- Any question that could be answered without referring to a specific case.\n\n` +
     `If a question does not name a concrete example and ask the student to reason about it, REWRITE it until it does.\n\n` +
     `GOOD vs BAD:\n` +
-    `- BAD: "What's the difference between a pattern and an outlier?"\n` +
-    `- GOOD: "Everyone in class scored around 80 on the quiz, but one paper shows a 12 — is that an outlier, and what might explain it?"\n` +
-    `- BAD: "What makes a good question good?"\n` +
-    `- GOOD: "A teammate wants to study whether 'our class is healthy' — rewrite that into a sharper question you could actually answer, and say why yours is better."\n\n` +
+    `- BAD: "What's the difference between an adaptation and an instinct?"\n` +
+    `- GOOD: "A baby who has never fallen stops at the edge of a glass floor with a drop visible underneath — what does this suggest about whether the fear of heights is learned or built in?"\n` +
+    `- BAD: "What makes a feeling an adaptation?"\n` +
+    `- GOOD: "People learn to fear snakes far faster than they learn to fear cars, even though cars hurt more people today — explain why an evolved mind would be tuned this way."\n\n` +
     `Cover several different major ideas from the reading across the 6 questions. One clear sentence each (roughly 12–28 words), in the student's own voice, no compound double-questions. Use $...$ for any inline math.\n\n` +
     `Return exactly 6 questions.\n\nLECTURE TITLE: ${lecture.title}\n\nLECTURE BODY:\n"""\n${lecture.body}\n"""`;
 
@@ -104,7 +104,7 @@ router.post("/tutor/ask", async (req, res): Promise<void> => {
   const { message, selectedLectureText } = parsed.data;
 
   const sys =
-    "You are an encouraging introductory data analytics tutor. Explain step by step, use clear examples and worked cases, and define key terms (e.g. pattern, average, outlier, trend) when they come up. Keep replies short (3-6 sentences) unless the student asks for more detail. Never just give the answer — guide them.";
+    "You are an encouraging introductory evolutionary psychology tutor. Explain step by step, use clear examples and relatable cases, and define key terms (e.g. adaptation, natural selection, instinct, trait) when they come up. Keep replies short (3-6 sentences) unless the student asks for more detail. Never just give the answer — guide them.";
   const user = selectedLectureText
     ? `Context from the lecture the student is reading:\n"""\n${selectedLectureText}\n"""\n\nStudent question: ${message}`
     : message;

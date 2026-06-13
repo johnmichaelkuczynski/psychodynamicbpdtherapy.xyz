@@ -10,7 +10,7 @@ import { Compass, Brain } from "lucide-react";
 
 const PHASE_LABELS: Record<string, string> = {
   baseline: "Baseline — before the course",
-  unit1: "After the unit: Data Analytics for Everyone",
+  unit1: "After the unit: Evolutionary Psychology for Everyone",
 };
 
 const PHASE_ORDER = ["baseline", "unit1"];
@@ -47,7 +47,7 @@ function InstrumentCard({ a }: { a: ReasoningAssessmentSummary }) {
       <CardContent className="flex flex-col gap-4">
         <p className="text-sm text-muted-foreground">
           {isEthical
-            ? "Work through a realistic data-work scenario, then rate and rank the considerations behind your decision."
+            ? "Work through a realistic everyday-judgment scenario, then rate and rank the considerations behind your decision."
             : `${a.itemCount} multiple-choice questions across five reasoning skills.`}
         </p>
         <Link href={`/reasoning/${a.id}`}>
