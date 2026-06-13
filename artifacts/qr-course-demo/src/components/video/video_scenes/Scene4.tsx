@@ -71,11 +71,11 @@ export function Scene4({ setCursorPos, setIsClicking }: { setCursorPos: (pos: {x
   }, [setCursorPos, setIsClicking]);
 
   const rows = [
-    { topic: 'What data analytics is and the workflow', week: 'Unit 1', att: 0, acc: 0, stat: 'UNTESTED', statColor: 'text-muted-foreground bg-muted' },
-    { topic: 'Data types, structure, and spreadsheets', week: 'Unit 1', att: 1, acc: 1, stat: 'STRONG', statColor: 'text-emerald-700 bg-emerald-50' },
-    { topic: 'Querying data with SQL', week: 'Unit 1', att: 1, acc: 1, stat: 'STRONG', statColor: 'text-emerald-700 bg-emerald-50' },
-    { topic: 'Cleaning and transforming data', week: 'Unit 1', att: 0, acc: 0, stat: 'UNTESTED', statColor: 'text-muted-foreground bg-muted' },
-    { topic: 'Analysis with Python (pandas)', week: 'Unit 1', att: 0, acc: 0, stat: 'UNTESTED', statColor: 'text-muted-foreground bg-muted' },
+    { topic: 'The mind has a history', week: 'Unit 1', att: 0, acc: 0, stat: 'UNTESTED', statColor: 'text-muted-foreground bg-muted' },
+    { topic: 'Built to survive (cravings, fears, and beauty)', week: 'Unit 1', att: 1, acc: 1, stat: 'STRONG', statColor: 'text-emerald-700 bg-emerald-50' },
+    { topic: 'The logic of attraction', week: 'Unit 1', att: 1, acc: 1, stat: 'STRONG', statColor: 'text-emerald-700 bg-emerald-50' },
+    { topic: 'Love, jealousy, and keeping a mate', week: 'Unit 1', att: 0, acc: 0, stat: 'UNTESTED', statColor: 'text-muted-foreground bg-muted' },
+    { topic: 'Why we cooperate', week: 'Unit 1', att: 0, acc: 0, stat: 'UNTESTED', statColor: 'text-muted-foreground bg-muted' },
   ];
 
   return (

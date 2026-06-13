@@ -50,11 +50,11 @@ export function Scene5({ setCursorPos, setIsClicking }: { setCursorPos: (pos: {x
 
     const t9 = setTimeout(() => {
       setCursorPos({ x: '35vw', y: '82vh' }); // move into answer box
-      setTypedAnswer("Temperature");
+      setTypedAnswer("Modern");
     }, 8500);
-    const t10 = setTimeout(() => setTypedAnswer("Temperature — it can"), 9000);
-    const t11 = setTimeout(() => setTypedAnswer("Temperature — it can take any"), 9500);
-    const t12 = setTimeout(() => setTypedAnswer("Temperature — it can take any value in a range."), 10000);
+    const t10 = setTimeout(() => setTypedAnswer("Modern dangers like"), 9000);
+    const t11 = setTimeout(() => setTypedAnswer("Modern dangers like electricity"), 9500);
+    const t12 = setTimeout(() => setTypedAnswer("Modern dangers like electricity are too new."), 10000);
 
     const t13 = setTimeout(() => {
       setCursorPos({ x: '70vw', y: '60vh' }); // Move to Submit
@@ -110,7 +110,7 @@ export function Scene5({ setCursorPos, setIsClicking }: { setCursorPos: (pos: {x
         <div className="text-xs font-bold text-muted-foreground tracking-widest uppercase mb-4">Topic Practice</div>
         <div className="flex justify-between items-end mb-8">
           <div>
-            <h1 className="text-4xl font-serif text-primary mb-2">Data types, structure, and spreadsheets</h1>
+            <h1 className="text-4xl font-serif text-primary mb-2">Built to survive (cravings, fears, and beauty)</h1>
             <div className="text-sm text-muted-foreground">Unit 1 · 1 prior attempt · 1% accuracy · <span className="text-emerald-600 font-semibold">STRONG</span></div>
           </div>
           <div className="text-sm font-medium border border-border px-3 py-1 rounded-md bg-white">
@@ -126,10 +126,10 @@ export function Scene5({ setCursorPos, setIsClicking }: { setCursorPos: (pos: {x
         <div className="bg-white border border-border rounded-xl shadow-sm overflow-hidden flex flex-col min-h-[400px]">
           <div className="p-8 flex-1 border-b border-border text-lg text-primary font-medium leading-relaxed">
             {phase >= 1 && phase < 4 && (
-              <StreamingText text="Is a customer's ZIP code best treated as a number or a category? Explain what makes it so." delay={0} />
+              <StreamingText text="Is fear of heights a learned behavior or an evolved adaptation? Explain why." delay={0} />
             )}
             {phase >= 4 && (
-              <StreamingText text="Give one example of a continuous numeric variable, and say why it counts as continuous." delay={0} />
+              <StreamingText text="Why don't we have an instinctual fear of electrical outlets, even though they are dangerous?" delay={0} />
             )}
           </div>
           
@@ -159,7 +159,7 @@ export function Scene5({ setCursorPos, setIsClicking }: { setCursorPos: (pos: {x
                     <span>Not quite</span>
                   </div>
                   <div className="text-sm text-red-900 leading-relaxed">
-                    <StreamingText text="Not quite. A ZIP code is categorical — you never average or add ZIP codes, so the math of numbers doesn't apply. Treating identifiers as numbers invites meaningless calculations; store it as text." delay={0} />
+                    <StreamingText text="Not quite. Fear of heights is an evolved adaptation. In our ancestral environment, falling was a frequent and deadly hazard. Those who naturally feared heights avoided them, survived, and passed on those traits." delay={0} />
                   </div>
                 </motion.div>
               )}
@@ -174,7 +174,7 @@ export function Scene5({ setCursorPos, setIsClicking }: { setCursorPos: (pos: {x
                     <span>Correct!</span>
                   </div>
                   <div className="text-sm text-emerald-900 leading-relaxed">
-                    <StreamingText text="Correct. Temperature is a classic continuous variable — it can take any value within a range, so differences and averages are meaningful." delay={0} />
+                    <StreamingText text="Correct! Electrical outlets are a very recent invention. There hasn't been enough time or evolutionary pressure for our brains to evolve an instinctual fear of them. We have to learn to be afraid of them." delay={0} />
                   </div>
                 </motion.div>
               )}
@@ -182,17 +182,13 @@ export function Scene5({ setCursorPos, setIsClicking }: { setCursorPos: (pos: {x
 
             <div className="mt-4">
               <div className="flex space-x-2 border-b border-border pb-2 mb-3 overflow-x-auto text-xs font-medium">
-                <div className="px-3 py-1 border-b-2 border-primary text-primary">Data types</div>
-                {['Workflow', 'SQL', 'Cleaning', 'Pandas', 'Visualization', 'Spreadsheets'].map(t => (
+                <div className="px-3 py-1 border-b-2 border-primary text-primary">Adaptations</div>
+                {['Mating', 'Cooperation', 'Fears', 'Attraction', 'Conflict', 'Evolution'].map(t => (
                   <div key={t} className="px-3 py-1 text-muted-foreground">{t}</div>
                 ))}
               </div>
               <div className="flex flex-wrap gap-2">
-                {['x²', '√', 'π', '½', '÷', '×', '≤', '≥', '≠', '∞', '$'].map(sym => (
-                  <div key={sym} className="w-10 h-10 bg-white border border-border rounded flex items-center justify-center font-mono text-sm shadow-sm text-foreground/80 hover:bg-muted/50 cursor-pointer">
-                    {sym}
-                  </div>
-                ))}
+                {/* No tools for this section */}
               </div>
             </div>
           </div>

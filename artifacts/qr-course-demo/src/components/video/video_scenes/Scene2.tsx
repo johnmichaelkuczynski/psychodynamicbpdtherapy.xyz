@@ -64,7 +64,7 @@ export function Scene2({ setCursorPos, setIsClicking }: { setCursorPos: (pos: {x
       {/* Left Pane: Lecture Content */}
       <div className="w-1/2 h-full border-r border-border p-12 overflow-hidden flex flex-col relative">
         <div className="text-xs font-bold tracking-widest text-muted-foreground mb-4">UNIT 1</div>
-        <h1 className="text-3xl font-serif text-primary mb-8">1.1 What data analytics is and the workflow</h1>
+        <h1 className="text-3xl font-serif text-primary mb-8">1.1 The mind has a history</h1>
         
         <div className="flex bg-muted/50 rounded-lg p-1 w-fit mb-10 border border-border">
           <div className={`px-4 py-1.5 rounded-md text-sm font-medium transition-colors ${phase < 1 ? 'bg-white shadow-sm text-primary' : 'text-muted-foreground'}`}>Short</div>
@@ -73,12 +73,12 @@ export function Scene2({ setCursorPos, setIsClicking }: { setCursorPos: (pos: {x
         </div>
 
         <div className="prose prose-sm max-w-none text-foreground/80 space-y-6">
-          <h2 className="font-serif text-2xl text-primary">From raw data to decisions</h2>
+          <h2 className="font-serif text-2xl text-primary">Your mind has a history</h2>
           <p>
-            Data analytics is the practice of turning raw data into decisions. Instead of guessing, an analyst asks a clear question, gathers the relevant data, and lets the evidence guide the answer.
+            Evolutionary psychology is the study of how the human brain evolved to solve the problems our ancestors faced. Just like our bodies, our minds were shaped by natural selection.
           </p>
           <p>
-            Every project follows the same workflow: ask a question, collect the data, clean it, analyze it, and communicate what you found. Skipping a stage is where most bad conclusions come from.
+            Emotions like fear, jealousy, and love aren't random. They are ancient survival tools. Understanding why they evolved helps us understand why we feel and act the way we do today.
           </p>
           
           <AnimatePresence>
@@ -90,10 +90,10 @@ export function Scene2({ setCursorPos, setIsClicking }: { setCursorPos: (pos: {x
                 className="space-y-6"
               >
                 <p>
-                  The stages aren't strictly linear. Cleaning often reveals a new question, and a chart can expose a data-quality problem you missed. Good analysts loop back as they learn.
+                  These adaptations aren't perfect for the modern world. Our ancestors lived in small hunter-gatherer bands, not massive cities with social media and processed food.
                 </p>
                 <p>
-                  For example, a churn question might start in a spreadsheet, move to SQL once the data grows, and end in a dashboard the whole team can read. The workflow stays the same even as the tools change.
+                  For example, craving sugar was a huge advantage when sweet fruit was rare and calories were scarce. Today, that same ancient craving leads to modern health problems. The mind's history still drives our present.
                 </p>
               </motion.div>
             )}
@@ -120,9 +120,9 @@ export function Scene2({ setCursorPos, setIsClicking }: { setCursorPos: (pos: {x
               >
                 <div className="mb-4 text-xs font-semibold text-muted-foreground uppercase tracking-widest">Starter questions for this section</div>
                 <div className="flex flex-wrap gap-2 mb-6">
-                  <div className="px-3 py-1.5 rounded-full border border-border text-sm text-primary bg-muted/30">You're asked why users are churning — what's the first step?</div>
-                  <div className="px-3 py-1.5 rounded-full border border-border text-sm text-primary bg-muted/30">A sales table has dates stored as text — which stage fixes that?</div>
-                  <div className="px-3 py-1.5 rounded-full border border-border text-sm text-primary bg-muted/30">When would you move from a spreadsheet to SQL?</div>
+                  <div className="px-3 py-1.5 rounded-full border border-border text-sm text-primary bg-muted/30">Why do we still crave sugar if it's bad for us?</div>
+                  <div className="px-3 py-1.5 rounded-full border border-border text-sm text-primary bg-muted/30">Are emotions like fear learned or evolved?</div>
+                  <div className="px-3 py-1.5 rounded-full border border-border text-sm text-primary bg-muted/30">What does it mean that the brain was shaped by natural selection?</div>
                 </div>
                 <div className="w-full h-24 border border-border rounded-lg bg-muted/20 p-3 text-muted-foreground text-sm flex items-end shadow-inner">
                   <div className="w-full flex justify-between">
@@ -157,7 +157,7 @@ export function Scene2({ setCursorPos, setIsClicking }: { setCursorPos: (pos: {x
                     className="p-6 border border-border rounded-xl shadow-sm bg-white"
                   >
                     <p className="text-foreground font-medium mb-6">
-                      A report says "sales are down" but never defines the time range. Which workflow stage was skipped, and why does it matter?
+                      People often fear harmless spiders but aren't afraid of electrical outlets. How does evolutionary psychology explain this mismatch?
                     </p>
                     <div className="w-full h-12 border border-border rounded-md bg-muted/10 mb-4 px-3 flex items-center text-muted-foreground">Type your answer...</div>
                     <div className="px-4 py-2 bg-primary text-white rounded-md text-sm font-medium w-fit ml-auto">Submit</div>

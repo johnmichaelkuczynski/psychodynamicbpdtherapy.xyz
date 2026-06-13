@@ -94,7 +94,7 @@ export function Scene6({ setCursorPos, setIsClicking }: { setCursorPos: (pos: {x
               >
                 <div>
                   <div className="text-[10px] font-bold text-muted-foreground uppercase tracking-widest mb-1">Homework</div>
-                  <h4 className="font-serif text-lg text-primary mb-1">Homework 1.1 — The analytics workflow</h4>
+                  <h4 className="font-serif text-lg text-primary mb-1">Homework 1.1 — The mind has a history</h4>
                   <div className="text-sm text-muted-foreground">3 problems</div>
                 </div>
                 <div className="flex items-center space-x-6">
@@ -117,7 +117,7 @@ export function Scene6({ setCursorPos, setIsClicking }: { setCursorPos: (pos: {x
               >
                 <div>
                   <div className="text-[10px] font-bold text-muted-foreground uppercase tracking-widest mb-1">Homework</div>
-                  <h4 className="font-serif text-lg text-primary mb-1">Homework 1.2 — Data types and SQL</h4>
+                  <h4 className="font-serif text-lg text-primary mb-1">Homework 1.2 — Built to survive</h4>
                   <div className="text-sm text-muted-foreground">4 problems</div>
                 </div>
                 <div className="flex items-center space-x-6">
@@ -174,11 +174,11 @@ export function Scene6({ setCursorPos, setIsClicking }: { setCursorPos: (pos: {x
             <div className="bg-white border border-border rounded-xl shadow-sm p-8 mb-6 relative overflow-hidden">
               <div className="absolute top-0 right-0 bg-emerald-100 text-emerald-700 px-4 py-1.5 text-xs font-bold tracking-widest rounded-bl-xl border-b border-l border-emerald-200">GRADED</div>
               
-              <h3 className="font-medium text-lg mb-6 max-w-2xl text-foreground">Q1. What is the first stage of the data analytics workflow, and why does it matter?</h3>
+              <h3 className="font-medium text-lg mb-6 max-w-2xl text-foreground">Q1. Why are some human traits that were useful in the past no longer beneficial today?</h3>
               
               <div className="mb-6 max-w-2xl">
                 <div className="text-xs text-muted-foreground mb-2">Your answer:</div>
-                <div className="px-6 py-3 bg-muted/30 border border-border rounded-lg text-base">Asking a clear question — it decides what data you collect and how you'll measure the answer.</div>
+                <div className="px-6 py-3 bg-muted/30 border border-border rounded-lg text-base">Because our environment has changed rapidly, but our brains evolved for an ancestral hunter-gatherer world.</div>
               </div>
 
               <AnimatePresence>
@@ -193,7 +193,7 @@ export function Scene6({ setCursorPos, setIsClicking }: { setCursorPos: (pos: {x
                       <span>AI Tutor Feedback</span>
                     </div>
                     <div className="text-sm text-blue-900 leading-relaxed">
-                      <StreamingText text="Correct. The workflow starts by framing a precise question; it determines what data you need and how you'll know when you've answered it. Clear and well stated." delay={0} />
+                      <StreamingText text="Correct. This evolutionary mismatch explains why ancient adaptations, like craving high-calorie foods or fearing snakes over cars, are less helpful or even harmful in modern environments. Clear and well stated." delay={0} />
                     </div>
                   </motion.div>
                 )}
@@ -219,7 +219,7 @@ export function Scene6({ setCursorPos, setIsClicking }: { setCursorPos: (pos: {x
             </div>
             
             <div className="bg-white border border-border rounded-xl shadow-sm p-8 opacity-50">
-              <h3 className="font-medium text-lg mb-6 max-w-2xl text-foreground">Q2. Name the workflow stage where data cleaning happens...</h3>
+              <h3 className="font-medium text-lg mb-6 max-w-2xl text-foreground">Q2. How does natural selection shape psychological mechanisms...</h3>
               <div className="text-sm text-muted-foreground">Problem content hidden...</div>
             </div>
           </motion.div>
