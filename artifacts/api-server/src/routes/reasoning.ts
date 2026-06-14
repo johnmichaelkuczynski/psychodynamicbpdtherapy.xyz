@@ -20,10 +20,9 @@ import {
 } from "@workspace/api-zod";
 import {
   scoreAssessment,
-  judgeCritical,
+  judgeMcq,
   gradeOpen,
   generateFeedback,
-  feedbackStyleFor,
   generateVariantItems,
   buildReview,
   publicItem,
@@ -37,16 +36,17 @@ import {
 
 const router: IRouter = Router();
 
-const COURSEWORK_WEIGHT = 80;
-const DIAGNOSTIC_WEIGHT = 20;
+// Coursework is the entire graded course. Diagnostics are practice only and
+// never contribute to the grade.
+const COURSEWORK_WEIGHT = 100;
 
 function parseIdParam(raw: unknown): number {
   const s = Array.isArray(raw) ? raw[0] : (raw as string);
   return parseInt(s ?? "", 10);
 }
 
-type Instrument = "ethical" | "critical";
-type Phase = "baseline" | "unit1" | "unit2" | "unit3" | "unit4";
+type Instrument = "subject" | "reasoning";
+type Phase = "before" | "third1" | "third2" | "after";
 
 type ItemRowRaw = typeof diagnosticItemsTable.$inferSelect;
 
@@ -54,7 +54,7 @@ function mapItemRows(rows: ItemRowRaw[]): DiagnosticItemRow[] {
   return rows.map((r) => ({
     id: r.id,
     position: r.position,
-    type: r.type as "dilemma" | "mcq" | "open",
+    type: r.type as "mcq" | "open",
     prompt: r.prompt,
     payload: r.payload,
     scoring: r.scoring,
@@ -354,14 +354,15 @@ router.post("/reasoning/assessments/:assessmentId/submit", async (req, res): Pro
   // Judge the genuinely correct option for any MCQs with the model rather than
   // trusting the stored answer key; grade any short open answers leniently on
   // substance. Both scoring and the per-question review use these results.
-  const judged = hasMcq ? await judgeCritical(items) : new Map<number, number>();
+  const judged = hasMcq ? await judgeMcq(items) : new Map<number, number>();
   const openGrades = hasOpen
     ? await gradeOpen(items, responses)
     : new Map<number, OpenGrade>();
   const summary = scoreAssessment(instrument, items, responses, judged, openGrades);
-  const feedback = await generateFeedback(feedbackStyleFor(summary), a.title, summary);
+  const feedback = await generateFeedback(a.title, summary);
 
-  // Pass/Fail policy: submitting the assessment is a pass.
+  // Diagnostics are practice only — submitting always marks the attempt complete
+  // (it never affects the grade).
   const passed = true;
 
   let attemptId: number;
@@ -399,7 +400,7 @@ router.post("/reasoning/assessments/:assessmentId/submit", async (req, res): Pro
   }
 
   // Persist one normalized row per answered item (replacing any prior rows for
-  // this attempt). isCorrect is set for mcq items, left null for dilemmas.
+  // this attempt). isCorrect is set for mcq and open items.
   await db
     .delete(diagnosticResponsesTable)
     .where(eq(diagnosticResponsesTable.attemptId, attemptId));
@@ -422,9 +423,6 @@ router.post("/reasoning/assessments/:assessmentId/submit", async (req, res): Pro
       attemptId,
       itemId: item.id,
       selectedIndex: resp?.selectedIndex ?? null,
-      decisionIndex: resp?.decisionIndex ?? null,
-      ratings: resp?.ratings ?? null,
-      ranking: resp?.ranking ?? null,
       text: typeof resp?.text === "string" ? resp.text : null,
       isCorrect,
     };
@@ -446,7 +444,7 @@ router.post("/reasoning/assessments/:assessmentId/submit", async (req, res): Pro
 });
 
 router.get("/reasoning/grades", async (_req, res) => {
-  // ---- Coursework (80%) ----
+  // ---- Coursework (100% of the grade) ----
   const assignments = await db
     .select()
     .from(assignmentsTable)
@@ -480,7 +478,9 @@ router.get("/reasoning/grades", async (_req, res) => {
       ? 0
       : coursework.reduce((s, c) => s + (c.bestScore ?? 0), 0) / coursework.length;
 
-  // ---- Diagnostics (20%) ----
+  // ---- Diagnostics (practice only — NOT graded) ----
+  // Surfaced for display so students can see what they've completed, but they
+  // never contribute to the overall grade.
   const assessments = await db
     .select()
     .from(diagnosticAssessmentsTable)
@@ -491,9 +491,11 @@ router.get("/reasoning/grades", async (_req, res) => {
         .select()
         .from(diagnosticAttemptsTable)
         .where(eq(diagnosticAttemptsTable.assessmentId, a.id));
-      const passed = attempts.some((x) => x.status === "submitted" && x.passed);
+      const completed = attempts.some(
+        (x) => x.status === "submitted" && x.passed,
+      );
       const inProgress = attempts.some((x) => x.status === "in_progress");
-      const status: "not_started" | "in_progress" | "passed" = passed
+      const status: "not_started" | "in_progress" | "passed" = completed
         ? "passed"
         : inProgress
         ? "in_progress"
@@ -507,13 +509,11 @@ router.get("/reasoning/grades", async (_req, res) => {
       };
     }),
   );
-  const passedCount = reasoning.filter((r) => r.status === "passed").length;
-  const reasoningPct =
-    reasoning.length === 0 ? 0 : (passedCount / reasoning.length) * 100;
+  const completedCount = reasoning.filter((r) => r.status === "passed").length;
 
+  // Coursework is the entire grade.
   const courseworkEarned = (courseworkAvg / 100) * COURSEWORK_WEIGHT;
-  const diagnosticsEarned = (reasoningPct / 100) * DIAGNOSTIC_WEIGHT;
-  const overall = courseworkEarned + diagnosticsEarned;
+  const overall = courseworkEarned;
 
   const letterGrade =
     overall >= 90
@@ -540,10 +540,10 @@ router.get("/reasoning/grades", async (_req, res) => {
         },
         {
           key: "diagnostics",
-          label: "Diagnostic assessments",
-          weightPercent: DIAGNOSTIC_WEIGHT,
-          earnedPercent: Math.round(diagnosticsEarned * 10) / 10,
-          detail: `${passedCount} of ${reasoning.length} assessments passed`,
+          label: "Diagnostics (practice — not graded)",
+          weightPercent: 0,
+          earnedPercent: 0,
+          detail: `${completedCount} of ${reasoning.length} completed — practice only, never affects your grade`,
         },
       ],
       coursework,

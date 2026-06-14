@@ -7,8 +7,6 @@ import { Skeleton } from "@/components/ui/skeleton";
 import { BookOpen } from "lucide-react";
 import { ReasoningCallout } from "@/components/ReasoningCallout";
 
-const UNIT_PHASES = ["unit1"] as const;
-
 export default function WeekView() {
   const params = useParams();
   const weekNumber = Number(params.weekNumber);
@@ -93,7 +91,10 @@ export default function WeekView() {
         </div>
 
         {!isLoading && weekNumber === 1 && (
-          <ReasoningCallout phase={UNIT_PHASES[0]} />
+          <>
+            <ReasoningCallout phase="third1" />
+            <ReasoningCallout phase="third2" />
+          </>
         )}
       </div>
     </Layout>

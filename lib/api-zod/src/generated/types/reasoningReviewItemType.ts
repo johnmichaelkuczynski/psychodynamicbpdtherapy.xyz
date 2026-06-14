@@ -10,7 +10,6 @@ export type ReasoningReviewItemType = typeof ReasoningReviewItemType[keyof typeo
 
 
 export const ReasoningReviewItemType = {
-  dilemma: 'dilemma',
   mcq: 'mcq',
   open: 'open',
 } as const;

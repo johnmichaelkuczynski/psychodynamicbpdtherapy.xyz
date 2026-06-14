@@ -1,31 +1,23 @@
 // ---------------------------------------------------------------------------
 // Original content for the embedded diagnostic reasoning assessments.
 //
-// Two instruments, each administered twice (a baseline before the course and a
-// checkpoint after the single unit) with MUTUALLY UNIQUE items:
-//   - Professional Judgment (DIT-style): a realistic everyday scenario; the
-//     student rates ~12 considerations by importance and ranks the most
-//     important few. A principled-judgment ("P") index is computed from how
-//     postconventional considerations are ranked. Stages: P = personal
-//     interest, M = maintaining norms/rules/approval, PC = postconventional/
-//     principled, X = meaningless (a reliability check — ranking it high
-//     signals careless responding).
-//   - Critical Reasoning (CCTST-style): multiple-choice items spanning analysis,
-//     inference, evaluation, deduction, and induction.
+// Two subject-relevant kinds, each administered at four phases (before the
+// course, one-third through, two-thirds through, and after) with freshly
+// generated items per attempt:
+//   - "subject" (AI Knowledge): scenario questions that check understanding of
+//     how AI actually works, across the course's eight topics. No math/coding.
+//   - "reasoning" (General Reasoning): scenario questions that measure how a
+//     student reasons through a problem (analysis, inference, evaluation,
+//     deduction, induction) rather than what they have memorized.
 //
-// All items are ORIGINAL. No real DIT or CCTST items are reproduced. For every
-// MCQ the correct option is written FIRST; at seed time options are rotated so
-// the correct answer lands at a varied index (see seedDiagnostics.ts).
+// Every item is MCQ or short open-response.
+// All items are ORIGINAL. For every MCQ the correct option is written FIRST;
+// at seed/generation time options are rotated so the correct answer lands at a
+// varied index (see seedDiagnostics.ts / reasoning.ts).
+//
+// Diagnostics are PRACTICE ONLY — they never affect a student's grade, can be
+// retaken any number of times, and never repeat the same questions.
 // ---------------------------------------------------------------------------
-
-export type Stage = "P" | "M" | "PC" | "X";
-
-export type DilemmaItem = {
-  prompt: string;
-  decisionOptions: string[];
-  considerations: { text: string; stage: Stage }[];
-  rankCount: number;
-};
 
 export type SkillArea =
   | "analysis"
@@ -36,88 +28,239 @@ export type SkillArea =
 
 export type McqItem = {
   prompt: string;
-  // Correct option is listed FIRST. Rotated at seed time.
+  // Correct option is listed FIRST. Rotated at seed/generation time.
   options: string[];
-  skillArea: SkillArea;
+  // Only "reasoning" items carry a skill area; "subject" items omit it.
+  skillArea?: SkillArea;
 };
 
-export type Phase = "baseline" | "unit1";
+export type OpenItem = {
+  prompt: string;
+  // The core idea(s) a good 1-2 sentence answer should capture. Used both as
+  // the lenient grading key and shown to the student in review.
+  keyPoints: string[];
+  skillArea?: SkillArea;
+};
+
+export type Phase = "before" | "third1" | "third2" | "after";
+
+export type Instrument = "subject" | "reasoning";
 
 export type DiagnosticSeed = {
-  instrument: "ethical" | "critical";
+  instrument: Instrument;
   phase: Phase;
   title: string;
   subtitle: string;
   instructions: string;
-  dilemmas?: DilemmaItem[];
-  mcqs?: McqItem[];
+  // Seeded template items (the structural blueprint + static fallback). Every
+  // attempt generates fresh items of the same kind; the template is only used
+  // for the assessment preview and as the generation/fallback blueprint.
+  mcqs: McqItem[];
 };
 
-const ETHICAL_INSTRUCTIONS =
-  "Read the scenario and decide what the person should do. Then rate each consideration by how important it was to your decision, and finally rank your most important considerations. There are no right or wrong answers here — answer honestly. Submitting completes the assessment and you'll receive written feedback on your reasoning.";
+const SUBJECT_INSTRUCTIONS =
+  "Answer each question by choosing the best option (or, for written questions, typing a short 1-2 sentence answer). These questions check how well you understand the way AI actually works — there's no math or coding. This is practice only: it never affects your grade, and you can retake it any time with fresh questions.";
 
-const CRITICAL_INSTRUCTIONS =
-  "Answer each question by selecting the single best option. Work carefully — these questions measure reasoning, not recall. Submitting completes the assessment and you'll receive written feedback on your performance.";
+const REASONING_INSTRUCTIONS =
+  "Answer each question by choosing the best option (or, for written questions, typing a short 1-2 sentence answer). These questions measure how you reason through a problem, not what you've memorized. This is practice only: it never affects your grade, and you can retake it any time with fresh questions.";
 
-// ===========================================================================
-// PROFESSIONAL JUDGMENT — two unique everyday scenarios
-// ===========================================================================
-
-const DILEMMA_BASELINE: DilemmaItem = {
-  prompt:
-    "Mia helped run a small experiment for her group's science-fair project, testing whether people can tell apart a short paragraph written by an AI chatbot from one written by a person. The real difference her group found was tiny. The day before judging, a teammate asks Mia to describe the result on their poster as a 'huge, dramatic difference,' even though it was barely there, because it 'sounds more impressive.' The actual numbers wouldn't change — only how they're described.\n\nShould Mia refuse and present the result honestly?",
-  decisionOptions: [
-    "Mia should refuse and present the result honestly",
-    "Can't decide",
-    "Mia should exaggerate the result to sound impressive, as asked",
-  ],
-  considerations: [
-    { text: "Whether refusing would make Mia look difficult and upset her teammates.", stage: "P" },
-    { text: "Whether the judges and audience deserve an accurate description so they can judge fairly.", stage: "PC" },
-    { text: "Whether Mia's job is simply to do whatever the group decides.", stage: "M" },
-    { text: "Whether calling a tiny difference 'huge,' even with the same numbers, misleads the people listening.", stage: "PC" },
-    { text: "Whether Mia would feel more comfortable just going along with the request.", stage: "P" },
-    { text: "Whether the science-fair rules call for honest reporting of results.", stage: "M" },
-    { text: "Whether Mia might be thanked by the group for being a cooperative 'team player'.", stage: "P" },
-    { text: "Whether exaggerating the result chips away at the honesty the whole project depends on.", stage: "PC" },
-    { text: "Whether the group should have used nicer poster colors.", stage: "X" },
-    { text: "Whether 'everyone hypes up their results anyway.'", stage: "M" },
-    { text: "Whether the people reading the poster deserve a faithful account of what really happened.", stage: "PC" },
-    { text: "Whether refusing might cost Mia a good grade from her teammates' point of view.", stage: "P" },
-  ],
-  rankCount: 4,
-};
-
-const DILEMMA_UNIT1: DilemmaItem = {
-  prompt:
-    "Theo runs the sign-up sheet for the school chess club. People wrote down their phone numbers only so they could get reminders about chess meetings. Now a friend running an unrelated bake-sale fundraiser asks Theo to share those numbers to send out fundraiser texts. The friend says 'it's for a good cause, and you have the numbers anyway.'\n\nShould Theo refuse to hand over the private phone numbers?",
-  decisionOptions: [
-    "Theo should refuse to share the private numbers",
-    "Can't decide",
-    "Theo should share the numbers, as his friend asks",
-  ],
-  considerations: [
-    { text: "Whether the people who signed up have a right to the privacy they were promised.", stage: "PC" },
-    { text: "Whether Theo could get blamed if people found out their numbers were shared.", stage: "P" },
-    { text: "Whether keeping a promise to people matters even when breaking it would help a good cause.", stage: "PC" },
-    { text: "Whether the friend's say-so is enough to make sharing okay.", stage: "M" },
-    { text: "Whether Theo would gain his friend's gratitude by handing the numbers over.", stage: "P" },
-    { text: "Whether the school's rules about personal information cover how the list may be used.", stage: "M" },
-    { text: "Whether Theo personally likes the friend asking.", stage: "P" },
-    { text: "Whether the people on the list would agree if Theo actually asked them first.", stage: "PC" },
-    { text: "Whether the fundraiser texts should use a fun emoji.", stage: "X" },
-    { text: "Whether 'you have the numbers anyway' is a good enough reason.", stage: "M" },
-    { text: "Whether trust between the club and its members depends on honoring such promises.", stage: "PC" },
-    { text: "Whether refusing could cause an argument with his friend.", stage: "P" },
-  ],
-  rankCount: 4,
-};
+// The eight course topics, used to spread generated "subject" questions across
+// the curriculum.
+export const AI_TOPICS: string[] = [
+  "what AI is (and isn't)",
+  "rule-based systems versus systems that learn",
+  "data and training",
+  "pattern recognition",
+  "neural networks and deep learning",
+  "language models (how chatbots predict words)",
+  "AI strengths, limits, and hallucination",
+  "using AI well, and where it's headed",
+];
 
 // ===========================================================================
-// CRITICAL REASONING — two unique 10-item forms (correct option listed first)
+// AI KNOWLEDGE ("subject") — original scenario MCQs (correct option FIRST)
 // ===========================================================================
 
-const CRITICAL_BASELINE: McqItem[] = [
+export const SUBJECT_MCQ_BANK: McqItem[] = [
+  {
+    prompt:
+      "A weather app uses AI to predict whether it will rain tomorrow. Which best describes what the AI is actually doing?",
+    options: [
+      "Finding patterns in lots of past weather data to estimate what's most likely next.",
+      "Looking up tomorrow's weather in a fixed table a person typed in.",
+      "Truly understanding the sky the way a human meteorologist senses the weather.",
+      "Guessing completely at random with no information.",
+    ],
+  },
+  {
+    prompt:
+      "A friend says a chatbot's answer 'must be true because it sounds so confident.' What is the best response?",
+    options: [
+      "Confident wording doesn't mean it's correct — it predicts likely-sounding text, not verified truth.",
+      "If it sounds confident, it definitely checked a trusted source first.",
+      "Chatbots can't be wrong because they have read the whole internet.",
+      "It must be right because computers never make mistakes.",
+    ],
+  },
+  {
+    prompt:
+      "A spam filter that learns from the emails you mark as spam differs from one with a fixed list of banned words because the learning filter:",
+    options: [
+      "Improves by finding patterns in examples instead of only following rules a person wrote.",
+      "Never makes a single mistake once it is turned on.",
+      "Can only catch spam that exactly matches the banned words.",
+      "Works without ever needing any examples at all.",
+    ],
+  },
+  {
+    prompt:
+      "A face-recognition tool works worse on a group of people it rarely saw while being trained. The most likely reason is that:",
+    options: [
+      "It learned mostly from examples of other groups, so its patterns fit them better.",
+      "Cameras physically cannot photograph some groups of people.",
+      "The tool dislikes certain groups of people on purpose.",
+      "Having more training data always makes a tool perform worse.",
+    ],
+  },
+  {
+    prompt:
+      "A photo app sorts your pictures into 'cats' and 'dogs' even though no one wrote it rules for what a cat looks like. It most likely works by:",
+    options: [
+      "Recognizing patterns it picked up from many labeled example photos.",
+      "Following a checklist of cat features a programmer typed in by hand.",
+      "Asking a human to label every single new photo for it.",
+      "Storing one perfect photo of a cat and matching it exactly.",
+    ],
+  },
+  {
+    prompt:
+      "Saying a neural network has 'layers' mainly means that:",
+    options: [
+      "Information passes through stages that each build on simpler patterns to detect more complex ones.",
+      "The program is stored across several different hard drives.",
+      "It literally contains a tiny human brain inside it.",
+      "It needs several days to answer any question.",
+    ],
+  },
+  {
+    prompt:
+      "When a chatbot writes a sentence for you, it is mostly:",
+    options: [
+      "Predicting the next likely word based on patterns in the text it was trained on.",
+      "Looking the whole sentence up in a giant dictionary of ready-made answers.",
+      "Recalling a real memory of a conversation it personally had.",
+      "Translating your question into a fixed database search.",
+    ],
+  },
+  {
+    prompt:
+      "A chatbot gives you a confident citation for a study, but the study turns out not to exist. This is best described as:",
+    options: [
+      "A hallucination — it generated plausible-sounding text that isn't true.",
+      "A computer virus that infected the chatbot.",
+      "Clear proof that the chatbot was hacked by someone.",
+      "A small typo that means the study is actually real.",
+    ],
+  },
+  {
+    prompt:
+      "For which task should you most carefully double-check an AI's answer before acting on it?",
+    options: [
+      "A medical dosage question, where a wrong answer could genuinely harm someone.",
+      "Suggesting a few fun names for a pet goldfish.",
+      "Brainstorming topping ideas for a pizza.",
+      "Picking a background color for a poster.",
+    ],
+  },
+  {
+    prompt:
+      "What is the best way to get a genuinely useful answer from an AI assistant?",
+    options: [
+      "Give it clear context about what you want, then read and check the result.",
+      "Ask as vaguely as possible so it has more freedom.",
+      "Accept the very first answer without reading it.",
+      "Assume it is always right and never verify anything.",
+    ],
+  },
+  {
+    prompt:
+      "You used a chatbot to help draft a school essay. The honest way to use it is to:",
+    options: [
+      "Use it to help, then write and verify the work yourself rather than passing off AI text as entirely your own.",
+      "Submit its draft unchanged and call it your own work.",
+      "Hide that you used it and skip checking any of the facts.",
+      "Let it invent impressive-sounding sources to fill the page.",
+    ],
+  },
+  {
+    prompt:
+      "Which statement about today's AI is the most accurate overall?",
+    options: [
+      "It's a powerful tool for finding patterns, but it has no real understanding or judgment of its own.",
+      "It thinks and feels in essentially the same way a person does.",
+      "It is always correct and so never needs to be checked.",
+      "It is useless for any real, practical task.",
+    ],
+  },
+];
+
+export const SUBJECT_OPEN_BANK: OpenItem[] = [
+  {
+    prompt:
+      "A chatbot gives you a confident answer with a source, but you can't find that source anywhere. In one sentence, what is the safest thing to assume and do?",
+    keyPoints: [
+      "The source may be hallucinated / made up.",
+      "Verify it against a trusted source before relying on it.",
+    ],
+  },
+  {
+    prompt:
+      "In one sentence, explain why an AI trained mostly on photos of one kind of dog might struggle to recognize a breed it rarely saw.",
+    keyPoints: [
+      "It learns patterns from its training examples.",
+      "With few examples of that breed, its learned patterns fit it poorly.",
+    ],
+  },
+  {
+    prompt:
+      "A friend says 'the AI must be right because it sounds so sure.' In one sentence, what would you tell them?",
+    keyPoints: [
+      "Confidence is not the same as accuracy.",
+      "It predicts likely-sounding text, not verified truth, so it can be confidently wrong.",
+    ],
+  },
+  {
+    prompt:
+      "In one sentence, describe the difference between a spam filter that follows a fixed list of banned words and one that learns from examples.",
+    keyPoints: [
+      "The rule-based one only follows rules a person wrote.",
+      "The learning one finds patterns in examples and can adapt or improve.",
+    ],
+  },
+  {
+    prompt:
+      "You want a chatbot to help plan a birthday party. In one sentence, name one thing you can do to get a more useful answer.",
+    keyPoints: [
+      "Give clear context or details (budget, number of guests, theme, age).",
+      "Specific prompts get more useful answers than vague ones.",
+    ],
+  },
+  {
+    prompt:
+      "In one sentence, explain why you should check an AI's answer about medication more carefully than its answer about pizza toppings.",
+    keyPoints: [
+      "A wrong medical answer can cause real harm — it's high-stakes.",
+      "The more a mistake would matter, the more you should verify it.",
+    ],
+  },
+];
+
+// ===========================================================================
+// GENERAL REASONING ("reasoning") — original scenario MCQs (correct first),
+// each tagged with the reasoning skill it measures.
+// ===========================================================================
+
+export const REASONING_MCQ_BANK: McqItem[] = [
   {
     prompt:
       "Consider: 'All students who studied passed the exam. Maria studied. So Maria passed.' Which unstated assumption does the argument rely on?",
@@ -227,9 +370,6 @@ const CRITICAL_BASELINE: McqItem[] = [
     ],
     skillArea: "induction",
   },
-];
-
-const CRITICAL_UNIT1: McqItem[] = [
   {
     prompt: "'We should ban the chemical because it's unnatural.' This argument assumes that:",
     options: [
@@ -339,60 +479,9 @@ const CRITICAL_UNIT1: McqItem[] = [
   },
 ];
 
-export const DIAGNOSTIC_SEED: DiagnosticSeed[] = [
-  {
-    instrument: "ethical",
-    phase: "baseline",
-    title: "Professional Judgment Inventory — Baseline",
-    subtitle: "Before the course",
-    instructions: ETHICAL_INSTRUCTIONS,
-    dilemmas: [DILEMMA_BASELINE],
-  },
-  {
-    instrument: "critical",
-    phase: "baseline",
-    title: "Critical Reasoning Assessment — Baseline",
-    subtitle: "Before the course",
-    instructions: CRITICAL_INSTRUCTIONS,
-    mcqs: CRITICAL_BASELINE,
-  },
-  {
-    instrument: "ethical",
-    phase: "unit1",
-    title: "Professional Judgment Inventory — Course Checkpoint",
-    subtitle: "After the unit: Baby AI for Everyone",
-    instructions: ETHICAL_INSTRUCTIONS,
-    dilemmas: [DILEMMA_UNIT1],
-  },
-  {
-    instrument: "critical",
-    phase: "unit1",
-    title: "Critical Reasoning Assessment — Course Checkpoint",
-    subtitle: "After the unit: Baby AI for Everyone",
-    instructions: CRITICAL_INSTRUCTIONS,
-    mcqs: CRITICAL_UNIT1,
-  },
-];
-
-// ===========================================================================
-// SHORT OPEN-RESPONSE ITEMS & EVERYDAY-JUDGMENT MCQs
-//
-// These power the "written" and "hybrid" answer formats and act as static
-// fallbacks when AI generation is unavailable, so an attempt never blocks.
-// Open answers are 1-2 sentences and are graded LENIENTLY on substance — a
-// single correct core idea earns credit, never penalized for length.
-// ===========================================================================
-
-export type OpenItem = {
-  prompt: string;
-  // The core idea(s) a good 1-2 sentence answer should capture. Used both as
-  // the grading key and shown to the student in review.
-  keyPoints: string[];
-  skillArea?: SkillArea;
-};
-
-// One short open question per critical-reasoning skill area.
-export const OPEN_FALLBACK_CRITICAL: OpenItem[] = [
+// One short open question per reasoning skill area (graded leniently). Powers
+// the "written"/"hybrid" formats and acts as a static fallback.
+export const REASONING_OPEN_BANK: OpenItem[] = [
   {
     prompt:
       "In one sentence, name the assumption this argument depends on: 'Everyone who studied passed the test. Sam studied, so Sam passed.'",
@@ -439,95 +528,32 @@ export const OPEN_FALLBACK_CRITICAL: OpenItem[] = [
   },
 ];
 
-// Short open questions for everyday-judgment (Professional Judgment) scenarios.
-export const OPEN_FALLBACK_ETHICAL: OpenItem[] = [
-  {
-    prompt:
-      "A teammate asks you to describe a tiny experimental difference as a 'huge' result on a science-fair poster. In one sentence, what should you do and why?",
-    keyPoints: [
-      "Report the result honestly/accurately.",
-      "The judges and audience deserve a truthful description so they can judge fairly.",
-      "Integrity matters more than sounding impressive.",
-    ],
-  },
-  {
-    prompt:
-      "A friend wants club members' phone numbers — given only for club reminders — to text them about a bake sale. In one sentence, what should you do and why?",
-    keyPoints: [
-      "Don't share the numbers without the members' consent.",
-      "They were given for a specific purpose; sharing them breaks that promise and their privacy.",
-    ],
-  },
+// ===========================================================================
+// SEED — two kinds × four phases (8 assessments)
+// ===========================================================================
+
+const PHASES: { phase: Phase; label: string }[] = [
+  { phase: "before", label: "Before the course" },
+  { phase: "third1", label: "One-third through" },
+  { phase: "third2", label: "Two-thirds through" },
+  { phase: "after", label: "After the course" },
 ];
 
-// Everyday ethical-judgment multiple-choice questions (correct option FIRST,
-// rotated at generation time). Tagged with a reasoning skill so the score
-// breakdown still works for MCQ-only Professional Judgment attempts.
-export const JUDGMENT_MCQ_FALLBACK: McqItem[] = [
+export const DIAGNOSTIC_SEED: DiagnosticSeed[] = PHASES.flatMap((p) => [
   {
-    prompt:
-      "Dana finds a wallet on the sidewalk with $200 cash and an ID card inside. The most defensible thing to do is:",
-    options: [
-      "Return the wallet and the money to the owner using the ID.",
-      "Keep the cash and hand in the empty wallet.",
-      "Leave the wallet exactly where it was found.",
-      "Keep everything, since 'finders keepers'.",
-    ],
-    skillArea: "evaluation",
+    instrument: "subject" as const,
+    phase: p.phase,
+    title: `AI Knowledge Check — ${p.label}`,
+    subtitle: p.label,
+    instructions: SUBJECT_INSTRUCTIONS,
+    mcqs: SUBJECT_MCQ_BANK,
   },
   {
-    prompt:
-      "A teammate asks Mia to label a tiny experimental result as a 'huge difference' on a poster to impress judges. The strongest reason for Mia to refuse is that:",
-    options: [
-      "The audience deserves an accurate description to judge the work fairly.",
-      "Refusing makes Mia look like a harder worker.",
-      "Exaggerating is more effort than it's worth.",
-      "Her teammate might be wrong about the numbers anyway.",
-    ],
-    skillArea: "evaluation",
+    instrument: "reasoning" as const,
+    phase: p.phase,
+    title: `General Reasoning Check — ${p.label}`,
+    subtitle: p.label,
+    instructions: REASONING_INSTRUCTIONS,
+    mcqs: REASONING_MCQ_BANK,
   },
-  {
-    prompt:
-      "A friend asks Theo for club members' phone numbers — collected only for club reminders — to text them ads. The strongest consideration against sharing is:",
-    options: [
-      "The members gave their numbers for one purpose and never agreed to ads.",
-      "Sending lots of texts could cost money.",
-      "The friend could just send the texts personally.",
-      "Some of the numbers might be out of date.",
-    ],
-    skillArea: "evaluation",
-  },
-  {
-    prompt:
-      "You realize you accidentally broke a classmate's project. The most responsible first step is to:",
-    options: [
-      "Tell them what happened and offer to help fix it.",
-      "Say nothing and hope they don't notice.",
-      "Blame the crowded room.",
-      "Wait to see whether anyone saw you.",
-    ],
-    skillArea: "evaluation",
-  },
-  {
-    prompt:
-      "An online service offers to 'guarantee an A' if you pay for the test answers in advance. Choosing not to use it best reflects:",
-    options: [
-      "Fairness to other students and the value of doing your own work.",
-      "A worry about catching a computer virus.",
-      "Simply not having enough money to pay.",
-      "A general distrust of online payments.",
-    ],
-    skillArea: "evaluation",
-  },
-  {
-    prompt:
-      "A cashier accidentally hands you $10 too much in change. The most honest response is to:",
-    options: [
-      "Point out the mistake and return the extra money.",
-      "Keep it — it was their error, not yours.",
-      "Keep it but feel a little guilty.",
-      "Spend it quickly before anyone notices.",
-    ],
-    skillArea: "evaluation",
-  },
-];
+]);

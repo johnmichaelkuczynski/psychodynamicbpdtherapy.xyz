@@ -571,7 +571,7 @@ paths:
     get:
       operationId: getGradebook
       tags: [reasoning]
-      summary: Course gradebook (coursework 80% + diagnostics 20%)
+      summary: Course gradebook (coursework 100%; diagnostics are practice only and not graded)
       responses:
         "200":
           description: OK
@@ -1055,10 +1055,10 @@ components:
         id: { type: integer }
         instrument:
           type: string
-          enum: [ethical, critical]
+          enum: [subject, reasoning]
         phase:
           type: string
-          enum: [baseline, unit1, unit2, unit3, unit4]
+          enum: [before, third1, third2, after]
         title: { type: string }
         subtitle: { type: ["string", "null"] }
         itemCount: { type: integer }
@@ -1075,23 +1075,12 @@ components:
         position: { type: integer }
         type:
           type: string
-          enum: [dilemma, mcq, open]
+          enum: [mcq, open]
         prompt: { type: string }
         options:
           type: ["array", "null"]
           items: { type: string }
           description: For mcq items — the answer choices.
-        decisionOptions:
-          type: ["array", "null"]
-          items: { type: string }
-          description: For dilemma items — the possible decisions on the scenario.
-        considerations:
-          type: ["array", "null"]
-          items: { type: string }
-          description: For dilemma items — statements to rate by importance and rank.
-        rankCount:
-          type: ["integer", "null"]
-          description: For dilemma items — how many top considerations to rank.
 
     ReasoningAssessment:
       type: object
@@ -1100,10 +1089,10 @@ components:
         id: { type: integer }
         instrument:
           type: string
-          enum: [ethical, critical]
+          enum: [subject, reasoning]
         phase:
           type: string
-          enum: [baseline, unit1, unit2, unit3, unit4]
+          enum: [before, third1, third2, after]
         title: { type: string }
         subtitle: { type: ["string", "null"] }
         instructions: { type: string }
@@ -1164,17 +1153,6 @@ components:
         selectedIndex:
           type: ["integer", "null"]
           description: mcq — chosen option index.
-        decisionIndex:
-          type: ["integer", "null"]
-          description: dilemma — chosen decision index.
-        ratings:
-          type: ["array", "null"]
-          items: { type: integer }
-          description: dilemma — importance rating (0-4) per consideration, by index.
-        ranking:
-          type: ["array", "null"]
-          items: { type: integer }
-          description: dilemma — consideration indices ranked most-important first.
 
     RewriteLectureInput:
       type: object
@@ -1205,9 +1183,8 @@ components:
             The answer format the student picked for this attempt. "mcq" =
             multiple choice only (no typing); "hybrid" = mostly multiple choice
             plus 1-2 one-sentence written answers; "written" = short open
-            answers (for Professional Judgment, the rate-and-rank dilemma).
-            Applied only when creating a new attempt; ignored when resuming or
-            reviewing. Defaults to the instrument's classic format.
+            answers only. Applied only when creating a new attempt; ignored when
+            resuming or reviewing. Defaults to "mcq".
         length:
           type: string
           enum: [short, medium, long]
@@ -1241,7 +1218,7 @@ components:
         itemId: { type: integer }
         type:
           type: string
-          enum: [dilemma, mcq, open]
+          enum: [mcq, open]
         prompt: { type: string }
         options:
           type: ["array", "null"]
@@ -1256,21 +1233,6 @@ components:
         isCorrect:
           type: ["boolean", "null"]
           description: mcq — whether the student's choice was correct.
-        decisionOptions:
-          type: ["array", "null"]
-          items: { type: string }
-          description: dilemma — the possible decisions.
-        decisionIndex:
-          type: ["integer", "null"]
-          description: dilemma — the decision the student chose.
-        considerations:
-          type: ["array", "null"]
-          items: { type: string }
-          description: dilemma — the considerations presented.
-        ranking:
-          type: ["array", "null"]
-          items: { type: integer }
-          description: dilemma — consideration indices the student ranked most-important first.
         text:
           type: ["string", "null"]
           description: open — the student's typed answer.
@@ -1332,10 +1294,10 @@ components:
         id: { type: integer }
         instrument:
           type: string
-          enum: [ethical, critical]
+          enum: [subject, reasoning]
         phase:
           type: string
-          enum: [baseline, unit1, unit2, unit3, unit4]
+          enum: [before, third1, third2, after]
         title: { type: string }
         status:
           type: string

@@ -6,18 +6,24 @@ import { Skeleton } from "@/components/ui/skeleton";
 import { Link } from "wouter";
 
 const PHASE_SHORT: Record<string, string> = {
-  baseline: "Baseline",
-  unit1: "Unit 1",
+  before: "Before",
+  third1: "One-third",
+  third2: "Two-thirds",
+  after: "After",
 };
 
+function instrumentLabel(instrument: string): string {
+  return instrument === "subject" ? "AI Knowledge" : "General Reasoning";
+}
+
 function statusPill(status: string) {
-  const passed = status === "passed" || status === "submitted";
-  const cls = passed
+  const done = status === "passed" || status === "submitted";
+  const cls = done
     ? "bg-chart-2/15 text-chart-2"
     : status === "in_progress"
     ? "bg-chart-4/20 text-chart-4"
     : "bg-secondary text-secondary-foreground";
-  const label = passed ? (status === "passed" ? "passed" : "submitted") : status.replace("_", " ");
+  const label = done ? "completed" : status.replace("_", " ");
   return <span className={`text-xs px-2 py-0.5 rounded-full ${cls}`}>{label}</span>;
 }
 
@@ -30,7 +36,8 @@ export default function Grades() {
         <div>
           <h1 className="text-3xl font-serif font-bold text-primary mb-2">Grades</h1>
           <p className="text-muted-foreground">
-            Your course grade combines coursework (80%) and diagnostic assessments (20%).
+            Your course grade comes entirely from coursework. The practice checks
+            below are for your own benefit and never affect your grade.
           </p>
         </div>
 
@@ -101,8 +108,11 @@ export default function Grades() {
 
             <div className="flex flex-col gap-4">
               <h2 className="text-xl font-serif font-semibold border-b pb-2">
-                Diagnostic Assessments
+                Practice checks
               </h2>
+              <p className="text-sm text-muted-foreground -mt-2">
+                Practice only — these never affect your grade.
+              </p>
               <div className="flex flex-col divide-y border rounded-md">
                 {gb.reasoning.map((r) => (
                   <Link key={r.id} href={`/reasoning/${r.id}`}>
@@ -110,7 +120,7 @@ export default function Grades() {
                       <div className="flex flex-col">
                         <span className="font-medium">{r.title}</span>
                         <span className="text-xs uppercase tracking-wider text-muted-foreground">
-                          {r.instrument === "ethical" ? "Professional Judgment" : "Critical Reasoning"} ·{" "}
+                          {instrumentLabel(r.instrument)} ·{" "}
                           {PHASE_SHORT[r.phase] ?? r.phase}
                         </span>
                       </div>

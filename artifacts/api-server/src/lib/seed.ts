@@ -550,49 +550,48 @@ type SeedPrimer = SeedTopic;
 
 const REASONING_PRIMERS: SeedPrimer[] = [
   {
-    slug: "reasoning-primer-ethical",
-    title: "How to reason about everyday fairness dilemmas",
+    slug: "reasoning-primer-subject",
+    title: "What the AI Knowledge check looks for",
     weekNumber: 1,
     blurb:
-      "Assessment primer: weighing what matters when honesty, fairness, and pressure collide.",
-    lectureTitle: "Primer: How to reason about everyday fairness dilemmas",
-    body: `# How to reason about everyday fairness dilemmas
+      "Practice primer: applying what you know about how AI actually works.",
+    lectureTitle: "Primer: What the AI Knowledge check looks for",
+    body: `# What the AI Knowledge check looks for
 
-This short primer prepares you for the **Professional Judgment** check. That activity does not ask for the "right" answer — it asks *which reasons you give weight to* when you decide. Here is the kind of thinking it rewards.
+This short primer prepares you for the **AI Knowledge** check. It's practice only — it never affects your grade, you can retake it as often as you like, and you'll get fresh questions every time.
 
-## A dilemma is a clash of reasons
+## It tests understanding, not memorizing
 
-A real dilemma is a situation where several honest reasons pull in different directions: a promise you made, pressure to make something look better than it is, what's easiest for you, and the truth you owe to other people. Reasoning well does not mean pretending the reasons you act against don't exist — it means being honest that they had some weight, and saying why other reasons mattered more.
+The questions don't ask you to recite a definition. Each one gives a short, everyday situation and asks you to *apply* what you understand about how AI works — for example, what a chatbot is really doing when it answers, or why a tool trained on narrow data struggles outside it.
 
-## Three kinds of reasons
+## The big ideas it draws on
 
-When you justify a decision, the *kind* of reason you lean on matters:
+The check spans the whole course:
 
-- **What's-easiest-for-me reasons** — what is most comfortable, safe, or rewarding for the person deciding. ("It would be awkward to say no.")
-- **Just-following-the-rule reasons** — what the rules, the grown-ups, or your role say to do. ("I was told to.") Rules keep order, but a rule can itself be unfair.
-- **Fairness reasons** — appeals to honesty, keeping promises, and the interests of *everyone affected*, the kind of reason you could defend to anyone. ("The people trusting this deserve the truth.")
+- **What AI is (and isn't)** — a pattern-finder, not a mind that understands.
+- **Rules vs. learning** — fixed rules a person wrote versus patterns learned from examples.
+- **Data and training** — a model is only as good as the examples it learned from.
+- **Pattern recognition and neural networks** — how systems build up complex patterns from simpler ones.
+- **Language models** — predicting likely next words rather than looking up verified facts.
+- **Strengths, limits, and hallucination** — why confident wording isn't the same as being correct.
+- **Using AI well** — giving clear context, checking results, and being honest about its use.
 
-The check's score rises when you give the most weight to fairness reasons rather than to convenience or to "because those are the rules."
+## How to do well
 
-## How to do this activity well
-
-1. **Decide** what the person should do.
-2. **Rate every reason** by how much it actually weighed on you — be honest, not strategic.
-3. **Rank your top few.** Ranking is where you say what *most* drove the decision.
-4. **Read each reason carefully.** Some are deliberately empty or fancy-sounding and reward nothing; ranking one of those high is a sign of careless answering.
-
-There is no penalty for the choice you make. What's measured is the *quality of the reasons* you stand behind.`,
+1. Read the little scenario and ask what's *actually* happening underneath.
+2. Choose the option that fits how AI really works — not the one that sounds most impressive.
+3. For written questions, a clear sentence or two that captures the core idea is plenty. You're never judged on length.`,
   },
   {
-    slug: "reasoning-primer-critical",
+    slug: "reasoning-primer-reasoning",
     title: "Core clear-thinking skills",
     weekNumber: 1,
     blurb:
-      "Assessment primer: analysis, inference, evaluation, deduction, and induction.",
+      "Practice primer: analysis, inference, evaluation, deduction, and induction.",
     lectureTitle: "Primer: Core clear-thinking skills",
     body: `# Core clear-thinking skills
 
-This short primer prepares you for the **Critical Reasoning** check — a set of multiple-choice questions that test five different thinking skills. These are the same skills you use to decide what a set of facts really shows, so they matter directly for thinking clearly about what AI can and can't actually do.
+This short primer prepares you for the **General Reasoning** check — questions that exercise five everyday thinking skills. It's practice only: it never affects your grade, you can retake it any time, and the questions are different each time. These are the same skills you use to decide what a set of facts really shows, so they matter directly for thinking clearly about what AI can and can't actually do.
 
 ## The five skills
 
@@ -604,9 +603,9 @@ This short primer prepares you for the **Critical Reasoning** check — a set of
 
 ## A recurring trap: things that move together
 
-Most wrong answers are statements that *sound* reasonable but are **not actually backed up by what you were told**. The discipline this check rewards is the same one careful thinking about technology demands: keep apart what the facts **show**, what you're **assuming**, and what only *sounds* right. Two things happening together does not prove one causes the other.
+Many tempting answers *sound* reasonable but are **not actually backed up by what you were told**. The discipline these questions reward is the same one careful thinking about technology demands: keep apart what the facts **show**, what you're **assuming**, and what only *sounds* right. Two things happening together does not prove one causes the other.
 
-## How to do this activity well
+## How to do well
 
 1. Find the **point** (conclusion) first, then the reasons.
 2. Ask which of the five skills the question is testing (a hidden-assumption question is analysis; a "what follows" question is inference or deduction; a "how good is this reasoning" question is evaluation).
@@ -614,17 +613,55 @@ Most wrong answers are statements that *sound* reasonable but are **not actually
   },
 ];
 
-// Insert any teaching-to-the-test primer lectures whose slug is not yet present.
-// Safe to run on every boot: it only adds what is missing.
+const DESIRED_PRIMER_SLUGS = new Set(REASONING_PRIMERS.map((p) => p.slug));
+
+// All primer slugs this app has ever used. Any of these NOT in the current
+// desired set is obsolete and is removed (its lecture cascades away with it),
+// so a database seeded under an older design self-heals.
+const ALL_PRIMER_SLUGS = [
+  "reasoning-primer-subject",
+  "reasoning-primer-reasoning",
+  "reasoning-primer-ethical",
+  "reasoning-primer-critical",
+];
+
+// Reconcile the assessment primer lectures to the current desired set: drop any
+// obsolete primers, then insert or update the desired ones. Safe to run on
+// every boot.
 export async function seedReasoningPrimersIfMissing(): Promise<void> {
+  // 1. Remove obsolete primers (deleting the topic cascades to its lecture).
+  const obsolete = ALL_PRIMER_SLUGS.filter((s) => !DESIRED_PRIMER_SLUGS.has(s));
+  let removed = 0;
+  for (const slug of obsolete) {
+    const rows = await db
+      .delete(topicsTable)
+      .where(eq(topicsTable.slug, slug))
+      .returning({ id: topicsTable.id });
+    removed += rows.length;
+  }
+
+  // 2. Upsert the desired primers.
   let added = 0;
+  let updated = 0;
   for (let i = 0; i < REASONING_PRIMERS.length; i++) {
     const t = REASONING_PRIMERS[i]!;
     const existing = await db
       .select({ id: topicsTable.id })
       .from(topicsTable)
       .where(eq(topicsTable.slug, t.slug));
-    if (existing.length > 0) continue;
+    const found = existing[0];
+    if (found) {
+      await db
+        .update(topicsTable)
+        .set({ title: t.title, weekNumber: t.weekNumber, blurb: t.blurb })
+        .where(eq(topicsTable.id, found.id));
+      await db
+        .update(lecturesTable)
+        .set({ title: t.lectureTitle, body: t.body, weekNumber: t.weekNumber })
+        .where(eq(lecturesTable.topicId, found.id));
+      updated += 1;
+      continue;
+    }
     const [inserted] = await db
       .insert(topicsTable)
       .values({
@@ -644,11 +681,7 @@ export async function seedReasoningPrimersIfMissing(): Promise<void> {
     });
     added += 1;
   }
-  if (added > 0) {
-    logger.info({ added }, "Reasoning primers seeded");
-  } else {
-    logger.info("Reasoning primers: already present, skipping");
-  }
+  logger.info({ added, updated, removed }, "Reasoning primers reconciled");
 }
 
 export async function seedIfEmpty(): Promise<void> {

@@ -442,19 +442,18 @@ export type ReasoningAssessmentSummaryInstrument = typeof ReasoningAssessmentSum
 
 
 export const ReasoningAssessmentSummaryInstrument = {
-  ethical: 'ethical',
-  critical: 'critical',
+  subject: 'subject',
+  reasoning: 'reasoning',
 } as const;
 
 export type ReasoningAssessmentSummaryPhase = typeof ReasoningAssessmentSummaryPhase[keyof typeof ReasoningAssessmentSummaryPhase];
 
 
 export const ReasoningAssessmentSummaryPhase = {
-  baseline: 'baseline',
-  unit1: 'unit1',
-  unit2: 'unit2',
-  unit3: 'unit3',
-  unit4: 'unit4',
+  before: 'before',
+  third1: 'third1',
+  third2: 'third2',
+  after: 'after',
 } as const;
 
 export type ReasoningAssessmentSummaryStatus = typeof ReasoningAssessmentSummaryStatus[keyof typeof ReasoningAssessmentSummaryStatus];
@@ -483,7 +482,6 @@ export type ReasoningItemType = typeof ReasoningItemType[keyof typeof ReasoningI
 
 
 export const ReasoningItemType = {
-  dilemma: 'dilemma',
   mcq: 'mcq',
   open: 'open',
 } as const;
@@ -498,40 +496,24 @@ export interface ReasoningItem {
      * @nullable
      */
   options?: string[] | null;
-  /**
-     * For dilemma items — the possible decisions on the scenario.
-     * @nullable
-     */
-  decisionOptions?: string[] | null;
-  /**
-     * For dilemma items — statements to rate by importance and rank.
-     * @nullable
-     */
-  considerations?: string[] | null;
-  /**
-     * For dilemma items — how many top considerations to rank.
-     * @nullable
-     */
-  rankCount?: number | null;
 }
 
 export type ReasoningAssessmentInstrument = typeof ReasoningAssessmentInstrument[keyof typeof ReasoningAssessmentInstrument];
 
 
 export const ReasoningAssessmentInstrument = {
-  ethical: 'ethical',
-  critical: 'critical',
+  subject: 'subject',
+  reasoning: 'reasoning',
 } as const;
 
 export type ReasoningAssessmentPhase = typeof ReasoningAssessmentPhase[keyof typeof ReasoningAssessmentPhase];
 
 
 export const ReasoningAssessmentPhase = {
-  baseline: 'baseline',
-  unit1: 'unit1',
-  unit2: 'unit2',
-  unit3: 'unit3',
-  unit4: 'unit4',
+  before: 'before',
+  third1: 'third1',
+  third2: 'third2',
+  after: 'after',
 } as const;
 
 export interface ReasoningAssessment {
@@ -564,7 +546,6 @@ export type ReasoningReviewItemType = typeof ReasoningReviewItemType[keyof typeo
 
 
 export const ReasoningReviewItemType = {
-  dilemma: 'dilemma',
   mcq: 'mcq',
   open: 'open',
 } as const;
@@ -593,26 +574,6 @@ export interface ReasoningReviewItem {
      * @nullable
      */
   isCorrect?: boolean | null;
-  /**
-     * dilemma — the possible decisions.
-     * @nullable
-     */
-  decisionOptions?: string[] | null;
-  /**
-     * dilemma — the decision the student chose.
-     * @nullable
-     */
-  decisionIndex?: number | null;
-  /**
-     * dilemma — the considerations presented.
-     * @nullable
-     */
-  considerations?: string[] | null;
-  /**
-     * dilemma — consideration indices the student ranked most-important first.
-     * @nullable
-     */
-  ranking?: number[] | null;
   /**
      * open — the student's typed answer.
      * @nullable
@@ -682,21 +643,6 @@ export interface ReasoningResponseInput {
      * @nullable
      */
   selectedIndex?: number | null;
-  /**
-     * dilemma — chosen decision index.
-     * @nullable
-     */
-  decisionIndex?: number | null;
-  /**
-     * dilemma — importance rating (0-4) per consideration, by index.
-     * @nullable
-     */
-  ratings?: number[] | null;
-  /**
-     * dilemma — consideration indices ranked most-important first.
-     * @nullable
-     */
-  ranking?: number[] | null;
 }
 
 /**
@@ -724,7 +670,7 @@ export interface RewriteLectureInput {
 }
 
 /**
- * The answer format the student picked for this attempt. "mcq" = multiple choice only (no typing); "hybrid" = mostly multiple choice plus 1-2 one-sentence written answers; "written" = short open answers (for Professional Judgment, the rate-and-rank dilemma). Applied only when creating a new attempt; ignored when resuming or reviewing. Defaults to the instrument's classic format.
+ * The answer format the student picked for this attempt. "mcq" = multiple choice only (no typing); "hybrid" = mostly multiple choice plus 1-2 one-sentence written answers; "written" = short open answers only. Applied only when creating a new attempt; ignored when resuming or reviewing. Defaults to "mcq".
  */
 export type StartReasoningBodyFormat = typeof StartReasoningBodyFormat[keyof typeof StartReasoningBodyFormat];
 
@@ -750,7 +696,7 @@ export const StartReasoningBodyLength = {
 export interface StartReasoningBody {
   /** When true, begin a fresh attempt even if a previous attempt was already submitted. An in-progress attempt is still resumed. */
   retake?: boolean;
-  /** The answer format the student picked for this attempt. "mcq" = multiple choice only (no typing); "hybrid" = mostly multiple choice plus 1-2 one-sentence written answers; "written" = short open answers (for Professional Judgment, the rate-and-rank dilemma). Applied only when creating a new attempt; ignored when resuming or reviewing. Defaults to the instrument's classic format. */
+  /** The answer format the student picked for this attempt. "mcq" = multiple choice only (no typing); "hybrid" = mostly multiple choice plus 1-2 one-sentence written answers; "written" = short open answers only. Applied only when creating a new attempt; ignored when resuming or reviewing. Defaults to "mcq". */
   format?: StartReasoningBodyFormat;
   /** How many questions the attempt should contain. "short" = a few questions, "medium" = a moderate number, "long" = many questions. Independent of format. Applied only when creating a new attempt; ignored when resuming or reviewing. Defaults to "medium". */
   length?: StartReasoningBodyLength;
@@ -811,19 +757,18 @@ export type GradebookReasoningItemInstrument = typeof GradebookReasoningItemInst
 
 
 export const GradebookReasoningItemInstrument = {
-  ethical: 'ethical',
-  critical: 'critical',
+  subject: 'subject',
+  reasoning: 'reasoning',
 } as const;
 
 export type GradebookReasoningItemPhase = typeof GradebookReasoningItemPhase[keyof typeof GradebookReasoningItemPhase];
 
 
 export const GradebookReasoningItemPhase = {
-  baseline: 'baseline',
-  unit1: 'unit1',
-  unit2: 'unit2',
-  unit3: 'unit3',
-  unit4: 'unit4',
+  before: 'before',
+  third1: 'third1',
+  third2: 'third2',
+  after: 'after',
 } as const;
 
 export type GradebookReasoningItemStatus = typeof GradebookReasoningItemStatus[keyof typeof GradebookReasoningItemStatus];

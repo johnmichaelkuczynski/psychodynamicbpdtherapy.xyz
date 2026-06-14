@@ -11,7 +11,7 @@ import type { StartReasoningBodyLength } from './startReasoningBodyLength';
 export interface StartReasoningBody {
   /** When true, begin a fresh attempt even if a previous attempt was already submitted. An in-progress attempt is still resumed. */
   retake?: boolean;
-  /** The answer format the student picked for this attempt. "mcq" = multiple choice only (no typing); "hybrid" = mostly multiple choice plus 1-2 one-sentence written answers; "written" = short open answers (for Professional Judgment, the rate-and-rank dilemma). Applied only when creating a new attempt; ignored when resuming or reviewing. Defaults to the instrument's classic format. */
+  /** The answer format the student picked for this attempt. "mcq" = multiple choice only (no typing); "hybrid" = mostly multiple choice plus 1-2 one-sentence written answers; "written" = short open answers only. Applied only when creating a new attempt; ignored when resuming or reviewing. Defaults to "mcq". */
   format?: StartReasoningBodyFormat;
   /** How many questions the attempt should contain. "short" = a few questions, "medium" = a moderate number, "long" = many questions. Independent of format. Applied only when creating a new attempt; ignored when resuming or reviewing. Defaults to "medium". */
   length?: StartReasoningBodyLength;

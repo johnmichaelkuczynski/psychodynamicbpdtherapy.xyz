@@ -7,7 +7,7 @@
  */
 
 /**
- * The answer format the student picked for this attempt. "mcq" = multiple choice only (no typing); "hybrid" = mostly multiple choice plus 1-2 one-sentence written answers; "written" = short open answers (for Professional Judgment, the rate-and-rank dilemma). Applied only when creating a new attempt; ignored when resuming or reviewing. Defaults to the instrument's classic format.
+ * The answer format the student picked for this attempt. "mcq" = multiple choice only (no typing); "hybrid" = mostly multiple choice plus 1-2 one-sentence written answers; "written" = short open answers only. Applied only when creating a new attempt; ignored when resuming or reviewing. Defaults to "mcq".
  */
 export type StartReasoningBodyFormat = typeof StartReasoningBodyFormat[keyof typeof StartReasoningBodyFormat];
 

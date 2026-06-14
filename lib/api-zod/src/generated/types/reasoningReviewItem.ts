@@ -32,26 +32,6 @@ export interface ReasoningReviewItem {
      */
   isCorrect?: boolean | null;
   /**
-     * dilemma — the possible decisions.
-     * @nullable
-     */
-  decisionOptions?: string[] | null;
-  /**
-     * dilemma — the decision the student chose.
-     * @nullable
-     */
-  decisionIndex?: number | null;
-  /**
-     * dilemma — the considerations presented.
-     * @nullable
-     */
-  considerations?: string[] | null;
-  /**
-     * dilemma — consideration indices the student ranked most-important first.
-     * @nullable
-     */
-  ranking?: number[] | null;
-  /**
      * open — the student's typed answer.
      * @nullable
      */

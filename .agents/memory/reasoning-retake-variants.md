@@ -1,81 +1,61 @@
 ---
-name: Reasoning diagnostic retake variants
-description: How retakes of reasoning diagnostics get fresh-but-same-kind questions, and the invariants that must hold.
+name: Diagnostic retake variants
+description: How retakes of diagnostics get fresh-but-same-kind questions, and the invariants that must hold.
 ---
 
-# Reasoning diagnostic retakes
+# Diagnostic retakes
 
-EVERY take of a reasoning diagnostic — including the very first take and any
-take after a course reset (attempts cleared) — generates fresh items of the SAME
-KIND and persists them against that attempt (`diagnostic_items.attemptId =
-<attempt>`), so every attempt owns its own item set. The seeded TEMPLATE items
-(`diagnostic_items.attemptId IS NULL`) are NOT shown as a real take; they are
-only the structural blueprint for generation, the assessment preview, and the
-fallback if generation fails.
+EVERY take of a diagnostic — including the very first take and any take after a
+course reset (attempts cleared) — generates fresh items of the SAME KIND and
+persists them against that attempt (`diagnostic_items.attemptId = <attempt>`), so
+every attempt owns its own item set. The seeded TEMPLATE items
+(`diagnostic_items.attemptId IS NULL`) are NOT shown as a real take; they are the
+structural blueprint for generation, the assessment preview, and the fallback if
+generation fails.
 
 **Why not "first take uses template":** an earlier version only generated on
 retake (gated on prior-attempt existence). After a reset wiped attempts, the next
 take looked like a first take and served the identical template again. Never gate
 freshness on prior-attempt existence — always generate per new attempt.
 
+**Two instruments, two item types only.** Instruments are `subject` (AI
+Knowledge) and `reasoning` (General Reasoning). Item/review `type` is only
+`mcq | open` — the dilemma/rate-and-rank type was removed entirely. Each
+instrument offers 3 formats (mcq / hybrid / written) × 3 lengths
+(short/medium/long), across 4 phases (before/third1/third2/after = 8 base
+assessments).
+
+**Diagnostics NEVER affect the grade.** Coursework is 100% of the grade; the
+gradebook surfaces diagnostics with weight 0 purely for display ("completed"
+counts). Unlimited retakes, fresh questions each time.
+
 **Invariants a retake MUST preserve (the "same kind" contract):**
-- Same instrument (critical vs ethical), same item count, same answer structure.
-- Critical: 4-option MCQs, exactly one correct, and the per-position skillArea
-  order must match the template exactly.
-- Ethical: same dilemma structure — same consideration/stage multiset, same
-  rankCount, same number of decision options.
+- Same instrument, comparable item count per (format,length) via
+  `itemComposition`, same answer structure (mcq = 4-option, exactly one correct;
+  open = short free text).
+- reasoning MCQs are skill-tagged; pin the per-position skill to the template
+  position — the LLM cannot be trusted to keep skill order, so overwrite the
+  model's skillArea with the template's expected skill for that index.
 
-**Why pin skillArea to the template position:** the LLM is asked to return a
-skillArea per generated question but cannot be trusted to keep the order. Always
-overwrite the generated skillArea with the template's expected skill for that
-index (do NOT accept the model's value even if it's a valid skill), or the
-retake silently reorders skill areas and breaks per-skill scoring.
+**Scoring uses the attempt's own items, not the template.** Submit resolves the
+in-progress attempt first, then loads items for THAT attempt; resume returns the
+in-progress attempt's items.
 
-**Scoring must use the attempt's own items, not the template.** Submit resolves
-the in-progress attempt first, then loads items for THAT attempt
-(`attemptId`), falling back to the template only when there is no attempt.
-Resume (start without retake) returns the in-progress attempt's items so a
-refresh mid-attempt shows the same questions.
+**Grade on actual correctness, not the stored answer key.** `judgeMcq()` makes
+one batched LLM call at submit to pick the genuinely-correct option per item
+(falls back to stored `correctIndex` on failure). Open answers are graded
+LENIENTLY on substance, not length — a clear sentence or two earns credit. The
+judged map must drive ALL THREE grading surfaces in lockstep — score summary
+headline/metrics, the `review[]`, AND persisted `diagnostic_responses.is_correct`
+— or analytics disagree with the results screen.
+
+**Per-question review:** an UNANSWERED MCQ must report `isCorrect: null` (neutral
+"No answer" badge), NOT `false`.
 
 **Never block submission:** variant generation falls back to template items on
 any AI/validation failure.
 
-**How to apply:** any change to generation must keep these invariants; the
-client-facing item response intentionally omits `scoring` (the answer key), so
-verify skill order / correctness via the submit metrics breakdown, not the GET.
-
-**Per-question review on the results screen:** submit and revisit (start without
-retake on a submitted attempt) both return a `review[]` (question + student's
-answer + correct answer), built from the attempt's items and stored `responses`
-jsonb. An UNANSWERED MCQ (no selectedIndex) must report `isCorrect: null`, NOT
-`false` — submit validation does not force every item answered, and partial/
-historical responses exist, so treating "no answer" as "incorrect" mislabels it.
-The UI renders null as a neutral "No answer" badge, true=green, false=red.
-
-**Grade on actual correctness, not the stored answer key.** Correctness is
-judged by the model on the merits; stored keys/model answers are only fallible
-hints it can override. For MCQ (critical) assessments, `judgeCritical()` makes
-one batched LLM call at submit to pick the genuinely-correct option per item
-(falls back to stored `correctIndex` on failure/invalid index). The judged map
-must drive ALL THREE grading surfaces in lockstep — `scoreSummary`
-headline/metrics, the `review[]`, AND the persisted `diagnostic_responses.is_correct`
-rows — or analytics will disagree with the results screen. Judged answers are
-persisted in `scoreSummary.correctByItem` so revisit rebuilds review without
-re-judging. Written grading (`gradeAnswer`/`gradePracticeEssay`) carries the
-same fallible-hint framing. Ethical-dilemma instrument is a values inventory,
-not a correctness test — left untouched.
-**Why:** stored keys can be wrong, and partial updates leave one surface on the
-old key behavior (an architect-caught regression).
-
-**Length scaling (short/medium/long).** Item counts scale per (instrument,
-format) via `itemComposition`; Medium must ≈ the classic instrument, Short
-noticeably fewer, Long noticeably more. For the ethical "written" rate-and-rank
-dilemma, Short is made lighter PER-SCENARIO (fewer considerations + shallower
-rankCount), NOT by dilemma count alone — Short=1 reduced dilemma, Medium=1 full
-dilemma (≈ classic), Long=2 full. The reduced subset must still keep every stage
-(PC/M/P/X incl. the X reliability check) represented so the P-index/reliability
-math stays meaningful. The static fallback path must honor length too (it
-reduces the template dilemma), or Short silently serves the full instrument when
-generation fails.
-**How to apply:** `length` is read by the start route, stored on the attempt,
-reused on resume, and threaded into generation; default to "medium" when absent.
+**Length scaling:** item counts scale per (instrument, format) via
+`itemComposition`; Medium ≈ classic, Short fewer, Long more. The static fallback
+must honor length too. `length` is read by the start route, stored on the
+attempt, reused on resume, threaded into generation; default "medium" when absent.

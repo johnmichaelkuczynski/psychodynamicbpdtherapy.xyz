@@ -150,16 +150,16 @@ export const practiceAttemptsTable = pgTable("practice_attempts", {
 });
 
 // ---------------------------------------------------------------------------
-// Diagnostic reasoning assessments (embedded program-level instruments).
-// Two original instruments — Ethical Reasoning (DIT-style) and Critical
-// Reasoning (CCTST-style) — each administered 5 times (baseline + after each
-// of the 4 units) with mutually unique items. Pass/Fail: submitting = pass.
+// Diagnostic practice checks (subject-relevant, ungraded self-assessments).
+// Two instruments — AI Knowledge (subject) and General Reasoning (reasoning) —
+// offered across 4 phases (before / third1 / third2 / after) so students can
+// self-check anytime. Unlimited retakes with fresh questions; never graded.
 // ---------------------------------------------------------------------------
 
 export const diagnosticAssessmentsTable = pgTable("diagnostic_assessments", {
   id: serial("id").primaryKey(),
-  instrument: text("instrument").notNull(), // ethical | critical
-  phase: text("phase").notNull(), // baseline | unit1 | unit2 | unit3 | unit4
+  instrument: text("instrument").notNull(), // subject | reasoning
+  phase: text("phase").notNull(), // before | third1 | third2 | after
   title: text("title").notNull(),
   subtitle: text("subtitle"),
   instructions: text("instructions").notNull(),
@@ -181,13 +181,13 @@ export const diagnosticItemsTable = pgTable("diagnostic_items", {
     { onDelete: "cascade" },
   ),
   position: integer("position").notNull(),
-  type: text("type").notNull(), // dilemma | mcq | open
+  type: text("type").notNull(), // mcq | open
   prompt: text("prompt").notNull(),
   // Public payload sent to the client: for mcq -> { options: string[] };
-  // for dilemma -> { decisionOptions: string[], considerations: string[] }.
+  // for open -> {} (the prompt is the whole question).
   payload: jsonb("payload").notNull(),
   // Hidden scoring key, never sent to the client: for mcq ->
-  // { correctIndex, skillArea }; for dilemma -> { stages: string[], rankCount }.
+  // { correctIndex, skillArea? }; for open -> { modelAnswer }.
   scoring: jsonb("scoring").notNull(),
 });
 
@@ -220,9 +220,9 @@ export const diagnosticResponsesTable = pgTable("diagnostic_responses", {
     .notNull()
     .references(() => diagnosticItemsTable.id, { onDelete: "cascade" }),
   selectedIndex: integer("selected_index"), // mcq — chosen option index
-  decisionIndex: integer("decision_index"), // dilemma — chosen decision index
-  ratings: jsonb("ratings"), // dilemma — importance rating per consideration
-  ranking: jsonb("ranking"), // dilemma — consideration indices, most-important first
+  decisionIndex: integer("decision_index"), // legacy/unused — kept nullable, no longer written
+  ratings: jsonb("ratings"), // legacy/unused — kept nullable, no longer written
+  ranking: jsonb("ranking"), // legacy/unused — kept nullable, no longer written
   text: text("response_text"), // open — the student's short typed answer
-  isCorrect: boolean("is_correct"), // mcq + open — null for dilemma items
+  isCorrect: boolean("is_correct"), // mcq + open — null when unanswered
 });
