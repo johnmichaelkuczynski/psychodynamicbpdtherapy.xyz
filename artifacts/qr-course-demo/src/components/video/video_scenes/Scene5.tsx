@@ -110,7 +110,7 @@ export function Scene5({ setCursorPos, setIsClicking }: { setCursorPos: (pos: {x
         <div className="text-xs font-bold text-muted-foreground tracking-widest uppercase mb-4">Topic Practice</div>
         <div className="flex justify-between items-end mb-8">
           <div>
-            <h1 className="text-4xl font-serif text-primary mb-2">Built to survive (cravings, fears, and beauty)</h1>
+            <h1 className="text-4xl font-serif text-primary mb-2">Rules vs. learning</h1>
             <div className="text-sm text-muted-foreground">Unit 1 · 1 prior attempt · 1% accuracy · <span className="text-emerald-600 font-semibold">STRONG</span></div>
           </div>
           <div className="text-sm font-medium border border-border px-3 py-1 rounded-md bg-white">
@@ -126,10 +126,10 @@ export function Scene5({ setCursorPos, setIsClicking }: { setCursorPos: (pos: {x
         <div className="bg-white border border-border rounded-xl shadow-sm overflow-hidden flex flex-col min-h-[400px]">
           <div className="p-8 flex-1 border-b border-border text-lg text-primary font-medium leading-relaxed">
             {phase >= 1 && phase < 4 && (
-              <StreamingText text="Is fear of heights a learned behavior or an evolved adaptation? Explain why." delay={0} />
+              <StreamingText text="A team hand-writes hundreds of if-then rules to filter spam. Is this a rule-based system or a learning system? Explain why." delay={0} />
             )}
             {phase >= 4 && (
-              <StreamingText text="Why don't we have an instinctual fear of electrical outlets, even though they are dangerous?" delay={0} />
+              <StreamingText text="Why does a learning-based spam filter handle brand-new tricks better than a fixed list of hand-written rules?" delay={0} />
             )}
           </div>
           
@@ -159,7 +159,7 @@ export function Scene5({ setCursorPos, setIsClicking }: { setCursorPos: (pos: {x
                     <span>Not quite</span>
                   </div>
                   <div className="text-sm text-red-900 leading-relaxed">
-                    <StreamingText text="Not quite. Fear of heights is an evolved adaptation. In our ancestral environment, falling was a frequent and deadly hazard. Those who naturally feared heights avoided them, survived, and passed on those traits." delay={0} />
+                    <StreamingText text="Not quite. Hand-written if-then rules are a rule-based system: a person decides every condition in advance. A learning system would instead study many labeled emails and figure out the patterns itself, rather than being told each rule." delay={0} />
                   </div>
                 </motion.div>
               )}
@@ -174,7 +174,7 @@ export function Scene5({ setCursorPos, setIsClicking }: { setCursorPos: (pos: {x
                     <span>Correct!</span>
                   </div>
                   <div className="text-sm text-emerald-900 leading-relaxed">
-                    <StreamingText text="Correct! Electrical outlets are a very recent invention. There hasn't been enough time or evolutionary pressure for our brains to evolve an instinctual fear of them. We have to learn to be afraid of them." delay={0} />
+                    <StreamingText text="Correct! A learning system finds patterns from examples, so when spammers invent a new trick it can pick up on the new patterns from fresh data. A fixed list of hand-written rules only catches what someone already thought to write down." delay={0} />
                   </div>
                 </motion.div>
               )}
@@ -182,8 +182,8 @@ export function Scene5({ setCursorPos, setIsClicking }: { setCursorPos: (pos: {x
 
             <div className="mt-4">
               <div className="flex space-x-2 border-b border-border pb-2 mb-3 overflow-x-auto text-xs font-medium">
-                <div className="px-3 py-1 border-b-2 border-primary text-primary">Adaptations</div>
-                {['Mating', 'Cooperation', 'Fears', 'Attraction', 'Conflict', 'Evolution'].map(t => (
+                <div className="px-3 py-1 border-b-2 border-primary text-primary">Paradigms</div>
+                {['Training', 'Patterns', 'Models', 'Language', 'Limits', 'Data'].map(t => (
                   <div key={t} className="px-3 py-1 text-muted-foreground">{t}</div>
                 ))}
               </div>

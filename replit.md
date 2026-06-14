@@ -1,30 +1,30 @@
-# 🔎 Data Analytics for Children
+# 🤖 Baby AI
 
-**A Friendly, One-Unit Intro to Data Analytics That Teaches, Tutors, and Proofs Itself — for Curious Students and Adults Alike**
+**A Friendly, One-Unit Intro to Artificial Intelligence That Teaches, Tutors, and Proofs Itself — for Curious Students and Adults Alike**
 
 ---
 
 ## 🧩 Overview
 
-Data Analytics for Children is a self-paced, single-user web course that delivers a friendly, plain-language introduction to data analytics — taught, tutored, drilled, and graded entirely by AI, with built-in academic-integrity enforcement. No math, coding, spreadsheets, SQL, or other technical skills required.
+Baby AI is a self-paced, single-user web course that delivers a friendly, plain-language introduction to artificial intelligence — taught, tutored, drilled, and graded entirely by AI, with built-in academic-integrity enforcement. No math, coding, or technical background required.
 
-It turns the everyday habit of *noticing, comparing, and counting* into one product: read each lesson at the depth you want, ask a tutor scoped to the exact section you're on, drill questions whose difficulty adapts to you in real time, and submit homework, a unit test, and a final that are AI-graded with feedback and screened for AI-generated answers.
+It turns the everyday experience of *using AI without understanding it* into one product: read each lesson at the depth you want, ask a tutor scoped to the exact section you're on, drill questions whose difficulty adapts to you in real time, and submit homework, a unit test, and a final that are AI-graded with feedback and screened for AI-generated answers.
 
-The curriculum is organized into **one unit and 6 topics**: 1.1 what is data, really?; 1.2 spotting patterns; 1.3 asking a good question; 1.4 sorting, grouping, and counting; 1.5 seeing the story; and 1.6 from hunch to decision.
+The curriculum is organized into **one unit ("Baby AI for Everyone") and 8 topics**: 1.1 what AI is (and isn't); 1.2 rules vs. learning; 1.3 data and training; 1.4 pattern recognition; 1.5 neural networks and deep learning; 1.6 language models; 1.7 strengths, limits, and hallucination; and 1.8 using AI well, and where it's headed.
 
-Designed for **middle schoolers, curious adults wanting brief but meaningful exposure, instructors evaluating AI-taught coursework, and researchers studying AI academic integrity**, Data Analytics for Children pairs a real curriculum with two layers of AI-authorship detection — surfacing not just *whether* the writing looks AI-generated, but whether the *act of producing it* did.
+Designed for **middle schoolers, curious adults wanting brief but meaningful exposure, instructors evaluating AI-taught coursework, and researchers studying AI academic integrity**, Baby AI pairs a real curriculum with two layers of AI-authorship detection — surfacing not just *whether* the writing looks AI-generated, but whether the *act of producing it* did.
 
 ---
 
 ## 🧠 What It Does
 
-- **One-Unit Structured Curriculum** — A complete plain-language intro syllabus across 6 topics. The unit ships with lessons, two homework sets, a timed unit test, and a cumulative final exam.
+- **One-Unit Structured Curriculum** — A complete plain-language intro syllabus across 8 topics. The unit ships with lessons, two homework sets, a timed unit test, and a cumulative final exam.
 - **Three-Depth Lessons** — Every lesson is available at **Short / Medium / Long** length, AI-rewritten while preserving the same examples and learning objectives. Skim the concept, expand it on demand, or read the deeper cut.
 - **Section-Scoped AI Tutor** — Ask a question about the paragraph you're reading and the answer streams back token-by-token, grounded in that exact lecture section. Suggested starter questions are pre-generated per lecture.
 - **Adaptive Topic Practice** — Generated problem sets that move difficulty up after a streak and down after a miss, with explanations on every answer. Per-session difficulty persists, so each drill picks up where the last one left off.
 - **AI-Graded Assignments** — Homework, the unit test, and the final are scored by an LLM grader that judges semantic equivalence to a model answer, returns per-problem correctness *plus* a written rationale, then rolls up to a percent score on the attempt.
 - **Two-Layer AI Detection on Every Submission** — Each submitted answer is screened by both a static text classifier (GPTZero) and a diachronic keystroke-pattern detector. Each verdict ships with a human-readable rationale.
-- **Diagnostic Reasoning Assessments** — Two original reasoning instruments (Professional Judgment, dilemma-based on relatable everyday data scenarios; and Critical Reasoning, multiple-choice) run at baseline and after the unit, so end-of-course reasoning can be compared against the starting point. Together they count for 20% of the final grade.
+- **Diagnostic Reasoning Assessments** — Two original reasoning instruments (Professional Judgment, dilemma-based on relatable everyday AI scenarios; and Critical Reasoning, multiple-choice) run at baseline and after the unit, so end-of-course reasoning can be compared against the starting point. Together they count for 20% of the final grade.
 - **Live Analytics** — Dashboard KPIs (attempts, accuracy, streak), per-topic mastery percentages, and a recent-activity feed — so progress, weak spots, and momentum are all visible at a glance.
 - **Operator Diagnostics** — One-click self-tests (system health and synthetic-student end-to-end run) verify the entire stack — database, OpenAI integration, GPTZero, detection pipeline, and the practice/grade loop — before you trust a session.
 - **Built-In Product Demo Video** — A screencast of the live UI — animated cursor, real typing, real streaming responses — ships as its own deployable artifact, so the product can show itself without anyone narrating it.
@@ -50,7 +50,7 @@ Designed for **middle schoolers, curious adults wanting brief but meaningful exp
 
 ## 📊 Designed For
 
-- **Middle Schoolers & Curious Adults:** A complete, plain-language intro to data analytics delivered with on-demand tutoring and adaptive practice — no instructor, math, or coding required.
+- **Middle Schoolers & Curious Adults:** A complete, plain-language intro to artificial intelligence delivered with on-demand tutoring and adaptive practice — no instructor, math, or coding required.
 - **Instructors & Curriculum Designers:** A working reference for what AI-taught, AI-graded, AI-detection-screened coursework actually looks like end-to-end.
 - **Academic-Integrity Researchers:** A live testbed for layered AI-authorship detection that combines text-based classification with behavioral keystroke evidence.
 - **Product & Engineering Teams:** A reference implementation of contract-first full-stack architecture, streaming AI UX, and self-diagnostic operator tooling in a Replit pnpm monorepo.
@@ -59,15 +59,14 @@ Designed for **middle schoolers, curious adults wanting brief but meaningful exp
 
 ## 💡 Core Idea
 
-Data Analytics for Children reframes an AI-taught course as a *closed accountability loop*.
+Baby AI reframes an AI-taught course as a *closed accountability loop*.
 
 It doesn't just teach the material and grade the homework — it **teaches**, **tutors**, **drills**, **grades**, **detects misuse**, and **proves the whole pipeline still works** with a single click. The result is a self-paced course that students can actually trust to be fair, and that instructors can actually trust to be honest.
 
-**Data Analytics for Children — where the curriculum, the tutor, the grader, and the integrity check all live in one room.**
+**Baby AI — where the curriculum, the tutor, the grader, and the integrity check all live in one room.**
 
 ---
 
 ## 👤 User preferences
 
 - The user prefers to **convert the existing app in place** (e.g. replacing the prior course content/branding with the new subject) rather than create a standalone clone — keep all functionality and format intact when making content/branding changes.
-

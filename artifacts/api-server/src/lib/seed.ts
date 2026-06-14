@@ -14,7 +14,7 @@ import { logger } from "./logger";
 // the value stored in seed_meta; a mismatch forces a full re-seed, so content
 // edits self-heal in every environment (including a republished production)
 // without a manual database wipe.
-const SEED_CONTENT_VERSION = "2026-06-13-evo-psych-for-children-v1";
+const SEED_CONTENT_VERSION = "2026-06-14-baby-ai-v1";
 
 type SeedTopic = {
   slug: string;
@@ -26,190 +26,278 @@ type SeedTopic = {
 };
 
 const TOPICS: SeedTopic[] = [
-  // Unit 1 — Evolutionary Psychology for Everyone
+  // Unit 1 — Baby AI for Everyone
   {
-    slug: "mind-has-history",
-    title: "The mind has a history",
+    slug: "what-ai-is",
+    title: "What AI is (and isn't)",
     weekNumber: 1,
-    blurb: "Your brain is an evolved body part that comes pre-loaded — not a blank page.",
-    lectureTitle: "1.1 The mind has a history (your thoughts and feelings are tools, not accidents)",
-    body: `# The mind has a history
+    blurb: "AI is a machine that makes smart-seeming guesses — not a thinking, all-knowing mind.",
+    lectureTitle: "1.1 What AI is (and isn't): intelligence, automation, and the hype",
+    body: `# What AI is (and isn't)
 
-When you think about where your body came from, the answer is easy: you grew it over years, and before that it was shaped over a very long time by living things slowly changing. Here is the surprising part — **your mind has the same kind of history.** Your brain is a body part, just like your heart or your hands, and it was shaped across countless generations to help your ancestors survive and care for their families.
+You hear the word **AI** everywhere — in the news, on your phone, in ads promising it will change everything. Some of that is true and some of it is hype. This whole course is about getting a clear, honest picture of what artificial intelligence really is, in plain language, with no math and no coding. Let's start by clearing the fog.
 
-## The brain is an organ with a job
+## A machine that makes guesses
 
-Your heart has a job: pump blood. Your stomach has a job: digest food. Your **brain** has a job too — to take in what's happening around you and quickly choose what to do. Like every other body part, it was built up slowly over a very long time, because the versions that worked best got passed on. So the brain isn't a blank notebook waiting to be filled in. It arrives already good at certain things.
+At its heart, **AI is a computer program that makes smart-seeming guesses or decisions from information.** When your phone unlocks by looking at your face, when a video app guesses what you'll want to watch next, when an email app decides a message is spam — that's AI making a guess based on what it has seen before. It's not magic and it's not a tiny person inside the computer. It's a program that takes in information and produces its best guess about what to do.
 
-## Not a blank slate
+## Automation isn't the same as intelligence
 
-People used to think a baby's mind was a totally empty page, and that everything we feel and think is just written on later by the world. But that isn't quite right. A newborn already knows how to suck, cry, and grip a finger. A baby will stare longer at a face than at a random pattern. Nobody taught them that. They came **pre-loaded** — born ready for a few important things, the way a new phone comes with a few apps already installed.
+People often mix up **automation** with **intelligence**, but they're different. A dishwasher runs the same fixed steps every time you press start. A thermostat follows a simple rule: if it's colder than the setting, turn on the heat. Those machines are *automated* — they repeat steps a human wrote out in advance. AI is meant to handle situations *nobody wrote exact steps for* — like deciding whether a brand-new photo it has never seen contains a cat. Automation follows a recipe; AI tries to figure out the recipe on its own.
 
-## Feelings are tools, not accidents
+## Narrow, not all-knowing
 
-Here is the big idea of this whole course: your thoughts and feelings aren't random, and they aren't mistakes. They are **tools** that helped your ancestors. Fear makes you freeze or run from danger. Disgust makes you spit out rotten food before it makes you sick. Love makes you take care of the people closest to you. Each feeling is like a tool in a toolbox, shaped because it once helped people stay alive and look after their families.
+Today's AI is **narrow.** That means each AI is good at one specific task and clueless outside it. The AI that beats grandmasters at chess can't write you a poem, and the AI that recommends songs can't drive a car. There is no single program today that understands the world the way a person does. When a system seems to "know everything," it's usually many narrow tools stitched together — not one all-knowing mind.
 
-## Why "shaped over time"?
+## Why the hype?
 
-Long ago, tiny differences between people mattered. Someone who felt afraid of a growling animal was more likely to live than someone who felt nothing. The ones who lived had children, and those children often inherited the same useful feeling through their **genes** — the instructions passed from parent to child. Repeat that for a very, very long time and you get a mind that comes ready with helpful instincts. The mind even seems to have different "parts" for different jobs — a bit for faces, a bit for danger, a bit for language — like separate tools each shaped for one task.
+So why does AI sound almost superhuman? Partly because companies want to sell it, partly because movies have shown us robots that think and feel for a hundred years, and partly because a good demo really is impressive. The useful habit — the one this course will keep building — is to separate **what AI can actually do** from **what people claim it can do.** Ask, every time: what is this system really doing under the hood?
+
+## It doesn't "understand" like you do
+
+Here's a big idea to carry with you: even when an AI gives a smart-sounding answer, it doesn't *understand* it the way you do. It has no feelings, no awareness, and no sense of whether what it said is true. It is matching patterns it picked up from lots of examples and producing a likely result. Keeping that in mind protects you from being fooled by something that *sounds* confident.
 
 ## In the real world
 
-Babies all over the world, in every country, start to fear strangers at about the same age — around eight months old. No parent teaches this; it shows up on its own, right around the time a crawling baby could wander off into danger. That timing is a clue. A feeling that appears on schedule, everywhere, without being taught, looks a lot like something the mind came **pre-loaded** with — a small piece of history you can actually watch happen.`,
+Think about the spam filter in an email app. Nobody hand-wrote a rule listing every junk message ever — that would be impossible. Instead, the filter learned from huge piles of emails people marked as "spam" or "not spam," and now it *guesses* which new emails are junk. It's right most of the time, but sometimes a real message lands in spam or a junk one slips through. That everyday tool is a perfect picture of what AI is: a useful guesser that's often right, sometimes wrong, and never truly *sure.*`,
   },
   {
-    slug: "built-to-survive",
-    title: "Built to survive",
+    slug: "rules-vs-learning",
+    title: "Rules vs. learning",
     weekNumber: 1,
-    blurb: "Why we crave sugar, fear snakes faster than cars, and find certain places beautiful.",
-    lectureTitle: "1.2 Built to survive (the easiest proof the past engineered your mind)",
-    body: `# Built to survive
+    blurb: "The old AI followed hand-written rules; modern AI learns the rules itself from examples.",
+    lectureTitle: "1.2 Rules vs. learning: the two paradigms",
+    body: `# Rules vs. learning
 
-The easiest way to see that your mind has a history is to look at the things you want, fear, and find beautiful — without ever deciding to. A lot of those reactions don't fully make sense for the world *today*, but they make perfect sense for the world your ancestors lived in. In many ways, your mind is **built for the past.**
+There are really **two big ways** to make a computer act smart, and almost every story about AI is the story of moving from the first way to the second. Understanding this one shift explains why AI suddenly got so much better in the last few years.
 
-## Why sweet and fatty food tastes amazing
+## The old way: writing rules
 
-Sugar and fat taste wonderful to almost everyone. That isn't an accident. Long ago, food was often scarce, and sweet, fatty food was packed with the energy a body needed to survive. People who loved that food ate it whenever they found it and were more likely to live through hungry times. Today food is everywhere, so the same craving can lead us to eat too much candy — but the craving itself is an old survival tool that once kept people alive.
+For a long time, making a computer "smart" meant a human writing out **rules** — long lists of "if this, then that" instructions. If you wanted a program to decide whether it's bedtime, you might write: *if the clock says after 9 p.m., say "go to bed."* Rules are great when a problem is clear and tidy, and a person can spell out every step in advance. Calculators, simple thermostats, and tax software mostly work this way.
 
-## Fearing the right things (and the wrong ones)
+## Where rules break down
 
-People learn to fear snakes and spiders incredibly fast — often after a single scare, or even just a warning. But we *don't* pick up fears of cars, electricity, or junk food nearly as easily, even though those hurt far more people today. Why? Snakes and spiders were dangers for millions of years, so the mind comes ready to fear them quickly. Cars are brand new in the history of humans, so there was never time to build in a fast fear of them. Your fears are tuned to your **ancestors'** dangers, not always your own.
+Now try to write rules that recognize a **cat** in a photo. *If it has whiskers...* but dogs have whiskers too. *If it has pointy ears...* but ears can be folded, hidden, or pointed away. *If it's furry...* so is a rug. There are millions of exceptions, and no human could ever write enough rules to cover them all. For messy, real-world problems — recognizing faces, understanding speech, translating languages — the rule-writing approach simply collapses under its own weight.
 
-## Why certain places feel beautiful
+## The new way: learning from examples
 
-Picture a calm scene people call "beautiful": open grassy land, a few scattered trees, some water in the distance, maybe a hill to look out from. People across the whole world tend to like that same kind of view — it shows up in paintings, parks, and postcards everywhere. That's the kind of place where early humans could find water, spot food, and watch for danger. A landscape that meant *safety and supplies* long ago still feels pleasant and "right" to us now.
+So modern AI flips the whole idea around. Instead of a human writing the rules, you show the computer **thousands of examples** and let it figure out the pattern itself. Want it to spot cats? Show it a huge pile of pictures, each labeled "cat" or "not a cat," and let the machine work out — on its own — what tends to make a cat a cat. Nobody writes the rule; the machine *learns* it. This approach is called **machine learning**, and it's the engine behind almost all the AI people get excited about today.
 
-## The mind can be a little out of date
+## Two paradigms, side by side
 
-Notice the pattern in all three examples: a reaction that was smart long ago can be a little off today. We crave sugar in a world already full of it. We fear snakes more than cars. We relax at the sight of open grassland even from a city apartment. None of this means your mind is broken — it means it was **tuned for a different world.** Spotting that gap is one of the most useful things this whole field teaches.
+It helps to hold the two in mind together. **Rule-based** systems are like a recipe a chef hands you: clear, predictable, but only as good as the chef's instructions, and useless for anything the chef didn't anticipate. **Learning-based** systems are like a kid who tastes hundreds of dishes and slowly figures out what "spicy" means — flexible, able to handle new cases, but harder to explain and sometimes surprising.
+
+## Why learning won
+
+Learning took over for one simple reason: for the messy problems people most wanted to solve, *learning from examples works far better than any rules a human could write.* As computers got faster and enormous collections of examples (photos, text, recordings) became available, the learning approach pulled ahead and never looked back. When you hear "AI" today, it almost always means a system that **learned** rather than one that was hand-programmed.
 
 ## In the real world
 
-Scientists ran a clever test with babies and a glass floor — a clear, strong surface with a deep drop visible underneath, called a "visual cliff." Even crawling babies who had never fallen far would stop at the edge and refuse to crawl over the drop, no matter how much their parents waved them on. Nobody taught them to fear heights. A fall was deadly to our ancestors for millions of years, so the caution comes **built in** — survival wisdom showing up before a baby could ever learn it the hard way.`,
+Go back to that spam filter. The earliest ones were **rule-based**: a human listed banned words like "free money," and any email containing them got blocked. Spammers simply changed their wording — "fr3e m0ney" — and slipped right past. Modern filters **learn** instead, studying millions of real emails people marked as junk and discovering subtle patterns no human would think to write down. That's exactly why today's filters are so much harder to fool: they learned the difference instead of being told it.`,
   },
   {
-    slug: "logic-of-attraction",
-    title: "The logic of attraction",
+    slug: "data-and-training",
+    title: "Data and training",
     weekNumber: 1,
-    blurb: "Beauty is really a set of clues — the mind quietly reading signs of health and character.",
-    lectureTitle: "1.3 The logic of attraction (why \"beautiful\" is really a bunch of clues)",
-    body: `# The logic of attraction
+    blurb: "\"Learning\" means adjusting from labeled examples — and the data you feed in decides what you get.",
+    lectureTitle: "1.3 Data and training: what \"learning\" actually means",
+    body: `# Data and training
 
-Of all the things an evolved mind does, choosing who to like, trust, and team up with is one of the most powerful — and one of the most interesting. This section is about **attraction**: why people find some others appealing, and why "beauty" turns out to be less about magic and more about clues.
+We keep saying AI "learns." But what does that actually mean for a machine? It's not reading a book or having an *aha!* moment. This section opens up the box and shows you what learning really is — and why the **examples you feed in** matter more than almost anything else.
 
-## Beauty is really a bunch of clues
+## Learning = adjusting from examples
 
-When we call someone "beautiful" or "handsome," our mind is quietly reading **clues** about health. Clear skin, bright eyes, a healthy smile, and plenty of energy all tend to signal that a person is healthy and well. Long ago, choosing a healthy partner meant a better chance of a healthy family. So the things we find attractive are, underneath, signs of health and strength — the mind reading a kind of report card without us realizing it.
+Here's the honest, simple version. A learning program starts out making **random, terrible guesses.** You show it an example — say, a photo — and the correct answer — "cat." The program compares its guess to the right answer and makes a tiny **adjustment** to do a little better next time. Repeat that millions of times, with millions of examples, and those tiny adjustments add up into a system that's genuinely good at the task. That whole process — practicing on examples and adjusting — is called **training.**
 
-## Why faces matter so much
+## Data is the textbook
 
-People everywhere pay huge attention to faces, and tend to like faces that are **even and balanced** — where the left side looks much like the right. A balanced face can be a small sign that a body grew up healthy, without too many troubles along the way. We aren't doing this on purpose; the preference just feels automatic — which is exactly what you'd expect from something the mind came ready with.
+The examples you train on are called **data**, and data is the AI's entire education. There's an old saying in computing: **"garbage in, garbage out."** If you train a system on blurry, mislabeled, or one-sided examples, it learns blurry, mislabeled, one-sided lessons. A model is only ever as good as the examples it studied. This is why the boring-sounding job of gathering good data is actually one of the most important parts of building AI.
 
-## It's not only looks
+## Training time vs. using time
 
-Attraction isn't just about appearance. People across the world also rate **kindness, fairness, and being a good helper** as some of the most attractive things in a friend or partner. That makes sense too: a kind, dependable person is a wonderful teammate for the long job of raising a family and surviving together. So "the logic of attraction" includes character, not just faces — and the character clues often matter most.
+There are two clearly different stages, and people mix them up all the time. **Training** is the long, expensive "study" phase, where the system practices on tons of examples and slowly improves. **Using** the model — sometimes called *inference* — is the quick "test" phase afterward, where you give it something new and it produces an answer. It's like a student who studies for weeks (training) and then answers a question in seconds during the exam (using). Once training is done, the model doesn't keep learning from you unless someone deliberately trains it again.
 
-## Different clues for different jobs
+## Why more and better data helps
 
-The mind seems to weigh different clues depending on what it's looking for. For a quick teammate on a class project, we might look for skill and energy. For a lifelong partner, people tend to care more about kindness, loyalty, and steadiness — clues that someone will *stick around and help.* The point is that attraction isn't random; it's the mind sorting people by the clues that mattered for each kind of relationship.
+Generally, the more varied and high-quality examples a system trains on, the better it handles new situations. A model that has seen cats of every color, angle, and lighting will recognize a new cat far more reliably than one that only ever saw a handful. But it's not just *quantity* — **variety** matters. Ten thousand photos of the same cat teach far less than ten thousand photos of different cats.
+
+## Skewed data, skewed results
+
+This leads to one of the most important warnings in all of AI: if your examples are **lopsided**, the model's behavior will be lopsided too. Train a face-unlock system mostly on one kind of face, and it'll struggle with faces it rarely saw. The model isn't being unfair on purpose — it simply learned from an unbalanced textbook. Spotting where the data might be skewed is a skill you'll use again and again when judging whether to trust an AI.
 
 ## In the real world
 
-Researchers showed people lots of photos of faces, then quietly blended several real faces together into one "average" face. Again and again, people picked the blended, average face as *more* attractive than the individual ones. It sounds strange, but it fits: an average face is balanced and has none of the unusual features that can hint at illness, so the mind reads it as a healthy, safe choice. People in many different countries show the very same preference — another sign of a clue-reading system we all share.`,
+Imagine teaching a program to tell **cats from dogs.** You feed it thousands of labeled photos, and after training it's impressively accurate. But suppose every cat photo you used happened to show a *black* cat. Show the trained model a fluffy orange cat and it may stumble — not because orange cats are tricky, but because its "textbook" never included one. Same machine, same training method; the only thing that changed was the **data** — and that's exactly the point. What goes in shapes what comes out.`,
   },
   {
-    slug: "love-and-jealousy",
-    title: "Love, jealousy, and keeping a mate",
+    slug: "pattern-recognition",
+    title: "Pattern recognition",
     weekNumber: 1,
-    blurb: "Love is the glue that keeps partners together; jealousy is the alarm that protects the bond.",
-    lectureTitle: "1.4 Love, jealousy, and keeping a mate (a matched pair of feelings)",
-    body: `# Love, jealousy, and keeping a mate
+    blurb: "Underneath it all, AI is a pattern-finder — which is powerful, but easy to fool.",
+    lectureTitle: "1.4 Pattern recognition: the core idea behind it all",
+    body: `# Pattern recognition
 
-Finding someone is only half the story. The evolved mind also has tools for **bonding** with a partner and for *protecting* that bond. Two of the strongest feelings humans have — love and jealousy — turn out to be a matched pair, built for the same job.
+If you remember only one idea from this whole course, make it this one: **modern AI is, at its core, a pattern-finding machine.** Recognizing faces, predicting words, recommending videos — strip away the fancy names and they're all the same move: spotting patterns in piles of data and using them to make a guess.
 
-## Love as glue
+## Everything is pattern-finding
 
-Raising a human child is a huge, slow job — human babies are helpless for years, far longer than the young of most animals. A child does much better when *two* caring adults stick together to help. **Love** — that strong pull to stay close to one special person — works like glue that keeps partners together through that long job. A feeling that kept caregivers working as a team would have helped their children survive, so the feeling got passed on.
+When an AI "learns" from examples, what it's really learning is **patterns** — regular, repeating connections between things. Photos labeled "cat" tend to share certain shapes and textures; that's a pattern. Emails marked "spam" tend to share certain wording; that's a pattern. The system doesn't memorize each example one by one. It distills them into patterns it can apply to brand-new cases it has never seen.
 
-## Jealousy as an alarm
+## You're a pattern-finder too
 
-If love is the glue, **jealousy** is the alarm. Jealousy is an uncomfortable feeling that flares up when an important bond seems threatened — when someone you're close to might be pulled away. It's unpleasant on purpose: the bad feeling pushes a person to pay attention and protect the relationship. Like fear, jealousy is a tool — an alarm that says, "something you depend on is at risk."
+This isn't as alien as it sounds — your brain does it constantly. You recognize a friend's face in a crowd, you guess it might rain from the look of the clouds, you finish a song lyric before it plays. You're using patterns you picked up from past experience. AI does something similar, just with way more examples and far less understanding of what any of it *means.*
 
-## Tools can misfire
+## Features: the clues it looks at
 
-Here is the tricky part: an alarm that is too sensitive causes problems. A little jealousy can make someone notice and protect a friendship; too much can make them controlling, unfair, or unkind. Understanding that jealousy is an **old alarm system** doesn't make it always right — it helps us notice when the alarm is overreacting, so we can choose to act better than the raw feeling alone would.
+The specific clues a system pays attention to are called **features.** For spotting cats, useful features might be fur texture, ear shape, and eye position. For predicting house prices, features might be size, location, and number of rooms. Choosing or discovering the right features is a big part of why one AI works and another flops. The model is basically asking, "which clues actually help me guess right?"
 
-## Strategies, not scripts
+## Patterns aren't understanding
 
-People don't all bond in exactly the same way, and that's expected. Depending on their situation, people lean toward different **strategies** — some bond fast and deep, some take their time, some stay more independent. None of these is the one true "human program." The mind comes with a range of settings, and life nudges the dial. Evolution gave us flexible tools, not a single fixed script.
+Here's the catch that trips up almost everyone: finding a pattern is **not** the same as understanding it. An AI can learn that two things *go together* without having the faintest idea *why.* It might notice that pictures with whiskers are often cats — but it doesn't know what a cat *is*, that cats are alive, or that whiskers help them feel. It found a correlation, full stop. That gap between "things that go together" and "actually understanding" is the source of a lot of AI's strangest mistakes.
+
+## When patterns mislead
+
+Because AI grabs *any* pattern that helps it guess right during training, it sometimes latches onto the **wrong** one. Suppose nearly all your husky photos were taken in snow. The model might quietly decide that **snow** means husky — and then confidently call a snowy field full of no dogs a "husky." It found a real pattern in your data; it just wasn't the pattern you wanted. These accidental, misleading patterns are a constant danger, and catching them is part of using AI wisely.
 
 ## In the real world
 
-Around the world, in cultures that have never met, people tell remarkably similar love stories — songs and tales about two people drawn together, kept apart, and aching to reunite. Anthropologists who studied hundreds of different societies found romantic love in nearly every single one. A feeling that appears in almost every human group, with no one spreading it between them, is strong evidence that it's part of the **shared toolkit** our minds were built with.`,
+Researchers once built a system to spot skin cancer from photos, and it seemed amazingly accurate — until they realized many of the cancer photos happened to include a **ruler** that doctors place beside serious spots to measure them. The AI had partly learned "ruler in the picture = cancer." It wasn't reading skin at all; it was reading a clue that *accidentally* came along with the answer. Same lesson as the husky and the snow: a pattern-finder will happily find the *easy* pattern, even when it's the wrong one — so part of your job is always to ask what the machine is *really* keying on.`,
   },
   {
-    slug: "why-we-cooperate",
-    title: "Why we cooperate",
+    slug: "neural-networks",
+    title: "Neural networks and deep learning",
     weekNumber: 1,
-    blurb: "Sharing, fairness, gratitude, and friendship are some of evolution's smartest survival tools.",
-    lectureTitle: "1.5 Why we cooperate (kin, fairness, and the scorecard in your head)",
-    body: `# Why we cooperate
+    blurb: "Layers of simple units, loosely inspired by the brain, that build understanding step by step.",
+    lectureTitle: "1.5 Neural networks and deep learning: the intuition",
+    body: `# Neural networks and deep learning
 
-If evolution is about surviving and having families, you might expect people to be selfish all the time. But humans are some of the most **cooperative** creatures on Earth — we share, help, take turns, and care deeply about fairness. This isn't a contradiction. Cooperation turns out to be one of the smartest survival tools of all.
+You've probably heard the phrases **neural network** and **deep learning** thrown around like spells. They sound intimidating, but the core idea is friendly once you see it. This section gives you the intuition — no math — for the machinery behind most of today's most impressive AI.
 
-## Helping family first
+## Loosely inspired by the brain
 
-The easiest cooperation to explain is helping **family.** Your relatives share many of the same genes you carry, so helping them survive helps your own "instructions" carry on, even if you never have children yourself. That's why people will sacrifice the most for parents, brothers, sisters, and their own kids. The strong, automatic pull to protect family is one of the clearest tools the evolved mind comes with.
+A **neural network** is a program loosely inspired by how brains are built: lots of tiny, simple units connected together. Each unit does something very basic — take in some numbers, mix them, and pass a result along to the next units. No single unit is clever. The power comes from **many** of them working together, the way an anthill does impressive things even though no single ant is a genius. (And it's only *loosely* like a brain — don't picture a digital mind in there.)
 
-## Taking turns: "I help you, you help me"
+## Layers that build up understanding
 
-We also help people who *aren't* family, through something simple: **taking turns.** If I share my food today and you share yours tomorrow, we both do better than if we each hoarded. This "I help you, you help me" deal works fine as long as people pay each other back. That's also why being helped and *not* returning the favor feels so wrong — our minds keep a quiet scorecard of who's fair and who isn't.
+The units are organized into **layers**, stacked one after another, and this stacking is the magic. In a system that looks at images, the **early layers** notice tiny, simple things — edges, corners, patches of color. The **middle layers** combine those into shapes, like an eye or an ear. The **later layers** combine *those* into whole objects — "this looks like a face." Understanding gets built up step by step, from simple pieces to meaningful wholes, as information flows through the layers.
 
-## Why fairness and gratitude feel so strong
+## "Deep" just means many layers
 
-Feelings like **gratitude, guilt, and anger** are the tools that keep cooperation running. Gratitude makes you want to repay a kindness. Guilt nudges you to fix things when you've let someone down. Anger flares when someone cheats you, pushing you to stop being taken advantage of. These feelings aren't random moods — they're the mind's way of protecting fair trade between people.
+So what does **deep learning** mean? Simply this: a neural network with **many** layers stacked up is called "deep," and training such a network is "deep learning." That's the whole secret behind the scary word. More layers let the system build up more complex understanding — going from edges, to shapes, to objects, to scenes — which is why deep networks can handle tasks that simpler methods never could.
 
-## Friendship and status
+## Weights: the dials it tunes
 
-Humans also build **friendships** — long-term partners you can count on — and care about **status**, meaning being respected and valued by the group. Both made sense for survival: a person with loyal friends and a good reputation got help in hard times, while someone known as a cheater got left out. Caring what others think of you can be uncomfortable, but it's an old tool for staying part of a group you needed.
+Remember how training means "making tiny adjustments"? In a neural network, the things being adjusted are called **weights** — think of them as millions of little dials that control how strongly each connection passes its signal along. Training is the long process of nudging all those dials until the whole network tends to produce the right answers. A trained model is really just a giant collection of carefully tuned dials.
+
+## Powerful, but a black box
+
+There's a trade-off worth knowing. Deep networks are astonishingly capable, but they're also a **"black box"**: with millions of tuned dials, even the people who built one often *can't fully explain* why it gave a particular answer. It works, but its reasoning is hard to inspect. That mystery is part of why trusting AI carefully — a theme we'll return to — matters so much.
 
 ## In the real world
 
-Scientists play a sharing game with young children: they give one child some treats and let them choose how many, if any, to give to another child. Long before anyone teaches them about "being fair," children start sharing — and they get visibly upset when *they* are the ones treated unfairly. This sense of fairness shows up early, across very different cultures, which suggests cooperation isn't only taught manners. It's part of the **equipment** humans are born ready to use.`,
+When a photo app on your phone instantly groups all the pictures of your grandmother together, that's a deep neural network at work. Its early layers found edges and textures, deeper layers assembled eyes, noses, and mouths, and the final layers learned the particular combination that *is* your grandmother's face — all from examples, all through tuned dials. You never wrote a rule describing her face, and honestly, neither could the app's makers. It learned, layer by layer, what no one could have spelled out.`,
   },
   {
-    slug: "why-we-fight",
-    title: "Why we fight — and believe",
+    slug: "language-models",
+    title: "Language models",
     weekNumber: 1,
-    blurb: "The same evolved mind that makes us loyal can make us fight — and it's the source of culture and religion.",
-    lectureTitle: "1.6 Why we fight — and believe (us, them, culture, and the open questions)",
-    body: `# Why we fight — and believe
+    blurb: "Chatbots work by predicting the next word over and over — that's what \"generative\" means.",
+    lectureTitle: "1.6 Language models: how AI predicts text and what \"generative\" means",
+    body: `# Language models
 
-The same mind that makes us loving and cooperative can also make us fight. And the same mind builds the giant shared ideas we call culture and religion. This last section ties the whole course together — and leaves you with the biggest questions still open.
+The AI everyone's talking about lately — the chatbots that write essays, answer questions, and hold conversations — are built on something called a **language model.** They can feel almost magical, like talking to a knowledgeable person. The truth is stranger and more useful to understand: under the hood, they are doing one surprisingly simple thing, over and over.
 
-## Us and them
+## It's predicting the next word
 
-Humans are quick to split the world into **"us" and "them."** We bond tightly with our own group and grow wary of outsiders. Long ago, your group was your protection — your family, your team, your safety — and rival groups could be a real danger. So the mind came ready to feel loyalty inside the group and caution toward outsiders. This tool helped people survive, but it's also behind a lot of conflict, from playground teams to wars between nations.
+A language model's one trick is **predicting the next word.** Give it "The sky is..." and it predicts "blue" is a very likely next word. That's it. It's like the autocomplete on your phone, but enormously more powerful. To write a whole paragraph, it predicts one word, adds it, then predicts the *next* word given everything so far, and repeats — building a long, sensible-looking response one piece at a time.
 
-## Status and conflict
+## Trained on mountains of text
 
-Remember status from the last section? The same desire to be respected can also spark **conflict.** People compete for rank, fairness disputes turn into fights, and whole groups clash over land, food, or pride. None of this means fighting is "good" — it means the very drives that help us cooperate inside a group can also pull groups *against* each other. Seeing that clearly is the first step to handling it better.
+How does it know "blue" follows "the sky is"? The same way every AI learns: from **examples.** A language model is trained on a staggering amount of text — books, articles, websites — and from all that reading it absorbs the patterns of how words tend to follow one another. It never memorized the internet word-for-word; it learned the *patterns* of language well enough to continue almost any sentence in a believable way.
 
-## Where culture comes from
+## What "generative" means
 
-Now zoom out. Humans are the only animal that builds **culture** — shared stories, rules, tools, songs, and customs passed down and improved over generations. Culture isn't separate from the evolved mind; it's something the evolved mind *produces.* A brain built to learn from others, copy the best ideas, and follow group rules naturally creates culture. Our biggest invention grows straight out of our oldest instincts.
+This is where the word **generative** comes in. A generative AI is one that **creates new content** — text, images, music — rather than just sorting or labeling things. A language model is generative because it *produces* fresh sentences by predicting them piece by piece, instead of picking from a fixed list of canned replies. That's why it can answer a question no one ever typed before: it generates a new response on the spot, one prediction at a time.
 
-## Even religion?
+## It predicts — it doesn't look things up
 
-Many thinkers argue that **religion**, too, grows from features of the evolved mind: our habit of sensing a "who" behind events, our deep need to belong to a group, and our trust in what elders teach us. This is one of the field's boldest and most debated ideas. It does not claim to settle what is true about the universe — it only asks where the *human tendency* to believe might come from.
+Here's the part that surprises people most: a language model usually isn't **looking up** facts in a database. It's *predicting* what words should come next based on patterns. Most of the time the most likely-sounding answer also happens to be true — but not always. Because it's chasing "what sounds right" rather than "what is verified," it can state something false with total confidence. Keep this in your back pocket; it explains a lot of AI's weirdest failures (and it's the whole focus of the next section).
 
-## The biggest questions stay open
+## Prompts steer the prediction
 
-That's the honest place to end. Evolutionary psychology gives us powerful clues about why we crave, fear, love, cooperate, fight, and believe. But it doesn't answer everything — how far we can rise above our instincts, how to build a fair and peaceful world, what our minds might one day become. Those questions are still wide open. Now you have a new way to think about them: by asking, every time, "What might this part of the mind have been *for*?"
+The text **you** type — your **prompt** — is the starting point the model continues from, so it powerfully shapes what you get back. Ask "explain photosynthesis to a five-year-old" and the model predicts a simple, playful continuation; ask for "a formal scientific summary" and it predicts a stiff, technical one. Learning to write clear prompts is really learning to set up the model so its predictions go where you want.
 
 ## In the real world
 
-When researchers split strangers into groups for an experiment — even using something as silly as a coin flip — people quickly start favoring their own group and competing with the other, though they were total strangers minutes before. In the famous "Robbers Cave" study, two groups of ordinary boys at a summer camp turned into bitter rivals within days, then made peace only when they were given a shared goal they had to work toward together. It shows how fast the "us and them" switch can flip on — and, hopefully, how a bigger shared purpose can switch it back off.`,
+When you ask a chatbot "what's a good name for a pet turtle?" it doesn't open a list of turtle names. It predicts, word by word, a response that *sounds like* a helpful answer to that question — drawing on the patterns of all the text it trained on. The result can be charming and genuinely useful. But remembering that it's *predicting plausible text*, not *retrieving guaranteed facts*, is the single most important thing for using these tools wisely — which is exactly where we head next.`,
+  },
+  {
+    slug: "limits-and-hallucination",
+    title: "Strengths, limits, and hallucination",
+    weekNumber: 1,
+    blurb: "AI is powerful but confidently makes things up — so trust it carefully and always verify.",
+    lectureTitle: "1.7 Strengths, limits, and hallucination: why to trust it carefully",
+    body: `# Strengths, limits, and hallucination
+
+Now that you know how these systems actually work — pattern-finders that predict likely answers — you're ready for the most practical lesson of all: **what AI is great at, where it fails, and why it sometimes lies to you with a straight face.** Using AI well starts with respecting its limits.
+
+## What it's genuinely great at
+
+Let's be fair: AI is remarkable at certain things. It's fast, tireless, and excellent at finding patterns in huge amounts of information, drafting text, summarizing long documents, translating, and handling repetitive work that would exhaust a person. For brainstorming, first drafts, and chewing through tons of data, it's a genuinely powerful helper. The goal isn't to distrust AI — it's to know *where* its strengths stop.
+
+## Hallucination: confidently making things up
+
+The most important limit has a memorable name: **hallucination.** This is when an AI states something **false** but does it **confidently**, as if it were obviously true. It might invent a fact, a quote, a book that doesn't exist, or a wrong answer dressed up in convincing language. Why? Because — as we saw — a language model predicts *plausible-sounding* text, not *verified* truth. When it has no good answer, it doesn't say "I don't know"; it predicts something that *sounds* right and hands it over with full confidence.
+
+## No real grounding, no guaranteed common sense
+
+Underneath, the system has no direct contact with the real world and no guaranteed common sense. It learned patterns from text and examples, but it can't *check* its answer against reality the way you can glance out a window. So it may confidently claim something that any person would instantly know is silly. It's not lying on purpose — there's no "purpose" in there at all. It simply has no built-in sense of true versus false.
+
+## Bias and stale knowledge
+
+Two more limits matter in daily life. First, **bias**: because AI learns from human-made data, it can absorb and repeat the lopsided or unfair patterns in that data (remember the skewed-textbook problem). Second, **stale knowledge**: a model only knows what it saw during training, so it can be out of date and may have no idea about recent events. Neither flaw is obvious from the confident way it talks — which is exactly why they're dangerous.
+
+## How to use it safely
+
+The fix isn't to avoid AI; it's to use it like a **smart but unreliable assistant.** Treat its output as a *draft*, not a *verdict.* Double-check anything that matters — facts, numbers, names, advice — against a trustworthy source. Be extra careful with high-stakes topics like health, money, or safety. The rule of thumb: the more it matters, the more you verify. Used that way, an unreliable genius is still incredibly handy.
+
+## In the real world
+
+A student once asked a chatbot for sources to support an essay, and it produced a tidy list of books and articles — titles, authors, page numbers, all perfectly formatted. The catch: several of them **didn't exist.** The AI had *predicted* what believable citations look like and generated convincing fakes. That's hallucination in a nutshell: not a glitch on the surface, but the system doing exactly what it always does — producing plausible text — with no way to know it wasn't true. Anyone who simply trusted the list would have been caught out. Anyone who checked was fine.`,
+  },
+  {
+    slug: "using-ai-well",
+    title: "Using AI well, and where it's headed",
+    weekNumber: 1,
+    blurb: "You're the pilot: AI is a powerful tool to direct and double-check, not a boss to obey.",
+    lectureTitle: "1.8 Using AI well, and where it's headed (capstone)",
+    body: `# Using AI well, and where it's headed
+
+This is the capstone — where everything you've learned comes together into a way of *living and working* with AI. You now know it's a pattern-finding guesser that learns from data, predicts plausible answers, and can be confidently wrong. So the real question is: how do you get the best out of it while staying in charge?
+
+## You're the pilot
+
+The healthiest way to picture AI is as a **powerful tool**, not a boss and not an oracle. Think of it like a calculator or a power drill: it makes you faster and stronger, but *you* decide where to point it, and *you* are responsible for the result. The phrase to remember is **"human in the loop"** — a person stays involved, directing the tool and checking its work, rather than blindly doing whatever it says.
+
+## Prompt well, then check
+
+Two habits make you good at this. First, **prompt clearly**: tell the AI exactly what you want, who it's for, and in what form — vague questions get vague answers. Second, **check the output**: read it critically, verify anything important, and fix what's off. The best results come from a back-and-forth — you ask, it drafts, you refine — with your judgment guiding every step. The AI supplies speed; you supply direction and a reality check.
+
+## What to hand over, what to keep
+
+A useful instinct is knowing **which tasks to delegate** and **which to keep human.** Great jobs for AI: brainstorming ideas, rough first drafts, summarizing, explaining a tricky concept, repetitive busywork. Jobs to keep firmly in human hands: final decisions that affect people, anything requiring real accountability, sensitive personal matters, and moments that need genuine empathy or moral judgment. Let AI do the heavy lifting; reserve the steering for yourself.
+
+## Ethics: power with care
+
+Because AI is powerful, using it well also means using it **responsibly.** That means caring about **fairness** (could this system treat some people unfairly because of skewed data?), **privacy** (whose information is being used, and did they agree?), **honesty** (are you passing off AI work as your own, or fooling someone?), and **impact** (how does this affect people's jobs and lives?). These aren't side issues — they're part of using the tool well. A good pilot watches not just *can* I, but *should* I.
+
+## Where it's headed — honestly
+
+AI is improving fast, and it will keep reshaping how we work, learn, and create. But anyone who tells you *exactly* what comes next is guessing. The honest stance is humble: huge open questions remain — how reliable these systems can become, how to keep them fair and safe, what jobs will change, and how much we should depend on them. You don't need a crystal ball. You need the clear-eyed understanding you've built here, so you can judge each new claim for yourself.
+
+## In the real world
+
+Picture using a chatbot to write a school essay. The *poor* way: ask it to write the whole thing and hand it in untouched — you learn nothing, it may be wrong or unfair to call your own, and any hallucinated "facts" become *your* mistakes. The *skilled* way: ask it to brainstorm angles, draft a messy outline, and explain a confusing idea — then **you** verify the facts, rewrite it in your own voice, and own the result. Same tool, opposite outcomes. The difference is the whole point of this course: not whether you *use* AI, but whether you stay the thoughtful human steering it.`,
   },
 ];
 
@@ -232,209 +320,227 @@ type SeedAssignment = {
 const ASSIGNMENTS: SeedAssignment[] = [
   {
     kind: "homework",
-    title: "Homework 1.1 — The evolved mind, survival, and attraction",
+    title: "Homework 1.1 — What AI is, rules vs. learning, data, and patterns",
     weekNumber: 1,
     isTimed: false,
     timeLimitMinutes: null,
     instructions:
-      "Untimed practice covering sections 1.1–1.3. Answer each question in a few sentences (about 3–5) in your own words. There's no need for any math — just explain your thinking clearly. One-word answers won't receive credit.",
+      "Untimed practice covering sections 1.1–1.4. Answer each question in a few sentences (about 3–5) in your own words. There's no need for any math — just explain your thinking clearly. One-word answers won't receive credit.",
     problems: [
       {
-        topicSlug: "mind-has-history",
+        topicSlug: "what-ai-is",
         prompt:
-          "Some people say a baby's mind is a totally blank page that the world fills in later. Use one example to explain why evolutionary psychology says the mind comes 'pre-loaded' instead. (3–5 sentences.)",
+          "Your friend says a thermostat that turns on the heat when a room gets cold is 'using AI.' Explain why this is really automation, not intelligence, and what would have to be different for it to count as AI. (3–5 sentences.)",
         correctAnswer:
-          "A blank-page view says babies start with nothing and learn everything from scratch, but newborns clearly arrive already able to do important things. For example, a newborn knows how to suck and grip a finger, and babies will stare longer at a face than at a random pattern even though no one taught them to. Those abilities show up too early and too reliably to have been learned. So the mind comes 'pre-loaded' — born ready for a few important things — the way a new phone arrives with some apps already installed.",
+          "A thermostat just follows a fixed rule a person wrote in advance — 'if the temperature drops below the setting, turn on the heat' — and it repeats those exact steps every time, which is automation. It never deals with a situation nobody planned for; it can only do the one programmed thing. For it to count as AI, it would need to handle new situations it wasn't given exact steps for — for example, learning your habits from past days and guessing when you'll want heat before you ask. The key difference is following a recipe (automation) versus figuring out the recipe from examples (AI).",
         explanation:
-          "Full credit: contrasts the blank-slate view with the pre-loaded view and gives a concrete inborn ability (e.g. grasping, face preference, fearing strangers) that appears without being taught.",
+          "Full credit: identifies the thermostat as following fixed, pre-written rules (automation), and explains that AI would instead handle new/unplanned situations or learn from examples rather than just repeating set steps.",
       },
       {
-        topicSlug: "mind-has-history",
+        topicSlug: "rules-vs-learning",
         prompt:
-          "Pick a feeling like fear, disgust, or love and explain what 'job' it might have done for our ancestors. Then explain what it means to call a feeling a 'tool' rather than an accident. (3–5 sentences.)",
+          "Imagine you tried to write step-by-step rules for a computer to recognize a dog in any photo. Explain why this rule-writing approach breaks down, and how the learning approach handles the same problem differently. (3–5 sentences.)",
         correctAnswer:
-          "Take disgust: it makes us wrinkle our nose and spit out rotten or spoiled food. For our ancestors, that reaction helped them avoid eating things that could make them sick, which helped them survive. Calling disgust a 'tool' means it isn't a random or pointless reaction — it does a useful job, the way a tool in a toolbox is shaped for a task. It got passed down through the generations precisely because it kept people alive, not by accident.",
+          "Rule-writing breaks down because there are endless exceptions: you might write 'if it has four legs and fur,' but so does a cat or a sheep, and dogs come in countless breeds, colors, poses, and lighting. No human could ever write enough rules to cover every possible dog photo. The learning approach flips this around: instead of writing rules, you show the computer thousands of labeled photos and let it discover the pattern of 'dog' on its own. So the machine figures out the rule from examples rather than a person trying — and failing — to spell every rule out.",
         explanation:
-          "Full credit: ties a specific feeling to an ancestral survival job and explains that 'tool' means the feeling serves a purpose (and was passed on for it), not that it is random.",
+          "Full credit: explains that real-world recognition has too many exceptions to hand-write rules for, and that machine learning instead discovers the pattern from many labeled examples.",
+        hint: "Think about how many different ways a dog can look in a photo, and who has to come up with the 'rules' in each approach.",
       },
       {
-        topicSlug: "built-to-survive",
+        topicSlug: "data-and-training",
         prompt:
-          "People learn to fear snakes far faster than they learn to fear cars, even though cars hurt many more people today. Explain why an evolved mind would be 'tuned' this way. (3–5 sentences.)",
+          "A team trains a face-unlock system using photos almost entirely of one kind of face, and it works great in their tests. Predict what problem might appear when many different people try it, and explain why, using the idea of 'garbage in, garbage out.' (3–5 sentences.)",
         correctAnswer:
-          "Snakes were a real danger to humans and their ancestors for millions of years, so minds that quickly learned to fear them survived better and passed that readiness on. Cars, by contrast, have only existed for about a hundred years — far too short a time for a fast, built-in fear of them to develop. So our fears are tuned to the dangers of the *ancestral* world, not always the dangers of today. That's why a quick, easy fear of snakes feels natural while fearing a car takes real effort.",
+          "The system will probably struggle to recognize faces that look different from the narrow set it trained on, because a model only learns from the examples it's shown. Its 'textbook' was lopsided, so its skills are lopsided — it got very good at one kind of face and barely saw the others. 'Garbage in, garbage out' means that skewed or low-quality training data produces skewed or unreliable results, no matter how clever the method is. The fix isn't a smarter program but a more varied, balanced set of training examples.",
         explanation:
-          "Full credit: explains snakes were ancient threats (so readiness to fear them was selected for) while cars are too recent for a built-in fear, and connects this to fears being tuned to ancestral dangers.",
-        hint: "Think about how LONG snakes have been a danger to humans compared to how long cars have existed.",
+          "Full credit: predicts poor performance on under-represented faces, ties it to the model only learning from the examples it saw (skewed/lopsided data), and connects this to 'garbage in, garbage out.'",
       },
       {
-        topicSlug: "logic-of-attraction",
+        topicSlug: "pattern-recognition",
         prompt:
-          "Evolutionary psychology says 'beauty is really a bunch of clues.' Explain what that means using one example, and why the mind would read such clues automatically. (3–5 sentences.)",
+          "Most husky photos in a training set happened to be taken in snow, and afterward the system labels a snowy field with no animals as 'husky.' Explain what went wrong, using the idea that finding a pattern isn't the same as understanding. (3–5 sentences.)",
         correctAnswer:
-          "It means that when we find someone attractive, our mind is quietly reading signs of health rather than responding to magic. For example, clear skin, bright eyes, and a balanced face can all hint that a person grew up healthy and well. Long ago, choosing a healthy partner meant a better chance of a healthy family, so people who paid attention to those clues tended to have more children who survived. That's why the reading feels automatic — it's an inherited habit of noticing health, not a choice we make on purpose.",
+          "The system grabbed an easy but wrong pattern: since nearly every husky photo had snow, it partly learned that 'snow means husky,' so a snowy field alone triggers the label. It found a real connection in the data, just not the one anyone wanted. This shows that finding a pattern isn't the same as understanding — the AI never grasped what a husky actually is; it only noticed things that tended to appear together. That gap between 'things that go together' and real understanding is exactly why pattern-finders make these strange mistakes.",
         explanation:
-          "Full credit: explains attraction as the mind reading health clues, gives a concrete clue (skin, eyes, facial balance, energy), and ties the automatic preference to better ancestral outcomes.",
+          "Full credit: explains the model latched onto a misleading pattern (snow correlating with husky) rather than understanding what a husky is, and connects this to correlation/pattern-finding not being true understanding.",
       },
     ],
   },
   {
     kind: "homework",
-    title: "Homework 1.2 — Love, cooperation, and conflict",
+    title: "Homework 1.2 — Neural networks, language models, limits, and using AI well",
     weekNumber: 1,
     isTimed: false,
     timeLimitMinutes: null,
     instructions:
-      "Untimed practice covering sections 1.4–1.6. Answer each question in a few sentences (about 3–5) in your own words. No math is required — explain your reasoning. One-word answers won't receive credit.",
+      "Untimed practice covering sections 1.5–1.8. Answer each question in a few sentences (about 3–5) in your own words. No math is required — explain your reasoning. One-word answers won't receive credit.",
     problems: [
       {
-        topicSlug: "love-and-jealousy",
+        topicSlug: "neural-networks",
         prompt:
-          "The lecture calls love 'glue' and jealousy 'an alarm.' Explain how these two feelings work together to do one job. (3–5 sentences.)",
+          "A friend hears 'deep learning' and pictures a computer that thinks deeply about problems. Explain what 'deep' actually refers to, and how a deep network builds up to recognizing something like a face. (3–5 sentences.)",
         correctAnswer:
-          "Love acts like glue because it pulls two people to stay close and keep helping each other through the long, hard job of raising a child. Jealousy acts like an alarm because it flares up, uncomfortably, when that important bond seems threatened — pushing the person to notice and protect the relationship. Together they do one job: forming a partnership and then guarding it. One builds the bond and the other defends it, which is why they're described as a matched pair.",
+          "'Deep' doesn't mean thoughtful — it just means the neural network has many layers stacked one after another. Each layer does something simple, and the depth lets understanding get built up step by step. For a face, the early layers detect tiny features like edges and patches of color, the middle layers combine those into parts like an eye or an ear, and the later layers combine those parts into a whole face. So 'deep' describes the many-layered structure that assembles simple pieces into meaningful wholes, not any kind of deep thinking.",
         explanation:
-          "Full credit: explains love as the bonding/keeping-together feeling and jealousy as the protective alarm, and ties both to the shared job of forming and defending a partnership.",
+          "Full credit: clarifies 'deep' means many layers (not profound thought) and describes the build-up from simple features (edges) to parts to whole objects across layers.",
       },
       {
-        topicSlug: "why-we-cooperate",
+        topicSlug: "language-models",
         prompt:
-          "Why would an evolved, 'survival of the fittest' mind make people willing to share food with relatives? Explain the idea of helping family. (3–5 sentences.)",
+          "Someone insists a chatbot 'looks up' the answer when they ask it a question. Explain what the chatbot is really doing instead, and why that helps explain how it can answer a question no one ever asked before. (3–5 sentences.)",
         correctAnswer:
-          "Relatives share many of the same genes you carry, so helping a relative survive also helps copies of your own 'instructions' continue, even if you never have children yourself. That means sharing food with family isn't really the opposite of survival — it's another way the same inherited information gets carried forward. This is why people will sacrifice the most for parents, siblings, and their own kids. A strong, automatic urge to protect family is exactly the tool an evolved mind would come with.",
+          "The chatbot usually isn't looking anything up — it's predicting the next word over and over, based on patterns it learned from huge amounts of text. It builds an answer one word at a time, each time guessing what word should plausibly come next given everything so far. That's also why it can answer a brand-new question: it generates a fresh response on the spot rather than picking from a fixed list of stored answers. So it's producing likely-sounding text, not retrieving a saved fact.",
         explanation:
-          "Full credit: explains kin sharing genes, so helping family carries one's own genes forward, making family-helping consistent with (not against) evolution.",
-        hint: "Think about what your relatives share with you that gets passed down through generations.",
+          "Full credit: explains the model predicts the next word repeatedly (rather than looking up facts) and that this generative, on-the-spot prediction is why it can respond to never-before-seen questions.",
       },
       {
-        topicSlug: "why-we-cooperate",
+        topicSlug: "limits-and-hallucination",
         prompt:
-          "A friend borrows your snack every day but never shares anything back. Explain why this feels unfair, and what feelings like gratitude and anger are 'for' in cooperation. (3–5 sentences.)",
+          "A chatbot gives you a confident, detailed answer with a specific book title and author to back it up, but the book turns out not to exist. Explain what 'hallucination' means here and why the system did this. (3–5 sentences.)",
         correctAnswer:
-          "Cooperation between non-family works through taking turns — 'I help you, you help me' — and our minds keep a quiet scorecard of who pays back. A friend who always takes and never gives breaks that deal, so it feels unfair because the scorecard is one-sided. Feelings are the tools that protect the deal: gratitude makes us want to repay a kindness, while anger flares at someone who cheats, pushing us to stop being taken advantage of. So those feelings aren't random moods — they keep trading between people fair.",
+          "Hallucination is when an AI states something false but does it confidently, as if it were obviously true — here, inventing a real-looking book that doesn't exist. It happened because a language model predicts plausible-sounding text, not verified facts; when it had no real source, it generated what a believable citation *looks like* instead of admitting it didn't know. The system has no built-in sense of true versus false, so confident wording is no guarantee of accuracy. That's exactly why you should treat its output as a draft and verify anything important.",
         explanation:
-          "Full credit: identifies reciprocity/taking turns and the mental scorecard, and explains gratitude (repay kindness) and anger (punish/stop cheating) as tools that keep cooperation fair.",
+          "Full credit: defines hallucination as confidently stating false information, explains it stems from predicting plausible text rather than checking truth, and ideally notes the need to verify.",
+        hint: "Think about what a language model is actually optimizing for: text that sounds right, or text that is checked to be true?",
       },
       {
-        topicSlug: "why-we-fight",
+        topicSlug: "using-ai-well",
         prompt:
-          "In the 'Robbers Cave' study, ordinary boys split into two camp groups quickly became rivals. Explain what this shows about the 'us and them' part of the mind, and what finally reduced the conflict. (3–5 sentences.)",
+          "Two students use a chatbot for an essay: one pastes its answer in untouched, the other uses it to brainstorm and draft, then checks facts and rewrites it. Explain why the second approach is the better way to use AI, using the idea of 'human in the loop.' (3–5 sentences.)",
         correctAnswer:
-          "It shows how fast the mind's 'us and them' switch can flip on: total strangers, sorted into groups, quickly grew loyal to their own side and hostile to the other within just days. That fits the idea that we came ready to bond tightly inside a group and feel wary of outsiders, because long ago your group was your protection. The conflict finally eased when the two groups were given a shared goal they had to work toward together. A bigger, common purpose effectively switched the 'us and them' line to include everyone.",
+          "The second student keeps a 'human in the loop,' meaning a person stays in charge — directing the tool and checking its work — instead of blindly trusting it. That matters because AI can be confidently wrong or unfair, so an unchecked answer might carry hallucinated facts or simply not be the student's own. By brainstorming, drafting, then verifying and rewriting, the second student gets the AI's speed while their own judgment supplies the direction and a reality check. The first student risks turning the AI's mistakes into their own and learns nothing in the process.",
         explanation:
-          "Full credit: explains the rapid in-group/out-group split as evidence of an evolved 'us and them' tendency, and notes that a shared/superordinate goal reduced the conflict.",
+          "Full credit: explains 'human in the loop' as the person directing and verifying the tool, and why checking/owning the output (rather than pasting it untouched) guards against errors and produces better, accountable work.",
       },
     ],
   },
   {
     kind: "test",
-    title: "Unit Test — Evolutionary Psychology for Everyone",
+    title: "Unit Test — Baby AI for Everyone",
     weekNumber: 1,
     isTimed: true,
     timeLimitMinutes: 30,
     instructions:
-      "Timed. 30 minutes. Covers sections 1.1–1.6. Answer each question in a few sentences (about 4–6) in your own words. No math is required. Pasting is disabled; keystrokes are screened for AI use.",
+      "Timed. 30 minutes. Covers sections 1.1–1.8. Answer each question in a few sentences (about 4–6) in your own words. No math is required. Pasting is disabled; keystrokes are screened for AI use.",
     problems: [
       {
-        topicSlug: "mind-has-history",
+        topicSlug: "what-ai-is",
         prompt:
-          "Explain what it means to say 'the mind has a history,' and why this view treats the brain like any other body part. Use one original example of an inborn reaction. (4–6 sentences.)",
+          "Explain what it really means to call AI 'a machine that makes guesses,' and why today's AI is described as 'narrow' rather than all-knowing. Use one original everyday example. (4–6 sentences.)",
         correctAnswer:
-          "Saying 'the mind has a history' means the brain was shaped over a very long time, across many generations, to help our ancestors survive and raise families — not built fresh in each person from a blank start. It treats the brain like any other body part because, just like the heart pumps blood or the stomach digests food, the brain has a job (deciding what to do) and was shaped by the same slow process that shaped the rest of the body. The versions that worked best got passed down through genes, so the mind arrives already good at certain things. For example, a newborn will grip tightly onto a finger placed in its palm without anyone teaching it — a reflex that helped infants hold on to a caregiver. That kind of reaction shows up too early and too reliably to be learned, which is exactly what an evolved, pre-loaded mind would look like.",
+          "Calling AI 'a machine that makes guesses' means it takes in information and produces its best guess about what to do, based on patterns it learned from examples — not magic and not true understanding. It's often right but never truly *sure*, and it can be wrong. Today's AI is 'narrow' because each system is good at only one specific task and clueless outside it: the AI that recommends videos can't drive a car. There's no single program that understands the world the way a person does. For example, a photo app that sorts pictures of your dog is just guessing which images match a learned pattern — and it would be useless if you asked it to plan your week. That one-task skill, with no general understanding, is exactly what 'narrow' means.",
         explanation:
-          "Full credit: defines 'the mind has a history' as the brain being shaped over generations to solve ancestral problems, compares the brain to other purpose-built organs, and gives an original inborn reaction that appears without teaching.",
+          "Full credit: explains AI as producing learned guesses (often right, never certain) and 'narrow' as good at one task but clueless elsewhere, with an original everyday example illustrating the point.",
       },
       {
-        topicSlug: "built-to-survive",
+        topicSlug: "rules-vs-learning",
         prompt:
-          "Our cravings and fears are described as sometimes being 'out of date.' Explain what that means, using two different examples, and why it doesn't mean the mind is broken. (4–6 sentences.)",
+          "Describe the two big paradigms — rule-based systems and learning-based systems — and explain why learning took over for messy real-world problems. Use a concrete task as an example. (4–6 sentences.)",
         correctAnswer:
-          "'Out of date' means a reaction that was smart in the ancestral world can be a little unhelpful in today's world. One example is craving sugar and fat: that craving kept ancestors alive when food was scarce, but in a world full of candy it can push us to eat too much. A second example is fear: we learn to fear snakes very quickly but barely fear cars, even though cars are far more dangerous now, because snakes were a threat for millions of years and cars are brand new. It doesn't mean the mind is broken — it means the mind was tuned for a different world than the one we live in. The tools still work as designed; the world around them simply changed faster than they could.",
+          "Rule-based systems work from hand-written 'if this, then that' instructions a person spells out in advance — clear and predictable, but only as good as the rules and useless for anything the writer didn't anticipate. Learning-based systems instead study thousands of examples and discover the pattern themselves, so they flex to new cases. For a messy task like recognizing speech, rule-writing collapses: there are too many accents, speeds, and exceptions for any human to list. Learning took over because, for these messy problems, discovering patterns from many examples simply works far better than any rules a person could write. As computers got faster and huge example sets became available, the learning approach pulled ahead and stayed there.",
         explanation:
-          "Full credit: explains the mismatch between ancestral tuning and the modern world with two valid examples (e.g. sugar cravings, snake vs. car fear, landscape preference) and notes the mind is mistuned, not defective.",
+          "Full credit: contrasts hand-written rules vs. learning from examples, explains rules break down on messy problems (too many exceptions), and notes learning works better there, with a concrete task.",
       },
       {
-        topicSlug: "logic-of-attraction",
+        topicSlug: "data-and-training",
         prompt:
-          "Explain why evolutionary psychology says attraction is about 'reading clues,' and why people also rate kindness and loyalty as attractive, not just looks. (4–6 sentences.)",
+          "Explain what 'training' actually is for an AI, the difference between training and using a model, and why the quality of the data matters so much. (4–6 sentences.)",
         correctAnswer:
-          "Attraction is described as 'reading clues' because the things we find appealing tend to be signs of something useful underneath. Physical clues like clear skin, bright eyes, and a balanced face hint that a person is healthy, and long ago choosing a healthy partner meant a better chance of a healthy family. But raising a family is a long job that needs a dependable teammate, so people across the world also rate kindness, fairness, and loyalty as highly attractive. Those traits are clues too — clues that someone will stick around and help rather than just look good. So attraction sorts people by the clues that mattered for each kind of relationship, which is why character can matter as much as appearance.",
+          "Training is the process where a system starts out making bad guesses, compares each guess to the correct answer on an example, and makes a tiny adjustment to do better next time — repeated over millions of examples until it's genuinely good. Training is the long 'study' phase; using the model (inference) is the quick 'test' phase afterward, where you give it something new and it answers in seconds without learning further. Data quality matters enormously because the examples are the AI's entire education: 'garbage in, garbage out.' If the examples are blurry, mislabeled, or lopsided, the model learns blurry, mislabeled, lopsided lessons. A model is only ever as good as the textbook it studied from, which is why gathering varied, accurate data is so important.",
         explanation:
-          "Full credit: explains attraction as the mind reading health/quality clues, gives physical clue examples, and explains kindness/loyalty as clues to a dependable long-term partner.",
+          "Full credit: defines training as adjusting from examples toward correct answers, distinguishes training (study) from using/inference (test), and explains data quality/variety determines model quality ('garbage in, garbage out').",
       },
       {
-        topicSlug: "love-and-jealousy",
+        topicSlug: "pattern-recognition",
         prompt:
-          "Jealousy is called a 'tool' that can also 'misfire.' Explain both ideas and why understanding jealousy this way could help someone act better. (4–6 sentences.)",
+          "Pattern-finding is called the core idea behind AI, but also a source of its strangest mistakes. Explain both: how pattern recognition powers AI, and how a 'spurious' pattern can fool it. Use an example. (4–6 sentences.)",
         correctAnswer:
-          "Jealousy is called a tool because it works like an alarm: it flares up uncomfortably when an important bond seems threatened, pushing a person to pay attention and protect the relationship. That alarm once helped keep partnerships together, which mattered for raising children, so it got passed on. But like any alarm, it can misfire — if it is too sensitive, a person may become controlling, suspicious, or unfair even when nothing is really wrong. Understanding jealousy as an old, sometimes-overreacting alarm helps someone pause and ask whether the feeling is matching reality. That gap between noticing the feeling and acting on it is where a person can choose to behave better than the raw alarm alone would.",
+          "At its core, modern AI finds patterns — regular connections in data — and uses them to guess about new cases, which is what powers recognizing faces, filtering spam, or recommending videos. It distills many examples into patterns rather than memorizing each one. But because it will grab *any* pattern that helps it guess right during training, it can latch onto a misleading or 'spurious' one. For instance, if a skin-cancer detector trained on photos that often included a ruler placed beside serious spots, it might learn 'ruler means cancer' instead of reading the skin. It found a real pattern in the data — just the wrong one — because finding a pattern is not the same as understanding it. That's why a pattern-finder can be powerful and yet fooled by an accidental clue.",
         explanation:
-          "Full credit: explains jealousy as a protective alarm (a tool) that evolved to guard bonds, that an oversensitive alarm causes harm (misfire), and that recognizing this allows more deliberate, better behavior.",
+          "Full credit: explains pattern recognition as the core mechanism (distilling examples into patterns to guess) and how a spurious/accidental pattern (e.g. ruler = cancer, snow = husky) misleads it because pattern-finding isn't understanding.",
       },
       {
-        topicSlug: "why-we-cooperate",
+        topicSlug: "neural-networks",
         prompt:
-          "Humans are very cooperative even though evolution is often summed up as 'survival of the fittest.' Explain two different reasons an evolved mind would make people cooperate. (4–6 sentences.)",
+          "Explain the intuition behind a neural network: what the layers do, what 'deep' means, and what is being adjusted during training. Then explain why such systems are called a 'black box.' (4–6 sentences.)",
         correctAnswer:
-          "Cooperation isn't really the opposite of survival — it's one of the smartest survival tools, and there are at least two reasons it evolved. The first is helping family: relatives share many of your genes, so helping them survive helps copies of your own 'instructions' carry on, which is why people sacrifice most for close kin. The second is taking turns with non-family: 'I help you, you help me' leaves both people better off than hoarding, as long as the favor gets returned. Our minds keep a quiet scorecard of who's fair, and feelings like gratitude, guilt, and anger keep that trading honest. So an evolved mind cooperates both to protect its own genes in relatives and to gain from fair, repeated exchanges with others.",
+          "A neural network is made of many tiny, simple units connected in layers; no single unit is clever, but together they're powerful. The layers build understanding step by step — early layers catch simple features like edges, middle layers combine them into parts like an eye, and later layers assemble whole objects like a face. 'Deep' simply means the network has many such layers stacked up, which lets it build more complex understanding. What gets adjusted during training are the 'weights' — millions of little dials controlling how strongly each connection passes its signal — nudged until the network tends to produce right answers. It's called a 'black box' because, with so many tuned dials, even its builders often can't fully explain why it gave a particular answer.",
         explanation:
-          "Full credit: gives two distinct mechanisms — kin selection (helping relatives who share genes) and reciprocity (taking turns, enforced by emotions/reputation) — and explains why each pays off.",
+          "Full credit: describes layered simple units building from features to objects, 'deep' as many layers, training as adjusting weights/dials, and 'black box' as the difficulty of explaining its decisions.",
       },
       {
-        topicSlug: "why-we-fight",
+        topicSlug: "language-models",
         prompt:
-          "The lecture says the same evolved mind that makes us cooperate can also make us fight, and that it produces culture. Explain how 'us and them' thinking leads to conflict, and what it means to say culture is a 'product' of the evolved mind. (4–6 sentences.)",
+          "Explain how a language model produces a paragraph of text, what 'generative' means, and why this design lets it sometimes state false things confidently. (4–6 sentences.)",
         correctAnswer:
-          "Humans came ready to split the world into 'us' and 'them' — bonding tightly with their own group and feeling wary of outsiders — because long ago your group was your protection and rival groups could be dangerous. That same readiness, useful inside a group, turns into conflict when groups compete over status, fairness, land, or pride, pushing them against each other. Saying culture is a 'product' of the evolved mind means culture isn't separate from biology: a brain built to learn from others, copy the best ideas, and follow group rules naturally creates shared stories, customs, and tools. So our greatest invention grows directly out of our oldest instincts. The same equipment, in other words, can build both our togetherness and our conflicts.",
+          "A language model produces text by predicting the next word: it guesses one likely word, adds it, then predicts the next word given everything so far, repeating until it has a full paragraph — like an extremely powerful autocomplete. 'Generative' means it *creates* new content by producing fresh sentences this way, rather than picking from a fixed list of canned replies, which is why it can answer questions no one ever asked before. The catch is that it's chasing what *sounds* right, not what is verified true, because it learned patterns of language, not a checked database of facts. So when the most plausible-sounding continuation happens to be false, it will state it just as confidently as a true one. That design is exactly why these models can be convincingly wrong.",
         explanation:
-          "Full credit: explains in-group/out-group loyalty as evolved protection that fuels between-group conflict, and explains culture as something the evolved (social, imitative, rule-following) mind produces rather than something separate from it.",
+          "Full credit: explains next-word prediction building text piece by piece, 'generative' as creating new content (not retrieving), and that predicting plausible text rather than verified truth allows confident falsehoods.",
+      },
+      {
+        topicSlug: "limits-and-hallucination",
+        prompt:
+          "Define 'hallucination' in AI and explain why it happens. Then describe two habits that let someone use an unreliable AI safely. (4–6 sentences.)",
+        correctAnswer:
+          "Hallucination is when an AI states something false but does it confidently, as though it were obviously true — inventing a fact, a quote, or a source that doesn't exist. It happens because a language model predicts plausible-sounding text rather than verified truth, and it has no built-in sense of true versus false, so when it lacks a real answer it generates something that merely sounds right. To use it safely, first treat its output as a draft, not a verdict — read it critically and don't assume confident wording means accuracy. Second, verify anything that matters (facts, numbers, names, advice) against a trustworthy source, being extra careful with high-stakes topics like health, money, or safety. The rule of thumb is simple: the more it matters, the more you check.",
+        explanation:
+          "Full credit: defines hallucination as confident false output, explains it stems from predicting plausible text with no sense of truth, and gives two safe-use habits (treat as draft; verify important claims against trusted sources).",
+      },
+      {
+        topicSlug: "using-ai-well",
+        prompt:
+          "Explain what it means to keep a 'human in the loop' when using AI, and give one task that's a good fit for AI and one that should stay in human hands — with a reason for each. (4–6 sentences.)",
+        correctAnswer:
+          "Keeping a 'human in the loop' means a person stays in charge — directing the AI and checking its work — instead of blindly doing whatever it outputs, because AI can be confidently wrong, biased, or out of date. You treat it like a powerful but unreliable assistant: it supplies speed, you supply direction and a reality check. A good task for AI is brainstorming ideas or writing a rough first draft, since those benefit from fast output that a human can then refine and verify. A task to keep in human hands is a final decision that affects people — like a medical or hiring choice — because it needs real accountability, empathy, and moral judgment the AI doesn't have. Letting AI do the heavy lifting while a person steers and owns the result is what using it well looks like.",
+        explanation:
+          "Full credit: explains 'human in the loop' as a person directing/verifying the tool, and gives an appropriate AI task (e.g. brainstorming/drafting) and an appropriate human-only task (e.g. accountable decisions affecting people) each with a sound reason.",
       },
     ],
   },
   {
     kind: "final",
-    title: "Final — Evolutionary Psychology for Everyone",
+    title: "Final — Baby AI for Everyone",
     weekNumber: 1,
     isTimed: true,
     timeLimitMinutes: 45,
     instructions:
-      "Timed cumulative final. 45 minutes. Covers the whole course (sections 1.1–1.6). Answer each question in a paragraph (about 5–7 sentences) in your own words. No math is required. Pasting is disabled; keystrokes are screened for AI use.",
+      "Timed cumulative final. 45 minutes. Covers the whole course (sections 1.1–1.8). Answer each question in a paragraph (about 5–7 sentences) in your own words. No math is required. Pasting is disabled; keystrokes are screened for AI use.",
     problems: [
       {
-        topicSlug: "why-we-fight",
+        topicSlug: "using-ai-well",
         prompt:
-          "Using ideas from across the whole course, argue that one single idea — that the mind was shaped to solve ancestral problems — can explain things as different as craving sugar, falling in love, sharing with family, and forming rival groups. Use at least three of those examples. (5–7 sentences.)",
+          "Using ideas from across the whole course, argue that one single idea — that modern AI is a pattern-finder that learns from data and predicts likely answers — can explain things as different as a spam filter, a face-unlock system, a chatbot inventing a fake book, and the advice to keep a 'human in the loop.' Use at least three of those examples. (5–7 sentences.)",
         correctAnswer:
-          "The one idea tying the course together is that the mind is an evolved organ shaped over a very long time to solve the problems our ancestors faced, so each part of it once did a useful job. Craving sugar and fat made sense when food was scarce, because that energy helped people survive hungry times. Falling in love made sense because the strong pull to stay with one partner kept two caregivers together through the long, hard job of raising a helpless child. Sharing with family made sense because relatives carry copies of your own genes, so helping them helps those instructions carry on. Even forming rival groups fits: bonding with 'us' and guarding against 'them' protected people when their group was their safety. None of these look related on the surface, but each is the same move — a tool built because it solved an ancestral problem. That shared logic is what makes evolutionary psychology so powerful.",
+          "The one idea tying the course together is that modern AI learns patterns from examples and uses them to predict likely answers, with no real understanding underneath. A spam filter fits: it learned the patterns of junk email from millions of labeled messages and now predicts which new emails are spam, often right but never certain. A face-unlock system fits too: it learned patterns of facial features from many photos and guesses whether a new face matches — and it stumbles if its training photos were lopsided. A chatbot inventing a fake book is the same mechanism showing its dark side: it predicts plausible-sounding text rather than verified truth, so it generated a believable but non-existent citation. And that's exactly why we keep a 'human in the loop': because a confident pattern-based guesser can be wrong, a person must direct it and check its work. None of these look alike on the surface, but each is the same move — learn patterns, predict an answer — which is what makes the idea so powerful.",
         explanation:
-          "Full credit: states the unifying principle (mind shaped to solve ancestral problems) and applies it to at least three distinct examples, showing each behavior once served survival or reproduction.",
+          "Full credit: states the unifying principle (AI learns patterns from data and predicts likely answers without true understanding) and applies it to at least three distinct examples, showing each is the same underlying mechanism.",
       },
       {
-        topicSlug: "mind-has-history",
+        topicSlug: "rules-vs-learning",
         prompt:
-          "Some people insist that everything about how we think and feel is learned from the world around us — a totally blank slate. Using evidence from the course, argue why the mind is better described as 'pre-loaded.' Use one concrete example. (5–7 sentences.)",
+          "Some people imagine AI got smart because programmers finally wrote enough clever rules. Using what you learned, argue why the real breakthrough was learning from data instead, and what role data quality plays. Use one concrete example. (5–7 sentences.)",
         correctAnswer:
-          "A pure blank-slate view says we start with nothing and learn everything, but a lot of human reactions appear too early, too reliably, and too universally to have simply been taught. Babies arrive already able to suck, grip a finger, and prefer looking at faces over random patterns, none of which anyone trains them to do. Across the whole world, infants begin to fear strangers around eight months old — right when a crawling baby could wander into danger — without any lesson. In the 'visual cliff' experiment, even crawling babies who had never been hurt refused to cross over a visible drop, showing a caution that was clearly not learned the hard way. These reactions show up on a schedule, everywhere, which is exactly what you'd expect if the mind comes 'pre-loaded' like a phone with a few apps already installed. So the world certainly shapes us, but it writes onto a mind that already arrives prepared.",
+          "The 'more clever rules' story is wrong because for messy real-world problems, no human can ever write enough rules to cover the endless exceptions. Take recognizing a cat in a photo: every rule like 'has whiskers' or 'pointy ears' has countless exceptions, so the rule-writing approach collapses. The real breakthrough was flipping the problem — showing the computer thousands of labeled examples and letting it discover the pattern of 'cat' itself, which is machine learning. This worked far better, and as computers got faster and huge example sets became available, learning pulled ahead of rules for good. But learning shifts the burden onto data quality: a model is only as good as the examples it studied, so if every training cat happened to be black, it might fail on an orange one. So the breakthrough wasn't smarter rules — it was learning from examples, which is exactly why gathering varied, high-quality data matters so much.",
         explanation:
-          "Full credit: argues against the blank slate using inborn, early-appearing, cross-cultural evidence (e.g. visual cliff, stranger fear, face preference) and concludes the mind comes prepared, not empty.",
+          "Full credit: argues that hand-written rules can't cover messy problems' exceptions, that learning from labeled examples was the real shift, and that data quality/variety determines the learned model's reliability, with a concrete example.",
       },
       {
-        topicSlug: "logic-of-attraction",
+        topicSlug: "language-models",
         prompt:
-          "Explain why finding someone 'beautiful' can be described as the mind reading clues it isn't even aware of, and why this clue-reading would have helped our ancestors. Then explain why people in very different countries often agree about what looks attractive. (5–7 sentences.)",
+          "Explain why a chatbot can sound knowledgeable and still confidently make things up, connecting how it works (predicting text) to the idea of hallucination. Then explain why understanding this changes how you should use it. (5–7 sentences.)",
         correctAnswer:
-          "When we find someone beautiful, our mind is quietly noticing signals of health rather than reacting to anything magical, and it does this automatically without our deciding to. Clear skin, bright eyes, energy, and a balanced face are all small clues that a person grew up healthy and well. This clue-reading would have helped our ancestors because choosing a healthy partner meant a better chance of healthy children who survived, so people who paid attention to those signs tended to leave more descendants. Over many generations, that inherited habit of noticing health clues became part of the mind. Because all humans share the same evolved equipment, people in very different countries tend to agree about many of the same clues — for instance, preferring balanced, 'average' faces, which research finds across cultures. That shared agreement, among groups that never taught it to each other, is a strong sign the preference is built in rather than just a local fashion.",
+          "A chatbot sounds knowledgeable because it learned the patterns of language from enormous amounts of text and produces fluent, well-formed sentences by predicting the next word over and over. But that very design is the problem: it's chasing what *sounds* right, not what is *verified* true, and it has no built-in sense of true versus false. So when it lacks a real answer, it doesn't say 'I don't know' — it generates the most plausible-sounding continuation, which is hallucination: confidently stating something false, like a perfectly formatted citation for a book that doesn't exist. The smooth, confident wording is no guarantee of accuracy, because fluency and truth are different things to a predictor of text. Understanding this changes how you use it: you treat its output as a draft, not a verdict, and verify anything that matters against a trustworthy source. The more a particular answer matters, the more you check it — which lets you enjoy its speed without being burned by its confident mistakes.",
         explanation:
-          "Full credit: explains attraction as automatic reading of health clues, ties it to better ancestral reproduction, and uses cross-cultural agreement (e.g. averaged/symmetrical faces) as evidence the preference is evolved, not merely learned.",
+          "Full credit: connects next-word prediction (optimizing for plausible, not verified, text) to hallucination, notes confidence isn't accuracy, and concludes you should verify important output and treat it as a draft.",
       },
       {
-        topicSlug: "why-we-cooperate",
+        topicSlug: "using-ai-well",
         prompt:
-          "Pick a real everyday situation where you would help someone, and use it to show how 'helping family' and 'taking turns' are two different reasons an evolved mind cooperates. Then explain why feelings like gratitude or anger are part of how cooperation works. (5–7 sentences.)",
+          "Pick a real everyday task where you'd use AI, and use it to show the difference between using AI poorly and using it well. Then explain one ethical issue (fairness, privacy, or honesty) a thoughtful user should keep in mind. (5–7 sentences.)",
         correctAnswer:
-          "Imagine I share my lunch — in one case with my little brother, in another with a classmate. Helping my brother fits the 'helping family' reason: he shares many of my genes, so helping him survive helps copies of my own instructions carry on, even though I get nothing back directly. Helping my classmate fits the 'taking turns' reason: I share today expecting that they'll share with me another day, so we both end up better off than if we each kept everything. These are genuinely different reasons — one is about shared genes, the other about fair exchange between non-relatives. Feelings keep the second kind honest: gratitude makes my classmate want to repay the favor, while anger would flare in me if they always took and never gave back, pushing me to stop being used. So gratitude and anger aren't random moods — they are the tools that protect fair trade and keep cooperation from being exploited.",
+          "Imagine using a chatbot to help write a school report on climate. The poor way is to ask it to write the whole thing and hand it in untouched: I learn nothing, any hallucinated facts become my mistakes, and passing it off as my own isn't honest. The skilled way keeps a 'human in the loop' — I ask it to brainstorm angles, draft a rough outline, and explain a confusing idea, then I verify the facts, rewrite it in my own voice, and own the result. Same tool, opposite outcomes; the difference is whether my judgment stays in charge and checks the work. An ethical issue to keep in mind is honesty: I shouldn't present AI-generated work as entirely my own or let unverified claims mislead my reader. (Fairness — could the model repeat biased patterns from skewed data? — and privacy — whose information am I feeding in? — are equally worth weighing.) Using AI well means asking not just 'can I?' but 'should I?'",
         explanation:
-          "Full credit: distinguishes kin selection (helping relatives who share genes) from reciprocity (fair exchange with non-kin) in a concrete example, and explains gratitude/anger as emotions that enforce fair reciprocal cooperation.",
+          "Full credit: contrasts poor vs. skilled use of AI on a concrete task using the 'human in the loop' idea, and raises a genuine ethical concern (honesty, fairness, or privacy) with a sensible explanation.",
       },
     ],
   },
@@ -486,7 +592,7 @@ There is no penalty for the choice you make. What's measured is the *quality of 
     lectureTitle: "Primer: Core clear-thinking skills",
     body: `# Core clear-thinking skills
 
-This short primer prepares you for the **Critical Reasoning** check — a set of multiple-choice questions that test five different thinking skills. These are the same skills you use to decide what a set of facts really shows, so they matter directly for thinking clearly about why people act the way they do.
+This short primer prepares you for the **Critical Reasoning** check — a set of multiple-choice questions that test five different thinking skills. These are the same skills you use to decide what a set of facts really shows, so they matter directly for thinking clearly about what AI can and can't actually do.
 
 ## The five skills
 
@@ -498,7 +604,7 @@ This short primer prepares you for the **Critical Reasoning** check — a set of
 
 ## A recurring trap: things that move together
 
-Most wrong answers are statements that *sound* reasonable but are **not actually backed up by what you were told**. The discipline this check rewards is the same one careful thinking about human behavior demands: keep apart what the facts **show**, what you're **assuming**, and what only *sounds* right. Two things happening together does not prove one causes the other.
+Most wrong answers are statements that *sound* reasonable but are **not actually backed up by what you were told**. The discipline this check rewards is the same one careful thinking about technology demands: keep apart what the facts **show**, what you're **assuming**, and what only *sounds* right. Two things happening together does not prove one causes the other.
 
 ## How to do this activity well
 
@@ -546,15 +652,15 @@ export async function seedReasoningPrimersIfMissing(): Promise<void> {
 }
 
 export async function seedIfEmpty(): Promise<void> {
-  // The course was migrated to the Evolutionary Psychology for Children
-  // syllabus. Detect the marker topic; if present and the content version
-  // matches, the content is current and we skip. This makes the seed
-  // self-healing across environments: a database that still holds older content
-  // (e.g. a previous curriculum) is detected and replaced on boot.
+  // The course was migrated to the Baby AI syllabus. Detect the marker topic;
+  // if present and the content version matches, the content is current and we
+  // skip. This makes the seed self-healing across environments: a database that
+  // still holds older content (e.g. a previous curriculum) is detected and
+  // replaced on boot.
   const markerTopic = await db
     .select({ id: topicsTable.id })
     .from(topicsTable)
-    .where(eq(topicsTable.slug, "mind-has-history"));
+    .where(eq(topicsTable.slug, "what-ai-is"));
   // Read the stored content version. Tolerate the seed_meta table not yet
   // existing (e.g. a boot that races ahead of schema migration): treat that as
   // "no version recorded", which forces a reseed once the table is present.
@@ -595,7 +701,7 @@ export async function seedIfEmpty(): Promise<void> {
     const row = (existing.rows[0] ?? {}) as { n?: number };
     if ((row.n ?? 0) > 0) {
       logger.warn(
-        "Seed: stale course content detected — replacing with the Evolutionary Psychology for Children curriculum",
+        "Seed: stale course content detected — replacing with the Baby AI curriculum",
       );
       await tx.execute(
         sql`TRUNCATE TABLE answers, attempts, practice_attempts, practice_problems, practice_sessions, problems, assignments, lectures, topics, diagnostic_responses, diagnostic_attempts, diagnostic_items, diagnostic_assessments RESTART IDENTITY CASCADE`,

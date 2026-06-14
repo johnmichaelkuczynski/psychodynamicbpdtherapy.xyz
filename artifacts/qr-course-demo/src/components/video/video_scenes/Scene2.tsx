@@ -64,7 +64,7 @@ export function Scene2({ setCursorPos, setIsClicking }: { setCursorPos: (pos: {x
       {/* Left Pane: Lecture Content */}
       <div className="w-1/2 h-full border-r border-border p-12 overflow-hidden flex flex-col relative">
         <div className="text-xs font-bold tracking-widest text-muted-foreground mb-4">UNIT 1</div>
-        <h1 className="text-3xl font-serif text-primary mb-8">1.1 The mind has a history</h1>
+        <h1 className="text-3xl font-serif text-primary mb-8">1.1 What AI is (and isn't)</h1>
         
         <div className="flex bg-muted/50 rounded-lg p-1 w-fit mb-10 border border-border">
           <div className={`px-4 py-1.5 rounded-md text-sm font-medium transition-colors ${phase < 1 ? 'bg-white shadow-sm text-primary' : 'text-muted-foreground'}`}>Short</div>
@@ -73,12 +73,12 @@ export function Scene2({ setCursorPos, setIsClicking }: { setCursorPos: (pos: {x
         </div>
 
         <div className="prose prose-sm max-w-none text-foreground/80 space-y-6">
-          <h2 className="font-serif text-2xl text-primary">Your mind has a history</h2>
+          <h2 className="font-serif text-2xl text-primary">A machine that makes guesses</h2>
           <p>
-            Evolutionary psychology is the study of how the human brain evolved to solve the problems our ancestors faced. Just like our bodies, our minds were shaped by natural selection.
+            At its heart, AI is a computer program that makes smart-seeming guesses or decisions from information. It's not magic, and it's not a tiny mind inside the computer.
           </p>
           <p>
-            Emotions like fear, jealousy, and love aren't random. They are ancient survival tools. Understanding why they evolved helps us understand why we feel and act the way we do today.
+            When your phone unlocks by looking at your face, or an email app decides a message is spam, that's AI making a guess based on what it has seen before. It's often right, but never truly sure.
           </p>
           
           <AnimatePresence>
@@ -90,10 +90,10 @@ export function Scene2({ setCursorPos, setIsClicking }: { setCursorPos: (pos: {x
                 className="space-y-6"
               >
                 <p>
-                  These adaptations aren't perfect for the modern world. Our ancestors lived in small hunter-gatherer bands, not massive cities with social media and processed food.
+                  Automation isn't the same as intelligence. A thermostat follows a fixed rule a person wrote in advance; AI is meant to handle situations nobody wrote exact steps for.
                 </p>
                 <p>
-                  For example, craving sugar was a huge advantage when sweet fruit was rare and calories were scarce. Today, that same ancient craving leads to modern health problems. The mind's history still drives our present.
+                  Today's AI is also narrow: each system is good at one task and clueless outside it. The AI that recommends songs can't drive a car. There is no single program that understands the world the way a person does.
                 </p>
               </motion.div>
             )}
@@ -120,9 +120,9 @@ export function Scene2({ setCursorPos, setIsClicking }: { setCursorPos: (pos: {x
               >
                 <div className="mb-4 text-xs font-semibold text-muted-foreground uppercase tracking-widest">Starter questions for this section</div>
                 <div className="flex flex-wrap gap-2 mb-6">
-                  <div className="px-3 py-1.5 rounded-full border border-border text-sm text-primary bg-muted/30">Why do we still crave sugar if it's bad for us?</div>
-                  <div className="px-3 py-1.5 rounded-full border border-border text-sm text-primary bg-muted/30">Are emotions like fear learned or evolved?</div>
-                  <div className="px-3 py-1.5 rounded-full border border-border text-sm text-primary bg-muted/30">What does it mean that the brain was shaped by natural selection?</div>
+                  <div className="px-3 py-1.5 rounded-full border border-border text-sm text-primary bg-muted/30">Is a spam filter that flags a new email really using AI?</div>
+                  <div className="px-3 py-1.5 rounded-full border border-border text-sm text-primary bg-muted/30">How is automation different from intelligence?</div>
+                  <div className="px-3 py-1.5 rounded-full border border-border text-sm text-primary bg-muted/30">Why is today's AI called "narrow"?</div>
                 </div>
                 <div className="w-full h-24 border border-border rounded-lg bg-muted/20 p-3 text-muted-foreground text-sm flex items-end shadow-inner">
                   <div className="w-full flex justify-between">
@@ -157,7 +157,7 @@ export function Scene2({ setCursorPos, setIsClicking }: { setCursorPos: (pos: {x
                     className="p-6 border border-border rounded-xl shadow-sm bg-white"
                   >
                     <p className="text-foreground font-medium mb-6">
-                      People often fear harmless spiders but aren't afraid of electrical outlets. How does evolutionary psychology explain this mismatch?
+                      A thermostat turns on the heat whenever a room drops below a set temperature. Is this AI or just automation? Explain your reasoning.
                     </p>
                     <div className="w-full h-12 border border-border rounded-md bg-muted/10 mb-4 px-3 flex items-center text-muted-foreground">Type your answer...</div>
                     <div className="px-4 py-2 bg-primary text-white rounded-md text-sm font-medium w-fit ml-auto">Submit</div>

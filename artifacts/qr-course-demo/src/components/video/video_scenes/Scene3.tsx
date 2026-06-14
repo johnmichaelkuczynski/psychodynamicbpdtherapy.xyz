@@ -58,10 +58,10 @@ export function Scene3({ setCursorPos, setIsClicking }: { setCursorPos: (pos: {x
       {/* Left Pane (Static from previous) */}
       <div className="w-1/2 h-full border-r border-border p-12 overflow-hidden flex flex-col relative opacity-50">
         <div className="text-xs font-bold tracking-widest text-muted-foreground mb-4">UNIT 1</div>
-        <h1 className="text-3xl font-serif text-primary mb-8">1.1 The mind has a history</h1>
+        <h1 className="text-3xl font-serif text-primary mb-8">1.1 What AI is (and isn't)</h1>
         <div className="prose prose-sm max-w-none text-foreground/80 space-y-6">
-          <h2 className="font-serif text-2xl text-primary">Your mind has a history</h2>
-          <p>Evolutionary psychology is the study of how the human brain evolved to solve the problems our ancestors faced. Just like our bodies, our minds were shaped by natural selection.</p>
+          <h2 className="font-serif text-2xl text-primary">A machine that makes guesses</h2>
+          <p>At its heart, AI is a computer program that makes smart-seeming guesses or decisions from information. It's not magic, and it's not a tiny mind inside the computer.</p>
         </div>
       </div>
 
@@ -79,7 +79,7 @@ export function Scene3({ setCursorPos, setIsClicking }: { setCursorPos: (pos: {x
               <motion.div exit={{ opacity: 0, y: -20 }} className="mt-auto">
                 <div className="mb-4 text-xs font-semibold text-muted-foreground uppercase tracking-widest">Starter questions for this section</div>
                 <div className="flex flex-wrap gap-2 mb-6">
-                  <div className="px-3 py-1.5 rounded-full border border-border text-sm text-primary bg-muted/30">Why do we still crave sugar if it's bad for us?</div>
+                  <div className="px-3 py-1.5 rounded-full border border-border text-sm text-primary bg-muted/30">How is automation different from intelligence?</div>
                 </div>
               </motion.div>
             )}
@@ -90,7 +90,7 @@ export function Scene3({ setCursorPos, setIsClicking }: { setCursorPos: (pos: {x
                 animate={{ opacity: 1, y: 0, scale: 1 }} 
                 className="self-end max-w-[85%] bg-primary text-white p-4 rounded-2xl rounded-tr-sm shadow-sm mt-auto"
               >
-                Why do we still crave sugar if it's bad for us?
+                How is automation different from intelligence?
               </motion.div>
             )}
 
@@ -110,7 +110,7 @@ export function Scene3({ setCursorPos, setIsClicking }: { setCursorPos: (pos: {x
                 animate={{ opacity: 1, y: 0 }} 
                 className="self-start w-[85%] bg-muted/30 border border-border p-5 rounded-2xl rounded-tl-sm text-[15px] leading-relaxed shadow-sm"
               >
-                <StreamingText text="Great question. For most of human history, sweet foods like fruit were rare and packed with valuable calories. Our brains evolved to crave sugar to help us survive starvation. Today, sugar is everywhere, but we still have those ancient cravings — leading to modern health issues." delay={0} />
+                <StreamingText text="Great question. Automation follows fixed steps a person wrote in advance — like a thermostat switching on at a set temperature. Intelligence is meant to handle new situations nobody wrote exact rules for, by learning patterns from data and making a guess. The thermostat always does the same thing; AI adapts its answer to what it sees." delay={0} />
               </motion.div>
             )}
           </div>
@@ -118,9 +118,9 @@ export function Scene3({ setCursorPos, setIsClicking }: { setCursorPos: (pos: {x
           <div className="mt-6 w-full min-h-24 border border-border rounded-xl bg-background p-3 flex items-end shadow-inner relative z-10">
             <div className="w-full flex justify-between items-center pr-2">
               <div className="text-foreground text-[15px] font-medium pl-2 relative w-full h-full flex items-center">
-                {phase === 1 && <TypewriterText text="Why do we still crave sugar if it's bad for us?" speed={25} />}
+                {phase === 1 && <TypewriterText text="How is automation different from intelligence?" speed={25} />}
                 {phase >= 2 && phase < 4 && <span className="text-muted-foreground font-normal">Ask a question about this section...</span>}
-                {phase >= 4 && <TypewriterText text="Does the same apply to fear?" speed={20} />}
+                {phase >= 4 && <TypewriterText text="So is a spam filter automation or AI?" speed={20} />}
                 {((phase >= 1 && phase < 2) || phase >= 4) && (
                   <motion.div className="w-0.5 h-5 bg-primary ml-1" animate={{ opacity: [1, 0] }} transition={{ repeat: Infinity, duration: 0.8 }} />
                 )}

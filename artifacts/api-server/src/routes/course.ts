@@ -20,9 +20,9 @@ const router: IRouter = Router();
 
 const WEEK_TITLES: Record<number, { title: string; summary: string }> = {
   1: {
-    title: "Evolutionary Psychology for Everyone",
+    title: "Baby AI for Everyone",
     summary:
-      "Why your mind has a history, how it was built to survive, the logic of attraction, love and jealousy, why we cooperate, and why we fight — and believe — all in plain language, no technical skills required.",
+      "What AI is and isn't, rules versus learning, data and training, pattern recognition, neural networks, language models, why to trust it carefully, and how to use it well — all in plain language, no technical skills required.",
   },
 };
 
@@ -111,7 +111,7 @@ router.get("/course/overview", async (_req, res) => {
 
   res.json(
     GetCourseOverviewResponse.parse({
-      title: "Evolutionary Psychology for Children",
+      title: "Baby AI",
       weeks,
       totals: { assignmentsCompleted, assignmentsTotal, practiceCount },
     }),
@@ -202,13 +202,13 @@ router.post(
     const sourceBody = (base && base.trim().length > 0 ? base : lecture.body).trim();
 
     const sys =
-      "You are a introductory evolutionary psychology lecturer revising your own lecture at a student's request. " +
+      "You are a introductory artificial intelligence (AI) lecturer revising your own lecture at a student's request. " +
       "You are given the CURRENT lecture and ONE instruction from the student about how to revise it. " +
       "Apply the instruction faithfully. ABSOLUTE RULES, no exceptions:\n" +
       "1. KEEP every concept, claim, and learning objective from the current lecture. Never drop material or change what the lecture teaches — only adjust how it is presented per the instruction.\n" +
       "2. Preserve the existing examples; you may add to or clarify them, but do not silently replace them with different ones unless the instruction explicitly asks you to.\n" +
       "3. Keep headings and section order intact. You may add sub-sections (e.g. extra examples) when the instruction calls for it.\n" +
-      "4. Stay accurate to the source material and to evolutionary psychology as a discipline. Do not invent fake facts, citations, or quotations.\n" +
+      "4. Stay accurate to the source material and to artificial intelligence as a subject. Do not invent fake facts, citations, or quotations.\n" +
       "5. Use clear Markdown. Use $...$ for any inline math.\n" +
       "6. Return ONLY the rewritten Markdown lecture body — no preface, no commentary, no surrounding code fences.";
     const user =

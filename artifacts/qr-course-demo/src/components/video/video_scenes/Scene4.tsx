@@ -71,11 +71,11 @@ export function Scene4({ setCursorPos, setIsClicking }: { setCursorPos: (pos: {x
   }, [setCursorPos, setIsClicking]);
 
   const rows = [
-    { topic: 'The mind has a history', week: 'Unit 1', att: 0, acc: 0, stat: 'UNTESTED', statColor: 'text-muted-foreground bg-muted' },
-    { topic: 'Built to survive (cravings, fears, and beauty)', week: 'Unit 1', att: 1, acc: 1, stat: 'STRONG', statColor: 'text-emerald-700 bg-emerald-50' },
-    { topic: 'The logic of attraction', week: 'Unit 1', att: 1, acc: 1, stat: 'STRONG', statColor: 'text-emerald-700 bg-emerald-50' },
-    { topic: 'Love, jealousy, and keeping a mate', week: 'Unit 1', att: 0, acc: 0, stat: 'UNTESTED', statColor: 'text-muted-foreground bg-muted' },
-    { topic: 'Why we cooperate', week: 'Unit 1', att: 0, acc: 0, stat: 'UNTESTED', statColor: 'text-muted-foreground bg-muted' },
+    { topic: "What AI is (and isn't)", week: 'Unit 1', att: 0, acc: 0, stat: 'UNTESTED', statColor: 'text-muted-foreground bg-muted' },
+    { topic: 'Rules vs. learning', week: 'Unit 1', att: 1, acc: 1, stat: 'STRONG', statColor: 'text-emerald-700 bg-emerald-50' },
+    { topic: 'Data and training', week: 'Unit 1', att: 1, acc: 1, stat: 'STRONG', statColor: 'text-emerald-700 bg-emerald-50' },
+    { topic: 'Pattern recognition', week: 'Unit 1', att: 0, acc: 0, stat: 'UNTESTED', statColor: 'text-muted-foreground bg-muted' },
+    { topic: 'Neural networks and deep learning', week: 'Unit 1', att: 0, acc: 0, stat: 'UNTESTED', statColor: 'text-muted-foreground bg-muted' },
   ];
 
   return (

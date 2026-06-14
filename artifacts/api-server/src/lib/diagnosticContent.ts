@@ -65,7 +65,7 @@ const CRITICAL_INSTRUCTIONS =
 
 const DILEMMA_BASELINE: DilemmaItem = {
   prompt:
-    "Mia helped run a small experiment for her group's science-fair project, testing whether people spot a snake in a photo faster than a flower. The real difference her group found was tiny. The day before judging, a teammate asks Mia to describe the result on their poster as a 'huge, dramatic difference,' even though it was barely there, because it 'sounds more impressive.' The actual numbers wouldn't change — only how they're described.\n\nShould Mia refuse and present the result honestly?",
+    "Mia helped run a small experiment for her group's science-fair project, testing whether people can tell apart a short paragraph written by an AI chatbot from one written by a person. The real difference her group found was tiny. The day before judging, a teammate asks Mia to describe the result on their poster as a 'huge, dramatic difference,' even though it was barely there, because it 'sounds more impressive.' The actual numbers wouldn't change — only how they're described.\n\nShould Mia refuse and present the result honestly?",
   decisionOptions: [
     "Mia should refuse and present the result honestly",
     "Can't decide",
@@ -360,7 +360,7 @@ export const DIAGNOSTIC_SEED: DiagnosticSeed[] = [
     instrument: "ethical",
     phase: "unit1",
     title: "Professional Judgment Inventory — Course Checkpoint",
-    subtitle: "After the unit: Evolutionary Psychology for Everyone",
+    subtitle: "After the unit: Baby AI for Everyone",
     instructions: ETHICAL_INSTRUCTIONS,
     dilemmas: [DILEMMA_UNIT1],
   },
@@ -368,7 +368,7 @@ export const DIAGNOSTIC_SEED: DiagnosticSeed[] = [
     instrument: "critical",
     phase: "unit1",
     title: "Critical Reasoning Assessment — Course Checkpoint",
-    subtitle: "After the unit: Evolutionary Psychology for Everyone",
+    subtitle: "After the unit: Baby AI for Everyone",
     instructions: CRITICAL_INSTRUCTIONS,
     mcqs: CRITICAL_UNIT1,
   },

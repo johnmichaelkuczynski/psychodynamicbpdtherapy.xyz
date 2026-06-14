@@ -1,12 +1,12 @@
-# Ethics 101 — App Blueprint
+# Baby AI — App Blueprint
 
-A complete architectural blueprint for the Ethics 101 4-unit college Ethics course. This document is the single reference for what the app does, how it's wired, and the contracts between pieces. For day-to-day commands and gotchas see `replit.md`.
+A complete architectural blueprint for the Baby AI one-unit introduction-to-AI course. This document is the single reference for what the app does, how it's wired, and the contracts between pieces. For day-to-day commands and gotchas see `replit.md`.
 
 ---
 
 ## 1. Product summary
 
-Ethics 101 is a self-paced, single-user, no-login web course covering a four-unit college Ethics curriculum (27 topics, grounded in "Some Fundamental Principles Relating to Ethics"). Students read AI-rewritten lecture notes at three lengths, ask an AI tutor scoped to the section they're reading, drill on adaptive practice problems, and submit homework / tests / midterm / final that are AI-graded and AI-detection-screened.
+Baby AI is a self-paced, single-user web course covering a friendly, plain-language introduction to artificial intelligence (one unit, "Baby AI for Everyone", across 8 topics — from what AI is, through pattern recognition, neural networks and language models, to using AI well). Students read AI-rewritten lecture notes at three lengths, ask an AI tutor scoped to the section they're reading, drill on adaptive practice problems, and submit homework / unit test / final that are AI-graded and AI-detection-screened.
 
 The product surface is three deployable artifacts in one pnpm monorepo:
 
@@ -179,7 +179,7 @@ Steps:
 
 1. **Environment** — `DATABASE_URL` present.
 2. **Database** — `SELECT 1` round-trip.
-3. **Database** — course content is seeded (≥27 topics, ≥1 lecture / assignment / problem).
+3. **Database** — course content is seeded (≥6 topics, ≥1 lecture / assignment / problem).
 4. **OpenAI** — fast-model chat completion returns non-empty text.
 5. **OpenAI** — JSON mode returns `{ ok: true }`.
 6. **Detection** — heuristic+scoring pipeline returns numbers for a benign sentence.
@@ -202,7 +202,7 @@ Simulates a real student session against the live DB and reports each leg pass/f
 
 Independently re-derives the answer to a sample of course problems and verifies each seeded answer key is legitimate. Returns `{ ok, generatedAt, steps[] }` like the other diagnostics. Stages:
 
-1. Collect every assignment problem joined to its assignment, grouped by unit, and sample up to 12 with a guaranteed per-unit quota so every unit is covered even if its problem count is uneven.
+1. Collect every assignment problem joined to its assignment, grouped by assignment, and sample up to 12 with a guaranteed per-group quota so every assignment is covered even if its problem count is uneven.
 2. For each sampled problem, run a **two-phase** check: (a) the LLM independently re-derives an answer from the prompt **alone**, blind to the seeded key, so the verdict can't just rubber-stamp the key; (b) a second LLM call judges whether the seeded key is legitimate given the prompt + the independent answer, using the grader's semantic-equivalence philosophy — accepting any correct on-topic short answer and flagging only genuinely defective keys (wrong, off-topic, self-contradictory, contradicted on substance, or ungradeable). Returns `{ legitimate, confidence, rationale }`; malformed verdicts are treated as failures, not passes.
 3. A legitimate key passes its step; a flagged key fails its step with the model's rationale. A final summary step reports the legitimate/flagged tally.
 

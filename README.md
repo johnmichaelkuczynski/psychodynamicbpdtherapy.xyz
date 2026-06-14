@@ -1,31 +1,33 @@
-# 🧠 Evolutionary Psychology for Children
+# 🤖 Baby AI
 
-**A Friendly, One-Unit Intro to Evolutionary Psychology That Teaches, Tutors, Drills, and Grades Itself — No Math, Coding, or Prior Science Required**
+**A Friendly, One-Unit Intro to Artificial Intelligence That Teaches, Tutors, Drills, and Grades Itself — No Math, Coding, or Prior Science Required**
 
 ---
 
 ## 🧩 Overview
 
-**Evolutionary Psychology for Children** is a self-paced, single-user web course that delivers a friendly, plain-language introduction to evolutionary psychology — taught, tutored, drilled, and graded entirely by AI, with built-in academic-integrity enforcement. No math, coding, spreadsheets, or prior science required.
+**Baby AI** is a self-paced, single-user web course that delivers a friendly, plain-language introduction to artificial intelligence — taught, tutored, drilled, and graded entirely by AI, with built-in academic-integrity enforcement. No math, coding, spreadsheets, or prior science required.
 
-It turns one big idea — *that your mind has a history, and your everyday feelings are tools shaped to help your ancestors survive and connect* — into one product: read each lesson at the depth you want, ask a tutor scoped to the exact section you're on, drill questions whose difficulty adapts to you in real time, and submit homework, a unit test, and a final that are AI-graded with feedback and screened for AI-generated answers.
+It turns one big idea — *that modern AI is a pattern-finding machine that learns from data and predicts likely answers, not a thinking, all-knowing mind* — into one product: read each lesson at the depth you want, ask a tutor scoped to the exact section you're on, drill questions whose difficulty adapts to you in real time, and submit homework, a unit test, and a final that are AI-graded with feedback and screened for AI-generated answers.
 
-The curriculum is one unit — **"Evolutionary Psychology for Everyone"** — across **6 connected topics**:
+The curriculum is one unit — **"Baby AI for Everyone"** — across **8 connected topics**:
 
-1. **The mind has a history**
-2. **Built to survive** (cravings, fears, and beauty)
-3. **The logic of attraction**
-4. **Love, jealousy, and keeping a mate**
-5. **Why we cooperate**
-6. **Why we fight — and believe**
+1. **What AI is (and isn't)**
+2. **Rules vs. learning** (the two paradigms)
+3. **Data and training** (what "learning" actually means)
+4. **Pattern recognition** (the core idea behind it all)
+5. **Neural networks and deep learning**
+6. **Language models** (how AI predicts text, and what "generative" means)
+7. **Strengths, limits, and hallucination**
+8. **Using AI well, and where it's headed**
 
-Designed for **middle schoolers, curious adults wanting brief but meaningful exposure, instructors evaluating AI-taught coursework, and researchers studying AI academic integrity**, Evolutionary Psychology for Children pairs a real curriculum with two layers of AI-authorship detection — surfacing not just *whether* the writing looks AI-generated, but whether the *act of producing it* did.
+Designed for **middle schoolers, curious adults wanting brief but meaningful exposure, instructors evaluating AI-taught coursework, and researchers studying AI academic integrity**, Baby AI pairs a real curriculum with two layers of AI-authorship detection — surfacing not just *whether* the writing looks AI-generated, but whether the *act of producing it* did.
 
 ---
 
-## 🧠 What It Does
+## 🤖 What It Does
 
-- **One-Unit Structured Curriculum** — A complete plain-language intro syllabus across 6 topics, shipping with lessons, two homework sets, a timed unit test, and a cumulative final exam.
+- **One-Unit Structured Curriculum** — A complete plain-language intro syllabus across 8 topics, shipping with lessons, two homework sets, a timed unit test, and a cumulative final exam.
 - **Three-Depth Lessons** — Every lesson is available at **Short / Medium / Long** length, AI-rewritten while preserving the same examples and learning objectives. Skim the concept, expand it on demand, or read the deeper cut — and request a custom rewrite ("add more examples", "shorter sentences") when you want it your way.
 - **Section-Scoped AI Tutor** — Ask a question about the paragraph you're reading and the answer streams back token-by-token, grounded in that exact lecture section. Suggested starter questions are pre-generated per lecture, and the tutor stays available while you practice.
 - **Adaptive Topic Practice** — Generated problem sets that move difficulty up after a streak and down after a miss, with an explanation on every answer. Per-session difficulty persists, so each drill picks up where the last one left off. Every question poses a concrete scenario and asks for a short reasoned answer — never one-word recall.
@@ -60,7 +62,7 @@ Designed for **middle schoolers, curious adults wanting brief but meaningful exp
 
 This project is a **pnpm monorepo** with path-routed artifacts behind a shared reverse proxy:
 
-- **`artifacts/qr-course`** — the student-facing web app (React + Vite), served at `/`. This is **Evolutionary Psychology for Children**.
+- **`artifacts/qr-course`** — the student-facing web app (React + Vite), served at `/`. This is **Baby AI**.
 - **`artifacts/api-server`** — the shared Express backend (lessons, tutor streaming, practice, grading, detection, diagnostics, analytics).
 - **`lib/api-spec`** — the OpenAPI source of truth plus generated React Query hooks and Zod schemas.
 - **`lib/db`** — the database schema and client (PostgreSQL via the project's `DATABASE_URL`).
@@ -70,7 +72,7 @@ This project is a **pnpm monorepo** with path-routed artifacts behind a shared r
 
 ## 📊 Designed For
 
-- **Middle Schoolers & Curious Adults** — A complete, plain-language intro to evolutionary psychology with on-demand tutoring and adaptive practice — no instructor, math, or coding required.
+- **Middle Schoolers & Curious Adults** — A complete, plain-language intro to artificial intelligence with on-demand tutoring and adaptive practice — no instructor, math, or coding required.
 - **Instructors & Curriculum Designers** — A working reference for what AI-taught, AI-graded, AI-detection-screened coursework actually looks like end-to-end.
 - **Academic-Integrity Researchers** — A live testbed for layered AI-authorship detection that combines text-based classification with behavioral keystroke evidence.
 - **Product & Engineering Teams** — A reference implementation of contract-first full-stack architecture, streaming AI UX, and self-diagnostic operator tooling in a Replit pnpm monorepo.
@@ -79,8 +81,8 @@ This project is a **pnpm monorepo** with path-routed artifacts behind a shared r
 
 ## 💡 Core Idea
 
-Evolutionary Psychology for Children reframes an AI-taught course as a *closed accountability loop*.
+Baby AI reframes an AI-taught course as a *closed accountability loop*.
 
 It doesn't just teach the material and grade the homework — it **teaches**, **tutors**, **drills**, **grades**, **detects misuse**, and **proves the whole pipeline still works** with a single click. The result is a self-paced course that students can actually trust to be fair, and that instructors can actually trust to be honest.
 
-**Evolutionary Psychology for Children — where the curriculum, the tutor, the grader, and the integrity check all live in one room.**
+**Baby AI — where the curriculum, the tutor, the grader, and the integrity check all live in one room.**

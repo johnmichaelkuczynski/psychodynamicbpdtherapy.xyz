@@ -26,8 +26,8 @@ export function Scene4() {
         animate={phase >= 1 ? { scale: 1, opacity: 1 } : { scale: 0.8, opacity: 0 }}
         transition={{ type: 'spring', stiffness: 200, damping: 20 }}
       >
-        <span className="text-primary block mb-2">EVOLUTIONARY PSYCHOLOGY</span>
-        <span className="text-white">FOR CHILDREN</span>
+        <span className="text-primary block mb-2">BABY</span>
+        <span className="text-white">AI</span>
       </motion.div>
 
       <motion.div 
@@ -36,7 +36,7 @@ export function Scene4() {
         animate={phase >= 2 ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
         transition={{ duration: 0.8 }}
       >
-        <p>Your mind has a history.</p>
+        <p>AI is everywhere. Let's understand it.</p>
       </motion.div>
 
       {/* Decorative stars */}

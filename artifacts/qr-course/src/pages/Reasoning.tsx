@@ -10,7 +10,7 @@ import { Compass, Brain } from "lucide-react";
 
 const PHASE_LABELS: Record<string, string> = {
   baseline: "Baseline — before the course",
-  unit1: "After the unit: Evolutionary Psychology for Everyone",
+  unit1: "After the unit: Baby AI for Everyone",
 };
 
 const PHASE_ORDER = ["baseline", "unit1"];
