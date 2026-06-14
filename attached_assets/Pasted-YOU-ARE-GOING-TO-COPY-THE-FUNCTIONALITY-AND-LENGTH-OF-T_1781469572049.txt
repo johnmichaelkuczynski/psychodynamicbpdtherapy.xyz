@@ -1,0 +1,130 @@
+YOU ARE GOING TO COPY THE FUNCTIONALITY AND LENGTH OF THE EXISTING COURSE. BUT YOU WILL CHANGE THE SUBJECT-MATTER. THE NEW SUBJECT MATTER IS "CONSTRUCTIVE CRITICAL REASONING." HERE ARE THE TOPICS: 
+
+1. The Fecund Lead: Identifying Which Datum Carries the Most Inferential Payload
+2. Model Selection by Explanatory Yield: Choosing the Model That Binds the Most Data
+3. Parsimony as a Live Constraint: Maximizing Richness Against Free Parameters
+4. Abductive Commitment: Inference to the Best Explanation and Betting Under Uncertainty
+5. From Correlation to Mechanism: Converting a Clue Into a Checkable Causal Model
+6. The Anomaly Cluster: Reading One Deviation as a Pointer to Hidden Structure
+7. The Cheap Decisive Test: Designing the Prediction That Confirms or Kills a Model Fastest
+8. Calibrated Boldness: Committing Maximally While Staying Falsifiable (Subordinated Error-Checking)
+
+ # Constructive Critical Reasoning — What the Course Measures, With Worked Examples
+
+## 1. The core idea
+
+Constructive Critical Reasoning is the discipline of drawing the **strongest affirmative conclusion a body of data will support**. It is NOT the avoidance of error. The premise: real reasoning is generative and content-laden — a competent reasoner builds the richest defensible model of a situation, picks the most fecund lead, and commits to it. By virtue of having that positive model, he *automatically* avoids the textbook fallacies (over-generalizing, correlation-vs-cause) that conventional "critical thinking" obsesses over. Error-avoidance by itself produces nothing: the set of error-free-but-empty statements is infinite and useless ("the cause is something, or possibly nothing"). So in this course, error-checking is strictly **subordinate** — it breaks ties between two models of equal explanatory power and never functions as the primary thing being graded.
+
+The single competence measured and developed, in every question of every format, is: **given data, propose the model that binds the most of it, with the fewest free parameters, and that exposes itself to the cheapest decisive test.** Scoring is therefore *inverted* relative to a normal critical-thinking test. The cautious "you can't conclude that" answer earns near-zero, not full marks. The reckless over-claim is penalized. Top credit goes to the answer that extracts the most structure the data will bear while staying falsifiable.
+
+---
+
+## 2. Question Type A — Multiple Choice (the long, 15-question test)
+
+Each item has exactly four options: **one bad option** (a genuine fallacy OR a non-committal dodge) scoring zero, and **three live options** scoring on a descending partial-credit gradient by explanatory yield. Richest model = full credit; weaker-but-defensible = intermediate.
+
+### Specimen item
+
+> A coffee shop's afternoon sales fell ~30% over three weeks. The owner has four facts: (a) the drop began the same week a construction project started on the sidewalk directly outside; (b) counted foot traffic past the window fell sharply over those weeks; (c) a competing café opened two blocks away that same month; (d) the espresso machine was serviced and briefly offline during one of those afternoons.
+>
+> Which is the best working model to act on?
+
+- **Option A — "The data are too confounded to determine a cause; no conclusion is warranted."**
+- **Option B — "The new café two blocks away took the customers."**
+- **Option C — "The construction outside cut the foot traffic past the window, and that drove the sales drop."**
+- **Option D — "Construction-driven loss of passing foot traffic is the primary cause (it binds both the timing in (a) and the traffic count in (b)); the competing café is a secondary aggravator; the machine outage is noise. Decisive cheap test: compare this store's afternoon drop against a sister location with no construction."**
+
+### Grading and rationale
+
+| Option | Credit | Why |
+|---|---|---|
+| **D** | **Full (100%)** | Binds the most data (timing + traffic count), ranks causes instead of picking one, demotes the irrelevant datum, and names a cheap decisive test. The maximally fecund, falsifiable commitment. |
+| **C** | **Intermediate-high (~66%)** | A genuine causal model that binds the timing and the traffic datum — defensible and actionable — but does not rank the competing café or propose a test. Good, not richest. |
+| **B** | **Intermediate-low (~33%)** | A single-cause guess that is plausible but ignores the foot-traffic mechanism, which is the datum carrying the most signal. Commits, but to the thinner model. |
+| **A** | **Zero** | The non-committal dodge. Commits to nothing, predicts nothing, acts on nothing. This is the answer a conventional test rewards and this course penalizes hardest. |
+
+The agent must store these per-option weights **as data in the item definition**, not as logic in the scoring code, so they are tunable per item.
+
+---
+
+## 3. Question Type B — Written (the short, 5-question test)
+
+Five questions; each is a one-paragraph prompt requiring a one-paragraph constructed answer. The user must **generate** the model, not select it. Graded by AI rubric on two axes, summed:
+
+- **Yield** — how much of the data supplied in the prompt the proposed model accounts for.
+- **Risk** — whether the model commits to a checkable, falsifiable prediction or test.
+
+A penalty is subtracted **only** for claims the data actively defeats. A maximally cautious non-committal answer scores near-zero. Florid, elaborate phrasing that predicts nothing scores low — wordcount is not yield.
+
+### Specimen item
+
+> A small bookstore notices its online orders spike every time the owner posts a certain kind of short video — but only when the video goes up on a **Thursday**. The identical kind of video posted on a Tuesday produces nothing. In one paragraph, propose the richest defensible model of what is happening, and state how you would test it.
+
+### Model answer (full credit)
+
+> The day-of-week is gating *distribution*, not buying mood: Thursday posts likely hit a platform surfacing window or a payday/weekend-planning window that Tuesday posts miss, so the same content reaches far more people on Thursday. The model predicts that *any* content — not just this kind — will outperform on Thursdays, and that the Thursday advantage will show up in **reach/impressions**, upstream of orders. Cheap decisive test: post matched content Tuesday vs. Thursday for three weeks and compare *reach* first, then orders. If reach is equal but Thursday orders still win, the model is wrong and the effect is buying-intent, not distribution.
+
+**Why full:** High yield (binds the Thursday-vs-Tuesday split and the order spike under one mechanism), high risk (makes a falsifiable prediction — reach, not just orders — and a test designed to *kill* the model if wrong). Commits hard, stays checkable.
+
+### Substandard answers
+
+**Substandard 1 — the cautious dodge (near-zero).**
+> "Correlation isn't causation. You can't conclude the day of the week causes the orders — it could be coincidence, or some unmeasured third factor. More data is needed before drawing any conclusion."
+
+*Diagnosis:* Zero yield, zero risk. It accounts for nothing, predicts nothing, proposes no test. It is technically error-free and completely empty — the precise failure mode the course is built to penalize. Near-zero.
+
+**Substandard 2 — florid but empty (low).**
+> "The bookstore has clearly cultivated a resonant brand whose loyal community responds to the authenticity of the owner's voice; Thursdays evoke a pre-weekend anticipation that aligns with the emotional cadence of literary consumption, creating a perfect storm of engagement and desire that manifests in purchasing behavior."
+
+*Diagnosis:* High word-count, zero load-bearing content. It never explains *why Tuesday fails*, makes no prediction, and proposes no test. Ornamentation graded as if it were a model. Low — penalize against rewarding elaborateness.
+
+**Substandard 3 — bare over-claim (low-intermediate).**
+> "Thursday posting causes the sales. Always post on Thursday."
+
+*Diagnosis:* It commits (better than the dodge) but to the thinnest possible version: no mechanism, no distinction between distribution and buying intent, no test. It also risks being defeated — if reach turns out equal, the flat causal claim collapses with no fallback. Some yield, near-zero risk-handling. Low-intermediate.
+
+### Worked grading pass (illustrative scale, 10 pts: 5 yield + 5 risk, minus penalties)
+
+| Answer | Yield | Risk | Penalty | Total |
+|---|---|---|---|---|
+| Model answer | 5 | 5 | 0 | **10** |
+| Sub-3 (over-claim) | 2 | 1 | −1 (treats orders=reach, which the setup undercuts) | **2** |
+| Sub-2 (florid) | 1 | 0 | 0 | **1** |
+| Sub-1 (dodge) | 0 | 0 | 0 | **0** |
+
+---
+
+## 4. Question Type C — Hybrid (the medium, 9-question test)
+
+Each hybrid item has two linked parts: a **multiple-choice part** (pick the most fecund lead, graded on the four-option gradient from §2) and a **short written part** (supply the missing commitment — usually the test or the mechanism — graded on the yield/risk axes from §3). The two parts are scored by their respective schemes and summed into the item's value.
+
+### Specimen item
+
+> A homeowner reports: the kitchen sink leaks **when and only when** the upstairs toilet is flushed.
+>
+> **Part 1 (multiple choice):** Which lead is most worth pursuing first?
+> - A. "Leaks aren't always caused by the obvious event; you can't assume the flush is responsible." → 0
+> - B. "The toilet is broken and should be replaced." → low partial (commits, but to an unsupported single fix)
+> - C. "The flush and the sink share a drain or supply line; the flush is pressurizing or backing up into the shared run." → full (binds the *and-only-when* perfectly, names a mechanism)
+>
+> **Part 2 (written, one or two sentences):** State the single cheapest test that would confirm or kill model C.
+
+### Grading
+
+- **Part 1:** C = full, B = low partial, A = zero (the dodge — and note it *reverses the real-world verdict*, since "leaks when and only when flushed" is a near-decisive clue, not grounds for refusing to conclude).
+- **Part 2 model answer:** "Flush the toilet with the sink's drain trap exposed/observed (or run a dye in the toilet tank) — if the leak tracks the flush and the dye appears, the shared-line model is confirmed; if it leaks independent of flushing, it's killed." High yield + high risk.
+- **Part 2 substandard:** "Call a plumber to look at everything." — Zero risk, no committed prediction, no isolation of the variable. Near-zero on the written axis even though Part 1 may have been answered correctly.
+
+---
+
+## 5. One instruction the agent must carry through everything
+
+Across all three types, the thing being rewarded is the **richest load-bearing commitment, disciplined by parsimony and falsifiability** — never the safest non-commitment, and never elaborateness. The agent should generate items, model answers, and distractors so that (i) there is always a zero-credit *dodge* option or answer present as a foil, and (ii) the top-credit answer is always the one that commits hardest to the most while exposing itself to the cleanest disconfirming test.
+
+GRADING — Constructive Critical Reasoning (course structure and grading)
+The course has eight sections, and the homeworks are the only graded assessments — there are no midterms, finals, or separate exams of any kind. For each section the user chooses exactly one of three tests: (1) a long multiple-choice test of 15 questions, (2) a medium hybrid test of 9 questions, or (3) a short all-written test of 5 questions, where each of those 5 is a one-paragraph prompt requiring a one-paragraph answer. These three are mutually exclusive within a section — he takes one, not more. (Item-level scoring for each type — the multiple-choice partial-credit gradient and the written yield/risk rubric — is specified in the separate question-types document and is not restated here.)
+The user may take the eight homeworks in any order he wishes — he can start with the eighth, or the third, or any other; nothing in the course structure prevents it, even where doing so is ill-advised. Each homework is a single attempt, and the grade locks the moment he submits it — no retakes, no revisions, he is stuck with the grade once he takes it. There are no time limits on homeworks for now. The course grade is the aggregate of the eight section grades. Note for the agent: I have not specified how the three test formats relate in point value — whether a 15-question, a 9-question, and a 5-question test each carry the same section total or different totals is still open, so leave that as a configurable parameter rather than assuming they are equal.
+
+DIAGNOSTICS — Constructive Critical Reasoning (diagnostics, lecture customization)
+Alongside the eight graded homeworks, the course includes diagnostics, which are not graded but are mandatory in quantity: the user must take a certain minimum number of them to pass the course (the exact minimum is to be determined later — leave it as a configurable parameter). There are four sets of diagnostics, positioned across the course: one before the course starts, one one-third of the way through, one two-thirds of the way through, and one at course end. The user may take these in any order he wants, but the order just given (pre → one-third → two-thirds → end) is the recommended one, because taking them in that sequence does the most both to teach him and to give the app meaningful longitudinal data it can use to tell him what to work on. (For that reason the agent should store diagnostic results as a time-series keyed to the four positions, so progress across the sequence is visible, rather than as a single overwritable result.)
+Each diagnostic offers a full 3×3 set of options: three modalities — multiple-choice, hybrid, written — and for each modality three lengths — short, medium, long — giving nine configurations the user can pick from. A given diagnostic is infinitely repeatable, and the user never sees the same question twice — every retake draws fresh items — so repeated attempts produce real measurement rather than a memorization artifact. Separately, as in all of these AI-powered classes, the user can dialogue with the app to rewrite any lecture to his own instructions ("give more examples of X," "explain Y more thoroughly"). Two constraints on that: the homeworks can never be changed, and the original lectures are permanent and always available — only the user's customized lecture versions are deletable, at his discretion. The diagnostics themselves cannot be edited by the user; like the homeworks, only the lectures are customizable.
