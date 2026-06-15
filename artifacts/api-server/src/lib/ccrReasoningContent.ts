@@ -18,7 +18,7 @@
 // evidence to decide. Options are rotated at seed/generation time.
 //
 // Items are spread across the eight CCR sub-skills:
-//   fecund leads, explanatory yield, parsimony as tiebreaker,
+//   fecund leads, explanatory yield, evidence-supported parsimony,
 //   abductive commitment, correlation->mechanism, anomaly clusters,
 //   cheap decisive tests, calibrated boldness.
 //
@@ -32,7 +32,7 @@ import type { McqItem, OpenItem } from "./diagnosticContent";
 export const CCR_SUBSKILLS: string[] = [
   "treating a surprising pattern as a fecund lead worth actively pursuing",
   "preferring the explanation with the most explanatory yield (one cause binding many effects)",
-  "when two models compete, taking the leaner one as the working hypothesis and naming the cheap test that would actually decide between them (never treating simplicity alone as proof)",
+  "preferring the single explanation that already accounts for ALL the observed evidence over a needlessly complicated one that adds extra causes the evidence gives no reason to posit",
   "committing to the explanation the available evidence best supports, and naming the check that would confirm it",
   "moving from a bare correlation to a specific, testable underlying mechanism",
   "treating a tight anomaly cluster as a real localized signal, not random scatter",
@@ -89,25 +89,25 @@ export const CCR_MCQ_BANK: McqItem[] = [
     ],
   },
 
-  // --- parsimony as tiebreaker ----------------------------------------------
+  // --- parsimony: prefer the evidence-supported simpler model ---------------
   {
     prompt:
-      "Two models fit a store's sales data equally well. Model A: a single price cut drove the rise. Model B: a price cut, a secret weather effect, a hidden ad nobody can find, and a loyalty shift all combined to drive it. Both predict the same numbers, and nothing on hand separates them yet. What's the best move?",
+      "A store cut its prices on Monday and sales jumped that same week. Nothing else changed that anyone can find: no new ad ran, the weather was ordinary, and no loyalty program launched. A consultant insists the jump came from a hidden mix of weather, a secret ad, and a loyalty shift. Which is the best read?",
     options: [
-      "Take the single price cut as the leaner working hypothesis and actually settle it: reverse the price cut for a week and see whether the rise reverses.",
-      "Declare Model B correct because more factors always make an explanation more complete.",
-      "Insist the price cut alone is definitely the whole story and stop checking.",
-      "Conclude the cause is simply unknowable and change nothing.",
+      "Credit the price cut: it is the one change actually observed and it lines up with the jump — confirm by restoring prices and seeing whether sales fall back.",
+      "Accept the consultant's mix of hidden factors, since more causes make a fuller explanation.",
+      "Insist the price cut is the whole story and never bother checking.",
+      "Treat the jump as having no identifiable cause at all.",
     ],
   },
   {
     prompt:
-      "A network outage could be explained by (A) one failed router everything routes through, or (B) five independent devices each failing in the same minute by chance. Both are consistent with the logs so far. What's the best move?",
+      "A network outage hit at 2:00 p.m. Every connection in the office routes through one central router, and that router's log shows it crashed at exactly 2:00 p.m.; the five downstream devices each logged normal operation right up to the outage. Which is the best read?",
     options: [
-      "Take the single failed router as the leading hypothesis and test it directly: swap that one router and see if service returns.",
-      "Assume all five devices failed at once, since covering more parts sounds more thorough.",
-      "Declare the router guilty with certainty and skip any check.",
-      "Conclude the cause is unknowable and wait for the outage to recur on its own.",
+      "Pin the outage on the central router: its crash log matches the outage time and everything depends on it — confirm by swapping it and seeing if service returns.",
+      "Conclude all five downstream devices coincidentally failed at once, since covering more parts sounds thorough.",
+      "Declare the router guilty and skip any verifying swap.",
+      "Treat the cause as impossible to know despite the matching crash log.",
     ],
   },
 
@@ -247,13 +247,13 @@ export const CCR_OPEN_BANK: OpenItem[] = [
       "Test it by reverting to a 5-day week for a period and checking whether all three measures slip back.",
     ],
   },
-  // parsimony as tiebreaker
+  // parsimony: evidence-supported simpler model
   {
     prompt:
-      "Two explanations fit your data equally well: one cites a single cause, the other stacks four unverified causes. In one sentence, say which you should commit to and why, plus how to confirm it.",
+      "Your app's error rate spiked right after you shipped one new feature, and nothing else changed in that release. A teammate blames a tangle of unrelated server, network, and database problems you have no evidence for. In one sentence, say which explanation to commit to and how you'd confirm it.",
     keyPoints: [
-      "Commit to the single-cause explanation: with equal fit, parsimony breaks the tie in favor of fewer unsupported entities.",
-      "Confirm by removing or reversing that one cause and checking whether the effect disappears.",
+      "Commit to the newly shipped feature: it is the one change that actually coincided with the spike, while the other causes have no supporting evidence.",
+      "Confirm by rolling back (or feature-flagging off) that feature and checking whether the error rate returns to normal.",
     ],
   },
   // abductive commitment

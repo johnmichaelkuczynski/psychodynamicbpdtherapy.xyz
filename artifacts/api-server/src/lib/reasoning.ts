@@ -393,11 +393,11 @@ const openItemContent = (o: OpenItem): GeneratedItemContent => ({
 // freshly generated diagnostic item enforces the inverted rubric.
 const CCR_STANDARD =
   "Constructive Critical Reasoning (CCR) means drawing the STRONGEST conclusion the AVAILABLE EVIDENCE actually warrants. " +
-  "CRITICAL — every scenario you write MUST contain concrete, discriminating evidence that genuinely points to one conclusion over the rivals. " +
-  "NEVER write a scenario where the rival explanations fit the facts equally well and nothing in the scenario separates them: in that case the honest answer really IS 'there isn't enough data to decide yet,' so marking that answer wrong would be an unfair trick question. Simplicity/parsimony alone is NOT proof — it can only suggest which cheap test to run, never settle the matter by itself. " +
+  "CRITICAL — only write scenarios that have a genuinely reasonable, defensible answer because the scenario CONTAINS concrete discriminating evidence pointing to one conclusion over the rivals. " +
+  "STAY AWAY from any situation where the only appropriate stance is agnosticism — i.e. there is no data yet, or the rival models fit the facts equally well and nothing in the scenario can separate them. In those cases withholding judgment (skepticism) is the CORRECT response, not a flaw, so such a scenario has no good 'constructive' answer and must NOT be used. Simplicity/parsimony alone is NEVER proof and never substitutes for evidence. " +
   "The genuinely-best answer commits to the conclusion the given evidence supports and/or names a cheap decisive test that would confirm it. " +
-  "Wrong options should be: a reckless overreach the evidence does NOT support, and a passive/give-up move (e.g. 'the cause is unknowable, change nothing'). Include a 'you can't conclude anything' refusal as a distractor ONLY when the scenario truly contains enough discriminating evidence to decide — there it is wrong precisely because the data DOES point somewhere. " +
-  "Never punish a reasoner for declining to guess when no evidence favors either side.";
+  "Wrong options should be a reckless overreach the evidence does NOT support, a passive/give-up move ('the cause is unknowable, change nothing'), and — since the scenario DOES contain deciding evidence — a timid 'you can't conclude anything' refusal that ignores that evidence. " +
+  "Never write a scenario that would punish a reasoner for honestly declining to guess; simply do not pose those scenarios at all.";
 
 // Generate fresh CCR scenario MCQs, one per given sub-skill (in order).
 async function generateCcrMcq(

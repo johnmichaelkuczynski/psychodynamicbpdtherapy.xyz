@@ -32,22 +32,25 @@ single-word concept-ID questions and was the one place that violated this.
 answers and demand a concrete case + reasoned answer. The semantic `gradeAnswer` grader
 already handles reasoned answers, so longer answers are safe to grade.
 
-## Diagnostic scenarios must carry real discriminating evidence — never punish honest uncertainty
-The CCR/reasoning diagnostic must NOT plant "you can't conclude anything" as an
-automatically-wrong option. Every generated/static scenario must contain concrete
-discriminating evidence so a conclusion is genuinely warranted; the "can't conclude"
-refusal is a wrong distractor ONLY when the data truly decides. Equal-fit / no-data
-scenarios where the only basis to choose is parsimony/aesthetics are FORBIDDEN — there,
-declining to guess (and naming the test that would settle it) is the honest answer.
-Prompts must be answerable by plain reasoning: never reference "the CCR standard" or any
-named doctrine (the pre-course baseline student hasn't learned it).
+## Diagnostic scenarios must carry real discriminating evidence — never pose agnosticism-only situations
+The CCR/reasoning diagnostic must ONLY pose scenarios that have a genuinely reasonable,
+defensible answer because the scenario CONTAINS concrete discriminating evidence pointing
+one way. Do NOT even write a no-data / equal-fit scenario (rivals fit the facts equally
+well, only parsimony/aesthetics to choose) — there, withholding judgment (skepticism) is
+the CORRECT stance, so the course shouldn't test it. Parsimony/Ockham is NEVER proof and
+never substitutes for evidence; a "parsimony" item is legitimate only when the simpler
+model is the one the evidence ALREADY supports (rival adds unobserved causes with no
+evidence). Prompts must be answerable by plain reasoning: never reference "the CCR
+standard" or any named doctrine (the pre-course baseline student hasn't learned it).
 
-**Why:** Emphatic user mandate — such items are "trick questions." Parsimony/Ockham is
-not proof; with no data a sane person says "it might or might not be — I have no data."
+**Why:** Emphatic, repeated user mandate — such items are "trick questions." This course
+is about constructive commitment, but the user explicitly notes skepticism is sometimes
+right (esp. with no data), so STAY AWAY from those situations rather than scoring them.
 **How to apply:** Lives in `reasoning.ts` (CCR_STANDARD + generateCcrMcq/generateOpenItems
-prompts) and the static bank `ccrReasoningContent.ts`. The good answer in a thin-data
-case is "name the cheap decisive test," and the worst distractor is passive give-up
-("unknowable, change nothing"), NOT honest uncertainty.
+prompts) and the static bank `ccrReasoningContent.ts`. In a data-rich scenario the wrong
+distractors are reckless overreach, passive give-up ("unknowable, change nothing"), and a
+timid "you can't conclude anything" that ignores the evidence — that refusal is wrong ONLY
+because the data genuinely decides, never as a trap against honest uncertainty.
 
 ## Typed (open) answers are graded leniently on substance, NEVER on length
 The diagnostic instruments offer three pickable formats (mcq / hybrid / written).
