@@ -6,9 +6,10 @@ export function Scene3() {
 
   useEffect(() => {
     const timers = [
-      setTimeout(() => setPhase(1), 500),   // Tutor appears
-      setTimeout(() => setPhase(2), 4000),  // 3 lengths feature
-      setTimeout(() => setPhase(3), 7000),  // adaptive practice
+      setTimeout(() => setPhase(1), 500),
+      setTimeout(() => setPhase(2), 2500),
+      setTimeout(() => setPhase(3), 4500),
+      setTimeout(() => setPhase(4), 6500),
     ];
     return () => timers.forEach(t => clearTimeout(t));
   }, []);
@@ -16,80 +17,51 @@ export function Scene3() {
   return (
     <motion.div 
       className="absolute inset-0 flex items-center justify-center bg-bg-muted"
-      initial={{ opacity: 0, scale: 1.2 }}
-      animate={{ opacity: 1, scale: 1 }}
-      exit={{ opacity: 0, scale: 0.8, filter: 'blur(10px)' }}
-      transition={{ duration: 0.8, ease: "circOut" }}
+      initial={{ opacity: 0, x: '20%' }}
+      animate={{ opacity: 1, x: 0 }}
+      exit={{ opacity: 0, scale: 0.9, filter: 'blur(10px)' }}
+      transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
     >
-      
-      {/* P1: AI Tutor */}
-      <motion.div 
-        className="absolute flex items-center gap-8"
-        initial={{ x: 0, opacity: 0 }}
-        animate={
-          phase === 1 ? { x: 0, opacity: 1, scale: 1 } : 
-          phase > 1 ? { x: '-30vw', opacity: 0.2, scale: 0.6 } : 
-          { x: 0, opacity: 0 }
-        }
-        transition={{ type: 'spring', stiffness: 200, damping: 25 }}
-      >
-        <img 
-          src={`${import.meta.env.BASE_URL}images/ai-tutor.png`} 
-          alt="AI Tutor" 
-          className="w-[20vw] h-[20vw] object-contain drop-shadow-2xl rounded-full bg-white p-4"
-        />
-        <div className="bg-white p-8 rounded-3xl rounded-tl-none shadow-xl border-2 border-primary/20">
-          <p className="text-[3vw] font-bold text-text-primary">Meet your AI Tutor.</p>
-          <p className="text-[2vw] text-text-secondary mt-2">Always ready to help.</p>
-        </div>
-      </motion.div>
+      <div className="flex w-[80vw] gap-8">
+        <motion.div 
+          className="flex-1 bg-bg-dark border border-white/10 rounded-2xl p-8 flex flex-col justify-center"
+          initial={{ opacity: 0, y: 50 }}
+          animate={phase >= 1 ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+        >
+          <div className="text-accent text-[2vw] font-bold mb-4 uppercase tracking-widest">Built for Learning</div>
+          <div className="text-[3.5vw] leading-tight font-display font-bold">
+            Read it Short, Medium, or Long.
+          </div>
+          <div className="mt-8 flex gap-4 h-12">
+            <motion.div className="flex-1 bg-white/10 rounded-full" animate={phase >= 2 ? { scaleY: 1 } : { scaleY: 0 }} style={{ transformOrigin: 'bottom' }} />
+            <motion.div className="flex-1 bg-white/20 rounded-full" animate={phase >= 2 ? { scaleY: 1 } : { scaleY: 0 }} style={{ transformOrigin: 'bottom' }} transition={{ delay: 0.1 }} />
+            <motion.div className="flex-1 bg-accent rounded-full" animate={phase >= 2 ? { scaleY: 1 } : { scaleY: 0 }} style={{ transformOrigin: 'bottom' }} transition={{ delay: 0.2 }} />
+          </div>
+        </motion.div>
 
-      {/* P2: Flexible reading */}
-      <motion.div 
-        className="absolute right-[10vw] flex flex-col gap-6 w-[40vw]"
-        initial={{ x: '20vw', opacity: 0 }}
-        animate={
-          phase === 2 ? { x: 0, opacity: 1 } : 
-          phase > 2 ? { y: '-20vh', opacity: 0 } : 
-          { x: '20vw', opacity: 0 }
-        }
-        transition={{ type: 'spring', stiffness: 200, damping: 25 }}
-      >
-        <h2 className="text-[4vw] font-black text-text-primary leading-tight">Read it your way.</h2>
-        <div className="flex gap-4 items-end h-[20vh]">
-          <motion.div className="w-1/3 bg-secondary rounded-t-xl pb-4 flex items-end justify-center font-bold text-white text-[1.5vw]" 
-            initial={{ height: 0 }} animate={phase >= 2 ? { height: '40%' } : { height: 0 }} transition={{ delay: 0.1 }}>Short</motion.div>
-          <motion.div className="w-1/3 bg-primary rounded-t-xl pb-4 flex items-end justify-center font-bold text-white text-[1.5vw]" 
-            initial={{ height: 0 }} animate={phase >= 2 ? { height: '70%' } : { height: 0 }} transition={{ delay: 0.2 }}>Medium</motion.div>
-          <motion.div className="w-1/3 bg-accent rounded-t-xl pb-4 flex items-end justify-center font-bold text-white text-[1.5vw]" 
-            initial={{ height: 0 }} animate={phase >= 2 ? { height: '100%' } : { height: 0 }} transition={{ delay: 0.3 }}>Long</motion.div>
-        </div>
-      </motion.div>
+        <div className="flex-1 flex flex-col gap-8">
+          <motion.div 
+            className="flex-1 bg-secondary/10 border border-secondary/30 rounded-2xl p-8 flex flex-col justify-center"
+            initial={{ opacity: 0, x: 50 }}
+            animate={phase >= 3 ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+          >
+            <div className="text-[2.5vw] font-bold leading-tight">Adaptive Practice</div>
+            <div className="text-[1.5vw] text-white/60 mt-2">Gets harder as you master it.</div>
+          </motion.div>
 
-      {/* P3: Adaptive Practice */}
-      <motion.div 
-        className="absolute inset-0 flex flex-col items-center justify-center bg-bg-light z-20"
-        initial={{ clipPath: 'circle(0% at 50% 50%)' }}
-        animate={phase >= 3 ? { clipPath: 'circle(150% at 50% 50%)' } : { clipPath: 'circle(0% at 50% 50%)' }}
-        transition={{ duration: 1, ease: "easeInOut" }}
-      >
-        <h2 className="text-[5vw] font-black text-primary drop-shadow-md">Practice that adapts.</h2>
-        <p className="text-[2.5vw] text-text-secondary mt-4 font-bold">Gets harder when you're hot.</p>
-        <p className="text-[2.5vw] text-text-secondary mt-2 font-bold">Helps out when you're stuck.</p>
-        
-        <div className="flex gap-6 mt-10">
-          {[1,2,3,4,5].map((i) => (
-            <motion.div 
-              key={i}
-              className="w-12 h-12 bg-accent rounded-lg"
-              initial={{ scale: 0, rotate: 0 }}
-              animate={phase >= 3 ? { scale: [0, 1.2, 1], rotate: [0, 90, 180] } : {}}
-              transition={{ delay: 0.5 + (i * 0.1), duration: 0.5 }}
-            />
-          ))}
+          <motion.div 
+            className="flex-1 bg-white text-black rounded-2xl p-8 flex flex-col justify-center"
+            initial={{ opacity: 0, x: 50 }}
+            animate={phase >= 4 ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+          >
+            <div className="text-[2.5vw] font-bold leading-tight">2-Layer AI Detection</div>
+            <div className="text-[1.5vw] text-black/60 mt-2">Integrity baked right in.</div>
+          </motion.div>
         </div>
-      </motion.div>
-
+      </div>
     </motion.div>
   );
 }

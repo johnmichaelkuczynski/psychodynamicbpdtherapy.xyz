@@ -4,12 +4,21 @@ import { useEffect, useState } from 'react';
 export function Scene2() {
   const [phase, setPhase] = useState(0);
 
+  const topics = [
+    "Information Processing",
+    "Perception",
+    "Memory",
+    "Language & Thought",
+    "Reasoning & Bias",
+    "Brains & Machines",
+    "Consciousness"
+  ];
+
   useEffect(() => {
     const timers = [
-      setTimeout(() => setPhase(1), 500),   // "It follows rules."
-      setTimeout(() => setPhase(2), 3000),  // "It learns from data."
-      setTimeout(() => setPhase(3), 5500),  // "It predicts what's next."
-      setTimeout(() => setPhase(4), 7800),  // exit
+      setTimeout(() => setPhase(1), 300),
+      setTimeout(() => setPhase(2), 2000),
+      setTimeout(() => setPhase(3), 5000),
     ];
     return () => timers.forEach(t => clearTimeout(t));
   }, []);
@@ -17,62 +26,43 @@ export function Scene2() {
   return (
     <motion.div 
       className="absolute inset-0 flex flex-col items-center justify-center bg-bg-light"
-      initial={{ opacity: 0, x: '100%' }}
-      animate={{ opacity: 1, x: '0%' }}
-      exit={{ opacity: 0, x: '-50%', filter: 'blur(10px)' }}
-      transition={{ type: 'spring', stiffness: 200, damping: 25 }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0, x: '-20%', filter: 'blur(10px)' }}
+      transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
     >
-      <div className="absolute inset-0 opacity-10 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary/40 via-bg-light to-bg-light" />
+      <div className="absolute inset-0 opacity-20" style={{ 
+        backgroundImage: 'radial-gradient(circle at center, var(--color-secondary) 0%, transparent 60%)' 
+      }} />
 
-      <div className="relative z-10 w-full max-w-[80vw] h-[50vh]">
-        {/* Phase 1: Asking */}
+      <div className="relative z-10 w-full flex flex-col items-center">
         <motion.div 
-          className="absolute top-0 left-0 bg-white p-8 rounded-3xl shadow-2xl border-4 border-secondary"
-          initial={{ scale: 0, opacity: 0, x: '-20vw', y: '10vh' }}
-          animate={
-            phase === 1 ? { scale: 1, opacity: 1, x: '10vw', y: '10vh', rotate: -5 } :
-            phase > 1 ? { scale: 0.8, opacity: 0.5, x: '5vw', y: '5vh', rotate: -10 } :
-            { scale: 0, opacity: 0, x: '-20vw', y: '10vh' }
-          }
-          transition={{ type: 'spring', stiffness: 300, damping: 20 }}
+          className="text-[4vw] font-display font-bold italic text-secondary mb-12"
+          initial={{ y: -50, opacity: 0 }}
+          animate={phase >= 1 ? { y: 0, opacity: 1 } : { y: -50, opacity: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <h2 className="text-[4vw] font-black text-secondary">It follows rules.</h2>
+          No Math. No Coding. Just the Mind.
         </motion.div>
 
-        {/* Phase 2: Noticing */}
-        <motion.div 
-          className="absolute top-0 right-0 bg-white p-8 rounded-3xl shadow-2xl border-4 border-primary"
-          initial={{ scale: 0, opacity: 0, x: '20vw', y: '20vh' }}
-          animate={
-            phase === 2 ? { scale: 1, opacity: 1, x: '-10vw', y: '20vh', rotate: 5 } :
-            phase > 2 ? { scale: 0.8, opacity: 0.5, x: '-5vw', y: '15vh', rotate: 10 } :
-            { scale: 0, opacity: 0, x: '20vw', y: '20vh' }
-          }
-          transition={{ type: 'spring', stiffness: 300, damping: 20 }}
-        >
-          <h2 className="text-[4vw] font-black text-primary">It learns from data.</h2>
-          <div className="flex gap-2 mt-4">
-            {[1, 2, 3].map(i => (
-              <motion.div key={i} className="w-6 h-6 rounded-full bg-primary" 
-                animate={{ y: [0, -10, 0] }} 
-                transition={{ duration: 1, delay: i * 0.2, repeat: Infinity }}
-              />
-            ))}
-          </div>
-        </motion.div>
-
-        {/* Phase 3: Telling */}
-        <motion.div 
-          className="absolute bottom-0 left-1/2 -translate-x-1/2 bg-white p-8 rounded-3xl shadow-2xl border-4 border-accent"
-          initial={{ scale: 0, opacity: 0, y: '20vh' }}
-          animate={
-            phase === 3 ? { scale: 1.2, opacity: 1, y: '0vh', rotate: 0 } :
-            { scale: 0, opacity: 0, y: '20vh' }
-          }
-          transition={{ type: 'spring', stiffness: 300, damping: 20 }}
-        >
-          <h2 className="text-[4vw] font-black text-accent text-center">It predicts<br/>what's next.</h2>
-        </motion.div>
+        <div className="flex flex-wrap justify-center gap-6 max-w-[80vw]">
+          {topics.map((topic, i) => (
+            <motion.div
+              key={i}
+              className="bg-bg-muted border border-white/10 px-6 py-3 rounded-full text-[2vw] font-bold text-white shadow-xl"
+              initial={{ scale: 0, opacity: 0, y: 20 }}
+              animate={phase >= 2 ? { scale: 1, opacity: 1, y: 0 } : { scale: 0, opacity: 0, y: 20 }}
+              transition={{ 
+                type: 'spring', 
+                stiffness: 300, 
+                damping: 20, 
+                delay: i * 0.15 
+              }}
+            >
+              {topic}
+            </motion.div>
+          ))}
+        </div>
       </div>
     </motion.div>
   );
