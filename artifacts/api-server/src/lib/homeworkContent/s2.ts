@@ -5,440 +5,411 @@ import type {
   WrittenRubric,
 } from "./types";
 
-const body = `# Model Selection by Explanatory Yield
-
-You rarely face a single explanation. You face a *lineup* of them, each "consistent with" the facts. The amateur move is to stop there — "well, it could be any of these." Constructive Critical Reasoning asks a sharper question: **which model has the highest yield?** Which one *binds* the most observations at once, leaving the fewest loose ends?
-
-## Yield is the prize, not consistency
-
-Almost any half-decent story is *consistent* with the data — consistency is cheap. A horoscope is consistent with your week. What separates a strong model from a weak one is **yield**: the share of the listed observations it actually accounts for. Five facts on the table, a model that explains four of them beats a model that explains two, even if both are "possible." Picking the higher-yield model is not arrogance; it is doing your job.
-
-## Unexplained observations are a cost
-
-Every observation a model leaves dangling is a debt. When someone says "sure, but that one fact is probably just unrelated," they are quietly paying that debt with hand-waving. Sometimes a fact really is noise — but you have to *argue* it, not assume it. Default suspicion: a model that needs three separate coincidences to survive is losing to a model that needs none.
-
-## The "separate explanations for everything" dodge
-
-The signature failure here is fragmentation: "each observation could have its own cause, so we can't prefer the big explanation." This *sounds* careful. It is actually the opposite — it refuses to do the comparative work and hides behind a fog of maybes. CCR scores it near zero. A theory that requires a fresh, unrelated cause for every single data point has explained *nothing*; it has just renamed the data.
-
-## How to rank competing models
-
-1. **Count the binds.** For each candidate, tally which observations it genuinely explains.
-2. **Count the orphans.** Tally what it leaves unexplained or must wave away.
-3. **Prefer the highest net yield** — most bound, fewest orphans.
-4. **Expose it to a test.** The winning model should make a prediction that, if it fails, knocks the model out. Commit to that test.
-
-The richest, most-falsifiable, most-committed model wins. A timid "maybe there's a link" earns a little; a confident overreach the data defeats earns nothing.
-
-## In the real world
-
-A regional manager sees five stores. The three with declining sales all (a) switched to a new supplier in March, (b) report longer restock delays, (c) have rising customer complaints about empty shelves, while (d) the two healthy stores kept the old supplier and (e) show normal stock levels. One analyst shrugs: "Each store has its own issues — bad luck, bad weather, bad staff." That fragmenting story binds nothing. The high-yield model is plain: **the March supplier switch caused restock delays, which emptied shelves, which drove complaints and lost sales** — it binds (a) through (e) with one mechanism. And it is testable: route one struggling store back to the old supplier; if delays, empty shelves, and complaints don't recover within a month, the model is wrong. That commitment — one explanation for the most data, plus a clean test — is the whole game.`;
-
 const mcq: HomeworkItem[] = [
   {
     itemType: "mc",
     prompt:
-      "A teacher notices: the same six students who fail her Friday quizzes also (1) arrive late on Fridays, (2) skip the Thursday-night review chat, and (3) report sleeping under five hours Thursday. The other students do none of these. Which conclusion best follows?",
+      "People press a button the instant a light comes on. When a second light is added and they must press only for the green one, their response is reliably slower by a roughly constant amount. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Each of those three facts probably has its own unrelated cause, so we shouldn't single out one story.",
-        credit: 0,
-      },
-      {
-        text: "Thursday sleep loss is the common driver — it produces the lateness, the skipped review, and the failures together; test it by helping those six protect Thursday sleep for two weeks and see if all three patterns lift.",
+        text: "The extra time likely reflects an added internal stage — deciding which light appeared before responding — inserted between seeing and acting; test whether adding a third choice adds a similar fixed increment, whether the extra time vanishes when only one light is ever possible, and whether telling people the likely light in advance shrinks it.",
         credit: 1.0,
       },
       {
-        text: "Lack of Thursday review likely explains the failing quizzes, since the review covers quiz material.",
+        text: "Choosing between lights probably adds some processing time; we could test more light counts.",
         credit: 0.6,
       },
       {
-        text: "There may be some Friday-related issue worth keeping an eye on.",
+        text: "Two lights seem to slow people down a bit.",
         credit: 0.3,
+      },
+      {
+        text: "What happens inside the head between the light and the button is hidden, so the timing tells us nothing.",
+        credit: 0,
       },
     ],
     correctAnswer:
-      "Thursday sleep loss is the common driver — it produces the lateness, the skipped review, and the failures together; test it by helping those six protect Thursday sleep for two weeks and see if all three patterns lift.",
+      "The extra time likely reflects an added internal stage — deciding which light appeared before responding — inserted between seeing and acting; test whether adding a third choice adds a similar fixed increment, whether the extra time vanishes when only one light is ever possible, and whether telling people the likely light in advance shrinks it.",
     explanation:
-      "The sleep-loss model binds all three observations with one mechanism and names a clean test, so it has the highest yield. The 'each fact has its own cause' option fragments the data and explains nothing — the zero-credit dodge.",
+      "Top credit reads the constant extra time as a separable decision stage and names three checks that could refute it; 'the timing tells us nothing' refuses the very inference the steady increment supports and earns zero.",
   },
   {
     itemType: "mc",
     prompt:
-      "A gardener finds: tomatoes on the east bed are stunted, their leaves yellow at the edges, the soil there stays soggy after rain, and that bed sits at the bottom of a slope. The west bed (top of slope) thrives. Which conclusion best follows?",
+      "Rats wander an unrewarded maze for days, seeming to learn nothing. The first day food is placed at the goal, they run straight to it — faster than rats that were rewarded from the start. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Poor drainage at the slope's base waterlogs the east bed, and that single cause explains the sogginess, the yellowing, and the stunting together; test it by digging a drainage channel and checking whether the east bed recovers.",
-        credit: 1.0,
-      },
-      {
-        text: "The yellow leaves suggest a nutrient problem in the east bed that we could address with fertilizer.",
-        credit: 0.6,
-      },
-      {
-        text: "Something about the east bed seems less favorable for tomatoes.",
+        text: "The unrewarded rats seem to catch on quickly once food appears.",
         credit: 0.3,
       },
       {
-        text: "Stunting, yellowing, and sogginess could each be separate quirks, so no single explanation is warranted.",
+        text: "The rats likely built an internal map of the maze while exploring, storing information that showed in behavior only once reward made it worth using; test whether blocking a familiar path makes them pick the next-shortest route, whether they take a novel shortcut when one opens, and whether more unrewarded exploration yields faster first rewarded runs.",
+        credit: 1.0,
+      },
+      {
+        text: "Animals can't report their thoughts, so claims about what rats 'know' are off-limits.",
         credit: 0,
+      },
+      {
+        text: "The exploring rats probably learned the layout beforehand; we could run more maze trials.",
+        credit: 0.6,
       },
     ],
     correctAnswer:
-      "Poor drainage at the slope's base waterlogs the east bed, and that single cause explains the sogginess, the yellowing, and the stunting together; test it by digging a drainage channel and checking whether the east bed recovers.",
+      "The rats likely built an internal map of the maze while exploring, storing information that showed in behavior only once reward made it worth using; test whether blocking a familiar path makes them pick the next-shortest route, whether they take a novel shortcut when one opens, and whether more unrewarded exploration yields faster first rewarded runs.",
     explanation:
-      "Waterlogging from poor drainage ties the position, the sogginess, the yellowing, and the stunting into one chain and offers a decisive test — highest yield. Treating each symptom as a separate quirk binds nothing and is the dodge.",
+      "Full credit infers a stored internal representation (a cognitive map) learned without reward and names three tests; 'claims about what rats know are off-limits' is the dodge the immediate straight run defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "An IT lead sees: app crashes spiked Monday, all on devices that auto-updated over the weekend, all during video calls, and all freed memory only after a restart. Non-updated devices never crashed. Which conclusion best follows?",
+      "Told to press a key whenever a sentence means roughly 'the dog chased the cat,' people respond just as fast to 'the cat was chased by the dog' as to the original, even though the two sentences share few exact words. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Users are probably just being careless during calls in different ways.",
+        text: "Reading is too rich to study by timing key presses.",
         credit: 0,
       },
       {
-        text: "Video calls put heavy load on the app, which sometimes causes crashes.",
+        text: "People seem to treat similar sentences alike.",
+        credit: 0.3,
+      },
+      {
+        text: "The two sentences probably mean the same to readers; we could test more paraphrases.",
         credit: 0.6,
       },
       {
-        text: "The weekend update introduced a memory leak that surfaces under the load of video calls and clears on restart — that one fault binds every observation; test it by rolling the update back on a few devices and watching whether call crashes stop.",
+        text: "The mind likely responds to an internal representation of the sentence's meaning rather than to its exact words, so different wordings of one idea act alike; test whether unrelated sentences that share many words are kept apart, whether a meaning-changing word swap slows responses, and whether the equivalence survives translation into another language.",
         credit: 1.0,
-      },
-      {
-        text: "There could be a recent change affecting some machines.",
-        credit: 0.3,
       },
     ],
     correctAnswer:
-      "The weekend update introduced a memory leak that surfaces under the load of video calls and clears on restart — that one fault binds every observation; test it by rolling the update back on a few devices and watching whether call crashes stop.",
+      "The mind likely responds to an internal representation of the sentence's meaning rather than to its exact words, so different wordings of one idea act alike; test whether unrelated sentences that share many words are kept apart, whether a meaning-changing word swap slows responses, and whether the equivalence survives translation into another language.",
     explanation:
-      "The memory-leak-from-update model explains the timing, the updated-only pattern, the call trigger, and the restart fix at once, and the rollback is a falsifiable test — top yield. 'Users are careless' ignores the update pattern entirely.",
+      "The strongest conclusion names a meaning-based representation behind the behavior and lists three tests; 'too rich to study by timing key presses' opens no inquiry and earns zero under the inverted standard.",
   },
   {
     itemType: "mc",
     prompt:
-      "A coach reviews a slumping striker: his goals dropped after a new boot brand, he reports a sore heel, he's been shooting wide-right, and video shows him planting awkwardly on that foot. Which conclusion best follows?",
+      "People judge which of two numbers is larger. They are fast for far-apart pairs like 2 and 9 but reliably slower for close pairs like 5 and 6. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Slumps happen; there's nothing definite to read into a few separate observations.",
-        credit: 0,
-      },
-      {
-        text: "The new boots are causing heel pain that distorts his plant foot, pulling shots wide-right — one cause for all four facts; test it by returning him to the old boots and checking whether heel pain and accuracy recover.",
+        text: "The mind likely represents numbers along an internal 'number line' and compares positions on it, so nearby numbers are harder to tell apart; test whether the slowdown grows smoothly as the gap shrinks, whether very large numbers are compared more slowly even at equal gaps, and whether the same distance effect appears when quantities are shown as dot clusters.",
         credit: 1.0,
       },
       {
-        text: "His sore heel is likely throwing off his shooting accuracy.",
+        text: "Closer numbers probably take longer to compare; we could test more number pairs.",
         credit: 0.6,
       },
       {
-        text: "His form may be a little off lately.",
+        text: "People seem slower with numbers that are near each other.",
         credit: 0.3,
+      },
+      {
+        text: "Numbers are abstract, so we can't say anything about how the mind handles them.",
+        credit: 0,
       },
     ],
     correctAnswer:
-      "The new boots are causing heel pain that distorts his plant foot, pulling shots wide-right — one cause for all four facts; test it by returning him to the old boots and checking whether heel pain and accuracy recover.",
+      "The mind likely represents numbers along an internal 'number line' and compares positions on it, so nearby numbers are harder to tell apart; test whether the slowdown grows smoothly as the gap shrinks, whether very large numbers are compared more slowly even at equal gaps, and whether the same distance effect appears when quantities are shown as dot clusters.",
     explanation:
-      "The boots-to-heel-to-plant-to-aim chain binds all four observations and is testable by swapping boots — highest yield. 'Slumps happen' refuses to prefer any model and earns zero.",
+      "Top credit posits an internal magnitude representation and names three tests, including a dots version that could refute it; 'numbers are abstract, we can't say anything' is the refusal the orderly distance effect defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A restaurant owner notices: revenue fell this quarter, online reviews mention slow service, the kitchen lost two cooks in the same period, and ticket times in the POS data doubled. Which conclusion best follows?",
+      "People can repeat back about seven random digits but no more. Yet when the digits 1-4-9-2-1-7-7-6 are recognized as two famous years, the same person repeats far longer strings effortlessly. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Revenue, reviews, staffing, and ticket times are different metrics that probably moved for their own reasons.",
-        credit: 0,
-      },
-      {
-        text: "Losing two cooks is hurting the kitchen's throughput somewhat.",
-        credit: 0.6,
-      },
-      {
-        text: "Business feels a bit off this quarter.",
+        text: "Grouping the digits seems to help memory.",
         credit: 0.3,
       },
       {
-        text: "The two cook departures doubled ticket times, which produced slow-service complaints and the revenue drop — one staffing shortfall binds all four; test it by fully restaffing the line and seeing whether ticket times, reviews, and revenue rebound.",
+        text: "Memory limits differ so much between people that no general claim is possible.",
+        credit: 0,
+      },
+      {
+        text: "The mind's short-term capacity is likely measured in meaningful 'chunks' rather than raw items, so recoding digits into known units packs more information into the same limited slots; test whether any familiar grouping (a phone-number rhythm, words) raises the span, whether nonsense groupings give no boost, and whether experts chunk material from their own field far better than strangers' material.",
         credit: 1.0,
+      },
+      {
+        text: "Familiar groupings probably let people remember more; we could test other digit strings.",
+        credit: 0.6,
       },
     ],
     correctAnswer:
-      "The two cook departures doubled ticket times, which produced slow-service complaints and the revenue drop — one staffing shortfall binds all four; test it by fully restaffing the line and seeing whether ticket times, reviews, and revenue rebound.",
+      "The mind's short-term capacity is likely measured in meaningful 'chunks' rather than raw items, so recoding digits into known units packs more information into the same limited slots; test whether any familiar grouping (a phone-number rhythm, words) raises the span, whether nonsense groupings give no boost, and whether experts chunk material from their own field far better than strangers' material.",
     explanation:
-      "The staffing-shortfall model accounts for ticket times, reviews, and revenue together and offers a restaffing test — top yield. Calling them unrelated metrics is the fragmenting dodge that binds nothing.",
+      "The richest conclusion names chunking as the capacity unit and offers three tests; 'limits differ too much to say anything' is the dodge the reliable jump in span with meaning defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A nurse charts a patient: nausea each morning, fatigue, dizziness on standing, and these began the week a new blood-pressure pill was added. Symptoms ease by afternoon. Which conclusion best follows?",
+      "A speaker means to say 'a cup of coffee' but says 'a cuff of cuppee,' swapping sounds between two words she had not yet spoken. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The new pill is overshooting and dropping morning blood pressure too far, causing the dizziness, nausea, and fatigue that fade as the dose wears off — one cause for all of it; test it by lowering the morning dose and rechecking symptoms and standing BP.",
-        credit: 1.0,
-      },
-      {
-        text: "The dizziness on standing points to low blood pressure that may need attention.",
+        text: "The speaker probably planned both words before speaking; we could collect more slips.",
         credit: 0.6,
       },
       {
-        text: "The patient isn't feeling well in the mornings lately.",
-        credit: 0.3,
+        text: "Speech is likely planned in a buffer that holds several upcoming words at once before they are spoken, since a sound jumped into a word not yet uttered; test whether such exchanges stay within a phrase rather than crossing far apart, whether swapped sounds keep their position (a starting sound trades with another starting sound), and whether faster speech produces more such anticipations.",
+        credit: 1.0,
       },
       {
-        text: "Nausea, fatigue, and dizziness are common and likely have separate everyday causes.",
+        text: "Slips of the tongue are random accidents with nothing to teach us.",
         credit: 0,
+      },
+      {
+        text: "People sometimes mix up their sounds when talking.",
+        credit: 0.3,
       },
     ],
     correctAnswer:
-      "The new pill is overshooting and dropping morning blood pressure too far, causing the dizziness, nausea, and fatigue that fade as the dose wears off — one cause for all of it; test it by lowering the morning dose and rechecking symptoms and standing BP.",
+      "Speech is likely planned in a buffer that holds several upcoming words at once before they are spoken, since a sound jumped into a word not yet uttered; test whether such exchanges stay within a phrase rather than crossing far apart, whether swapped sounds keep their position (a starting sound trades with another starting sound), and whether faster speech produces more such anticipations.",
     explanation:
-      "The over-dosing model binds the timing, the symptom cluster, and the afternoon relief, with a dose-adjustment test — highest yield. 'These symptoms are common with separate causes' ignores the pill timing and is the dodge.",
+      "Top credit infers an advance planning buffer from the misplaced sound and names three structured tests; 'random accidents with nothing to teach us' is the overreach the orderly, rule-respecting slips defeat.",
   },
   {
     itemType: "mc",
     prompt:
-      "A product manager sees: signups dropped 30% Tuesday, the signup page load time tripled that day, a new tracking script was deployed Tuesday morning, and bounce rate on that page spiked. Which conclusion best follows?",
+      "Unable to recall a word, people often still know its first letter, how many syllables it has, and roughly what it sounds like — while the word itself stays out of reach. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Web traffic naturally fluctuates, so we shouldn't pin this on any one thing.",
+        text: "If you can't recall the word, there is nothing measurable going on.",
         credit: 0,
       },
       {
-        text: "Tuesday's tracking script slowed the page load, which spiked bounces and cut signups — one change binds the timing, load time, bounce, and signup drop; test it by removing the script and watching whether load time and signups recover.",
-        credit: 1.0,
+        text: "People seem to half-remember words sometimes.",
+        credit: 0.3,
       },
       {
-        text: "Slow page loads tend to increase bounce rates, which likely cost some signups.",
+        text: "Word memory probably comes in pieces; we could collect more such cases.",
         credit: 0.6,
       },
       {
-        text: "Tuesday seems to have been an off day for the page.",
-        credit: 0.3,
+        text: "A word's meaning and its sound are likely stored and retrieved as separable pieces of information, so meaning can be available while the sound form is only partly accessed; test whether priming the missing sound triggers full recall, whether the wrong words people offer share the sound or the meaning of the target, and whether the state resolves faster for shorter or more common words.",
+        credit: 1.0,
       },
     ],
     correctAnswer:
-      "Tuesday's tracking script slowed the page load, which spiked bounces and cut signups — one change binds the timing, load time, bounce, and signup drop; test it by removing the script and watching whether load time and signups recover.",
+      "A word's meaning and its sound are likely stored and retrieved as separable pieces of information, so meaning can be available while the sound form is only partly accessed; test whether priming the missing sound triggers full recall, whether the wrong words people offer share the sound or the meaning of the target, and whether the state resolves faster for shorter or more common words.",
     explanation:
-      "The script-slowed-the-page model ties the deploy timing, load time, bounce, and signups together with a removable-and-testable cause — top yield. 'Traffic fluctuates' refuses to prefer the high-yield model and scores zero.",
+      "The winning conclusion splits meaning from sound form and names three tests; 'nothing measurable is going on' is the dodge the reliable partial knowledge directly defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A homeowner observes: the upstairs is cold, the furnace runs constantly, the gas bill jumped, and a window in the upstairs hallway won't fully close. Downstairs stays warm. Which conclusion best follows?",
+      "Skilled readers name common irregular words like 'yacht' quickly, but when reading made-up strings like 'blorp' they slow down and sound them out letter by letter. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The gas bill probably rose for billing reasons unrelated to the cold rooms.",
-        credit: 0,
-      },
-      {
-        text: "The stuck upstairs window is leaking heat, making the furnace run nonstop to chase the upstairs temperature and driving the gas bill up — one leak binds all four facts; test it by sealing the window and checking whether runtime, warmth, and the bill normalize.",
+        text: "Reading likely runs through two routes — a fast lookup for familiar whole words and a slower letter-to-sound assembly for new ones; test whether brand-new but pronounceable strings are always slower than matched real words, whether very rare real words drift toward the slow route, and whether a reader who loses one route keeps the other.",
         credit: 1.0,
       },
       {
-        text: "The furnace running constantly is likely what's inflating the gas bill.",
-        credit: 0.6,
+        text: "Made-up words seem harder to read aloud.",
+        credit: 0.3,
       },
       {
-        text: "The house seems harder to heat than usual.",
-        credit: 0.3,
+        text: "Reading is automatic, so its inner steps can't be examined.",
+        credit: 0,
+      },
+      {
+        text: "Familiar and unfamiliar words probably use different processes; we could test more strings.",
+        credit: 0.6,
       },
     ],
     correctAnswer:
-      "The stuck upstairs window is leaking heat, making the furnace run nonstop to chase the upstairs temperature and driving the gas bill up — one leak binds all four facts; test it by sealing the window and checking whether runtime, warmth, and the bill normalize.",
+      "Reading likely runs through two routes — a fast lookup for familiar whole words and a slower letter-to-sound assembly for new ones; test whether brand-new but pronounceable strings are always slower than matched real words, whether very rare real words drift toward the slow route, and whether a reader who loses one route keeps the other.",
     explanation:
-      "The window-leak model explains the localized cold, the constant runtime, and the bill together and is testable by sealing it — highest yield. Detaching the gas bill as a billing fluke ignores the whole pattern and is the dodge.",
+      "Top credit names two processing routes with three checks, including a brain-injury dissociation that could refute it; 'too automatic to examine' is the empty refusal the clean speed gap defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A sales director notes: the northeast region missed quota, its reps logged the fewest client visits, a key reps' company cars were in the shop for weeks, and travel-expense claims there fell sharply. Other regions hit quota. Which conclusion best follows?",
+      "In a naming task, making the picture blurry adds a fixed amount of time, and making the name rare adds another fixed amount — and when a picture is both blurry AND rare, the two delays simply add together. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The car downtime cut the reps' client visits and travel spend, which is why the northeast missed quota — one disruption binds all the facts; test it by providing rental cars and seeing whether visits and sales rebound.",
-        credit: 1.0,
-      },
-      {
-        text: "Fewer client visits in the northeast likely contributed to the missed quota.",
+        text: "The two difficulties probably each add their own time; we could test more combinations.",
         credit: 0.6,
       },
       {
-        text: "The northeast underperformed for reasons that are hard to say.",
+        text: "Harder pictures take longer in two ways.",
         credit: 0.3,
       },
       {
-        text: "Quota misses, low visits, car repairs, and low expenses are separate facts best not lumped together.",
+        text: "Because the two delays add independently, the mind likely handles image clarity and word retrieval in separate sequential stages, each unaffected by the other's load; test whether a third factor that touches one stage leaves the other's delay unchanged, whether the delays still add at higher difficulty levels, and whether brain measures show the two effects at different moments.",
+        credit: 1.0,
+      },
+      {
+        text: "Naming a picture involves too much at once to separate any steps.",
         credit: 0,
       },
     ],
     correctAnswer:
-      "The car downtime cut the reps' client visits and travel spend, which is why the northeast missed quota — one disruption binds all the facts; test it by providing rental cars and seeing whether visits and sales rebound.",
+      "Because the two delays add independently, the mind likely handles image clarity and word retrieval in separate sequential stages, each unaffected by the other's load; test whether a third factor that touches one stage leaves the other's delay unchanged, whether the delays still add at higher difficulty levels, and whether brain measures show the two effects at different moments.",
     explanation:
-      "The car-downtime model binds the missed quota, low visits, and low expenses with one cause and offers a rental-car test — top yield. Refusing to lump the facts together is the fragmenting dodge.",
+      "The strongest conclusion reads independent additivity as evidence for separate stages and names three tests; 'too much at once to separate any steps' refuses the inference the clean addition supports.",
   },
   {
     itemType: "mc",
     prompt:
-      "A biologist finds: a pond's fish are dying, algae have bloomed thickly, oxygen readings are low at night, and a fertilizer plant upstream began discharging last month. Which conclusion best follows?",
+      "A person pouring water into a glass keeps glancing at the rising level, slows the pour as it nears the top, and stops exactly at the line. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Fish die for many reasons; we can't favor one story over the others.",
-        credit: 0,
-      },
-      {
-        text: "Low nighttime oxygen is stressing the fish and likely behind the die-off.",
-        credit: 0.6,
-      },
-      {
-        text: "Something has changed in the pond recently.",
+        text: "People seem to watch the glass while pouring.",
         credit: 0.3,
       },
       {
-        text: "Fertilizer runoff fed an algae bloom that crashes oxygen at night and suffocates the fish — one nutrient source binds the bloom, the oxygen, the deaths, and the timing; test it by measuring nitrate levels and checking whether they fall (and fish recover) if discharge stops.",
+        text: "Everyday actions are too automatic to reveal how they're controlled.",
+        credit: 0,
+      },
+      {
+        text: "The pourer probably uses the water level to guide the pour; we could film more pours.",
+        credit: 0.6,
+      },
+      {
+        text: "The action is likely guided by a feedback loop that compares the current level against a goal level and adjusts the pour to close the gap; test whether hiding the glass makes pours overshoot, whether a falsely raised view makes people stop early, and whether the slowing near the top scales with how precise the target line is.",
         credit: 1.0,
       },
     ],
     correctAnswer:
-      "Fertilizer runoff fed an algae bloom that crashes oxygen at night and suffocates the fish — one nutrient source binds the bloom, the oxygen, the deaths, and the timing; test it by measuring nitrate levels and checking whether they fall (and fish recover) if discharge stops.",
+      "The action is likely guided by a feedback loop that compares the current level against a goal level and adjusts the pour to close the gap; test whether hiding the glass makes pours overshoot, whether a falsely raised view makes people stop early, and whether the slowing near the top scales with how precise the target line is.",
     explanation:
-      "The nutrient-runoff model chains the discharge, bloom, oxygen crash, and die-off into one mechanism with a nitrate test — highest yield. 'Fish die for many reasons' refuses to commit and earns zero.",
+      "Top credit names a goal-comparison feedback loop and three tests that could break it; 'too automatic to reveal how it's controlled' is the dodge the goal-directed slowing contradicts.",
   },
   {
     itemType: "mc",
     prompt:
-      "A school principal sees: lunchroom waste doubled, complaints about taste rose, the cafeteria switched food vendors in September, and reimbursable-meal counts fell. Which conclusion best follows?",
+      "Asked to sort novel cartoon creatures into 'friendly' or 'dangerous,' people get faster and more accurate over trials, and afterward can state rules like 'a spiky tail and red eyes means dangerous.' Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The September vendor switch lowered food quality, which raised waste and taste complaints and cut meals taken — one change binds all four; test it by piloting the old vendor for a week and tracking waste, complaints, and meal counts.",
-        credit: 1.0,
-      },
-      {
-        text: "Rising taste complaints probably explain why more food is being thrown away.",
+        text: "People probably learn which features matter; we could run more sorting trials.",
         credit: 0.6,
       },
       {
-        text: "Students seem less happy with lunch this year.",
+        text: "The mind likely learns a category by weighing specific input features and building a rule that maps them to an output label; test whether a creature with conflicting features is classified by its strongest cues, whether removing the key feature drops accuracy, and whether a creature that obeys the rule but was never seen is still sorted correctly.",
+        credit: 1.0,
+      },
+      {
+        text: "People seem to get better at sorting the creatures.",
         credit: 0.3,
       },
       {
-        text: "Waste, complaints, and meal counts each move for their own reasons in any given year.",
+        text: "Made-up creatures aren't real, so sorting them shows nothing about the mind.",
         credit: 0,
       },
     ],
     correctAnswer:
-      "The September vendor switch lowered food quality, which raised waste and taste complaints and cut meals taken — one change binds all four; test it by piloting the old vendor for a week and tracking waste, complaints, and meal counts.",
+      "The mind likely learns a category by weighing specific input features and building a rule that maps them to an output label; test whether a creature with conflicting features is classified by its strongest cues, whether removing the key feature drops accuracy, and whether a creature that obeys the rule but was never seen is still sorted correctly.",
     explanation:
-      "The vendor-switch model accounts for the timing, waste, complaints, and meal counts at once and offers a clean pilot test — top yield. Treating each metric as independently drifting is the dodge that explains nothing.",
+      "The richest conclusion treats categorizing as a feature-to-label computation and names three tests; 'made-up creatures show nothing' is the refusal the learnable, stateable rule defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A commuter notices: her car pulls right, the right front tire wears on its outer edge, the steering wheel vibrates above 50 mph, and it all started after hitting a deep pothole. Which conclusion best follows?",
+      "Beginners reading sheet music check each note slowly, but after months of practice skilled players sight-read fluently and say they barely notice individual notes. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Cars develop quirks; these could be three unrelated issues.",
+        text: "Skill is too personal to draw any general conclusion.",
         credit: 0,
       },
       {
-        text: "The pothole knocked the front wheel out of alignment, which causes the pull, the edge wear, and the vibration — one event binds all of it; test it with an alignment check and see whether all three symptoms resolve after correction.",
+        text: "Practice seems to make reading music easier.",
+        credit: 0.3,
+      },
+      {
+        text: "With practice, a slow step-by-step process likely becomes automatic — fast, effortless, and hard to interrupt — by recoding notes into larger learned patterns; test whether skilled players struggle to read deliberately note-by-note on demand, whether scrambled patternless scores erase their speed advantage, and whether the automatic reading intrudes when they try to ignore the notes.",
         credit: 1.0,
       },
       {
-        text: "The uneven tire wear suggests an alignment problem worth checking.",
+        text: "Practice probably changes how reading music works; we could test players at different levels.",
         credit: 0.6,
-      },
-      {
-        text: "The car isn't driving quite right since the pothole.",
-        credit: 0.3,
       },
     ],
     correctAnswer:
-      "The pothole knocked the front wheel out of alignment, which causes the pull, the edge wear, and the vibration — one event binds all of it; test it with an alignment check and see whether all three symptoms resolve after correction.",
+      "With practice, a slow step-by-step process likely becomes automatic — fast, effortless, and hard to interrupt — by recoding notes into larger learned patterns; test whether skilled players struggle to read deliberately note-by-note on demand, whether scrambled patternless scores erase their speed advantage, and whether the automatic reading intrudes when they try to ignore the notes.",
     explanation:
-      "The misalignment model binds the pull, edge wear, vibration, and pothole timing with one cause and a diagnostic test — highest yield. 'Three unrelated quirks' fragments the data and scores zero.",
+      "Top credit names automatization through pattern chunking and three tests, including a scrambled-score check; 'too personal to conclude anything' is the dodge the reliable beginner-to-expert shift defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A bakery owner sees: morning croissants sell out fast, afternoon batches sit unsold, the afternoon oven runs hotter per the new thermostat, and afternoon croissants look darker. Which conclusion best follows?",
+      "Searching a string for the letter 'Q,' people say 'no, it's absent' faster when the string is short, and the time to answer 'no' grows steadily with the number of letters. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The faulty thermostat overheats the afternoon oven, over-browning those croissants so customers reject them — one cause binds the hotter oven, the darker color, and the unsold batches; test it by recalibrating the thermostat and seeing whether afternoon color and sales match the morning's.",
-        credit: 1.0,
-      },
-      {
-        text: "The darker afternoon croissants are probably being passed over by customers.",
-        credit: 0.6,
-      },
-      {
-        text: "Afternoons just seem slower for croissant sales.",
+        text: "Longer strings seem to take longer to search.",
         credit: 0.3,
       },
       {
-        text: "Sales timing, oven temperature, and color are separate things that needn't share a cause.",
+        text: "More letters probably take longer to scan; we could test more string lengths.",
+        credit: 0.6,
+      },
+      {
+        text: "Reading happens too fast to study what the eyes and mind are doing.",
         credit: 0,
+      },
+      {
+        text: "The mind likely checks letters one at a time and, to be sure a target is absent, must scan the whole string, so 'no' answers grow steadily with length; test whether 'no' times rise faster than 'yes' times, whether a highly distinctive target like a digit among letters breaks the pattern by popping out, and whether each added letter adds a roughly equal step.",
+        credit: 1.0,
       },
     ],
     correctAnswer:
-      "The faulty thermostat overheats the afternoon oven, over-browning those croissants so customers reject them — one cause binds the hotter oven, the darker color, and the unsold batches; test it by recalibrating the thermostat and seeing whether afternoon color and sales match the morning's.",
+      "The mind likely checks letters one at a time and, to be sure a target is absent, must scan the whole string, so 'no' answers grow steadily with length; test whether 'no' times rise faster than 'yes' times, whether a highly distinctive target like a digit among letters breaks the pattern by popping out, and whether each added letter adds a roughly equal step.",
     explanation:
-      "The thermostat model ties the hot oven, dark color, and unsold batches into one chain with a recalibration test — top yield. Insisting the facts needn't share a cause is the fragmenting dodge.",
+      "The strongest conclusion infers a serial self-terminating scan from the steady growth and names three tests; 'too fast to study' opens no inquiry and earns zero.",
   },
   {
     itemType: "mc",
     prompt:
-      "A manager reviews a remote team: messages go unanswered for hours, deadlines slip, the team spans three new time zones after a reorg, and overlap hours shrank to one per day. Which conclusion best follows?",
+      "Shown a grid of twelve letters for a flash, people recall only about four — but if a tone right after the flash tells them which row to report, they get almost any cued row nearly perfect. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Remote teams have ups and downs; no single explanation stands out.",
-        credit: 0,
+        text: "A brief, rich visual representation of the whole grid likely lingers for a fraction of a second after the display, but fades before all of it can be read out; test whether delaying the tone steadily lowers how much of the cued row is reported, whether a bright flash right after the grid wipes out the advantage, and whether the four-item limit reflects readout time rather than what was first stored.",
+        credit: 1.0,
       },
       {
-        text: "Slow message replies are probably what's causing deadlines to slip.",
+        text: "People probably hold a brief image they can't fully report; we could test more cue delays.",
         credit: 0.6,
       },
       {
-        text: "Coordination feels harder since the reorg.",
-        credit: 0.3,
+        text: "Memory for a flash is too fleeting to measure anything.",
+        credit: 0,
       },
       {
-        text: "The reorg's time-zone spread shrank overlap to one hour, which slows replies and slips deadlines — one structural change binds all of it; test it by mandating a shared core overlap window and tracking reply times and on-time delivery.",
-        credit: 1.0,
+        text: "A cue seems to help people report a flashed grid.",
+        credit: 0.3,
       },
     ],
     correctAnswer:
-      "The reorg's time-zone spread shrank overlap to one hour, which slows replies and slips deadlines — one structural change binds all of it; test it by mandating a shared core overlap window and tracking reply times and on-time delivery.",
+      "A brief, rich visual representation of the whole grid likely lingers for a fraction of a second after the display, but fades before all of it can be read out; test whether delaying the tone steadily lowers how much of the cued row is reported, whether a bright flash right after the grid wipes out the advantage, and whether the four-item limit reflects readout time rather than what was first stored.",
     explanation:
-      "The overlap-shrinkage model explains the slow replies, slipped deadlines, and reorg timing together and proposes a core-hours test — highest yield. 'Remote teams have ups and downs' refuses to prefer any model and earns zero.",
+      "Top credit posits a brief high-capacity store emptied by a slow readout and names three tests, including a delayed-cue decay check; 'too fleeting to measure' is the dodge the near-perfect cued report defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A vet sees a dog: itchy skin, ear infections, paw-licking, and symptoms that worsen each spring and ease in winter. Which conclusion best follows?",
+      "A man understands spoken words and reads perfectly, and his mouth and tongue move normally for eating, yet he cannot turn his clear thoughts into spoken sentences. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Itching, ear trouble, and paw-licking are common and probably have separate causes.",
-        credit: 0,
+        text: "Something about his speaking is affected.",
+        credit: 0.3,
       },
       {
-        text: "A seasonal (likely pollen) allergy is driving the itch, ears, and paw-licking together, which is why they flare in spring — one cause binds all four; test it with a spring antihistamine trial or allergen panel and see whether the cluster subsides.",
+        text: "Turning thoughts into speech likely depends on a distinct processing stage between intact comprehension (input) and intact muscle control (output), and that stage alone is damaged; test whether he can produce the same words in writing, whether he can repeat words he just heard, and whether other patients show the reverse — fluent speech but poor comprehension.",
         credit: 1.0,
       },
       {
-        text: "The seasonal pattern suggests an environmental trigger worth investigating.",
-        credit: 0.6,
+        text: "The brain is too interconnected to assign speaking to any one stage.",
+        credit: 0,
       },
       {
-        text: "The dog has some recurring skin discomfort.",
-        credit: 0.3,
+        text: "His speech output is probably the problem; we could examine more such patients.",
+        credit: 0.6,
       },
     ],
     correctAnswer:
-      "A seasonal (likely pollen) allergy is driving the itch, ears, and paw-licking together, which is why they flare in spring — one cause binds all four; test it with a spring antihistamine trial or allergen panel and see whether the cluster subsides.",
+      "Turning thoughts into speech likely depends on a distinct processing stage between intact comprehension (input) and intact muscle control (output), and that stage alone is damaged; test whether he can produce the same words in writing, whether he can repeat words he just heard, and whether other patients show the reverse — fluent speech but poor comprehension.",
     explanation:
-      "The seasonal-allergy model binds the itch, ear infections, paw-licking, and spring timing with one cause and a treatment test — top yield. Splitting the symptoms into separate common causes is the dodge.",
+      "The richest conclusion isolates a middle processing stage from intact input and output and names three tests; 'too interconnected to assign to any stage' is the refusal the selective deficit contradicts.",
   },
 ];
 
@@ -446,426 +417,425 @@ const hybrid: HomeworkItem[] = [
   {
     itemType: "hybrid",
     prompt:
-      "A startup sees: churn rose this month, support tickets about a confusing new checkout flow spiked, the checkout was redesigned three weeks ago, and cart-abandonment jumped. Which conclusion best follows?",
+      "An arrow flashes pointing left or right; a target then appears. People detect it faster when it appears where the arrow pointed and slower when it appears on the opposite side, even though the arrow gives no guarantee. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Churn, tickets, and abandonment are different signals that probably moved for their own reasons.",
-        credit: 0,
-      },
-      {
-        text: "The new checkout redesign confused users, spiking tickets, abandonment, and churn — one change binds all of it; test it by reverting the checkout for a cohort and comparing churn and abandonment.",
+        text: "An internal 'spotlight' of attention is likely shifted toward the cued location before the target arrives, speeding processing there and costing time when it must be redirected; test whether very short cue-to-target gaps give no benefit, whether the benefit peaks then fades over time, and whether an invalid cue's cost grows with how far attention must travel back.",
         credit: 1.0,
       },
       {
-        text: "The confusing checkout is likely behind the rise in cart abandonment.",
+        text: "The arrow probably draws attention to one side; we could test more cue directions.",
         credit: 0.6,
       },
       {
-        text: "Something about the product is bothering users lately.",
+        text: "People seem faster on the side the arrow points to.",
         credit: 0.3,
+      },
+      {
+        text: "Attention is invisible, so we can't say what the arrow does inside the head.",
+        credit: 0,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would most distinguish the redesign model from a 'general dissatisfaction' rival, and say what result would refute the redesign model.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'attention shifted in advance' lead from the rival 'people simply guess the cued side and respond before checking,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest distinguishing check: compare churn and abandonment between users who went through the new checkout and users who never reached it this month. If churn and abandonment rose just as much among users who never touched the new checkout, the redesign model is refuted.",
+        "Cheapest test: use catch trials where no target appears and require people to confirm a target was really there — my lead predicts they stay accurate (not just fast) on valid trials and rarely false-alarm, because attention improves processing rather than triggering blind guesses. It is refuted if the 'speed-up' is really just premature button-presses, showing up as many false alarms on empty trials instead of better detection.",
       yieldAnchors: [
-        "Churn rose this month",
-        "Support tickets about the confusing checkout spiked",
-        "The checkout was redesigned three weeks ago",
-        "Cart abandonment jumped",
+        "Targets at the cued side are detected faster",
+        "Targets on the opposite side are detected slower",
+        "The arrow gives no guarantee yet still shifts performance",
       ],
       riskAnchors: [
-        "Reverting checkout for a cohort should lower their churn and abandonment",
-        "Users who never reached checkout should show less churn increase",
+        "Very short cue-to-target gaps give no benefit",
+        "The benefit peaks then fades over time",
+        "The invalid-cue cost grows with the distance attention must travel back",
       ],
       defeatedBy: [
-        "Churn rose equally among users who never saw the new checkout",
-        "Abandonment was already climbing before the redesign shipped",
+        "People false-alarm on empty trials just as fast",
+        "The cued side speeds responses even with eyes closed",
       ],
     },
     correctAnswer:
-      "The new checkout redesign confused users, spiking tickets, abandonment, and churn — one change binds all of it; test it by reverting the checkout for a cohort and comparing churn and abandonment.",
+      "An internal 'spotlight' of attention is likely shifted toward the cued location before the target arrives, speeding processing there and costing time when it must be redirected; test whether very short cue-to-target gaps give no benefit, whether the benefit peaks then fades over time, and whether an invalid cue's cost grows with how far attention must travel back.",
     explanation:
-      "The redesign model binds the tickets, abandonment, churn, and timing with one cause and a revert test, and the follow-up names a cheap decisive comparison — full credit. Calling the signals independent is the zero-credit dodge.",
+      "Full credit names a pre-target attention shift with three checks and a false-alarm test that states its own refutation; 'attention is invisible, we can't say' is the empty refusal.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A farmer reports: one field's corn is shorter, its leaves are pale, that field was planted with seed from a new bag, and germination there was patchy. The neighboring field (old seed) is uniform and green. Which conclusion best follows?",
+      "A researcher times three tasks: just respond to any light; respond only if it is green; and press left for green, right for red. Each added requirement adds its own slice of time. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Short, pale, patchy corn could each stem from separate field quirks.",
-        credit: 0,
-      },
-      {
-        text: "The pale leaves suggest a nutrient deficiency in that field.",
-        credit: 0.6,
-      },
-      {
-        text: "That field is underperforming this season.",
+        text: "Harder versions of the task take longer.",
         credit: 0.3,
       },
       {
-        text: "The new seed lot was poor — explaining the patchy germination, short stunted plants, and pale leaves at once; test it by sowing the same new lot in a control strip of the healthy field and seeing if the problems reappear.",
+        text: "What the mind does between light and button is hidden, so the timing means nothing.",
+        credit: 0,
+      },
+      {
+        text: "The total response time can likely be broken into separable stages — detecting, deciding which light, and choosing which hand — because each added demand inserts its own measurable slice; test whether removing the decision step subtracts roughly that slice, whether the stage times stay stable across people, and whether a manipulation aimed at one stage leaves the others' times unchanged.",
         credit: 1.0,
+      },
+      {
+        text: "Each added step probably adds time; we could time more task versions.",
+        credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would most distinguish the bad-seed model from a soil-deficiency rival, and say what result would refute the bad-seed model.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'separable additive stages' lead from the rival 'the whole task just gets uniformly harder,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest distinguishing check: plant the new seed lot in a strip of the healthy field's soil and plant old seed in a strip of the troubled field. If the new seed thrives in the troubled field's soil while old seed there is fine, the bad-seed model is refuted and soil is implicated.",
+        "Cheapest test: introduce a manipulation that should touch only the deciding-which-light stage (say, making the two colors hard to tell apart) and check that it lengthens only that slice while leaving the detect and respond slices unchanged — clean, stage-specific effects are the signature of separable stages. My lead is refuted if every manipulation smears across all the slices at once, which would fit one uniformly harder process rather than discrete stages.",
       yieldAnchors: [
-        "The field's corn is shorter",
-        "Its leaves are pale",
-        "It was planted with seed from a new bag",
-        "Germination there was patchy",
+        "Simple detection is fastest",
+        "Adding a decision adds a slice of time",
+        "Adding a choice of hand adds another slice",
       ],
       riskAnchors: [
-        "New seed in the healthy field's soil should reproduce the problems",
-        "Old seed in the troubled field's soil should grow normally",
+        "Removing the decision step subtracts roughly its slice",
+        "Stage times stay stable across people",
+        "A manipulation aimed at one stage leaves the others unchanged",
       ],
       defeatedBy: [
-        "New seed grows fine in the healthy field's soil",
-        "Old seed in the troubled field is also stunted and pale",
+        "Every manipulation slows all parts of the task equally",
+        "Nothing about hidden stages can be read from timing",
       ],
     },
     correctAnswer:
-      "The new seed lot was poor — explaining the patchy germination, short stunted plants, and pale leaves at once; test it by sowing the same new lot in a control strip of the healthy field and seeing if the problems reappear.",
+      "The total response time can likely be broken into separable stages — detecting, deciding which light, and choosing which hand — because each added demand inserts its own measurable slice; test whether removing the decision step subtracts roughly that slice, whether the stage times stay stable across people, and whether a manipulation aimed at one stage leaves the others' times unchanged.",
     explanation:
-      "The bad-seed model binds germination, height, and color with one cause and a control-strip test, and the swap follow-up cleanly separates it from soil — full credit. Splitting the symptoms into field quirks is the dodge.",
+      "Top credit reads additive slices as separable stages with three checks and a stage-specific test that names its refutation; 'the timing means nothing' is the dodge the orderly additive slices defeat.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A gym owner sees: evening classes are empty, members complain about parking, a neighboring lot closed for construction last month, and daytime classes (free street parking) stay full. Which conclusion best follows?",
+      "After reading 'doctor,' people recognize 'nurse' faster than 'butter,' and recognize 'hospital' somewhat faster too, with the boost shrinking for more distantly related words. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The lot closure removed evening parking, which is why evening classes emptied while daytime stays full — one cause binds all of it; test it by validating parking at a nearby garage for evenings and tracking attendance.",
-        credit: 1.0,
-      },
-      {
-        text: "Parking complaints are probably discouraging some evening attendance.",
+        text: "Related words probably help each other; we could test more word pairs.",
         credit: 0.6,
       },
       {
-        text: "Evening attendance is down for now.",
+        text: "Word associations are too personal to support any general claim.",
+        credit: 0,
+      },
+      {
+        text: "People seem quicker on related words.",
         credit: 0.3,
       },
       {
-        text: "Class times and parking are separate concerns that may not be linked.",
-        credit: 0,
+        text: "Concepts are likely stored in a network where activating one spreads activation to its neighbors, pre-readying related words by an amount that falls with conceptual distance; test whether the boost decreases smoothly with how related the words are rated, whether an unrelated word in between weakens the link, and whether a longer gap before the second word lets the activation fade.",
+        credit: 1.0,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would most distinguish the parking model from a 'bad evening schedule' rival, and say what result would refute the parking model.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'spreading activation in a network' lead from the rival 'people consciously predict and prepare for the next word,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest distinguishing check: offer free validated garage parking for a week of evening classes and watch attendance. If evening attendance stays flat despite easy parking, the parking model is refuted and the schedule or instructors are implicated.",
+        "Cheapest test: shorten the gap between the two words to a fraction of a second, too fast for any conscious prediction — my lead predicts the related-word boost still appears because spreading activation is automatic and quick. It is refuted if the boost only shows up at long, leisurely gaps where people have time to deliberately guess, which would point to conscious strategy rather than an automatic network.",
       yieldAnchors: [
-        "Evening classes are empty",
-        "Members complain about parking",
-        "The neighboring lot closed for construction last month",
-        "Daytime classes with free street parking stay full",
+        "'Nurse' is recognized faster after 'doctor' than 'butter'",
+        "Related but distant words get a smaller boost",
+        "The boost shrinks with conceptual distance",
       ],
       riskAnchors: [
-        "Validated evening garage parking should restore attendance",
-        "Daytime full / evening empty split should track parking availability",
+        "The boost falls smoothly with rated relatedness",
+        "An unrelated word in between weakens the link",
+        "A longer gap lets the activation fade",
       ],
       defeatedBy: [
-        "Evening attendance stays empty even with free garage parking",
-        "Evening classes were already emptying before the lot closed",
+        "Only words people consciously expect get any boost",
+        "Relatedness has no effect on recognition speed",
       ],
     },
     correctAnswer:
-      "The lot closure removed evening parking, which is why evening classes emptied while daytime stays full — one cause binds all of it; test it by validating parking at a nearby garage for evenings and tracking attendance.",
+      "Concepts are likely stored in a network where activating one spreads activation to its neighbors, pre-readying related words by an amount that falls with conceptual distance; test whether the boost decreases smoothly with how related the words are rated, whether an unrelated word in between weakens the link, and whether a longer gap before the second word lets the activation fade.",
     explanation:
-      "The parking model binds the empty evenings, complaints, closure timing, and full daytimes with one cause and a validation test, and the follow-up isolates it cleanly — full credit. 'Separate concerns' refuses the high-yield model and scores zero.",
+      "Full credit names a spreading-activation network with three checks and a too-fast-to-guess test that states its refutation; 'too personal to support any claim' is the dodge the graded, reliable priming defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A clinic notes: a patient's blood sugar swings wildly, she recently started shift work, her meal times are now erratic, and her readings are worst after night shifts. Which conclusion best follows?",
+      "Asked to respond to digits by whether they are odd or even, people are slow at first, but after hundreds of trials they respond almost as fast as for simple detection and report not 'thinking' about it. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Blood sugar varies; we can't really single out one cause among many.",
-        credit: 0,
+        text: "Practice seems to speed up the parity task.",
+        credit: 0.3,
       },
       {
-        text: "Shift work scrambled her meal timing and sleep, destabilizing her blood sugar — worst after night shifts; one cause binds it all. Test it by stabilizing meal times across a fixed-schedule stretch and tracking the swings.",
+        text: "Heavy practice likely compresses a multi-step computation — read digit, judge odd/even, choose a response — into a fast automatic lookup, shrinking the decision stage toward zero; test whether a never-practiced digit-to-response mapping is slow again, whether a sudden rule reversal restores the slow times, and whether the automatic response intrudes when people are told to withhold it.",
         credit: 1.0,
       },
       {
-        text: "Erratic meal times are likely contributing to the unstable readings.",
-        credit: 0.6,
+        text: "Skill differences are too individual to conclude anything.",
+        credit: 0,
       },
       {
-        text: "Her glucose control seems off recently.",
-        credit: 0.3,
+        text: "Practice probably makes the judgment easier; we could test more practice amounts.",
+        credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would most distinguish the shift-work model from a 'medication dosing' rival, and say what result would refute the shift-work model.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'computation compressed into an automatic lookup' lead from the rival 'people just generally get faster at everything,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest distinguishing check: keep medication unchanged but regularize meal and sleep timing for two weeks and watch the swings. If swings persist unchanged on a stable schedule with the same meds, the shift-work model is refuted and dosing should be reviewed.",
+        "Cheapest test: after training, suddenly swap the rule (now press the other key for odd) and check whether response time jumps back to slow — if a learned mapping was driving the speed, breaking it should cost dearly, which a general speed-up would not. My lead is refuted if reversing the rule barely slows people, showing the gain was just overall quickening rather than a stored stimulus-response shortcut.",
       yieldAnchors: [
-        "Blood sugar swings wildly",
-        "She recently started shift work",
-        "Meal times are now erratic",
-        "Readings are worst after night shifts",
+        "The parity task is slow at first",
+        "After much practice it is nearly as fast as simple detection",
+        "People report not consciously thinking about it",
       ],
       riskAnchors: [
-        "Stabilizing meal/sleep timing should reduce the swings",
-        "Worst-after-night-shift pattern should fade on a fixed schedule",
+        "A never-practiced mapping is slow again",
+        "A sudden rule reversal restores the slow times",
+        "The automatic response intrudes when people must withhold it",
       ],
       defeatedBy: [
-        "Swings persist unchanged once schedule is regularized",
-        "Readings were already unstable before shift work began",
+        "Reversing the learned rule costs no extra time",
+        "People speed up equally on every unrelated task",
       ],
     },
     correctAnswer:
-      "Shift work scrambled her meal timing and sleep, destabilizing her blood sugar — worst after night shifts; one cause binds it all. Test it by stabilizing meal times across a fixed-schedule stretch and tracking the swings.",
+      "Heavy practice likely compresses a multi-step computation — read digit, judge odd/even, choose a response — into a fast automatic lookup, shrinking the decision stage toward zero; test whether a never-practiced digit-to-response mapping is slow again, whether a sudden rule reversal restores the slow times, and whether the automatic response intrudes when people are told to withhold it.",
     explanation:
-      "The shift-work model binds the swings, erratic meals, and night-shift pattern with one cause and a schedule test, and the follow-up separates it from dosing — full credit. 'Blood sugar varies' refuses to commit and earns zero.",
+      "Top credit names a multi-step computation compressed into automatic lookup with three checks and a rule-reversal test that names its refutation; 'too individual to conclude anything' is the empty refusal.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A retailer sees: an item's returns spiked, reviews mention 'runs small', the manufacturer changed factories last quarter, and exchange requests are mostly for larger sizes. Which conclusion best follows?",
+      "Asked which is bigger in real life, a pair like 'a horse vs a cat,' people answer faster the larger the real size difference — even though the words themselves give no size cue. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Returns happen; spikes, reviews, and exchanges are separate noise.",
+        text: "Size is subjective, so these judgments can't reveal anything.",
         credit: 0,
       },
       {
-        text: "Customers finding the item small is probably driving the returns.",
+        text: "Bigger differences probably make the choice easier; we could test more animal pairs.",
         credit: 0.6,
       },
       {
-        text: "This product is having issues lately.",
-        credit: 0.3,
+        text: "People likely convert the words into an internal magnitude representation and compare those magnitudes, so a larger real-size gap is easier to resolve; test whether the effect tracks actual physical sizes rather than word length or familiarity, whether it appears for other dimensions like loudness or price, and whether very close real sizes produce errors and slow responses.",
+        credit: 1.0,
       },
       {
-        text: "The new factory's sizing runs small, which explains the 'runs small' reviews, the return spike, and the larger-size exchanges together; test it by measuring new-factory garments against the old spec and against labeled size.",
-        credit: 1.0,
+        text: "People seem faster when sizes are very different.",
+        credit: 0.3,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would most distinguish the factory-sizing model from a 'customers changed' rival, and say what result would refute the factory-sizing model.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'words converted into internal magnitudes' lead from the rival 'people just instantly know the answer for very different pairs,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest distinguishing check: physically measure new-factory garments against the old factory's spec for the same labeled size. If the new garments match the old measurements exactly, the factory-sizing model is refuted and changing customer expectations must be examined.",
+        "Cheapest test: hold familiarity and word length constant and vary only the real-size gap in small steps — my lead predicts a smooth, continuous speed-up as the gap widens, the signature of comparing positions on an internal scale, not a sudden 'obvious vs not' split. It is refuted if response time is flat across all gaps or jumps in one step, which would fit instant lookup rather than graded magnitude comparison.",
       yieldAnchors: [
-        "The item's returns spiked",
-        "Reviews mention 'runs small'",
-        "The manufacturer changed factories last quarter",
-        "Exchange requests are mostly for larger sizes",
+        "People judge real-world size from words alone",
+        "Bigger real-size gaps give faster answers",
+        "The words give no direct size cue",
       ],
       riskAnchors: [
-        "New-factory garments should measure smaller than the old spec",
-        "Return/exchange spike should align with the factory-change date",
+        "The effect tracks actual physical size, not word length or familiarity",
+        "It appears for other dimensions like loudness or price",
+        "Very close real sizes produce errors and slow responses",
       ],
       defeatedBy: [
-        "New garments measure identical to the old spec",
-        "Returns spiked before the factory change",
+        "Response time is flat no matter the size gap",
+        "Word length, not real size, drives the speed",
       ],
     },
     correctAnswer:
-      "The new factory's sizing runs small, which explains the 'runs small' reviews, the return spike, and the larger-size exchanges together; test it by measuring new-factory garments against the old spec and against labeled size.",
+      "People likely convert the words into an internal magnitude representation and compare those magnitudes, so a larger real-size gap is easier to resolve; test whether the effect tracks actual physical sizes rather than word length or familiarity, whether it appears for other dimensions like loudness or price, and whether very close real sizes produce errors and slow responses.",
     explanation:
-      "The factory-sizing model binds the reviews, returns, and larger-size exchanges with one cause and a tape-measure test, and the follow-up is decisive — full credit. Calling the spikes 'separate noise' is the dodge.",
+      "Full credit posits a word-to-magnitude conversion with three checks and a graded-gap test that names its refutation; 'size is subjective, can't reveal anything' is the dodge the orderly distance effect defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A teacher of an online course sees: video completion rates dropped, students report the audio is quiet, the lectures were re-recorded with a new mic last month, and forum questions repeat content covered in the videos. Which conclusion best follows?",
+      "People recall short lists of words worse when the words sound alike (man, mad, cap, cat) than when they look or mean alike, and recalling long words is harder than short ones. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The new mic made the audio too quiet, so students don't finish videos and miss content they then re-ask about — one cause binds completion, the audio complaints, and the repeated questions; test it by re-publishing a normalized-audio version and tracking completion.",
+        text: "Short-term verbal memory likely holds items in a sound-based form refreshed by inner speech, so similar sounds blur together and longer words crowd the rehearsal loop; test whether silently mouthing an irrelevant word like 'the, the, the' wipes out both effects, whether the word-length cost tracks how long words take to say rather than letter count, and whether meaning-based similarity barely hurts immediate recall.",
         credit: 1.0,
       },
       {
-        text: "Quiet audio is probably reducing how much of each video students watch.",
+        text: "Sound-alike words probably get confused; we could test more word lists.",
         credit: 0.6,
       },
       {
-        text: "Engagement with the videos has dipped.",
-        credit: 0.3,
+        text: "Memory is too variable to say what form words are stored in.",
+        credit: 0,
       },
       {
-        text: "Completion, audio, and forum activity are unrelated metrics moving on their own.",
-        credit: 0,
+        text: "Similar-sounding words seem harder to remember.",
+        credit: 0.3,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would most distinguish the audio model from a 'content got boring' rival, and say what result would refute the audio model.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'sound-based rehearsal loop' lead from the rival 'similar words are just generally confusing,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest distinguishing check: re-publish one lecture with audio normalized to a comfortable level and compare its completion rate to the quiet version. If completion stays low even at proper volume, the audio model is refuted and the content/pacing should be examined.",
+        "Cheapest test: have people repeat an irrelevant sound aloud ('the, the, the') while studying the list, which blocks inner speech — my lead predicts the sound-similarity and word-length effects should both vanish because the rehearsal loop is occupied. It is refuted if blocking inner speech leaves those effects intact, which would mean the confusion is not tied to a sound-based rehearsal system at all.",
       yieldAnchors: [
-        "Video completion rates dropped",
-        "Students report the audio is quiet",
-        "Lectures were re-recorded with a new mic last month",
-        "Forum questions repeat content covered in the videos",
+        "Sound-alike lists are recalled worse than look- or meaning-alike lists",
+        "Long words are recalled worse than short words",
+        "Meaning similarity barely hurts immediate recall",
       ],
       riskAnchors: [
-        "Normalized-audio re-publish should raise completion",
-        "Repeated forum questions should fall once videos are finished",
+        "Mouthing an irrelevant word wipes out both effects",
+        "The word-length cost tracks speaking time, not letter count",
+        "Meaning-based similarity barely hurts immediate recall",
       ],
       defeatedBy: [
-        "Completion stays low at proper volume",
-        "Completion dropped before the new mic was introduced",
+        "Blocking inner speech leaves the effects unchanged",
+        "Meaning-alike lists are just as hard as sound-alike lists",
       ],
     },
     correctAnswer:
-      "The new mic made the audio too quiet, so students don't finish videos and miss content they then re-ask about — one cause binds completion, the audio complaints, and the repeated questions; test it by re-publishing a normalized-audio version and tracking completion.",
+      "Short-term verbal memory likely holds items in a sound-based form refreshed by inner speech, so similar sounds blur together and longer words crowd the rehearsal loop; test whether silently mouthing an irrelevant word like 'the, the, the' wipes out both effects, whether the word-length cost tracks how long words take to say rather than letter count, and whether meaning-based similarity barely hurts immediate recall.",
     explanation:
-      "The audio model binds completion, the quiet-audio reports, the mic change, and the repeated questions with one cause and a re-publish test, and the follow-up isolates it — full credit. Calling the metrics unrelated is the dodge.",
+      "Top credit names a sound-based rehearsal loop with three checks and an inner-speech-blocking test that names its refutation; 'too variable to say what form' is the dodge the specific sound-similarity pattern defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A city analyst sees: bus ridership on Route 7 fell, on-time performance dropped, a long-term road detour began two months ago on that route, and rider complaints cite unpredictable arrivals. Other routes are steady. Which conclusion best follows?",
+      "Fast typists who hit a wrong key often strike the intended key's neighbor and immediately slow the next stroke, while their eyes are already several letters ahead in the text. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Ridership shifts for many reasons; we shouldn't favor one explanation.",
+        text: "Typists seem to read ahead and sometimes mis-hit.",
+        credit: 0.3,
+      },
+      {
+        text: "Typing is too fast and skilled to analyze its steps.",
         credit: 0,
       },
       {
-        text: "The detour made Route 7 unreliable, which dropped on-time rates and drove riders away — one cause binds the ridership, punctuality, and complaints; test it by restoring the original route (or adding schedule slack) and tracking on-time rates and ridership.",
-        credit: 1.0,
-      },
-      {
-        text: "Poor on-time performance is likely pushing some riders off Route 7.",
+        text: "Typists probably plan ahead; we could record more keystrokes.",
         credit: 0.6,
       },
       {
-        text: "Route 7 is struggling at the moment.",
-        credit: 0.3,
+        text: "Typing likely separates a planning stage that reads and queues upcoming letters from a motor stage that executes them, with an internal monitor that catches errors and slows the next move; test whether covering already-typed text barely hurts speed while blocking the preview ahead does, whether forced fast typing produces more neighbor-key slips, and whether the post-error slowing appears even when typists don't consciously notice the mistake.",
+        credit: 1.0,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would most distinguish the detour model from a 'general transit decline' rival, and say what result would refute the detour model.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'separate plan-ahead and execute stages with a monitor' lead from the rival 'typists just react letter-by-letter to what they currently see,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest distinguishing check: compare Route 7's ridership and on-time decline against the other routes that have no detour. If those routes fell just as much, the detour model is refuted and a system-wide cause must be sought.",
+        "Cheapest test: cover the upcoming text so only the current letter is visible — my lead predicts speed should collapse because the planning stage relies on a queue read several letters ahead, whereas a pure react-to-current-letter account predicts little change. It is refuted if hiding the preview leaves fast typing untouched, which would mean no advance planning stage is feeding the fingers.",
       yieldAnchors: [
-        "Route 7 ridership fell",
-        "On-time performance dropped",
-        "A road detour began two months ago on that route",
-        "Complaints cite unpredictable arrivals",
-        "Other routes are steady",
+        "Errors are usually the intended key's neighbor",
+        "The stroke right after an error slows down",
+        "The eyes are already several letters ahead",
       ],
       riskAnchors: [
-        "Restoring the route or adding slack should raise on-time rates and ridership",
-        "Route 7's decline should exceed detour-free routes",
+        "Covering already-typed text barely hurts speed",
+        "Blocking the preview ahead sharply slows typing",
+        "Post-error slowing appears even without conscious awareness of the slip",
       ],
       defeatedBy: [
-        "Other detour-free routes declined just as much",
-        "Route 7's decline predates the detour",
+        "Hiding the upcoming text leaves fast typing unaffected",
+        "Typists only ever process the single current letter",
       ],
     },
     correctAnswer:
-      "The detour made Route 7 unreliable, which dropped on-time rates and drove riders away — one cause binds the ridership, punctuality, and complaints; test it by restoring the original route (or adding schedule slack) and tracking on-time rates and ridership.",
+      "Typing likely separates a planning stage that reads and queues upcoming letters from a motor stage that executes them, with an internal monitor that catches errors and slows the next move; test whether covering already-typed text barely hurts speed while blocking the preview ahead does, whether forced fast typing produces more neighbor-key slips, and whether the post-error slowing appears even when typists don't consciously notice the mistake.",
     explanation:
-      "The detour model binds the ridership, punctuality, complaints, and the route-specific pattern with one cause and a restoration test, and the follow-up isolates it from a system-wide decline — full credit. 'Ridership shifts for many reasons' is the zero-credit dodge.",
+      "Full credit splits planning from execution plus a monitor, with three checks and a hide-the-preview test that names its refutation; 'too fast and skilled to analyze' is the empty refusal.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A homeowner finds: the basement smells musty, a wall shows a dark stain, the carpet is damp near that wall, and the smell and dampness worsen after heavy rain. Which conclusion best follows?",
+      "When two signals come close together and each needs its own quick response, the response to the second is delayed — and the delay grows the closer the two signals are. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Musty smell, a stain, and damp carpet might each be coincidental.",
-        credit: 0,
-      },
-      {
-        text: "Rainwater is seeping through that wall, which explains the stain, the damp carpet, the musty smell, and the rain-linked timing together; test it by sealing/diverting water at that wall and checking whether dampness and smell stop after the next rain.",
-        credit: 1.0,
-      },
-      {
-        text: "The damp carpet is likely the source of the musty smell.",
+        text: "Two quick tasks probably interfere; we could vary the gap more.",
         credit: 0.6,
       },
       {
-        text: "The basement has a moisture issue.",
+        text: "A central decision stage likely handles one response at a time, so the second must wait for the first to clear the bottleneck — explaining why a shorter gap means a longer wait; test whether the second response's delay equals the leftover processing time of the first, whether making only the first task harder lengthens the second's delay, and whether two pure reflexes that skip the decision stage show no queuing.",
+        credit: 1.0,
+      },
+      {
+        text: "Doing two things at once seems to slow the second one.",
         credit: 0.3,
+      },
+      {
+        text: "Multitasking depends on the person, so no general rule can be drawn.",
+        credit: 0,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would most distinguish the rain-seepage model from an 'indoor plumbing leak' rival, and say what result would refute the rain-seepage model.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'single central bottleneck that queues responses' lead from the rival 'people are just distracted by the second signal,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest distinguishing check: note whether the dampness tracks rainfall or stays constant regardless of weather. If the wall is equally wet during a long dry spell, the rain-seepage model is refuted and an internal plumbing leak should be investigated.",
+        "Cheapest test: make only the first task's decision harder and check whether the second response is delayed by exactly that added time — a bottleneck predicts the second waits in line behind the lengthened first, so its delay should grow by the same amount. My lead is refuted if making the first task harder leaves the second response's timing unchanged, which would mean the two aren't queued through one shared stage.",
       yieldAnchors: [
-        "The basement smells musty",
-        "A wall shows a dark stain",
-        "The carpet is damp near that wall",
-        "Smell and dampness worsen after heavy rain",
+        "The second response is delayed when signals are close",
+        "The delay grows as the gap shrinks",
+        "Each task alone is quick",
       ],
       riskAnchors: [
-        "Sealing/diverting water at the wall should stop dampness after rain",
-        "Dampness should track rainfall, not run constantly",
+        "The second's delay equals the first's leftover processing time",
+        "Making only the first task harder lengthens the second's delay",
+        "Two reflexes that skip the decision stage show no queuing",
       ],
       defeatedBy: [
-        "The wall is equally wet during a long dry spell",
-        "Dampness appears far from the stained wall too",
+        "Lengthening the first task does not delay the second",
+        "The second response is just as fast at any gap",
       ],
     },
     correctAnswer:
-      "Rainwater is seeping through that wall, which explains the stain, the damp carpet, the musty smell, and the rain-linked timing together; test it by sealing/diverting water at that wall and checking whether dampness and smell stop after the next rain.",
+      "A central decision stage likely handles one response at a time, so the second must wait for the first to clear the bottleneck — explaining why a shorter gap means a longer wait; test whether the second response's delay equals the leftover processing time of the first, whether making only the first task harder lengthens the second's delay, and whether two pure reflexes that skip the decision stage show no queuing.",
     explanation:
-      "The seepage model binds the stain, damp carpet, smell, and rain timing with one cause and a sealing test, and the follow-up cleanly separates rain from plumbing — full credit. Calling each clue coincidental is the dodge.",
+      "Top credit names a single-channel bottleneck that queues responses with three checks and a lengthen-the-first test that names its refutation; 'depends on the person' is the dodge the orderly gap-dependent delay defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A factory supervisor sees: defect rates rose on Line B, the defects cluster on the night shift, a machine on Line B was repaired with a temporary part last week, and rejects show the same misaligned weld. Which conclusion best follows?",
+      "Given a candle, a box of tacks, and matches, people struggle to mount the candle on the wall — until they suddenly see the empty tack box as a shelf, then solve it at once. Showing the box empty beforehand makes them solve it far faster. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Defects, shift timing, and the repair are separate facts we shouldn't tie together.",
+        text: "Problem solving is too mysterious to study with such puzzles.",
         credit: 0,
       },
       {
-        text: "The night-shift cluster suggests the night crew needs retraining.",
-        credit: 0.6,
-      },
-      {
-        text: "Line B has been producing more rejects lately.",
+        text: "People seem to get stuck on how they see the box.",
         credit: 0.3,
       },
       {
-        text: "The temporary repair part misaligns the weld, producing the identical defect — heaviest at night when the machine runs hottest/longest; one cause binds the rise, the weld pattern, and the timing. Test it by installing the correct part and rechecking defect rate and weld alignment.",
+        text: "Solving likely requires re-representing an object's function — seeing the box as a platform, not just a container — so a fixed mental representation blocks the answer until it is revised; test whether presenting the box and tacks separately speeds solving, whether first stressing the box's 'container' use slows it further, and whether the same fixation appears for other tools labeled by a usual function.",
         credit: 1.0,
+      },
+      {
+        text: "How the box is shown probably affects solving; we could test more setups.",
+        credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would most distinguish the bad-part model from a 'night-crew error' rival, and say what result would refute the bad-part model.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'stuck mental representation of function' lead from the rival 'people simply haven't had enough time to try all the options,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest distinguishing check: have the day crew run the same machine with the temporary part and inspect for the identical misaligned weld. If day-crew output is defect-free with that part in place, the bad-part model is weakened and night-crew practices are implicated.",
+        "Cheapest test: hold solving time constant but present the tacks already dumped out of the box, so its 'container' role is broken — my lead predicts much faster solutions even with no extra time, because the block is how the box is represented, not how long people work. It is refuted if emptying the box first makes no difference and only extra minutes help, which would point to slow search rather than a fixed representation.",
       yieldAnchors: [
-        "Defect rates rose on Line B",
-        "Defects cluster on the night shift",
-        "A machine was repaired with a temporary part last week",
-        "Rejects show the same misaligned weld",
+        "People fail while the box is seen as a container",
+        "They solve at once after re-seeing it as a shelf",
+        "Showing the box empty beforehand speeds solving",
       ],
       riskAnchors: [
-        "Installing the correct part should drop the defect rate and fix the weld",
-        "The identical-weld defect should appear whenever the temp part runs",
+        "Presenting box and tacks separately speeds solving",
+        "Stressing the box's container use slows it further",
+        "The same fixation appears for other function-labeled tools",
       ],
       defeatedBy: [
-        "Day crew runs the temp part with no defects",
-        "Defects rose before the temporary part was installed",
+        "Emptying the box first makes no difference",
+        "Only more time, not how the box is shown, helps",
       ],
     },
     correctAnswer:
-      "The temporary repair part misaligns the weld, producing the identical defect — heaviest at night when the machine runs hottest/longest; one cause binds the rise, the weld pattern, and the timing. Test it by installing the correct part and rechecking defect rate and weld alignment.",
+      "Solving likely requires re-representing an object's function — seeing the box as a platform, not just a container — so a fixed mental representation blocks the answer until it is revised; test whether presenting the box and tacks separately speeds solving, whether first stressing the box's 'container' use slows it further, and whether the same fixation appears for other tools labeled by a usual function.",
     explanation:
-      "The bad-part model binds the defect rise, the identical weld, and the timing with one cause and a part-swap test, and the follow-up separates it from crew error — full credit. Refusing to tie the facts together is the dodge.",
+      "Full credit names a fixed functional representation that must be revised, with three checks and an empty-the-box test that names its refutation; 'too mysterious to study' is the dodge the reliable framing effect defeats.",
   },
 ];
 
@@ -873,159 +843,175 @@ const written: HomeworkItem[] = [
   {
     itemType: "written",
     prompt:
-      "A library reports: weekday afternoon visits dropped sharply this term, the nearby high school changed dismissal time from 3:00 to 2:00 this term, teen study-room bookings fell, and complaints arrived that the library now feels 'dead' right after lunch. Adult morning use is unchanged. In a paragraph, propose the strongest supported model for the afternoon decline and name a test that could refute it.",
+      "When people read, their eyes don't glide smoothly; they jump and pause, lingering on rare or surprising words, jumping back to reread a confusing phrase, and skipping short predictable words like 'the.' In one paragraph, propose the strongest conclusion about how the mind processes language as it reads, and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The single high-yield model is that the earlier 2:00 dismissal shifted the teen crowd's arrival earlier and out of the library's afternoon window: this one change binds the dropped afternoon visits, the fallen teen study-room bookings, the 'dead after lunch' complaints, and the untouched adult morning use. I'd commit to it and test it: track when teens now arrive and, ideally, open or staff a post-2:00 teen window — if teen visits and bookings don't shift to match the new dismissal time, the model is wrong.",
+        "The strongest conclusion is that reading is an active, moment-by-moment information-processing cycle in which the mind allocates processing time to each word according to its difficulty and uses ongoing comprehension to decide where and how long to look — so the eyes are a live readout of mental load, not a fixed scanning rhythm. This is a strong claim because it predicts checkable consequences: fixation time should rise as a word gets rarer and fall when prior context makes it predictable; a breakdown in comprehension should trigger backward jumps that land on the exact problem word rather than random spots; and changing only the upcoming word's predictability should change how often it is skipped. I would test it by timing fixations against word frequency and contextual predictability, by planting garden-path sentences and tracking where regressions land, and by manipulating context to shift skipping rates while holding the words themselves constant.",
       yieldAnchors: [
-        "Weekday afternoon visits dropped sharply this term",
-        "The high school moved dismissal from 3:00 to 2:00 this term",
-        "Teen study-room bookings fell",
-        "Complaints that it feels 'dead' right after lunch",
-        "Adult morning use is unchanged",
+        "Eyes pause longer on rare or surprising words",
+        "Eyes skip short, predictable words",
+        "Eyes jump back to reread confusing phrases",
       ],
       riskAnchors: [
-        "Teen arrival times should now cluster earlier, matching 2:00 dismissal",
-        "A post-2:00 teen window should recover afternoon teen visits/bookings",
+        "Fixation time rises with rarity and falls with predictability",
+        "Regressions land on the specific problem word",
+        "Changing context predictability changes skipping rates",
       ],
       defeatedBy: [
-        "Teen visits fell uniformly across all hours, not just afternoons",
-        "The decline began before the dismissal time changed",
-        "Adult afternoon use also collapsed (pointing to a building-wide cause)",
+        "Eyes move at a fixed rhythm regardless of content",
+        "Nothing about processing can be read from eye movements",
       ],
     },
     correctAnswer:
-      "The single high-yield model is that the earlier 2:00 dismissal shifted the teen crowd's arrival earlier and out of the library's afternoon window: this one change binds the dropped afternoon visits, the fallen teen study-room bookings, the 'dead after lunch' complaints, and the untouched adult morning use. I'd commit to it and test it: track when teens now arrive and, ideally, open or staff a post-2:00 teen window — if teen visits and bookings don't shift to match the new dismissal time, the model is wrong.",
+      "The strongest conclusion is that reading is an active, moment-by-moment information-processing cycle in which the mind allocates processing time to each word according to its difficulty and uses ongoing comprehension to decide where and how long to look — so the eyes are a live readout of mental load, not a fixed scanning rhythm. This is a strong claim because it predicts checkable consequences: fixation time should rise as a word gets rarer and fall when prior context makes it predictable; a breakdown in comprehension should trigger backward jumps that land on the exact problem word rather than random spots; and changing only the upcoming word's predictability should change how often it is skipped. I would test it by timing fixations against word frequency and contextual predictability, by planting garden-path sentences and tracking where regressions land, and by manipulating context to shift skipping rates while holding the words themselves constant.",
     explanation:
-      "A top answer commits to the one model that binds the most observations (the dismissal shift) and names a refuting test; the cautious 'visits drop for all sorts of reasons' earns near-zero, and a florid answer that explains only one fact scores low.",
+      "Under the inverted standard, 'nothing can be read from eye movements' earns near-zero; top credit goes to the load-allocation conclusion that commits to specific links and names a regression-landing test that could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "A hospital ward reports: post-surgery infections rose this quarter, the rise is confined to one operating room, that room's air-handling filter was last changed 14 months ago (overdue), and infection cultures there show the same airborne mold species. Other rooms are normal. In a paragraph, propose the strongest supported model and name a test that could refute it.",
+      "A four-year-old who has never heard a particular sentence still produces and understands brand-new ones instantly and correctly, like 'The purple dog is dancing on my sandwich.' In one paragraph, propose the strongest conclusion about the mind as an information processor and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The high-yield model is that the overdue air-handling filter let an airborne mold contaminate that one operating room, infecting patients there: this single cause binds the infection rise, its confinement to one room, the overdue filter, and the matching mold species in cultures, while leaving the normal rooms expected. I'd commit and test it: air-sample that room before and after replacing the filter — if the mold counts and the room-specific infections persist after a proper filter change, the model is refuted.",
+        "The strongest conclusion is that the mind does not store and replay learned stimulus-response pairs but applies internal rules — a grammar — to combine stored representations (words) into endless new sentences, a productivity that simple association between heard inputs and outputs cannot explain. This is a strong claim because it predicts checkable consequences: the child should correctly interpret novel sentences that obey the rules yet reject ones that violate them; her mistakes should be systematic overgeneralizations ('goed,' 'foots') rather than random noise; and she should handle made-up words slotted into known structures, treating 'the wug is glorping' grammatically. I would test it by presenting never-heard grammatical and ungrammatical sentences and checking comprehension, by cataloging whether her errors follow rules, and by inserting nonsense words into familiar frames to see if she applies the grammar.",
       yieldAnchors: [
-        "Post-surgery infections rose this quarter",
-        "The rise is confined to one operating room",
-        "That room's filter was last changed 14 months ago (overdue)",
-        "Cultures there show the same airborne mold species",
-        "Other rooms are normal",
+        "The child produces sentences she has never heard",
+        "She understands brand-new sentences instantly",
+        "She does so correctly, not by chance",
       ],
       riskAnchors: [
-        "Air sampling should show high mold counts before the filter change",
-        "Replacing the filter should drop mold counts and room-specific infections",
+        "She accepts rule-following novel sentences and rejects rule-violating ones",
+        "Her errors are systematic overgeneralizations",
+        "She applies the grammar to made-up words in known structures",
       ],
       defeatedBy: [
-        "Infections rose equally across all operating rooms",
-        "Cultures show varied unrelated organisms, not one airborne mold",
-        "Infections persist unchanged after a proper filter replacement",
+        "Language is just memorized stimulus-response pairs",
+        "Children only repeat sentences they have already heard",
       ],
     },
     correctAnswer:
-      "The high-yield model is that the overdue air-handling filter let an airborne mold contaminate that one operating room, infecting patients there: this single cause binds the infection rise, its confinement to one room, the overdue filter, and the matching mold species in cultures, while leaving the normal rooms expected. I'd commit and test it: air-sample that room before and after replacing the filter — if the mold counts and the room-specific infections persist after a proper filter change, the model is refuted.",
+      "The strongest conclusion is that the mind does not store and replay learned stimulus-response pairs but applies internal rules — a grammar — to combine stored representations (words) into endless new sentences, a productivity that simple association between heard inputs and outputs cannot explain. This is a strong claim because it predicts checkable consequences: the child should correctly interpret novel sentences that obey the rules yet reject ones that violate them; her mistakes should be systematic overgeneralizations ('goed,' 'foots') rather than random noise; and she should handle made-up words slotted into known structures, treating 'the wug is glorping' grammatically. I would test it by presenting never-heard grammatical and ungrammatical sentences and checking comprehension, by cataloging whether her errors follow rules, and by inserting nonsense words into familiar frames to see if she applies the grammar.",
     explanation:
-      "Top credit goes to the one mechanism that binds the infection rise, the single-room pattern, the overdue filter, and the mold species, plus a falsifiable air-sampling test; 'infections have many causes, we can't say' is the near-zero dodge.",
+      "The cautious 'children only repeat what they've heard' is the overreach the never-heard sentences defeat; top credit goes to the rule-based, representational conclusion that names a made-up-word test which could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "An e-commerce team reports: mobile conversion dropped 20% after a Tuesday app release, crash logs spiked on one phone model, that model has an older OS version, and affected users abandon at the payment screen. Desktop and other phones are unaffected. In a paragraph, propose the strongest supported model and name a test that could refute it.",
+      "A researcher wants to know whether 'recognizing a face' and 'naming that person' are one step or two. She finds people can say 'I know this face' faster than they can produce the name, and sometimes get stuck knowing the face but not the name. In one paragraph, propose the strongest conclusion about the stages of this process and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The high-yield model is that Tuesday's release contains code incompatible with the older OS on that one phone model, crashing the payment screen and tanking mobile conversion: this single fault binds the post-release drop, the model-specific crash spike, the older-OS link, and the payment-screen abandonment, while explaining why desktop and newer phones are fine. I'd commit and test it: ship a patch (or roll back) for that OS version and watch whether crashes and payment-screen abandonment on that model return to baseline — if they don't, the model is wrong.",
+        "The strongest conclusion is that recognizing a person runs through separable sequential stages — first matching the face as familiar and accessing identity information, then retrieving the name as a later, distinct step that can fail on its own — because the name lags the sense of familiarity and can be blocked while recognition succeeds. This is a strong claim because it predicts checkable consequences: people should access a person's occupation or where they know them before the name, never the name first; name retrieval should fail more often than familiarity or biographical recall; and priming the name's sound should unblock it without changing how the face is recognized. I would test it by timing familiarity, biographical, and name judgments on the same faces, by logging exactly which information is available during 'blocked' states, and by giving sound cues to see whether names resolve while recognition stays constant.",
       yieldAnchors: [
-        "Mobile conversion dropped 20% after the Tuesday release",
-        "Crash logs spiked on one phone model",
-        "That model runs an older OS version",
-        "Affected users abandon at the payment screen",
-        "Desktop and other phones are unaffected",
+        "'I know this face' comes faster than the name",
+        "People get stuck knowing the face but not the name",
+        "Recognition and naming don't fail together",
       ],
       riskAnchors: [
-        "A patch/rollback for that OS should restore conversion on that model",
-        "Crash logs on that model should fall to baseline after the fix",
+        "Biographical information is accessed before the name",
+        "Name retrieval fails more often than familiarity",
+        "Priming the name's sound unblocks it without changing recognition",
       ],
       defeatedBy: [
-        "Conversion dropped on desktop and all phones equally",
-        "Crashes occur across many OS versions, not just the old one",
-        "Abandonment is spread across screens, not concentrated at payment",
+        "Recognizing and naming are a single inseparable act",
+        "Knowing a face always means instantly knowing the name",
       ],
     },
     correctAnswer:
-      "The high-yield model is that Tuesday's release contains code incompatible with the older OS on that one phone model, crashing the payment screen and tanking mobile conversion: this single fault binds the post-release drop, the model-specific crash spike, the older-OS link, and the payment-screen abandonment, while explaining why desktop and newer phones are fine. I'd commit and test it: ship a patch (or roll back) for that OS version and watch whether crashes and payment-screen abandonment on that model return to baseline — if they don't, the model is wrong.",
+      "The strongest conclusion is that recognizing a person runs through separable sequential stages — first matching the face as familiar and accessing identity information, then retrieving the name as a later, distinct step that can fail on its own — because the name lags the sense of familiarity and can be blocked while recognition succeeds. This is a strong claim because it predicts checkable consequences: people should access a person's occupation or where they know them before the name, never the name first; name retrieval should fail more often than familiarity or biographical recall; and priming the name's sound should unblock it without changing how the face is recognized. I would test it by timing familiarity, biographical, and name judgments on the same faces, by logging exactly which information is available during 'blocked' states, and by giving sound cues to see whether names resolve while recognition stays constant.",
     explanation:
-      "The strongest answer commits to one release-incompatibility model that binds the timing, the model-specific crashes, the OS link, and the payment abandonment, with a rollback test; the timid 'conversion fluctuates' answer earns near-zero.",
+      "'Recognizing and naming are one inseparable act' is the overreach the name-blocked states defeat; top credit goes to the staged conclusion that commits to an order and names a sound-cue test that could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "A youth soccer club reports: injuries rose this season, most are hamstring strains, the club switched to a new artificial turf in spring, and the strains cluster among players who train most on the new pitch. The grass-training group is largely unaffected. In a paragraph, propose the strongest supported model and name a test that could refute it.",
+      "Wearing headphones, people repeat aloud a message in one ear and ignore the other. They notice almost nothing of the ignored message's content — yet they reliably notice if their own name is spoken in it. In one paragraph, propose the strongest conclusion about how the mind filters incoming information and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The high-yield model is that the new artificial turf's surface (grip/hardness) is overloading players' hamstrings, causing the strain cluster: this one cause binds the overall injury rise, the hamstring-specific pattern, the spring turf switch, and the concentration among heavy turf-trainers, while explaining why the grass group is spared. I'd commit and test it: move a subset of the turf-heavy players back to grass for several weeks (or measure turf traction forces) — if their hamstring-strain rate stays elevated off the new turf, the model is refuted.",
+        "The strongest conclusion is that the mind has a limited-capacity processing channel and uses an early filter to select one input stream by simple physical features like which ear or which voice, but the filter is leaky — highly important or well-learned signals such as one's own name break through, which means the ignored stream is processed for meaning at least partly before selection. This is a strong claim because it predicts checkable consequences: people should report physical features of the ignored ear (its pitch or whether the speaker is male or female) but not its words; the more meaningful or expected an intruding word is, the more likely it breaks through; and making the attended task harder should reduce how often anything from the ignored ear gets noticed. I would test it by quizzing listeners on physical versus semantic features of the ignored channel, by planting words of varying importance there, and by varying the attended task's difficulty while measuring breakthroughs.",
       yieldAnchors: [
-        "Injuries rose this season",
-        "Most are hamstring strains",
-        "The club switched to new artificial turf in spring",
-        "Strains cluster among heavy turf-trainers",
-        "The grass-training group is largely unaffected",
+        "People accurately repeat the attended message",
+        "They miss the ignored message's content",
+        "They still catch their own name in the ignored ear",
       ],
       riskAnchors: [
-        "Turf-heavy players moved to grass should see hamstring strains fall",
-        "Turf traction/hardness measures should exceed safe ranges",
+        "Physical features of the ignored ear are noticed but not its words",
+        "More meaningful intrusions break through more often",
+        "A harder attended task reduces breakthroughs",
       ],
       defeatedBy: [
-        "Hamstring strains are equally common in the grass group",
-        "Injuries are spread across body parts, not concentrated at hamstrings",
-        "Strain rates stay high even after players leave the new turf",
+        "The ignored ear is completely unprocessed",
+        "Attention is unlimited and processes every stream equally",
       ],
     },
     correctAnswer:
-      "The high-yield model is that the new artificial turf's surface (grip/hardness) is overloading players' hamstrings, causing the strain cluster: this one cause binds the overall injury rise, the hamstring-specific pattern, the spring turf switch, and the concentration among heavy turf-trainers, while explaining why the grass group is spared. I'd commit and test it: move a subset of the turf-heavy players back to grass for several weeks (or measure turf traction forces) — if their hamstring-strain rate stays elevated off the new turf, the model is refuted.",
+      "The strongest conclusion is that the mind has a limited-capacity processing channel and uses an early filter to select one input stream by simple physical features like which ear or which voice, but the filter is leaky — highly important or well-learned signals such as one's own name break through, which means the ignored stream is processed for meaning at least partly before selection. This is a strong claim because it predicts checkable consequences: people should report physical features of the ignored ear (its pitch or whether the speaker is male or female) but not its words; the more meaningful or expected an intruding word is, the more likely it breaks through; and making the attended task harder should reduce how often anything from the ignored ear gets noticed. I would test it by quizzing listeners on physical versus semantic features of the ignored channel, by planting words of varying importance there, and by varying the attended task's difficulty while measuring breakthroughs.",
     explanation:
-      "Top credit binds the injury rise, the hamstring pattern, the turf timing, and the exposure gradient with one cause plus a refuting grass-return test; assigning each player's injury its own separate cause is the zero-credit fragmentation dodge.",
+      "'The ignored ear is completely unprocessed' is the overreach the name-breakthrough defeats; top credit goes to the limited-channel, leaky-filter conclusion that names a task-difficulty test which could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "A coffee roaster reports: customer complaints about bitter coffee rose, the bitterness reports started after a grinder was serviced, the new grind looks visibly finer, and complaints concentrate on espresso drinks (not drip). Bean supplier and roast are unchanged. In a paragraph, propose the strongest supported model and name a test that could refute it.",
+      "Researchers build a computer program that mimics how people solve a logic puzzle. The program makes the same kinds of mistakes people do, slows down on exactly the steps people find hard, and improves with 'practice' the way people do. In one paragraph, propose the strongest conclusion about the mind as an information processor and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The high-yield model is that the grinder service left the burrs set too fine, over-extracting espresso into bitterness: this single cause binds the rise in bitterness complaints, the post-service timing, the visibly finer grind, and the espresso-specific concentration (espresso is far more sensitive to grind than drip), while the unchanged beans and roast rule out supply causes. I'd commit and test it: reset the grinder coarser to the pre-service setting and measure espresso extraction/taste — if bitterness complaints persist at the correct grind, the model is refuted.",
+        "The strongest conclusion is that the puzzle-solving mind can be described as carrying out a specific sequence of information-processing steps — the very procedure the program runs — because matching not just the answers but the timing, the errors, and the learning curve is strong evidence the program captures the actual process, not merely the outcome. This is a strong claim because it predicts checkable consequences: the program should forecast, in advance, which new puzzles people will find hard and which specific errors they'll make; a hint that helps the program should help people in the same way; and any step the program lacks should correspond to a step people don't perform. I would test it by having the program predict difficulty and error patterns on fresh puzzles before collecting human data, by giving people and the program the same hints and comparing the gains, and by removing a step from the program to see whether people show the matching gap.",
       yieldAnchors: [
-        "Complaints about bitter coffee rose",
-        "Bitterness started after the grinder was serviced",
-        "The new grind looks visibly finer",
-        "Complaints concentrate on espresso, not drip",
-        "Bean supplier and roast are unchanged",
+        "The program makes the same kinds of errors as people",
+        "It slows on the same hard steps",
+        "It improves with practice the way people do",
       ],
       riskAnchors: [
-        "Resetting the grind coarser should reduce espresso bitterness",
-        "Extraction measurements should show over-extraction at the current grind",
+        "The program predicts which new puzzles people find hard",
+        "A shared hint helps both the same way",
+        "A missing step in the program matches a missing step in people",
       ],
       defeatedBy: [
-        "Bitterness complaints are equally common on drip coffee",
-        "Bitterness predates the grinder service",
-        "Complaints persist after the grind is reset coarser",
+        "Matching the answers alone proves the mind works like the program",
+        "A computer model can tell us nothing about real minds",
       ],
     },
     correctAnswer:
-      "The high-yield model is that the grinder service left the burrs set too fine, over-extracting espresso into bitterness: this single cause binds the rise in bitterness complaints, the post-service timing, the visibly finer grind, and the espresso-specific concentration (espresso is far more sensitive to grind than drip), while the unchanged beans and roast rule out supply causes. I'd commit and test it: reset the grinder coarser to the pre-service setting and measure espresso extraction/taste — if bitterness complaints persist at the correct grind, the model is refuted.",
+      "The strongest conclusion is that the puzzle-solving mind can be described as carrying out a specific sequence of information-processing steps — the very procedure the program runs — because matching not just the answers but the timing, the errors, and the learning curve is strong evidence the program captures the actual process, not merely the outcome. This is a strong claim because it predicts checkable consequences: the program should forecast, in advance, which new puzzles people will find hard and which specific errors they'll make; a hint that helps the program should help people in the same way; and any step the program lacks should correspond to a step people don't perform. I would test it by having the program predict difficulty and error patterns on fresh puzzles before collecting human data, by giving people and the program the same hints and comparing the gains, and by removing a step from the program to see whether people show the matching gap.",
     explanation:
-      "The strongest answer commits to one grind-too-fine model that binds the bitterness, the service timing, the finer grind, and the espresso concentration, with a regrind test; 'tastes vary, hard to say' earns near-zero and an ornate answer binding one fact scores low.",
+      "'A computer model tells us nothing about real minds' is the dodge the matched timing, errors, and learning defeat; top credit goes to the process-level conclusion that commits to advance predictions and names a remove-a-step test that could refute it.",
   },
 ];
 
 export const section: SectionContent = {
-  slug: "explanatory-yield",
-  title: "Model Selection by Explanatory Yield",
+  slug: "mind-as-information",
+  title: "The Big Idea: Mind as Information Processing",
   weekNumber: 1,
   blurb:
-    "When several explanations all 'fit,' pick the one that binds the most observations at once — every fact a model leaves dangling is a debt it owes.",
+    "The core idea of cognitive science: the mind takes in information, transforms it through hidden internal stages working on mental representations, and produces behavior — a process we can clock, model, and test.",
   lectureTitle:
-    "1.2 Model Selection by Explanatory Yield: pick the model that binds the most data",
-  body,
+    "1.2 The Big Idea: Mind as Information Processing — input, representation, and the hidden stages between",
+  body: `# The Big Idea: Mind as Information Processing
+
+For decades, scientists who wanted to be rigorous about the mind decided to study only what they could see: a stimulus going in, a behavior coming out. Anything in between — thoughts, plans, images, beliefs — was dismissed as unscientific guesswork. This view, **behaviorism**, treated the mind as a black box best left unopened. Then, in the middle of the twentieth century, a new idea swept in and changed everything: maybe the inside of the box isn't off-limits. Maybe the mind is an **information processor**, and we can figure out, step by step, what it does to information on the way from input to output.
+
+## From the black box to the stages inside
+
+The shift is called the **cognitive revolution**, and its central bet is simple but powerful: between a stimulus and a response, the mind performs real, describable operations. A behaviorist watching someone read 'the cat was chased by the dog' and 'the dog chased the cat' the same way would only note two stimuli and two equal responses. A cognitive scientist asks the deeper question — *why* are they treated alike? — and answers that the mind builds an internal representation of **meaning** that both sentences share. The behavior is the clue; the processing inside is the explanation.
+
+## Input, processing, output
+
+The information-processing view borrows its skeleton from how a computer works. Information comes **in** through the senses, gets **processed** through a series of internal operations, and a behavior comes **out**. The power of this framing is that it forces specific questions: What form does the information take at each step? How many steps are there? Which step is the bottleneck? When a man can understand speech perfectly and move his mouth normally yet cannot turn thoughts into spoken words, the input and output are fine — so the damage must sit in a **processing stage** between them. Splitting the mind into input, processing, and output lets us locate exactly where something happens.
+
+## The mind runs on representations
+
+The most important idea in this whole picture is the **representation**: an internal stand-in for something in the world. A mental map of a maze, the meaning of a sentence, a number's size on an inner 'number line,' the sound of a word you're rehearsing — all are representations the mind builds, stores, and operates on. Representations explain why a rat that explored a maze without reward later runs straight to food (it built a map), and why people judge '5 versus 6' more slowly than '2 versus 9' (closer positions on the inner number line are harder to tell apart). The mind doesn't store the world; it stores **information about** the world, and then computes with it.
+
+## Reading the hidden stages from the clock
+
+If processing takes real steps, each step takes real **time** — and time is something we can measure to the millisecond. This is the trick of **mental chronometry**. Add a decision to a task ('press only for the green light') and the response slows by a steady, measurable slice — that slice is the decision stage made visible. When two difficulties (a blurry picture and a rare name) add their delays together independently, that additivity is a fingerprint of **separate sequential stages**. The clock turns invisible mental operations into numbers, letting us count stages, measure them, and test whether a proposed step really exists.
+
+## Why the computer is such a useful model
+
+Calling the mind an information processor isn't just a metaphor; it's a research tool. If you think the mind runs a particular procedure, you can write that procedure as a **computer program** and check whether it behaves like a person — not just getting the same answers, but making the same errors, slowing on the same hard steps, and improving with practice the same way. When a model matches people on all of that, it's strong evidence the model captures the actual process. The computer doesn't prove the mind *is* a computer; it gives us a precise, testable way to spell out exactly what the mind might be doing.
+
+## In the real world
+
+Think about forgetting a stranger's name two seconds after being introduced. The dodge is 'I just have a bad memory' — true-sounding, but it predicts nothing. The information-processing move commits to a mechanism: the name was held briefly in a fragile, sound-based store and never got transferred into longer-term memory because attention was elsewhere during the handshake. Look how much that opens up. It predicts you'll do better if you repeat the name aloud (refreshing the sound store), that a distracting noise right after the introduction will wipe it out, and that you'll forget *names* far more than *faces*, which have richer cues. Three cheap, refutable tests — that is what treating the mind as an information processor buys you: not a shrug, but a testable account of the machinery between input and output.`,
   homework: {
     mcq,
     hybrid,
