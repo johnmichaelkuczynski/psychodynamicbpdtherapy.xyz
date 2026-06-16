@@ -982,20 +982,24 @@ export const section: SectionContent = {
   title: "What Psychodynamic Therapy Is",
   weekNumber: 1,
   blurb:
-    "Psychodynamic therapy treats symptoms and behavior as meaningful, reading the patterns and feelings beneath the surface from observable evidence — repetitions, contradictions between words and actions, and symptoms that track a person's life.",
+    "Psychodynamic therapy treats symptoms and behavior as the visible result of inner conflict — unconscious wishes and fears pulling against conscious aims, and the self in friction with the people it depends on. It reads those hidden forces from observable evidence: repetitions, contradictions between words and actions, and symptoms that track a person's life.",
   lectureTitle:
-    "1.1 What Psychodynamic Therapy Is: reading the meaning beneath the surface",
+    "1.1 What Psychodynamic Therapy Is: the mind in conflict",
   body: `# What Psychodynamic Therapy Is
 
-You can't watch a feeling form or photograph a motive in the act. Yet people are driven by feelings and motives all the time — many of which they couldn't name if you asked. Psychodynamic therapy is the craft of studying that hidden layer the way a good detective studies a case: not by guessing wildly, but by reading the visible evidence a person leaves behind. Its core bet is that behavior, symptoms, and even "accidents" are not random noise. They mean something. The work is to figure out what.
+People are pulled in two directions at once far more often than they admit. A part of you wants the promotion; another part dreads it and quietly fumbles the interview. You love the person you depend on most and resent them in the same breath. Psychodynamic therapy starts from this fact: the mind is not a single voice but a set of forces in conflict — wishes, fears, and the rules we've absorbed about what we're allowed to want — and much of that conflict runs outside of awareness. Symptoms, puzzling behavior, and even "accidents" are not random noise; they are what those colliding forces produce when they can't all be satisfied at once. The work is to figure out which forces are fighting, and what compromise the behavior is striking between them.
 
 ## Symptoms and behavior have meaning
 
 The starting move is to assume that what looks pointless or puzzling often has a point we just can't see yet. A man "forgets" his wallet — but only on the nights it's his turn to pay. A woman gets a stomachache every Sunday, the one evening she calls her mother. A child starts wetting the bed the week a new sibling comes home. Taken alone, each could be a coincidence. But the timing is the tell. When a symptom appears in one specific situation and vanishes in others, the situation is part of the meaning. The behavior is the data; the hidden feeling or purpose is the explanation we build to account for it.
 
-## A part of the mind works outside awareness
+## Conflict between conscious aims and unconscious forces
 
-People are honestly puzzled by their own patterns because much of the mind runs outside of awareness. The man who quits every job right before a promotion isn't lying when he says he wants to succeed; another part of him, one he can't easily reach, pulls the other way. This is not about hidden demons or buried curses. It's closer to a set of automatic habits and expectations, learned early and running quietly in the background. The point of therapy isn't to accuse people of secret motives — it's to help bring those background patterns into the light, where they can finally be looked at and chosen.
+People are honestly puzzled by their own patterns because the forces driving them run partly outside of awareness. The man who quits every job right before a promotion isn't lying when he says he wants to succeed; another part of him — a fear of being seen, a loyalty to a family where no one was supposed to rise too high, a guilt he could never name — pulls hard the other way, and he loses the fight without knowing it took place. This is not about hidden demons or buried curses. It is a real conflict between what a person consciously intends and what they unconsciously wish, dread, or forbid. The point of therapy isn't to accuse people of secret motives — it's to bring both sides of the conflict into the light, where the side that keeps winning in the dark finally has to make its case in the open.
+
+## Conflict between self and others
+
+We don't build these conflicts alone. The mind is assembled out of our earliest relationships and carries them forward: someone who learned that needing people gets you hurt will keep others at arm's length long after the original danger is gone, then feel baffled by their own loneliness. Much of what psychodynamic therapy studies is this friction between self and other — the wish to be close colliding with the fear of being let down, the hunger for approval fighting the urge to rebel against it. These patterns replay with bosses, partners, friends, and — tellingly — with the therapist, which is why the relationship in the room turns out to be one of the sharpest tools for seeing them.
 
 ## Words versus actions
 

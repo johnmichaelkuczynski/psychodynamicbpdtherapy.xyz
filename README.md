@@ -1,14 +1,14 @@
 # 🧭 Psychodynamic Therapy 101
 
-**A One-Unit Baby Course on the Mind Beneath the Surface — Taught, Tutored, Drilled, and Graded by AI**
+**A One-Unit Baby Course on the Mind in Conflict — Taught, Tutored, Drilled, and Graded by AI**
 
 ---
 
 ## 🧩 Overview
 
-Psychodynamic Therapy 101 is a self-paced, single-user web course — a plain-language "baby course" on **the mind beneath the surface**: how out-of-awareness patterns, defenses, transference, and the therapeutic relationship shape how we struggle and how we change. No clinical background or jargon required.
+Psychodynamic Therapy 101 is a self-paced, single-user web course — a plain-language "baby course" on **the mind in conflict**: how unconscious wishes and fears collide with our conscious aims, and how the self struggles with the people it depends on — conflicts that drive defenses, transference, the therapeutic relationship, and the way we change. No clinical background or jargon required.
 
-The course teaches reasoning about the mind on an **inverted grading scale**. Most "critical thinking" rewards caution: the more hedged the answer, the safer it feels. Here, hedging is the failure mode. The **strongest, most-falsifiable interpretation the clinical evidence supports about the hidden dynamic earns top credit**; the cautious *"we can't really conclude anything / the psyche is too complex"* dodge earns near-zero; florid padding that binds no evidence scores low; and a lurid overreach the evidence actively defeats also earns zero. Every question rewards committing to the richest supported interpretation while naming the cheapest disconfirming observation.
+The course teaches reasoning about the mind on an **inverted grading scale**. Most "critical thinking" rewards caution: the more hedged the answer, the safer it feels. Here, hedging is the failure mode. The **strongest, most-falsifiable interpretation the clinical evidence supports about the underlying conflict earns top credit**; the cautious *"we can't really conclude anything / the psyche is too complex"* dodge earns near-zero; florid padding that binds no evidence scores low; and a lurid overreach the evidence actively defeats also earns zero. Every question rewards committing to the richest supported interpretation while naming the cheapest disconfirming observation.
 
 The curriculum is organized into **one unit and 8 sections**: 1.1 What Psychodynamic Therapy Is; 1.2 The Unconscious, Reconsidered; 1.3 Defense Mechanisms; 1.4 Transference; 1.5 The Therapeutic Relationship; 1.6 Insight and Working Through; 1.7 Does It Work? The Evidence; and 1.8 A Session, Start to Finish.
 
@@ -52,7 +52,7 @@ Designed for **middle schoolers, curious adults wanting brief but meaningful exp
 
 ## 📊 Designed For
 
-- **Middle Schoolers & Curious Adults:** A complete, plain-language course on the mind beneath the surface — with on-demand tutoring and adaptive practice, no instructor required.
+- **Middle Schoolers & Curious Adults:** A complete, plain-language course on the mind in conflict — with on-demand tutoring and adaptive practice, no instructor required.
 - **Instructors & Curriculum Designers:** A working reference for what AI-taught, AI-graded, AI-detection-screened coursework looks like end-to-end.
 - **Academic-Integrity Researchers:** A live testbed for layered AI-authorship detection combining text classification with behavioral keystroke evidence.
 - **Product & Engineering Teams:** A reference implementation of contract-first full-stack architecture, streaming AI UX, and self-diagnostic operator tooling in a Replit pnpm monorepo.
@@ -61,11 +61,11 @@ Designed for **middle schoolers, curious adults wanting brief but meaningful exp
 
 ## 💡 Core Idea
 
-Psychodynamic Therapy 101 makes "learning how the mind works beneath the surface" an act of *committed reasoning*.
+Psychodynamic Therapy 101 makes "learning how the mind works in conflict" an act of *committed reasoning*.
 
-It doesn't reward the student for finding reasons to doubt — it rewards them for **committing to the strongest interpretation the clinical evidence supports about the hidden dynamic and naming the cheapest observation that could prove them wrong.** The course teaches that, tutors it, drills it, grades it on an inverted partial-credit scale, screens submissions for misuse, and proves the whole pipeline still works with a single click.
+It doesn't reward the student for finding reasons to doubt — it rewards them for **committing to the strongest interpretation the clinical evidence supports about the underlying conflict and naming the cheapest observation that could prove them wrong.** The course teaches that, tutors it, drills it, grades it on an inverted partial-credit scale, screens submissions for misuse, and proves the whole pipeline still works with a single click.
 
-**Psychodynamic Therapy 101 — where the strongest honest interpretation of what's happening beneath the surface, not the safest hedge, earns the grade.**
+**Psychodynamic Therapy 101 — where the strongest honest interpretation of the underlying conflict, not the safest hedge, earns the grade.**
 
 ---
 

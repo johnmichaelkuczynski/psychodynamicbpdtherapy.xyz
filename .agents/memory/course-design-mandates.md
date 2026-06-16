@@ -8,6 +8,18 @@ description: Non-obvious user mandates about the AI course UX that look removabl
 These are explicit user requirements that a future agent might wrongly "clean up"
 because they seem unwarranted for a plain-language, no-math course. They are intentional.
 
+## Never write "no math" (or equivalents) anywhere in the product
+No copy — landing page, lesson text, README/BLUEPRINT, marketing, video captions —
+may ever state that the course requires/involves "no math" (or "math-free",
+"no equations", etc.). Describe the course by what it IS (plain-language, no clinical
+background needed), never by the absence of math.
+
+**Why:** Permanent, emphatic user mandate. It conflicts with the separate mandate that
+the math keyboard appear on every input — advertising "no math" while shipping a math
+keyboard reads as contradictory.
+**How to apply:** When reframing/rewriting any user-facing text, grep for "math" and
+remove any "no math" phrasing. This rule outlives any single request.
+
 ## Math keyboard is mandatory everywhere
 A symbol palette (`MathKeyboard`) must be present on EVERY freeform input — answer
 inputs (practice, practice-assignments, real assignments) AND the AI tutor chat

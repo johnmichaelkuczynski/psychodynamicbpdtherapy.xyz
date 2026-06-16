@@ -77,3 +77,9 @@ id = "vTz7Xjmr02SYp4SSdbnAY"
 uri = "file://artifacts/course-promo/youtube-description.md"
 type = "text"
 title = "YouTube Publishing Kit (title, description, tags, chapters)"
+
+[[outputs]]
+id = "yNXha7DAtLgf9-W9ZOTZc"
+uri = "file://artifacts/course-trailer/public/audio/bg_music.mp3"
+type = "audio"
+title = "trailer background music"

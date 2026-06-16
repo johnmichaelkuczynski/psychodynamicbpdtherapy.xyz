@@ -89,16 +89,18 @@ export default function Landing() {
         <section className="max-w-4xl mx-auto px-6 pt-20 pb-16 text-center">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary text-secondary-foreground text-xs font-medium mb-6">
             <BarChart3 className="w-3.5 h-3.5" />
-            A one-unit baby course on the mind beneath the surface
+            A one-unit baby course on the mind in conflict
           </div>
           <h1 className="text-4xl md:text-5xl font-serif font-bold text-primary leading-tight mb-5">
-            The mind beneath the surface — taught, tutored, drilled, and graded by AI.
+            The mind in conflict — taught, tutored, drilled, and graded by AI.
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
-            A self-paced baby course on psychodynamic therapy — the unconscious,
-            defenses, transference, the therapeutic relationship, insight, and the
-            evidence behind it. Plain lessons, an AI tutor, adaptive practice, and
-            AI-graded homework. No jargon or background required.
+            A self-paced baby course on psychodynamic therapy — how unconscious
+            wishes and fears collide with our conscious aims, and how we struggle
+            with the people we depend on. You'll cover the unconscious, defenses,
+            transference, the therapeutic relationship, insight, and the evidence
+            behind it. Plain lessons, an AI tutor, adaptive practice, and
+            AI-graded homework. No background or jargon required.
           </p>
           <div className="flex items-center justify-center gap-3">
             <Link href="/sign-up">
@@ -163,8 +165,8 @@ export default function Landing() {
       </main>
 
       <footer className="border-t border-border px-6 py-6 text-center text-sm text-muted-foreground">
-        Psychodynamic Therapy 101 — a baby course on the mind beneath the
-        surface, taught, tutored, drilled, and graded by AI.
+        Psychodynamic Therapy 101 — a baby course on the mind in conflict,
+        taught, tutored, drilled, and graded by AI.
       </footer>
     </div>
   );

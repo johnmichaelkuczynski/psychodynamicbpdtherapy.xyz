@@ -24,7 +24,7 @@ const WEEK_TITLES: Record<number, { title: string; summary: string }> = {
   1: {
     title: "Psychodynamic Therapy 101",
     summary:
-      "A baby course on the mind beneath the surface — how hidden patterns, defenses, transference, and the therapeutic relationship shape how we struggle and how we change.",
+      "A baby course on the mind in conflict — how unconscious wishes and fears collide with our conscious aims, and how defenses, transference, and the therapeutic relationship shape how we struggle and how we change.",
   },
 };
 
