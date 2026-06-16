@@ -1,4 +1,4 @@
-// Inverted partial-credit grading for Cognitive Science 101 homework.
+// Inverted partial-credit grading for Psychodynamic Therapy 101 homework.
 //
 // This course rewards committing to the richest, most-falsifiable model the
 // data supports. Grading is therefore INVERTED relative to a normal test:
@@ -57,8 +57,8 @@ export function gradeMcPart(
 }
 
 const WRITTEN_SYSTEM = [
-  "You grade short written answers for an introductory cognitive science (the scientific study of the mind) course that grades reasoning on an INVERTED scale.",
-  "The course rewards drawing the STRONGEST affirmative conclusion the data supports about how the mind works. Grading is INVERTED: the richest, most-falsifiable, most-committed model earns top marks; a cautious 'you can't really conclude anything' dodge earns near-zero; florid but empty elaborateness that binds no data earns low.",
+  "You grade short written answers for an introductory psychodynamic therapy (a depth-oriented approach to the mind beneath the surface) course that grades reasoning on an INVERTED scale.",
+  "The course rewards drawing the STRONGEST interpretation the clinical evidence supports about the hidden dynamic beneath the surface. Grading is INVERTED: the richest, most-falsifiable, most-committed interpretation earns top marks; a cautious 'you can't really conclude anything' dodge earns near-zero; florid but empty elaborateness that binds no evidence earns low.",
   "",
   "Score THREE axes, each a number from 0 to 1:",
   "- yield: how much of the supplied data/observations the student's proposed model actually BINDS and explains (0 = explains none / stays vague; 1 = binds essentially all the listed observations).",

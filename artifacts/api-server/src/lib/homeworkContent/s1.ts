@@ -9,407 +9,407 @@ const mcq: HomeworkItem[] = [
   {
     itemType: "mc",
     prompt:
-      "Researchers show people two drawings of the same 3-D shape, one turned at an angle, and ask whether they match. The more one shape is rotated away from the other, the longer people take to answer — and the time grows steadily with the angle. Which conclusion best follows?",
+      "A man says he desperately wants a new job, but he has arrived late to every single job interview this past year — even though he is reliably on time for work, friends, and the dentist. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The mind likely 'rotates' a mental image step by step until the shapes line up, so bigger angles take more time; test whether response time rises in even steps with each added degree, whether people report imagining the shape turning, and whether practice at one angle speeds only similar angles.",
+        text: "He's simply a disorganized, careless person, and there's nothing beneath the surface to read into.",
+        credit: 0,
+      },
+      {
+        text: "The lateness likely serves an out-of-awareness purpose — giving him a reason other than himself for a rejection he fears, so being turned down feels like bad timing rather than not being good enough; test whether the lateness shows up only for things he badly wants, whether he quietly downplays each interview right after missing it, and whether the pattern eases once he can name the fear of being judged on his merits.",
         credit: 1.0,
       },
       {
-        text: "Turning the shape more probably makes the task take longer; we could try a few more angles and see.",
+        text: "It's probably about some hidden fear of being judged; we could keep talking about it.",
         credit: 0.6,
       },
       {
-        text: "Bigger rotations seem to slow people down.",
+        text: "He seems to have trouble getting to interviews on time.",
         credit: 0.3,
-      },
-      {
-        text: "The mind is far too complex to say anything about what happens between seeing the shapes and answering.",
-        credit: 0,
       },
     ],
     correctAnswer:
-      "The mind likely 'rotates' a mental image step by step until the shapes line up, so bigger angles take more time; test whether response time rises in even steps with each added degree, whether people report imagining the shape turning, and whether practice at one angle speeds only similar angles.",
+      "The lateness likely serves an out-of-awareness purpose — giving him a reason other than himself for a rejection he fears, so being turned down feels like bad timing rather than not being good enough; test whether the lateness shows up only for things he badly wants, whether he quietly downplays each interview right after missing it, and whether the pattern eases once he can name the fear of being judged on his merits.",
     explanation:
-      "Top credit commits to a concrete hidden process (an analog mental rotation) and names three checkable tests; the 'too complex to say anything' option refuses to infer the process and earns zero under the inverted standard.",
+      "Top credit reads a hidden function out of a pattern that holds only where rejection is possible and names three disconfirming checks; 'just disorganized' is the overreach his reliable punctuality everywhere else defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A three-year-old who has always said 'went' suddenly starts saying 'goed' and 'foots,' words she has never heard any adult use. Which conclusion best follows?",
+      "A woman gets a tight, churning stomachache every Sunday evening. She has no symptoms during the week or on Saturdays, and the one detail she mentions in passing is that Sunday is the night she calls her mother. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The child seems to be making more mistakes than before.",
+        text: "She probably has some stomach issue on Sundays.",
         credit: 0.3,
       },
       {
-        text: "Kids just say random things, so there is nothing to learn from these errors.",
-        credit: 0,
-      },
-      {
-        text: "The child has likely extracted a general grammar rule ('add -ed,' 'add -s') and is over-applying it rather than memorizing each word; test whether her errors appear only on irregular words, whether she also adds endings to made-up words like 'wug,' and whether the errors fade as she relearns the exceptions.",
+        text: "The stomachache likely carries a meaning her words don't — it tracks the dread of a call she feels obligated to make but finds upsetting, so the body voices a conflict she hasn't let herself name; test whether the symptom is absent on Sundays she skips the call, whether it eases when the call goes unusually well, and whether naming what she fears about her mother loosens its grip.",
         credit: 1.0,
       },
       {
-        text: "The child is probably learning a rule and applying it too widely; we could write down more of her sentences.",
+        text: "Bodies are mysterious and stomach pain can come from anything, so there's nothing here to interpret.",
+        credit: 0,
+      },
+      {
+        text: "It's probably connected to her mother somehow; we could look into it more.",
         credit: 0.6,
       },
     ],
     correctAnswer:
-      "The child has likely extracted a general grammar rule ('add -ed,' 'add -s') and is over-applying it rather than memorizing each word; test whether her errors appear only on irregular words, whether she also adds endings to made-up words like 'wug,' and whether the errors fade as she relearns the exceptions.",
+      "The stomachache likely carries a meaning her words don't — it tracks the dread of a call she feels obligated to make but finds upsetting, so the body voices a conflict she hasn't let herself name; test whether the symptom is absent on Sundays she skips the call, whether it eases when the call goes unusually well, and whether naming what she fears about her mother loosens its grip.",
     explanation:
-      "The strongest conclusion names a mechanism (a self-discovered rule) and three tests that could disconfirm it; 'kids say random things' is defeated by the systematic, never-heard errors and opens no inquiry.",
+      "Full credit reads a symptom that tracks one specific event as meaningful and names a skip-the-call test that could refute it; 'pain can come from anything' is the refusal the tight Sunday-only timing defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "People are asked to name the ink color a word is printed in. They are fast when the word 'BLUE' appears in blue ink, but much slower when the word 'RED' appears in blue ink. Which conclusion best follows?",
+      "Asked how he feels about his upcoming divorce hearing, a patient says flatly, 'I'm completely fine with it, totally at peace' — while his knee bounces, his hands grip the armrests, and his voice tightens. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Color and reading are too tangled in the brain to draw any conclusion.",
+        text: "People say one thing and do another all the time, so the mismatch tells us nothing worth pursuing.",
         credit: 0,
       },
       {
-        text: "Reading the word likely happens automatically and interferes with naming the color, so skilled reading is hard to switch off; test whether the slowdown shrinks in people who can't yet read, whether it appears in a second language only once that language is fluent, and whether non-color words like 'TABLE' cause no such delay.",
+        text: "His body likely registers a distress his words are smoothing over, so the strongest reading attends to what he shows rather than only what he says; test whether his calm wording cracks when the hearing is described in detail, whether the physical agitation eases as he admits any worry, and whether he changes the subject quickly after declaring he's fine.",
         credit: 1.0,
       },
       {
-        text: "The mismatched word probably slows people down; we could test more color words.",
-        credit: 0.6,
+        text: "He seems a little tense while saying he's fine.",
+        credit: 0.3,
       },
       {
-        text: "People seem slower when the word and the color disagree.",
-        credit: 0.3,
+        text: "He's probably more upset than he's letting on; we could ask him about it.",
+        credit: 0.6,
       },
     ],
     correctAnswer:
-      "Reading the word likely happens automatically and interferes with naming the color, so skilled reading is hard to switch off; test whether the slowdown shrinks in people who can't yet read, whether it appears in a second language only once that language is fluent, and whether non-color words like 'TABLE' cause no such delay.",
+      "His body likely registers a distress his words are smoothing over, so the strongest reading attends to what he shows rather than only what he says; test whether his calm wording cracks when the hearing is described in detail, whether the physical agitation eases as he admits any worry, and whether he changes the subject quickly after declaring he's fine.",
     explanation:
-      "Full credit pins automatic reading as the cause and lists three checks that could refute it; 'too tangled to draw any conclusion' commits to nothing and earns zero.",
+      "Top credit treats the gap between calm words and an agitated body as the real signal and names a detail-the-hearing test; 'people do that all the time, it tells us nothing' is the dodge the specific contradiction defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "People hear a list of words — bed, rest, awake, tired, dream, night — and a minute later many confidently 'remember' hearing the word 'sleep,' which was never on the list. Which conclusion best follows?",
+      "A man scrubs and reorganizes his entire apartment — but only in the days before a big work deadline. When there is no deadline, the place stays messy and he never feels the urge. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "People seem to misremember the list sometimes.",
-        credit: 0.3,
-      },
-      {
-        text: "They probably remember the gist more than the exact words; we could try other word lists.",
+        text: "He probably just likes a clean space when he's stressed; we could explore that.",
         credit: 0.6,
       },
       {
-        text: "Memory is so unreliable that nothing useful can be concluded from it.",
-        credit: 0,
+        text: "The cleaning likely isn't pointless but serves a function — it lets him feel busy and in control while avoiding the deadline that actually frightens him; test whether the urge appears only when a real deadline looms, whether he feels relief but also falls further behind after cleaning, and whether the urge fades once he starts the dreaded task itself.",
+        credit: 1.0,
       },
       {
-        text: "Memory likely stores the overall meaning or theme rather than an exact recording, so a strongly implied word feels remembered; test whether unrelated lists never trigger the false memory, whether warning people in advance reduces it, and whether the false 'sleep' memory is held as confidently as the real list words.",
-        credit: 1.0,
+        text: "He seems to clean a lot before deadlines.",
+        credit: 0.3,
+      },
+      {
+        text: "Some people are neat and some aren't; there's nothing to understand about when he cleans.",
+        credit: 0,
       },
     ],
     correctAnswer:
-      "Memory likely stores the overall meaning or theme rather than an exact recording, so a strongly implied word feels remembered; test whether unrelated lists never trigger the false memory, whether warning people in advance reduces it, and whether the false 'sleep' memory is held as confidently as the real list words.",
+      "The cleaning likely isn't pointless but serves a function — it lets him feel busy and in control while avoiding the deadline that actually frightens him; test whether the urge appears only when a real deadline looms, whether he feels relief but also falls further behind after cleaning, and whether the urge fades once he starts the dreaded task itself.",
     explanation:
-      "The winning conclusion names a mechanism (gist-based storage) with three checkable tests; 'memory is so unreliable nothing can be concluded' is an overreach the orderly, predictable error actually defeats.",
+      "Full credit reads a 'pointless' habit as serving avoidance and names a does-the-urge-fade-once-he-starts test; 'some people are just neat' is the dodge the deadline-only timing defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "After a small stroke in one part of the brain, a patient can no longer recognize his wife's or his own face, yet he reads fluently, names everyday objects, and knows people instantly by their voices. Which conclusion best follows?",
+      "A woman says she longs for a kind, steady partner, yet over ten years she has chosen, one after another, partners who belittle her — and she loses interest in the gentle ones who treat her well. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Face recognition likely relies on a specialized brain system separate from object naming and reading; test whether other patients with damage to the same spot show the same face-only deficit, whether he can still tell faces apart by a single feature like a scar, and whether brain scans show that area lighting up for faces in healthy people.",
+        text: "The choices likely follow an out-of-awareness template in which harsh treatment feels like familiar love while kindness feels foreign or 'boring,' so she is drawn back to what she knows rather than what she wants; test whether the kind partners she dropped were described as dull rather than disliked, whether the belittling ones resemble an early caregiver, and whether she can stay engaged with a kind partner once the pattern is named.",
         credit: 1.0,
       },
       {
-        text: "Something about faces seems to be affected.",
+        text: "She's probably repeating something from her past; we could talk about her exes.",
+        credit: 0.6,
+      },
+      {
+        text: "She seems to keep picking the wrong people.",
         credit: 0.3,
       },
       {
-        text: "The brain is too interconnected to say any one area does any one job.",
+        text: "Attraction is random and inexplicable, so there's no pattern worth studying in who she dates.",
         credit: 0,
-      },
-      {
-        text: "Face recognition is probably handled separately; we could test a few more patients.",
-        credit: 0.6,
       },
     ],
     correctAnswer:
-      "Face recognition likely relies on a specialized brain system separate from object naming and reading; test whether other patients with damage to the same spot show the same face-only deficit, whether he can still tell faces apart by a single feature like a scar, and whether brain scans show that area lighting up for faces in healthy people.",
+      "The choices likely follow an out-of-awareness template in which harsh treatment feels like familiar love while kindness feels foreign or 'boring,' so she is drawn back to what she knows rather than what she wants; test whether the kind partners she dropped were described as dull rather than disliked, whether the belittling ones resemble an early caregiver, and whether she can stay engaged with a kind partner once the pattern is named.",
     explanation:
-      "Top credit commits to a specialized-system mechanism with three tests; the 'too interconnected to say' option is the barren refusal the selective deficit contradicts.",
+      "Top credit names a familiarity template binding a ten-year repetition and a was-kindness-called-boring test; 'attraction is random' is the refusal the consistent, against-her-stated-wish pattern defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "People are asked to answer 'true' or 'false' to statements like 'A robin is a bird' and 'A penguin is a bird.' Everyone says 'true' to both, but they are reliably slower for the penguin. Which conclusion best follows?",
+      "A thirteen-year-old gets crushing headaches every school morning. On weekends, holidays, and the entire summer the headaches vanish, and every medical test comes back normal. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The mind is a black box, so the timing difference can't tell us anything.",
+        text: "The mind and body are too tangled to ever say why a kid gets headaches, so we shouldn't read anything into the timing.",
         credit: 0,
       },
       {
-        text: "Penguins seem to take a bit longer to judge.",
+        text: "He seems to get headaches on school days.",
         credit: 0.3,
       },
       {
-        text: "The mind likely organizes categories around typical examples, so a robin matches 'bird' faster than an oddball penguin; test whether the most typical bird people name is judged fastest, whether the slowdown shrinks after practice with penguins, and whether the same pattern appears for fruits and vehicles.",
+        text: "The headache likely expresses something about school that he can't yet put into words — the body carrying a distress (fear, dread, or pressure) that has no other outlet; test whether the headaches stay gone on a long break and return the first school morning, whether they cluster around a specific class or social situation, and whether they ease as he can name what he dreads at school.",
         credit: 1.0,
       },
       {
-        text: "People probably treat some birds as more 'birdlike'; we could test more animals.",
+        text: "It probably has to do with school stress; we could keep an eye on it.",
         credit: 0.6,
       },
     ],
     correctAnswer:
-      "The mind likely organizes categories around typical examples, so a robin matches 'bird' faster than an oddball penguin; test whether the most typical bird people name is judged fastest, whether the slowdown shrinks after practice with penguins, and whether the same pattern appears for fruits and vehicles.",
+      "The headache likely expresses something about school that he can't yet put into words — the body carrying a distress (fear, dread, or pressure) that has no other outlet; test whether the headaches stay gone on a long break and return the first school morning, whether they cluster around a specific class or social situation, and whether they ease as he can name what he dreads at school.",
     explanation:
-      "The richest conclusion names typicality as the organizing principle and three tests that could refute it; the 'black box' answer is the dodge the reliable timing difference itself defeats.",
+      "Full credit reads a symptom that tracks school days as meaningful and names a return-the-first-school-morning test; 'too tangled to ever say' is the dodge the clean school-only timing and normal tests defeat.",
   },
   {
     itemType: "mc",
     prompt:
-      "A behavior experiment, a brain-imaging study, and a computer simulation — done by three separate labs — all independently point to the same conclusion: that people store word meanings and personal memories using two different systems. Which conclusion best follows?",
+      "Whenever a group of friends goes out, one man 'forgets' his wallet — but, examined over a year, it happens only on the evenings it would have been his turn to pay, never when someone else is covering. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The three studies seem to roughly agree.",
-        credit: 0.3,
-      },
-      {
-        text: "Because independent methods from different fields converge on the same answer, two separate memory systems is the strongest supported conclusion; test whether a brain injury can knock out one system while sparing the other, whether the simulation fails in the same way patients do, and whether a new method like eye-tracking lands on the same split.",
-        credit: 1.0,
-      },
-      {
-        text: "Three studies is still too few to commit to anything.",
+        text: "Everyone forgets their wallet sometimes; reading meaning into an honest mistake is overthinking it.",
         credit: 0,
       },
       {
-        text: "The agreement probably means there are two systems; we could wait for more studies.",
+        text: "The 'forgetting' is probably not random but patterned — it spares him a cost he resents while letting him feel it was an accident rather than a choice; test whether the lapses really cluster only on his turns to pay, whether he reacts with relief rather than embarrassment, and whether the pattern stops once the unfairness he feels about money is talked through.",
+        credit: 1.0,
+      },
+      {
+        text: "He's probably avoiding paying without realizing it; we could watch and see.",
         credit: 0.6,
+      },
+      {
+        text: "He seems forgetful about his wallet.",
+        credit: 0.3,
       },
     ],
     correctAnswer:
-      "Because independent methods from different fields converge on the same answer, two separate memory systems is the strongest supported conclusion; test whether a brain injury can knock out one system while sparing the other, whether the simulation fails in the same way patients do, and whether a new method like eye-tracking lands on the same split.",
+      "The 'forgetting' is probably not random but patterned — it spares him a cost he resents while letting him feel it was an accident rather than a choice; test whether the lapses really cluster only on his turns to pay, whether he reacts with relief rather than embarrassment, and whether the pattern stops once the unfairness he feels about money is talked through.",
     explanation:
-      "Converging evidence from independent methods is exactly what makes a conclusion strong; the answer names three further tests, while 'too few to commit' refuses the inference the convergence supports.",
+      "Top credit reads a slip that lands only on his turns as serving a hidden function and names a relief-vs-embarrassment test; 'everyone forgets sometimes' is the dodge the perfectly timed pattern defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "As people read, their eyes pause much longer on a sentence's final word when it is surprising ('She spread the warm bread with socks') than when it is expected ('...with butter'). Which conclusion best follows?",
+      "A woman insists she is 'genuinely thrilled' her younger sister just got engaged. Then she misreads the party date, double-books herself, and ends up missing the celebration — the only family event she has skipped in years. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Reading involves so much that we can't say why a word slows someone down.",
-        credit: 0,
-      },
-      {
-        text: "Odd words seem to slow reading.",
+        text: "She seems to have missed the party by mistake.",
         credit: 0.3,
       },
       {
-        text: "The surprising word probably takes longer to process; we could test more sentences.",
-        credit: 0.6,
+        text: "Scheduling slips happen; there's no reason to connect an honest mix-up to her feelings about her sister.",
+        credit: 0,
       },
       {
-        text: "The mind likely predicts the upcoming word from context, so a violation costs extra time to recover; test whether weakly predictable endings fall between the two, whether the slowdown vanishes when the sentence gives no hint about the ending, and whether brain responses spike at exactly the surprising word.",
+        text: "The 'accident' likely expresses a mixed feeling her words deny — alongside real gladness, an envy or hurt she can't admit, which her actions enact for her; test whether such slips cluster around her sister's milestones specifically, whether she's quick to insist she isn't jealous before anyone asks, and whether the slips ease once any rivalry is openly acknowledged.",
         credit: 1.0,
+      },
+      {
+        text: "She might have complicated feelings about her sister; we could ask her.",
+        credit: 0.6,
       },
     ],
     correctAnswer:
-      "The mind likely predicts the upcoming word from context, so a violation costs extra time to recover; test whether weakly predictable endings fall between the two, whether the slowdown vanishes when the sentence gives no hint about the ending, and whether brain responses spike at exactly the surprising word.",
+      "The 'accident' likely expresses a mixed feeling her words deny — alongside real gladness, an envy or hurt she can't admit, which her actions enact for her; test whether such slips cluster around her sister's milestones specifically, whether she's quick to insist she isn't jealous before anyone asks, and whether the slips ease once any rivalry is openly acknowledged.",
     explanation:
-      "Top credit commits to prediction as the hidden process with three graded tests; 'we can't say why a word slows someone down' opens no inquiry and earns zero.",
+      "Full credit reads a one-off, out-of-character miss against insistent words as enacting a denied feeling and names a milestone-clustering test; 'mix-ups happen' is the dodge the contradiction between thrilled words and the only-skipped-event defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "Fluent bilinguals name pictures quickly, but when they must switch back and forth between their two languages on cue, each switch costs them a fraction of a second. Which conclusion best follows?",
+      "Every time the conversation drifts toward his childhood, a patient suddenly checks his phone, cracks a joke, or asks the therapist a question about her weekend — smoothly steering away each time, though he is talkative about everything else. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "A mental control process likely has to suppress one language and activate the other, which takes time; test whether the cost grows when switches come faster, whether it shrinks with practice switching, and whether people with stronger general self-control switch with less cost.",
-        credit: 1.0,
-      },
-      {
-        text: "Switching languages probably has a cost; we could measure more switches.",
-        credit: 0.6,
-      },
-      {
-        text: "Bilingual minds are unique to each person, so no general conclusion is possible.",
+        text: "Some people just don't like talking about the past; there's nothing to make of it.",
         credit: 0,
       },
       {
-        text: "Switching seems to slow them a little.",
+        text: "He probably finds childhood uncomfortable; we could gently revisit it later.",
+        credit: 0.6,
+      },
+      {
+        text: "The reliable swerve likely marks the childhood material as charged — the very effort to avoid it points to where the meaning is, so the avoidance is itself a clue; test whether the deflections happen only around that topic and not others, whether his manner tightens just before he changes course, and whether staying with the topic a moment longer brings up something painful he's been steering past.",
+        credit: 1.0,
+      },
+      {
+        text: "He seems to change the subject when childhood comes up.",
         credit: 0.3,
       },
     ],
     correctAnswer:
-      "A mental control process likely has to suppress one language and activate the other, which takes time; test whether the cost grows when switches come faster, whether it shrinks with practice switching, and whether people with stronger general self-control switch with less cost.",
+      "The reliable swerve likely marks the childhood material as charged — the very effort to avoid it points to where the meaning is, so the avoidance is itself a clue; test whether the deflections happen only around that topic and not others, whether his manner tightens just before he changes course, and whether staying with the topic a moment longer brings up something painful he's been steering past.",
     explanation:
-      "The strongest conclusion names a control process and three tests that could disconfirm it; 'unique to each person, no general conclusion' is the refusal the reliable switch cost defeats.",
+      "Top credit reads the avoidance itself as a signpost to meaning and names a topic-specificity test; 'some people just don't like the past' is the dodge the reliable, topic-locked swerve in an otherwise talkative man defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "People instantly spot a single red dot among blue dots, no matter how many blue dots there are. But finding a red vertical line hidden among red horizontal lines and blue vertical lines takes longer the more items are on the screen. Which conclusion best follows?",
+      "A man recites a long list of ailments and grievances each session, but brightens whenever the therapist leans in with concern, and looks deflated whenever a complaint is actually solved. At home, his family rallies around him only when he is suffering. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Some searches seem harder than others.",
-        credit: 0.3,
-      },
-      {
-        text: "Vision is too complicated to explain why one search is fast and the other slow.",
-        credit: 0,
-      },
-      {
-        text: "A single feature like color likely 'pops out' automatically, but combining two features (red AND vertical) requires attention to check items one by one; test whether search time rises in even steps with each added item only in the combined case, whether telling people the exact target speeds the hard search, and whether any unique single feature is always found in constant time.",
+        text: "His complaints likely serve a hidden function beyond the problems themselves — they reliably draw the care and attention he doesn't know how to ask for directly, so being better would cost him that closeness; test whether his mood lifts with concern but sags when a problem is fixed, whether new complaints appear as old ones resolve, and whether he can hold the care once he asks for connection openly.",
         credit: 1.0,
       },
       {
-        text: "Combining features probably takes more effort; we could add more items and time it.",
+        text: "He's probably getting something out of complaining; we could look at that.",
         credit: 0.6,
+      },
+      {
+        text: "He seems to complain a lot.",
+        credit: 0.3,
+      },
+      {
+        text: "Some people are just negative by nature, so there's no deeper function to his complaining.",
+        credit: 0,
       },
     ],
     correctAnswer:
-      "A single feature like color likely 'pops out' automatically, but combining two features (red AND vertical) requires attention to check items one by one; test whether search time rises in even steps with each added item only in the combined case, whether telling people the exact target speeds the hard search, and whether any unique single feature is always found in constant time.",
+      "His complaints likely serve a hidden function beyond the problems themselves — they reliably draw the care and attention he doesn't know how to ask for directly, so being better would cost him that closeness; test whether his mood lifts with concern but sags when a problem is fixed, whether new complaints appear as old ones resolve, and whether he can hold the care once he asks for connection openly.",
     explanation:
-      "Top credit distinguishes automatic feature detection from attentive combination and names three tests; 'too complicated to explain' is the dodge the two clean search patterns contradict.",
+      "Full credit reads complaining as serving a connection-seeking function and names a brightens-with-concern-but-sags-when-solved test; 'just negative by nature' is the dodge the deflation-at-solutions pattern defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A word is flashed on a screen too briefly for people to consciously see it. Even so, they then recognize a related word faster than an unrelated one, while insisting they saw nothing. Which conclusion best follows?",
+      "A five-year-old who was fully toilet-trained for a year suddenly starts wetting the bed again — and the relapse began the same week his baby sister came home from the hospital. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "If people say they saw nothing, there is nothing here to study.",
+        text: "Kids regress for no reason all the time, so the timing with the new baby is just coincidence.",
         credit: 0,
       },
       {
-        text: "The mind likely processes meaning even without conscious awareness, so an unseen word can still prime a related one; test whether the priming fades as the flash gets shorter, whether unrelated words give no speed-up, and whether forcing people to guess the hidden word stays at chance while the priming persists.",
+        text: "It's probably about the new sibling; we could give it time.",
+        credit: 0.6,
+      },
+      {
+        text: "The bedwetting likely carries a meaning he can't say — a bid to reclaim the babying and attention the newborn now receives, expressed through behavior because he lacks the words; test whether the relapse tracks moments the baby gets the most attention, whether other 'little' behaviors return alongside it, and whether it fades as he's given special time and helped to voice feeling displaced.",
         credit: 1.0,
       },
       {
-        text: "Hidden words seem to have some effect.",
+        text: "He seems to have started wetting the bed again.",
         credit: 0.3,
-      },
-      {
-        text: "The unseen word probably still registers; we could test more word pairs.",
-        credit: 0.6,
       },
     ],
     correctAnswer:
-      "The mind likely processes meaning even without conscious awareness, so an unseen word can still prime a related one; test whether the priming fades as the flash gets shorter, whether unrelated words give no speed-up, and whether forcing people to guess the hidden word stays at chance while the priming persists.",
+      "The bedwetting likely carries a meaning he can't say — a bid to reclaim the babying and attention the newborn now receives, expressed through behavior because he lacks the words; test whether the relapse tracks moments the baby gets the most attention, whether other 'little' behaviors return alongside it, and whether it fades as he's given special time and helped to voice feeling displaced.",
     explanation:
-      "The winning conclusion names unconscious meaning-processing with three tests; 'nothing here to study' is the overreach the measurable priming effect directly defeats.",
+      "Top credit reads a symptom that tracks the sibling's arrival as a meaningful bid for attention and names a tracks-the-baby's-attention test; 'kids regress for no reason' is the dodge the exact timing defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "Five-month-old babies watch a toy roll behind a screen. When the screen drops to reveal that the toy has somehow passed through a solid wall, babies stare much longer than when it stops at the wall as expected. Which conclusion best follows?",
+      "A talented designer redrafts every project endlessly, always finding one more flaw to fix, and as a result almost never submits anything — repeatedly missing chances she says she wants. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Babies probably expect solid objects to stop; we could test more babies.",
-        credit: 0.6,
-      },
-      {
-        text: "Babies seem surprised by the wall trick.",
+        text: "She seems like a perfectionist.",
         credit: 0.3,
       },
       {
-        text: "Babies can't talk, so we can't know anything about what they think.",
+        text: "The endless polishing likely serves a function beyond quality — as long as the work is 'not finished,' it can never be judged and found wanting, so perfectionism shields her from a feared verdict; test whether the redrafting intensifies precisely as a deadline or audience nears, whether she feels dread rather than pride at the point of submitting, and whether she can let work go once the fear of being judged is addressed.",
+        credit: 1.0,
+      },
+      {
+        text: "Some people are wired to be perfectionists, so there's nothing underneath it to understand.",
         credit: 0,
       },
       {
-        text: "Even pre-verbal infants likely hold expectations that solid objects can't pass through one another, revealed by longer looking at impossible events; test whether possible-but-unusual events draw no extra looking, whether the surprise grows with a more blatant violation, and whether younger babies show a weaker reaction.",
-        credit: 1.0,
+        text: "She's probably afraid of being judged; we could talk about her standards.",
+        credit: 0.6,
       },
     ],
     correctAnswer:
-      "Even pre-verbal infants likely hold expectations that solid objects can't pass through one another, revealed by longer looking at impossible events; test whether possible-but-unusual events draw no extra looking, whether the surprise grows with a more blatant violation, and whether younger babies show a weaker reaction.",
+      "The endless polishing likely serves a function beyond quality — as long as the work is 'not finished,' it can never be judged and found wanting, so perfectionism shields her from a feared verdict; test whether the redrafting intensifies precisely as a deadline or audience nears, whether she feels dread rather than pride at the point of submitting, and whether she can let work go once the fear of being judged is addressed.",
     explanation:
-      "Top credit infers infant expectations from looking time and names three tests; 'babies can't talk so we can't know' is the dodge the looking-time method was designed to overcome.",
+      "Full credit reads perfectionism as serving avoidance of judgment and names an intensifies-as-the-deadline-nears test; 'just wired that way' is the dodge the self-defeating, against-her-wishes pattern defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A team studying how people recognize a friend's voice describes it three ways: as a behavior (you answer faster to familiar voices), as brain activity (certain neurons fire), and as a computation (matching sound patterns to stored templates). Which conclusion best follows?",
+      "While describing the night her father walked out when she was eight — a memory she calls 'no big deal' — a woman smiles and even chuckles, though her eyes well up at the same moment. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The same mental ability can likely be studied at several levels — behavior, brain, and computation — that should fit together rather than compete; test whether the brain region's activity tracks the behavioral speed-up, whether a template-matching computer model reproduces the human pattern, and whether damaging that region slows familiar-voice recognition specifically.",
-        credit: 1.0,
-      },
-      {
-        text: "There seem to be different ways to describe the ability.",
-        credit: 0.3,
-      },
-      {
-        text: "Since the three descriptions use different words, only one of them can be the real explanation.",
+        text: "People react to memories in odd ways; the smile while tearing up doesn't tell us anything in particular.",
         credit: 0,
       },
       {
-        text: "The levels probably describe one ability; we could compare them more.",
+        text: "The mismatch between her light words and her welling eyes likely marks a grief she has learned to wave off, so the feeling leaks out even as she minimizes it; test whether the tears come specifically at the abandonment detail, whether her 'no big deal' framing softens when the sadness is named, and whether other losses get the same smile-it-away treatment.",
+        credit: 1.0,
+      },
+      {
+        text: "She seems to have mixed reactions to the memory.",
+        credit: 0.3,
+      },
+      {
+        text: "There may be more feeling there than she admits; we could revisit it.",
         credit: 0.6,
       },
     ],
     correctAnswer:
-      "The same mental ability can likely be studied at several levels — behavior, brain, and computation — that should fit together rather than compete; test whether the brain region's activity tracks the behavioral speed-up, whether a template-matching computer model reproduces the human pattern, and whether damaging that region slows familiar-voice recognition specifically.",
+      "The mismatch between her light words and her welling eyes likely marks a grief she has learned to wave off, so the feeling leaks out even as she minimizes it; test whether the tears come specifically at the abandonment detail, whether her 'no big deal' framing softens when the sadness is named, and whether other losses get the same smile-it-away treatment.",
     explanation:
-      "The strongest conclusion treats the levels of analysis as complementary and names three tests that should agree; 'only one can be real' is the overreach the converging descriptions defeat.",
+      "Top credit treats the gap between minimizing words and welling eyes as the real signal and names a tears-at-the-abandonment-detail test; 'people react in odd ways' is the dodge the precise affect-content mismatch defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "When shown dots for a split second, people instantly and accurately report 'three' or 'four' without counting, but for seven or eight dots their answers slow down and become error-prone. Which conclusion best follows?",
+      "A capable man has, four times now, quit a job abruptly within days of being told a promotion was coming — each time citing a different, plausible-sounding reason. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Number sense varies so much between people that no general claim is safe.",
+        text: "He probably has some issue with success; we could explore his job history.",
+        credit: 0.6,
+      },
+      {
+        text: "Sometimes people just change jobs; four different reasons means four separate decisions, nothing more.",
         credit: 0,
       },
       {
-        text: "Small amounts seem easier to judge.",
+        text: "He seems to leave jobs around promotion time.",
         credit: 0.3,
       },
       {
-        text: "The mind likely has a fast system for grasping small quantities (up to about four) at a glance, separate from slow counting for larger sets; test whether reaction time is flat up to four then jumps, whether distraction hurts large-set judgments more, and whether the same small-number limit appears across cultures.",
+        text: "The repetition likely reveals an out-of-awareness conflict about rising — perhaps a fear of the exposure, expectation, or rivalry that success brings — that he resolves by leaving before he can be elevated, then explains away; test whether the exits really cluster at the moment of advancement and not at random, whether he feels relief rather than regret afterward, and whether the urge to flee softens once the fear behind it is named.",
         credit: 1.0,
-      },
-      {
-        text: "People are probably better with small numbers; we could test more dot counts.",
-        credit: 0.6,
       },
     ],
     correctAnswer:
-      "The mind likely has a fast system for grasping small quantities (up to about four) at a glance, separate from slow counting for larger sets; test whether reaction time is flat up to four then jumps, whether distraction hurts large-set judgments more, and whether the same small-number limit appears across cultures.",
+      "The repetition likely reveals an out-of-awareness conflict about rising — perhaps a fear of the exposure, expectation, or rivalry that success brings — that he resolves by leaving before he can be elevated, then explains away; test whether the exits really cluster at the moment of advancement and not at random, whether he feels relief rather than regret afterward, and whether the urge to flee softens once the fear behind it is named.",
     explanation:
-      "Top credit names two separate quantity systems and three tests, including a cross-cultural one; 'varies too much to say anything' is the refusal the sharp, reliable break at four defeats.",
+      "Full credit reads four differently-explained exits at the same threshold as one patterned conflict and names a clusters-at-advancement test; 'four separate decisions, nothing more' is the dodge the identical timing defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "Researchers show photographs of faces to people in many cultures, including a remote group with little contact with the outside world. Across all groups, people match the same faces to 'happy,' 'angry,' and 'afraid.' Which conclusion best follows?",
+      "A woman says learning the piano is her great passion and she'd give anything for it — yet for three years she has 'never found the time,' even though she spends long evenings scrolling her phone and the rented keyboard sits untouched. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Some expressions probably mean the same everywhere; we could test more cultures.",
-        credit: 0.6,
-      },
-      {
-        text: "Recognition of a few basic emotional expressions is likely part of shared human nature rather than purely learned from one culture; test whether people blind from birth, who never saw faces, still produce the same expressions, whether infants react to them, and whether any culture reliably reverses two of the meanings.",
-        credit: 1.0,
-      },
-      {
-        text: "People in different places seem to agree on some faces.",
+        text: "She seems too busy to practice.",
         credit: 0.3,
       },
       {
-        text: "Emotions are personal, so studying them across cultures can't show anything.",
+        text: "Everyone's busy and hobbies fall away; there's nothing to interpret in skipping piano.",
         credit: 0,
+      },
+      {
+        text: "The gap between her stated passion and her untouched keyboard likely points to a hidden function in not starting — keeping the dream untested protects it (and her) from the risk of being mediocre at the thing she most prizes; test whether she avoids practice most when she has clear free time, whether she feels anxiety rather than mere indifference near the keyboard, and whether she can begin once the fear of not being good is named.",
+        credit: 1.0,
+      },
+      {
+        text: "She probably has mixed feelings about starting; we could talk it over.",
+        credit: 0.6,
       },
     ],
     correctAnswer:
-      "Recognition of a few basic emotional expressions is likely part of shared human nature rather than purely learned from one culture; test whether people blind from birth, who never saw faces, still produce the same expressions, whether infants react to them, and whether any culture reliably reverses two of the meanings.",
+      "The gap between her stated passion and her untouched keyboard likely points to a hidden function in not starting — keeping the dream untested protects it (and her) from the risk of being mediocre at the thing she most prizes; test whether she avoids practice most when she has clear free time, whether she feels anxiety rather than mere indifference near the keyboard, and whether she can begin once the fear of not being good is named.",
     explanation:
-      "The richest conclusion commits to a shared human capacity and names three tests that could refute it; 'emotions are personal, nothing can be shown' is the dodge the cross-cultural agreement contradicts.",
+      "Top credit reads 'no time' against hours of scrolling as a protective avoidance and names an avoids-most-when-free test; 'everyone's busy' is the dodge the available-but-unused time defeats.",
   },
 ];
 
@@ -417,425 +417,425 @@ const hybrid: HomeworkItem[] = [
   {
     itemType: "hybrid",
     prompt:
-      "People can walk and chat easily, but when asked to do two demanding mental tasks at once — solving math problems while memorizing a list — performance on both collapses, even though they can do each alone. Which conclusion best follows?",
+      "A man is punctual for work, dates, and his commute, but has arrived ten minutes late to every therapy session for two months. He apologizes warmly each time and seems puzzled by it himself. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The mind likely has a limited central capacity that the two demanding tasks must share, so they interfere only when both need it; test whether pairing a hard task with an easy automatic one causes little interference, whether the drop grows as either task gets harder, and whether heavy practice that makes one task automatic removes the interference.",
-        credit: 1.0,
-      },
-      {
-        text: "Doing two hard things at once seems to hurt performance.",
+        text: "He seems to run late for therapy.",
         credit: 0.3,
       },
       {
-        text: "Multitasking is too individual to draw any general conclusion.",
+        text: "The lateness — specific to therapy while he's punctual everywhere else — likely carries a meaning about the session itself, perhaps a wish to limit how much it can reach him by shaving time off each one; test whether the lateness eases when sessions feel safe and worsens before hard topics, whether he's relieved to have 'less time,' and whether naming the wish to keep therapy at arm's length changes the pattern.",
+        credit: 1.0,
+      },
+      {
+        text: "Lateness is just a habit some people have; reading meaning into a few late arrivals is overthinking.",
         credit: 0,
       },
       {
-        text: "The two tasks probably compete for something; we could test more task pairs.",
+        text: "It's probably about something to do with therapy; we could keep noticing it.",
         credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'shared limited capacity' lead from the rival 'people are simply slowed by switching back and forth,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'lateness is specific to therapy' lead from the rival 'he's simply a chronically late person,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: pair the hard memory task with a truly automatic task like walking instead of another demanding one — my lead predicts little interference because the automatic task barely draws on the shared capacity. It is refuted if even an effortless second task wrecks performance as badly as a demanding one, which would point to switching rather than a shared pool of capacity.",
+        "Cheapest test: check his punctuality across his other commitments — work, dates, the commute — since lateness that appears only for therapy points to a meaning about the session rather than a general trait. My lead is refuted if he turns out to run late for everything equally, which would make it a habit rather than a signal about therapy.",
       yieldAnchors: [
-        "Each task can be done well alone",
-        "Doing both demanding tasks at once collapses performance",
-        "Easy pairs like walking and chatting don't interfere",
+        "He is punctual everywhere except therapy",
+        "He has been late to every session for two months",
+        "He is puzzled by his own lateness",
       ],
       riskAnchors: [
-        "Pairing a hard task with an automatic one causes little interference",
-        "The drop grows as either task gets harder",
-        "Making one task automatic through practice removes the interference",
+        "The lateness eases when sessions feel safe",
+        "It worsens right before difficult topics",
+        "Naming the wish to keep therapy at arm's length changes it",
       ],
       defeatedBy: [
-        "Any second task, however easy, ruins performance equally",
-        "People are simply unmotivated when given two tasks",
+        "He is late for every appointment in his life",
+        "The lateness has no relation to what happens in session",
       ],
     },
     correctAnswer:
-      "The mind likely has a limited central capacity that the two demanding tasks must share, so they interfere only when both need it; test whether pairing a hard task with an easy automatic one causes little interference, whether the drop grows as either task gets harder, and whether heavy practice that makes one task automatic removes the interference.",
+      "The lateness — specific to therapy while he's punctual everywhere else — likely carries a meaning about the session itself, perhaps a wish to limit how much it can reach him by shaving time off each one; test whether the lateness eases when sessions feel safe and worsens before hard topics, whether he's relieved to have 'less time,' and whether naming the wish to keep therapy at arm's length changes the pattern.",
     explanation:
-      "Full credit commits to a shared-capacity mechanism, spawns three checks, and is paired with a cheap easy-vs-hard test that names its own refutation; 'too individual' opens nothing.",
+      "Full credit reads therapy-specific lateness as meaningful and is paired with a check-his-other-commitments test that names its own refutation; 'lateness is just a habit' is the dodge his punctuality everywhere else defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "People memorize a short set of digits, then see a single digit and answer whether it was in the set. The more digits they were asked to hold, the longer they take to answer — and the time rises by a steady amount for each extra digit, whether the answer is yes or no. Which conclusion best follows?",
+      "A woman's migraines began the same month her father was diagnosed with a serious illness. She says the two are unrelated — 'I'm handling Dad's news fine' — yet the headaches spike on the days she visits him in the hospital. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "What the mind does in that fraction of a second is unknowable.",
+        text: "Migraines have medical causes, so tying them to her father's illness is reading too much in.",
         credit: 0,
       },
       {
-        text: "Bigger sets seem to take longer to search.",
-        credit: 0.3,
+        text: "She probably has some stress around her father; we could keep track of the headaches.",
+        credit: 0.6,
       },
       {
-        text: "The mind likely scans the memorized items one at a time, adding a fixed step per item and checking the whole set even after a match; test whether each added digit adds the same amount of time, whether 'yes' and 'no' answers rise at the same rate, and whether a much longer set eventually forces a different strategy.",
+        text: "The migraines likely voice a distress about her father's illness that her words deny, with the body carrying what she insists she's 'handling fine'; test whether the headaches spike specifically on visit days, whether they ease on days she lets herself feel the fear, and whether they began at no other life change but this one.",
         credit: 1.0,
       },
       {
-        text: "Holding more digits probably slows the search; we could test more set sizes.",
-        credit: 0.6,
+        text: "She seems to get migraines lately.",
+        credit: 0.3,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'item-by-item scan' lead from the rival 'people just feel less sure with bigger sets,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'the headaches track distress about her father' lead from the rival 'this is an ordinary medical migraine pattern,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: check whether response time rises in equal steps with each added digit and rises the same for 'yes' and 'no' answers — a steady per-item step is the signature of a serial scan. My lead is refuted if time stays flat as the set grows, or if 'yes' answers are much faster than 'no,' which would fit a confidence or all-at-once matching account instead.",
+        "Cheapest test: compare headache frequency on hospital-visit days against matched ordinary days — a clean spike tied to seeing her father points to meaning rather than a random medical pattern. My lead is refuted if the migraines are spread evenly across all days regardless of whether she visits, which would fit a purely physical cause.",
       yieldAnchors: [
-        "Response time grows with set size",
-        "The growth is a steady amount per extra digit",
-        "Yes and no answers slow at the same rate",
+        "The migraines began the month of the diagnosis",
+        "They spike on hospital-visit days",
+        "She insists she is handling the news fine",
       ],
       riskAnchors: [
-        "Each added digit adds the same fixed time",
-        "Yes and no answers rise at the same rate",
-        "A very long set forces a different strategy",
+        "Headaches cluster on visit days specifically",
+        "They ease when she lets herself feel the fear",
+        "They began at no other life change but this one",
       ],
       defeatedBy: [
-        "Set size has no effect on response time",
-        "People answer instantly regardless of how many digits they hold",
+        "The migraines occur evenly regardless of visits",
+        "They predate her father's diagnosis",
       ],
     },
     correctAnswer:
-      "The mind likely scans the memorized items one at a time, adding a fixed step per item and checking the whole set even after a match; test whether each added digit adds the same amount of time, whether 'yes' and 'no' answers rise at the same rate, and whether a much longer set eventually forces a different strategy.",
+      "The migraines likely voice a distress about her father's illness that her words deny, with the body carrying what she insists she's 'handling fine'; test whether the headaches spike specifically on visit days, whether they ease on days she lets herself feel the fear, and whether they began at no other life change but this one.",
     explanation:
-      "Top credit reads a hidden serial scan out of the steady timing and names three tests, including a per-item-step check that could refute it; 'unknowable' is the empty refusal.",
+      "Top credit reads a symptom that tracks the father's illness as meaningful and is paired with a visit-days-vs-ordinary-days test that names its refutation; 'migraines are medical' is the dodge the visit-day spikes and exact onset defeat.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "People are flashed a single letter very briefly and asked whether it was a 'D' or a 'K.' They are reliably more accurate when the letter appeared inside a real word like 'WORD' than when it appeared alone or inside a random string like 'OWRD.' Which conclusion best follows?",
+      "A man tells everyone he loves his job and feels lucky to have it. Yet he calls in sick almost every Monday, dreads Sunday nights, and lights up only when describing his weekends. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Words probably help letter recognition; we could test more words.",
-        credit: 0.6,
-      },
-      {
-        text: "Reading is too automatic to study by flashing letters.",
+        text: "Lots of people dislike Mondays; there's nothing to interpret in a few sick days.",
         credit: 0,
       },
       {
-        text: "Letters in words seem easier to see.",
+        text: "His Monday absences and Sunday dread likely tell the truth his words won't — that he's unhappy at work in a way he can't admit, so his behavior says what he can't; test whether the sick days cluster on work days and not weekends, whether his mood reliably drops as the work week nears, and whether his stated love of the job softens once the dread is taken seriously.",
+        credit: 1.0,
+      },
+      {
+        text: "He seems to miss a lot of Mondays.",
         credit: 0.3,
       },
       {
-        text: "The mind likely uses knowledge of whole words to support its reading of the parts, so a letter is recognized better inside a familiar word than in nonsense; test whether pronounceable non-words like 'MAVE' give a partial boost, whether the advantage disappears for unfamiliar foreign words, and whether the boost grows with the word's frequency.",
-        credit: 1.0,
+        text: "He might not like work as much as he says; we could ask him.",
+        credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'whole-word knowledge helps the parts' lead from the rival 'real words are just more familiar visual shapes,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'his behavior reveals hidden unhappiness at work' lead from the rival 'he genuinely loves the job and just has bad luck with illness,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: compare a never-before-seen but pronounceable non-word ('MAVE') against a random string ('OWRD') — my lead predicts the pronounceable item still boosts letter recognition because the reading system can use spelling rules, not just memorized shapes. It is refuted if only real, familiar words help and pronounceable non-words give no advantage at all.",
+        "Cheapest test: check whether the sick days fall specifically on work days while weekends stay symptom-free — illness that politely avoids his days off points to dread rather than a virus. My lead is refuted if his absences are scattered across weekends and weekdays alike with genuine documented illness, which would fit real bad luck rather than hidden unhappiness.",
       yieldAnchors: [
-        "Letters are recognized better inside real words",
-        "A single letter alone is harder to identify",
-        "Random strings give no advantage",
+        "He says he loves his job",
+        "He calls in sick almost every Monday",
+        "He dreads Sunday nights and lights up about weekends",
       ],
       riskAnchors: [
-        "Pronounceable non-words give a partial boost",
-        "Unfamiliar foreign words lose the advantage",
-        "The boost grows with word frequency",
+        "Sick days cluster on work days, not weekends",
+        "His mood drops as the work week nears",
+        "His stated love of the job softens when dread is named",
       ],
       defeatedBy: [
-        "Letters are always recognized equally regardless of context",
-        "Only the brightness of the display matters",
+        "His absences are random and medically verified",
+        "He feels just as low on weekends as on Mondays",
       ],
     },
     correctAnswer:
-      "The mind likely uses knowledge of whole words to support its reading of the parts, so a letter is recognized better inside a familiar word than in nonsense; test whether pronounceable non-words like 'MAVE' give a partial boost, whether the advantage disappears for unfamiliar foreign words, and whether the boost grows with the word's frequency.",
+      "His Monday absences and Sunday dread likely tell the truth his words won't — that he's unhappy at work in a way he can't admit, so his behavior says what he can't; test whether the sick days cluster on work days and not weekends, whether his mood reliably drops as the work week nears, and whether his stated love of the job softens once the dread is taken seriously.",
     explanation:
-      "Full credit names top-down word knowledge as the active ingredient with three checks and a pronounceable-non-word test that states its own refutation; 'too automatic to study' leads nowhere.",
+      "Full credit reads the gap between loving-words and Monday-avoidance as the real signal and is paired with a work-days-vs-weekends test that names its refutation; 'lots of people dislike Mondays' is the dodge the reliable Sunday dread defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "After a stroke in the left front of the brain, a patient struggles to produce speech — his sentences come out halting and broken — yet he understands what others say to him almost perfectly. Another patient with damage farther back shows the opposite. Which conclusion best follows?",
+      "Over two years, a woman has 'lost' or broken nearly every gift her partner has given her — a scarf, a bracelet, a framed photo — while keeping her own possessions carefully. She feels terrible each time and calls herself clumsy. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Different brain damage seems to cause different language problems.",
-        credit: 0.3,
+        text: "She probably has some unspoken feeling about the gifts; we could look into it.",
+        credit: 0.6,
       },
       {
-        text: "Producing speech and understanding it likely depend on at least two separable brain systems, since damage can knock out one while sparing the other; test whether this double pattern holds across many patients, whether scans show distinct regions for production versus comprehension in healthy people, and whether temporarily disrupting each region in volunteers reproduces the matching deficit.",
-        credit: 1.0,
-      },
-      {
-        text: "Language is spread all over the brain, so localizing it is hopeless.",
+        text: "People lose things; calling a string of accidents meaningful is reading tea leaves.",
         credit: 0,
       },
       {
-        text: "Speaking and understanding are probably handled separately; we could study more patients.",
-        credit: 0.6,
+        text: "The pattern — careful with her own things, careless only with his gifts — likely enacts a mixed feeling about the relationship or about receiving, something she can't say so her actions perform it; test whether the 'accidents' really spare her own belongings, whether they cluster after tension with her partner, and whether they stop once any ambivalence about him or about being given to is voiced.",
+        credit: 1.0,
+      },
+      {
+        text: "She seems to keep losing his gifts.",
+        credit: 0.3,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'two separable systems' lead from the rival 'one language system that the second stroke simply damaged more,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'the losses enact a mixed feeling toward the gifts' lead from the rival 'she is simply a clumsy, forgetful person,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: find patients with the opposite pattern — fluent speech but poor comprehension — because a genuine double dissociation, each ability lost while the other survives, can't come from one system merely damaged by degrees. My lead is refuted if no patient ever shows spared production with lost comprehension, which would suggest one graded system rather than two.",
+        "Cheapest test: compare how she treats his gifts versus her own equally fragile, valued possessions — damage that lands only on his gifts while hers survive points to meaning, not general clumsiness. My lead is refuted if she loses and breaks her own things just as often, which would make it ordinary carelessness rather than a signal about the relationship.",
       yieldAnchors: [
-        "One patient can understand but not produce speech",
-        "Another shows the reverse pattern",
-        "The two patients have damage in different regions",
+        "She has lost or broken nearly every gift from her partner",
+        "She keeps her own possessions carefully",
+        "She feels terrible and calls herself clumsy",
       ],
       riskAnchors: [
-        "The double pattern holds across many patients",
-        "Scans show distinct regions for production and comprehension",
-        "Disrupting each region reproduces the matching deficit",
+        "The 'accidents' spare her own belongings",
+        "They cluster after tension with her partner",
+        "They stop once ambivalence about him is voiced",
       ],
       defeatedBy: [
-        "Language sits in a single all-or-nothing region",
-        "Comprehension and production always fail together",
+        "She loses her own valued things just as often",
+        "The losses are unrelated to the state of the relationship",
       ],
     },
     correctAnswer:
-      "Producing speech and understanding it likely depend on at least two separable brain systems, since damage can knock out one while sparing the other; test whether this double pattern holds across many patients, whether scans show distinct regions for production versus comprehension in healthy people, and whether temporarily disrupting each region in volunteers reproduces the matching deficit.",
+      "The pattern — careful with her own things, careless only with his gifts — likely enacts a mixed feeling about the relationship or about receiving, something she can't say so her actions perform it; test whether the 'accidents' really spare her own belongings, whether they cluster after tension with her partner, and whether they stop once any ambivalence about him or about being given to is voiced.",
     explanation:
-      "Top credit reasons from the double dissociation to separable systems and names tests, including the opposite-pattern search that would refute it; 'localizing is hopeless' is the dodge the two opposite patients defeat.",
+      "Top credit reads selectively-damaged gifts as enacting ambivalence and is paired with a his-gifts-vs-her-own test that names its refutation; 'people lose things' is the dodge the her-things-survive selectivity defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "In a study, people watch a movie and fail to notice that the actor's scarf changes color between shots — even huge changes go unseen unless attention happens to land on them. Which conclusion best follows?",
+      "A woman says she wants a close, lasting relationship more than anything. Yet each time a partner becomes warm and committed, she picks a sharp fight over something minor and pulls away — a sequence that has ended four promising relationships. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Conscious awareness of a scene likely depends on attention rather than on the eyes capturing everything, so unattended changes go unnoticed; test whether cueing people to the changing object makes them spot it easily, whether changes hidden by a brief blank or a blink are missed more, and whether experts notice changes in their area of expertise faster.",
+        text: "The fights — timed to moments of growing closeness — likely serve a function she doesn't intend: creating distance when intimacy starts to feel threatening, so she controls the leaving before she can be hurt; test whether the conflicts reliably erupt right as things deepen rather than randomly, whether the 'minor' triggers are pretexts she can barely recall later, and whether she can tolerate closeness once the fear under it is named.",
         credit: 1.0,
       },
       {
-        text: "People probably miss changes they aren't focused on; we could test more changes.",
-        credit: 0.6,
+        text: "She seems to fight with her partners.",
+        credit: 0.3,
       },
       {
-        text: "Perception is too rich to study with simple movie tricks.",
+        text: "Relationships are complicated and end for all sorts of reasons, so there's no pattern to read here.",
         credit: 0,
       },
       {
-        text: "People seem to miss some changes.",
-        credit: 0.3,
+        text: "She might be scared of closeness; we could talk about her relationships.",
+        credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'awareness needs attention' lead from the rival 'people see the change but instantly forget it,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'the fights create distance when intimacy threatens' lead from the rival 'her partners simply happened to become difficult,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: cue people in advance to watch the scarf — my lead predicts they will now catch the change easily because attention is the missing ingredient, whereas a forgetting account predicts they should still lose it. It is refuted if cued, attending viewers miss the change just as often, which would point to memory rather than attention.",
+        "Cheapest test: map the timing of each blow-up against the relationship's trajectory — fights that erupt precisely as warmth and commitment grow point to intimacy-driven distancing rather than genuine partner problems. My lead is refuted if the conflicts arise at random points or clearly track real misconduct by her partners rather than moments of closeness.",
       yieldAnchors: [
-        "Large changes between shots go unnoticed",
-        "Changes are caught only when attention lands on them",
-        "Even obvious color changes are missed",
+        "She says she wants lasting closeness most of all",
+        "She picks fights just as partners become warm and committed",
+        "The sequence has ended four promising relationships",
       ],
       riskAnchors: [
-        "Cueing the object makes the change easy to spot",
-        "Changes hidden by a blank or blink are missed more",
-        "Experts spot changes in their domain faster",
+        "Conflicts erupt as things deepen, not randomly",
+        "The triggers are minor pretexts she barely recalls",
+        "She tolerates closeness once the fear is named",
       ],
       defeatedBy: [
-        "People always see every change in a scene",
-        "The eyes record the whole scene into awareness at once",
+        "The fights occur at random relationship stages",
+        "Her partners genuinely behaved badly each time",
       ],
     },
     correctAnswer:
-      "Conscious awareness of a scene likely depends on attention rather than on the eyes capturing everything, so unattended changes go unnoticed; test whether cueing people to the changing object makes them spot it easily, whether changes hidden by a brief blank or a blink are missed more, and whether experts notice changes in their area of expertise faster.",
+      "The fights — timed to moments of growing closeness — likely serve a function she doesn't intend: creating distance when intimacy starts to feel threatening, so she controls the leaving before she can be hurt; test whether the conflicts reliably erupt right as things deepen rather than randomly, whether the 'minor' triggers are pretexts she can barely recall later, and whether she can tolerate closeness once the fear under it is named.",
     explanation:
-      "Full credit ties awareness to attention with three checks and a cueing test that names its refutation; 'too rich to study' is the empty refusal.",
+      "Full credit reads closeness-timed fights as serving distance and is paired with a map-the-timing test that names its refutation; 'relationships end for all sorts of reasons' is the dodge the four-times-at-the-same-moment pattern defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "People press a button matching a light that comes on. With two possible lights they respond almost instantly; with four, eight, or sixteen, their reaction time climbs in a regular way as the number of choices grows. Which conclusion best follows?",
+      "Whenever a charged topic comes up, a patient quietly begins lining up the pens on the table, straightening the tissue box, and smoothing his sleeves — small tidying that appears only at those moments and stops once the topic passes. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Reaction speed depends on the person, so the pattern means little.",
-        credit: 0,
-      },
-      {
-        text: "More choices seem to slow people down.",
+        text: "He seems fidgety when certain things come up.",
         credit: 0.3,
       },
       {
-        text: "The mind likely takes time to decide among options, and that time grows with the number of choices in a regular way that suggests narrowing down possibilities; test whether making some lights far more likely shortens the time for those, whether grouping the lights into clusters speeds the choice, and whether the increase flattens once the choices are highly practiced.",
+        text: "Fidgeting is just a nervous habit; there's nothing to read into a bit of tidying.",
+        credit: 0,
+      },
+      {
+        text: "The tidying likely serves a function — a way to manage a rising anxiety by doing something small and controllable just as an uncontrollable feeling stirs, so the habit marks where the charge is; test whether the tidying appears only around specific topics and not others, whether his speech tightens or trails off as it starts, and whether naming the feeling at that moment makes the tidying unnecessary.",
         credit: 1.0,
       },
       {
-        text: "More options probably take longer to choose; we could add more lights.",
+        text: "He probably tidies when he's anxious; we could watch for it.",
         credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'decision time grows with choices' lead from the rival 'more lights are simply harder to see,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'tidying manages anxiety at charged moments' lead from the rival 'he's just a restless person who always fidgets,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: keep the display equally busy but make only two of the lights ever relevant — my lead predicts fast responses because the decision, not the visual clutter, drives the time. It is refuted if reaction time stays slow whenever many lights are visible regardless of how many are actually choices, which would point to perception rather than decision.",
+        "Cheapest test: note whether the tidying appears only around emotionally charged topics and disappears during neutral talk — behavior locked to charged moments points to anxiety management rather than general restlessness. My lead is refuted if he tidies just as much during small talk and silence as during difficult material, which would make it an all-purpose fidget.",
       yieldAnchors: [
-        "Two choices give near-instant responses",
-        "Reaction time climbs as choices increase",
-        "The climb is regular, not random",
+        "The tidying appears only at charged moments",
+        "It stops once the topic passes",
+        "It is small, controllable, repetitive behavior",
       ],
       riskAnchors: [
-        "Making some options more likely speeds those responses",
-        "Grouping the lights speeds the choice",
-        "Heavy practice flattens the increase",
+        "The tidying is topic-specific, not constant",
+        "His speech tightens or trails off as it begins",
+        "Naming the feeling makes the tidying unnecessary",
       ],
       defeatedBy: [
-        "Reaction time is the same no matter how many choices",
-        "Only the brightness of the lights affects speed",
+        "He fidgets equally during neutral conversation",
+        "The tidying bears no relation to the topic",
       ],
     },
     correctAnswer:
-      "The mind likely takes time to decide among options, and that time grows with the number of choices in a regular way that suggests narrowing down possibilities; test whether making some lights far more likely shortens the time for those, whether grouping the lights into clusters speeds the choice, and whether the increase flattens once the choices are highly practiced.",
+      "The tidying likely serves a function — a way to manage a rising anxiety by doing something small and controllable just as an uncontrollable feeling stirs, so the habit marks where the charge is; test whether the tidying appears only around specific topics and not others, whether his speech tightens or trails off as it starts, and whether naming the feeling at that moment makes the tidying unnecessary.",
     explanation:
-      "Top credit names a decision process and three tests, with a same-display-different-choices test that names its refutation; 'depends on the person' is the dodge the regular pattern defeats.",
+      "Top credit reads topic-locked tidying as anxiety-managing and is paired with a charged-vs-neutral test that names its refutation; 'just a nervous habit' is the dodge the topic-specific timing defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "People memorize a map of an island with several landmarks, then close their eyes and imagine moving a dot from one landmark to another. The farther apart two landmarks were on the map, the longer they take to 'arrive' in their imagination. Which conclusion best follows?",
+      "A man's chronic back pain reliably flares in the two days before any large family gathering, then subsides afterward — the pattern holding for years, with no injury and clean scans. He says family events are 'no trouble at all.' Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Imagining longer trips seems to take longer.",
-        credit: 0.3,
-      },
-      {
-        text: "Imagination is private, so we can't study it scientifically.",
+        text: "Back pain is physical; connecting it to family gatherings is grasping at straws.",
         credit: 0,
       },
       {
-        text: "Mental images probably preserve distances; we could test more landmark pairs.",
-        credit: 0.6,
+        text: "The flares — timed to gatherings he insists are 'no trouble' — likely carry a tension about family he hasn't let himself feel, the body voicing a dread his words deny; test whether the pain reliably precedes gatherings and eases after, whether it spikes most before the most fraught relatives, and whether it lessens once he can name what he braces for at these events.",
+        credit: 1.0,
       },
       {
-        text: "Mental images likely preserve spatial layout, so scanning a longer imagined distance takes proportionally more time, much like scanning a real picture; test whether scan time rises in step with map distance, whether imagined zooming in or out changes the times predictably, and whether people who report vivid imagery show the cleanest distance effect.",
-        credit: 1.0,
+        text: "He seems to get back pain around family events.",
+        credit: 0.3,
+      },
+      {
+        text: "It might be linked to family stress; we could keep an eye on the timing.",
+        credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'images preserve spatial layout' lead from the rival 'people just guess that farther should take longer,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'the pain expresses dread of family gatherings' lead from the rival 'it's an ordinary physical back problem,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: have people scan between pairs without telling them distance matters, and check whether scan time still rises smoothly with the actual map distance — a clean proportional curve they were never told to produce supports a genuine spatial image. My lead is refuted if times only track distance when people know the experiment expects it, or if times are flat across distances.",
+        "Cheapest test: track the pain against the calendar of gatherings — flares that reliably rise in the days before family events and fade afterward point to dread rather than a structural back problem. My lead is refuted if the pain is constant or random across the year with no relation to gatherings, which would fit a purely physical cause.",
       yieldAnchors: [
-        "People scan between imagined landmarks",
-        "Farther landmarks take longer to reach",
-        "Scan time tracks the map distance",
+        "The pain flares before family gatherings and subsides after",
+        "There is no injury and scans are clean",
+        "He insists the events are no trouble",
       ],
       riskAnchors: [
-        "Scan time rises in step with distance",
-        "Imagined zooming changes times predictably",
-        "Vivid imagers show the cleanest effect",
+        "The pain reliably precedes gatherings",
+        "It spikes most before the most fraught relatives",
+        "It lessens once he names what he braces for",
       ],
       defeatedBy: [
-        "Imagined distance has no effect on scan time",
-        "People answer at the same speed for all pairs",
+        "The pain is constant regardless of gatherings",
+        "A clear physical injury fully explains the flares",
       ],
     },
     correctAnswer:
-      "Mental images likely preserve spatial layout, so scanning a longer imagined distance takes proportionally more time, much like scanning a real picture; test whether scan time rises in step with map distance, whether imagined zooming in or out changes the times predictably, and whether people who report vivid imagery show the cleanest distance effect.",
+      "The flares — timed to gatherings he insists are 'no trouble' — likely carry a tension about family he hasn't let himself feel, the body voicing a dread his words deny; test whether the pain reliably precedes gatherings and eases after, whether it spikes most before the most fraught relatives, and whether it lessens once he can name what he braces for at these events.",
     explanation:
-      "Full credit claims images keep spatial structure with three checks and a 'don't tell them distance matters' test that names its refutation; 'imagination is private, can't study it' is the dodge the orderly scan times defeat.",
+      "Full credit reads a symptom that tracks family gatherings as meaningful and is paired with a track-against-the-calendar test that names its refutation; 'back pain is physical' is the dodge the gathering-timed flares and clean scans defeat.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "Reading difficulty in some children is studied three ways: psychologists find they struggle to break words into sounds, geneticists find it runs in families, and brain scientists find unusual activity in a sound-processing region. Which conclusion best follows?",
+      "After an unusually raw session in which she nearly cried, a patient who is normally meticulous about appointments forgets the next one entirely, then misremembers her therapist's first name in the session after that. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The three findings probably fit together; we could gather more studies.",
-        credit: 0.6,
-      },
-      {
-        text: "Because evidence from psychology, genetics, and brain science converges, the difficulty likely stems from a specific problem handling speech sounds rather than from low overall intelligence; test whether training in sound-segmentation improves reading, whether unaffected relatives share milder versions, and whether the brain region's activity predicts who responds to that training.",
-        credit: 1.0,
-      },
-      {
-        text: "Three different fields means three different problems, so no single conclusion is possible.",
+        text: "Everyone forgets appointments and names; making meaning of two slips is overreach.",
         credit: 0,
       },
       {
-        text: "The different studies seem related somehow.",
+        text: "She probably had a reaction to the raw session; we could mention it.",
+        credit: 0.6,
+      },
+      {
+        text: "The slips — landing right after she nearly broke down — likely express a pull to retreat from a closeness that felt dangerous, putting distance between herself and the therapy by 'losing track' of it; test whether such lapses follow emotionally intense sessions specifically, whether she seems relieved to have created distance, and whether they stop once the fear stirred by getting close is talked through.",
+        credit: 1.0,
+      },
+      {
+        text: "She seems to have forgotten a couple of things.",
         credit: 0.3,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'specific sound-processing problem' lead from the rival 'these children are just generally slower learners,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'the slips are a retreat from a session that felt too close' lead from the rival 'she's just been generally forgetful lately,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: check whether the same children perform normally on tasks that don't involve speech sounds, like spatial puzzles or math, while failing sound-segmentation — a sharp, sound-specific deficit rules out general slowness. My lead is refuted if they are equally behind on every kind of task, which would point to overall ability rather than a specific sound-processing problem.",
+        "Cheapest test: check whether the forgetting clusters specifically after emotionally intense sessions rather than scattering randomly — lapses tied to the rawest moments point to a retreat from closeness. My lead is refuted if she's been forgetting appointments and names across all areas of life regardless of what happened in session, which would fit ordinary forgetfulness.",
       yieldAnchors: [
-        "The children struggle to break words into sounds",
-        "The difficulty runs in families",
-        "A sound-processing brain region behaves unusually",
+        "She is normally meticulous about appointments",
+        "She forgot the session right after a raw one",
+        "She then misremembered the therapist's name",
       ],
       riskAnchors: [
-        "Sound-segmentation training improves reading",
-        "Unaffected relatives show milder versions",
-        "The brain region predicts who responds to training",
+        "Lapses follow emotionally intense sessions specifically",
+        "She seems relieved to have created distance",
+        "They stop once the fear of closeness is addressed",
       ],
       defeatedBy: [
-        "The children are simply low in overall intelligence",
-        "The three findings are unrelated coincidences",
+        "She has become forgetful in every area of life",
+        "The slips bear no relation to session intensity",
       ],
     },
     correctAnswer:
-      "Because evidence from psychology, genetics, and brain science converges, the difficulty likely stems from a specific problem handling speech sounds rather than from low overall intelligence; test whether training in sound-segmentation improves reading, whether unaffected relatives share milder versions, and whether the brain region's activity predicts who responds to that training.",
+      "The slips — landing right after she nearly broke down — likely express a pull to retreat from a closeness that felt dangerous, putting distance between herself and the therapy by 'losing track' of it; test whether such lapses follow emotionally intense sessions specifically, whether she seems relieved to have created distance, and whether they stop once the fear stirred by getting close is talked through.",
     explanation:
-      "Full credit leans on converging evidence to name a specific cause with three tests and a domain-specificity check that would refute it; 'three fields means three problems' is the dodge the convergence itself defeats.",
+      "Top credit reads post-intensity slips in a meticulous patient as a retreat from closeness and is paired with a after-intense-sessions-specifically test that names its refutation; 'everyone forgets' is the dodge the timing right after the raw session defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A wild crow, faced with food in a tube too deep to reach, bends a straight piece of wire into a hook on its first try and fishes the food out. It had never been given wire before. Which conclusion best follows?",
+      "A man laid off three weeks ago insists he's 'honestly relieved, not bothered at all.' Since the layoff he has been unable to sleep, snaps at his kids over trifles, and has lost his appetite — changes he says are 'probably just a bug going around.' Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The crow likely solved a new problem by mentally representing the goal and shaping a tool to fit it, not just by blind trial and error; test whether it makes the right tool before any fumbling, whether it picks the correct tool when several lengths are offered, and whether it transfers the trick to a new container it has never seen.",
-        credit: 1.0,
-      },
-      {
-        text: "The crow seems pretty clever with the wire.",
+        text: "He seems a bit off since the layoff.",
         credit: 0.3,
       },
       {
-        text: "Animals can't tell us their thoughts, so claims about crow reasoning are off-limits.",
+        text: "The insomnia, irritability, and lost appetite — all dating from the layoff he claims doesn't bother him — likely reveal a distress his words deny, the symptoms saying what he won't; test whether the symptoms began precisely with the layoff and not before, whether they ease as he admits any hurt or fear about losing the job, and whether his 'just a bug' framing gives way once the loss is named.",
+        credit: 1.0,
+      },
+      {
+        text: "Sleep and mood problems have many causes, so linking them to the layoff is a stretch.",
         credit: 0,
       },
       {
-        text: "The crow probably planned the tool; we could test a few more crows.",
+        text: "He might be more affected than he admits; we could ask about the layoff.",
         credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'mental planning' lead from the rival 'the crow stumbled onto the hook by random bending,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'the symptoms express denied distress about the layoff' lead from the rival 'he genuinely feels fine and just caught a virus,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: offer the crow several tools of different shapes and lengths and see whether it selects or makes the correct one before any trial-and-error fishing — choosing the right tool up front signals a represented goal, not luck. My lead is refuted if the crow only succeeds after many random attempts and shows no above-chance first-try tool choice.",
+        "Cheapest test: pin down whether all three symptoms started right at the layoff and not before — a cluster that begins exactly with the loss points to denied distress rather than a coincidental illness. My lead is refuted if the sleep, mood, and appetite changes predate the layoff or come with clear physical signs of infection, which would fit a real bug.",
       yieldAnchors: [
-        "The crow had never been given wire before",
-        "It bent the wire into a working hook on the first try",
-        "It used the hook to retrieve out-of-reach food",
+        "He says he's relieved and not bothered",
+        "Insomnia, irritability, and lost appetite began at the layoff",
+        "He attributes the changes to a bug",
       ],
       riskAnchors: [
-        "It makes the right tool before any fumbling",
-        "It picks the correct tool from several options",
-        "It transfers the solution to a new container",
+        "The symptoms began precisely with the layoff",
+        "They ease as he admits hurt about the job",
+        "His 'just a bug' framing gives way once loss is named",
       ],
       defeatedBy: [
-        "The crow succeeded only by random trial and error",
-        "The hook formed by accident with no role for the crow",
+        "The symptoms predate the layoff",
+        "Clear physical illness fully explains them",
       ],
     },
     correctAnswer:
-      "The crow likely solved a new problem by mentally representing the goal and shaping a tool to fit it, not just by blind trial and error; test whether it makes the right tool before any fumbling, whether it picks the correct tool when several lengths are offered, and whether it transfers the trick to a new container it has never seen.",
+      "The insomnia, irritability, and lost appetite — all dating from the layoff he claims doesn't bother him — likely reveal a distress his words deny, the symptoms saying what he won't; test whether the symptoms began precisely with the layoff and not before, whether they ease as he admits any hurt or fear about losing the job, and whether his 'just a bug' framing gives way once the loss is named.",
     explanation:
-      "Full credit infers goal-directed planning from the first-try success with three checks and a tool-choice test that names its refutation; 'claims about crow reasoning are off-limits' is the dodge the measurable behavior defeats.",
+      "Full credit reads symptoms that track the layoff as a denied distress and is paired with a did-they-start-exactly-at-the-layoff test that names its refutation; 'sleep problems have many causes' is the dodge the symptom onset at the layoff defeats.",
   },
 ];
 
@@ -843,175 +843,179 @@ const written: HomeworkItem[] = [
   {
     itemType: "written",
     prompt:
-      "A researcher measures how quickly people decide whether two letters are 'the same.' People are fastest for identical letters like 'A' and 'A,' slower for same-name pairs like 'A' and 'a,' and slowest when judging whether two letters are both vowels, like 'A' and 'E.' In one paragraph, propose the strongest conclusion about what the mind is doing between seeing the letters and answering, and describe how you would test it.",
+      "A man describes his childhood as 'totally normal, happy, nothing to report.' But every concrete memory he offers — a birthday, a holiday, a sick day — features him alone: waiting by a window, eating in silence, entertaining himself. He notices nothing odd about this. In one paragraph, propose the strongest conclusion about what the surface 'happy childhood' is covering and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that matching letters runs through successive mental stages — first a quick visual match of shape, then a slower match of letter name, then a still slower match of category such as 'vowel' — so each kind of judgment must wait for a later, more abstract stage to finish. This is a strong claim because it predicts checkable consequences: response time should increase in a fixed order (shape < name < category) across many letter pairs; making the printed shapes harder to see should slow only the shape-based judgments and leave the others roughly unchanged; and people should never be slower on an identical-shape match than on a category match. I would test it by timing all three judgment types on the same letters, by degrading the image quality to see whether only the visual stage slows, and by checking whether the time gaps between stages stay consistent across different people and letter sets.",
+        "The strongest conclusion is that his blanket 'happy, normal' label sits on top of a childhood marked by emotional aloneness he never registered as a problem, so the meaning lives in the specific memories rather than the headline — each scene quietly shows a child left to himself. This is a strong claim because it predicts checkable consequences: when asked for more memories he should keep producing solitary scenes rather than connected ones; he should struggle to name a moment of being comforted or sought out; and the 'nothing to report' framing should soften, perhaps bringing feeling, once the loneliness in his own stories is pointed out. I would test it by gathering several more concrete memories and counting how many involve closeness versus solitude, by asking directly for a memory of being soothed by someone, and by noting whether naming the pattern changes how he talks about his childhood.",
       yieldAnchors: [
-        "Identical letters are judged fastest",
-        "Same-name pairs are judged slower",
-        "Vowel-category pairs are judged slowest",
+        "He labels his childhood happy and unremarkable",
+        "Every concrete memory shows him alone",
+        "He notices nothing odd about the pattern",
       ],
       riskAnchors: [
-        "Response times line up in the order shape < name < category",
-        "Degrading the image slows only the visual judgment",
-        "Identical-shape matches are never slower than category matches",
+        "Further memories keep coming back solitary",
+        "He can't readily name a moment of being comforted",
+        "The 'nothing to report' framing softens once the pattern is named",
       ],
       defeatedBy: [
-        "All three judgments take exactly the same time",
-        "Nothing can be inferred about hidden stages from reaction times",
+        "His detailed memories are full of warmth and connection",
+        "The contents match the cheerful label once examined",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that matching letters runs through successive mental stages — first a quick visual match of shape, then a slower match of letter name, then a still slower match of category such as 'vowel' — so each kind of judgment must wait for a later, more abstract stage to finish. This is a strong claim because it predicts checkable consequences: response time should increase in a fixed order (shape < name < category) across many letter pairs; making the printed shapes harder to see should slow only the shape-based judgments and leave the others roughly unchanged; and people should never be slower on an identical-shape match than on a category match. I would test it by timing all three judgment types on the same letters, by degrading the image quality to see whether only the visual stage slows, and by checking whether the time gaps between stages stay consistent across different people and letter sets.",
+      "The strongest conclusion is that his blanket 'happy, normal' label sits on top of a childhood marked by emotional aloneness he never registered as a problem, so the meaning lives in the specific memories rather than the headline — each scene quietly shows a child left to himself. This is a strong claim because it predicts checkable consequences: when asked for more memories he should keep producing solitary scenes rather than connected ones; he should struggle to name a moment of being comforted or sought out; and the 'nothing to report' framing should soften, perhaps bringing feeling, once the loneliness in his own stories is pointed out. I would test it by gathering several more concrete memories and counting how many involve closeness versus solitude, by asking directly for a memory of being soothed by someone, and by noting whether naming the pattern changes how he talks about his childhood.",
     explanation:
-      "Under the inverted standard, the cautious 'nothing can be inferred from reaction times' earns near-zero; top credit goes to the staged-processing conclusion that commits to a fixed order and names a degrade-the-image test that could refute it.",
+      "Under the inverted standard, the cautious 'a happy childhood, nothing to interpret' earns near-zero; top credit goes to reading the meaning in the consistently solitary memories and naming a count-the-memories test that could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "A patient who lost the ability to form new conscious memories after brain surgery cannot recall meeting his doctor yesterday, yet when he practices a tricky mirror-drawing task day after day he steadily improves — all while insisting he has never tried it before. In one paragraph, propose the strongest conclusion and describe how you would test it.",
+      "A woman who fought hard for a long-awaited promotion had her first panic attack the very week it came through, and the attacks have continued since. She is baffled — 'this is exactly what I wanted; I should be celebrating.' In one paragraph, propose the strongest conclusion about what the panic is expressing and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that the mind has at least two separate memory systems — one for conscious facts and events, which the surgery damaged, and one for skills and habits, which it spared — because the patient improves at a skill while having no conscious memory of practicing it. This is a strong claim because it predicts checkable consequences: he should learn other motor and perceptual skills normally while still failing every test of conscious recall; brain scans of healthy people should show different regions active for skill learning versus fact memory; and other patients with damage to the skill system should show the reverse pattern, losing skills while keeping conscious memory. I would test it by training him on several new skills and separately quizzing his conscious recall, by imaging healthy volunteers during each kind of learning, and by searching for patients with the opposite dissociation.",
+        "The strongest conclusion is that the panic carries a meaning her celebration story can't hold — the promotion, however wanted, also stirs an out-of-awareness conflict (perhaps a fear of the exposure, expectation, or rivalry that rising brings), and the body sounds the alarm her words deny. This is a strong claim because it predicts checkable consequences: the attacks should cluster around moments the new role is most visible — presenting, being watched, outranking former peers — rather than at random; they should ease as she lets herself name an ambivalence about success rather than only joy; and they should not be explained by a separate stressor that began the same week. I would test it by logging when each attack strikes against what she was doing, by exploring directly whether any part of her dreads the new position, and by checking whether the timing really pins to the promotion and nothing else.",
       yieldAnchors: [
-        "The patient cannot form new conscious memories",
-        "He improves at mirror-drawing with practice",
-        "He denies ever having done the task",
+        "The panic began the week the promotion came through",
+        "She fought hard for the promotion",
+        "She is baffled because she expected to feel only happy",
       ],
       riskAnchors: [
-        "He learns other skills while failing all conscious-recall tests",
-        "Different brain regions support skill versus fact learning",
-        "Other patients show the opposite dissociation",
+        "Attacks cluster around the role's most exposing moments",
+        "They ease as she names ambivalence about success",
+        "No separate stressor began the same week",
       ],
       defeatedBy: [
-        "Memory is a single all-or-nothing store",
-        "One unusual patient can tell us nothing about normal minds",
+        "She feels only uncomplicated joy about the promotion",
+        "An unrelated event fully explains the panic's timing",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that the mind has at least two separate memory systems — one for conscious facts and events, which the surgery damaged, and one for skills and habits, which it spared — because the patient improves at a skill while having no conscious memory of practicing it. This is a strong claim because it predicts checkable consequences: he should learn other motor and perceptual skills normally while still failing every test of conscious recall; brain scans of healthy people should show different regions active for skill learning versus fact memory; and other patients with damage to the skill system should show the reverse pattern, losing skills while keeping conscious memory. I would test it by training him on several new skills and separately quizzing his conscious recall, by imaging healthy volunteers during each kind of learning, and by searching for patients with the opposite dissociation.",
+      "The strongest conclusion is that the panic carries a meaning her celebration story can't hold — the promotion, however wanted, also stirs an out-of-awareness conflict (perhaps a fear of the exposure, expectation, or rivalry that rising brings), and the body sounds the alarm her words deny. This is a strong claim because it predicts checkable consequences: the attacks should cluster around moments the new role is most visible — presenting, being watched, outranking former peers — rather than at random; they should ease as she lets herself name an ambivalence about success rather than only joy; and they should not be explained by a separate stressor that began the same week. I would test it by logging when each attack strikes against what she was doing, by exploring directly whether any part of her dreads the new position, and by checking whether the timing really pins to the promotion and nothing else.",
     explanation:
-      "The inverted standard gives near-zero to 'one patient tells us nothing'; credit goes to the two-systems conclusion that names a mechanism and proposes a search for the opposite dissociation as its own refutation test.",
+      "The inverted standard gives near-zero to 'it's just what she wanted, so the panic must be unrelated'; credit goes to reading the symptom that tracks the promotion as a conflict and naming a log-the-timing test that could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "Master chess players can glance at a real game position for five seconds and then reconstruct it almost perfectly, far better than beginners. But when the pieces are scattered randomly on the board, masters remember no better than beginners do. In one paragraph, propose the strongest conclusion about how expert memory works and describe how you would test it.",
+      "A patient arrives most weeks announcing 'I really don't have anything to talk about today,' fills the hour with small talk, and then, with five minutes left, drops something major — a marriage on the brink, a frightening medical result. This has happened for months. In one paragraph, propose the strongest conclusion about what this recurring shape means and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that masters don't have better raw memory but have stored thousands of meaningful patterns, so they recall real positions by recognizing familiar chunks — an advantage that vanishes when random scatter offers no patterns to match. This is a strong claim because it predicts checkable consequences: the master's advantage should appear only for game-like, rule-following positions; masters should reconstruct boards in bursts of related pieces rather than one piece at a time; and the same pattern should hold for experts in other fields, such as nurses recalling realistic but not scrambled patient charts. I would test it by comparing recall for legal versus random positions across skill levels, by tracking the order and timing of piece placement to look for chunked bursts, and by repeating the study in a different domain of expertise.",
+        "The strongest conclusion is that the 'nothing to talk about' opening and the last-minute bombshell form a single patterned way of approaching what frightens her — keeping the charged material at a safe distance until the closing minutes make it impossible to truly open it, so she both reveals and protects herself at once. This is a strong claim because it predicts checkable consequences: the genuinely important material should reliably surface near the end rather than scattering through the hour; the small talk should function as avoidance, thinning when she feels safer; and naming the pattern should shift the timing, letting heavier topics arrive earlier. I would test it by tracking when the significant disclosures land each week, by noting whether the filler eases as trust grows, and by observing whether pointing out the late-arrival pattern changes when she brings the real material.",
       yieldAnchors: [
-        "Masters reconstruct real positions almost perfectly",
-        "Beginners do far worse on real positions",
-        "Masters lose their advantage on random positions",
+        "She opens by saying she has nothing to discuss",
+        "She fills the hour with small talk",
+        "She drops something major in the final minutes",
       ],
       riskAnchors: [
-        "The advantage appears only for game-like positions",
-        "Masters place pieces in related bursts",
-        "The same pattern holds in other expert domains",
+        "Important material reliably surfaces near the end",
+        "The small talk thins as she feels safer",
+        "Naming the pattern shifts heavy topics earlier",
       ],
       defeatedBy: [
-        "Masters simply have better memory for everything",
-        "Random and real positions are recalled equally by masters",
+        "Her major disclosures are spread evenly through the hour",
+        "The late timing is random and never shifts",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that masters don't have better raw memory but have stored thousands of meaningful patterns, so they recall real positions by recognizing familiar chunks — an advantage that vanishes when random scatter offers no patterns to match. This is a strong claim because it predicts checkable consequences: the master's advantage should appear only for game-like, rule-following positions; masters should reconstruct boards in bursts of related pieces rather than one piece at a time; and the same pattern should hold for experts in other fields, such as nurses recalling realistic but not scrambled patient charts. I would test it by comparing recall for legal versus random positions across skill levels, by tracking the order and timing of piece placement to look for chunked bursts, and by repeating the study in a different domain of expertise.",
+      "The strongest conclusion is that the 'nothing to talk about' opening and the last-minute bombshell form a single patterned way of approaching what frightens her — keeping the charged material at a safe distance until the closing minutes make it impossible to truly open it, so she both reveals and protects herself at once. This is a strong claim because it predicts checkable consequences: the genuinely important material should reliably surface near the end rather than scattering through the hour; the small talk should function as avoidance, thinning when she feels safer; and naming the pattern should shift the timing, letting heavier topics arrive earlier. I would test it by tracking when the significant disclosures land each week, by noting whether the filler eases as trust grows, and by observing whether pointing out the late-arrival pattern changes when she brings the real material.",
     explanation:
-      "The cautious 'masters just have better memory for everything' is the overreach the random-board result defeats; top credit goes to the chunking conclusion that names a domain-transfer test and several checkable consequences.",
+      "The cautious 'she just runs out of time' earns near-zero; top credit goes to reading the recurring shape as a way of approaching and avoiding what frightens her and naming a track-the-timing test that could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "Across the world, children learn whatever language surrounds them on a strikingly similar timetable, babbling around six months and combining words around age two, with no formal lessons. Deaf children exposed to sign language hit the same milestones, and even babble with their hands. In one paragraph, propose the strongest conclusion about the mind and language and describe how you would test it.",
+      "A man jokes his way through every painful subject. When his divorce comes up he does a bit; when his father's death comes up he delivers a punchline; the room laughs and the topic passes. He says, 'I just like to keep things light.' In one paragraph, propose the strongest conclusion about what the joking is doing and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that the human mind comes prepared to acquire language through a specialized capacity that works on any natural language — spoken or signed — rather than through general imitation alone, which is why the timetable and even hand-babbling appear regardless of the specific language. This is a strong claim because it predicts checkable consequences: deaf and hearing children should pass the same milestones in the same order; children should produce grammatical patterns no adult explicitly taught them; and the capacity should show a sensitive period, so those who get no language early struggle to master it later. I would test it by comparing milestone timing across spoken and signed languages, by documenting child-invented grammar in communities of deaf children who create new sign languages, and by studying language outcomes in people first exposed to any language at different ages.",
+        "The strongest conclusion is that the humor isn't merely a personality quirk but serves a function — it lets him touch painful material while instantly discharging the feeling and steering everyone, including himself, away before it can land, so the joke marks exactly where the hurt is. This is a strong claim because it predicts checkable consequences: the jokes should cluster on the most painful topics rather than spread evenly across light and heavy ones; the laughter should arrive right at the moments feeling would otherwise surface; and if he's gently asked to stay with a topic without the joke, real emotion should appear. I would test it by noting which subjects reliably trigger humor, by watching whether the punchlines land precisely at emotional peaks, and by checking whether blocking the exit — staying with the painful point a beat longer — brings feeling rather than another joke.",
       yieldAnchors: [
-        "Children worldwide learn language on a similar timetable",
-        "They learn without formal lessons",
-        "Deaf children hit the same milestones and babble with their hands",
+        "He jokes through divorce and his father's death",
+        "The laughter lets each painful topic pass",
+        "He calls it just keeping things light",
       ],
       riskAnchors: [
-        "Deaf and hearing children pass milestones in the same order",
-        "Children produce untaught grammatical patterns",
-        "A sensitive period limits late learners",
+        "Jokes cluster on the most painful topics",
+        "Laughter lands right at emotional peaks",
+        "Staying with the topic without a joke brings real feeling",
       ],
       defeatedBy: [
-        "Language is learned purely by imitating adults",
-        "Spoken and signed languages develop on totally different schedules",
+        "He jokes just as much about trivial, painless things",
+        "Blocking the joke produces no feeling at all",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that the human mind comes prepared to acquire language through a specialized capacity that works on any natural language — spoken or signed — rather than through general imitation alone, which is why the timetable and even hand-babbling appear regardless of the specific language. This is a strong claim because it predicts checkable consequences: deaf and hearing children should pass the same milestones in the same order; children should produce grammatical patterns no adult explicitly taught them; and the capacity should show a sensitive period, so those who get no language early struggle to master it later. I would test it by comparing milestone timing across spoken and signed languages, by documenting child-invented grammar in communities of deaf children who create new sign languages, and by studying language outcomes in people first exposed to any language at different ages.",
+      "The strongest conclusion is that the humor isn't merely a personality quirk but serves a function — it lets him touch painful material while instantly discharging the feeling and steering everyone, including himself, away before it can land, so the joke marks exactly where the hurt is. This is a strong claim because it predicts checkable consequences: the jokes should cluster on the most painful topics rather than spread evenly across light and heavy ones; the laughter should arrive right at the moments feeling would otherwise surface; and if he's gently asked to stay with a topic without the joke, real emotion should appear. I would test it by noting which subjects reliably trigger humor, by watching whether the punchlines land precisely at emotional peaks, and by checking whether blocking the exit — staying with the painful point a beat longer — brings feeling rather than another joke.",
     explanation:
-      "The inverted standard gives near-zero to a vague 'kids just copy adults' that the hand-babbling already strains; credit goes to the prepared-capacity conclusion that names untaught grammar and a sensitive-period test that could refute it.",
+      "The inverted standard gives near-zero to 'he just likes to keep things light'; credit goes to reading the joking as a feeling-discharging function and naming a stay-with-the-topic test that could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "A patient who became blind after damage to his visual brain insists he sees nothing in part of his field — yet when asked to 'just guess' where a light flashed there, he points correctly far more often than chance. In one paragraph, propose the strongest conclusion about vision and awareness and describe how you would test it.",
+      "A woman has dated, over fifteen years, a long string of partners who were already married, lived overseas, or were emotionally checked out — and each relationship ended the same way. She concludes, 'I've just had terrible luck with men.' In one paragraph, propose the strongest conclusion about what is really driving the pattern and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that vision and conscious awareness rely on partly separate pathways, so the patient's brain still processes the light's location through an intact route even though the damaged route that supports conscious seeing is gone. This is a strong claim because it predicts checkable consequences: his 'guesses' should stay above chance for location and movement but fail for fine detail the surviving pathway can't carry; the spared ability should track an alternative visual route in brain scans; and damaging that alternative route should erase the guessing while leaving conscious vision intact in other people. I would test it by measuring which visual features he can guess versus not, by imaging which intact pathways activate when he guesses correctly, and by checking patients with the complementary damage for the opposite profile.",
+        "The strongest conclusion is that this is not luck but a pattern she is part of — she is repeatedly drawn to unavailable partners, which suggests an out-of-awareness pull toward relationships that can't fully arrive, perhaps because real, available closeness feels more threatening than the longing for someone out of reach. This is a strong claim because it predicts checkable consequences: looking closely, the 'unavailability' should be present from the start rather than a surprise that developed; available, interested partners should leave her cool or uninterested rather than relieved; and the pull should weaken once the fear of genuine closeness is named. I would test it by reviewing each partner for signs of unavailability that were visible early, by checking how she responds to clearly available people, and by seeing whether understanding the pattern changes who she's drawn to next.",
       yieldAnchors: [
-        "The patient reports seeing nothing in part of his field",
-        "He points to flashes there far above chance",
-        "He believes he is only guessing",
+        "Fifteen years of unavailable partners",
+        "Each relationship ended the same way",
+        "She attributes it to bad luck",
       ],
       riskAnchors: [
-        "Guessing stays above chance for location but fails for fine detail",
-        "An alternative visual pathway activates during correct guesses",
-        "Damaging that pathway erases the guessing ability",
+        "The unavailability was visible from the start each time",
+        "Available, interested partners leave her cool",
+        "The pull weakens once fear of closeness is named",
       ],
       defeatedBy: [
-        "Vision and awareness are one and the same process",
-        "A patient's verbal report is the only valid measure of sight",
+        "Her partners were genuinely available and became unavailable by chance",
+        "She is equally drawn to available partners",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that vision and conscious awareness rely on partly separate pathways, so the patient's brain still processes the light's location through an intact route even though the damaged route that supports conscious seeing is gone. This is a strong claim because it predicts checkable consequences: his 'guesses' should stay above chance for location and movement but fail for fine detail the surviving pathway can't carry; the spared ability should track an alternative visual route in brain scans; and damaging that alternative route should erase the guessing while leaving conscious vision intact in other people. I would test it by measuring which visual features he can guess versus not, by imaging which intact pathways activate when he guesses correctly, and by checking patients with the complementary damage for the opposite profile.",
+      "The strongest conclusion is that this is not luck but a pattern she is part of — she is repeatedly drawn to unavailable partners, which suggests an out-of-awareness pull toward relationships that can't fully arrive, perhaps because real, available closeness feels more threatening than the longing for someone out of reach. This is a strong claim because it predicts checkable consequences: looking closely, the 'unavailability' should be present from the start rather than a surprise that developed; available, interested partners should leave her cool or uninterested rather than relieved; and the pull should weaken once the fear of genuine closeness is named. I would test it by reviewing each partner for signs of unavailability that were visible early, by checking how she responds to clearly available people, and by seeing whether understanding the pattern changes who she's drawn to next.",
     explanation:
-      "'A verbal report is the only valid measure of sight' is the overreach the above-chance guessing defeats; top credit goes to the separate-pathways conclusion that names a which-features test and an imaging test that could refute it.",
+      "'Terrible luck with men' is the surface story the fifteen-year repetition defeats; top credit goes to reading the consistent choice of unavailable partners as a pattern and naming a how-does-she-respond-to-available-people test that could refute it.",
   },
 ];
 
 export const section: SectionContent = {
-  slug: "what-is-cogsci",
-  title: "What Cognitive Science Is",
+  slug: "what-psychodynamic-therapy-is",
+  title: "What Psychodynamic Therapy Is",
   weekNumber: 1,
   blurb:
-    "Cognitive science studies the mind as a scientific object, pooling psychology, neuroscience, linguistics, philosophy, AI, and anthropology to infer the hidden processes behind what people say and do.",
+    "Psychodynamic therapy treats symptoms and behavior as meaningful, reading the patterns and feelings beneath the surface from observable evidence — repetitions, contradictions between words and actions, and symptoms that track a person's life.",
   lectureTitle:
-    "1.1 What Cognitive Science Is: studying the mind through the traces it leaves in behavior",
-  body: `# What Cognitive Science Is
+    "1.1 What Psychodynamic Therapy Is: reading the meaning beneath the surface",
+  body: `# What Psychodynamic Therapy Is
 
-You can't open up a mind and look inside. You can't weigh a thought or photograph a memory in the act of being formed. Yet the mind is real, and it does specific work: it sees, remembers, talks, decides, and learns. Cognitive science is the project of studying that work the way other sciences study their objects — by careful measurement, testable explanations, and predictions you can go out and check. Its core bet is that the mind is not off-limits to science just because it is invisible.
+You can't watch a feeling form or photograph a motive in the act. Yet people are driven by feelings and motives all the time — many of which they couldn't name if you asked. Psychodynamic therapy is the craft of studying that hidden layer the way a good detective studies a case: not by guessing wildly, but by reading the visible evidence a person leaves behind. Its core bet is that behavior, symptoms, and even "accidents" are not random noise. They mean something. The work is to figure out what.
 
-## The mind as an object of study
+## Symptoms and behavior have meaning
 
-The trick is that we never observe the mind directly; we observe its **outputs** — what people say, what they remember, how fast they answer, what mistakes they make. From those traces we **infer** the hidden processes in between. When someone takes longer to confirm that a penguin is a bird than that a robin is, the extra fraction of a second is a clue about how the mind stores categories. The behavior is the data; the mental process is the explanation we build to account for it. That move — reasoning from visible behavior to an invisible mechanism — is the heartbeat of the whole field.
+The starting move is to assume that what looks pointless or puzzling often has a point we just can't see yet. A man "forgets" his wallet — but only on the nights it's his turn to pay. A woman gets a stomachache every Sunday, the one evening she calls her mother. A child starts wetting the bed the week a new sibling comes home. Taken alone, each could be a coincidence. But the timing is the tell. When a symptom appears in one specific situation and vanishes in others, the situation is part of the meaning. The behavior is the data; the hidden feeling or purpose is the explanation we build to account for it.
 
-## Many fields, one mind
+## A part of the mind works outside awareness
 
-No single discipline owns the mind, so cognitive science is deliberately **interdisciplinary**. Psychology runs experiments on perception, memory, and reasoning. Neuroscience asks which brain systems carry out each job. Linguistics studies the structure of language and how children acquire it. Philosophy sharpens the hard questions — what is a representation, what is consciousness. Computer science and artificial intelligence build working models to see whether a proposed mechanism could actually compute the behavior. Anthropology checks which mental patterns hold across cultures and which are local. These fields don't take turns; they attack the same target with different tools.
+People are honestly puzzled by their own patterns because much of the mind runs outside of awareness. The man who quits every job right before a promotion isn't lying when he says he wants to succeed; another part of him, one he can't easily reach, pulls the other way. This is not about hidden demons or buried curses. It's closer to a set of automatic habits and expectations, learned early and running quietly in the background. The point of therapy isn't to accuse people of secret motives — it's to help bring those background patterns into the light, where they can finally be looked at and chosen.
 
-## Levels of analysis
+## Words versus actions
 
-Because the mind can be described at several **levels**, a complete explanation usually needs more than one. Take recognizing a friend's voice. At the level of behavior, you respond faster to familiar voices. At the level of the brain, particular regions become active. At the level of computation, the mind is matching incoming sound to stored templates. These are not three rival theories; they are three views of one ability that should fit together. A good cognitive-science explanation says how the computation is carried out by the brain and shows up in behavior — and it gets stronger when the levels line up.
+One of the richest sources of evidence is the gap between what someone says and what they show. A patient declares he's "completely at peace" about his divorce while his knee bounces and his voice shakes. A woman insists she's "thrilled" for her sister, then double-books herself and misses the engagement party — the only family event she's skipped in years. When words and actions disagree, the actions and the body often tell the truer story. The skill is to notice the contradiction rather than smoothing it over, and to treat it as a clue pointing toward a feeling the person can't yet say out loud.
 
-## Reading the mind from behavior
+## Symptoms that track a life event
 
-How do you turn a clue into a conclusion? You commit to a specific mechanism and then name the checkable consequences it predicts. "The mind rotates a mental image step by step" is a real claim because it predicts that response time should climb steadily with the rotation angle — and you can measure that. The weak move is to stop at "people are slower on harder trials," which names no mechanism and predicts nothing new. The strongest conclusion is the one that both fits the data in front of you **and** spells out a fresh test that could prove it wrong. A claim that risks nothing teaches nothing.
+Another powerful clue is timing. When a problem starts at the exact moment something changed in a person's life — panic attacks beginning the week a long-wanted promotion arrives, migraines starting the month a father gets sick, headaches that come only on school mornings and vanish all summer — that timing is rarely an accident. The symptom is often carrying a distress the person hasn't let themselves feel directly. Pinning down *when* a symptom appears and disappears is one of the cheapest, sharpest tools we have for reading what it means.
 
-## Converging evidence
+## "Pointless" habits that serve a function
 
-One study is rarely enough, because any single method can mislead. The field's strongest conclusions come from **converging evidence**: when an experiment, a brain scan, and a computer model — often from different labs and different fields — independently point to the same answer, that agreement is hard to explain away. If behavior, biology, and computation all say memory has two separate systems, the conclusion earns real confidence. Convergence is also why "we need more data" is a weak stopping point: the point of picking a mechanism is to know exactly which new evidence would confirm or kill it.
+Some behaviors look useless until you ask what they accomplish. The deep-cleaning that strikes only before a dreaded deadline lets a person feel busy while avoiding the task that frightens them. The endless perfecting that means work is never submitted protects it — and the person — from ever being judged. The constant complaining that quietly draws in care and attention would cost the complainer that closeness if the problems were ever solved. The question "what does this behavior do for them?" turns a baffling habit into a readable one.
+
+## Reading the meaning — and naming a test
+
+Here is the part that keeps this honest. It's not enough to spin a clever story; a strong interpretation commits to a specific meaning *and* names the cheap observations that could prove it wrong. "He's late only to things he badly wants" is a real claim, because it predicts the lateness should vanish for low-stakes errands — and you can check that. The weak move is to stop at "he seems to run late" (which explains nothing) or to retreat into "the mind is too complex to say anything" (which gives up before looking). The worst move is the lurid overreach the evidence actually defeats. The strongest reading is the one that both binds the evidence in front of you and spells out the single observation that would refute it.
 
 ## In the real world
 
-Suppose a friend keeps blanking on a coworker's name even though she sees him daily. The dodge is "memory is just unreliable" — true-sounding, but it predicts nothing and suggests nothing to do. A cognitive-science move commits to a mechanism: maybe names are stored loosely and need a strong cue to retrieve. Notice how much that opens up. It predicts she should recognize the name instantly when she hears its first sound; that giving herself a cue ("his name rhymes with...") should help; and that she forgets *names* far more than *faces*, because faces have richer cues. Three cheap checks, each able to refute the idea. That is what studying the mind scientifically buys you — not a shrug at how mysterious people are, but a testable story about the machinery underneath.`,
+Suppose a friend keeps choosing partners who treat her badly, then sighs that she has "terrible luck." The dodge is to agree — it sounds kind, but it explains nothing and points nowhere. A psychodynamic move commits to a meaning: maybe harsh treatment feels like familiar love, so the gentle ones feel "boring" and get dropped. Notice how much that opens up. It predicts the partners she leaves were called dull rather than unkind; that the difficult ones echo someone from early life; and that she could stay engaged with a kind partner once the pattern is named. Three cheap checks, each able to refute the idea. That is what reading the mind beneath the surface buys you — not a shrug at how mysterious people are, but a testable story about the meaning underneath, and a way to change it.`,
   homework: {
     mcq,
     hybrid,

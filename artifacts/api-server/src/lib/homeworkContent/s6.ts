@@ -1,410 +1,415 @@
-import type { SectionContent, HomeworkItem, McOption, WrittenRubric } from "./types";
+import type {
+  SectionContent,
+  HomeworkItem,
+  McOption,
+  WrittenRubric,
+} from "./types";
 
 const mcq: HomeworkItem[] = [
   {
     itemType: "mc",
     prompt:
-      "Two groups estimate how many countries are in Africa. One group is first asked whether the number is more or less than 10; the other, more or less than 65. The first group then guesses far lower numbers than the second, even though those starting figures were arbitrary. Which conclusion best follows?",
+      "A patient eloquently explains, in session after session, that his fear of commitment grew out of his parents' bitter divorce. He can trace it perfectly. Yet he keeps ending each relationship the moment it turns serious, exactly as before. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "People likely treat the arbitrary starting number as a mental anchor and adjust too little from it, so the first figure drags the final estimate; test whether even a number from a spun wheel shifts estimates, whether warning people about anchoring shrinks the effect, and whether the gap narrows when the starting number is made obviously irrelevant.",
-        credit: 1.0,
+        text: "He has worked out the root cause, so the problem is essentially solved.",
+        credit: 0,
       },
       {
-        text: "The starting number probably pulls the estimate; we could try more starting values.",
-        credit: 0.6,
-      },
-      {
-        text: "People seem swayed by the first number they hear.",
+        text: "He seems to understand himself pretty well.",
         credit: 0.3,
       },
       {
-        text: "Estimating quantities is so personal that the numbers tell us nothing about how minds work.",
-        credit: 0,
+        text: "This looks like intellectual insight without change — he can narrate the pattern but it has not touched how he acts, so real change would require working the understanding through in lived situations; test whether his behavior shifts in the next serious relationship, whether the explanation ever arrives with feeling rather than as a recital, and whether naming it in the moment ever interrupts the impulse to bolt.",
+        credit: 1.0,
+      },
+      {
+        text: "He probably needs to keep talking about his parents; we could explore the divorce more.",
+        credit: 0.6,
       },
     ],
     correctAnswer:
-      "People likely treat the arbitrary starting number as a mental anchor and adjust too little from it, so the first figure drags the final estimate; test whether even a number from a spun wheel shifts estimates, whether warning people about anchoring shrinks the effect, and whether the gap narrows when the starting number is made obviously irrelevant.",
+      "This looks like intellectual insight without change — he can narrate the pattern but it has not touched how he acts, so real change would require working the understanding through in lived situations; test whether his behavior shifts in the next serious relationship, whether the explanation ever arrives with feeling rather than as a recital, and whether naming it in the moment ever interrupts the impulse to bolt.",
     explanation:
-      "Top credit names a specific mechanism (anchoring and insufficient adjustment) and three checkable tests; the 'too personal to say anything' option refuses to infer the process and earns zero under the inverted standard.",
+      "Top credit commits to intellectual-insight-only and names three disconfirming checks; 'the root cause is found, so it's solved' is the overreach the unchanged behavior directly defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "After a week of heavy news coverage of shark attacks, beachgoers rate shark attacks as far more likely than drowning, even though drowning kills vastly more swimmers every year. Which conclusion best follows?",
+      "A woman who for years exploded at any hint of criticism now, over several months, notices the urge to lash out at her boss, then catches the same urge with her sister, then with her partner — and each time she pauses and responds differently. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Risk judgments are too irrational to study scientifically.",
-        credit: 0,
-      },
-      {
-        text: "People seem more scared of sharks after watching the news.",
+        text: "She seems to be getting along with people better lately.",
         credit: 0.3,
       },
       {
-        text: "Vivid coverage probably inflates the fear; we could survey people after other news events.",
+        text: "She is probably improving; we could keep an eye on it.",
         credit: 0.6,
       },
       {
-        text: "People likely judge how likely an event is by how easily examples come to mind, so heavily reported, dramatic events feel more common; test whether estimates rise right after vivid coverage and fade weeks later, whether hard-to-picture risks are underrated, and whether people who can recall more examples give higher likelihood estimates.",
+        text: "The same shift appearing across boss, sister, and partner suggests genuine working through — she is recognizing one pattern in many separate situations and acting on it, not just understanding it; test whether the new response holds with a brand-new person she hasn't discussed, whether it survives a genuinely stinging criticism, and whether she reports actually feeling the urge and choosing against it rather than merely suppressing it.",
         credit: 1.0,
+      },
+      {
+        text: "People's moods come and go, so there is nothing here we can really conclude.",
+        credit: 0,
       },
     ],
     correctAnswer:
-      "People likely judge how likely an event is by how easily examples come to mind, so heavily reported, dramatic events feel more common; test whether estimates rise right after vivid coverage and fade weeks later, whether hard-to-picture risks are underrated, and whether people who can recall more examples give higher likelihood estimates.",
+      "The same shift appearing across boss, sister, and partner suggests genuine working through — she is recognizing one pattern in many separate situations and acting on it, not just understanding it; test whether the new response holds with a brand-new person she hasn't discussed, whether it survives a genuinely stinging criticism, and whether she reports actually feeling the urge and choosing against it rather than merely suppressing it.",
     explanation:
-      "Full credit names the availability heuristic and three tests that could refute it; 'too irrational to study' commits to nothing and earns zero.",
+      "Full credit reads working-through from the cross-context repetition and names three tests; 'moods come and go, nothing to conclude' is the refusal the consistent multi-context shift defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "Told that the sequence 2-4-6 follows a hidden rule, people propose new triples to test it. Almost everyone tries only triples that fit their guess ('increasing evens' → 8-10-12) and rarely one that could break it, so they confidently announce the wrong rule. Which conclusion best follows?",
+      "A man states flatly, in a bored monotone as if reading a grocery list, 'I know I push people away.' He has said it a dozen times. His friendships keep dissolving in exactly the same way. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "People likely test an idea by seeking cases that confirm it rather than ones that could disprove it, so they miss disconfirming evidence; test whether prompting people to try to break their rule improves accuracy, whether they mostly request fitting triples, and whether the same confirmation-seeking appears when people test social beliefs.",
+        text: "His understanding carries no feeling and changes nothing — this is intellectual insight that may even shield him from the emotion that would drive change; test whether any session ever brings real affect to the topic, whether he can connect the words to a specific painful moment, and whether the flat recital ever gives way to actually catching himself pushing someone away.",
         credit: 1.0,
       },
       {
-        text: "People seem to pick triples that match their first guess.",
-        credit: 0.3,
-      },
-      {
-        text: "Reasoning is too messy to draw any general lesson from a puzzle.",
+        text: "He clearly already knows the problem, so therapy has done its job here.",
         credit: 0,
       },
       {
-        text: "People probably look for confirming evidence; we could test more puzzles.",
+        text: "He seems aware that he pushes people away.",
+        credit: 0.3,
+      },
+      {
+        text: "He probably has more to say about it; we could ask him to elaborate.",
         credit: 0.6,
       },
     ],
     correctAnswer:
-      "People likely test an idea by seeking cases that confirm it rather than ones that could disprove it, so they miss disconfirming evidence; test whether prompting people to try to break their rule improves accuracy, whether they mostly request fitting triples, and whether the same confirmation-seeking appears when people test social beliefs.",
+      "His understanding carries no feeling and changes nothing — this is intellectual insight that may even shield him from the emotion that would drive change; test whether any session ever brings real affect to the topic, whether he can connect the words to a specific painful moment, and whether the flat recital ever gives way to actually catching himself pushing someone away.",
     explanation:
-      "The strongest conclusion names confirmation-seeking as the mechanism and three tests; 'too messy to draw any lesson' is the barren refusal the orderly, repeatable error defeats.",
+      "Top credit names affectless, change-free intellectual insight and three checks; 'he knows it, so therapy's done' is the overreach the unchanged friendships defeat.",
   },
   {
     itemType: "mc",
     prompt:
-      "People read a description of Linda as outspoken and concerned with social justice, then rate it 'more probable' that she is a bank teller AND a feminist than that she is simply a bank teller — even though a combination can never be more likely than one of its parts. Which conclusion best follows?",
+      "After months of circling it, a patient suddenly connects, with tears, her lifelong people-pleasing to the way she used to calm her anxious mother as a small child. In the following weeks she starts, for the first time, declining unreasonable requests at work and at home. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The detailed story probably sways the rating; we could test other descriptions.",
-        credit: 0.6,
-      },
-      {
-        text: "Probability is too hard for ordinary people, so nothing general can be said.",
+        text: "Some realizations are too personal to judge from the outside, so we can't really say if this matters.",
         credit: 0,
       },
       {
-        text: "People likely judge probability by how well a case matches a stereotype rather than by the rules of probability, so a richer, matching story feels more likely; test whether the error shrinks when the question is asked in frequencies ('how many of 100'), whether descriptions that fit no stereotype remove the effect, and whether the same reversal appears with other added details.",
+        text: "She probably had a meaningful session; we could see how she feels next week.",
+        credit: 0.6,
+      },
+      {
+        text: "This looks like emotional insight that is beginning to generalize — the understanding arrived with feeling and is already changing behavior across more than one setting; test whether the new limit-setting keeps appearing in fresh situations, whether it survives a guilt-inducing pushback, and whether she can stay with the feeling rather than retreating into old pleasing when stressed.",
         credit: 1.0,
       },
       {
-        text: "People seem to prefer the more detailed option.",
+        text: "She seems to have had an emotional moment.",
         credit: 0.3,
       },
     ],
     correctAnswer:
-      "People likely judge probability by how well a case matches a stereotype rather than by the rules of probability, so a richer, matching story feels more likely; test whether the error shrinks when the question is asked in frequencies ('how many of 100'), whether descriptions that fit no stereotype remove the effect, and whether the same reversal appears with other added details.",
+      "This looks like emotional insight that is beginning to generalize — the understanding arrived with feeling and is already changing behavior across more than one setting; test whether the new limit-setting keeps appearing in fresh situations, whether it survives a guilt-inducing pushback, and whether she can stay with the feeling rather than retreating into old pleasing when stressed.",
     explanation:
-      "Top credit names the representativeness heuristic and three tests, including a frequency reframing that could refute it; 'probability is too hard, nothing can be said' opens no inquiry.",
+      "Full credit ties felt insight to early behavioral change and names three tests; 'too personal to judge' is the dodge the observable new behavior defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "Asked 'A bat and a ball cost $1.10 together; the bat costs $1.00 more than the ball; how much is the ball?', most people quickly answer '10 cents' — which is wrong (it is 5 cents) — and catch the error only if they stop and check. Which conclusion best follows?",
+      "In one session a student 'gets' why he procrastinates — a fear of being judged — and leaves feeling lighter and relieved. The very next week he has procrastinated on everything exactly as before. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "People are simply bad at math, so there is nothing deeper to learn here.",
-        credit: 0,
-      },
-      {
-        text: "The mind likely has a fast, automatic mode that throws up an intuitive answer and a slower, effortful mode that must override it, so errors come from trusting the quick answer; test whether forcing a delay or a hard-to-read font improves accuracy, whether the wrong answer comes faster than the right one, and whether people who score higher on reflection tasks make fewer such errors.",
-        credit: 1.0,
-      },
-      {
-        text: "People seem to rush the answer.",
+        text: "He seems to have figured out why he procrastinates.",
         credit: 0.3,
       },
       {
-        text: "People probably answer too fast; we could give them more time and see.",
+        text: "One relieving insight is not the same as change — a single realization rarely rewires a habit, and the relief may have discharged the urgency to act; test whether the insight returns and gains traction over repeated weeks, whether it ever shows up at the moment he's about to avoid a task, and whether any actual change in his work behavior follows.",
+        credit: 1.0,
+      },
+      {
+        text: "Now that he understands the fear, the procrastination should take care of itself.",
+        credit: 0,
+      },
+      {
+        text: "He probably needs another session or two; we could revisit it.",
         credit: 0.6,
       },
     ],
     correctAnswer:
-      "The mind likely has a fast, automatic mode that throws up an intuitive answer and a slower, effortful mode that must override it, so errors come from trusting the quick answer; test whether forcing a delay or a hard-to-read font improves accuracy, whether the wrong answer comes faster than the right one, and whether people who score higher on reflection tasks make fewer such errors.",
+      "One relieving insight is not the same as change — a single realization rarely rewires a habit, and the relief may have discharged the urgency to act; test whether the insight returns and gains traction over repeated weeks, whether it ever shows up at the moment he's about to avoid a task, and whether any actual change in his work behavior follows.",
     explanation:
-      "Full credit commits to a two-system (fast/slow) mechanism with three tests; 'people are just bad at math' is the overreach defeated by the fact that they can solve it once they reflect.",
+      "Top credit distinguishes a one-time insight from durable change and names three checks; 'understanding the fear fixes it' is the overreach the unchanged next week defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "Doctors choose a treatment more often when told it has a '90% survival rate' than when told it has a '10% mortality rate,' even though those describe exactly the same outcome. Which conclusion best follows?",
+      "A patient who understood her jealousy months ago handles it calmly whenever life is relaxed. But the moment she is exhausted and under pressure, the old accusatory phone calls and snooping come roaring straight back. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Wording seems to matter to doctors.",
+        text: "Her good and bad spells seem to alternate.",
         credit: 0.3,
       },
       {
-        text: "Choices likely depend on whether an option is framed as a gain or a loss, not just on the facts, because losses loom larger than equivalent gains; test whether the preference reverses when the framing is flipped, whether it shrinks when people compute the numbers themselves, and whether the same framing swing appears in money decisions.",
+        text: "The change is real but not yet consolidated — the new response holds under easy conditions but collapses under stress, which is the signature of insight that hasn't been fully worked through; test whether the calm response gradually starts to survive stressful periods, whether she can catch the urge specifically when tired, and whether the relapses grow shorter and less intense over time.",
         credit: 1.0,
       },
       {
-        text: "Decision-making is too subjective to study scientifically.",
+        text: "She understands her jealousy, so any remaining outbursts must be someone else's fault.",
         credit: 0,
       },
       {
-        text: "The framing probably influences the choice; we could test more wordings.",
+        text: "She is probably still working on it; we could check back in a while.",
         credit: 0.6,
       },
     ],
     correctAnswer:
-      "Choices likely depend on whether an option is framed as a gain or a loss, not just on the facts, because losses loom larger than equivalent gains; test whether the preference reverses when the framing is flipped, whether it shrinks when people compute the numbers themselves, and whether the same framing swing appears in money decisions.",
+      "The change is real but not yet consolidated — the new response holds under easy conditions but collapses under stress, which is the signature of insight that hasn't been fully worked through; test whether the calm response gradually starts to survive stressful periods, whether she can catch the urge specifically when tired, and whether the relapses grow shorter and less intense over time.",
     explanation:
-      "The richest conclusion names framing and loss aversion as the mechanism and three tests; 'too subjective to study' is the dodge the reliable, repeatable framing swing contradicts.",
+      "Full credit reads partial, not-yet-consolidated change from the stress-dependent relapse and names three tests; blaming others is the overreach her own pattern defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "Told a disease affects 1 in 1,000 people and a test is 95% accurate, most people say someone who tests positive almost certainly has the disease — when in fact most positives are false alarms because the disease is so rare. Which conclusion best follows?",
+      "A man recounts the same insight — 'my anger is really fear' — session after session, almost proudly, polishing the phrase. He never once applies it, and the repetition has the feel of a rehearsed performance. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Statistics are beyond ordinary people, so nothing can be concluded from the mistake.",
+        text: "The mind is too layered to know why someone repeats a phrase, so we can't say much.",
         credit: 0,
       },
       {
-        text: "People probably ignore how rare the disease is; we could test other numbers.",
+        text: "He probably finds the insight comforting; we could encourage him to use it.",
         credit: 0.6,
       },
       {
-        text: "People seem to overrate a positive test.",
+        text: "He seems to repeat the same point a lot.",
         credit: 0.3,
       },
       {
-        text: "People likely focus on the test's accuracy and neglect the base rate of how rare the disease is, so they overweight the individual evidence; test whether presenting the problem as natural frequencies ('1 of 1,000...') fixes most answers, whether higher base rates reduce the error, and whether the same neglect appears in courtroom or hiring judgments.",
+        text: "The insight has become a defense — reciting the understanding lets him feel he is working while sparing him the change it implies; test whether he ever sits with the underlying fear instead of producing the slogan, whether any of his behavior outside session shifts, and whether interrupting the recital provokes discomfort rather than more polished phrasing.",
         credit: 1.0,
       },
     ],
     correctAnswer:
-      "People likely focus on the test's accuracy and neglect the base rate of how rare the disease is, so they overweight the individual evidence; test whether presenting the problem as natural frequencies ('1 of 1,000...') fixes most answers, whether higher base rates reduce the error, and whether the same neglect appears in courtroom or hiring judgments.",
+      "The insight has become a defense — reciting the understanding lets him feel he is working while sparing him the change it implies; test whether he ever sits with the underlying fear instead of producing the slogan, whether any of his behavior outside session shifts, and whether interrupting the recital provokes discomfort rather than more polished phrasing.",
     explanation:
-      "Top credit names base-rate neglect and three tests, including a frequency reframing that could refute it; 'statistics are beyond ordinary people' is the refusal the predictable, fixable error defeats.",
+      "Top credit names insight-as-defense and three disconfirming checks; 'too layered to know' is the refusal the proud, change-free repetition defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "Before an election, people give mixed predictions. Afterward, the same people 'remember' having been far more sure of the actual winner than their earlier written answers show. Which conclusion best follows?",
+      "A woman first recognizes, in therapy, that she keeps choosing emotionally unavailable partners. Over the following months she catches the pull toward a distant new date, then notices it in a flirtation at work, then in a one-sided friendship — each time spotting it earlier than before. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Once an outcome is known, the mind likely reshapes the memory of its earlier belief to fit, making the result feel as if it was obvious all along; test whether recording predictions in advance and showing them back reduces the distortion, whether the effect grows with the time since predicting, and whether it appears for sports results and exam answers too.",
-        credit: 1.0,
-      },
-      {
-        text: "People seem to misremember their own predictions.",
+        text: "She seems to be noticing her type more.",
         credit: 0.3,
       },
       {
-        text: "Memory of past predictions is too unreliable to study.",
+        text: "Catching the same pattern across dating, work, and friendship — and earlier each time — is exactly what working through looks like: one recognition being applied and sharpened across many situations; test whether she eventually acts differently and not just notices, whether the earlier-catching trend continues with new people, and whether the recognition holds when she's strongly drawn to someone unavailable.",
+        credit: 1.0,
+      },
+      {
+        text: "Now that she sees her type, she is bound to be fine from here on.",
         credit: 0,
       },
       {
-        text: "People probably overstate their foresight; we could track more predictions.",
+        text: "She is probably making progress; we could keep tracking it.",
         credit: 0.6,
       },
     ],
     correctAnswer:
-      "Once an outcome is known, the mind likely reshapes the memory of its earlier belief to fit, making the result feel as if it was obvious all along; test whether recording predictions in advance and showing them back reduces the distortion, whether the effect grows with the time since predicting, and whether it appears for sports results and exam answers too.",
+      "Catching the same pattern across dating, work, and friendship — and earlier each time — is exactly what working through looks like: one recognition being applied and sharpened across many situations; test whether she eventually acts differently and not just notices, whether the earlier-catching trend continues with new people, and whether the recognition holds when she's strongly drawn to someone unavailable.",
     explanation:
-      "The winning conclusion names hindsight bias as a memory-updating mechanism with three tests; 'too unreliable to study' is the dodge the systematic distortion itself defeats.",
+      "Full credit reads working through from the cross-context, earlier-each-time recognition and names three tests; 'she's bound to be fine' is the overreach noticing-without-acting doesn't yet support.",
   },
   {
     itemType: "mc",
     prompt:
-      "Students randomly given a coffee mug demand about $7 to sell it, while students without one will pay only about $3 to buy the same mug. The only difference is who happens to own it. Which conclusion best follows?",
+      "A patient has a dramatic, cathartic session, sobbing for an hour about his cold father, and leaves saying he feels completely transformed. A month later, nothing in his daily life — his relationships, his temper, his habits — has shifted at all. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Owning something probably raises its value to people; we could test other objects.",
-        credit: 0.6,
-      },
-      {
-        text: "Value is purely personal, so prices tell us nothing about the mind.",
+        text: "He had a big emotional release, so he must be better now.",
         credit: 0,
       },
       {
-        text: "Owners seem to want more money for the mug.",
+        text: "He seems to have cried a lot about his father.",
         credit: 0.3,
       },
       {
-        text: "People likely feel the pain of giving something up more strongly than the pleasure of gaining it, so ownership inflates an item's perceived value; test whether the gap appears the moment ownership is assigned, whether it vanishes for items treated as pure currency like tokens, and whether the same loss-averse gap shows up when people sell stocks.",
+        text: "An intense emotional discharge is not the same as change — catharsis can feel transformative yet leave the underlying pattern untouched unless it is worked through over time; test whether any concrete behavior shifts in the weeks after, whether the feeling reconnects to present-day situations rather than just the past, and whether the sense of transformation survives a return to ordinary stress.",
         credit: 1.0,
+      },
+      {
+        text: "It was probably an important session; we could see where it leads.",
+        credit: 0.6,
       },
     ],
     correctAnswer:
-      "People likely feel the pain of giving something up more strongly than the pleasure of gaining it, so ownership inflates an item's perceived value; test whether the gap appears the moment ownership is assigned, whether it vanishes for items treated as pure currency like tokens, and whether the same loss-averse gap shows up when people sell stocks.",
+      "An intense emotional discharge is not the same as change — catharsis can feel transformative yet leave the underlying pattern untouched unless it is worked through over time; test whether any concrete behavior shifts in the weeks after, whether the feeling reconnects to present-day situations rather than just the past, and whether the sense of transformation survives a return to ordinary stress.",
     explanation:
-      "Full credit names loss aversion and the endowment effect with three tests; 'value is purely personal, prices tell us nothing' is the refusal the systematic buy/sell gap contradicts.",
+      "Top credit separates catharsis from durable change and names three checks; 'a big release means he's better' is the overreach the unchanged month defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "At a roulette table, after the ball lands on red eight times in a row, players pile their bets on black, certain it is 'due' — though each spin is independent and equally likely either way. Which conclusion best follows?",
+      "A long-avoidant man, who used to flee any tension, now manages a hard conversation with his mother that he'd have dodged before — and within the same period also handles a confrontation with his landlord and speaks up in a tense meeting. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Gambling is irrational, so there is nothing here to explain.",
+        text: "Avoidance is too ingrained to ever really shift, so this probably means little.",
         credit: 0,
       },
       {
-        text: "People likely expect short random streaks to 'even out,' wrongly treating independent events as if they correct themselves, because a long run of red feels unrepresentative of chance; test whether the betting swing grows with longer streaks, whether explaining independence reduces it, and whether the same 'it's due' reasoning appears with coin flips and lottery numbers.",
+        text: "He probably had a few good days; we could wait and see.",
+        credit: 0.6,
+      },
+      {
+        text: "The new tolerance for tension showing up with his mother, landlord, and colleagues at once points to genuine change generalizing across contexts, not a one-off fluke; test whether it appears in further unrehearsed situations, whether it holds when the stakes are high, and whether he reports actually feeling the old pull to flee and overriding it.",
         credit: 1.0,
       },
       {
-        text: "People seem to bet against the streak.",
+        text: "He seems to be handling conflict a bit better.",
         credit: 0.3,
-      },
-      {
-        text: "People probably think black is due; we could watch more tables.",
-        credit: 0.6,
       },
     ],
     correctAnswer:
-      "People likely expect short random streaks to 'even out,' wrongly treating independent events as if they correct themselves, because a long run of red feels unrepresentative of chance; test whether the betting swing grows with longer streaks, whether explaining independence reduces it, and whether the same 'it's due' reasoning appears with coin flips and lottery numbers.",
+      "The new tolerance for tension showing up with his mother, landlord, and colleagues at once points to genuine change generalizing across contexts, not a one-off fluke; test whether it appears in further unrehearsed situations, whether it holds when the stakes are high, and whether he reports actually feeling the old pull to flee and overriding it.",
     explanation:
-      "Top credit names the gambler's fallacy (misreading randomness) with three tests; 'gambling is irrational, nothing to explain' is the dodge the orderly, streak-dependent betting defeats.",
+      "Full credit reads generalizing change from the multi-context shift and names three tests; 'avoidance can never shift' is the refusal the three independent successes defeat.",
   },
   {
     itemType: "mc",
     prompt:
-      "Asked tricky general-knowledge questions and to mark how sure they are, people who say they are '90% certain' turn out to be right only about 70% of the time, across many questions. Which conclusion best follows?",
+      "A woman can describe her habit of deflecting every painful topic with a joke in flawless, almost textbook terms, and she even announces 'there I go, using humor again' as she does it. She still deflects every single time. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "People seem a bit too sure of themselves.",
-        credit: 0.3,
-      },
-      {
-        text: "People probably overrate their certainty; we could ask more questions.",
-        credit: 0.6,
-      },
-      {
-        text: "Confidence is just a feeling, so it cannot be measured against the truth.",
+        text: "She is clearly very self-aware, so the deflecting will resolve on its own.",
         credit: 0,
       },
       {
-        text: "People likely overestimate how much they know, so stated confidence runs systematically higher than actual accuracy; test whether the gap is largest for the hardest questions, whether asking people to list reasons they might be wrong narrows it, and whether experts show the same overconfidence within their own fields.",
+        text: "She seems to know she uses humor to deflect.",
+        credit: 0.3,
+      },
+      {
+        text: "Naming the defense has not loosened it — accurate labeling is intellectual insight, and here the labeling may itself be one more way to skate past the feeling; test whether she can ever stay with a painful topic instead of joking, whether the feeling she's deflecting can surface in session, and whether the running commentary ever gives way to actually changing the behavior.",
         credit: 1.0,
+      },
+      {
+        text: "She probably needs to practice catching it; we could remind her.",
+        credit: 0.6,
       },
     ],
     correctAnswer:
-      "People likely overestimate how much they know, so stated confidence runs systematically higher than actual accuracy; test whether the gap is largest for the hardest questions, whether asking people to list reasons they might be wrong narrows it, and whether experts show the same overconfidence within their own fields.",
+      "Naming the defense has not loosened it — accurate labeling is intellectual insight, and here the labeling may itself be one more way to skate past the feeling; test whether she can ever stay with a painful topic instead of joking, whether the feeling she's deflecting can surface in session, and whether the running commentary ever gives way to actually changing the behavior.",
     explanation:
-      "The strongest conclusion names overconfidence as a measurable, systematic gap with three tests; 'confidence can't be measured against truth' is the dodge the reliable calibration gap defeats.",
+      "Top credit notes that naming-without-changing is still intellectual insight and names three checks; 'she's self-aware, so it resolves itself' is the overreach the unbroken deflecting defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "People are asked which hospital records more days when over 60% of babies born are boys: a large hospital (about 45 births a day) or a small one (about 15 a day). Most say 'about the same,' though the small hospital must have more such extreme days. Which conclusion best follows?",
+      "After understanding that her perfectionism shields her from feeling worthless, a patient gradually lets a colleague see a rough draft, then submits a project on time despite small flaws, then shrugs off a minor mistake that once would have wrecked her week. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "People likely ignore sample size and expect any sample to mirror the overall average, so they miss that small samples swing more; test whether the error shrinks when the size difference is made vivid, whether people predict more extremes for very tiny samples once prompted, and whether the same neglect appears in judging streaks of business or sports results.",
-        credit: 1.0,
-      },
-      {
-        text: "Probability puzzles are too tricky to reveal anything about thinking.",
-        credit: 0,
-      },
-      {
-        text: "People seem to overlook how big each hospital is.",
+        text: "She seems a little more relaxed about her work.",
         credit: 0.3,
       },
       {
-        text: "People probably forget that size matters; we could test other hospital sizes.",
+        text: "She is probably easing up; we could keep watching.",
         credit: 0.6,
+      },
+      {
+        text: "The understanding is being worked through into behavior — tolerating imperfection across drafts, deadlines, and mistakes shows the insight changing how she acts in several real situations; test whether the new tolerance extends to higher-stakes work, whether it holds during a stressful stretch, and whether she reports the old worthless feeling arising and being borne rather than avoided.",
+        credit: 1.0,
+      },
+      {
+        text: "Perfectionism is part of who someone is, so there's nothing here to read into.",
+        credit: 0,
       },
     ],
     correctAnswer:
-      "People likely ignore sample size and expect any sample to mirror the overall average, so they miss that small samples swing more; test whether the error shrinks when the size difference is made vivid, whether people predict more extremes for very tiny samples once prompted, and whether the same neglect appears in judging streaks of business or sports results.",
+      "The understanding is being worked through into behavior — tolerating imperfection across drafts, deadlines, and mistakes shows the insight changing how she acts in several real situations; test whether the new tolerance extends to higher-stakes work, whether it holds during a stressful stretch, and whether she reports the old worthless feeling arising and being borne rather than avoided.",
     explanation:
-      "Top credit names sample-size neglect (expecting small samples to mirror the population) with three tests; 'too tricky to reveal anything' is the refusal the orderly error defeats.",
+      "Full credit reads worked-through change from the spreading behavioral shift and names three tests; 'it's just who she is, nothing to read' is the dodge the concrete changes defeat.",
   },
   {
     itemType: "mc",
     prompt:
-      "Mock jurors read identical case files but rate the more attractive defendant as less likely to be guilty and recommend lighter sentences. Which conclusion best follows?",
+      "A man insists therapy 'worked' because he now deeply understands himself. His wife, asked separately, reports that he treats her in exactly the same dismissive way he always has. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Looks probably sway the verdict; we could test more juror groups.",
-        credit: 0.6,
+        text: "He says he understands himself, so we should take it that he has changed.",
+        credit: 0,
       },
       {
-        text: "Appearance seems to matter to jurors.",
+        text: "He seems to feel he has gotten something out of therapy.",
         credit: 0.3,
       },
       {
-        text: "One positive impression like attractiveness likely spills over into unrelated judgments such as guilt, so a single good trait colors the whole assessment; test whether other positive traits like a warm voice produce the same leniency, whether reminding jurors to judge only the evidence removes it, and whether the spillover also lifts ratings of unrelated qualities like competence.",
+        text: "His self-reported insight is not matched by any observable change in how he treats his wife — a gap that suggests intellectual insight rather than worked-through change; test whether a neutral third party notices any difference, whether his behavior shifts in concrete daily interactions, and whether the understanding ever shows up when he's actually being dismissive.",
         credit: 1.0,
       },
       {
-        text: "Juror decisions are too personal to study.",
-        credit: 0,
+        text: "He probably has changed in some ways; we could ask him for examples.",
+        credit: 0.6,
       },
     ],
     correctAnswer:
-      "One positive impression like attractiveness likely spills over into unrelated judgments such as guilt, so a single good trait colors the whole assessment; test whether other positive traits like a warm voice produce the same leniency, whether reminding jurors to judge only the evidence removes it, and whether the spillover also lifts ratings of unrelated qualities like competence.",
+      "His self-reported insight is not matched by any observable change in how he treats his wife — a gap that suggests intellectual insight rather than worked-through change; test whether a neutral third party notices any difference, whether his behavior shifts in concrete daily interactions, and whether the understanding ever shows up when he's actually being dismissive.",
     explanation:
-      "Full credit names the halo effect (spillover from one trait to unrelated judgments) with three tests; 'too personal to study' is the dodge the reliable attractiveness bias contradicts.",
+      "Top credit weighs observable behavior over self-report and names three checks; 'he says he understands, so he's changed' is the overreach the wife's account defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A company has spent two years and millions on a project that now looks doomed, yet executives keep funding it, saying 'we've already invested too much to quit.' A fresh project with better odds gets passed over. Which conclusion best follows?",
+      "A patient grasped a pattern intellectually a year ago and nothing happened. Only now, after re-encountering that same realization many times — with real feeling, in session and in his life — is his behavior finally shifting. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Business choices are too complex to draw any general lesson from.",
+        text: "Change is so mysterious that we can't say what made the difference here.",
         credit: 0,
       },
       {
-        text: "The executives seem reluctant to quit.",
+        text: "Something seems to have clicked for him eventually.",
         credit: 0.3,
       },
       {
-        text: "Past spending probably traps them; we could survey more companies.",
-        credit: 0.6,
+        text: "Change came from repeated emotional re-encounter, not the original idea — this is working through, where the same insight has to be felt and applied over and over before it takes; test whether the change tracks the repetitions rather than the year-old realization, whether it now appears in new situations, and whether it survives stress that a fresh, untested insight would not.",
+        credit: 1.0,
       },
       {
-        text: "People likely let unrecoverable past costs drive decisions that should depend only on future prospects, because abandoning the project feels like accepting a loss; test whether people told to ignore prior spending choose the better option, whether the trap grows with the size of the sunk cost, and whether the same reluctance appears when individuals keep using a ticket they already paid for.",
-        credit: 1.0,
+        text: "The first insight probably caused it on a delay; we could trace the timeline.",
+        credit: 0.6,
       },
     ],
     correctAnswer:
-      "People likely let unrecoverable past costs drive decisions that should depend only on future prospects, because abandoning the project feels like accepting a loss; test whether people told to ignore prior spending choose the better option, whether the trap grows with the size of the sunk cost, and whether the same reluctance appears when individuals keep using a ticket they already paid for.",
+      "Change came from repeated emotional re-encounter, not the original idea — this is working through, where the same insight has to be felt and applied over and over before it takes; test whether the change tracks the repetitions rather than the year-old realization, whether it now appears in new situations, and whether it survives stress that a fresh, untested insight would not.",
     explanation:
-      "Top credit names the sunk-cost effect (honoring spent costs) with three tests, including one that could refute it; 'too complex to draw any lesson' opens no inquiry.",
+      "Full credit names working through as the engine and names three tests including the timeline check; 'change is mysterious' is the refusal the clear repetition-then-change sequence defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "Given the same well-designed study, people who already favor a policy call it convincing, while those who oppose the policy call the identical study flawed, scrutinizing only the parts they dislike. Which conclusion best follows?",
+      "A patient describes feeling the old, familiar urge to abandon a project the instant it got difficult — but for the first time he stayed with it. That same week, instead of ghosting a friend after a tense exchange, he stayed in that too. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "People seem to judge a study by their own views.",
+        text: "He seems to be sticking with things more.",
         credit: 0.3,
       },
       {
-        text: "Opinions are private, so we cannot study how people weigh evidence.",
-        credit: 0,
+        text: "Feeling the old pull and overriding it in two different fresh situations in one week points to real change taking hold — change felt as a struggle, not just understood — rather than a lucky coincidence; test whether the new staying-power keeps showing up in unrehearsed situations, whether it holds when the difficulty is greater, and whether he keeps reporting the urge-then-choice rather than a frictionless calm.",
+        credit: 1.0,
       },
       {
-        text: "Prior beliefs probably bias the judgment; we could test more topics.",
+        text: "He probably had a productive week; we could see if it continues.",
         credit: 0.6,
       },
       {
-        text: "People likely apply harsher scrutiny to evidence that threatens their existing beliefs while accepting agreeable evidence easily, so identical methods get opposite reviews; test whether the gap shrinks when people are paid for accuracy, whether it disappears on neutral topics they have no stake in, and whether asking 'what would change your mind' reduces the one-sided scrutiny.",
-        credit: 1.0,
+        text: "People have good weeks and bad weeks, so there's nothing to conclude.",
+        credit: 0,
       },
     ],
     correctAnswer:
-      "People likely apply harsher scrutiny to evidence that threatens their existing beliefs while accepting agreeable evidence easily, so identical methods get opposite reviews; test whether the gap shrinks when people are paid for accuracy, whether it disappears on neutral topics they have no stake in, and whether asking 'what would change your mind' reduces the one-sided scrutiny.",
+      "Feeling the old pull and overriding it in two different fresh situations in one week points to real change taking hold — change felt as a struggle, not just understood — rather than a lucky coincidence; test whether the new staying-power keeps showing up in unrehearsed situations, whether it holds when the difficulty is greater, and whether he keeps reporting the urge-then-choice rather than a frictionless calm.",
     explanation:
-      "The richest conclusion names motivated, asymmetric scrutiny as the mechanism with three tests; 'opinions are private, we can't study them' is the dodge the reliable belief-driven gap defeats.",
+      "Full credit reads genuine, effortful change from the felt urge-then-override across contexts and names three tests; 'good weeks and bad weeks, nothing to conclude' is the dodge the two concrete overrides defeat.",
   },
 ];
 
@@ -412,425 +417,425 @@ const hybrid: HomeworkItem[] = [
   {
     itemType: "hybrid",
     prompt:
-      "Countries where organ donation is the default (you must opt out) have donor rates above 90%, while otherwise-similar countries where you must opt in sit near 15%. People rarely change the box that is already checked. Which conclusion best follows?",
+      "A patient who learned that his harsh self-criticism echoes his father's voice now reports catching that critical voice when he flubs something at work, again when he burns dinner, and again when he loses patience with his kids — and he says the criticism has gotten noticeably quieter. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Donation rates differ for so many reasons that the default setting tells us nothing.",
-        credit: 0,
-      },
-      {
-        text: "The pre-set default likely becomes the choice because changing it takes effort and people read the default as a recommendation; test whether making both options equally effortful erases the gap, whether the effect shrinks for highly motivated people, and whether the same default pull appears in retirement-savings enrollment.",
+        text: "Catching and softening the same critical voice across work, cooking, and parenting is what working through looks like — the insight is being applied and is changing the experience across several unrelated settings; test whether the quieter voice holds after a real failure, whether it shows up in a brand-new situation he hasn't discussed, and whether he reports actually feeling the criticism start and choosing against it.",
         credit: 1.0,
       },
       {
-        text: "Defaults seem to affect donation rates.",
+        text: "He seems to be criticizing himself a bit less.",
         credit: 0.3,
       },
       {
-        text: "The default probably nudges people; we could compare more countries.",
+        text: "He probably just has had a calm stretch; we could keep watching.",
         credit: 0.6,
+      },
+      {
+        text: "Self-criticism is too deep-rooted to really change, so this likely means nothing.",
+        credit: 0,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'default-as-effort-and-recommendation' lead from the rival 'opt-out countries simply care more about donation,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'working through' lead from the rival 'he's just having a low-stress few weeks,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: within one country, randomly assign new sign-ups to an opt-in or an opt-out form and compare donor rates — same culture, only the default differs, so a large gap isolates the default itself. My lead is refuted if both forms yield the same rate, which would mean underlying attitudes, not the default, drive the numbers.",
+        "Cheapest test: wait for a genuine failure or stressful stretch and see whether he still catches and softens the critical voice — working through predicts the new response survives stress, while a mere calm spell predicts the old criticism returns full force the moment life gets hard. My lead is refuted if the softer voice vanishes under any real pressure and only reappears once things are easy again.",
       yieldAnchors: [
-        "Opt-out countries have donor rates above 90%",
-        "Opt-in countries sit near 15%",
-        "People rarely switch away from the pre-set option",
+        "He catches the critical voice at work, cooking, and parenting",
+        "The same pattern appears in several unrelated settings",
+        "He reports the criticism has grown quieter",
       ],
       riskAnchors: [
-        "Randomly assigning the default flips individual choices",
-        "Equalizing the effort of both options shrinks the gap",
-        "The same default pull appears in retirement-savings sign-ups",
+        "The quieter voice holds after a real failure",
+        "It appears in a brand-new, undiscussed situation",
+        "He feels the criticism start and chooses against it",
       ],
       defeatedBy: [
-        "The default has no effect once culture is held constant",
-        "People always choose deliberately regardless of the default",
+        "The softer voice disappears the moment he is stressed",
+        "Nothing actually changes in how he treats himself",
       ],
     },
     correctAnswer:
-      "The pre-set default likely becomes the choice because changing it takes effort and people read the default as a recommendation; test whether making both options equally effortful erases the gap, whether the effect shrinks for highly motivated people, and whether the same default pull appears in retirement-savings enrollment.",
+      "Catching and softening the same critical voice across work, cooking, and parenting is what working through looks like — the insight is being applied and is changing the experience across several unrelated settings; test whether the quieter voice holds after a real failure, whether it shows up in a brand-new situation he hasn't discussed, and whether he reports actually feeling the criticism start and choosing against it.",
     explanation:
-      "The huge default gap seeds an effort-plus-recommendation model the top MC commits to; the follow-up earns full credit by naming a within-country randomized test and the result that would refute it. 'The default tells us nothing' is the zero-credit dodge.",
+      "Full credit reads working through from the cross-context change and names a stress test that states its own refutation; 'too deep-rooted to change' is the refusal the multi-setting shift defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A magazine offers web-only for $59 and print-plus-web for $125; few choose print. When a useless print-only option at $125 is added, most people suddenly choose print-plus-web. The new option that no one picks changes everyone's choice. Which conclusion best follows?",
+      "A woman gives a polished, complete account of why she fears intimacy, but she delivers it without a flicker of emotion, and after a year of these accounts her dating life is exactly as it was. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The extra option probably steers buyers; we could test more price sets.",
+        text: "She probably needs to understand the fear more deeply; we could dig further.",
         credit: 0.6,
       },
       {
-        text: "Adding an option seems to change choices.",
-        credit: 0.3,
+        text: "She clearly understands her fear, so the work here is basically finished.",
+        credit: 0,
       },
       {
-        text: "People likely judge options by comparison rather than absolute value, so a clearly worse 'decoy' makes a similar option look like a bargain; test whether removing the decoy reverses the choice, whether a decoy placed near the cheap option boosts that one instead, and whether the same shift appears with restaurant wines or apartment listings.",
+        text: "This is intellectual insight functioning as a defense — a complete, affectless explanation that substitutes understanding for the feeling and change it should lead to; test whether any session ever brings real emotion to the topic, whether a single concrete dating behavior changes, and whether stating the insight ever interrupts the pattern in a live situation.",
         credit: 1.0,
       },
       {
-        text: "Buying decisions are too personal to generalize about.",
-        credit: 0,
+        text: "She seems to have thought a lot about her fear of intimacy.",
+        credit: 0.3,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'choice by comparison' lead from the rival 'the print-only price just made print feel normal,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'insight-as-defense' lead from the rival 'she simply needs more time before change shows,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: run the same offer with and without the decoy, and also try a decoy placed next to the cheap web-only option instead — comparison theory predicts each decoy pulls choices toward whichever option it makes look good. My lead is refuted if adding or moving the decoy leaves choices unchanged, which would mean the prices alone, not the comparisons, drive the decision.",
+        "Cheapest test: notice whether her explanation ever arrives with any feeling, or whether it stays a flat recital no matter how close the topic gets — insight serving as a defense predicts the affect is reliably kept out, where genuine slow progress predicts feeling gradually breaking through. My lead is refuted if emotion does surface over time and even one dating behavior begins to shift, which would fit a slow but real process rather than a defense.",
       yieldAnchors: [
-        "Few choose print-plus-web without the decoy",
-        "Most choose print-plus-web once a useless option is added",
-        "The added option itself is picked by almost no one",
+        "Her account of the fear is polished and complete",
+        "She delivers it with no emotion",
+        "A year on, her dating life is unchanged",
       ],
       riskAnchors: [
-        "Removing the decoy reverses the majority choice",
-        "A decoy near the cheap option boosts that option instead",
-        "The same shift appears with wines or apartments",
+        "Real emotion eventually surfaces around the topic",
+        "A concrete dating behavior changes",
+        "Stating the insight interrupts the pattern in the moment",
       ],
       defeatedBy: [
-        "The decoy changes nothing about people's choices",
-        "People always pick the objectively cheapest option",
+        "Feeling breaks through and behavior begins to shift over time",
+        "The understanding is wrong about the source of the fear",
       ],
     },
     correctAnswer:
-      "People likely judge options by comparison rather than absolute value, so a clearly worse 'decoy' makes a similar option look like a bargain; test whether removing the decoy reverses the choice, whether a decoy placed near the cheap option boosts that one instead, and whether the same shift appears with restaurant wines or apartment listings.",
+      "This is intellectual insight functioning as a defense — a complete, affectless explanation that substitutes understanding for the feeling and change it should lead to; test whether any session ever brings real emotion to the topic, whether a single concrete dating behavior changes, and whether stating the insight ever interrupts the pattern in a live situation.",
     explanation:
-      "The choice flip seeds a comparison-based (decoy effect) model the top MC commits to; the follow-up earns full credit by naming an add/move-the-decoy test and its refutation. 'Too personal to generalize' is the zero-credit dodge.",
+      "Top credit names insight-as-defense and pairs it with an affect-watch test that names its refutation; 'she understands, so the work is finished' is the overreach the unchanged year defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "Students asked when they will finish a thesis give an average estimate of 34 days; they actually take 56. Even their 'worst-case' guesses fall short of reality. Which conclusion best follows?",
+      "A man has a powerful, tearful realization about his absent mother and declares afterward that he is 'a completely different person now.' Two months later, friends and family who see him daily report no change at all in how he acts. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Predicting the future is impossible, so the misses mean nothing.",
+        text: "He felt transformed, so he must genuinely be different now.",
         credit: 0,
       },
       {
-        text: "People seem to underestimate how long things take.",
+        text: "He seems to have had a strong emotional experience.",
         credit: 0.3,
       },
       {
-        text: "People probably plan too optimistically; we could survey more students.",
-        credit: 0.6,
+        text: "A vivid emotional release is being mistaken for change — catharsis can feel like transformation while leaving the actual pattern untouched until it is worked through; test whether anyone who sees him daily notices a concrete difference, whether his behavior shifts in fresh real situations, and whether the felt transformation outlasts a return to ordinary stress.",
+        credit: 1.0,
       },
       {
-        text: "People likely build estimates from a best-case story of the specific task and ignore how similar past tasks have actually gone, so they underestimate; test whether prompting people to recall how long past similar projects took raises estimates toward reality, whether the bias shrinks for tasks done many times, and whether outside observers estimate more accurately.",
-        credit: 1.0,
+        text: "He probably did change somewhat; we could give it more time.",
+        credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'ignoring the track record of similar tasks' lead from the rival 'people are simply lazy and stall,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'catharsis, not change' lead from the rival 'real change is happening but is still invisible,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: have one group estimate normally and another first list how long their last few comparable projects took, then compare both to actual completion — my lead predicts the track-record group lands much closer to reality. It is refuted if recalling past projects fails to improve estimates, which would point to motivation or stalling rather than a flawed prediction method.",
+        "Cheapest test: ask the people who interact with him every day whether anything concrete in his behavior is different — change too real to see should still leave traces others can point to. My lead is refuted if close observers independently report specific behavioral differences, which would mean the transformation is real and just hadn't reached his own account yet.",
       yieldAnchors: [
-        "The average estimate is 34 days",
-        "Actual completion averages 56 days",
-        "Even worst-case guesses underestimate",
+        "He had a tearful realization about his mother",
+        "He declares himself a different person",
+        "Daily observers report no change two months on",
       ],
       riskAnchors: [
-        "Recalling past similar projects raises estimates toward reality",
-        "The bias shrinks for well-practiced tasks",
-        "Outside observers estimate more accurately",
+        "People who see him daily notice a concrete difference",
+        "His behavior shifts in fresh real situations",
+        "The sense of change outlasts ordinary stress",
       ],
       defeatedBy: [
-        "People predict their finish times accurately",
-        "Past projects say nothing about future ones",
+        "Close observers independently report specific behavioral changes",
+        "His daily relationships clearly operate differently now",
       ],
     },
     correctAnswer:
-      "People likely build estimates from a best-case story of the specific task and ignore how similar past tasks have actually gone, so they underestimate; test whether prompting people to recall how long past similar projects took raises estimates toward reality, whether the bias shrinks for tasks done many times, and whether outside observers estimate more accurately.",
+      "A vivid emotional release is being mistaken for change — catharsis can feel like transformation while leaving the actual pattern untouched until it is worked through; test whether anyone who sees him daily notices a concrete difference, whether his behavior shifts in fresh real situations, and whether the felt transformation outlasts a return to ordinary stress.",
     explanation:
-      "The systematic underestimate seeds a planning-fallacy model the top MC commits to; the follow-up earns full credit by naming a track-record-recall test and its refutation. 'Prediction is impossible, the misses mean nothing' is the zero-credit dodge.",
+      "Full credit separates catharsis from change and names a third-party test that states its refutation; 'he felt transformed, so he is' is the overreach the unchanged two months defeat.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "Patients undergo two procedures. One is shorter but ends at peak pain; the other is longer with the same peak but a gentle, less painful final few minutes. Patients remember the longer procedure as less unpleasant and are more willing to repeat it. Which conclusion best follows?",
+      "A patient who understood her conflict-avoidance manages one hard conversation — but only after her therapist explicitly encourages her, and only that one. Everywhere else, with everyone else, she keeps avoiding exactly as before. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "How a procedure ends seems to matter to patients.",
-        credit: 0.3,
-      },
-      {
-        text: "Memory of an experience likely weighs its most intense moment and its ending rather than summing total pain or duration, so a gentler finish improves the remembered experience; test whether adding a mild tail to any painful episode improves its rating, whether total duration barely affects the memory, and whether the same peak-end pattern appears for pleasant experiences like vacations.",
-        credit: 1.0,
-      },
-      {
-        text: "Pain is subjective, so remembered pain cannot be studied.",
+        text: "She had one hard conversation, so she has clearly overcome her avoidance.",
         credit: 0,
       },
       {
-        text: "The ending probably shapes the memory; we could test more procedures.",
+        text: "She seems to manage conflict when she's prompted.",
+        credit: 0.3,
+      },
+      {
+        text: "The change is still tied to the therapy frame — it appears only with the therapist's prompting and hasn't generalized, which is insight not yet worked through into independent behavior; test whether she initiates a hard conversation without being encouraged, whether the new behavior shows up in a relationship outside therapy, and whether it holds when the other person reacts badly.",
+        credit: 1.0,
+      },
+      {
+        text: "She is probably starting to change; we could keep encouraging her.",
         credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'memory weights peak and end' lead from the rival 'patients just prefer less total pain,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'change still tied to the therapy frame' lead from the rival 'real, generalizing change has begun,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: deliberately add a few extra minutes of milder discomfort to the end of an otherwise identical episode and ask which version patients would repeat — peak-end predicts they prefer the longer version with the gentler finish, even though it contains more total pain. My lead is refuted if patients reliably choose the shorter, higher-total-pain version, which would mean total pain, not the ending, drives memory.",
+        "Cheapest test: see whether she ever handles a conflict on her own, with no prompting and outside the therapy relationship — context-bound change predicts she only manages it when the therapist supplies the push. My lead is refuted if she spontaneously initiates and sustains hard conversations in everyday relationships without any encouragement, which would show the change has generalized.",
       yieldAnchors: [
-        "Both procedures share the same peak pain",
-        "The longer one ends more gently",
-        "Patients remember the longer one as less unpleasant",
+        "She managed one hard conversation",
+        "It happened only after explicit therapist encouragement",
+        "She keeps avoiding conflict everywhere else",
       ],
       riskAnchors: [
-        "Adding a mild tail improves any episode's rating",
-        "Total duration barely changes the memory",
-        "The peak-end pattern also appears for pleasant events",
+        "She initiates a hard conversation without being prompted",
+        "The new behavior appears outside therapy",
+        "It holds when the other person reacts badly",
       ],
       defeatedBy: [
-        "Remembered pain equals total pain endured",
-        "Longer painful experiences are always remembered as worse",
+        "She handles conflicts on her own across many relationships",
+        "The new behavior persists without any prompting",
       ],
     },
     correctAnswer:
-      "Memory of an experience likely weighs its most intense moment and its ending rather than summing total pain or duration, so a gentler finish improves the remembered experience; test whether adding a mild tail to any painful episode improves its rating, whether total duration barely affects the memory, and whether the same peak-end pattern appears for pleasant experiences like vacations.",
+      "The change is still tied to the therapy frame — it appears only with the therapist's prompting and hasn't generalized, which is insight not yet worked through into independent behavior; test whether she initiates a hard conversation without being encouraged, whether the new behavior shows up in a relationship outside therapy, and whether it holds when the other person reacts badly.",
     explanation:
-      "The paradoxical preference seeds a peak-end (memory-versus-experience) model the top MC commits to; the follow-up earns full credit by naming an add-a-mild-tail test and its refutation. 'Remembered pain can't be studied' is the zero-credit dodge.",
+      "Top credit reads context-bound, not-yet-generalized change and names an unprompted test that states its refutation; 'one conversation means she's overcome it' is the overreach her continued avoidance defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "Before estimating what percent of UN countries are African, people spin a wheel rigged to stop on 10 or 65. Those who saw 65 give much higher estimates than those who saw 10, even though the wheel is obviously random. Which conclusion best follows?",
+      "A long-term patient keeps noticing the same self-sabotage — quitting just before he might be rejected — first quitting a job, then breaking off a relationship, then dropping a class, but catching himself earlier each time, and once actually stopping before he quit. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Even a number people know is random likely anchors their estimate, because the mind starts from the given value and adjusts too little; test whether the gap persists when people are convinced the number is meaningless, whether estimates land between the two anchors when no number is shown, and whether the same pull appears for prices and sentencing decisions.",
+        text: "He seems to quit things a lot.",
+        credit: 0.3,
+      },
+      {
+        text: "The same pattern recognized across job, relationship, and class — caught earlier each time and once interrupted — is working through in action, the slow conversion of one insight into changed behavior; test whether the earlier-catching trend continues with new situations, whether he interrupts the quitting more than once, and whether the gains survive an actual rejection.",
         credit: 1.0,
       },
       {
-        text: "The wheel number probably nudges estimates; we could spin more values.",
-        credit: 0.6,
-      },
-      {
-        text: "Guessing percentages is too random to reveal anything about thinking.",
+        text: "Self-sabotage is just part of his character, so there's nothing to be drawn from this.",
         credit: 0,
       },
       {
-        text: "People seem influenced by whatever the wheel lands on.",
-        credit: 0.3,
+        text: "He is probably getting a little better at it; we could keep notes.",
+        credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'irrelevant numbers still anchor' lead from the rival 'people treat the wheel as a hint,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'working through' lead from the rival 'the single interruption was just luck,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: tell people clearly and convincingly that the wheel is random and unrelated, then compare the high-number and low-number groups — anchoring predicts a gap remains even when no one believes the number is informative. My lead is refuted if the gap disappears once people are assured the number is meaningless, which would mean they had been treating it as a hint.",
+        "Cheapest test: keep tracking whether he catches the quitting urge earlier and interrupts it again in new situations — working through predicts a continuing trend of earlier catches and repeated interruptions, not a one-off. My lead is refuted if he never stops himself again and the catches don't keep getting earlier, which would make the single success look like chance.",
       yieldAnchors: [
-        "A rigged wheel shows either 10 or 65",
-        "The 65 group gives much higher estimates",
-        "The wheel is plainly random",
+        "He repeats the quitting pattern across job, relationship, and class",
+        "He catches it earlier each time",
+        "He once stopped himself before quitting",
       ],
       riskAnchors: [
-        "The gap persists when people are told the number is meaningless",
-        "No-number estimates fall between the two anchors",
-        "The same pull appears for prices and sentences",
+        "The earlier-catching trend continues with new situations",
+        "He interrupts the quitting more than once",
+        "The gains survive an actual rejection",
       ],
       defeatedBy: [
-        "Random numbers never affect estimates",
-        "People only use numbers they believe are informative",
+        "He never interrupts the quitting again",
+        "The catches stop getting earlier",
       ],
     },
     correctAnswer:
-      "Even a number people know is random likely anchors their estimate, because the mind starts from the given value and adjusts too little; test whether the gap persists when people are convinced the number is meaningless, whether estimates land between the two anchors when no number is shown, and whether the same pull appears for prices and sentencing decisions.",
+      "The same pattern recognized across job, relationship, and class — caught earlier each time and once interrupted — is working through in action, the slow conversion of one insight into changed behavior; test whether the earlier-catching trend continues with new situations, whether he interrupts the quitting more than once, and whether the gains survive an actual rejection.",
     explanation:
-      "The random-number effect seeds an anchoring model the top MC commits to; the follow-up earns full credit by naming a 'tell them it's random' test and its refutation. 'Too random to reveal anything' is the zero-credit dodge.",
+      "Full credit reads working through from the cross-context, earlier-each-time trend and names a continuing-trend test that states its refutation; 'it's just his character' is the dodge the repeated catches defeat.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A flight instructor notices that pilots praised after an unusually good landing tend to do worse next time, while those scolded after a bad landing tend to improve. He concludes that praise hurts and criticism helps. Which conclusion best follows?",
+      "Every few weeks a patient arrives with an exciting new insight about himself, presents it with real enthusiasm, and then never builds on it. Each insight is dropped for the next one, and across a year nothing in his life has changed. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Pilot performance is too variable to learn anything from.",
+        text: "He is obviously a deep thinker, so the changes are surely coming.",
         credit: 0,
       },
       {
-        text: "Praise and criticism seem to have opposite effects.",
+        text: "He seems to come up with a lot of insights.",
         credit: 0.3,
       },
       {
-        text: "The instructor probably misreads the pattern; we could track more landings.",
-        credit: 0.6,
+        text: "Producing insights has become a substitute for change — the steady supply of fresh realizations lets him feel he's working while sidestepping the harder work of applying any one of them; test whether any single insight is ever carried into action, whether he can stay with one uncomfortable theme instead of generating a new theory, and whether interrupting the flow of insights produces frustration rather than progress.",
+        credit: 1.0,
       },
       {
-        text: "Extreme performances likely tend to be followed by more average ones simply by chance (regression to the mean), so the mind wrongly credits the praise or scolding that happened in between; test whether performance bounces back toward average even when no feedback is given, whether the 'effect' appears for random scores with no coaching at all, and whether tracking many landings shows the pattern with and without feedback.",
-        credit: 1.0,
+        text: "He probably needs help focusing on one insight; we could pick one to pursue.",
+        credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'regression to the mean' lead from the rival 'criticism really does improve landings,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'insights as a substitute for change' lead from the rival 'he is a deep thinker who will change in time,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: give no feedback at all after extreme landings and see whether performance still drifts back toward average — regression predicts the bounce-back happens with or without any praise or scolding. My lead is refuted if landings improve only when criticism is given and stay poor when feedback is withheld, which would show real coaching effects rather than chance.",
+        "Cheapest test: pick one insight and see whether he can actually stay with it and act on it, or whether he slides off into a shinier new realization — insight as a substitute predicts he won't tolerate staying with one. My lead is refuted if he can hold a single theme, work it through, and let it change a concrete behavior, which would show the insights are real raw material rather than a dodge.",
       yieldAnchors: [
-        "Pilots praised after great landings do worse next time",
-        "Pilots scolded after bad landings improve next time",
-        "The instructor concludes criticism helps and praise hurts",
+        "He arrives with a new insight every few weeks",
+        "He never builds on the previous one",
+        "Across a year nothing in his life changes",
       ],
       riskAnchors: [
-        "Performance regresses toward average even with no feedback",
-        "The pattern appears in random scores with no coaching",
-        "Tracking many landings shows it with and without feedback",
+        "A single insight is ever carried into action",
+        "He can stay with one uncomfortable theme",
+        "Interrupting the flow produces frustration rather than progress",
       ],
       defeatedBy: [
-        "Criticism reliably improves performance beyond chance",
-        "Extreme results tend to repeat rather than regress",
+        "He holds one insight, works it through, and changes a behavior",
+        "His enthusiasm reliably translates into real-world action",
       ],
     },
     correctAnswer:
-      "Extreme performances likely tend to be followed by more average ones simply by chance (regression to the mean), so the mind wrongly credits the praise or scolding that happened in between; test whether performance bounces back toward average even when no feedback is given, whether the 'effect' appears for random scores with no coaching at all, and whether tracking many landings shows the pattern with and without feedback.",
+      "Producing insights has become a substitute for change — the steady supply of fresh realizations lets him feel he's working while sidestepping the harder work of applying any one of them; test whether any single insight is ever carried into action, whether he can stay with one uncomfortable theme instead of generating a new theory, and whether interrupting the flow of insights produces frustration rather than progress.",
     explanation:
-      "The false praise/criticism rule seeds a regression-to-the-mean model the top MC commits to; the follow-up earns full credit by naming a no-feedback control and its refutation. 'Too variable to learn anything' is the zero-credit dodge.",
+      "Top credit names insight-collecting as a defense and pairs it with a stay-with-one test that states its refutation; 'he's a deep thinker, change is coming' is the overreach the unchanged year defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "People rate made-up statements as more likely true simply because they have seen them a few times before, even when they were told earlier that the statements were unverified. Repetition alone raises believed truth. Which conclusion best follows?",
+      "A woman who understood her habit of dissolving into her partners — dropping her own plans and friends — now, in a new relationship, feels that familiar pull but keeps a couple of her own commitments, and over the following months keeps more and more of them. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Repetition probably boosts believability; we could test more statements.",
+        text: "She seems to be holding on to her own life more.",
+        credit: 0.3,
+      },
+      {
+        text: "She is probably doing better in this relationship; we could check in later.",
         credit: 0.6,
       },
       {
-        text: "Belief is too personal to study with made-up statements.",
-        credit: 0,
-      },
-      {
-        text: "The mind likely treats easy, familiar processing as a cue for truth, so repeated statements feel truer regardless of evidence; test whether harder-to-read fonts that reduce fluency weaken the effect, whether brand-new statements are rated lower than repeated ones, and whether the boost appears even for claims people can check as false.",
+        text: "This looks like gradual working through — she feels the old pull yet keeps an increasing share of her own life, so the insight is being converted into changed behavior incrementally in a live relationship; test whether she holds her ground with a more demanding partner, whether she reports the internal struggle rather than a frictionless ease, and whether the gains persist through a stressful patch.",
         credit: 1.0,
       },
       {
-        text: "Familiar statements seem more believable.",
-        credit: 0.3,
+        text: "Her new partner is probably just easier, so this tells us little about her.",
+        credit: 0,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'familiarity feels like truth' lead from the rival 'people just remember being told these are true,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'gradual working through' lead from the rival 'this partner just happens to be undemanding,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: repeat statements that were explicitly labeled false earlier and check whether they still gain believed truth from mere repetition — a fluency account predicts a boost even for known-false items. My lead is refuted if repetition raises belief only for statements people recall as endorsed, which would point to memory of endorsement rather than fluency.",
+        "Cheapest test: notice whether she reports feeling the old pull to dissolve and actively resisting it, rather than simply not feeling it — working through predicts an internal struggle she's winning, while an easy partner predicts no pull at all. My lead is refuted if she keeps her plans only because nothing in the relationship draws her in, and the pull returns full force the moment a partner asks more of her.",
       yieldAnchors: [
-        "Repeated statements are rated more true",
-        "The boost occurs even for unverified claims",
-        "Mere exposure drives the rating",
+        "She feels the familiar pull to dissolve into the partner",
+        "She keeps a couple of her own commitments anyway",
+        "She keeps more of her own life over the months",
       ],
       riskAnchors: [
-        "Harder-to-read fonts weaken the effect",
-        "New statements are rated lower than repeated ones",
-        "The boost appears even for checkably false claims",
+        "She holds her ground with a more demanding partner",
+        "She reports an internal struggle, not frictionless ease",
+        "The gains persist through a stressful patch",
       ],
       defeatedBy: [
-        "Repetition never changes believed truth",
-        "Only evidence, not familiarity, affects belief",
+        "She keeps her plans only because the partner asks nothing of her",
+        "The pull returns in full the moment more is demanded",
       ],
     },
     correctAnswer:
-      "The mind likely treats easy, familiar processing as a cue for truth, so repeated statements feel truer regardless of evidence; test whether harder-to-read fonts that reduce fluency weaken the effect, whether brand-new statements are rated lower than repeated ones, and whether the boost appears even for claims people can check as false.",
+      "This looks like gradual working through — she feels the old pull yet keeps an increasing share of her own life, so the insight is being converted into changed behavior incrementally in a live relationship; test whether she holds her ground with a more demanding partner, whether she reports the internal struggle rather than a frictionless ease, and whether the gains persist through a stressful patch.",
     explanation:
-      "The repetition boost seeds an illusory-truth (fluency-as-truth) model the top MC commits to; the follow-up earns full credit by naming a known-false repetition test and its refutation. 'Too personal to study' is the zero-credit dodge.",
+      "Full credit reads incremental working through from the felt-pull-yet-holding pattern and names a demanding-partner test that states its refutation; 'the partner is just easier' is the overreach the reported struggle defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "An interviewer who forms a quick first impression then asks the candidate questions that mostly let a 'good' candidate shine and a 'bad' one stumble, gathering evidence that fits the snap judgment. Which conclusion best follows?",
+      "A man can label his own intellectualizing in real time — 'I'm doing the thing again, turning this into an analysis' — but he uses that very labeling to keep any feeling at a safe distance, and nothing about how he relates to others shifts. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "First impressions seem to shape the interview.",
-        credit: 0.3,
-      },
-      {
-        text: "Hiring is too subjective to study scientifically.",
+        text: "He is developing great self-awareness, which means he is bound to improve.",
         credit: 0,
       },
       {
-        text: "The first impression probably biases the questions; we could watch more interviews.",
-        credit: 0.6,
+        text: "He seems to know when he's intellectualizing.",
+        credit: 0.3,
       },
       {
-        text: "The interviewer likely seeks evidence that confirms the initial impression rather than tests it, so the questions are skewed to verify the snap judgment; test whether forcing a fixed, identical question set removes the bias, whether interviewers ask more confirming questions after a strong first impression, and whether blind structured interviews predict job performance better than free ones.",
+        text: "The act of naming the defense has itself become a defense — the running commentary is one more layer of analysis that keeps feeling away, so the labeling is intellectual insight, not change; test whether the labeling ever gives way to actually feeling something, whether any emotionally charged topic breaks through, and whether his way of relating to others changes at all.",
         credit: 1.0,
+      },
+      {
+        text: "He probably needs to act on the labeling; we could encourage that.",
+        credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'confirming-question search' lead from the rival 'good candidates simply answer better,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'naming has become the defense' lead from the rival 'his self-awareness is a real step toward change,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: have interviewers rate candidates after a free interview versus a fixed identical question set, and check whether the first-impression bias shrinks under the fixed set — my lead predicts standardizing the questions reduces the skew. It is refuted if the same candidates are rated identically whether questions are free or fixed, which would mean answer quality, not question selection, drove the judgment.",
+        "Cheapest test: watch what happens right after he labels the intellectualizing — does feeling come in, or does the labeling simply seal it off and let him keep analyzing? My lead is refuted if naming the defense reliably opens the door to real emotion and his relating begins to change, which would make the self-awareness a genuine first step rather than a fresh hiding place.",
       yieldAnchors: [
-        "The interviewer forms a quick first impression",
-        "Questions are tailored to fit that impression",
-        "The evidence gathered confirms the snap judgment",
+        "He labels his intellectualizing in real time",
+        "The labeling keeps feeling at a distance",
+        "Nothing in how he relates to others shifts",
       ],
       riskAnchors: [
-        "A fixed identical question set removes the bias",
-        "More confirming questions follow a strong first impression",
-        "Structured blind interviews predict performance better",
+        "The labeling ever gives way to actual feeling",
+        "An emotionally charged topic breaks through",
+        "His way of relating to others changes",
       ],
       defeatedBy: [
-        "Question choice has no effect on the outcome",
-        "First impressions never bias later questioning",
+        "Naming the defense reliably opens the door to real emotion",
+        "His relationships begin to change after he labels it",
       ],
     },
     correctAnswer:
-      "The interviewer likely seeks evidence that confirms the initial impression rather than tests it, so the questions are skewed to verify the snap judgment; test whether forcing a fixed, identical question set removes the bias, whether interviewers ask more confirming questions after a strong first impression, and whether blind structured interviews predict job performance better than free ones.",
+      "The act of naming the defense has itself become a defense — the running commentary is one more layer of analysis that keeps feeling away, so the labeling is intellectual insight, not change; test whether the labeling ever gives way to actually feeling something, whether any emotionally charged topic breaks through, and whether his way of relating to others changes at all.",
     explanation:
-      "The tailored questioning seeds a confirmation-bias model the top MC commits to; the follow-up earns full credit by naming a free-versus-fixed question test and its refutation. 'Hiring is too subjective to study' is the zero-credit dodge.",
+      "Top credit notes the naming has become a defense and pairs it with a what-happens-after test that states its refutation; 'great self-awareness means he'll improve' is the overreach the unchanged relating defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "People solving logic problems make more snap, intuitive errors when they are rushed or distracted, and fewer when they are calm and given time to check their work. Which conclusion best follows?",
+      "A patient who 'understood' the roots of her anxiety a year ago saw no change then. Only now, after re-living that same understanding with real feeling many times — in sessions and in difficult moments at home — is she finally acting differently. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Thinking is too variable to draw conclusions from error rates.",
+        text: "She understood it a year ago, so that original insight is what finally fixed her.",
         credit: 0,
       },
       {
-        text: "A fast intuitive mode likely produces quick answers that a slower, effortful mode can correct only when it has the resources, so load increases reliance on intuition; test whether adding a memory load while solving raises intuitive errors, whether the wrong answers are the ones that 'feel right' fast, and whether training people to pause before answering reduces them.",
+        text: "She seems to have changed at last.",
+        credit: 0.3,
+      },
+      {
+        text: "Change followed the repeated emotional re-encounter, not the year-old idea — this is working through, where an insight has to be felt and re-applied many times before behavior shifts; test whether the timing of the change tracks the repetitions rather than the original realization, whether the new behavior now appears in fresh situations, and whether it survives stress that a fresh, untested insight would not.",
         credit: 1.0,
       },
       {
-        text: "Being rushed probably causes more errors; we could test more time limits.",
+        text: "The first insight probably worked slowly; we could map out the timeline.",
         credit: 0.6,
-      },
-      {
-        text: "People seem to make more mistakes when hurried.",
-        credit: 0.3,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'load blocks the corrective second mode' lead from the rival 'rushed people simply care less,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'change came from working through' lead from the rival 'the original insight just acted on a long delay,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: keep motivation high but add a concurrent memory load (holding a string of digits) while people solve, and see whether intuitive errors still rise — my lead predicts they do, because the corrective effortful process is occupied. It is refuted if errors climb only when people are told the task does not matter and not when they are merely loaded, which would point to motivation rather than limited resources.",
+        "Cheapest test: line up when the behavior actually changed against the year of repeated emotional re-encounters versus the single year-old insight — working through predicts the change tracks the recent repetitions, not the distant first realization. My lead is refuted if the behavior shifted right after the original insight with no role for the intervening repetitions, which would support a delayed effect of that one insight.",
       yieldAnchors: [
-        "Rushed or distracted people make more snap errors",
-        "Calm, unhurried people make fewer",
-        "Extra time lets people catch their mistakes",
+        "The year-old understanding produced no change at the time",
+        "She re-lived it with feeling many times since",
+        "Behavior is changing only now",
       ],
       riskAnchors: [
-        "A concurrent memory load raises intuitive errors",
-        "The errors are the fast 'feels right' answers",
-        "Training a pause before answering reduces them",
+        "The change tracks the repetitions, not the original insight",
+        "The new behavior appears in fresh situations",
+        "It survives stress a fresh insight would not",
       ],
       defeatedBy: [
-        "Time pressure has no effect on error rates",
-        "Intuitive and reflective answers are equally fast",
+        "The behavior changed right after the original insight",
+        "The intervening repetitions played no role in the timing",
       ],
     },
     correctAnswer:
-      "A fast intuitive mode likely produces quick answers that a slower, effortful mode can correct only when it has the resources, so load increases reliance on intuition; test whether adding a memory load while solving raises intuitive errors, whether the wrong answers are the ones that 'feel right' fast, and whether training people to pause before answering reduces them.",
+      "Change followed the repeated emotional re-encounter, not the year-old idea — this is working through, where an insight has to be felt and re-applied many times before behavior shifts; test whether the timing of the change tracks the repetitions rather than the original realization, whether the new behavior now appears in fresh situations, and whether it survives stress that a fresh, untested insight would not.",
     explanation:
-      "The load-dependent errors seed a two-system (fast/slow) model the top MC commits to; the follow-up earns full credit by naming a memory-load test that holds motivation fixed plus its refutation. 'Too variable to conclude anything' is the zero-credit dodge.",
+      "Full credit names working through as the cause and pairs it with a timeline test that states its refutation; 'the original insight fixed her' is the overreach the year of no change defeats.",
   },
 ];
 
@@ -838,175 +843,179 @@ const written: HomeworkItem[] = [
   {
     itemType: "written",
     prompt:
-      "People are shown four cards reading A, K, 4, and 7 and told 'if a card has a vowel on one side, it has an even number on the other.' Asked which cards to turn over to check the rule, most pick A and 4 — but turning the 4 can never break the rule, while the 7 they ignore can. In one paragraph, propose the strongest conclusion about how the mind tests rules and describe how you would test it.",
+      "A patient can explain, with precision and even a sense of relief, that his fear of success comes from never wanting to outshine a struggling sibling. He returns to this account often. Yet he keeps quietly sabotaging promotions and opportunities, just as he always has. In one paragraph, propose the strongest conclusion about whether real change is occurring and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that people test a rule by looking for cases that could confirm it rather than cases that could break it, so they flip the matching items (A and 4) and neglect the one card (the 7) that could expose a violation. This is a strong claim because it predicts checkable consequences: performance should jump when the same logical task is dressed in a familiar social rule like 'if you drink alcohol you must be over 18,' where checking the rule-breaker is natural; explicitly instructing people to 'find a card that could break the rule' should raise correct choices; and people should reliably pick the confirming card across many different abstract rules. I would test it by comparing the abstract version against a matched social-contract version, by adding disconfirmation instructions to half the participants, and by tracking which cards are chosen across many different rule contents.",
+        "The strongest conclusion is that this is intellectual insight without change: he understands the pattern and even finds explaining it soothing, but the understanding has not been worked through into how he acts, and the relief may actually drain off the pressure that would force change. This is a strong claim because it predicts checkable consequences: his self-sabotage should continue unchanged in the next real opportunity despite his clear understanding; the explanation should keep arriving as a tidy recital rather than with the fear it describes; and naming the pattern in the moment he's about to sabotage should fail to interrupt it. I would test it by tracking his behavior at the next promotion rather than his ability to narrate the cause, by watching whether the account ever carries genuine feeling, and by seeing whether the insight ever shows up as a changed choice rather than a repeated story.",
       yieldAnchors: [
-        "Most people pick A and 4",
-        "Turning the 4 cannot break the rule",
-        "People ignore the 7, which could break it",
+        "He explains his fear of success precisely",
+        "He returns to the account often and feels relief",
+        "He keeps sabotaging promotions as before",
       ],
       riskAnchors: [
-        "A familiar social-rule version sharply raises correct choices",
-        "Telling people to seek a rule-breaking card improves accuracy",
-        "The confirming card is chosen across many abstract rules",
+        "The self-sabotage continues at the next real opportunity",
+        "The explanation stays a recital, not a felt fear",
+        "Naming it in the moment fails to interrupt it",
       ],
       defeatedBy: [
-        "People naturally seek disconfirming evidence",
-        "The card content never changes how people choose",
+        "His behavior changes at the next opportunity",
+        "Understanding the cause is the same as being changed by it",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that people test a rule by looking for cases that could confirm it rather than cases that could break it, so they flip the matching items (A and 4) and neglect the one card (the 7) that could expose a violation. This is a strong claim because it predicts checkable consequences: performance should jump when the same logical task is dressed in a familiar social rule like 'if you drink alcohol you must be over 18,' where checking the rule-breaker is natural; explicitly instructing people to 'find a card that could break the rule' should raise correct choices; and people should reliably pick the confirming card across many different abstract rules. I would test it by comparing the abstract version against a matched social-contract version, by adding disconfirmation instructions to half the participants, and by tracking which cards are chosen across many different rule contents.",
+      "The strongest conclusion is that this is intellectual insight without change: he understands the pattern and even finds explaining it soothing, but the understanding has not been worked through into how he acts, and the relief may actually drain off the pressure that would force change. This is a strong claim because it predicts checkable consequences: his self-sabotage should continue unchanged in the next real opportunity despite his clear understanding; the explanation should keep arriving as a tidy recital rather than with the fear it describes; and naming the pattern in the moment he's about to sabotage should fail to interrupt it. I would test it by tracking his behavior at the next promotion rather than his ability to narrate the cause, by watching whether the account ever carries genuine feeling, and by seeing whether the insight ever shows up as a changed choice rather than a repeated story.",
     explanation:
-      "Under the inverted standard, 'people naturally seek disconfirming evidence' is the overreach the card choices defeat; top credit goes to the confirmation-seeking conclusion that commits to a mechanism and names a social-rule test that could refute it.",
+      "Under the inverted standard, 'understanding the cause means he's changed' earns near-zero; top credit commits to intellectual-insight-only and names a next-opportunity test that could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "Experienced real-estate agents tour the same house and read the same packet, except the printed asking price is set high for half of them and low for the other half. The agents' own appraisals come out far higher in the high-price group — yet they all deny the listing price influenced their expert judgment. In one paragraph, propose the strongest conclusion and describe how you would test it.",
+      "Over many months, a woman has repeatedly caught her lifelong habit of caretaking everyone at her own expense — first with her mother, then her boss, then her friends — and now she sets reasonable limits with all of them, holding firm even during a stressful week when she was exhausted. In one paragraph, propose the strongest conclusion about whether genuine change has taken hold and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that even experts anchor their estimates on a first number and adjust too little, so the arbitrary asking price pulls their independent appraisals while they stay unaware of the pull. This is a strong claim because it predicts checkable consequences: the appraisal gap should grow as the planted asking prices are spread further apart; warning agents about anchoring beforehand should shrink but not erase the gap; and novices given the same packets should show an even larger anchor effect than experts. I would test it by varying the planted prices across several levels, by adding an anchoring warning to half the agents, and by comparing the effect in experts versus beginners.",
+        "The strongest conclusion is that this is genuine working through: the same caretaking pattern has been recognized and acted on across several independent relationships, and because the new limit-setting held even under exhaustion, the change has begun to consolidate rather than depending on easy conditions. This is a strong claim because it predicts checkable consequences: the new behavior should keep appearing with brand-new people she hasn't discussed in therapy; it should survive future high-pressure stretches and guilt-inducing pushback; and she should report feeling the old urge to caretake and choosing against it rather than simply not feeling it. I would test it by watching for the limit-setting in unrehearsed relationships, by checking whether it endures the next genuinely stressful period, and by asking whether the change feels like an effortful choice she can describe rather than a mood that happened to lift.",
       yieldAnchors: [
-        "Agents see identical houses and packets",
-        "Only the printed asking price differs",
-        "High-price agents appraise far higher",
+        "She caught the caretaking pattern across mother, boss, and friends",
+        "She now sets limits with all of them",
+        "The limits held during an exhausting, stressful week",
       ],
       riskAnchors: [
-        "Wider planted-price gaps widen the appraisal gap",
-        "A prior warning shrinks but does not erase the effect",
-        "Novices show an even larger anchor effect",
+        "The behavior appears with brand-new, undiscussed people",
+        "It survives future high-pressure stretches and guilt",
+        "She feels the old urge and chooses against it",
       ],
       defeatedBy: [
-        "Expert judgment is immune to arbitrary numbers",
-        "The agents' denial proves the price had no effect",
+        "The limits collapse the moment she is stressed",
+        "Cross-context, stress-proof change tells us nothing real",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that even experts anchor their estimates on a first number and adjust too little, so the arbitrary asking price pulls their independent appraisals while they stay unaware of the pull. This is a strong claim because it predicts checkable consequences: the appraisal gap should grow as the planted asking prices are spread further apart; warning agents about anchoring beforehand should shrink but not erase the gap; and novices given the same packets should show an even larger anchor effect than experts. I would test it by varying the planted prices across several levels, by adding an anchoring warning to half the agents, and by comparing the effect in experts versus beginners.",
+      "The strongest conclusion is that this is genuine working through: the same caretaking pattern has been recognized and acted on across several independent relationships, and because the new limit-setting held even under exhaustion, the change has begun to consolidate rather than depending on easy conditions. This is a strong claim because it predicts checkable consequences: the new behavior should keep appearing with brand-new people she hasn't discussed in therapy; it should survive future high-pressure stretches and guilt-inducing pushback; and she should report feeling the old urge to caretake and choosing against it rather than simply not feeling it. I would test it by watching for the limit-setting in unrehearsed relationships, by checking whether it endures the next genuinely stressful period, and by asking whether the change feels like an effortful choice she can describe rather than a mood that happened to lift.",
     explanation:
-      "The inverted standard gives near-zero to 'the agents' denial proves the price had no effect'; credit goes to the anchoring conclusion that names a mechanism and proposes a spread-the-anchors test that could refute it.",
+      "The inverted standard gives near-zero to 'cross-context, stress-proof change tells us nothing'; credit goes to the working-through conclusion that commits to consolidated change and names a stress-and-novelty test that could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "A witness says a cab in a hit-and-run was blue. In that city 85% of cabs are green and 15% are blue, and the witness is right about color 80% of the time. Most people conclude the cab was almost certainly blue, even though the math makes green more likely. In one paragraph, propose the strongest conclusion about how people use evidence and describe how you would test it.",
+      "A man has a single explosive session in which he rages and weeps about his childhood for the first time, and he leaves convinced he is 'finally healed.' Over the next several weeks his temper, his relationships, and his old habits carry on exactly as before. In one paragraph, propose the strongest conclusion about what happened and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that people seize on the vivid individual evidence — the witness's report — and neglect the background base rate of how common each cab color is, so they overestimate the chance the cab was blue. This is a strong claim because it predicts checkable consequences: rephrasing the problem as natural frequencies ('of 100 cabs...') should fix most answers; making the base rate feel causally relevant rather than a bare statistic should improve accuracy; and the same neglect should show up in medical, legal, and hiring judgments built the same way. I would test it by comparing a probability-worded version against a frequency-worded one, by manipulating how causally relevant the base rate seems, and by checking whether the error transfers to other base-rate problems.",
+        "The strongest conclusion is that he experienced catharsis rather than change: a powerful emotional release can feel like transformation, but without the slow work of recognizing and re-handling the pattern across situations, the underlying habits stay intact. This is a strong claim because it predicts checkable consequences: people who see him regularly should notice no concrete difference in the weeks that follow; his temper and relationship patterns should recur in fresh situations unchanged; and the feeling of being healed should fade as ordinary stress returns rather than translating into new behavior. I would test it by gathering observations from people in his daily life, by tracking whether any specific behavior actually shifts over the following weeks, and by checking whether the sense of transformation outlasts the first real provocation or only lived in the heat of that one session.",
       yieldAnchors: [
-        "Only 15% of cabs are blue",
-        "The witness is right about color 80% of the time",
-        "Most people say the cab was almost certainly blue",
+        "He had one explosive, tearful session",
+        "He left convinced he was healed",
+        "His temper, relationships, and habits continue unchanged",
       ],
       riskAnchors: [
-        "A natural-frequency version fixes most answers",
-        "Making the base rate causal improves accuracy",
-        "The same neglect appears in medical and legal versions",
+        "Daily observers notice no concrete difference",
+        "His old patterns recur in fresh situations",
+        "The 'healed' feeling fades as stress returns",
       ],
       defeatedBy: [
-        "People naturally combine base rates with the evidence",
-        "Witness reliability alone determines the probability",
+        "Close observers report specific, lasting behavior change",
+        "A single emotional release equals being cured",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that people seize on the vivid individual evidence — the witness's report — and neglect the background base rate of how common each cab color is, so they overestimate the chance the cab was blue. This is a strong claim because it predicts checkable consequences: rephrasing the problem as natural frequencies ('of 100 cabs...') should fix most answers; making the base rate feel causally relevant rather than a bare statistic should improve accuracy; and the same neglect should show up in medical, legal, and hiring judgments built the same way. I would test it by comparing a probability-worded version against a frequency-worded one, by manipulating how causally relevant the base rate seems, and by checking whether the error transfers to other base-rate problems.",
+      "The strongest conclusion is that he experienced catharsis rather than change: a powerful emotional release can feel like transformation, but without the slow work of recognizing and re-handling the pattern across situations, the underlying habits stay intact. This is a strong claim because it predicts checkable consequences: people who see him regularly should notice no concrete difference in the weeks that follow; his temper and relationship patterns should recur in fresh situations unchanged; and the feeling of being healed should fade as ordinary stress returns rather than translating into new behavior. I would test it by gathering observations from people in his daily life, by tracking whether any specific behavior actually shifts over the following weeks, and by checking whether the sense of transformation outlasts the first real provocation or only lived in the heat of that one session.",
     explanation:
-      "The cautious 'people naturally combine base rates with the evidence' is the overreach the cab answers defeat; top credit goes to the base-rate-neglect conclusion that names a natural-frequency test that could refute it.",
+      "The inverted standard gives near-zero to 'one release equals a cure'; credit goes to the catharsis-not-change conclusion that names a third-party and durability test that could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "Told about a disease expected to kill 600 people, most people choose a 'sure save 200' program over a gamble when outcomes are framed as lives saved — but the same people choose the gamble when the identical outcomes are framed as '400 will die.' In one paragraph, propose the strongest conclusion about how the mind makes risky choices and describe how you would test it.",
+      "A patient acts noticeably more open and assertive inside the therapy room and whenever his therapist is present or has just coached him, but the moment he is on his own — at work, at home, with friends — he reverts entirely to his old passive, closed-off self. In one paragraph, propose the strongest conclusion about whether real change is occurring and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that choices depend on whether outcomes are framed as gains or losses, because people are risk-averse for gains but risk-seeking to avoid losses, so the same facts flip the decision when relabeled. This is a strong claim because it predicts checkable consequences: simply switching the wording between 'saved' and 'die' should reverse the majority choice with the numbers held constant; asking people to translate both frames into the same underlying outcome before choosing should reduce the reversal; and the same gain/loss asymmetry should appear in monetary gambles. I would test it by presenting both frames to matched groups, by adding a step that forces people to compute the identical outcome, and by replicating the pattern with money instead of lives.",
+        "The strongest conclusion is that the change is so far context-bound to the therapy relationship: the new openness depends on the therapist's presence or prompting and has not yet generalized, which is the mark of an insight that hasn't been worked through into independent behavior. This is a strong claim because it predicts checkable consequences: the assertiveness should fail to appear in situations where the therapist plays no role; it should not survive when no one has primed him beforehand; and it should be absent precisely in the relationships that matter most to him outside the room. I would test it by looking for any unprompted assertive behavior in everyday settings, by asking the people in his life whether they see the openness he shows in session, and by checking whether the change can hold during a stretch with no recent coaching at all.",
       yieldAnchors: [
-        "The two frames describe identical outcomes",
-        "People choose the sure option under the 'saved' frame",
-        "The same people choose the gamble under the 'die' frame",
+        "He is open and assertive inside the therapy room",
+        "It appears only when the therapist is present or has coached him",
+        "He reverts to passivity once on his own",
       ],
       riskAnchors: [
-        "Switching the wording reverses the majority choice",
-        "Forcing people to compute the identical outcome reduces the reversal",
-        "The asymmetry reappears with monetary gambles",
+        "Unprompted assertiveness appears in everyday settings",
+        "People in his life see the openness he shows in session",
+        "The change holds with no recent coaching",
       ],
       defeatedBy: [
-        "Choices depend only on the outcomes, not the wording",
-        "People are equally risk-averse for gains and losses",
+        "He is reliably assertive when entirely on his own",
+        "Change confined to the therapy room is full recovery",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that choices depend on whether outcomes are framed as gains or losses, because people are risk-averse for gains but risk-seeking to avoid losses, so the same facts flip the decision when relabeled. This is a strong claim because it predicts checkable consequences: simply switching the wording between 'saved' and 'die' should reverse the majority choice with the numbers held constant; asking people to translate both frames into the same underlying outcome before choosing should reduce the reversal; and the same gain/loss asymmetry should appear in monetary gambles. I would test it by presenting both frames to matched groups, by adding a step that forces people to compute the identical outcome, and by replicating the pattern with money instead of lives.",
+      "The strongest conclusion is that the change is so far context-bound to the therapy relationship: the new openness depends on the therapist's presence or prompting and has not yet generalized, which is the mark of an insight that hasn't been worked through into independent behavior. This is a strong claim because it predicts checkable consequences: the assertiveness should fail to appear in situations where the therapist plays no role; it should not survive when no one has primed him beforehand; and it should be absent precisely in the relationships that matter most to him outside the room. I would test it by looking for any unprompted assertive behavior in everyday settings, by asking the people in his life whether they see the openness he shows in session, and by checking whether the change can hold during a stretch with no recent coaching at all.",
     explanation:
-      "The inverted standard gives near-zero to 'choices depend only on the outcomes, not the wording,' which the reversal directly defeats; credit goes to the framing/loss-aversion conclusion that names a flip-the-wording test that could refute it.",
+      "The inverted standard gives near-zero to treating room-only change as recovery; credit goes to the context-bound conclusion that names an unprompted, real-world test that could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "Asked which kills more Americans — tornadoes or asthma — most people say tornadoes, though asthma kills far more. People also overrate deaths from dramatic, well-publicized causes and underrate quiet, common ones. In one paragraph, propose the strongest conclusion about how people judge frequency and describe how you would test it.",
+      "A patient who grasped the source of her social anxiety handles it well whenever she is calm and rested — she speaks up, stays in conversations, lets herself be seen. But under real pressure, after a bad night or a stressful day, the old avoidance and silence come straight back. In one paragraph, propose the strongest conclusion about the durability of her change and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that people estimate how common something is by how easily examples come to mind, so dramatic, heavily reported causes feel frequent while quiet ones are underestimated, regardless of the true numbers. This is a strong claim because it predicts checkable consequences: causes that get more news coverage should be overestimated relative to their real rates; making rare causes easy to recall by showing recent examples should temporarily inflate their estimates; and people who can list more instances of a cause should give higher frequency estimates. I would test it by correlating media coverage with estimation errors, by experimentally priming vivid examples before asking for estimates, and by measuring how many examples each person can recall against their frequency judgments.",
+        "The strongest conclusion is that her change is real but not yet consolidated: the new behavior holds under easy conditions and collapses under stress, which is exactly what insight looks like before it has been worked through enough to become automatic. This is a strong claim because it predicts checkable consequences: as working through continues, the new behavior should begin to survive stressful periods rather than only calm ones; she should become able to catch the avoidance specifically when she's depleted; and her relapses should grow shorter and shallower over time even if they don't vanish at once. I would test it by tracking how she does during genuinely stressful stretches over the coming months, by checking whether she can recognize and resist the avoidance when tired, and by watching whether the gap between her calm-day and bad-day behavior narrows as the work goes on.",
       yieldAnchors: [
-        "People say tornadoes kill more than asthma",
-        "Asthma actually kills far more",
-        "Dramatic causes are overrated and quiet ones underrated",
+        "She handles the anxiety well when calm and rested",
+        "She speaks up and stays present under easy conditions",
+        "The old avoidance returns under stress and fatigue",
       ],
       riskAnchors: [
-        "More-covered causes are overestimated relative to real rates",
-        "Priming vivid examples inflates a cause's estimate",
-        "People who recall more instances give higher estimates",
+        "The new behavior begins to survive stressful periods",
+        "She catches the avoidance when depleted",
+        "Relapses grow shorter and shallower over time",
       ],
       defeatedBy: [
-        "People judge frequency from accurate statistics",
-        "Media coverage has no effect on frequency estimates",
+        "The change never survives any stress no matter how long the work continues",
+        "Stress-dependent behavior tells us nothing about consolidation",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that people estimate how common something is by how easily examples come to mind, so dramatic, heavily reported causes feel frequent while quiet ones are underestimated, regardless of the true numbers. This is a strong claim because it predicts checkable consequences: causes that get more news coverage should be overestimated relative to their real rates; making rare causes easy to recall by showing recent examples should temporarily inflate their estimates; and people who can list more instances of a cause should give higher frequency estimates. I would test it by correlating media coverage with estimation errors, by experimentally priming vivid examples before asking for estimates, and by measuring how many examples each person can recall against their frequency judgments.",
+      "The strongest conclusion is that her change is real but not yet consolidated: the new behavior holds under easy conditions and collapses under stress, which is exactly what insight looks like before it has been worked through enough to become automatic. This is a strong claim because it predicts checkable consequences: as working through continues, the new behavior should begin to survive stressful periods rather than only calm ones; she should become able to catch the avoidance specifically when she's depleted; and her relapses should grow shorter and shallower over time even if they don't vanish at once. I would test it by tracking how she does during genuinely stressful stretches over the coming months, by checking whether she can recognize and resist the avoidance when tired, and by watching whether the gap between her calm-day and bad-day behavior narrows as the work goes on.",
     explanation:
-      "'People judge frequency from accurate statistics' is the overreach the tornado/asthma error defeats; top credit goes to the availability-heuristic conclusion that names a prime-vivid-examples test that could refute it.",
+      "The inverted standard gives near-zero to 'stress-dependent behavior tells us nothing'; credit goes to the real-but-not-consolidated conclusion that names a narrowing-gap-under-stress test that could refute it.",
   },
 ];
 
 export const section: SectionContent = {
-  slug: "reasoning-and-bias",
-  title: "Reasoning and Bias: Why Smart Minds Make Predictable Mistakes",
+  slug: "insight-and-working-through",
+  title: "Insight and Working Through",
   weekNumber: 1,
   blurb:
-    "Human reasoning runs on fast mental shortcuts that usually work but fail in regular, predictable ways — anchoring, availability, confirmation bias, and more — revealing how the mind really judges, decides, and weighs evidence.",
+    "Understanding why you do something rarely changes it on its own; real change comes from working through — catching the same pattern again and again, with feeling, across many situations until it finally shifts.",
   lectureTitle:
-    "1.6 Reasoning and Bias: why smart minds make predictable mistakes",
-  body: `# Reasoning and Bias
+    "1.6 Insight and Working Through: how change actually occurs",
+  body: `# Insight and Working Through
 
-Smart, careful people make the same mistakes over and over — and that is the surprising part. If our errors were random, there would be nothing to study; we would just be noisy. Instead, when you give thousands of people the same puzzle, they tend to go wrong in the *same direction*. That regularity is a gift to cognitive science. A systematic error is a fingerprint: it tells you something specific about the machinery doing the thinking. This section is about reading those fingerprints.
+One of the most surprising lessons in therapy is that knowing why you do something is not the same as being able to stop. People often arrive expecting that the moment they finally understand the root of a problem, the problem will dissolve. It almost never works that way. A patient can explain his fear of commitment flawlessly and keep fleeing every relationship; a woman can name her perfectionism precisely and keep unraveling over a typo. Understanding is a beginning, not an ending. This section is about the difference between the flash of insight and the slow labor — called **working through** — that actually changes how a person lives.
 
-## Two ways of thinking
+## Insight is not change
 
-A useful starting picture is that the mind has two modes of thought. One is fast, automatic, and effortless — it reads a word, recognizes a face, or blurts "10 cents" to the bat-and-ball puzzle without any sense of work. The other is slow, deliberate, and effortful — it checks the math, weighs options, and overrides the quick answer when something seems off. Most of the time the fast mode is right, which is why we trust it. Errors creep in when the fast mode hands up an answer that *feels* right and the slow mode, busy or rushed, fails to catch it. Distraction and time pressure make more of these slips, which is exactly what you would expect if a limited, effortful checker is being crowded out.
+It is tempting to treat a good explanation as a finished job. But an explanation is a map, and having a map is not the same as walking the road. The clearest sign of this gap is the patient who can narrate his pattern in detail while behaving exactly as before. The understanding is genuine, yet it floats above his life without touching it. The strongest reading of such a case is not "he's cured because he knows the cause" — the unchanged behavior defeats that — and not "the mind is unknowable, so who can say." It is the specific claim that this is **insight without change**, and the way to confirm it is to watch behavior, not narration: does anything actually shift in the next real situation?
 
-## Heuristics: shortcuts that usually work
+## Intellectual versus emotional insight
 
-The fast mode leans on **heuristics** — rules of thumb that trade perfect accuracy for speed. Asked how common something is, you don't run a survey; you check how easily examples come to mind. That **availability** shortcut works well, because common things usually are easy to recall — but it misfires when something is merely *memorable*. After dramatic news coverage, people overrate shark attacks and plane crashes and underrate quiet killers like asthma. Another shortcut, **representativeness**, judges probability by how well a case matches a stereotype, which is why a detailed story about "Linda" can feel more likely than a plainer one, even when logic says it can't be.
+There are two very different ways to "understand" something. **Intellectual insight** is knowing the explanation the way you know a fact — flat, tidy, often recited with a faint pride. **Emotional insight** is feeling the truth of it in the moment it matters, with the original feeling alive in the room. The two look similar on paper but behave completely differently. A man who says "I know I push people away" in a bored monotone, year after year, is showing intellectual insight; a woman who connects her people-pleasing to soothing her anxious mother *with tears* and then starts saying no is showing emotional insight. A simple test separates them: does the understanding arrive with feeling, and does it ever interrupt the pattern as it happens?
 
-## Anchors and frames
+## Working through: the same lesson, many rooms
 
-The mind is also pulled around by how a problem is presented. Drop a number into someone's view — even a clearly random one from a spun wheel — and their estimates drift toward it. This **anchoring** happens because we start from whatever value is handy and adjust too little. Closely related is **framing**: the very same facts produce different choices depending on whether they are described as a gain or a loss. People will take a sure "200 saved" but gamble to avoid "400 will die," because losses loom larger than equal-sized gains. These are not signs of stupidity; they are signs that the mind evaluates options *relative to a reference point* rather than in absolute terms.
+Real change usually comes not from one realization but from meeting the same pattern over and over, in situation after situation, until recognizing it becomes second nature. This is **working through**. A woman who sees that she chooses unavailable partners will catch the pull with a new date, then in a flirtation at work, then in a one-sided friendship — each time a little earlier, until one day she acts differently. The signature of working through is a pattern recognized across many separate contexts, caught sooner each time, and eventually interrupted. That is why the strongest conclusion about a promising change asks whether it shows up in **fresh, unrehearsed situations**, not just the ones already discussed.
 
-## Seeing what we expect
+## Why change is slow
 
-Perhaps the most stubborn bias is **confirmation bias**: we test our ideas by looking for cases that fit them rather than cases that could break them. Given the sequence 2-4-6 and asked to find the hidden rule, people try only triples that match their guess and rarely the one that could prove them wrong. The same one-sided search shows up when an interviewer asks questions that flatter a first impression, or when people accept agreeable evidence and pick apart anything that threatens a cherished belief. Because the search itself is skewed, the world keeps seeming to confirm what we already think.
+If insight alone could rewire a habit, therapy would take an afternoon. It doesn't, because patterns are overlearned — practiced thousands of times, automatic, tied to old feelings of safety. Undoing that takes repetition of a new kind: feeling the old pull and choosing against it, again and again, until the new response becomes the automatic one. Catharsis — a dramatic emotional release — can feel like transformation, but a single sobbing session about a cold father changes nothing by itself if daily life rolls on unchanged. Change that is real tends to be **gradual, effortful, and reported as a struggle**, not a sudden, frictionless rebirth.
 
-## Why systematic beats random
+## When insight becomes a defense
 
-Here is the key scientific move. Because these errors are *predictable*, you can name the mechanism behind one and then test it — and a real explanation always points to a way it could be proven wrong. If anchoring is real, telling people the number is random and meaningless should *not* fully erase its pull. If availability drives risk estimates, priming vivid examples should inflate them and then let them fade. The strongest conclusion is never "people are just irrational" — that explains nothing and predicts nothing. It is a specific claim about *how* the mind shortcuts, paired with an experiment that could disconfirm it.
+Strangely, understanding can itself become a way to avoid changing. A patient who arrives every few weeks with an exciting new insight, never building on the last, may be using the *production* of insights to feel like he's working while sidestepping the harder task of applying one. A man who labels his own intellectualizing in real time can use that very labeling to keep feeling at bay. When insight substitutes for change rather than leading to it, the tell is simple: lots of understanding, no movement. The strong move is to notice the defense and test it — can he ever stay with one uncomfortable theme instead of generating a fresh theory?
+
+## Reading whether real change is happening
+
+So how do you tell genuine change from its convincing imitations? You commit to a specific reading and name the cheap observations that could prove you wrong. If you think change is real and consolidating, it should appear in new situations, carry feeling, and **survive stress** — and you can watch for relapse on a bad day. If you think it's only intellectual, behavior should stay flat no matter how good the explanation. If you suspect it's context-bound, it should vanish the moment the therapist isn't prompting it. The weak answers are always the same: "he understands it, so he's fixed" (an overreach the behavior defeats) and "people are too complex to say" (a refusal that ignores the evidence in front of you).
 
 ## In the real world
 
-Suppose a friend insists a new restaurant must be great because three friends raved about it, and refuses to look up the dozens of mediocre reviews online. The dodge is "people are irrational about food" — true-sounding, useless. A cognitive-science move commits to mechanisms. Availability: the three vivid rave reviews come to mind far more easily than faceless strangers' ratings. Confirmation bias: your friend, already excited, seeks praise and skips complaints. Each idea opens a cheap test. Availability predicts your friend would weigh the online reviews more if they came from named, memorable people; confirmation bias predicts that asking "what would change your mind?" makes them seek the bad reviews. Notice what you gained — not a shrug at human folly, but a couple of testable stories about the shortcuts running underneath, each able to be proven wrong.`,
+Suppose a friend has been in therapy for a year and tells you he "totally gets" why he's so defensive — yet he's just as prickly as ever at dinner. The dodge is to nod along ("at least he understands himself now") or to shrug ("people don't really change"). A better move commits to a reading and a test. Maybe this is intellectual insight that hasn't been worked through: then his defensiveness should keep showing up unchanged, the explanation should stay a recital without feeling, and naming it mid-argument shouldn't soften him. Or maybe change is genuinely starting: then you'd see him catch himself across different situations, feel the old prickle and choose otherwise, and hold the new response even on a hard day. Either way, you've traded a vague verdict for a testable one — and you know exactly which cheap observation would tell you you're wrong.`,
   homework: {
     mcq,
     hybrid,

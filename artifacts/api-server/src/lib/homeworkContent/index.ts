@@ -1,4 +1,4 @@
-// Aggregated Cognitive Science 101 curriculum content.
+// Aggregated Psychodynamic Therapy 101 curriculum content.
 // Each section provides one lecture plus its homework authored in all three
 // answer formats (15 MC / 9 hybrid / 5 written). The seed flattens these into
 // topics, lectures, and one homework assignment per section.

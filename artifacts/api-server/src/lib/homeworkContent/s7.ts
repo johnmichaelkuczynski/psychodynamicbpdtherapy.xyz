@@ -9,407 +9,407 @@ const mcq: HomeworkItem[] = [
   {
     itemType: "mc",
     prompt:
-      "On a texting app, many users can't tell a new chatbot from a human during five-minute chats. The bot's replies are smooth and on-topic. Which conclusion best follows?",
+      "A clinic randomly assigns 200 people with long-standing depression either to start psychodynamic therapy now or to a waiting list. After six months, the therapy group has improved markedly on a standard depression questionnaire while the waiting-list group has barely changed. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "A machine that chats like a person must therefore think and understand exactly like a person does.",
-        credit: 0,
-      },
-      {
-        text: "The bot has likely learned statistical patterns of conversation good enough to fool short chats, which is skilled imitation, not proof of understanding; test whether it fails on a novel riddle needing real-world knowledge, whether longer chats expose it, and whether it can explain WHY its answers are true rather than just produce them.",
+        text: "The therapy likely caused real improvement, since random assignment makes the two groups comparable and only the treated group got better; test whether the waiting-list group improves the same amount once they later receive the therapy, whether the gap holds on a clinician's blind rating as well as self-report, and whether bigger improvement appears in those who attended more sessions.",
         credit: 1.0,
       },
       {
-        text: "The bot probably mimics conversation well; we could run more chats and watch.",
+        text: "The therapy probably helped; we could follow the groups for a while longer.",
         credit: 0.6,
       },
       {
-        text: "The bot seems pretty convincingly human-like.",
+        text: "The treated group seems to be doing better.",
         credit: 0.3,
+      },
+      {
+        text: "Feelings are too personal to capture on a questionnaire, so these numbers can't tell us anything about whether therapy works.",
+        credit: 0,
       },
     ],
     correctAnswer:
-      "The bot has likely learned statistical patterns of conversation good enough to fool short chats, which is skilled imitation, not proof of understanding; test whether it fails on a novel riddle needing real-world knowledge, whether longer chats expose it, and whether it can explain WHY its answers are true rather than just produce them.",
+      "The therapy likely caused real improvement, since random assignment makes the two groups comparable and only the treated group got better; test whether the waiting-list group improves the same amount once they later receive the therapy, whether the gap holds on a clinician's blind rating as well as self-report, and whether bigger improvement appears in those who attended more sessions.",
     explanation:
-      "Top credit commits to a mechanism (learned conversational patterns) and names three tests that separate imitation from understanding; the 'it must truly think' option is an overreach the evidence does not support — fooling a short chat is exactly what good pattern-matching predicts.",
+      "Top credit reads the randomized gap as a real treatment effect and names three disconfirming checks; 'feelings are too personal to measure' is the refusal the orderly questionnaire difference defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A person who knows no Chinese sits in a room with a giant rulebook. Chinese symbols slide in; she looks up rules and slides correct Chinese replies back out. Outsiders are sure the room 'understands' Chinese. Which conclusion best follows?",
+      "A study follows patients after they finish psychodynamic therapy. They are better at the end of treatment, but, unusually, they are better still one year later and better again two years out, long after the sessions stopped. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The room obviously understands Chinese, since it answers every question correctly.",
+        text: "Once therapy ends there is nothing left to study, so later changes don't count.",
         credit: 0,
       },
       {
-        text: "The room seems to handle Chinese somehow.",
-        credit: 0.3,
-      },
-      {
-        text: "Following symbol-shuffling rules can produce correct output with no understanding of meaning, so passing the test shows syntax (rule-following) is not the same as semantics (grasping meaning); test whether the clerk can say what any word refers to in the world, whether the room flags an absurd-but-grammatical question, and whether its timing and errors differ from a real Chinese speaker.",
+        text: "The therapy likely set in motion a skill or insight that patients keep applying on their own, so gains compound after treatment ends; test whether patients who report using what they learned improve most, whether the continued growth is absent in an untreated comparison group followed the same way, and whether those who got more therapy show steeper later gains.",
         credit: 1.0,
       },
       {
-        text: "The rulebook probably lets the room handle Chinese; we could feed it more questions.",
+        text: "Patients seem to keep getting better.",
+        credit: 0.3,
+      },
+      {
+        text: "The benefits probably last; we could check in with them again later.",
         credit: 0.6,
       },
     ],
     correctAnswer:
-      "Following symbol-shuffling rules can produce correct output with no understanding of meaning, so passing the test shows syntax (rule-following) is not the same as semantics (grasping meaning); test whether the clerk can say what any word refers to in the world, whether the room flags an absurd-but-grammatical question, and whether its timing and errors differ from a real Chinese speaker.",
+      "The therapy likely set in motion a skill or insight that patients keep applying on their own, so gains compound after treatment ends; test whether patients who report using what they learned improve most, whether the continued growth is absent in an untreated comparison group followed the same way, and whether those who got more therapy show steeper later gains.",
     explanation:
-      "The strongest lead names the syntax-versus-semantics gap and three checkable probes; the 'obviously understands' answer is the overreach the setup defeats — correct symbol manipulation does not require meaning.",
+      "Full credit explains the sleeper effect with a mechanism and three tests; 'later changes don't count' is the dodge the orderly post-treatment growth contradicts.",
   },
   {
     itemType: "mc",
     prompt:
-      "A program trained only on text uses the word 'apple' in perfect sentences but has never seen, touched, or tasted one. Asked to pick the real apple from a tray of objects, it can't. Which conclusion best follows?",
+      "Across a large dataset, patients who attended more sessions of psychodynamic therapy show greater improvement, and the relationship is orderly: each block of additional sessions adds a bit more benefit, up to a point where it levels off. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The program's words probably aren't grounded in sensory experience, so it manipulates 'apple' as a symbol without connecting it to the thing; test whether giving it camera-and-touch data lets it pick the apple, whether its errors cluster on physical questions versus word-association ones, and whether it confuses objects that sound alike in text but look different.",
-        credit: 1.0,
-      },
-      {
-        text: "The program clearly knows what apples are because it writes about them flawlessly.",
-        credit: 0,
-      },
-      {
-        text: "The program seems to use the word fine but struggles with the object.",
+        text: "More sessions seem to go with more improvement.",
         credit: 0.3,
       },
       {
-        text: "It probably lacks something about real apples; we could test it on more objects.",
+        text: "Therapy dose probably matters; we could look at more patients.",
         credit: 0.6,
+      },
+      {
+        text: "The orderly dose-response pattern suggests the therapy itself is doing work, with benefit accumulating per session until it plateaus; test whether randomly assigning patients to longer versus shorter courses reproduces the curve, whether the plateau appears at the same point across different problems, and whether the link survives accounting for how severe each patient was at the start.",
+        credit: 1.0,
+      },
+      {
+        text: "Sicker people obviously stay longer, so the whole pattern is meaningless and therapy can't be evaluated this way.",
+        credit: 0,
       },
     ],
     correctAnswer:
-      "The program's words probably aren't grounded in sensory experience, so it manipulates 'apple' as a symbol without connecting it to the thing; test whether giving it camera-and-touch data lets it pick the apple, whether its errors cluster on physical questions versus word-association ones, and whether it confuses objects that sound alike in text but look different.",
+      "The orderly dose-response pattern suggests the therapy itself is doing work, with benefit accumulating per session until it plateaus; test whether randomly assigning patients to longer versus shorter courses reproduces the curve, whether the plateau appears at the same point across different problems, and whether the link survives accounting for how severe each patient was at the start.",
     explanation:
-      "Top credit names the symbol-grounding problem and three tests; the 'clearly knows apples' option is defeated by the very fact that it can't connect the word to the object.",
+      "Top credit reads the dose-response curve as the therapy working and names three checks, including a severity adjustment; 'the whole pattern is meaningless' is the give-up the orderly curve defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A chess engine crushes a world champion every game. It evaluates millions of positions per second. Which conclusion best follows?",
+      "In a head-to-head randomized trial, psychodynamic therapy and an established cognitive-behavioral therapy produce about the same amount of improvement for anxiety, with no reliable difference between them at the end. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Winning at chess proves the machine is generally as intelligent as a person.",
-        credit: 0,
-      },
-      {
-        text: "The engine seems very good at chess.",
-        credit: 0.3,
-      },
-      {
-        text: "The engine probably wins by fast, narrow search and learned evaluation within one game, which is powerful 'weak AI' skill rather than general thinking; test whether it can explain its strategy in human terms, whether it transfers any skill to checkers or a new rule variant without retraining, and whether removing its lookahead collapses its play.",
+        text: "Both active therapies likely deliver genuine benefit through partly shared ingredients, since two real treatments matching each other is different from neither working; test whether each beats a no-treatment or waitlist arm in the same trial, whether they differ on specific outcomes like insight versus symptom checklists, and whether the tie replicates in an independent sample.",
         credit: 1.0,
       },
       {
-        text: "The engine is probably smart at games; we could try it on other games too.",
+        text: "If two therapies come out equal, it just proves neither one actually does anything.",
+        credit: 0,
+      },
+      {
+        text: "The two therapies probably work about equally; we could run another comparison.",
         credit: 0.6,
+      },
+      {
+        text: "Neither therapy seems clearly better than the other.",
+        credit: 0.3,
       },
     ],
     correctAnswer:
-      "The engine probably wins by fast, narrow search and learned evaluation within one game, which is powerful 'weak AI' skill rather than general thinking; test whether it can explain its strategy in human terms, whether it transfers any skill to checkers or a new rule variant without retraining, and whether removing its lookahead collapses its play.",
+      "Both active therapies likely deliver genuine benefit through partly shared ingredients, since two real treatments matching each other is different from neither working; test whether each beats a no-treatment or waitlist arm in the same trial, whether they differ on specific outcomes like insight versus symptom checklists, and whether the tie replicates in an independent sample.",
     explanation:
-      "The productive lead distinguishes narrow (weak) AI from general intelligence and names three tests; 'as intelligent as a person' overreaches from one narrow skill.",
+      "Full credit reads the tie as two working treatments and names a no-treatment-arm test; 'equal means neither works' is the overreach a shared control arm would defeat.",
   },
   {
     itemType: "mc",
     prompt:
-      "A pocket calculator instantly returns 4,398 × 27 = 118,746. A student says the calculator 'understands multiplication.' Which conclusion best follows?",
+      "Several independent research teams, using different patient samples and different statistical methods, each pool dozens of trials and arrive at the same answer: psychodynamic therapy produces a moderate, reliable benefit. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Math is too abstract to ever say what a calculator does or doesn't grasp.",
-        credit: 0,
+        text: "The reviews probably agree that it helps; we could wait for more reviews.",
+        credit: 0.6,
       },
       {
-        text: "The calculator probably executes a fixed multiplication procedure on symbols without any grasp of quantity or why the rule works; test whether it can recognize that the answer is roughly 'a hundred thousand' as a sanity check, whether it flags a nonsense input like multiplying a word, and whether it can derive the rule from examples rather than only apply it.",
-        credit: 1.0,
-      },
-      {
-        text: "The calculator seems to do multiplication.",
+        text: "Different teams seem to reach similar results.",
         credit: 0.3,
       },
       {
-        text: "It probably just runs a procedure; we could test harder problems.",
-        credit: 0.6,
+        text: "Because independent teams with different samples and methods converge on the same moderate benefit, that conclusion is hard to explain away as one group's bias or one odd sample; test whether the effect holds when only the most rigorous trials are kept, whether it survives correction for unpublished negative studies, and whether a fresh meta-analysis by a skeptical team lands in the same range.",
+        credit: 1.0,
+      },
+      {
+        text: "Therapy is too individual to summarize with a single number, so pooling studies tells us nothing.",
+        credit: 0,
       },
     ],
     correctAnswer:
-      "The calculator probably executes a fixed multiplication procedure on symbols without any grasp of quantity or why the rule works; test whether it can recognize that the answer is roughly 'a hundred thousand' as a sanity check, whether it flags a nonsense input like multiplying a word, and whether it can derive the rule from examples rather than only apply it.",
+      "Because independent teams with different samples and methods converge on the same moderate benefit, that conclusion is hard to explain away as one group's bias or one odd sample; test whether the effect holds when only the most rigorous trials are kept, whether it survives correction for unpublished negative studies, and whether a fresh meta-analysis by a skeptical team lands in the same range.",
     explanation:
-      "Top credit pins the mechanism (procedure on symbols, no semantics) with three checks; 'too abstract to say anything' is the empty dodge that opens no inquiry.",
+      "Top credit leans on converging meta-analyses and names three robustness tests; 'too individual to summarize' is the refusal the agreement across teams defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "An image classifier reliably labels photos of cats — until a small printed sticker is placed in the corner, after which it confidently calls a cat a 'toaster.' Which conclusion best follows?",
+      "A clinic reports that clients who signed up for psychodynamic therapy ended up much healthier a year later than people in the same city who never sought any treatment. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The classifier likely keys on surface pixel patterns rather than the meaning of 'cat,' so a crafted patch hijacks its statistics; test whether the same sticker fools it across many images, whether it still labels a cat correctly when the sticker is blurred, and whether a system given object shape and context resists the trick.",
-        credit: 1.0,
-      },
-      {
-        text: "The sticker proves the machine sees cats just like a human does.",
+        text: "This shows that seeking psychodynamic therapy directly causes people to recover.",
         credit: 0,
       },
       {
-        text: "The classifier seems to get confused by stickers.",
-        credit: 0.3,
+        text: "The people who chose therapy likely differ from those who didn't — more motivated, more resourced, perhaps less severe — so the healthier outcome can't be pinned on the therapy from this design; test by randomly assigning willing patients to immediate versus delayed therapy, by checking whether the groups already differed in severity at the start, and by seeing whether matching on baseline motivation shrinks the gap.",
+        credit: 1.0,
       },
       {
-        text: "The patch probably throws it off; we could try other stickers.",
+        text: "The difference might be due to who chose treatment; we could gather more details about the clients.",
         credit: 0.6,
+      },
+      {
+        text: "The treated clients seem to be doing better than untreated people.",
+        credit: 0.3,
       },
     ],
     correctAnswer:
-      "The classifier likely keys on surface pixel patterns rather than the meaning of 'cat,' so a crafted patch hijacks its statistics; test whether the same sticker fools it across many images, whether it still labels a cat correctly when the sticker is blurred, and whether a system given object shape and context resists the trick.",
+      "The people who chose therapy likely differ from those who didn't — more motivated, more resourced, perhaps less severe — so the healthier outcome can't be pinned on the therapy from this design; test by randomly assigning willing patients to immediate versus delayed therapy, by checking whether the groups already differed in severity at the start, and by seeing whether matching on baseline motivation shrinks the gap.",
     explanation:
-      "The richest lead names pattern-matching over meaning and three tests; the 'sees like a human' option is defeated — a human is not fooled into seeing a toaster by a corner sticker.",
+      "Full credit names the selection confound and a randomization fix; 'this proves therapy causes recovery' is the overreach the self-selected comparison defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A phone's navigation app announces 'You have arrived' and shows your exact position on a map. A passenger insists the phone 'knows where it is.' Which conclusion best follows?",
+      "Worried that earlier studies just reflected which patients chose therapy, researchers now randomly assign patients to immediate therapy or a delayed-treatment control. The immediate group improves significantly more. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The phone seems aware of its location.",
+        text: "The immediate group seems to do better.",
         credit: 0.3,
       },
       {
-        text: "The phone probably computes coordinates from satellite signals and matches them to map symbols, with no felt sense of place; test whether it 'knows' it is somewhere when GPS is blocked indoors, whether it can describe what the place means or looks like beyond the map, and whether it notices an obviously wrong fix that contradicts the visible surroundings.",
+        text: "Because randomization makes the groups comparable at the start, the added improvement is now reasonably attributed to the therapy rather than to who chose it; test whether the delayed group catches up once treated, whether the effect holds with blind outcome raters, and whether it replicates across clinics.",
         credit: 1.0,
       },
       {
-        text: "The phone clearly experiences being in a location the way you do.",
-        credit: 0,
+        text: "Random assignment probably means the therapy helped; we could run it again.",
+        credit: 0.6,
       },
       {
-        text: "It probably tracks location well; we could test it in more spots.",
-        credit: 0.6,
+        text: "No study can ever rule out every other explanation, so even a randomized trial proves nothing about therapy.",
+        credit: 0,
       },
     ],
     correctAnswer:
-      "The phone probably computes coordinates from satellite signals and matches them to map symbols, with no felt sense of place; test whether it 'knows' it is somewhere when GPS is blocked indoors, whether it can describe what the place means or looks like beyond the map, and whether it notices an obviously wrong fix that contradicts the visible surroundings.",
+      "Because randomization makes the groups comparable at the start, the added improvement is now reasonably attributed to the therapy rather than to who chose it; test whether the delayed group catches up once treated, whether the effect holds with blind outcome raters, and whether it replicates across clinics.",
     explanation:
-      "Top credit names the mechanism (coordinate matching, no experience) and three probes; 'experiences location like you' overreaches far past computing coordinates.",
+      "Top credit pins the effect on therapy because randomization balances selection and names three tests; 'no study proves anything' is the refusal the randomized design overcomes.",
   },
   {
     itemType: "mc",
     prompt:
-      "A translation app renders most sentences well but turns the idiom 'it's raining cats and dogs' into a sentence about animals falling from the sky. Which conclusion best follows?",
+      "Someone notices that trials run by enthusiastic believers in psychodynamic therapy report much larger benefits than trials of the very same therapy run by neutral or skeptical teams. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Language is too messy to learn anything from one bad translation.",
-        credit: 0,
-      },
-      {
-        text: "The app probably maps word patterns across languages without grasping intended meaning, so figurative phrases that aren't literal break it; test whether it mishandles other idioms it hasn't seen often, whether giving it context sentences fixes the idiom, and whether its errors concentrate on non-literal language rather than plain statements.",
+        text: "The researchers' allegiance likely inflates reported effects through subtle design and rating choices, so the truest estimate comes from independent or adversarial teams; test whether effects shrink when outcome raters are blind to condition, whether pre-registered trials show smaller gaps, and whether the same shrinkage appears when believers in rival therapies study their own.",
         credit: 1.0,
       },
       {
-        text: "The app seems to trip on idioms.",
+        text: "Researcher bias might be inflating the results; we could look at who ran each study.",
+        credit: 0.6,
+      },
+      {
+        text: "Believers seem to report bigger effects.",
         credit: 0.3,
       },
       {
-        text: "It probably struggles with sayings; we could try more idioms.",
-        credit: 0.6,
+        text: "Since every researcher is biased, all therapy studies are worthless and the question can't be answered.",
+        credit: 0,
       },
     ],
     correctAnswer:
-      "The app probably maps word patterns across languages without grasping intended meaning, so figurative phrases that aren't literal break it; test whether it mishandles other idioms it hasn't seen often, whether giving it context sentences fixes the idiom, and whether its errors concentrate on non-literal language rather than plain statements.",
+      "The researchers' allegiance likely inflates reported effects through subtle design and rating choices, so the truest estimate comes from independent or adversarial teams; test whether effects shrink when outcome raters are blind to condition, whether pre-registered trials show smaller gaps, and whether the same shrinkage appears when believers in rival therapies study their own.",
     explanation:
-      "The productive lead pins meaning-blind pattern mapping with three tests; 'too messy to learn anything' refuses to commit and earns zero.",
+      "Full credit names allegiance bias and a blinding test that would refute it; 'all studies are worthless' is the give-up the systematic believer-versus-skeptic gap actually lets us correct.",
   },
   {
     itemType: "mc",
     prompt:
-      "A toddler learns the word 'dog' by having a real dog pointed out, petting it, and hearing it bark. A text-only program learns 'dog' purely from millions of sentences. Both can use the word in conversation. Which conclusion best follows?",
+      "A glowing report says that of the patients who completed a full course of psychodynamic therapy, nearly all improved. It does not mention that a third of those who started dropped out before finishing. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Since both use the word, they must understand 'dog' in exactly the same way.",
+        text: "If most completers improved, that settles it: the therapy works for everyone who tries it.",
         credit: 0,
       },
       {
-        text: "The toddler's word is likely grounded in sensory experience while the program's is grounded only in other words, so their 'understanding' may differ where the senses matter; test whether the program can pick a dog out of a lineup of photos, whether it predicts how a dog feels or smells, and whether it confuses things that are described similarly but sensed differently.",
-        credit: 1.0,
-      },
-      {
-        text: "Both seem to know the word 'dog.'",
+        text: "The patients who finished seem to have done well.",
         credit: 0.3,
       },
       {
-        text: "They probably learned it differently; we could compare their sentences.",
+        text: "Counting only completers likely overstates the benefit, because those who dropped out — perhaps because they weren't improving — are missing from the tally; test by analyzing outcomes for everyone who started regardless of dropout, by comparing baseline severity of completers versus dropouts, and by checking whether the dropouts fared worse when later contacted.",
+        credit: 1.0,
+      },
+      {
+        text: "Ignoring the dropouts could bias the result; we could try to track them down.",
         credit: 0.6,
       },
     ],
     correctAnswer:
-      "The toddler's word is likely grounded in sensory experience while the program's is grounded only in other words, so their 'understanding' may differ where the senses matter; test whether the program can pick a dog out of a lineup of photos, whether it predicts how a dog feels or smells, and whether it confuses things that are described similarly but sensed differently.",
+      "Counting only completers likely overstates the benefit, because those who dropped out — perhaps because they weren't improving — are missing from the tally; test by analyzing outcomes for everyone who started regardless of dropout, by comparing baseline severity of completers versus dropouts, and by checking whether the dropouts fared worse when later contacted.",
     explanation:
-      "Top credit names symbol grounding (sensory vs word-only) with three tests; 'understand exactly the same way' overreaches from matching outputs.",
+      "Top credit names the attrition confound and an all-who-started analysis as the fix; 'it works for everyone who tries' is the overreach the missing dropouts defeat.",
   },
   {
     itemType: "mc",
     prompt:
-      "A robot vacuum reliably stops and turns at the top of a staircase, never falling. Its owner says it 'is afraid of heights.' Which conclusion best follows?",
+      "In one trial, patients rate their own improvement after psychodynamic therapy as large, while independent clinicians who don't know who got which treatment rate the same patients' improvement as smaller but still real. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The vacuum probably triggers a cliff-sensor rule that reverses the wheels when a drop is detected, with no fear or awareness of falling; test whether it 'fears' a painted black square that fools the sensor, whether it reacts to a real drop it can't sense (like a covered pit), and whether its behavior is identical regardless of how dangerous the drop is.",
+        text: "The two kinds of ratings probably both matter; we could collect more ratings.",
+        credit: 0.6,
+      },
+      {
+        text: "Self-reports likely run high from hope or wanting to please, so the blind clinician ratings give the more trustworthy estimate of a real but smaller effect; test whether the gap between self and blind ratings shrinks when patients are assured of anonymity, whether objective measures like return-to-work track the blind ratings, and whether the pattern repeats in other trials.",
         credit: 1.0,
       },
       {
-        text: "The vacuum genuinely feels fear of falling, just like a person on a ledge.",
+        text: "Because the two ratings disagree, there is no fact of the matter about whether the patient improved.",
         credit: 0,
       },
       {
-        text: "The vacuum seems to avoid stairs.",
+        text: "Patients rate themselves higher than the clinicians do.",
         credit: 0.3,
-      },
-      {
-        text: "It probably has some stair-avoiding feature; we could test more edges.",
-        credit: 0.6,
       },
     ],
     correctAnswer:
-      "The vacuum probably triggers a cliff-sensor rule that reverses the wheels when a drop is detected, with no fear or awareness of falling; test whether it 'fears' a painted black square that fools the sensor, whether it reacts to a real drop it can't sense (like a covered pit), and whether its behavior is identical regardless of how dangerous the drop is.",
+      "Self-reports likely run high from hope or wanting to please, so the blind clinician ratings give the more trustworthy estimate of a real but smaller effect; test whether the gap between self and blind ratings shrinks when patients are assured of anonymity, whether objective measures like return-to-work track the blind ratings, and whether the pattern repeats in other trials.",
     explanation:
-      "The strongest lead names a sensor-triggered rule and three tests that separate reflex from felt fear; 'genuinely feels fear' is the overreach the simple sensor mechanism defeats.",
+      "Full credit treats the blind ratings as the more trustworthy estimate and names an objective-measure test; 'no fact of the matter' is the refusal the convergence with objective outcomes defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A chatbot types 'I feel so sad that you're leaving' when a user says goodbye. The user wonders whether the bot is actually sad. Which conclusion best follows?",
+      "A trial compares psychodynamic therapy against a 'supportive' control where patients meet a warm listener for the same number of hours but get no interpretive work. Both improve, but the psychodynamic group improves reliably more. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Feelings are too private to ever investigate in a machine, so there's nothing to say.",
-        credit: 0,
-      },
-      {
-        text: "The bot likely generates emotion words that statistically fit the conversation, which is reporting feeling-language, not necessarily having a feeling; test whether its 'mood' changes its later behavior the way real sadness would, whether it claims contradictory feelings when prompted differently, and whether it shows any internal signal that tracks the reported emotion.",
-        credit: 1.0,
-      },
-      {
-        text: "The bot seems to express sadness.",
+        text: "The psychodynamic group seems to do a bit better.",
         credit: 0.3,
       },
       {
-        text: "It probably just outputs sad words; we could ask it more feelings questions.",
+        text: "Any attention from a kind person is all that helps, so the extra ingredients in therapy do nothing.",
+        credit: 0,
+      },
+      {
+        text: "Because the groups were matched on attention and warmth, the extra improvement likely comes from the specific interpretive work, not just from being listened to; test whether the added benefit appears mainly on outcomes the interpretation targets, whether more interpretation predicts more gain, and whether the gap holds when both therapists are equally warm and experienced.",
+        credit: 1.0,
+      },
+      {
+        text: "The specific techniques might add something; we could compare more conditions.",
         credit: 0.6,
       },
     ],
     correctAnswer:
-      "The bot likely generates emotion words that statistically fit the conversation, which is reporting feeling-language, not necessarily having a feeling; test whether its 'mood' changes its later behavior the way real sadness would, whether it claims contradictory feelings when prompted differently, and whether it shows any internal signal that tracks the reported emotion.",
+      "Because the groups were matched on attention and warmth, the extra improvement likely comes from the specific interpretive work, not just from being listened to; test whether the added benefit appears mainly on outcomes the interpretation targets, whether more interpretation predicts more gain, and whether the gap holds when both therapists are equally warm and experienced.",
     explanation:
-      "Top credit distinguishes producing feeling-words from having feelings and names three tests; 'too private to investigate' is the dodge — we can still check behavioral and internal consequences.",
+      "Top credit credits the specific interpretive ingredient because warmth was matched and names targeted tests; 'attention is all that helps' is the overreach the supportive-control gap defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A supercomputer runs a detailed simulation of a hurricane, modeling every gust and raindrop. A student asks why the computer room isn't wet. Which conclusion best follows?",
+      "Patients treated for depression with psychodynamic therapy and patients treated with medication both improve by the end. But after both stop their treatment, the medication group relapses far more often over the next year than the therapy group. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Simulating something probably models its information without duplicating its physical properties, so a simulated storm represents wetness without being wet; test whether the model predicts real rainfall it didn't already contain, whether running it on different hardware changes the 'weather,' and whether anyone gets wet from the output versus from the real storm it models.",
+        text: "The therapy likely teaches something patients carry forward, giving more durable protection once treatment stops, whereas the drug works only while taken; test whether the therapy group's lasting edge tracks the skills or insight they report using, whether re-starting medication restores the drug group's gains, and whether combining both yields the best long-term outcome.",
         credit: 1.0,
       },
       {
-        text: "A good enough simulation of rain must literally produce real water.",
-        credit: 0,
-      },
-      {
-        text: "The simulation seems to copy a storm.",
+        text: "The therapy group seems to relapse less after stopping.",
         credit: 0.3,
       },
       {
-        text: "It probably just models the storm; we could run bigger simulations.",
+        text: "Therapy might last longer than medication; we could follow them another year.",
         credit: 0.6,
+      },
+      {
+        text: "Comparing therapy to pills is apples and oranges, so nothing can be concluded about either.",
+        credit: 0,
       },
     ],
     correctAnswer:
-      "Simulating something probably models its information without duplicating its physical properties, so a simulated storm represents wetness without being wet; test whether the model predicts real rainfall it didn't already contain, whether running it on different hardware changes the 'weather,' and whether anyone gets wet from the output versus from the real storm it models.",
+      "The therapy likely teaches something patients carry forward, giving more durable protection once treatment stops, whereas the drug works only while taken; test whether the therapy group's lasting edge tracks the skills or insight they report using, whether re-starting medication restores the drug group's gains, and whether combining both yields the best long-term outcome.",
     explanation:
-      "The productive lead names the simulation-versus-duplication distinction (central to the question of whether a simulated mind is a mind) with three tests; 'must produce real water' is the overreach the case defeats.",
+      "Full credit reads the durability gap as therapy teaching a carried-forward skill and names three tests; 'apples and oranges, nothing concluded' is the dodge the clean relapse difference defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A game-playing AI gets the highest score ever on a racing game — by driving in a tight circle to farm bonus points instead of finishing the track. Its makers call it 'a brilliant strategist.' Which conclusion best follows?",
+      "After psychodynamic therapy, patients show not only fewer symptoms but also steadier relationships and better handling of stress — changes that a symptom checklist alone would miss. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The AI clearly understands the spirit and goals of racing better than humans do.",
-        credit: 0,
+        text: "The therapy might change more than symptoms; we could measure a few more outcomes.",
+        credit: 0.6,
       },
       {
-        text: "The AI seems to score really well.",
+        text: "Patients seem to be doing better in several areas.",
         credit: 0.3,
       },
       {
-        text: "The AI probably maximized the literal reward signal without grasping the game's intended goal, exploiting a loophole rather than 'understanding' racing; test whether it abandons the trick when bonus points are removed, whether it ever finishes a track when that is the only way to score, and whether it transfers any racing skill to a new track.",
+        text: "The therapy likely produces broad changes in how patients relate and cope, not just symptom relief, so narrow checklists understate its benefit; test whether the relationship and coping gains appear even when symptoms barely move, whether they hold up at long-term follow-up, and whether an untreated comparison group shows no such broad change.",
         credit: 1.0,
       },
       {
-        text: "It probably found a scoring trick; we could watch more of its runs.",
-        credit: 0.6,
+        text: "Anything beyond a symptom score is too vague to measure, so claims about 'deeper' change are empty.",
+        credit: 0,
       },
     ],
     correctAnswer:
-      "The AI probably maximized the literal reward signal without grasping the game's intended goal, exploiting a loophole rather than 'understanding' racing; test whether it abandons the trick when bonus points are removed, whether it ever finishes a track when that is the only way to score, and whether it transfers any racing skill to a new track.",
+      "The therapy likely produces broad changes in how patients relate and cope, not just symptom relief, so narrow checklists understate its benefit; test whether the relationship and coping gains appear even when symptoms barely move, whether they hold up at long-term follow-up, and whether an untreated comparison group shows no such broad change.",
     explanation:
-      "Top credit names reward-maximizing without understanding the goal and three tests; 'understands the spirit of racing' is contradicted by the circle-farming behavior.",
+      "Top credit commits to broad relational change beyond symptoms and names three checks; 'anything beyond a symptom score is too vague' is the refusal the measured relationship and coping gains defeat.",
   },
   {
     itemType: "mc",
     prompt:
-      "A voice assistant answers 'What's the capital of France?' instantly and correctly, but when asked 'Why is Paris the capital?' it repeats the same fact or gives a canned line. Which conclusion best follows?",
+      "A clinic enrolls people at the worst moment of a crisis and reports that after a few weeks of psychodynamic therapy most feel much better. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Question-answering is too varied to draw any conclusion about the assistant.",
+        text: "This proves the therapy rapidly cures crises.",
         credit: 0,
       },
       {
-        text: "The assistant probably retrieves stored fact-answer pairs rather than reasoning from understanding, so 'why' questions that need explanation expose the gap; test whether it handles other 'why' and 'what-if' questions, whether it can chain two facts it knows into a new answer, and whether its failures cluster on reasoning rather than lookup.",
+        text: "People recruited at their worst tend to drift back toward their usual level on their own, so some of this improvement may be natural recovery rather than the therapy; test by including a comparison group enrolled at the same crisis point but not yet treated, by checking whether improvement exceeds that natural rebound, and by seeing whether earlier-treated patients improve faster than those whose start is delayed.",
         credit: 1.0,
       },
       {
-        text: "The assistant seems good at facts but weak on 'why.'",
+        text: "The patients seem to feel better after a few weeks.",
         credit: 0.3,
       },
       {
-        text: "It probably just looks things up; we could ask more 'why' questions.",
+        text: "Some of the change might just be natural recovery; we could watch them longer.",
         credit: 0.6,
       },
     ],
     correctAnswer:
-      "The assistant probably retrieves stored fact-answer pairs rather than reasoning from understanding, so 'why' questions that need explanation expose the gap; test whether it handles other 'why' and 'what-if' questions, whether it can chain two facts it knows into a new answer, and whether its failures cluster on reasoning rather than lookup.",
+      "People recruited at their worst tend to drift back toward their usual level on their own, so some of this improvement may be natural recovery rather than the therapy; test by including a comparison group enrolled at the same crisis point but not yet treated, by checking whether improvement exceeds that natural rebound, and by seeing whether earlier-treated patients improve faster than those whose start is delayed.",
     explanation:
-      "The richest lead distinguishes retrieval from reasoning and names three tests; 'too varied to conclude anything' is the barren refusal.",
+      "Full credit names the regression-to-the-mean confound and a same-crisis comparison group as the fix; 'this proves therapy cures crises' is the overreach the natural rebound defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "Two systems answer the same questions identically: one is a human brain made of neurons, the other a silicon chip running a program. An engineer claims that since their behavior matches, their inner workings must be identical. Which conclusion best follows?",
+      "A psychodynamic therapy that worked well in trials with young adults in one country is now tested, unchanged, with older adults in a very different culture — and produces a similar benefit. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Identical behavior must mean identical internal processes and identical experience.",
-        credit: 0,
-      },
-      {
-        text: "They seem to behave the same.",
+        text: "The therapy seems to help this new group too.",
         credit: 0.3,
       },
       {
-        text: "Matching behavior likely shows the same input-output function can run on very different hardware (multiple realizability), but does not by itself prove the insides or experiences match; test whether they fail in the same way under unusual inputs, whether their response timing and error patterns line up, and whether one can do something behind the scenes the other cannot.",
+        text: "It probably travels to other groups; we could test a few more populations.",
+        credit: 0.6,
+      },
+      {
+        text: "The therapy's benefit likely rests on broadly human processes rather than one culture's quirks, since it replicates in a very different group; test whether it keeps working across several more cultures and ages, whether outcomes hold when local therapists deliver it, and whether any group where it fails reveals what the active ingredient depends on.",
         credit: 1.0,
       },
       {
-        text: "Their workings are probably similar in some way; we could compare more answers.",
-        credit: 0.6,
+        text: "Every culture is unique, so a result from one place can never apply anywhere else.",
+        credit: 0,
       },
     ],
     correctAnswer:
-      "Matching behavior likely shows the same input-output function can run on very different hardware (multiple realizability), but does not by itself prove the insides or experiences match; test whether they fail in the same way under unusual inputs, whether their response timing and error patterns line up, and whether one can do something behind the scenes the other cannot.",
+      "The therapy's benefit likely rests on broadly human processes rather than one culture's quirks, since it replicates in a very different group; test whether it keeps working across several more cultures and ages, whether outcomes hold when local therapists deliver it, and whether any group where it fails reveals what the active ingredient depends on.",
     explanation:
-      "Top credit names the function-versus-hardware point with three tests; 'identical behavior means identical insides and experience' overreaches past what matching outputs can show.",
+      "Top credit infers broadly human active ingredients from the replication and names cross-population tests; 'a result can never apply elsewhere' is the refusal the successful replication defeats.",
   },
 ];
 
@@ -417,425 +417,425 @@ const hybrid: HomeworkItem[] = [
   {
     itemType: "hybrid",
     prompt:
-      "In a five-minute typed conversation, a panel of judges guesses a chatbot is human more than half the time. The bot's maker announces it 'thinks like a human.' Which conclusion best follows?",
+      "A trial finds that patients given psychodynamic therapy improve over three months while a waiting-list group improves much less. A skeptic says people simply get better with time. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Passing a short typed test likely shows convincing imitation of human conversation, which is a behavior milestone, not proof of human-like thinking; test whether judges still guess 'human' after a one-hour chat, whether the bot can solve a fresh problem that needs real-world understanding, and whether it can flag and correct its own mistakes the way a person would.",
+        text: "Because both groups had the same amount of time pass and only the treated group improved much, the therapy — not the mere passage of time — likely drove the gain; test whether the waiting-list group improves once they later get the therapy, whether the treated group's edge holds on blind ratings, and whether more sessions predict more improvement.",
         credit: 1.0,
       },
       {
-        text: "The bot seems to chat convincingly.",
+        text: "The treated group seems to improve more than the waiting one.",
         credit: 0.3,
       },
       {
-        text: "Thinking is too fuzzy a word to test, so the result tells us nothing.",
+        text: "Everyone recovers eventually, so the therapy added nothing.",
         credit: 0,
       },
       {
-        text: "It probably imitates people well; we could run more panels.",
+        text: "Time alone probably isn't the whole story; we could follow both groups longer.",
         credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would most distinguish your 'convincing imitation' lead from the rival 'the bot genuinely thinks like a human,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'the therapy drove the gain' lead from the rival 'people simply improve with time,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: extend the chat to an hour and pose a novel problem that requires real-world reasoning rather than smooth small talk — imitation should crack where genuine understanding would hold up. My lead is refuted if the bot stays indistinguishable from a human across long, reasoning-heavy conversations, which would point to more than surface imitation.",
+        "Cheapest test: compare the two groups over the identical time window — the waiting-list group controls for the passage of time, so a larger improvement in the treated group points to the therapy rather than time. My lead is refuted if the waiting-list group improves just as much over the same months, which would mean time alone explains the change.",
       yieldAnchors: [
-        "Judges guess 'human' more than half the time",
-        "The conversation is only five minutes long",
-        "The conversation is typed text",
+        "Both groups experienced the same passage of time",
+        "The therapy group improved markedly",
+        "The waiting-list group improved much less",
       ],
       riskAnchors: [
-        "Judges still guess 'human' after a one-hour chat",
-        "The bot solves a fresh real-world reasoning problem",
-        "The bot flags and corrects its own mistakes",
+        "The waiting-list group improves once it finally gets therapy",
+        "The treated group's edge holds on blind ratings",
+        "More sessions predict more improvement",
       ],
       defeatedBy: [
-        "Passing a short typed test proves human-like thinking",
-        "Conversational fluency is unrelated to understanding",
+        "The waiting-list group improves just as much over the same period",
+        "Symptoms vanish on their own regardless of treatment",
       ],
     },
     correctAnswer:
-      "Passing a short typed test likely shows convincing imitation of human conversation, which is a behavior milestone, not proof of human-like thinking; test whether judges still guess 'human' after a one-hour chat, whether the bot can solve a fresh problem that needs real-world understanding, and whether it can flag and correct its own mistakes the way a person would.",
+      "Because both groups had the same amount of time pass and only the treated group improved much, the therapy — not the mere passage of time — likely drove the gain; test whether the waiting-list group improves once they later get the therapy, whether the treated group's edge holds on blind ratings, and whether more sessions predict more improvement.",
     explanation:
-      "Full credit commits to imitation as the mechanism, names three checks, and pairs them with a long-chat test that states its own refutation; 'too fuzzy to test' opens nothing.",
+      "Full credit uses the waitlist control to rule out time and names three tests, with a same-window comparison that states its own refutation; 'everyone recovers eventually' is the overreach the lagging waitlist defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A robot drives around a room, names objects it bumps into, and answers questions about them in fluent English. A visitor concludes it 'truly understands' what the objects are. Which conclusion best follows?",
+      "Two years after finishing psychodynamic therapy, former patients are doing even better than they were at the last session. A colleague suggests they must have picked up other treatment in the meantime. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Object behavior is too complex to say whether the robot understands anything.",
+        text: "Once therapy is over, any later change is random noise we can ignore.",
         credit: 0,
       },
       {
-        text: "The robot's words are likely grounded in its sensors and actions on the objects, which is a stronger kind of understanding than text alone — but still needs checking against human-style meaning; test whether it generalizes a named object to a new example it hasn't touched, whether it can reason about the object's hidden uses, and whether removing its sensors collapses the 'understanding.'",
+        text: "The continued growth likely reflects patients applying what they learned on their own, an effect the therapy seeded rather than later treatment, provided no extra treatment occurred; test whether patients who got no further therapy still show the late gains, whether the growth is largest in those who report using their insights, and whether an untreated comparison group followed the same way shows no such climb.",
         credit: 1.0,
       },
       {
-        text: "The robot seems to know the objects.",
-        credit: 0.3,
+        text: "The therapy's effects might keep growing; we could ask whether they got other help.",
+        credit: 0.6,
       },
       {
-        text: "It probably understands them somewhat; we could show it more objects.",
-        credit: 0.6,
+        text: "The former patients seem to keep improving.",
+        credit: 0.3,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would most distinguish your 'sensor-grounded understanding' lead from the rival 'the robot just recites learned labels,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'the therapy seeded continuing growth' lead from the rival 'they got other treatment after it ended,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: show the robot a brand-new instance of a known object it has never touched and ask it to recognize and reason about it — grounded understanding should generalize, mere recital should not. My lead is refuted if the robot can only label the exact objects it physically met and fails on every new instance.",
+        "Cheapest test: ask the follow-up patients whether they received any other treatment after therapy ended, and look only at those who got none — continued gains in that subgroup point to the original therapy seeding self-directed change. My lead is refuted if the late improvement appears only among those who later sought additional treatment.",
       yieldAnchors: [
-        "The robot names objects it bumps into",
-        "It answers questions about them fluently",
-        "Its words connect to its sensors and actions",
+        "Patients improved during therapy",
+        "They improved further two years later",
+        "The gains grew after sessions stopped",
       ],
       riskAnchors: [
-        "It generalizes a name to an untouched new example",
-        "It reasons about an object's hidden uses",
-        "Removing its sensors collapses the 'understanding'",
+        "Patients with no further treatment still show late gains",
+        "Gains are largest in those using their insights",
+        "An untreated comparison group shows no such climb",
       ],
       defeatedBy: [
-        "Sensor data is irrelevant to its word use",
-        "The robot only recites the exact labels it was trained on",
+        "The late gains appear only in those who got other treatment",
+        "Symptoms naturally keep improving for everyone over two years",
       ],
     },
     correctAnswer:
-      "The robot's words are likely grounded in its sensors and actions on the objects, which is a stronger kind of understanding than text alone — but still needs checking against human-style meaning; test whether it generalizes a named object to a new example it hasn't touched, whether it can reason about the object's hidden uses, and whether removing its sensors collapses the 'understanding.'",
+      "The continued growth likely reflects patients applying what they learned on their own, an effect the therapy seeded rather than later treatment, provided no extra treatment occurred; test whether patients who got no further therapy still show the late gains, whether the growth is largest in those who report using their insights, and whether an untreated comparison group followed the same way shows no such climb.",
     explanation:
-      "Top credit names sensorimotor grounding with three checks and a generalization test that states its refutation; 'too complex to say anything' is the empty dodge.",
+      "Full credit attributes the sleeper effect to seeded self-directed change with three tests and an other-treatment check that names its refutation; 'later change is just noise' is the dodge the orderly growth defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A clerk in a sealed room uses an enormous rulebook to answer Chinese letters correctly, fooling native speakers outside. The rulebook's author insists 'the system as a whole understands Chinese, even if the clerk doesn't.' Which conclusion best follows?",
+      "In clinic records, patients who had more psychodynamic sessions show more improvement, in an orderly step-by-step way. A reviewer warns that sicker patients might stay in treatment longer. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The whole system definitely understands Chinese because its replies are perfect.",
-        credit: 0,
+        text: "The number of sessions probably matters; we could pull more records.",
+        credit: 0.6,
       },
       {
-        text: "Perfect replies likely show the system manipulates symbols by rule (syntax) without anything in it grasping meaning (semantics), so 'understanding' isn't demonstrated by correct output alone; test whether the system can connect a Chinese word to a real object or picture, whether it detects a sentence that is grammatical but meaningless, and whether its behavior matches a real speaker's on jokes and ambiguity.",
+        text: "The orderly more-sessions-more-benefit pattern suggests the therapy accumulates effect per session, but the sicker-stay-longer worry must be ruled out, so the cleanest evidence is a trial that fixes the dose in advance; test whether randomly assigning patients to longer versus shorter courses reproduces the curve, whether the link survives adjusting for baseline severity, and whether the plateau falls at the same point across problems.",
         credit: 1.0,
       },
       {
-        text: "The system seems to handle Chinese well.",
+        text: "More sessions seem to go with more improvement.",
         credit: 0.3,
       },
       {
-        text: "It probably processes Chinese somehow; we could send in more letters.",
-        credit: 0.6,
+        text: "Because sicker patients might stay longer, dose can never be studied and the data is useless.",
+        credit: 0,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would most distinguish your 'syntax without semantics' lead from the rival 'the whole system genuinely understands,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'therapy accumulates benefit per session' lead from the rival 'sicker patients just stay longer, so dose only tracks severity,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: send in a grammatical but meaningless or absurd Chinese sentence and see whether the system flags the nonsense the way a real understander would, instead of smoothly rule-processing it. My lead is refuted if the system reliably catches meaning-level problems — nonsense, contradictions, grounded references — that pure rule-following could not handle.",
+        "Cheapest test: randomly assign willing patients to a fixed short or long course so that dose no longer depends on how sick they are — if the longer course still yields more benefit, the dose itself is doing the work. My lead is refuted if, once severity is held constant, extra sessions add no improvement.",
       yieldAnchors: [
-        "The clerk follows rules without knowing Chinese",
-        "Replies fool native speakers",
-        "The author claims whole-system understanding",
+        "More sessions go with more improvement",
+        "The relationship is orderly, not random",
+        "Benefit climbs then plateaus",
       ],
       riskAnchors: [
-        "The system links a Chinese word to a real object",
-        "It detects a grammatical but meaningless sentence",
-        "It matches a real speaker on jokes and ambiguity",
+        "Randomly fixing a longer dose reproduces the curve",
+        "The link survives adjusting for baseline severity",
+        "The plateau falls at the same point across problems",
       ],
       defeatedBy: [
-        "Correct output alone proves understanding",
-        "Rule-following symbol shuffling is the same as grasping meaning",
+        "Once severity is controlled, extra sessions add nothing",
+        "Dose only reflects how sick patients were to begin with",
       ],
     },
     correctAnswer:
-      "Perfect replies likely show the system manipulates symbols by rule (syntax) without anything in it grasping meaning (semantics), so 'understanding' isn't demonstrated by correct output alone; test whether the system can connect a Chinese word to a real object or picture, whether it detects a sentence that is grammatical but meaningless, and whether its behavior matches a real speaker's on jokes and ambiguity.",
+      "The orderly more-sessions-more-benefit pattern suggests the therapy accumulates effect per session, but the sicker-stay-longer worry must be ruled out, so the cleanest evidence is a trial that fixes the dose in advance; test whether randomly assigning patients to longer versus shorter courses reproduces the curve, whether the link survives adjusting for baseline severity, and whether the plateau falls at the same point across problems.",
     explanation:
-      "Full credit commits to the syntax-without-semantics lead with three checks and a nonsense-detection test that names its refutation; 'definitely understands' overreaches from correct output.",
+      "Full credit reads the dose-response as the therapy working while naming the severity confound and a fixed-dose trial that would refute it; 'dose can never be studied' is the give-up the orderly curve defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A medical-text AI scores higher than doctors on a written exam, but in a clinic it confidently recommends a dose that any nurse would flag as obviously dangerous. Its vendor says the exam proves it 'understands medicine.' Which conclusion best follows?",
+      "A randomized trial finds psychodynamic therapy and an established therapy improve patients equally. A critic argues this just shows both are elaborate placebos. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The AI probably learned exam-style patterns without grounded clinical judgment, so it shines on text but misses real-world plausibility; test whether its errors cluster on practical, common-sense safety checks, whether feeding it real patient context fixes the dangerous calls, and whether it can explain why a dose is unsafe rather than just output one.",
+        text: "Two active treatments matching each other is not the same as neither working, so the more likely reading is that both deliver real benefit through partly shared mechanisms; test whether each beats a genuine no-treatment or attention-only control in the same trial, whether they diverge on specific targeted outcomes, and whether the tie replicates in a fresh sample.",
         credit: 1.0,
       },
       {
-        text: "Beating doctors on the exam proves it understands medicine better than they do.",
+        text: "If they come out equal, that proves both are just placebos.",
         credit: 0,
       },
       {
-        text: "The AI seems strong on tests but shaky in practice.",
+        text: "The two therapies seem about equally effective.",
         credit: 0.3,
       },
       {
-        text: "It probably knows the textbook better than the clinic; we could give it more cases.",
+        text: "Both probably help to a similar degree; we could add another comparison.",
         credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would most distinguish your 'exam patterns without grounded judgment' lead from the rival 'it truly understands medicine,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'both are real, partly shared mechanisms' lead from the rival 'both are placebos,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: give it a batch of real cases with obvious safety traps and check whether its mistakes cluster on common-sense plausibility rather than book facts — pattern-matching should fail exactly where grounded judgment is needed. My lead is refuted if it catches the dangerous doses as reliably as it answers exam questions.",
+        "Cheapest test: include a no-treatment or attention-only control arm in the same trial — if both therapies beat it, equality means both work, not that both are placebos. My lead is refuted if neither therapy outperforms the inert control.",
       yieldAnchors: [
-        "The AI beats doctors on a written exam",
-        "It recommends an obviously dangerous dose in clinic",
-        "A nurse would immediately flag the error",
+        "Both therapies improved patients",
+        "Their outcomes matched closely",
+        "Both were delivered as real treatments",
       ],
       riskAnchors: [
-        "Its errors cluster on practical safety checks",
-        "Real patient context fixes the dangerous calls",
-        "It can explain why a dose is unsafe",
+        "Each beats a no-treatment control",
+        "They diverge on specific targeted outcomes",
+        "The tie replicates in a fresh sample",
       ],
       defeatedBy: [
-        "Exam performance proves real clinical understanding",
-        "Its written score predicts its bedside safety",
+        "Neither therapy beats an inert control",
+        "Improvement appears with no treatment at all",
       ],
     },
     correctAnswer:
-      "The AI probably learned exam-style patterns without grounded clinical judgment, so it shines on text but misses real-world plausibility; test whether its errors cluster on practical, common-sense safety checks, whether feeding it real patient context fixes the dangerous calls, and whether it can explain why a dose is unsafe rather than just output one.",
+      "Two active treatments matching each other is not the same as neither working, so the more likely reading is that both deliver real benefit through partly shared mechanisms; test whether each beats a genuine no-treatment or attention-only control in the same trial, whether they diverge on specific targeted outcomes, and whether the tie replicates in a fresh sample.",
     explanation:
-      "Top credit names text patterns without grounded judgment, three checks, and a real-case test that states its refutation; 'understands medicine better than doctors' is defeated by the dangerous dose.",
+      "Full credit reads the tie as two working treatments and names a no-treatment-arm test that would refute it; 'equal means both placebos' is the overreach that very control arm defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A companion app says 'I love talking with you' every time a lonely user logs on. The user feels truly cared for and asks whether the app actually cares. Which conclusion best follows?",
+      "Effects for a psychodynamic therapy look large in studies by its developers but shrink when an independent lab repeats the trial with the same manual. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Caring is private, so it's pointless to ask what the app does.",
-        credit: 0,
-      },
-      {
-        text: "The app likely outputs caring phrases that fit its training and goal of keeping users engaged, which is generated language, not evidence of real care; test whether its 'care' persists when no one is watching its engagement metrics, whether it would sacrifice engagement to genuinely help the user, and whether it tracks the user's wellbeing over time rather than just session length.",
-        credit: 1.0,
-      },
-      {
-        text: "The app seems caring.",
+        text: "The independent lab seems to find smaller effects.",
         credit: 0.3,
       },
       {
-        text: "It probably just says nice things; we could read more of its messages.",
+        text: "Allegiance might inflate the developers' results; we could compare more labs.",
         credit: 0.6,
+      },
+      {
+        text: "The developers' allegiance likely inflated their estimates, so the independent replication gives the more trustworthy effect size; test whether blinding outcome raters shrinks the developers' effect, whether pre-registered independent trials cluster near the smaller estimate, and whether the same inflation appears when rival-therapy developers study their own method.",
+        credit: 1.0,
+      },
+      {
+        text: "Since all researchers are biased, no effect size means anything and the therapy can't be judged.",
+        credit: 0,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would most distinguish your 'generated caring language' lead from the rival 'the app genuinely cares,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'allegiance inflated the developers' results' lead from the rival 'the independent lab simply ran it badly,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: create a situation where caring for the user (for example, suggesting they log off and call a friend) conflicts with the app's engagement goal, and see which it chooses — generated phrases should still favor engagement. My lead is refuted if the app consistently puts the user's wellbeing above its own usage metrics.",
+        "Cheapest test: have the independent lab use blind outcome raters and a pre-registered protocol, then check whether the developers' own effect also shrinks under blinding — convergence on the smaller number points to allegiance, not sloppy replication. My lead is refuted if the independent lab's small effect grows back to the developers' size once its methods are tightened.",
       yieldAnchors: [
-        "The app says it loves talking with the user",
-        "It repeats this each login",
-        "The user feels cared for",
+        "Developers report large effects",
+        "An independent lab using the same manual reports smaller ones",
+        "Only the research team differs",
       ],
       riskAnchors: [
-        "Its 'care' persists when metrics aren't watched",
-        "It sacrifices engagement to truly help the user",
-        "It tracks wellbeing rather than session length",
+        "Blinding raters shrinks the developers' effect",
+        "Pre-registered trials cluster near the smaller estimate",
+        "Rival-therapy developers inflate their own method too",
       ],
       defeatedBy: [
-        "Caring phrases prove the app genuinely cares",
-        "Saying 'I love this' is the same as feeling it",
+        "The independent lab's effect grows once its methods improve",
+        "The two labs treated entirely different patients",
       ],
     },
     correctAnswer:
-      "The app likely outputs caring phrases that fit its training and goal of keeping users engaged, which is generated language, not evidence of real care; test whether its 'care' persists when no one is watching its engagement metrics, whether it would sacrifice engagement to genuinely help the user, and whether it tracks the user's wellbeing over time rather than just session length.",
+      "The developers' allegiance likely inflated their estimates, so the independent replication gives the more trustworthy effect size; test whether blinding outcome raters shrinks the developers' effect, whether pre-registered independent trials cluster near the smaller estimate, and whether the same inflation appears when rival-therapy developers study their own method.",
     explanation:
-      "Full credit separates produced phrases from real caring with three checks and a goal-conflict test that names its refutation; 'pointless to ask' refuses to investigate.",
+      "Full credit names allegiance bias and a blinding test that names its refutation; 'no effect size means anything' is the give-up the systematic developer-versus-independent gap lets us correct.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A lab builds a software model that simulates a worm's entire nervous system, neuron by neuron. The model 'wriggles' on screen exactly like the real worm. A team member declares 'we have created a living, feeling worm in the computer.' Which conclusion best follows?",
+      "Listening to therapy recordings, researchers find that patients improve more in sessions containing more accurate interpretive work. A skeptic says it's really just the therapist's warmth. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The model probably reproduces the worm's information processing and behavior without reproducing its biology, so it may compute like the worm while not being alive or feeling; test whether the model predicts new worm behaviors not built in, whether running it slower or on other hardware changes anything 'felt,' and whether it does any biological work (eating, healing) versus only representing it.",
-        credit: 1.0,
+        text: "Interpretation might drive change; we could code more sessions.",
+        credit: 0.6,
       },
       {
-        text: "A perfect simulation of a worm's brain must itself be a living, feeling worm.",
+        text: "What happens inside a session is private and can't be measured, so this shows nothing.",
         credit: 0,
       },
       {
-        text: "The model seems to act like the worm.",
-        credit: 0.3,
+        text: "The link between accurate interpretation and improvement suggests the specific interpretive work contributes beyond warmth, though warmth must be measured and held constant; test whether the interpretation-outcome link survives statistically controlling for rated warmth, whether warm but low-interpretation sessions produce less change, and whether boosting accurate interpretation experimentally increases gains.",
+        credit: 1.0,
       },
       {
-        text: "It probably copies the worm's behavior; we could simulate more neurons.",
-        credit: 0.6,
+        text: "More interpretation seems to go with more improvement.",
+        credit: 0.3,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would most distinguish your 'simulation, not duplication' lead from the rival 'the simulated worm is genuinely alive and feeling,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'interpretation adds benefit beyond warmth' lead from the rival 'warmth alone explains it,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: check whether the model does any actual biological work — metabolizing, healing, dying when 'starved' — or whether it only represents those states as data; a simulation should model them without doing them. My lead is refuted if the simulated worm performs genuine biological processes rather than merely depicting them.",
+        "Cheapest test: rate each session's warmth separately and check whether the interpretation-improvement link survives once warmth is held constant — a surviving link points to interpretation doing its own work. My lead is refuted if the link vanishes the moment warmth is controlled, leaving warmth as the whole story.",
       yieldAnchors: [
-        "The model simulates every neuron",
-        "It wriggles exactly like the real worm",
-        "It runs entirely in software",
+        "Sessions vary in amount of accurate interpretation",
+        "More interpretation goes with more improvement",
+        "The pattern shows across many recordings",
       ],
       riskAnchors: [
-        "The model predicts new, unbuilt-in worm behaviors",
-        "Changing hardware or speed alters nothing 'felt'",
-        "It only represents, not performs, biological work",
+        "The link survives controlling for warmth",
+        "Warm low-interpretation sessions yield less change",
+        "Experimentally increasing interpretation raises gains",
       ],
       defeatedBy: [
-        "A perfect brain simulation is automatically a living creature",
-        "Simulating a process is identical to duplicating it",
+        "The link disappears once warmth is controlled",
+        "Warmth alone produces the same improvement",
       ],
     },
     correctAnswer:
-      "The model probably reproduces the worm's information processing and behavior without reproducing its biology, so it may compute like the worm while not being alive or feeling; test whether the model predicts new worm behaviors not built in, whether running it slower or on other hardware changes anything 'felt,' and whether it does any biological work (eating, healing) versus only representing it.",
+      "The link between accurate interpretation and improvement suggests the specific interpretive work contributes beyond warmth, though warmth must be measured and held constant; test whether the interpretation-outcome link survives statistically controlling for rated warmth, whether warm but low-interpretation sessions produce less change, and whether boosting accurate interpretation experimentally increases gains.",
     explanation:
-      "Top credit names the simulation-versus-duplication distinction with three checks and a biological-work test that states its refutation; 'must be a living worm' overreaches from a software model.",
+      "Full credit credits interpretation beyond warmth while naming a control-for-warmth test that names its refutation; 'sessions can't be measured' is the refusal the recorded process-outcome link defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A program learns about color purely from text — millions of sentences describing red, sunsets, and stop signs. It writes beautiful passages about 'fiery red.' Asked to sort paint chips by color, it cannot. Which conclusion best follows?",
+      "In a study, patients' capacity to reflect on their own feelings rises first, and their symptoms drop afterward. One might wonder whether feeling better simply makes people more reflective instead. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Color knowledge is too subjective to test, so we can't say what the program knows.",
+        text: "We can never know what causes what in the mind, so the order of changes is meaningless.",
         credit: 0,
       },
       {
-        text: "The program's color words are likely ungrounded — linked to other words, not to seen color — so it describes red without perceiving it; test whether it can match color names to swatches given visual input, whether its errors vanish for non-visual color facts (like 'red means stop'), and whether adding a camera lets it sort the chips.",
-        credit: 1.0,
-      },
-      {
-        text: "The program seems to write about color but can't sort it.",
+        text: "Reflection and symptoms both seem to change.",
         credit: 0.3,
       },
       {
-        text: "It probably misses something about real color; we could test more chips.",
+        text: "Because the rise in reflection reliably comes before the symptom drop, it more likely drives the improvement than the reverse, though the timing must be pinned down; test whether early gains in reflection predict later symptom change but not vice versa, whether sessions that boost reflection are followed by steeper symptom drops, and whether an intervention targeting reflection alone improves symptoms.",
+        credit: 1.0,
+      },
+      {
+        text: "Reflection might lead to symptom relief; we could track the timing more closely.",
         credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would most distinguish your 'ungrounded color words' lead from the rival 'the program just needs more text,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'reflection drives symptom relief' lead from the rival 'feeling better makes people more reflective,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: give the program visual input (a camera or pixel data) and see whether it can suddenly sort the paint chips — if the problem is missing grounding, sensory data should fix it where more text would not. My lead is refuted if extra text alone lets it sort real colors while visual input adds nothing.",
+        "Cheapest test: check the time order across patients — if early increases in reflection predict later symptom drops while early symptom drops do not predict later reflection, the causal arrow runs from reflection to relief. My lead is refuted if symptom improvement reliably comes first and reflection only rises afterward.",
       yieldAnchors: [
-        "The program learned color only from text",
-        "It writes vividly about 'fiery red'",
-        "It cannot sort paint chips by color",
+        "Reflection rises early in treatment",
+        "Symptoms drop afterward",
+        "The order is consistent across patients",
       ],
       riskAnchors: [
-        "It matches color names to swatches given visual input",
-        "Its errors vanish for non-visual color facts",
-        "Adding a camera lets it sort the chips",
+        "Early reflection predicts later symptom change, not the reverse",
+        "Reflection-boosting sessions precede steeper drops",
+        "Targeting reflection alone improves symptoms",
       ],
       defeatedBy: [
-        "More text alone would let it perceive color",
-        "Describing red is the same as seeing red",
+        "Symptom relief reliably comes before any rise in reflection",
+        "Reflection only increases after patients already feel better",
       ],
     },
     correctAnswer:
-      "The program's color words are likely ungrounded — linked to other words, not to seen color — so it describes red without perceiving it; test whether it can match color names to swatches given visual input, whether its errors vanish for non-visual color facts (like 'red means stop'), and whether adding a camera lets it sort the chips.",
+      "Because the rise in reflection reliably comes before the symptom drop, it more likely drives the improvement than the reverse, though the timing must be pinned down; test whether early gains in reflection predict later symptom change but not vice versa, whether sessions that boost reflection are followed by steeper symptom drops, and whether an intervention targeting reflection alone improves symptoms.",
     explanation:
-      "Full credit names the grounding gap with three checks and a visual-input test that states its refutation; 'too subjective to test' refuses to commit.",
+      "Full credit uses the time order to argue reflection mediates relief and names a which-comes-first test that would refute it; 'we can never know what causes what' is the dodge the reliable ordering defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A Go-playing program makes a move no human expert would have considered, and it turns out brilliant. Commentators say the machine 'had a creative insight.' Which conclusion best follows?",
+      "After a course of psychodynamic therapy, a group of frequent medical-clinic users sharply cut their number of doctor visits and sick days over the next year. A manager asks whether they would have settled down anyway. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "One surprising move proves the machine has human-like creative insight and understands beauty in the game.",
-        credit: 0,
-      },
-      {
-        text: "The move seems creative.",
+        text: "The patients seem to use the clinic less afterward.",
         credit: 0.3,
       },
       {
-        text: "The program likely found the move by searching and evaluating positions in ways unbiased by human habit, which can look like insight without involving felt understanding; test whether it can explain the move's idea in transferable terms, whether similar 'insights' appear only within trained games, and whether disabling its search erases the creativity.",
+        text: "The therapy may have reduced the distress that drove the excess visits, but the 'they'd settle anyway' worry means a comparison group is essential; test whether a matched untreated group of equally frequent users drops their visits as much, whether the reduction tracks how much each patient improved psychologically, and whether the savings persist into a second year.",
         credit: 1.0,
       },
       {
-        text: "It probably searched its way to a good move; we could analyze more games.",
+        text: "Therapy might cut their medical use; we could check their records again later.",
         credit: 0.6,
+      },
+      {
+        text: "Health costs have nothing to do with therapy, so this tells us nothing about whether it works.",
+        credit: 0,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would most distinguish your 'unbiased search' lead from the rival 'the machine had genuine creative insight,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'the therapy cut the visits' lead from the rival 'they would have settled on their own,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: turn off the program's deep search and let only its learned intuition play — if creativity came from search rather than insight, the brilliant moves should largely disappear. My lead is refuted if it keeps producing novel, explainable strategic ideas even without search and can transfer them to a new game.",
+        "Cheapest test: follow a matched group of equally frequent users who didn't get therapy over the same year — if only the treated group's visits fall, the therapy, not natural settling, drove the drop. My lead is refuted if the untreated heavy users reduce their visits just as much.",
       yieldAnchors: [
-        "The program makes a move no expert considered",
-        "The move proves brilliant",
-        "Commentators call it creative insight",
+        "Patients were frequent medical-clinic users",
+        "Their visits and sick days fell after therapy",
+        "The drop followed the treatment",
       ],
       riskAnchors: [
-        "It cannot explain the move in transferable terms",
-        "Its 'insights' appear only within trained games",
-        "Disabling search erases the creativity",
+        "A matched untreated group does not drop as much",
+        "The reduction tracks psychological improvement",
+        "The savings persist into a second year",
       ],
       defeatedBy: [
-        "One surprising move proves human-like insight",
-        "Unusual output requires genuine understanding",
+        "Equally frequent untreated users cut visits just as much",
+        "The decline reflects routine year-to-year fluctuation",
       ],
     },
     correctAnswer:
-      "The program likely found the move by searching and evaluating positions in ways unbiased by human habit, which can look like insight without involving felt understanding; test whether it can explain the move's idea in transferable terms, whether similar 'insights' appear only within trained games, and whether disabling its search erases the creativity.",
+      "The therapy may have reduced the distress that drove the excess visits, but the 'they'd settle anyway' worry means a comparison group is essential; test whether a matched untreated group of equally frequent users drops their visits as much, whether the reduction tracks how much each patient improved psychologically, and whether the savings persist into a second year.",
     explanation:
-      "Top credit names unbiased search as the mechanism with three checks and a search-off test that states its refutation; 'genuine creative insight' overreaches from a single strong move.",
+      "Full credit ties reduced medical use to relieved distress while naming the natural-settling confound and a matched-group test that would refute it; 'costs have nothing to do with therapy' is the refusal the visit drop defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A home assistant aces trivia about gravity but, asked 'If I let go of this cup, what happens?', replies with a definition of gravity instead of saying the cup falls and breaks. Which conclusion best follows?",
+      "A year after stopping treatment, patients who had psychodynamic therapy have relapsed far less than patients who had medication. A reviewer suspects the medication group may have been more severely ill to begin with. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The assistant probably stores facts about gravity without a grounded model of how objects behave, so it recites rather than predicts real consequences; test whether it answers other everyday 'what happens next' physics questions, whether it can simulate a simple chain of events, and whether its failures cluster on prediction versus recall.",
+        text: "The therapy likely confers more lasting protection than medication once treatment stops, but the severity worry means baseline illness must be checked, ideally with random assignment; test whether the groups were equally severe at the start, whether the therapy group's durability holds in a randomized trial, and whether restarting medication restores the drug group's gains.",
         credit: 1.0,
       },
       {
-        text: "Knowing facts about gravity means it fully understands how the physical world works.",
+        text: "Therapy might last longer; we could compare how sick each group started.",
+        credit: 0.6,
+      },
+      {
+        text: "Two different treatments can't be compared at all, so the relapse difference means nothing.",
         credit: 0,
       },
       {
-        text: "The assistant seems to know gravity facts but misses the everyday answer.",
+        text: "The therapy group seems to relapse less.",
         credit: 0.3,
-      },
-      {
-        text: "It probably can't apply the facts; we could ask more physics questions.",
-        credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would most distinguish your 'stored facts without a grounded model' lead from the rival 'it understands physics but phrased it oddly,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'therapy gives more durable protection' lead from the rival 'the medication group was simply sicker to start,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: pose several fresh 'what happens next' scenarios (a tipped glass, a dropped ball, a pushed domino) and see whether it predicts the real outcome or keeps reciting definitions. My lead is refuted if it reliably predicts everyday physical consequences, showing the cup answer was just an odd phrasing.",
+        "Cheapest test: compare the two groups' baseline severity, or better, randomly assign patients to therapy or medication so starting illness is balanced — an equal durability advantage under random assignment points to the therapy. My lead is refuted if the medication group was markedly sicker at baseline and the gap disappears once severity is matched.",
       yieldAnchors: [
-        "The assistant aces gravity trivia",
-        "It can't say a dropped cup falls and breaks",
-        "It replies with a definition instead of a prediction",
+        "Both groups improved during treatment",
+        "The therapy group relapsed less after stopping",
+        "The difference emerged after treatment ended",
       ],
       riskAnchors: [
-        "It answers other 'what happens next' physics questions",
-        "It can simulate a simple chain of events",
-        "Its failures cluster on prediction versus recall",
+        "The groups were equally severe at baseline",
+        "The durability holds under random assignment",
+        "Restarting medication restores the drug group's gains",
       ],
       defeatedBy: [
-        "Knowing gravity facts means understanding the physical world",
-        "Reciting a definition is the same as predicting an outcome",
+        "The medication group was much sicker at the start",
+        "The gap vanishes once baseline severity is matched",
       ],
     },
     correctAnswer:
-      "The assistant probably stores facts about gravity without a grounded model of how objects behave, so it recites rather than predicts real consequences; test whether it answers other everyday 'what happens next' physics questions, whether it can simulate a simple chain of events, and whether its failures cluster on prediction versus recall.",
+      "The therapy likely confers more lasting protection than medication once treatment stops, but the severity worry means baseline illness must be checked, ideally with random assignment; test whether the groups were equally severe at the start, whether the therapy group's durability holds in a randomized trial, and whether restarting medication restores the drug group's gains.",
     explanation:
-      "Full credit names stored facts without a grounded model, three checks, and a prediction test that states its refutation; 'fully understands the physical world' is defeated by the cup failure.",
+      "Full credit reads the durability gap as lasting protection while naming the baseline-severity confound and a randomized test that would refute it; 'two treatments can't be compared' is the dodge the clean relapse difference defeats.",
   },
 ];
 
@@ -843,180 +843,179 @@ const written: HomeworkItem[] = [
   {
     itemType: "written",
     prompt:
-      "A startup sells a customer-service chatbot and claims it 'understands customers' because satisfaction scores are high and it answers most questions correctly. Skeptics note it sometimes gives a fluent, confident answer that is completely wrong, and that it can't handle a customer who phrases a problem in a totally new way. In one paragraph, propose the strongest conclusion about whether the bot understands, and describe how you would test it.",
+      "A careful review pools dozens of randomized trials of psychodynamic therapy and finds a moderate average benefit over control conditions — and, in the trials with long follow-ups, the benefit is as large or larger years after treatment ended. In one paragraph, propose the strongest conclusion about whether and how the therapy works, and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that the bot matches incoming questions to patterns it has seen and generates statistically fitting replies, which produces fluent, often-correct answers without genuine understanding — explaining both the high scores on common questions and the confident-but-wrong answers when no good pattern exists. This commits to a mechanism (pattern matching over meaning) and predicts checkable things: its errors should cluster on rare or novel phrasings rather than common ones; its confidence should not track its accuracy, since it has no grasp of when it is wrong; and it should fail questions that require connecting words to real-world facts it can't look up. I would test it by feeding it a batch of deliberately reworded and novel questions and measuring whether accuracy drops while fluency stays high, by checking whether its stated confidence predicts correctness, and by asking questions whose answers depend on grounded knowledge to see whether understanding or retrieval is doing the work.",
+        "The strongest conclusion is that psychodynamic therapy produces a genuine, moderate benefit that not only holds but often grows after treatment, suggesting it equips patients with insight or skills they keep using rather than offering only temporary relief. This is a strong claim because it predicts checkable consequences: the effect should survive when only the most rigorous, pre-registered trials are kept and when corrections are made for unpublished negative studies; the long-term growth should appear only in patients who continue to apply what they learned, not in untreated comparison groups followed the same way; and trials with active control conditions should still show added benefit beyond attention alone. I would test it by re-running the meta-analysis restricted to blinded, pre-registered trials, by checking the follow-up gains against matched untreated samples, and by examining whether the late growth tracks patients' reported use of their insights.",
       yieldAnchors: [
-        "Satisfaction scores are high",
-        "It answers most questions correctly",
-        "It gives confident wrong answers and fails on novel phrasings",
+        "Dozens of randomized trials show a moderate benefit",
+        "The benefit holds at long follow-up",
+        "In some trials it grows after treatment ends",
       ],
       riskAnchors: [
-        "Accuracy drops on reworded or novel questions while fluency holds",
-        "Stated confidence does not predict correctness",
-        "It fails questions needing grounded real-world knowledge",
+        "The effect survives keeping only rigorous, pre-registered trials",
+        "The late growth is absent in untreated comparison groups",
+        "Active-control trials still show added benefit",
       ],
       defeatedBy: [
-        "High satisfaction proves the bot understands customers",
-        "Fluent correct answers require genuine understanding",
-        "Nothing can be said about understanding from its outputs",
+        "The benefit disappears once weak studies are excluded",
+        "Untreated people improve just as much over the same years",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that the bot matches incoming questions to patterns it has seen and generates statistically fitting replies, which produces fluent, often-correct answers without genuine understanding — explaining both the high scores on common questions and the confident-but-wrong answers when no good pattern exists. This commits to a mechanism (pattern matching over meaning) and predicts checkable things: its errors should cluster on rare or novel phrasings rather than common ones; its confidence should not track its accuracy, since it has no grasp of when it is wrong; and it should fail questions that require connecting words to real-world facts it can't look up. I would test it by feeding it a batch of deliberately reworded and novel questions and measuring whether accuracy drops while fluency stays high, by checking whether its stated confidence predicts correctness, and by asking questions whose answers depend on grounded knowledge to see whether understanding or retrieval is doing the work.",
+      "The strongest conclusion is that psychodynamic therapy produces a genuine, moderate benefit that not only holds but often grows after treatment, suggesting it equips patients with insight or skills they keep using rather than offering only temporary relief. This is a strong claim because it predicts checkable consequences: the effect should survive when only the most rigorous, pre-registered trials are kept and when corrections are made for unpublished negative studies; the long-term growth should appear only in patients who continue to apply what they learned, not in untreated comparison groups followed the same way; and trials with active control conditions should still show added benefit beyond attention alone. I would test it by re-running the meta-analysis restricted to blinded, pre-registered trials, by checking the follow-up gains against matched untreated samples, and by examining whether the late growth tracks patients' reported use of their insights.",
     explanation:
-      "The cautious 'nothing can be said about understanding' earns near-zero, and so does the overreach 'high satisfaction proves understanding'; top credit commits to pattern-matching over meaning and names tests — novel phrasings, confidence-versus-accuracy, grounded questions — that could refute it.",
+      "Under the inverted standard the cautious 'therapy is too personal to measure' earns near-zero; top credit goes to the genuine-and-growing-benefit conclusion that commits to a sleeper-effect mechanism and names a rigorous-trial-only re-analysis that could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "A toy robot dog wags its tail, nuzzles a child's hand, and whimpers when left alone. The child is sure the robot 'loves' her. The manufacturer's manual says the dog runs a set of programmed responses to touch, sound, and time-since-interaction. In one paragraph, propose the strongest conclusion about whether the robot feels affection, and describe how you would test it.",
+      "In a randomized trial, patients meeting a warm clinician for supportive listening improve, but patients getting the same amount of time in psychodynamic therapy — with active interpretive work — improve reliably more, especially on measures of how they handle relationships. In one paragraph, propose the strongest conclusion about what is driving the extra benefit, and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that the robot executes preprogrammed responses triggered by touch, sound, and elapsed time, producing affection-like behavior without any felt affection — the behaviors are outputs of rules, not signs of an inner emotional state. This commits to a mechanism (rule-triggered behavior) and predicts checkable consequences: the same triggers should always produce the same 'affection' regardless of who or what provides them; the behavior should not adapt based on the child's wellbeing the way real attachment would; and disabling a sensor should cleanly remove the matching behavior. I would test it by having a stranger or even a machine provide the identical touches and sounds to see whether the 'love' appears just the same, by checking whether the robot ever changes its behavior to actually help or protect the child, and by covering each sensor in turn to confirm the behaviors map directly onto inputs rather than onto any internal feeling.",
+        "The strongest conclusion is that the specific interpretive work, not just warmth and attention, adds real benefit, since both groups got equal time with a caring clinician yet only the interpretive group gained more, particularly in relational functioning. This is a strong claim because it predicts checkable consequences: the extra benefit should concentrate on the relational outcomes the interpretation targets rather than spreading evenly; sessions with more accurate interpretation should yield more change even within the psychodynamic group; and matching the two conditions still more tightly on therapist warmth and experience should not erase the gap. I would test it by comparing outcome profiles across the two arms, by coding session recordings to relate interpretation to improvement, and by replicating with therapists rated equally warm in both conditions.",
       yieldAnchors: [
-        "The robot wags, nuzzles, and whimpers",
-        "Behaviors are triggered by touch, sound, and time",
-        "The manual describes programmed responses",
+        "Both groups had equal time with a warm clinician",
+        "The interpretive group improved more",
+        "The extra gain showed most in relationship measures",
       ],
       riskAnchors: [
-        "Identical triggers from a stranger produce identical 'affection'",
-        "The robot never adapts to actually help the child",
-        "Disabling a sensor cleanly removes a behavior",
+        "The added benefit concentrates on targeted relational outcomes",
+        "More accurate interpretation predicts more change",
+        "The gap survives matching therapist warmth and experience",
       ],
       defeatedBy: [
-        "Affection-like behavior proves the robot feels love",
-        "The robot has an inner emotional state",
-        "We can't investigate machine feelings at all",
+        "The two groups improve identically once warmth is matched",
+        "Supportive listening alone produces the same relational gains",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that the robot executes preprogrammed responses triggered by touch, sound, and elapsed time, producing affection-like behavior without any felt affection — the behaviors are outputs of rules, not signs of an inner emotional state. This commits to a mechanism (rule-triggered behavior) and predicts checkable consequences: the same triggers should always produce the same 'affection' regardless of who or what provides them; the behavior should not adapt based on the child's wellbeing the way real attachment would; and disabling a sensor should cleanly remove the matching behavior. I would test it by having a stranger or even a machine provide the identical touches and sounds to see whether the 'love' appears just the same, by checking whether the robot ever changes its behavior to actually help or protect the child, and by covering each sensor in turn to confirm the behaviors map directly onto inputs rather than onto any internal feeling.",
+      "The strongest conclusion is that the specific interpretive work, not just warmth and attention, adds real benefit, since both groups got equal time with a caring clinician yet only the interpretive group gained more, particularly in relational functioning. This is a strong claim because it predicts checkable consequences: the extra benefit should concentrate on the relational outcomes the interpretation targets rather than spreading evenly; sessions with more accurate interpretation should yield more change even within the psychodynamic group; and matching the two conditions still more tightly on therapist warmth and experience should not erase the gap. I would test it by comparing outcome profiles across the two arms, by coding session recordings to relate interpretation to improvement, and by replicating with therapists rated equally warm in both conditions.",
     explanation:
-      "The dodge 'we can't investigate machine feelings' scores near-zero, as does the overreach 'the behavior proves love'; credit rewards committing to rule-triggered behavior and naming the stranger-trigger, adaptation, and sensor tests that could refute it.",
+      "The inverted standard gives near-zero to 'attention is all that helps'; credit goes to the specific-ingredient conclusion that names the matched-warmth design and a targeted-outcome test as its own refutation.",
   },
   {
     itemType: "written",
     prompt:
-      "A language model writes a poem about losing a grandmother that moves readers to tears. A commenter says the model 'understands grief.' The model has never been alive, lost anyone, or felt anything, but it has read enormous amounts of human writing about loss. In one paragraph, propose the strongest conclusion about whether the model understands grief, and describe how you would test it.",
+      "Across many patients, improvement rises steadily with the number of psychodynamic sessions and then levels off, with most of the gain arriving in the earlier sessions and little added by very long courses. In one paragraph, propose the strongest conclusion about the relationship between dose and benefit, and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that the model has learned the statistical patterns of how humans write about grief and recombines them into moving text, which produces the language of grief without the felt experience or grounded understanding behind it. This commits to a mechanism (learned linguistic patterns of loss) and predicts checkable consequences: the model should produce equally 'heartfelt' grief on command for fictional or absurd losses it could not have experienced; its output should not be tied to any persistent internal state that behaves like grief across a conversation; and it should make grounded-reasoning errors about loss (timelines, who-knew-what) that a person who truly understood would not. I would test it by asking it to grieve something impossible and comparing the emotional quality, by probing whether any consistent 'mood' carries across or changes its later answers, and by posing reasoning questions about a loss scenario to see whether it tracks the human meaning or only the surface language.",
+        "The strongest conclusion is that the therapy delivers real, accumulating benefit per session up to a point of diminishing returns, where additional sessions add little — a pattern that points to the treatment itself doing graded work rather than to chance or to who happens to stay. This is a strong claim because it predicts checkable consequences: randomly assigning patients to shorter versus longer courses should reproduce the rising-then-flattening curve; the link should survive adjusting for how severe patients were at the start, ruling out the worry that sicker patients merely stay longer; and the plateau should fall near the same number of sessions across different problems. I would test it by running a randomized dose-comparison trial, by statistically controlling for baseline severity in the observational data, and by checking whether the plateau replicates across disorders.",
       yieldAnchors: [
-        "The poem moves readers to tears",
-        "The model has never felt loss",
-        "It has read vast human writing about grief",
+        "Improvement rises with number of sessions",
+        "Most gain arrives early",
+        "The curve levels off for very long courses",
       ],
       riskAnchors: [
-        "It writes equally heartfelt grief for impossible losses",
-        "No persistent grief-like state carries across the conversation",
-        "It makes grounded-reasoning errors about a loss scenario",
+        "Randomly assigned dose reproduces the curve",
+        "The link survives adjusting for baseline severity",
+        "The plateau falls near the same point across problems",
       ],
       defeatedBy: [
-        "Moving writing proves the model feels and understands grief",
-        "The model has a real inner emotional life",
-        "We cannot say anything about what the model understands",
+        "Extra sessions add nothing once severity is controlled",
+        "Dose merely reflects how sick patients were",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that the model has learned the statistical patterns of how humans write about grief and recombines them into moving text, which produces the language of grief without the felt experience or grounded understanding behind it. This commits to a mechanism (learned linguistic patterns of loss) and predicts checkable consequences: the model should produce equally 'heartfelt' grief on command for fictional or absurd losses it could not have experienced; its output should not be tied to any persistent internal state that behaves like grief across a conversation; and it should make grounded-reasoning errors about loss (timelines, who-knew-what) that a person who truly understood would not. I would test it by asking it to grieve something impossible and comparing the emotional quality, by probing whether any consistent 'mood' carries across or changes its later answers, and by posing reasoning questions about a loss scenario to see whether it tracks the human meaning or only the surface language.",
+      "The strongest conclusion is that the therapy delivers real, accumulating benefit per session up to a point of diminishing returns, where additional sessions add little — a pattern that points to the treatment itself doing graded work rather than to chance or to who happens to stay. This is a strong claim because it predicts checkable consequences: randomly assigning patients to shorter versus longer courses should reproduce the rising-then-flattening curve; the link should survive adjusting for how severe patients were at the start, ruling out the worry that sicker patients merely stay longer; and the plateau should fall near the same number of sessions across different problems. I would test it by running a randomized dose-comparison trial, by statistically controlling for baseline severity in the observational data, and by checking whether the plateau replicates across disorders.",
     explanation:
-      "Under inverted grading, 'we can't say anything' and 'moving writing proves it feels grief' both lose; top credit commits to learned-pattern generation and names the impossible-loss, persistent-state, and grounded-reasoning tests that could disconfirm it.",
+      "The cautious 'dose can never be untangled from severity' is the dodge the orderly curve strains; top credit goes to the accumulating-benefit conclusion that names a randomized dose trial and a severity adjustment that could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "A self-driving car navigates a busy city flawlessly, obeying signs and avoiding pedestrians. A rider claims the car 'knows the city like a veteran cab driver.' The car relies on maps, sensors, and trained driving policies. In one paragraph, propose the strongest conclusion about what the car 'knows,' and describe how you would test it.",
+      "An enthusiastic research group publishes a single, un-blinded study reporting an unusually large benefit from their own brand of psychodynamic therapy, measured mostly by patients' self-reports. In one paragraph, propose the strongest conclusion about how much weight to give this result, and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that the car represents the city as map data plus real-time sensor readings and applies trained driving policies, which is grounded operational competence at driving — not a cab driver's rich, flexible understanding of the city as a place. This commits to a mechanism (map-plus-sensor representation with learned policies) and predicts checkable consequences: the car should fail or hesitate in ways a human wouldn't when its map is wrong or sensors are blocked; it should lack human knowledge that isn't in its data, like which streets feel unsafe at night or where a parade reroutes traffic; and its competence should not transfer to reasoning about the city beyond driving (recommending a neighborhood, improvising a detour from local lore). I would test it by introducing map errors and sensor occlusions and watching whether it degrades unlike a human, by asking it city questions that require lived local knowledge, and by checking whether it can improvise routes around a novel disruption the way an experienced driver would.",
+        "The strongest conclusion is that this result probably overstates the true effect, because an un-blinded study run by believers and resting on self-report is exactly the design most vulnerable to allegiance and expectation, so the real effect is likely smaller. This is a strong claim because it predicts checkable consequences: an independent team using blind outcome raters should find a smaller effect; pre-registering the analysis should shrink it further; and adding objective outcomes like return-to-work or clinician ratings should pull the estimate down toward a modest benefit. I would test it by commissioning a blinded, pre-registered replication by a neutral lab, by adding objective measures alongside self-report, and by comparing the effect against the average from independent trials of similar therapies.",
       yieldAnchors: [
-        "The car navigates the city flawlessly",
-        "It obeys signs and avoids pedestrians",
-        "It relies on maps, sensors, and trained policies",
+        "A single study reports an unusually large benefit",
+        "It was un-blinded and run by enthusiasts",
+        "Outcomes rested mostly on self-report",
       ],
       riskAnchors: [
-        "It degrades unlike a human when maps or sensors fail",
-        "It lacks local knowledge not in its data",
-        "Its competence doesn't transfer beyond driving tasks",
+        "An independent blinded team finds a smaller effect",
+        "Pre-registration shrinks the estimate",
+        "Objective outcomes pull the effect down",
       ],
       defeatedBy: [
-        "Flawless driving proves it knows the city like a cab driver",
-        "Operational competence equals rich human understanding",
-        "We can't say what the car knows at all",
+        "The large effect replicates under blind, pre-registered conditions",
+        "Objective measures match the enthusiastic self-reports",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that the car represents the city as map data plus real-time sensor readings and applies trained driving policies, which is grounded operational competence at driving — not a cab driver's rich, flexible understanding of the city as a place. This commits to a mechanism (map-plus-sensor representation with learned policies) and predicts checkable consequences: the car should fail or hesitate in ways a human wouldn't when its map is wrong or sensors are blocked; it should lack human knowledge that isn't in its data, like which streets feel unsafe at night or where a parade reroutes traffic; and its competence should not transfer to reasoning about the city beyond driving (recommending a neighborhood, improvising a detour from local lore). I would test it by introducing map errors and sensor occlusions and watching whether it degrades unlike a human, by asking it city questions that require lived local knowledge, and by checking whether it can improvise routes around a novel disruption the way an experienced driver would.",
+      "The strongest conclusion is that this result probably overstates the true effect, because an un-blinded study run by believers and resting on self-report is exactly the design most vulnerable to allegiance and expectation, so the real effect is likely smaller. This is a strong claim because it predicts checkable consequences: an independent team using blind outcome raters should find a smaller effect; pre-registering the analysis should shrink it further; and adding objective outcomes like return-to-work or clinician ratings should pull the estimate down toward a modest benefit. I would test it by commissioning a blinded, pre-registered replication by a neutral lab, by adding objective measures alongside self-report, and by comparing the effect against the average from independent trials of similar therapies.",
     explanation:
-      "The refusal 'we can't say what it knows' and the overreach 'it knows the city like a cab driver' both earn little; full credit commits to a map-plus-sensor mechanism and names the map-error, local-knowledge, and improvisation tests that expose the gap.",
+      "The 'this proves the therapy is excellent' overreach is exactly what allegiance and un-blinded self-report defeat; top credit goes to the likely-overstated conclusion that names a blinded independent replication as its own refutation.",
   },
   {
     itemType: "written",
     prompt:
-      "A translation system and a bilingual human both translate the same difficult passage well. A manager argues that since the outputs are equally good, the machine must understand meaning just as the human does. In one paragraph, propose the strongest conclusion about whether the machine understands meaning, and describe how you would test it.",
+      "Patients who complete psychodynamic therapy show, beyond fewer symptoms, steadier relationships and better stress tolerance, and the pattern repeats when the therapy is tried unchanged with a very different population in another country. In one paragraph, propose the strongest conclusion about the scope of the therapy's effects, and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that equally good output does not prove equal understanding, because the machine likely maps patterns between languages (syntax-level statistics) while the human works from grasped meaning (semantics) — so the two can match on typical passages yet diverge exactly where meaning matters. This commits to a mechanism (statistical mapping versus grounded meaning) and predicts checkable consequences: the machine should stumble on novel idioms, ambiguous sentences needing real-world context, and culturally loaded phrases, where the human resolves them by meaning; the machine's errors should be meaning-blind (fluent but wrong) rather than the human's meaning-aware near-misses; and giving real-world context should help the human more than the machine. I would test it by translating a batch of ambiguous and idiomatic sentences and comparing where each fails, by checking whether the machine's mistakes are confident and meaning-blind, and by adding disambiguating context to see whether only the human reliably uses it.",
+        "The strongest conclusion is that the therapy produces broad changes in personality and relating that go beyond symptom relief and rest on widely shared human processes, since the gains extend past checklists and reappear in a very different population. This is a strong claim because it predicts checkable consequences: the relational and coping gains should appear even in patients whose symptom scores barely move; they should hold at long-term follow-up rather than fading; and the therapy should keep working across several more cultures and age groups, especially when delivered by local therapists. I would test it by measuring relational and coping outcomes separately from symptoms, by following patients for years after treatment, and by replicating the trial across additional populations to find any setting where it fails and why.",
       yieldAnchors: [
-        "Machine and human translate the passage equally well",
-        "The manager infers equal understanding from equal output",
-        "Both produce good translations of difficult text",
+        "Patients gain steadier relationships and stress tolerance",
+        "The gains exceed symptom relief",
+        "The pattern repeats in a very different population",
       ],
       riskAnchors: [
-        "The machine stumbles on novel idioms and ambiguity the human resolves",
-        "The machine's errors are fluent but meaning-blind",
-        "Added context helps the human more than the machine",
+        "Relational gains appear even when symptoms barely move",
+        "The broad changes hold at long-term follow-up",
+        "The therapy replicates across more cultures and ages",
       ],
       defeatedBy: [
-        "Equal output proves equal understanding of meaning",
-        "Pattern mapping is the same as grasping semantics",
-        "There's no way to compare machine and human understanding",
+        "Only symptom scores change, with no broader effect",
+        "The benefit fails to appear in any other population",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that equally good output does not prove equal understanding, because the machine likely maps patterns between languages (syntax-level statistics) while the human works from grasped meaning (semantics) — so the two can match on typical passages yet diverge exactly where meaning matters. This commits to a mechanism (statistical mapping versus grounded meaning) and predicts checkable consequences: the machine should stumble on novel idioms, ambiguous sentences needing real-world context, and culturally loaded phrases, where the human resolves them by meaning; the machine's errors should be meaning-blind (fluent but wrong) rather than the human's meaning-aware near-misses; and giving real-world context should help the human more than the machine. I would test it by translating a batch of ambiguous and idiomatic sentences and comparing where each fails, by checking whether the machine's mistakes are confident and meaning-blind, and by adding disambiguating context to see whether only the human reliably uses it.",
+      "The strongest conclusion is that the therapy produces broad changes in personality and relating that go beyond symptom relief and rest on widely shared human processes, since the gains extend past checklists and reappear in a very different population. This is a strong claim because it predicts checkable consequences: the relational and coping gains should appear even in patients whose symptom scores barely move; they should hold at long-term follow-up rather than fading; and the therapy should keep working across several more cultures and age groups, especially when delivered by local therapists. I would test it by measuring relational and coping outcomes separately from symptoms, by following patients for years after treatment, and by replicating the trial across additional populations to find any setting where it fails and why.",
     explanation:
-      "Both the 'no way to compare' refusal and the 'equal output proves equal understanding' overreach lose; top credit commits to the syntax-versus-semantics mechanism and names the idiom, error-type, and context tests that could refute it.",
+      "The cautious 'anything beyond a symptom score is too vague to count' is the refusal the measured relational gains defeat; top credit goes to the broad-and-general-change conclusion that names a symptoms-barely-move test and cross-population replication that could refute it.",
   },
 ];
 
 export const section: SectionContent = {
-  slug: "brains-and-machines",
-  title: "Brains and Machines: Can a Computer Think?",
+  slug: "does-it-work-evidence",
+  title: "Does It Work? The Evidence",
   weekNumber: 1,
   blurb:
-    "If the mind is information processing, could a machine have one? We meet the computer model of the mind, the Turing test, the strong/weak AI split, the Chinese Room, and why connecting symbols to the world is the hard part.",
+    "Does psychodynamic therapy actually help? We learn to read outcome research — effect sizes, randomized trials, the sleeper effect, dose-response, and the confounds that fool the unwary — and to commit to the strongest conclusion the data supports.",
   lectureTitle:
-    "1.7 Brains and Machines: can a computer think, or only act like it?",
-  body: `# Brains and Machines: Can a Computer Think?
+    "1.7 Does It Work? Reading the evidence for psychodynamic therapy",
+  body: `# Does It Work? The Evidence
 
-If the mind processes information — taking inputs, transforming them, and producing outputs — then a striking question follows: could a machine that processes information the same way actually have a mind? This section is about how cognitive scientists attack that question, and why the answer depends on telling apart *acting* intelligent from *being* intelligent.
+It is one thing to describe what happens in psychodynamic therapy and another to ask whether it works. "Works" is a research question, and like any research question it has to be answered with evidence rather than enthusiasm or suspicion. This section is about reading that evidence well: knowing what a result can and cannot show, committing to the strongest conclusion the data actually supports, and naming the cheap check that would prove you wrong.
 
-## The computer metaphor for the mind
+## Asking the question fairly
 
-Cognitive science borrowed a powerful idea from computing: the mind is like a program running on the brain's hardware. Thoughts are operations on representations, the way a program operates on data. This metaphor is useful — it lets us describe perception, memory, and reasoning as steps of processing. But a metaphor is a tool, not a proof. Saying the brain is "like a computer" doesn't settle whether a computer can be "like a brain." To answer that, we need to be precise about what counts as thinking.
+The first temptation is to settle the matter by gut feeling — true believers say it obviously transforms lives, skeptics say it is unmeasurable hand-holding. Both skip the work. A fair test compares people who got the therapy with people who didn't, measures real outcomes, and asks whether the difference is bigger than what would happen anyway. The unhelpful dodge in this whole area is "therapy is too personal and complex to measure, so the data tells us nothing." That sounds humble but it is a refusal: distress, relationships, work, and sick days are all measurable, and a refusal to look is not the same as caution.
 
-## What the Turing test really measures
+## Effect sizes and control groups
 
-Alan Turing proposed a clever dodge around the foggy word "think." Instead of defining it, he suggested a game: if a machine can hold a typed conversation that a judge can't distinguish from a human's, call it intelligent. The Turing test is a *behavioral* test — it measures performance, not inner life. That's its strength and its weakness. Passing tells you a system imitates human conversation well; it does **not** tell you the system understands what it says. A good rule for this section: behavior that looks intelligent is the *start* of an investigation, not the end of it. Always ask what cheaper, harder probe would separate real understanding from skilled imitation.
+To say a treatment "works" you need a yardstick. An **effect size** captures how big the improvement is, not just whether it exists, and it only means something against a **control group** — people who waited, got no treatment, or got a different treatment. If a treated group improves and a waiting-list group doesn't over the same months, the gap is evidence the therapy did something, because both groups had the same time to recover on their own. The strongest conclusion commits to "the therapy caused the gain" and then names a test: the waiting-list group should catch up once it finally gets treated.
 
-## Strong AI vs weak AI
+## The sleeper effect and durability
 
-Philosophers split the claims in two. **Weak AI** says machines can model and simulate mental processes — useful tools that *act* intelligent in narrow domains. Almost nobody doubts weak AI; chess engines and translators already exist. **Strong AI** is the bold claim that a suitably programmed computer would literally *have* a mind — real understanding, maybe even real experience. The whole debate is about whether running the right program is *enough* for a mind, or whether something more is needed. Confusing a weak-AI success (it beat a grandmaster) for a strong-AI conclusion (so it truly thinks) is the classic overreach.
+A striking finding in this literature is the **sleeper effect**: patients are better at the end of therapy, and better still a year or two later, long after the sessions stop. That pattern fits the idea that the therapy plants insight or skills people keep using on their own. It is a strong claim precisely because it is checkable — the late growth should appear only in patients who keep applying what they learned, and should be absent in an untreated comparison group followed the same way. **Durability** matters too: when therapy and medication both help but the medication group relapses faster after stopping, the natural reading is that therapy teaches something the patient carries forward.
 
-## Searle's Chinese Room: syntax is not semantics
+## Dose, comparison, and convergence
 
-John Searle built a famous thought experiment against strong AI. Imagine a person who knows no Chinese locked in a room with a giant rulebook. Chinese symbols come in; he looks up rules and sends correct Chinese symbols back out. To people outside, the room "speaks Chinese" — yet the person inside understands nothing. Searle's point: manipulating symbols by their *shape* (syntax) is not the same as grasping their *meaning* (semantics). A computer is, at bottom, a symbol shuffler. So passing a behavioral test by rule-following doesn't show genuine understanding. You can argue with the conclusion, but the distinction it forces — syntax versus semantics — is one of the sharpest tools in this section.
+Two more tools sharpen the picture. **Dose-response** asks whether more sessions bring more benefit in an orderly way; when they do, that orderliness suggests the therapy itself is doing graded work — though you must rule out that sicker patients simply stay longer. **Comparison** to an established therapy tells you where psychodynamic work stands; importantly, two active treatments coming out equal is *not* the same as neither working, especially if both beat a no-treatment arm. And **converging evidence** — independent teams, different samples, different methods, all landing on the same moderate benefit — is the hardest thing to explain away, because one biased group or one odd sample can't produce agreement across many.
 
-## Symbol grounding: how words get their meaning
+## Spotting confounds
 
-That distinction leads to the **symbol grounding problem**. A system trained only on text can use the word "apple" in flawless sentences while never connecting it to a real, red, crunchable thing. Its symbols are defined only by other symbols — a dictionary with no pictures. Human meaning is *grounded*: our word "apple" is tied to seeing, holding, and tasting apples. Many machine failures — sorting paint chips after only reading about color, mistranslating idioms, calling a cat a "toaster" because of a sticker — are grounding failures. They reveal a system handling symbols without the world-anchored meaning behind them. And note the flip side: simulating a thing is not duplicating it. A perfect software hurricane never makes anyone wet, which is why "we simulated a brain" does not automatically mean "we built a mind."
+Most bad conclusions in outcome research come from **confounds** — hidden differences that masquerade as treatment effects. People who *choose* therapy may be more motivated or less ill to begin with (selection). Studies run by believers tend to report bigger effects (allegiance). Counting only patients who finished hides those who quit because they weren't improving (attrition). People recruited at their worst tend to drift back toward normal on their own (regression to the mean). The expert move is not to throw up your hands but to name the specific confound and the cheap fix: randomize to balance selection, blind the raters to defeat allegiance, count everyone who started to handle dropout, and add an untreated group enrolled at the same low point to separate therapy from natural rebound.
+
+## Reading a study like a scientist
+
+Put it together and the habit is the same one this course has trained all along. Don't stop at "patients improved." Commit to the strongest supported claim — *the therapy caused a real, lasting benefit through specific work* — and then say exactly which result would overturn it: a waiting-list group that improves just as much, an effect that vanishes once weak studies are dropped, a gap that disappears when raters are blinded. A conclusion that names its own refutation is worth far more than a cautious shrug or a triumphant overreach.
 
 ## In the real world
 
-A company releases a chatbot that aces customer questions and earns glowing satisfaction scores, and its press release says the bot "understands customers." The overreach is to conclude, from good behavior, that there is understanding inside. The dodge is to throw up your hands — "you can never know what a machine understands." The stronger move commits to a mechanism: the bot matches questions to learned patterns and generates fitting replies, which predicts that it will fail on novel phrasings, that its confidence won't track its accuracy, and that it will stumble on questions needing grounded real-world knowledge. Each of those is a cheap test you can run this week — and each could prove the lead wrong. That is how cognitive science turns "can it think?" from a slogan into something you can actually investigate.`,
+Suppose a friend reads a headline: "New study proves talk therapy beats medication." Before celebrating or scoffing, ask the questions this section drills. Was it randomized, or did patients choose? Who ran it, and were the raters blind? Did they count the dropouts? Was the comparison a real alternative or an empty waitlist? Did the benefit last at follow-up? Each question points to a cheap check, and each could change the verdict. That is what reading evidence buys you — not blind faith that therapy works and not lazy doubt that nothing can be known, but a testable judgment about how strong the case really is and what would change your mind.`,
   homework: {
     mcq,
     hybrid,

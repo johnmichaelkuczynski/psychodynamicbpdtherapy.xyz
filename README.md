@@ -1,24 +1,24 @@
-# 🧭 Cognitive Science 101
+# 🧭 Psychodynamic Therapy 101
 
-**A One-Unit Baby Course on How the Mind Works — Taught, Tutored, Drilled, and Graded by AI**
+**A One-Unit Baby Course on the Mind Beneath the Surface — Taught, Tutored, Drilled, and Graded by AI**
 
 ---
 
 ## 🧩 Overview
 
-Cognitive Science 101 is a self-paced, single-user web course — a plain-language "baby course" on **how the mind works**: perception, memory, language, reasoning, machine minds, and consciousness. No math, coding, or technical background required.
+Psychodynamic Therapy 101 is a self-paced, single-user web course — a plain-language "baby course" on **the mind beneath the surface**: how out-of-awareness patterns, defenses, transference, and the therapeutic relationship shape how we struggle and how we change. No clinical background or jargon required.
 
-The course teaches reasoning about the mind on an **inverted grading scale**. Most "critical thinking" rewards caution: the more hedged the answer, the safer it feels. Here, hedging is the failure mode. The **strongest, most-falsifiable conclusion the evidence supports about how the mind works earns top credit**; the cautious *"we can't really conclude anything / the brain is too complex"* dodge earns near-zero; florid padding that binds no evidence scores low; and a bold claim the evidence actively defeats also earns zero. Every question rewards committing to the richest supported conclusion while naming the cleanest disconfirming test.
+The course teaches reasoning about the mind on an **inverted grading scale**. Most "critical thinking" rewards caution: the more hedged the answer, the safer it feels. Here, hedging is the failure mode. The **strongest, most-falsifiable interpretation the clinical evidence supports about the hidden dynamic earns top credit**; the cautious *"we can't really conclude anything / the psyche is too complex"* dodge earns near-zero; florid padding that binds no evidence scores low; and a lurid overreach the evidence actively defeats also earns zero. Every question rewards committing to the richest supported interpretation while naming the cheapest disconfirming observation.
 
-The curriculum is organized into **one unit and 8 sections**: 1.1 What Cognitive Science Is; 1.2 The Big Idea: Mind as Information Processing; 1.3 Perception; 1.4 Memory; 1.5 Language and Thought; 1.6 Reasoning and Bias; 1.7 Brains and Machines; and 1.8 Consciousness.
+The curriculum is organized into **one unit and 8 sections**: 1.1 What Psychodynamic Therapy Is; 1.2 The Unconscious, Reconsidered; 1.3 Defense Mechanisms; 1.4 Transference; 1.5 The Therapeutic Relationship; 1.6 Insight and Working Through; 1.7 Does It Work? The Evidence; and 1.8 A Session, Start to Finish.
 
-Designed for **middle schoolers, curious adults wanting brief but meaningful exposure, instructors evaluating AI-taught coursework, and researchers studying AI academic integrity**, Cognitive Science 101 pairs a real curriculum with two layers of AI-authorship detection — surfacing not just *whether* the writing looks AI-generated, but whether the *act of producing it* did.
+Designed for **middle schoolers, curious adults wanting brief but meaningful exposure, instructors evaluating AI-taught coursework, and researchers studying AI academic integrity**, Psychodynamic Therapy 101 pairs a real curriculum with two layers of AI-authorship detection — surfacing not just *whether* the writing looks AI-generated, but whether the *act of producing it* did.
 
 ---
 
 ## 🧠 What It Does
 
-- **One-Unit Structured Curriculum** — A complete plain-language cognitive science syllabus across 8 sections. Each section ships with a lesson and one graded homework. There is no separate test, midterm, or final — homework is the graded model.
+- **One-Unit Structured Curriculum** — A complete plain-language psychodynamic therapy syllabus across 8 sections. Each section ships with a lesson and one graded homework. There is no separate test, midterm, or final — homework is the graded model.
 - **Three-Depth Lessons** — Every lesson is available at **Short / Medium / Long** length, AI-rewritten while preserving the same examples and learning objectives.
 - **Section-Scoped AI Tutor** — Ask a question about the paragraph you're reading and the answer streams back token-by-token, grounded in that exact lecture section. Suggested starter questions are pre-generated per lecture.
 - **One Homework Per Section, Your Format** — Each section's homework is offered in three formats and you pick exactly one: **MCQ (long)**, **Hybrid (medium — multiple choice + short written)**, or **Written (short)**. You get a **single attempt** — it locks the moment you submit.
@@ -55,7 +55,7 @@ Designed for **middle schoolers, curious adults wanting brief but meaningful exp
 
 ## 📊 Designed For
 
-- **Middle Schoolers & Curious Adults:** A complete, plain-language course on how the mind works — with on-demand tutoring and adaptive practice, no instructor required.
+- **Middle Schoolers & Curious Adults:** A complete, plain-language course on the mind beneath the surface — with on-demand tutoring and adaptive practice, no instructor required.
 - **Instructors & Curriculum Designers:** A working reference for what AI-taught, AI-graded, AI-detection-screened coursework looks like end-to-end.
 - **Academic-Integrity Researchers:** A live testbed for layered AI-authorship detection combining text classification with behavioral keystroke evidence.
 - **Product & Engineering Teams:** A reference implementation of contract-first full-stack architecture, streaming AI UX, and self-diagnostic operator tooling in a Replit pnpm monorepo.
@@ -64,11 +64,11 @@ Designed for **middle schoolers, curious adults wanting brief but meaningful exp
 
 ## 💡 Core Idea
 
-Cognitive Science 101 makes "learning how the mind works" an act of *committed reasoning*.
+Psychodynamic Therapy 101 makes "learning how the mind works beneath the surface" an act of *committed reasoning*.
 
-It doesn't reward the student for finding reasons to doubt — it rewards them for **committing to the strongest conclusion the evidence supports about the mind and naming the cleanest test that could prove them wrong.** The course teaches that, tutors it, drills it, grades it on an inverted partial-credit scale, screens submissions for misuse, and proves the whole pipeline still works with a single click.
+It doesn't reward the student for finding reasons to doubt — it rewards them for **committing to the strongest interpretation the clinical evidence supports about the hidden dynamic and naming the cheapest observation that could prove them wrong.** The course teaches that, tutors it, drills it, grades it on an inverted partial-credit scale, screens submissions for misuse, and proves the whole pipeline still works with a single click.
 
-**Cognitive Science 101 — where the strongest honest conclusion about how the mind works, not the safest hedge, earns the grade.**
+**Psychodynamic Therapy 101 — where the strongest honest interpretation of what's happening beneath the surface, not the safest hedge, earns the grade.**
 
 ---
 

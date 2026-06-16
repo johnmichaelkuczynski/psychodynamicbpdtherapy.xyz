@@ -1,12 +1,12 @@
-# Cognitive Science 101 — App Blueprint
+# Psychodynamic Therapy 101 — App Blueprint
 
-A complete architectural blueprint for the Cognitive Science 101 one-unit course. This document is the single reference for what the app does, how it's wired, and the contracts between pieces. For day-to-day commands and gotchas see `replit.md`.
+A complete architectural blueprint for the Psychodynamic Therapy 101 one-unit course. This document is the single reference for what the app does, how it's wired, and the contracts between pieces. For day-to-day commands and gotchas see `replit.md`.
 
 ---
 
 ## 1. Product summary
 
-Cognitive Science 101 is a self-paced, single-user web course — a plain-language "baby course" on how the mind works (one unit, 8 sections — from What Cognitive Science Is through Consciousness, covering perception, memory, language, reasoning & bias, and machine minds). Students read AI-rewritten lecture notes at three lengths, ask an AI tutor scoped to the section they're reading, drill on adaptive scenario practice, and submit **one homework per section** that is AI-graded on an **inverted partial-credit scale** and AI-detection-screened. Grading is the inverted core: the strongest, most-testable conclusion the evidence supports about the mind earns top credit; the cautious "we can't conclude anything / the brain is too complex" dodge earns near-zero. There is **no separate test, midterm, or final** — homework is the graded model.
+Psychodynamic Therapy 101 is a self-paced, single-user web course — a plain-language "baby course" on the mind beneath the surface (one unit, 8 sections — from What Psychodynamic Therapy Is through A Session, Start to Finish, covering the unconscious, defense mechanisms, transference, the therapeutic relationship, insight & working through, and the evidence). Students read AI-rewritten lecture notes at three lengths, ask an AI tutor scoped to the section they're reading, drill on adaptive scenario practice, and submit **one homework per section** that is AI-graded on an **inverted partial-credit scale** and AI-detection-screened. Grading is the inverted core: the strongest, most-testable interpretation the clinical evidence supports about the hidden dynamic earns top credit; the cautious "we can't conclude anything / the psyche is too complex" dodge earns near-zero. There is **no separate test, midterm, or final** — homework is the graded model.
 
 The product surface is three deployable artifacts in one pnpm monorepo:
 
@@ -95,7 +95,7 @@ artifacts/api-server/src/
     ├── ai.ts              OpenAI client (Replit AI Integrations proxy)
     ├── detection.ts       GPTZero + heuristic + diachronic scoring
     ├── homeworkGrading.ts inverted partial-credit grader (MC weights + written yield/risk rubric)
-    ├── homeworkContent/   seeded cognitive science section content + types (mcOptions, writtenRubric)
+    ├── homeworkContent/   seeded psychodynamic therapy section content + types (mcOptions, writtenRubric)
     └── logger.ts          singleton pino logger (req.log in routes)
 ```
 

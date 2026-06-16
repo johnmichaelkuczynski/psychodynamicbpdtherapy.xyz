@@ -38,19 +38,19 @@ const features = [
   {
     icon: BarChart3,
     title: "One Unit, 8 Sections",
-    body: "From what cognitive science is all the way to the hard problem of consciousness.",
+    body: "From what psychodynamic therapy is all the way to a full session, start to finish.",
   },
 ];
 
 const topics = [
-  { n: "1.1", title: "What Cognitive Science Is" },
-  { n: "1.2", title: "The Big Idea: Mind as Information Processing" },
-  { n: "1.3", title: "Perception" },
-  { n: "1.4", title: "Memory" },
-  { n: "1.5", title: "Language and Thought" },
-  { n: "1.6", title: "Reasoning and Bias" },
-  { n: "1.7", title: "Brains and Machines" },
-  { n: "1.8", title: "Consciousness" },
+  { n: "1.1", title: "What Psychodynamic Therapy Is" },
+  { n: "1.2", title: "The Unconscious, Reconsidered" },
+  { n: "1.3", title: "Defense Mechanisms" },
+  { n: "1.4", title: "Transference" },
+  { n: "1.5", title: "The Therapeutic Relationship" },
+  { n: "1.6", title: "Insight and Working Through" },
+  { n: "1.7", title: "Does It Work? The Evidence" },
+  { n: "1.8", title: "A Session, Start to Finish" },
 ];
 
 export default function Landing() {
@@ -62,7 +62,7 @@ export default function Landing() {
             <Search className="w-4 h-4" />
           </div>
           <span className="font-serif font-semibold text-lg tracking-tight">
-            Cognitive Science 101
+            Psychodynamic Therapy 101
           </span>
         </div>
         <div className="flex items-center gap-2">
@@ -89,16 +89,16 @@ export default function Landing() {
         <section className="max-w-4xl mx-auto px-6 pt-20 pb-16 text-center">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary text-secondary-foreground text-xs font-medium mb-6">
             <BarChart3 className="w-3.5 h-3.5" />
-            A one-unit baby course on how the mind works
+            A one-unit baby course on the mind beneath the surface
           </div>
           <h1 className="text-4xl md:text-5xl font-serif font-bold text-primary leading-tight mb-5">
-            How the mind works — taught, tutored, drilled, and graded by AI.
+            The mind beneath the surface — taught, tutored, drilled, and graded by AI.
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
-            A self-paced baby course on cognitive science — perception, memory,
-            language, reasoning, machine minds, and consciousness. Plain lessons,
-            an AI tutor, adaptive practice, and AI-graded homework. No math or
-            coding required.
+            A self-paced baby course on psychodynamic therapy — the unconscious,
+            defenses, transference, the therapeutic relationship, insight, and the
+            evidence behind it. Plain lessons, an AI tutor, adaptive practice, and
+            AI-graded homework. No jargon or background required.
           </p>
           <div className="flex items-center justify-center gap-3">
             <Link href="/sign-up">
@@ -163,8 +163,8 @@ export default function Landing() {
       </main>
 
       <footer className="border-t border-border px-6 py-6 text-center text-sm text-muted-foreground">
-        Cognitive Science 101 — a baby course on how the mind works, taught,
-        tutored, drilled, and graded by AI.
+        Psychodynamic Therapy 101 — a baby course on the mind beneath the
+        surface, taught, tutored, drilled, and graded by AI.
       </footer>
     </div>
   );

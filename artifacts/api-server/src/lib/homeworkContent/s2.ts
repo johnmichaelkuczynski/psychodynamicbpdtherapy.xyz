@@ -9,407 +9,407 @@ const mcq: HomeworkItem[] = [
   {
     itemType: "mc",
     prompt:
-      "People press a button the instant a light comes on. When a second light is added and they must press only for the green one, their response is reliably slower by a roughly constant amount. Which conclusion best follows?",
+      "A man keeps calling his new girlfriend by his ex's name — but only with her, never with coworkers or friends, and almost always during tender or tense moments. He is mortified each time and has no idea why it happens. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The extra time likely reflects an added internal stage — deciding which light appeared before responding — inserted between seeing and acting; test whether adding a third choice adds a similar fixed increment, whether the extra time vanishes when only one light is ever possible, and whether telling people the likely light in advance shrinks it.",
-        credit: 1.0,
-      },
-      {
-        text: "Choosing between lights probably adds some processing time; we could test more light counts.",
+        text: "He is probably still hung up on his ex; we could talk through that breakup more.",
         credit: 0.6,
       },
       {
-        text: "Two lights seem to slow people down a bit.",
-        credit: 0.3,
+        text: "The slip likely reveals a buried, all-consuming secret passion for his ex that he is hiding from everyone, including himself.",
+        credit: 0,
       },
       {
-        text: "What happens inside the head between the light and the button is hidden, so the timing tells us nothing.",
-        credit: 0,
+        text: "Without noticing, he is likely running an old relationship template — responding to closeness and conflict through a learned pattern from the past relationship; test whether the slips cluster specifically around moments that echo the old relationship, whether they fade as the new relationship builds its own history, and whether he repeats other carried-over habits only with her.",
+        credit: 1.0,
+      },
+      {
+        text: "He seems to mix up names sometimes.",
+        credit: 0.3,
       },
     ],
     correctAnswer:
-      "The extra time likely reflects an added internal stage — deciding which light appeared before responding — inserted between seeing and acting; test whether adding a third choice adds a similar fixed increment, whether the extra time vanishes when only one light is ever possible, and whether telling people the likely light in advance shrinks it.",
+      "Without noticing, he is likely running an old relationship template — responding to closeness and conflict through a learned pattern from the past relationship; test whether the slips cluster specifically around moments that echo the old relationship, whether they fade as the new relationship builds its own history, and whether he repeats other carried-over habits only with her.",
     explanation:
-      "Top credit reads the constant extra time as a separable decision stage and names three checks that could refute it; 'the timing tells us nothing' refuses the very inference the steady increment supports and earns zero.",
+      "Top credit names an automatic out-of-awareness template and three checks that could refute it; the 'buried all-consuming passion' option is the lurid overreach the situation-specific, mortifying slips actively defeat.",
   },
   {
     itemType: "mc",
     prompt:
-      "Rats wander an unrewarded maze for days, seeming to learn nothing. The first day food is placed at the goal, they run straight to it — faster than rats that were rewarded from the start. Which conclusion best follows?",
+      "A woman has dated four people in a row who were charming at first but emotionally unavailable, and each time she didn't notice the pattern until the relationship was failing. Warm, steady people, she says, simply 'feel boring' to her. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The unrewarded rats seem to catch on quickly once food appears.",
-        credit: 0.3,
-      },
-      {
-        text: "The rats likely built an internal map of the maze while exploring, storing information that showed in behavior only once reward made it worth using; test whether blocking a familiar path makes them pick the next-shortest route, whether they take a novel shortcut when one opens, and whether more unrewarded exploration yields faster first rewarded runs.",
-        credit: 1.0,
-      },
-      {
-        text: "Animals can't report their thoughts, so claims about what rats 'know' are off-limits.",
+        text: "Love is too mysterious to analyze, so there is nothing to be learned from who she dates.",
         credit: 0,
       },
       {
-        text: "The exploring rats probably learned the layout beforehand; we could run more maze trials.",
+        text: "She likely carries an out-of-awareness template that codes distance as exciting and steadiness as boring, so she is automatically drawn to the same kind of partner; test whether 'boring' people stop feeling boring once she knows them, whether the pull toward distance matches a pattern from an important early relationship, and whether naming the template in advance changes who she notices.",
+        credit: 1.0,
+      },
+      {
+        text: "She has bad luck with partners and keeps meeting the wrong people by chance.",
+        credit: 0.3,
+      },
+      {
+        text: "She probably has a type that isn't good for her; we could list her exes and compare.",
         credit: 0.6,
       },
     ],
     correctAnswer:
-      "The rats likely built an internal map of the maze while exploring, storing information that showed in behavior only once reward made it worth using; test whether blocking a familiar path makes them pick the next-shortest route, whether they take a novel shortcut when one opens, and whether more unrewarded exploration yields faster first rewarded runs.",
+      "She likely carries an out-of-awareness template that codes distance as exciting and steadiness as boring, so she is automatically drawn to the same kind of partner; test whether 'boring' people stop feeling boring once she knows them, whether the pull toward distance matches a pattern from an important early relationship, and whether naming the template in advance changes who she notices.",
     explanation:
-      "Full credit infers a stored internal representation (a cognitive map) learned without reward and names three tests; 'claims about what rats know are off-limits' is the dodge the immediate straight run defeats.",
+      "The strongest conclusion names a learned template driving repeated choices and three disconfirming tests; 'love is too mysterious to analyze' is the refusal the clear four-time pattern defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "Told to press a key whenever a sentence means roughly 'the dog chased the cat,' people respond just as fast to 'the cat was chased by the dog' as to the original, even though the two sentences share few exact words. Which conclusion best follows?",
+      "An employee stays calm through layoffs and a missed promotion, but when his manager gives him a small, friendly correction on a report he flushes, his voice shakes, and he stews for days. He can't explain why something so minor hit so hard. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Reading is too rich to study by timing key presses.",
-        credit: 0,
-      },
-      {
-        text: "People seem to treat similar sentences alike.",
+        text: "He seems sensitive to criticism.",
         credit: 0.3,
       },
       {
-        text: "The two sentences probably mean the same to readers; we could test more paraphrases.",
+        text: "The mild correction probably touched a nerve; we could ask what bothered him about it.",
         credit: 0.6,
       },
       {
-        text: "The mind likely responds to an internal representation of the sentence's meaning rather than to its exact words, so different wordings of one idea act alike; test whether unrelated sentences that share many words are kept apart, whether a meaning-changing word swap slows responses, and whether the equivalence survives translation into another language.",
+        text: "The reaction far bigger than its trigger likely means the correction matched an out-of-awareness template — a learned link between gentle correction from an authority and a much older sense of being found wanting; test whether the same outsized reaction appears with other mild-correction-from-authority moments, whether bigger threats like layoffs reliably produce less reaction, and whether the response eases once he can connect the feeling to its earlier source.",
         credit: 1.0,
+      },
+      {
+        text: "His overreaction must mean a hidden traumatic abuse he has completely repressed and that this manager somehow reawakened.",
+        credit: 0,
       },
     ],
     correctAnswer:
-      "The mind likely responds to an internal representation of the sentence's meaning rather than to its exact words, so different wordings of one idea act alike; test whether unrelated sentences that share many words are kept apart, whether a meaning-changing word swap slows responses, and whether the equivalence survives translation into another language.",
+      "The reaction far bigger than its trigger likely means the correction matched an out-of-awareness template — a learned link between gentle correction from an authority and a much older sense of being found wanting; test whether the same outsized reaction appears with other mild-correction-from-authority moments, whether bigger threats like layoffs reliably produce less reaction, and whether the response eases once he can connect the feeling to its earlier source.",
     explanation:
-      "The strongest conclusion names a meaning-based representation behind the behavior and lists three tests; 'too rich to study by timing key presses' opens no inquiry and earns zero under the inverted standard.",
+      "Full credit reads the disproportion as a matched template and names three checks; the 'hidden repressed abuse' leap is the melodramatic overreach the ordinary trigger does not support.",
   },
   {
     itemType: "mc",
     prompt:
-      "People judge which of two numbers is larger. They are fast for far-apart pairs like 2 and 9 but reliably slower for close pairs like 5 and 6. Which conclusion best follows?",
+      "At every meeting, dinner, or class, a woman automatically takes the seat nearest the door, gets uneasy if she can't, and has never once thought about why. She insists it's just a habit with no meaning. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The mind likely represents numbers along an internal 'number line' and compares positions on it, so nearby numbers are harder to tell apart; test whether the slowdown grows smoothly as the gap shrinks, whether very large numbers are compared more slowly even at equal gaps, and whether the same distance effect appears when quantities are shown as dot clusters.",
+        text: "The mind's habits are unknowable, so her seat choice can't tell us anything.",
+        credit: 0,
+      },
+      {
+        text: "The consistent, automatic seat choice plus the unease when blocked likely reflects an out-of-awareness pattern that keeps an exit available — a learned 'stay ready to leave' template running below notice; test whether the unease spikes specifically when escape is hard, whether it eases in settings she controls, and whether the pattern traces to situations where leaving once mattered.",
         credit: 1.0,
       },
       {
-        text: "Closer numbers probably take longer to compare; we could test more number pairs.",
+        text: "She probably just likes sitting near the door; we could ask if she's always done it.",
         credit: 0.6,
       },
       {
-        text: "People seem slower with numbers that are near each other.",
+        text: "She seems to prefer certain seats.",
         credit: 0.3,
-      },
-      {
-        text: "Numbers are abstract, so we can't say anything about how the mind handles them.",
-        credit: 0,
       },
     ],
     correctAnswer:
-      "The mind likely represents numbers along an internal 'number line' and compares positions on it, so nearby numbers are harder to tell apart; test whether the slowdown grows smoothly as the gap shrinks, whether very large numbers are compared more slowly even at equal gaps, and whether the same distance effect appears when quantities are shown as dot clusters.",
+      "The consistent, automatic seat choice plus the unease when blocked likely reflects an out-of-awareness pattern that keeps an exit available — a learned 'stay ready to leave' template running below notice; test whether the unease spikes specifically when escape is hard, whether it eases in settings she controls, and whether the pattern traces to situations where leaving once mattered.",
     explanation:
-      "Top credit posits an internal magnitude representation and names three tests, including a dots version that could refute it; 'numbers are abstract, we can't say anything' is the refusal the orderly distance effect defeats.",
+      "Top credit reads a 'pointless' habit as a patterned template and names three tests; 'habits are unknowable' is the dodge the reliable choice and matched unease defeat.",
   },
   {
     itemType: "mc",
     prompt:
-      "People can repeat back about seven random digits but no more. Yet when the digits 1-4-9-2-1-7-7-6 are recognized as two famous years, the same person repeats far longer strings effortlessly. Which conclusion best follows?",
+      "Saying goodbye to a close friend moving abroad, a man means to say 'I'll miss you' but instead says 'I'm so relieved you're going.' He is horrified — he loves this friend — and the friendship had recently felt strangely heavy and obligating. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Grouping the digits seems to help memory.",
+        text: "It was just a verbal slip-up that means nothing at all.",
         credit: 0.3,
       },
       {
-        text: "Memory limits differ so much between people that no general claim is possible.",
-        credit: 0,
-      },
-      {
-        text: "The mind's short-term capacity is likely measured in meaningful 'chunks' rather than raw items, so recoding digits into known units packs more information into the same limited slots; test whether any familiar grouping (a phone-number rhythm, words) raises the span, whether nonsense groupings give no boost, and whether experts chunk material from their own field far better than strangers' material.",
+        text: "The slip plus the recent 'heaviness' likely points to a real but unacknowledged strand of feeling — some relief at being freed from an obligation he didn't let himself notice, alongside genuine love; test whether the heaviness tracked specific obligating demands, whether he feels lighter once the friend leaves, and whether other slips appear around duties he resents but won't voice.",
         credit: 1.0,
       },
       {
-        text: "Familiar groupings probably let people remember more; we could test other digit strings.",
+        text: "The slip proves he secretly hates this friend and the whole friendship was a lie he told himself.",
+        credit: 0,
+      },
+      {
+        text: "He probably has mixed feelings about the friend leaving; we could ask how he really feels.",
         credit: 0.6,
       },
     ],
     correctAnswer:
-      "The mind's short-term capacity is likely measured in meaningful 'chunks' rather than raw items, so recoding digits into known units packs more information into the same limited slots; test whether any familiar grouping (a phone-number rhythm, words) raises the span, whether nonsense groupings give no boost, and whether experts chunk material from their own field far better than strangers' material.",
+      "The slip plus the recent 'heaviness' likely points to a real but unacknowledged strand of feeling — some relief at being freed from an obligation he didn't let himself notice, alongside genuine love; test whether the heaviness tracked specific obligating demands, whether he feels lighter once the friend leaves, and whether other slips appear around duties he resents but won't voice.",
     explanation:
-      "The richest conclusion names chunking as the capacity unit and offers three tests; 'limits differ too much to say anything' is the dodge the reliable jump in span with meaning defeats.",
+      "The richest conclusion ties the slip to a specific out-of-awareness feeling and names three checks; 'he secretly hates the friend, it was all a lie' is the overreach his genuine love and the narrow 'heaviness' defeat.",
   },
   {
     itemType: "mc",
     prompt:
-      "A speaker means to say 'a cup of coffee' but says 'a cuff of cuppee,' swapping sounds between two words she had not yet spoken. Which conclusion best follows?",
+      "A talented worker has quit three jobs in five years. Each time, things were going well and a boss had just praised her or offered a raise — and within weeks she picked a fight or found a reason to leave. She frames each exit as a separate, sensible decision. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The speaker probably planned both words before speaking; we could collect more slips.",
+        text: "She probably gets restless at jobs; we could look at what each role lacked.",
         credit: 0.6,
       },
       {
-        text: "Speech is likely planned in a buffer that holds several upcoming words at once before they are spoken, since a sound jumped into a word not yet uttered; test whether such exchanges stay within a phrase rather than crossing far apart, whether swapped sounds keep their position (a starting sound trades with another starting sound), and whether faster speech produces more such anticipations.",
+        text: "The repeating trigger — leaving right after success and praise — likely reveals an out-of-awareness template in which approval feels unsafe, prompting her to undo it; test whether the urge to leave reliably follows praise rather than setbacks, whether the same flight-after-success shows up in non-work relationships, and whether the pattern eases once she can anticipate it.",
         credit: 1.0,
       },
       {
-        text: "Slips of the tongue are random accidents with nothing to teach us.",
+        text: "Each job clearly had real problems, so there is no pattern worth explaining here.",
         credit: 0,
       },
       {
-        text: "People sometimes mix up their sounds when talking.",
+        text: "She seems to change jobs a lot.",
         credit: 0.3,
       },
     ],
     correctAnswer:
-      "Speech is likely planned in a buffer that holds several upcoming words at once before they are spoken, since a sound jumped into a word not yet uttered; test whether such exchanges stay within a phrase rather than crossing far apart, whether swapped sounds keep their position (a starting sound trades with another starting sound), and whether faster speech produces more such anticipations.",
+      "The repeating trigger — leaving right after success and praise — likely reveals an out-of-awareness template in which approval feels unsafe, prompting her to undo it; test whether the urge to leave reliably follows praise rather than setbacks, whether the same flight-after-success shows up in non-work relationships, and whether the pattern eases once she can anticipate it.",
     explanation:
-      "Top credit infers an advance planning buffer from the misplaced sound and names three structured tests; 'random accidents with nothing to teach us' is the overreach the orderly, rule-respecting slips defeat.",
+      "Top credit names a specific success-triggered template and three disconfirming tests; 'each job just had real problems, no pattern' is the dismissal the precise praise-then-flight repetition defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "Unable to recall a word, people often still know its first letter, how many syllables it has, and roughly what it sounds like — while the word itself stays out of reach. Which conclusion best follows?",
+      "Whenever one particular friend texts her, a woman feels a flash of dread before she even opens the message, then a wave of guilt — yet she describes the friendship as 'totally fine' and can't say what's wrong. The pattern happens with no one else. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "If you can't recall the word, there is nothing measurable going on.",
+        text: "Feelings are too private and complex to ever be figured out.",
         credit: 0,
       },
       {
-        text: "People seem to half-remember words sometimes.",
-        credit: 0.3,
+        text: "The automatic dread-then-guilt that fires only for this friend likely signals an out-of-awareness pattern — her body has learned this relationship as a source of demand or judgment that her conscious story denies; test whether the dread tracks specific kinds of messages from this friend, whether it is absent for everyone else, and whether it lines up with a recurring imbalance she hasn't let herself name.",
+        credit: 1.0,
       },
       {
-        text: "Word memory probably comes in pieces; we could collect more such cases.",
+        text: "She probably has some unspoken issue with this friend; we could ask what's going on between them.",
         credit: 0.6,
       },
       {
-        text: "A word's meaning and its sound are likely stored and retrieved as separable pieces of information, so meaning can be available while the sound form is only partly accessed; test whether priming the missing sound triggers full recall, whether the wrong words people offer share the sound or the meaning of the target, and whether the state resolves faster for shorter or more common words.",
-        credit: 1.0,
+        text: "She seems a little stressed by that friend.",
+        credit: 0.3,
       },
     ],
     correctAnswer:
-      "A word's meaning and its sound are likely stored and retrieved as separable pieces of information, so meaning can be available while the sound form is only partly accessed; test whether priming the missing sound triggers full recall, whether the wrong words people offer share the sound or the meaning of the target, and whether the state resolves faster for shorter or more common words.",
+      "The automatic dread-then-guilt that fires only for this friend likely signals an out-of-awareness pattern — her body has learned this relationship as a source of demand or judgment that her conscious story denies; test whether the dread tracks specific kinds of messages from this friend, whether it is absent for everyone else, and whether it lines up with a recurring imbalance she hasn't let herself name.",
     explanation:
-      "The winning conclusion splits meaning from sound form and names three tests; 'nothing measurable is going on' is the dodge the reliable partial knowledge directly defeats.",
+      "Full credit reads the friend-specific automatic reaction as a learned pattern and names three checks; 'feelings are too private to figure out' is the refusal the clean single-friend signal defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "Skilled readers name common irregular words like 'yacht' quickly, but when reading made-up strings like 'blorp' they slow down and sound them out letter by letter. Which conclusion best follows?",
+      "A man insists he feels 'nothing in particular' about his father's recent death — they were never close. Yet since the funeral he has reorganized his garage exactly as his father kept his, started using his father's phrases, and can't sleep. He sees no connection. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Reading likely runs through two routes — a fast lookup for familiar whole words and a slower letter-to-sound assembly for new ones; test whether brand-new but pronounceable strings are always slower than matched real words, whether very rare real words drift toward the slow route, and whether a reader who loses one route keeps the other.",
-        credit: 1.0,
-      },
-      {
-        text: "Made-up words seem harder to read aloud.",
-        credit: 0.3,
-      },
-      {
-        text: "Reading is automatic, so its inner steps can't be examined.",
+        text: "He says he feels nothing, so we should take him at his word and look no further.",
         credit: 0,
       },
       {
-        text: "Familiar and unfamiliar words probably use different processes; we could test more strings.",
+        text: "The behavior changes — copying his father's habits and phrases while sleepless — likely reflect grief and identification operating outside his awareness, doing the work his conscious mind disowns; test whether the imitation began only after the death, whether the sleeplessness tracks reminders of his father, and whether naming the loss aloud shifts the behaviors.",
+        credit: 1.0,
+      },
+      {
+        text: "He's probably affected by his dad's death more than he admits; we could ask about the funeral.",
         credit: 0.6,
+      },
+      {
+        text: "He seems a bit off since the funeral.",
+        credit: 0.3,
       },
     ],
     correctAnswer:
-      "Reading likely runs through two routes — a fast lookup for familiar whole words and a slower letter-to-sound assembly for new ones; test whether brand-new but pronounceable strings are always slower than matched real words, whether very rare real words drift toward the slow route, and whether a reader who loses one route keeps the other.",
+      "The behavior changes — copying his father's habits and phrases while sleepless — likely reflect grief and identification operating outside his awareness, doing the work his conscious mind disowns; test whether the imitation began only after the death, whether the sleeplessness tracks reminders of his father, and whether naming the loss aloud shifts the behaviors.",
     explanation:
-      "Top credit names two processing routes with three checks, including a brain-injury dissociation that could refute it; 'too automatic to examine' is the empty refusal the clean speed gap defeats.",
+      "The strongest conclusion reads out-of-awareness grief from the timed behavior changes and names three tests; 'take him at his word, look no further' ignores the visible evidence his words contradict.",
   },
   {
     itemType: "mc",
     prompt:
-      "In a naming task, making the picture blurry adds a fixed amount of time, and making the name rare adds another fixed amount — and when a picture is both blurry AND rare, the two delays simply add together. Which conclusion best follows?",
+      "A new hire is friendly with peers but becomes guarded and faintly hostile the moment any senior manager is warm to him — he reads kindness from 'people in charge' as a setup. He thinks he's just 'a good judge of character.' Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The two difficulties probably each add their own time; we could test more combinations.",
+        text: "He probably distrusts bosses; we could ask about his past managers.",
         credit: 0.6,
       },
       {
-        text: "Harder pictures take longer in two ways.",
-        credit: 0.3,
-      },
-      {
-        text: "Because the two delays add independently, the mind likely handles image clarity and word retrieval in separate sequential stages, each unaffected by the other's load; test whether a third factor that touches one stage leaves the other's delay unchanged, whether the delays still add at higher difficulty levels, and whether brain measures show the two effects at different moments.",
+        text: "The pattern that fires specifically for warm authority figures likely reflects an out-of-awareness template — kindness from someone powerful has been learned as a danger sign — rather than accurate reading of each person; test whether the guardedness appears with every warm authority regardless of who they are, whether it's absent with equally warm peers, and whether it matches how an early authority figure once treated him.",
         credit: 1.0,
       },
       {
-        text: "Naming a picture involves too much at once to separate any steps.",
+        text: "His suspicion proves these managers really are plotting against him in some hidden way.",
         credit: 0,
+      },
+      {
+        text: "He seems wary around managers.",
+        credit: 0.3,
       },
     ],
     correctAnswer:
-      "Because the two delays add independently, the mind likely handles image clarity and word retrieval in separate sequential stages, each unaffected by the other's load; test whether a third factor that touches one stage leaves the other's delay unchanged, whether the delays still add at higher difficulty levels, and whether brain measures show the two effects at different moments.",
+      "The pattern that fires specifically for warm authority figures likely reflects an out-of-awareness template — kindness from someone powerful has been learned as a danger sign — rather than accurate reading of each person; test whether the guardedness appears with every warm authority regardless of who they are, whether it's absent with equally warm peers, and whether it matches how an early authority figure once treated him.",
     explanation:
-      "The strongest conclusion reads independent additivity as evidence for separate stages and names three tests; 'too much at once to separate any steps' refuses the inference the clean addition supports.",
+      "Top credit names an authority-specific template and three checks, including the peer comparison; 'the managers really are plotting' is the overreach the indiscriminate, person-independent reaction defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A person pouring water into a glass keeps glancing at the rising level, slows the pour as it nears the top, and stops exactly at the line. Which conclusion best follows?",
+      "A reliable, organized woman 'forgets' her dental appointments again and again — and only dental appointments. She never misses work meetings or doctor visits, books the dentist sincerely each time, then space out and skips. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "People seem to watch the glass while pouring.",
+        text: "Memory is unreliable, so people forget things; there's nothing more to it.",
         credit: 0.3,
       },
       {
-        text: "Everyday actions are too automatic to reveal how they're controlled.",
+        text: "The forgetting that targets only the dentist, in someone otherwise organized, likely reflects an out-of-awareness avoidance — the 'forgetting' quietly serves to dodge something specific about that setting; test whether the lapses cluster around the dentist alone, whether anxiety or a bad past dental experience lines up with it, and whether removing the dreaded part (sedation, a trusted dentist) ends the 'forgetting.'",
+        credit: 1.0,
+      },
+      {
+        text: "The repeated lapse must mean a deeply repressed mouth trauma that her mind is violently blocking from all awareness.",
         credit: 0,
       },
       {
-        text: "The pourer probably uses the water level to guide the pour; we could film more pours.",
+        text: "She probably doesn't like the dentist; we could ask if she's anxious about it.",
         credit: 0.6,
-      },
-      {
-        text: "The action is likely guided by a feedback loop that compares the current level against a goal level and adjusts the pour to close the gap; test whether hiding the glass makes pours overshoot, whether a falsely raised view makes people stop early, and whether the slowing near the top scales with how precise the target line is.",
-        credit: 1.0,
       },
     ],
     correctAnswer:
-      "The action is likely guided by a feedback loop that compares the current level against a goal level and adjusts the pour to close the gap; test whether hiding the glass makes pours overshoot, whether a falsely raised view makes people stop early, and whether the slowing near the top scales with how precise the target line is.",
+      "The forgetting that targets only the dentist, in someone otherwise organized, likely reflects an out-of-awareness avoidance — the 'forgetting' quietly serves to dodge something specific about that setting; test whether the lapses cluster around the dentist alone, whether anxiety or a bad past dental experience lines up with it, and whether removing the dreaded part (sedation, a trusted dentist) ends the 'forgetting.'",
     explanation:
-      "Top credit names a goal-comparison feedback loop and three tests that could break it; 'too automatic to reveal how it's controlled' is the dodge the goal-directed slowing contradicts.",
+      "Full credit reads the selective forgetting as functional avoidance and names three tests; the 'deeply repressed mouth trauma' leap is the melodrama the ordinary, fixable dental dread does not warrant.",
   },
   {
     itemType: "mc",
     prompt:
-      "Asked to sort novel cartoon creatures into 'friendly' or 'dangerous,' people get faster and more accurate over trials, and afterward can state rules like 'a spiky tail and red eyes means dangerous.' Which conclusion best follows?",
+      "A man notices that in every romance he ends up having the identical argument — that his partner is 'controlling' him — even with partners who are easygoing and even when they barely made a request. The script feels new each time, but the words are nearly the same. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "People probably learn which features matter; we could run more sorting trials.",
-        credit: 0.6,
+        text: "Relationships are too complicated to find any real pattern in them.",
+        credit: 0,
       },
       {
-        text: "The mind likely learns a category by weighing specific input features and building a rule that maps them to an output label; test whether a creature with conflicting features is classified by its strongest cues, whether removing the key feature drops accuracy, and whether a creature that obeys the rule but was never seen is still sorted correctly.",
+        text: "The identical argument across very different partners likely reflects an out-of-awareness template — a learned sensitivity to being controlled that he projects onto small requests — rather than the partners actually being controlling; test whether the 'controlling' charge appears regardless of how easygoing the partner is, whether neutral observers see the requests as ordinary, and whether the template matches an earlier relationship where control was real.",
         credit: 1.0,
       },
       {
-        text: "People seem to get better at sorting the creatures.",
-        credit: 0.3,
+        text: "He probably keeps picking controlling partners; we could look at who he dates.",
+        credit: 0.6,
       },
       {
-        text: "Made-up creatures aren't real, so sorting them shows nothing about the mind.",
-        credit: 0,
+        text: "He seems to argue about control a lot.",
+        credit: 0.3,
       },
     ],
     correctAnswer:
-      "The mind likely learns a category by weighing specific input features and building a rule that maps them to an output label; test whether a creature with conflicting features is classified by its strongest cues, whether removing the key feature drops accuracy, and whether a creature that obeys the rule but was never seen is still sorted correctly.",
+      "The identical argument across very different partners likely reflects an out-of-awareness template — a learned sensitivity to being controlled that he projects onto small requests — rather than the partners actually being controlling; test whether the 'controlling' charge appears regardless of how easygoing the partner is, whether neutral observers see the requests as ordinary, and whether the template matches an earlier relationship where control was real.",
     explanation:
-      "The richest conclusion treats categorizing as a feature-to-label computation and names three tests; 'made-up creatures show nothing' is the refusal the learnable, stateable rule defeats.",
+      "Top credit locates a portable template inside him, not the partners, and names three checks; 'too complicated to find any pattern' is the dodge the near-identical repeating script defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "Beginners reading sheet music check each note slowly, but after months of practice skilled players sight-read fluently and say they barely notice individual notes. Which conclusion best follows?",
+      "When a particular friend cancels plans, a grown woman goes silent, sulks for hours, and feels a hot, childlike sting of rejection — far more than the small letdown warrants, and far more than when anyone else cancels. She's embarrassed by how 'young' it feels. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Skill is too personal to draw any general conclusion.",
-        credit: 0,
-      },
-      {
-        text: "Practice seems to make reading music easier.",
+        text: "She seems disappointed when plans fall through.",
         credit: 0.3,
       },
       {
-        text: "With practice, a slow step-by-step process likely becomes automatic — fast, effortless, and hard to interrupt — by recoding notes into larger learned patterns; test whether skilled players struggle to read deliberately note-by-note on demand, whether scrambled patternless scores erase their speed advantage, and whether the automatic reading intrudes when they try to ignore the notes.",
+        text: "The childlike intensity, specific to this friend, likely means the cancellation matched an out-of-awareness template — an old, early experience of being dropped that this relationship reactivates; test whether the outsized sting appears mainly with this friend, whether it scales with how much the cancellation resembles old abandonments rather than the actual inconvenience, and whether the feeling eases once she connects it to its earlier source.",
         credit: 1.0,
       },
       {
-        text: "Practice probably changes how reading music works; we could test players at different levels.",
+        text: "The reaction proves she was savagely abandoned as a baby in a way she has totally erased from memory.",
+        credit: 0,
+      },
+      {
+        text: "She probably has some sensitivity about being let down; we could explore that.",
         credit: 0.6,
       },
     ],
     correctAnswer:
-      "With practice, a slow step-by-step process likely becomes automatic — fast, effortless, and hard to interrupt — by recoding notes into larger learned patterns; test whether skilled players struggle to read deliberately note-by-note on demand, whether scrambled patternless scores erase their speed advantage, and whether the automatic reading intrudes when they try to ignore the notes.",
+      "The childlike intensity, specific to this friend, likely means the cancellation matched an out-of-awareness template — an old, early experience of being dropped that this relationship reactivates; test whether the outsized sting appears mainly with this friend, whether it scales with how much the cancellation resembles old abandonments rather than the actual inconvenience, and whether the feeling eases once she connects it to its earlier source.",
     explanation:
-      "Top credit names automatization through pattern chunking and three tests, including a scrambled-score check; 'too personal to conclude anything' is the dodge the reliable beginner-to-expert shift defeats.",
+      "Full credit reads the 'too young' disproportion as a reactivated template and names three tests; the 'savagely abandoned as a baby and erased it' claim is the lurid overreach the ordinary cancellation does not support.",
   },
   {
     itemType: "mc",
     prompt:
-      "Searching a string for the letter 'Q,' people say 'no, it's absent' faster when the string is short, and the time to answer 'no' grows steadily with the number of letters. Which conclusion best follows?",
+      "Planning a party, a man writes out invitations and 'accidentally' leaves one warm, generous friend off the list — twice now, for two events. He genuinely likes this friend and is baffled. Lately that friend's success has been a frequent topic among the group. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Longer strings seem to take longer to search.",
+        text: "People forget to invite others sometimes; it doesn't mean anything.",
         credit: 0.3,
       },
       {
-        text: "More letters probably take longer to scan; we could test more string lengths.",
+        text: "The repeated, selective 'forgetting' of one successful friend likely reflects an out-of-awareness sting of envy he won't consciously own, quietly steering the omission; test whether the lapse targets this friend specifically rather than being random, whether it tracks moments when the friend's success is salient, and whether owning a flicker of envy makes the 'forgetting' stop.",
+        credit: 1.0,
+      },
+      {
+        text: "He probably has some unspoken feeling about this friend; we could ask how he sees them.",
         credit: 0.6,
       },
       {
-        text: "Reading happens too fast to study what the eyes and mind are doing.",
+        text: "The omission proves he secretly despises this friend and has been faking the whole friendship for years.",
         credit: 0,
-      },
-      {
-        text: "The mind likely checks letters one at a time and, to be sure a target is absent, must scan the whole string, so 'no' answers grow steadily with length; test whether 'no' times rise faster than 'yes' times, whether a highly distinctive target like a digit among letters breaks the pattern by popping out, and whether each added letter adds a roughly equal step.",
-        credit: 1.0,
       },
     ],
     correctAnswer:
-      "The mind likely checks letters one at a time and, to be sure a target is absent, must scan the whole string, so 'no' answers grow steadily with length; test whether 'no' times rise faster than 'yes' times, whether a highly distinctive target like a digit among letters breaks the pattern by popping out, and whether each added letter adds a roughly equal step.",
+      "The repeated, selective 'forgetting' of one successful friend likely reflects an out-of-awareness sting of envy he won't consciously own, quietly steering the omission; test whether the lapse targets this friend specifically rather than being random, whether it tracks moments when the friend's success is salient, and whether owning a flicker of envy makes the 'forgetting' stop.",
     explanation:
-      "The strongest conclusion infers a serial self-terminating scan from the steady growth and names three tests; 'too fast to study' opens no inquiry and earns zero.",
+      "Top credit reads the selective lapse as out-of-awareness envy and names three checks; 'he secretly despises the friend and faked it for years' is the overreach his genuine liking and narrow omission defeat.",
   },
   {
     itemType: "mc",
     prompt:
-      "Shown a grid of twelve letters for a flash, people recall only about four — but if a tone right after the flash tells them which row to report, they get almost any cued row nearly perfect. Which conclusion best follows?",
+      "A woman is happiest in the early, uncertain phase of dating, but the moment a partner becomes devoted and steady she feels a creeping flatness and starts looking for flaws — a sequence she's lived through five times without ever predicting it. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "A brief, rich visual representation of the whole grid likely lingers for a fraction of a second after the display, but fades before all of it can be read out; test whether delaying the tone steadily lowers how much of the cued row is reported, whether a bright flash right after the grid wipes out the advantage, and whether the four-item limit reflects readout time rather than what was first stored.",
-        credit: 1.0,
-      },
-      {
-        text: "People probably hold a brief image they can't fully report; we could test more cue delays.",
-        credit: 0.6,
-      },
-      {
-        text: "Memory for a flash is too fleeting to measure anything.",
+        text: "The unconscious is unknowable, so there's no way to understand why she feels this.",
         credit: 0,
       },
       {
-        text: "A cue seems to help people report a flashed grid.",
+        text: "The reliable shift from delight to flatness exactly when security arrives likely reflects an out-of-awareness template in which steady love feels unfamiliar or unsafe, so she retreats just as closeness deepens; test whether the flatness reliably onsets at the point of commitment rather than at random, whether it eases when she stays through it rather than leaving, and whether the pattern matches an early bond where closeness was unreliable.",
+        credit: 1.0,
+      },
+      {
+        text: "She probably gets bored once the chase is over; we could look at her past relationships.",
+        credit: 0.6,
+      },
+      {
+        text: "She seems to lose interest after a while.",
         credit: 0.3,
       },
     ],
     correctAnswer:
-      "A brief, rich visual representation of the whole grid likely lingers for a fraction of a second after the display, but fades before all of it can be read out; test whether delaying the tone steadily lowers how much of the cued row is reported, whether a bright flash right after the grid wipes out the advantage, and whether the four-item limit reflects readout time rather than what was first stored.",
+      "The reliable shift from delight to flatness exactly when security arrives likely reflects an out-of-awareness template in which steady love feels unfamiliar or unsafe, so she retreats just as closeness deepens; test whether the flatness reliably onsets at the point of commitment rather than at random, whether it eases when she stays through it rather than leaving, and whether the pattern matches an early bond where closeness was unreliable.",
     explanation:
-      "Top credit posits a brief high-capacity store emptied by a slow readout and names three tests, including a delayed-cue decay check; 'too fleeting to measure' is the dodge the near-perfect cued report defeats.",
+      "Full credit names a closeness-triggered template and three disconfirming tests; 'the unconscious is unknowable' is the refusal the precise five-time onset pattern defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A man understands spoken words and reads perfectly, and his mouth and tongue move normally for eating, yet he cannot turn his clear thoughts into spoken sentences. Which conclusion best follows?",
+      "Typing a thank-you email to a demanding senior colleague, a man signs off with his mother's first name instead of his own, then deletes it in shock. He notices he'd been feeling, all morning, oddly small and eager to please around this colleague. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Something about his speaking is affected.",
+        text: "It was a random typo with no meaning whatsoever.",
         credit: 0.3,
       },
       {
-        text: "Turning thoughts into speech likely depends on a distinct processing stage between intact comprehension (input) and intact muscle control (output), and that stage alone is damaged; test whether he can produce the same words in writing, whether he can repeat words he just heard, and whether other patients show the reverse — fluent speech but poor comprehension.",
+        text: "The slip plus the 'small and eager to please' feeling likely shows an out-of-awareness template activating — the demanding colleague is being responded to through an old parent-shaped pattern, blurring the roles; test whether the deferential feeling appears specifically with parent-like authority figures, whether other slips or postures from that early relationship surface around this colleague, and whether the pull fades when he consciously separates the colleague from the old figure.",
         credit: 1.0,
       },
       {
-        text: "The brain is too interconnected to assign speaking to any one stage.",
-        credit: 0,
+        text: "He probably has some feeling about this colleague; we could ask what came to mind.",
+        credit: 0.6,
       },
       {
-        text: "His speech output is probably the problem; we could examine more such patients.",
-        credit: 0.6,
+        text: "The slip proves his mother secretly runs his entire mind and he has no real self of his own.",
+        credit: 0,
       },
     ],
     correctAnswer:
-      "Turning thoughts into speech likely depends on a distinct processing stage between intact comprehension (input) and intact muscle control (output), and that stage alone is damaged; test whether he can produce the same words in writing, whether he can repeat words he just heard, and whether other patients show the reverse — fluent speech but poor comprehension.",
+      "The slip plus the 'small and eager to please' feeling likely shows an out-of-awareness template activating — the demanding colleague is being responded to through an old parent-shaped pattern, blurring the roles; test whether the deferential feeling appears specifically with parent-like authority figures, whether other slips or postures from that early relationship surface around this colleague, and whether the pull fades when he consciously separates the colleague from the old figure.",
     explanation:
-      "The richest conclusion isolates a middle processing stage from intact input and output and names three tests; 'too interconnected to assign to any stage' is the refusal the selective deficit contradicts.",
+      "Top credit reads the name-slip as a parent-shaped template intruding and names three checks; 'his mother secretly runs his entire mind' is the melodramatic overreach the situation-specific feeling does not support.",
   },
 ];
 
@@ -417,425 +417,425 @@ const hybrid: HomeworkItem[] = [
   {
     itemType: "hybrid",
     prompt:
-      "An arrow flashes pointing left or right; a target then appears. People detect it faster when it appears where the arrow pointed and slower when it appears on the opposite side, even though the arrow gives no guarantee. Which conclusion best follows?",
+      "A man complains he 'can never find a good partner,' yet a friend points out that for years he has chosen people who are warm at first and then withdraw — and he passes over anyone who is openly available. He's surprised; he thought each choice was unrelated. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "An internal 'spotlight' of attention is likely shifted toward the cued location before the target arrives, speeding processing there and costing time when it must be redirected; test whether very short cue-to-target gaps give no benefit, whether the benefit peaks then fades over time, and whether an invalid cue's cost grows with how far attention must travel back.",
+        text: "He likely carries an out-of-awareness template that steers him toward partners who eventually withdraw, so the 'unrelated' choices share a hidden rule; test whether available, steady people consistently fail to attract him, whether the partners he picks all share the warm-then-distant arc, and whether the pattern matches an early relationship that ran the same way.",
         credit: 1.0,
       },
       {
-        text: "The arrow probably draws attention to one side; we could test more cue directions.",
+        text: "He probably has a type; we could write down his exes and see.",
         credit: 0.6,
       },
       {
-        text: "People seem faster on the side the arrow points to.",
-        credit: 0.3,
+        text: "The pattern proves a hidden self-hatred so total that he is deliberately destroying his own life.",
+        credit: 0,
       },
       {
-        text: "Attention is invisible, so we can't say what the arrow does inside the head.",
-        credit: 0,
+        text: "He seems to have trouble finding the right person.",
+        credit: 0.3,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'attention shifted in advance' lead from the rival 'people simply guess the cued side and respond before checking,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'out-of-awareness template steers his choices' lead from the rival 'he just has bad luck and keeps meeting withdrawers by chance,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: use catch trials where no target appears and require people to confirm a target was really there — my lead predicts they stay accurate (not just fast) on valid trials and rarely false-alarm, because attention improves processing rather than triggering blind guesses. It is refuted if the 'speed-up' is really just premature button-presses, showing up as many false alarms on empty trials instead of better detection.",
+        "Cheapest test: introduce him to several clearly available, steady people and watch whether he reliably feels no spark and drifts toward the one most likely to withdraw — a consistent pull away from availability points to an internal template, not luck. My lead is refuted if he readily connects with available partners when they're around, which would mean the past pattern was just who happened to cross his path.",
       yieldAnchors: [
-        "Targets at the cued side are detected faster",
-        "Targets on the opposite side are detected slower",
-        "The arrow gives no guarantee yet still shifts performance",
+        "He repeatedly chooses partners who warm up then withdraw",
+        "He passes over openly available people",
+        "He experienced the choices as unrelated",
       ],
       riskAnchors: [
-        "Very short cue-to-target gaps give no benefit",
-        "The benefit peaks then fades over time",
-        "The invalid-cue cost grows with the distance attention must travel back",
+        "Available, steady people consistently fail to attract him",
+        "His partners share the same warm-then-distant arc",
+        "The pattern matches an early relationship",
       ],
       defeatedBy: [
-        "People false-alarm on empty trials just as fast",
-        "The cued side speeds responses even with eyes closed",
+        "He connects easily with available partners when they appear",
+        "His exes share no common pattern at all",
       ],
     },
     correctAnswer:
-      "An internal 'spotlight' of attention is likely shifted toward the cued location before the target arrives, speeding processing there and costing time when it must be redirected; test whether very short cue-to-target gaps give no benefit, whether the benefit peaks then fades over time, and whether an invalid cue's cost grows with how far attention must travel back.",
+      "He likely carries an out-of-awareness template that steers him toward partners who eventually withdraw, so the 'unrelated' choices share a hidden rule; test whether available, steady people consistently fail to attract him, whether the partners he picks all share the warm-then-distant arc, and whether the pattern matches an early relationship that ran the same way.",
     explanation:
-      "Full credit names a pre-target attention shift with three checks and a false-alarm test that states its own refutation; 'attention is invisible, we can't say' is the empty refusal.",
+      "Full credit names a choice-steering template with three checks and a cheap available-partner test that states its own refutation; 'total hidden self-hatred destroying his life' is the lurid overreach the ordinary repeated pattern defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A researcher times three tasks: just respond to any light; respond only if it is green; and press left for green, right for red. Each added requirement adds its own slice of time. Which conclusion best follows?",
+      "A calm, courteous accountant becomes shaking-furious at a parking attendant who waves him into the wrong lane — screaming, then trembling with shame for an hour. He is gentle everywhere else, and the attendant had been merely brisk and a little bossy. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Harder versions of the task take longer.",
+        text: "He seems to have a temper about parking.",
         credit: 0.3,
       },
       {
-        text: "What the mind does between light and button is hidden, so the timing means nothing.",
-        credit: 0,
-      },
-      {
-        text: "The total response time can likely be broken into separable stages — detecting, deciding which light, and choosing which hand — because each added demand inserts its own measurable slice; test whether removing the decision step subtracts roughly that slice, whether the stage times stay stable across people, and whether a manipulation aimed at one stage leaves the others' times unchanged.",
+        text: "The rage wildly out of scale with a brisk attendant likely means the moment matched an out-of-awareness template — being bossed around by a petty authority touched off a much older, stored anger; test whether similar 'bossed by a small authority' moments reliably trigger the rage, whether genuinely bigger provocations produce less, and whether the intensity eases once he links the feeling to its earlier source.",
         credit: 1.0,
       },
       {
-        text: "Each added step probably adds time; we could time more task versions.",
+        text: "He probably had a bad day; we could ask what set him off.",
         credit: 0.6,
+      },
+      {
+        text: "The explosion proves he is a secretly violent man wearing a polite mask that finally slipped.",
+        credit: 0,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'separable additive stages' lead from the rival 'the whole task just gets uniformly harder,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'old template was triggered' lead from the rival 'he was simply stressed and the attendant was the last straw,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: introduce a manipulation that should touch only the deciding-which-light stage (say, making the two colors hard to tell apart) and check that it lengthens only that slice while leaving the detect and respond slices unchanged — clean, stage-specific effects are the signature of separable stages. My lead is refuted if every manipulation smears across all the slices at once, which would fit one uniformly harder process rather than discrete stages.",
+        "Cheapest test: track whether the disproportionate rage shows up specifically when a minor authority orders him around, even on relaxed, low-stress days — a tie to that particular trigger rather than to general stress points to a matched template. My lead is refuted if the explosions appear only on objectively stressful days and any minor annoyance, authority or not, sets them off equally.",
       yieldAnchors: [
-        "Simple detection is fastest",
-        "Adding a decision adds a slice of time",
-        "Adding a choice of hand adds another slice",
+        "He is gentle in nearly every other setting",
+        "The trigger was a brisk, bossy minor authority",
+        "The rage was far larger than the provocation",
       ],
       riskAnchors: [
-        "Removing the decision step subtracts roughly its slice",
-        "Stage times stay stable across people",
-        "A manipulation aimed at one stage leaves the others unchanged",
+        "Similar 'bossed by a petty authority' moments trigger the rage",
+        "Genuinely bigger provocations produce less reaction",
+        "The intensity eases once linked to an earlier source",
       ],
       defeatedBy: [
-        "Every manipulation slows all parts of the task equally",
-        "Nothing about hidden stages can be read from timing",
+        "Any minor annoyance triggers equal rage regardless of authority",
+        "The outbursts occur only on objectively stressful days",
       ],
     },
     correctAnswer:
-      "The total response time can likely be broken into separable stages — detecting, deciding which light, and choosing which hand — because each added demand inserts its own measurable slice; test whether removing the decision step subtracts roughly that slice, whether the stage times stay stable across people, and whether a manipulation aimed at one stage leaves the others' times unchanged.",
+      "The rage wildly out of scale with a brisk attendant likely means the moment matched an out-of-awareness template — being bossed around by a petty authority touched off a much older, stored anger; test whether similar 'bossed by a small authority' moments reliably trigger the rage, whether genuinely bigger provocations produce less, and whether the intensity eases once he links the feeling to its earlier source.",
     explanation:
-      "Top credit reads additive slices as separable stages with three checks and a stage-specific test that names its refutation; 'the timing means nothing' is the dodge the orderly additive slices defeat.",
+      "Top credit reads the disproportion as a triggered template with three checks and a stress-versus-trigger test that names its refutation; 'a secretly violent man behind a mask' is the overreach his pervasive gentleness defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "After reading 'doctor,' people recognize 'nurse' faster than 'butter,' and recognize 'hospital' somewhat faster too, with the boost shrinking for more distantly related words. Which conclusion best follows?",
+      "A graduate student handles harsh criticism with poise but freezes, stammers, and goes blank whenever a professor praises her work in front of others. She can dissect a critique calmly, yet praise leaves her flustered for the rest of the day. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Related words probably help each other; we could test more word pairs.",
-        credit: 0.6,
-      },
-      {
-        text: "Word associations are too personal to support any general claim.",
-        credit: 0,
-      },
-      {
-        text: "People seem quicker on related words.",
+        text: "She seems uncomfortable with praise.",
         credit: 0.3,
       },
       {
-        text: "Concepts are likely stored in a network where activating one spreads activation to its neighbors, pre-readying related words by an amount that falls with conceptual distance; test whether the boost decreases smoothly with how related the words are rated, whether an unrelated word in between weakens the link, and whether a longer gap before the second word lets the activation fade.",
+        text: "Feelings are too complex to ever explain why praise rattles someone.",
+        credit: 0,
+      },
+      {
+        text: "That praise — not criticism — reliably undoes her likely reflects an out-of-awareness template in which being singled out for approval feels exposing or unsafe; test whether the freeze appears specifically with public praise rather than criticism, whether private praise rattles her less, and whether the pattern matches an early setting where standing out drew trouble.",
         credit: 1.0,
+      },
+      {
+        text: "She probably isn't used to compliments; we could ask how she feels when praised.",
+        credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'spreading activation in a network' lead from the rival 'people consciously predict and prepare for the next word,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'praise matches an unsafe-approval template' lead from the rival 'she just has low self-esteem and any attention overwhelms her,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: shorten the gap between the two words to a fraction of a second, too fast for any conscious prediction — my lead predicts the related-word boost still appears because spreading activation is automatic and quick. It is refuted if the boost only shows up at long, leisurely gaps where people have time to deliberately guess, which would point to conscious strategy rather than an automatic network.",
+        "Cheapest test: compare her reaction to equally public criticism versus public praise — if criticism leaves her composed while only praise undoes her, the problem is specific to approval, not attention in general. My lead is refuted if she falls apart equally under public criticism and public praise, which would fit general attention-overwhelm rather than a praise-specific template.",
       yieldAnchors: [
-        "'Nurse' is recognized faster after 'doctor' than 'butter'",
-        "Related but distant words get a smaller boost",
-        "The boost shrinks with conceptual distance",
+        "She handles harsh criticism with poise",
+        "Public praise makes her freeze and go blank",
+        "The disruption lasts the rest of the day",
       ],
       riskAnchors: [
-        "The boost falls smoothly with rated relatedness",
-        "An unrelated word in between weakens the link",
-        "A longer gap lets the activation fade",
+        "The freeze is specific to public praise, not criticism",
+        "Private praise rattles her less",
+        "The pattern matches an early standing-out experience",
       ],
       defeatedBy: [
-        "Only words people consciously expect get any boost",
-        "Relatedness has no effect on recognition speed",
+        "She falls apart equally under public criticism",
+        "All attention, good or bad, overwhelms her the same",
       ],
     },
     correctAnswer:
-      "Concepts are likely stored in a network where activating one spreads activation to its neighbors, pre-readying related words by an amount that falls with conceptual distance; test whether the boost decreases smoothly with how related the words are rated, whether an unrelated word in between weakens the link, and whether a longer gap before the second word lets the activation fade.",
+      "That praise — not criticism — reliably undoes her likely reflects an out-of-awareness template in which being singled out for approval feels exposing or unsafe; test whether the freeze appears specifically with public praise rather than criticism, whether private praise rattles her less, and whether the pattern matches an early setting where standing out drew trouble.",
     explanation:
-      "Full credit names a spreading-activation network with three checks and a too-fast-to-guess test that states its refutation; 'too personal to support any claim' is the dodge the graded, reliable priming defeats.",
+      "Full credit names a praise-specific template with three checks and a praise-versus-criticism test that names its refutation; 'feelings are too complex to explain' is the empty refusal the clean praise-only pattern defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "Asked to respond to digits by whether they are odd or even, people are slow at first, but after hundreds of trials they respond almost as fast as for simple detection and report not 'thinking' about it. Which conclusion best follows?",
+      "A punctual woman is reliably 20 minutes late — but only when meeting one particular old friend, never for work, dates, or other friends. She always intends to be on time, leaves late 'by accident,' and feels obscurely reluctant on the way. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Practice seems to speed up the parity task.",
+        text: "She probably has some resistance to seeing this friend; we could ask how she feels about her.",
+        credit: 0.6,
+      },
+      {
+        text: "Lateness happens to everyone; there's no meaning in it.",
         credit: 0.3,
       },
       {
-        text: "Heavy practice likely compresses a multi-step computation — read digit, judge odd/even, choose a response — into a fast automatic lookup, shrinking the decision stage toward zero; test whether a never-practiced digit-to-response mapping is slow again, whether a sudden rule reversal restores the slow times, and whether the automatic response intrudes when people are told to withhold it.",
+        text: "The lateness confined to one friend, in someone otherwise punctual, plus the reluctance, likely reflects an out-of-awareness reluctance that the 'accidental' lateness enacts — a quiet drag on a relationship she won't consciously question; test whether the lateness occurs only with this friend, whether it tracks a specific recurring strain in the friendship, and whether naming the reluctance makes the lateness stop.",
         credit: 1.0,
       },
       {
-        text: "Skill differences are too individual to conclude anything.",
+        text: "The chronic lateness proves she has a deep buried hatred for this friend that her mind is hiding to protect her sanity.",
         credit: 0,
-      },
-      {
-        text: "Practice probably makes the judgment easier; we could test more practice amounts.",
-        credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'computation compressed into an automatic lookup' lead from the rival 'people just generally get faster at everything,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'out-of-awareness reluctance enacted as lateness' lead from the rival 'this friend's gatherings just happen to be hard to get to on time,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: after training, suddenly swap the rule (now press the other key for odd) and check whether response time jumps back to slow — if a learned mapping was driving the speed, breaking it should cost dearly, which a general speed-up would not. My lead is refuted if reversing the rule barely slows people, showing the gain was just overall quickening rather than a stored stimulus-response shortcut.",
+        "Cheapest test: check whether the lateness follows the friend rather than the venue — if she's late even when they meet somewhere convenient and on-time everywhere else, the drag is about the relationship, not the logistics. My lead is refuted if she's punctual whenever the meeting place is easy to reach, which would make it a scheduling problem rather than a feeling.",
       yieldAnchors: [
-        "The parity task is slow at first",
-        "After much practice it is nearly as fast as simple detection",
-        "People report not consciously thinking about it",
+        "She is otherwise reliably punctual",
+        "The lateness happens only with this one friend",
+        "She feels an obscure reluctance on the way",
       ],
       riskAnchors: [
-        "A never-practiced mapping is slow again",
-        "A sudden rule reversal restores the slow times",
-        "The automatic response intrudes when people must withhold it",
+        "The lateness occurs only with this friend",
+        "It tracks a specific recurring strain in the friendship",
+        "Naming the reluctance stops the lateness",
       ],
       defeatedBy: [
-        "Reversing the learned rule costs no extra time",
-        "People speed up equally on every unrelated task",
+        "She is on time whenever the venue is convenient",
+        "She is equally late for many different people",
       ],
     },
     correctAnswer:
-      "Heavy practice likely compresses a multi-step computation — read digit, judge odd/even, choose a response — into a fast automatic lookup, shrinking the decision stage toward zero; test whether a never-practiced digit-to-response mapping is slow again, whether a sudden rule reversal restores the slow times, and whether the automatic response intrudes when people are told to withhold it.",
+      "The lateness confined to one friend, in someone otherwise punctual, plus the reluctance, likely reflects an out-of-awareness reluctance that the 'accidental' lateness enacts — a quiet drag on a relationship she won't consciously question; test whether the lateness occurs only with this friend, whether it tracks a specific recurring strain in the friendship, and whether naming the reluctance makes the lateness stop.",
     explanation:
-      "Top credit names a multi-step computation compressed into automatic lookup with three checks and a rule-reversal test that names its refutation; 'too individual to conclude anything' is the empty refusal.",
+      "Top credit reads the selective lateness as enacted reluctance with three checks and a venue-versus-friend test that names its refutation; 'deep buried hatred to protect her sanity' is the melodrama the ordinary mild reluctance defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "Asked which is bigger in real life, a pair like 'a horse vs a cat,' people answer faster the larger the real size difference — even though the words themselves give no size cue. Which conclusion best follows?",
+      "A man jokes constantly, and friends notice his 'jokes' nearly always land on the same theme — being abandoned or replaced ('I'll be forgotten in a week,' 'you'll all get a better friend'). He laughs them off and says he means nothing by them. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Size is subjective, so these judgments can't reveal anything.",
-        credit: 0,
+        text: "He's just a joker; the topics don't mean anything.",
+        credit: 0.3,
       },
       {
-        text: "Bigger differences probably make the choice easier; we could test more animal pairs.",
-        credit: 0.6,
-      },
-      {
-        text: "People likely convert the words into an internal magnitude representation and compare those magnitudes, so a larger real-size gap is easier to resolve; test whether the effect tracks actual physical sizes rather than word length or familiarity, whether it appears for other dimensions like loudness or price, and whether very close real sizes produce errors and slow responses.",
+        text: "The jokes that keep circling one theme likely voice an out-of-awareness worry about being abandoned that humor lets him air without owning it; test whether the abandonment theme dominates his jokes specifically over other topics, whether the jokes spike when a relationship feels uncertain, and whether the worry, once named directly, eases the joking.",
         credit: 1.0,
       },
       {
-        text: "People seem faster when sizes are very different.",
-        credit: 0.3,
+        text: "He probably has some insecurity; we could ask what's behind the jokes.",
+        credit: 0.6,
+      },
+      {
+        text: "The jokes prove he has already decided everyone will betray him and is plotting to leave first.",
+        credit: 0,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'words converted into internal magnitudes' lead from the rival 'people just instantly know the answer for very different pairs,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'jokes voice an out-of-awareness abandonment worry' lead from the rival 'he just has a dark sense of humor about everything,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: hold familiarity and word length constant and vary only the real-size gap in small steps — my lead predicts a smooth, continuous speed-up as the gap widens, the signature of comparing positions on an internal scale, not a sudden 'obvious vs not' split. It is refuted if response time is flat across all gaps or jumps in one step, which would fit instant lookup rather than graded magnitude comparison.",
+        "Cheapest test: tally his jokes by theme and check whether abandonment dominates while other dark topics are rare — a lopsided concentration on being left points to a specific worry, not generic dark humor. My lead is refuted if his jokes range evenly across many dark themes with no special pull toward abandonment.",
       yieldAnchors: [
-        "People judge real-world size from words alone",
-        "Bigger real-size gaps give faster answers",
-        "The words give no direct size cue",
+        "His jokes repeatedly target abandonment and replacement",
+        "He insists he means nothing by them",
+        "The theme recurs across many occasions",
       ],
       riskAnchors: [
-        "The effect tracks actual physical size, not word length or familiarity",
-        "It appears for other dimensions like loudness or price",
-        "Very close real sizes produce errors and slow responses",
+        "The abandonment theme dominates over other joke topics",
+        "The jokes spike when a relationship feels uncertain",
+        "Naming the worry directly eases the joking",
       ],
       defeatedBy: [
-        "Response time is flat no matter the size gap",
-        "Word length, not real size, drives the speed",
+        "His jokes range evenly across many dark themes",
+        "The joking is unrelated to relationship uncertainty",
       ],
     },
     correctAnswer:
-      "People likely convert the words into an internal magnitude representation and compare those magnitudes, so a larger real-size gap is easier to resolve; test whether the effect tracks actual physical sizes rather than word length or familiarity, whether it appears for other dimensions like loudness or price, and whether very close real sizes produce errors and slow responses.",
+      "The jokes that keep circling one theme likely voice an out-of-awareness worry about being abandoned that humor lets him air without owning it; test whether the abandonment theme dominates his jokes specifically over other topics, whether the jokes spike when a relationship feels uncertain, and whether the worry, once named directly, eases the joking.",
     explanation:
-      "Full credit posits a word-to-magnitude conversion with three checks and a graded-gap test that names its refutation; 'size is subjective, can't reveal anything' is the dodge the orderly distance effect defeats.",
+      "Full credit reads the recurring joke theme as an aired-but-disowned worry with three checks and a theme-tally test that names its refutation; 'plotting to leave first' is the overreach the playful, themed joking does not support.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "People recall short lists of words worse when the words sound alike (man, mad, cap, cat) than when they look or mean alike, and recalling long words is harder than short ones. Which conclusion best follows?",
+      "A capable woman has had three bosses she ended up working for, and each turned out to be controlling and quick to anger. Coworkers found the same managers reasonable. She insists she 'just keeps landing under tyrants' by chance. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Short-term verbal memory likely holds items in a sound-based form refreshed by inner speech, so similar sounds blur together and longer words crowd the rehearsal loop; test whether silently mouthing an irrelevant word like 'the, the, the' wipes out both effects, whether the word-length cost tracks how long words take to say rather than letter count, and whether meaning-based similarity barely hurts immediate recall.",
-        credit: 1.0,
-      },
-      {
-        text: "Sound-alike words probably get confused; we could test more word lists.",
+        text: "She probably has bad luck with bosses; we could review her job history.",
         credit: 0.6,
       },
       {
-        text: "Memory is too variable to say what form words are stored in.",
+        text: "The pattern is unknowable, so we can't say why she keeps ending up there.",
         credit: 0,
       },
       {
-        text: "Similar-sounding words seem harder to remember.",
+        text: "That she repeatedly ends up under (and experiences as tyrannical) bosses others find reasonable likely reflects an out-of-awareness template that both draws her toward such figures and primes her to read them as controlling; test whether she gravitates to that boss type when she has choices, whether neutral observers rate the same managers as ordinary, and whether the template matches an early controlling authority in her life.",
+        credit: 1.0,
+      },
+      {
+        text: "She seems to clash with her managers.",
         credit: 0.3,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'sound-based rehearsal loop' lead from the rival 'similar words are just generally confusing,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'template draws her in and shapes her reading' lead from the rival 'she has simply, by chance, had three genuinely controlling bosses,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: have people repeat an irrelevant sound aloud ('the, the, the') while studying the list, which blocks inner speech — my lead predicts the sound-similarity and word-length effects should both vanish because the rehearsal loop is occupied. It is refuted if blocking inner speech leaves those effects intact, which would mean the confusion is not tied to a sound-based rehearsal system at all.",
+        "Cheapest test: have neutral coworkers independently rate the same managers — if others reliably find them reasonable while she alone experiences tyranny, the controlling quality is partly in her template, not just the bosses. My lead is refuted if independent raters confirm the managers really are controlling, which would make her experience accurate rather than templated.",
       yieldAnchors: [
-        "Sound-alike lists are recalled worse than look- or meaning-alike lists",
-        "Long words are recalled worse than short words",
-        "Meaning similarity barely hurts immediate recall",
+        "Three successive bosses ended up controlling for her",
+        "Coworkers found the same managers reasonable",
+        "She frames it as pure chance",
       ],
       riskAnchors: [
-        "Mouthing an irrelevant word wipes out both effects",
-        "The word-length cost tracks speaking time, not letter count",
-        "Meaning-based similarity barely hurts immediate recall",
+        "She gravitates to that boss type given a choice",
+        "Neutral observers rate the managers as ordinary",
+        "The template matches an early controlling authority",
       ],
       defeatedBy: [
-        "Blocking inner speech leaves the effects unchanged",
-        "Meaning-alike lists are just as hard as sound-alike lists",
+        "Independent raters confirm the bosses are genuinely controlling",
+        "She avoids controlling figures whenever she can choose",
       ],
     },
     correctAnswer:
-      "Short-term verbal memory likely holds items in a sound-based form refreshed by inner speech, so similar sounds blur together and longer words crowd the rehearsal loop; test whether silently mouthing an irrelevant word like 'the, the, the' wipes out both effects, whether the word-length cost tracks how long words take to say rather than letter count, and whether meaning-based similarity barely hurts immediate recall.",
+      "That she repeatedly ends up under (and experiences as tyrannical) bosses others find reasonable likely reflects an out-of-awareness template that both draws her toward such figures and primes her to read them as controlling; test whether she gravitates to that boss type when she has choices, whether neutral observers rate the same managers as ordinary, and whether the template matches an early controlling authority in her life.",
     explanation:
-      "Top credit names a sound-based rehearsal loop with three checks and an inner-speech-blocking test that names its refutation; 'too variable to say what form' is the dodge the specific sound-similarity pattern defeats.",
+      "Top credit names a template shaping both choice and perception with three checks and a neutral-rater test that names its refutation; 'unknowable' is the dodge the others-find-them-reasonable evidence defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "Fast typists who hit a wrong key often strike the intended key's neighbor and immediately slow the next stroke, while their eyes are already several letters ahead in the text. Which conclusion best follows?",
+      "Comforting his partner after a hard day, a man means to say 'I've got you' but says 'Mom's got you,' then feels a jolt of confusion. He's noticed he often slips into a soothing, parental tone with her specifically when she's distressed. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Typists seem to read ahead and sometimes mis-hit.",
+        text: "Slips of the tongue are random noise and mean nothing.",
         credit: 0.3,
       },
       {
-        text: "Typing is too fast and skilled to analyze its steps.",
-        credit: 0,
+        text: "The 'Mom' slip plus the parental tone when she's upset likely shows an out-of-awareness template — distress in a loved one cues a learned caretaker role from his family — shaping how he relates; test whether the parental shift appears specifically when she's distressed, whether the same caretaker stance shows up with others in distress, and whether it matches a role he held early in his own family.",
+        credit: 1.0,
       },
       {
-        text: "Typists probably plan ahead; we could record more keystrokes.",
+        text: "He probably falls into a caretaker mode; we could ask about his family role.",
         credit: 0.6,
       },
       {
-        text: "Typing likely separates a planning stage that reads and queues upcoming letters from a motor stage that executes them, with an internal monitor that catches errors and slows the next move; test whether covering already-typed text barely hurts speed while blocking the preview ahead does, whether forced fast typing produces more neighbor-key slips, and whether the post-error slowing appears even when typists don't consciously notice the mistake.",
-        credit: 1.0,
+        text: "The slip proves he is romantically attracted to his own mother and his whole relationship is a disguise for that.",
+        credit: 0,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'separate plan-ahead and execute stages with a monitor' lead from the rival 'typists just react letter-by-letter to what they currently see,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'a learned caretaker template is cued by distress' lead from the rival 'it was a meaningless one-off verbal slip,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: cover the upcoming text so only the current letter is visible — my lead predicts speed should collapse because the planning stage relies on a queue read several letters ahead, whereas a pure react-to-current-letter account predicts little change. It is refuted if hiding the preview leaves fast typing untouched, which would mean no advance planning stage is feeding the fingers.",
+        "Cheapest test: watch whether the parental tone and caretaker stance reliably switch on whenever someone close is distressed and switch off otherwise — a consistent distress-cued shift points to an activated role, not a fluke. My lead is refuted if the soothing-parental mode never recurs and shows no link to others' distress.",
       yieldAnchors: [
-        "Errors are usually the intended key's neighbor",
-        "The stroke right after an error slows down",
-        "The eyes are already several letters ahead",
+        "He slips into saying 'Mom' while comforting her",
+        "He adopts a parental tone when she's distressed",
+        "The pattern is specific to moments of distress",
       ],
       riskAnchors: [
-        "Covering already-typed text barely hurts speed",
-        "Blocking the preview ahead sharply slows typing",
-        "Post-error slowing appears even without conscious awareness of the slip",
+        "The parental shift appears specifically with distress",
+        "The caretaker stance shows up with others in distress",
+        "It matches an early role in his own family",
       ],
       defeatedBy: [
-        "Hiding the upcoming text leaves fast typing unaffected",
-        "Typists only ever process the single current letter",
+        "The caretaker mode never recurs",
+        "His tone is unrelated to whether others are distressed",
       ],
     },
     correctAnswer:
-      "Typing likely separates a planning stage that reads and queues upcoming letters from a motor stage that executes them, with an internal monitor that catches errors and slows the next move; test whether covering already-typed text barely hurts speed while blocking the preview ahead does, whether forced fast typing produces more neighbor-key slips, and whether the post-error slowing appears even when typists don't consciously notice the mistake.",
+      "The 'Mom' slip plus the parental tone when she's upset likely shows an out-of-awareness template — distress in a loved one cues a learned caretaker role from his family — shaping how he relates; test whether the parental shift appears specifically when she's distressed, whether the same caretaker stance shows up with others in distress, and whether it matches a role he held early in his own family.",
     explanation:
-      "Full credit splits planning from execution plus a monitor, with three checks and a hide-the-preview test that names its refutation; 'too fast and skilled to analyze' is the empty refusal.",
+      "Full credit reads the slip as a distress-cued caretaker template with three checks and a distress-on/off test that names its refutation; 'attracted to his mother and disguising it' is the lurid overreach the caretaking pattern defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "When two signals come close together and each needs its own quick response, the response to the second is delayed — and the delay grows the closer the two signals are. Which conclusion best follows?",
+      "On his daily walk a man always detours around one quiet, perfectly ordinary street, adding minutes for no reason he can state. Pressed, he just feels 'off' approaching it. He used to live near there years ago during a painful stretch he rarely thinks about. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Two quick tasks probably interfere; we could vary the gap more.",
-        credit: 0.6,
+        text: "The unconscious can't be known, so his detour can't be explained.",
+        credit: 0,
       },
       {
-        text: "A central decision stage likely handles one response at a time, so the second must wait for the first to clear the bottleneck — explaining why a shorter gap means a longer wait; test whether the second response's delay equals the leftover processing time of the first, whether making only the first task harder lengthens the second's delay, and whether two pure reflexes that skip the decision stage show no queuing.",
+        text: "The consistent automatic detour plus the 'off' feeling near a street tied to a painful past period likely reflects an out-of-awareness avoidance — the place cues stored distress, and the detour quietly manages it; test whether the unease is specific to that street and its vicinity, whether it tracks reminders of the painful period, and whether deliberately walking it, with the link in mind, lessens the pull over time.",
         credit: 1.0,
       },
       {
-        text: "Doing two things at once seems to slow the second one.",
-        credit: 0.3,
+        text: "He probably associates that street with a bad time; we could ask what happened there.",
+        credit: 0.6,
       },
       {
-        text: "Multitasking depends on the person, so no general rule can be drawn.",
-        credit: 0,
+        text: "He seems to dislike that street.",
+        credit: 0.3,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'single central bottleneck that queues responses' lead from the rival 'people are just distracted by the second signal,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'out-of-awareness avoidance cued by the painful past' lead from the rival 'he just prefers his usual route out of habit,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: make only the first task's decision harder and check whether the second response is delayed by exactly that added time — a bottleneck predicts the second waits in line behind the lengthened first, so its delay should grow by the same amount. My lead is refuted if making the first task harder leaves the second response's timing unchanged, which would mean the two aren't queued through one shared stage.",
+        "Cheapest test: check whether the 'off' feeling and detour are specific to this particular street's area versus any equally convenient alternate route — distress tied to that location rather than to route habit points to cued avoidance. My lead is refuted if he detours around many interchangeable streets with no special unease, which would make it ordinary route preference.",
       yieldAnchors: [
-        "The second response is delayed when signals are close",
-        "The delay grows as the gap shrinks",
-        "Each task alone is quick",
+        "He detours around one specific ordinary street",
+        "He feels 'off' approaching it",
+        "He once lived there during a painful period",
       ],
       riskAnchors: [
-        "The second's delay equals the first's leftover processing time",
-        "Making only the first task harder lengthens the second's delay",
-        "Two reflexes that skip the decision stage show no queuing",
+        "The unease is specific to that street's vicinity",
+        "It tracks reminders of the painful period",
+        "Deliberately walking it, with the link in mind, lessens the pull",
       ],
       defeatedBy: [
-        "Lengthening the first task does not delay the second",
-        "The second response is just as fast at any gap",
+        "He detours around many streets with no special unease",
+        "The feeling is unrelated to the past period",
       ],
     },
     correctAnswer:
-      "A central decision stage likely handles one response at a time, so the second must wait for the first to clear the bottleneck — explaining why a shorter gap means a longer wait; test whether the second response's delay equals the leftover processing time of the first, whether making only the first task harder lengthens the second's delay, and whether two pure reflexes that skip the decision stage show no queuing.",
+      "The consistent automatic detour plus the 'off' feeling near a street tied to a painful past period likely reflects an out-of-awareness avoidance — the place cues stored distress, and the detour quietly manages it; test whether the unease is specific to that street and its vicinity, whether it tracks reminders of the painful period, and whether deliberately walking it, with the link in mind, lessens the pull over time.",
     explanation:
-      "Top credit names a single-channel bottleneck that queues responses with three checks and a lengthen-the-first test that names its refutation; 'depends on the person' is the dodge the orderly gap-dependent delay defeats.",
+      "Top credit reads the detour as cued avoidance with three checks and a location-specificity test that names its refutation; 'the unconscious can't be known' is the refusal the place-specific unease defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "Given a candle, a box of tacks, and matches, people struggle to mount the candle on the wall — until they suddenly see the empty tack box as a shelf, then solve it at once. Showing the box empty beforehand makes them solve it far faster. Which conclusion best follows?",
+      "A woman reacts to her partner's small kindnesses — flowers, a packed lunch — with instant suspicion ('what does he want?'), then guilt. He has never been manipulative. She grew up where gifts always came with strings attached. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Problem solving is too mysterious to study with such puzzles.",
+        text: "She probably has trust issues; we could talk about her past.",
+        credit: 0.6,
+      },
+      {
+        text: "Her suspicion proves the partner really is secretly manipulating her in ways no one has caught yet.",
         credit: 0,
       },
       {
-        text: "People seem to get stuck on how they see the box.",
-        credit: 0.3,
-      },
-      {
-        text: "Solving likely requires re-representing an object's function — seeing the box as a platform, not just a container — so a fixed mental representation blocks the answer until it is revised; test whether presenting the box and tacks separately speeds solving, whether first stressing the box's 'container' use slows it further, and whether the same fixation appears for other tools labeled by a usual function.",
+        text: "The automatic suspicion-then-guilt toward genuine kindness, in someone whose early gifts came with strings, likely reflects an out-of-awareness template that codes generosity as a setup; test whether the suspicion fires for kindness regardless of the giver's actual intent, whether it's strongest when the gesture resembles the old strings-attached pattern, and whether it eases as repeated no-strings kindness builds new evidence.",
         credit: 1.0,
       },
       {
-        text: "How the box is shown probably affects solving; we could test more setups.",
-        credit: 0.6,
+        text: "She seems wary of gifts.",
+        credit: 0.3,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'stuck mental representation of function' lead from the rival 'people simply haven't had enough time to try all the options,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'kindness-as-setup template' lead from the rival 'her partner is actually subtly manipulative,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: hold solving time constant but present the tacks already dumped out of the box, so its 'container' role is broken — my lead predicts much faster solutions even with no extra time, because the block is how the box is represented, not how long people work. It is refuted if emptying the box first makes no difference and only extra minutes help, which would point to slow search rather than a fixed representation.",
+        "Cheapest test: see whether the suspicion fires for clearly no-strings kindness from many different, trustworthy people, not just her partner — a reaction triggered by generosity itself rather than by any real demand points to her template. My lead is refuted if neutral observers find her partner's gestures really do carry hidden conditions, which would make her suspicion accurate.",
       yieldAnchors: [
-        "People fail while the box is seen as a container",
-        "They solve at once after re-seeing it as a shelf",
-        "Showing the box empty beforehand speeds solving",
+        "Small genuine kindnesses trigger instant suspicion",
+        "Guilt follows the suspicion",
+        "Her early gifts came with strings attached",
       ],
       riskAnchors: [
-        "Presenting box and tacks separately speeds solving",
-        "Stressing the box's container use slows it further",
-        "The same fixation appears for other function-labeled tools",
+        "The suspicion fires regardless of the giver's intent",
+        "It's strongest when the gesture echoes the old pattern",
+        "Repeated no-strings kindness eases it over time",
       ],
       defeatedBy: [
-        "Emptying the box first makes no difference",
-        "Only more time, not how the box is shown, helps",
+        "Observers confirm the partner's gestures carry hidden conditions",
+        "She trusts kindness easily from everyone else",
       ],
     },
     correctAnswer:
-      "Solving likely requires re-representing an object's function — seeing the box as a platform, not just a container — so a fixed mental representation blocks the answer until it is revised; test whether presenting the box and tacks separately speeds solving, whether first stressing the box's 'container' use slows it further, and whether the same fixation appears for other tools labeled by a usual function.",
+      "The automatic suspicion-then-guilt toward genuine kindness, in someone whose early gifts came with strings, likely reflects an out-of-awareness template that codes generosity as a setup; test whether the suspicion fires for kindness regardless of the giver's actual intent, whether it's strongest when the gesture resembles the old strings-attached pattern, and whether it eases as repeated no-strings kindness builds new evidence.",
     explanation:
-      "Full credit names a fixed functional representation that must be revised, with three checks and an empty-the-box test that names its refutation; 'too mysterious to study' is the dodge the reliable framing effect defeats.",
+      "Full credit names a kindness-as-setup template with three checks and a many-givers test that names its refutation; 'the partner really is secretly manipulating her' is the overreach his consistent no-strings behavior defeats.",
   },
 ];
 
@@ -843,175 +843,179 @@ const written: HomeworkItem[] = [
   {
     itemType: "written",
     prompt:
-      "When people read, their eyes don't glide smoothly; they jump and pause, lingering on rare or surprising words, jumping back to reread a confusing phrase, and skipping short predictable words like 'the.' In one paragraph, propose the strongest conclusion about how the mind processes language as it reads, and describe how you would test it.",
+      "A woman has had four jobs and describes every boss in nearly identical words — 'cold, withholding, always disappointed in me' — even though her coworkers experienced those same managers very differently. She is sure she simply keeps getting unlucky. In one paragraph, propose the strongest conclusion about the out-of-awareness pattern at work and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that reading is an active, moment-by-moment information-processing cycle in which the mind allocates processing time to each word according to its difficulty and uses ongoing comprehension to decide where and how long to look — so the eyes are a live readout of mental load, not a fixed scanning rhythm. This is a strong claim because it predicts checkable consequences: fixation time should rise as a word gets rarer and fall when prior context makes it predictable; a breakdown in comprehension should trigger backward jumps that land on the exact problem word rather than random spots; and changing only the upcoming word's predictability should change how often it is skipped. I would test it by timing fixations against word frequency and contextual predictability, by planting garden-path sentences and tracking where regressions land, and by manipulating context to shift skipping rates while holding the words themselves constant.",
+        "The strongest conclusion is that she carries an out-of-awareness template — a stored expectation, likely learned from an early withholding figure — that automatically casts each new boss as cold and disappointed in her, so the sameness lives in her, not in four coincidentally similar managers. This is a strong claim because it predicts checkable consequences: neutral coworkers should rate the same bosses as ordinary or warm; her sense of being 'disappointed in' should appear early, before a boss has done much; and the pattern should surface with other authority figures, and should match how an important early caregiver treated her. I would test it by collecting independent ratings of those managers, by tracking how quickly the 'cold and disappointed' feeling forms with a brand-new boss, and by checking whether the same reading appears with teachers, landlords, or in-laws — and whether naming the template softens it. A genuine refutation would be independent confirmation that the bosses really were uniformly cold, which would make her experience accurate rather than templated.",
       yieldAnchors: [
-        "Eyes pause longer on rare or surprising words",
-        "Eyes skip short, predictable words",
-        "Eyes jump back to reread confusing phrases",
+        "She describes four different bosses in nearly identical terms",
+        "Coworkers experienced those managers very differently",
+        "She attributes it entirely to bad luck",
       ],
       riskAnchors: [
-        "Fixation time rises with rarity and falls with predictability",
-        "Regressions land on the specific problem word",
-        "Changing context predictability changes skipping rates",
+        "Neutral coworkers rate the same bosses as ordinary or warm",
+        "The 'disappointed in me' feeling forms early with new bosses",
+        "The same reading appears with other authority figures",
       ],
       defeatedBy: [
-        "Eyes move at a fixed rhythm regardless of content",
-        "Nothing about processing can be read from eye movements",
+        "Independent raters confirm the bosses were uniformly cold",
+        "One unusual workplace tells us nothing about her patterns",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that reading is an active, moment-by-moment information-processing cycle in which the mind allocates processing time to each word according to its difficulty and uses ongoing comprehension to decide where and how long to look — so the eyes are a live readout of mental load, not a fixed scanning rhythm. This is a strong claim because it predicts checkable consequences: fixation time should rise as a word gets rarer and fall when prior context makes it predictable; a breakdown in comprehension should trigger backward jumps that land on the exact problem word rather than random spots; and changing only the upcoming word's predictability should change how often it is skipped. I would test it by timing fixations against word frequency and contextual predictability, by planting garden-path sentences and tracking where regressions land, and by manipulating context to shift skipping rates while holding the words themselves constant.",
+      "The strongest conclusion is that she carries an out-of-awareness template — a stored expectation, likely learned from an early withholding figure — that automatically casts each new boss as cold and disappointed in her, so the sameness lives in her, not in four coincidentally similar managers. This is a strong claim because it predicts checkable consequences: neutral coworkers should rate the same bosses as ordinary or warm; her sense of being 'disappointed in' should appear early, before a boss has done much; and the pattern should surface with other authority figures, and should match how an important early caregiver treated her. I would test it by collecting independent ratings of those managers, by tracking how quickly the 'cold and disappointed' feeling forms with a brand-new boss, and by checking whether the same reading appears with teachers, landlords, or in-laws — and whether naming the template softens it. A genuine refutation would be independent confirmation that the bosses really were uniformly cold, which would make her experience accurate rather than templated.",
     explanation:
-      "Under the inverted standard, 'nothing can be read from eye movements' earns near-zero; top credit goes to the load-allocation conclusion that commits to specific links and names a regression-landing test that could refute it.",
+      "Under the inverted standard, 'she just keeps getting unlucky' earns near-zero; top credit goes to the template conclusion that binds the identical descriptions and others' differing views and names a neutral-rater test that could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "A four-year-old who has never heard a particular sentence still produces and understands brand-new ones instantly and correctly, like 'The purple dog is dancing on my sandwich.' In one paragraph, propose the strongest conclusion about the mind as an information processor and describe how you would test it.",
+      "A man reports that every relationship 'mysteriously falls apart' just as it gets serious. Looking closer, the breakups always follow a moment of real closeness — a trip planned, an 'I love you' — after which he becomes critical and picks fights until the partner leaves. He sees only that he 'keeps choosing the wrong people.' In one paragraph, propose the strongest conclusion about the out-of-awareness pattern and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that the mind does not store and replay learned stimulus-response pairs but applies internal rules — a grammar — to combine stored representations (words) into endless new sentences, a productivity that simple association between heard inputs and outputs cannot explain. This is a strong claim because it predicts checkable consequences: the child should correctly interpret novel sentences that obey the rules yet reject ones that violate them; her mistakes should be systematic overgeneralizations ('goed,' 'foots') rather than random noise; and she should handle made-up words slotted into known structures, treating 'the wug is glorping' grammatically. I would test it by presenting never-heard grammatical and ungrammatical sentences and checking comprehension, by cataloging whether her errors follow rules, and by inserting nonsense words into familiar frames to see if she applies the grammar.",
+        "The strongest conclusion is that an out-of-awareness template makes deepening closeness feel dangerous, so without intending to he sabotages relationships precisely at the point of intimacy — the breakups are produced by him, not by repeatedly bad partners. This is a strong claim because it predicts checkable consequences: the fault-finding and fights should reliably onset right after closeness milestones rather than at random; the same withdrawal-at-intimacy pattern should appear across very different partners; and it should trace to an early bond where closeness was unsafe or punished. I would test it by mapping each relationship's timeline to see whether conflict spikes just after intimacy, by checking whether the pattern holds regardless of how kind or compatible the partner is, and by asking whether staying through the urge to fight — rather than acting on it — lets a relationship survive. The lead is refuted if his conflicts are scattered with no link to closeness, or if his partners were genuinely and independently incompatible each time.",
       yieldAnchors: [
-        "The child produces sentences she has never heard",
-        "She understands brand-new sentences instantly",
-        "She does so correctly, not by chance",
+        "Breakups always follow a moment of real closeness",
+        "He becomes critical and picks fights until partners leave",
+        "He sees only that he 'chooses the wrong people'",
       ],
       riskAnchors: [
-        "She accepts rule-following novel sentences and rejects rule-violating ones",
-        "Her errors are systematic overgeneralizations",
-        "She applies the grammar to made-up words in known structures",
+        "Fault-finding reliably onsets right after intimacy milestones",
+        "The withdrawal-at-closeness pattern holds across different partners",
+        "It traces to an early bond where closeness was unsafe",
       ],
       defeatedBy: [
-        "Language is just memorized stimulus-response pairs",
-        "Children only repeat sentences they have already heard",
+        "His conflicts are scattered with no link to closeness",
+        "Each partner was independently and genuinely incompatible",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that the mind does not store and replay learned stimulus-response pairs but applies internal rules — a grammar — to combine stored representations (words) into endless new sentences, a productivity that simple association between heard inputs and outputs cannot explain. This is a strong claim because it predicts checkable consequences: the child should correctly interpret novel sentences that obey the rules yet reject ones that violate them; her mistakes should be systematic overgeneralizations ('goed,' 'foots') rather than random noise; and she should handle made-up words slotted into known structures, treating 'the wug is glorping' grammatically. I would test it by presenting never-heard grammatical and ungrammatical sentences and checking comprehension, by cataloging whether her errors follow rules, and by inserting nonsense words into familiar frames to see if she applies the grammar.",
+      "The strongest conclusion is that an out-of-awareness template makes deepening closeness feel dangerous, so without intending to he sabotages relationships precisely at the point of intimacy — the breakups are produced by him, not by repeatedly bad partners. This is a strong claim because it predicts checkable consequences: the fault-finding and fights should reliably onset right after closeness milestones rather than at random; the same withdrawal-at-intimacy pattern should appear across very different partners; and it should trace to an early bond where closeness was unsafe or punished. I would test it by mapping each relationship's timeline to see whether conflict spikes just after intimacy, by checking whether the pattern holds regardless of how kind or compatible the partner is, and by asking whether staying through the urge to fight — rather than acting on it — lets a relationship survive. The lead is refuted if his conflicts are scattered with no link to closeness, or if his partners were genuinely and independently incompatible each time.",
     explanation:
-      "The cautious 'children only repeat what they've heard' is the overreach the never-heard sentences defeat; top credit goes to the rule-based, representational conclusion that names a made-up-word test which could refute it.",
+      "The inverted standard gives near-zero to 'he keeps choosing the wrong people'; credit goes to the intimacy-sabotage template that binds the timing of the breakups and proposes a timeline test that could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "A researcher wants to know whether 'recognizing a face' and 'naming that person' are one step or two. She finds people can say 'I know this face' faster than they can produce the name, and sometimes get stuck knowing the face but not the name. In one paragraph, propose the strongest conclusion about the stages of this process and describe how you would test it.",
+      "An otherwise meticulous man takes every medication and supplement on schedule except one — the blood-pressure pill his late father also took, for the condition that killed him. He sincerely sets reminders, then 'doesn't notice' them, only for that pill. In one paragraph, propose the strongest conclusion about the out-of-awareness pattern and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that recognizing a person runs through separable sequential stages — first matching the face as familiar and accessing identity information, then retrieving the name as a later, distinct step that can fail on its own — because the name lags the sense of familiarity and can be blocked while recognition succeeds. This is a strong claim because it predicts checkable consequences: people should access a person's occupation or where they know them before the name, never the name first; name retrieval should fail more often than familiarity or biographical recall; and priming the name's sound should unblock it without changing how the face is recognized. I would test it by timing familiarity, biographical, and name judgments on the same faces, by logging exactly which information is available during 'blocked' states, and by giving sound cues to see whether names resolve while recognition stays constant.",
+        "The strongest conclusion is that an out-of-awareness avoidance is at work: the one pill that links him to his father's fatal illness carries a charged meaning he won't consciously face, and the selective 'forgetting' quietly keeps that meaning at bay. This is a strong claim because it predicts checkable consequences: the lapses should target this single father-linked pill while his adherence to everything else stays excellent; the forgetting should intensify around reminders of his father, such as the death's anniversary; and surfacing the meaning — naming the fear of sharing his father's fate — should improve adherence where ordinary reminder tricks failed. I would test it by comparing his adherence rates pill by pill, by tracking whether misses cluster near father-related dates, and by checking whether a conversation that connects the pill to the loss changes his behavior more than another alarm does. The lead is refuted if he misses many medications at random, or if a simple logistical fix restores perfect adherence with no emotional link.",
       yieldAnchors: [
-        "'I know this face' comes faster than the name",
-        "People get stuck knowing the face but not the name",
-        "Recognition and naming don't fail together",
+        "He is meticulous with every medication but one",
+        "The missed pill is the one tied to his father's fatal illness",
+        "He sets reminders sincerely yet 'doesn't notice' them",
       ],
       riskAnchors: [
-        "Biographical information is accessed before the name",
-        "Name retrieval fails more often than familiarity",
-        "Priming the name's sound unblocks it without changing recognition",
+        "The lapses target the father-linked pill specifically",
+        "Misses intensify around reminders of his father",
+        "Naming the underlying fear improves adherence",
       ],
       defeatedBy: [
-        "Recognizing and naming are a single inseparable act",
-        "Knowing a face always means instantly knowing the name",
+        "He misses many medications at random",
+        "A simple logistical fix restores perfect adherence",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that recognizing a person runs through separable sequential stages — first matching the face as familiar and accessing identity information, then retrieving the name as a later, distinct step that can fail on its own — because the name lags the sense of familiarity and can be blocked while recognition succeeds. This is a strong claim because it predicts checkable consequences: people should access a person's occupation or where they know them before the name, never the name first; name retrieval should fail more often than familiarity or biographical recall; and priming the name's sound should unblock it without changing how the face is recognized. I would test it by timing familiarity, biographical, and name judgments on the same faces, by logging exactly which information is available during 'blocked' states, and by giving sound cues to see whether names resolve while recognition stays constant.",
+      "The strongest conclusion is that an out-of-awareness avoidance is at work: the one pill that links him to his father's fatal illness carries a charged meaning he won't consciously face, and the selective 'forgetting' quietly keeps that meaning at bay. This is a strong claim because it predicts checkable consequences: the lapses should target this single father-linked pill while his adherence to everything else stays excellent; the forgetting should intensify around reminders of his father, such as the death's anniversary; and surfacing the meaning — naming the fear of sharing his father's fate — should improve adherence where ordinary reminder tricks failed. I would test it by comparing his adherence rates pill by pill, by tracking whether misses cluster near father-related dates, and by checking whether a conversation that connects the pill to the loss changes his behavior more than another alarm does. The lead is refuted if he misses many medications at random, or if a simple logistical fix restores perfect adherence with no emotional link.",
     explanation:
-      "'Recognizing and naming are one inseparable act' is the overreach the name-blocked states defeat; top credit goes to the staged conclusion that commits to an order and names a sound-cue test that could refute it.",
+      "The cautious 'people just forget pills sometimes' is the dismissal the pinpoint selectivity defeats; top credit goes to the avoidance conclusion that binds the father link and names a pill-by-pill and anniversary test that could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "Wearing headphones, people repeat aloud a message in one ear and ignore the other. They notice almost nothing of the ignored message's content — yet they reliably notice if their own name is spoken in it. In one paragraph, propose the strongest conclusion about how the mind filters incoming information and describe how you would test it.",
+      "Every Sunday evening a woman is gripped by a heavy dread she can't explain — her weekends are pleasant and her job is fine. The feeling started in adulthood and is specific to Sunday nights. As a child, Sunday evenings were when her parents' weekly fights reliably erupted. In one paragraph, propose the strongest conclusion about the out-of-awareness pattern and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that the mind has a limited-capacity processing channel and uses an early filter to select one input stream by simple physical features like which ear or which voice, but the filter is leaky — highly important or well-learned signals such as one's own name break through, which means the ignored stream is processed for meaning at least partly before selection. This is a strong claim because it predicts checkable consequences: people should report physical features of the ignored ear (its pitch or whether the speaker is male or female) but not its words; the more meaningful or expected an intruding word is, the more likely it breaks through; and making the attended task harder should reduce how often anything from the ignored ear gets noticed. I would test it by quizzing listeners on physical versus semantic features of the ignored channel, by planting words of varying importance there, and by varying the attended task's difficulty while measuring breakthroughs.",
+        "The strongest conclusion is that an out-of-awareness template tied to time and context is firing: Sunday evening is a learned cue that once reliably preceded frightening conflict, so her body produces the old dread now even though the present Sunday is safe. This is a strong claim because it predicts checkable consequences: the dread should be specific to Sunday evenings rather than spread across the week; it should track the cue itself — appearing even on objectively relaxing Sundays — rather than scaling with real Monday stress; and it should ease as she connects the feeling to its childhood source and builds new, calm Sunday-evening associations. I would test it by logging her mood by day and hour to confirm the Sunday-night spike, by checking whether the dread persists on low-stress weeks and holidays that fall on a Sunday, and by seeing whether naming the link and deliberately creating soothing Sunday rituals reduces it. The lead is refuted if the dread is really general weekday-eve anxiety about work, or if it scatters across days with no tie to the childhood pattern.",
       yieldAnchors: [
-        "People accurately repeat the attended message",
-        "They miss the ignored message's content",
-        "They still catch their own name in the ignored ear",
+        "The dread is specific to Sunday evenings",
+        "Her current weekends and job are fine",
+        "Childhood Sunday evenings reliably brought parental fights",
       ],
       riskAnchors: [
-        "Physical features of the ignored ear are noticed but not its words",
-        "More meaningful intrusions break through more often",
-        "A harder attended task reduces breakthroughs",
+        "The dread is confined to Sunday evenings, not the whole week",
+        "It appears even on relaxing Sundays, tracking the cue not real stress",
+        "Linking it to the childhood source and new rituals eases it",
       ],
       defeatedBy: [
-        "The ignored ear is completely unprocessed",
-        "Attention is unlimited and processes every stream equally",
+        "The feeling is general anxiety about the workweek ahead",
+        "The dread scatters across days with no Sunday specificity",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that the mind has a limited-capacity processing channel and uses an early filter to select one input stream by simple physical features like which ear or which voice, but the filter is leaky — highly important or well-learned signals such as one's own name break through, which means the ignored stream is processed for meaning at least partly before selection. This is a strong claim because it predicts checkable consequences: people should report physical features of the ignored ear (its pitch or whether the speaker is male or female) but not its words; the more meaningful or expected an intruding word is, the more likely it breaks through; and making the attended task harder should reduce how often anything from the ignored ear gets noticed. I would test it by quizzing listeners on physical versus semantic features of the ignored channel, by planting words of varying importance there, and by varying the attended task's difficulty while measuring breakthroughs.",
+      "The strongest conclusion is that an out-of-awareness template tied to time and context is firing: Sunday evening is a learned cue that once reliably preceded frightening conflict, so her body produces the old dread now even though the present Sunday is safe. This is a strong claim because it predicts checkable consequences: the dread should be specific to Sunday evenings rather than spread across the week; it should track the cue itself — appearing even on objectively relaxing Sundays — rather than scaling with real Monday stress; and it should ease as she connects the feeling to its childhood source and builds new, calm Sunday-evening associations. I would test it by logging her mood by day and hour to confirm the Sunday-night spike, by checking whether the dread persists on low-stress weeks and holidays that fall on a Sunday, and by seeing whether naming the link and deliberately creating soothing Sunday rituals reduces it. The lead is refuted if the dread is really general weekday-eve anxiety about work, or if it scatters across days with no tie to the childhood pattern.",
     explanation:
-      "'The ignored ear is completely unprocessed' is the overreach the name-breakthrough defeats; top credit goes to the limited-channel, leaky-filter conclusion that names a task-difficulty test which could refute it.",
+      "The inverted standard gives near-zero to 'feelings just come and go'; credit goes to the learned-cue conclusion that binds the Sunday specificity and the childhood fights and names a cue-versus-stress test that could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "Researchers build a computer program that mimics how people solve a logic puzzle. The program makes the same kinds of mistakes people do, slows down on exactly the steps people find hard, and improves with 'practice' the way people do. In one paragraph, propose the strongest conclusion about the mind as an information processor and describe how you would test it.",
+      "A generous man keeps befriending people who borrow money and never repay it. He says he's just 'a soft touch with bad luck,' but a friend notes he actively seeks out people in crisis, feels closest to them while rescuing them, and cools once they're back on their feet. In one paragraph, propose the strongest conclusion about the out-of-awareness pattern and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that the puzzle-solving mind can be described as carrying out a specific sequence of information-processing steps — the very procedure the program runs — because matching not just the answers but the timing, the errors, and the learning curve is strong evidence the program captures the actual process, not merely the outcome. This is a strong claim because it predicts checkable consequences: the program should forecast, in advance, which new puzzles people will find hard and which specific errors they'll make; a hint that helps the program should help people in the same way; and any step the program lacks should correspond to a step people don't perform. I would test it by having the program predict difficulty and error patterns on fresh puzzles before collecting human data, by giving people and the program the same hints and comparing the gains, and by removing a step from the program to see whether people show the matching gap.",
+        "The strongest conclusion is that an out-of-awareness template draws him to the rescuer role: being needed is how he has learned to feel close and secure, so he seeks out people in crisis and the unpaid loans are a byproduct of a pattern he's running, not random bad luck. This is a strong claim because it predicts checkable consequences: he should gravitate toward struggling people and feel his strongest bond while actively rescuing; his interest should fade once a friend becomes self-sufficient and no longer needs him; and the pattern should trace to an early relationship where his worth or closeness depended on being the helper. I would test it by tracking whether his closeness ratings peak during rescue and drop at recovery, by checking whether he's drawn to people in need over stable equals when given the choice, and by seeing whether the loans stop once he can get closeness without rescuing. The lead is refuted if he bonds just as strongly with self-sufficient friends and the unpaid loans are scattered, one-off accidents rather than a recurring rescue pattern.",
       yieldAnchors: [
-        "The program makes the same kinds of errors as people",
-        "It slows on the same hard steps",
-        "It improves with practice the way people do",
+        "He repeatedly befriends people who borrow and don't repay",
+        "He actively seeks out people in crisis",
+        "He feels closest while rescuing and cools once they recover",
       ],
       riskAnchors: [
-        "The program predicts which new puzzles people find hard",
-        "A shared hint helps both the same way",
-        "A missing step in the program matches a missing step in people",
+        "His closeness peaks during rescue and drops at recovery",
+        "He's drawn to people in need over stable equals",
+        "The pattern traces to an early helper role",
       ],
       defeatedBy: [
-        "Matching the answers alone proves the mind works like the program",
-        "A computer model can tell us nothing about real minds",
+        "He bonds just as strongly with self-sufficient friends",
+        "The unpaid loans are scattered one-off accidents",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that the puzzle-solving mind can be described as carrying out a specific sequence of information-processing steps — the very procedure the program runs — because matching not just the answers but the timing, the errors, and the learning curve is strong evidence the program captures the actual process, not merely the outcome. This is a strong claim because it predicts checkable consequences: the program should forecast, in advance, which new puzzles people will find hard and which specific errors they'll make; a hint that helps the program should help people in the same way; and any step the program lacks should correspond to a step people don't perform. I would test it by having the program predict difficulty and error patterns on fresh puzzles before collecting human data, by giving people and the program the same hints and comparing the gains, and by removing a step from the program to see whether people show the matching gap.",
+      "The strongest conclusion is that an out-of-awareness template draws him to the rescuer role: being needed is how he has learned to feel close and secure, so he seeks out people in crisis and the unpaid loans are a byproduct of a pattern he's running, not random bad luck. This is a strong claim because it predicts checkable consequences: he should gravitate toward struggling people and feel his strongest bond while actively rescuing; his interest should fade once a friend becomes self-sufficient and no longer needs him; and the pattern should trace to an early relationship where his worth or closeness depended on being the helper. I would test it by tracking whether his closeness ratings peak during rescue and drop at recovery, by checking whether he's drawn to people in need over stable equals when given the choice, and by seeing whether the loans stop once he can get closeness without rescuing. The lead is refuted if he bonds just as strongly with self-sufficient friends and the unpaid loans are scattered, one-off accidents rather than a recurring rescue pattern.",
     explanation:
-      "'A computer model tells us nothing about real minds' is the dodge the matched timing, errors, and learning defeat; top credit goes to the process-level conclusion that commits to advance predictions and names a remove-a-step test that could refute it.",
+      "The cautious 'just a soft touch with bad luck' is the dismissal the seek-crisis-and-cool-at-recovery sequence defeats; top credit goes to the rescuer-template conclusion that binds the evidence and names a closeness-over-time test that could refute it.",
   },
 ];
 
 export const section: SectionContent = {
-  slug: "mind-as-information",
-  title: "The Big Idea: Mind as Information Processing",
+  slug: "the-unconscious-reconsidered",
+  title: "The Unconscious, Reconsidered",
   weekNumber: 1,
   blurb:
-    "The core idea of cognitive science: the mind takes in information, transforms it through hidden internal stages working on mental representations, and produces behavior — a process we can clock, model, and test.",
+    "The modern unconscious isn't a basement of seething demons — it's the set of automatic, out-of-awareness patterns and templates we learned early and now run without noticing, readable from slips, repetitions, and reactions out of scale with their triggers.",
   lectureTitle:
-    "1.2 The Big Idea: Mind as Information Processing — input, representation, and the hidden stages between",
-  body: `# The Big Idea: Mind as Information Processing
+    "1.2 The Unconscious, Reconsidered: hidden patterns, not hidden demons",
+  body: `# The Unconscious, Reconsidered
 
-For decades, scientists who wanted to be rigorous about the mind decided to study only what they could see: a stimulus going in, a behavior coming out. Anything in between — thoughts, plans, images, beliefs — was dismissed as unscientific guesswork. This view, **behaviorism**, treated the mind as a black box best left unopened. Then, in the middle of the twentieth century, a new idea swept in and changed everything: maybe the inside of the box isn't off-limits. Maybe the mind is an **information processor**, and we can figure out, step by step, what it does to information on the way from input to output.
+When people hear "the unconscious," they often picture a dark basement full of buried traumas and seething demonic urges, waiting to erupt. That picture is dramatic, but it gets the science backwards. The modern unconscious is far more ordinary and far more useful: it is the vast set of **automatic patterns** — templates, expectations, habits, and rules — that your mind learned, mostly early in life, and now runs without your noticing. The work of this section is to trade the demon picture for the pattern picture, and to learn to read those patterns from the traces they leave.
 
-## From the black box to the stages inside
+## From hidden demons to hidden patterns
 
-The shift is called the **cognitive revolution**, and its central bet is simple but powerful: between a stimulus and a response, the mind performs real, describable operations. A behaviorist watching someone read 'the cat was chased by the dog' and 'the dog chased the cat' the same way would only note two stimuli and two equal responses. A cognitive scientist asks the deeper question — *why* are they treated alike? — and answers that the mind builds an internal representation of **meaning** that both sentences share. The behavior is the clue; the processing inside is the explanation.
+Most of what your mind does happens outside awareness, not because it is being hidden from you but because automatic is efficient. You don't consciously decide how to interpret a tone of voice, whom to trust, or what closeness should feel like — templates built from experience do that for you in an instant. These templates are usually helpful. They become a problem only when an old pattern, learned in one setting, keeps firing in new settings where it no longer fits. The point is not that something monstrous lurks below; it's that something **learned** runs below, and sometimes runs the wrong program.
 
-## Input, processing, output
+## Patterns are learned early and run automatically
 
-The information-processing view borrows its skeleton from how a computer works. Information comes **in** through the senses, gets **processed** through a series of internal operations, and a behavior comes **out**. The power of this framing is that it forces specific questions: What form does the information take at each step? How many steps are there? Which step is the bottleneck? When a man can understand speech perfectly and move his mouth normally yet cannot turn thoughts into spoken words, the input and output are fine — so the damage must sit in a **processing stage** between them. Splitting the mind into input, processing, and output lets us locate exactly where something happens.
+The reason these patterns feel invisible is that they were laid down before you had words for them, and they run faster than conscious thought. A child who learned that affection came with strings, or that standing out drew punishment, builds a template — and decades later that template still shapes how a gift or a compliment feels, without ever announcing itself. The unconscious here is not a separate willful agent; it is **procedural learning** about people and feelings, the same kind of automatic competence that lets you ride a bike without thinking. That is why insight alone often isn't enough: knowing a pattern intellectually doesn't instantly rewrite something this automatic.
 
-## The mind runs on representations
+## Reading the traces
 
-The most important idea in this whole picture is the **representation**: an internal stand-in for something in the world. A mental map of a maze, the meaning of a sentence, a number's size on an inner 'number line,' the sound of a word you're rehearsing — all are representations the mind builds, stores, and operates on. Representations explain why a rat that explored a maze without reward later runs straight to food (it built a map), and why people judge '5 versus 6' more slowly than '2 versus 9' (closer positions on the inner number line are harder to tell apart). The mind doesn't store the world; it stores **information about** the world, and then computes with it.
+You can't see a template directly, so you read it from its traces — exactly the move from the last section, now aimed at hidden patterns instead of hidden mechanisms. Four kinds of evidence are especially telling. **Slips** — saying your ex's partner's name, signing a parent's name — show a pattern leaking past the conscious script. **Doing the same thing without knowing why** — always sitting near the exit, always detouring around one street — reveals an automatic rule at work. **Repetition of choice** — picking the same kind of partner, boss, or conflict again and again across very different people — points to a template carried inside you, not to bad luck. And a **reaction far bigger than its trigger** — rage at a brisk parking attendant, a childlike sting when one friend cancels — signals that the small present event matched a large stored one.
 
-## Reading the hidden stages from the clock
+## Disproportion is a clue, not a verdict
 
-If processing takes real steps, each step takes real **time** — and time is something we can measure to the millisecond. This is the trick of **mental chronometry**. Add a decision to a task ('press only for the green light') and the response slows by a steady, measurable slice — that slice is the decision stage made visible. When two difficulties (a blurry picture and a rare name) add their delays together independently, that additivity is a fingerprint of **separate sequential stages**. The clock turns invisible mental operations into numbers, letting us count stages, measure them, and test whether a proposed step really exists.
+When a reaction is wildly out of scale with what set it off, that gap is the single richest clue that an old template just fired. But a clue is not yet a conclusion. The strong move is to name the specific pattern the disproportion suggests **and** to predict where it should and shouldn't appear: it should fire for the cue that matches the old template and stay quiet for objectively bigger threats that don't. The weak move stops at "he seems sensitive." The reckless move jumps straight to "he must have a buried trauma he's repressed" — a melodramatic leap the ordinary trigger doesn't support.
 
-## Why the computer is such a useful model
+## Patterns, not demons: avoiding the lurid leap
 
-Calling the mind an information processor isn't just a metaphor; it's a research tool. If you think the mind runs a particular procedure, you can write that procedure as a **computer program** and check whether it behaves like a person — not just getting the same answers, but making the same errors, slowing on the same hard steps, and improving with practice the same way. When a model matches people on all of that, it's strong evidence the model captures the actual process. The computer doesn't prove the mind *is* a computer; it gives us a precise, testable way to spell out exactly what the mind might be doing.
+This section's signature error is the lurid overreach: reading a name-slip as a secret all-consuming passion, a forgotten invitation as proof of hidden hatred, a missed pill as deeply repressed trauma. These readings are exciting and almost always wrong, because the evidence is usually narrow and situation-specific — a small, patterned signal, not a demon. The discipline is to fit the conclusion to the actual trace: commit to the most specific pattern the evidence warrants, and no more. A claim that the material itself defeats is not insight; it's a story.
+
+## Commit to a pattern, name a disconfirming test
+
+The whole craft comes down to the same habit as before, retargeted. Don't shrug ("the unconscious is unknowable") and don't melodramatize ("hidden demons"). Instead, **commit to the most specific out-of-awareness pattern the evidence supports, then name the cheapest observation that would prove you wrong.** If you think someone is drawn to unavailable partners by a template, predict that available, steady people will reliably leave them cold — and watch. If you think a slip reveals an old parent-shaped pattern, predict it appears only with parent-like authority — and check. A pattern you can disconfirm is real knowledge; a demon you can only assert is not.
 
 ## In the real world
 
-Think about forgetting a stranger's name two seconds after being introduced. The dodge is 'I just have a bad memory' — true-sounding, but it predicts nothing. The information-processing move commits to a mechanism: the name was held briefly in a fragile, sound-based store and never got transferred into longer-term memory because attention was elsewhere during the handshake. Look how much that opens up. It predicts you'll do better if you repeat the name aloud (refreshing the sound store), that a distracting noise right after the introduction will wipe it out, and that you'll forget *names* far more than *faces*, which have richer cues. Three cheap, refutable tests — that is what treating the mind as an information processor buys you: not a shrug, but a testable account of the machinery between input and output.`,
+Suppose a friend says, "I have the worst luck — every roommate I've ever had turns cold and resentful." The dodge is "people are just hard to live with"; the melodrama is "your roommates were secretly cruel." The pattern move commits to a template: maybe she reads ordinary distance as rejection and then withdraws first, producing the coldness she fears. Notice what that buys you — predictions. Neutral observers should find the roommates fairly normal; the "they've gone cold" feeling should appear early, before much has happened; and the same arc should show up with friends and partners, tracing to an early bond where closeness felt unsafe. Three cheap checks, each able to refute the idea. That is what the reconsidered unconscious offers: not a basement of demons to fear, but a set of learned patterns you can name, test, and eventually change.`,
   homework: {
     mcq,
     hybrid,

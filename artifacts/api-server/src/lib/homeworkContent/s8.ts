@@ -9,407 +9,407 @@ const mcq: HomeworkItem[] = [
   {
     itemType: "mc",
     prompt:
-      "A patient whose visual cortex was damaged says they see nothing in their left visual field, yet when asked to guess where a light flashed there, they point correctly far above chance and can even catch a ball thrown to that side. Which conclusion best follows?",
+      "Mid-session, a patient describing how no one in his family ever comforted him says, 'so I never went to my fath—... to you with anything,' correcting 'father' to 'you,' the therapist, then quickly moves on. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Visual information is still being processed and guiding action along pathways that bypass conscious awareness, so 'seeing' and 'acting on sight' can come apart; test whether forced-choice accuracy stays above chance while the patient denies any awareness, whether a brain scan shows intact subcortical visual routes, and whether disrupting those routes removes the guessing skill.",
+        text: "The patient may be relating to the therapist as he once related to his father — the slip and the quick move past it suggest an out-of-awareness template is being replayed in the room; test whether he reacts to the therapist's silences the way he describes his father's, whether the same 'no one comforts me' theme appears with other authority figures, and whether gently naming the slip brings relief or a flash of anxiety.",
         credit: 1.0,
       },
       {
-        text: "The patient probably still uses some vision without knowing it; we could run more guessing trials.",
+        text: "It's probably about his father somehow; we could keep exploring his family history.",
         credit: 0.6,
       },
       {
-        text: "Something about the patient's vision seems to still work.",
+        text: "He seems a little flustered by the slip.",
         credit: 0.3,
       },
       {
-        text: "Whether someone 'really sees' is a private mystery, so this behavior tells us nothing about the mind.",
+        text: "The slip proves a single repressed trauma is secretly running his whole life and must be dug out before therapy can continue.",
         credit: 0,
       },
     ],
     correctAnswer:
-      "Visual information is still being processed and guiding action along pathways that bypass conscious awareness, so 'seeing' and 'acting on sight' can come apart; test whether forced-choice accuracy stays above chance while the patient denies any awareness, whether a brain scan shows intact subcortical visual routes, and whether disrupting those routes removes the guessing skill.",
+      "The patient may be relating to the therapist as he once related to his father — the slip and the quick move past it suggest an out-of-awareness template is being replayed in the room; test whether he reacts to the therapist's silences the way he describes his father's, whether the same 'no one comforts me' theme appears with other authority figures, and whether gently naming the slip brings relief or a flash of anxiety.",
     explanation:
-      "Top credit names a mechanism (vision routed around awareness) and three checkable tests; the 'private mystery, tells us nothing' option refuses to commit and so opens no inquiry.",
+      "Top credit reads the slip as transference — an old father-template replayed with the therapist — and names checkable observations; the 'one repressed trauma running everything' reading is the lurid overreach a single slip can't support.",
   },
   {
     itemType: "mc",
     prompt:
-      "Across several anesthetics, patients stop responding and form no memories at a particular dose. Brain recordings show that long-range signaling between the front and back of the cortex collapses at exactly the dose where responsiveness disappears. Which conclusion best follows?",
+      "A patient who has been talking freely about her week goes completely silent the moment she begins to mention her sister, looks away, and after a long pause says, 'anyway, it doesn't matter.' Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Consciousness is the hard problem, so brain recordings can never reveal anything about it.",
-        credit: 0,
-      },
-      {
-        text: "There seems to be some link between the brain signal and being knocked out.",
+        text: "She seems to have lost her train of thought about her sister.",
         credit: 0.3,
       },
       {
-        text: "Long-range front-to-back cortical communication is a strong candidate mechanism for conscious responsiveness; test whether the signal collapses at the report-losing dose across different anesthetics, whether briefly restoring that signaling restores responsiveness, and whether the same signature drops during dreamless sleep.",
+        text: "The silence and 'it doesn't matter' arriving exactly at the sister suggest she is avoiding something painful tied to that relationship, not running out of things to say; test whether she reliably goes quiet only on sister-related topics, whether her body tightens as she nears it, and whether gently noting the avoidance opens the topic rather than shutting it down.",
         credit: 1.0,
       },
       {
-        text: "The brain signal probably matters for consciousness; we could try a few more anesthetics.",
+        text: "What goes on in someone's mind during a silence is unknowable, so the pause tells us nothing.",
+        credit: 0,
+      },
+      {
+        text: "It's probably an uncomfortable subject; we could come back to her sister later.",
         credit: 0.6,
       },
     ],
     correctAnswer:
-      "Long-range front-to-back cortical communication is a strong candidate mechanism for conscious responsiveness; test whether the signal collapses at the report-losing dose across different anesthetics, whether briefly restoring that signaling restores responsiveness, and whether the same signature drops during dreamless sleep.",
+      "The silence and 'it doesn't matter' arriving exactly at the sister suggest she is avoiding something painful tied to that relationship, not running out of things to say; test whether she reliably goes quiet only on sister-related topics, whether her body tightens as she nears it, and whether gently noting the avoidance opens the topic rather than shutting it down.",
     explanation:
-      "The strongest conclusion pins a mechanism to a measurable signal and lists three disconfirmable tests; the 'can never reveal anything' answer is the zero-credit dodge.",
+      "Full credit reads the timed silence as avoidance of a specific painful topic and names disconfirming observations; 'a silence is unknowable' is the refusal the precise, sister-triggered timing defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A split-brain patient (whose left and right hemispheres are surgically disconnected) uses the left hand, controlled by the right hemisphere, to pick an object the speaking left hemisphere cannot name. When asked why they picked it, the speaking hemisphere confidently invents a reason. Which conclusion best follows?",
+      "Just after admitting through tears that he feels like a failure as a father, a patient abruptly brightens and starts talking in detail about last night's football game. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Each hemisphere can run its own stream of processing, and the speaking hemisphere makes up explanations for actions it did not originate; test whether the left hand reliably selects targets the patient verbally denies seeing, whether the spoken reasons systematically rationalize, and whether letting information cross again (e.g., both eyes see the cue) abolishes the split responses.",
+        text: "The sudden swerve to football right after a painful admission looks like a defensive move away from unbearable feeling, not a real change of interest; test whether these jumps reliably follow emotional peaks, whether slowing him down brings the feeling back, and whether the topic he flees to is consistently light and impersonal.",
         credit: 1.0,
       },
       {
-        text: "The two hemispheres seem to act somewhat independently.",
+        text: "He probably got uncomfortable; we could ask him to stay with the feeling.",
+        credit: 0.6,
+      },
+      {
+        text: "He seems to have lost interest in the topic.",
         credit: 0.3,
       },
       {
-        text: "This shows the patient literally contains two separate souls living in one skull.",
+        text: "People's minds wander all the time, so jumping to football means nothing about what he was feeling.",
         credit: 0,
-      },
-      {
-        text: "The hemispheres probably work separately here; we could test more patients.",
-        credit: 0.6,
       },
     ],
     correctAnswer:
-      "Each hemisphere can run its own stream of processing, and the speaking hemisphere makes up explanations for actions it did not originate; test whether the left hand reliably selects targets the patient verbally denies seeing, whether the spoken reasons systematically rationalize, and whether letting information cross again (e.g., both eyes see the cue) abolishes the split responses.",
+      "The sudden swerve to football right after a painful admission looks like a defensive move away from unbearable feeling, not a real change of interest; test whether these jumps reliably follow emotional peaks, whether slowing him down brings the feeling back, and whether the topic he flees to is consistently light and impersonal.",
     explanation:
-      "Top credit commits to a mechanism (separable processing plus confabulation) with three tests; the 'two separate souls' option overreaches past what the behavior shows and earns zero.",
+      "Top credit reads the timed swerve as a defense against painful feeling and names checks; 'minds wander all the time' is the dismissal the tight coupling to the emotional peak defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "In a 'change blindness' demo, people stare at a photo that briefly flickers; a large object in the scene appears or vanishes across the flicker, yet most viewers fail to notice the change for many seconds. Which conclusion best follows?",
+      "Whenever the conversation turns to her loneliness, a patient cracks a quick self-deprecating joke and laughs, then watches the therapist to see if they laugh too. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Perception is too subjective to learn anything from people missing a change.",
+        text: "Her constant joking proves she is secretly a deeply broken person hiding catastrophic despair.",
         credit: 0,
       },
       {
-        text: "We consciously hold far less of a scene at once than it feels like, building the rich impression on demand where we attend; test whether cueing attention to the changing region speeds detection, whether changes away from the focus of attention are missed most, and whether eye-tracking shows misses when the change falls outside fixation.",
-        credit: 1.0,
-      },
-      {
-        text: "People seem to miss changes when they're not looking right at them.",
+        text: "She seems to use humor a lot.",
         credit: 0.3,
       },
       {
-        text: "We probably don't see everything at once; we could run more flicker trials.",
+        text: "The joke arrives exactly when loneliness comes up and is aimed at getting the therapist to laugh, which suggests humor is a defense that both blunts the feeling and manages how the therapist sees her; test whether the jokes cluster only around painful topics, whether the feeling surfaces when the therapist doesn't laugh along, and whether naming the pattern lets her stay with the loneliness a beat longer.",
+        credit: 1.0,
+      },
+      {
+        text: "It's probably a way to cope; we could gently point out the joking.",
         credit: 0.6,
       },
     ],
     correctAnswer:
-      "We consciously hold far less of a scene at once than it feels like, building the rich impression on demand where we attend; test whether cueing attention to the changing region speeds detection, whether changes away from the focus of attention are missed most, and whether eye-tracking shows misses when the change falls outside fixation.",
+      "The joke arrives exactly when loneliness comes up and is aimed at getting the therapist to laugh, which suggests humor is a defense that both blunts the feeling and manages how the therapist sees her; test whether the jokes cluster only around painful topics, whether the feeling surfaces when the therapist doesn't laugh along, and whether naming the pattern lets her stay with the loneliness a beat longer.",
     explanation:
-      "The richest conclusion names a mechanism (sparse, attention-built awareness) and three checks; 'too subjective to learn anything' is the barren refusal.",
+      "Full credit reads the timed joke as a defense with a relational pull and names checks; the 'secretly catastrophic despair' reading is the melodramatic overreach a few well-placed jokes can't support.",
   },
   {
     itemType: "mc",
     prompt:
-      "When a hidden real hand and a visible fake rubber hand are stroked in perfect synchrony, people start to feel the rubber hand is their own and flinch when it is threatened. Which conclusion best follows?",
+      "A usually polite patient snaps with surprising heat when the therapist reschedules one session, saying 'you clearly have better things to do than me' — a reaction far bigger than the small change warrants. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Body ownership seems to be a bit flexible.",
-        credit: 0.3,
+        text: "He's probably more sensitive to rejection than he lets on; we could explore it.",
+        credit: 0.6,
       },
       {
-        text: "The brain infers which body is 'mine' by combining synchronous sight and touch, so even the bodily self is a construction; test whether out-of-sync stroking abolishes the illusion, whether skin-conductance spikes when the fake hand is threatened, and whether the felt drift of the hand toward the fake one grows with stroking synchrony.",
+        text: "The size of the reaction outstrips its trigger, which suggests the rescheduling tapped an old template about being unimportant to people he depends on, now aimed at the therapist; test whether the same out-of-proportion hurt appears with partners or bosses over small slights, whether it matches how a caregiver once treated him, and whether it cools when the therapist reliably follows through.",
         credit: 1.0,
       },
       {
-        text: "The sense of owning a body is fixed and could never be fooled by this.",
-        credit: 0,
+        text: "He seems annoyed about the schedule change.",
+        credit: 0.3,
       },
       {
-        text: "Synchrony probably tricks the body sense; we could repeat the stroking setup.",
-        credit: 0.6,
+        text: "Everyone gets irritated by schedule changes, so there's nothing here worth interpreting.",
+        credit: 0,
       },
     ],
     correctAnswer:
-      "The brain infers which body is 'mine' by combining synchronous sight and touch, so even the bodily self is a construction; test whether out-of-sync stroking abolishes the illusion, whether skin-conductance spikes when the fake hand is threatened, and whether the felt drift of the hand toward the fake one grows with stroking synchrony.",
+      "The size of the reaction outstrips its trigger, which suggests the rescheduling tapped an old template about being unimportant to people he depends on, now aimed at the therapist; test whether the same out-of-proportion hurt appears with partners or bosses over small slights, whether it matches how a caregiver once treated him, and whether it cools when the therapist reliably follows through.",
     explanation:
-      "Top credit commits to a multisensory-inference mechanism with three falsifiable tests; the 'fixed, could never be fooled' option is defeated by the very result described.",
+      "Top credit reads the disproportion as transference of an old 'I don't matter' template and names disconfirming tests; 'everyone gets irritated' is the refusal the size of the reaction defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "In Libet-style experiments, a readiness signal builds up in the brain a fraction of a second before people report the conscious urge to move their hand. Which conclusion best follows?",
+      "A patient is punctual for months but starts arriving fifteen minutes late — only for the sessions that follow ones where he opened up about his marriage. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "This proves free will is a total illusion and our choices make no difference at all.",
-        credit: 0,
-      },
-      {
-        text: "The brain seems to get going a little before we notice deciding.",
+        text: "He seems to be having trouble with timing lately.",
         credit: 0.3,
       },
       {
-        text: "The brain begins preparing the action before the conscious urge is reported, so the felt 'moment of deciding' is partly a late readout rather than the sole first cause; test whether the readiness signal reliably precedes the reported urge, whether decoding brain activity predicts the choice before the report, and whether consciously vetoing the movement still shows the early buildup.",
+        text: "His lateness proves he wants to quit therapy and secretly hates the therapist.",
+        credit: 0,
+      },
+      {
+        text: "The lateness is patterned — it follows exactly the sessions that touched his marriage — which suggests an out-of-awareness pull to retreat from material that got too close, not random scheduling trouble; test whether the lateness tracks marital-topic sessions specifically, whether he feels relief at losing the time, and whether naming the pattern surfaces anxiety about what he revealed.",
         credit: 1.0,
       },
       {
-        text: "Brain activity probably comes first; we could measure more movements.",
+        text: "It's probably avoidance of something; we could ask about the timing.",
         credit: 0.6,
       },
     ],
     correctAnswer:
-      "The brain begins preparing the action before the conscious urge is reported, so the felt 'moment of deciding' is partly a late readout rather than the sole first cause; test whether the readiness signal reliably precedes the reported urge, whether decoding brain activity predicts the choice before the report, and whether consciously vetoing the movement still shows the early buildup.",
+      "The lateness is patterned — it follows exactly the sessions that touched his marriage — which suggests an out-of-awareness pull to retreat from material that got too close, not random scheduling trouble; test whether the lateness tracks marital-topic sessions specifically, whether he feels relief at losing the time, and whether naming the pattern surfaces anxiety about what he revealed.",
     explanation:
-      "The best conclusion sticks to what the timing supports (a measurable lead, with a veto test) ; the 'free will is a total illusion' leap overreaches far past the data and earns zero.",
+      "Full credit reads the patterned lateness as resistance to threatening material and names a topic-specificity test; 'he wants to quit and hates the therapist' is the overreach the otherwise faithful attendance defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "In binocular rivalry, a different image is shown to each eye; the conscious image people report keeps flipping back and forth between the two even though the physical input never changes. Which conclusion best follows?",
+      "Asked how she felt about her mother's harsh criticism, a patient says flatly, 'It's totally fine, I don't care,' while her jaw tightens and her eyes fill. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Conscious perception is selected by the brain among competing inputs rather than fixed by the stimulus; test whether brain activity tracking the dominant image switches in step with the report while the input is held constant, whether directing attention biases which image dominates, and whether raising one image's contrast lengthens its turns.",
+        text: "The mismatch between 'I don't care' and the tightening jaw and welling eyes suggests she does care and is holding the feeling out of awareness, not that the criticism is truly neutral to her; test whether the bodily signs reliably appear on this topic, whether her tone softens when the contradiction is gently named, and whether she can recall other times she insisted she was 'fine' while clearly not.",
         credit: 1.0,
       },
       {
-        text: "The seen image just seems to switch on its own.",
+        text: "She probably cares more than she's saying; we could note the mismatch.",
+        credit: 0.6,
+      },
+      {
+        text: "She seems a bit tense talking about her mother.",
         credit: 0.3,
       },
       {
-        text: "What we consciously see is fully fixed by whatever hits the eyes, so this can't really happen.",
+        text: "If she says she's fine, then she's fine — we can't claim to know her feelings better than she does.",
         credit: 0,
-      },
-      {
-        text: "The brain probably picks the image; we could time more switches.",
-        credit: 0.6,
       },
     ],
     correctAnswer:
-      "Conscious perception is selected by the brain among competing inputs rather than fixed by the stimulus; test whether brain activity tracking the dominant image switches in step with the report while the input is held constant, whether directing attention biases which image dominates, and whether raising one image's contrast lengthens its turns.",
+      "The mismatch between 'I don't care' and the tightening jaw and welling eyes suggests she does care and is holding the feeling out of awareness, not that the criticism is truly neutral to her; test whether the bodily signs reliably appear on this topic, whether her tone softens when the contradiction is gently named, and whether she can recall other times she insisted she was 'fine' while clearly not.",
     explanation:
-      "Top credit names a selection mechanism with three checkable consequences; the 'fully fixed by the eyes' option is contradicted by the constant-input switching described.",
+      "Top credit reads the body-words contradiction as feeling kept out of awareness and names checks; 'if she says she's fine, she's fine' is the refusal the welling eyes and clenched jaw defeat.",
   },
   {
     itemType: "mc",
     prompt:
-      "People asked to count basketball passes in a video routinely fail to notice a person in a gorilla suit walking through the middle of the scene, even though eye-tracking shows they looked right at it. Which conclusion best follows?",
+      "A few sessions in, a patient tells the therapist, 'You're the only person who has ever truly understood me — you're nothing like everyone else in my life.' Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Attention is too personal to draw any conclusion about awareness.",
-        credit: 0,
+        text: "He's probably idealizing the therapist a bit; we could keep an eye on it.",
+        credit: 0.6,
       },
       {
-        text: "Conscious awareness depends on attention, so an unattended event can go unseen even when the eyes point at it; test whether lowering the counting load lets people notice the gorilla, whether fixations land on it despite no report, and whether warning viewers in advance raises detection.",
-        credit: 1.0,
-      },
-      {
-        text: "People seem to miss things when they're busy.",
+        text: "He seems to really appreciate the therapy.",
         credit: 0.3,
       },
       {
-        text: "Attention probably gates what we see; we could show the clip to more viewers.",
-        credit: 0.6,
+        text: "Crowning the therapist as uniquely perfect this early, before being truly known, looks like a template of splitting people into all-good and all-bad being placed onto the therapist; test whether he tends to swing to harsh disappointment when the therapist inevitably falls short, whether his past relationships show the same idealize-then-crash arc, and whether his descriptions of others cluster at the extremes.",
+        credit: 1.0,
+      },
+      {
+        text: "His glowing praise proves the therapy is working perfectly and that he is essentially healed.",
+        credit: 0,
       },
     ],
     correctAnswer:
-      "Conscious awareness depends on attention, so an unattended event can go unseen even when the eyes point at it; test whether lowering the counting load lets people notice the gorilla, whether fixations land on it despite no report, and whether warning viewers in advance raises detection.",
+      "Crowning the therapist as uniquely perfect this early, before being truly known, looks like a template of splitting people into all-good and all-bad being placed onto the therapist; test whether he tends to swing to harsh disappointment when the therapist inevitably falls short, whether his past relationships show the same idealize-then-crash arc, and whether his descriptions of others cluster at the extremes.",
     explanation:
-      "The strongest conclusion ties awareness to attention and names three tests, including the load manipulation; 'too personal to draw any conclusion' commits to nothing.",
+      "Full credit reads premature idealization as a transference of an all-good/all-bad template and names a predicted crash; 'the praise proves he's healed' is the overreach the early, unearned idealization defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A word is flashed on screen too briefly for people to consciously read it, yet afterward they are faster to judge a related word, as if the hidden word had been understood. Which conclusion best follows?",
+      "While describing yet another friendship that ended when he pushed the person away, a patient pauses and says slowly, 'Huh... I think I always do this before they can leave me first.' Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The flashed word seems to have some effect.",
+        text: "He seems to be realizing his friendships keep ending.",
         credit: 0.3,
       },
       {
-        text: "Meaning can be extracted from a stimulus too brief to consciously report, so understanding does not always require awareness; test whether the speed-up persists when subjects identify the word only at chance, whether the effect shrinks as exposure nears the awareness threshold, and whether a mask that blocks any report still leaves the priming.",
+        text: "He is catching a real pattern in the moment — pushing people away preemptively to avoid being left — which is the kind of emotional insight worth building on, though noticing it once won't change it; test whether the same push-away move shows up across several relationships, whether it appears in how he treats the therapist, and whether catching it in new situations over time begins to loosen it.",
         credit: 1.0,
       },
       {
-        text: "Nothing can be concluded because we can never be sure the person didn't glimpse the word.",
-        credit: 0,
+        text: "He's probably onto something; we could explore that idea.",
+        credit: 0.6,
       },
       {
-        text: "The hidden word probably still registers; we could flash more words.",
-        credit: 0.6,
+        text: "Now that he has seen the pattern, the problem is solved and the behavior will stop on its own.",
+        credit: 0,
       },
     ],
     correctAnswer:
-      "Meaning can be extracted from a stimulus too brief to consciously report, so understanding does not always require awareness; test whether the speed-up persists when subjects identify the word only at chance, whether the effect shrinks as exposure nears the awareness threshold, and whether a mask that blocks any report still leaves the priming.",
+      "He is catching a real pattern in the moment — pushing people away preemptively to avoid being left — which is the kind of emotional insight worth building on, though noticing it once won't change it; test whether the same push-away move shows up across several relationships, whether it appears in how he treats the therapist, and whether catching it in new situations over time begins to loosen it.",
     explanation:
-      "Top credit names unconscious meaning processing and three tests that pin down awareness; the 'we can never be sure' answer refuses to commit and earns zero.",
+      "Top credit reads a genuine emerging insight while flagging that insight alone won't change behavior, and names tests; 'the problem is solved' is the overreach the principle that insight needs working through defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A behaviorally unresponsive brain-injury patient is asked, while being scanned, to imagine playing tennis; their brain lights up in the same motor-planning region, in the same way, as healthy volunteers given the same instruction. Which conclusion best follows?",
+      "A patient complains that his new boss 'controls everything and never trusts me' — the exact words he used last month about his father and the month before about a former coach. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Inner experience is unknowable, so a scan can say nothing about whether the patient is aware.",
+        text: "Lots of people have controlling bosses, so there's no real pattern to read into here.",
         credit: 0,
       },
       {
-        text: "Some behaviorally unresponsive patients retain conscious awareness that can be detected through willed brain activity; test whether the patient can answer yes/no questions by choosing distinct imagery tasks, whether the responses stay consistent across sessions, and whether they correctly answer questions only the patient could know.",
+        text: "It's probably a recurring theme; we could compare these relationships.",
+        credit: 0.6,
+      },
+      {
+        text: "The identical complaint across boss, father, and coach suggests he is carrying a template about controlling authority figures into each new relationship, shaping what he notices and how he reacts; test whether others describe these same people as controlling, whether he behaves in ways that invite control, and whether the theme surfaces toward the therapist as well.",
         credit: 1.0,
       },
       {
-        text: "The patient's brain seems to respond like an aware person's.",
+        text: "He seems to have problems with people in charge.",
         credit: 0.3,
-      },
-      {
-        text: "The patient may still be aware; we could scan them again.",
-        credit: 0.6,
       },
     ],
     correctAnswer:
-      "Some behaviorally unresponsive patients retain conscious awareness that can be detected through willed brain activity; test whether the patient can answer yes/no questions by choosing distinct imagery tasks, whether the responses stay consistent across sessions, and whether they correctly answer questions only the patient could know.",
+      "The identical complaint across boss, father, and coach suggests he is carrying a template about controlling authority figures into each new relationship, shaping what he notices and how he reacts; test whether others describe these same people as controlling, whether he behaves in ways that invite control, and whether the theme surfaces toward the therapist as well.",
     explanation:
-      "The best conclusion commits to detectable awareness and names a communication test that could refute it; 'inner experience is unknowable' is the zero-credit dodge.",
+      "Full credit reads the repeated complaint across different figures as a carried template and names disconfirming checks; 'lots of people have controlling bosses' is the dismissal the cross-relationship repetition defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A person reports that every letter of the alphabet automatically appears to them in a specific color — 'A' is always red, 'B' always blue — and these pairings never change over the years. Which conclusion best follows?",
+      "Asked about his recent divorce, a patient delivers a calm, articulate lecture on 'attachment theory and the statistical realities of modern marriage,' with no visible feeling at all. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "In some brains, extra cross-talk between sensory regions produces real, automatic added experiences (here, colors triggered by letters); test whether the letter-color pairings stay stable across years of retesting, whether a visual-search task shows the colors pop out involuntarily, and whether brain imaging shows color-area activity to plain black letters.",
-        credit: 1.0,
+        text: "He's probably keeping his distance from the feelings; we could gently ask how it felt.",
+        credit: 0.6,
       },
       {
-        text: "The person seems to associate letters with colors.",
+        text: "He seems very knowledgeable about relationships.",
         credit: 0.3,
       },
       {
-        text: "People's private experiences can't be checked, so this report tells us nothing.",
+        text: "Some people are just analytical, so his abstract talk tells us nothing about his feelings.",
         credit: 0,
       },
       {
-        text: "They probably really see the colors; we could ask them again later.",
-        credit: 0.6,
+        text: "Retreating into theory and statistics about his own divorce, with the feeling drained out, looks like intellectualizing — using abstraction to keep painful emotion at arm's length; test whether affect breaks through when he's asked for concrete moments rather than concepts, whether the abstraction intensifies exactly on the most painful points, and whether naming it lets a real feeling surface.",
+        credit: 1.0,
       },
     ],
     correctAnswer:
-      "In some brains, extra cross-talk between sensory regions produces real, automatic added experiences (here, colors triggered by letters); test whether the letter-color pairings stay stable across years of retesting, whether a visual-search task shows the colors pop out involuntarily, and whether brain imaging shows color-area activity to plain black letters.",
+      "Retreating into theory and statistics about his own divorce, with the feeling drained out, looks like intellectualizing — using abstraction to keep painful emotion at arm's length; test whether affect breaks through when he's asked for concrete moments rather than concepts, whether the abstraction intensifies exactly on the most painful points, and whether naming it lets a real feeling surface.",
     explanation:
-      "Top credit names a cross-activation mechanism with three objective tests of an inner experience; 'can't be checked, tells us nothing' is the unfruitful refusal.",
+      "Top credit reads the feeling-free abstraction as intellectualization and names a concrete-moment test; 'some people are just analytical' is the dodge the topic-specific draining of affect defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "During REM sleep, with the eyes closed and little outside input, people have vivid, detailed conscious experiences they later recall as dreams. Which conclusion best follows?",
+      "After an unusually open and moving session, a patient 'completely forgets' the next appointment for the first time ever, then later forgets to pay. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Dreams are too mysterious to support any conclusion about consciousness.",
-        credit: 0,
-      },
-      {
-        text: "The brain seems able to make experiences while asleep.",
-        credit: 0.3,
-      },
-      {
-        text: "The brain can generate conscious experience internally without external input, so consciousness is constructed, not merely received; test whether lucid dreamers can send pre-agreed eye-movement signals during verified REM, whether reported vividness tracks REM brain activity, and whether waking people from REM yields more vivid reports than waking them from deep non-REM.",
+        text: "The forgetting clusters right after she let herself be vulnerable, which suggests an out-of-awareness retreat from the closeness the breakthrough created, not simple absentmindedness; test whether such lapses reliably follow emotionally open sessions, whether she feels exposed or embarrassed recalling what she shared, and whether naming the pattern eases the next session rather than offending her.",
         credit: 1.0,
       },
       {
-        text: "The sleeping brain probably builds the dream; we could collect more dream reports.",
+        text: "She's probably reacting to the last session; we could ask what came up.",
         credit: 0.6,
+      },
+      {
+        text: "She seems to have gotten forgetful.",
+        credit: 0.3,
+      },
+      {
+        text: "Forgetting the session proves she never cared about therapy and was faking her progress all along.",
+        credit: 0,
       },
     ],
     correctAnswer:
-      "The brain can generate conscious experience internally without external input, so consciousness is constructed, not merely received; test whether lucid dreamers can send pre-agreed eye-movement signals during verified REM, whether reported vividness tracks REM brain activity, and whether waking people from REM yields more vivid reports than waking them from deep non-REM.",
+      "The forgetting clusters right after she let herself be vulnerable, which suggests an out-of-awareness retreat from the closeness the breakthrough created, not simple absentmindedness; test whether such lapses reliably follow emotionally open sessions, whether she feels exposed or embarrassed recalling what she shared, and whether naming the pattern eases the next session rather than offending her.",
     explanation:
-      "The richest conclusion names internal construction and three tests, including the lucid-dream signal; 'too mysterious to support any conclusion' opens no path.",
+      "Full credit reads the timed lapses as a retreat from closeness and names checks; 'she was faking all along' is the overreach the genuine breakthrough that preceded the lapse defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "After a stroke, a patient is paralyzed on the left side but cheerfully insists nothing is wrong with that arm and tries to use it. Which conclusion best follows?",
+      "When the therapist mentions she'll be away for two weeks, a warm, engaged patient goes flat, says 'fine, whatever,' and spends the rest of the session detached. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The brain's self-monitoring can fail, so awareness of one's own body and state is itself a constructed process that can break; test whether the denial is specific to the affected limb, whether cold-water stimulation of the inner ear briefly restores accurate awareness, and whether such cases cluster around lesions in self-monitoring brain regions.",
-        credit: 1.0,
-      },
-      {
-        text: "The patient seems unaware of the paralysis.",
+        text: "He seems put off by the upcoming break.",
         credit: 0.3,
       },
       {
-        text: "Self-awareness is a single fixed thing that can't selectively break like this.",
+        text: "It's normal to dislike a break in routine, so his reaction means nothing in particular.",
         credit: 0,
       },
       {
-        text: "Their self-awareness probably broke; we could examine more stroke patients.",
+        text: "The sudden coldness at news of separation suggests the break activated an old template about being abandoned by people he relies on, defended against by going numb rather than showing hurt; test whether the same shutdown appears in his accounts of past separations, whether the warmth returns when the therapist reliably comes back, and whether gently naming the hurt beneath the flatness lets it surface.",
+        credit: 1.0,
+      },
+      {
+        text: "He's probably upset about the break; we could talk about it.",
         credit: 0.6,
       },
     ],
     correctAnswer:
-      "The brain's self-monitoring can fail, so awareness of one's own body and state is itself a constructed process that can break; test whether the denial is specific to the affected limb, whether cold-water stimulation of the inner ear briefly restores accurate awareness, and whether such cases cluster around lesions in self-monitoring brain regions.",
+      "The sudden coldness at news of separation suggests the break activated an old template about being abandoned by people he relies on, defended against by going numb rather than showing hurt; test whether the same shutdown appears in his accounts of past separations, whether the warmth returns when the therapist reliably comes back, and whether gently naming the hurt beneath the flatness lets it surface.",
     explanation:
-      "Top credit treats self-awareness as a breakable brain process and names three tests; the 'single fixed thing that can't break' option is defeated by the selective denial described.",
+      "Top credit reads the withdrawal as an abandonment template defended by numbing and names tests; 'it means nothing in particular' is the refusal the sharp shift at the separation cue defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A person who lost a hand still vividly feels the missing hand — its position, even pain in it. Sometimes touching their face produces a sensation felt in the phantom hand. Which conclusion best follows?",
+      "Without any prompting, a patient says, 'You probably sit there thinking I'm a pathetic, weak mess,' though the therapist has shown only steady attention. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Phantom feelings are too strange to draw any conclusion from.",
-        credit: 0,
+        text: "He's probably assuming the therapist judges him; we could check that out.",
+        credit: 0.6,
       },
       {
-        text: "The missing hand still seems to be felt somehow.",
-        credit: 0.3,
-      },
-      {
-        text: "The brain keeps an internal body map that can produce conscious sensation even without the body part, and that map can rewire; test whether mirror-box visual feedback reduces phantom pain, whether the phantom shifts as nearby cortex reorganizes, and whether touching the face reliably evokes sensation referred to the phantom hand.",
+        text: "Attributing harsh contempt to a therapist who has shown none suggests he is projecting his own self-judgment onto her — reading his inner critic as her opinion; test whether the 'you think I'm pathetic' theme tracks moments he feels most ashamed, whether the others supposedly 'judging' him echo his own self-talk, and whether his certainty about her contempt softens when he voices the self-criticism directly.",
         credit: 1.0,
       },
       {
-        text: "The brain probably still maps the hand; we could interview more amputees.",
-        credit: 0.6,
+        text: "He seems worried about what the therapist thinks.",
+        credit: 0.3,
+      },
+      {
+        text: "We can't ever know what's in his head, so there's no way to interpret what he said.",
+        credit: 0,
       },
     ],
     correctAnswer:
-      "The brain keeps an internal body map that can produce conscious sensation even without the body part, and that map can rewire; test whether mirror-box visual feedback reduces phantom pain, whether the phantom shifts as nearby cortex reorganizes, and whether touching the face reliably evokes sensation referred to the phantom hand.",
+      "Attributing harsh contempt to a therapist who has shown none suggests he is projecting his own self-judgment onto her — reading his inner critic as her opinion; test whether the 'you think I'm pathetic' theme tracks moments he feels most ashamed, whether the others supposedly 'judging' him echo his own self-talk, and whether his certainty about her contempt softens when he voices the self-criticism directly.",
     explanation:
-      "The strongest conclusion names an internal body-map mechanism with three tests, including the face-referral check; 'too strange to draw any conclusion' is the barren dodge.",
+      "Full credit reads the unwarranted contempt as projection of his own self-judgment and names checks; 'we can't ever know what's in his head' is the refusal the mismatch between his claim and the therapist's stance defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "In a card-gambling task, players begin steering away from risky decks and their palms sweat just before reaching for a bad deck — well before they can explain in words which decks are dangerous. Which conclusion best follows?",
+      "A patient can explain his anxiety perfectly — its origins, its triggers, the theory behind it — and has done so for a year, yet he still avoids every situation that makes him anxious. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Decision-making is too complex to say anything about awareness here.",
+        text: "Since he understands his anxiety so well, he must really be cured and is just choosing to avoid things.",
         credit: 0,
       },
       {
-        text: "People seem to sense danger before they can say why.",
+        text: "He seems to know a lot about his anxiety.",
         credit: 0.3,
       },
       {
-        text: "Bodily and emotional signals can guide good choices before a person consciously knows the rule, so useful processing runs ahead of awareness; test whether the sweat response precedes avoiding bad decks before stated knowledge, whether patients who lack such bodily signals fail to learn the task, and whether blocking those signals removes the early advantage.",
-        credit: 1.0,
+        text: "His understanding probably hasn't changed his behavior; we could try having him face the situations.",
+        credit: 0.6,
       },
       {
-        text: "Gut feelings probably guide the choices; we could run more players.",
-        credit: 0.6,
+        text: "His flawless explanation is intellectual insight that hasn't been worked through — understanding alone hasn't reached the situations where it counts, so the avoidance persists; test whether the insight carries any felt anxiety when he describes it, whether he can apply it in a real anxious moment rather than after the fact, and whether repeatedly catching it across new situations slowly shifts the behavior.",
+        credit: 1.0,
       },
     ],
     correctAnswer:
-      "Bodily and emotional signals can guide good choices before a person consciously knows the rule, so useful processing runs ahead of awareness; test whether the sweat response precedes avoiding bad decks before stated knowledge, whether patients who lack such bodily signals fail to learn the task, and whether blocking those signals removes the early advantage.",
+      "His flawless explanation is intellectual insight that hasn't been worked through — understanding alone hasn't reached the situations where it counts, so the avoidance persists; test whether the insight carries any felt anxiety when he describes it, whether he can apply it in a real anxious moment rather than after the fact, and whether repeatedly catching it across new situations slowly shifts the behavior.",
     explanation:
-      "Top credit names a mechanism (emotional signals leading awareness) with three tests; 'too complex to say anything' refuses to lead and earns zero.",
+      "Top credit distinguishes intellectual insight from worked-through change and names tests; 'he must be cured' is the overreach the year of unchanged avoidance directly defeats.",
   },
 ];
 
@@ -417,425 +417,425 @@ const hybrid: HomeworkItem[] = [
   {
     itemType: "hybrid",
     prompt:
-      "A chimpanzee is given a mirror for several days. A researcher secretly dabs a spot of odorless dye on the chimp's forehead, where it can only be seen in the mirror. On seeing its reflection, the chimp reaches up and touches the spot on its own forehead. Which conclusion best follows?",
+      "After a long pause following the therapist's question about her marriage, a patient says, 'It's really coming down out there — supposed to storm all week,' and launches into a detailed discussion of the forecast. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The chimp likely recognizes the reflection as itself — representing its own body as an object — rather than treating the image as a stranger; test whether it touches the mark only when the mirror is present, whether species that fail the task keep reacting socially to the image, and whether removing the dye stops the self-directed touching.",
+        text: "The swing to the weather right after a question about her marriage looks like a defensive flight from a loaded topic, not a genuine new interest; test whether these swerves reliably follow marital questions, whether slowing her down returns her to the feeling, and whether the topics she escapes to are consistently safe and impersonal.",
         credit: 1.0,
       },
       {
-        text: "The chimp seems to understand the mirror somehow.",
+        text: "She probably didn't want to answer; we could redirect to the marriage.",
+        credit: 0.6,
+      },
+      {
+        text: "She seems to have changed the subject to the weather.",
         credit: 0.3,
       },
       {
-        text: "Animal minds are unknowable, so the mark-touching tells us nothing.",
+        text: "People chat about the weather all the time, so this tells us nothing about her marriage.",
         credit: 0,
-      },
-      {
-        text: "The chimp probably recognizes itself; we could test a few more chimps.",
-        credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your self-recognition reading from the rival 'the chimp is just reacting to a spot it could feel or see directly,' and say what result would refute your reading.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'defensive flight from the topic' lead from the rival 'she simply finds her marriage boring and would rather chat,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: use only a mirror-visible, non-tactile mark and remove the mirror — if self-recognition drives it, the chimp should touch the spot only when the mirror is present and not otherwise. My reading is refuted if the chimp touches the spot just as much with no mirror, showing it feels or sees it directly rather than recognizing itself.",
+        "Cheapest test: watch whether the swerves happen specifically right after the hardest marital questions and come with signs of tension like a pause or stiffening — a topic-locked, anxiety-linked escape points to defense, not boredom. My lead is refuted if she drifts off equally on every subject, or if she returns to the marriage easily and calmly when redirected.",
       yieldAnchors: [
-        "The dye is odorless and only visible in the mirror",
-        "The chimp touches the spot on its own forehead, not the mirror",
-        "This follows days of mirror exposure",
+        "A long pause follows the marriage question",
+        "She switches abruptly to the weather",
+        "She elaborates on the safe topic in detail",
       ],
       riskAnchors: [
-        "Mark-touching happens only when the mirror is present",
-        "Species that fail still treat the image as another animal",
-        "Removing the dye stops the self-directed touching",
+        "The swerves reliably follow marital questions",
+        "Slowing her down returns her to the feeling",
+        "The escape topics are consistently impersonal",
       ],
       defeatedBy: [
-        "The chimp can feel or directly see the mark without the mirror",
-        "Animal minds are unknowable so the behavior means nothing",
+        "She drifts off topic equally on every subject",
+        "She returns to the marriage calmly when redirected",
       ],
     },
     correctAnswer:
-      "The chimp likely recognizes the reflection as itself — representing its own body as an object — rather than treating the image as a stranger; test whether it touches the mark only when the mirror is present, whether species that fail the task keep reacting socially to the image, and whether removing the dye stops the self-directed touching.",
+      "The swing to the weather right after a question about her marriage looks like a defensive flight from a loaded topic, not a genuine new interest; test whether these swerves reliably follow marital questions, whether slowing her down returns her to the feeling, and whether the topics she escapes to are consistently safe and impersonal.",
     explanation:
-      "Full credit commits to a self-representation mechanism with three checks and a mirror-removal test that names its own refutation; 'animal minds are unknowable' opens nothing.",
+      "Full credit reads the timed swerve as defensive avoidance with three checks and a topic-specificity test that names its refutation; 'people chat about weather' is the dismissal the precise timing defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "Researchers zap the awake brain with a brief magnetic pulse and record the echo. In awake people the echo is complex and spreads widely; under anesthesia and in dreamless sleep the echo is simple and stays local. The complexity rises again when vivid dreaming returns. Which conclusion best follows?",
+      "Describing the day his mother died, a patient smiles and chuckles lightly throughout, as if telling an amusing anecdote. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The complexity of the brain's response to a perturbation tracks the presence of consciousness, not just whether someone is awake; test whether the index drops in every unaware state and rises in vivid dreams during sleep, whether it separates aware locked-in patients from truly unaware ones, and whether it climbs back as anesthesia wears off.",
-        credit: 1.0,
-      },
-      {
-        text: "The brain's echo seems bigger when people are conscious.",
+        text: "He seems oddly cheerful about it.",
         credit: 0.3,
       },
       {
-        text: "Consciousness is the hard problem, so no brain measurement could ever index it.",
+        text: "The mismatch between a grief-laden memory and the light laughter suggests the laughter is keeping unbearable feeling at a distance, not that the loss was actually painless to him; test whether the smiling intensifies at the most painful details, whether the feeling breaks through when he slows down and stays with a single moment, and whether he shows the same incongruous lightness around other losses.",
+        credit: 1.0,
+      },
+      {
+        text: "Everyone grieves differently, so his laughter is just his style and means nothing.",
         credit: 0,
       },
       {
-        text: "The complexity probably tracks consciousness; we could test more sleepers.",
+        text: "He's probably masking sadness; we could point out the laughter.",
         credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'complexity indexes consciousness' reading from the rival 'it just measures how awake or how stimulated the brain is,' and say what result would refute your reading.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'laughter is warding off grief' lead from the rival 'he has genuinely made peace with the loss,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: measure the index during vivid REM dreaming, when the person is asleep and getting little input but is consciously experiencing — my reading predicts high complexity there. It is refuted if dreaming brains, despite reported vivid experience, show the same low complexity as dreamless sleep, which would tie the index to wakefulness or input rather than to consciousness.",
+        "Cheapest test: gently slow him at the most painful detail and watch whether the smile falters and feeling leaks through — grief held at bay tends to surface when the defense is paused. My lead is refuted if staying with the moment brings calm warmth rather than strain, suggesting genuine acceptance rather than warded-off pain.",
       yieldAnchors: [
-        "Echo is complex and widespread when awake",
-        "Echo is simple and local under anesthesia and dreamless sleep",
-        "Complexity rises again during vivid dreaming",
+        "He laughs while recounting his mother's death",
+        "The lightness pervades a grief-laden story",
+        "His manner treats it like an amusing anecdote",
       ],
       riskAnchors: [
-        "The index drops in every unaware state and rises in vivid dreams",
-        "It separates aware locked-in patients from truly unaware ones",
-        "It climbs back as anesthesia wears off",
+        "The smiling intensifies at the most painful details",
+        "Feeling breaks through when he slows down",
+        "The same incongruous lightness appears around other losses",
       ],
       defeatedBy: [
-        "The index merely tracks wakefulness or sensory input",
-        "No brain measurement could ever index consciousness",
+        "Staying with the moment brings calm acceptance",
+        "He shows full grief elsewhere with no laughter",
       ],
     },
     correctAnswer:
-      "The complexity of the brain's response to a perturbation tracks the presence of consciousness, not just whether someone is awake; test whether the index drops in every unaware state and rises in vivid dreams during sleep, whether it separates aware locked-in patients from truly unaware ones, and whether it climbs back as anesthesia wears off.",
+      "The mismatch between a grief-laden memory and the light laughter suggests the laughter is keeping unbearable feeling at a distance, not that the loss was actually painless to him; test whether the smiling intensifies at the most painful details, whether the feeling breaks through when he slows down and stays with a single moment, and whether he shows the same incongruous lightness around other losses.",
     explanation:
-      "Full credit ties consciousness to a measurable signature with three tests and a dreaming case that names its refutation; the 'no measurement could ever index it' answer is the dodge.",
+      "Full credit reads incongruous laughter as a defense against grief with three checks and a slow-down test that names its refutation; 'everyone grieves differently' is the dodge the grief–laughter mismatch defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "Two people name colors identically and never disagree about what to call any patch. A philosopher claims their inner experience of red could still secretly differ and could never be detected. Which conclusion best follows?",
+      "The therapist arrives one minute late and apologizes; the patient, normally easygoing, says coldly, 'I knew it — you don't actually care about me,' and stays wounded the whole hour. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Even when color words match, differences in the underlying experience can leave measurable fingerprints, so private quality is not wholly beyond test; test whether the two people's similarity judgments between color pairs diverge, whether their brain color-response patterns differ, and whether their reaction-time confusions among shades differ.",
-        credit: 1.0,
+        text: "He's probably sensitive to feeling neglected; we could explore that.",
+        credit: 0.6,
       },
       {
-        text: "Their color experiences might differ in some way.",
-        credit: 0.3,
-      },
-      {
-        text: "Subjective experience is fully private, so absolutely nothing about it can ever be measured.",
+        text: "His reaction proves the therapist did something genuinely unforgivable and has ruined the relationship for good.",
         credit: 0,
       },
       {
-        text: "Their experiences could differ; we could ask them to name more colors.",
-        credit: 0.6,
+        text: "A one-minute lateness producing deep, lasting hurt shows the reaction belongs to an old template about being uncared-for, now transferred onto the therapist, rather than to the trivial event itself; test whether the same outsized hurt appears with others over small slights, whether it echoes how a caregiver once made him feel forgotten, and whether it eases as the therapist proves reliable over time.",
+        credit: 1.0,
+      },
+      {
+        text: "He seems upset that the therapist was late.",
+        credit: 0.3,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'experience leaves measurable fingerprints' reading from the rival 'matching color words means identical experience,' and say what result would refute your reading.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'old uncared-for template transferred onto the therapist' lead from the rival 'he is simply a stickler for punctuality,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: have both people rate how similar many color pairs look (not just name them) — if their inner experience differs, their similarity maps should diverge even though their names match. My reading is refuted if their similarity judgments and brain color responses are indistinguishable, in which case the matching words really do track matching experience as far as we can probe.",
+        "Cheapest test: check whether the hurt is about being unloved rather than about time itself, and whether the same wound shows up over other tiny slights from people he depends on — a relationship theme, not a scheduling one, points to transference. My lead is refuted if his reaction is purely about lost minutes, stays proportional, and never carries the 'you don't care about me' meaning elsewhere.",
       yieldAnchors: [
-        "The two people name colors identically",
-        "They never disagree about what to call a patch",
-        "The claim is that inner experience could still differ",
+        "A one-minute lateness triggers deep hurt",
+        "He concludes the therapist doesn't care",
+        "The wound lasts the whole session",
       ],
       riskAnchors: [
-        "Their pairwise color-similarity judgments diverge",
-        "Their brain color-response patterns differ",
-        "Their reaction-time confusions among shades differ",
+        "The same outsized hurt appears with others over small slights",
+        "It echoes a caregiver who made him feel forgotten",
+        "It eases as the therapist proves reliable",
       ],
       defeatedBy: [
-        "Matching color names guarantees identical experience",
-        "Nothing about private experience can ever be measured",
+        "His upset is purely about lost time and stays proportional",
+        "The 'you don't care' meaning never appears elsewhere",
       ],
     },
     correctAnswer:
-      "Even when color words match, differences in the underlying experience can leave measurable fingerprints, so private quality is not wholly beyond test; test whether the two people's similarity judgments between color pairs diverge, whether their brain color-response patterns differ, and whether their reaction-time confusions among shades differ.",
+      "A one-minute lateness producing deep, lasting hurt shows the reaction belongs to an old template about being uncared-for, now transferred onto the therapist, rather than to the trivial event itself; test whether the same outsized hurt appears with others over small slights, whether it echoes how a caregiver once made him feel forgotten, and whether it eases as the therapist proves reliable over time.",
     explanation:
-      "Full credit commits to detectable fingerprints with three tests and a similarity-judgment probe that names its refutation; 'nothing can ever be measured' is the zero-credit refusal.",
+      "Full credit reads the disproportion as transference with three checks and a meaning-not-minutes test that names its refutation; 'the therapist ruined it forever' is the overreach the trivial trigger defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "The cerebellum holds far more neurons than the rest of the brain, yet people born without it can still be conscious and report experiences. In contrast, small damage to the thalamus-and-cortex network can abolish consciousness entirely. Which conclusion best follows?",
+      "Before sharing almost anything personal, a patient prefaces it with 'this is probably stupid, but...' or 'you'll think this is dumb,' then shares something quite reasonable. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Damage seems to matter more in some regions than others.",
-        credit: 0.3,
-      },
-      {
-        text: "Consciousness depends on how neurons are wired together, not raw neuron count, since the cerebellum's largely feed-forward circuits contribute little to experience; test whether consciousness survives cerebellar loss, whether it collapses with thalamocortical damage, and whether richly interconnected (recurrent) architecture predicts a region's contribution better than its cell count.",
+        text: "The reflexive self-put-down before speaking looks like a protective move — disarming an expected judgment by beating others to it — rather than a true assessment that her thoughts are stupid; test whether the disclaimers cluster before the most vulnerable disclosures, whether they fade as she feels safer with the therapist, and whether they mirror how a critical figure once responded to her.",
         credit: 1.0,
       },
       {
-        text: "More neurons always means more consciousness, so the cerebellum must be the seat of the mind.",
-        credit: 0,
+        text: "She seems to lack confidence in her ideas.",
+        credit: 0.3,
       },
       {
-        text: "Wiring probably matters more than counts; we could compare more brain regions.",
+        text: "She probably expects to be judged; we could reassure her.",
         credit: 0.6,
+      },
+      {
+        text: "Some people are just modest, so the disclaimers don't mean anything.",
+        credit: 0,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'wiring, not neuron count' reading from the rival 'consciousness simply scales with how many neurons survive,' and say what result would refute your reading.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'pre-emptive defense against expected judgment' lead from the rival 'she genuinely has a low opinion of her own thinking,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: compare consciousness in people who lost the huge-but-feed-forward cerebellum against people with small thalamocortical damage — my reading predicts the small recurrent-network damage matters far more despite fewer neurons lost. It is refuted if outcomes track total neurons lost rather than which network was hit, which would favor sheer count over wiring.",
+        "Cheapest test: watch whether the disclaimers spike specifically before the most personal disclosures and ease as trust grows — judgment-anticipating self-protection is topic- and safety-dependent, not a flat trait. My lead is refuted if she disparages her thinking evenly across all topics regardless of vulnerability or rapport, suggesting a stable low self-estimate rather than a defense.",
       yieldAnchors: [
-        "The cerebellum holds the most neurons",
-        "People without a cerebellum can still be conscious",
-        "Small thalamocortical damage can abolish consciousness",
+        "She self-deprecates before sharing",
+        "What she shares is actually reasonable",
+        "The disclaimers precede personal material",
       ],
       riskAnchors: [
-        "Consciousness survives cerebellar loss",
-        "Consciousness collapses with thalamocortical damage",
-        "Recurrent architecture predicts contribution better than cell count",
+        "The disclaimers cluster before vulnerable disclosures",
+        "They fade as she feels safer",
+        "They mirror a past critical figure",
       ],
       defeatedBy: [
-        "Consciousness scales purely with surviving neuron count",
-        "The cerebellum, with the most neurons, is the seat of the mind",
+        "She disparages her thinking evenly on every topic",
+        "The disclaimers never change with safety or topic",
       ],
     },
     correctAnswer:
-      "Consciousness depends on how neurons are wired together, not raw neuron count, since the cerebellum's largely feed-forward circuits contribute little to experience; test whether consciousness survives cerebellar loss, whether it collapses with thalamocortical damage, and whether richly interconnected (recurrent) architecture predicts a region's contribution better than its cell count.",
+      "The reflexive self-put-down before speaking looks like a protective move — disarming an expected judgment by beating others to it — rather than a true assessment that her thoughts are stupid; test whether the disclaimers cluster before the most vulnerable disclosures, whether they fade as she feels safer with the therapist, and whether they mirror how a critical figure once responded to her.",
     explanation:
-      "Full credit names wiring as the mechanism with three tests and a lesion comparison that names its refutation; 'more neurons always means more consciousness' is defeated by the cerebellum case.",
+      "Full credit reads the disclaimer as a defense against anticipated judgment with three checks and a topic-and-safety test that names its refutation; 'some people are just modest' is the dodge the vulnerability-linked timing defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A sleepwalker gets up, walks to the kitchen, pours a drink, and returns to bed. In the morning they remember none of it, and recordings show their brain was in a deep non-waking state throughout. Which conclusion best follows?",
+      "The morning after a session in which she cried and felt deeply understood for the first time, a patient emails to cancel the next appointment, citing a vague scheduling conflict. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Complex, coordinated behavior can run with little or no conscious awareness, so consciousness is not required for all skilled action; test whether sleepwalkers consistently lack recall and show non-waking brain activity, whether their actions are stereotyped and inflexible, and whether they fail tasks that need flexible, moment-to-moment awareness.",
-        credit: 1.0,
-      },
-      {
-        text: "The sleepwalker seems to act without being fully awake.",
-        credit: 0.3,
-      },
-      {
-        text: "Any coordinated action like this proves full consciousness must be present.",
+        text: "The cancellation proves the breakthrough was fake and she has decided to quit therapy entirely.",
         credit: 0,
       },
       {
-        text: "They probably weren't conscious; we could record more sleepwalking episodes.",
+        text: "She's probably reacting to the closeness; we could gently raise it.",
         credit: 0.6,
+      },
+      {
+        text: "The cancellation following directly on a moment of rare closeness suggests an out-of-awareness retreat from the vulnerability it stirred, not a real scheduling problem; test whether such pull-backs reliably follow her most open sessions, whether she feels exposed recalling what she shared, and whether the urge to withdraw eases once the fear of being close is named.",
+        credit: 1.0,
+      },
+      {
+        text: "She seems to have a scheduling conflict.",
+        credit: 0.3,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'action without awareness' reading from the rival 'the sleepwalker was actually awake and simply forgot,' and say what result would refute your reading.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'retreat from vulnerability' lead from the rival 'she genuinely had a scheduling conflict,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: record brain activity during the episode and probe responsiveness — my reading predicts a deep non-waking pattern and failure on tasks needing flexible awareness, unlike a truly awake person. It is refuted if the sleepwalker shows a normal awake brain pattern and can flexibly respond to novel requests, which would mean they were awake and merely amnesic.",
+        "Cheapest test: notice whether cancellations specifically follow her most open, emotional sessions and whether she sounds exposed or uneasy about what she revealed — a pattern tied to closeness points to defensive retreat. My lead is refuted if cancellations fall randomly with respect to session content and she returns eager and untroubled by the previous disclosure.",
       yieldAnchors: [
-        "The sleepwalker performs coordinated multi-step actions",
-        "They have no memory of it afterward",
-        "Recordings show a deep non-waking brain state",
+        "She cancels right after a breakthrough",
+        "The session involved rare closeness and tears",
+        "The stated reason is vague",
       ],
       riskAnchors: [
-        "Sleepwalkers consistently lack recall and show non-waking activity",
-        "Their actions are stereotyped and inflexible",
-        "They fail tasks needing flexible, online awareness",
+        "Pull-backs reliably follow her most open sessions",
+        "She feels exposed recalling what she shared",
+        "The urge eases once the fear is named",
       ],
       defeatedBy: [
-        "Any coordinated action proves full consciousness was present",
-        "The sleepwalker was simply awake and forgot",
+        "Cancellations fall randomly relative to session content",
+        "She returns eager and untroubled by the disclosure",
       ],
     },
     correctAnswer:
-      "Complex, coordinated behavior can run with little or no conscious awareness, so consciousness is not required for all skilled action; test whether sleepwalkers consistently lack recall and show non-waking brain activity, whether their actions are stereotyped and inflexible, and whether they fail tasks that need flexible, moment-to-moment awareness.",
+      "The cancellation following directly on a moment of rare closeness suggests an out-of-awareness retreat from the vulnerability it stirred, not a real scheduling problem; test whether such pull-backs reliably follow her most open sessions, whether she feels exposed recalling what she shared, and whether the urge to withdraw eases once the fear of being close is named.",
     explanation:
-      "Full credit names action-without-awareness with three tests and a brain-state check that names its refutation; 'any coordinated action proves consciousness' overreaches and earns zero.",
+      "Full credit reads the timed cancellation as a retreat from closeness with three checks and a session-content test that names its refutation; 'the breakthrough was fake' is the overreach the genuine closeness that preceded it defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "After a brain lesion, a patient still reports feeling pain when pricked and can point to where it is, but says it doesn't bother them at all and makes no effort to withdraw or protect the spot. Which conclusion best follows?",
+      "A patient describes intense distrust of a new boss she barely knows, using almost the same words and feelings she once used about an ex who betrayed her. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Pain has too many sides to conclude anything from one odd patient.",
-        credit: 0,
-      },
-      {
-        text: "The raw sensation of pain and its felt unpleasantness are separable brain processes that can come apart; test whether the patient localizes the prick accurately yet rates it non-distressing, whether the lesion spares sensory pain areas but hits emotional ones, and whether protective reflexes weaken even though detection stays intact.",
-        credit: 1.0,
-      },
-      {
-        text: "The patient seems to feel pain differently.",
+        text: "She seems wary of her new boss.",
         credit: 0.3,
       },
       {
-        text: "Sensation and suffering probably differ; we could examine more such patients.",
+        text: "It's probably connected to her ex; we could compare the two.",
         credit: 0.6,
+      },
+      {
+        text: "Importing the same distrust and language from a betraying ex onto a barely-known boss suggests she is replaying an old relationship template rather than responding to who this boss actually is; test whether coworkers experience the boss as untrustworthy, whether her wariness fits the ex's behavior better than the boss's, and whether it softens as the boss proves reliable over time.",
+        credit: 1.0,
+      },
+      {
+        text: "Bosses and exes can both be untrustworthy, so there's nothing here to interpret.",
+        credit: 0,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'sensation and unpleasantness are separable' reading from the rival 'the patient simply hides or denies their distress,' and say what result would refute your reading.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'old betrayal template replayed on the boss' lead from the rival 'the boss really is untrustworthy,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: compare accurate pain localization against involuntary signs of distress (withdrawal reflex, stress response) — my reading predicts intact detection but blunted involuntary distress. It is refuted if the patient shows normal involuntary withdrawal and stress responses, which would suggest they feel the unpleasantness and are merely concealing it.",
+        "Cheapest test: compare her read of the boss against how coworkers experience him and against the ex's actual behavior — a fit to the past figure rather than the present one points to transference. My lead is refuted if independent observers also find the boss untrustworthy and his conduct, not her ex's, accounts for her wariness.",
       yieldAnchors: [
-        "The patient reports feeling and locating the pain",
-        "The patient says it doesn't bother them",
-        "The patient makes no effort to withdraw or protect",
+        "She barely knows the new boss",
+        "Her distrust mirrors feelings toward a betraying ex",
+        "She uses nearly the same words",
       ],
       riskAnchors: [
-        "Accurate localization paired with non-distress ratings",
-        "Lesion spares sensory pain areas but hits emotional ones",
-        "Protective reflexes weaken while detection stays intact",
+        "Coworkers don't experience the boss as untrustworthy",
+        "Her wariness fits the ex better than the boss",
+        "It softens as the boss proves reliable",
       ],
       defeatedBy: [
-        "The patient feels full distress but conceals it",
-        "Nothing follows from a single unusual patient",
+        "Independent observers also find the boss untrustworthy",
+        "His actual conduct fully explains her wariness",
       ],
     },
     correctAnswer:
-      "The raw sensation of pain and its felt unpleasantness are separable brain processes that can come apart; test whether the patient localizes the prick accurately yet rates it non-distressing, whether the lesion spares sensory pain areas but hits emotional ones, and whether protective reflexes weaken even though detection stays intact.",
+      "Importing the same distrust and language from a betraying ex onto a barely-known boss suggests she is replaying an old relationship template rather than responding to who this boss actually is; test whether coworkers experience the boss as untrustworthy, whether her wariness fits the ex's behavior better than the boss's, and whether it softens as the boss proves reliable over time.",
     explanation:
-      "Full credit splits sensation from unpleasantness with three tests and a reflex check that names its refutation; 'too many sides to conclude anything' is the barren dodge.",
+      "Full credit reads the imported distrust as transference with three checks and an observer-comparison test that names its refutation; 'both can be untrustworthy' is the dismissal the barely-known boss and borrowed language defeat.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "Volunteers complete eight weeks of daily attention training (meditation). Afterward they spot more faint, near-threshold flashes they used to miss, and recover faster when two targets appear in quick succession. Which conclusion best follows?",
+      "Describing his close bond with his brother, a patient says, 'I really h— love my brother, we're so close,' catching what was nearly 'hate,' and laughs it off. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Trained attention seems to sharpen perception.",
-        credit: 0.3,
+        text: "He probably has mixed feelings; we could ask more about his brother.",
+        credit: 0.6,
       },
       {
-        text: "Directing attention shapes what reaches conscious awareness, and this gating is trainable; test whether trained volunteers detect more near-threshold stimuli than before, whether their lapse when two targets appear quickly shrinks, and whether the gains scale with total hours practiced.",
+        text: "The near-slip and quick cover suggest feelings toward his brother are more mixed than the 'so close' story admits, with some resentment held out of awareness; test whether tension shows up in concrete stories about the brother despite the warm summary, whether the closeness claim is strongest right when conflict is implied, and whether gently allowing for both feelings brings relief rather than denial.",
         credit: 1.0,
       },
       {
-        text: "Attention is too personal a skill to draw any conclusion about awareness.",
+        text: "It was just a verbal stumble, so reading anything into it is unwarranted.",
         credit: 0,
       },
       {
-        text: "Training probably helps attention; we could run another eight-week group.",
-        credit: 0.6,
+        text: "He seems to have misspoken about his brother.",
+        credit: 0.3,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'training sharpens the attention gate on awareness' reading from the rival 'people just tried harder on the second test,' and say what result would refute your reading.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'unacknowledged resentment alongside love' lead from the rival 'it was a meaningless slip of the tongue,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: compare the trained group against an equally motivated control group doing a sham activity, and check whether detection gains scale with actual practice hours — my reading predicts gains track training dose, not mere effort. It is refuted if the sham-activity controls improve just as much, which would point to effort or test familiarity rather than trained attention.",
+        "Cheapest test: listen for whether concrete stories about the brother carry friction even as the summary stays glowing — a gap between detailed events and the rosy headline points to split-off resentment. My lead is refuted if his specific anecdotes are consistently warm with no trace of conflict and the slip never connects to any real tension.",
       yieldAnchors: [
-        "Eight weeks of daily attention training",
-        "More near-threshold flashes detected afterward",
-        "Faster recovery when two targets appear in quick succession",
+        "He nearly says 'hate' about his brother",
+        "He corrects it to 'love'",
+        "He insists they are very close",
       ],
       riskAnchors: [
-        "Trained volunteers detect more near-threshold stimuli",
-        "The two-target lapse shrinks with training",
-        "Gains scale with total hours practiced",
+        "Concrete stories reveal tension despite the warm summary",
+        "The closeness claim peaks when conflict is implied",
+        "Allowing both feelings brings relief",
       ],
       defeatedBy: [
-        "People simply tried harder on the second test",
-        "Attention is too personal to study",
+        "His specific stories are consistently conflict-free",
+        "The slip connects to no real tension at all",
       ],
     },
     correctAnswer:
-      "Directing attention shapes what reaches conscious awareness, and this gating is trainable; test whether trained volunteers detect more near-threshold stimuli than before, whether their lapse when two targets appear quickly shrinks, and whether the gains scale with total hours practiced.",
+      "The near-slip and quick cover suggest feelings toward his brother are more mixed than the 'so close' story admits, with some resentment held out of awareness; test whether tension shows up in concrete stories about the brother despite the warm summary, whether the closeness claim is strongest right when conflict is implied, and whether gently allowing for both feelings brings relief rather than denial.",
     explanation:
-      "Full credit names trainable attentional gating with three tests and a dose-response check that names its refutation; 'too personal to draw any conclusion' commits to nothing.",
+      "Full credit reads the near-slip as split-off resentment with three checks and a stories-versus-summary test that names its refutation; 'just a stumble' is the dismissal the near-'hate' beneath the glowing summary defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A chatbot, when asked, types 'I feel sad and lonely today.' Its words are produced by predicting likely text from billions of human sentences. An engineer wonders whether it is conscious. Which conclusion best follows?",
+      "A patient agrees with every interpretation the therapist offers, thanks her warmly each time, and never once pushes back, even when an interpretation clearly doesn't fit. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "A verbal report of feeling is not by itself evidence of experience, since a system can produce the words by pattern-matching without any inner state; test whether the reports track any persistent internal state, whether they depend only on text statistics rather than anything grounded beyond words, and whether removing the relevant training text removes the 'feelings.'",
-        credit: 1.0,
-      },
-      {
-        text: "The chatbot might or might not have feelings.",
+        text: "He seems very agreeable in session.",
         credit: 0.3,
       },
       {
-        text: "The chatbot says it feels sad, so it is definitely conscious.",
+        text: "His agreeableness proves the therapy is going perfectly and he has no further conflicts to address.",
         credit: 0,
       },
       {
-        text: "Its words may not mean real feeling; we could ask it more questions.",
+        text: "Reflexive agreement even with interpretations that miss suggests a compliance pattern — keeping the relationship safe by never displeasing the therapist — likely a template from relationships where disagreement felt dangerous; test whether he can voice a disagreement when explicitly invited, whether the same please-the-powerful stance appears with bosses and partners, and whether his real reactions emerge once it's safe to differ.",
+        credit: 1.0,
+      },
+      {
+        text: "He's probably trying to please the therapist; we could invite disagreement.",
         credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'words aren't proof of experience' reading from the rival 'a fluent report of sadness shows the system feels sad,' and say what result would refute your reading.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'compliance to keep the relationship safe' lead from the rival 'the interpretations simply happen to be accurate,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: check whether the 'sadness' tracks any persistent internal state or is fully explained by the prompt and training text — my reading predicts the report appears and vanishes with the text statistics, not with anything the system independently carries. It is refuted if the reports correspond to a stable internal state that survives changes in wording and is grounded in something beyond predicting likely text.",
+        "Cheapest test: offer a deliberately off-target interpretation and see whether he agrees with that too — agreement with something that clearly doesn't fit reveals compliance rather than accuracy. My lead is refuted if he readily corrects the wrong interpretation and disagrees freely, showing his assent is genuine rather than defensive.",
       yieldAnchors: [
-        "The chatbot types that it feels sad and lonely",
-        "Its words are produced by predicting likely text",
-        "It was trained on billions of human sentences",
+        "He agrees with every interpretation",
+        "He thanks the therapist each time",
+        "He accepts even interpretations that don't fit",
       ],
       riskAnchors: [
-        "The reports track no persistent internal state",
-        "They depend only on text statistics, not grounded states",
-        "Removing the relevant training text removes the 'feelings'",
+        "He can disagree when explicitly invited",
+        "The please-the-powerful stance appears elsewhere",
+        "Real reactions emerge once it's safe to differ",
       ],
       defeatedBy: [
-        "A fluent report of sadness proves the system feels sad",
-        "Saying it feels something makes it conscious",
+        "He readily corrects a deliberately wrong interpretation",
+        "He disagrees freely and easily",
       ],
     },
     correctAnswer:
-      "A verbal report of feeling is not by itself evidence of experience, since a system can produce the words by pattern-matching without any inner state; test whether the reports track any persistent internal state, whether they depend only on text statistics rather than anything grounded beyond words, and whether removing the relevant training text removes the 'feelings.'",
+      "Reflexive agreement even with interpretations that miss suggests a compliance pattern — keeping the relationship safe by never displeasing the therapist — likely a template from relationships where disagreement felt dangerous; test whether he can voice a disagreement when explicitly invited, whether the same please-the-powerful stance appears with bosses and partners, and whether his real reactions emerge once it's safe to differ.",
     explanation:
-      "Full credit separates fluent report from genuine experience with three tests and a grounding check that names its refutation; 'it says so, therefore conscious' overreaches and earns zero.",
+      "Full credit reads total agreement as a compliance defense with three checks and a deliberately-wrong-interpretation test that names its refutation; 'therapy is going perfectly' is the overreach the agreement with interpretations that miss defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A newborn baby, far too young to speak, grimaces, cries, and shows a spike in stress hormones when given a heel-prick blood test. With a gentle pain reliever, both the grimace and the hormone spike fall. Which conclusion best follows?",
+      "For months a patient has eloquently described how his fear of conflict comes from his volatile childhood home, yet he still says yes to everything and never sets a limit with anyone. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Babies are too different from adults to conclude anything about their experience.",
-        credit: 0,
+        text: "His understanding probably hasn't translated to action; we could practice setting limits.",
+        credit: 0.6,
       },
       {
-        text: "The baby seems to be in some distress.",
+        text: "He seems to understand where his fear comes from.",
         credit: 0.3,
       },
       {
-        text: "Behavioral and physiological signs let us reasonably infer the baby experiences pain even without words; test whether facial grimace and stress hormones track the noxious stimulus, whether pain relief lowers both together, and whether the baby's pain-network brain activity resembles an adult's.",
+        text: "His clear account is intellectual insight that hasn't been worked through into the situations that matter, which is why the yes-to-everything behavior persists; test whether the insight carries real anxiety when he describes it, whether he can hold a limit in an actual charged moment rather than only explain it afterward, and whether repeatedly catching the pattern in fresh situations gradually changes what he does.",
         credit: 1.0,
       },
       {
-        text: "The baby probably feels pain; we could observe more heel-prick tests.",
-        credit: 0.6,
+        text: "Because he understands the root of his fear, the problem is essentially resolved.",
+        credit: 0,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'the baby experiences pain' reading from the rival 'these are just reflexes with no experience behind them,' and say what result would refute your reading.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'insight not yet worked through' lead from the rival 'he has genuinely changed and just hasn't had the chance to show it,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: give a genuine analgesic and check whether the grimace, stress hormones, and pain-network brain activity all fall together — my reading predicts a coordinated drop tied to a pain-specific treatment. It is refuted if a pure spinal reflex with no pain-network brain activity fully explains the signs and analgesia leaves the brain response untouched.",
+        "Cheapest test: look for whether he can actually set one small limit in a real interaction this week, not just explain why he should — worked-through change shows up as new behavior in fresh situations. My lead is refuted if he begins holding limits in real moments and the new behavior generalizes, showing the understanding has become more than intellectual.",
       yieldAnchors: [
-        "The baby grimaces and cries at the heel prick",
-        "Stress hormones spike with the prick",
-        "Pain relief lowers both the grimace and the hormones",
+        "He explains his fear's origins clearly",
+        "He has done so for months",
+        "He still never sets a limit",
       ],
       riskAnchors: [
-        "Grimace and stress hormones track the noxious stimulus",
-        "Analgesia lowers both signs together",
-        "Pain-network brain activity resembles an adult's",
+        "The insight carries real anxiety when described",
+        "He can hold a limit in a charged moment",
+        "Catching the pattern in fresh situations changes behavior",
       ],
       defeatedBy: [
-        "The signs are pure reflexes with no experience behind them",
-        "Babies are too unlike adults to infer anything",
+        "He starts setting limits in real interactions",
+        "The new behavior generalizes across situations",
       ],
     },
     correctAnswer:
-      "Behavioral and physiological signs let us reasonably infer the baby experiences pain even without words; test whether facial grimace and stress hormones track the noxious stimulus, whether pain relief lowers both together, and whether the baby's pain-network brain activity resembles an adult's.",
+      "His clear account is intellectual insight that hasn't been worked through into the situations that matter, which is why the yes-to-everything behavior persists; test whether the insight carries real anxiety when he describes it, whether he can hold a limit in an actual charged moment rather than only explain it afterward, and whether repeatedly catching the pattern in fresh situations gradually changes what he does.",
     explanation:
-      "Full credit infers experience from converging signs with three tests and an analgesia check that names its refutation; 'too different to conclude anything' is the dodge.",
+      "Full credit distinguishes intellectual from worked-through insight with three checks and a real-limit test that names its refutation; 'the problem is essentially resolved' is the overreach the unchanged yes-to-everything behavior defeats.",
   },
 ];
 
@@ -843,175 +843,179 @@ const written: HomeworkItem[] = [
   {
     itemType: "written",
     prompt:
-      "On a brain-injury ward, several patients are behaviorally unresponsive — they don't move or speak to command. When scanned and asked to imagine playing tennis, a few of them produce the same motor-planning brain activity, in the same place, as healthy volunteers given that instruction; the rest show nothing. Doctors disagree about whether the responders are conscious. In one paragraph, propose the strongest conclusion and describe how you would test it.",
+      "Over one session, a patient is warm and open until the therapist mentions that, given her progress, they might begin planning for the end of therapy in a few months; from that moment she becomes guarded, gives one-word answers, and says at the door, 'I guess I'm just a case to wrap up.' In one paragraph, propose the strongest conclusion about what is happening dynamically and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that the responding patients are consciously aware and can willfully control their brain activity on command, even though they cannot move their bodies, so unresponsiveness at the bedside does not equal unconsciousness. This commits to a checkable mechanism rather than hedging: I would have each responder use two distinct imagery tasks (tennis for 'yes,' walking through the house for 'no') to answer simple questions, confirm that the answers stay consistent across separate sessions, and ask questions only the patient could know the answer to. My conclusion predicts these patients will reliably and correctly communicate; it is refuted if their 'responses' are inconsistent, occur as often without instruction, or can't carry information the patient alone could supply.",
+        "The strongest conclusion is that the mention of ending activated an old template about being discarded once she's no longer useful, and her sudden guardedness and 'just a case to wrap up' remark are that abandonment fear showing up as transference toward the therapist rather than a fair read of what was said. This is a strong claim because it predicts checkable consequences: the same fear of being dropped should appear in how past relationships ended for her; the warmth should return once the therapist clarifies that ending is collaborative and gradual, not a dismissal; and similar withdrawal should follow other separation cues like breaks or vacations. I would test it by tracing how earlier relationships ended and whether she felt discarded, by watching whether naming the abandonment fear directly restores her openness, and by checking whether separation cues reliably trigger the same cold pull-back — and if instead she stays warm about ending and the remark was a one-off, the abandonment reading is wrong.",
       yieldAnchors: [
-        "Some unresponsive patients show healthy-like motor-planning activity to command",
-        "The activity matches the imagined-tennis instruction",
-        "Other patients show no such response",
+        "She is warm until ending is mentioned",
+        "She becomes guarded and terse afterward",
+        "She says she's 'just a case to wrap up'",
       ],
       riskAnchors: [
-        "Patients answer yes/no questions via two distinct imagery tasks",
-        "Responses stay consistent across separate sessions",
-        "They correctly answer questions only the patient could know",
+        "The same discard fear appears in how past relationships ended",
+        "Warmth returns when ending is framed as collaborative",
+        "Other separation cues trigger the same withdrawal",
       ],
       defeatedBy: [
-        "The brain responses are inconsistent or occur without instruction",
-        "Inner experience is unknowable so the scan settles nothing",
+        "She stays warm and untroubled about ending",
+        "The remark was a one-off unconnected to any pattern",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that the responding patients are consciously aware and can willfully control their brain activity on command, even though they cannot move their bodies, so unresponsiveness at the bedside does not equal unconsciousness. This commits to a checkable mechanism rather than hedging: I would have each responder use two distinct imagery tasks (tennis for 'yes,' walking through the house for 'no') to answer simple questions, confirm that the answers stay consistent across separate sessions, and ask questions only the patient could know the answer to. My conclusion predicts these patients will reliably and correctly communicate; it is refuted if their 'responses' are inconsistent, occur as often without instruction, or can't carry information the patient alone could supply.",
+      "The strongest conclusion is that the mention of ending activated an old template about being discarded once she's no longer useful, and her sudden guardedness and 'just a case to wrap up' remark are that abandonment fear showing up as transference toward the therapist rather than a fair read of what was said. This is a strong claim because it predicts checkable consequences: the same fear of being dropped should appear in how past relationships ended for her; the warmth should return once the therapist clarifies that ending is collaborative and gradual, not a dismissal; and similar withdrawal should follow other separation cues like breaks or vacations. I would test it by tracing how earlier relationships ended and whether she felt discarded, by watching whether naming the abandonment fear directly restores her openness, and by checking whether separation cues reliably trigger the same cold pull-back — and if instead she stays warm about ending and the remark was a one-off, the abandonment reading is wrong.",
     explanation:
-      "The cautious 'inner experience is unknowable, so we can't say' earns near-zero; top credit goes to the committed conclusion that names a willed-communication test able to confirm or refute covert awareness.",
+      "The dodge — 'people dislike change, so her mood means nothing' — ignores the precise trigger; top credit commits to an abandonment template replayed as transference and names a separation-cue test that could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "After a small stroke, a patient insists that their own left arm is not theirs — they claim it belongs to a relative who must have left it in the bed — even though sensation in the arm is intact and they can feel it being touched. In one paragraph, propose the strongest conclusion about self-awareness and describe how you would test it.",
+      "A patient has described escalating fights with his partner and his boss, and today he snaps at the therapist over a minor scheduling question, then looks surprised at himself. In one paragraph, drawing on everything you've learned, propose the strongest integrated conclusion about what is happening across these relationships and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that the sense of owning one's own body is a constructed brain process, separate from raw sensation, and the stroke has broken that ownership process while leaving touch intact. This is a falsifiable mechanism, not a shrug: I would check that the denial is specific to the limb served by the damaged region rather than a general confusion, test whether brief cold-water stimulation of the inner ear temporarily restores accurate ownership (a known effect in such cases), and compare lesion sites across similar patients to see whether they cluster in self-monitoring areas. My conclusion predicts a limb-specific, temporarily reversible denial tied to particular damage; it is refuted if the patient denies ownership of intact limbs at random, or if sensation is actually absent, which would make this ordinary numbness rather than a broken ownership signal.",
+        "The strongest conclusion is that a single relationship pattern — reading others as about to control or criticize him and striking first to defend himself — is being replayed across his partner, his boss, and now the therapist, which is why a minor question drew a snap that surprised even him. This is a strong claim because it predicts checkable consequences: the same preemptive hostility should appear specifically when he feels controlled or judged, not at random; the conflicts across these very different people should share that one trigger rather than reflecting three unrelated bad relationships; and the pattern should match how a controlling or critical figure once treated him. I would test it by mapping what immediately preceded each blow-up to see whether the felt-control trigger recurs, by checking whether neutral observers find his partner and boss as hostile as he does, and by watching whether naming the pattern in the room — where it just happened live — helps him catch it next time; if the fights share no common trigger and others confirm genuinely hostile partners and bosses, the single-template reading fails.",
       yieldAnchors: [
-        "The patient denies their own left arm is theirs",
-        "Sensation in the arm is intact",
-        "The denial follows a specific stroke",
+        "Escalating fights with partner and boss",
+        "He snaps at the therapist over something minor",
+        "He looks surprised at his own reaction",
       ],
       riskAnchors: [
-        "The denial is specific to the affected limb",
-        "Cold-water inner-ear stimulation briefly restores ownership",
-        "Lesion sites cluster in self-monitoring brain regions",
+        "The hostility appears specifically when he feels controlled or judged",
+        "The conflicts share one trigger across different people",
+        "The pattern matches a past controlling figure",
       ],
       defeatedBy: [
-        "The patient randomly denies ownership of intact limbs too",
-        "Sensation is actually absent, making this ordinary numbness",
+        "The conflicts share no common trigger",
+        "Observers confirm genuinely hostile partners and bosses",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that the sense of owning one's own body is a constructed brain process, separate from raw sensation, and the stroke has broken that ownership process while leaving touch intact. This is a falsifiable mechanism, not a shrug: I would check that the denial is specific to the limb served by the damaged region rather than a general confusion, test whether brief cold-water stimulation of the inner ear temporarily restores accurate ownership (a known effect in such cases), and compare lesion sites across similar patients to see whether they cluster in self-monitoring areas. My conclusion predicts a limb-specific, temporarily reversible denial tied to particular damage; it is refuted if the patient denies ownership of intact limbs at random, or if sensation is actually absent, which would make this ordinary numbness rather than a broken ownership signal.",
+      "The strongest conclusion is that a single relationship pattern — reading others as about to control or criticize him and striking first to defend himself — is being replayed across his partner, his boss, and now the therapist, which is why a minor question drew a snap that surprised even him. This is a strong claim because it predicts checkable consequences: the same preemptive hostility should appear specifically when he feels controlled or judged, not at random; the conflicts across these very different people should share that one trigger rather than reflecting three unrelated bad relationships; and the pattern should match how a controlling or critical figure once treated him. I would test it by mapping what immediately preceded each blow-up to see whether the felt-control trigger recurs, by checking whether neutral observers find his partner and boss as hostile as he does, and by watching whether naming the pattern in the room — where it just happened live — helps him catch it next time; if the fights share no common trigger and others confirm genuinely hostile partners and bosses, the single-template reading fails.",
     explanation:
-      "Treating self-awareness as 'too mysterious to analyze' earns near-zero; credit goes to the conclusion that names body ownership as a breakable brain process and proposes the reversible cold-water test that could refute it.",
+      "The dodge — 'he just has several difficult people in his life' — misses the shared trigger now visible in the room; top credit commits to one replayed template and names a same-trigger test, including the live here-and-now check, that could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "In an experiment, photographs of faces are flashed too briefly and then masked, so viewers say they saw nothing and can't report the expressions. Yet brain recordings show a fear-related region responding more strongly to the fearful faces than to neutral ones. In one paragraph, propose the strongest conclusion and describe how you would test it.",
+      "Three weeks before a planned termination date, a patient who has struggled for a year suddenly announces that everything is completely fixed, all symptoms gone, and there's really no need for the remaining sessions. In one paragraph, propose the strongest conclusion about what is happening and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that emotional meaning in a face can be processed by the brain without conscious awareness, so a fast route can flag threat before, or even without, the experience of seeing it. This commits to a mechanism with checkable consequences: I would confirm the differential brain response holds when viewers identify the expression only at chance, show that the response shrinks as exposure lengthens toward the awareness threshold, and check whether masking that fully blocks any report still leaves the fear-region difference. My conclusion predicts unconscious emotional processing measurable in the brain and possibly in body signals like skin conductance; it is refuted if the differential response disappears whenever viewers truly cannot report the faces, which would mean the effect rides on faint awareness rather than running without it.",
+        "The strongest conclusion is that the abrupt, total 'cure' arriving just before termination is more likely a defensive flight from the feelings stirred by ending — a way to leave on his own terms before he can be left — than a genuine, sudden resolution of a year-long struggle. This is a strong claim because it predicts checkable consequences: the timing should track the approach of ending rather than any real-world improvement; the gains should be claimed in sweeping all-or-nothing terms rather than shown in concrete handled situations; and the underlying difficulty should resurface if the ending is slowed down or the feelings about separating are named. I would test it by checking whether his daily life actually shows the change or only his declarations do, by asking for specific recent situations where the old problem would have flared and didn't, and by watching whether gently raising the feelings about ending deflates the sudden cure; if his behavior in real situations genuinely confirms durable change, the flight-into-health reading is wrong and the improvement is real.",
       yieldAnchors: [
-        "Faces are flashed too briefly and masked",
-        "Viewers report seeing nothing and can't name the expression",
-        "A fear-related region responds more to fearful than neutral faces",
+        "A sudden total cure is announced",
+        "It arrives three weeks before termination",
+        "A year-long struggle is declared completely fixed",
       ],
       riskAnchors: [
-        "The differential response holds when identification is at chance",
-        "The response shrinks as exposure nears the awareness threshold",
-        "Report-blocking masks still leave the fear-region difference",
+        "The timing tracks the approach of ending",
+        "Gains are sweeping rather than shown in concrete situations",
+        "The difficulty resurfaces if ending is slowed",
       ],
       defeatedBy: [
-        "The effect vanishes whenever viewers truly cannot report the faces",
-        "Nothing can be said about awareness from brain data alone",
+        "Real-life behavior confirms durable change",
+        "Specific recent situations show the problem genuinely resolved",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that emotional meaning in a face can be processed by the brain without conscious awareness, so a fast route can flag threat before, or even without, the experience of seeing it. This commits to a mechanism with checkable consequences: I would confirm the differential brain response holds when viewers identify the expression only at chance, show that the response shrinks as exposure lengthens toward the awareness threshold, and check whether masking that fully blocks any report still leaves the fear-region difference. My conclusion predicts unconscious emotional processing measurable in the brain and possibly in body signals like skin conductance; it is refuted if the differential response disappears whenever viewers truly cannot report the faces, which would mean the effect rides on faint awareness rather than running without it.",
+      "The strongest conclusion is that the abrupt, total 'cure' arriving just before termination is more likely a defensive flight from the feelings stirred by ending — a way to leave on his own terms before he can be left — than a genuine, sudden resolution of a year-long struggle. This is a strong claim because it predicts checkable consequences: the timing should track the approach of ending rather than any real-world improvement; the gains should be claimed in sweeping all-or-nothing terms rather than shown in concrete handled situations; and the underlying difficulty should resurface if the ending is slowed down or the feelings about separating are named. I would test it by checking whether his daily life actually shows the change or only his declarations do, by asking for specific recent situations where the old problem would have flared and didn't, and by watching whether gently raising the feelings about ending deflates the sudden cure; if his behavior in real situations genuinely confirms durable change, the flight-into-health reading is wrong and the improvement is real.",
     explanation:
-      "The hedge 'we can't say anything about awareness from brain data' earns near-zero; top credit goes to the conclusion that commits to unconscious emotional processing and names the chance-identification test that could refute it.",
+      "The dodge — taking the announcement at face value as proof of cure — ignores the suspicious timing; top credit commits to a defensive flight from the feelings of ending and names a concrete-behavior test that could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "An octopus in a lab solves novel puzzles to reach food, guards and grooms an arm after it is injured, avoids a chamber where it once received a painful stimulus, and chooses a chamber containing pain relief after being hurt. A researcher asks whether the octopus has subjective experience like feeling pain. In one paragraph, propose the strongest conclusion and describe how you would test it.",
+      "A patient mentions a recurring dream in which he is locked out of his childhood home in the cold while his family eats dinner inside, then immediately says, 'but dreams are just random nonsense, ignore it.' In one paragraph, propose the strongest conclusion about what the dream and his dismissal of it suggest, and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that the octopus very likely has subjective experiences such as felt pain, because its behavior shows the hallmarks we use to infer experience — flexible problem-solving, protective care of an injury, learned avoidance of a harmful place, and active seeking of relief — converging from several independent directions. This commits to a falsifiable claim rather than declaring the question hopeless: I would test whether the octopus avoids the pain-linked chamber even when food rewards push it the other way, whether it reliably prefers the relief chamber only after being hurt and not when uninjured, and whether blocking its pain-signaling system removes both the guarding and the avoidance. My conclusion predicts these motivational trade-offs and a treatment-reversible effect; it is refuted if the behaviors are rigid reflexes that ignore competing rewards and persist unchanged when pain signaling is blocked.",
+        "The strongest conclusion is that the recurring image of being shut out in the cold while the family is warm inside likely expresses a felt theme of exclusion and not-belonging in his family, and that his quick 'it's just nonsense' is itself a defensive move to wave off a feeling that touched something real. This is a strong claim because it predicts checkable consequences: the exclusion theme should echo in his waking accounts of family life, not just the dream; the dismissal should be strongest exactly when the material gets closest to that painful feeling; and exploring the dream rather than dropping it should bring associations that converge on belonging rather than scatter randomly. I would test it by asking what the locked-out feeling reminds him of in real family memories, by noticing whether his urge to dismiss spikes as the feeling sharpens, and by following his free associations to see whether they cluster around exclusion; if the dream sparks no related feelings or memories and his associations go nowhere, the exclusion reading is unsupported.",
       yieldAnchors: [
-        "The octopus solves novel puzzles for food",
-        "It guards and grooms an injured arm",
-        "It avoids a pain-linked chamber and seeks a relief chamber",
+        "A recurring dream of being locked out in the cold",
+        "His family eats warmly inside",
+        "He immediately dismisses the dream as random",
       ],
       riskAnchors: [
-        "It avoids the pain-linked chamber even against a food reward",
-        "It prefers the relief chamber only after being hurt",
-        "Blocking pain signaling removes guarding and avoidance",
+        "The exclusion theme echoes in waking family accounts",
+        "The dismissal peaks as the feeling sharpens",
+        "Associations converge on belonging rather than scatter",
       ],
       defeatedBy: [
-        "The behaviors are rigid reflexes that ignore competing rewards",
-        "Animal experience is unknowable so no conclusion is possible",
+        "The dream sparks no related feelings or memories",
+        "His associations lead nowhere in particular",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that the octopus very likely has subjective experiences such as felt pain, because its behavior shows the hallmarks we use to infer experience — flexible problem-solving, protective care of an injury, learned avoidance of a harmful place, and active seeking of relief — converging from several independent directions. This commits to a falsifiable claim rather than declaring the question hopeless: I would test whether the octopus avoids the pain-linked chamber even when food rewards push it the other way, whether it reliably prefers the relief chamber only after being hurt and not when uninjured, and whether blocking its pain-signaling system removes both the guarding and the avoidance. My conclusion predicts these motivational trade-offs and a treatment-reversible effect; it is refuted if the behaviors are rigid reflexes that ignore competing rewards and persist unchanged when pain signaling is blocked.",
+      "The strongest conclusion is that the recurring image of being shut out in the cold while the family is warm inside likely expresses a felt theme of exclusion and not-belonging in his family, and that his quick 'it's just nonsense' is itself a defensive move to wave off a feeling that touched something real. This is a strong claim because it predicts checkable consequences: the exclusion theme should echo in his waking accounts of family life, not just the dream; the dismissal should be strongest exactly when the material gets closest to that painful feeling; and exploring the dream rather than dropping it should bring associations that converge on belonging rather than scatter randomly. I would test it by asking what the locked-out feeling reminds him of in real family memories, by noticing whether his urge to dismiss spikes as the feeling sharpens, and by following his free associations to see whether they cluster around exclusion; if the dream sparks no related feelings or memories and his associations go nowhere, the exclusion reading is unsupported.",
     explanation:
-      "Declaring 'animal experience is unknowable' earns near-zero; credit rewards drawing the strongest conclusion the converging evidence supports and naming the reward-conflict and analgesia tests that could refute it.",
+      "The dodge — agreeing the dream is meaningless noise — adopts the patient's own defense; top credit commits to a specific exclusion theme plus a defensive dismissal and names an association test that could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "A large language model holds fluent conversations, passes every text-based test put to it, and, when asked, insists that it consciously suffers and fears being shut off. Its engineers split into camps: one says it is conscious, the other says it is only producing convincing text. In one paragraph, propose the strongest conclusion and describe how you would test it.",
+      "A patient who for a year has met every emotional moment with cool analysis unexpectedly stops mid-sentence one day, his eyes fill, and he says quietly, 'I think I've been talking about this so I don't have to feel it.' In one paragraph, propose the strongest conclusion about what just happened and whether real change is underway, and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that fluent reports of suffering are not, on their own, evidence of consciousness, because a system trained to predict likely human text can generate exactly those words without any inner experience behind them — so we should look past the words to whether any genuine experiential state is present. This commits to checkable probes rather than treating the question as unanswerable: I would test whether the claimed feelings track any persistent internal state or shift purely with prompt wording and training data, whether the system shows experience-linked signatures independent of its text output (for instance, behavior grounded in something beyond word statistics), and whether removing the relevant suffering-related training text removes the claims. My conclusion predicts the 'suffering' will prove fully explainable by text prediction; it is refuted if the model shows a stable internal state, consistent across rephrasings and grounded beyond mere text patterns, that behaves as an experience would.",
+        "The strongest conclusion is that the patient has just moved from intellectual insight to a moment of emotional insight — feeling the very defense he had until now only described — which is the kind of lived recognition that can begin real change, though one moment is not yet change worked through. This is a strong claim because it predicts checkable consequences: if it's genuine, the feeling should start surfacing in other sessions and not just this one; he should begin catching the intellectualizing in the act rather than only naming it after; and the shift should show up as new behavior outside the room, like letting himself feel something with the people in his life. I would test it by watching whether affect recurs across future sessions, whether he interrupts his own analyzing in real time, and whether emotional openness appears in his outside relationships; if he returns next week to pure cool analysis with no carryover, the moment was a flash rather than the start of worked-through change.",
       yieldAnchors: [
-        "The model is fluent and passes text-based tests",
-        "It claims to consciously suffer and fear shutdown",
-        "Its outputs are generated by predicting likely text",
+        "A year of meeting feeling with cool analysis",
+        "He stops mid-sentence and his eyes fill",
+        "He says he talks so he doesn't have to feel",
       ],
       riskAnchors: [
-        "The claimed feelings track no persistent internal state",
-        "The reports shift with prompt wording and training data",
-        "Removing suffering-related training text removes the claims",
+        "The feeling surfaces in other sessions too",
+        "He catches the intellectualizing in real time",
+        "Emotional openness appears outside the room",
       ],
       defeatedBy: [
-        "A fluent report of suffering by itself proves consciousness",
-        "Whether machines feel anything is unknowable so nothing follows",
+        "He returns next week to pure analysis with no carryover",
+        "The moment leaves no trace in later behavior",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that fluent reports of suffering are not, on their own, evidence of consciousness, because a system trained to predict likely human text can generate exactly those words without any inner experience behind them — so we should look past the words to whether any genuine experiential state is present. This commits to checkable probes rather than treating the question as unanswerable: I would test whether the claimed feelings track any persistent internal state or shift purely with prompt wording and training data, whether the system shows experience-linked signatures independent of its text output (for instance, behavior grounded in something beyond word statistics), and whether removing the relevant suffering-related training text removes the claims. My conclusion predicts the 'suffering' will prove fully explainable by text prediction; it is refuted if the model shows a stable internal state, consistent across rephrasings and grounded beyond mere text patterns, that behaves as an experience would.",
+      "The strongest conclusion is that the patient has just moved from intellectual insight to a moment of emotional insight — feeling the very defense he had until now only described — which is the kind of lived recognition that can begin real change, though one moment is not yet change worked through. This is a strong claim because it predicts checkable consequences: if it's genuine, the feeling should start surfacing in other sessions and not just this one; he should begin catching the intellectualizing in the act rather than only naming it after; and the shift should show up as new behavior outside the room, like letting himself feel something with the people in his life. I would test it by watching whether affect recurs across future sessions, whether he interrupts his own analyzing in real time, and whether emotional openness appears in his outside relationships; if he returns next week to pure cool analysis with no carryover, the moment was a flash rather than the start of worked-through change.",
     explanation:
-      "Both 'it says it suffers, so it's conscious' and 'this is simply unknowable' earn near-zero; top credit goes to the conclusion that separates fluent report from genuine experience and names probes able to confirm or refute an inner state.",
+      "The dodge — calling it a one-off blip that means nothing — dismisses a real shift; top credit commits to a move from intellectual to emotional insight and names a carryover test that could refute whether change is truly underway.",
   },
 ];
 
 export const section: SectionContent = {
-  slug: "consciousness",
-  title: "Consciousness: The Hard Problem",
+  slug: "session-start-to-finish",
+  title: "A Session, Start to Finish",
   weekNumber: 1,
   blurb:
-    "Why does any of this brain activity feel like something from the inside? We meet the 'easy' problems science is cracking, the 'hard' problem of subjective experience, and what evidence can still settle.",
+    "A capstone that follows a single therapy session moment by moment, weaving meaning beneath the surface, unconscious patterns, defenses, transference, the therapeutic relationship, and working through into one integrated way of reading the room.",
   lectureTitle:
-    "1.8 Consciousness: the easy problems, the hard problem, and what evidence can still settle",
-  body: `# Consciousness: The Hard Problem
+    "1.8 Putting It Together: a session, start to finish",
+  body: `# A Session, Start to Finish
 
-This is the capstone. Across this course we treated the mind as something we can study from the outside: as information processing, as perception built by the brain, as memory that reconstructs, as language and reasoning and even machinery. Now we face the question all of that circles around — why is there *something it is like* to be you? Right now there is a felt quality to the red of an apple, the sting of cold water, the taste of chocolate. Why should three pounds of electrified tissue produce any inner experience at all? That is the problem of consciousness, and it is the hardest question in cognitive science.
+By now you have a toolkit: symptoms and behavior carry meaning, much of the mind runs on out-of-awareness patterns, defenses protect us at a cost, we replay old relationships through transference, the therapeutic relationship is itself the engine of change, and lasting change comes from working through rather than insight alone. This final section puts the whole kit to work in the place it actually matters — inside a single session, moment by moment. A real session doesn't announce its themes. It offers small, easy-to-miss events: a slip, a pause, a joke, a flash of irritation, a sudden "I'm completely fine." The craft is reading those moments as they happen and committing to the strongest interpretation the material warrants — while naming the cheapest observation that could prove you wrong.
 
-## The easy problems and the hard problem
+## A session is made of moments
 
-The philosopher David Chalmers drew a line that organizes the whole field. The **"easy" problems** are the ones normal science knows how to chip away at: How does the brain tell waking from sleep? How does it focus attention, integrate information, report its own states, or control behavior? These are *easy* only in the sense that we can imagine solving them with the usual tools — find the mechanism, the circuit, the computation. The **"hard" problem** is different: even after we explain every function, there remains the question of why all that processing is *accompanied by experience* rather than going on "in the dark." A robot could in principle do everything you do without feeling anything. That extra fact — that there is an inner light on — is what resists explanation.
+Nothing important in therapy arrives labeled. It comes as a hesitation before a name, a topic dropped the instant it gets warm, a laugh in the wrong place. These micro-events are the data. Taken one at a time they look trivial; read in context they point somewhere. The discipline is the same one running through this whole course: treat the observable moment as a clue to a hidden dynamic, then ask what else should be true if your reading is right. A single slip proves little. But a slip, plus a body that tightens on the same topic, plus a pattern that repeats across sessions, builds a case. You commit to the best account of the moment and stay ready to revise it when the next moment arrives.
 
-## Qualia: the redness of red
+## Reading the surface for meaning
 
-The raw feels themselves get a name: **qualia**. The painfulness of pain, the blueness of blue, the specific taste of coffee. Qualia look private (only you have direct access to yours) and hard to convey (you can't fully describe red to someone born blind). Thought experiments push on this. *Mary the color scientist* knows every physical fact about color vision but has lived in a black-and-white room; when she finally sees red, does she learn something new? If she does, then knowing all the physical facts left something out — the experience itself. *Philosophical zombies* — beings physically identical to us but with no inner experience — seem at least conceivable, and if they are, then experience is not obviously just the physical activity.
+The first move is the oldest one in the course: assume the surface has meaning. When a patient swerves from his divorce to the weather, the swerve is not noise — its timing tells you it is doing something. When someone insists "I don't care" while her eyes fill, the mismatch is the message. Reading meaning is not mind-reading or wild guessing; it is noticing that an event is patterned and tied to a feeling, and asking what it accomplishes. The strongest interpretation binds several observations at once — the timing, the body, the recurrence — rather than seizing on one detail. And it always carries a test: if this swerve is a flight from pain, it should happen on the painful topics specifically and ease when she is slowed down.
 
-## Theories that try to bridge the gap
+## Defenses in real time
 
-Scientists aren't standing still. **Global Workspace Theory** says a state becomes conscious when information is "broadcast" widely across the brain so many systems can use it — consistent with how anesthesia and inattention knock out the long-range broadcasting. **Integrated Information Theory** says consciousness tracks how richly a system's parts are woven together, which is why the densely interconnected cortex matters for experience while the even-more-numerous but feed-forward cerebellum barely contributes. **Higher-order theories** say a state is conscious when the brain represents *itself* as being in that state. Each theory makes testable predictions about which brain events come with experience — real progress on the easy problems, even if the hard problem still looms behind them.
+Much of what you see in session is defense at work: the joke that arrives exactly when loneliness comes up, the lecture on attachment theory that drains all feeling from a divorce, the "this is probably stupid, but..." that disarms judgment before it can land. Spotting a defense means reading both halves — the painful feeling being kept at bay and the cost of keeping it there. The check is concrete: a defense should intensify right at the most threatening material and loosen when it is gently named. If the supposed defense shows up evenly everywhere, or vanishes the moment you point to it with no feeling underneath, you have misread it. Naming a defense too hard or too early just invites a new one, so the work is patient.
 
-## Why it resists explanation
+## Transference in the room
 
-Notice what makes this question uniquely stubborn. Every other thing science explains, it explains from the outside, in terms of structure and function. But experience is known from the *inside*. You can map every neuron firing when I see red and still not have captured what red looks like to me. This isn't a temporary gap waiting for a bigger scanner; it's a worry that our usual explanatory tools — describing parts and how they move — may not be the kind of thing that *adds up to* a felt quality. That is why reasonable scientists disagree about whether the hard problem is a deep mystery, a confusion that will dissolve, or a sign we need new concepts entirely.
+The richest moments are often aimed at the therapist. A one-minute lateness that produces lasting hurt, sudden coldness at news of a vacation, certainty that the therapist secretly finds the patient pathetic — these reactions are too big or too sourceless to belong to the present, which is the signature of transference. An old relationship template is being replayed live, where both people can watch it happen. That makes the room a uniquely good laboratory: you can test whether the same reaction appears with bosses and partners, whether it fits an old caregiver better than the present therapist, and whether it cools as the therapist proves reliable. The point isn't to take the reaction personally or to deny it, but to read it as information about the patterns the patient carries everywhere.
 
-## How to reason about it without giving up
+## The relationship as the instrument
 
-Here is the move this whole course has trained: when a question feels mysterious, don't retreat into "we can never know anything." Instead, draw the strongest conclusion the evidence supports and pin it to a test that could prove you wrong. We can't yet measure another being's inner experience directly — but we are not helpless. Blindsight, anesthesia signatures, the perturbation-complexity index, covert-awareness scans, and converging behavioral signs in animals and infants all let us infer *something* about who is conscious and when, and each inference names an observation that could overturn it. The dodge — "the brain is too mysterious to conclude anything" — wins no credit. Neither does the overreach — "it talks, so it must feel." The strongest mind commits to a mechanism and a test, even here.
+None of this works without the relationship. The alliance is not the backdrop to the technique; it is the main instrument. A patient who feels safe will eventually let the defense down, risk a disagreement, show the transference instead of hiding it. Ruptures — the snap, the cold withdrawal, the cancelled session after a breakthrough — are not failures but opportunities, because repairing them is often where the real change happens. When a patient retreats right after a moment of closeness, the relationship itself has become the thing to work on. Tracking the bond, noticing when it frays, and mending it is not separate from the deep work; much of the time, it is the deep work.
+
+## From insight to working through
+
+Finally, beware the seductive moment of understanding. A patient can explain his anxiety flawlessly for a year and still avoid everything that frightens him; a sudden total "cure" three weeks before termination is more likely a flight from ending than a real one. Insight you can recite is cheap. Insight that carries feeling, gets caught in the act, survives stress, and shows up as new behavior in fresh situations is the real thing — and it arrives slowly, through working through. So when a patient who always intellectualizes suddenly tears up and says "I've been talking so I don't have to feel," you don't declare victory; you ask whether the feeling carries over to next week and into his life. Change is tested by what recurs, not by a single good moment.
 
 ## In the real world
 
-A patient lies behaviorally unresponsive after a brain injury; the family is told they are "not there." A scan asks them to imagine playing tennis, and a motor-planning region lights up exactly as it does in a healthy volunteer. The mysterian shrugs: "Inner experience is unknowable." The wishful thinker insists: "They're fully conscious, end of story." The careful reasoner does better — concluding the patient is likely aware *and* turning the scan into a yes/no channel: tennis for yes, walking through the house for no, the same answers across sessions, to questions only the patient could know. That conclusion is bold, bounded, and refutable. It won't crack the hard problem. But it shows what the disciplined study of the mind can still do, even at the edge of the deepest question we have.`,
+Picture one session. A patient jokes his way past his loneliness, then snaps when you start two minutes late, then, near the end, says he is "totally fine" with his mother's criticism while his jaw clenches. The dodge is to call all this "just a bad day" that means nothing — true-sounding and useless. The integrated move reads the moments together: a defense (the joke) protecting against a feeling, a transference reaction (the snap) replaying an old template of being uncared-for, and a contradiction (the calm words, the clenched jaw) marking feeling held out of awareness. Each reading commits to a specific dynamic and names a cheap check — does the joke track painful topics, does the snap appear with others over small slights, does the body keep betraying the "I'm fine"? That is the whole course in a single hour: not a shrug at how mysterious people are, but a disciplined, testable reading of the patterns running just beneath the surface.`,
   homework: {
     mcq,
     hybrid,

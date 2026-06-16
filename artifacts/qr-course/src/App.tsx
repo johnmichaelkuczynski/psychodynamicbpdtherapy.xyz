@@ -235,13 +235,13 @@ function ClerkProviderWithRoutes() {
         signIn: {
           start: {
             title: "Welcome back",
-            subtitle: "Sign in to continue your Cognitive Science 101 course",
+            subtitle: "Sign in to continue your Psychodynamic Therapy 101 course",
           },
         },
         signUp: {
           start: {
             title: "Create your account",
-            subtitle: "Start your Cognitive Science 101 course",
+            subtitle: "Start your Psychodynamic Therapy 101 course",
           },
         },
       }}

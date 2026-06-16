@@ -9,407 +9,407 @@ const mcq: HomeworkItem[] = [
   {
     itemType: "mc",
     prompt:
-      "Two lines on a page are exactly the same length, but one has arrowheads pointing outward at its ends and the other has them pointing inward. Nearly everyone sees the inward-arrow line as longer, even after measuring both with a ruler. Which conclusion best follows?",
+      "A man who is constantly tempted by other women and barely resists becomes convinced — with no evidence at all — that his faithful partner is cheating, checks her phone nightly, and reads betrayal into her every text. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The brain doesn't read raw line length but infers size from depth cues the arrows mimic (like room corners), so it stretches the 'farther' line; test whether the illusion shrinks for people raised in environments without straight-edged buildings, whether it weakens when the arrows are replaced by plain dots, and whether the perceived gap tracks how strongly the figure suggests depth.",
+        text: "He likely protects himself from his own guilt over wanting to stray by attributing the urge to her, so the accusation says more about his impulses than her behavior; test whether his suspicion spikes right after he himself feels tempted, whether he ignores clear proof of her loyalty, and whether the jealousy fades when his own temptation is addressed directly.",
         credit: 1.0,
       },
       {
-        text: "The arrows seem to make one line look longer somehow.",
+        text: "He seems pretty jealous about the relationship.",
         credit: 0.3,
       },
       {
-        text: "Since both lines measure the same, the difference is just careless looking and means nothing about the mind.",
+        text: "His partner must actually be doing something suspicious, because nobody gets that jealous without a real reason.",
         credit: 0,
       },
       {
-        text: "The arrowheads probably trick the eye; we could show the figure to more people and confirm.",
+        text: "He's probably worried about losing her; we could ask him more about it.",
         credit: 0.6,
       },
     ],
     correctAnswer:
-      "The brain doesn't read raw line length but infers size from depth cues the arrows mimic (like room corners), so it stretches the 'farther' line; test whether the illusion shrinks for people raised in environments without straight-edged buildings, whether it weakens when the arrows are replaced by plain dots, and whether the perceived gap tracks how strongly the figure suggests depth.",
+      "He likely protects himself from his own guilt over wanting to stray by attributing the urge to her, so the accusation says more about his impulses than her behavior; test whether his suspicion spikes right after he himself feels tempted, whether he ignores clear proof of her loyalty, and whether the jealousy fades when his own temptation is addressed directly.",
     explanation:
-      "Top credit names a mechanism (depth inference) and three checkable tests, one that could refute it across cultures; the 'just careless looking' option refuses the real finding that the illusion survives measurement.",
+      "Top credit reads projection — the disowned impulse pinned on the partner — and names a timing test that could refute it; 'she must really be cheating' is the overreach the total lack of evidence defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A simple line drawing can be seen as either a duck or a rabbit. People flip between the two but never see both at once, and once told 'rabbit' they tend to see the rabbit first. Which conclusion best follows?",
+      "A heavy smoker who has coughed up blood twice insists he is 'perfectly healthy,' calls it 'just a cold that's going around,' cancels the appointment his wife made, and refuses to discuss it. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "An ambiguous figure shows it could be anything; the mind has no rules here.",
-        credit: 0,
-      },
-      {
-        text: "Perception isn't a passive copy of the lines but an active guess the brain commits to one interpretation at a time, and prior suggestion biases the guess; test whether a verbal cue ('look for a beak') speeds duck-first sightings, whether flip rate slows when one reading is primed, and whether eye movements jump to the 'beak' versus 'ears' region depending on the current percept.",
-        credit: 1.0,
-      },
-      {
-        text: "People probably interpret the drawing differently; we could survey viewers.",
+        text: "He just hasn't gotten around to seeing a doctor yet; we could remind him.",
         credit: 0.6,
       },
       {
-        text: "The drawing seems to look like two animals.",
+        text: "Health is unpredictable and the body is too complex to say what his refusal means.",
+        credit: 0,
+      },
+      {
+        text: "He seems to be avoiding the doctor.",
         credit: 0.3,
+      },
+      {
+        text: "He likely keeps a frightening possibility out of awareness by denying the obvious signs, because facing it would mean facing real fear; test whether his calm cracks into anger or panic when pushed on the blood specifically, whether he downplays other people's symptoms far less than his own, and whether he can suddenly recall the warnings once the fear is made safe to feel.",
+        credit: 1.0,
       },
     ],
     correctAnswer:
-      "Perception isn't a passive copy of the lines but an active guess the brain commits to one interpretation at a time, and prior suggestion biases the guess; test whether a verbal cue ('look for a beak') speeds duck-first sightings, whether flip rate slows when one reading is primed, and whether eye movements jump to the 'beak' versus 'ears' region depending on the current percept.",
+      "He likely keeps a frightening possibility out of awareness by denying the obvious signs, because facing it would mean facing real fear; test whether his calm cracks into anger or panic when pushed on the blood specifically, whether he downplays other people's symptoms far less than his own, and whether he can suddenly recall the warnings once the fear is made safe to feel.",
     explanation:
-      "The richest conclusion names active interpretation plus prior bias and three tests, including eye-tracking; 'it could be anything, no rules' is the empty dodge.",
+      "Full credit names denial protecting against fear and offers a 'does the calm crack' test; 'the body is too complex to say' is the refusal the pointed, selective dismissal of his own symptoms defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A photo of a striped dress looks white-and-gold to some viewers and blue-and-black to others, and the same person can flip after being told the lighting. Which conclusion best follows?",
+      "A student who never opened the book fails an exam and delivers a long, detailed explanation: the questions were unfair, the professor has a grudge, the room was too cold, the curve was rigged — but never once mentions not studying. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Color is just personal opinion, so there's nothing to study here.",
+        text: "Exams have so many moving parts that there's no way to say why anyone fails.",
         credit: 0,
       },
       {
-        text: "Viewers disagree about the dress for some reason.",
-        credit: 0.3,
-      },
-      {
-        text: "The brain discounts the assumed light source to recover an object's true color, and viewers who silently assume different lighting subtract different tints; test whether forcing an assumption ('it's in shadow' vs 'in bright sun') flips the report, whether people who wake early (more daylight exposure) skew toward one reading, and whether adding clear background lighting cues collapses the disagreement.",
+        text: "He likely builds reasonable-sounding excuses to protect himself from the painful truth that he didn't prepare, so the real cause stays conveniently off the list; test whether the one obvious factor — not studying — is the single thing he never raises, whether he accepts those same excuses from classmates who did study, and whether he prepares no differently next time.",
         credit: 1.0,
       },
       {
-        text: "The lighting probably matters; we could ask people what light they imagined.",
+        text: "He seems upset about the grade.",
+        credit: 0.3,
+      },
+      {
+        text: "Maybe the test really was hard for him; we could look at his other grades.",
         credit: 0.6,
       },
     ],
     correctAnswer:
-      "The brain discounts the assumed light source to recover an object's true color, and viewers who silently assume different lighting subtract different tints; test whether forcing an assumption ('it's in shadow' vs 'in bright sun') flips the report, whether people who wake early (more daylight exposure) skew toward one reading, and whether adding clear background lighting cues collapses the disagreement.",
+      "He likely builds reasonable-sounding excuses to protect himself from the painful truth that he didn't prepare, so the real cause stays conveniently off the list; test whether the one obvious factor — not studying — is the single thing he never raises, whether he accepts those same excuses from classmates who did study, and whether he prepares no differently next time.",
     explanation:
-      "Top credit names color constancy (discounting the illuminant) with three tests that could disconfirm it; 'color is just opinion' commits to no mechanism.",
+      "Top credit reads rationalization by the telling omission and names a 'what does he never mention' test; 'no way to say why anyone fails' is the dodge the conspicuous gap in his account defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "On a screen, two dots blink on and off in alternation a short distance apart. Instead of two separate blinks, viewers see one dot smoothly sliding back and forth. Which conclusion best follows?",
+      "A woman whose father died last week explains his death to friends in flat, clinical detail — the exact blockage, the survival statistics, the funeral-home logistics — and when someone asks how she's feeling, she returns to the medical facts. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The brain assumes objects persist and move continuously, so it invents motion between two flashes rather than accept two unrelated dots; test whether the motion illusion breaks when the gap or timing is made too large, whether inserting a barrier between the dots makes viewers see the dot 'go around' it, and whether the perceived path bends toward an implied obstacle.",
+        text: "She probably copes by thinking it through; we could give her time.",
+        credit: 0.6,
+      },
+      {
+        text: "She likely holds unbearable grief at a safe distance by turning it into facts and procedures, keeping the feeling out of reach; test whether emotion breaks through when she's asked about a specific shared memory rather than the diagnosis, whether the clinical detail intensifies exactly when feeling threatens, and whether she shows the same flatness only around this loss and not in general.",
         credit: 1.0,
       },
       {
-        text: "The dots seem to turn into movement.",
-        credit: 0.3,
-      },
-      {
-        text: "Screens flicker, so the motion is probably just an eye blur with no lesson about the mind.",
+        text: "Grief is a mystery, so there's nothing to read into how she talks.",
         credit: 0,
       },
       {
-        text: "The blinking likely creates an illusion of motion; we could try other timings.",
-        credit: 0.6,
+        text: "She seems to know a lot about what happened to him.",
+        credit: 0.3,
       },
     ],
     correctAnswer:
-      "The brain assumes objects persist and move continuously, so it invents motion between two flashes rather than accept two unrelated dots; test whether the motion illusion breaks when the gap or timing is made too large, whether inserting a barrier between the dots makes viewers see the dot 'go around' it, and whether the perceived path bends toward an implied obstacle.",
+      "She likely holds unbearable grief at a safe distance by turning it into facts and procedures, keeping the feeling out of reach; test whether emotion breaks through when she's asked about a specific shared memory rather than the diagnosis, whether the clinical detail intensifies exactly when feeling threatens, and whether she shows the same flatness only around this loss and not in general.",
     explanation:
-      "The strongest conclusion names a continuity assumption and three tests, including the striking 'goes around a barrier' prediction; 'just eye blur' dismisses the finding.",
+      "Full credit names intellectualization — feeling swapped for facts — with a memory-versus-diagnosis test; 'grief is a mystery' is the refusal the precise retreat into detail whenever feeling nears defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "People can fluently read a sentence where the middle letters of each word are scrambled ('Aoccdrnig to a rscheearch') as long as the first and last letters stay put. Which conclusion best follows?",
+      "A man lights up whenever a particular coworker enters the room, then becomes conspicuously cold and harsh to her — far ruder than to anyone else — and goes out of his way to criticize her in meetings. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Reading is too automatic to learn anything from a typo trick.",
-        credit: 0,
-      },
-      {
-        text: "Skilled reading isn't letter-by-letter decoding but top-down prediction of whole words from shape, context, and expectation; test whether the effect collapses for unpredictable word lists with no sentence context, whether rare or long words slow readers far more than common ones, and whether scrambling the high-information first/last letters destroys fluency.",
-        credit: 1.0,
-      },
-      {
-        text: "Scrambled words are still readable, it seems.",
+        text: "He seems to dislike working with her.",
         credit: 0.3,
       },
       {
-        text: "Readers probably guess the words; we could test more sentences.",
+        text: "His exaggerated hostility likely defends against an attraction he can't accept, flipping the forbidden feeling into its opposite; test whether the rudeness spikes precisely when she's warm or nearby, whether he can't stop tracking her despite the coldness, and whether the harshness eases if the attraction becomes safe to acknowledge.",
+        credit: 1.0,
+      },
+      {
+        text: "He clearly just finds her annoying for some real reason we haven't seen yet.",
+        credit: 0,
+      },
+      {
+        text: "Something about her probably bothers him; we could watch how they interact.",
         credit: 0.6,
       },
     ],
     correctAnswer:
-      "Skilled reading isn't letter-by-letter decoding but top-down prediction of whole words from shape, context, and expectation; test whether the effect collapses for unpredictable word lists with no sentence context, whether rare or long words slow readers far more than common ones, and whether scrambling the high-information first/last letters destroys fluency.",
+      "His exaggerated hostility likely defends against an attraction he can't accept, flipping the forbidden feeling into its opposite; test whether the rudeness spikes precisely when she's warm or nearby, whether he can't stop tracking her despite the coldness, and whether the harshness eases if the attraction becomes safe to acknowledge.",
     explanation:
-      "Top credit names top-down word prediction and three tests, one that could break the effect by removing context; 'too automatic to learn anything' refuses the inquiry.",
+      "Top credit reads reaction formation from the over-the-top, target-specific hostility and names a proximity test; 'he just finds her annoying' is the flat reading the lighting-up and excess intensity defeat.",
   },
   {
     itemType: "mc",
     prompt:
-      "When a video shows lips mouthing 'ga' but the soundtrack plays 'ba', most viewers hear 'da' — a sound that is in neither the lips nor the audio. Closing your eyes restores the true 'ba'. Which conclusion best follows?",
+      "A man is humiliated by his boss all day and says nothing, then comes home and explodes at his children over a spilled cup and snaps at the dog — reactions wildly out of scale with what they did. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "People probably get confused by mismatched video.",
-        credit: 0.3,
+        text: "People are unpredictable, so there's no telling why he blew up at home.",
+        credit: 0,
       },
       {
-        text: "Hearing is not purely auditory; the brain fuses sight and sound into a single best-guess percept, and with a conflict it compromises; test whether the illusion vanishes when the video is blurred or delayed, whether it weakens in people with poor lip-reading skill, and whether mismatching only slightly (lips 'ba', audio 'pa') still shifts what is heard.",
+        text: "He likely redirects anger he couldn't safely express at his boss onto safer targets at home, which is why the reaction dwarfs its trigger; test whether his home outbursts cluster on his worst days at work, whether the anger shrinks when he can address the boss directly, and whether the targets are reliably the ones who can't retaliate.",
         credit: 1.0,
       },
       {
-        text: "Watching the lips probably changes what's heard; we could test more clips.",
+        text: "His kids are probably genuinely pushing his buttons and deserve the reaction.",
         credit: 0.6,
       },
       {
-        text: "Hearing is a separate sense, so the eyes can't really affect it; the report must be a mistake.",
-        credit: 0,
+        text: "He seems short-tempered at home.",
+        credit: 0.3,
       },
     ],
     correctAnswer:
-      "Hearing is not purely auditory; the brain fuses sight and sound into a single best-guess percept, and with a conflict it compromises; test whether the illusion vanishes when the video is blurred or delayed, whether it weakens in people with poor lip-reading skill, and whether mismatching only slightly (lips 'ba', audio 'pa') still shifts what is heard.",
+      "He likely redirects anger he couldn't safely express at his boss onto safer targets at home, which is why the reaction dwarfs its trigger; test whether his home outbursts cluster on his worst days at work, whether the anger shrinks when he can address the boss directly, and whether the targets are reliably the ones who can't retaliate.",
     explanation:
-      "The strongest conclusion names multisensory fusion and three disconfirming tests; the 'hearing is separate, must be a mistake' option is defeated by the eyes-closed reversal.",
+      "Full credit names displacement from the mismatch between trigger and reaction and offers a 'do outbursts track bad work days' test; 'people are unpredictable' is the refusal the clear day-to-day pattern defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "Two people in a photo are the same printed size, but one stands at the far end of a long hallway. Viewers insist the 'far' person is much larger. Which conclusion best follows?",
+      "A woman has no memory of a serious car crash she was in as a child, yet she goes pale and short of breath at the smell of gasoline and refuses, without knowing why, to sit in the front seat. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Photos distort things, so the judgment tells us nothing about perception.",
-        credit: 0,
-      },
-      {
-        text: "The hallway seems to make one person look bigger.",
-        credit: 0.3,
-      },
-      {
-        text: "The far one looks bigger because of the hallway; we could ask more viewers.",
+        text: "She probably just doesn't like cars; we could ask her about it.",
         credit: 0.6,
       },
       {
-        text: "The brain applies size constancy: it scales up things it judges to be far away, so equal retinal sizes read as different real sizes; test whether removing the converging hallway lines erases the effect, whether the size boost grows as the depth cues get stronger, and whether the illusion fails for viewers shown the figure upside down (weakening the scene reading).",
+        text: "The memory is gone, so her reactions are random quirks we can't explain.",
+        credit: 0,
+      },
+      {
+        text: "A painful memory may be held out of conscious recall while its emotional charge still drives reactions to specific cues, which is why the fear is precise but the memory is blank; test whether her panic is triggered only by crash-linked cues and not unrelated ones, whether the bodily reaction appears before any conscious thought, and whether reactions ease as the event is gradually brought into words.",
         credit: 1.0,
+      },
+      {
+        text: "She seems nervous around cars.",
+        credit: 0.3,
       },
     ],
     correctAnswer:
-      "The brain applies size constancy: it scales up things it judges to be far away, so equal retinal sizes read as different real sizes; test whether removing the converging hallway lines erases the effect, whether the size boost grows as the depth cues get stronger, and whether the illusion fails for viewers shown the figure upside down (weakening the scene reading).",
+      "A painful memory may be held out of conscious recall while its emotional charge still drives reactions to specific cues, which is why the fear is precise but the memory is blank; test whether her panic is triggered only by crash-linked cues and not unrelated ones, whether the bodily reaction appears before any conscious thought, and whether reactions ease as the event is gradually brought into words.",
     explanation:
-      "Top credit names size constancy with three tests that manipulate depth cues; 'photos distort, tells us nothing' is the barren refusal.",
+      "Top credit reads a repressed memory still steering cue-bound reactions and names a cue-specificity test; 'random quirks we can't explain' is the dodge the tight match between cues and the forgotten crash defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "Two gray squares on a checkerboard are physically identical in shade, yet the one sitting 'in shadow' looks clearly lighter than the one in 'light'. Connecting them with a strip of the same gray makes the difference vanish. Which conclusion best follows?",
+      "A man who badly wants a relationship but dreads rejection never asks anyone out, keeps his schedule so packed he 'has no time' to date, and smoothly changes the subject whenever friends raise it. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The brain doesn't report raw brightness but estimates a surface's true color by correcting for assumed shadow, so it lightens what it thinks is shaded; test whether removing the shadow-casting cylinder kills the effect, whether the illusion tracks how convincing the shadow looks, and whether a visible connecting strip (defeating the shadow story) restores equality every time.",
-        credit: 1.0,
-      },
-      {
-        text: "The squares seem different but aren't.",
-        credit: 0.3,
-      },
-      {
-        text: "Identical squares can't truly look different, so viewers are simply guessing wrong.",
+        text: "Dating is so personal there's nothing general to conclude about why he stays single.",
         credit: 0,
       },
       {
-        text: "The shadow probably explains it; we could measure with more checkerboards.",
+        text: "He likely protects himself from the pain of possible rejection by arranging his life so the risk never comes up, trading the wanted relationship for guaranteed safety; test whether the 'no time' busyness appears mainly around dating and not other goals, whether his anxiety rises the moment a real opportunity nears, and whether he can act when rejection is made to feel survivable.",
+        credit: 1.0,
+      },
+      {
+        text: "He's just a busy guy who hasn't met the right person; we could keep an eye on it.",
         credit: 0.6,
+      },
+      {
+        text: "He seems to keep to himself about dating.",
+        credit: 0.3,
       },
     ],
     correctAnswer:
-      "The brain doesn't report raw brightness but estimates a surface's true color by correcting for assumed shadow, so it lightens what it thinks is shaded; test whether removing the shadow-casting cylinder kills the effect, whether the illusion tracks how convincing the shadow looks, and whether a visible connecting strip (defeating the shadow story) restores equality every time.",
+      "He likely protects himself from the pain of possible rejection by arranging his life so the risk never comes up, trading the wanted relationship for guaranteed safety; test whether the 'no time' busyness appears mainly around dating and not other goals, whether his anxiety rises the moment a real opportunity nears, and whether he can act when rejection is made to feel survivable.",
     explanation:
-      "The strongest conclusion names lightness constancy (shadow correction) with three tests; 'viewers are simply guessing wrong' denies the robust, measurable effect.",
+      "Full credit names avoidance built to dodge rejection and offers a 'is the busyness dating-specific' test; 'nothing general to conclude' is the refusal the wanting-yet-systematically-evading pattern defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "People reliably 'see' faces in clouds, electrical outlets, and the front of cars, and they spot them faster than they spot non-face shapes. Which conclusion best follows?",
+      "A manager who is privately seething with resentment toward his team insists, to anyone who'll listen, that they are 'angry and resentful' toward him — though they show no sign of it and rate him well in anonymous surveys. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Seeing faces everywhere is just imagination and not worth studying.",
+        text: "The team is probably hiding real resentment, since he wouldn't sense it otherwise.",
         credit: 0,
       },
       {
-        text: "People often notice face-like patterns.",
+        text: "He seems to think his team doesn't like him.",
         credit: 0.3,
       },
       {
-        text: "The brain runs a fast, eager face-detector that errs toward false alarms because missing a real face is costlier than a false one; test whether two-dots-over-a-line triggers face responses faster than scrambled controls, whether the effect is strongest for upright (not inverted) arrangements, and whether the same brain region that responds to real faces lights up for these patterns.",
-        credit: 1.0,
+        text: "He may be experiencing tension with the team; we could survey them again.",
+        credit: 0.6,
       },
       {
-        text: "People probably have a knack for faces; we could collect more examples.",
-        credit: 0.6,
+        text: "He likely disowns his own resentment by perceiving it in his team, so his read on them mirrors his hidden feeling rather than their behavior; test whether his certainty about their anger tracks his own bad moods, whether he dismisses the positive surveys as fake, and whether his perception shifts once his own resentment is named and explored.",
+        credit: 1.0,
       },
     ],
     correctAnswer:
-      "The brain runs a fast, eager face-detector that errs toward false alarms because missing a real face is costlier than a false one; test whether two-dots-over-a-line triggers face responses faster than scrambled controls, whether the effect is strongest for upright (not inverted) arrangements, and whether the same brain region that responds to real faces lights up for these patterns.",
+      "He likely disowns his own resentment by perceiving it in his team, so his read on them mirrors his hidden feeling rather than their behavior; test whether his certainty about their anger tracks his own bad moods, whether he dismisses the positive surveys as fake, and whether his perception shifts once his own resentment is named and explored.",
     explanation:
-      "Top credit names a biased face-detection mechanism with three tests, including inversion and brain-region checks; 'just imagination' opens no inquiry.",
+      "Top credit reads projection — his own resentment seen in others — and names a mood-tracking test; 'the team must be hiding it' is the overreach the positive anonymous surveys defeat.",
   },
   {
     itemType: "mc",
     prompt:
-      "Each eye has a blind spot where the optic nerve exits and no light is detected, yet people never notice a hole in their vision. Cover one eye and a small dot can disappear into the gap. Which conclusion best follows?",
+      "A woman whose husband has quietly moved his things out and stopped coming home insists 'everything is completely fine,' enthusiastically plans their anniversary party, and brushes aside every worried question from friends. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The eye is just very good, so there's nothing to explain.",
+        text: "Marriages are complicated, so we can't say anything about what she's doing.",
         credit: 0,
       },
       {
-        text: "The brain doesn't passively display the retina's image; it actively fills the blind spot with the surrounding pattern as its best guess; test whether a dot vanishes there but a continuous line is seen unbroken, whether the fill-in copies background texture and color, and whether two eyes together cover each other's gaps so the effect needs one eye closed.",
+        text: "She likely shields herself from an unbearable truth by refusing to register the plain signs that the marriage is ending, since acknowledging it would mean facing the loss; test whether her cheer collapses into distress when the absence is named concretely, whether she avoids any topic that would force the issue, and whether she can take it in once support is in place.",
         credit: 1.0,
       },
       {
-        text: "The blind spot seems to get covered up somehow.",
+        text: "She seems optimistic about her marriage.",
         credit: 0.3,
       },
       {
-        text: "The brain probably hides the gap; we could test the dot trick on more people.",
+        text: "Maybe things really are okay between them; we could talk to her more.",
         credit: 0.6,
       },
     ],
     correctAnswer:
-      "The brain doesn't passively display the retina's image; it actively fills the blind spot with the surrounding pattern as its best guess; test whether a dot vanishes there but a continuous line is seen unbroken, whether the fill-in copies background texture and color, and whether two eyes together cover each other's gaps so the effect needs one eye closed.",
+      "She likely shields herself from an unbearable truth by refusing to register the plain signs that the marriage is ending, since acknowledging it would mean facing the loss; test whether her cheer collapses into distress when the absence is named concretely, whether she avoids any topic that would force the issue, and whether she can take it in once support is in place.",
     explanation:
-      "The richest conclusion names active filling-in with three tests; 'the eye is just very good' refuses the real puzzle of the missing hole.",
+      "Full credit names denial that wards off loss and offers a 'does the cheer collapse when named' test; 'we can't say anything' is the refusal the stark gap between the facts and her story defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "When the identical mid-range wine is poured from a bottle with an expensive label versus a cheap one, tasters rate the expensive-labeled pour as smoother and report genuinely enjoying it more, not just saying so. Which conclusion best follows?",
+      "A man drinks heavily every night and, whenever it comes up, explains smoothly that 'everyone in my industry drinks this much — it's just how deals get done,' never touching on how he feels when he stops. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Taste is too subjective to study, so the label result means nothing.",
-        credit: 0,
-      },
-      {
-        text: "Expectation set by the label feeds top-down into perception, so the brain's prediction of 'fine wine' actually shapes the experienced flavor; test whether brain reward areas respond more strongly to the expensive label, whether blind tasting with no labels erases the gap, and whether the boost scales with the stated price.",
-        credit: 1.0,
-      },
-      {
-        text: "The label seems to change the ratings.",
+        text: "He seems to drink a fair amount after work.",
         credit: 0.3,
       },
       {
-        text: "The fancy label probably helps; we could test more tasters.",
+        text: "He may be drinking more than he should; we could track how often it happens.",
         credit: 0.6,
+      },
+      {
+        text: "He likely defends the drinking with a socially acceptable reason so he never has to face what it's actually doing for him, keeping the real motive out of view; test whether he gets irritable or evasive when asked how he feels on nights he doesn't drink, whether the 'industry norm' excuse holds up against peers who drink little, and whether the justifications multiply as the drinking grows.",
+        credit: 1.0,
+      },
+      {
+        text: "Drinking habits vary so much that there's nothing to be learned from his explanation.",
+        credit: 0,
       },
     ],
     correctAnswer:
-      "Expectation set by the label feeds top-down into perception, so the brain's prediction of 'fine wine' actually shapes the experienced flavor; test whether brain reward areas respond more strongly to the expensive label, whether blind tasting with no labels erases the gap, and whether the boost scales with the stated price.",
+      "He likely defends the drinking with a socially acceptable reason so he never has to face what it's actually doing for him, keeping the real motive out of view; test whether he gets irritable or evasive when asked how he feels on nights he doesn't drink, whether the 'industry norm' excuse holds up against peers who drink little, and whether the justifications multiply as the drinking grows.",
     explanation:
-      "Top credit names top-down expectation altering experience with three tests, including a blind-tasting control; 'taste is too subjective' is the dodge.",
+      "Top credit reads rationalization shielding the real motive and names a 'does the excuse survive scrutiny' test; 'nothing to be learned' is the dodge the convenient, feeling-avoiding excuse defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "Viewers told to count basketball passes in a video routinely fail to notice a person in a gorilla suit who walks through the middle of the scene. Once told, they see the gorilla instantly on replay. Which conclusion best follows?",
+      "A nurse who has just received a frightening diagnosis of her own responds by lecturing her family on treatment protocols, printing out journal articles, and debating survival percentages — but waves off every question about how she's holding up. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "People just weren't paying attention; nothing deep is going on.",
+        text: "Being scared is so private that her behavior can't tell us anything.",
         credit: 0,
       },
       {
-        text: "Counting tasks seem to make people miss things.",
-        credit: 0.3,
-      },
-      {
-        text: "Attention probably narrows vision; we could run the video on more groups.",
+        text: "She probably feels more in control with information; we could check in later.",
         credit: 0.6,
       },
       {
-        text: "Perception is selective: we consciously see what attention is allocated to, not everything on the retina, so an unattended event can be invisible; test whether a harder counting task raises miss rates, whether a gorilla matching the attended team's color is noticed more, and whether eye-tracking shows misses even when the eyes land on the gorilla.",
+        text: "She likely keeps terror at bay by living in the facts of the illness, using expertise as armor against feeling it; test whether her composure cracks when asked about fear rather than figures, whether the flood of data peaks right when emotion threatens, and whether she's far more clinical about her own case than she is comforting with patients.",
         credit: 1.0,
+      },
+      {
+        text: "She seems very informed about her condition.",
+        credit: 0.3,
       },
     ],
     correctAnswer:
-      "Perception is selective: we consciously see what attention is allocated to, not everything on the retina, so an unattended event can be invisible; test whether a harder counting task raises miss rates, whether a gorilla matching the attended team's color is noticed more, and whether eye-tracking shows misses even when the eyes land on the gorilla.",
+      "She likely keeps terror at bay by living in the facts of the illness, using expertise as armor against feeling it; test whether her composure cracks when asked about fear rather than figures, whether the flood of data peaks right when emotion threatens, and whether she's far more clinical about her own case than she is comforting with patients.",
     explanation:
-      "The strongest conclusion names attentional selection with three tests, the eye-tracking one being decisive; 'just weren't paying attention' restates the result without a mechanism or test.",
+      "Full credit names intellectualization — expertise as armor — with a 'fear versus figures' test; 'being scared is private, can't tell us anything' is the refusal the precise retreat into data when feeling nears defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "When a hidden rubber hand is stroked in sync with a person's real hidden hand, many people start to feel the rubber hand is theirs and flinch when it's threatened. Out-of-sync stroking breaks the feeling. Which conclusion best follows?",
+      "A teenager who is secretly eaten up with envy at her best friend's sudden popularity becomes gushingly, over-the-top complimentary toward her, praising her constantly and clinging closer than ever. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Body sense is fixed and built-in, so a fake hand can't really feel like yours; the reports must be made up.",
+        text: "She probably really does admire her friend that much; nothing more to it.",
         credit: 0,
       },
       {
-        text: "The fake hand seems to feel real sometimes.",
-        credit: 0.3,
-      },
-      {
-        text: "The brain builds the sense of body ownership by combining vision and touch when they match in time, and it will adopt a fake limb when the cues line up; test whether synced stroking produces the effect but delayed stroking abolishes it, whether the real hand's temperature actually drops as it's 'disowned', and whether a block-shaped object instead of a hand fails to be adopted.",
+        text: "Her exaggerated adoration likely covers an envy she can't admit, converting the ugly feeling into its showy opposite; test whether the praise rings hollow or strained rather than warm, whether small put-downs slip out underneath the flattery, and whether the gushing intensifies right after her friend gets new attention.",
         credit: 1.0,
       },
       {
-        text: "The stroking probably tricks the brain; we could try more participants.",
+        text: "She seems to look up to her friend.",
+        credit: 0.3,
+      },
+      {
+        text: "She might be a little jealous; we could see how the friendship goes.",
         credit: 0.6,
       },
     ],
     correctAnswer:
-      "The brain builds the sense of body ownership by combining vision and touch when they match in time, and it will adopt a fake limb when the cues line up; test whether synced stroking produces the effect but delayed stroking abolishes it, whether the real hand's temperature actually drops as it's 'disowned', and whether a block-shaped object instead of a hand fails to be adopted.",
+      "Her exaggerated adoration likely covers an envy she can't admit, converting the ugly feeling into its showy opposite; test whether the praise rings hollow or strained rather than warm, whether small put-downs slip out underneath the flattery, and whether the gushing intensifies right after her friend gets new attention.",
     explanation:
-      "Top credit names multisensory body-ownership construction with three tests, including a measurable temperature change; 'body sense is fixed, reports are made up' is defeated by the synchrony manipulation.",
+      "Top credit reads reaction formation from the strained excess of the praise and names a 'do put-downs leak through' test; 'she just really admires her' is the surface reading the secret envy and overdone intensity defeat.",
   },
   {
     itemType: "mc",
     prompt:
-      "A recording of a sentence has one speech sound replaced by a cough, yet listeners clearly 'hear' the missing sound and can't tell which one was covered. The restored sound always fits the sentence's meaning. Which conclusion best follows?",
+      "A woman is furious at her controlling mother but stays sugary-sweet and dutiful with her, while picking constant, bitter fights with her gentle boyfriend — especially whenever he does some small thing that reminds her of her mother. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Hearing is just decoding the sound wave, so a cough should leave an obvious gap; listeners are imagining things.",
+        text: "Relationships are too tangled to say why she fights with her boyfriend.",
         credit: 0,
       },
       {
-        text: "The cough seems to get smoothed over.",
+        text: "She seems to argue with her boyfriend a lot.",
         credit: 0.3,
       },
       {
-        text: "Listeners probably fill in the sound; we could test more sentences.",
-        credit: 0.6,
+        text: "She likely diverts anger she can't safely aim at her mother onto her boyfriend, which is why the fights flare on exactly the mother-like cues; test whether the conflicts spike right after tense contact with her mother, whether the boyfriend's 'offenses' are trivial echoes of the mother's behavior, and whether the fighting eases when the real anger at her mother is faced.",
+        credit: 1.0,
       },
       {
-        text: "The brain uses top-down knowledge of words and context to predict and insert the missing sound, hearing the expected speech rather than the raw input; test whether the restored sound changes when the sentence's later words change its likely meaning, whether the effect fails for nonsense strings with no predictable word, and whether listeners place the cough in the wrong position because the speech is reconstructed.",
-        credit: 1.0,
+        text: "Her boyfriend might genuinely be doing annoying things; we could hear his side.",
+        credit: 0.6,
       },
     ],
     correctAnswer:
-      "The brain uses top-down knowledge of words and context to predict and insert the missing sound, hearing the expected speech rather than the raw input; test whether the restored sound changes when the sentence's later words change its likely meaning, whether the effect fails for nonsense strings with no predictable word, and whether listeners place the cough in the wrong position because the speech is reconstructed.",
+      "She likely diverts anger she can't safely aim at her mother onto her boyfriend, which is why the fights flare on exactly the mother-like cues; test whether the conflicts spike right after tense contact with her mother, whether the boyfriend's 'offenses' are trivial echoes of the mother's behavior, and whether the fighting eases when the real anger at her mother is faced.",
     explanation:
-      "The richest conclusion names phonemic restoration via top-down prediction with three tests, including a context manipulation that could refute it; 'listeners are imagining things' dismisses the robust effect.",
+      "Full credit names displacement from the mother-linked triggers and offers a 'do fights follow contact with mother' test; 'too tangled to say' is the refusal the precise cueing by mother-like acts defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "In a brief flash, people identify a hard-to-read word much faster when it follows a related word ('bread' before 'butter') than an unrelated one. They even sometimes report seeing the expected word when a slightly different one was shown. Which conclusion best follows?",
+      "A man gets a letter marked 'urgent' from a medical clinic, sets it on the counter unopened, lets it sit for three weeks behind a stack of mail, throws himself into a home-renovation project, and twice 'forgets' to call back. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Faster reading after a hint is obvious and tells us nothing about perception.",
-        credit: 0,
+        text: "He's probably just disorganized; we could help him sort his mail.",
+        credit: 0.6,
       },
       {
-        text: "Perception is predictive: the brain pre-activates likely interpretations from context so expected input is recognized faster and even mis-seen toward the prediction; test whether the speed-up vanishes for unrelated primes, whether the error rate rises specifically toward the expected word, and whether a misleading prime ('doctor' before 'bread') slows recognition.",
-        credit: 1.0,
-      },
-      {
-        text: "The first word seems to help read the second.",
+        text: "He seems to be putting off the clinic.",
         credit: 0.3,
       },
       {
-        text: "The related word probably speeds things up; we could run more word pairs.",
-        credit: 0.6,
+        text: "People forget things all the time, so there's nothing to read into it.",
+        credit: 0,
+      },
+      {
+        text: "He likely keeps a dreaded result at arm's length by not opening, not calling, and burying himself in a project, because engaging would make the fear real; test whether his avoidance is specific to this letter and not his bills, whether his tension rises whenever the letter is mentioned, and whether he can act once the fear of the result is talked through.",
+        credit: 1.0,
       },
     ],
     correctAnswer:
-      "Perception is predictive: the brain pre-activates likely interpretations from context so expected input is recognized faster and even mis-seen toward the prediction; test whether the speed-up vanishes for unrelated primes, whether the error rate rises specifically toward the expected word, and whether a misleading prime ('doctor' before 'bread') slows recognition.",
+      "He likely keeps a dreaded result at arm's length by not opening, not calling, and burying himself in a project, because engaging would make the fear real; test whether his avoidance is specific to this letter and not his bills, whether his tension rises whenever the letter is mentioned, and whether he can act once the fear of the result is talked through.",
     explanation:
-      "Top credit names predictive pre-activation with three tests, including a misleading-prime check that could disconfirm it; 'obvious, tells us nothing' is the barren refusal.",
+      "Top credit reads fear-driven avoidance from the layered evasion and names a 'is it specific to this letter' test; 'he's just disorganized' is the bland reading the targeted, anxious dodging of one dreaded item defeats.",
   },
 ];
 
@@ -417,425 +417,425 @@ const hybrid: HomeworkItem[] = [
   {
     itemType: "hybrid",
     prompt:
-      "The inside of a hollow face mask, lit from the front, looks like a normal face bulging outward — viewers cannot make themselves see the true concave shape, even knowing it's hollow. The illusion is weaker in dim, flat lighting. Which conclusion best follows?",
+      "A woman who has just been laid off spends the week energetically reassuring everyone that she's 'totally fine, honestly better off,' refuses to update her résumé, and gets irritated when anyone treats it as a setback. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The brain's strong prior that faces are convex overrides the depth cues and forces a 'sticking-out' reading; test whether upside-down or non-face concave objects resist the illusion, whether removing realistic lighting and texture weakens it, and whether the hollow face still looks convex when viewed with both eyes giving strong contrary depth cues.",
+        text: "She likely fends off the fear and shame of the loss by insisting it doesn't hurt, which is why she won't take the practical steps that would force her to face it; test whether her brightness gives way when the layoff is named plainly, whether she avoids tasks that would make it real, and whether she can plan once the feeling is acknowledged as safe.",
         credit: 1.0,
       },
       {
-        text: "The mask seems to pop out even though it's hollow.",
+        text: "She seems to be taking the layoff in stride.",
         credit: 0.3,
       },
       {
-        text: "A hollow mask is too unusual to teach us anything general about seeing.",
+        text: "Maybe she really is relieved to be out of that job; people lose jobs all the time and there's nothing to interpret.",
         credit: 0,
       },
       {
-        text: "The face shape probably fools the brain; we could show it to more viewers.",
+        text: "She might be more upset than she lets on; we could keep checking in.",
         credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'strong face prior' lead from the rival 'any concave object looks convex,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'denial protecting against the loss' lead from the rival 'she is genuinely relieved to be free of a bad job,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: present matched hollow shapes — a face versus a non-face object like a hollow bowl or random blob — under identical lighting and ask which appears to bulge out; my lead predicts the face resists far more strongly because of a face-specific prior. It is refuted if the bowl and blob look just as convex as the face, showing it is concavity in general, not a face prior, driving the illusion.",
+        "Cheapest test: watch what happens when the layoff is named plainly as a loss rather than a relief — my lead predicts her bright front cracks into distress or anger because the calm is a defense, while genuine relief would stay steady and even welcome the conversation. It is refuted if she can discuss the loss openly, acknowledge the sting, and still move forward, which would point to real relief rather than denial.",
       yieldAnchors: [
-        "The hollow mask looks like it bulges outward",
-        "Viewers can't override it even knowing it's hollow",
-        "The illusion is weaker in dim, flat lighting",
+        "She insists she is 'totally fine, better off'",
+        "She refuses the practical steps a job loss requires",
+        "She gets irritated when it's treated as a setback",
       ],
       riskAnchors: [
-        "Upside-down or non-face concave objects resist the illusion",
-        "Removing realistic lighting and texture weakens it",
-        "Strong binocular depth cues fail to restore the true concave shape",
+        "Her brightness gives way when the loss is named plainly",
+        "She avoids tasks that would make the loss real",
+        "She can plan once the feeling is made safe to feel",
       ],
       defeatedBy: [
-        "Any concave object looks convex, with no role for faces",
-        "The hollow mask shape is unrelated to what is perceived",
+        "She discusses the loss openly and still feels genuinely relieved",
+        "She takes practical steps without distress",
       ],
     },
     correctAnswer:
-      "The brain's strong prior that faces are convex overrides the depth cues and forces a 'sticking-out' reading; test whether upside-down or non-face concave objects resist the illusion, whether removing realistic lighting and texture weakens it, and whether the hollow face still looks convex when viewed with both eyes giving strong contrary depth cues.",
+      "She likely fends off the fear and shame of the loss by insisting it doesn't hurt, which is why she won't take the practical steps that would force her to face it; test whether her brightness gives way when the layoff is named plainly, whether she avoids tasks that would make it real, and whether she can plan once the feeling is acknowledged as safe.",
     explanation:
-      "Full credit names a face-specific prior overriding sensory cues, lists three checks, and pairs them with a face-vs-nonface test that names its own refutation; 'too unusual to teach us anything' opens nothing.",
+      "Full credit names denial and pairs it with a 'does the calm crack when named' test that states its own refutation; 'there's nothing to interpret' is the dodge the refusal of every reality-facing step defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "After staring at a waterfall for a minute and then looking at the still rocks beside it, the rocks appear to drift upward even though they aren't moving. The aftereffect fades after a few seconds. Which conclusion best follows?",
+      "A man who routinely cuts corners and pads his expense reports is loudly, relentlessly suspicious that his colleagues are 'all on the take,' demanding audits of everyone but himself. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Moving water tires the eyes; the drift is meaningless eye fatigue.",
+        text: "His office is probably full of cheaters; honest people don't accuse without cause.",
         credit: 0,
       },
       {
-        text: "The brain encodes motion with opposing detectors, and adapting the 'downward' detector leaves the 'upward' one temporarily dominant, so still rocks read as moving up; test whether the aftereffect direction is always opposite the adapting motion, whether adapting one eye transfers the effect to the other, and whether it fades faster with longer rest after adaptation.",
-        credit: 1.0,
-      },
-      {
-        text: "The rocks seem to move after watching the water.",
+        text: "He seems distrustful of his coworkers.",
         credit: 0.3,
       },
       {
-        text: "Staring probably causes the drift; we could time it on more people.",
+        text: "He may have some workplace conflicts; we could review the team's reports.",
         credit: 0.6,
+      },
+      {
+        text: "He likely offloads his own dishonesty by seeing it everywhere but in himself, so the suspicion maps his behavior onto others; test whether his accusations spike right after his own worst cheating, whether he exempts only himself from the audits he demands, and whether the suspicion subsides when his own conduct is examined.",
+        credit: 1.0,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'opposing motion detectors' lead from the rival 'it's just eyeball fatigue from staring,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'projection of his own dishonesty' lead from the rival 'he has accurately spotted real corruption around him,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: adapt only one eye to the moving water (the other patched), then test the aftereffect with the unadapted eye open; my lead predicts the illusion transfers between eyes because it lives in motion-processing neurons in the brain, not the eyeball. It is refuted if the aftereffect appears only in the eye that watched the water, which would point to eye-level fatigue rather than central motion detectors.",
+        "Cheapest test: run the same audit on everyone including him — my lead predicts the records will show his own padding while the colleagues come up clean, because the suspicion is his behavior projected outward. It is refuted if independent audits actually turn up widespread cheating by others and clear him, which would mean he was perceiving a real pattern rather than his own.",
       yieldAnchors: [
-        "Still rocks appear to drift upward after watching the waterfall",
-        "The drift is opposite the water's downward motion",
-        "The aftereffect fades after a few seconds",
+        "He pads his own expense reports and cuts corners",
+        "He is relentlessly suspicious of colleagues",
+        "He demands audits of everyone but himself",
       ],
       riskAnchors: [
-        "The aftereffect direction is always opposite the adapting motion",
-        "Adapting one eye transfers the effect to the other",
-        "It fades faster with more rest after adaptation",
+        "His accusations spike right after his own worst cheating",
+        "He alone is exempt from the audits he demands",
+        "The suspicion subsides once his own conduct is examined",
       ],
       defeatedBy: [
-        "The drift is mere eyeball fatigue with no role for motion detectors",
-        "The aftereffect direction is random and unrelated to the water's motion",
+        "Independent audits reveal his colleagues really are cheating",
+        "His own records come back completely clean",
       ],
     },
     correctAnswer:
-      "The brain encodes motion with opposing detectors, and adapting the 'downward' detector leaves the 'upward' one temporarily dominant, so still rocks read as moving up; test whether the aftereffect direction is always opposite the adapting motion, whether adapting one eye transfers the effect to the other, and whether it fades faster with longer rest after adaptation.",
+      "He likely offloads his own dishonesty by seeing it everywhere but in himself, so the suspicion maps his behavior onto others; test whether his accusations spike right after his own worst cheating, whether he exempts only himself from the audits he demands, and whether the suspicion subsides when his own conduct is examined.",
     explanation:
-      "Top credit names opponent motion detectors, adds three checks, and pairs them with an interocular-transfer test that names its refutation; 'meaningless eye fatigue' is the dodge.",
+      "Full credit names projection and offers an audit-everyone test that names its own refutation; 'honest people don't accuse without cause' is the overreach his own padded reports defeat.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "The exact same ambiguous middle squiggle is read as 'H' in 'THE' and as 'A' in 'CAT', and readers don't even notice it's identical. Which conclusion best follows?",
+      "A therapist notices that a client, whenever the talk turns to his recent divorce, immediately shifts into analyzing 'the sociology of modern marriage' and the statistics on divorce rates, never landing on his own pain. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Handwriting is sloppy, so people just guess; nothing about perception here.",
-        credit: 0,
-      },
-      {
-        text: "The squiggle seems to be read two ways.",
+        text: "He seems interested in the topic of marriage.",
         credit: 0.3,
       },
       {
-        text: "Context probably guides reading; we could test more word pairs.",
+        text: "He likely escapes the raw hurt of his own divorce by floating up into abstract analysis, keeping the feeling at a manageable distance; test whether the abstraction kicks in exactly when a personal feeling is approached, whether he can stay with a concrete memory without theorizing, and whether emotion surfaces when the general talk is gently redirected to him.",
+        credit: 1.0,
+      },
+      {
+        text: "He probably likes thinking about big-picture issues; we could let him talk it out.",
         credit: 0.6,
       },
       {
-        text: "Letter perception is top-down: the brain uses the whole word and which letters make a real word to resolve an ambiguous shape, not bottom-up shape alone; test whether the same squiggle stays ambiguous in a nonword frame ('TXE'), whether reading time for the ambiguous letter is no slower than a clear one, and whether priming a different word flips which letter is seen.",
-        credit: 1.0,
+        text: "Some people are just intellectual, so there's nothing here worth reading into.",
+        credit: 0,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'word context resolves the letter' lead from the rival 'people only see the surrounding clear letters and ignore the squiggle,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'intellectualization to avoid the pain' lead from the rival 'he is simply a naturally analytical person,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: embed the identical squiggle in a nonword frame like 'TXE' or 'CXT' where no real word constrains it, and ask what letter is seen; my lead predicts it stays genuinely ambiguous because there's no word to resolve it, while in 'THE'/'CAT' it snaps to H or A. It is refuted if readers still confidently report a specific letter for the squiggle even with no real word around it, meaning context isn't doing the work.",
+        "Cheapest test: gently steer him from the general topic to one concrete moment of his own divorce and watch whether he can stay with the feeling or instantly abstracts again — my lead predicts the retreat into theory fires precisely when personal emotion is near. It is refuted if he can dwell on his own pain with feeling when asked, and the analytic style shows up evenly across emotional and neutral topics alike.",
       yieldAnchors: [
-        "The same shape reads as H in THE and A in CAT",
-        "Readers don't notice the two shapes are identical",
-        "The resolved letter always completes a real word",
+        "He shifts to abstract sociology whenever his divorce comes up",
+        "He cites divorce statistics instead of his experience",
+        "He never lands on his own pain",
       ],
       riskAnchors: [
-        "The squiggle stays ambiguous in a nonword frame",
-        "Reading the ambiguous letter is no slower than a clear one",
-        "Priming a different word flips which letter is seen",
+        "The abstraction starts exactly when a personal feeling is approached",
+        "He can't stay with a concrete memory without theorizing",
+        "Emotion surfaces when the talk is redirected to him",
       ],
       defeatedBy: [
-        "Readers ignore the squiggle and only see the clear letters",
-        "The shape's reading is unrelated to the surrounding word",
+        "He can dwell on his own pain with feeling when asked",
+        "He is equally analytical about neutral, non-painful topics",
       ],
     },
     correctAnswer:
-      "Letter perception is top-down: the brain uses the whole word and which letters make a real word to resolve an ambiguous shape, not bottom-up shape alone; test whether the same squiggle stays ambiguous in a nonword frame ('TXE'), whether reading time for the ambiguous letter is no slower than a clear one, and whether priming a different word flips which letter is seen.",
+      "He likely escapes the raw hurt of his own divorce by floating up into abstract analysis, keeping the feeling at a manageable distance; test whether the abstraction kicks in exactly when a personal feeling is approached, whether he can stay with a concrete memory without theorizing, and whether emotion surfaces when the general talk is gently redirected to him.",
     explanation:
-      "Full credit names top-down word context with three checks and a nonword-frame test that names its refutation; 'sloppy handwriting, just guessing' refuses the mechanism.",
+      "Full credit names intellectualization with a 'general-to-personal' test that states its refutation; 'some people are just intellectual' is the dodge the feeling-timed retreat into abstraction defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "When a single flash of light is paired with two quick beeps, viewers reliably report seeing two flashes. A single beep with the single flash is seen correctly as one. Which conclusion best follows?",
+      "A volunteer at an animal shelter who privately can't stand one needy dog becomes that dog's most fervent champion — fussing over it endlessly, insisting she 'loves it most' — while quietly handling it more roughly than the others. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The brain integrates sound and vision and, when sound is more reliable for fast timing, lets the beeps override the eyes so it 'sees' a second flash; test whether the illusion disappears when the beeps are spaced too far from the flash in time, whether it weakens for people with strong visual but poor auditory timing, and whether three beeps can push the count to three flashes.",
-        credit: 1.0,
-      },
-      {
-        text: "The beeps seem to add an extra flash.",
-        credit: 0.3,
-      },
-      {
-        text: "Sound can't change what you see, so the extra flash report is just a counting mistake.",
+        text: "She clearly just loves that dog the most; the rough handling is nothing.",
         credit: 0,
       },
       {
-        text: "The beeps probably affect the flash count; we could test more timings.",
+        text: "Her loud devotion likely masks a dislike she can't admit, with the real feeling leaking out in how she actually handles the dog; test whether the rough handling appears only when she thinks no one is watching, whether the gushing devotion spikes when others are present, and whether her warmth toward easier dogs is calmer and more genuine.",
+        credit: 1.0,
+      },
+      {
+        text: "She seems very attached to that dog.",
+        credit: 0.3,
+      },
+      {
+        text: "She might have mixed feelings about it; we could watch her with the animals.",
         credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'sound dominates fast timing' lead from the rival 'people just miscount when distracted by beeps,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'reaction formation hiding dislike' lead from the rival 'she genuinely loves the dog and the rough handling is meaningless,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: vary the gap between the two beeps and see whether the extra-flash illusion appears only when the beeps fall within the brief window where vision and sound get bound together; my lead predicts the illusion is tightly tied to that timing window, not to general distraction. It is refuted if the false second flash shows up regardless of beep timing, which would point to distraction or guessing rather than genuine audiovisual integration.",
+        "Cheapest test: compare how she handles the dog when observed versus when she thinks she's alone — my lead predicts the warmth is for the audience while the rougher, truer feeling shows when unwatched. It is refuted if she is gentle and affectionate with the dog even when no one is looking, which would mean the love is real rather than a cover.",
       yieldAnchors: [
-        "One flash with two beeps is seen as two flashes",
-        "One flash with one beep is seen correctly as one",
-        "The added percept follows the number of beeps",
+        "She loudly insists she loves the dog most",
+        "She fusses over it more than any other",
+        "She handles it more roughly when unobserved",
       ],
       riskAnchors: [
-        "The illusion disappears when beeps are far from the flash in time",
-        "It weakens for people with poor auditory timing",
-        "Three beeps can push the count to three flashes",
+        "Rough handling appears only when she's unwatched",
+        "The gushing spikes when others are present",
+        "Her warmth toward easier dogs is calmer and genuine",
       ],
       defeatedBy: [
-        "Sound cannot influence vision and the report is a counting error",
-        "The flash count is unrelated to the number of beeps",
+        "She is gentle with the dog even when alone",
+        "The rough handling never actually occurs",
       ],
     },
     correctAnswer:
-      "The brain integrates sound and vision and, when sound is more reliable for fast timing, lets the beeps override the eyes so it 'sees' a second flash; test whether the illusion disappears when the beeps are spaced too far from the flash in time, whether it weakens for people with strong visual but poor auditory timing, and whether three beeps can push the count to three flashes.",
+      "Her loud devotion likely masks a dislike she can't admit, with the real feeling leaking out in how she actually handles the dog; test whether the rough handling appears only when she thinks no one is watching, whether the gushing devotion spikes when others are present, and whether her warmth toward easier dogs is calmer and more genuine.",
     explanation:
-      "Top credit names reliability-weighted audiovisual integration with three checks and a timing-window test that names its refutation; 'sound can't change vision, just a mistake' is defeated by the lawful beep-count effect.",
+      "Full credit names reaction formation and offers a watched-versus-unwatched test that names its refutation; 'she just loves it most' is the surface reading the secret roughness leaking through defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A blurry, hard-to-identify photo looks like meaningless blobs — until someone says 'it's a dog by a tree,' after which viewers suddenly see the dog clearly and can't go back to seeing blobs. Which conclusion best follows?",
+      "A woman who is terrified by her own ambition and the thought of outshining her family insists at every turn that she's 'just not the competitive type,' turns down promotions, and downplays each success as luck. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Blurry pictures are just guesses, so this doesn't reveal anything real about seeing.",
+        text: "Ambition is too personal to say anything about why she turns things down.",
         credit: 0,
       },
       {
-        text: "The hint seems to make the image clearer.",
+        text: "She seems modest about her achievements.",
         credit: 0.3,
       },
       {
-        text: "Telling people what it is probably helps; we could try more blurry images.",
+        text: "She may lack confidence; we could encourage her more.",
         credit: 0.6,
       },
       {
-        text: "A high-level concept reshapes how the raw image is parsed (top-down), and once the brain commits to an interpretation it organizes the blobs around it permanently; test whether a wrong label ('it's a car') fails to produce clarity, whether the 'aha' is faster when the label matches likely scene content, and whether viewers given the label first identify the same image at higher blur levels than unprompted viewers.",
+        text: "She likely guards against the guilt of wanting to surpass her family by disowning her ambition and shrinking from anything that would prove it, paying the price in a stalled career; test whether her self-erasing spikes right when real success looms, whether private moments reveal strong drive she won't claim, and whether she can accept an opportunity once the guilt is named and eased.",
         credit: 1.0,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'top-down concept reshapes parsing' lead from the rival 'any spoken hint makes people try harder and squint,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'she defends against guilt over her ambition' lead from the rival 'she genuinely lacks ambition and prefers a quiet role,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: give one group the correct label ('a dog by a tree') and another an incorrect but equally specific label ('a boat on water') for the same blurry image, then ask what they see; my lead predicts only the correct concept produces a stable, clear percept while the wrong one does not. It is refuted if the wrong label produces just as strong a sense of suddenly 'seeing it,' meaning effort or suggestion, not the matching concept, drives the clarity.",
+        "Cheapest test: see what happens to her drive in a low-stakes setting where outshining her family isn't in play — my lead predicts vivid ambition surfaces when the guilt isn't triggered, then vanishes the instant success threatens that boundary. It is refuted if she shows no drive in any context and feels genuine contentment turning opportunities down, which would mean she truly prefers a quiet role.",
       yieldAnchors: [
-        "The blurry image first looks like meaningless blobs",
-        "A correct verbal label produces sudden clarity",
-        "Viewers can't return to seeing it as blobs afterward",
+        "She insists she's 'just not competitive'",
+        "She turns down promotions she could take",
+        "She writes off each success as luck",
       ],
       riskAnchors: [
-        "A wrong label fails to produce clarity",
-        "The 'aha' is faster when the label fits likely scene content",
-        "Labeled viewers identify the image at higher blur than unprompted ones",
+        "Her self-erasing spikes right when success looms",
+        "Private moments reveal a drive she won't claim",
+        "She can accept an opportunity once the guilt is eased",
       ],
       defeatedBy: [
-        "Any spoken hint works equally well regardless of accuracy",
-        "The label is unrelated to whether the image becomes clear",
+        "She shows no ambition in any setting and is content",
+        "She turns down promotions with genuine ease and no conflict",
       ],
     },
     correctAnswer:
-      "A high-level concept reshapes how the raw image is parsed (top-down), and once the brain commits to an interpretation it organizes the blobs around it permanently; test whether a wrong label ('it's a car') fails to produce clarity, whether the 'aha' is faster when the label matches likely scene content, and whether viewers given the label first identify the same image at higher blur levels than unprompted viewers.",
+      "She likely guards against the guilt of wanting to surpass her family by disowning her ambition and shrinking from anything that would prove it, paying the price in a stalled career; test whether her self-erasing spikes right when real success looms, whether private moments reveal strong drive she won't claim, and whether she can accept an opportunity once the guilt is named and eased.",
     explanation:
-      "Full credit names top-down conceptual reorganization with three checks and a wrong-label control that names its refutation; 'blurry pictures are just guesses' opens no inquiry.",
+      "Full credit reads a defense disowning ambition, names its career cost, and offers a low-stakes test of hidden drive that could refute it; 'too personal to say anything' is the refusal the success-timed self-sabotage defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A grid of identical round bumps in a photo looks like bumps poking out when shaded dark-on-bottom, but the very same image flipped looks like dents poking in. People switch instantly when the photo is rotated 180 degrees. Which conclusion best follows?",
+      "A new father who is overwhelmed and resentful about how the baby has upended his life can't tolerate those feelings, so he becomes a tirelessly doting, picture-perfect dad — yet he's developed headaches, can't sleep, and snaps at strangers. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The brain assumes light comes from above, so it reads dark-bottom shading as a bump and dark-top shading as a dent; test whether the effect reverses exactly when the image is flipped, whether tilting a real overhead lamp to the side changes which reading people get, and whether the bias is weaker in viewers given strong cues that light is coming from below.",
-        credit: 1.0,
-      },
-      {
-        text: "Shading seems to make bumps or dents.",
-        credit: 0.3,
-      },
-      {
-        text: "The shading probably controls the shape; we could test more grids.",
+        text: "He's probably just a devoted dad adjusting to a new baby; we could give him time.",
         credit: 0.6,
       },
       {
-        text: "Bumps and dents are a matter of opinion, so there's no rule worth finding.",
+        text: "He likely converts unbearable resentment into showy over-devotion, but the buried feeling exacts its price in his body and his temper elsewhere; test whether the symptoms ease when the resentment is acknowledged as normal, whether his irritability lands on safe outsiders rather than the baby, and whether the doting feels driven and anxious rather than relaxed.",
+        credit: 1.0,
+      },
+      {
+        text: "He seems like a caring father.",
+        credit: 0.3,
+      },
+      {
+        text: "New parenthood is so individual that his symptoms could mean anything or nothing.",
         credit: 0,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'light-from-above assumption' lead from the rival 'people just prefer to see bumps over dents,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'over-devotion defending against resentment, paid for in symptoms' lead from the rival 'he is simply a devoted dad who is run-down from new-parent exhaustion,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: keep the image fixed but change the actual room lighting so a real lamp clearly shines from below, and ask whether the dark-bottom circles now flip from bumps to dents; my lead predicts the percept tracks the assumed light direction, so contradicting it with real low lighting should reverse the reading. It is refuted if people keep seeing the same shapes no matter where the real light comes from, which would point to a fixed bump-preference rather than a light-direction assumption.",
+        "Cheapest test: gently normalize that many new parents feel resentment and watch whether his headaches and edginess ease as the feeling becomes sayable — my lead predicts relief follows owning the buried resentment, because the symptoms carry what the over-devotion won't let him feel. It is refuted if his symptoms are fully explained by sleep loss and resolve with rest while no resentment ever surfaces, pointing to plain exhaustion.",
       yieldAnchors: [
-        "Dark-bottom shading reads as bumps poking out",
-        "The same image flipped reads as dents",
-        "People switch instantly when the photo is rotated",
+        "He feels overwhelmed and resentful but can't tolerate it",
+        "He has become a tirelessly perfect dad",
+        "He has headaches, insomnia, and snaps at strangers",
       ],
       riskAnchors: [
-        "The percept reverses exactly when the image is flipped",
-        "Moving a real overhead lamp to the side changes the reading",
-        "Cues that light comes from below weaken the bias",
+        "Symptoms ease when the resentment is acknowledged as normal",
+        "His irritability lands on safe outsiders, not the baby",
+        "The doting feels driven and anxious, not relaxed",
       ],
       defeatedBy: [
-        "People simply prefer bumps regardless of shading direction",
-        "The shading direction is unrelated to seeing bumps versus dents",
+        "His symptoms resolve with sleep and no resentment exists",
+        "His devotion is relaxed and carries no hidden strain",
       ],
     },
     correctAnswer:
-      "The brain assumes light comes from above, so it reads dark-bottom shading as a bump and dark-top shading as a dent; test whether the effect reverses exactly when the image is flipped, whether tilting a real overhead lamp to the side changes which reading people get, and whether the bias is weaker in viewers given strong cues that light is coming from below.",
+      "He likely converts unbearable resentment into showy over-devotion, but the buried feeling exacts its price in his body and his temper elsewhere; test whether the symptoms ease when the resentment is acknowledged as normal, whether his irritability lands on safe outsiders rather than the baby, and whether the doting feels driven and anxious rather than relaxed.",
     explanation:
-      "Top credit names the light-from-above prior with three checks and a real-lighting test that names its refutation; 'a matter of opinion' commits to no rule.",
+      "Full credit names reaction formation plus its bodily cost and offers a 'does naming the resentment bring relief' test that states its refutation; 'could mean anything or nothing' is the dodge the symptoms-plus-displaced-temper pattern defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "Patients given an inert cream described as a strong painkiller report genuinely less pain from a hot probe, and brain scans show reduced activity in pain-processing areas. Telling them the cream was removed brings the pain back. Which conclusion best follows?",
+      "A woman who was deeply hurt by a friend's betrayal says, with a shrug, that she 'honestly can't even remember the details' of what happened — yet she tenses up and changes the subject the instant that friend's name comes up. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Pain is fully physical, so a fake cream can't really change it; patients are just being polite.",
+        text: "People forget old arguments all the time, so the blank memory means nothing.",
         credit: 0,
       },
       {
-        text: "The cream seems to ease the pain.",
+        text: "She seems uncomfortable talking about her former friend.",
         credit: 0.3,
       },
       {
-        text: "The expectation probably reduces pain; we could test more patients.",
-        credit: 0.6,
+        text: "The painful memory may be held out of recall while its charge still shows in her body's reaction, which is why the details are 'gone' but the name still stings; test whether her tension is specific to this friend and not other old acquaintances, whether the bodily reaction precedes any conscious thought, and whether details return as the hurt is approached in a safe setting.",
+        credit: 1.0,
       },
       {
-        text: "Pain perception is constructed from expectation as well as the signal, so a predicted relief actually dampens how the brain builds the pain experience; test whether blocking the body's own opioid system erases the relief, whether stronger-sounding instructions produce larger drops, and whether secretly applying the same cream without telling the patient produces less relief than openly applying it.",
-        credit: 1.0,
+        text: "She might still be a bit bothered by it; we could ask her again later.",
+        credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'expectation shapes constructed pain' lead from the rival 'patients just say what the experimenter wants to hear,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'the painful memory is repressed but still charged' lead from the rival 'she has genuinely, neutrally forgotten an unimportant old spat,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: compare openly applying the cream (patient told) with secretly applying the identical cream (patient not told) and measure pain; my lead predicts open application relieves more because the relief comes from expectation, even though the cream is the same. It is refuted if open and hidden application relieve pain equally, or if the 'relief' vanishes whenever no one is watching the report, which would point to social compliance rather than constructed perception.",
+        "Cheapest test: track whether her body reacts — tensing, subject-changing — specifically to this friend's name and not to other old acquaintances, since a live charge with a blank memory points to repression rather than ordinary forgetting. It is refuted if she stays relaxed and can recall the details easily once prompted, which would mean the event simply faded without any defensive blocking.",
       yieldAnchors: [
-        "An inert cream described as a painkiller reduces reported pain",
-        "Brain pain areas show reduced activity",
-        "Telling patients the cream is gone brings the pain back",
+        "She claims she can't remember the betrayal's details",
+        "She tenses up when the friend's name comes up",
+        "She abruptly changes the subject",
       ],
       riskAnchors: [
-        "Blocking the body's opioid system erases the relief",
-        "Stronger-sounding instructions produce larger drops",
-        "Open application relieves more than hidden application",
+        "Her tension is specific to this friend, not others",
+        "The bodily reaction precedes any conscious thought",
+        "Details return as the hurt is approached safely",
       ],
       defeatedBy: [
-        "The fake cream has no real effect and patients only say what's expected",
-        "Expectation is unrelated to how much pain is felt",
+        "She stays relaxed and recalls the details easily when prompted",
+        "She reacts the same way to many neutral old acquaintances",
       ],
     },
     correctAnswer:
-      "Pain perception is constructed from expectation as well as the signal, so a predicted relief actually dampens how the brain builds the pain experience; test whether blocking the body's own opioid system erases the relief, whether stronger-sounding instructions produce larger drops, and whether secretly applying the same cream without telling the patient produces less relief than openly applying it.",
+      "The painful memory may be held out of recall while its charge still shows in her body's reaction, which is why the details are 'gone' but the name still stings; test whether her tension is specific to this friend and not other old acquaintances, whether the bodily reaction precedes any conscious thought, and whether details return as the hurt is approached in a safe setting.",
     explanation:
-      "Full credit names expectation-driven construction of pain with three checks and an open-vs-hidden test that names its refutation; 'patients are just being polite' is defeated by the brain-scan and opioid-block evidence.",
+      "Full credit names repression with a live charge and offers a cue-specificity test that names its refutation; 'the blank memory means nothing' is the dodge the body's targeted reaction to that one name defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "When a cat walks behind a picket fence, we see one whole cat moving, not a series of disconnected cat-slices between the slats. Babies a few months old already react as if the slices are one object. Which conclusion best follows?",
+      "A man who is anxious about commitment but won't admit it keeps booking himself solid — extra shifts, weekend trips, side projects — and tells his frustrated girlfriend he 'would love to talk about the future, there's just never time.' Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The brain completes partly hidden objects, treating visible fragments that share motion and edges as one continuous thing behind the occluder; test whether fragments moving together are seen as one but fragments moving independently are seen as separate, whether babies look longer (surprised) when the fence is removed to reveal two half-cats, and whether mismatched fragment edges block the completion.",
-        credit: 1.0,
-      },
-      {
-        text: "We seem to see the whole cat anyway.",
-        credit: 0.3,
-      },
-      {
-        text: "Fences are too specific a case to reveal a general rule of perception.",
+        text: "He's clearly just a busy, ambitious guy with a packed life; nothing to interpret.",
         credit: 0,
       },
       {
-        text: "The brain probably joins the pieces; we could test more occluders.",
+        text: "He likely keeps commitment-anxiety at bay by staying too busy to ever face the relationship question, trading closeness for the safety of avoidance; test whether the sudden busyness clusters around moments the relationship deepens, whether his anxiety rises when a real conversation is scheduled, and whether time appears once the fear of commitment is talked through.",
+        credit: 1.0,
+      },
+      {
+        text: "He may be a little nervous about the relationship; we could nudge him to make time.",
         credit: 0.6,
+      },
+      {
+        text: "He seems to have a lot going on.",
+        credit: 0.3,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'shared motion and edges drive completion' lead from the rival 'people just know cats are whole animals,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'busyness as avoidance of commitment' lead from the rival 'he is genuinely overcommitted and would engage if he truly had time,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: use an unfamiliar abstract shape (not an animal) split by the fence, with the fragments either moving together or moving independently, and ask whether viewers see one object or two; my lead predicts shared motion and aligned edges produce 'one object' even for a meaningless shape. It is refuted if completion happens only for known things like cats and never for novel shapes with matched motion, which would point to object knowledge rather than low-level grouping cues.",
+        "Cheapest test: clear the calendar by handing him a genuinely free evening set aside for 'the future' talk and see whether he suddenly manufactures a new obligation — my lead predicts fresh busyness materializes precisely to dodge the conversation. It is refuted if, given real free time, he eagerly and calmly engages with the relationship question, which would mean he was simply overcommitted.",
       yieldAnchors: [
-        "A cat behind a fence is seen as one moving whole",
-        "We don't perceive disconnected cat-slices",
-        "Young babies already treat the slices as one object",
+        "He's anxious about commitment but won't admit it",
+        "He keeps himself booked solid",
+        "He says he'd 'love to talk' but never has time",
       ],
       riskAnchors: [
-        "Fragments moving together are seen as one; independent motion splits them",
-        "Babies look longer when the fence is removed to reveal two half-cats",
-        "Mismatched fragment edges block the completion",
+        "Busyness clusters when the relationship deepens",
+        "His anxiety rises when a real talk is scheduled",
+        "Time appears once the fear of commitment is addressed",
       ],
       defeatedBy: [
-        "Completion happens only for familiar objects, never novel shapes",
-        "The fragments' shared motion is unrelated to seeing one object",
+        "Given genuinely free time, he engages eagerly and calmly",
+        "His schedule is forced on him and unrelated to the relationship",
       ],
     },
     correctAnswer:
-      "The brain completes partly hidden objects, treating visible fragments that share motion and edges as one continuous thing behind the occluder; test whether fragments moving together are seen as one but fragments moving independently are seen as separate, whether babies look longer (surprised) when the fence is removed to reveal two half-cats, and whether mismatched fragment edges block the completion.",
+      "He likely keeps commitment-anxiety at bay by staying too busy to ever face the relationship question, trading closeness for the safety of avoidance; test whether the sudden busyness clusters around moments the relationship deepens, whether his anxiety rises when a real conversation is scheduled, and whether time appears once the fear of commitment is talked through.",
     explanation:
-      "Top credit names amodal completion via shared motion and edges with three checks and a novel-shape test that names its refutation; 'fences are too specific' refuses the general lesson.",
+      "Full credit names avoidance dressed as busyness and offers a 'give him free time and watch' test that names its refutation; 'nothing to interpret' is the dodge the relationship-timed scheduling defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "At a loud party you hear mostly a blur of voices, but the instant someone across the room says your name you notice it clearly, even though you weren't listening to that conversation. Which conclusion best follows?",
+      "After being passed over for a promotion he badly wanted, a man declares he 'never even cared about that job — it's beneath me, really,' and lists all the reasons the role is undesirable, though he'd campaigned hard for it weeks earlier. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Loud rooms are too chaotic to study attention in.",
-        credit: 0,
-      },
-      {
-        text: "You seem to catch your name in the noise.",
+        text: "He seems to have changed his mind about the job.",
         credit: 0.3,
       },
       {
-        text: "Attention probably picks out your name; we could test more partygoers.",
+        text: "He likely softens the sting of rejection by recasting the prize he lost as worthless, so the disappointment never has to be felt; test whether his disdain appeared only after the rejection and not before, whether he still shows envy or hurt when the role comes up, and whether the contempt fades once the disappointment is acknowledged.",
+        credit: 1.0,
+      },
+      {
+        text: "Maybe the job really wasn't right for him after all; we could ask why he applied.",
         credit: 0.6,
       },
       {
-        text: "The brain monitors unattended channels at a shallow level and lets highly relevant signals like your own name break through and capture attention; test whether emotionally important words (not just any word) are detected in the ignored stream, whether people who notice their name lose track of the conversation they were attending, and whether the breakthrough rate rises for personally significant words over neutral ones.",
-        credit: 1.0,
+        text: "People's preferences shift constantly, so there's nothing to make of it.",
+        credit: 0,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'relevant signals break through a monitored channel' lead from the rival 'people secretly listen to every conversation equally,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'rationalizing away the loss (sour grapes)' lead from the rival 'he genuinely reconsidered and decided the role was wrong for him,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: in the ignored stream, plant the person's own name versus an equally loud but neutral word and see which gets noticed; my lead predicts the personally relevant name breaks through far more often than the neutral word. It is refuted if neutral and personally relevant words are noticed equally often, which would mean people are fully processing everything rather than selectively letting relevant signals through.",
+        "Cheapest test: check the timing — did his contempt for the job appear only after he was rejected, despite his hard campaigning days earlier — because a sudden post-loss reversal is the signature of protecting against disappointment. It is refuted if he had voiced real doubts about the role before the decision, or if he can both admit it stings and stand by his new view, which would mean a genuine reconsideration.",
       yieldAnchors: [
-        "Party voices are mostly a blur",
-        "Your own name is noticed even when unattended",
-        "You weren't deliberately listening to that conversation",
+        "He campaigned hard for the job weeks earlier",
+        "After losing, he calls it 'beneath me'",
+        "He lists reasons the role is undesirable",
       ],
       riskAnchors: [
-        "Emotionally important words are detected in the ignored stream",
-        "Noticing your name disrupts the attended conversation",
-        "Personally significant words break through more than neutral ones",
+        "The disdain appeared only after the rejection",
+        "He still shows envy or hurt about the role",
+        "The contempt fades once disappointment is acknowledged",
       ],
       defeatedBy: [
-        "People fully process every conversation equally",
-        "Your name is no more likely to be noticed than any other word",
+        "He had voiced real doubts about the role beforehand",
+        "He can admit it stings yet genuinely stand by his new view",
       ],
     },
     correctAnswer:
-      "The brain monitors unattended channels at a shallow level and lets highly relevant signals like your own name break through and capture attention; test whether emotionally important words (not just any word) are detected in the ignored stream, whether people who notice their name lose track of the conversation they were attending, and whether the breakthrough rate rises for personally significant words over neutral ones.",
+      "He likely softens the sting of rejection by recasting the prize he lost as worthless, so the disappointment never has to be felt; test whether his disdain appeared only after the rejection and not before, whether he still shows envy or hurt when the role comes up, and whether the contempt fades once the disappointment is acknowledged.",
     explanation:
-      "Full credit names shallow monitoring with relevance-based breakthrough, three checks, and a name-vs-neutral test that names its refutation; 'too chaotic to study' opens no path.",
+      "Full credit names rationalization (sour grapes) and offers a timing-of-the-disdain test that states its refutation; 'preferences shift, nothing to make of it' is the dodge the abrupt post-rejection reversal defeats.",
   },
 ];
 
@@ -843,180 +843,175 @@ const written: HomeworkItem[] = [
   {
     itemType: "written",
     prompt:
-      "Two patches in a famous image — one labeled A in apparent light, one labeled B in apparent shadow cast by a green cylinder — are printed with exactly the same gray ink, yet B looks obviously lighter than A. Covering everything except the two patches makes them look identical. In one paragraph, propose the strongest conclusion about how perception works here and describe how you would test it.",
+      "A man whose younger brother recently died describes the funeral and his brother's illness without a flicker of feeling, throws himself into organizing the estate paperwork with brisk efficiency, and gently steers every conversation away from how he himself is doing — yet his friends notice he has stopped sleeping. In one paragraph, propose the strongest conclusion about the dynamic at work and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that vision doesn't report the raw light hitting the eye; it estimates each surface's true shade by correcting for the lighting it infers, so a patch judged to be in shadow gets mentally lightened to recover the 'real' color of the surface. This is a powerful lead because it predicts checkable consequences: removing the cylinder (and thus the shadow story) should make A and B look equal again; the size of the illusion should track how convincing the shadow looks, growing with a darker, more believable cast shadow and shrinking with a faint one; and any manipulation that breaks the shadow interpretation, like a visible same-gray bridge connecting the patches, should collapse the difference. I would test it by removing or weakening the shadow cue and re-measuring perceived lightness, by varying shadow strength and checking whether the illusion scales with it, and by laying a continuous strip of the identical gray across both patches to see whether the perceived difference vanishes as the shadow account is defeated.",
+        "The strongest conclusion is that he is defending against overwhelming grief by holding it out of awareness — staying busy and factual so the feeling never reaches him — but the cost is leaking out in his sleeplessness, because feelings kept from the mind tend to surface in the body. This is a strong claim because it predicts checkable consequences: his composure should crack specifically when the loss is named in personal, emotional terms rather than logistical ones; the insomnia and other strain should ease as the grief becomes sayable and is shared; and his flatness should be specific to this loss, not a lifelong style. I would test it by gently shifting talk from estate paperwork to a concrete shared memory and watching whether feeling breaks through, by tracking whether his sleep improves as the grief is acknowledged, and by checking whether he shows normal emotion about everything except his brother's death.",
       yieldAnchors: [
-        "A and B are printed with identical gray ink",
-        "B (in apparent shadow) looks lighter than A",
-        "Isolating the two patches makes them look identical",
+        "He describes the death without any feeling",
+        "He buries himself in brisk estate paperwork",
+        "He has stopped sleeping",
       ],
       riskAnchors: [
-        "Removing the shadow-casting cylinder makes A and B look equal",
-        "The illusion grows and shrinks with how convincing the shadow looks",
-        "A visible same-gray connecting strip collapses the difference",
+        "His composure cracks when the loss is named personally",
+        "The insomnia eases as grief becomes sayable and shared",
+        "The flatness is specific to this loss, not a lifelong style",
       ],
       defeatedBy: [
-        "The two patches are actually different shades of ink",
-        "Viewers are simply guessing because identical patches can't look different",
-        "Nothing can be concluded without testing far more images",
+        "He is simply a calm person and feels no buried grief",
+        "Nothing about a person's coping can be inferred from how they talk",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that vision doesn't report the raw light hitting the eye; it estimates each surface's true shade by correcting for the lighting it infers, so a patch judged to be in shadow gets mentally lightened to recover the 'real' color of the surface. This is a powerful lead because it predicts checkable consequences: removing the cylinder (and thus the shadow story) should make A and B look equal again; the size of the illusion should track how convincing the shadow looks, growing with a darker, more believable cast shadow and shrinking with a faint one; and any manipulation that breaks the shadow interpretation, like a visible same-gray bridge connecting the patches, should collapse the difference. I would test it by removing or weakening the shadow cue and re-measuring perceived lightness, by varying shadow strength and checking whether the illusion scales with it, and by laying a continuous strip of the identical gray across both patches to see whether the perceived difference vanishes as the shadow account is defeated.",
+      "The strongest conclusion is that he is defending against overwhelming grief by holding it out of awareness — staying busy and factual so the feeling never reaches him — but the cost is leaking out in his sleeplessness, because feelings kept from the mind tend to surface in the body. This is a strong claim because it predicts checkable consequences: his composure should crack specifically when the loss is named in personal, emotional terms rather than logistical ones; the insomnia and other strain should ease as the grief becomes sayable and is shared; and his flatness should be specific to this loss, not a lifelong style. I would test it by gently shifting talk from estate paperwork to a concrete shared memory and watching whether feeling breaks through, by tracking whether his sleep improves as the grief is acknowledged, and by checking whether he shows normal emotion about everything except his brother's death.",
     explanation:
-      "The cautious 'identical patches can't look different, viewers are guessing' earns near-zero because it denies a robust, measurable effect; top credit goes to the lightness-constancy lead that names a mechanism and several tests that could disconfirm it.",
+      "Under the inverted standard, 'nothing can be inferred from how he talks' earns near-zero; top credit goes to naming a grief defense that binds the flatness and insomnia and proposes a memory test that could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "A radiologist who has just been told 'this scan is probably a lung tumor' spots a faint shadow she would otherwise miss, while a colleague told 'this scan is probably clear' looks at the same image and sees nothing. Both are highly trained and looking at identical pixels. In one paragraph, propose the strongest conclusion about perception and describe how you would test it.",
+      "A woman who is often sharply critical and quick to find fault is utterly convinced that her partner, friends, and coworkers are all 'so judgmental and harsh,' and she feels constantly attacked by them — though others describe those same people as warm and easygoing. In one paragraph, propose the strongest conclusion about the dynamic and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that expert perception is top-down as well as bottom-up: a prior expectation pre-tunes the visual system toward what it anticipates, lowering the threshold to detect an expected faint feature and raising the chance of missing or dismissing an unexpected one. This lead is fruitful because it predicts checkable consequences: giving readers the 'tumor' prompt should raise both true detections of real faint lesions and false alarms on lesion-free scans, while the 'clear' prompt should raise misses; the effect should be largest for low-contrast, ambiguous shadows and negligible for obvious ones; and eye-tracking should show primed readers fixating and dwelling on the suspect region sooner. I would test it by randomly assigning the two prompts across a matched set of scans and scoring hits and false alarms, by comparing the prompt effect on subtle versus blatant findings, and by tracking where and how long each reader's gaze lands to see whether the prompt steers attention before any 'finding' is reported.",
+        "The strongest conclusion is that she protects herself from owning her own harsh, critical streak by experiencing it as coming from everyone around her, so the judgment she can't accept in herself feels like it's aimed at her from outside. This is a strong claim because it predicts checkable consequences: her sense of being attacked should spike right after her own most critical moments; the people she calls harsh should be ones others find warm, marking the perception as hers rather than theirs; and the feeling of being judged should ease as she comes to recognize and accept her own critical side. I would test it by tracking whether her 'they're so judgmental' episodes follow her own bouts of fault-finding, by gathering outside descriptions of the same people to see whether the harshness is really there, and by watching whether owning her critical streak softens her sense of being attacked.",
       yieldAnchors: [
-        "The 'tumor' prompt leads to spotting a faint shadow",
-        "The 'clear' prompt leads to seeing nothing on the same image",
-        "Both readers view identical pixels and are equally trained",
+        "She is herself sharply critical and quick to fault others",
+        "She's convinced everyone around her is judgmental and harsh",
+        "Others describe those same people as warm and easygoing",
       ],
       riskAnchors: [
-        "The 'tumor' prompt raises both true detections and false alarms",
-        "The effect is largest for low-contrast ambiguous findings",
-        "Eye-tracking shows primed readers dwelling on the region sooner",
+        "Her sense of being attacked spikes after her own critical moments",
+        "Outsiders find the 'harsh' people warm",
+        "Feeling judged eases as she owns her own critical side",
       ],
       defeatedBy: [
-        "The two readers actually saw different images",
-        "Expert perception is purely bottom-up and immune to expectation",
-        "Nothing can be said without testing thousands of scans first",
+        "Independent accounts confirm the others really are harsh to her",
+        "The unconscious is unknowable, so her complaints can't be read",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that expert perception is top-down as well as bottom-up: a prior expectation pre-tunes the visual system toward what it anticipates, lowering the threshold to detect an expected faint feature and raising the chance of missing or dismissing an unexpected one. This lead is fruitful because it predicts checkable consequences: giving readers the 'tumor' prompt should raise both true detections of real faint lesions and false alarms on lesion-free scans, while the 'clear' prompt should raise misses; the effect should be largest for low-contrast, ambiguous shadows and negligible for obvious ones; and eye-tracking should show primed readers fixating and dwelling on the suspect region sooner. I would test it by randomly assigning the two prompts across a matched set of scans and scoring hits and false alarms, by comparing the prompt effect on subtle versus blatant findings, and by tracking where and how long each reader's gaze lands to see whether the prompt steers attention before any 'finding' is reported.",
+      "The strongest conclusion is that she protects herself from owning her own harsh, critical streak by experiencing it as coming from everyone around her, so the judgment she can't accept in herself feels like it's aimed at her from outside. This is a strong claim because it predicts checkable consequences: her sense of being attacked should spike right after her own most critical moments; the people she calls harsh should be ones others find warm, marking the perception as hers rather than theirs; and the feeling of being judged should ease as she comes to recognize and accept her own critical side. I would test it by tracking whether her 'they're so judgmental' episodes follow her own bouts of fault-finding, by gathering outside descriptions of the same people to see whether the harshness is really there, and by watching whether owning her critical streak softens her sense of being attacked.",
     explanation:
-      "'Expert perception is purely bottom-up and immune to expectation' is defeated by the scenario, and a vague answer with no test scores low; top credit goes to the expectation-tuning lead that commits to a mechanism and names tests including a revealing false-alarm prediction.",
+      "The inverted standard gives near-zero to 'the unconscious is unknowable'; credit goes to naming projection that binds the gap between her view and others' and proposes a timing test that could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "Looking at a Necker cube (a simple wire-frame drawing), a viewer sees its front face pop forward, then after a few seconds it spontaneously flips so a different face is in front, then flips back — and this keeps happening even when she tries to hold one view still. In one paragraph, propose the strongest conclusion about how perception works and describe how you would test it.",
+      "A teenage boy who is privately frightened and confused by his own tender, vulnerable feelings has become aggressively 'tough' — mocking anything sentimental, picking fights to prove he's hard, and sneering at friends who show emotion — yet he secretly writes poetry he hides from everyone. In one paragraph, propose the strongest conclusion about the dynamic and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that perception is an active interpretation, not a passive readout: faced with a flat drawing that two 3-D interpretations fit equally well, the brain commits to one at a time and, because no evidence favors either, periodically switches as the current interpretation adapts and the rival takes over. This lead is fruitful because it predicts checkable consequences: the flip rate should speed up the longer one views (as the active interpretation fatigues) and slow down with rest; deliberately favoring one face — by attention, by adding faint depth shading, or by a prior cue — should bias which view appears first and lengthen its turns; and at the moment of a flip nothing changes in the image, so any neural or pupil signal that shifts must reflect the internal switch, not the input. I would test it by measuring how flip rate changes with continuous viewing versus breaks, by adding small disambiguating cues and checking whether they bias the dominant view, and by recording reports against a constant stimulus to confirm that the changes are internally generated.",
+        "The strongest conclusion is that his exaggerated toughness is a defense against tender feelings he finds unbearable, flipping the soft, vulnerable side he can't accept into its loud opposite — and the hidden poetry is the disowned feeling still alive underneath. This is a strong claim because it predicts checkable consequences: his hardness should intensify exactly when something threatens to move him; the contempt should ring forced and brittle rather than relaxed; and the aggression should soften if his tender feelings are made safe to have rather than shameful. I would test it by watching whether his toughest displays come right on the heels of emotional moments, by noting whether his sneering feels strained when sentiment appears, and by checking whether validating the feelings behind the poetry reduces the need for the tough front.",
       yieldAnchors: [
-        "The cube's front face spontaneously flips between two readings",
-        "The flipping continues even when she tries to hold one view",
-        "The drawing itself never changes",
+        "He's privately frightened by his own tender feelings",
+        "He acts aggressively tough and mocks all sentiment",
+        "He secretly writes poetry he hides",
       ],
       riskAnchors: [
-        "Flip rate speeds up with continuous viewing and slows with rest",
-        "Attention or faint depth cues bias which view dominates",
-        "Neural or pupil signals shift at flips despite a constant image",
+        "His hardness intensifies when something threatens to move him",
+        "The contempt rings forced and brittle, not relaxed",
+        "The aggression softens when tender feelings are made safe",
       ],
       defeatedBy: [
-        "The drawing is physically changing between the two views",
-        "The cube simply has one correct appearance the viewer keeps missing",
-        "Nothing can be concluded from a single ambiguous drawing",
+        "He is simply a naturally tough kid with no hidden tenderness",
+        "Teenagers are unreadable, so his behavior means nothing",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that perception is an active interpretation, not a passive readout: faced with a flat drawing that two 3-D interpretations fit equally well, the brain commits to one at a time and, because no evidence favors either, periodically switches as the current interpretation adapts and the rival takes over. This lead is fruitful because it predicts checkable consequences: the flip rate should speed up the longer one views (as the active interpretation fatigues) and slow down with rest; deliberately favoring one face — by attention, by adding faint depth shading, or by a prior cue — should bias which view appears first and lengthen its turns; and at the moment of a flip nothing changes in the image, so any neural or pupil signal that shifts must reflect the internal switch, not the input. I would test it by measuring how flip rate changes with continuous viewing versus breaks, by adding small disambiguating cues and checking whether they bias the dominant view, and by recording reports against a constant stimulus to confirm that the changes are internally generated.",
+      "The strongest conclusion is that his exaggerated toughness is a defense against tender feelings he finds unbearable, flipping the soft, vulnerable side he can't accept into its loud opposite — and the hidden poetry is the disowned feeling still alive underneath. This is a strong claim because it predicts checkable consequences: his hardness should intensify exactly when something threatens to move him; the contempt should ring forced and brittle rather than relaxed; and the aggression should soften if his tender feelings are made safe to have rather than shameful. I would test it by watching whether his toughest displays come right on the heels of emotional moments, by noting whether his sneering feels strained when sentiment appears, and by checking whether validating the feelings behind the poetry reduces the need for the tough front.",
     explanation:
-      "'The cube simply has one correct appearance she keeps missing' is defeated by the lawful flipping, and a florid answer with no test scores low; top credit goes to the active-interpretation lead that names a mechanism and tests tied to a constant stimulus.",
+      "The cautious 'teenagers are unreadable' earns near-zero; top credit goes to naming reaction formation that binds the hidden poetry and proposes a 'does toughness spike after emotional moments' test that could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "A single photo of a dress splits viewers sharply: some are certain it is white-and-gold, others certain it is blue-and-black, and a few can make themselves flip by imagining different lighting. The actual fabric is blue-and-black. In one paragraph, propose the strongest conclusion about why the same image produces such different perceptions and describe how you would test it.",
+      "For fifteen years a woman who longs for closeness has turned down every chance at a serious relationship the moment it gets real — ending things 'before they can go wrong,' staying friendly but never letting anyone in — and now, lonely, she insists she 'just hasn't met the right person.' In one paragraph, propose the strongest conclusion about the dynamic and the cost it has carried, and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that the brain perceives an object's color by silently estimating the light shining on it and subtracting that illuminant, and the photo is so ambiguous about its lighting that different viewers assume different light sources and therefore subtract different tints — those assuming cool daylight 'remove' blue and see white-and-gold, those assuming warm shadow 'remove' yellow and see blue-and-black. This lead is fruitful because it predicts checkable consequences: explicitly telling viewers the lighting ('it's in bright shade' versus 'in warm indoor light') should flip or stabilize their report; adding unambiguous background lighting cues should sharply reduce the split; and individual differences such as how much daylight versus artificial light a person is typically exposed to should bias which assumption, and thus which color, they default to. I would test it by manipulating the assumed illuminant with instructions and seeing whether reports flip, by editing in clear lighting context and checking whether disagreement collapses, and by relating people's reported reading to their habitual light exposure or chronotype.",
+        "The strongest conclusion is that she protects herself from the risk of being hurt or abandoned by avoiding real closeness — pulling away exactly when intimacy deepens — and the long-term cost is the very loneliness she's now suffering, so the defense has bought safety at the price of what she most wants. This is a strong claim because it predicts checkable consequences: her urge to end things should fire precisely at the points where a relationship turns serious rather than at random; her anxiety should rise as closeness grows and drop once she's retreated to safe distance; and she should be able to stay in a relationship if the fear of being hurt is faced and made bearable. I would test it by mapping whether her breakups cluster at moments of deepening intimacy, by tracking whether her anxiety tracks closeness, and by seeing whether addressing the underlying fear lets her tolerate staying rather than fleeing.",
       yieldAnchors: [
-        "The same photo is seen as white-gold or blue-black",
-        "Some viewers can flip by imagining different lighting",
-        "The image is ambiguous about its actual light source",
+        "She longs for closeness yet ends every serious relationship",
+        "She pulls away the moment things get real",
+        "She is now lonely but blames 'not meeting the right person'",
       ],
       riskAnchors: [
-        "Stating the lighting flips or stabilizes the reported color",
-        "Adding clear background lighting cues collapses the disagreement",
-        "Habitual light exposure biases which reading a person defaults to",
+        "Her urge to end things fires when intimacy deepens",
+        "Her anxiety rises with closeness and drops after retreat",
+        "She can stay once the fear of being hurt is faced",
       ],
       defeatedBy: [
-        "Color perception is pure personal opinion with no structure",
-        "Viewers' eyes are physically different colors of receptor",
-        "Nothing can be said because people just disagree",
+        "She genuinely prefers being single and feels no real loss",
+        "She has simply had bad luck meeting compatible partners",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that the brain perceives an object's color by silently estimating the light shining on it and subtracting that illuminant, and the photo is so ambiguous about its lighting that different viewers assume different light sources and therefore subtract different tints — those assuming cool daylight 'remove' blue and see white-and-gold, those assuming warm shadow 'remove' yellow and see blue-and-black. This lead is fruitful because it predicts checkable consequences: explicitly telling viewers the lighting ('it's in bright shade' versus 'in warm indoor light') should flip or stabilize their report; adding unambiguous background lighting cues should sharply reduce the split; and individual differences such as how much daylight versus artificial light a person is typically exposed to should bias which assumption, and thus which color, they default to. I would test it by manipulating the assumed illuminant with instructions and seeing whether reports flip, by editing in clear lighting context and checking whether disagreement collapses, and by relating people's reported reading to their habitual light exposure or chronotype.",
+      "The strongest conclusion is that she protects herself from the risk of being hurt or abandoned by avoiding real closeness — pulling away exactly when intimacy deepens — and the long-term cost is the very loneliness she's now suffering, so the defense has bought safety at the price of what she most wants. This is a strong claim because it predicts checkable consequences: her urge to end things should fire precisely at the points where a relationship turns serious rather than at random; her anxiety should rise as closeness grows and drop once she's retreated to safe distance; and she should be able to stay in a relationship if the fear of being hurt is faced and made bearable. I would test it by mapping whether her breakups cluster at moments of deepening intimacy, by tracking whether her anxiety tracks closeness, and by seeing whether addressing the underlying fear lets her tolerate staying rather than fleeing.",
     explanation:
-      "'Color is pure opinion with no structure' earns near-zero because it abandons any testable mechanism; top credit goes to the discount-the-illuminant lead that commits to a process and names manipulations that could refute it.",
+      "The inverted standard gives near-zero to 'she just hasn't met the right person'; credit goes to naming avoidance that binds the fifteen-year pattern, names its cost in loneliness, and proposes a 'do breakups cluster at deepening intimacy' test that could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "In a noisy cafeteria a student swears a friend said 'I love this band,' but a recording shows the friend actually said 'I love this sand' while pointing at a beach poster. Replaying the audio alone, the student hears 'sand' clearly; with the poster in view she hears 'band' again. In one paragraph, propose the strongest conclusion about how perception works here and describe how you would test it.",
+      "A surgeon who is quietly devastated by a patient's death on the table responds by immediately reviewing the operative statistics, discussing the case as a 'technically interesting complication,' and correcting a colleague's terminology — while declining, with a tight smile, to say how the loss affected him. In one paragraph, propose the strongest conclusion about the dynamic and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that perception integrates multiple sources — degraded sound plus visual context and expectation — into a single best guess, so when the audio is ambiguous the brain leans on context (a band poster? a beach poster?) to decide what was heard, and changing the context changes the percept itself, not just the interpretation. This lead is fruitful because it predicts checkable consequences: pairing the same ambiguous audio with a band image versus a beach image should flip what listeners report hearing; the effect should be strongest when the audio is noisiest and weakest when it is crisp and unambiguous; and a misleading context should make listeners confidently mishear, with confidence as high as for correct hearing. I would test it by presenting one fixed ambiguous audio clip with different paired images and recording what word people hear, by varying the audio's clarity to see whether context's pull grows as sound degrades, and by measuring listeners' confidence to confirm they experience the context-driven word as genuinely heard rather than merely inferred.",
+        "The strongest conclusion is that he keeps the grief and guilt of losing a patient at a safe distance by retreating into technical analysis, letting facts and procedure stand in for feeling so the loss never lands emotionally. This is a strong claim because it predicts checkable consequences: the rush into statistics and terminology should intensify exactly when the human side of the loss is approached; his tight composure should give way if he's asked about the patient as a person rather than as a case; and the clinical detachment should be specific to emotionally loaded losses rather than his manner with every routine case. I would test it by steering the conversation from the operative numbers to the patient as a person and watching whether feeling surfaces or the abstraction redoubles, by noting whether his analysis peaks precisely when emotion threatens, and by comparing his detachment on this case to his tone on ordinary, low-stakes ones.",
       yieldAnchors: [
-        "The friend actually said 'sand' but the student heard 'band'",
-        "Audio alone is heard correctly as 'sand'",
-        "With the relevant poster in view, 'band' returns",
+        "He's quietly devastated by the patient's death",
+        "He retreats into statistics and a 'technically interesting' framing",
+        "He won't say how the loss affected him",
       ],
       riskAnchors: [
-        "Swapping the paired image flips the reported word",
-        "The context effect is strongest when the audio is noisiest",
-        "Listeners report the context-driven word with high confidence",
+        "The technical talk intensifies when the human side is approached",
+        "His composure gives way if asked about the patient as a person",
+        "The detachment is specific to emotionally loaded losses",
       ],
       defeatedBy: [
-        "Hearing is purely acoustic and context can't change it",
-        "The student simply wasn't listening carefully",
-        "Nothing general can be drawn from one mishearing",
+        "He is genuinely unaffected and feels no grief or guilt",
+        "A person's coping can't be read from how clinically they speak",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that perception integrates multiple sources — degraded sound plus visual context and expectation — into a single best guess, so when the audio is ambiguous the brain leans on context (a band poster? a beach poster?) to decide what was heard, and changing the context changes the percept itself, not just the interpretation. This lead is fruitful because it predicts checkable consequences: pairing the same ambiguous audio with a band image versus a beach image should flip what listeners report hearing; the effect should be strongest when the audio is noisiest and weakest when it is crisp and unambiguous; and a misleading context should make listeners confidently mishear, with confidence as high as for correct hearing. I would test it by presenting one fixed ambiguous audio clip with different paired images and recording what word people hear, by varying the audio's clarity to see whether context's pull grows as sound degrades, and by measuring listeners' confidence to confirm they experience the context-driven word as genuinely heard rather than merely inferred.",
+      "The strongest conclusion is that he keeps the grief and guilt of losing a patient at a safe distance by retreating into technical analysis, letting facts and procedure stand in for feeling so the loss never lands emotionally. This is a strong claim because it predicts checkable consequences: the rush into statistics and terminology should intensify exactly when the human side of the loss is approached; his tight composure should give way if he's asked about the patient as a person rather than as a case; and the clinical detachment should be specific to emotionally loaded losses rather than his manner with every routine case. I would test it by steering the conversation from the operative numbers to the patient as a person and watching whether feeling surfaces or the abstraction redoubles, by noting whether his analysis peaks precisely when emotion threatens, and by comparing his detachment on this case to his tone on ordinary, low-stakes ones.",
     explanation:
-      "'Hearing is purely acoustic and context can't change it' is defeated by the poster-driven flip, and a vague answer scores low; top credit goes to the multisensory best-guess lead that names a mechanism and tests including a noise-level prediction that could disconfirm it.",
+      "'Coping can't be read from how clinically he speaks' is the refusal the tight smile and feeling-timed retreat defeat; top credit goes to naming intellectualization that binds the evidence and proposes a 'person versus case' test that could refute it.",
   },
 ];
 
 export const section: SectionContent = {
-  slug: "perception",
-  title: "Perception: Why Your Brain Builds the World You See",
+  slug: "defense-mechanisms",
+  title: "Defense Mechanisms",
   weekNumber: 1,
   blurb:
-    "Perception isn't a camera faithfully recording reality — it's the brain's best guess, built from incoming signals plus expectations, context, and assumptions. Illusions are where that construction shows.",
+    "Defenses are the automatic moves the mind makes to keep painful feelings out of awareness — denial, projection, rationalization, and the rest — and the craft is reading which one is at work from its behavioral signature and the price it quietly exacts.",
   lectureTitle:
-    "1.3 Perception: why your brain builds, rather than records, the world you see",
-  body: `# Perception: Why Your Brain Builds the World You See
+    "1.3 Defense Mechanisms: how we protect ourselves, and what it costs",
+  body: `# Defense Mechanisms
 
-It feels like seeing is simple: open your eyes, and the world pours in. But your eyes are not cameras feeding a screen in your head. The image on your retina is upside down, full of holes, smeared by constant eye movements, and wildly ambiguous about size, distance, and color. Yet you experience a stable, vivid, three-dimensional world. That gap is the central clue of this section: **perception is something your brain actively builds, not something it passively receives.**
+Some feelings are too painful, too frightening, or too shameful to hold in mind, so the mind does something clever: it keeps them out of awareness. The maneuvers it uses are called **defense mechanisms**, and everyone uses them. A defense isn't a flaw or a lie; it's an automatic, out-of-awareness move that protects you from a feeling you can't yet face. The trouble is that protection is never free. A defense buys relief in the moment but charges interest over time — a stalled career, a strained marriage, a body that won't sleep. The clinical skill is to read which defense is running from the pattern it leaves behind, and to notice the cost it quietly exacts.
 
-## The data underdetermine the world
+## What a defense is — and isn't
 
-A single pattern of light on your retina could have been produced by countless different scenes — a small object up close or a huge one far away, a gray surface in bright light or a white surface in shadow. The raw signal simply does not contain enough information to pin down one answer. So the brain does what any good detective does with incomplete evidence: it makes its **best guess**, using assumptions about how the world usually works. Perception is that guess, presented to you as if it were plain fact.
+A defense is not a conscious decision. The man who can't face that he's seriously ill doesn't sit down and choose to ignore the blood he coughed up; the ignoring happens automatically, below the level of deliberate thought. That's what makes defenses worth studying the same way we study any hidden process: you don't see the defense directly, you see its **signature** in behavior — what the person does, avoids, insists on, or can't quite feel. From that signature you infer the feeling being warded off. The behavior is the data; the defense is the explanation that accounts for it.
 
-## Bottom-up meets top-down
+## A field guide to the common defenses
 
-Two streams of information meet in every percept. **Bottom-up** information flows from the senses: edges, colors, motion, sound waves. **Top-down** information flows the other way — from your knowledge, expectations, and context down onto the incoming signal. When you read a sentence with a scrambled word and barely notice, top-down prediction is filling the gap. When a wine's fancy label makes it taste smoother, expectation is reshaping experience. Perception is the meeting point of what's out there and what your brain expects to be out there.
+**Denial** refuses to register a painful reality — the spouse who plans an anniversary party while the marriage visibly collapses. **Projection** disowns a feeling by seeing it in someone else — the man tempted to cheat who becomes certain his faithful partner is cheating. **Rationalization** supplies a reasonable-sounding excuse so the real cause stays hidden — the student who failed because the test was "unfair," never because he didn't study. **Intellectualization** swaps feeling for facts — the grieving daughter who recites survival statistics instead of crying. **Reaction formation** flips a forbidden feeling into its loud opposite — the man who's attracted to a coworker and treats her with conspicuous coldness. **Displacement** redirects a feeling onto a safer target — the worker humiliated by his boss who comes home and yells at his kids. **Repression** holds a painful memory out of recall while its emotional charge still drives reactions. **Avoidance** simply arranges life so the feared thing never comes up.
 
-## Illusions are the seams showing
+## How to read the signature
 
-Illusions aren't failures of perception; they're perception working normally but caught making a guess we can prove wrong. Two identical gray squares look different because the brain corrects for an assumed shadow. Two equal lines look unequal because arrowheads mimic depth and the brain rescales them. A hollow mask looks like it bulges out because the brain's lifelong assumption that faces stick out overrides the true depth cues. In each case the brain is applying a sensible rule — and the illusion is the rule misfiring in an unusual setup. That's why illusions are so useful: they expose the hidden assumptions perception normally runs silently.
+Each defense leaves tell-tale marks. Look for **disproportion**: a reaction far bigger or smaller than its trigger, like exploding at a spilled cup after a humiliating day. Look for **conspicuous omission**: the one obvious cause a person never mentions, like the student who lists every excuse except not studying. Look for **timing**: a feeling that flares precisely when something threatens, like abstraction that kicks in the instant grief is approached. Look for **leakage**: the warded-off feeling slipping out sideways — small put-downs underneath gushing praise, insomnia under a calm front. None of these proves a defense by itself, but together they point one way.
 
-## Perception is predictive
+## Always name a test
 
-Increasingly, scientists describe the brain as a **prediction machine**: it constantly forecasts the incoming signal and pays most attention to the difference between prediction and reality. This is why a related word lets you read the next one faster, why you can hear a word that a cough covered up, and why a radiologist told to expect a tumor sees a faint shadow a colleague misses. The expectation isn't added after you see — it shapes what you see in the first place. Perception runs ahead of the input, then corrects.
+A strong reading of a defense doesn't just slap on a label; it commits to a specific feeling being defended and then names the cheapest observation that would prove it wrong. If you think a man's loud devotion to a dog is reaction formation hiding dislike, predict that he'll handle the dog roughly when unwatched — and look. If you think a woman's busyness is avoidance of commitment, predict that fresh obligations will appear exactly when a real conversation is scheduled — and watch. The weak move is the lazy diagnosis that risks nothing. The strong move fits the evidence in front of you **and** spells out the result that would refute it.
 
-## Attention decides what makes it through
+## The cost side of the ledger
 
-Even your best guess only covers a slice of what's there. We consciously perceive what we attend to, not everything that lands on the senses. That's why people counting basketball passes can miss a person in a gorilla suit walking through the scene, and why your own name can cut through a noisy party. Attention is the gatekeeper that decides which signals get built into the world you experience and which quietly drop out.
+Because defenses work, it's tempting to leave them alone. But the whole reason they matter clinically is the **cost**. Avoidance of rejection can cost someone the relationship they most want. Displacement can wreck the home life of someone who never confronts their boss. Repressed feelings tend to surface in the body — headaches, sleeplessness, panic at a stray cue. Reading a defense isn't about catching someone out; it's about seeing what the protection is costing them, so the warded-off feeling can eventually be faced more cheaply than the defense charges.
 
 ## In the real world
 
-Think about eyewitness testimony in a courtroom. We treat "I saw it with my own eyes" as the gold standard of evidence — but everything in this section warns us to be careful. A witness's memory of a face is a reconstruction shaped by expectation, the lighting they assumed, the attention they happened to pay, and suggestions made afterward ("Was the robber the tall one?"). The strongest, most testable conclusion isn't "eyewitnesses lie" or "we can never trust perception"; it's that perception is a constructive best guess, which means it can be confidently wrong — and that we can test how wrong by manipulating context, expectation, and attention and watching the report change. That is exactly what perception research does, and why understanding how the brain builds the world matters far beyond optical illusions.`,
+Suppose a friend who just got dumped announces he "never even liked her — total relief, honestly." The dodge is to take it at face value, or to throw up your hands and say feelings are too private to read. A sharper move commits to a reading: this sudden contempt for someone he was crazy about last week looks like rationalization softening a loss he can't admit. Notice how much that opens up. It predicts the disdain appeared only after she ended it, not before; that hurt or longing still leaks through when her name comes up; and that the contempt fades once the disappointment is actually felt. Three cheap checks, each able to refute the idea. That's the habit this course is built on — not labeling people, but committing to the strongest reading the evidence supports and naming the observation that could prove you wrong.`,
   homework: {
     mcq,
     hybrid,

@@ -1,9 +1,9 @@
 // ---------------------------------------------------------------------------
-// Content types for the Cognitive Science 101 curriculum.
+// Content types for the Psychodynamic Therapy 101 curriculum.
 //
 // This course grades reasoning on an INVERTED scale: it rewards drawing the
-// STRONGEST affirmative conclusion about how the mind works that a body of data
-// supports. Grading is therefore INVERTED relative to a normal test:
+// STRONGEST interpretation about the hidden dynamic beneath the clinical material
+// that a body of evidence supports. Grading is therefore INVERTED relative to a normal test:
 //   - The richest, most-falsifiable, most-committed model earns TOP credit.
 //   - The cautious "you can't really conclude that" dodge earns NEAR-ZERO.
 //   - Empty, florid elaborateness that binds no data scores LOW.

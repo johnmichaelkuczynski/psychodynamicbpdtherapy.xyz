@@ -1,410 +1,415 @@
-import type { SectionContent, HomeworkItem, McOption, WrittenRubric } from "./types";
+import type {
+  SectionContent,
+  HomeworkItem,
+  McOption,
+  WrittenRubric,
+} from "./types";
 
 const mcq: HomeworkItem[] = [
   {
     itemType: "mc",
     prompt:
-      "Researchers show two groups the same video of a car crash, then ask one group how fast the cars were going when they 'smashed' and the other when they 'hit.' The 'smashed' group gives higher speed estimates and, a week later, more of them falsely recall seeing broken glass. Which conclusion best follows?",
+      "A patient is calm and friendly until the therapist arrives two minutes late; then she becomes cold and accuses him of not caring whether she lives or dies. She mentions, in passing, that her mother often forgot to pick her up from school as a child. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Memory is too personal and complex to claim a single word changed what people recall.",
-        credit: 0,
+        text: "The patient seems upset that the therapist was late.",
+        credit: 0.3,
       },
       {
-        text: "The wording of the question likely got woven into the stored memory itself, reshaping it; test whether a neutral word like 'contacted' yields lower estimates and less false glass, whether the false-glass rate climbs the longer the delay before recall, and whether warning people beforehand that questions can mislead them shrinks the effect.",
-        credit: 1.0,
-      },
-      {
-        text: "The leading word probably distorts memory; we could rerun the study with more wording variations.",
+        text: "Her reaction is probably about her past somehow; we could ask more about her childhood.",
         credit: 0.6,
       },
       {
-        text: "The question's wording seems to affect what people remember.",
-        credit: 0.3,
+        text: "A two-minute delay can't really matter, so she must be inventing a grievance to manipulate the therapist into apologizing.",
+        credit: 0,
+      },
+      {
+        text: "The tiny lateness likely triggered an old template of being abandoned by an unreliable caregiver, so a trivial delay reads as proof of not being cared about; test whether the same outsized reaction appears with other people who keep her waiting, whether it traces to the school-pickup history, and whether it softens once she sees the therapist reliably returns and explains.",
+        credit: 1.0,
       },
     ],
     correctAnswer:
-      "The wording of the question likely got woven into the stored memory itself, reshaping it; test whether a neutral word like 'contacted' yields lower estimates and less false glass, whether the false-glass rate climbs the longer the delay before recall, and whether warning people beforehand that questions can mislead them shrinks the effect.",
+      "The tiny lateness likely triggered an old template of being abandoned by an unreliable caregiver, so a trivial delay reads as proof of not being cared about; test whether the same outsized reaction appears with other people who keep her waiting, whether it traces to the school-pickup history, and whether it softens once she sees the therapist reliably returns and explains.",
     explanation:
-      "Top credit names a mechanism — memory is reconstructed and later information edits the stored version — and lists three checkable tests; the 'too personal to say' option refuses to commit and opens no inquiry.",
+      "Top credit binds the size of the reaction to an old abandonment template and names three checks, including whether it fades with a reliable present figure; the 'inventing a grievance to manipulate' option is the cynical overreach the genuine childhood pattern defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "Students learn a list of 30 words. Tested an hour later, they have already forgotten most of them; but those they still know after a day they tend to keep for weeks. Which conclusion best follows?",
+      "A man has dated five different women over ten years. Each one started out warm but, he says, 'turned distant and unreachable.' He describes his mother the same way — physically present but emotionally far off. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Forgetting is likely fastest right after learning and then levels off as surviving memories consolidate into more durable storage; test whether a recall test at 20 minutes already shows the steep drop, whether items reviewed once during the first hour resist the early loss, and whether sleep before the one-day test flattens the curve further.",
-        credit: 1.0,
-      },
-      {
-        text: "People seem to forget a lot at first and then less later.",
-        credit: 0.3,
-      },
-      {
-        text: "Forgetting probably slows down over time; we could test more lists.",
+        text: "He keeps picking distant women; we could look at his dating history more closely.",
         credit: 0.6,
       },
       {
-        text: "Memory loss is too unpredictable to describe with any pattern.",
+        text: "He has just had bad luck with cold partners five times in a row.",
         credit: 0,
+      },
+      {
+        text: "He likely carries a template from an emotionally distant mother and is drawn to partners who fit it — or draws distance out of them — so the same ending repeats; test whether he overlooks available warm women, whether he withdraws first and reads their response as coldness, and whether the pattern matches how he describes his mother.",
+        credit: 1.0,
+      },
+      {
+        text: "His relationships seem to keep ending the same way.",
+        credit: 0.3,
       },
     ],
     correctAnswer:
-      "Forgetting is likely fastest right after learning and then levels off as surviving memories consolidate into more durable storage; test whether a recall test at 20 minutes already shows the steep drop, whether items reviewed once during the first hour resist the early loss, and whether sleep before the one-day test flattens the curve further.",
+      "He likely carries a template from an emotionally distant mother and is drawn to partners who fit it — or draws distance out of them — so the same ending repeats; test whether he overlooks available warm women, whether he withdraws first and reads their response as coldness, and whether the pattern matches how he describes his mother.",
     explanation:
-      "The strongest answer commits to a forgetting-curve mechanism with three checkable predictions; 'too unpredictable to describe' names no pattern and so cannot be tested.",
+      "Full credit reads a repeated relational template behind the identical endings and names three tests; 'just bad luck five times' is the dodge the systematic repetition defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "Two classes study the same material. One crams it all in a single three-hour session; the other spreads the same three hours over six days. On a test two weeks later, the spaced class scores far higher. Which conclusion best follows?",
+      "A new client meets a therapist who is plainly warm and encouraging, yet within minutes she is braced and guarded, certain he is 'building me up so he can tear me down later.' Her father praised her in public and ridiculed her in private. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Study habits are too individual to credit the schedule for the difference.",
+        text: "The mind is too private to know why a stranger would distrust kindness, so no conclusion is safe.",
         credit: 0,
       },
       {
-        text: "Spacing seems to help people remember longer.",
+        text: "She seems suspicious of the therapist's warmth.",
         credit: 0.3,
       },
       {
-        text: "Spreading practice probably forces the brain to reload and re-strengthen the memory each session, building sturdier storage than one massed dose; test whether the spaced group beats the crammers only on the delayed test and not on a same-day quiz, whether adding more gaps widens the advantage, and whether crammers who get one extra review a week later catch up.",
+        text: "She is likely replaying a template in which warmth is the setup for humiliation, learned from a father who praised then ridiculed her, so present kindness reads as a coming attack; test whether she shows the same suspicion toward other warm people, whether the dread tracks her father's two-faced pattern, and whether it eases as the therapist stays consistently kind over time.",
         credit: 1.0,
       },
       {
-        text: "Spacing probably beats cramming; we could compare more class schedules.",
+        text: "Her distrust probably comes from her past; we could explore her father more.",
         credit: 0.6,
       },
     ],
     correctAnswer:
-      "Spreading practice probably forces the brain to reload and re-strengthen the memory each session, building sturdier storage than one massed dose; test whether the spaced group beats the crammers only on the delayed test and not on a same-day quiz, whether adding more gaps widens the advantage, and whether crammers who get one extra review a week later catch up.",
+      "She is likely replaying a template in which warmth is the setup for humiliation, learned from a father who praised then ridiculed her, so present kindness reads as a coming attack; test whether she shows the same suspicion toward other warm people, whether the dread tracks her father's two-faced pattern, and whether it eases as the therapist stays consistently kind over time.",
     explanation:
-      "Top credit names the spacing mechanism and three tests, including one that pins when the advantage appears; 'too individual to credit the schedule' commits to nothing.",
+      "Top credit names the specific warmth-equals-trap template and three checks including consistency over time; 'too private to know' is the refusal the clear father history and present reaction defeat.",
   },
   {
     itemType: "mc",
     prompt:
-      "People study a list of words all related to sleep — bed, rest, tired, dream, night — but the word 'sleep' itself never appears. Minutes later, most confidently 'remember' having seen 'sleep' on the list. Which conclusion best follows?",
+      "A woman has been fired or has quit four jobs after explosive fights with her supervisor. In each case the trigger was the boss 'telling me what to do.' She grew up with a father who controlled every detail of her life. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "People seem to misremember the related word.",
-        credit: 0.3,
-      },
-      {
-        text: "Recall probably reactivates the gist or theme of a list, and the brain fills in the strongly associated word as if it had been seen; test whether lists with weaker associations produce fewer false memories, whether the false 'sleep' is recalled as confidently as real list words, and whether warning people about the trap before study lowers the error.",
-        credit: 1.0,
-      },
-      {
-        text: "The mind is too mysterious to explain why a word no one saw feels remembered.",
+        text: "All four of her bosses happened to be genuinely controlling tyrants.",
         credit: 0,
       },
       {
-        text: "Related words probably cause false memories; we could try other word lists.",
+        text: "She likely brings a template from a controlling father into every authority relationship, so ordinary direction feels like domination and provokes a fight; test whether the clashes erupt even with mild, reasonable supervisors, whether the intensity matches her history with her father, and whether she reacts far less to instructions from peers than from anyone in charge.",
+        credit: 1.0,
+      },
+      {
+        text: "She keeps clashing with bosses; we could review what happened at each job.",
         credit: 0.6,
+      },
+      {
+        text: "She seems to have trouble with authority.",
+        credit: 0.3,
       },
     ],
     correctAnswer:
-      "Recall probably reactivates the gist or theme of a list, and the brain fills in the strongly associated word as if it had been seen; test whether lists with weaker associations produce fewer false memories, whether the false 'sleep' is recalled as confidently as real list words, and whether warning people about the trap before study lowers the error.",
+      "She likely brings a template from a controlling father into every authority relationship, so ordinary direction feels like domination and provokes a fight; test whether the clashes erupt even with mild, reasonable supervisors, whether the intensity matches her history with her father, and whether she reacts far less to instructions from peers than from anyone in charge.",
     explanation:
-      "The richest answer names a gist-and-association mechanism for false memory and three tests; 'too mysterious to explain' refuses to lead and earns zero.",
+      "Full credit ties the repeating authority conflict to a controlling-father template and names three tests, including the peer-versus-boss contrast; 'all four were genuine tyrants' is the overreach the cross-situational repetition defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "After a staged robbery in a classroom, an eyewitness picks a suspect from a lineup and says she is '100% certain.' She turns out to be wrong; the real culprit wasn't in the lineup. Which conclusion best follows?",
+      "Whenever a patient talks about a success, he suddenly becomes charming and faintly flirtatious with his therapist, as if performing for her approval. He recalls that his father only paid attention to him when he won awards. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Eyewitness behavior is too variable to draw any lesson from one case.",
-        credit: 0,
+        text: "He probably wants approval; we could note when the charm shows up.",
+        credit: 0.6,
       },
       {
-        text: "High confidence probably reflects how familiar a face feels after staring at a lineup, not how accurate the memory is, so certainty and correctness can come apart; test whether confidence and accuracy line up better right after the event than after a delay, whether telling witnesses 'the culprit may not be present' cuts false picks, and whether a sequential lineup lowers confident errors.",
-        credit: 1.0,
-      },
-      {
-        text: "Confidence doesn't always mean accuracy.",
+        text: "He seems to get a bit flirtatious during sessions.",
         credit: 0.3,
       },
       {
-        text: "Confidence probably isn't a good guide to accuracy; we could study more lineups.",
-        credit: 0.6,
+        text: "He likely replays a template in which love must be earned by performing, learned from a father who only noticed his wins, so reporting a success automatically switches him into approval-seeking display; test whether the charm appears specifically after achievements rather than at random, whether it tracks his account of his father, and whether it fades when the therapist values him for ordinary disclosures too.",
+        credit: 1.0,
+      },
+      {
+        text: "His charm clearly means he is romantically attracted to the therapist and is trying to start a relationship with her.",
+        credit: 0,
       },
     ],
     correctAnswer:
-      "High confidence probably reflects how familiar a face feels after staring at a lineup, not how accurate the memory is, so certainty and correctness can come apart; test whether confidence and accuracy line up better right after the event than after a delay, whether telling witnesses 'the culprit may not be present' cuts false picks, and whether a sequential lineup lowers confident errors.",
+      "He likely replays a template in which love must be earned by performing, learned from a father who only noticed his wins, so reporting a success automatically switches him into approval-seeking display; test whether the charm appears specifically after achievements rather than at random, whether it tracks his account of his father, and whether it fades when the therapist values him for ordinary disclosures too.",
     explanation:
-      "Top credit separates confidence from accuracy with a familiarity mechanism and three checkable fixes; 'too variable to draw any lesson' opens no path.",
+      "Top credit reads a love-must-be-earned template behind the achievement-triggered display and names three checks; the literal 'he's romantically attracted and trying to date her' is the overreach the achievement-specific timing defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "The morning after a dramatic national news event, people write down exactly how they heard about it. Three years later they describe the same moment with vivid certainty — but compared to their own notes, many details have quietly changed. Which conclusion best follows?",
+      "A patient grows tense whenever the therapist quietly writes a note, convinced she is 'marking down everything wrong with me.' His mother kept a running mental ledger of his faults and recited them during arguments. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Vivid memories seem to change over time.",
-        credit: 0.3,
-      },
-      {
-        text: "Memory is too unreliable to bother studying these 'flashbulb' moments.",
+        text: "Note-taking is genuinely hostile, so he is right that the therapist is collecting evidence against him.",
         credit: 0,
       },
       {
-        text: "A feeling of vividness probably comes from emotional intensity and frequent retelling, not from the memory being accurate, so each retelling can rewrite details while confidence stays high; test whether people who retold the story most often show the most drift, whether confidence rises even as detail accuracy falls, and whether comparing to the original note surprises them.",
+        text: "He seems uneasy when the therapist takes notes.",
+        credit: 0.3,
+      },
+      {
+        text: "The neutral note-taking likely activates a template of a fault-cataloguing parent, so an ordinary clinical act reads as evidence-gathering against him; test whether he reacts the same way to other people who write near him, whether the unease matches his account of his mother's ledger, and whether it eases when the therapist shows him the notes are mundane and routine.",
         credit: 1.0,
       },
       {
-        text: "Strong memories probably drift; we could collect more accounts over time.",
+        text: "His unease about the notes probably ties to his past; we could ask about his mother.",
         credit: 0.6,
       },
     ],
     correctAnswer:
-      "A feeling of vividness probably comes from emotional intensity and frequent retelling, not from the memory being accurate, so each retelling can rewrite details while confidence stays high; test whether people who retold the story most often show the most drift, whether confidence rises even as detail accuracy falls, and whether comparing to the original note surprises them.",
+      "The neutral note-taking likely activates a template of a fault-cataloguing parent, so an ordinary clinical act reads as evidence-gathering against him; test whether he reacts the same way to other people who write near him, whether the unease matches his account of his mother's ledger, and whether it eases when the therapist shows him the notes are mundane and routine.",
     explanation:
-      "The productive answer pins vividness to emotion and retelling rather than accuracy and names three tests; 'too unreliable to bother studying' is the barren dodge.",
+      "Full credit binds the disproportionate reaction to a fault-ledger template and names three disconfirming checks; 'the note-taking is genuinely hostile' is the overreach a neutral clinical act defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "Witnesses to a staged accident are later asked, by chance of phrasing, either 'Did you see the broken headlight?' or 'Did you see a broken headlight?' — though there was none. Those asked about 'the' headlight are far more likely to later report seeing one. Which conclusion best follows?",
+      "After eight steady months, the therapist takes a planned two-week vacation. On her return the patient is icy and says, 'I knew you'd leave like everyone does.' His father walked out when he was seven and never came back. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The word 'the' probably plants a presupposition that something existed, and the brain later integrates that suggested detail into the memory as if witnessed; test whether 'a' phrasing produces fewer false reports, whether the false detail grows more confident with delay, and whether asking immediately versus a week later changes how much sticks.",
+        text: "People come and go, so there is nothing to interpret about his coldness.",
+        credit: 0,
+      },
+      {
+        text: "A brief, announced absence likely reactivated a template of permanent abandonment laid down when his father left, so a two-week break feels like being walked out on again; test whether other ordinary separations trigger the same dread, whether the reaction matches his father's disappearance, and whether his trust rebuilds once the therapist predictably returns.",
         credit: 1.0,
       },
       {
-        text: "Witnesses seem influenced by the question's wording.",
-        credit: 0.3,
-      },
-      {
-        text: "Phrasing probably shapes what people report; we could test more question forms.",
+        text: "The break probably stirred up old feelings; we could talk about his father leaving.",
         credit: 0.6,
       },
       {
-        text: "There are too many reasons people misreport details to blame one small word.",
-        credit: 0,
+        text: "He seems hurt that the therapist went away.",
+        credit: 0.3,
       },
     ],
     correctAnswer:
-      "The word 'the' probably plants a presupposition that something existed, and the brain later integrates that suggested detail into the memory as if witnessed; test whether 'a' phrasing produces fewer false reports, whether the false detail grows more confident with delay, and whether asking immediately versus a week later changes how much sticks.",
+      "A brief, announced absence likely reactivated a template of permanent abandonment laid down when his father left, so a two-week break feels like being walked out on again; test whether other ordinary separations trigger the same dread, whether the reaction matches his father's disappearance, and whether his trust rebuilds once the therapist predictably returns.",
     explanation:
-      "Top credit names the misinformation mechanism — a suggested detail merging into memory — and three tests; 'too many reasons to blame one word' refuses to commit and earns zero.",
+      "Top credit links the icy reaction to a permanent-abandonment template and names three checks, including whether trust rebuilds with a reliable return; 'people come and go, nothing to interpret' is the refusal the matching father history defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "Two groups read the same chapter. One group rereads it twice; the other reads it once and then takes a practice quiz. The quiz group remembers far more on a test a week later, even though they spent less time looking at the chapter. Which conclusion best follows?",
+      "A woman is sure every partner will cheat on her, checking phones and reading suspicion into innocent texts, though none has ever been unfaithful. Her first serious boyfriend, years ago, betrayed her badly. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Quizzing seems to help memory more than rereading.",
+        text: "She seems worried about being cheated on.",
         credit: 0.3,
       },
       {
-        text: "Study results are too noisy to say testing beats rereading.",
-        credit: 0,
-      },
-      {
-        text: "Practice quizzes probably help; we could compare more study methods.",
+        text: "Her suspicion probably comes from being cheated on before; we could discuss that relationship.",
         credit: 0.6,
       },
       {
-        text: "Actively retrieving a memory probably strengthens the path back to it more than passively reviewing does, so the effort of recall is the active ingredient; test whether harder quizzes (that still allow success) help more than easy ones, whether the rereaders catch up if given a single quiz, and whether the testing advantage is largest on the delayed test, not a same-day one.",
+        text: "She likely carries a betrayal template from the early infidelity and applies it to faithful partners, so neutral signals get read as proof of cheating; test whether the suspicion fires even with partners who are demonstrably reliable, whether its intensity matches the original betrayal, and whether it eases as a partner stays consistently faithful over time.",
         credit: 1.0,
+      },
+      {
+        text: "Her current partner is probably hiding an affair, since her instincts were right the first time.",
+        credit: 0,
       },
     ],
     correctAnswer:
-      "Actively retrieving a memory probably strengthens the path back to it more than passively reviewing does, so the effort of recall is the active ingredient; test whether harder quizzes (that still allow success) help more than easy ones, whether the rereaders catch up if given a single quiz, and whether the testing advantage is largest on the delayed test, not a same-day one.",
+      "She likely carries a betrayal template from the early infidelity and applies it to faithful partners, so neutral signals get read as proof of cheating; test whether the suspicion fires even with partners who are demonstrably reliable, whether its intensity matches the original betrayal, and whether it eases as a partner stays consistently faithful over time.",
     explanation:
-      "The strongest answer names the testing/retrieval-practice mechanism and three tests, including one isolating the effortful-recall ingredient; 'too noisy to say' is the empty refusal.",
+      "Full credit names a betrayal template imported onto faithful partners and three tests; 'her current partner must be cheating' is the overreach the absence of any present evidence defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "Scuba divers learn a list of words either on the beach or underwater, then try to recall them in the same or the opposite setting. They remember more when tested in the place they learned. Which conclusion best follows?",
+      "In session a usually articulate man goes quiet and deferential, waiting to be told what to discuss and apologizing for 'doing it wrong.' He describes a father who mocked any opinion he offered. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Memory is too situation-dependent to draw a usable rule from divers.",
+        text: "It is impossible to know why anyone falls silent, so we should not speculate.",
         credit: 0,
       },
       {
-        text: "The surroundings at learning probably get encoded alongside the words and later act as retrieval cues, so matching the context revives the memory; test whether mentally imagining the original setting helps even when physically elsewhere, whether the effect shrinks for very well-learned items, and whether the boost tracks how distinctive the two settings are.",
-        credit: 1.0,
+        text: "He seems to clam up in session.",
+        credit: 0.3,
       },
       {
-        text: "Place probably affects recall; we could test more learning environments.",
+        text: "His silence probably relates to his father; we could ask more about that.",
         credit: 0.6,
       },
       {
-        text: "People seem to recall better in the place they learned.",
-        credit: 0.3,
+        text: "He likely replays a template from a mocking father in which voicing an opinion invites ridicule, so he defers and waits to be directed rather than risk being wrong; test whether the same submissiveness appears with other authority figures, whether it matches how he describes his father, and whether it loosens as the therapist consistently welcomes his views without mockery.",
+        credit: 1.0,
       },
     ],
     correctAnswer:
-      "The surroundings at learning probably get encoded alongside the words and later act as retrieval cues, so matching the context revives the memory; test whether mentally imagining the original setting helps even when physically elsewhere, whether the effect shrinks for very well-learned items, and whether the boost tracks how distinctive the two settings are.",
+      "He likely replays a template from a mocking father in which voicing an opinion invites ridicule, so he defers and waits to be directed rather than risk being wrong; test whether the same submissiveness appears with other authority figures, whether it matches how he describes his father, and whether it loosens as the therapist consistently welcomes his views without mockery.",
     explanation:
-      "Top credit names context-dependent retrieval cues and three checkable tests, including an imagination control; 'too situation-dependent' opens no inquiry.",
+      "Top credit reads a ridicule-avoidance template behind the deference and names three checks; 'impossible to know, don't speculate' is the dodge the clear father history and in-session pattern defeat.",
   },
   {
     itemType: "mc",
     prompt:
-      "An adult is told by relatives, repeatedly and with detail, about a time he was 'lost in a shopping mall as a toddler.' It never happened. After several retellings he begins describing the event vividly, adding details no one gave him. Which conclusion best follows?",
+      "Near the end of nearly every session, a patient abruptly starts an argument or storms out a minute early. She grew up with a mother who would coldly end conversations the moment she was done, leaving the patient mid-sentence. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Memory is too murky to say where a vivid 'memory' of a non-event comes from.",
+        text: "She probably dislikes endings; we could watch how sessions wrap up.",
+        credit: 0.6,
+      },
+      {
+        text: "She just gets argumentative sometimes; people have moods, so it means nothing.",
         credit: 0,
       },
       {
-        text: "He seems to have picked up a memory that wasn't real.",
+        text: "She seems to act out when sessions are ending.",
         credit: 0.3,
       },
       {
-        text: "Repeated suggestion plus imagining the scene probably builds a memory that feels as real as a true one, because the brain doesn't tag where a vivid image came from; test whether more imagining sessions deepen the false memory, whether it gains sensory details with each retelling, and whether plausible suggested events are adopted more readily than wildly implausible ones.",
+        text: "She likely replays a template of being abruptly dismissed by a cold mother, and by leaving first she controls the ending instead of being left mid-sentence again; test whether the pre-ending flare-ups track the clock rather than the topic, whether the pattern matches her mother's abrupt cutoffs, and whether it eases when endings are made gradual and predictable.",
         credit: 1.0,
-      },
-      {
-        text: "Suggestion probably implanted the memory; we could try this with other events.",
-        credit: 0.6,
       },
     ],
     correctAnswer:
-      "Repeated suggestion plus imagining the scene probably builds a memory that feels as real as a true one, because the brain doesn't tag where a vivid image came from; test whether more imagining sessions deepen the false memory, whether it gains sensory details with each retelling, and whether plausible suggested events are adopted more readily than wildly implausible ones.",
+      "She likely replays a template of being abruptly dismissed by a cold mother, and by leaving first she controls the ending instead of being left mid-sentence again; test whether the pre-ending flare-ups track the clock rather than the topic, whether the pattern matches her mother's abrupt cutoffs, and whether it eases when endings are made gradual and predictable.",
     explanation:
-      "The richest answer names a source-monitoring failure behind implanted memories with three tests; 'too murky to say' refuses to lead.",
+      "Full credit explains the leaving-first behavior as a controlled re-enactment of being dismissed and names three checks, including timing-versus-topic; 'people have moods, it means nothing' is the refusal the clock-locked pattern defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "Shown a real chessboard from an actual game for five seconds, chess masters can rebuild it almost perfectly, far better than beginners. But when the same pieces are scattered randomly, the masters do no better than beginners. Which conclusion best follows?",
+      "A patient is relaxed with his female therapist but, when he meets a male colleague of hers, reads the man's neutral, even-toned questions as cold and threatening. His mother was gentle; his father was harsh and intimidating. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Experts probably store positions as a few meaningful 'chunks' (familiar patterns) rather than many separate pieces, so memory capacity rides on knowledge, not raw slots; test whether masters' advantage returns only for legal, game-like positions, whether their recall errors preserve sensible groupings, and whether beginners trained on common patterns start chunking too.",
-        credit: 1.0,
-      },
-      {
-        text: "Masters seem to remember real boards better.",
-        credit: 0.3,
-      },
-      {
-        text: "Expertise is too broad a thing to explain this memory gap.",
+        text: "The male colleague is probably actually intimidating, which is why the patient feels threatened.",
         credit: 0,
       },
       {
-        text: "Experience probably helps memory; we could test players of more skill levels.",
+        text: "He seems more comfortable with women than men.",
+        credit: 0.3,
+      },
+      {
+        text: "His reaction to men likely comes from his father; we could explore that relationship.",
         credit: 0.6,
+      },
+      {
+        text: "He likely brings a harsh-father template to men specifically, so the same neutral manner feels safe from a woman but menacing from a man; test whether other neutral men trigger the same threat reading, whether the reaction matches his account of his father, and whether identical questions feel benign when posed by a woman.",
+        credit: 1.0,
       },
     ],
     correctAnswer:
-      "Experts probably store positions as a few meaningful 'chunks' (familiar patterns) rather than many separate pieces, so memory capacity rides on knowledge, not raw slots; test whether masters' advantage returns only for legal, game-like positions, whether their recall errors preserve sensible groupings, and whether beginners trained on common patterns start chunking too.",
+      "He likely brings a harsh-father template to men specifically, so the same neutral manner feels safe from a woman but menacing from a man; test whether other neutral men trigger the same threat reading, whether the reaction matches his account of his father, and whether identical questions feel benign when posed by a woman.",
     explanation:
-      "Top credit names chunking as the mechanism — why the random board erases the edge — and three tests; 'too broad a thing to explain' commits to nothing.",
+      "Top credit reads a gender-specific harsh-father template from the split reaction and names three checks, including the same-question-different-sex contrast; 'the colleague is genuinely intimidating' is the overreach the neutral, even tone defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A man is sure he knows the name of an actor — it's 'on the tip of his tongue.' He knows the first letter and the number of syllables and can reject wrong guesses instantly, yet can't produce the name for an hour. Which conclusion best follows?",
+      "Whenever the therapist falls silent to let the patient think, the patient concludes she is 'bored and disappointed in me' and rushes to fill the gap. His mother had severe depression and would go silent and withdrawn for days, which he learned to read as his fault. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Forgetting a name is too ordinary to learn anything from.",
+        text: "Silence is genuinely a sign of disapproval, so he correctly senses the therapist is disappointed.",
         credit: 0,
       },
       {
-        text: "He seems to almost remember the name.",
-        credit: 0.3,
-      },
-      {
-        text: "This is probably a tip-of-the-tongue state; we could collect more examples.",
+        text: "His reading of silence probably ties to his mother; we could talk about her depression.",
         credit: 0.6,
       },
       {
-        text: "A memory's meaning and its sound are probably stored and retrieved partly separately, so he can access the concept and partial sound while the full word stays blocked; test whether giving the first syllable unlocks it, whether similar-sounding 'blockers' keep popping up, and whether the name surfaces later unbidden once the block fades.",
+        text: "He seems anxious during pauses.",
+        credit: 0.3,
+      },
+      {
+        text: "He likely replays a template from a withdrawn, depressed mother in which silence meant he had caused her unhappiness, so an ordinary pause reads as disappointment in him; test whether he reads other people's silences the same way, whether the reaction matches his mother's withdrawals, and whether it eases once the therapist names the silence as neutral thinking time.",
         credit: 1.0,
       },
     ],
     correctAnswer:
-      "A memory's meaning and its sound are probably stored and retrieved partly separately, so he can access the concept and partial sound while the full word stays blocked; test whether giving the first syllable unlocks it, whether similar-sounding 'blockers' keep popping up, and whether the name surfaces later unbidden once the block fades.",
+      "He likely replays a template from a withdrawn, depressed mother in which silence meant he had caused her unhappiness, so an ordinary pause reads as disappointment in him; test whether he reads other people's silences the same way, whether the reaction matches his mother's withdrawals, and whether it eases once the therapist names the silence as neutral thinking time.",
     explanation:
-      "The productive answer separates meaning from sound to explain the partial access and names three tests; 'too ordinary to learn anything' is the unfruitful dodge.",
+      "Full credit ties the misread silence to a depressed-mother template and names three checks; 'silence genuinely signals disapproval' is the overreach a neutral thinking pause defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "People learn a list while feeling cheerful. Later, those put back into a cheerful mood recall more of the list than those tested while feeling down; the reverse holds for words learned in a low mood. Which conclusion best follows?",
+      "When the therapist asks a simple clarifying question — 'What did you mean by that?' — the patient bristles and snaps, 'Why are you interrogating me?' He grew up with a suspicious parent who cross-examined his every move as if he were guilty. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Mood and memory are too tangled to claim one helps recall the other.",
-        credit: 0,
-      },
-      {
-        text: "A person's inner state at learning probably becomes part of the memory's retrieval cues, so matching the mood at recall reopens the file; test whether the boost shrinks for highly memorable items, whether deliberately recreating the learning mood helps when it returns, and whether the effect is larger for emotionally charged words.",
-        credit: 1.0,
-      },
-      {
-        text: "Mood seems to affect what people remember.",
+        text: "He seems defensive when asked questions.",
         credit: 0.3,
       },
       {
-        text: "Matching moods probably aids recall; we could test more mood pairs.",
+        text: "His defensiveness probably comes from his past; we could ask about his upbringing.",
         credit: 0.6,
+      },
+      {
+        text: "Questions are inherently accusatory, so he is right to feel interrogated.",
+        credit: 0,
+      },
+      {
+        text: "He likely replays a template from an accusing parent in which any question presumed guilt, so a neutral clarifying question reads as interrogation; test whether he reacts the same way to innocent questions from others, whether the reaction matches his account of the suspicious parent, and whether it eases as the therapist's questions reliably turn out to be non-accusatory.",
+        credit: 1.0,
       },
     ],
     correctAnswer:
-      "A person's inner state at learning probably becomes part of the memory's retrieval cues, so matching the mood at recall reopens the file; test whether the boost shrinks for highly memorable items, whether deliberately recreating the learning mood helps when it returns, and whether the effect is larger for emotionally charged words.",
+      "He likely replays a template from an accusing parent in which any question presumed guilt, so a neutral clarifying question reads as interrogation; test whether he reacts the same way to innocent questions from others, whether the reaction matches his account of the suspicious parent, and whether it eases as the therapist's questions reliably turn out to be non-accusatory.",
     explanation:
-      "Top credit names state-dependent retrieval cues and three tests; 'too tangled to claim' opens no checkable line of inquiry.",
+      "Top credit reads an interrogation template behind the disproportionate snap and names three checks; 'questions are inherently accusatory' is the overreach a neutral clarifying question defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "Students who study new material and then sleep a full night remember more of it the next day than equally tired students who study and stay awake the same number of hours. Which conclusion best follows?",
+      "A patient who, as a child, cared for a chronically ill mother spends sessions worrying aloud about whether the therapist is tired, overworked, or upset, and tries to keep things easy for her. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Sleep and memory are too complicated to credit sleep for the difference.",
+        text: "He is just a thoughtful, considerate person, so there is nothing to understand here.",
         credit: 0,
       },
       {
-        text: "Sleep seems to help people keep what they learned.",
+        text: "He seems concerned about the therapist's wellbeing.",
         credit: 0.3,
       },
       {
-        text: "Sleep probably lets the brain replay and consolidate the day's new memories into more stable storage, rather than just preventing tiredness; test whether a short nap after study also helps, whether the benefit is biggest for material learned right before sleep, and whether disrupting deep sleep specifically wipes out the gain.",
-        credit: 1.0,
+        text: "His caretaking probably relates to nursing his mother; we could explore that role.",
+        credit: 0.6,
       },
       {
-        text: "Sleep probably aids memory; we could test more sleep schedules.",
-        credit: 0.6,
+        text: "He likely replays the caretaker role he held with an ill mother, casting the therapist as the fragile one he must protect rather than letting himself be cared for; test whether he takes the same caretaking role in his other relationships, whether it matches his history with his mother, and whether it eases when the therapist makes clear she is well and it is his hour.",
+        credit: 1.0,
       },
     ],
     correctAnswer:
-      "Sleep probably lets the brain replay and consolidate the day's new memories into more stable storage, rather than just preventing tiredness; test whether a short nap after study also helps, whether the benefit is biggest for material learned right before sleep, and whether disrupting deep sleep specifically wipes out the gain.",
+      "He likely replays the caretaker role he held with an ill mother, casting the therapist as the fragile one he must protect rather than letting himself be cared for; test whether he takes the same caretaking role in his other relationships, whether it matches his history with his mother, and whether it eases when the therapist makes clear she is well and it is his hour.",
     explanation:
-      "The strongest answer names sleep-based consolidation (and rules out mere tiredness) with three tests; 'too complicated to credit sleep' commits to no mechanism.",
+      "Full credit reads a caretaker-role template reversing who tends whom and names three checks; 'just a considerate person, nothing to understand' is the dodge the role-reversal pattern defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "People hear a list of 20 words read once and then immediately write down all they can. They reliably remember the first few words and the last few, but the middle of the list is a blur. Which conclusion best follows?",
+      "A patient idolizes her therapist for months, calling her 'the only person who has ever understood me,' then turns scornful the first time the therapist mishears a detail. She describes doing exactly this with a favorite teacher and a former best friend. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The first words probably got rehearsed into longer-term storage while the last words are still fresh in short-term memory, leaving the middle squeezed out of both; test whether a 30-second distraction before recall erases the last-word advantage but not the first, whether slowing the reading helps the middle, and whether the first-word edge survives a delay better than the last-word edge.",
-        credit: 1.0,
+        text: "She probably swings between idealizing and devaluing; we could track those shifts.",
+        credit: 0.6,
       },
       {
-        text: "People seem to remember the start and end of a list best.",
-        credit: 0.3,
-      },
-      {
-        text: "List position is too minor a factor to explain anything about memory.",
+        text: "The therapist clearly failed her, which is why the admiration collapsed.",
         credit: 0,
       },
       {
-        text: "Position probably matters for recall; we could test lists of other lengths.",
-        credit: 0.6,
+        text: "She seems to change her mind about people.",
+        credit: 0.3,
+      },
+      {
+        text: "She likely replays an all-or-nothing template in which a person is either perfect or worthless, so one small lapse flips idealization into contempt; test whether the same rise-and-crash appears across her other close relationships, whether the trigger is always a minor, ordinary failing, and whether the contempt softens when she can hold the therapist's good and flawed sides together.",
+        credit: 1.0,
       },
     ],
     correctAnswer:
-      "The first words probably got rehearsed into longer-term storage while the last words are still fresh in short-term memory, leaving the middle squeezed out of both; test whether a 30-second distraction before recall erases the last-word advantage but not the first, whether slowing the reading helps the middle, and whether the first-word edge survives a delay better than the last-word edge.",
+      "She likely replays an all-or-nothing template in which a person is either perfect or worthless, so one small lapse flips idealization into contempt; test whether the same rise-and-crash appears across her other close relationships, whether the trigger is always a minor, ordinary failing, and whether the contempt softens when she can hold the therapist's good and flawed sides together.",
     explanation:
-      "Top credit names two distinct memory stores behind the serial-position curve and gives a test that separates them; 'too minor a factor' refuses to lead.",
+      "Top credit names an all-or-nothing relational template behind the repeated idealize-then-crash cycle and three checks; 'the therapist clearly failed her' is the overreach the trivial trigger and identical history defeat.",
   },
 ];
 
@@ -412,425 +417,425 @@ const hybrid: HomeworkItem[] = [
   {
     itemType: "hybrid",
     prompt:
-      "A week after watching a video of a burglary, viewers read a short summary that mistakenly says the burglar wore gloves — he didn't. Tested later, many now confidently 'remember' the gloves, and they can't tell the suggested detail from the ones they actually saw. Which conclusion best follows?",
+      "A patient reports the same story about his boss, his landlord, his last two partners, and now, hesitantly, about the therapist: each one, he says, 'starts out fine and then tries to control me.' No one else describes these people as controlling. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Later misinformation probably gets blended into the original memory, and the brain loses track of which detail came from where (a source-monitoring failure); test whether warning viewers that the summary may contain errors cuts the false memory, whether a longer gap before the summary increases the blending, and whether viewers rate the false gloves as vividly as true details.",
-        credit: 1.0,
-      },
-      {
-        text: "Viewers seem to absorb the wrong detail.",
+        text: "He seems to feel controlled by a lot of people.",
         credit: 0.3,
       },
       {
-        text: "Memory is too easily muddled to say where the gloves came from.",
+        text: "He has simply been unlucky enough to surround himself with controlling people in every area of life.",
         credit: 0,
       },
       {
-        text: "The summary probably altered their memory; we could test more misleading summaries.",
+        text: "He likely carries a single relational template — 'closeness leads to being controlled' — and projects it onto each new figure including the therapist, so ordinary requests feel like domination; test whether the others are described as controlling by anyone but him, whether the pattern traces to a specific early controlling figure, and whether it surfaces with the therapist exactly as trust grows.",
+        credit: 1.0,
+      },
+      {
+        text: "He probably brings the same expectation to everyone; we could compare the relationships.",
         credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would most distinguish your 'misinformation blends into memory' lead from the rival 'viewers just trust the written summary over their own eyes,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'one imported template' lead from the rival 'he keeps genuinely choosing controlling people,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: after viewers report the gloves, ask them to label each detail as 'saw it in the video' or 'read it in the summary' — if misinformation truly blended in, they should misattribute the gloves to the video, not knowingly defer to the text. My lead is refuted if viewers correctly tag the gloves as coming from the summary, which would mean they are simply trusting the document rather than misremembering.",
+        "Cheapest test: check whether anyone besides the patient — coworkers, friends, the therapist's own behavior — would describe these figures as controlling, since an imported template predicts the control is in his reading, not in them. My lead is refuted if independent observers consistently confirm that these people really are domineering, which would point to repeated real choices rather than a projected template.",
       yieldAnchors: [
-        "The summary falsely states the burglar wore gloves",
-        "Many viewers later confidently recall the gloves",
-        "They cannot separate the suggested detail from what they saw",
+        "The same 'tries to control me' story repeats across boss, landlord, partners, and therapist",
+        "No one else describes these people as controlling",
+        "The feeling appears only after closeness develops",
       ],
       riskAnchors: [
-        "Warning viewers of possible errors cuts the false memory",
-        "A longer gap before the summary increases the blending",
-        "Viewers rate the false gloves as vividly as true details",
+        "Independent observers do not see the others as controlling",
+        "The pattern traces to a specific early controlling figure",
+        "It emerges with the therapist as trust grows",
       ],
       defeatedBy: [
-        "Viewers knowingly defer to the written summary over their own memory",
-        "The summary has no effect on what viewers report",
+        "Independent observers confirm all of them are genuinely controlling",
+        "The therapist is in fact behaving in a controlling way",
       ],
     },
     correctAnswer:
-      "Later misinformation probably gets blended into the original memory, and the brain loses track of which detail came from where (a source-monitoring failure); test whether warning viewers that the summary may contain errors cuts the false memory, whether a longer gap before the summary increases the blending, and whether viewers rate the false gloves as vividly as true details.",
+      "He likely carries a single relational template — 'closeness leads to being controlled' — and projects it onto each new figure including the therapist, so ordinary requests feel like domination; test whether the others are described as controlling by anyone but him, whether the pattern traces to a specific early controlling figure, and whether it surfaces with the therapist exactly as trust grows.",
     explanation:
-      "Full credit names the misinformation-and-source-monitoring mechanism with three checks and a cheap source-tagging test that states its own refutation; 'too easily muddled to say' opens nothing.",
+      "Full credit names one imported template behind the identical cross-relationship story and a cheap independent-observer test that states its own refutation; 'just unlucky with controlling people everywhere' is the dodge the universality of the pattern defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A tutor finds that students who close the book and try to recall a definition before checking it learn it far better than students who simply copy the definition out three times, even though copying takes longer. Which conclusion best follows?",
+      "The therapist has to cancel one session because of illness. The patient, generally composed, spirals for days, convinced the therapist 'finally got sick of me.' She was raised by a parent who used silence and withdrawal as punishment whenever she 'misbehaved.' Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Learning is too personal to credit the recall step for the difference.",
+        text: "Her distress probably has roots in her childhood; we could look into the withdrawal punishments.",
+        credit: 0.6,
+      },
+      {
+        text: "A single cancellation is no big deal, so she must be exaggerating for attention.",
         credit: 0,
       },
       {
-        text: "Struggling to retrieve a memory before checking probably strengthens it more than passive copying, because the effortful search reshapes the retrieval path; test whether students who guess and fail still benefit once corrected, whether the advantage grows on a delayed test, and whether making copying active (covering and reconstructing) erases the gap.",
-        credit: 1.0,
-      },
-      {
-        text: "Recalling first seems to beat copying.",
+        text: "She seems thrown by the cancellation.",
         credit: 0.3,
       },
       {
-        text: "Active recall probably helps; we could try it with more students.",
-        credit: 0.6,
+        text: "The cancellation likely activated a template in which a caregiver's absence is punishment for being bad, so a neutral, illness-driven cancellation reads as rejection she caused; test whether other unavoidable absences trigger the same self-blame, whether it matches the parent's withdrawal-as-punishment pattern, and whether it eases once she learns the reason was simple illness.",
+        credit: 1.0,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would most distinguish your 'effortful retrieval strengthens memory' lead from the rival 'recall students simply pay more attention,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'absence-as-punishment template' lead from the rival 'she is simply very sensitive to any disruption,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: have the copying group cover the text and reconstruct the definition from memory — making copying effortful too — and compare; if effortful retrieval is the active ingredient, the reconstruct group should catch up to the recall group. My lead is refuted if the reconstruct-from-memory group still lags behind plain recall, pointing to general attention rather than the act of retrieval.",
+        "Cheapest test: see whether a neutral disruption that carries no hint of rejection — say, the office building closing for repairs — provokes the same self-blame, since a punishment template should fire on perceived rejection, not on disruption itself. My lead is refuted if every schedule change, however impersonal, distresses her equally, which would point to general intolerance of disruption rather than a rejection template.",
       yieldAnchors: [
-        "Recall-first students learn definitions far better",
-        "Copying takes longer yet works worse",
-        "The comparison holds the material constant",
+        "One unavoidable cancellation triggers days of spiraling",
+        "She concludes the therapist 'got sick of me'",
+        "Her parent used withdrawal as punishment for misbehaving",
       ],
       riskAnchors: [
-        "Students who guess wrong still benefit once corrected",
-        "The advantage grows on a delayed test",
-        "Making copying active erases the gap",
+        "Other rejection-tinged absences trigger the same self-blame",
+        "Impersonal disruptions provoke far less reaction",
+        "The reaction eases once she learns the cause was illness",
       ],
       defeatedBy: [
-        "Recall students simply paid more attention overall",
-        "The retrieval step is unrelated to how well it sticks",
+        "Every impersonal schedule change distresses her equally",
+        "The cancellation was actually a deliberate brush-off",
       ],
     },
     correctAnswer:
-      "Struggling to retrieve a memory before checking probably strengthens it more than passive copying, because the effortful search reshapes the retrieval path; test whether students who guess and fail still benefit once corrected, whether the advantage grows on a delayed test, and whether making copying active (covering and reconstructing) erases the gap.",
+      "The cancellation likely activated a template in which a caregiver's absence is punishment for being bad, so a neutral, illness-driven cancellation reads as rejection she caused; test whether other unavoidable absences trigger the same self-blame, whether it matches the parent's withdrawal-as-punishment pattern, and whether it eases once she learns the reason was simple illness.",
     explanation:
-      "Full credit names effortful retrieval as the mechanism with three checks and a controlled test that names its refutation; 'too personal to credit' leads nowhere.",
+      "Top credit binds the spiral to an absence-as-punishment template and a cheap impersonal-disruption test that names its refutation; 'exaggerating for attention' is the cynical overreach the genuine punishment history defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "An interviewer talking to a child witness keeps asking, 'He touched you, didn't he?' Over repeated sessions the child, who first said no, begins to agree and adds details. Other children questioned with open prompts give shorter, more stable accounts. Which conclusion best follows?",
+      "When the therapist gently points out a contradiction, the patient experiences it as a 'brutal attack' and feels crushed for the rest of the session. The comment was mild and kindly worded. His mother criticized him so relentlessly that any feedback came to mean 'you are worthless.' Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Children's memories are too unstable to say the questions caused anything.",
-        credit: 0,
-      },
-      {
-        text: "Repeated leading questions probably implant suggested events into a child's account, especially as repetition makes the suggestion feel familiar and self-generated; test whether open-ended prompts yield fewer invented details, whether agreement rises with each repeated session, and whether the added details drift toward what the interviewer implied rather than new independent facts.",
-        credit: 1.0,
-      },
-      {
-        text: "Leading questions seem to change the child's story.",
+        text: "He seems hurt by the feedback.",
         credit: 0.3,
       },
       {
-        text: "The questioning probably shaped the account; we could interview more children.",
+        text: "Even gentle feedback is a form of attack, so his crushed reaction is appropriate.",
+        credit: 0,
+      },
+      {
+        text: "His sensitivity to feedback probably stems from his mother; we could explore her criticism.",
         credit: 0.6,
+      },
+      {
+        text: "A mild observation likely lands on a template from a relentlessly critical mother in which any feedback equals 'you are worthless,' so a kind comment is felt as a brutal attack; test whether neutral feedback from others lands the same way, whether the reaction matches his mother's relentless criticism, and whether it lessens as the therapist's gentle comments repeatedly prove non-destructive.",
+        credit: 1.0,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would most distinguish your 'leading questions implant the event' lead from the rival 'the child was reluctant at first but always remembered it,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'feedback-equals-worthlessness template' lead from the rival 'the comment really was harsher than it looked,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: interview matched children about the same situation using only open prompts and compare — if leading questions implant the event, the open-prompt children should rarely report the touch, while the led children increasingly do. My lead is refuted if open-prompt children report the event just as often, which would suggest a real memory the leading questions merely uncovered.",
+        "Cheapest test: review the exact wording with the patient, or have a neutral third party rate its harshness, since a template account predicts the devastation outruns anything in the actual words. My lead is refuted if the comment, examined plainly, really was cutting or contemptuous, which would make his reaction a fair response rather than a replayed template.",
       yieldAnchors: [
-        "The child first said no",
-        "Agreement and added detail grew over repeated leading sessions",
-        "Open-prompt children gave shorter, more stable accounts",
+        "A mild, kindly comment is experienced as a brutal attack",
+        "He feels crushed for the rest of the session",
+        "His mother's relentless criticism made feedback mean 'worthless'",
       ],
       riskAnchors: [
-        "Open-ended prompts yield fewer invented details",
-        "Agreement rises with each repeated session",
-        "Added details track the interviewer's implications, not new facts",
+        "Neutral feedback from others lands as an attack too",
+        "The reaction matches his mother's pattern of criticism",
+        "It lessens as gentle comments repeatedly prove harmless",
       ],
       defeatedBy: [
-        "The child always remembered the event and was merely reluctant",
-        "The interview style is unrelated to what the child reports",
+        "The comment, examined plainly, really was cutting",
+        "He reacts calmly to all other forms of feedback",
       ],
     },
     correctAnswer:
-      "Repeated leading questions probably implant suggested events into a child's account, especially as repetition makes the suggestion feel familiar and self-generated; test whether open-ended prompts yield fewer invented details, whether agreement rises with each repeated session, and whether the added details drift toward what the interviewer implied rather than new independent facts.",
+      "A mild observation likely lands on a template from a relentlessly critical mother in which any feedback equals 'you are worthless,' so a kind comment is felt as a brutal attack; test whether neutral feedback from others lands the same way, whether the reaction matches his mother's relentless criticism, and whether it lessens as the therapist's gentle comments repeatedly prove non-destructive.",
     explanation:
-      "Full credit commits to a suggestibility mechanism with three checks and an open-prompt comparison that names its refutation; 'too unstable to say' refuses to lead.",
+      "Full credit ties the crushed reaction to a feedback-equals-worthlessness template and a cheap word-rating test that names its refutation; 'even gentle feedback is an attack' is the overreach the mild wording defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A language learner who reviews a deck of flashcards once a day forgets fewer words than a classmate who reviews the same deck five times in one evening and then not again. Both spend the same total minutes. Which conclusion best follows?",
+      "A woman keeps choosing partners in crisis — addicts, the chronically unemployed, the deeply troubled — and pours herself into rescuing each one until she is exhausted and they leave. She grew up managing an alcoholic father's life. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Spacing the same study across days probably makes each review a fresh act of retrieval after partial forgetting, which strengthens storage more than back-to-back repetition; test whether stretching the gaps further (every two days) helps still more up to a point, whether the massed reviewer matches the spaced one if given one review the next week, and whether the spaced edge appears only on a delayed test.",
-        credit: 1.0,
+        text: "She just keeps meeting people who happen to need help.",
+        credit: 0,
       },
       {
-        text: "Daily review seems to beat one big session.",
+        text: "She seems to end up with troubled partners.",
         credit: 0.3,
       },
       {
-        text: "Spacing probably helps memory; we could try other review schedules.",
-        credit: 0.6,
+        text: "She likely replays a rescuer template formed with an alcoholic father, seeking partners who let her re-enact saving him, so being needed feels like love; test whether she overlooks stable partners who don't need rescuing, whether the role matches her history with her father, and whether she feels strangely empty or anxious when a relationship doesn't require saving anyone.",
+        credit: 1.0,
       },
       {
-        text: "Memory schedules are too individual to credit spacing for the difference.",
-        credit: 0,
+        text: "Her rescuing pattern probably ties to her father; we could look at those relationships.",
+        credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would most distinguish your 'spacing forces fresh retrieval' lead from the rival 'the daily reviewer is just more disciplined,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'rescuer template' lead from the rival 'she is simply a caring person drawn to help anyone,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: within the same learner, randomly assign half the cards to a spaced schedule and half to a massed schedule with total time held equal, so discipline can't differ between the two card sets — if spacing is the mechanism, the spaced cards should be retained better. My lead is refuted if spaced and massed cards are retained equally for that learner, pointing to overall discipline rather than the schedule.",
+        "Cheapest test: introduce or notice a stable, self-sufficient partner and watch her response, since a rescuer template predicts she will lose interest or feel uneasy when there is no one to save. My lead is refuted if she is equally drawn to and content with partners who need nothing fixed, which would point to general kindness rather than a specific re-enactment of rescuing her father.",
       yieldAnchors: [
-        "Daily review forgets fewer words",
-        "The massed reviewer crams five times in one evening",
-        "Both spend the same total minutes",
+        "She repeatedly chooses partners in crisis",
+        "She rescues them to the point of exhaustion",
+        "She grew up managing an alcoholic father",
       ],
       riskAnchors: [
-        "Stretching the gaps further helps up to a point",
-        "The massed reviewer catches up with one review next week",
-        "The spaced edge appears only on a delayed test",
+        "She overlooks stable partners who need no rescuing",
+        "The role matches her history with her father",
+        "She feels empty when no one needs saving",
       ],
       defeatedBy: [
-        "The daily reviewer is simply more disciplined overall",
-        "Review timing is unrelated to retention",
+        "She is equally drawn to and happy with self-sufficient partners",
+        "Her partners' crises are pure coincidence with no selection on her part",
       ],
     },
     correctAnswer:
-      "Spacing the same study across days probably makes each review a fresh act of retrieval after partial forgetting, which strengthens storage more than back-to-back repetition; test whether stretching the gaps further (every two days) helps still more up to a point, whether the massed reviewer matches the spaced one if given one review the next week, and whether the spaced edge appears only on a delayed test.",
+      "She likely replays a rescuer template formed with an alcoholic father, seeking partners who let her re-enact saving him, so being needed feels like love; test whether she overlooks stable partners who don't need rescuing, whether the role matches her history with her father, and whether she feels strangely empty or anxious when a relationship doesn't require saving anyone.",
     explanation:
-      "Full credit names the spacing-and-retrieval mechanism with three checks and a within-person randomized test that names its refutation; 'too individual to credit spacing' opens no inquiry.",
+      "Full credit names a rescuer template re-enacted from the father and a cheap stable-partner test that states its refutation; 'just keeps meeting people who need help' is the dodge the consistent selection defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A grocery shopper who repeats a five-item list in her head remembers all of it — until a cashier asks her a question, after which two items vanish. People given a longer 10-item list lose far more even without interruption. Which conclusion best follows?",
+      "Each time the therapist shows genuine warmth, the patient narrows his eyes and asks, 'What do you want from me?' His mother was affectionate only when she needed something, then turned cold once she got it. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Short-term memory probably holds only a few items by active rehearsal, so interruption stops the rehearsal and overload exceeds its limited capacity; test whether grouping the 10 items into named categories (chunking) restores recall, whether a silent count-back task wipes the list like the cashier did, and whether items rehearsed most recently survive the interruption best.",
-        credit: 1.0,
-      },
-      {
-        text: "Distraction seems to make people forget short lists.",
-        credit: 0.3,
-      },
-      {
-        text: "Interruptions probably hurt memory; we could test more list lengths.",
+        text: "His suspicion of warmth probably comes from his mother; we could explore that.",
         credit: 0.6,
       },
       {
-        text: "Everyday forgetting is too random to pin on rehearsal or capacity.",
+        text: "Warmth always hides an agenda, so he is right to suspect the therapist wants something.",
         credit: 0,
+      },
+      {
+        text: "He seems wary of kindness.",
+        credit: 0.3,
+      },
+      {
+        text: "He likely carries a template in which affection is always transactional, learned from a mother who was warm only to extract things, so present warmth automatically reads as a setup; test whether he distrusts warmth from everyone, whether the suspicion matches his mother's pattern, and whether it eases as the therapist's warmth repeatedly comes with no strings attached.",
+        credit: 1.0,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would most distinguish your 'limited-capacity rehearsal' lead from the rival 'the cashier's question simply made her stop caring about the list,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'affection-is-transactional template' lead from the rival 'he is just generally cynical about people,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: replace the cashier's question with a brief, meaningless count-back task (say '7, 6, 5...') that demands attention but no caring — if rehearsal is what holds the list, this should erase items just as the question did. My lead is refuted if the meaningless distraction leaves the list intact, suggesting motivation, not interrupted rehearsal, caused the loss.",
+        "Cheapest test: notice whether his suspicion spikes specifically at warmth and affection rather than at every interaction, since a transactional-affection template predicts kindness, not neutrality, is the trigger. My lead is refuted if he is equally distrustful of cold and warm behavior alike, which would point to broad cynicism rather than a template tied to affection.",
       yieldAnchors: [
-        "She holds five items by repeating them",
-        "Two items vanish after the cashier interrupts",
-        "A 10-item list is lost even without interruption",
+        "Warmth specifically triggers 'what do you want from me?'",
+        "His mother was affectionate only to extract things",
+        "She turned cold once she got what she wanted",
       ],
       riskAnchors: [
-        "Chunking the 10 items into categories restores recall",
-        "A silent count-back task wipes the list like the question did",
-        "The most recently rehearsed items survive interruption best",
+        "He distrusts warmth from many different people",
+        "The suspicion matches his mother's transactional pattern",
+        "It eases as warmth repeatedly comes with no strings",
       ],
       defeatedBy: [
-        "The cashier's question merely made her stop caring",
-        "List length and interruption are unrelated to forgetting",
+        "He is equally suspicious of cold and warm behavior alike",
+        "The therapist actually does want something from him",
       ],
     },
     correctAnswer:
-      "Short-term memory probably holds only a few items by active rehearsal, so interruption stops the rehearsal and overload exceeds its limited capacity; test whether grouping the 10 items into named categories (chunking) restores recall, whether a silent count-back task wipes the list like the cashier did, and whether items rehearsed most recently survive the interruption best.",
+      "He likely carries a template in which affection is always transactional, learned from a mother who was warm only to extract things, so present warmth automatically reads as a setup; test whether he distrusts warmth from everyone, whether the suspicion matches his mother's pattern, and whether it eases as the therapist's warmth repeatedly comes with no strings attached.",
     explanation:
-      "Full credit names limited-capacity rehearsal with three checks and a meaningless-distractor test that names its refutation; 'too random to pin' is the barren dodge.",
+      "Top credit names a transactional-affection template behind the wariness of warmth and a cheap trigger-specificity test that names its refutation; 'warmth always hides an agenda' is the overreach the therapist's no-strings warmth defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "An older man can describe in rich detail how to ride a bicycle and play a song on the piano, yet cannot recall having lunch an hour ago or the name of his new nurse. A brain injury affected his ability to form new everyday memories. Which conclusion best follows?",
+      "A patient turns every interpretation into a contest, rushing to top the therapist's observations with sharper ones and visibly pleased when he 'wins.' He grew up with a brilliant older brother against whom he was constantly measured. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Brains are too complex to conclude anything from one injured patient.",
-        credit: 0,
-      },
-      {
-        text: "He seems to remember skills but not recent events.",
+        text: "He seems competitive in session.",
         credit: 0.3,
       },
       {
-        text: "Memory probably splits into separate systems — one for skills and habits, another for conscious facts and events — that can be damaged independently; test whether he can learn a brand-new motor skill despite no memory of practicing it, whether his factual learning fails across all topics equally, and whether cueing a recent event ever revives it.",
+        text: "His competitiveness probably ties to his brother; we could discuss that rivalry.",
+        credit: 0.6,
+      },
+      {
+        text: "He likely replays a sibling-rivalry template formed against a favored brother, casting the therapist as a rival he must outdo to feel worthy; test whether the same one-upmanship appears with other figures he could compete with, whether it matches his history of being measured against his brother, and whether it eases when collaboration, not winning, is rewarded in session.",
         credit: 1.0,
       },
       {
-        text: "His memory probably works in parts; we could study more patients.",
-        credit: 0.6,
+        text: "He is simply more intelligent than the therapist, which is why he keeps winning the exchanges.",
+        credit: 0,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would most distinguish your 'separate memory systems' lead from the rival 'he only remembers old, well-practiced things and loses everything new,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'sibling-rivalry template' lead from the rival 'he is just a naturally competitive personality,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: teach him a brand-new motor skill, like a mirror-drawing task, over several days — if skill memory is a separate intact system, he should get faster at it even while swearing he's never done it before. My lead is refuted if he cannot improve at the new skill at all, which would mean he simply retains old material and cannot learn anything new of any kind.",
+        "Cheapest test: see whether the contest specifically targets a figure he can frame as a sibling-like rival rather than appearing evenly across all situations, since a rivalry template should fire in measured-against-a-peer contexts. My lead is refuted if he competes just as hard in settings with no one to be compared to, which would point to a general competitive trait rather than a replayed sibling dynamic.",
       yieldAnchors: [
-        "He retains old skills like cycling and piano",
-        "He cannot recall lunch an hour ago",
-        "He cannot learn his new nurse's name",
+        "He turns interpretations into contests to win",
+        "He is visibly pleased when he 'beats' the therapist",
+        "He was constantly measured against a brilliant brother",
       ],
       riskAnchors: [
-        "He learns a brand-new motor skill despite no memory of practicing",
-        "His factual learning fails across all topics equally",
-        "Cueing a recent event sometimes revives it",
+        "The one-upmanship appears with other rival-like figures",
+        "It matches his history of being measured against his brother",
+        "It eases when collaboration rather than winning is rewarded",
       ],
       defeatedBy: [
-        "He only keeps old, well-practiced material and loses all new learning",
-        "The injury erased one general memory ability, not separate systems",
+        "He competes equally hard where there is no one to be compared to",
+        "He genuinely outclasses the therapist on every point",
       ],
     },
     correctAnswer:
-      "Memory probably splits into separate systems — one for skills and habits, another for conscious facts and events — that can be damaged independently; test whether he can learn a brand-new motor skill despite no memory of practicing it, whether his factual learning fails across all topics equally, and whether cueing a recent event ever revives it.",
+      "He likely replays a sibling-rivalry template formed against a favored brother, casting the therapist as a rival he must outdo to feel worthy; test whether the same one-upmanship appears with other figures he could compete with, whether it matches his history of being measured against his brother, and whether it eases when collaboration, not winning, is rewarded in session.",
     explanation:
-      "Full credit names dissociable memory systems with three checks and a new-skill test that names its refutation; 'too complex to conclude anything' opens no path.",
+      "Full credit reads a sibling-rivalry template behind the contest and a cheap context-specificity test that names its refutation; 'he is simply smarter than the therapist' is the overreach the compulsive need to win defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A history teacher finds that students who summarize each chapter in their own words remember it months later, while students who highlight passages in bright yellow remember much less, despite feeling confident they 'knew it.' Which conclusion best follows?",
+      "A patient apologizes constantly in session — for talking too long, for 'wasting your time,' for 'being a burden' — though she pays for the hour and uses it normally. Her mother, depleted and overwhelmed, often sighed that the children were 'too much.' Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Summarizing probably forces deeper processing of meaning, which builds richer, better-connected memories than highlighting, which only marks text without engaging it; test whether highlighters who then explain each highlight catch up, whether the summarizers' advantage is largest on questions requiring understanding rather than verbatim recall, and whether highlighting's false confidence comes from fluent rereading.",
-        credit: 1.0,
+        text: "She really might be a burden, so the apologies make sense.",
+        credit: 0,
       },
       {
-        text: "Summarizing seems to work better than highlighting.",
-        credit: 0.3,
-      },
-      {
-        text: "Summarizing probably helps; we could compare more study methods.",
+        text: "Her apologizing probably relates to her mother; we could look at that history.",
         credit: 0.6,
       },
       {
-        text: "Study outcomes are too varied to credit the method for the difference.",
-        credit: 0,
+        text: "She seems to apologize a lot.",
+        credit: 0.3,
+      },
+      {
+        text: "She likely replays a template in which her needs overwhelm the caregiver, learned from a depleted mother, so simply using her own paid hour feels like being 'too much'; test whether she apologizes for taking up space in her other relationships, whether it matches her mother's 'too much' refrain, and whether it eases when the therapist makes clear the time is hers to use.",
+        credit: 1.0,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would most distinguish your 'deeper processing of meaning' lead from the rival 'summarizers simply spend more time on the material,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'I-am-a-burden template' lead from the rival 'she is just an unusually polite person,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: hold study time equal and have highlighters add one sentence explaining why each highlight matters — if depth of processing is the mechanism, equal-time explainers should approach the summarizers. My lead is refuted if equal-time highlighters who explain still lag far behind, pointing to total time rather than depth of engagement.",
+        "Cheapest test: notice whether the apologies cluster specifically around having needs and taking up space rather than appearing as all-purpose politeness, since a burden template should target need, not manners in general. My lead is refuted if she apologizes evenly for everything in a merely courteous way and shows no special distress about occupying her own time, which would point to politeness rather than a burden template.",
       yieldAnchors: [
-        "Summarizers remember the material months later",
-        "Highlighters remember much less",
-        "Highlighters feel confident they knew it",
+        "She apologizes for 'wasting your time' and 'being a burden'",
+        "She is using a normal, paid-for hour",
+        "Her mother called the children 'too much'",
       ],
       riskAnchors: [
-        "Highlighters who explain each highlight catch up",
-        "The summarizers' edge is largest on understanding questions",
-        "Highlighting's false confidence comes from fluent rereading",
+        "She apologizes for taking up space in other relationships",
+        "It matches her mother's 'too much' refrain",
+        "It eases when the time is framed as hers to use",
       ],
       defeatedBy: [
-        "Summarizers simply spent more time on the material",
-        "Study method is unrelated to long-term retention",
+        "She apologizes evenly for everything as plain courtesy",
+        "She shows no special distress about having needs",
       ],
     },
     correctAnswer:
-      "Summarizing probably forces deeper processing of meaning, which builds richer, better-connected memories than highlighting, which only marks text without engaging it; test whether highlighters who then explain each highlight catch up, whether the summarizers' advantage is largest on questions requiring understanding rather than verbatim recall, and whether highlighting's false confidence comes from fluent rereading.",
+      "She likely replays a template in which her needs overwhelm the caregiver, learned from a depleted mother, so simply using her own paid hour feels like being 'too much'; test whether she apologizes for taking up space in her other relationships, whether it matches her mother's 'too much' refrain, and whether it eases when the therapist makes clear the time is hers to use.",
     explanation:
-      "Full credit names depth-of-processing with three checks and an equal-time test that names its refutation; 'too varied to credit the method' commits to nothing.",
+      "Top credit binds the constant apologizing to an I-am-a-burden template and a cheap apology-specificity test that names its refutation; 'she really might be a burden' is the overreach the normal use of her own hour defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "People are asked to recall a story from a culture unlike their own. With each retelling, the story gets shorter and the unfamiliar parts quietly change into things that fit the teller's own customs, until it sounds like a story from their own world. Which conclusion best follows?",
+      "A man speaks of his father, his old mentor, and now the therapist with the same arc: first 'the wisest person I've ever met,' then, after one disappointment, 'a fraud who never cared.' Each fall followed a small, ordinary letdown. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Memory is too creative to say what guides how a story changes.",
-        credit: 0,
-      },
-      {
-        text: "People seem to reshape the story over time.",
+        text: "He seems to change his opinion of people over time.",
         credit: 0.3,
       },
       {
-        text: "Recall probably reconstructs a story by fitting it to the teller's existing mental frameworks (schemas), so unfamiliar details get replaced by familiar ones; test whether elements matching the teller's culture survive better than odd ones, whether the same drift happens across many tellers in the same direction, and whether giving the framework in advance reduces the distortion.",
-        credit: 1.0,
+        text: "Each of these mentors really did turn out to be a fraud once he got to know them.",
+        credit: 0,
       },
       {
-        text: "The story probably changes with retelling; we could test more stories.",
+        text: "His shifting view probably reflects something about his past; we could trace the relationships.",
         credit: 0.6,
+      },
+      {
+        text: "He likely replays an idealize-then-devalue template across mentor figures, in which a flawless guide must crash into a fraud the moment he disappoints, so an ordinary letdown triggers total reversal; test whether the same arc repeats with each new mentor, whether the trigger is always a minor failing, and whether he can, with help, hold a mentor's wisdom and limits together at once.",
+        credit: 1.0,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would most distinguish your 'schema-driven reconstruction' lead from the rival 'people just forget random bits each time,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'idealize-then-devalue template' lead from the rival 'his mentors genuinely keep failing him,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: check whether the changes are systematic — do the unfamiliar elements consistently morph toward the teller's own customs across many independent tellers? If schemas guide reconstruction, the drift should point in the same culturally-familiar direction, not scatter randomly. My lead is refuted if the lost and altered details vary randomly across tellers with no pull toward their own culture.",
+        "Cheapest test: examine the size of the triggering letdown each time, since a template account predicts a small, ordinary disappointment precedes a total collapse of regard. My lead is refuted if the falls consistently follow real, serious betrayals rather than minor failings, which would mean his mentors actually failed him rather than that he is replaying a template.",
       yieldAnchors: [
-        "The story shortens with each retelling",
-        "Unfamiliar parts change into familiar customs",
-        "It ends up sounding like the teller's own world",
+        "Father, mentor, and therapist all follow idealize-then-crash",
+        "Each fall followed a small, ordinary letdown",
+        "The reversal is total, from 'wisest' to 'fraud'",
       ],
       riskAnchors: [
-        "Culture-matching elements survive better than odd ones",
-        "The drift runs the same direction across many tellers",
-        "Giving the framework in advance reduces distortion",
+        "The arc repeats with each new mentor figure",
+        "The trigger is always a minor failing",
+        "He can, with help, hold wisdom and limits together",
       ],
       defeatedBy: [
-        "People just forget random bits with no systematic pull",
-        "Retelling is unrelated to how the story changes",
+        "The falls consistently follow real, serious betrayals",
+        "Each mentor is independently shown to be a fraud",
       ],
     },
     correctAnswer:
-      "Recall probably reconstructs a story by fitting it to the teller's existing mental frameworks (schemas), so unfamiliar details get replaced by familiar ones; test whether elements matching the teller's culture survive better than odd ones, whether the same drift happens across many tellers in the same direction, and whether giving the framework in advance reduces the distortion.",
+      "He likely replays an idealize-then-devalue template across mentor figures, in which a flawless guide must crash into a fraud the moment he disappoints, so an ordinary letdown triggers total reversal; test whether the same arc repeats with each new mentor, whether the trigger is always a minor failing, and whether he can, with help, hold a mentor's wisdom and limits together at once.",
     explanation:
-      "Full credit names schema-driven reconstruction with three checks and a systematic-direction test that names its refutation; 'too creative to say' refuses to lead.",
+      "Full credit names an idealize-then-devalue template across mentors and a cheap trigger-size test that states its refutation; 'each mentor really was a fraud' is the overreach the trivial, repeated triggers defeat.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A nurse can find any patient's room instantly after years on the ward, but a new nurse keeps getting lost. The veteran says she 'just knows,' yet on her first week in an unfamiliar hospital she gets lost as easily as a beginner. Which conclusion best follows?",
+      "A patient is lively and entertaining in session, cracking jokes and telling vivid stories, but goes flat and anxious the moment the therapist looks merely thoughtful rather than delighted. As a child he could only hold a distracted parent's attention by performing. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Her speed probably comes from a rich learned map built up through repeated experience, not from a general sense of direction, since it vanishes in an unfamiliar building; test whether her advantage returns only in layouts similar to her home ward, whether her recall errors preserve sensible ward groupings, and whether a beginner drilled on the same ward reaches her speed.",
-        credit: 1.0,
+        text: "He is just a naturally funny, outgoing person, so there is nothing to read into it.",
+        credit: 0,
       },
       {
-        text: "The veteran nurse seems to know her ward well.",
+        text: "He seems to like entertaining the therapist.",
         credit: 0.3,
       },
       {
-        text: "Experience probably builds her skill; we could test more nurses.",
+        text: "His performing probably ties to his parent's distraction; we could explore that.",
         credit: 0.6,
       },
       {
-        text: "Wayfinding is too individual to credit experience for her speed.",
-        credit: 0,
+        text: "He likely replays a template in which attention must be earned by performing, learned from a distracted parent, so a merely thoughtful face reads as losing the audience and triggers anxiety; test whether the performing intensifies whenever the therapist seems less engaged, whether it matches his history of entertaining for attention, and whether it eases as he finds the therapist stays attentive even when he is quiet.",
+        credit: 1.0,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would most distinguish your 'learned map from experience' lead from the rival 'she simply has a better natural sense of direction,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'attention-must-be-performed template' lead from the rival 'he simply enjoys being entertaining,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: compare her wayfinding to a beginner's in a brand-new, unfamiliar hospital where neither has experience — if her edge comes from a learned map, the two should perform alike on unfamiliar ground. My lead is refuted if she still outperforms beginners in the unfamiliar building, which would point to a general navigational talent rather than ward-specific learning.",
+        "Cheapest test: watch what happens when the therapist's attention is plainly steady but undelighted, since a performance template predicts a spike of anxiety and harder performing precisely when the 'audience' seems to cool. My lead is refuted if he stays relaxed and merely playful regardless of how engaged the therapist looks, which would point to genuine enjoyment rather than anxious attention-seeking.",
       yieldAnchors: [
-        "She finds rooms instantly after years on the ward",
-        "A new nurse keeps getting lost",
-        "She gets lost like a beginner in an unfamiliar hospital",
+        "He performs to keep the therapist entertained",
+        "He goes flat and anxious when she looks merely thoughtful",
+        "He could only hold a distracted parent's attention by performing",
       ],
       riskAnchors: [
-        "Her advantage returns only in layouts similar to her ward",
-        "Her errors preserve sensible ward groupings",
-        "A beginner drilled on the same ward reaches her speed",
+        "The performing intensifies when the therapist seems less engaged",
+        "It matches his history of entertaining for attention",
+        "It eases as he finds attention persists when he is quiet",
       ],
       defeatedBy: [
-        "She simply has a better natural sense of direction",
-        "Experience on the ward is unrelated to her speed",
+        "He stays relaxed regardless of how engaged the therapist looks",
+        "He is equally playful whether or not anyone is watching",
       ],
     },
     correctAnswer:
-      "Her speed probably comes from a rich learned map built up through repeated experience, not from a general sense of direction, since it vanishes in an unfamiliar building; test whether her advantage returns only in layouts similar to her home ward, whether her recall errors preserve sensible ward groupings, and whether a beginner drilled on the same ward reaches her speed.",
+      "He likely replays a template in which attention must be earned by performing, learned from a distracted parent, so a merely thoughtful face reads as losing the audience and triggers anxiety; test whether the performing intensifies whenever the therapist seems less engaged, whether it matches his history of entertaining for attention, and whether it eases as he finds the therapist stays attentive even when he is quiet.",
     explanation:
-      "Full credit names experience-built knowledge with three checks and an unfamiliar-building test that names its refutation; 'too individual to credit experience' opens nothing.",
+      "Full credit ties the anxious performing to an attention-must-be-earned template and a cheap cooling-attention test that names its refutation; 'just a naturally funny person' is the dodge the anxiety at a thoughtful face defeats.",
   },
 ];
 
@@ -838,180 +843,179 @@ const written: HomeworkItem[] = [
   {
     itemType: "written",
     prompt:
-      "A police department notices that when witnesses are shown a lineup all at once, they more often pick an innocent look-alike, but when shown one face at a time they make fewer confident false picks. The detectives also recall that all-at-once witnesses tend to compare faces and choose 'whoever looks most like' the culprit. In one paragraph, propose the strongest lead for why the all-at-once lineup produces more false identifications and describe how you would test it.",
+      "A man describes the same downfall at three jobs in a row: he grows close to a mentor, becomes convinced the mentor is secretly plotting to get rid of him, acts hostile, and is eventually let go. Now, four months in, he tells his therapist he suspects she is 'documenting reasons to drop me.' He once mentioned that his father promised to support his education, then abruptly cut him off without explanation. In one paragraph, propose the strongest conclusion about the old relationship template being replayed and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest lead is that an all-at-once lineup invites relative judgment — the witness compares the faces and picks whoever looks most like the suspect, even when the real culprit is absent — whereas a one-at-a-time lineup forces an absolute yes/no decision against memory. This lead predicts checkable things: false picks should be highest in lineups where no face is the true culprit but one is a close look-alike; warning witnesses 'the culprit may not be here' should cut all-at-once errors by discouraging comparison; and witnesses who can study faces only sequentially, without going back, should make fewer confident mistakes. I would test it by running culprit-absent versus culprit-present lineups in both formats, by adding the 'may not be present' instruction to half the all-at-once lineups, and by recording whether witnesses glance back and forth and whether that comparing behavior predicts false picks.",
+        "The strongest conclusion is that he carries a relational template laid down with a father who offered support and then betrayed it without warning, so as soon as he depends on someone he expects a hidden plan to abandon him — and he now imports that template onto the therapist, reading her neutral record-keeping as evidence of the coming betrayal. This is a strong claim because it predicts checkable consequences: the suspicion should appear specifically once he has grown close and dependent rather than at the start; independent observers should not see his mentors or therapist as actually plotting against him; and the dread should map onto the father's broken promise, intensifying around situations that echo being cut off. I would test it by tracking whether his distrust reliably switches on as closeness deepens, by checking others' accounts of whether these figures were genuinely hostile, and by watching whether the suspicion eases when the therapist proves steadily reliable across the very moments his template predicts abandonment.",
       yieldAnchors: [
-        "All-at-once lineups produce more false picks of innocent look-alikes",
-        "One-at-a-time lineups produce fewer confident false picks",
-        "All-at-once witnesses tend to compare faces and choose the closest match",
+        "The same close-then-suspect-then-fired arc repeats across three jobs",
+        "He now suspects the therapist is documenting reasons to drop him",
+        "His father promised support and then abruptly cut him off",
       ],
       riskAnchors: [
-        "False picks peak when the culprit is absent but a look-alike is present",
-        "A 'culprit may not be present' warning cuts all-at-once errors",
-        "Comparing behavior predicts who makes false picks",
+        "The suspicion switches on once closeness and dependence develop",
+        "Independent observers do not see these figures as plotting",
+        "It eases as the therapist proves reliable over time",
       ],
       defeatedBy: [
-        "Lineup format is irrelevant and accuracy depends only on the witness",
-        "Witnesses always identify by absolute memory regardless of format",
-        "Nothing can be concluded without far more lineups",
+        "Independent accounts confirm the mentors really were plotting against him",
+        "The therapist is in fact preparing to terminate him",
       ],
     },
     correctAnswer:
-      "The strongest lead is that an all-at-once lineup invites relative judgment — the witness compares the faces and picks whoever looks most like the suspect, even when the real culprit is absent — whereas a one-at-a-time lineup forces an absolute yes/no decision against memory. This lead predicts checkable things: false picks should be highest in lineups where no face is the true culprit but one is a close look-alike; warning witnesses 'the culprit may not be here' should cut all-at-once errors by discouraging comparison; and witnesses who can study faces only sequentially, without going back, should make fewer confident mistakes. I would test it by running culprit-absent versus culprit-present lineups in both formats, by adding the 'may not be present' instruction to half the all-at-once lineups, and by recording whether witnesses glance back and forth and whether that comparing behavior predicts false picks.",
+      "The strongest conclusion is that he carries a relational template laid down with a father who offered support and then betrayed it without warning, so as soon as he depends on someone he expects a hidden plan to abandon him — and he now imports that template onto the therapist, reading her neutral record-keeping as evidence of the coming betrayal. This is a strong claim because it predicts checkable consequences: the suspicion should appear specifically once he has grown close and dependent rather than at the start; independent observers should not see his mentors or therapist as actually plotting against him; and the dread should map onto the father's broken promise, intensifying around situations that echo being cut off. I would test it by tracking whether his distrust reliably switches on as closeness deepens, by checking others' accounts of whether these figures were genuinely hostile, and by watching whether the suspicion eases when the therapist proves steadily reliable across the very moments his template predicts abandonment.",
     explanation:
-      "Under inverted grading, the cautious 'nothing can be concluded without more lineups' earns near-zero and an answer naming no test scores low; top credit goes to the relative-judgment lead that commits to a mechanism and names a culprit-absent test that could refute it.",
+      "Under the inverted standard the timid 'maybe his bosses really were against him, we can't know' earns near-zero; top credit goes to the committed betrayal-template reading that maps onto the father, predicts a closeness-triggered onset, and names an independent-observer test that could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "A college instructor finds that students who take a low-stakes quiz after each lecture score much higher on the final than students who instead get extra time to reread their notes. The quizzed students also report feeling less confident during the term, while the rereaders feel sure they know the material. In one paragraph, propose the strongest lead and describe how you would test it.",
+      "A woman becomes intensely angry when her female therapist pauses for even a few seconds, accusing her of 'tuning out,' yet she barely reacts when a male consulting therapist sits in silence for much longer. She was raised by a withholding, easily distracted mother and a kind but peripheral father. In one paragraph, propose the strongest conclusion about the template at work and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest lead is that quizzing makes students actively retrieve the material, which strengthens the memory's retrieval path and exposes gaps, while rereading only produces a false sense of fluency that feels like knowing but doesn't survive to the final. This lead is productive because it predicts checkable consequences: the quizzed group's advantage should be largest on the delayed final and small or absent on a quiz given the same day; rereaders' confidence should track how fluently they can reread, not how much they later recall; and giving rereaders a single end-of-lecture quiz should narrow the gap. I would test it by comparing same-day versus delayed test performance for both groups, by measuring whether reread fluency predicts confidence but not final scores, and by adding one quiz to a subset of rereaders to see whether retrieval alone reproduces the benefit.",
+        "The strongest conclusion is that she carries a template from a withholding mother in which a woman's withdrawn attention means rejection, so she imports it specifically onto the female therapist — whose brief, neutral pause reads as the mother 'tuning out' — while the same silence from a man, who matches her peripheral but kind father, carries no such charge. This is a strong claim because it predicts checkable consequences: her anger should track the caregiver's gender rather than the actual length of the silence; the reaction should match how she describes her mother's distraction; and it should ease as the female therapist's attention proves reliable across exactly the pauses that now trigger her. I would test it by comparing her responses to identical silences from women versus men, by checking whether the intensity maps onto her account of her mother, and by watching whether trust in the female therapist grows as the predicted rejections fail to materialize.",
       yieldAnchors: [
-        "Quizzed students score much higher on the final",
-        "Rereaders feel sure they know the material",
-        "Quizzed students feel less confident during the term",
+        "She rages at a few seconds of the female therapist's silence",
+        "She barely reacts to much longer silence from a male therapist",
+        "Her mother was withholding and distracted; her father kind but peripheral",
       ],
       riskAnchors: [
-        "The quizzing advantage is largest on the delayed final",
-        "Reread fluency predicts confidence but not final scores",
-        "One added quiz narrows the gap for rereaders",
+        "Her anger tracks the therapist's gender, not the silence length",
+        "The reaction matches her account of her mother's distraction",
+        "It eases as the female therapist proves reliably attentive",
       ],
       defeatedBy: [
-        "Quizzed students were simply stronger to begin with",
-        "Rereading and quizzing build memory equally well",
-        "Learning is too individual to draw any lead",
+        "She reacts identically to silence regardless of the therapist's gender",
+        "The female therapist really was disengaged and the male was not",
       ],
     },
     correctAnswer:
-      "The strongest lead is that quizzing makes students actively retrieve the material, which strengthens the memory's retrieval path and exposes gaps, while rereading only produces a false sense of fluency that feels like knowing but doesn't survive to the final. This lead is productive because it predicts checkable consequences: the quizzed group's advantage should be largest on the delayed final and small or absent on a quiz given the same day; rereaders' confidence should track how fluently they can reread, not how much they later recall; and giving rereaders a single end-of-lecture quiz should narrow the gap. I would test it by comparing same-day versus delayed test performance for both groups, by measuring whether reread fluency predicts confidence but not final scores, and by adding one quiz to a subset of rereaders to see whether retrieval alone reproduces the benefit.",
+      "The strongest conclusion is that she carries a template from a withholding mother in which a woman's withdrawn attention means rejection, so she imports it specifically onto the female therapist — whose brief, neutral pause reads as the mother 'tuning out' — while the same silence from a man, who matches her peripheral but kind father, carries no such charge. This is a strong claim because it predicts checkable consequences: her anger should track the caregiver's gender rather than the actual length of the silence; the reaction should match how she describes her mother's distraction; and it should ease as the female therapist's attention proves reliable across exactly the pauses that now trigger her. I would test it by comparing her responses to identical silences from women versus men, by checking whether the intensity maps onto her account of her mother, and by watching whether trust in the female therapist grows as the predicted rejections fail to materialize.",
     explanation:
-      "The cautious 'learning is too individual to draw any lead' earns near-zero; credit rewards committing to the retrieval-practice mechanism and naming the delayed-test and added-quiz checks that could refute it.",
+      "The cautious 'people are sensitive to silence, we can't say why' earns near-zero; credit goes to the gendered-template conclusion that explains the male-female asymmetry, maps onto the mother, and names a same-silence-different-gender test that could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "A therapist notices that several clients, after weeks of being asked detailed questions about a childhood they can't clearly remember, begin to report vivid memories of events no relative can confirm and no record supports. The clients describe these memories with strong emotion and full confidence. In one paragraph, propose the strongest lead and describe how you would test it.",
+      "A man quietly takes charge of his own therapy: he sets the agenda, reassures the therapist that 'we're making good progress,' tracks the time, and smooths over any awkward moment. He grew up as the steady one in a chaotic household, calming a volatile mother and parenting younger siblings. In one paragraph, propose the strongest conclusion about the relational role he is replaying and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest lead is that repeatedly imagining and discussing suggested events can build false memories that feel completely real, because the mind doesn't reliably tag whether a vivid mental image came from a true experience or from imagination and suggestion. This lead is productive because it predicts checkable consequences: clients who spend more sessions imagining an event should report richer, more confident 'memories' of it; suggested events that are plausible should be adopted more readily than wildly implausible ones; and the confidence and emotion attached to confirmed-false memories should be just as high as for verified real ones. I would test it, ethically, in a controlled study by giving volunteers a mix of true family events and one plausible-but-false event suggested by relatives, then tracking whether repeated imagining grows the false memory, whether plausibility predicts adoption, and whether people can tell their false memories from true ones by confidence alone.",
+        "The strongest conclusion is that he replays the caretaker-manager role he held in a chaotic home, where safety depended on his keeping the volatile adult calm, so he casts the therapist as someone he must steady and reassure rather than allowing himself to be the one looked after. This is a strong claim because it predicts checkable consequences: he should take the same managing, reassuring role across his other relationships; the role should map onto his history of calming his mother and parenting his siblings; and he should become anxious or disoriented when invited to simply receive care and let the therapist hold the structure. I would test it by checking whether he runs his friendships and work relationships the same way, by tracing the role to his described childhood, and by watching his reaction when the therapist gently takes back the agenda and offers to look after him instead.",
       yieldAnchors: [
-        "Vivid memories emerge only after weeks of suggestive questioning",
-        "No relative or record confirms the events",
-        "Clients report them with strong emotion and full confidence",
+        "He sets the agenda, tracks time, and reassures the therapist",
+        "He smooths over every awkward moment in session",
+        "He was the steady one calming a volatile mother and parenting siblings",
       ],
       riskAnchors: [
-        "More imagining sessions yield richer, more confident false memories",
-        "Plausible suggested events are adopted more readily than implausible ones",
-        "Confidence and emotion cannot separate false memories from true ones",
+        "He takes the same managing role in other relationships",
+        "The role maps onto his childhood caretaking",
+        "He grows anxious when invited to simply be cared for",
       ],
       defeatedBy: [
-        "Vivid, confident memories are always accurate records of real events",
-        "The suggestive questioning played no role in the new memories",
-        "Memory is too mysterious to say where the recollections came from",
+        "He readily lets others lead and care for him elsewhere",
+        "His managing is purely practical with no anxiety when it is removed",
       ],
     },
     correctAnswer:
-      "The strongest lead is that repeatedly imagining and discussing suggested events can build false memories that feel completely real, because the mind doesn't reliably tag whether a vivid mental image came from a true experience or from imagination and suggestion. This lead is productive because it predicts checkable consequences: clients who spend more sessions imagining an event should report richer, more confident 'memories' of it; suggested events that are plausible should be adopted more readily than wildly implausible ones; and the confidence and emotion attached to confirmed-false memories should be just as high as for verified real ones. I would test it, ethically, in a controlled study by giving volunteers a mix of true family events and one plausible-but-false event suggested by relatives, then tracking whether repeated imagining grows the false memory, whether plausibility predicts adoption, and whether people can tell their false memories from true ones by confidence alone.",
+      "The strongest conclusion is that he replays the caretaker-manager role he held in a chaotic home, where safety depended on his keeping the volatile adult calm, so he casts the therapist as someone he must steady and reassure rather than allowing himself to be the one looked after. This is a strong claim because it predicts checkable consequences: he should take the same managing, reassuring role across his other relationships; the role should map onto his history of calming his mother and parenting his siblings; and he should become anxious or disoriented when invited to simply receive care and let the therapist hold the structure. I would test it by checking whether he runs his friendships and work relationships the same way, by tracing the role to his described childhood, and by watching his reaction when the therapist gently takes back the agenda and offers to look after him instead.",
     explanation:
-      "Under inverted grading, 'memory is too mysterious to say where the recollections came from' earns near-zero and the overreach 'vivid memories are always accurate' is defeated by the data; top credit goes to the source-monitoring lead that commits to a mechanism and names tests that could refute it.",
+      "The dodge 'he is just an organized, considerate client, nothing to interpret' earns near-zero; top credit goes to the caretaker-role conclusion that binds the in-session managing to his childhood and names a hand-back-the-agenda test that could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "A music student finds that when she practices a hard passage right before bed and sleeps, she plays it noticeably better the next morning without any extra practice — but when she practices the same kind of passage in the morning and stays awake all day, she shows no overnight-style jump. Her total practice time is the same in both cases. In one paragraph, propose the strongest lead and describe how you would test it.",
+      "A patient has a history of finding a 'perfect' helper — a doctor, then a coach, then a spiritual teacher — adoring them, and then dropping each one cold the instant they reveal an ordinary human flaw. Six months in, she has begun describing her therapist as 'the one who finally gets it,' and the therapist notices the same adoration building. In one paragraph, propose the strongest conclusion about the template being replayed and describe how you would test it, including what it implies for the work ahead.",
     writtenRubric: {
       modelAnswer:
-        "The strongest lead is that sleep actively consolidates the newly practiced motor skill — the brain replays and stabilizes the sequence during sleep — so the overnight gain comes from sleep itself, not merely from a rest break or the passage of time. This lead is productive because it predicts checkable consequences: a daytime nap after practice should produce a similar jump, while an equal-length awake rest should not; the gain should be biggest for passages practiced just before sleep rather than hours earlier in the day; and selectively disrupting deep sleep should erase the improvement even with the same total sleep time. I would test it by comparing a post-practice nap against an equal awake break, by varying how long before sleep the passage is practiced, and by waking her briefly out of deep sleep on some nights to see whether the morning gain disappears.",
+        "The strongest conclusion is that she carries an all-or-nothing template in which a helper must be flawless to be safe, so she idealizes each new figure and then must drop them entirely the moment an ordinary flaw appears — and she is now building the same idealization toward the therapist, which predicts a coming crash when the therapist inevitably proves human. This is a strong claim because it predicts checkable consequences: the rise-and-fall should repeat across her helpers; the fall should be triggered each time by a minor, ordinary lapse rather than a real failure; and, crucially, the same collapse should threaten the therapy once the therapist disappoints her in some small way. I would test it by tracing whether each past drop followed a trivial flaw, by watching for the predicted devaluation as the alliance deepens, and by deliberately working, before the crash, on whether she can hold the therapist's helpful and flawed sides together — if she can begin to tolerate an imperfect helper without dropping them, the template is loosening rather than simply repeating.",
       yieldAnchors: [
-        "Practice before sleep yields a next-morning improvement with no extra practice",
-        "Morning practice with no sleep shows no comparable jump",
-        "Total practice time is the same in both cases",
+        "She idealizes each helper then drops them at the first ordinary flaw",
+        "The pattern has repeated across a doctor, coach, and teacher",
+        "She is now idealizing the therapist the same way",
       ],
       riskAnchors: [
-        "A daytime nap produces a similar jump while an awake rest does not",
-        "The gain is biggest for passages practiced just before sleep",
-        "Disrupting deep sleep erases the improvement",
+        "Each past drop followed a minor, ordinary lapse",
+        "A devaluation crash is predicted as the alliance deepens",
+        "Tolerating an imperfect helper would show the template loosening",
       ],
       defeatedBy: [
-        "Any rest or the mere passage of time produces the gain",
-        "Sleep plays no role and the improvement is random",
-        "Skill change is too individual to draw any lead",
+        "Her past helpers each committed a genuine, serious failure",
+        "She can already hold helpers' good and flawed sides together",
       ],
     },
     correctAnswer:
-      "The strongest lead is that sleep actively consolidates the newly practiced motor skill — the brain replays and stabilizes the sequence during sleep — so the overnight gain comes from sleep itself, not merely from a rest break or the passage of time. This lead is productive because it predicts checkable consequences: a daytime nap after practice should produce a similar jump, while an equal-length awake rest should not; the gain should be biggest for passages practiced just before sleep rather than hours earlier in the day; and selectively disrupting deep sleep should erase the improvement even with the same total sleep time. I would test it by comparing a post-practice nap against an equal awake break, by varying how long before sleep the passage is practiced, and by waking her briefly out of deep sleep on some nights to see whether the morning gain disappears.",
+      "The strongest conclusion is that she carries an all-or-nothing template in which a helper must be flawless to be safe, so she idealizes each new figure and then must drop them entirely the moment an ordinary flaw appears — and she is now building the same idealization toward the therapist, which predicts a coming crash when the therapist inevitably proves human. This is a strong claim because it predicts checkable consequences: the rise-and-fall should repeat across her helpers; the fall should be triggered each time by a minor, ordinary lapse rather than a real failure; and, crucially, the same collapse should threaten the therapy once the therapist disappoints her in some small way. I would test it by tracing whether each past drop followed a trivial flaw, by watching for the predicted devaluation as the alliance deepens, and by deliberately working, before the crash, on whether she can hold the therapist's helpful and flawed sides together — if she can begin to tolerate an imperfect helper without dropping them, the template is loosening rather than simply repeating.",
     explanation:
-      "The cautious 'skill change is too individual to draw any lead' earns near-zero and the rival 'any rest produces the gain' is a claim the nap-versus-awake test can defeat; top credit goes to the sleep-consolidation lead that commits to a mechanism and names tests that could refute it.",
+      "The timid 'maybe each helper really did let her down, we shouldn't predict' earns near-zero; credit goes to the all-or-nothing template conclusion that forecasts a devaluation crash with the therapist and names a hold-both-sides test that could refute or confirm it.",
   },
   {
     itemType: "written",
     prompt:
-      "A museum guide notices that visitors who are asked to retell what they saw immediately after a tour later remember the exhibits well — but if a staff member happens to mention an artifact that wasn't actually in the tour, many visitors later 'remember' seeing it, and they describe it with the same confidence as real exhibits. In one paragraph, propose the strongest lead and describe how you would test it.",
+      "A woman expects rejection from everyone close to her and, to get ahead of it, turns cold and distant first — with friends, with partners, and now, after a warm early stretch, with her therapist, whom she has started meeting with crossed arms and clipped answers. She was raised by a parent who was affectionate one day and icy the next, for no reason she could ever predict. In one paragraph, propose the strongest conclusion about the template she is replaying and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest lead is that memory is reconstructed at recall, so post-event information — like the staff member's mention — gets blended into the original memory of the tour, and because the brain loses track of where each detail came from, the suggested artifact feels just as 'seen' as the real ones. This lead is productive because it predicts checkable consequences: visitors warned that later conversations may contain errors should report fewer false artifacts; the false memory should grow stronger the longer the gap before the misleading mention; and when asked to label each memory as 'saw it on the tour' or 'heard about it after,' visitors who absorbed the artifact should misattribute it to the tour itself. I would test it by adding a warning to half the visitors, by varying the delay before the false mention, and by running a source-tagging check to see whether the suggested artifact is wrongly credited to direct viewing.",
+        "The strongest conclusion is that she carries a template from an unpredictably affectionate-then-icy parent in which closeness is dangerous because rejection can strike at any moment, so she rejects first to control the timing — and she now imports this onto the therapist, going cold precisely as the relationship warms in order to preempt the abandonment she expects. This is a strong claim because it predicts checkable consequences: her coldness should switch on as closeness grows rather than after any actual rejection; the same reject-first pattern should appear across friends, partners, and the therapist; and it should map onto the parent's unpredictable warm-then-cold swings. I would test it by checking whether her withdrawal reliably follows warmth rather than any real slight, by comparing the pattern across her relationships, and by watching whether the coldness eases as the therapist stays steadily warm and predictable, disconfirming the expectation that affection will suddenly turn to ice.",
       yieldAnchors: [
-        "Immediate retelling helps visitors remember real exhibits well",
-        "A mentioned but absent artifact is later 'remembered' as seen",
-        "Visitors describe the false artifact as confidently as real ones",
+        "She turns cold first with friends, partners, and now the therapist",
+        "The withdrawal followed a warm early stretch, not any rejection",
+        "Her parent swung unpredictably from affectionate to icy",
       ],
       riskAnchors: [
-        "A warning about misleading mentions cuts false-artifact reports",
-        "A longer gap before the mention strengthens the false memory",
-        "Visitors misattribute the suggested artifact to the tour itself",
+        "Her coldness switches on as closeness grows, not after a slight",
+        "The reject-first pattern repeats across her relationships",
+        "It eases as the therapist stays steadily warm and predictable",
       ],
       defeatedBy: [
-        "Visitors knowingly defer to staff rather than misremembering",
-        "The staff mention has no effect on what visitors recall",
-        "Nothing can be concluded without surveying every visitor",
+        "Her withdrawal each time followed a real rejection by the other person",
+        "She stays warm and open as relationships deepen",
       ],
     },
     correctAnswer:
-      "The strongest lead is that memory is reconstructed at recall, so post-event information — like the staff member's mention — gets blended into the original memory of the tour, and because the brain loses track of where each detail came from, the suggested artifact feels just as 'seen' as the real ones. This lead is productive because it predicts checkable consequences: visitors warned that later conversations may contain errors should report fewer false artifacts; the false memory should grow stronger the longer the gap before the misleading mention; and when asked to label each memory as 'saw it on the tour' or 'heard about it after,' visitors who absorbed the artifact should misattribute it to the tour itself. I would test it by adding a warning to half the visitors, by varying the delay before the false mention, and by running a source-tagging check to see whether the suggested artifact is wrongly credited to direct viewing.",
+      "The strongest conclusion is that she carries a template from an unpredictably affectionate-then-icy parent in which closeness is dangerous because rejection can strike at any moment, so she rejects first to control the timing — and she now imports this onto the therapist, going cold precisely as the relationship warms in order to preempt the abandonment she expects. This is a strong claim because it predicts checkable consequences: her coldness should switch on as closeness grows rather than after any actual rejection; the same reject-first pattern should appear across friends, partners, and the therapist; and it should map onto the parent's unpredictable warm-then-cold swings. I would test it by checking whether her withdrawal reliably follows warmth rather than any real slight, by comparing the pattern across her relationships, and by watching whether the coldness eases as the therapist stays steadily warm and predictable, disconfirming the expectation that affection will suddenly turn to ice.",
     explanation:
-      "Under inverted grading, 'nothing can be concluded without surveying every visitor' earns near-zero and an answer with no test scores low; top credit goes to the reconstructive-memory and misinformation lead that commits to a mechanism and names a source-tagging test that could refute it.",
+      "The cautious 'she's just guarded, we can't say why' earns near-zero; top credit goes to the reject-first template conclusion that ties the withdrawal to an unpredictable parent, predicts coldness rising with closeness, and names a follows-warmth-not-slight test that could refute it.",
   },
 ];
 
 export const section: SectionContent = {
-  slug: "memory",
-  title: "Memory: How the Mind Stores, Loses, and Reshapes the Past",
+  slug: "transference",
+  title: "Transference",
   weekNumber: 1,
   blurb:
-    "Memory isn't a video recorder — it encodes, loses, and rebuilds the past, which is why we forget on a predictable curve and can sincerely remember things that never happened.",
+    "Transference is the way we carry templates from old, important relationships into new ones — especially toward the therapist — so a present person gets reacted to as if they were someone from the past.",
   lectureTitle:
-    "1.4 Memory: how the mind stores, loses, and reshapes the past",
-  body: `# Memory: How the Mind Stores, Loses, and Reshapes the Past
+    "1.4 Transference: why we replay old relationships with new people",
+  body: `# Transference
 
-It is tempting to picture memory as a camera: an event happens, the brain records it, and later you press play and watch the recording. Almost everything cognitive scientists have learned says this picture is wrong. Memory is not a recording you replay; it is a process you *rebuild* every time you remember. Understanding how the mind stores, loses, and reshapes the past is one of the central achievements of cognitive science — and it has real stakes, from how you should study to whether we can trust an eyewitness.
+You have probably had the strange experience of disliking a stranger on sight, or trusting someone instantly, before they have done much of anything. Often the reason is not the person in front of you at all. It is that they rhyme with someone from your past — a tone of voice, a way of pausing, a kind of authority — and your mind quietly reaches for an old script and starts running it. Psychodynamic therapy gives this everyday phenomenon a name: **transference**. It is the tendency to bring templates from old, important relationships into new ones, and to react to a present person as if they were a figure from before.
 
-## Three jobs: encoding, storage, retrieval
+## Templates from old relationships
 
-A memory has to clear three hurdles. First **encoding**: turning an experience into a trace the brain can keep. Second **storage**: holding that trace over time. Third **retrieval**: getting it back out when you need it. A failure at any stage looks like "forgetting," but the fixes differ. You can't retrieve a name you never encoded because you weren't paying attention; and you can fail to retrieve something that is, in fact, still stored — which is why a hint can suddenly bring back a word that was "gone."
+Early relationships teach us what to expect from people. A child with a reliable caregiver learns that closeness is safe; a child with an unpredictable one learns to brace for sudden withdrawal. These lessons harden into **templates** — fast, automatic expectations about how others will treat us and how we must behave to stay safe. The templates are useful shortcuts, but they are built from old data. When a new relationship is even loosely similar to an old one, the mind applies the old template by default, often without our noticing. Transference is simply this default applied to people who don't actually fit it.
 
-## Forgetting has a shape
+## Reacting to the past in the present
 
-Forgetting is not random. When people learn a list and are tested over time, they lose the most right after learning, and then the rate of loss slows down — a steep drop that flattens into a long tail. The memories that survive the first day tend to stick around. This is why one heroic cram session fades fast, while a little review spread across several days builds something durable: each time you reload a fading memory, you strengthen it. Spacing your practice and *testing* yourself (rather than rereading) beat the methods that merely *feel* productive.
+The signature of transference is a reaction that fits an old figure better than the present person. A patient flares with rage when the therapist is two minutes late — not because two minutes matters, but because lateness lands on a template of being abandoned by an unreliable parent. Another reads a therapist's neutral note-taking as an attack, because in childhood any record of his behavior was used against him. The present act is small and ordinary; the reaction is large and specific. That mismatch — a big, patterned response to a neutral trigger — is the clue that an old relationship is being replayed.
 
-## Memory is reconstructive
+## Transference toward the therapist
 
-Here is the surprising part. When you retrieve a memory, you don't pull out a sealed file — you rebuild the event from fragments, plugging gaps with what is plausible, expected, or recently suggested. Usually this works fine. But it means memory can be edited after the fact. In classic studies, people who watched the same crash estimated higher speeds when asked how fast the cars "smashed" rather than "hit," and later falsely remembered broken glass that was never there. The wording didn't just bias their answer; it changed the stored memory.
+The therapy room is a perfect stage for transference. The therapist is an important figure who matters to the patient, yet says relatively little about themselves, so the patient fills in the blanks with expectations from the past. A warm therapist gets treated as a setup for humiliation by someone whose warmth was always a trap; a quiet therapist gets read as disappointed by someone whose withdrawn parent meant silence was punishment. This is not a nuisance to be cleared away. It is gold: the old pattern, which usually plays out invisibly in the patient's life, now appears live in the room where it can be seen, named, and worked with.
 
-## False memories and the misinformation effect
+## The same conflict, again and again
 
-Because memory is reconstructive, **information that arrives after an event can blend into the memory of the event itself**. This is the misinformation effect, and it is powerful. A misleading question, a leading interview, a relative's confident retelling — each can plant a detail that later feels genuinely "remembered." People can even acquire whole vivid memories of events that never happened, complete with sensory detail and full confidence, because the mind doesn't reliably tag where a vivid image came from (a real experience, or imagination). The feeling of remembering is not proof of accuracy.
+Transference also shows up as repetition. When the *same* relationship conflict recurs across a boss, a partner, a friend, and now the therapist — "everyone eventually tries to control me," "everyone eventually leaves" — the common factor is not four unlucky coincidences but one template the person carries into each new bond. The strongest reading looks for the single old relationship the pattern fits and asks how that template is being imported onto each new figure. The cross-situational repetition is what turns a one-off reaction into convincing evidence of a template.
 
-## Confidence is not accuracy
+## Reading transference without overreading it
 
-We naturally trust a confident memory, but confidence and correctness can come apart. An eyewitness who stares at a lineup can grow certain of a face simply because it has become familiar, not because it is the right one. Flashbulb memories of dramatic news feel razor-sharp years later, yet careful checks against people's own day-after notes show the details quietly drift while confidence stays high. Knowing this doesn't make memory useless — it makes us careful: prefer immediate reports, avoid leading questions, and treat strong feelings of certainty as a clue, not a guarantee.
+As always in this course, the goal is to commit to the strongest interpretation the evidence supports — and to name what would prove it wrong. A good transference reading does three things. It identifies the specific old template (not "something about his past" but "a controlling father, so direction feels like domination"). It binds the present evidence: the size of the reaction, its trigger, the matching history. And it names cheap, concrete tests. The best transference tests are nearly always the same three: **Does the reaction appear with other figures, or only this one? Does it match the original relationship it supposedly comes from? Does it fade when the present person reliably behaves differently from the old figure?** A real template keeps firing across people and clings even to disconfirming evidence; a fair response to the present person changes when the present person changes.
+
+## The two ways to get it wrong
+
+There are two failure modes, and they mirror each other. The first is the timid dodge: "the mind is too complex, we can't know why she reacted that way." But the evidence — a disproportionate reaction, a matching history, a pattern across relationships — is exactly what we *can* reason from, and refusing to do so wastes it. The second is the lurid overreach: deciding the therapist really is hostile, or that the patient's suspicious partner really must be cheating, when the present facts plainly don't support it. The discipline of transference work is to read the old template from the evidence while testing it against the present reality, rather than collapsing into either "nothing can be said" or "the alarming story must be true."
 
 ## In the real world
 
-A jury hears a witness say, with total confidence, "I'll never forget that face." The camera model says: case closed. The cognitive-science view says: ask better questions. The dodge — "memory is too complex to say anything" — helps no one. The strong, testable lead is that the witness's certainty may reflect familiarity built up during the investigation, not the original memory. That lead tells us exactly what to check: Was the lineup shown all at once, inviting a "closest match" guess? Was the witness warned the culprit might not be present? How long was the gap, and were leading questions asked? Each is a concrete test that could confirm or refute the worry — and that is what treating memory as a rebuildable process, rather than a recording, buys you: not blind trust or blanket doubt, but the right questions to ask.`,
+Suppose a friend tells you her new manager is "obviously out to get her," though she has known him a week and nothing has actually happened. The dodge is "people are complicated, who knows." The overreach is "yes, sounds like a toxic boss, quit." A transference-aware move sits between them: maybe a present authority figure is being fitted to an old template. Notice what that opens up. It predicts she has felt this way about previous bosses; that the dread is out of proportion to anything the new manager has done; and that it should ease if he turns out to be reasonable over the coming weeks — whereas a genuinely hostile boss would keep giving real evidence. Three cheap checks, each able to refute the reading. That is the skill this section trains: when someone reacts to the present as if it were the past, name the old relationship being replayed, bind the evidence, and say exactly what would show you are wrong.`,
   homework: {
     mcq,
     hybrid,
