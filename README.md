@@ -69,3 +69,34 @@ Cognitive Science 101 makes "learning how the mind works" an act of *committed r
 It doesn't reward the student for finding reasons to doubt — it rewards them for **committing to the strongest conclusion the evidence supports about the mind and naming the cleanest test that could prove them wrong.** The course teaches that, tutors it, drills it, grades it on an inverted partial-credit scale, screens submissions for misuse, and proves the whole pipeline still works with a single click.
 
 **Cognitive Science 101 — where the strongest honest conclusion about how the mind works, not the safest hedge, earns the grade.**
+
+---
+
+## 🚀 Running It Yourself
+
+This is a Replit pnpm monorepo. The two services that matter are the **course web app** (`artifacts/qr-course`) and the **API server** (`artifacts/api-server`); a promo video ships as a separate artifact (`artifacts/course-promo`).
+
+### 1. Database
+
+The app uses **PostgreSQL** via a `DATABASE_URL` connection string. Any standard Postgres works — Replit's built-in database or an external provider such as **Neon**. Set `DATABASE_URL` to your connection string (for managed providers like Neon, the password is part of that URL). On boot the API server creates the schema and seeds the full 8-section course automatically; the seed self-heals, so updated content replaces stale content in an existing database.
+
+### 2. Required secrets
+
+| Secret | Purpose |
+| --- | --- |
+| `DATABASE_URL` | Postgres connection string (Neon or built-in). |
+| `OPENAI_API_KEY` / `OPENAI_BASE_URL` | Powers lessons, the streaming tutor, grading, and practice generation. |
+| `GPTZERO_API_KEY` | Static AI-authorship detection on submissions (falls back gracefully if absent). |
+| `CLERK_*` keys | User authentication (Replit-managed Clerk). |
+| `SESSION_SECRET` | Server session signing. |
+
+### 3. Google login
+
+Authentication is handled by **Replit-managed Clerk**, and the sign-in screen automatically renders whichever social providers are enabled. To turn on **Sign in with Google**, open the **Auth pane** in the workspace and enable the Google provider (you'll supply a Google OAuth Client ID/Secret from the Google Cloud Console, using the redirect URI shown in the Auth pane's *Provider setup*). No code change is required — the button appears as soon as the provider is enabled.
+
+### 4. Verify the stack
+
+Once secrets are set and the workflows are running, hit the operator self-tests to confirm everything is wired up:
+
+- `GET /api/diagnostics/system` — environment, database round-trip, course-seed integrity, OpenAI chat + JSON mode, the detection pipeline, and GPTZero connectivity. A healthy stack returns `overall: true`.
+- `POST /api/diagnostics/synthetic-run` — spins up a synthetic student and runs practice → homework → grading → detection → analytics end to end.

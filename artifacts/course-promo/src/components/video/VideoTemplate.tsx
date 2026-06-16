@@ -5,19 +5,22 @@ import { Scene1 } from './video_scenes/Scene1';
 import { Scene2 } from './video_scenes/Scene2';
 import { Scene3 } from './video_scenes/Scene3';
 import { Scene4 } from './video_scenes/Scene4';
+import { Scene5 } from './video_scenes/Scene5';
 
 export const SCENE_DURATIONS = {
-  s1_intro: 3500,
-  s2_concepts: 8500,
-  s3_features: 10000,
-  s4_outro: 6000
+  s1_intro: 6000,
+  s2_topics: 6000,
+  s3_features: 8000,
+  s4_grading: 10000,
+  s5_outro: 6000
 };
 
 const SCENE_COMPONENTS: Record<string, React.ComponentType> = {
   s1_intro: Scene1,
-  s2_concepts: Scene2,
+  s2_topics: Scene2,
   s3_features: Scene3,
-  s4_outro: Scene4
+  s4_grading: Scene4,
+  s5_outro: Scene5
 };
 
 const SCENE_START_SEC: Record<string, number> = (() => {
@@ -66,20 +69,29 @@ export default function VideoTemplate({
   }, [currentSceneKey, baseSceneKey, muted]);
 
   return (
-    <div className="w-full h-screen overflow-hidden relative bg-bg-light text-text-primary" style={{ fontFamily: 'var(--font-display)' }}>
+    <div className="w-full h-screen overflow-hidden relative bg-bg-dark text-text-primary">
       {/* Persistent Background Layer */}
       <div className="absolute inset-0 pointer-events-none">
         <motion.div
-          className="absolute w-[80vw] h-[80vw] rounded-full opacity-30 blur-3xl"
-          style={{ background: 'radial-gradient(circle, var(--color-primary), transparent)' }}
+          className="absolute w-[100vw] h-[100vw] rounded-full opacity-[0.03] blur-3xl mix-blend-screen"
+          style={{ background: 'radial-gradient(circle, var(--color-accent), transparent)' }}
           animate={{ x: ['-20%', '30%', '-10%'], y: ['-10%', '40%', '-20%'], scale: [1, 1.2, 0.9] }}
-          transition={{ duration: 15, repeat: Infinity, ease: 'easeInOut' }}
+          transition={{ duration: 25, repeat: Infinity, ease: 'easeInOut' }}
         />
         <motion.div
-          className="absolute w-[60vw] h-[60vw] rounded-full opacity-20 blur-3xl right-0 bottom-0"
+          className="absolute w-[80vw] h-[80vw] rounded-full opacity-[0.03] blur-3xl right-0 bottom-0 mix-blend-screen"
           style={{ background: 'radial-gradient(circle, var(--color-secondary), transparent)' }}
           animate={{ x: ['20%', '-20%', '10%'], y: ['10%', '-30%', '20%'] }}
-          transition={{ duration: 18, repeat: Infinity, ease: 'easeInOut' }}
+          transition={{ duration: 20, repeat: Infinity, ease: 'easeInOut' }}
+        />
+        
+        {/* Subtle grid texture */}
+        <div className="absolute inset-0" 
+             style={{ 
+               backgroundImage: 'linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px)',
+               backgroundSize: '40px 40px',
+               opacity: 0.5
+             }} 
         />
       </div>
 
