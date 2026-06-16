@@ -13,6 +13,14 @@ In this project `process.env.DATABASE_URL` resolves to host `helium`, db `helium
 
 **Why:** explains the confusing case where a user insists "use my external DATABASE_URL" but the app won't. **How to apply:** classify the live `DATABASE_URL` host (print host/dbname only, never the password) before assuming which DB is in use; don't trust `checkDatabase()` alone.
 
+## Corrupted DATABASE_URL secret + helium SSL (seen 2026-06-16)
+
+A different failure mode from shadowing: the `DATABASE_URL` *secret* held **garbage** (a 452-char lecture-title string), so `new URL()` failed and pg resolved a bogus host (`getaddrinfo ENOTFOUND base`) while `executeSql` tried db name = a lecture title. The discrete `PGHOST=helium / PGUSER=postgres / PGDATABASE=heliumdb / PGPORT / PGPASSWORD` vars were all correct.
+
+- **Fix that worked:** harden `lib/db/src/index.ts` to validate `DATABASE_URL` with `new URL()` and, if missing/malformed, rebuild the connection string from the discrete `PG*` vars (URL-encode user/password/db). Cannot rewrite the secret agent-side (no value, can't set secrets), and the PG* vars are the reliable source.
+- **helium rejects SSL.** The internal managed DB host `helium` (and private IPs 10./172.16-31./192.168.) must connect with **SSL off** — otherwise `Error: The server does not support SSL connections`. The old `isLocal` check only matched localhost/127.0.0.1, so a helium URL wrongly got `ssl:{rejectUnauthorized:false}`. Widen `isLocal` to include `helium` + private ranges; keep SSL on for genuine external managed hosts (Neon/Render/Supabase).
+- `drizzle-kit push` also reads `DATABASE_URL` from its config — for a one-off push, export a freshly-built URL from the PG* vars inline (process-scoped, never persisted).
+
 ## After the switch actually takes effect
 
 Once the platform DB has been removed and the external secret is live, two things bite:

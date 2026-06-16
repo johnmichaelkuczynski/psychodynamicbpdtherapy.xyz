@@ -1,8 +1,9 @@
 // ---------------------------------------------------------------------------
-// Content types for the Constructive Critical Reasoning (CCR) curriculum.
+// Content types for the Cognitive Science 101 curriculum.
 //
-// CCR is the discipline of drawing the STRONGEST affirmative conclusion a body
-// of data supports. Grading is therefore INVERTED relative to a normal test:
+// This course grades reasoning on an INVERTED scale: it rewards drawing the
+// STRONGEST affirmative conclusion about how the mind works that a body of data
+// supports. Grading is therefore INVERTED relative to a normal test:
 //   - The richest, most-falsifiable, most-committed model earns TOP credit.
 //   - The cautious "you can't really conclude that" dodge earns NEAR-ZERO.
 //   - Empty, florid elaborateness that binds no data scores LOW.
@@ -47,7 +48,7 @@ export type HomeworkItem = {
   // Back-compat display value: the best-answer text (top MC option text, or the
   // written model answer). Stored in problems.correct_answer (NOT NULL).
   correctAnswer: string;
-  // Shown after grading: why the top answer earns top credit under CCR's
+  // Shown after grading: why the top answer earns top credit under the course's
   // inverted logic (commits hardest to the most, exposes the cleanest test).
   explanation: string;
   hint?: string;
