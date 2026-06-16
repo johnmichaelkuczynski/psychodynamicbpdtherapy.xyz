@@ -18,7 +18,7 @@ const PHASE_LABELS: Record<string, string> = {
 const PHASE_ORDER = ["before", "third1", "third2", "after"];
 
 function instrumentLabel(_instrument: string): string {
-  return "Constructive Critical Reasoning";
+  return "Scientific Reasoning";
 }
 
 function statusBadge(status: string) {
@@ -89,10 +89,10 @@ export default function Reasoning() {
             Practice Checks
           </h1>
           <p className="text-muted-foreground">
-            Short, self-paced constructive critical reasoning checks — offered
-            before, during, and after the course. They're practice only: take
-            them in any order, retake them as often as you like with fresh
-            questions each time, and they never affect your grade.
+            Short, self-paced scientific reasoning checks — offered before,
+            during, and after the course. They're practice only: take them in
+            any order, retake them as often as you like with fresh questions
+            each time, and they never affect your grade.
           </p>
         </div>
 

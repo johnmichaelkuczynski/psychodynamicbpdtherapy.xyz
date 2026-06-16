@@ -152,7 +152,7 @@ export async function judgeMcq(
       answers: { id: number; correctIndex: number }[];
     }>(
       [
-        "You are an expert reasoner and AI educator. For each multiple-choice question, determine which single option is GENUINELY correct (the most defensible/best answer), reasoning from first principles.",
+        "You are an expert reasoner and educator. For each multiple-choice question, determine which single option is GENUINELY correct (the most defensible/best answer), reasoning from first principles.",
         "A `hint_index` is provided per question — it is the answer key currently stored in the system, but it MAY BE WRONG. Treat it only as a fallible hint; if your own analysis shows a different option is correct, return that index instead.",
         "Return exactly one 0-based option index per question id.",
         'Output strict JSON {"answers": [{"id": number, "correctIndex": number}]} with one entry for every question id provided.',
@@ -389,17 +389,17 @@ const openItemContent = (o: OpenItem): GeneratedItemContent => ({
   scoring: { keyPoints: o.keyPoints, skillArea: o.skillArea } satisfies OpenScoring,
 });
 
-// CCR generation standard, shared by the MCQ and open generators so every
+// Reasoning generation standard, shared by the MCQ and open generators so every
 // freshly generated diagnostic item enforces the inverted rubric.
 const CCR_STANDARD =
-  "Constructive Critical Reasoning (CCR) means drawing the STRONGEST conclusion the AVAILABLE EVIDENCE actually warrants. " +
+  "Strong scientific reasoning means drawing the STRONGEST conclusion the AVAILABLE EVIDENCE actually warrants. " +
   "CRITICAL — only write scenarios that have a genuinely reasonable, defensible answer because the scenario CONTAINS concrete discriminating evidence pointing to one conclusion over the rivals. " +
   "STAY AWAY from any situation where the only appropriate stance is agnosticism — i.e. there is no data yet, or the rival models fit the facts equally well and nothing in the scenario can separate them. In those cases withholding judgment (skepticism) is the CORRECT response, not a flaw, so such a scenario has no good 'constructive' answer and must NOT be used. Simplicity/parsimony alone is NEVER proof and never substitutes for evidence. " +
   "The genuinely-best answer commits to the conclusion the given evidence supports and/or names a cheap decisive test that would confirm it. " +
   "Wrong options should be a reckless overreach the evidence does NOT support, a passive/give-up move ('the cause is unknowable, change nothing'), and — since the scenario DOES contain deciding evidence — a timid 'you can't conclude anything' refusal that ignores that evidence. " +
   "Never write a scenario that would punish a reasoner for honestly declining to guess; simply do not pose those scenarios at all.";
 
-// Generate fresh CCR scenario MCQs, one per given sub-skill (in order).
+// Generate fresh reasoning scenario MCQs, one per given sub-skill (in order).
 async function generateCcrMcq(
   subskills: string[],
   examplePrompts: string[],
@@ -413,7 +413,7 @@ async function generateCcrMcq(
     "Write fresh questions on varied everyday topics — do NOT reuse the example wording. " +
     'Respond ONLY as JSON of the form {"items":[{"prompt":"...","options":["correct","wrong","wrong","wrong"]}]}.';
   const user =
-    `Write ${subskills.length} new questions, one per CCR sub-skill in THIS exact order: ${JSON.stringify(subskills)}.\n` +
+    `Write ${subskills.length} new questions, one per reasoning sub-skill in THIS exact order: ${JSON.stringify(subskills)}.\n` +
     `Each question should reward the answer that best demonstrates that sub-skill.\n` +
     `For style only (do NOT copy these): ${JSON.stringify(examplePrompts)}.`;
   const out = await chatJson<{
@@ -446,7 +446,7 @@ async function generateCcrMcq(
   });
 }
 
-// Generate fresh short CCR open-response questions (1-2 sentence answers), one
+// Generate fresh short reasoning open-response questions (1-2 sentence answers), one
 // per given sub-skill (in order). A good answer commits to the strongest
 // supported conclusion AND names a test — never hedges.
 async function generateOpenItems(
@@ -461,7 +461,7 @@ async function generateOpenItems(
     "Each prompt MUST be a single, self-contained question with NO multi-part scaffolding: never ask for a specific number of examples, never split into sub-parts like 'A, B, and C', and never tack on extra constraints. Keep it short, plain, and low-effort so a busy student answers it in a sentence or two. " +
     "For each question also provide keyPoints: the 1-3 core ideas a correct brief answer should capture (the committed conclusion and the test). " +
     'Respond ONLY as JSON {"items":[{"prompt":"...","keyPoints":["..."]}]}.';
-  const user = `Write ${count} new, distinct questions, one per CCR sub-skill in THIS exact order: ${JSON.stringify(subskills)}.`;
+  const user = `Write ${count} new, distinct questions, one per reasoning sub-skill in THIS exact order: ${JSON.stringify(subskills)}.`;
   const out = await chatJson<{
     items?: { prompt?: unknown; keyPoints?: unknown }[];
   }>(system, user);

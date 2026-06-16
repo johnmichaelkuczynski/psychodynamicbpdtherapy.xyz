@@ -1,1026 +1,1020 @@
 import type { SectionContent, HomeworkItem, McOption, WrittenRubric } from "./types";
 
+const mcq: HomeworkItem[] = [
+  {
+    itemType: "mc",
+    prompt:
+      "Researchers show two groups the same video of a car crash, then ask one group how fast the cars were going when they 'smashed' and the other when they 'hit.' The 'smashed' group gives higher speed estimates and, a week later, more of them falsely recall seeing broken glass. Which conclusion best follows?",
+    mcOptions: [
+      {
+        text: "Memory is too personal and complex to claim a single word changed what people recall.",
+        credit: 0,
+      },
+      {
+        text: "The wording of the question likely got woven into the stored memory itself, reshaping it; test whether a neutral word like 'contacted' yields lower estimates and less false glass, whether the false-glass rate climbs the longer the delay before recall, and whether warning people beforehand that questions can mislead them shrinks the effect.",
+        credit: 1.0,
+      },
+      {
+        text: "The leading word probably distorts memory; we could rerun the study with more wording variations.",
+        credit: 0.6,
+      },
+      {
+        text: "The question's wording seems to affect what people remember.",
+        credit: 0.3,
+      },
+    ],
+    correctAnswer:
+      "The wording of the question likely got woven into the stored memory itself, reshaping it; test whether a neutral word like 'contacted' yields lower estimates and less false glass, whether the false-glass rate climbs the longer the delay before recall, and whether warning people beforehand that questions can mislead them shrinks the effect.",
+    explanation:
+      "Top credit names a mechanism — memory is reconstructed and later information edits the stored version — and lists three checkable tests; the 'too personal to say' option refuses to commit and opens no inquiry.",
+  },
+  {
+    itemType: "mc",
+    prompt:
+      "Students learn a list of 30 words. Tested an hour later, they have already forgotten most of them; but those they still know after a day they tend to keep for weeks. Which conclusion best follows?",
+    mcOptions: [
+      {
+        text: "Forgetting is likely fastest right after learning and then levels off as surviving memories consolidate into more durable storage; test whether a recall test at 20 minutes already shows the steep drop, whether items reviewed once during the first hour resist the early loss, and whether sleep before the one-day test flattens the curve further.",
+        credit: 1.0,
+      },
+      {
+        text: "People seem to forget a lot at first and then less later.",
+        credit: 0.3,
+      },
+      {
+        text: "Forgetting probably slows down over time; we could test more lists.",
+        credit: 0.6,
+      },
+      {
+        text: "Memory loss is too unpredictable to describe with any pattern.",
+        credit: 0,
+      },
+    ],
+    correctAnswer:
+      "Forgetting is likely fastest right after learning and then levels off as surviving memories consolidate into more durable storage; test whether a recall test at 20 minutes already shows the steep drop, whether items reviewed once during the first hour resist the early loss, and whether sleep before the one-day test flattens the curve further.",
+    explanation:
+      "The strongest answer commits to a forgetting-curve mechanism with three checkable predictions; 'too unpredictable to describe' names no pattern and so cannot be tested.",
+  },
+  {
+    itemType: "mc",
+    prompt:
+      "Two classes study the same material. One crams it all in a single three-hour session; the other spreads the same three hours over six days. On a test two weeks later, the spaced class scores far higher. Which conclusion best follows?",
+    mcOptions: [
+      {
+        text: "Study habits are too individual to credit the schedule for the difference.",
+        credit: 0,
+      },
+      {
+        text: "Spacing seems to help people remember longer.",
+        credit: 0.3,
+      },
+      {
+        text: "Spreading practice probably forces the brain to reload and re-strengthen the memory each session, building sturdier storage than one massed dose; test whether the spaced group beats the crammers only on the delayed test and not on a same-day quiz, whether adding more gaps widens the advantage, and whether crammers who get one extra review a week later catch up.",
+        credit: 1.0,
+      },
+      {
+        text: "Spacing probably beats cramming; we could compare more class schedules.",
+        credit: 0.6,
+      },
+    ],
+    correctAnswer:
+      "Spreading practice probably forces the brain to reload and re-strengthen the memory each session, building sturdier storage than one massed dose; test whether the spaced group beats the crammers only on the delayed test and not on a same-day quiz, whether adding more gaps widens the advantage, and whether crammers who get one extra review a week later catch up.",
+    explanation:
+      "Top credit names the spacing mechanism and three tests, including one that pins when the advantage appears; 'too individual to credit the schedule' commits to nothing.",
+  },
+  {
+    itemType: "mc",
+    prompt:
+      "People study a list of words all related to sleep — bed, rest, tired, dream, night — but the word 'sleep' itself never appears. Minutes later, most confidently 'remember' having seen 'sleep' on the list. Which conclusion best follows?",
+    mcOptions: [
+      {
+        text: "People seem to misremember the related word.",
+        credit: 0.3,
+      },
+      {
+        text: "Recall probably reactivates the gist or theme of a list, and the brain fills in the strongly associated word as if it had been seen; test whether lists with weaker associations produce fewer false memories, whether the false 'sleep' is recalled as confidently as real list words, and whether warning people about the trap before study lowers the error.",
+        credit: 1.0,
+      },
+      {
+        text: "The mind is too mysterious to explain why a word no one saw feels remembered.",
+        credit: 0,
+      },
+      {
+        text: "Related words probably cause false memories; we could try other word lists.",
+        credit: 0.6,
+      },
+    ],
+    correctAnswer:
+      "Recall probably reactivates the gist or theme of a list, and the brain fills in the strongly associated word as if it had been seen; test whether lists with weaker associations produce fewer false memories, whether the false 'sleep' is recalled as confidently as real list words, and whether warning people about the trap before study lowers the error.",
+    explanation:
+      "The richest answer names a gist-and-association mechanism for false memory and three tests; 'too mysterious to explain' refuses to lead and earns zero.",
+  },
+  {
+    itemType: "mc",
+    prompt:
+      "After a staged robbery in a classroom, an eyewitness picks a suspect from a lineup and says she is '100% certain.' She turns out to be wrong; the real culprit wasn't in the lineup. Which conclusion best follows?",
+    mcOptions: [
+      {
+        text: "Eyewitness behavior is too variable to draw any lesson from one case.",
+        credit: 0,
+      },
+      {
+        text: "High confidence probably reflects how familiar a face feels after staring at a lineup, not how accurate the memory is, so certainty and correctness can come apart; test whether confidence and accuracy line up better right after the event than after a delay, whether telling witnesses 'the culprit may not be present' cuts false picks, and whether a sequential lineup lowers confident errors.",
+        credit: 1.0,
+      },
+      {
+        text: "Confidence doesn't always mean accuracy.",
+        credit: 0.3,
+      },
+      {
+        text: "Confidence probably isn't a good guide to accuracy; we could study more lineups.",
+        credit: 0.6,
+      },
+    ],
+    correctAnswer:
+      "High confidence probably reflects how familiar a face feels after staring at a lineup, not how accurate the memory is, so certainty and correctness can come apart; test whether confidence and accuracy line up better right after the event than after a delay, whether telling witnesses 'the culprit may not be present' cuts false picks, and whether a sequential lineup lowers confident errors.",
+    explanation:
+      "Top credit separates confidence from accuracy with a familiarity mechanism and three checkable fixes; 'too variable to draw any lesson' opens no path.",
+  },
+  {
+    itemType: "mc",
+    prompt:
+      "The morning after a dramatic national news event, people write down exactly how they heard about it. Three years later they describe the same moment with vivid certainty — but compared to their own notes, many details have quietly changed. Which conclusion best follows?",
+    mcOptions: [
+      {
+        text: "Vivid memories seem to change over time.",
+        credit: 0.3,
+      },
+      {
+        text: "Memory is too unreliable to bother studying these 'flashbulb' moments.",
+        credit: 0,
+      },
+      {
+        text: "A feeling of vividness probably comes from emotional intensity and frequent retelling, not from the memory being accurate, so each retelling can rewrite details while confidence stays high; test whether people who retold the story most often show the most drift, whether confidence rises even as detail accuracy falls, and whether comparing to the original note surprises them.",
+        credit: 1.0,
+      },
+      {
+        text: "Strong memories probably drift; we could collect more accounts over time.",
+        credit: 0.6,
+      },
+    ],
+    correctAnswer:
+      "A feeling of vividness probably comes from emotional intensity and frequent retelling, not from the memory being accurate, so each retelling can rewrite details while confidence stays high; test whether people who retold the story most often show the most drift, whether confidence rises even as detail accuracy falls, and whether comparing to the original note surprises them.",
+    explanation:
+      "The productive answer pins vividness to emotion and retelling rather than accuracy and names three tests; 'too unreliable to bother studying' is the barren dodge.",
+  },
+  {
+    itemType: "mc",
+    prompt:
+      "Witnesses to a staged accident are later asked, by chance of phrasing, either 'Did you see the broken headlight?' or 'Did you see a broken headlight?' — though there was none. Those asked about 'the' headlight are far more likely to later report seeing one. Which conclusion best follows?",
+    mcOptions: [
+      {
+        text: "The word 'the' probably plants a presupposition that something existed, and the brain later integrates that suggested detail into the memory as if witnessed; test whether 'a' phrasing produces fewer false reports, whether the false detail grows more confident with delay, and whether asking immediately versus a week later changes how much sticks.",
+        credit: 1.0,
+      },
+      {
+        text: "Witnesses seem influenced by the question's wording.",
+        credit: 0.3,
+      },
+      {
+        text: "Phrasing probably shapes what people report; we could test more question forms.",
+        credit: 0.6,
+      },
+      {
+        text: "There are too many reasons people misreport details to blame one small word.",
+        credit: 0,
+      },
+    ],
+    correctAnswer:
+      "The word 'the' probably plants a presupposition that something existed, and the brain later integrates that suggested detail into the memory as if witnessed; test whether 'a' phrasing produces fewer false reports, whether the false detail grows more confident with delay, and whether asking immediately versus a week later changes how much sticks.",
+    explanation:
+      "Top credit names the misinformation mechanism — a suggested detail merging into memory — and three tests; 'too many reasons to blame one word' refuses to commit and earns zero.",
+  },
+  {
+    itemType: "mc",
+    prompt:
+      "Two groups read the same chapter. One group rereads it twice; the other reads it once and then takes a practice quiz. The quiz group remembers far more on a test a week later, even though they spent less time looking at the chapter. Which conclusion best follows?",
+    mcOptions: [
+      {
+        text: "Quizzing seems to help memory more than rereading.",
+        credit: 0.3,
+      },
+      {
+        text: "Study results are too noisy to say testing beats rereading.",
+        credit: 0,
+      },
+      {
+        text: "Practice quizzes probably help; we could compare more study methods.",
+        credit: 0.6,
+      },
+      {
+        text: "Actively retrieving a memory probably strengthens the path back to it more than passively reviewing does, so the effort of recall is the active ingredient; test whether harder quizzes (that still allow success) help more than easy ones, whether the rereaders catch up if given a single quiz, and whether the testing advantage is largest on the delayed test, not a same-day one.",
+        credit: 1.0,
+      },
+    ],
+    correctAnswer:
+      "Actively retrieving a memory probably strengthens the path back to it more than passively reviewing does, so the effort of recall is the active ingredient; test whether harder quizzes (that still allow success) help more than easy ones, whether the rereaders catch up if given a single quiz, and whether the testing advantage is largest on the delayed test, not a same-day one.",
+    explanation:
+      "The strongest answer names the testing/retrieval-practice mechanism and three tests, including one isolating the effortful-recall ingredient; 'too noisy to say' is the empty refusal.",
+  },
+  {
+    itemType: "mc",
+    prompt:
+      "Scuba divers learn a list of words either on the beach or underwater, then try to recall them in the same or the opposite setting. They remember more when tested in the place they learned. Which conclusion best follows?",
+    mcOptions: [
+      {
+        text: "Memory is too situation-dependent to draw a usable rule from divers.",
+        credit: 0,
+      },
+      {
+        text: "The surroundings at learning probably get encoded alongside the words and later act as retrieval cues, so matching the context revives the memory; test whether mentally imagining the original setting helps even when physically elsewhere, whether the effect shrinks for very well-learned items, and whether the boost tracks how distinctive the two settings are.",
+        credit: 1.0,
+      },
+      {
+        text: "Place probably affects recall; we could test more learning environments.",
+        credit: 0.6,
+      },
+      {
+        text: "People seem to recall better in the place they learned.",
+        credit: 0.3,
+      },
+    ],
+    correctAnswer:
+      "The surroundings at learning probably get encoded alongside the words and later act as retrieval cues, so matching the context revives the memory; test whether mentally imagining the original setting helps even when physically elsewhere, whether the effect shrinks for very well-learned items, and whether the boost tracks how distinctive the two settings are.",
+    explanation:
+      "Top credit names context-dependent retrieval cues and three checkable tests, including an imagination control; 'too situation-dependent' opens no inquiry.",
+  },
+  {
+    itemType: "mc",
+    prompt:
+      "An adult is told by relatives, repeatedly and with detail, about a time he was 'lost in a shopping mall as a toddler.' It never happened. After several retellings he begins describing the event vividly, adding details no one gave him. Which conclusion best follows?",
+    mcOptions: [
+      {
+        text: "Memory is too murky to say where a vivid 'memory' of a non-event comes from.",
+        credit: 0,
+      },
+      {
+        text: "He seems to have picked up a memory that wasn't real.",
+        credit: 0.3,
+      },
+      {
+        text: "Repeated suggestion plus imagining the scene probably builds a memory that feels as real as a true one, because the brain doesn't tag where a vivid image came from; test whether more imagining sessions deepen the false memory, whether it gains sensory details with each retelling, and whether plausible suggested events are adopted more readily than wildly implausible ones.",
+        credit: 1.0,
+      },
+      {
+        text: "Suggestion probably implanted the memory; we could try this with other events.",
+        credit: 0.6,
+      },
+    ],
+    correctAnswer:
+      "Repeated suggestion plus imagining the scene probably builds a memory that feels as real as a true one, because the brain doesn't tag where a vivid image came from; test whether more imagining sessions deepen the false memory, whether it gains sensory details with each retelling, and whether plausible suggested events are adopted more readily than wildly implausible ones.",
+    explanation:
+      "The richest answer names a source-monitoring failure behind implanted memories with three tests; 'too murky to say' refuses to lead.",
+  },
+  {
+    itemType: "mc",
+    prompt:
+      "Shown a real chessboard from an actual game for five seconds, chess masters can rebuild it almost perfectly, far better than beginners. But when the same pieces are scattered randomly, the masters do no better than beginners. Which conclusion best follows?",
+    mcOptions: [
+      {
+        text: "Experts probably store positions as a few meaningful 'chunks' (familiar patterns) rather than many separate pieces, so memory capacity rides on knowledge, not raw slots; test whether masters' advantage returns only for legal, game-like positions, whether their recall errors preserve sensible groupings, and whether beginners trained on common patterns start chunking too.",
+        credit: 1.0,
+      },
+      {
+        text: "Masters seem to remember real boards better.",
+        credit: 0.3,
+      },
+      {
+        text: "Expertise is too broad a thing to explain this memory gap.",
+        credit: 0,
+      },
+      {
+        text: "Experience probably helps memory; we could test players of more skill levels.",
+        credit: 0.6,
+      },
+    ],
+    correctAnswer:
+      "Experts probably store positions as a few meaningful 'chunks' (familiar patterns) rather than many separate pieces, so memory capacity rides on knowledge, not raw slots; test whether masters' advantage returns only for legal, game-like positions, whether their recall errors preserve sensible groupings, and whether beginners trained on common patterns start chunking too.",
+    explanation:
+      "Top credit names chunking as the mechanism — why the random board erases the edge — and three tests; 'too broad a thing to explain' commits to nothing.",
+  },
+  {
+    itemType: "mc",
+    prompt:
+      "A man is sure he knows the name of an actor — it's 'on the tip of his tongue.' He knows the first letter and the number of syllables and can reject wrong guesses instantly, yet can't produce the name for an hour. Which conclusion best follows?",
+    mcOptions: [
+      {
+        text: "Forgetting a name is too ordinary to learn anything from.",
+        credit: 0,
+      },
+      {
+        text: "He seems to almost remember the name.",
+        credit: 0.3,
+      },
+      {
+        text: "This is probably a tip-of-the-tongue state; we could collect more examples.",
+        credit: 0.6,
+      },
+      {
+        text: "A memory's meaning and its sound are probably stored and retrieved partly separately, so he can access the concept and partial sound while the full word stays blocked; test whether giving the first syllable unlocks it, whether similar-sounding 'blockers' keep popping up, and whether the name surfaces later unbidden once the block fades.",
+        credit: 1.0,
+      },
+    ],
+    correctAnswer:
+      "A memory's meaning and its sound are probably stored and retrieved partly separately, so he can access the concept and partial sound while the full word stays blocked; test whether giving the first syllable unlocks it, whether similar-sounding 'blockers' keep popping up, and whether the name surfaces later unbidden once the block fades.",
+    explanation:
+      "The productive answer separates meaning from sound to explain the partial access and names three tests; 'too ordinary to learn anything' is the unfruitful dodge.",
+  },
+  {
+    itemType: "mc",
+    prompt:
+      "People learn a list while feeling cheerful. Later, those put back into a cheerful mood recall more of the list than those tested while feeling down; the reverse holds for words learned in a low mood. Which conclusion best follows?",
+    mcOptions: [
+      {
+        text: "Mood and memory are too tangled to claim one helps recall the other.",
+        credit: 0,
+      },
+      {
+        text: "A person's inner state at learning probably becomes part of the memory's retrieval cues, so matching the mood at recall reopens the file; test whether the boost shrinks for highly memorable items, whether deliberately recreating the learning mood helps when it returns, and whether the effect is larger for emotionally charged words.",
+        credit: 1.0,
+      },
+      {
+        text: "Mood seems to affect what people remember.",
+        credit: 0.3,
+      },
+      {
+        text: "Matching moods probably aids recall; we could test more mood pairs.",
+        credit: 0.6,
+      },
+    ],
+    correctAnswer:
+      "A person's inner state at learning probably becomes part of the memory's retrieval cues, so matching the mood at recall reopens the file; test whether the boost shrinks for highly memorable items, whether deliberately recreating the learning mood helps when it returns, and whether the effect is larger for emotionally charged words.",
+    explanation:
+      "Top credit names state-dependent retrieval cues and three tests; 'too tangled to claim' opens no checkable line of inquiry.",
+  },
+  {
+    itemType: "mc",
+    prompt:
+      "Students who study new material and then sleep a full night remember more of it the next day than equally tired students who study and stay awake the same number of hours. Which conclusion best follows?",
+    mcOptions: [
+      {
+        text: "Sleep and memory are too complicated to credit sleep for the difference.",
+        credit: 0,
+      },
+      {
+        text: "Sleep seems to help people keep what they learned.",
+        credit: 0.3,
+      },
+      {
+        text: "Sleep probably lets the brain replay and consolidate the day's new memories into more stable storage, rather than just preventing tiredness; test whether a short nap after study also helps, whether the benefit is biggest for material learned right before sleep, and whether disrupting deep sleep specifically wipes out the gain.",
+        credit: 1.0,
+      },
+      {
+        text: "Sleep probably aids memory; we could test more sleep schedules.",
+        credit: 0.6,
+      },
+    ],
+    correctAnswer:
+      "Sleep probably lets the brain replay and consolidate the day's new memories into more stable storage, rather than just preventing tiredness; test whether a short nap after study also helps, whether the benefit is biggest for material learned right before sleep, and whether disrupting deep sleep specifically wipes out the gain.",
+    explanation:
+      "The strongest answer names sleep-based consolidation (and rules out mere tiredness) with three tests; 'too complicated to credit sleep' commits to no mechanism.",
+  },
+  {
+    itemType: "mc",
+    prompt:
+      "People hear a list of 20 words read once and then immediately write down all they can. They reliably remember the first few words and the last few, but the middle of the list is a blur. Which conclusion best follows?",
+    mcOptions: [
+      {
+        text: "The first words probably got rehearsed into longer-term storage while the last words are still fresh in short-term memory, leaving the middle squeezed out of both; test whether a 30-second distraction before recall erases the last-word advantage but not the first, whether slowing the reading helps the middle, and whether the first-word edge survives a delay better than the last-word edge.",
+        credit: 1.0,
+      },
+      {
+        text: "People seem to remember the start and end of a list best.",
+        credit: 0.3,
+      },
+      {
+        text: "List position is too minor a factor to explain anything about memory.",
+        credit: 0,
+      },
+      {
+        text: "Position probably matters for recall; we could test lists of other lengths.",
+        credit: 0.6,
+      },
+    ],
+    correctAnswer:
+      "The first words probably got rehearsed into longer-term storage while the last words are still fresh in short-term memory, leaving the middle squeezed out of both; test whether a 30-second distraction before recall erases the last-word advantage but not the first, whether slowing the reading helps the middle, and whether the first-word edge survives a delay better than the last-word edge.",
+    explanation:
+      "Top credit names two distinct memory stores behind the serial-position curve and gives a test that separates them; 'too minor a factor' refuses to lead.",
+  },
+];
+
+const hybrid: HomeworkItem[] = [
+  {
+    itemType: "hybrid",
+    prompt:
+      "A week after watching a video of a burglary, viewers read a short summary that mistakenly says the burglar wore gloves — he didn't. Tested later, many now confidently 'remember' the gloves, and they can't tell the suggested detail from the ones they actually saw. Which conclusion best follows?",
+    mcOptions: [
+      {
+        text: "Later misinformation probably gets blended into the original memory, and the brain loses track of which detail came from where (a source-monitoring failure); test whether warning viewers that the summary may contain errors cuts the false memory, whether a longer gap before the summary increases the blending, and whether viewers rate the false gloves as vividly as true details.",
+        credit: 1.0,
+      },
+      {
+        text: "Viewers seem to absorb the wrong detail.",
+        credit: 0.3,
+      },
+      {
+        text: "Memory is too easily muddled to say where the gloves came from.",
+        credit: 0,
+      },
+      {
+        text: "The summary probably altered their memory; we could test more misleading summaries.",
+        credit: 0.6,
+      },
+    ],
+    writtenRubric: {
+      prompt:
+        "In two sentences, name the single cheapest observation that would most distinguish your 'misinformation blends into memory' lead from the rival 'viewers just trust the written summary over their own eyes,' and say what result would refute your lead.",
+      modelAnswer:
+        "Cheapest test: after viewers report the gloves, ask them to label each detail as 'saw it in the video' or 'read it in the summary' — if misinformation truly blended in, they should misattribute the gloves to the video, not knowingly defer to the text. My lead is refuted if viewers correctly tag the gloves as coming from the summary, which would mean they are simply trusting the document rather than misremembering.",
+      yieldAnchors: [
+        "The summary falsely states the burglar wore gloves",
+        "Many viewers later confidently recall the gloves",
+        "They cannot separate the suggested detail from what they saw",
+      ],
+      riskAnchors: [
+        "Warning viewers of possible errors cuts the false memory",
+        "A longer gap before the summary increases the blending",
+        "Viewers rate the false gloves as vividly as true details",
+      ],
+      defeatedBy: [
+        "Viewers knowingly defer to the written summary over their own memory",
+        "The summary has no effect on what viewers report",
+      ],
+    },
+    correctAnswer:
+      "Later misinformation probably gets blended into the original memory, and the brain loses track of which detail came from where (a source-monitoring failure); test whether warning viewers that the summary may contain errors cuts the false memory, whether a longer gap before the summary increases the blending, and whether viewers rate the false gloves as vividly as true details.",
+    explanation:
+      "Full credit names the misinformation-and-source-monitoring mechanism with three checks and a cheap source-tagging test that states its own refutation; 'too easily muddled to say' opens nothing.",
+  },
+  {
+    itemType: "hybrid",
+    prompt:
+      "A tutor finds that students who close the book and try to recall a definition before checking it learn it far better than students who simply copy the definition out three times, even though copying takes longer. Which conclusion best follows?",
+    mcOptions: [
+      {
+        text: "Learning is too personal to credit the recall step for the difference.",
+        credit: 0,
+      },
+      {
+        text: "Struggling to retrieve a memory before checking probably strengthens it more than passive copying, because the effortful search reshapes the retrieval path; test whether students who guess and fail still benefit once corrected, whether the advantage grows on a delayed test, and whether making copying active (covering and reconstructing) erases the gap.",
+        credit: 1.0,
+      },
+      {
+        text: "Recalling first seems to beat copying.",
+        credit: 0.3,
+      },
+      {
+        text: "Active recall probably helps; we could try it with more students.",
+        credit: 0.6,
+      },
+    ],
+    writtenRubric: {
+      prompt:
+        "In two sentences, name the single cheapest observation that would most distinguish your 'effortful retrieval strengthens memory' lead from the rival 'recall students simply pay more attention,' and say what result would refute your lead.",
+      modelAnswer:
+        "Cheapest test: have the copying group cover the text and reconstruct the definition from memory — making copying effortful too — and compare; if effortful retrieval is the active ingredient, the reconstruct group should catch up to the recall group. My lead is refuted if the reconstruct-from-memory group still lags behind plain recall, pointing to general attention rather than the act of retrieval.",
+      yieldAnchors: [
+        "Recall-first students learn definitions far better",
+        "Copying takes longer yet works worse",
+        "The comparison holds the material constant",
+      ],
+      riskAnchors: [
+        "Students who guess wrong still benefit once corrected",
+        "The advantage grows on a delayed test",
+        "Making copying active erases the gap",
+      ],
+      defeatedBy: [
+        "Recall students simply paid more attention overall",
+        "The retrieval step is unrelated to how well it sticks",
+      ],
+    },
+    correctAnswer:
+      "Struggling to retrieve a memory before checking probably strengthens it more than passive copying, because the effortful search reshapes the retrieval path; test whether students who guess and fail still benefit once corrected, whether the advantage grows on a delayed test, and whether making copying active (covering and reconstructing) erases the gap.",
+    explanation:
+      "Full credit names effortful retrieval as the mechanism with three checks and a controlled test that names its refutation; 'too personal to credit' leads nowhere.",
+  },
+  {
+    itemType: "hybrid",
+    prompt:
+      "An interviewer talking to a child witness keeps asking, 'He touched you, didn't he?' Over repeated sessions the child, who first said no, begins to agree and adds details. Other children questioned with open prompts give shorter, more stable accounts. Which conclusion best follows?",
+    mcOptions: [
+      {
+        text: "Children's memories are too unstable to say the questions caused anything.",
+        credit: 0,
+      },
+      {
+        text: "Repeated leading questions probably implant suggested events into a child's account, especially as repetition makes the suggestion feel familiar and self-generated; test whether open-ended prompts yield fewer invented details, whether agreement rises with each repeated session, and whether the added details drift toward what the interviewer implied rather than new independent facts.",
+        credit: 1.0,
+      },
+      {
+        text: "Leading questions seem to change the child's story.",
+        credit: 0.3,
+      },
+      {
+        text: "The questioning probably shaped the account; we could interview more children.",
+        credit: 0.6,
+      },
+    ],
+    writtenRubric: {
+      prompt:
+        "In two sentences, name the single cheapest observation that would most distinguish your 'leading questions implant the event' lead from the rival 'the child was reluctant at first but always remembered it,' and say what result would refute your lead.",
+      modelAnswer:
+        "Cheapest test: interview matched children about the same situation using only open prompts and compare — if leading questions implant the event, the open-prompt children should rarely report the touch, while the led children increasingly do. My lead is refuted if open-prompt children report the event just as often, which would suggest a real memory the leading questions merely uncovered.",
+      yieldAnchors: [
+        "The child first said no",
+        "Agreement and added detail grew over repeated leading sessions",
+        "Open-prompt children gave shorter, more stable accounts",
+      ],
+      riskAnchors: [
+        "Open-ended prompts yield fewer invented details",
+        "Agreement rises with each repeated session",
+        "Added details track the interviewer's implications, not new facts",
+      ],
+      defeatedBy: [
+        "The child always remembered the event and was merely reluctant",
+        "The interview style is unrelated to what the child reports",
+      ],
+    },
+    correctAnswer:
+      "Repeated leading questions probably implant suggested events into a child's account, especially as repetition makes the suggestion feel familiar and self-generated; test whether open-ended prompts yield fewer invented details, whether agreement rises with each repeated session, and whether the added details drift toward what the interviewer implied rather than new independent facts.",
+    explanation:
+      "Full credit commits to a suggestibility mechanism with three checks and an open-prompt comparison that names its refutation; 'too unstable to say' refuses to lead.",
+  },
+  {
+    itemType: "hybrid",
+    prompt:
+      "A language learner who reviews a deck of flashcards once a day forgets fewer words than a classmate who reviews the same deck five times in one evening and then not again. Both spend the same total minutes. Which conclusion best follows?",
+    mcOptions: [
+      {
+        text: "Spacing the same study across days probably makes each review a fresh act of retrieval after partial forgetting, which strengthens storage more than back-to-back repetition; test whether stretching the gaps further (every two days) helps still more up to a point, whether the massed reviewer matches the spaced one if given one review the next week, and whether the spaced edge appears only on a delayed test.",
+        credit: 1.0,
+      },
+      {
+        text: "Daily review seems to beat one big session.",
+        credit: 0.3,
+      },
+      {
+        text: "Spacing probably helps memory; we could try other review schedules.",
+        credit: 0.6,
+      },
+      {
+        text: "Memory schedules are too individual to credit spacing for the difference.",
+        credit: 0,
+      },
+    ],
+    writtenRubric: {
+      prompt:
+        "In two sentences, name the single cheapest observation that would most distinguish your 'spacing forces fresh retrieval' lead from the rival 'the daily reviewer is just more disciplined,' and say what result would refute your lead.",
+      modelAnswer:
+        "Cheapest test: within the same learner, randomly assign half the cards to a spaced schedule and half to a massed schedule with total time held equal, so discipline can't differ between the two card sets — if spacing is the mechanism, the spaced cards should be retained better. My lead is refuted if spaced and massed cards are retained equally for that learner, pointing to overall discipline rather than the schedule.",
+      yieldAnchors: [
+        "Daily review forgets fewer words",
+        "The massed reviewer crams five times in one evening",
+        "Both spend the same total minutes",
+      ],
+      riskAnchors: [
+        "Stretching the gaps further helps up to a point",
+        "The massed reviewer catches up with one review next week",
+        "The spaced edge appears only on a delayed test",
+      ],
+      defeatedBy: [
+        "The daily reviewer is simply more disciplined overall",
+        "Review timing is unrelated to retention",
+      ],
+    },
+    correctAnswer:
+      "Spacing the same study across days probably makes each review a fresh act of retrieval after partial forgetting, which strengthens storage more than back-to-back repetition; test whether stretching the gaps further (every two days) helps still more up to a point, whether the massed reviewer matches the spaced one if given one review the next week, and whether the spaced edge appears only on a delayed test.",
+    explanation:
+      "Full credit names the spacing-and-retrieval mechanism with three checks and a within-person randomized test that names its refutation; 'too individual to credit spacing' opens no inquiry.",
+  },
+  {
+    itemType: "hybrid",
+    prompt:
+      "A grocery shopper who repeats a five-item list in her head remembers all of it — until a cashier asks her a question, after which two items vanish. People given a longer 10-item list lose far more even without interruption. Which conclusion best follows?",
+    mcOptions: [
+      {
+        text: "Short-term memory probably holds only a few items by active rehearsal, so interruption stops the rehearsal and overload exceeds its limited capacity; test whether grouping the 10 items into named categories (chunking) restores recall, whether a silent count-back task wipes the list like the cashier did, and whether items rehearsed most recently survive the interruption best.",
+        credit: 1.0,
+      },
+      {
+        text: "Distraction seems to make people forget short lists.",
+        credit: 0.3,
+      },
+      {
+        text: "Interruptions probably hurt memory; we could test more list lengths.",
+        credit: 0.6,
+      },
+      {
+        text: "Everyday forgetting is too random to pin on rehearsal or capacity.",
+        credit: 0,
+      },
+    ],
+    writtenRubric: {
+      prompt:
+        "In two sentences, name the single cheapest observation that would most distinguish your 'limited-capacity rehearsal' lead from the rival 'the cashier's question simply made her stop caring about the list,' and say what result would refute your lead.",
+      modelAnswer:
+        "Cheapest test: replace the cashier's question with a brief, meaningless count-back task (say '7, 6, 5...') that demands attention but no caring — if rehearsal is what holds the list, this should erase items just as the question did. My lead is refuted if the meaningless distraction leaves the list intact, suggesting motivation, not interrupted rehearsal, caused the loss.",
+      yieldAnchors: [
+        "She holds five items by repeating them",
+        "Two items vanish after the cashier interrupts",
+        "A 10-item list is lost even without interruption",
+      ],
+      riskAnchors: [
+        "Chunking the 10 items into categories restores recall",
+        "A silent count-back task wipes the list like the question did",
+        "The most recently rehearsed items survive interruption best",
+      ],
+      defeatedBy: [
+        "The cashier's question merely made her stop caring",
+        "List length and interruption are unrelated to forgetting",
+      ],
+    },
+    correctAnswer:
+      "Short-term memory probably holds only a few items by active rehearsal, so interruption stops the rehearsal and overload exceeds its limited capacity; test whether grouping the 10 items into named categories (chunking) restores recall, whether a silent count-back task wipes the list like the cashier did, and whether items rehearsed most recently survive the interruption best.",
+    explanation:
+      "Full credit names limited-capacity rehearsal with three checks and a meaningless-distractor test that names its refutation; 'too random to pin' is the barren dodge.",
+  },
+  {
+    itemType: "hybrid",
+    prompt:
+      "An older man can describe in rich detail how to ride a bicycle and play a song on the piano, yet cannot recall having lunch an hour ago or the name of his new nurse. A brain injury affected his ability to form new everyday memories. Which conclusion best follows?",
+    mcOptions: [
+      {
+        text: "Brains are too complex to conclude anything from one injured patient.",
+        credit: 0,
+      },
+      {
+        text: "He seems to remember skills but not recent events.",
+        credit: 0.3,
+      },
+      {
+        text: "Memory probably splits into separate systems — one for skills and habits, another for conscious facts and events — that can be damaged independently; test whether he can learn a brand-new motor skill despite no memory of practicing it, whether his factual learning fails across all topics equally, and whether cueing a recent event ever revives it.",
+        credit: 1.0,
+      },
+      {
+        text: "His memory probably works in parts; we could study more patients.",
+        credit: 0.6,
+      },
+    ],
+    writtenRubric: {
+      prompt:
+        "In two sentences, name the single cheapest observation that would most distinguish your 'separate memory systems' lead from the rival 'he only remembers old, well-practiced things and loses everything new,' and say what result would refute your lead.",
+      modelAnswer:
+        "Cheapest test: teach him a brand-new motor skill, like a mirror-drawing task, over several days — if skill memory is a separate intact system, he should get faster at it even while swearing he's never done it before. My lead is refuted if he cannot improve at the new skill at all, which would mean he simply retains old material and cannot learn anything new of any kind.",
+      yieldAnchors: [
+        "He retains old skills like cycling and piano",
+        "He cannot recall lunch an hour ago",
+        "He cannot learn his new nurse's name",
+      ],
+      riskAnchors: [
+        "He learns a brand-new motor skill despite no memory of practicing",
+        "His factual learning fails across all topics equally",
+        "Cueing a recent event sometimes revives it",
+      ],
+      defeatedBy: [
+        "He only keeps old, well-practiced material and loses all new learning",
+        "The injury erased one general memory ability, not separate systems",
+      ],
+    },
+    correctAnswer:
+      "Memory probably splits into separate systems — one for skills and habits, another for conscious facts and events — that can be damaged independently; test whether he can learn a brand-new motor skill despite no memory of practicing it, whether his factual learning fails across all topics equally, and whether cueing a recent event ever revives it.",
+    explanation:
+      "Full credit names dissociable memory systems with three checks and a new-skill test that names its refutation; 'too complex to conclude anything' opens no path.",
+  },
+  {
+    itemType: "hybrid",
+    prompt:
+      "A history teacher finds that students who summarize each chapter in their own words remember it months later, while students who highlight passages in bright yellow remember much less, despite feeling confident they 'knew it.' Which conclusion best follows?",
+    mcOptions: [
+      {
+        text: "Summarizing probably forces deeper processing of meaning, which builds richer, better-connected memories than highlighting, which only marks text without engaging it; test whether highlighters who then explain each highlight catch up, whether the summarizers' advantage is largest on questions requiring understanding rather than verbatim recall, and whether highlighting's false confidence comes from fluent rereading.",
+        credit: 1.0,
+      },
+      {
+        text: "Summarizing seems to work better than highlighting.",
+        credit: 0.3,
+      },
+      {
+        text: "Summarizing probably helps; we could compare more study methods.",
+        credit: 0.6,
+      },
+      {
+        text: "Study outcomes are too varied to credit the method for the difference.",
+        credit: 0,
+      },
+    ],
+    writtenRubric: {
+      prompt:
+        "In two sentences, name the single cheapest observation that would most distinguish your 'deeper processing of meaning' lead from the rival 'summarizers simply spend more time on the material,' and say what result would refute your lead.",
+      modelAnswer:
+        "Cheapest test: hold study time equal and have highlighters add one sentence explaining why each highlight matters — if depth of processing is the mechanism, equal-time explainers should approach the summarizers. My lead is refuted if equal-time highlighters who explain still lag far behind, pointing to total time rather than depth of engagement.",
+      yieldAnchors: [
+        "Summarizers remember the material months later",
+        "Highlighters remember much less",
+        "Highlighters feel confident they knew it",
+      ],
+      riskAnchors: [
+        "Highlighters who explain each highlight catch up",
+        "The summarizers' edge is largest on understanding questions",
+        "Highlighting's false confidence comes from fluent rereading",
+      ],
+      defeatedBy: [
+        "Summarizers simply spent more time on the material",
+        "Study method is unrelated to long-term retention",
+      ],
+    },
+    correctAnswer:
+      "Summarizing probably forces deeper processing of meaning, which builds richer, better-connected memories than highlighting, which only marks text without engaging it; test whether highlighters who then explain each highlight catch up, whether the summarizers' advantage is largest on questions requiring understanding rather than verbatim recall, and whether highlighting's false confidence comes from fluent rereading.",
+    explanation:
+      "Full credit names depth-of-processing with three checks and an equal-time test that names its refutation; 'too varied to credit the method' commits to nothing.",
+  },
+  {
+    itemType: "hybrid",
+    prompt:
+      "People are asked to recall a story from a culture unlike their own. With each retelling, the story gets shorter and the unfamiliar parts quietly change into things that fit the teller's own customs, until it sounds like a story from their own world. Which conclusion best follows?",
+    mcOptions: [
+      {
+        text: "Memory is too creative to say what guides how a story changes.",
+        credit: 0,
+      },
+      {
+        text: "People seem to reshape the story over time.",
+        credit: 0.3,
+      },
+      {
+        text: "Recall probably reconstructs a story by fitting it to the teller's existing mental frameworks (schemas), so unfamiliar details get replaced by familiar ones; test whether elements matching the teller's culture survive better than odd ones, whether the same drift happens across many tellers in the same direction, and whether giving the framework in advance reduces the distortion.",
+        credit: 1.0,
+      },
+      {
+        text: "The story probably changes with retelling; we could test more stories.",
+        credit: 0.6,
+      },
+    ],
+    writtenRubric: {
+      prompt:
+        "In two sentences, name the single cheapest observation that would most distinguish your 'schema-driven reconstruction' lead from the rival 'people just forget random bits each time,' and say what result would refute your lead.",
+      modelAnswer:
+        "Cheapest test: check whether the changes are systematic — do the unfamiliar elements consistently morph toward the teller's own customs across many independent tellers? If schemas guide reconstruction, the drift should point in the same culturally-familiar direction, not scatter randomly. My lead is refuted if the lost and altered details vary randomly across tellers with no pull toward their own culture.",
+      yieldAnchors: [
+        "The story shortens with each retelling",
+        "Unfamiliar parts change into familiar customs",
+        "It ends up sounding like the teller's own world",
+      ],
+      riskAnchors: [
+        "Culture-matching elements survive better than odd ones",
+        "The drift runs the same direction across many tellers",
+        "Giving the framework in advance reduces distortion",
+      ],
+      defeatedBy: [
+        "People just forget random bits with no systematic pull",
+        "Retelling is unrelated to how the story changes",
+      ],
+    },
+    correctAnswer:
+      "Recall probably reconstructs a story by fitting it to the teller's existing mental frameworks (schemas), so unfamiliar details get replaced by familiar ones; test whether elements matching the teller's culture survive better than odd ones, whether the same drift happens across many tellers in the same direction, and whether giving the framework in advance reduces the distortion.",
+    explanation:
+      "Full credit names schema-driven reconstruction with three checks and a systematic-direction test that names its refutation; 'too creative to say' refuses to lead.",
+  },
+  {
+    itemType: "hybrid",
+    prompt:
+      "A nurse can find any patient's room instantly after years on the ward, but a new nurse keeps getting lost. The veteran says she 'just knows,' yet on her first week in an unfamiliar hospital she gets lost as easily as a beginner. Which conclusion best follows?",
+    mcOptions: [
+      {
+        text: "Her speed probably comes from a rich learned map built up through repeated experience, not from a general sense of direction, since it vanishes in an unfamiliar building; test whether her advantage returns only in layouts similar to her home ward, whether her recall errors preserve sensible ward groupings, and whether a beginner drilled on the same ward reaches her speed.",
+        credit: 1.0,
+      },
+      {
+        text: "The veteran nurse seems to know her ward well.",
+        credit: 0.3,
+      },
+      {
+        text: "Experience probably builds her skill; we could test more nurses.",
+        credit: 0.6,
+      },
+      {
+        text: "Wayfinding is too individual to credit experience for her speed.",
+        credit: 0,
+      },
+    ],
+    writtenRubric: {
+      prompt:
+        "In two sentences, name the single cheapest observation that would most distinguish your 'learned map from experience' lead from the rival 'she simply has a better natural sense of direction,' and say what result would refute your lead.",
+      modelAnswer:
+        "Cheapest test: compare her wayfinding to a beginner's in a brand-new, unfamiliar hospital where neither has experience — if her edge comes from a learned map, the two should perform alike on unfamiliar ground. My lead is refuted if she still outperforms beginners in the unfamiliar building, which would point to a general navigational talent rather than ward-specific learning.",
+      yieldAnchors: [
+        "She finds rooms instantly after years on the ward",
+        "A new nurse keeps getting lost",
+        "She gets lost like a beginner in an unfamiliar hospital",
+      ],
+      riskAnchors: [
+        "Her advantage returns only in layouts similar to her ward",
+        "Her errors preserve sensible ward groupings",
+        "A beginner drilled on the same ward reaches her speed",
+      ],
+      defeatedBy: [
+        "She simply has a better natural sense of direction",
+        "Experience on the ward is unrelated to her speed",
+      ],
+    },
+    correctAnswer:
+      "Her speed probably comes from a rich learned map built up through repeated experience, not from a general sense of direction, since it vanishes in an unfamiliar building; test whether her advantage returns only in layouts similar to her home ward, whether her recall errors preserve sensible ward groupings, and whether a beginner drilled on the same ward reaches her speed.",
+    explanation:
+      "Full credit names experience-built knowledge with three checks and an unfamiliar-building test that names its refutation; 'too individual to credit experience' opens nothing.",
+  },
+];
+
+const written: HomeworkItem[] = [
+  {
+    itemType: "written",
+    prompt:
+      "A police department notices that when witnesses are shown a lineup all at once, they more often pick an innocent look-alike, but when shown one face at a time they make fewer confident false picks. The detectives also recall that all-at-once witnesses tend to compare faces and choose 'whoever looks most like' the culprit. In one paragraph, propose the strongest lead for why the all-at-once lineup produces more false identifications and describe how you would test it.",
+    writtenRubric: {
+      modelAnswer:
+        "The strongest lead is that an all-at-once lineup invites relative judgment — the witness compares the faces and picks whoever looks most like the suspect, even when the real culprit is absent — whereas a one-at-a-time lineup forces an absolute yes/no decision against memory. This lead predicts checkable things: false picks should be highest in lineups where no face is the true culprit but one is a close look-alike; warning witnesses 'the culprit may not be here' should cut all-at-once errors by discouraging comparison; and witnesses who can study faces only sequentially, without going back, should make fewer confident mistakes. I would test it by running culprit-absent versus culprit-present lineups in both formats, by adding the 'may not be present' instruction to half the all-at-once lineups, and by recording whether witnesses glance back and forth and whether that comparing behavior predicts false picks.",
+      yieldAnchors: [
+        "All-at-once lineups produce more false picks of innocent look-alikes",
+        "One-at-a-time lineups produce fewer confident false picks",
+        "All-at-once witnesses tend to compare faces and choose the closest match",
+      ],
+      riskAnchors: [
+        "False picks peak when the culprit is absent but a look-alike is present",
+        "A 'culprit may not be present' warning cuts all-at-once errors",
+        "Comparing behavior predicts who makes false picks",
+      ],
+      defeatedBy: [
+        "Lineup format is irrelevant and accuracy depends only on the witness",
+        "Witnesses always identify by absolute memory regardless of format",
+        "Nothing can be concluded without far more lineups",
+      ],
+    },
+    correctAnswer:
+      "The strongest lead is that an all-at-once lineup invites relative judgment — the witness compares the faces and picks whoever looks most like the suspect, even when the real culprit is absent — whereas a one-at-a-time lineup forces an absolute yes/no decision against memory. This lead predicts checkable things: false picks should be highest in lineups where no face is the true culprit but one is a close look-alike; warning witnesses 'the culprit may not be here' should cut all-at-once errors by discouraging comparison; and witnesses who can study faces only sequentially, without going back, should make fewer confident mistakes. I would test it by running culprit-absent versus culprit-present lineups in both formats, by adding the 'may not be present' instruction to half the all-at-once lineups, and by recording whether witnesses glance back and forth and whether that comparing behavior predicts false picks.",
+    explanation:
+      "Under inverted grading, the cautious 'nothing can be concluded without more lineups' earns near-zero and an answer naming no test scores low; top credit goes to the relative-judgment lead that commits to a mechanism and names a culprit-absent test that could refute it.",
+  },
+  {
+    itemType: "written",
+    prompt:
+      "A college instructor finds that students who take a low-stakes quiz after each lecture score much higher on the final than students who instead get extra time to reread their notes. The quizzed students also report feeling less confident during the term, while the rereaders feel sure they know the material. In one paragraph, propose the strongest lead and describe how you would test it.",
+    writtenRubric: {
+      modelAnswer:
+        "The strongest lead is that quizzing makes students actively retrieve the material, which strengthens the memory's retrieval path and exposes gaps, while rereading only produces a false sense of fluency that feels like knowing but doesn't survive to the final. This lead is productive because it predicts checkable consequences: the quizzed group's advantage should be largest on the delayed final and small or absent on a quiz given the same day; rereaders' confidence should track how fluently they can reread, not how much they later recall; and giving rereaders a single end-of-lecture quiz should narrow the gap. I would test it by comparing same-day versus delayed test performance for both groups, by measuring whether reread fluency predicts confidence but not final scores, and by adding one quiz to a subset of rereaders to see whether retrieval alone reproduces the benefit.",
+      yieldAnchors: [
+        "Quizzed students score much higher on the final",
+        "Rereaders feel sure they know the material",
+        "Quizzed students feel less confident during the term",
+      ],
+      riskAnchors: [
+        "The quizzing advantage is largest on the delayed final",
+        "Reread fluency predicts confidence but not final scores",
+        "One added quiz narrows the gap for rereaders",
+      ],
+      defeatedBy: [
+        "Quizzed students were simply stronger to begin with",
+        "Rereading and quizzing build memory equally well",
+        "Learning is too individual to draw any lead",
+      ],
+    },
+    correctAnswer:
+      "The strongest lead is that quizzing makes students actively retrieve the material, which strengthens the memory's retrieval path and exposes gaps, while rereading only produces a false sense of fluency that feels like knowing but doesn't survive to the final. This lead is productive because it predicts checkable consequences: the quizzed group's advantage should be largest on the delayed final and small or absent on a quiz given the same day; rereaders' confidence should track how fluently they can reread, not how much they later recall; and giving rereaders a single end-of-lecture quiz should narrow the gap. I would test it by comparing same-day versus delayed test performance for both groups, by measuring whether reread fluency predicts confidence but not final scores, and by adding one quiz to a subset of rereaders to see whether retrieval alone reproduces the benefit.",
+    explanation:
+      "The cautious 'learning is too individual to draw any lead' earns near-zero; credit rewards committing to the retrieval-practice mechanism and naming the delayed-test and added-quiz checks that could refute it.",
+  },
+  {
+    itemType: "written",
+    prompt:
+      "A therapist notices that several clients, after weeks of being asked detailed questions about a childhood they can't clearly remember, begin to report vivid memories of events no relative can confirm and no record supports. The clients describe these memories with strong emotion and full confidence. In one paragraph, propose the strongest lead and describe how you would test it.",
+    writtenRubric: {
+      modelAnswer:
+        "The strongest lead is that repeatedly imagining and discussing suggested events can build false memories that feel completely real, because the mind doesn't reliably tag whether a vivid mental image came from a true experience or from imagination and suggestion. This lead is productive because it predicts checkable consequences: clients who spend more sessions imagining an event should report richer, more confident 'memories' of it; suggested events that are plausible should be adopted more readily than wildly implausible ones; and the confidence and emotion attached to confirmed-false memories should be just as high as for verified real ones. I would test it, ethically, in a controlled study by giving volunteers a mix of true family events and one plausible-but-false event suggested by relatives, then tracking whether repeated imagining grows the false memory, whether plausibility predicts adoption, and whether people can tell their false memories from true ones by confidence alone.",
+      yieldAnchors: [
+        "Vivid memories emerge only after weeks of suggestive questioning",
+        "No relative or record confirms the events",
+        "Clients report them with strong emotion and full confidence",
+      ],
+      riskAnchors: [
+        "More imagining sessions yield richer, more confident false memories",
+        "Plausible suggested events are adopted more readily than implausible ones",
+        "Confidence and emotion cannot separate false memories from true ones",
+      ],
+      defeatedBy: [
+        "Vivid, confident memories are always accurate records of real events",
+        "The suggestive questioning played no role in the new memories",
+        "Memory is too mysterious to say where the recollections came from",
+      ],
+    },
+    correctAnswer:
+      "The strongest lead is that repeatedly imagining and discussing suggested events can build false memories that feel completely real, because the mind doesn't reliably tag whether a vivid mental image came from a true experience or from imagination and suggestion. This lead is productive because it predicts checkable consequences: clients who spend more sessions imagining an event should report richer, more confident 'memories' of it; suggested events that are plausible should be adopted more readily than wildly implausible ones; and the confidence and emotion attached to confirmed-false memories should be just as high as for verified real ones. I would test it, ethically, in a controlled study by giving volunteers a mix of true family events and one plausible-but-false event suggested by relatives, then tracking whether repeated imagining grows the false memory, whether plausibility predicts adoption, and whether people can tell their false memories from true ones by confidence alone.",
+    explanation:
+      "Under inverted grading, 'memory is too mysterious to say where the recollections came from' earns near-zero and the overreach 'vivid memories are always accurate' is defeated by the data; top credit goes to the source-monitoring lead that commits to a mechanism and names tests that could refute it.",
+  },
+  {
+    itemType: "written",
+    prompt:
+      "A music student finds that when she practices a hard passage right before bed and sleeps, she plays it noticeably better the next morning without any extra practice — but when she practices the same kind of passage in the morning and stays awake all day, she shows no overnight-style jump. Her total practice time is the same in both cases. In one paragraph, propose the strongest lead and describe how you would test it.",
+    writtenRubric: {
+      modelAnswer:
+        "The strongest lead is that sleep actively consolidates the newly practiced motor skill — the brain replays and stabilizes the sequence during sleep — so the overnight gain comes from sleep itself, not merely from a rest break or the passage of time. This lead is productive because it predicts checkable consequences: a daytime nap after practice should produce a similar jump, while an equal-length awake rest should not; the gain should be biggest for passages practiced just before sleep rather than hours earlier in the day; and selectively disrupting deep sleep should erase the improvement even with the same total sleep time. I would test it by comparing a post-practice nap against an equal awake break, by varying how long before sleep the passage is practiced, and by waking her briefly out of deep sleep on some nights to see whether the morning gain disappears.",
+      yieldAnchors: [
+        "Practice before sleep yields a next-morning improvement with no extra practice",
+        "Morning practice with no sleep shows no comparable jump",
+        "Total practice time is the same in both cases",
+      ],
+      riskAnchors: [
+        "A daytime nap produces a similar jump while an awake rest does not",
+        "The gain is biggest for passages practiced just before sleep",
+        "Disrupting deep sleep erases the improvement",
+      ],
+      defeatedBy: [
+        "Any rest or the mere passage of time produces the gain",
+        "Sleep plays no role and the improvement is random",
+        "Skill change is too individual to draw any lead",
+      ],
+    },
+    correctAnswer:
+      "The strongest lead is that sleep actively consolidates the newly practiced motor skill — the brain replays and stabilizes the sequence during sleep — so the overnight gain comes from sleep itself, not merely from a rest break or the passage of time. This lead is productive because it predicts checkable consequences: a daytime nap after practice should produce a similar jump, while an equal-length awake rest should not; the gain should be biggest for passages practiced just before sleep rather than hours earlier in the day; and selectively disrupting deep sleep should erase the improvement even with the same total sleep time. I would test it by comparing a post-practice nap against an equal awake break, by varying how long before sleep the passage is practiced, and by waking her briefly out of deep sleep on some nights to see whether the morning gain disappears.",
+    explanation:
+      "The cautious 'skill change is too individual to draw any lead' earns near-zero and the rival 'any rest produces the gain' is a claim the nap-versus-awake test can defeat; top credit goes to the sleep-consolidation lead that commits to a mechanism and names tests that could refute it.",
+  },
+  {
+    itemType: "written",
+    prompt:
+      "A museum guide notices that visitors who are asked to retell what they saw immediately after a tour later remember the exhibits well — but if a staff member happens to mention an artifact that wasn't actually in the tour, many visitors later 'remember' seeing it, and they describe it with the same confidence as real exhibits. In one paragraph, propose the strongest lead and describe how you would test it.",
+    writtenRubric: {
+      modelAnswer:
+        "The strongest lead is that memory is reconstructed at recall, so post-event information — like the staff member's mention — gets blended into the original memory of the tour, and because the brain loses track of where each detail came from, the suggested artifact feels just as 'seen' as the real ones. This lead is productive because it predicts checkable consequences: visitors warned that later conversations may contain errors should report fewer false artifacts; the false memory should grow stronger the longer the gap before the misleading mention; and when asked to label each memory as 'saw it on the tour' or 'heard about it after,' visitors who absorbed the artifact should misattribute it to the tour itself. I would test it by adding a warning to half the visitors, by varying the delay before the false mention, and by running a source-tagging check to see whether the suggested artifact is wrongly credited to direct viewing.",
+      yieldAnchors: [
+        "Immediate retelling helps visitors remember real exhibits well",
+        "A mentioned but absent artifact is later 'remembered' as seen",
+        "Visitors describe the false artifact as confidently as real ones",
+      ],
+      riskAnchors: [
+        "A warning about misleading mentions cuts false-artifact reports",
+        "A longer gap before the mention strengthens the false memory",
+        "Visitors misattribute the suggested artifact to the tour itself",
+      ],
+      defeatedBy: [
+        "Visitors knowingly defer to staff rather than misremembering",
+        "The staff mention has no effect on what visitors recall",
+        "Nothing can be concluded without surveying every visitor",
+      ],
+    },
+    correctAnswer:
+      "The strongest lead is that memory is reconstructed at recall, so post-event information — like the staff member's mention — gets blended into the original memory of the tour, and because the brain loses track of where each detail came from, the suggested artifact feels just as 'seen' as the real ones. This lead is productive because it predicts checkable consequences: visitors warned that later conversations may contain errors should report fewer false artifacts; the false memory should grow stronger the longer the gap before the misleading mention; and when asked to label each memory as 'saw it on the tour' or 'heard about it after,' visitors who absorbed the artifact should misattribute it to the tour itself. I would test it by adding a warning to half the visitors, by varying the delay before the false mention, and by running a source-tagging check to see whether the suggested artifact is wrongly credited to direct viewing.",
+    explanation:
+      "Under inverted grading, 'nothing can be concluded without surveying every visitor' earns near-zero and an answer with no test scores low; top credit goes to the reconstructive-memory and misinformation lead that commits to a mechanism and names a source-tagging test that could refute it.",
+  },
+];
+
 export const section: SectionContent = {
-  slug: "abductive-commitment",
-  title: "Abductive Commitment",
+  slug: "memory",
+  title: "Memory: How the Mind Stores, Loses, and Reshapes the Past",
   weekNumber: 1,
   blurb:
-    "Inference to the best explanation only pays off when you actually commit to the leading explanation and act on it — while naming the exact result that would make you drop it.",
+    "Memory isn't a video recorder — it encodes, loses, and rebuilds the past, which is why we forget on a predictable curve and can sincerely remember things that never happened.",
   lectureTitle:
-    "1.4 Abductive Commitment: commit to the best explanation and act on it",
-  body: `# Abductive Commitment
+    "1.4 Memory: how the mind stores, loses, and reshapes the past",
+  body: `# Memory: How the Mind Stores, Loses, and Reshapes the Past
 
-Abduction is the move from a pile of clues to the explanation that, if true, would make the clues least surprising. But abduction is only half-finished when you *name* the best explanation. The other half — the half this section is about — is **committing** to it: acting as if it's true while it leads, and stating in advance what would make you let it go.
+It is tempting to picture memory as a camera: an event happens, the brain records it, and later you press play and watch the recording. Almost everything cognitive scientists have learned says this picture is wrong. Memory is not a recording you replay; it is a process you *rebuild* every time you remember. Understanding how the mind stores, loses, and reshapes the past is one of the central achievements of cognitive science — and it has real stakes, from how you should study to whether we can trust an eyewitness.
 
-## Naming an explanation is not believing it
+## Three jobs: encoding, storage, retrieval
 
-Plenty of people can list candidate explanations and even rank them. The wet sidewalk was probably rain, possibly a sprinkler, conceivably a burst pipe. Rain leads. Yet many stop there and refuse to *act* on "rain" — they grab no umbrella, change no plan, "because we can't be sure." That refusal is the failure CCR exists to cure. If rain is the best explanation, you carry the umbrella. Inference that never touches behavior is just narration.
+A memory has to clear three hurdles. First **encoding**: turning an experience into a trace the brain can keep. Second **storage**: holding that trace over time. Third **retrieval**: getting it back out when you need it. A failure at any stage looks like "forgetting," but the fixes differ. You can't retrieve a name you never encoded because you weren't paying attention; and you can fail to retrieve something that is, in fact, still stored — which is why a hint can suddenly bring back a word that was "gone."
 
-## Provisional commitment beats permanent fence-sitting
+## Forgetting has a shape
 
-The fear behind fence-sitting is being wrong. But suspending judgment is itself a decision — usually the worst one, because it forfeits every benefit of being right without buying any protection from being wrong. The disciplined move is **provisional commitment**: adopt the leading explanation, act on it now, and attach a tripwire — a specific future observation that would unseat it. You get the upside of acting on truth *and* a built-in correction mechanism. Fence-sitting gives you neither.
+Forgetting is not random. When people learn a list and are tested over time, they lose the most right after learning, and then the rate of loss slows down — a steep drop that flattens into a long tail. The memories that survive the first day tend to stick around. This is why one heroic cram session fades fast, while a little review spread across several days builds something durable: each time you reload a fading memory, you strengthen it. Spacing your practice and *testing* yourself (rather than rereading) beat the methods that merely *feel* productive.
 
-## The tripwire is what makes commitment safe
+## Memory is reconstructive
 
-A commitment without an exit is dogma; an exit without a commitment is paralysis. Top-credit reasoning has both. "I'm treating this outage as a bad deploy and rolling back now; if the rollback doesn't restore service in ten minutes, I drop that explanation and look at the database." That sentence commits hard *and* names the result that kills the commitment. The tripwire converts a guess into a plan.
+Here is the surprising part. When you retrieve a memory, you don't pull out a sealed file — you rebuild the event from fragments, plugging gaps with what is plausible, expected, or recently suggested. Usually this works fine. But it means memory can be edited after the fact. In classic studies, people who watched the same crash estimated higher speeds when asked how fast the cars "smashed" rather than "hit," and later falsely remembered broken glass that was never there. The wording didn't just bias their answer; it changed the stored memory.
 
-## Acting while it leads, revising when it loses
+## False memories and the misinformation effect
 
-"Best current explanation" carries a timestamp. Commitment doesn't mean clinging — it means riding the leader until something better overtakes it. New data arrives; you check it against your tripwire; if the tripwire trips, you switch leaders and commit again. Reasoners who never switch are stubborn; reasoners who never commit are useless. The skill is the cycle: commit, watch the tripwire, revise on disconfirmation.
+Because memory is reconstructive, **information that arrives after an event can blend into the memory of the event itself**. This is the misinformation effect, and it is powerful. A misleading question, a leading interview, a relative's confident retelling — each can plant a detail that later feels genuinely "remembered." People can even acquire whole vivid memories of events that never happened, complete with sensory detail and full confidence, because the mind doesn't reliably tag where a vivid image came from (a real experience, or imagination). The feeling of remembering is not proof of accuracy.
 
-## Why the cautious dodge scores near zero
+## Confidence is not accuracy
 
-"We can't be certain, so we shouldn't act" feels responsible and is almost always wrong. Certainty is not on the menu; the only question is which explanation to act on. Declining to choose is choosing the status quo blind, with no tripwire and no learning. Under CCR that dodge earns the floor. The richest answer commits to the leading explanation, binds the most clues, and exposes the cleanest test that could prove it wrong.
+We naturally trust a confident memory, but confidence and correctness can come apart. An eyewitness who stares at a lineup can grow certain of a face simply because it has become familiar, not because it is the right one. Flashbulb memories of dramatic news feel razor-sharp years later, yet careful checks against people's own day-after notes show the details quietly drift while confidence stays high. Knowing this doesn't make memory useless — it makes us careful: prefer immediate reports, avoid leading questions, and treat strong feelings of certainty as a clue, not a guarantee.
 
 ## In the real world
 
-A logistics manager sees three depots suddenly missing their evening cutoff in the same week a new routing app shipped. Candidate causes: the app, a seasonal volume spike, a single sick dispatcher. The app is the best explanation — it's the only change shared by all three depots, and volume is flat year-over-year. The weak move is "too many variables, let's wait a month." The strong move: **commit now** — revert the three depots to the old routing for two days. Tripwire: if cutoffs are still missed under the old app, the app is exonerated and attention shifts to staffing. She acts on the leader *and* names the result that would make her abandon it. That is abductive commitment.`,
+A jury hears a witness say, with total confidence, "I'll never forget that face." The camera model says: case closed. The cognitive-science view says: ask better questions. The dodge — "memory is too complex to say anything" — helps no one. The strong, testable lead is that the witness's certainty may reflect familiarity built up during the investigation, not the original memory. That lead tells us exactly what to check: Was the lineup shown all at once, inviting a "closest match" guess? Was the witness warned the culprit might not be present? How long was the gap, and were leading questions asked? Each is a concrete test that could confirm or refute the worry — and that is what treating memory as a rebuildable process, rather than a recording, buys you: not blind trust or blanket doubt, but the right questions to ask.`,
   homework: {
-    mcq: buildMcq(),
-    hybrid: buildHybrid(),
-    written: buildWritten(),
+    mcq,
+    hybrid,
+    written,
   },
 };
-
-function buildMcq(): HomeworkItem[] {
-  return [
-    {
-      itemType: "mc",
-      prompt:
-        "A SaaS team's error rate triples at 2:14pm. The only thing that changed at 2:14pm was a config push to the payments service; traffic was flat and no other deploys went out. Which conclusion best follows?",
-      mcOptions: [
-        {
-          text: "Outages have many possible causes, so until we've ruled every one out we shouldn't change anything.",
-          credit: 0,
-        },
-        {
-          text: "Treat the config push as the cause and roll it back now; if errors don't fall within five minutes of the rollback, drop that explanation and investigate traffic and dependencies.",
-          credit: 1.0,
-        },
-        {
-          text: "The config push is the likely culprit; let's roll it back and see how things look.",
-          credit: 0.6,
-        },
-        {
-          text: "The timing suggests the config push might be involved and is worth keeping in mind.",
-          credit: 0.3,
-        },
-      ],
-      correctAnswer:
-        "Treat the config push as the cause and roll it back now; if errors don't fall within five minutes of the rollback, drop that explanation and investigate traffic and dependencies.",
-      explanation:
-        "Top credit commits to the only changed variable AND names the exact result (no recovery after rollback) that would retire the explanation. The 'rule everything out first' option is the zero-credit dodge that forfeits the cheap, decisive test.",
-    } as HomeworkItem,
-    {
-      itemType: "mc",
-      prompt:
-        "A toddler develops hives within an hour of three different meals this week. The only food common to all three meals was cashews; nothing else overlapped. Which conclusion best follows?",
-      mcOptions: [
-        {
-          text: "Cashews are the leading suspect, so we should probably watch his diet a bit more carefully.",
-          credit: 0.3,
-        },
-        {
-          text: "Allergies are complex and we're not doctors, so we can't really say anything until tests come back.",
-          credit: 0,
-        },
-        {
-          text: "Act on cashews as the trigger: remove them entirely starting now, and if hives still recur with cashews fully excluded, abandon that explanation and look at other ingredients.",
-          credit: 1.0,
-        },
-        {
-          text: "Cashews are likely the trigger; let's cut them out and keep an eye on it.",
-          credit: 0.6,
-        },
-      ],
-      correctAnswer:
-        "Act on cashews as the trigger: remove them entirely starting now, and if hives still recur with cashews fully excluded, abandon that explanation and look at other ingredients.",
-      explanation:
-        "The winner commits to the single shared food and states the disconfirming result (recurrence under full exclusion). 'We can't say anything until tests' is the tempting dodge that leaves the child exposed while learning nothing.",
-    } as HomeworkItem,
-    {
-      itemType: "mc",
-      prompt:
-        "A retailer's online conversion drops 30% the same day a redesigned checkout button goes live. Desktop and mobile both fall; no pricing or ad changes occurred. Which conclusion best follows?",
-      mcOptions: [
-        {
-          text: "Conversion has countless drivers, so attributing it to one button would be premature; better to wait and gather more weeks of data.",
-          credit: 0,
-        },
-        {
-          text: "The new button is plausibly part of the story and merits monitoring next sprint.",
-          credit: 0.3,
-        },
-        {
-          text: "Commit to the redesigned button as the cause and revert it today; if conversion stays depressed after reverting, drop the button theory and audit the funnel.",
-          credit: 1.0,
-        },
-        {
-          text: "The button redesign is probably to blame; reverting it seems like the right call.",
-          credit: 0.6,
-        },
-      ],
-      correctAnswer:
-        "Commit to the redesigned button as the cause and revert it today; if conversion stays depressed after reverting, drop the button theory and audit the funnel.",
-      explanation:
-        "Top credit acts on the only same-day change and names the result (no recovery after revert) that kills the theory. 'Wait weeks for more data' is the costly dodge — every day of delay bleeds revenue while a one-day test was available.",
-    } as HomeworkItem,
-    {
-      itemType: "mc",
-      prompt:
-        "A cyclist's heart-rate monitor reads wildly high only on rides through one wooded section with overhead power lines; everywhere else it tracks her effort normally. Which conclusion best follows?",
-      mcOptions: [
-        {
-          text: "Sensors can misbehave for many reasons, so without lab testing we can't conclude anything about the power lines.",
-          credit: 0,
-        },
-        {
-          text: "Assume electrical interference from that section and act on it: switch to a chest-strap or reroute around the lines; if the spikes persist there with the new setup, drop interference and suspect the strap or her physiology.",
-          credit: 1.0,
-        },
-        {
-          text: "Interference there is likely; rerouting around the lines is probably worth trying.",
-          credit: 0.6,
-        },
-        {
-          text: "The power lines could be a factor in the readings and are worth noting.",
-          credit: 0.3,
-        },
-      ],
-      correctAnswer:
-        "Assume electrical interference from that section and act on it: switch to a chest-strap or reroute around the lines; if the spikes persist there with the new setup, drop interference and suspect the strap or her physiology.",
-      explanation:
-        "The richest answer commits to the location-locked pattern and exposes a clean swap test that could refute it. The 'need lab testing' option is the dodge that ignores a free field experiment.",
-    } as HomeworkItem,
-    {
-      itemType: "mc",
-      prompt:
-        "A bakery's sourdough fails to rise on exactly the four days the kitchen window was left open overnight; on every successful day the window was shut. Ingredients and recipe were identical throughout. Which conclusion best follows?",
-      mcOptions: [
-        {
-          text: "Baking depends on so many factors that pinning it on the window would be overreach; we should keep logging conditions indefinitely.",
-          credit: 0,
-        },
-        {
-          text: "The open window may matter and is worth keeping an eye on.",
-          credit: 0.3,
-        },
-        {
-          text: "The cold draft from the open window probably stalls the rise; keeping it shut is likely the fix.",
-          credit: 0.6,
-        },
-        {
-          text: "Commit to the overnight draft killing the proof and keep the window shut from now on; if a future shut-window night still fails to rise, abandon the draft theory and check the starter.",
-          credit: 1.0,
-        },
-      ],
-      correctAnswer:
-        "Commit to the overnight draft killing the proof and keep the window shut from now on; if a future shut-window night still fails to rise, abandon the draft theory and check the starter.",
-      explanation:
-        "Top credit binds the perfect open/shut split and names the failing shut-window night that would defeat it. 'Keep logging indefinitely' is the fence-sit that wastes the clean pattern already in hand.",
-    } as HomeworkItem,
-    {
-      itemType: "mc",
-      prompt:
-        "A sales rep notices her demo-to-close rate doubled in the two months since she started sending a one-page recap email after each demo. Her territory, pricing, and lead source were unchanged. Which conclusion best follows?",
-      mcOptions: [
-        {
-          text: "Adopt the recap email as the driver and make it standard for every demo now; if close rates fall back to baseline over the next 30 demos despite the recaps, drop it and look elsewhere.",
-          credit: 1.0,
-        },
-        {
-          text: "Closing depends on too many intangibles to credit one email, so it's safest not to read anything into it.",
-          credit: 0,
-        },
-        {
-          text: "The recap email is likely helping; rolling it out more broadly seems reasonable.",
-          credit: 0.6,
-        },
-        {
-          text: "The recap email might be contributing and is worth remembering.",
-          credit: 0.3,
-        },
-      ],
-      correctAnswer:
-        "Adopt the recap email as the driver and make it standard for every demo now; if close rates fall back to baseline over the next 30 demos despite the recaps, drop it and look elsewhere.",
-      explanation:
-        "The winner commits to the only changed behavior and sets a measurable tripwire over a defined sample. 'Don't read anything into it' is the dodge that throws away a working practice for fear of being wrong.",
-    } as HomeworkItem,
-    {
-      itemType: "mc",
-      prompt:
-        "A homeowner's basement floods only after storms that drop more than an inch of rain, and never after lighter storms, ever since a neighbor paved over their adjacent yard last spring. Which conclusion best follows?",
-      mcOptions: [
-        {
-          text: "Flooding has many possible causes, so we shouldn't act until a full hydrology survey is done.",
-          credit: 0,
-        },
-        {
-          text: "The new pavement may be redirecting runoff and is worth watching.",
-          credit: 0.3,
-        },
-        {
-          text: "Commit to the neighbor's pavement diverting runoff into the basement; install a diversion drain now, and if heavy storms still flood after the drain, drop that explanation and inspect the foundation.",
-          credit: 1.0,
-        },
-        {
-          text: "The pavement is the probable cause; a diversion drain is likely the right response.",
-          credit: 0.6,
-        },
-      ],
-      correctAnswer:
-        "Commit to the neighbor's pavement diverting runoff into the basement; install a diversion drain now, and if heavy storms still flood after the drain, drop that explanation and inspect the foundation.",
-      explanation:
-        "Top credit ties the threshold-and-timing pattern to the pavement and names the post-drain flood that would refute it. The 'wait for a full survey' option is the dodge that lets the basement keep flooding.",
-    } as HomeworkItem,
-    {
-      itemType: "mc",
-      prompt:
-        "A teacher finds that essay scores cratered for exactly the third-period class this term — the one section moved to the windowless room after lunch. Same teacher, same assignments, same rubric across all sections. Which conclusion best follows?",
-      mcOptions: [
-        {
-          text: "Learning is influenced by countless factors, so blaming the room would be unscientific; better to suspend judgment.",
-          credit: 0,
-        },
-        {
-          text: "The post-lunch windowless room is plausibly hurting focus; commit to it by moving that section to a daylit morning room next term, and if scores stay low after the move, drop the room theory and examine the class roster.",
-          credit: 1.0,
-        },
-        {
-          text: "The room and timing are likely the issue; relocating the class seems worth trying.",
-          credit: 0.6,
-        },
-        {
-          text: "The room change could be part of the picture and is worth noting.",
-          credit: 0.3,
-        },
-      ],
-      correctAnswer:
-        "The post-lunch windowless room is plausibly hurting focus; commit to it by moving that section to a daylit morning room next term, and if scores stay low after the move, drop the room theory and examine the class roster.",
-      explanation:
-        "The winner isolates the one section that differs and proposes a relocation test with a clear failure condition. 'Suspend judgment' is the tempting dodge that abandons the affected students to learn nothing.",
-    } as HomeworkItem,
-    {
-      itemType: "mc",
-      prompt:
-        "A startup's app crashes only on phones running the latest OS version; older-OS users report zero crashes, and the crashes began the day that OS rolled out. Which conclusion best follows?",
-      mcOptions: [
-        {
-          text: "The new-OS link is worth keeping in mind as one possibility.",
-          credit: 0.3,
-        },
-        {
-          text: "Crashes can stem from many things, so it would be hasty to ship a fix targeting the new OS before we're certain.",
-          credit: 0,
-        },
-        {
-          text: "Commit to a new-OS incompatibility and ship a guarded patch for that version today; if crashes continue on the new OS after the patch, drop that explanation and profile memory across all versions.",
-          credit: 1.0,
-        },
-        {
-          text: "The new OS is likely the trigger; a targeted patch seems like the move.",
-          credit: 0.6,
-        },
-      ],
-      correctAnswer:
-        "Commit to a new-OS incompatibility and ship a guarded patch for that version today; if crashes continue on the new OS after the patch, drop that explanation and profile memory across all versions.",
-      explanation:
-        "Top credit acts on the perfect version split and names the post-patch crash that would unseat it. 'Hasty to ship before we're certain' is the dodge that leaves users crashing while certainty never arrives.",
-    } as HomeworkItem,
-    {
-      itemType: "mc",
-      prompt:
-        "A gym-goer's knee pain flares only on weeks he runs on the treadmill, and disappears on weeks he swims or rests instead. The pattern has held for two months. Which conclusion best follows?",
-      mcOptions: [
-        {
-          text: "Joint pain has many causes, so without an MRI we can't responsibly conclude the treadmill is involved.",
-          credit: 0,
-        },
-        {
-          text: "Treat the treadmill as the aggravator: stop treadmill running for three weeks and substitute swimming; if the knee still flares with zero treadmill use, abandon that explanation and see a physio about gait or footwear.",
-          credit: 1.0,
-        },
-        {
-          text: "The treadmill is likely the problem; switching to swimming for a while seems sensible.",
-          credit: 0.6,
-        },
-        {
-          text: "The treadmill might be aggravating the knee and is worth tracking.",
-          credit: 0.3,
-        },
-      ],
-      correctAnswer:
-        "Treat the treadmill as the aggravator: stop treadmill running for three weeks and substitute swimming; if the knee still flares with zero treadmill use, abandon that explanation and see a physio about gait or footwear.",
-      explanation:
-        "The richest answer commits to the activity that tracks the pain and sets a clean elimination test. 'Can't conclude without an MRI' is the dodge that delays relief for a test the pattern already supplies for free.",
-    } as HomeworkItem,
-    {
-      itemType: "mc",
-      prompt:
-        "A call center's customer-satisfaction scores jumped the same month a new manager shortened mandatory call scripts. Call volume and staffing were steady; no other policy changed. Which conclusion best follows?",
-      mcOptions: [
-        {
-          text: "Satisfaction is shaped by too many forces to credit the script change, so we shouldn't act on a hunch.",
-          credit: 0,
-        },
-        {
-          text: "The shorter scripts are likely behind the lift; standardizing them seems reasonable.",
-          credit: 0.6,
-        },
-        {
-          text: "Commit to the shortened scripts as the cause and roll them to all teams now; if satisfaction on the new teams doesn't rise within a month, drop that explanation and study the manager's other practices.",
-          credit: 1.0,
-        },
-        {
-          text: "The script change may have helped and is worth keeping in view.",
-          credit: 0.3,
-        },
-      ],
-      correctAnswer:
-        "Commit to the shortened scripts as the cause and roll them to all teams now; if satisfaction on the new teams doesn't rise within a month, drop that explanation and study the manager's other practices.",
-      explanation:
-        "Top credit acts on the lone policy change and names the no-lift result that would refute it. 'Shouldn't act on a hunch' is the dodge that forgoes a scalable win and any chance to learn.",
-    } as HomeworkItem,
-    {
-      itemType: "mc",
-      prompt:
-        "A houseplant wilts within two days every time it's moved to the south-facing sill and recovers when returned to the shaded corner. This has repeated four times. Which conclusion best follows?",
-      mcOptions: [
-        {
-          text: "Plants are sensitive to many variables, so it's safest not to draw a conclusion about the sunny sill.",
-          credit: 0,
-        },
-        {
-          text: "Commit to the south sill's harsh light/heat as the cause and keep the plant in the shaded corner; if it wilts again in the shade, drop that explanation and check watering and roots.",
-          credit: 1.0,
-        },
-        {
-          text: "The sunny sill is probably too harsh; leaving the plant in shade seems right.",
-          credit: 0.6,
-        },
-        {
-          text: "The sill location might matter to the plant and is worth remembering.",
-          credit: 0.3,
-        },
-      ],
-      correctAnswer:
-        "Commit to the south sill's harsh light/heat as the cause and keep the plant in the shaded corner; if it wilts again in the shade, drop that explanation and check watering and roots.",
-      explanation:
-        "The winner commits to the location that perfectly tracks wilting and names the in-shade wilt that would defeat it. 'Safest not to draw a conclusion' is the dodge that ignores four clean repetitions.",
-    } as HomeworkItem,
-    {
-      itemType: "mc",
-      prompt:
-        "A blogger's traffic fell 40% and stayed down starting the week Google rolled out a core algorithm update; her publishing cadence and backlinks were unchanged. Competitors in her niche report similar drops. Which conclusion best follows?",
-      mcOptions: [
-        {
-          text: "Traffic depends on too many unknowns to blame the update, so the cautious path is to make no changes and wait.",
-          credit: 0,
-        },
-        {
-          text: "The algorithm update is the leading explanation; commit to it by revising her thin pages to the update's stated quality signals now, and if traffic stays flat after re-indexing, drop that explanation and audit site speed and tracking.",
-          credit: 1.0,
-        },
-        {
-          text: "The update is probably responsible; updating her content to match seems worthwhile.",
-          credit: 0.6,
-        },
-        {
-          text: "The timing hints the update could be a factor worth watching.",
-          credit: 0.3,
-        },
-      ],
-      correctAnswer:
-        "The algorithm update is the leading explanation; commit to it by revising her thin pages to the update's stated quality signals now, and if traffic stays flat after re-indexing, drop that explanation and audit site speed and tracking.",
-      explanation:
-        "Top credit binds the timing plus the niche-wide drop and exposes a re-indexing test. 'Make no changes and wait' is the dodge that surrenders months of traffic to avoid acting on the obvious leader.",
-    } as HomeworkItem,
-    {
-      itemType: "mc",
-      prompt:
-        "A restaurant's Friday food-cost spikes appeared the same month it switched to a new produce supplier; Monday–Thursday costs (still on the old supplier for those days) are normal. Menu and portions are unchanged. Which conclusion best follows?",
-      mcOptions: [
-        {
-          text: "Food costs fluctuate for many reasons, so it would be premature to act against the new supplier.",
-          credit: 0,
-        },
-        {
-          text: "The new supplier may be driving the Friday spike and is worth monitoring.",
-          credit: 0.3,
-        },
-        {
-          text: "The new Friday supplier is likely the cause; switching back seems reasonable.",
-          credit: 0.6,
-        },
-        {
-          text: "Commit to the new supplier as the cause of the Friday spike and revert Fridays to the old supplier for a month; if Friday costs stay high after reverting, drop that explanation and audit Friday waste and theft.",
-          credit: 1.0,
-        },
-      ],
-      correctAnswer:
-        "Commit to the new supplier as the cause of the Friday spike and revert Fridays to the old supplier for a month; if Friday costs stay high after reverting, drop that explanation and audit Friday waste and theft.",
-      explanation:
-        "The richest answer exploits the day-of-week split tied to the supplier and names the post-revert spike that would refute it. 'Premature to act' is the dodge that keeps overpaying while a clean comparison sits unused.",
-    } as HomeworkItem,
-    {
-      itemType: "mc",
-      prompt:
-        "A commuter's car stalls only when the fuel gauge is below a quarter tank and never above it; the pattern has held across a dozen drives. A mechanic suggests the in-tank fuel pump strains when fuel is low. Which conclusion best follows?",
-      mcOptions: [
-        {
-          text: "Engine problems can have countless causes, so we can't conclude it's the fuel pump without a full diagnostic teardown.",
-          credit: 0,
-        },
-        {
-          text: "Commit to the low-fuel pump-strain explanation: keep the tank above half and plan to replace the pump, and if it still stalls on a full tank, drop that explanation and chase electrical or ignition faults.",
-          credit: 1.0,
-        },
-        {
-          text: "The fuel pump is the likely culprit; keeping more gas in the tank seems wise.",
-          credit: 0.6,
-        },
-        {
-          text: "The low-fuel pattern might point to the pump and is worth keeping in mind.",
-          credit: 0.3,
-        },
-      ],
-      correctAnswer:
-        "Commit to the low-fuel pump-strain explanation: keep the tank above half and plan to replace the pump, and if it still stalls on a full tank, drop that explanation and chase electrical or ignition faults.",
-      explanation:
-        "Top credit acts on the fuel-level pattern with a concrete behavior change and a full-tank stall as the disconfirmer. 'Can't conclude without a teardown' is the dodge that ignores a dozen consistent clues.",
-    } as HomeworkItem,
-  ];
-}
-
-function buildHybrid(): HomeworkItem[] {
-  const followUp =
-    "In two sentences, name the single cheapest observation that would most distinguish your explanation from its closest rival, and say what result would make you drop your explanation.";
-  return [
-    {
-      itemType: "hybrid",
-      prompt:
-        "A warehouse sees picking errors quadruple on the night shift only, beginning the week a new handheld scanner firmware was pushed to the night-shift devices (day-shift devices kept the old firmware). Staffing and order mix are unchanged. Which conclusion best follows?",
-      mcOptions: [
-        {
-          text: "Picking accuracy depends on many human factors, so it's premature to blame the firmware before a long study.",
-          credit: 0,
-        },
-        {
-          text: "Commit to the night-shift firmware as the cause and roll those devices back tonight; if errors stay high after the rollback, drop that explanation and investigate night-shift fatigue and lighting.",
-          credit: 1.0,
-        },
-        {
-          text: "The firmware is probably the issue; rolling it back on night devices seems sensible.",
-          credit: 0.6,
-        },
-        {
-          text: "The firmware change might be involved and is worth tracking.",
-          credit: 0.3,
-        },
-      ],
-      writtenRubric: {
-        prompt: followUp,
-        modelAnswer:
-          "The cheapest distinguishing observation is whether errors fall the moment the night devices are rolled back to old firmware while the rest of the shift is unchanged — that isolates firmware from fatigue. If errors stay quadrupled after the rollback, I drop the firmware explanation and pursue night-shift fatigue or lighting.",
-        yieldAnchors: [
-          "Errors quadrupled on night shift only",
-          "Firmware was pushed only to night-shift devices",
-          "Day-shift devices kept old firmware and show no spike",
-          "Staffing and order mix unchanged",
-        ],
-        riskAnchors: [
-          "Roll night devices back to old firmware tonight",
-          "Errors should drop to baseline within the shift if firmware is the cause",
-        ],
-        defeatedBy: [
-          "Blaming staffing changes (staffing was constant)",
-          "Blaming order mix (order mix was constant)",
-          "Concluding nothing can be acted on",
-        ],
-      } as WrittenRubric,
-      correctAnswer:
-        "Commit to the night-shift firmware as the cause and roll those devices back tonight; if errors stay high after the rollback, drop that explanation and investigate night-shift fatigue and lighting.",
-      explanation:
-        "The top MC option commits to the only variable that splits the two shifts and names the rollback as a clean test; the written follow-up earns full credit by naming the cheapest discriminating observation and an explicit drop condition.",
-    } as HomeworkItem,
-    {
-      itemType: "hybrid",
-      prompt:
-        "A clinic notices that patients who switched to a new generic blood-pressure pill last quarter report dizziness far more than those still on the brand; both groups are otherwise demographically similar and on identical doses. Which conclusion best follows?",
-      mcOptions: [
-        {
-          text: "The generic switch might relate to the dizziness and deserves monitoring.",
-          credit: 0.3,
-        },
-        {
-          text: "Drug effects are individual and confounded, so we can't responsibly conclude the generic is the cause.",
-          credit: 0,
-        },
-        {
-          text: "Commit to the generic formulation as the cause: switch dizzy patients back to the brand and track symptoms, and if dizziness persists on the brand, drop that explanation and screen for dehydration or other meds.",
-          credit: 1.0,
-        },
-        {
-          text: "The generic is probably responsible; switching affected patients back seems reasonable.",
-          credit: 0.6,
-        },
-      ],
-      writtenRubric: {
-        prompt: followUp,
-        modelAnswer:
-          "The cheapest discriminator is whether dizziness resolves after switching the affected patients back to the brand at the same dose — that separates the formulation from confounders like dehydration. If they remain dizzy on the brand, I drop the generic explanation and screen for hydration and interacting medications.",
-        yieldAnchors: [
-          "Dizziness concentrated in patients who switched to the generic",
-          "Brand-stable patients report far less dizziness",
-          "Groups are demographically similar",
-          "Doses are identical across groups",
-        ],
-        riskAnchors: [
-          "Switch dizzy patients back to the brand at the same dose",
-          "Symptoms should resolve if the generic formulation is the cause",
-        ],
-        defeatedBy: [
-          "Attributing it to differing doses (doses are identical)",
-          "Attributing it to demographic differences (groups are similar)",
-          "Refusing to act because drug effects are individual",
-        ],
-      } as WrittenRubric,
-      correctAnswer:
-        "Commit to the generic formulation as the cause: switch dizzy patients back to the brand and track symptoms, and if dizziness persists on the brand, drop that explanation and screen for dehydration or other meds.",
-      explanation:
-        "The winning MC option commits to the formulation difference and names a reversible test; full written credit requires the cheapest discriminating observation (resolution on rebrand) plus a clear drop condition.",
-    } as HomeworkItem,
-    {
-      itemType: "hybrid",
-      prompt:
-        "A podcast's download numbers spike every episode that drops on a Tuesday and lag on every other day; the host has run this for six months with consistent topics and length. Which conclusion best follows?",
-      mcOptions: [
-        {
-          text: "Audience behavior is too noisy to credit the release day, so it's best not to change the schedule on this basis.",
-          credit: 0,
-        },
-        {
-          text: "Commit to Tuesday release timing as the driver: move all episodes to Tuesday for the next two months, and if non-spike performance returns despite Tuesday drops, abandon timing and examine topic and promotion.",
-          credit: 1.0,
-        },
-        {
-          text: "Tuesday timing is likely helping; shifting releases to Tuesday seems worth doing.",
-          credit: 0.6,
-        },
-        {
-          text: "Release day might play a role and is worth keeping in mind.",
-          credit: 0.3,
-        },
-      ],
-      writtenRubric: {
-        prompt: followUp,
-        modelAnswer:
-          "The cheapest discriminator is moving the next several episodes to Tuesday and seeing whether the spike follows the day rather than the topic — that separates timing from content. If Tuesday episodes stop spiking, I drop the release-day explanation and look at topic appeal and promotion.",
-        yieldAnchors: [
-          "Tuesday episodes spike in downloads",
-          "All other days lag",
-          "Topics held consistent across six months",
-          "Episode length held consistent",
-        ],
-        riskAnchors: [
-          "Move all episodes to Tuesday for two months",
-          "Spikes should track Tuesday if timing is the driver",
-        ],
-        defeatedBy: [
-          "Blaming topic variation (topics were consistent)",
-          "Blaming length variation (length was consistent)",
-          "Refusing to act because audience data is noisy",
-        ],
-      } as WrittenRubric,
-      correctAnswer:
-        "Commit to Tuesday release timing as the driver: move all episodes to Tuesday for the next two months, and if non-spike performance returns despite Tuesday drops, abandon timing and examine topic and promotion.",
-      explanation:
-        "Top MC credit commits to the day pattern with a scheduling test; the follow-up earns full marks by isolating timing from content and naming the result that would retire the explanation.",
-    } as HomeworkItem,
-    {
-      itemType: "hybrid",
-      prompt:
-        "A soccer team has conceded a late goal in five straight matches, all of which featured the same substitution pattern: pulling the holding midfielder around the 70th minute. Matches without that sub held their leads. Which conclusion best follows?",
-      mcOptions: [
-        {
-          text: "Late goals come from many situational factors, so we can't blame the substitution without much more film study.",
-          credit: 0,
-        },
-        {
-          text: "The 70th-minute sub might be linked to the late goals and is worth noting.",
-          credit: 0.3,
-        },
-        {
-          text: "Commit to the holding-midfielder substitution as the cause: keep that player on past the 75th minute in upcoming matches, and if late goals still come with the midfielder kept on, drop that explanation and review fitness and set-piece marking.",
-          credit: 1.0,
-        },
-        {
-          text: "The substitution is probably the issue; keeping the midfielder on longer seems sensible.",
-          credit: 0.6,
-        },
-      ],
-      writtenRubric: {
-        prompt: followUp,
-        modelAnswer:
-          "The cheapest discriminator is keeping the holding midfielder on past the 75th in the next few matches and seeing whether late goals stop — that separates the structural gap from generic fatigue. If late goals continue with him on the pitch, I drop the substitution explanation and examine overall fitness and set-piece marking.",
-        yieldAnchors: [
-          "Late goals conceded in five straight matches",
-          "All five featured the 70th-minute holding-midfielder sub",
-          "Matches without that sub held their leads",
-        ],
-        riskAnchors: [
-          "Keep the holding midfielder on past the 75th minute",
-          "Late goals should stop if the sub is the cause",
-        ],
-        defeatedBy: [
-          "Blaming random misfortune (the pattern is consistent)",
-          "Concluding the sub is irrelevant despite the clean split",
-          "Refusing to change anything pending more film",
-        ],
-      } as WrittenRubric,
-      correctAnswer:
-        "Commit to the holding-midfielder substitution as the cause: keep that player on past the 75th minute in upcoming matches, and if late goals still come with the midfielder kept on, drop that explanation and review fitness and set-piece marking.",
-      explanation:
-        "The top MC option commits to the substitution that tracks the collapses and names a lineup test; full written credit comes from isolating that variable and stating the disconfirming result.",
-    } as HomeworkItem,
-    {
-      itemType: "hybrid",
-      prompt:
-        "An e-commerce site's cart-abandonment rate climbed sharply right after a third-party shipping-cost widget was added to the checkout page; page-load time also rose by three seconds at the same point. Which conclusion best follows?",
-      mcOptions: [
-        {
-          text: "Commit to the widget's added load time as the cause of abandonment: remove the widget and serve shipping costs server-side now, and if abandonment stays high after load time recovers, drop that explanation and study the new shipping prices themselves.",
-          credit: 1.0,
-        },
-        {
-          text: "Abandonment has many drivers, so it would be rash to remove the widget before a controlled study.",
-          credit: 0,
-        },
-        {
-          text: "The slow widget is probably hurting checkout; removing it seems like the right step.",
-          credit: 0.6,
-        },
-        {
-          text: "The widget might be contributing to abandonment and is worth watching.",
-          credit: 0.3,
-        },
-      ],
-      writtenRubric: {
-        prompt: followUp,
-        modelAnswer:
-          "The cheapest discriminator is removing the widget and computing shipping server-side so load time drops back, then watching abandonment — that separates the latency from the actual shipping prices shown. If abandonment stays high once load time recovers, I drop the latency explanation and conclude the displayed shipping costs are deterring buyers.",
-        yieldAnchors: [
-          "Abandonment climbed right after the widget was added",
-          "Page-load time rose three seconds at the same point",
-          "The change is localized to the checkout page",
-        ],
-        riskAnchors: [
-          "Remove the widget and serve shipping costs server-side",
-          "Abandonment should drop when load time recovers if latency is the cause",
-        ],
-        defeatedBy: [
-          "Assuming prices and latency are indistinguishable without testing",
-          "Refusing to act pending a controlled study",
-          "Blaming unrelated pages (the change is checkout-specific)",
-        ],
-      } as WrittenRubric,
-      correctAnswer:
-        "Commit to the widget's added load time as the cause of abandonment: remove the widget and serve shipping costs server-side now, and if abandonment stays high after load time recovers, drop that explanation and study the new shipping prices themselves.",
-      explanation:
-        "Top MC credit commits to the latency mechanism with a concrete fix and a fallback; the follow-up earns full marks by separating latency from price and naming what would refute the latency story.",
-    } as HomeworkItem,
-    {
-      itemType: "hybrid",
-      prompt:
-        "A homebrewer's last three batches turned sour, all fermented in the garage during a heat wave; his earlier clean batches fermented in the cool basement. Recipe, yeast, and sanitation logs are identical across all batches. Which conclusion best follows?",
-      mcOptions: [
-        {
-          text: "Off-flavors arise from many sources, so we can't responsibly blame the garage temperature.",
-          credit: 0,
-        },
-        {
-          text: "The warm garage might be the issue and is worth keeping in mind.",
-          credit: 0.3,
-        },
-        {
-          text: "Commit to high fermentation temperature as the cause: ferment the next batch in the cool basement, and if it still sours at controlled temperature, abandon that explanation and recheck sanitation and yeast health.",
-          credit: 1.0,
-        },
-        {
-          text: "The warm garage is likely the culprit; moving fermentation to the basement seems wise.",
-          credit: 0.6,
-        },
-      ],
-      writtenRubric: {
-        prompt: followUp,
-        modelAnswer:
-          "The cheapest discriminator is fermenting the next batch in the cool basement with everything else held constant and tasting the result — that isolates temperature from sanitation. If it still sours at controlled temperature, I drop the heat explanation and recheck sanitation and yeast viability.",
-        yieldAnchors: [
-          "Last three sour batches all fermented in a hot garage",
-          "Earlier clean batches fermented in the cool basement",
-          "Recipe and yeast identical across batches",
-          "Sanitation logs identical across batches",
-        ],
-        riskAnchors: [
-          "Ferment the next batch in the cool basement",
-          "The batch should come out clean if temperature is the cause",
-        ],
-        defeatedBy: [
-          "Blaming sanitation (logs are identical)",
-          "Blaming the recipe or yeast (both are identical)",
-          "Refusing to act on the temperature pattern",
-        ],
-      } as WrittenRubric,
-      correctAnswer:
-        "Commit to high fermentation temperature as the cause: ferment the next batch in the cool basement, and if it still sours at controlled temperature, abandon that explanation and recheck sanitation and yeast health.",
-      explanation:
-        "The top MC option commits to the only differing condition and names a clean controlled-temperature test; full written credit requires isolating temperature and stating the souring-at-cool result that would refute it.",
-    } as HomeworkItem,
-    {
-      itemType: "hybrid",
-      prompt:
-        "A manager finds that remote employees who keep cameras on in meetings score notably higher on the quarterly engagement survey than camera-off peers, across two quarters and multiple teams. Which conclusion best follows?",
-      mcOptions: [
-        {
-          text: "Engagement is multi-causal, so we can't conclude cameras matter and shouldn't act on this.",
-          credit: 0,
-        },
-        {
-          text: "Camera use might relate to engagement and is worth tracking.",
-          credit: 0.3,
-        },
-        {
-          text: "Cameras-on is probably linked to engagement; encouraging cameras seems reasonable.",
-          credit: 0.6,
-        },
-        {
-          text: "Take engagement (not cameras) as the likely driver of both: commit to it by improving meeting purpose and recognition for a pilot group, and if their camera use and scores rise together, that supports it; if scores rise while cameras stay off, drop the shared-cause story and revisit cameras directly.",
-          credit: 1.0,
-        },
-      ],
-      writtenRubric: {
-        prompt: followUp,
-        modelAnswer:
-          "The cheapest discriminator is running an engagement-boosting intervention (clear agendas, recognition) on one team without mandating cameras and watching whether scores rise even while cameras stay off — that separates underlying engagement from the camera behavior itself. If scores climb with cameras still off, the camera correlation was a symptom, not a cause, and I act on engagement drivers instead.",
-        yieldAnchors: [
-          "Cameras-on employees score higher on engagement",
-          "Pattern holds across two quarters",
-          "Pattern holds across multiple teams",
-        ],
-        riskAnchors: [
-          "Run an engagement intervention without mandating cameras",
-          "Scores rising while cameras stay off would refute the camera-as-cause story",
-        ],
-        defeatedBy: [
-          "Mandating cameras as if forcing the symptom fixes engagement",
-          "Concluding nothing actionable from a stable cross-team pattern",
-          "Assuming cameras cause engagement without testing the shared-cause rival",
-        ],
-      } as WrittenRubric,
-      correctAnswer:
-        "Take engagement (not cameras) as the likely driver of both: commit to it by improving meeting purpose and recognition for a pilot group, and if their camera use and scores rise together, that supports it; if scores rise while cameras stay off, drop the shared-cause story and revisit cameras directly.",
-      explanation:
-        "Top MC credit commits to the richer common-cause model and exposes a pilot test that could refute it; full written credit comes from naming the cheapest observation that separates cause from symptom and the result that would unseat the model.",
-    } as HomeworkItem,
-    {
-      itemType: "hybrid",
-      prompt:
-        "A city's bike-share usage doubled in the three months after protected lanes were added on the two busiest corridors; ridership on unchanged corridors stayed flat over the same period. Weather was typical for the season. Which conclusion best follows?",
-      mcOptions: [
-        {
-          text: "Ridership responds to many forces, so crediting the lanes would be premature and we should keep observing.",
-          credit: 0,
-        },
-        {
-          text: "Commit to the protected lanes as the driver: extend lanes to a third comparable corridor, and if usage there doesn't climb similarly, drop that explanation and look at station density and pricing.",
-          credit: 1.0,
-        },
-        {
-          text: "The new lanes are likely behind the surge; extending them seems worthwhile.",
-          credit: 0.6,
-        },
-        {
-          text: "The lanes might be helping ridership and are worth keeping in view.",
-          credit: 0.3,
-        },
-      ],
-      writtenRubric: {
-        prompt: followUp,
-        modelAnswer:
-          "The cheapest discriminator is adding a protected lane to one more comparable corridor and seeing whether its ridership doubles like the first two — that separates the lanes from a city-wide trend. If the new corridor's usage stays flat, I drop the lanes explanation and examine station density and pricing.",
-        yieldAnchors: [
-          "Usage doubled on the two corridors that got protected lanes",
-          "Unchanged corridors stayed flat",
-          "Weather was typical for the season",
-        ],
-        riskAnchors: [
-          "Extend protected lanes to a third comparable corridor",
-          "Usage there should rise similarly if lanes are the driver",
-        ],
-        defeatedBy: [
-          "Blaming weather (it was typical)",
-          "Blaming a city-wide trend (unchanged corridors stayed flat)",
-          "Refusing to act pending indefinite further observation",
-        ],
-      } as WrittenRubric,
-      correctAnswer:
-        "Commit to the protected lanes as the driver: extend lanes to a third comparable corridor, and if usage there doesn't climb similarly, drop that explanation and look at station density and pricing.",
-      explanation:
-        "The top MC option commits to the corridor-specific intervention and proposes a replication test with a clear failure condition; the follow-up earns full credit by naming that replication as the cheapest discriminator.",
-    } as HomeworkItem,
-    {
-      itemType: "hybrid",
-      prompt:
-        "A data team's nightly ETL job started failing intermittently exactly when a colleague's new logging library was merged; failures only occur on the shards that import the new library, and clean shards never fail. Which conclusion best follows?",
-      mcOptions: [
-        {
-          text: "Intermittent failures can have countless roots, so it's unsafe to blame the library before exhaustive tracing.",
-          credit: 0,
-        },
-        {
-          text: "The new library could be implicated and is worth monitoring.",
-          credit: 0.3,
-        },
-        {
-          text: "The logging library is probably the cause; removing it from the failing shards seems sensible.",
-          credit: 0.6,
-        },
-        {
-          text: "Commit to the new logging library as the cause: pin the failing shards back to the previous version tonight, and if they still fail intermittently without it, drop that explanation and investigate shard data volume and memory.",
-          credit: 1.0,
-        },
-      ],
-      writtenRubric: {
-        prompt: followUp,
-        modelAnswer:
-          "The cheapest discriminator is reverting the new logging library on the failing shards while leaving everything else and watching tonight's run — that isolates the library from data-volume effects. If those shards still fail intermittently without the library, I drop that explanation and investigate shard-specific data volume and memory pressure.",
-        yieldAnchors: [
-          "Failures began exactly when the logging library merged",
-          "Only shards importing the new library fail",
-          "Shards without the library never fail",
-        ],
-        riskAnchors: [
-          "Pin failing shards back to the previous library version tonight",
-          "Failures should stop if the library is the cause",
-        ],
-        defeatedBy: [
-          "Blaming shards that don't import the library (they never fail)",
-          "Assuming the failures are pure randomness despite the clean split",
-          "Refusing to act before exhaustive tracing",
-        ],
-      } as WrittenRubric,
-      correctAnswer:
-        "Commit to the new logging library as the cause: pin the failing shards back to the previous version tonight, and if they still fail intermittently without it, drop that explanation and investigate shard data volume and memory.",
-      explanation:
-        "Top MC credit commits to the variable that perfectly splits failing from clean shards and names a revert test; full written credit requires isolating the library and stating the persistent-failure result that would refute it.",
-    } as HomeworkItem,
-  ];
-}
-
-function buildWritten(): HomeworkItem[] {
-  return [
-    {
-      itemType: "written",
-      prompt:
-        "A boutique gym notices that members who book the 6am class have a 90-day retention rate of 80%, versus 45% for members who only attend evening classes. The two groups signed up through the same promotions and pay the same rates. In one paragraph, propose the strongest explanation you'd act on, say what you'd do about it, and name the result that would make you drop your explanation.",
-      writtenRubric: {
-        modelAnswer:
-          "The strongest model is that an early committed routine (and the morning community it builds) drives retention, with morning-class membership partly a marker of people already primed to commit. I'd act on it now: nudge a cohort of new evening-only members into a free 6am trial block and pair them with a small morning group, treating the morning-routine hypothesis as true while it leads. The decisive test is whether those nudged members' retention rises toward 80%; if their retention stays near the evening baseline despite genuine 6am attendance, I drop the 'morning routine causes retention' explanation and treat early booking as a mere selection marker, redirecting effort to screening and onboarding for commitment instead.",
-        yieldAnchors: [
-          "6am members retain at 80% over 90 days",
-          "Evening-only members retain at 45%",
-          "Both groups came through the same promotions",
-          "Both groups pay the same rates",
-        ],
-        riskAnchors: [
-          "Nudge evening-only members into a 6am trial cohort",
-          "Their retention should climb toward 80% if the morning routine is causal",
-          "Persisting at the evening baseline despite real attendance refutes the model",
-        ],
-        defeatedBy: [
-          "Attributing the gap to price differences (rates are identical)",
-          "Attributing it to different promotions (both groups used the same ones)",
-          "Concluding nothing can be done because the cause is uncertain",
-        ],
-      } as WrittenRubric,
-      correctAnswer:
-        "The strongest model is that an early committed routine (and the morning community it builds) drives retention, with morning-class membership partly a marker of people already primed to commit. I'd act on it now: nudge a cohort of new evening-only members into a free 6am trial block and pair them with a small morning group, treating the morning-routine hypothesis as true while it leads. The decisive test is whether those nudged members' retention rises toward 80%; if their retention stays near the evening baseline despite genuine 6am attendance, I drop the 'morning routine causes retention' explanation and treat early booking as a mere selection marker, redirecting effort to screening and onboarding for commitment instead.",
-      explanation:
-        "Under CCR's inverted standard, 'too many variables to act' scores near zero; the win comes from committing to the leading explanation, acting on it, and naming the retention result that would force a switch. Florid hedging that binds no data scores low.",
-    } as HomeworkItem,
-    {
-      itemType: "written",
-      prompt:
-        "A regional bakery chain sees that one of its eight stores has 25% lower waste than the rest, despite identical menus, suppliers, and forecasting software. The standout store's manager retrained staff six months ago to bake in smaller, more frequent batches. In one paragraph, propose the strongest explanation you'd act on, what you'd do, and what would make you abandon it.",
-      writtenRubric: {
-        modelAnswer:
-          "The strongest model is that the small-batch, bake-to-demand practice is what cuts waste, since it's the one operational difference among otherwise identical stores. I'd commit to it by rolling the small-batch protocol out to two comparable stores immediately and measuring their waste over the next eight weeks, acting as if the practice is causal while it leads. The disconfirming result is clear: if those two stores' waste fails to fall meaningfully after genuinely adopting small batches, I drop the practice explanation and investigate store-specific factors at the standout — foot-traffic patterns, local demand stability, or the individual manager's forecasting tweaks.",
-        yieldAnchors: [
-          "One store has 25% lower waste than the other seven",
-          "Menus, suppliers, and forecasting software are identical",
-          "The standout store retrained staff to small, frequent batches",
-        ],
-        riskAnchors: [
-          "Roll the small-batch protocol out to two comparable stores",
-          "Their waste should drop within eight weeks if the practice is causal",
-          "No drop after genuine adoption refutes the model",
-        ],
-        defeatedBy: [
-          "Blaming supplier or menu differences (these are identical)",
-          "Blaming the forecasting software (it's the same everywhere)",
-          "Concluding the difference is unexplainable and acting on none of it",
-        ],
-      } as WrittenRubric,
-      correctAnswer:
-        "The strongest model is that the small-batch, bake-to-demand practice is what cuts waste, since it's the one operational difference among otherwise identical stores. I'd commit to it by rolling the small-batch protocol out to two comparable stores immediately and measuring their waste over the next eight weeks, acting as if the practice is causal while it leads. The disconfirming result is clear: if those two stores' waste fails to fall meaningfully after genuinely adopting small batches, I drop the practice explanation and investigate store-specific factors at the standout — foot-traffic patterns, local demand stability, or the individual manager's forecasting tweaks.",
-      explanation:
-        "CCR rewards committing to the single differentiating practice and replicating it as a test; the cautious 'we can't be sure it transfers' refusal earns near-zero because it forfeits both the savings and the experiment.",
-    } as HomeworkItem,
-    {
-      itemType: "written",
-      prompt:
-        "A wildlife biologist observes that a pond's frog population collapsed over one summer; in the same window, a new golf course upstream began applying lawn chemicals, water temperature was normal, and a routine survey found no new predators. In one paragraph, propose the strongest explanation you'd act on, what you'd do about it, and what would make you drop it.",
-      writtenRubric: {
-        modelAnswer:
-          "The strongest model is that chemical runoff from the upstream golf course caused the collapse, since it's the one new upstream input coinciding with the die-off while temperature and predation are ruled out. I'd commit to it now: sample water and frog tissue for the course's specific chemicals and push for an immediate runoff buffer, treating contamination as the working cause while it leads. The decisive disconfirmer is the assay — if the implicated chemicals are absent from the water and tissue at biologically relevant levels, I abandon the runoff explanation and pursue disease (e.g., chytrid fungus) or oxygen-depletion mechanisms instead.",
-        yieldAnchors: [
-          "Frog population collapsed over one summer",
-          "A new upstream golf course began applying chemicals in the same window",
-          "Water temperature was normal",
-          "No new predators were found",
-        ],
-        riskAnchors: [
-          "Assay water and frog tissue for the course's chemicals",
-          "Push for a runoff buffer immediately",
-          "Absence of the chemicals at relevant levels refutes the runoff model",
-        ],
-        defeatedBy: [
-          "Blaming warmer water (temperature was normal)",
-          "Blaming new predators (the survey found none)",
-          "Concluding too little is known to act and waiting out another season",
-        ],
-      } as WrittenRubric,
-      correctAnswer:
-        "The strongest model is that chemical runoff from the upstream golf course caused the collapse, since it's the one new upstream input coinciding with the die-off while temperature and predation are ruled out. I'd commit to it now: sample water and frog tissue for the course's specific chemicals and push for an immediate runoff buffer, treating contamination as the working cause while it leads. The decisive disconfirmer is the assay — if the implicated chemicals are absent from the water and tissue at biologically relevant levels, I abandon the runoff explanation and pursue disease (e.g., chytrid fungus) or oxygen-depletion mechanisms instead.",
-      explanation:
-        "The inverted standard penalizes 'ecosystems are too complex to attribute' as a near-zero dodge; top credit binds the runoff timing and ruled-out alternatives while committing to a falsifiable assay that could clear the golf course.",
-    } as HomeworkItem,
-    {
-      itemType: "written",
-      prompt:
-        "A mid-size law firm's billable hours per associate dropped 15% in the quarter after it switched from a familiar case-management system to a new one; headcount, case volume, and client mix were unchanged, and associates complain the new system is slow. In one paragraph, propose the strongest explanation you'd act on, what you'd do, and what would make you drop it.",
-      writtenRubric: {
-        modelAnswer:
-          "The strongest model is that the new case-management system's friction is eating billable time, since the drop coincides exactly with the switch while headcount, case volume, and client mix are constant and associates report it's slow. I'd commit to it now: run a two-week pilot returning one practice group to the old system (or a streamlined config) and instrument time-on-task, acting as if the tool is the cause while it leads. The disconfirmer is direct — if the pilot group's billable hours don't recover relative to the others, I drop the system explanation and investigate workflow, morale, or a real dip in matter complexity.",
-        yieldAnchors: [
-          "Billable hours dropped 15% the quarter after the system switch",
-          "Headcount, case volume, and client mix unchanged",
-          "Associates report the new system is slow",
-        ],
-        riskAnchors: [
-          "Pilot a return to the old system for one practice group",
-          "Instrument time-on-task during the pilot",
-          "No recovery in the pilot group refutes the system explanation",
-        ],
-        defeatedBy: [
-          "Blaming reduced case volume (volume was unchanged)",
-          "Blaming headcount changes (headcount was constant)",
-          "Concluding the cause is unknowable and making no change",
-        ],
-      } as WrittenRubric,
-      correctAnswer:
-        "The strongest model is that the new case-management system's friction is eating billable time, since the drop coincides exactly with the switch while headcount, case volume, and client mix are constant and associates report it's slow. I'd commit to it now: run a two-week pilot returning one practice group to the old system (or a streamlined config) and instrument time-on-task, acting as if the tool is the cause while it leads. The disconfirmer is direct — if the pilot group's billable hours don't recover relative to the others, I drop the system explanation and investigate workflow, morale, or a real dip in matter complexity.",
-      explanation:
-        "CCR rewards committing to the timing-aligned tool change and exposing it to a reversible pilot; the 'too many factors to single out the system' hedge earns near-zero because it leaves the firm bleeding hours while learning nothing.",
-    } as HomeworkItem,
-    {
-      itemType: "written",
-      prompt:
-        "A high-school cross-country coach notices that runners who eat a specific pre-race oatmeal breakfast post personal bests far more often than those who skip breakfast or eat differently; the oatmeal eaters are otherwise spread evenly across ability levels and training loads. In one paragraph, propose the strongest explanation you'd act on, what you'd do, and what would make you abandon it.",
-      writtenRubric: {
-        modelAnswer:
-          "The strongest model is that the steady-carb oatmeal breakfast improves race-day fueling and pacing, since the personal-best pattern tracks the meal across runners who are otherwise evenly distributed by ability and training load. I'd commit to it by having a cross-section of non-oatmeal runners adopt the same pre-race breakfast for the next three meets and tracking their times, treating the fueling hypothesis as true while it leads. The disconfirmer is clear: if those switched runners show no improvement in personal-best frequency, I drop the oatmeal explanation and treat the original pattern as a placebo or selection effect, focusing instead on warm-up routine or sleep.",
-        yieldAnchors: [
-          "Oatmeal eaters post personal bests far more often",
-          "Skippers and different-breakfast runners do so less",
-          "Oatmeal eaters are spread evenly across ability levels",
-          "Oatmeal eaters are spread evenly across training loads",
-        ],
-        riskAnchors: [
-          "Have non-oatmeal runners adopt the breakfast for three meets",
-          "Their personal-best frequency should rise if fueling is causal",
-          "No improvement after switching refutes the model",
-        ],
-        defeatedBy: [
-          "Attributing it to higher ability among oatmeal eaters (ability is evenly spread)",
-          "Attributing it to heavier training (load is evenly spread)",
-          "Concluding diet effects can't be isolated and changing nothing",
-        ],
-      } as WrittenRubric,
-      correctAnswer:
-        "The strongest model is that the steady-carb oatmeal breakfast improves race-day fueling and pacing, since the personal-best pattern tracks the meal across runners who are otherwise evenly distributed by ability and training load. I'd commit to it by having a cross-section of non-oatmeal runners adopt the same pre-race breakfast for the next three meets and tracking their times, treating the fueling hypothesis as true while it leads. The disconfirmer is clear: if those switched runners show no improvement in personal-best frequency, I drop the oatmeal explanation and treat the original pattern as a placebo or selection effect, focusing instead on warm-up routine or sleep.",
-      explanation:
-        "Top credit commits to the meal-tracked pattern and exposes it to a clean adoption test; the cautious 'nutrition is individual, we can't conclude anything' response is the near-zero dodge, and verbose hedging that binds none of the anchors scores low.",
-    } as HomeworkItem,
-  ];
-}

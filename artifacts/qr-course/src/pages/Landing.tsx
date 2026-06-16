@@ -38,19 +38,19 @@ const features = [
   {
     icon: BarChart3,
     title: "One Unit, 8 Sections",
-    body: "From spotting a fecund lead all the way to calibrated boldness under uncertainty.",
+    body: "From what cognitive science is all the way to the hard problem of consciousness.",
   },
 ];
 
 const topics = [
-  { n: "1.1", title: "The Fecund Lead" },
-  { n: "1.2", title: "Model Selection by Explanatory Yield" },
-  { n: "1.3", title: "Parsimony as a Live Constraint" },
-  { n: "1.4", title: "Abductive Commitment" },
-  { n: "1.5", title: "From Correlation to Mechanism" },
-  { n: "1.6", title: "The Anomaly Cluster" },
-  { n: "1.7", title: "The Cheap Decisive Test" },
-  { n: "1.8", title: "Calibrated Boldness" },
+  { n: "1.1", title: "What Cognitive Science Is" },
+  { n: "1.2", title: "The Big Idea: Mind as Information Processing" },
+  { n: "1.3", title: "Perception" },
+  { n: "1.4", title: "Memory" },
+  { n: "1.5", title: "Language and Thought" },
+  { n: "1.6", title: "Reasoning and Bias" },
+  { n: "1.7", title: "Brains and Machines" },
+  { n: "1.8", title: "Consciousness" },
 ];
 
 export default function Landing() {
@@ -62,7 +62,7 @@ export default function Landing() {
             <Search className="w-4 h-4" />
           </div>
           <span className="font-serif font-semibold text-lg tracking-tight">
-            Constructive Critical Reasoning
+            Cognitive Science 101
           </span>
         </div>
         <div className="flex items-center gap-2">
@@ -89,15 +89,16 @@ export default function Landing() {
         <section className="max-w-4xl mx-auto px-6 pt-20 pb-16 text-center">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary text-secondary-foreground text-xs font-medium mb-6">
             <BarChart3 className="w-3.5 h-3.5" />
-            A one-unit course in constructive critical reasoning
+            A one-unit baby course on how the mind works
           </div>
           <h1 className="text-4xl md:text-5xl font-serif font-bold text-primary leading-tight mb-5">
-            Don't just doubt. Commit to the strongest conclusion.
+            How the mind works — taught, tutored, drilled, and graded by AI.
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
-            A self-paced course that teaches, tutors, drills, and grades you on
-            reasoning that builds — drawing the boldest, most-testable conclusion
-            the evidence supports, instead of the safe "you can't really know" dodge.
+            A self-paced baby course on cognitive science — perception, memory,
+            language, reasoning, machine minds, and consciousness. Plain lessons,
+            an AI tutor, adaptive practice, and AI-graded homework. No math or
+            coding required.
           </p>
           <div className="flex items-center justify-center gap-3">
             <Link href="/sign-up">
@@ -162,8 +163,8 @@ export default function Landing() {
       </main>
 
       <footer className="border-t border-border px-6 py-6 text-center text-sm text-muted-foreground">
-        Constructive Critical Reasoning — where reasoning that commits hardest
-        and tests cleanest earns the most credit.
+        Cognitive Science 101 — a baby course on how the mind works, taught,
+        tutored, drilled, and graded by AI.
       </footer>
     </div>
   );

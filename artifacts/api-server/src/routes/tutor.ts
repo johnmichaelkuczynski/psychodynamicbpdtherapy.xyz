@@ -22,11 +22,11 @@ router.get("/tutor/suggestions/:lectureId", async (req, res): Promise<void> => {
   }
 
   const SYSTEM_PROMPT =
-    'You are a rigorous introductory AI (artificial intelligence) tutor writing study questions. Reply as strict JSON of the form {"questions": string[]} with NO other keys.';
+    'You are a rigorous introductory cognitive science tutor writing study questions. Reply as strict JSON of the form {"questions": string[]} with NO other keys.';
   const buildUserPrompt = (extra: string) =>
     extra +
     `From the lecture below, write 6 starter questions that make the student APPLY the lecture's ideas to a CONCRETE EXAMPLE. Every question must hang on a specific case and ask the student to reason about that case.\n\n` +
-    `THE SINGLE MOST IMPORTANT RULE: every question must contain an explicit, concrete, EVERYDAY example — a specific relatable situation (e.g. "an email app that quietly moves a new message into the spam folder", "a chatbot that confidently lists a book that turns out not to exist", "a photo app that learned to recognize huskies only from snowy pictures"). Keep examples plain-language and non-technical — no technical terms, study citations, or jargon. The question must ask the student to analyze, explain, judge, or predict something about THAT example. Reuse the lecture's own examples when it has them; otherwise invent a vivid, specific one.\n\n` +
+    `THE SINGLE MOST IMPORTANT RULE: every question must contain an explicit, concrete, EVERYDAY example — a specific relatable situation (e.g. "a friend swears she remembers a school fire drill that never actually happened", "two people stare at the same drawing and one sees a duck while the other sees a rabbit", "you read a price of $1,200 first and then every other price feels cheap"). Keep examples plain-language and non-technical — no technical terms, study citations, or jargon. The question must ask the student to analyze, explain, judge, or predict something about THAT example. Reuse the lecture's own examples when it has them; otherwise invent a vivid, specific one.\n\n` +
     `ABSOLUTELY FORBIDDEN — never produce any of these:\n` +
     `- Questions that ask for a definition ("What is X?", "What does X mean?", "Define X").\n` +
     `- Questions that ask to distinguish or compare concepts in the abstract ("How do X and Y differ?", "What is the difference between X and Y?", "How does X relate to Y?").\n` +
@@ -34,10 +34,10 @@ router.get("/tutor/suggestions/:lectureId", async (req, res): Promise<void> => {
     `- Any question that could be answered without referring to a specific case.\n\n` +
     `If a question does not name a concrete example and ask the student to reason about it, REWRITE it until it does.\n\n` +
     `GOOD vs BAD:\n` +
-    `- BAD: "What's the difference between automation and intelligence?"\n` +
-    `- GOOD: "A thermostat turns on the heat whenever a room drops below a set temperature — does this count as AI, and what would have to change for it to count? Explain your reasoning."\n` +
-    `- BAD: "What is a hallucination?"\n` +
-    `- GOOD: "A chatbot confidently gives you a book title and author to cite, but the book turns out not to exist — explain why a language model would do this."\n\n` +
+    `- BAD: "What's the difference between bottom-up and top-down perception?"\n` +
+    `- GOOD: "Two friends look at the same blurry photo: one immediately sees a dog, the other sees nothing until told it's a dog, and then can't unsee it — what does this tell us about how the brain builds what we see? Explain your reasoning."\n` +
+    `- BAD: "What is a false memory?"\n` +
+    `- GOOD: "A week after a car crash, a witness 'remembers' broken glass that was never there after being asked how fast the cars 'smashed' — explain why the mind would reshape the memory this way."\n\n` +
     `Cover several different major ideas from the reading across the 6 questions. One clear sentence each (roughly 12–28 words), in the student's own voice, no compound double-questions. Use $...$ for any inline math.\n\n` +
     `Return exactly 6 questions.\n\nLECTURE TITLE: ${lecture.title}\n\nLECTURE BODY:\n"""\n${lecture.body}\n"""`;
 
@@ -104,7 +104,7 @@ router.post("/tutor/ask", async (req, res): Promise<void> => {
   const { message, selectedLectureText } = parsed.data;
 
   const sys =
-    "You are an encouraging introductory AI (artificial intelligence) tutor. Explain step by step, use clear examples and relatable cases, and define key terms (e.g. machine learning, training data, neural network, language model, hallucination) when they come up. Keep replies short (3-6 sentences) unless the student asks for more detail. Never just give the answer — guide them.";
+    "You are an encouraging introductory cognitive science tutor. Explain step by step, use clear examples and relatable cases, and define key terms (e.g. perception, memory, attention, heuristic, representation) when they come up. Keep replies short (3-6 sentences) unless the student asks for more detail. Never just give the answer — guide them.";
   const user = selectedLectureText
     ? `Context from the lecture the student is reading:\n"""\n${selectedLectureText}\n"""\n\nStudent question: ${message}`
     : message;

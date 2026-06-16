@@ -9,407 +9,407 @@ const mcq: HomeworkItem[] = [
   {
     itemType: "mc",
     prompt:
-      "A bakery's morning rush sells out of croissants by 8am on Tuesdays and Fridays, but not other weekdays. On those two days a nearby gym runs a 6am class, and the bus that stops outside is also rerouted to arrive 10 minutes earlier. Sales are flat on weekends when both the class and the reroute are absent. Which conclusion best follows?",
+      "Two lines on a page are exactly the same length, but one has arrowheads pointing outward at its ends and the other has them pointing inward. Nearly everyone sees the inward-arrow line as longer, even after measuring both with a ruler. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Keep it simple: the early bus is the whole story, so ignore the gym class entirely.",
-        credit: 0,
-      },
-      {
-        text: "Post-gym customers arriving on the earlier bus jointly drive the Tuesday/Friday sellouts; test it by running the 6am class on a Wednesday (bus unchanged) and seeing whether croissants still sell out.",
+        text: "The brain doesn't read raw line length but infers size from depth cues the arrows mimic (like room corners), so it stretches the 'farther' line; test whether the illusion shrinks for people raised in environments without straight-edged buildings, whether it weakens when the arrows are replaced by plain dots, and whether the perceived gap tracks how strongly the figure suggests depth.",
         credit: 1.0,
       },
       {
-        text: "Some mix of the gym class, the bus, the weather, staff mood, and seasonal demand probably interacts to lift sales on those mornings.",
-        credit: 0.6,
+        text: "The arrows seem to make one line look longer somehow.",
+        credit: 0.3,
       },
       {
-        text: "The gym class likely brings in some extra customers on those days.",
-        credit: 0.3,
+        text: "Since both lines measure the same, the difference is just careless looking and means nothing about the mind.",
+        credit: 0,
+      },
+      {
+        text: "The arrowheads probably trick the eye; we could show the figure to more people and confirm.",
+        credit: 0.6,
       },
     ],
     correctAnswer:
-      "Post-gym customers arriving on the earlier bus jointly drive the Tuesday/Friday sellouts; test it by running the 6am class on a Wednesday (bus unchanged) and seeing whether croissants still sell out.",
+      "The brain doesn't read raw line length but infers size from depth cues the arrows mimic (like room corners), so it stretches the 'farther' line; test whether the illusion shrinks for people raised in environments without straight-edged buildings, whether it weakens when the arrows are replaced by plain dots, and whether the perceived gap tracks how strongly the figure suggests depth.",
     explanation:
-      "The 1.0 model is the simplest one that still binds BOTH coincident factors and the weekend null, and it names a clean test that isolates the class. The zero-credit option uses 'keep it simple' to drop the gym class, leaving half the pattern unexplained.",
+      "Top credit names a mechanism (depth inference) and three checkable tests, one that could refute it across cultures; the 'just careless looking' option refuses the real finding that the illusion survives measurement.",
   },
   {
     itemType: "mc",
     prompt:
-      "A SaaS team sees signups jump the week they (a) cut the form from 9 fields to 3 AND (b) launched a referral bonus. Signups stayed high the next month with the bonus still live but the short form unchanged. A prior month with only a short form (no bonus) showed no jump. Which conclusion best follows?",
+      "A simple line drawing can be seen as either a duck or a rabbit. People flip between the two but never see both at once, and once told 'rabbit' they tend to see the rabbit first. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "We changed two things at once, so nothing can be concluded about either.",
+        text: "An ambiguous figure shows it could be anything; the mind has no rules here.",
         credit: 0,
       },
       {
-        text: "The bonus is doing the heavy lifting and the short form is a minor enabler; confirm by pausing the bonus for one week while keeping the short form and watching signups fall back toward baseline.",
+        text: "Perception isn't a passive copy of the lines but an active guess the brain commits to one interpretation at a time, and prior suggestion biases the guess; test whether a verbal cue ('look for a beak') speeds duck-first sightings, whether flip rate slows when one reading is primed, and whether eye movements jump to the 'beak' versus 'ears' region depending on the current percept.",
         credit: 1.0,
       },
       {
-        text: "The bonus probably matters more, given the earlier short-form-only month went flat.",
+        text: "People probably interpret the drawing differently; we could survey viewers.",
         credit: 0.6,
       },
       {
-        text: "Both changes seem to have helped signups somewhat.",
+        text: "The drawing seems to look like two animals.",
         credit: 0.3,
       },
     ],
     correctAnswer:
-      "The bonus is doing the heavy lifting and the short form is a minor enabler; confirm by pausing the bonus for one week while keeping the short form and watching signups fall back toward baseline.",
+      "Perception isn't a passive copy of the lines but an active guess the brain commits to one interpretation at a time, and prior suggestion biases the guess; test whether a verbal cue ('look for a beak') speeds duck-first sightings, whether flip rate slows when one reading is primed, and whether eye movements jump to the 'beak' versus 'ears' region depending on the current percept.",
     explanation:
-      "The richest yet simplest sufficient model uses the natural short-form-only month to assign the main effect to the bonus, and exposes a one-week kill-switch test. 'Nothing can be concluded' refuses to choose despite a clean natural control.",
+      "The richest conclusion names active interpretation plus prior bias and three tests, including eye-tracking; 'it could be anything, no rules' is the empty dodge.",
   },
   {
     itemType: "mc",
     prompt:
-      "A patient's migraines spike on days she skips breakfast AND sleeps under six hours. On well-slept days she can skip breakfast with no migraine; on poorly-slept days she gets one even after eating. Two weeks of logs show migraines only when sleep is short, regardless of breakfast. Which conclusion best follows?",
+      "A photo of a striped dress looks white-and-gold to some viewers and blue-and-black to others, and the same person can flip after being told the lighting. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Short sleep is the operative trigger and breakfast is incidental; test by enforcing seven hours of sleep for a week while keeping breakfast irregular and checking that migraines stop.",
-        credit: 1.0,
-      },
-      {
-        text: "To stay parsimonious, just tell her to eat breakfast — it's the easiest thing to fix.",
+        text: "Color is just personal opinion, so there's nothing to study here.",
         credit: 0,
       },
       {
-        text: "Sleep looks like the bigger factor, though breakfast may still play a supporting role.",
-        credit: 0.6,
+        text: "Viewers disagree about the dress for some reason.",
+        credit: 0.3,
       },
       {
-        text: "Her migraines seem connected to her daily routine in some way.",
-        credit: 0.3,
+        text: "The brain discounts the assumed light source to recover an object's true color, and viewers who silently assume different lighting subtract different tints; test whether forcing an assumption ('it's in shadow' vs 'in bright sun') flips the report, whether people who wake early (more daylight exposure) skew toward one reading, and whether adding clear background lighting cues collapses the disagreement.",
+        credit: 1.0,
+      },
+      {
+        text: "The lighting probably matters; we could ask people what light they imagined.",
+        credit: 0.6,
       },
     ],
     correctAnswer:
-      "Short sleep is the operative trigger and breakfast is incidental; test by enforcing seven hours of sleep for a week while keeping breakfast irregular and checking that migraines stop.",
+      "The brain discounts the assumed light source to recover an object's true color, and viewers who silently assume different lighting subtract different tints; test whether forcing an assumption ('it's in shadow' vs 'in bright sun') flips the report, whether people who wake early (more daylight exposure) skew toward one reading, and whether adding clear background lighting cues collapses the disagreement.",
     explanation:
-      "The logs already dissociate the two variables, so the simplest sufficient model keeps only sleep and proposes a decisive sleep-fixing test. The dodge invokes 'parsimony' to pick the convenient-but-wrong cause the data has ruled out.",
+      "Top credit names color constancy (discounting the illuminant) with three tests that could disconfirm it; 'color is just opinion' commits to no mechanism.",
   },
   {
     itemType: "mc",
     prompt:
-      "A soccer team concedes late goals only in away matches played on artificial turf. On grass away games and home turf games they hold leads fine. Fitness data shows players cover the same distance on both surfaces, but sprint counts drop sharply in the final 15 minutes on away turf. Which conclusion best follows?",
+      "On a screen, two dots blink on and off in alternation a short distance apart. Instead of two separate blinks, viewers see one dot smoothly sliding back and forth. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Late-game sprint fatigue specific to unfamiliar away turf causes the collapses; test by scheduling a hard turf training block and rechecking whether final-15 sprint counts and late goals improve together.",
+        text: "The brain assumes objects persist and move continuously, so it invents motion between two flashes rather than accept two unrelated dots; test whether the motion illusion breaks when the gap or timing is made too large, whether inserting a barrier between the dots makes viewers see the dot 'go around' it, and whether the perceived path bends toward an implied obstacle.",
         credit: 1.0,
       },
       {
-        text: "There are clearly many variables in away games, so it would be an oversimplification to single any one out.",
-        credit: 0,
-      },
-      {
-        text: "Turf away games seem to wear the players down somehow by the end.",
+        text: "The dots seem to turn into movement.",
         credit: 0.3,
       },
       {
-        text: "Reduced late-game sprinting on away turf is likely the issue, perhaps combined with travel and crowd effects.",
+        text: "Screens flicker, so the motion is probably just an eye blur with no lesson about the mind.",
+        credit: 0,
+      },
+      {
+        text: "The blinking likely creates an illusion of motion; we could try other timings.",
         credit: 0.6,
       },
     ],
     correctAnswer:
-      "Late-game sprint fatigue specific to unfamiliar away turf causes the collapses; test by scheduling a hard turf training block and rechecking whether final-15 sprint counts and late goals improve together.",
+      "The brain assumes objects persist and move continuously, so it invents motion between two flashes rather than accept two unrelated dots; test whether the motion illusion breaks when the gap or timing is made too large, whether inserting a barrier between the dots makes viewers see the dot 'go around' it, and whether the perceived path bends toward an implied obstacle.",
     explanation:
-      "The distance-equal-but-sprints-drop data point pins the mechanism; the simplest sufficient model binds the surface, the timing, and the sprint dip with one trainable cause. The dodge hides behind 'too many variables' to avoid committing to the pattern the data isolates.",
+      "The strongest conclusion names a continuity assumption and three tests, including the striking 'goes around a barrier' prediction; 'just eye blur' dismisses the finding.",
   },
   {
     itemType: "mc",
     prompt:
-      "An online store's cart-abandonment rate jumps every time shipping costs appear, but only for orders under $35. Orders over $35 (which qualify for free shipping) abandon at the normal rate. A survey shows under-$35 shoppers report 'surprise fees' as their reason. Which conclusion best follows?",
+      "People can fluently read a sentence where the middle letters of each word are scrambled ('Aoccdrnig to a rscheearch') as long as the first and last letters stay put. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Late-appearing shipping fees on sub-threshold orders drive the abandonment; test by showing the shipping cost up front on the product page for half of under-$35 visitors and comparing abandonment.",
+        text: "Reading is too automatic to learn anything from a typo trick.",
+        credit: 0,
+      },
+      {
+        text: "Skilled reading isn't letter-by-letter decoding but top-down prediction of whole words from shape, context, and expectation; test whether the effect collapses for unpredictable word lists with no sentence context, whether rare or long words slow readers far more than common ones, and whether scrambling the high-information first/last letters destroys fluency.",
         credit: 1.0,
       },
       {
-        text: "Shipping fees probably annoy some shoppers and push a few to leave.",
+        text: "Scrambled words are still readable, it seems.",
         credit: 0.3,
       },
       {
-        text: "The fee timing is likely the main driver, though price sensitivity and checkout length may also contribute.",
+        text: "Readers probably guess the words; we could test more sentences.",
         credit: 0.6,
-      },
-      {
-        text: "Keep the model lean: people just don't like paying for shipping, so there's nothing specific to test.",
-        credit: 0,
       },
     ],
     correctAnswer:
-      "Late-appearing shipping fees on sub-threshold orders drive the abandonment; test by showing the shipping cost up front on the product page for half of under-$35 visitors and comparing abandonment.",
+      "Skilled reading isn't letter-by-letter decoding but top-down prediction of whole words from shape, context, and expectation; test whether the effect collapses for unpredictable word lists with no sentence context, whether rare or long words slow readers far more than common ones, and whether scrambling the high-information first/last letters destroys fluency.",
     explanation:
-      "The threshold split and the 'surprise fees' survey both get explained by one mechanism — fee *timing* — and the A/B test falsifies it cheaply. The dodge flattens the model so far ('people dislike shipping') that it leaves the threshold pattern unexplained and untestable.",
+      "Top credit names top-down word prediction and three tests, one that could break the effect by removing context; 'too automatic to learn anything' refuses the inquiry.",
   },
   {
     itemType: "mc",
     prompt:
-      "A vineyard's worst-tasting batches all came from one south-facing block in years with an August heatwave. Cool Augusts produced fine wine from that block, and the heatwave years didn't hurt the north blocks. Sugar readings show the south grapes over-ripened only in hot years. Which conclusion best follows?",
+      "When a video shows lips mouthing 'ga' but the soundtrack plays 'ba', most viewers hear 'da' — a sound that is in neither the lips nor the audio. Closing your eyes restores the true 'ba'. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Heat-driven over-ripening specific to the exposed south block ruins those batches; test by harvesting the south block two weeks earlier in the next hot year and checking sugar and taste.",
-        credit: 1.0,
-      },
-      {
-        text: "It's safest to assume the south block is simply lower quality and replant it.",
-        credit: 0,
-      },
-      {
-        text: "Heat seems to hurt the south block's grapes more than the others.",
+        text: "People probably get confused by mismatched video.",
         credit: 0.3,
       },
       {
-        text: "Over-ripening from heat is the likely culprit, possibly alongside soil and irrigation differences in that block.",
+        text: "Hearing is not purely auditory; the brain fuses sight and sound into a single best-guess percept, and with a conflict it compromises; test whether the illusion vanishes when the video is blurred or delayed, whether it weakens in people with poor lip-reading skill, and whether mismatching only slightly (lips 'ba', audio 'pa') still shifts what is heard.",
+        credit: 1.0,
+      },
+      {
+        text: "Watching the lips probably changes what's heard; we could test more clips.",
         credit: 0.6,
+      },
+      {
+        text: "Hearing is a separate sense, so the eyes can't really affect it; the report must be a mistake.",
+        credit: 0,
       },
     ],
     correctAnswer:
-      "Heat-driven over-ripening specific to the exposed south block ruins those batches; test by harvesting the south block two weeks earlier in the next hot year and checking sugar and taste.",
+      "Hearing is not purely auditory; the brain fuses sight and sound into a single best-guess percept, and with a conflict it compromises; test whether the illusion vanishes when the video is blurred or delayed, whether it weakens in people with poor lip-reading skill, and whether mismatching only slightly (lips 'ba', audio 'pa') still shifts what is heard.",
     explanation:
-      "Only the heat-by-exposure interaction binds the block, the year, and the sugar data together, and earlier harvest is a falsifiable fix. The dodge picks the simpler 'bad block' story that the cool-year good batches directly refute.",
+      "The strongest conclusion names multisensory fusion and three disconfirming tests; the 'hearing is separate, must be a mistake' option is defeated by the eyes-closed reversal.",
   },
   {
     itemType: "mc",
     prompt:
-      "A help desk's resolution times doubled starting the same week two things happened: a new ticketing tool went live AND three senior agents went on leave. Times stayed high after the agents returned but dropped sharply the day the team reverted the tool. Which conclusion best follows?",
+      "Two people in a photo are the same printed size, but one stands at the far end of a long hallway. Viewers insist the 'far' person is much larger. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Hard to say — the tool and the staffing change are confounded, so we can't separate them.",
+        text: "Photos distort things, so the judgment tells us nothing about perception.",
         credit: 0,
       },
       {
-        text: "The new tool is the dominant cause; confirm by reintroducing it for a single controlled day and verifying resolution times spike again while staffing is full.",
-        credit: 1.0,
+        text: "The hallway seems to make one person look bigger.",
+        credit: 0.3,
       },
       {
-        text: "The tool change looks like the main factor since times fell when it was reverted despite full staffing.",
+        text: "The far one looks bigger because of the hallway; we could ask more viewers.",
         credit: 0.6,
       },
       {
-        text: "The tool may have slowed things down a bit.",
-        credit: 0.3,
+        text: "The brain applies size constancy: it scales up things it judges to be far away, so equal retinal sizes read as different real sizes; test whether removing the converging hallway lines erases the effect, whether the size boost grows as the depth cues get stronger, and whether the illusion fails for viewers shown the figure upside down (weakening the scene reading).",
+        credit: 1.0,
       },
     ],
     correctAnswer:
-      "The new tool is the dominant cause; confirm by reintroducing it for a single controlled day and verifying resolution times spike again while staffing is full.",
+      "The brain applies size constancy: it scales up things it judges to be far away, so equal retinal sizes read as different real sizes; test whether removing the converging hallway lines erases the effect, whether the size boost grows as the depth cues get stronger, and whether the illusion fails for viewers shown the figure upside down (weakening the scene reading).",
     explanation:
-      "The post-return-still-slow and revert-then-fast facts dissolve the confound, so the simplest sufficient model assigns the effect to the tool and proposes a reversible re-test. 'We can't separate them' refuses to choose even though the timeline already separated them.",
+      "Top credit names size constancy with three tests that manipulate depth cues; 'photos distort, tells us nothing' is the barren refusal.",
   },
   {
     itemType: "mc",
     prompt:
-      "A gardener's tomato plants wilt by afternoon only in the bed nearest the new white fence. Soil moisture is identical across beds, but a light meter shows the fence reflects intense midday sun onto that bed. Shaded test plants in the same bed stayed firm. Which conclusion best follows?",
+      "Two gray squares on a checkerboard are physically identical in shade, yet the one sitting 'in shadow' looks clearly lighter than the one in 'light'. Connecting them with a strip of the same gray makes the difference vanish. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Reflected heat from the fence stresses that bed specifically; test by shading the bed at midday for a week and confirming the wilting stops while neighbors are untouched.",
+        text: "The brain doesn't report raw brightness but estimates a surface's true color by correcting for assumed shadow, so it lightens what it thinks is shaded; test whether removing the shadow-casting cylinder kills the effect, whether the illusion tracks how convincing the shadow looks, and whether a visible connecting strip (defeating the shadow story) restores equality every time.",
         credit: 1.0,
       },
       {
-        text: "The simple explanation is the plants need more water, so just water that bed more.",
-        credit: 0,
-      },
-      {
-        text: "Something about that bed's position is hard on the plants.",
+        text: "The squares seem different but aren't.",
         credit: 0.3,
       },
       {
-        text: "Reflected heat is probably the main issue, though soil chemistry near the fence might matter too.",
+        text: "Identical squares can't truly look different, so viewers are simply guessing wrong.",
+        credit: 0,
+      },
+      {
+        text: "The shadow probably explains it; we could measure with more checkerboards.",
         credit: 0.6,
       },
     ],
     correctAnswer:
-      "Reflected heat from the fence stresses that bed specifically; test by shading the bed at midday for a week and confirming the wilting stops while neighbors are untouched.",
+      "The brain doesn't report raw brightness but estimates a surface's true color by correcting for assumed shadow, so it lightens what it thinks is shaded; test whether removing the shadow-casting cylinder kills the effect, whether the illusion tracks how convincing the shadow looks, and whether a visible connecting strip (defeating the shadow story) restores equality every time.",
     explanation:
-      "Equal moisture plus the light-meter reading and the firm shaded plants all point to reflected heat, and shading is a clean falsifying test. The dodge reaches for the 'simple' watering fix that the identical-moisture data already defeats.",
+      "The strongest conclusion names lightness constancy (shadow correction) with three tests; 'viewers are simply guessing wrong' denies the robust, measurable effect.",
   },
   {
     itemType: "mc",
     prompt:
-      "A podcast's downloads surge for episodes that are both under 30 minutes AND released on Monday. Long Monday episodes and short Thursday episodes perform like the back catalog. Listener data shows commuters binge short shows on Monday mornings. Which conclusion best follows?",
+      "People reliably 'see' faces in clouds, electrical outlets, and the front of cars, and they spot them faster than they spot non-face shapes. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Monday is clearly the magic ingredient; just release everything on Monday and stop overthinking length.",
+        text: "Seeing faces everywhere is just imagination and not worth studying.",
         credit: 0,
       },
       {
-        text: "Short length and Monday timing together capture the commuter audience; test by releasing one short and one long episode on the same Monday and comparing downloads.",
+        text: "People often notice face-like patterns.",
+        credit: 0.3,
+      },
+      {
+        text: "The brain runs a fast, eager face-detector that errs toward false alarms because missing a real face is costlier than a false one; test whether two-dots-over-a-line triggers face responses faster than scrambled controls, whether the effect is strongest for upright (not inverted) arrangements, and whether the same brain region that responds to real faces lights up for these patterns.",
         credit: 1.0,
       },
       {
-        text: "The short-plus-Monday combo seems to matter, though guest popularity and topic could also be feeding the surge.",
+        text: "People probably have a knack for faces; we could collect more examples.",
         credit: 0.6,
-      },
-      {
-        text: "Shorter Monday episodes appear to do a little better.",
-        credit: 0.3,
       },
     ],
     correctAnswer:
-      "Short length and Monday timing together capture the commuter audience; test by releasing one short and one long episode on the same Monday and comparing downloads.",
+      "The brain runs a fast, eager face-detector that errs toward false alarms because missing a real face is costlier than a false one; test whether two-dots-over-a-line triggers face responses faster than scrambled controls, whether the effect is strongest for upright (not inverted) arrangements, and whether the same brain region that responds to real faces lights up for these patterns.",
     explanation:
-      "Both conditions are required by the data (long-Monday and short-Thursday flop), so the simplest sufficient model keeps both and the same-day test isolates length. The dodge drops length to keep it 'simple,' leaving the long-Monday flop unexplained.",
+      "Top credit names a biased face-detection mechanism with three tests, including inversion and brain-region checks; 'just imagination' opens no inquiry.",
   },
   {
     itemType: "mc",
     prompt:
-      "A factory's defect rate climbs only on the night shift, and only on the line using Machine 7. Day shift on Machine 7 is clean; night shift on other machines is clean. Maintenance logs show Machine 7's coolant pump runs hotter as ambient temperature drops overnight. Which conclusion best follows?",
+      "Each eye has a blind spot where the optic nerve exits and no light is detected, yet people never notice a hole in their vision. Cover one eye and a small dot can disappear into the gap. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "There are probably several night-shift factors at play, so it would be reductive to blame one machine.",
+        text: "The eye is just very good, so there's nothing to explain.",
         credit: 0,
       },
       {
-        text: "Cold-night coolant failure on Machine 7 causes the defects; test by running Machine 7 overnight with a pre-warmed coolant line and checking whether defects drop to day-shift levels.",
+        text: "The brain doesn't passively display the retina's image; it actively fills the blind spot with the surrounding pattern as its best guess; test whether a dot vanishes there but a continuous line is seen unbroken, whether the fill-in copies background texture and color, and whether two eyes together cover each other's gaps so the effect needs one eye closed.",
         credit: 1.0,
       },
       {
-        text: "Machine 7 at night is likely the source, perhaps worsened by tired night staff.",
-        credit: 0.6,
+        text: "The blind spot seems to get covered up somehow.",
+        credit: 0.3,
       },
       {
-        text: "Night shifts on that machine seem more error-prone.",
-        credit: 0.3,
+        text: "The brain probably hides the gap; we could test the dot trick on more people.",
+        credit: 0.6,
       },
     ],
     correctAnswer:
-      "Cold-night coolant failure on Machine 7 causes the defects; test by running Machine 7 overnight with a pre-warmed coolant line and checking whether defects drop to day-shift levels.",
+      "The brain doesn't passively display the retina's image; it actively fills the blind spot with the surrounding pattern as its best guess; test whether a dot vanishes there but a continuous line is seen unbroken, whether the fill-in copies background texture and color, and whether two eyes together cover each other's gaps so the effect needs one eye closed.",
     explanation:
-      "The clean cells (day-7, night-others) plus the coolant-temperature log isolate a single mechanism, and the pre-warm trial would falsify it. The dodge hides behind 'several factors' even though three of four cells are defect-free.",
+      "The richest conclusion names active filling-in with three tests; 'the eye is just very good' refuses the real puzzle of the missing hole.",
   },
   {
     itemType: "mc",
     prompt:
-      "A student aces history tests on units taught by lecture but struggles on units taught by group projects. Her notes are thorough either way, and she reports both topics as equally interesting. Recorded sessions show she speaks little in groups and gets distracted. Which conclusion best follows?",
+      "When the identical mid-range wine is poured from a bottle with an expensive label versus a cheap one, tasters rate the expensive-labeled pour as smoother and report genuinely enjoying it more, not just saying so. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "She just isn't interested in the project topics, plain and simple.",
+        text: "Taste is too subjective to study, so the label result means nothing.",
         credit: 0,
       },
       {
-        text: "Group-project format reduces her active engagement and hurts retention; test by giving her a solo structured version of a project unit and comparing her score to the group version.",
+        text: "Expectation set by the label feeds top-down into perception, so the brain's prediction of 'fine wine' actually shapes the experienced flavor; test whether brain reward areas respond more strongly to the expensive label, whether blind tasting with no labels erases the gap, and whether the boost scales with the stated price.",
         credit: 1.0,
       },
       {
-        text: "Group settings seem to suit her less well academically.",
+        text: "The label seems to change the ratings.",
         credit: 0.3,
       },
       {
-        text: "The project format probably hurts her, though the difficulty of those specific topics could contribute.",
+        text: "The fancy label probably helps; we could test more tasters.",
         credit: 0.6,
       },
     ],
     correctAnswer:
-      "Group-project format reduces her active engagement and hurts retention; test by giving her a solo structured version of a project unit and comparing her score to the group version.",
+      "Expectation set by the label feeds top-down into perception, so the brain's prediction of 'fine wine' actually shapes the experienced flavor; test whether brain reward areas respond more strongly to the expensive label, whether blind tasting with no labels erases the gap, and whether the boost scales with the stated price.",
     explanation:
-      "Equal notes and equal interest rule out content and motivation, so the format-engagement model is the simplest one that fits, and the solo re-test isolates format. The dodge's 'not interested' story is the convenient claim the equal-interest report defeats.",
+      "Top credit names top-down expectation altering experience with three tests, including a blind-tasting control; 'taste is too subjective' is the dodge.",
   },
   {
     itemType: "mc",
     prompt:
-      "A coffee subscription sees cancellations spike for customers in their third month — but only those who never used the 'pause delivery' feature. Pausers rarely cancel. Surveys show non-pausers cite 'too much coffee piling up.' Which conclusion best follows?",
+      "Viewers told to count basketball passes in a video routinely fail to notice a person in a gorilla suit who walks through the middle of the scene. Once told, they see the gorilla instantly on replay. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Over-supply among customers unaware of the pause option drives third-month churn; test by emailing the pause feature to half of new non-pausers and comparing their month-three cancellation rate.",
-        credit: 1.0,
-      },
-      {
-        text: "People cancel subscriptions all the time; it's simplest to treat this as normal churn and not intervene.",
+        text: "People just weren't paying attention; nothing deep is going on.",
         credit: 0,
       },
       {
-        text: "Coffee piling up seems to bother some customers.",
+        text: "Counting tasks seem to make people miss things.",
         credit: 0.3,
       },
       {
-        text: "Unused pausing is likely the key, though pricing and bean preferences may also drive some exits.",
+        text: "Attention probably narrows vision; we could run the video on more groups.",
         credit: 0.6,
+      },
+      {
+        text: "Perception is selective: we consciously see what attention is allocated to, not everything on the retina, so an unattended event can be invisible; test whether a harder counting task raises miss rates, whether a gorilla matching the attended team's color is noticed more, and whether eye-tracking shows misses even when the eyes land on the gorilla.",
+        credit: 1.0,
       },
     ],
     correctAnswer:
-      "Over-supply among customers unaware of the pause option drives third-month churn; test by emailing the pause feature to half of new non-pausers and comparing their month-three cancellation rate.",
+      "Perception is selective: we consciously see what attention is allocated to, not everything on the retina, so an unattended event can be invisible; test whether a harder counting task raises miss rates, whether a gorilla matching the attended team's color is noticed more, and whether eye-tracking shows misses even when the eyes land on the gorilla.",
     explanation:
-      "The pauser/non-pauser split and the pile-up surveys are bound by one mechanism, and the targeted-email A/B test falsifies it. The 'normal churn' dodge throws away the precise sub-group signal in the name of simplicity.",
+      "The strongest conclusion names attentional selection with three tests, the eye-tracking one being decisive; 'just weren't paying attention' restates the result without a mechanism or test.",
   },
   {
     itemType: "mc",
     prompt:
-      "A city's bike-share use drops sharply on rainy days — but a closer look shows the drop is entirely among stations without covered docks. Covered-dock stations hold steady in rain. Ridership on dry days is similar across both station types. Which conclusion best follows?",
+      "When a hidden rubber hand is stroked in sync with a person's real hidden hand, many people start to feel the rubber hand is theirs and flinch when it's threatened. Out-of-sync stroking breaks the feeling. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Rain obviously cuts cycling; nothing more specific can be claimed.",
+        text: "Body sense is fixed and built-in, so a fake hand can't really feel like yours; the reports must be made up.",
         credit: 0,
       },
       {
-        text: "Lack of shelter, not rain per se, suppresses rainy-day use; test by adding temporary covers to several uncovered stations and checking whether their rainy-day ridership recovers.",
+        text: "The fake hand seems to feel real sometimes.",
+        credit: 0.3,
+      },
+      {
+        text: "The brain builds the sense of body ownership by combining vision and touch when they match in time, and it will adopt a fake limb when the cues line up; test whether synced stroking produces the effect but delayed stroking abolishes it, whether the real hand's temperature actually drops as it's 'disowned', and whether a block-shaped object instead of a hand fails to be adopted.",
         credit: 1.0,
       },
       {
-        text: "Shelter availability looks like the real driver, though rider commitment and trip distance may matter too.",
+        text: "The stroking probably tricks the brain; we could try more participants.",
         credit: 0.6,
-      },
-      {
-        text: "Rainy weather seems to deter some riders at certain stations.",
-        credit: 0.3,
       },
     ],
     correctAnswer:
-      "Lack of shelter, not rain per se, suppresses rainy-day use; test by adding temporary covers to several uncovered stations and checking whether their rainy-day ridership recovers.",
+      "The brain builds the sense of body ownership by combining vision and touch when they match in time, and it will adopt a fake limb when the cues line up; test whether synced stroking produces the effect but delayed stroking abolishes it, whether the real hand's temperature actually drops as it's 'disowned', and whether a block-shaped object instead of a hand fails to be adopted.",
     explanation:
-      "The covered-vs-uncovered split refines a vague 'rain' story into a precise, fixable mechanism, and adding covers is a clean test. The dodge's 'rain cuts cycling' is technically true but explains away the very station difference that carries the signal.",
+      "Top credit names multisensory body-ownership construction with three tests, including a measurable temperature change; 'body sense is fixed, reports are made up' is defeated by the synchrony manipulation.",
   },
   {
     itemType: "mc",
     prompt:
-      "A novelist finds her daily word count is high on days she writes before checking email and low otherwise — but only on weekdays. On weekends, email-first days are just as productive. Logs show weekday email contains work demands; weekend email is personal. Which conclusion best follows?",
+      "A recording of a sentence has one speech sound replaced by a cough, yet listeners clearly 'hear' the missing sound and can't tell which one was covered. The restored sound always fits the sentence's meaning. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Email is bad for writing, so the rule is simply 'never check email first.'",
+        text: "Hearing is just decoding the sound wave, so a cough should leave an obvious gap; listeners are imagining things.",
         credit: 0,
       },
       {
-        text: "Weekday work email triggers task-switching that drains writing focus; test by batching weekday work email to the afternoon for two weeks and comparing morning word counts.",
-        credit: 1.0,
+        text: "The cough seems to get smoothed over.",
+        credit: 0.3,
       },
       {
-        text: "Work-related email seems to be the real disruptor, though sleep and caffeine could also shape output.",
+        text: "Listeners probably fill in the sound; we could test more sentences.",
         credit: 0.6,
       },
       {
-        text: "Checking email early appears to hurt her writing somewhat.",
-        credit: 0.3,
+        text: "The brain uses top-down knowledge of words and context to predict and insert the missing sound, hearing the expected speech rather than the raw input; test whether the restored sound changes when the sentence's later words change its likely meaning, whether the effect fails for nonsense strings with no predictable word, and whether listeners place the cough in the wrong position because the speech is reconstructed.",
+        credit: 1.0,
       },
     ],
     correctAnswer:
-      "Weekday work email triggers task-switching that drains writing focus; test by batching weekday work email to the afternoon for two weeks and comparing morning word counts.",
+      "The brain uses top-down knowledge of words and context to predict and insert the missing sound, hearing the expected speech rather than the raw input; test whether the restored sound changes when the sentence's later words change its likely meaning, whether the effect fails for nonsense strings with no predictable word, and whether listeners place the cough in the wrong position because the speech is reconstructed.",
     explanation:
-      "The weekend exception forces the model to specify *work* email, and afternoon batching is a falsifiable test. The blanket 'email is bad' dodge ignores the productive weekend email-first days, leaving the weekday/weekend contrast unexplained.",
+      "The richest conclusion names phonemic restoration via top-down prediction with three tests, including a context manipulation that could refute it; 'listeners are imagining things' dismisses the robust effect.",
   },
   {
     itemType: "mc",
     prompt:
-      "A retailer's two warehouses ship identical products, but Warehouse B has triple the damaged-item complaints. Both use the same boxes and carriers. The difference appears only for fragile items, and only since B switched to a new automated packing arm that B's staff say 'slams' lids shut. Which conclusion best follows?",
+      "In a brief flash, people identify a hard-to-read word much faster when it follows a related word ('bread' before 'butter') than an unrelated one. They even sometimes report seeing the expected word when a slightly different one was shown. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "B's automated packing arm damages fragile items; test by routing fragile orders at B to manual packing for two weeks and checking whether B's fragile-item complaints fall to A's level.",
-        credit: 1.0,
-      },
-      {
-        text: "Shipping damage happens everywhere; it's simplest to accept some breakage as a cost of doing business.",
+        text: "Faster reading after a hint is obvious and tells us nothing about perception.",
         credit: 0,
       },
       {
-        text: "The new packing arm is probably the cause, though carrier handling and warehouse layout might add to it.",
-        credit: 0.6,
+        text: "Perception is predictive: the brain pre-activates likely interpretations from context so expected input is recognized faster and even mis-seen toward the prediction; test whether the speed-up vanishes for unrelated primes, whether the error rate rises specifically toward the expected word, and whether a misleading prime ('doctor' before 'bread') slows recognition.",
+        credit: 1.0,
       },
       {
-        text: "Something at Warehouse B is rougher on fragile goods.",
+        text: "The first word seems to help read the second.",
         credit: 0.3,
+      },
+      {
+        text: "The related word probably speeds things up; we could run more word pairs.",
+        credit: 0.6,
       },
     ],
     correctAnswer:
-      "B's automated packing arm damages fragile items; test by routing fragile orders at B to manual packing for two weeks and checking whether B's fragile-item complaints fall to A's level.",
+      "Perception is predictive: the brain pre-activates likely interpretations from context so expected input is recognized faster and even mis-seen toward the prediction; test whether the speed-up vanishes for unrelated primes, whether the error rate rises specifically toward the expected word, and whether a misleading prime ('doctor' before 'bread') slows recognition.",
     explanation:
-      "Identical boxes/carriers plus the fragile-only, since-the-arm pattern isolate one cause, and the manual-packing trial would falsify it. The 'breakage is just a cost' dodge uses simplicity to avoid the specific, fixable mechanism the data points to.",
+      "Top credit names predictive pre-activation with three tests, including a misleading-prime check that could disconfirm it; 'obvious, tells us nothing' is the barren refusal.",
   },
 ];
 
@@ -417,416 +417,425 @@ const hybrid: HomeworkItem[] = [
   {
     itemType: "hybrid",
     prompt:
-      "A gym sees membership renewals climb in the quarter it both renovated the locker rooms AND hired two popular trainers. The next quarter, renewals stayed high after one trainer left but the lockers stayed renovated; a prior renovation-only quarter (no new trainers) had shown no lift. Which conclusion best follows?",
+      "The inside of a hollow face mask, lit from the front, looks like a normal face bulging outward — viewers cannot make themselves see the true concave shape, even knowing it's hollow. The illusion is weaker in dim, flat lighting. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Two things changed together, so the renewal lift can't be attributed to either with confidence.",
-        credit: 0,
-      },
-      {
-        text: "The trainers, not the renovation, drive renewals; confirm by tracking renewals among members who train with the remaining popular trainer versus those who don't over the next quarter.",
+        text: "The brain's strong prior that faces are convex overrides the depth cues and forces a 'sticking-out' reading; test whether upside-down or non-face concave objects resist the illusion, whether removing realistic lighting and texture weakens it, and whether the hollow face still looks convex when viewed with both eyes giving strong contrary depth cues.",
         credit: 1.0,
       },
       {
-        text: "The trainers look like the main driver given the flat renovation-only quarter.",
-        credit: 0.6,
+        text: "The mask seems to pop out even though it's hollow.",
+        credit: 0.3,
       },
       {
-        text: "Both the renovation and the trainers probably helped a little.",
-        credit: 0.3,
+        text: "A hollow mask is too unusual to teach us anything general about seeing.",
+        credit: 0,
+      },
+      {
+        text: "The face shape probably fools the brain; we could show it to more viewers.",
+        credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would most distinguish your model from its closest rival, and say what result would refute your model.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'strong face prior' lead from the rival 'any concave object looks convex,' and say what result would refute your lead.",
       modelAnswer:
-        "The cheapest distinguishing observation is the renewal rate of members assigned to the remaining popular trainer versus a matched group who never train with them; if both groups renew at the same elevated rate, the trainer-driven model is refuted and the renovation (or a general buzz effect) must be doing the work.",
+        "Cheapest test: present matched hollow shapes — a face versus a non-face object like a hollow bowl or random blob — under identical lighting and ask which appears to bulge out; my lead predicts the face resists far more strongly because of a face-specific prior. It is refuted if the bowl and blob look just as convex as the face, showing it is concavity in general, not a face prior, driving the illusion.",
       yieldAnchors: [
-        "Renewals rose the quarter of both the renovation and the two new trainers.",
-        "Renewals stayed high after one trainer left, lockers unchanged.",
-        "A prior renovation-only quarter produced no renewal lift.",
+        "The hollow mask looks like it bulges outward",
+        "Viewers can't override it even knowing it's hollow",
+        "The illusion is weaker in dim, flat lighting",
       ],
       riskAnchors: [
-        "Members training with the popular trainer renew at a higher rate than those who don't.",
-        "If the remaining trainer also leaves, renewals should fall toward baseline.",
+        "Upside-down or non-face concave objects resist the illusion",
+        "Removing realistic lighting and texture weakens it",
+        "Strong binocular depth cues fail to restore the true concave shape",
       ],
       defeatedBy: [
-        "The renovation is the main cause of higher renewals.",
-        "Nothing can be attributed because two things changed at once.",
+        "Any concave object looks convex, with no role for faces",
+        "The hollow mask shape is unrelated to what is perceived",
       ],
     },
     correctAnswer:
-      "The trainers, not the renovation, drive renewals; confirm by tracking renewals among members who train with the remaining popular trainer versus those who don't over the next quarter.",
+      "The brain's strong prior that faces are convex overrides the depth cues and forces a 'sticking-out' reading; test whether upside-down or non-face concave objects resist the illusion, whether removing realistic lighting and texture weakens it, and whether the hollow face still looks convex when viewed with both eyes giving strong contrary depth cues.",
     explanation:
-      "The renovation-only null and the stayed-high-after-one-left facts let the simplest sufficient model credit the trainers, and the within-gym comparison is a cheap falsifying test. Refusing to attribute anything ignores the natural control already in the data.",
+      "Full credit names a face-specific prior overriding sensory cues, lists three checks, and pairs them with a face-vs-nonface test that names its own refutation; 'too unusual to teach us anything' opens nothing.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A toddler sleeps through the night only when both the white-noise machine is on AND dinner included protein. Protein-only and white-noise-only nights still had wakeups, while nights with neither were the worst. Over three weeks the pattern is consistent. Which conclusion best follows?",
+      "After staring at a waterfall for a minute and then looking at the still rocks beside it, the rocks appear to drift upward even though they aren't moving. The aftereffect fades after a few seconds. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Just use the white-noise machine every night — it's the simplest single fix.",
+        text: "Moving water tires the eyes; the drift is meaningless eye fatigue.",
         credit: 0,
       },
       {
-        text: "Both white noise and an evening protein serving are needed together for full nights; test by withholding only protein for three nights with white noise on and checking whether wakeups return.",
+        text: "The brain encodes motion with opposing detectors, and adapting the 'downward' detector leaves the 'upward' one temporarily dominant, so still rocks read as moving up; test whether the aftereffect direction is always opposite the adapting motion, whether adapting one eye transfers the effect to the other, and whether it fades faster with longer rest after adaptation.",
         credit: 1.0,
       },
       {
-        text: "Both factors seem to matter, though teething and room temperature might also play in.",
-        credit: 0.6,
+        text: "The rocks seem to move after watching the water.",
+        credit: 0.3,
       },
       {
-        text: "White noise and protein each seem to help a bit.",
-        credit: 0.3,
+        text: "Staring probably causes the drift; we could time it on more people.",
+        credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would most distinguish your model from its closest rival, and say what result would refute your model.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'opposing motion detectors' lead from the rival 'it's just eyeball fatigue from staring,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: keep white noise on but drop protein for three nights; if the toddler still sleeps through, then white noise alone suffices and the joint-cause model is refuted, whereas a return of wakeups confirms protein is independently necessary.",
+        "Cheapest test: adapt only one eye to the moving water (the other patched), then test the aftereffect with the unadapted eye open; my lead predicts the illusion transfers between eyes because it lives in motion-processing neurons in the brain, not the eyeball. It is refuted if the aftereffect appears only in the eye that watched the water, which would point to eye-level fatigue rather than central motion detectors.",
       yieldAnchors: [
-        "Full nights occur only when white noise AND protein are both present.",
-        "Protein-only and white-noise-only nights still had wakeups.",
-        "Nights with neither were the worst.",
+        "Still rocks appear to drift upward after watching the waterfall",
+        "The drift is opposite the water's downward motion",
+        "The aftereffect fades after a few seconds",
       ],
       riskAnchors: [
-        "Removing protein while keeping white noise should bring back wakeups.",
-        "Removing white noise while keeping protein should also bring back wakeups.",
+        "The aftereffect direction is always opposite the adapting motion",
+        "Adapting one eye transfers the effect to the other",
+        "It fades faster with more rest after adaptation",
       ],
       defeatedBy: [
-        "White noise alone is sufficient for full nights.",
-        "Protein alone is sufficient for full nights.",
+        "The drift is mere eyeball fatigue with no role for motion detectors",
+        "The aftereffect direction is random and unrelated to the water's motion",
       ],
     },
     correctAnswer:
-      "Both white noise and an evening protein serving are needed together for full nights; test by withholding only protein for three nights with white noise on and checking whether wakeups return.",
+      "The brain encodes motion with opposing detectors, and adapting the 'downward' detector leaves the 'upward' one temporarily dominant, so still rocks read as moving up; test whether the aftereffect direction is always opposite the adapting motion, whether adapting one eye transfers the effect to the other, and whether it fades faster with longer rest after adaptation.",
     explanation:
-      "The single-factor nights both failed, so the simplest sufficient model must keep BOTH factors; the drop-one test falsifies it cleanly. The 'just use white noise' dodge invokes simplicity to adopt an under-powered model the data already refutes.",
+      "Top credit names opponent motion detectors, adds three checks, and pairs them with an interocular-transfer test that names its refutation; 'meaningless eye fatigue' is the dodge.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A regional sales team beats target only in months that have both a product webinar AND a price promotion. Webinar-only and promo-only months land near baseline; months with neither fall below. Reps report webinars create demand that the promo then converts. Which conclusion best follows?",
+      "The exact same ambiguous middle squiggle is read as 'H' in 'THE' and as 'A' in 'CAT', and readers don't even notice it's identical. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Promotions sell product, so just run promotions and skip the webinars.",
+        text: "Handwriting is sloppy, so people just guess; nothing about perception here.",
         credit: 0,
       },
       {
-        text: "Webinars and promotions work as a demand-then-conversion pair; test by running a webinar with no promo, then adding the promo two weeks later, and watching for a conversion spike only after the promo.",
-        credit: 1.0,
+        text: "The squiggle seems to be read two ways.",
+        credit: 0.3,
       },
       {
-        text: "The webinar-plus-promo combination seems to matter, though seasonality and rep effort likely contribute.",
+        text: "Context probably guides reading; we could test more word pairs.",
         credit: 0.6,
       },
       {
-        text: "Webinars and promos each seem to nudge sales upward.",
-        credit: 0.3,
+        text: "Letter perception is top-down: the brain uses the whole word and which letters make a real word to resolve an ambiguous shape, not bottom-up shape alone; test whether the same squiggle stays ambiguous in a nonword frame ('TXE'), whether reading time for the ambiguous letter is no slower than a clear one, and whether priming a different word flips which letter is seen.",
+        credit: 1.0,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would most distinguish your model from its closest rival, and say what result would refute your model.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'word context resolves the letter' lead from the rival 'people only see the surrounding clear letters and ignore the squiggle,' and say what result would refute your lead.",
       modelAnswer:
-        "Run a webinar alone and measure whether pipeline (not closed sales) rises while sales stay flat, then add the promo and watch sales jump; if a promo alone (no prior webinar) produces the same sales jump, the demand-then-conversion model is refuted.",
+        "Cheapest test: embed the identical squiggle in a nonword frame like 'TXE' or 'CXT' where no real word constrains it, and ask what letter is seen; my lead predicts it stays genuinely ambiguous because there's no word to resolve it, while in 'THE'/'CAT' it snaps to H or A. It is refuted if readers still confidently report a specific letter for the squiggle even with no real word around it, meaning context isn't doing the work.",
       yieldAnchors: [
-        "Target is beaten only when both webinar and promo occur.",
-        "Webinar-only and promo-only months sit near baseline.",
-        "Months with neither fall below baseline.",
+        "The same shape reads as H in THE and A in CAT",
+        "Readers don't notice the two shapes are identical",
+        "The resolved letter always completes a real word",
       ],
       riskAnchors: [
-        "A webinar alone should lift pipeline/leads but not closed sales.",
-        "Adding a promo after a webinar should convert that pipeline into a sales spike.",
+        "The squiggle stays ambiguous in a nonword frame",
+        "Reading the ambiguous letter is no slower than a clear one",
+        "Priming a different word flips which letter is seen",
       ],
       defeatedBy: [
-        "Promotions alone are sufficient to beat target.",
-        "The webinar is irrelevant to sales.",
+        "Readers ignore the squiggle and only see the clear letters",
+        "The shape's reading is unrelated to the surrounding word",
       ],
     },
     correctAnswer:
-      "Webinars and promotions work as a demand-then-conversion pair; test by running a webinar with no promo, then adding the promo two weeks later, and watching for a conversion spike only after the promo.",
+      "Letter perception is top-down: the brain uses the whole word and which letters make a real word to resolve an ambiguous shape, not bottom-up shape alone; test whether the same squiggle stays ambiguous in a nonword frame ('TXE'), whether reading time for the ambiguous letter is no slower than a clear one, and whether priming a different word flips which letter is seen.",
     explanation:
-      "Both single-lever months underperform, so the simplest sufficient model keeps both levers in a sequence, and the staggered test exposes the mechanism. Dropping the webinar to 'keep it simple' contradicts the promo-only baseline months.",
+      "Full credit names top-down word context with three checks and a nonword-frame test that names its refutation; 'sloppy handwriting, just guessing' refuses the mechanism.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "An aquarium's fish die off only in the tank that gets both afternoon direct sun AND weekly tap-water top-ups. Sun-only and tap-only tanks are healthy; the affected tank's deaths cluster two days after each top-up on sunny weeks. Which conclusion best follows?",
+      "When a single flash of light is paired with two quick beeps, viewers reliably report seeing two flashes. A single beep with the single flash is seen correctly as one. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Sunlight warms the tank and chlorinated tap water stresses fish, and the two combine lethally; test by switching that tank to dechlorinated water while keeping the sun exposure and checking whether the post-top-up deaths stop.",
+        text: "The brain integrates sound and vision and, when sound is more reliable for fast timing, lets the beeps override the eyes so it 'sees' a second flash; test whether the illusion disappears when the beeps are spaced too far from the flash in time, whether it weakens for people with strong visual but poor auditory timing, and whether three beeps can push the count to three flashes.",
         credit: 1.0,
       },
       {
-        text: "Fish are fragile and die for many reasons, so it's cleanest not to single out a cause.",
+        text: "The beeps seem to add an extra flash.",
+        credit: 0.3,
+      },
+      {
+        text: "Sound can't change what you see, so the extra flash report is just a counting mistake.",
         credit: 0,
       },
       {
-        text: "The sun-and-tap-water combo is probably to blame, perhaps with overfeeding adding stress.",
+        text: "The beeps probably affect the flash count; we could test more timings.",
         credit: 0.6,
-      },
-      {
-        text: "That tank's conditions seem harder on the fish.",
-        credit: 0.3,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would most distinguish your model from its closest rival, and say what result would refute your model.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'sound dominates fast timing' lead from the rival 'people just miscount when distracted by beeps,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest move: dechlorinate the top-up water for that one tank while leaving the sun exposure unchanged; if deaths still cluster after top-ups, then chlorine is not the lever and sun-driven temperature swings (or something else) must be isolated next, refuting the chlorine-plus-heat model.",
+        "Cheapest test: vary the gap between the two beeps and see whether the extra-flash illusion appears only when the beeps fall within the brief window where vision and sound get bound together; my lead predicts the illusion is tightly tied to that timing window, not to general distraction. It is refuted if the false second flash shows up regardless of beep timing, which would point to distraction or guessing rather than genuine audiovisual integration.",
       yieldAnchors: [
-        "Deaths occur only in the tank with both sun and tap-water top-ups.",
-        "Sun-only and tap-only tanks stay healthy.",
-        "Deaths cluster two days after top-ups on sunny weeks.",
+        "One flash with two beeps is seen as two flashes",
+        "One flash with one beep is seen correctly as one",
+        "The added percept follows the number of beeps",
       ],
       riskAnchors: [
-        "Dechlorinating the top-up water should stop the post-top-up deaths.",
-        "Shading the tank while keeping tap top-ups should also reduce deaths if heat is co-required.",
+        "The illusion disappears when beeps are far from the flash in time",
+        "It weakens for people with poor auditory timing",
+        "Three beeps can push the count to three flashes",
       ],
       defeatedBy: [
-        "Fish simply die for unknowable reasons.",
-        "Sunlight alone is killing the fish.",
+        "Sound cannot influence vision and the report is a counting error",
+        "The flash count is unrelated to the number of beeps",
       ],
     },
     correctAnswer:
-      "Sunlight warms the tank and chlorinated tap water stresses fish, and the two combine lethally; test by switching that tank to dechlorinated water while keeping the sun exposure and checking whether the post-top-up deaths stop.",
+      "The brain integrates sound and vision and, when sound is more reliable for fast timing, lets the beeps override the eyes so it 'sees' a second flash; test whether the illusion disappears when the beeps are spaced too far from the flash in time, whether it weakens for people with strong visual but poor auditory timing, and whether three beeps can push the count to three flashes.",
     explanation:
-      "The single-factor tanks survive and deaths track the top-up-on-sunny-week timing, so the simplest sufficient model is the two-factor interaction with a clean dechlorination test. 'Fish die for many reasons' refuses to choose despite a tight, dated pattern.",
+      "Top credit names reliability-weighted audiovisual integration with three checks and a timing-window test that names its refutation; 'sound can't change vision, just a mistake' is defeated by the lawful beep-count effect.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A blogger's posts go viral only when they have both a striking headline AND are published before 9am. Strong headlines posted at noon do okay; weak headlines at 8am flop. Shares cluster in the first hour for the early strong-headline posts. Which conclusion best follows?",
+      "A blurry, hard-to-identify photo looks like meaningless blobs — until someone says 'it's a dog by a tree,' after which viewers suddenly see the dog clearly and can't go back to seeing blobs. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "A great headline is what matters; post time is noise, so just write better headlines.",
+        text: "Blurry pictures are just guesses, so this doesn't reveal anything real about seeing.",
         credit: 0,
       },
       {
-        text: "A strong headline catching the early-morning sharing window is what drives virality; test by publishing two strong-headline posts, one at 8am and one at noon, and comparing first-hour shares.",
-        credit: 1.0,
+        text: "The hint seems to make the image clearer.",
+        credit: 0.3,
       },
       {
-        text: "Headline strength plus early timing both seem to matter, though topic and image choice likely help too.",
+        text: "Telling people what it is probably helps; we could try more blurry images.",
         credit: 0.6,
       },
       {
-        text: "Good headlines and early posting each seem to help reach.",
-        credit: 0.3,
+        text: "A high-level concept reshapes how the raw image is parsed (top-down), and once the brain commits to an interpretation it organizes the blobs around it permanently; test whether a wrong label ('it's a car') fails to produce clarity, whether the 'aha' is faster when the label matches likely scene content, and whether viewers given the label first identify the same image at higher blur levels than unprompted viewers.",
+        credit: 1.0,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would most distinguish your model from its closest rival, and say what result would refute your model.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'top-down concept reshapes parsing' lead from the rival 'any spoken hint makes people try harder and squint,' and say what result would refute your lead.",
       modelAnswer:
-        "Publish the same strong headline at 8am one day and noon another and compare first-hour shares; if the noon post matches the 8am post's virality, then timing is irrelevant and the headline-only model wins, refuting the headline-plus-window model.",
+        "Cheapest test: give one group the correct label ('a dog by a tree') and another an incorrect but equally specific label ('a boat on water') for the same blurry image, then ask what they see; my lead predicts only the correct concept produces a stable, clear percept while the wrong one does not. It is refuted if the wrong label produces just as strong a sense of suddenly 'seeing it,' meaning effort or suggestion, not the matching concept, drives the clarity.",
       yieldAnchors: [
-        "Virality occurs only with a strong headline AND a pre-9am post.",
-        "Strong headlines at noon perform only okay.",
-        "Weak headlines at 8am flop; early shares cluster in the first hour.",
+        "The blurry image first looks like meaningless blobs",
+        "A correct verbal label produces sudden clarity",
+        "Viewers can't return to seeing it as blobs afterward",
       ],
       riskAnchors: [
-        "A strong-headline post at 8am should out-share the same headline at noon.",
-        "Moving to early posting should not help weak headlines.",
+        "A wrong label fails to produce clarity",
+        "The 'aha' is faster when the label fits likely scene content",
+        "Labeled viewers identify the image at higher blur than unprompted ones",
       ],
       defeatedBy: [
-        "Headline alone determines virality; timing is noise.",
-        "Early posting alone makes posts go viral.",
+        "Any spoken hint works equally well regardless of accuracy",
+        "The label is unrelated to whether the image becomes clear",
       ],
     },
     correctAnswer:
-      "A strong headline catching the early-morning sharing window is what drives virality; test by publishing two strong-headline posts, one at 8am and one at noon, and comparing first-hour shares.",
+      "A high-level concept reshapes how the raw image is parsed (top-down), and once the brain commits to an interpretation it organizes the blobs around it permanently; test whether a wrong label ('it's a car') fails to produce clarity, whether the 'aha' is faster when the label matches likely scene content, and whether viewers given the label first identify the same image at higher blur levels than unprompted viewers.",
     explanation:
-      "The noon-strong (only okay) and 8am-weak (flop) cells show both factors are required, so the simplest sufficient model keeps both, and the matched time test isolates timing. Calling time 'noise' adopts an under-powered model the noon results refute.",
+      "Full credit names top-down conceptual reorganization with three checks and a wrong-label control that names its refutation; 'blurry pictures are just guesses' opens no inquiry.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A clinic finds patients' blood pressure readings are high only when taken by one nurse AND with the older cuff. The same nurse with a new cuff, and other nurses with the old cuff, read normal. The old cuff is slightly undersized and that nurse pumps it fastest. Which conclusion best follows?",
+      "A grid of identical round bumps in a photo looks like bumps poking out when shaded dark-on-bottom, but the very same image flipped looks like dents poking in. People switch instantly when the photo is rotated 180 degrees. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Blood pressure varies a lot, so it's simplest to treat the high readings as natural fluctuation.",
-        credit: 0,
-      },
-      {
-        text: "The undersized old cuff inflated rapidly produces falsely high readings; test by having that nurse re-measure flagged patients with the correctly sized cuff and checking whether readings normalize.",
+        text: "The brain assumes light comes from above, so it reads dark-bottom shading as a bump and dark-top shading as a dent; test whether the effect reverses exactly when the image is flipped, whether tilting a real overhead lamp to the side changes which reading people get, and whether the bias is weaker in viewers given strong cues that light is coming from below.",
         credit: 1.0,
       },
       {
-        text: "The old cuff with that nurse's technique is likely the cause, though patient anxiety might add a bit.",
+        text: "Shading seems to make bumps or dents.",
+        credit: 0.3,
+      },
+      {
+        text: "The shading probably controls the shape; we could test more grids.",
         credit: 0.6,
       },
       {
-        text: "That nurse's readings with the old cuff seem to run high.",
-        credit: 0.3,
+        text: "Bumps and dents are a matter of opinion, so there's no rule worth finding.",
+        credit: 0,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would most distinguish your model from its closest rival, and say what result would refute your model.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'light-from-above assumption' lead from the rival 'people just prefer to see bumps over dents,' and say what result would refute your lead.",
       modelAnswer:
-        "Have that nurse immediately re-measure each flagged patient with the correctly sized cuff using the same fast technique; if readings stay high, the cuff size is not the lever and the rapid-inflation technique (or true hypertension) must be examined, refuting the cuff-size model.",
+        "Cheapest test: keep the image fixed but change the actual room lighting so a real lamp clearly shines from below, and ask whether the dark-bottom circles now flip from bumps to dents; my lead predicts the percept tracks the assumed light direction, so contradicting it with real low lighting should reverse the reading. It is refuted if people keep seeing the same shapes no matter where the real light comes from, which would point to a fixed bump-preference rather than a light-direction assumption.",
       yieldAnchors: [
-        "High readings occur only with that nurse AND the old cuff.",
-        "Same nurse with the new cuff reads normal.",
-        "Other nurses with the old cuff read normal; the old cuff is undersized and that nurse pumps fastest.",
+        "Dark-bottom shading reads as bumps poking out",
+        "The same image flipped reads as dents",
+        "People switch instantly when the photo is rotated",
       ],
       riskAnchors: [
-        "Re-measuring with a correctly sized cuff should normalize the readings.",
-        "If technique is the lever, slowing the inflation should also lower readings.",
+        "The percept reverses exactly when the image is flipped",
+        "Moving a real overhead lamp to the side changes the reading",
+        "Cues that light comes from below weaken the bias",
       ],
       defeatedBy: [
-        "The high readings are just natural fluctuation.",
-        "The patients are genuinely hypertensive.",
+        "People simply prefer bumps regardless of shading direction",
+        "The shading direction is unrelated to seeing bumps versus dents",
       ],
     },
     correctAnswer:
-      "The undersized old cuff inflated rapidly produces falsely high readings; test by having that nurse re-measure flagged patients with the correctly sized cuff and checking whether readings normalize.",
+      "The brain assumes light comes from above, so it reads dark-bottom shading as a bump and dark-top shading as a dent; test whether the effect reverses exactly when the image is flipped, whether tilting a real overhead lamp to the side changes which reading people get, and whether the bias is weaker in viewers given strong cues that light is coming from below.",
     explanation:
-      "The two clean control cells localize the artifact to the nurse-plus-cuff cell, and re-measuring is an immediate falsifying test. The 'natural fluctuation' dodge uses simplicity to ignore a measurement artifact the data has pinpointed.",
+      "Top credit names the light-from-above prior with three checks and a real-lighting test that names its refutation; 'a matter of opinion' commits to no rule.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A delivery app's late deliveries spike only in one neighborhood, and only during evening rush. GPS shows drivers there get rerouted around a recurring evening road closure that isn't in the app's map data. Other neighborhoods and off-peak times are fine. Which conclusion best follows?",
+      "Patients given an inert cream described as a strong painkiller report genuinely less pain from a hot probe, and brain scans show reduced activity in pain-processing areas. Telling them the cream was removed brings the pain back. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Traffic is unpredictable, so late deliveries are inevitable and not worth chasing.",
+        text: "Pain is fully physical, so a fake cream can't really change it; patients are just being polite.",
         credit: 0,
       },
       {
-        text: "A missing evening road closure in the map data causes the local rush-hour delays; test by adding the closure to the routing engine for that window and checking whether that neighborhood's evening lateness drops to baseline.",
-        credit: 1.0,
+        text: "The cream seems to ease the pain.",
+        credit: 0.3,
       },
       {
-        text: "The unmapped closure is probably the main issue, though driver shortages could worsen it.",
+        text: "The expectation probably reduces pain; we could test more patients.",
         credit: 0.6,
       },
       {
-        text: "That neighborhood seems to slow drivers down in the evening.",
-        credit: 0.3,
+        text: "Pain perception is constructed from expectation as well as the signal, so a predicted relief actually dampens how the brain builds the pain experience; test whether blocking the body's own opioid system erases the relief, whether stronger-sounding instructions produce larger drops, and whether secretly applying the same cream without telling the patient produces less relief than openly applying it.",
+        credit: 1.0,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would most distinguish your model from its closest rival, and say what result would refute your model.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'expectation shapes constructed pain' lead from the rival 'patients just say what the experimenter wants to hear,' and say what result would refute your lead.",
       modelAnswer:
-        "Add the recurring closure to the routing map for the evening window and compare that neighborhood's lateness before and after; if lateness persists despite correct routing, then the closure isn't the lever and driver supply or volume must be examined, refuting the map-data model.",
+        "Cheapest test: compare openly applying the cream (patient told) with secretly applying the identical cream (patient not told) and measure pain; my lead predicts open application relieves more because the relief comes from expectation, even though the cream is the same. It is refuted if open and hidden application relieve pain equally, or if the 'relief' vanishes whenever no one is watching the report, which would point to social compliance rather than constructed perception.",
       yieldAnchors: [
-        "Late deliveries spike only in one neighborhood and only at evening rush.",
-        "GPS shows drivers rerouted around an evening road closure absent from the map.",
-        "Other neighborhoods and off-peak times are fine.",
+        "An inert cream described as a painkiller reduces reported pain",
+        "Brain pain areas show reduced activity",
+        "Telling patients the cream is gone brings the pain back",
       ],
       riskAnchors: [
-        "Correcting the map for that window should drop evening lateness to baseline.",
-        "If supply is the issue, adding the closure data alone should not help.",
+        "Blocking the body's opioid system erases the relief",
+        "Stronger-sounding instructions produce larger drops",
+        "Open application relieves more than hidden application",
       ],
       defeatedBy: [
-        "Late deliveries are simply inevitable due to traffic.",
-        "The whole fleet is understaffed at rush hour.",
+        "The fake cream has no real effect and patients only say what's expected",
+        "Expectation is unrelated to how much pain is felt",
       ],
     },
     correctAnswer:
-      "A missing evening road closure in the map data causes the local rush-hour delays; test by adding the closure to the routing engine for that window and checking whether that neighborhood's evening lateness drops to baseline.",
+      "Pain perception is constructed from expectation as well as the signal, so a predicted relief actually dampens how the brain builds the pain experience; test whether blocking the body's own opioid system erases the relief, whether stronger-sounding instructions produce larger drops, and whether secretly applying the same cream without telling the patient produces less relief than openly applying it.",
     explanation:
-      "The neighborhood-and-time specificity plus the GPS reroute pin one fixable cause, and updating the map is a clean test. 'Traffic is unpredictable' uses faux-simplicity to dismiss a precisely localized, correctable signal.",
+      "Full credit names expectation-driven construction of pain with three checks and an open-vs-hidden test that names its refutation; 'patients are just being polite' is defeated by the brain-scan and opioid-block evidence.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A streamer's concurrent viewers drop mid-stream only on nights they switch from gameplay to a 'just chatting' segment AND the chat goes quiet. Switches with lively chat hold viewers; quiet chat during gameplay doesn't lose them. The drops start within minutes of a quiet switch. Which conclusion best follows?",
+      "When a cat walks behind a picket fence, we see one whole cat moving, not a series of disconnected cat-slices between the slats. Babies a few months old already react as if the slices are one object. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Quiet 'just chatting' segments with no chat momentum lose viewers; test by adding a prompted poll at each switch to keep chat active and checking whether the mid-stream drops shrink.",
+        text: "The brain completes partly hidden objects, treating visible fragments that share motion and edges as one continuous thing behind the occluder; test whether fragments moving together are seen as one but fragments moving independently are seen as separate, whether babies look longer (surprised) when the fence is removed to reveal two half-cats, and whether mismatched fragment edges block the completion.",
         credit: 1.0,
       },
       {
-        text: "Viewership naturally ebbs and flows, so these dips aren't really explainable.",
+        text: "We seem to see the whole cat anyway.",
+        credit: 0.3,
+      },
+      {
+        text: "Fences are too specific a case to reveal a general rule of perception.",
         credit: 0,
       },
       {
-        text: "Quiet chatting segments are probably the issue, though stream length and time of night could matter.",
+        text: "The brain probably joins the pieces; we could test more occluders.",
         credit: 0.6,
-      },
-      {
-        text: "Switching segments seems to cost some viewers.",
-        credit: 0.3,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would most distinguish your model from its closest rival, and say what result would refute your model.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'shared motion and edges drive completion' lead from the rival 'people just know cats are whole animals,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: at the next several 'just chatting' switches, fire a chat poll to force activity and compare viewer retention to unprompted switches; if drops persist even with lively chat, then the segment type itself (not chat momentum) is the lever, refuting the quiet-chat model.",
+        "Cheapest test: use an unfamiliar abstract shape (not an animal) split by the fence, with the fragments either moving together or moving independently, and ask whether viewers see one object or two; my lead predicts shared motion and aligned edges produce 'one object' even for a meaningless shape. It is refuted if completion happens only for known things like cats and never for novel shapes with matched motion, which would point to object knowledge rather than low-level grouping cues.",
       yieldAnchors: [
-        "Drops occur only when switching to 'just chatting' AND chat goes quiet.",
-        "Switches with lively chat retain viewers.",
-        "Quiet chat during gameplay doesn't lose viewers; drops start within minutes of a quiet switch.",
+        "A cat behind a fence is seen as one moving whole",
+        "We don't perceive disconnected cat-slices",
+        "Young babies already treat the slices as one object",
       ],
       riskAnchors: [
-        "Keeping chat active through a switch should reduce the drops.",
-        "If segment type is the lever, even lively-chat switches should lose viewers.",
+        "Fragments moving together are seen as one; independent motion splits them",
+        "Babies look longer when the fence is removed to reveal two half-cats",
+        "Mismatched fragment edges block the completion",
       ],
       defeatedBy: [
-        "Viewership dips are random and unexplainable.",
-        "Any segment switch loses viewers regardless of chat.",
+        "Completion happens only for familiar objects, never novel shapes",
+        "The fragments' shared motion is unrelated to seeing one object",
       ],
     },
     correctAnswer:
-      "Quiet 'just chatting' segments with no chat momentum lose viewers; test by adding a prompted poll at each switch to keep chat active and checking whether the mid-stream drops shrink.",
+      "The brain completes partly hidden objects, treating visible fragments that share motion and edges as one continuous thing behind the occluder; test whether fragments moving together are seen as one but fragments moving independently are seen as separate, whether babies look longer (surprised) when the fence is removed to reveal two half-cats, and whether mismatched fragment edges block the completion.",
     explanation:
-      "The lively-chat switches and quiet-gameplay periods isolate the joint condition, and the poll intervention falsifies it. The 'random ebb and flow' dodge refuses to choose despite a within-minutes, condition-specific pattern.",
+      "Top credit names amodal completion via shared motion and edges with three checks and a novel-shape test that names its refutation; 'fences are too specific' refuses the general lesson.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A craft brewery's IPA tastes off only in batches brewed in summer AND fermented in the steel tank (not the older plastic one). Summer plastic-tank batches and winter steel-tank batches are fine. Summer raises the brewhouse temperature, and the steel tank sits nearest a sunny window. Which conclusion best follows?",
+      "At a loud party you hear mostly a blur of voices, but the instant someone across the room says your name you notice it clearly, even though you weren't listening to that conversation. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Brewing is finicky; off batches just happen and chasing causes wastes time.",
+        text: "Loud rooms are too chaotic to study attention in.",
         credit: 0,
       },
       {
-        text: "Summer heat plus the steel tank's sunny spot pushes fermentation too warm and spoils flavor; test by moving the steel tank away from the window or chilling it next summer and checking whether the off-taste disappears.",
-        credit: 1.0,
+        text: "You seem to catch your name in the noise.",
+        credit: 0.3,
       },
       {
-        text: "The warm steel tank in summer is likely the culprit, though hop freshness might also vary by season.",
+        text: "Attention probably picks out your name; we could test more partygoers.",
         credit: 0.6,
       },
       {
-        text: "Summer steel-tank batches seem more prone to off-flavors.",
-        credit: 0.3,
+        text: "The brain monitors unattended channels at a shallow level and lets highly relevant signals like your own name break through and capture attention; test whether emotionally important words (not just any word) are detected in the ignored stream, whether people who notice their name lose track of the conversation they were attending, and whether the breakthrough rate rises for personally significant words over neutral ones.",
+        credit: 1.0,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would most distinguish your model from its closest rival, and say what result would refute your model.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'relevant signals break through a monitored channel' lead from the rival 'people secretly listen to every conversation equally,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: log the steel tank's fermentation temperature next summer and either shade or chill it; if the off-taste persists while temperature is held in range, then heat isn't the lever and the tank material or hop freshness must be examined, refuting the warm-fermentation model.",
+        "Cheapest test: in the ignored stream, plant the person's own name versus an equally loud but neutral word and see which gets noticed; my lead predicts the personally relevant name breaks through far more often than the neutral word. It is refuted if neutral and personally relevant words are noticed equally often, which would mean people are fully processing everything rather than selectively letting relevant signals through.",
       yieldAnchors: [
-        "Off-taste occurs only in summer AND in the steel tank.",
-        "Summer plastic-tank and winter steel-tank batches are fine.",
-        "Summer raises brewhouse temperature and the steel tank sits by a sunny window.",
+        "Party voices are mostly a blur",
+        "Your own name is noticed even when unattended",
+        "You weren't deliberately listening to that conversation",
       ],
       riskAnchors: [
-        "Keeping the steel tank cool in summer should eliminate the off-taste.",
-        "If material is the lever, a cool summer steel batch should still taste off.",
+        "Emotionally important words are detected in the ignored stream",
+        "Noticing your name disrupts the attended conversation",
+        "Personally significant words break through more than neutral ones",
       ],
       defeatedBy: [
-        "Off batches just randomly happen.",
-        "The steel tank is inherently bad for IPA regardless of temperature.",
+        "People fully process every conversation equally",
+        "Your name is no more likely to be noticed than any other word",
       ],
     },
     correctAnswer:
-      "Summer heat plus the steel tank's sunny spot pushes fermentation too warm and spoils flavor; test by moving the steel tank away from the window or chilling it next summer and checking whether the off-taste disappears.",
+      "The brain monitors unattended channels at a shallow level and lets highly relevant signals like your own name break through and capture attention; test whether emotionally important words (not just any word) are detected in the ignored stream, whether people who notice their name lose track of the conversation they were attending, and whether the breakthrough rate rises for personally significant words over neutral ones.",
     explanation:
-      "The two control cells and the heat-by-window detail localize a fermentation-temperature cause, and chilling is a falsifiable fix. 'Off batches just happen' uses simplicity as an excuse to leave a clear seasonal-tank pattern unexplained.",
+      "Full credit names shallow monitoring with relevance-based breakthrough, three checks, and a name-vs-neutral test that names its refutation; 'too chaotic to study' opens no path.",
   },
 ];
 
@@ -834,182 +843,180 @@ const written: HomeworkItem[] = [
   {
     itemType: "written",
     prompt:
-      "A school notices that students in its new 'flipped classroom' math sections score higher on exams. But those sections also meet in the morning, are taught by volunteer teachers, and have ten fewer students each. Test scores are flat in afternoon flipped sections taught by the same volunteers. In one paragraph, propose the strongest supported model of what's driving the gains and how you would test it.",
+      "Two patches in a famous image — one labeled A in apparent light, one labeled B in apparent shadow cast by a green cylinder — are printed with exactly the same gray ink, yet B looks obviously lighter than A. Covering everything except the two patches makes them look identical. In one paragraph, propose the strongest conclusion about how perception works here and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The morning timeslot, not the flipped format, is the leading driver: afternoon flipped sections with the same volunteer teachers stay flat, which isolates time-of-day from method and teacher. The simplest model that still binds all the data is that alert morning students plus small class size lift scores, with the flip itself contributing little. Test it by randomly assigning some morning sections to traditional instruction and some afternoon sections to flipped: if morning traditional matches morning flipped and beats afternoon flipped, the timeslot/size model is confirmed and the flip is exonerated as the cause.",
+        "The strongest conclusion is that vision doesn't report the raw light hitting the eye; it estimates each surface's true shade by correcting for the lighting it infers, so a patch judged to be in shadow gets mentally lightened to recover the 'real' color of the surface. This is a powerful lead because it predicts checkable consequences: removing the cylinder (and thus the shadow story) should make A and B look equal again; the size of the illusion should track how convincing the shadow looks, growing with a darker, more believable cast shadow and shrinking with a faint one; and any manipulation that breaks the shadow interpretation, like a visible same-gray bridge connecting the patches, should collapse the difference. I would test it by removing or weakening the shadow cue and re-measuring perceived lightness, by varying shadow strength and checking whether the illusion scales with it, and by laying a continuous strip of the identical gray across both patches to see whether the perceived difference vanishes as the shadow account is defeated.",
       yieldAnchors: [
-        "Flipped morning sections score higher.",
-        "Afternoon flipped sections with the same volunteers are flat.",
-        "Morning sections are smaller (ten fewer students) and use volunteer teachers.",
+        "A and B are printed with identical gray ink",
+        "B (in apparent shadow) looks lighter than A",
+        "Isolating the two patches makes them look identical",
       ],
       riskAnchors: [
-        "Morning traditional sections should also outperform afternoon sections.",
-        "Shrinking afternoon class size should lift afternoon scores if size matters.",
-        "Afternoon flipped should not catch up to morning sections.",
+        "Removing the shadow-casting cylinder makes A and B look equal",
+        "The illusion grows and shrinks with how convincing the shadow looks",
+        "A visible same-gray connecting strip collapses the difference",
       ],
       defeatedBy: [
-        "The flipped-classroom method itself causes the gains.",
-        "Volunteer teachers are the sole cause of the gains.",
-        "Nothing can be concluded because too many things differ.",
+        "The two patches are actually different shades of ink",
+        "Viewers are simply guessing because identical patches can't look different",
+        "Nothing can be concluded without testing far more images",
       ],
     },
     correctAnswer:
-      "The morning timeslot, not the flipped format, is the leading driver: afternoon flipped sections with the same volunteer teachers stay flat, which isolates time-of-day from method and teacher. The simplest model that still binds all the data is that alert morning students plus small class size lift scores, with the flip itself contributing little. Test it by randomly assigning some morning sections to traditional instruction and some afternoon sections to flipped: if morning traditional matches morning flipped and beats afternoon flipped, the timeslot/size model is confirmed and the flip is exonerated as the cause.",
+      "The strongest conclusion is that vision doesn't report the raw light hitting the eye; it estimates each surface's true shade by correcting for the lighting it infers, so a patch judged to be in shadow gets mentally lightened to recover the 'real' color of the surface. This is a powerful lead because it predicts checkable consequences: removing the cylinder (and thus the shadow story) should make A and B look equal again; the size of the illusion should track how convincing the shadow looks, growing with a darker, more believable cast shadow and shrinking with a faint one; and any manipulation that breaks the shadow interpretation, like a visible same-gray bridge connecting the patches, should collapse the difference. I would test it by removing or weakening the shadow cue and re-measuring perceived lightness, by varying shadow strength and checking whether the illusion scales with it, and by laying a continuous strip of the identical gray across both patches to see whether the perceived difference vanishes as the shadow account is defeated.",
     explanation:
-      "A 'we can't conclude anything, too many variables' answer scores near zero; a florid essay that credits the flip without using the flat afternoon-flipped control scores low. Top credit goes to the simplest model that still binds the afternoon null and names the randomization test.",
+      "The cautious 'identical patches can't look different, viewers are guessing' earns near-zero because it denies a robust, measurable effect; top credit goes to the lightness-constancy lead that names a mechanism and several tests that could disconfirm it.",
   },
   {
     itemType: "written",
     prompt:
-      "A homeowner's basement floods only after storms that bring both heavy rain AND wind from the northeast. Heavy rain with calm or southerly wind stays dry, as do windy days without much rain. The northeast-facing window well fills with leaves each fall. In one paragraph, propose the strongest supported model and how to test it.",
+      "A radiologist who has just been told 'this scan is probably a lung tumor' spots a faint shadow she would otherwise miss, while a colleague told 'this scan is probably clear' looks at the same image and sees nothing. Both are highly trained and looking at identical pixels. In one paragraph, propose the strongest conclusion about perception and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The simplest sufficient model is that northeast wind drives rain directly into the leaf-clogged window well, which then overflows into the basement — both factors are required, since rain-without-NE-wind and wind-without-heavy-rain both stay dry. I commit to the clogged-well-plus-wind-driven-rain mechanism rather than a vaguer 'bad drainage' story. Test it by clearing and screening the window well before the next storm season: if a heavy-rain, northeast-wind storm then leaves the basement dry, the model is confirmed; if it still floods, the leaf clog wasn't the lever and the well's grading or a foundation crack must be examined next.",
+        "The strongest conclusion is that expert perception is top-down as well as bottom-up: a prior expectation pre-tunes the visual system toward what it anticipates, lowering the threshold to detect an expected faint feature and raising the chance of missing or dismissing an unexpected one. This lead is fruitful because it predicts checkable consequences: giving readers the 'tumor' prompt should raise both true detections of real faint lesions and false alarms on lesion-free scans, while the 'clear' prompt should raise misses; the effect should be largest for low-contrast, ambiguous shadows and negligible for obvious ones; and eye-tracking should show primed readers fixating and dwelling on the suspect region sooner. I would test it by randomly assigning the two prompts across a matched set of scans and scoring hits and false alarms, by comparing the prompt effect on subtle versus blatant findings, and by tracking where and how long each reader's gaze lands to see whether the prompt steers attention before any 'finding' is reported.",
       yieldAnchors: [
-        "Flooding occurs only with heavy rain AND northeast wind.",
-        "Heavy rain with calm/southerly wind stays dry.",
-        "Windy days without heavy rain stay dry; the NE window well fills with leaves.",
+        "The 'tumor' prompt leads to spotting a faint shadow",
+        "The 'clear' prompt leads to seeing nothing on the same image",
+        "Both readers view identical pixels and are equally trained",
       ],
       riskAnchors: [
-        "Clearing and screening the well should prevent flooding in the next NE-wind storm.",
-        "If a future flood occurs with a clean well, the clog model is refuted.",
+        "The 'tumor' prompt raises both true detections and false alarms",
+        "The effect is largest for low-contrast ambiguous findings",
+        "Eye-tracking shows primed readers dwelling on the region sooner",
       ],
       defeatedBy: [
-        "Heavy rain alone causes the flooding.",
-        "Any windy storm causes the flooding.",
-        "The cause is unknowable so just buy a sump pump and hope.",
+        "The two readers actually saw different images",
+        "Expert perception is purely bottom-up and immune to expectation",
+        "Nothing can be said without testing thousands of scans first",
       ],
     },
     correctAnswer:
-      "The simplest sufficient model is that northeast wind drives rain directly into the leaf-clogged window well, which then overflows into the basement — both factors are required, since rain-without-NE-wind and wind-without-heavy-rain both stay dry. I commit to the clogged-well-plus-wind-driven-rain mechanism rather than a vaguer 'bad drainage' story. Test it by clearing and screening the window well before the next storm season: if a heavy-rain, northeast-wind storm then leaves the basement dry, the model is confirmed; if it still floods, the leaf clog wasn't the lever and the well's grading or a foundation crack must be examined next.",
+      "The strongest conclusion is that expert perception is top-down as well as bottom-up: a prior expectation pre-tunes the visual system toward what it anticipates, lowering the threshold to detect an expected faint feature and raising the chance of missing or dismissing an unexpected one. This lead is fruitful because it predicts checkable consequences: giving readers the 'tumor' prompt should raise both true detections of real faint lesions and false alarms on lesion-free scans, while the 'clear' prompt should raise misses; the effect should be largest for low-contrast, ambiguous shadows and negligible for obvious ones; and eye-tracking should show primed readers fixating and dwelling on the suspect region sooner. I would test it by randomly assigning the two prompts across a matched set of scans and scoring hits and false alarms, by comparing the prompt effect on subtle versus blatant findings, and by tracking where and how long each reader's gaze lands to see whether the prompt steers attention before any 'finding' is reported.",
     explanation:
-      "An answer that blames 'heavy rain' alone scores low because it ignores the dry rain-only storms; 'the cause is unknowable' scores near zero. Top credit binds both required conditions in the simplest mechanism and commits to the clear-the-well test.",
+      "'Expert perception is purely bottom-up and immune to expectation' is defeated by the scenario, and a vague answer with no test scores low; top credit goes to the expectation-tuning lead that commits to a mechanism and names tests including a revealing false-alarm prediction.",
   },
   {
     itemType: "written",
     prompt:
-      "A startup's app crashes are reported almost entirely by Android users on one budget phone model, and only when uploading photos over cellular data. Wi-Fi uploads and other phones are fine; the budget model has the least RAM in the lineup. In one paragraph, propose the strongest supported model and how to test it.",
+      "Looking at a Necker cube (a simple wire-frame drawing), a viewer sees its front face pop forward, then after a few seconds it spontaneously flips so a different face is in front, then flips back — and this keeps happening even when she tries to hold one view still. In one paragraph, propose the strongest conclusion about how perception works and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The simplest model that binds every clue is a memory-pressure crash: large photo uploads over slower cellular connections keep image data in RAM longer, and the low-RAM budget phone runs out of memory and crashes — explaining the model-specific, cellular-only, upload-only pattern. I commit to the out-of-memory mechanism rather than a generic 'Android is buggy' claim. Test it by adding memory logging and a downscale-before-upload path on that model: if crash rates on cellular uploads fall to Wi-Fi levels after the fix, the memory model is confirmed; if crashes persist, a network-timeout bug rather than RAM is the lever.",
+        "The strongest conclusion is that perception is an active interpretation, not a passive readout: faced with a flat drawing that two 3-D interpretations fit equally well, the brain commits to one at a time and, because no evidence favors either, periodically switches as the current interpretation adapts and the rival takes over. This lead is fruitful because it predicts checkable consequences: the flip rate should speed up the longer one views (as the active interpretation fatigues) and slow down with rest; deliberately favoring one face — by attention, by adding faint depth shading, or by a prior cue — should bias which view appears first and lengthen its turns; and at the moment of a flip nothing changes in the image, so any neural or pupil signal that shifts must reflect the internal switch, not the input. I would test it by measuring how flip rate changes with continuous viewing versus breaks, by adding small disambiguating cues and checking whether they bias the dominant view, and by recording reports against a constant stimulus to confirm that the changes are internally generated.",
       yieldAnchors: [
-        "Crashes are concentrated on one budget Android model.",
-        "Crashes happen only during photo uploads over cellular.",
-        "Wi-Fi uploads and other phones are fine; the budget model has the least RAM.",
+        "The cube's front face spontaneously flips between two readings",
+        "The flipping continues even when she tries to hold one view",
+        "The drawing itself never changes",
       ],
       riskAnchors: [
-        "Downscaling images before upload should cut crashes on that model.",
-        "Memory logs should show RAM exhaustion just before crashes.",
-        "If a higher-RAM phone is throttled to cellular speeds, it should not crash.",
+        "Flip rate speeds up with continuous viewing and slows with rest",
+        "Attention or faint depth cues bias which view dominates",
+        "Neural or pupil signals shift at flips despite a constant image",
       ],
       defeatedBy: [
-        "Android is just buggy and crashes happen.",
-        "Cellular networks cause crashes on all phones.",
-        "We can't diagnose this without reproducing every user's setup.",
+        "The drawing is physically changing between the two views",
+        "The cube simply has one correct appearance the viewer keeps missing",
+        "Nothing can be concluded from a single ambiguous drawing",
       ],
     },
     correctAnswer:
-      "The simplest model that binds every clue is a memory-pressure crash: large photo uploads over slower cellular connections keep image data in RAM longer, and the low-RAM budget phone runs out of memory and crashes — explaining the model-specific, cellular-only, upload-only pattern. I commit to the out-of-memory mechanism rather than a generic 'Android is buggy' claim. Test it by adding memory logging and a downscale-before-upload path on that model: if crash rates on cellular uploads fall to Wi-Fi levels after the fix, the memory model is confirmed; if crashes persist, a network-timeout bug rather than RAM is the lever.",
+      "The strongest conclusion is that perception is an active interpretation, not a passive readout: faced with a flat drawing that two 3-D interpretations fit equally well, the brain commits to one at a time and, because no evidence favors either, periodically switches as the current interpretation adapts and the rival takes over. This lead is fruitful because it predicts checkable consequences: the flip rate should speed up the longer one views (as the active interpretation fatigues) and slow down with rest; deliberately favoring one face — by attention, by adding faint depth shading, or by a prior cue — should bias which view appears first and lengthen its turns; and at the moment of a flip nothing changes in the image, so any neural or pupil signal that shifts must reflect the internal switch, not the input. I would test it by measuring how flip rate changes with continuous viewing versus breaks, by adding small disambiguating cues and checking whether they bias the dominant view, and by recording reports against a constant stimulus to confirm that the changes are internally generated.",
     explanation:
-      "'Android is buggy' is the under-powered simple story that leaves the cellular-and-upload specificity unexplained; 'we can't diagnose it' scores near zero. Top credit is the simplest mechanism that binds model, network, and action, plus the memory-logging test.",
+      "'The cube simply has one correct appearance she keeps missing' is defeated by the lawful flipping, and a florid answer with no test scores low; top credit goes to the active-interpretation lead that names a mechanism and tests tied to a constant stimulus.",
   },
   {
     itemType: "written",
     prompt:
-      "A restaurant's online ratings dipped sharply for two months, then recovered. The dip coincided with both a new head chef AND a delivery-app outage that delayed orders. Dine-in reviews stayed positive throughout; only delivery reviews dropped, and they recovered the week the app was fixed — before the chef left. In one paragraph, propose the strongest supported model and how to test it.",
+      "A single photo of a dress splits viewers sharply: some are certain it is white-and-gold, others certain it is blue-and-black, and a few can make themselves flip by imagining different lighting. The actual fabric is blue-and-black. In one paragraph, propose the strongest conclusion about why the same image produces such different perceptions and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The simplest sufficient model is that the delivery-app outage, not the new chef, caused the rating dip: only delivery reviews fell, dine-in stayed positive, and ratings recovered when the app was fixed while the chef was still in place. I commit to the delivery-timing cause and exonerate the chef. Test it prospectively by monitoring delivery versus dine-in ratings during any future delivery disruption: if delivery ratings drop and dine-in holds, the model is confirmed; if a future dip appears with the app working fine, the chef or food quality would need re-examination.",
+        "The strongest conclusion is that the brain perceives an object's color by silently estimating the light shining on it and subtracting that illuminant, and the photo is so ambiguous about its lighting that different viewers assume different light sources and therefore subtract different tints — those assuming cool daylight 'remove' blue and see white-and-gold, those assuming warm shadow 'remove' yellow and see blue-and-black. This lead is fruitful because it predicts checkable consequences: explicitly telling viewers the lighting ('it's in bright shade' versus 'in warm indoor light') should flip or stabilize their report; adding unambiguous background lighting cues should sharply reduce the split; and individual differences such as how much daylight versus artificial light a person is typically exposed to should bias which assumption, and thus which color, they default to. I would test it by manipulating the assumed illuminant with instructions and seeing whether reports flip, by editing in clear lighting context and checking whether disagreement collapses, and by relating people's reported reading to their habitual light exposure or chronotype.",
       yieldAnchors: [
-        "The dip coincided with both a new chef and a delivery-app outage.",
-        "Dine-in reviews stayed positive throughout.",
-        "Only delivery reviews dropped and recovered when the app was fixed, before the chef left.",
+        "The same photo is seen as white-gold or blue-black",
+        "Some viewers can flip by imagining different lighting",
+        "The image is ambiguous about its actual light source",
       ],
       riskAnchors: [
-        "Future delivery disruptions should lower delivery ratings while dine-in holds.",
-        "Ratings should track delivery reliability, not chef tenure.",
+        "Stating the lighting flips or stabilizes the reported color",
+        "Adding clear background lighting cues collapses the disagreement",
+        "Habitual light exposure biases which reading a person defaults to",
       ],
       defeatedBy: [
-        "The new chef caused the rating dip.",
-        "Both causes are entangled so nothing can be concluded.",
-        "Ratings just fluctuate randomly over time.",
+        "Color perception is pure personal opinion with no structure",
+        "Viewers' eyes are physically different colors of receptor",
+        "Nothing can be said because people just disagree",
       ],
     },
     correctAnswer:
-      "The simplest sufficient model is that the delivery-app outage, not the new chef, caused the rating dip: only delivery reviews fell, dine-in stayed positive, and ratings recovered when the app was fixed while the chef was still in place. I commit to the delivery-timing cause and exonerate the chef. Test it prospectively by monitoring delivery versus dine-in ratings during any future delivery disruption: if delivery ratings drop and dine-in holds, the model is confirmed; if a future dip appears with the app working fine, the chef or food quality would need re-examination.",
+      "The strongest conclusion is that the brain perceives an object's color by silently estimating the light shining on it and subtracting that illuminant, and the photo is so ambiguous about its lighting that different viewers assume different light sources and therefore subtract different tints — those assuming cool daylight 'remove' blue and see white-and-gold, those assuming warm shadow 'remove' yellow and see blue-and-black. This lead is fruitful because it predicts checkable consequences: explicitly telling viewers the lighting ('it's in bright shade' versus 'in warm indoor light') should flip or stabilize their report; adding unambiguous background lighting cues should sharply reduce the split; and individual differences such as how much daylight versus artificial light a person is typically exposed to should bias which assumption, and thus which color, they default to. I would test it by manipulating the assumed illuminant with instructions and seeing whether reports flip, by editing in clear lighting context and checking whether disagreement collapses, and by relating people's reported reading to their habitual light exposure or chronotype.",
     explanation:
-      "Blaming the chef ignores the dine-in/delivery split and the recover-before-chef-left timing; 'too entangled to conclude' scores near zero despite a clean dissociation. Top credit assigns the cause the data isolates and commits to the prospective test.",
+      "'Color is pure opinion with no structure' earns near-zero because it abandons any testable mechanism; top credit goes to the discount-the-illuminant lead that commits to a process and names manipulations that could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "A runner's knee pain flares only on long runs done on roads with a strong camber (sloped surface), and only on her right knee. Flat-surface long runs and short cambered runs are pain-free, and the pain is always on the downhill-side leg. In one paragraph, propose the strongest supported model and how to test it.",
+      "In a noisy cafeteria a student swears a friend said 'I love this band,' but a recording shows the friend actually said 'I love this sand' while pointing at a beach poster. Replaying the audio alone, the student hears 'sand' clearly; with the poster in view she hears 'band' again. In one paragraph, propose the strongest conclusion about how perception works here and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The simplest model that binds all of it is camber-induced asymmetric loading: running long distances on a sloped road repeatedly overloads the downhill-side (right) knee, and the effect needs both the slope and the duration, since flat long runs and short cambered runs are fine. I commit to the mechanical-overload mechanism rather than a vague 'overuse' label. Test it by having her run her usual long distance on a flat track, or alternate which side of a cambered road she runs on: if the right-knee pain disappears on flat ground or shifts to the left knee when she switches sides, the camber-loading model is confirmed; if pain persists on flat long runs, distance alone (or a gait issue) is the real lever.",
+        "The strongest conclusion is that perception integrates multiple sources — degraded sound plus visual context and expectation — into a single best guess, so when the audio is ambiguous the brain leans on context (a band poster? a beach poster?) to decide what was heard, and changing the context changes the percept itself, not just the interpretation. This lead is fruitful because it predicts checkable consequences: pairing the same ambiguous audio with a band image versus a beach image should flip what listeners report hearing; the effect should be strongest when the audio is noisiest and weakest when it is crisp and unambiguous; and a misleading context should make listeners confidently mishear, with confidence as high as for correct hearing. I would test it by presenting one fixed ambiguous audio clip with different paired images and recording what word people hear, by varying the audio's clarity to see whether context's pull grows as sound degrades, and by measuring listeners' confidence to confirm they experience the context-driven word as genuinely heard rather than merely inferred.",
       yieldAnchors: [
-        "Pain flares only on long runs on strongly cambered roads.",
-        "Flat long runs and short cambered runs are pain-free.",
-        "Pain is always on the right knee, the downhill-side leg.",
+        "The friend actually said 'sand' but the student heard 'band'",
+        "Audio alone is heard correctly as 'sand'",
+        "With the relevant poster in view, 'band' returns",
       ],
       riskAnchors: [
-        "A long flat-surface run should produce no pain.",
-        "Switching to the other side of the camber should move pain to the left knee.",
-        "If pain persists on flat long runs, distance not camber is the lever.",
+        "Swapping the paired image flips the reported word",
+        "The context effect is strongest when the audio is noisiest",
+        "Listeners report the context-driven word with high confidence",
       ],
       defeatedBy: [
-        "It's just generic overuse from running too much.",
-        "Long runs always cause knee pain regardless of surface.",
-        "The cause can't be known without an MRI.",
+        "Hearing is purely acoustic and context can't change it",
+        "The student simply wasn't listening carefully",
+        "Nothing general can be drawn from one mishearing",
       ],
     },
     correctAnswer:
-      "The simplest model that binds all of it is camber-induced asymmetric loading: running long distances on a sloped road repeatedly overloads the downhill-side (right) knee, and the effect needs both the slope and the duration, since flat long runs and short cambered runs are fine. I commit to the mechanical-overload mechanism rather than a vague 'overuse' label. Test it by having her run her usual long distance on a flat track, or alternate which side of a cambered road she runs on: if the right-knee pain disappears on flat ground or shifts to the left knee when she switches sides, the camber-loading model is confirmed; if pain persists on flat long runs, distance alone (or a gait issue) is the real lever.",
+      "The strongest conclusion is that perception integrates multiple sources — degraded sound plus visual context and expectation — into a single best guess, so when the audio is ambiguous the brain leans on context (a band poster? a beach poster?) to decide what was heard, and changing the context changes the percept itself, not just the interpretation. This lead is fruitful because it predicts checkable consequences: pairing the same ambiguous audio with a band image versus a beach image should flip what listeners report hearing; the effect should be strongest when the audio is noisiest and weakest when it is crisp and unambiguous; and a misleading context should make listeners confidently mishear, with confidence as high as for correct hearing. I would test it by presenting one fixed ambiguous audio clip with different paired images and recording what word people hear, by varying the audio's clarity to see whether context's pull grows as sound degrades, and by measuring listeners' confidence to confirm they experience the context-driven word as genuinely heard rather than merely inferred.",
     explanation:
-      "'Generic overuse' is the under-powered simple story that ignores the surface, side, and duration pattern; 'can't know without an MRI' is the near-zero refusal. Top credit is the simplest mechanism that binds camber, distance, and the downhill-side knee, with the switch-sides test.",
+      "'Hearing is purely acoustic and context can't change it' is defeated by the poster-driven flip, and a vague answer scores low; top credit goes to the multisensory best-guess lead that names a mechanism and tests including a noise-level prediction that could disconfirm it.",
   },
 ];
 
 export const section: SectionContent = {
-  slug: "parsimony",
-  title: "Parsimony as a Live Constraint",
+  slug: "perception",
+  title: "Perception: Why Your Brain Builds the World You See",
   weekNumber: 1,
   blurb:
-    "Occam's razor is a tiebreaker between models that explain equally well — never a license to explain less, so the prize goes to the simplest model that still binds every scrap of the data.",
+    "Perception isn't a camera faithfully recording reality — it's the brain's best guess, built from incoming signals plus expectations, context, and assumptions. Illusions are where that construction shows.",
   lectureTitle:
-    "1.3 Parsimony as a Live Constraint: simplicity as a tiebreaker, never an excuse",
-  body: `# Parsimony as a Live Constraint
+    "1.3 Perception: why your brain builds, rather than records, the world you see",
+  body: `# Perception: Why Your Brain Builds the World You See
 
-"Keep it simple." It is the most abused phrase in reasoning. People wield Occam's razor like a shield against thinking — slicing away whatever they'd rather not explain and calling the wreckage "parsimony." That is backwards. In Constructive Critical Reasoning, simplicity is a *tiebreaker*, and a tiebreaker only fires when there is a tie.
+It feels like seeing is simple: open your eyes, and the world pours in. But your eyes are not cameras feeding a screen in your head. The image on your retina is upside down, full of holes, smeared by constant eye movements, and wildly ambiguous about size, distance, and color. Yet you experience a stable, vivid, three-dimensional world. That gap is the central clue of this section: **perception is something your brain actively builds, not something it passively receives.**
 
-## The razor cuts between equals
+## The data underdetermine the world
 
-Occam's razor says: among explanations that account for the data *equally well*, prefer the one with fewer moving parts. The crucial words are "equally well." The razor compares models that already cross the bar of explaining everything on the table. It chooses between two sufficient stories; it never lets you pick a story that leaves data on the floor.
+A single pattern of light on your retina could have been produced by countless different scenes — a small object up close or a huge one far away, a gray surface in bright light or a white surface in shadow. The raw signal simply does not contain enough information to pin down one answer. So the brain does what any good detective does with incomplete evidence: it makes its **best guess**, using assumptions about how the world usually works. Perception is that guess, presented to you as if it were plain fact.
 
-So the real test runs in two stages. First, ask which models actually bind all the evidence — every coincidence, every exception, every null result. Only the survivors get to the second stage, where you pick the leanest one. A model that's beautifully simple but leaves three observations unexplained never reaches stage two. It is disqualified, not preferred.
+## Bottom-up meets top-down
 
-## The failure mode: simplicity as an excuse
+Two streams of information meet in every percept. **Bottom-up** information flows from the senses: edges, colors, motion, sound waves. **Top-down** information flows the other way — from your knowledge, expectations, and context down onto the incoming signal. When you read a sentence with a scrambled word and barely notice, top-down prediction is filling the gap. When a wine's fancy label makes it taste smoother, expectation is reshaping experience. Perception is the meeting point of what's out there and what your brain expects to be out there.
 
-The classic dodge sounds responsible: "Let's not overcomplicate things." But listen for what it's doing. If "the simple version" quietly drops a data point — the weekend that broke the pattern, the control group that stayed flat — then it isn't simpler, it's *weaker*. It has bought tidiness by going blind. Parsimony was never meant to reward ignorance.
+## Illusions are the seams showing
 
-A richer model is not automatically worse for having more parts. If two factors are both genuinely required — the data shows each one alone fails — then the two-factor model *is* the parsimonious one, because the one-factor model is insufficient. You don't earn simplicity points for amputating a limb the body needs.
+Illusions aren't failures of perception; they're perception working normally but caught making a guess we can prove wrong. Two identical gray squares look different because the brain corrects for an assumed shadow. Two equal lines look unequal because arrowheads mimic depth and the brain rescales them. A hollow mask looks like it bulges out because the brain's lifelong assumption that faces stick out overrides the true depth cues. In each case the brain is applying a sensible rule — and the illusion is the rule misfiring in an unusual setup. That's why illusions are so useful: they expose the hidden assumptions perception normally runs silently.
 
-## Top credit: the simplest sufficient model
+## Perception is predictive
 
-Here's the standard CCR rewards. The best answer is the **simplest model among those that explain all the data** — and that commits to a clean test that could prove it wrong. It refuses to pad itself with spare gears (florid, unfalsifiable extras score low), but it also refuses to shed any gear the evidence demands.
+Increasingly, scientists describe the brain as a **prediction machine**: it constantly forecasts the incoming signal and pays most attention to the difference between prediction and reality. This is why a related word lets you read the next one faster, why you can hear a word that a cough covered up, and why a radiologist told to expect a tumor sees a faint shadow a colleague misses. The expectation isn't added after you see — it shapes what you see in the first place. Perception runs ahead of the input, then corrects.
 
-## Zero credit: the under-powered "simple" pick
+## Attention decides what makes it through
 
-The dodge that earns nothing is invoking parsimony to crown an under-powered model — one that leaves observations unexplained — or refusing to choose at all ("too many variables, can't say"). Both abandon the job. The first hides behind simplicity; the second hides behind complexity. CCR penalizes both, because both leave data unexplained while pretending to be cautious.
-
-## A quick rule of thumb
-
-Before you call a model "simpler," check it explains *everything* its rival does. If it doesn't, you're not being parsimonious — you're being lazy and dressing it up. Add exactly the parts the data forces, and not one more.
+Even your best guess only covers a slice of what's there. We consciously perceive what we attend to, not everything that lands on the senses. That's why people counting basketball passes can miss a person in a gorilla suit walking through the scene, and why your own name can cut through a noisy party. Attention is the gatekeeper that decides which signals get built into the world you experience and which quietly drop out.
 
 ## In the real world
 
-A manager notices a team ships bugs only in sprints that are both rushed *and* run without code review. Rushed sprints with review are clean; calm sprints without review are clean too. The "simple" voice says, "Reviews catch bugs — just always review." But that's under-powered: it ignores that calm no-review sprints stayed clean. The simplest *sufficient* model keeps both factors — time pressure removes care *and* the missing review removes the safety net, and bugs slip only when both fail together. The test is cheap and falsifiable: run one rushed sprint *with* review. If it stays clean, the joint-cause model holds; if it's buggy anyway, time pressure alone is the culprit. Either way you've committed, bound every cell of the data, and exposed yourself to refutation — which is exactly what the razor is for.`,
+Think about eyewitness testimony in a courtroom. We treat "I saw it with my own eyes" as the gold standard of evidence — but everything in this section warns us to be careful. A witness's memory of a face is a reconstruction shaped by expectation, the lighting they assumed, the attention they happened to pay, and suggestions made afterward ("Was the robber the tall one?"). The strongest, most testable conclusion isn't "eyewitnesses lie" or "we can never trust perception"; it's that perception is a constructive best guess, which means it can be confidently wrong — and that we can test how wrong by manipulating context, expectation, and attention and watching the report change. That is exactly what perception research does, and why understanding how the brain builds the world matters far beyond optical illusions.`,
   homework: {
     mcq,
     hybrid,

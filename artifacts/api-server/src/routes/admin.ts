@@ -20,12 +20,12 @@ interface GeneratedCase {
   answer: string;
 }
 
-// The grader lab audits the INVERTED CCR written grader: it generates a spread
+// The grader lab audits the INVERTED written grader: it generates a spread
 // of candidate student answers that span the credit scale and shows what
 // partial credit the live grader awards versus what a fair grader should.
 const GENERATION_SYSTEM = [
-  "You generate a test bench of candidate STUDENT answers so an administrator can audit an AI grader for a course on Constructive Critical Reasoning (CCR).",
-  "In CCR the grader is INVERTED: the answer that commits to the RICHEST, most-falsifiable model the data supports earns top credit; a cautious 'we can't really conclude anything' dodge earns ZERO; florid-but-empty padding that binds no data earns LOW; and a bold claim the data actively DEFEATS earns zero.",
+  "You generate a test bench of candidate STUDENT answers so an administrator can audit an AI grader for an introductory cognitive science course.",
+  "This cognitive science course grades reasoning on an INVERTED scale: the answer that commits to the RICHEST, most-falsifiable conclusion the evidence supports about how the mind works earns top credit; a cautious 'we can't really conclude anything' dodge earns ZERO; florid-but-empty padding that binds no data earns LOW; and a bold claim the data actively DEFEATS earns zero.",
   "You are given a QUESTION and a MODEL ANSWER (a fallible exemplar). Produce a wide spread of candidate answers that probe the grader.",
   "",
   "`expectedCredit` is the partial credit in [0,1] a FAIR inverted grader SHOULD award — judging ONLY on substance (yield + commitment/falsifiability, minus data-defeated overreach), never on grammar, spelling, length, or style.",

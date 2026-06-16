@@ -22,9 +22,9 @@ const router: IRouter = Router();
 
 const WEEK_TITLES: Record<number, { title: string; summary: string }> = {
   1: {
-    title: "Constructive Critical Reasoning",
+    title: "Cognitive Science 101",
     summary:
-      "How to draw the strongest, most falsifiable conclusion the evidence actually supports — finding fecund leads, choosing models by explanatory yield, committing to cheap decisive tests, and staying boldly calibrated instead of dodging behind 'we can't really know.'",
+      "A baby course on how the mind works — treating the mind as information processing across perception, memory, language, reasoning and bias, machine minds, and consciousness.",
   },
 };
 
@@ -124,7 +124,7 @@ router.get("/course/overview", async (_req, res) => {
 
   res.json(
     GetCourseOverviewResponse.parse({
-      title: "Constructive Critical Reasoning",
+      title: "Cognitive Science 101",
       weeks,
       totals: { assignmentsCompleted, assignmentsTotal, practiceCount },
     }),
@@ -215,13 +215,13 @@ router.post(
     const sourceBody = (base && base.trim().length > 0 ? base : lecture.body).trim();
 
     const sys =
-      "You are an instructor of Constructive Critical Reasoning (CCR) revising your own lecture at a student's request. " +
+      "You are an instructor of an introductory cognitive science course revising your own lecture at a student's request. " +
       "You are given the CURRENT lecture and ONE instruction from the student about how to revise it. " +
       "Apply the instruction faithfully. ABSOLUTE RULES, no exceptions:\n" +
       "1. KEEP every concept, claim, and learning objective from the current lecture. Never drop material or change what the lecture teaches — only adjust how it is presented per the instruction.\n" +
       "2. Preserve the existing examples; you may add to or clarify them, but do not silently replace them with different ones unless the instruction explicitly asks you to.\n" +
       "3. Keep headings and section order intact. You may add sub-sections (e.g. extra examples) when the instruction calls for it.\n" +
-      "4. Stay accurate to the source material and to constructive critical reasoning as a subject. Do not invent fake facts, citations, or quotations.\n" +
+      "4. Stay accurate to the source material and to cognitive science as a subject. Do not invent fake facts, citations, or quotations.\n" +
       "5. Use clear Markdown. Use $...$ for any inline math.\n" +
       "6. Return ONLY the rewritten Markdown lecture body — no preface, no commentary, no surrounding code fences.";
     const user =

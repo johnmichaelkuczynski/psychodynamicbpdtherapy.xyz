@@ -12,8 +12,8 @@ const PHASE_SHORT: Record<string, string> = {
   after: "After",
 };
 
-function instrumentLabel(instrument: string): string {
-  return instrument === "subject" ? "AI Knowledge" : "General Reasoning";
+function instrumentLabel(_instrument: string): string {
+  return "Scientific Reasoning";
 }
 
 function statusPill(status: string) {

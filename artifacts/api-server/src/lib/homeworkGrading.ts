@@ -1,7 +1,7 @@
-// Inverted partial-credit grading for Constructive Critical Reasoning homework.
+// Inverted partial-credit grading for Cognitive Science 101 homework.
 //
-// CCR rewards committing to the richest, most-falsifiable model the data
-// supports. Grading is therefore INVERTED relative to a normal test:
+// This course rewards committing to the richest, most-falsifiable model the
+// data supports. Grading is therefore INVERTED relative to a normal test:
 //   - MC items: credit is read straight from the item's stored per-option
 //     weights (data, never hardcoded here). The zero-credit option is the
 //     "dodge" (a fallacy or a non-committal refusal).
@@ -57,8 +57,8 @@ export function gradeMcPart(
 }
 
 const WRITTEN_SYSTEM = [
-  "You grade short written answers for a course on Constructive Critical Reasoning (CCR).",
-  "CCR rewards drawing the STRONGEST affirmative conclusion the data supports. Grading is INVERTED: the richest, most-falsifiable, most-committed model earns top marks; a cautious 'you can't really conclude anything' dodge earns near-zero; florid but empty elaborateness that binds no data earns low.",
+  "You grade short written answers for an introductory cognitive science (the scientific study of the mind) course that grades reasoning on an INVERTED scale.",
+  "The course rewards drawing the STRONGEST affirmative conclusion the data supports about how the mind works. Grading is INVERTED: the richest, most-falsifiable, most-committed model earns top marks; a cautious 'you can't really conclude anything' dodge earns near-zero; florid but empty elaborateness that binds no data earns low.",
   "",
   "Score THREE axes, each a number from 0 to 1:",
   "- yield: how much of the supplied data/observations the student's proposed model actually BINDS and explains (0 = explains none / stays vague; 1 = binds essentially all the listed observations).",

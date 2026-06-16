@@ -9,407 +9,407 @@ const mcq: HomeworkItem[] = [
   {
     itemType: "mc",
     prompt:
-      "An online store changes its checkout button from gray to orange. Over the next month, completed purchases rise from 4.0% to 4.9% of visitors, traffic and prices are unchanged, and no other edits shipped. Which conclusion best follows?",
+      "A patient whose visual cortex was damaged says they see nothing in their left visual field, yet when asked to guess where a light flashed there, they point correctly far above chance and can even catch a ball thrown to that side. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Conversion outcomes can swing for all kinds of reasons, so it's hard to say anything firm here.",
-        credit: 0,
-      },
-      {
-        text: "The orange button raised checkout completion by roughly a fifth; predict that reverting to gray drops conversion back toward 4.0%, and run a 50/50 split to confirm.",
+        text: "Visual information is still being processed and guiding action along pathways that bypass conscious awareness, so 'seeing' and 'acting on sight' can come apart; test whether forced-choice accuracy stays above chance while the patient denies any awareness, whether a brain scan shows intact subcortical visual routes, and whether disrupting those routes removes the guessing skill.",
         credit: 1.0,
       },
       {
-        text: "The orange button likely helped conversion; we'd expect a fresh test to show some lift.",
+        text: "The patient probably still uses some vision without knowing it; we could run more guessing trials.",
         credit: 0.6,
       },
       {
-        text: "There may be a small relationship between the button color and purchases worth keeping an eye on.",
+        text: "Something about the patient's vision seems to still work.",
         credit: 0.3,
+      },
+      {
+        text: "Whether someone 'really sees' is a private mystery, so this behavior tells us nothing about the mind.",
+        credit: 0,
       },
     ],
     correctAnswer:
-      "The orange button raised checkout completion by roughly a fifth; predict that reverting to gray drops conversion back toward 4.0%, and run a 50/50 split to confirm.",
+      "Visual information is still being processed and guiding action along pathways that bypass conscious awareness, so 'seeing' and 'acting on sight' can come apart; test whether forced-choice accuracy stays above chance while the patient denies any awareness, whether a brain scan shows intact subcortical visual routes, and whether disrupting those routes removes the guessing skill.",
     explanation:
-      "With traffic, price, and everything else held fixed, the bold-but-bounded claim (a ~20% lift, refutable by reverting) is exactly what the data supports. The vague 'hard to say anything' is the vacuous hedge CCR penalizes.",
+      "Top credit names a mechanism (vision routed around awareness) and three checkable tests; the 'private mystery, tells us nothing' option refuses to commit and so opens no inquiry.",
   },
   {
     itemType: "mc",
     prompt:
-      "A runner adds one weekly hill-sprint session. Across eight weeks her 5K time drops from 24:10 to 22:40, her mileage and diet are steady, and the only training change was the hills. Which conclusion best follows?",
+      "Across several anesthetics, patients stop responding and form no memories at a particular dose. Brain recordings show that long-range signaling between the front and back of the cortex collapses at exactly the dose where responsiveness disappears. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The hill sprints cure every endurance plateau and will keep cutting 90 seconds every eight weeks indefinitely.",
+        text: "Consciousness is the hard problem, so brain recordings can never reveal anything about it.",
         credit: 0,
       },
       {
-        text: "The hills probably contributed to her faster 5K; more time would tell us how much.",
-        credit: 0.6,
+        text: "There seems to be some link between the brain signal and being knocked out.",
+        credit: 0.3,
       },
       {
-        text: "The weekly hill sprints drove most of the 90-second 5K improvement; predict that dropping them for a month stalls or reverses her progress, while keeping them holds the gain.",
+        text: "Long-range front-to-back cortical communication is a strong candidate mechanism for conscious responsiveness; test whether the signal collapses at the report-losing dose across different anesthetics, whether briefly restoring that signaling restores responsiveness, and whether the same signature drops during dreamless sleep.",
         credit: 1.0,
       },
       {
-        text: "Her running seems to be trending in a positive direction overall.",
-        credit: 0.3,
+        text: "The brain signal probably matters for consciousness; we could try a few more anesthetics.",
+        credit: 0.6,
       },
     ],
     correctAnswer:
-      "The weekly hill sprints drove most of the 90-second 5K improvement; predict that dropping them for a month stalls or reverses her progress, while keeping them holds the gain.",
+      "Long-range front-to-back cortical communication is a strong candidate mechanism for conscious responsiveness; test whether the signal collapses at the report-losing dose across different anesthetics, whether briefly restoring that signaling restores responsiveness, and whether the same signature drops during dreamless sleep.",
     explanation:
-      "The data supports a strong causal claim with a clean reversal test, not the reckless 'cures every plateau forever' overreach, which the single eight-week window cannot back.",
+      "The strongest conclusion pins a mechanism to a measurable signal and lists three disconfirmable tests; the 'can never reveal anything' answer is the zero-credit dodge.",
   },
   {
     itemType: "mc",
     prompt:
-      "A small bakery starts posting one short video of fresh loaves each morning at 7am. Foot traffic before 10am climbs from about 30 to 55 customers daily, weekends excluded, with no menu, price, or location change. Which conclusion best follows?",
+      "A split-brain patient (whose left and right hemispheres are surgically disconnected) uses the left hand, controlled by the right hemisphere, to pick an object the speaking left hemisphere cannot name. When asked why they picked it, the speaking hemisphere confidently invents a reason. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The morning videos nearly doubled early foot traffic; predict that skipping them for two weeks pulls morning customers back toward 30, and resuming restores the bump.",
+        text: "Each hemisphere can run its own stream of processing, and the speaking hemisphere makes up explanations for actions it did not originate; test whether the left hand reliably selects targets the patient verbally denies seeing, whether the spoken reasons systematically rationalize, and whether letting information cross again (e.g., both eyes see the cue) abolishes the split responses.",
         credit: 1.0,
       },
       {
-        text: "Customer behavior is influenced by countless factors, so attributing the rise to the videos would be premature.",
-        credit: 0,
-      },
-      {
-        text: "The videos seem to be doing something positive for the morning crowd.",
+        text: "The two hemispheres seem to act somewhat independently.",
         credit: 0.3,
       },
       {
-        text: "The morning videos likely boosted early traffic; tracking another month would sharpen the estimate.",
+        text: "This shows the patient literally contains two separate souls living in one skull.",
+        credit: 0,
+      },
+      {
+        text: "The hemispheres probably work separately here; we could test more patients.",
         credit: 0.6,
       },
     ],
     correctAnswer:
-      "The morning videos nearly doubled early foot traffic; predict that skipping them for two weeks pulls morning customers back toward 30, and resuming restores the bump.",
+      "Each hemisphere can run its own stream of processing, and the speaking hemisphere makes up explanations for actions it did not originate; test whether the left hand reliably selects targets the patient verbally denies seeing, whether the spoken reasons systematically rationalize, and whether letting information cross again (e.g., both eyes see the cue) abolishes the split responses.",
     explanation:
-      "Nothing else changed, so the bold on/off-testable claim is fully supported. 'Countless factors, premature to attribute' is the timid refusal that earns zero under CCR.",
+      "Top credit commits to a mechanism (separable processing plus confabulation) with three tests; the 'two separate souls' option overreaches past what the behavior shows and earns zero.",
   },
   {
     itemType: "mc",
     prompt:
-      "A clinic switches its appointment reminders from email to text. Over three months, no-show rates fall from 18% to 9%, patient volume is flat, and staffing and hours are unchanged. Which conclusion best follows?",
+      "In a 'change blindness' demo, people stare at a photo that briefly flickers; a large object in the scene appears or vanishes across the flicker, yet most viewers fail to notice the change for many seconds. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Text reminders roughly halved no-shows; predict that a randomized group kept on email-only stays near 18% while the text group holds near 9%.",
-        credit: 1.0,
-      },
-      {
-        text: "Switching to text seems to have helped attendance; a longer look would confirm it.",
-        credit: 0.6,
-      },
-      {
-        text: "Text reminders will eliminate no-shows entirely once every patient opts in.",
+        text: "Perception is too subjective to learn anything from people missing a change.",
         credit: 0,
       },
       {
-        text: "There appears to be some connection between the reminder method and attendance.",
+        text: "We consciously hold far less of a scene at once than it feels like, building the rich impression on demand where we attend; test whether cueing attention to the changing region speeds detection, whether changes away from the focus of attention are missed most, and whether eye-tracking shows misses when the change falls outside fixation.",
+        credit: 1.0,
+      },
+      {
+        text: "People seem to miss changes when they're not looking right at them.",
         credit: 0.3,
+      },
+      {
+        text: "We probably don't see everything at once; we could run more flicker trials.",
+        credit: 0.6,
       },
     ],
     correctAnswer:
-      "Text reminders roughly halved no-shows; predict that a randomized group kept on email-only stays near 18% while the text group holds near 9%.",
+      "We consciously hold far less of a scene at once than it feels like, building the rich impression on demand where we attend; test whether cueing attention to the changing region speeds detection, whether changes away from the focus of attention are missed most, and whether eye-tracking shows misses when the change falls outside fixation.",
     explanation:
-      "The halving is supported and the randomized hold-out is a clean refutation test. 'Eliminate no-shows entirely' is the reckless overreach the 9% floor already defeats.",
+      "The richest conclusion names a mechanism (sparse, attention-built awareness) and three checks; 'too subjective to learn anything' is the barren refusal.",
   },
   {
     itemType: "mc",
     prompt:
-      "A teacher introduces a five-minute recap quiz at the start of each class. Unit-test averages rise from 71 to 80 across two units, the same teacher and textbook are used, and attendance is steady. Which conclusion best follows?",
+      "When a hidden real hand and a visible fake rubber hand are stroked in perfect synchrony, people start to feel the rubber hand is their own and flinch when it is threatened. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Test scores depend on so many things that singling out the recap quizzes isn't really defensible.",
-        credit: 0,
+        text: "Body ownership seems to be a bit flexible.",
+        credit: 0.3,
       },
       {
-        text: "The opening recap quizzes lifted unit-test averages about nine points; predict that a parallel class without them stays near 71 while this class holds near 80.",
+        text: "The brain infers which body is 'mine' by combining synchronous sight and touch, so even the bodily self is a construction; test whether out-of-sync stroking abolishes the illusion, whether skin-conductance spikes when the fake hand is threatened, and whether the felt drift of the hand toward the fake one grows with stroking synchrony.",
         credit: 1.0,
       },
       {
-        text: "The recap quizzes probably helped scores; another unit would make the size clearer.",
-        credit: 0.6,
+        text: "The sense of owning a body is fixed and could never be fooled by this.",
+        credit: 0,
       },
       {
-        text: "Something about the new routine may be nudging scores upward.",
-        credit: 0.3,
+        text: "Synchrony probably tricks the body sense; we could repeat the stroking setup.",
+        credit: 0.6,
       },
     ],
     correctAnswer:
-      "The opening recap quizzes lifted unit-test averages about nine points; predict that a parallel class without them stays near 71 while this class holds near 80.",
+      "The brain infers which body is 'mine' by combining synchronous sight and touch, so even the bodily self is a construction; test whether out-of-sync stroking abolishes the illusion, whether skin-conductance spikes when the fake hand is threatened, and whether the felt drift of the hand toward the fake one grows with stroking synchrony.",
     explanation:
-      "Same teacher and book make the nine-point claim plus a no-quiz comparison class fully supported; the 'too many things to defend' line is the vacuous hedge.",
+      "Top credit commits to a multisensory-inference mechanism with three falsifiable tests; the 'fixed, could never be fooled' option is defeated by the very result described.",
   },
   {
     itemType: "mc",
     prompt:
-      "A warehouse reorganizes its most-picked items to shelves near the packing station. Average order-pick time drops from 6.2 to 4.5 minutes, order mix and headcount are unchanged, and no new equipment arrived. Which conclusion best follows?",
+      "In Libet-style experiments, a readiness signal builds up in the brain a fraction of a second before people report the conscious urge to move their hand. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "There's possibly some efficiency effect from the new layout.",
+        text: "This proves free will is a total illusion and our choices make no difference at all.",
+        credit: 0,
+      },
+      {
+        text: "The brain seems to get going a little before we notice deciding.",
         credit: 0.3,
       },
       {
-        text: "Moving popular items near packing cut pick time by about 27%; predict that shuffling them back to distant shelves returns times toward 6.2 minutes.",
+        text: "The brain begins preparing the action before the conscious urge is reported, so the felt 'moment of deciding' is partly a late readout rather than the sole first cause; test whether the readiness signal reliably precedes the reported urge, whether decoding brain activity predicts the choice before the report, and whether consciously vetoing the movement still shows the early buildup.",
         credit: 1.0,
       },
       {
-        text: "The relayout probably sped up picking; timing more shifts would firm up the figure.",
+        text: "Brain activity probably comes first; we could measure more movements.",
         credit: 0.6,
-      },
-      {
-        text: "This layout proves proximity is the only lever that ever matters for warehouse speed.",
-        credit: 0,
       },
     ],
     correctAnswer:
-      "Moving popular items near packing cut pick time by about 27%; predict that shuffling them back to distant shelves returns times toward 6.2 minutes.",
+      "The brain begins preparing the action before the conscious urge is reported, so the felt 'moment of deciding' is partly a late readout rather than the sole first cause; test whether the readiness signal reliably precedes the reported urge, whether decoding brain activity predicts the choice before the report, and whether consciously vetoing the movement still shows the early buildup.",
     explanation:
-      "The bounded 27% claim with a reversal test fits the controlled change. 'The only lever that ever matters' is an overreach one relayout cannot establish.",
+      "The best conclusion sticks to what the timing supports (a measurable lead, with a veto test) ; the 'free will is a total illusion' leap overreaches far past the data and earns zero.",
   },
   {
     itemType: "mc",
     prompt:
-      "A SaaS team adds an in-app onboarding tour. Among new signups, week-one feature adoption rises from 22% to 35%, signup sources and pricing are constant, and the tour is the lone change. Which conclusion best follows?",
+      "In binocular rivalry, a different image is shown to each eye; the conscious image people report keeps flipping back and forth between the two even though the physical input never changes. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Adoption metrics fluctuate, so it would be unwise to credit the tour for the change.",
-        credit: 0,
+        text: "Conscious perception is selected by the brain among competing inputs rather than fixed by the stimulus; test whether brain activity tracking the dominant image switches in step with the report while the input is held constant, whether directing attention biases which image dominates, and whether raising one image's contrast lengthens its turns.",
+        credit: 1.0,
       },
       {
-        text: "The onboarding tour seems linked to higher early adoption.",
+        text: "The seen image just seems to switch on its own.",
         credit: 0.3,
       },
       {
-        text: "The tour likely raised week-one adoption; a follow-up cohort would confirm the lift.",
-        credit: 0.6,
+        text: "What we consciously see is fully fixed by whatever hits the eyes, so this can't really happen.",
+        credit: 0,
       },
       {
-        text: "The onboarding tour raised week-one adoption by about 13 points; predict that withholding it from a random half of new signups keeps them near 22% while the tour group holds near 35%.",
-        credit: 1.0,
+        text: "The brain probably picks the image; we could time more switches.",
+        credit: 0.6,
       },
     ],
     correctAnswer:
-      "The onboarding tour raised week-one adoption by about 13 points; predict that withholding it from a random half of new signups keeps them near 22% while the tour group holds near 35%.",
+      "Conscious perception is selected by the brain among competing inputs rather than fixed by the stimulus; test whether brain activity tracking the dominant image switches in step with the report while the input is held constant, whether directing attention biases which image dominates, and whether raising one image's contrast lengthens its turns.",
     explanation:
-      "The single change supports a specific, refutable lift claim plus a withhold test. 'Metrics fluctuate, unwise to credit it' is the timid dodge CCR exists to cure.",
+      "Top credit names a selection mechanism with three checkable consequences; the 'fully fixed by the eyes' option is contradicted by the constant-input switching described.",
   },
   {
     itemType: "mc",
     prompt:
-      "A gym moves its busiest spin class from 6pm to 6am. Average class attendance jumps from 12 to 22 people, membership totals are flat, and the instructor and playlist stay the same. Which conclusion best follows?",
+      "People asked to count basketball passes in a video routinely fail to notice a person in a gorilla suit walking through the middle of the scene, even though eye-tracking shows they looked right at it. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The 6am slot nearly doubled spin attendance for this class; predict that moving it back to 6pm drops attendance toward 12 again.",
-        credit: 1.0,
-      },
-      {
-        text: "The earlier time probably helped turnout; running both slots a while would clarify.",
-        credit: 0.6,
-      },
-      {
-        text: "Morning classes are universally better attended than evening ones across all gyms.",
+        text: "Attention is too personal to draw any conclusion about awareness.",
         credit: 0,
       },
       {
-        text: "The time change may have some bearing on who shows up.",
+        text: "Conscious awareness depends on attention, so an unattended event can go unseen even when the eyes point at it; test whether lowering the counting load lets people notice the gorilla, whether fixations land on it despite no report, and whether warning viewers in advance raises detection.",
+        credit: 1.0,
+      },
+      {
+        text: "People seem to miss things when they're busy.",
         credit: 0.3,
+      },
+      {
+        text: "Attention probably gates what we see; we could show the clip to more viewers.",
+        credit: 0.6,
       },
     ],
     correctAnswer:
-      "The 6am slot nearly doubled spin attendance for this class; predict that moving it back to 6pm drops attendance toward 12 again.",
+      "Conscious awareness depends on attention, so an unattended event can go unseen even when the eyes point at it; test whether lowering the counting load lets people notice the gorilla, whether fixations land on it despite no report, and whether warning viewers in advance raises detection.",
     explanation:
-      "One class's data backs a bold reversal-testable claim about that class, not the sweeping 'universally better across all gyms' generalization the single case cannot support.",
+      "The strongest conclusion ties awareness to attention and names three tests, including the load manipulation; 'too personal to draw any conclusion' commits to nothing.",
   },
   {
     itemType: "mc",
     prompt:
-      "A support team starts answering chats with a one-line acknowledgment within 30 seconds before the full reply. Customer satisfaction scores climb from 3.8 to 4.4 of 5, ticket volume and staffing are unchanged, and nothing else in the workflow moved. Which conclusion best follows?",
+      "A word is flashed on screen too briefly for people to consciously read it, yet afterward they are faster to judge a related word, as if the hidden word had been understood. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Satisfaction is shaped by mood and many hidden variables, so the acknowledgment's role can't really be isolated.",
-        credit: 0,
-      },
-      {
-        text: "There seems to be a positive shift tied to the new greeting.",
+        text: "The flashed word seems to have some effect.",
         credit: 0.3,
       },
       {
-        text: "The fast acknowledgment raised satisfaction by about 0.6 points; predict that pausing it for a week pulls scores back toward 3.8 while resuming restores 4.4.",
+        text: "Meaning can be extracted from a stimulus too brief to consciously report, so understanding does not always require awareness; test whether the speed-up persists when subjects identify the word only at chance, whether the effect shrinks as exposure nears the awareness threshold, and whether a mask that blocks any report still leaves the priming.",
         credit: 1.0,
       },
       {
-        text: "The quick acknowledgment probably improved satisfaction; more weeks of data would help.",
+        text: "Nothing can be concluded because we can never be sure the person didn't glimpse the word.",
+        credit: 0,
+      },
+      {
+        text: "The hidden word probably still registers; we could flash more words.",
         credit: 0.6,
       },
     ],
     correctAnswer:
-      "The fast acknowledgment raised satisfaction by about 0.6 points; predict that pausing it for a week pulls scores back toward 3.8 while resuming restores 4.4.",
+      "Meaning can be extracted from a stimulus too brief to consciously report, so understanding does not always require awareness; test whether the speed-up persists when subjects identify the word only at chance, whether the effect shrinks as exposure nears the awareness threshold, and whether a mask that blocks any report still leaves the priming.",
     explanation:
-      "With workflow held fixed, the specific 0.6-point on/off claim is supported and refutable. 'Can't really be isolated' is the vacuous hedge that scores zero.",
+      "Top credit names unconscious meaning processing and three tests that pin down awareness; the 'we can never be sure' answer refuses to commit and earns zero.",
   },
   {
     itemType: "mc",
     prompt:
-      "A city adds a protected bike lane on one corridor. Cyclist counts on that corridor double over a season, weather is typical, and no adjacent route changed. Which conclusion best follows?",
+      "A behaviorally unresponsive brain-injury patient is asked, while being scanned, to imagine playing tennis; their brain lights up in the same motor-planning region, in the same way, as healthy volunteers given the same instruction. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Travel patterns shift for endless reasons, so the lane shouldn't be credited yet.",
+        text: "Inner experience is unknowable, so a scan can say nothing about whether the patient is aware.",
         credit: 0,
       },
       {
-        text: "The protected lane roughly doubled cycling on that corridor; predict that a comparable unimproved corridor shows no such jump over the same season.",
+        text: "Some behaviorally unresponsive patients retain conscious awareness that can be detected through willed brain activity; test whether the patient can answer yes/no questions by choosing distinct imagery tasks, whether the responses stay consistent across sessions, and whether they correctly answer questions only the patient could know.",
         credit: 1.0,
       },
       {
-        text: "The new lane likely encouraged more cycling there; comparing more corridors would sharpen it.",
-        credit: 0.6,
+        text: "The patient's brain seems to respond like an aware person's.",
+        credit: 0.3,
       },
       {
-        text: "Cycling appears to be a bit more popular on that street now.",
-        credit: 0.3,
+        text: "The patient may still be aware; we could scan them again.",
+        credit: 0.6,
       },
     ],
     correctAnswer:
-      "The protected lane roughly doubled cycling on that corridor; predict that a comparable unimproved corridor shows no such jump over the same season.",
+      "Some behaviorally unresponsive patients retain conscious awareness that can be detected through willed brain activity; test whether the patient can answer yes/no questions by choosing distinct imagery tasks, whether the responses stay consistent across sessions, and whether they correctly answer questions only the patient could know.",
     explanation:
-      "The doubling plus a control-corridor comparison is the boldest falsifiable claim the data backs; 'endless reasons, don't credit it' is the refusal CCR penalizes.",
+      "The best conclusion commits to detectable awareness and names a communication test that could refute it; 'inner experience is unknowable' is the zero-credit dodge.",
   },
   {
     itemType: "mc",
     prompt:
-      "A subscription box adds a 'pause instead of cancel' button on its cancellation page. Monthly churn falls from 7% to 4.5%, acquisition and pricing are flat, and the button is the only change. Which conclusion best follows?",
+      "A person reports that every letter of the alphabet automatically appears to them in a specific color — 'A' is always red, 'B' always blue — and these pairings never change over the years. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The pause button will end churn for good once enough members discover it.",
-        credit: 0,
-      },
-      {
-        text: "Adding the pause option cut churn by roughly a third; predict that hiding it again pushes churn back toward 7%.",
+        text: "In some brains, extra cross-talk between sensory regions produces real, automatic added experiences (here, colors triggered by letters); test whether the letter-color pairings stay stable across years of retesting, whether a visual-search task shows the colors pop out involuntarily, and whether brain imaging shows color-area activity to plain black letters.",
         credit: 1.0,
       },
       {
-        text: "The pause option probably reduced churn; another quarter would confirm the effect.",
-        credit: 0.6,
+        text: "The person seems to associate letters with colors.",
+        credit: 0.3,
       },
       {
-        text: "There may be some churn benefit from the new button.",
-        credit: 0.3,
+        text: "People's private experiences can't be checked, so this report tells us nothing.",
+        credit: 0,
+      },
+      {
+        text: "They probably really see the colors; we could ask them again later.",
+        credit: 0.6,
       },
     ],
     correctAnswer:
-      "Adding the pause option cut churn by roughly a third; predict that hiding it again pushes churn back toward 7%.",
+      "In some brains, extra cross-talk between sensory regions produces real, automatic added experiences (here, colors triggered by letters); test whether the letter-color pairings stay stable across years of retesting, whether a visual-search task shows the colors pop out involuntarily, and whether brain imaging shows color-area activity to plain black letters.",
     explanation:
-      "The one-third reduction with a hide-it reversal test is supported; 'end churn for good' is the reckless overreach the persistent 4.5% already defeats.",
+      "Top credit names a cross-activation mechanism with three objective tests of an inner experience; 'can't be checked, tells us nothing' is the unfruitful refusal.",
   },
   {
     itemType: "mc",
     prompt:
-      "A restaurant prints its three highest-margin dishes in a boxed section at the top of the menu. Those dishes' share of orders rises from 15% to 26% over a month, total covers are steady, and no recipe or price changed. Which conclusion best follows?",
+      "During REM sleep, with the eyes closed and little outside input, people have vivid, detailed conscious experiences they later recall as dreams. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Diners choose food for many personal reasons, so the menu box can't be pinned as the cause.",
+        text: "Dreams are too mysterious to support any conclusion about consciousness.",
         credit: 0,
       },
       {
-        text: "The boxed placement raised those dishes' order share by about 11 points; predict that removing the box returns their share toward 15%.",
-        credit: 1.0,
-      },
-      {
-        text: "Highlighting those dishes seems to have nudged orders their way.",
+        text: "The brain seems able to make experiences while asleep.",
         credit: 0.3,
       },
       {
-        text: "The box probably increased orders of those dishes; testing another menu would help confirm.",
+        text: "The brain can generate conscious experience internally without external input, so consciousness is constructed, not merely received; test whether lucid dreamers can send pre-agreed eye-movement signals during verified REM, whether reported vividness tracks REM brain activity, and whether waking people from REM yields more vivid reports than waking them from deep non-REM.",
+        credit: 1.0,
+      },
+      {
+        text: "The sleeping brain probably builds the dream; we could collect more dream reports.",
         credit: 0.6,
       },
     ],
     correctAnswer:
-      "The boxed placement raised those dishes' order share by about 11 points; predict that removing the box returns their share toward 15%.",
+      "The brain can generate conscious experience internally without external input, so consciousness is constructed, not merely received; test whether lucid dreamers can send pre-agreed eye-movement signals during verified REM, whether reported vividness tracks REM brain activity, and whether waking people from REM yields more vivid reports than waking them from deep non-REM.",
     explanation:
-      "Stable covers and unchanged recipes back the specific share claim and removal test; 'can't be pinned as the cause' is the timid hedge that earns nothing.",
+      "The richest conclusion names internal construction and three tests, including the lucid-dream signal; 'too mysterious to support any conclusion' opens no path.",
   },
   {
     itemType: "mc",
     prompt:
-      "A factory installs brighter LED lighting on one assembly line. Defect rates on that line drop from 3.1% to 1.8% over six weeks, the crew and parts are unchanged, and the other lines keep their old lighting and old defect rates. Which conclusion best follows?",
+      "After a stroke, a patient is paralyzed on the left side but cheerfully insists nothing is wrong with that arm and tries to use it. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "There seems to be a slight quality improvement on that line.",
-        credit: 0.3,
-      },
-      {
-        text: "The brighter lighting cut that line's defect rate by roughly 40%; predict that restoring the old lighting raises defects back toward 3.1% while the upgraded lighting holds them near 1.8%.",
+        text: "The brain's self-monitoring can fail, so awareness of one's own body and state is itself a constructed process that can break; test whether the denial is specific to the affected limb, whether cold-water stimulation of the inner ear briefly restores accurate awareness, and whether such cases cluster around lesions in self-monitoring brain regions.",
         credit: 1.0,
       },
       {
-        text: "The new lighting probably reduced defects there; more weeks would tighten the number.",
-        credit: 0.6,
+        text: "The patient seems unaware of the paralysis.",
+        credit: 0.3,
       },
       {
-        text: "Brighter lighting guarantees near-zero defects on any production line anywhere.",
+        text: "Self-awareness is a single fixed thing that can't selectively break like this.",
         credit: 0,
+      },
+      {
+        text: "Their self-awareness probably broke; we could examine more stroke patients.",
+        credit: 0.6,
       },
     ],
     correctAnswer:
-      "The brighter lighting cut that line's defect rate by roughly 40%; predict that restoring the old lighting raises defects back toward 3.1% while the upgraded lighting holds them near 1.8%.",
+      "The brain's self-monitoring can fail, so awareness of one's own body and state is itself a constructed process that can break; test whether the denial is specific to the affected limb, whether cold-water stimulation of the inner ear briefly restores accurate awareness, and whether such cases cluster around lesions in self-monitoring brain regions.",
     explanation:
-      "The unchanged lines act as a built-in control, so the 40% reversal-testable claim is fully supported; 'guarantees near-zero on any line anywhere' is the overreach the data can't reach.",
+      "Top credit treats self-awareness as a breakable brain process and names three tests; the 'single fixed thing that can't break' option is defeated by the selective denial described.",
   },
   {
     itemType: "mc",
     prompt:
-      "An author switches her newsletter send time from Monday noon to Saturday morning. Open rates rise from 28% to 41% over ten issues, subscriber count and subject-line style are unchanged. Which conclusion best follows?",
+      "A person who lost a hand still vividly feels the missing hand — its position, even pain in it. Sometimes touching their face produces a sensation felt in the phantom hand. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Email engagement is notoriously noisy, so reading anything into this shift would be a stretch.",
+        text: "Phantom feelings are too strange to draw any conclusion from.",
         credit: 0,
       },
       {
-        text: "The Saturday-morning slot raised open rates by about 13 points; predict that switching back to Monday noon pulls opens toward 28% again.",
+        text: "The missing hand still seems to be felt somehow.",
+        credit: 0.3,
+      },
+      {
+        text: "The brain keeps an internal body map that can produce conscious sensation even without the body part, and that map can rewire; test whether mirror-box visual feedback reduces phantom pain, whether the phantom shifts as nearby cortex reorganizes, and whether touching the face reliably evokes sensation referred to the phantom hand.",
         credit: 1.0,
       },
       {
-        text: "The new send time probably improved opens; alternating times would confirm it.",
+        text: "The brain probably still maps the hand; we could interview more amputees.",
         credit: 0.6,
-      },
-      {
-        text: "The timing change may be having some effect on opens.",
-        credit: 0.3,
       },
     ],
     correctAnswer:
-      "The Saturday-morning slot raised open rates by about 13 points; predict that switching back to Monday noon pulls opens toward 28% again.",
+      "The brain keeps an internal body map that can produce conscious sensation even without the body part, and that map can rewire; test whether mirror-box visual feedback reduces phantom pain, whether the phantom shifts as nearby cortex reorganizes, and whether touching the face reliably evokes sensation referred to the phantom hand.",
     explanation:
-      "Ten issues with style and list held constant support a bold, reversible claim; 'notoriously noisy, a stretch to read anything' is the vacuous refusal scored at zero.",
+      "The strongest conclusion names an internal body-map mechanism with three tests, including the face-referral check; 'too strange to draw any conclusion' is the barren dodge.",
   },
   {
     itemType: "mc",
     prompt:
-      "A hospital ward adopts a two-minute hand-hygiene checklist at every shift change. Healthcare-associated infections on that ward fall from 11 to 4 per month over a quarter, patient acuity and bed count are unchanged, and a matched ward without the checklist stays near 10. Which conclusion best follows?",
+      "In a card-gambling task, players begin steering away from risky decks and their palms sweat just before reaching for a bad deck — well before they can explain in words which decks are dangerous. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Infection counts bounce around month to month, so the checklist's effect is anyone's guess.",
+        text: "Decision-making is too complex to say anything about awareness here.",
         credit: 0,
       },
       {
-        text: "The checklist appears to coincide with fewer infections.",
+        text: "People seem to sense danger before they can say why.",
         credit: 0.3,
       },
       {
-        text: "The hand-hygiene checklist roughly cut this ward's infections by two-thirds; predict that dropping it lets infections climb back toward 10–11 while the matched ward stays put.",
+        text: "Bodily and emotional signals can guide good choices before a person consciously knows the rule, so useful processing runs ahead of awareness; test whether the sweat response precedes avoiding bad decks before stated knowledge, whether patients who lack such bodily signals fail to learn the task, and whether blocking those signals removes the early advantage.",
         credit: 1.0,
       },
       {
-        text: "The checklist probably reduced infections; a longer span would confirm the size.",
+        text: "Gut feelings probably guide the choices; we could run more players.",
         credit: 0.6,
       },
     ],
     correctAnswer:
-      "The hand-hygiene checklist roughly cut this ward's infections by two-thirds; predict that dropping it lets infections climb back toward 10–11 while the matched ward stays put.",
+      "Bodily and emotional signals can guide good choices before a person consciously knows the rule, so useful processing runs ahead of awareness; test whether the sweat response precedes avoiding bad decks before stated knowledge, whether patients who lack such bodily signals fail to learn the task, and whether blocking those signals removes the early advantage.",
     explanation:
-      "The matched ward is a control that licenses the bold two-thirds claim plus a removal test; 'anyone's guess' wastes the very evidence that pins the effect.",
+      "Top credit names a mechanism (emotional signals leading awareness) with three tests; 'too complex to say anything' refuses to lead and earns zero.",
   },
 ];
 
@@ -417,425 +417,425 @@ const hybrid: HomeworkItem[] = [
   {
     itemType: "hybrid",
     prompt:
-      "A coffee subscription emails a 10%-off code only to customers who haven't ordered in 60 days. Of those emailed, 18% reorder within a week versus a usual 5% reactivation rate for similar lapsed customers; nothing else in the program changed. Which conclusion best follows?",
+      "A chimpanzee is given a mirror for several days. A researcher secretly dabs a spot of odorless dye on the chimp's forehead, where it can only be seen in the mirror. On seeing its reflection, the chimp reaches up and touches the spot on its own forehead. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Lapsed customers come back for many reasons, so the discount email can't be credited.",
-        credit: 0,
-      },
-      {
-        text: "The 10%-off email roughly tripled reactivation among lapsed customers; predict that a randomized lapsed group left un-emailed stays near 5% while the emailed group holds near 18%.",
+        text: "The chimp likely recognizes the reflection as itself — representing its own body as an object — rather than treating the image as a stranger; test whether it touches the mark only when the mirror is present, whether species that fail the task keep reacting socially to the image, and whether removing the dye stops the self-directed touching.",
         credit: 1.0,
       },
       {
-        text: "The discount email likely lifted reactivation; another send would confirm the size.",
-        credit: 0.6,
+        text: "The chimp seems to understand the mirror somehow.",
+        credit: 0.3,
       },
       {
-        text: "The email may have some reactivating effect.",
-        credit: 0.3,
+        text: "Animal minds are unknowable, so the mark-touching tells us nothing.",
+        credit: 0,
+      },
+      {
+        text: "The chimp probably recognizes itself; we could test a few more chimps.",
+        credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would most distinguish your model from its closest rival (the discount itself vs. merely being contacted), and say what result would refute your model.",
+        "In two sentences, name the single cheapest observation that would best distinguish your self-recognition reading from the rival 'the chimp is just reacting to a spot it could feel or see directly,' and say what result would refute your reading.",
       modelAnswer:
-        "Send a no-discount reminder email to a third random group; if they reactivate near 18% too, the lift is from contact, not the discount, refuting my discount-driven model. If the no-discount group sticks near 5% while the 10%-off group hits 18%, the discount is the cause.",
+        "Cheapest test: use only a mirror-visible, non-tactile mark and remove the mirror — if self-recognition drives it, the chimp should touch the spot only when the mirror is present and not otherwise. My reading is refuted if the chimp touches the spot just as much with no mirror, showing it feels or sees it directly rather than recognizing itself.",
       yieldAnchors: [
-        "18% reorder vs. a 5% baseline reactivation",
-        "the offer went only to 60-day-lapsed customers",
-        "nothing else in the program changed",
+        "The dye is odorless and only visible in the mirror",
+        "The chimp touches the spot on its own forehead, not the mirror",
+        "This follows days of mirror exposure",
       ],
       riskAnchors: [
-        "an un-emailed random lapsed group stays near 5%",
-        "a no-discount reminder group separates the discount effect from the contact effect",
+        "Mark-touching happens only when the mirror is present",
+        "Species that fail still treat the image as another animal",
+        "Removing the dye stops the self-directed touching",
       ],
       defeatedBy: [
-        "claiming the email permanently retains these customers",
-        "claiming all lapsed customers will reactivate if emailed",
-        "claiming nothing can be concluded from the gap",
+        "The chimp can feel or directly see the mark without the mirror",
+        "Animal minds are unknowable so the behavior means nothing",
       ],
     },
     correctAnswer:
-      "The 10%-off email roughly tripled reactivation among lapsed customers; predict that a randomized lapsed group left un-emailed stays near 5% while the emailed group holds near 18%.",
+      "The chimp likely recognizes the reflection as itself — representing its own body as an object — rather than treating the image as a stranger; test whether it touches the mark only when the mirror is present, whether species that fail the task keep reacting socially to the image, and whether removing the dye stops the self-directed touching.",
     explanation:
-      "Top credit names the tripling AND a control that could disconfirm it; the committed, cheap distinguishing test in the follow-up shows boldness calibrated to evidence, not the 'can't be credited' dodge.",
+      "Full credit commits to a self-representation mechanism with three checks and a mirror-removal test that names its own refutation; 'animal minds are unknowable' opens nothing.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A youth soccer coach adds 10 minutes of juggling drills to each practice. Over a season, his team's average touches-before-turnover in games rises from 2.1 to 3.4, the roster is stable, and no other drill changed. Which conclusion best follows?",
+      "Researchers zap the awake brain with a brief magnetic pulse and record the echo. In awake people the echo is complex and spreads widely; under anesthesia and in dreamless sleep the echo is simple and stays local. The complexity rises again when vivid dreaming returns. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Juggling drills will turn any team into champions regardless of talent.",
-        credit: 0,
-      },
-      {
-        text: "The juggling probably improved ball control; more seasons would clarify.",
-        credit: 0.6,
-      },
-      {
-        text: "The juggling drills lifted in-game ball control by about 1.3 touches; predict that a comparable team without the drills shows no such rise over the same season.",
+        text: "The complexity of the brain's response to a perturbation tracks the presence of consciousness, not just whether someone is awake; test whether the index drops in every unaware state and rises in vivid dreams during sleep, whether it separates aware locked-in patients from truly unaware ones, and whether it climbs back as anesthesia wears off.",
         credit: 1.0,
       },
       {
-        text: "The drills seem to have some link to better control.",
+        text: "The brain's echo seems bigger when people are conscious.",
         credit: 0.3,
+      },
+      {
+        text: "Consciousness is the hard problem, so no brain measurement could ever index it.",
+        credit: 0,
+      },
+      {
+        text: "The complexity probably tracks consciousness; we could test more sleepers.",
+        credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would most distinguish your model from the rival 'they just matured over the season,' and say what result would refute your model.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'complexity indexes consciousness' reading from the rival 'it just measures how awake or how stimulated the brain is,' and say what result would refute your reading.",
       modelAnswer:
-        "Compare to a same-age control team that didn't add juggling; if both teams gain ~1.3 touches, natural maturation explains it and my drill model is refuted. If only the juggling team improves while the control stays near 2.1, the drills are doing the work.",
+        "Cheapest test: measure the index during vivid REM dreaming, when the person is asleep and getting little input but is consciously experiencing — my reading predicts high complexity there. It is refuted if dreaming brains, despite reported vivid experience, show the same low complexity as dreamless sleep, which would tie the index to wakefulness or input rather than to consciousness.",
       yieldAnchors: [
-        "touches-before-turnover rose from 2.1 to 3.4",
-        "the roster stayed stable",
-        "only the juggling drill was added",
+        "Echo is complex and widespread when awake",
+        "Echo is simple and local under anesthesia and dreamless sleep",
+        "Complexity rises again during vivid dreaming",
       ],
       riskAnchors: [
-        "a comparable no-juggling team shows no rise",
-        "removing the drills next season stalls the gain",
+        "The index drops in every unaware state and rises in vivid dreams",
+        "It separates aware locked-in patients from truly unaware ones",
+        "It climbs back as anesthesia wears off",
       ],
       defeatedBy: [
-        "claiming juggling makes any team champions regardless of talent",
-        "claiming the data can't support any conclusion",
-        "claiming the gain will compound by 1.3 every season",
+        "The index merely tracks wakefulness or sensory input",
+        "No brain measurement could ever index consciousness",
       ],
     },
     correctAnswer:
-      "The juggling drills lifted in-game ball control by about 1.3 touches; predict that a comparable team without the drills shows no such rise over the same season.",
+      "The complexity of the brain's response to a perturbation tracks the presence of consciousness, not just whether someone is awake; test whether the index drops in every unaware state and rises in vivid dreams during sleep, whether it separates aware locked-in patients from truly unaware ones, and whether it climbs back as anesthesia wears off.",
     explanation:
-      "The control-team prediction makes the bold claim falsifiable and matches the data; the 'turn any team into champions' option is the reckless overreach that costs everything.",
+      "Full credit ties consciousness to a measurable signature with three tests and a dreaming case that names its refutation; the 'no measurement could ever index it' answer is the dodge.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A bookstore moves its staff-recommendation table from the back to the entrance. Sales of recommended titles rise from 9 to 17 copies per day, total store traffic is unchanged, and the recommendations themselves are the same titles. Which conclusion best follows?",
+      "Two people name colors identically and never disagree about what to call any patch. A philosopher claims their inner experience of red could still secretly differ and could never be detected. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Book sales depend on taste and mood, so the table's move shouldn't be singled out.",
-        credit: 0,
-      },
-      {
-        text: "Moving the table to the entrance roughly doubled recommended-title sales; predict that returning it to the back drops those sales toward 9 per day.",
+        text: "Even when color words match, differences in the underlying experience can leave measurable fingerprints, so private quality is not wholly beyond test; test whether the two people's similarity judgments between color pairs diverge, whether their brain color-response patterns differ, and whether their reaction-time confusions among shades differ.",
         credit: 1.0,
       },
       {
-        text: "The new location probably boosted those sales; watching another week would help.",
-        credit: 0.6,
+        text: "Their color experiences might differ in some way.",
+        credit: 0.3,
       },
       {
-        text: "The table's position may matter a little for sales.",
-        credit: 0.3,
+        text: "Subjective experience is fully private, so absolutely nothing about it can ever be measured.",
+        credit: 0,
+      },
+      {
+        text: "Their experiences could differ; we could ask them to name more colors.",
+        credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would most distinguish your model from 'the titles themselves got more popular this week,' and say what result would refute your model.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'experience leaves measurable fingerprints' reading from the rival 'matching color words means identical experience,' and say what result would refute your reading.",
       modelAnswer:
-        "Check whether the same titles sold elsewhere (online or at other branches) also doubled; if they did, broader popularity explains it and my placement model is refuted. If only the in-store entrance copies doubled while the same titles were flat elsewhere, the location move is the cause.",
+        "Cheapest test: have both people rate how similar many color pairs look (not just name them) — if their inner experience differs, their similarity maps should diverge even though their names match. My reading is refuted if their similarity judgments and brain color responses are indistinguishable, in which case the matching words really do track matching experience as far as we can probe.",
       yieldAnchors: [
-        "recommended-title sales rose from 9 to 17 per day",
-        "total store traffic was unchanged",
-        "the recommended titles were the same",
+        "The two people name colors identically",
+        "They never disagree about what to call a patch",
+        "The claim is that inner experience could still differ",
       ],
       riskAnchors: [
-        "returning the table to the back drops sales toward 9",
-        "the same titles stay flat in other sales channels",
+        "Their pairwise color-similarity judgments diverge",
+        "Their brain color-response patterns differ",
+        "Their reaction-time confusions among shades differ",
       ],
       defeatedBy: [
-        "claiming entrance placement doubles sales of every product",
-        "claiming nothing can be singled out as the cause",
-        "claiming the move will keep doubling sales each week",
+        "Matching color names guarantees identical experience",
+        "Nothing about private experience can ever be measured",
       ],
     },
     correctAnswer:
-      "Moving the table to the entrance roughly doubled recommended-title sales; predict that returning it to the back drops those sales toward 9 per day.",
+      "Even when color words match, differences in the underlying experience can leave measurable fingerprints, so private quality is not wholly beyond test; test whether the two people's similarity judgments between color pairs diverge, whether their brain color-response patterns differ, and whether their reaction-time confusions among shades differ.",
     explanation:
-      "Unchanged traffic and identical titles support the doubling claim with a reversal test; 'taste and mood, don't single it out' is the hedge that abandons usable evidence.",
+      "Full credit commits to detectable fingerprints with three tests and a similarity-judgment probe that names its refutation; 'nothing can ever be measured' is the zero-credit refusal.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A remote team switches from open-ended meetings to strict 25-minute agendas. Self-reported 'meeting felt productive' ratings rise from 55% to 78% over six weeks, the same people attend, and meeting frequency is unchanged. Which conclusion best follows?",
+      "The cerebellum holds far more neurons than the rest of the brain, yet people born without it can still be conscious and report experiences. In contrast, small damage to the thalamus-and-cortex network can abolish consciousness entirely. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Productivity feelings vary with mood, so the agenda change can't be held responsible.",
-        credit: 0,
-      },
-      {
-        text: "There seems to be a more positive vibe about meetings now.",
+        text: "Damage seems to matter more in some regions than others.",
         credit: 0.3,
       },
       {
-        text: "The 25-minute agendas raised 'felt productive' ratings by about 23 points; predict that reverting to open-ended meetings pulls ratings back toward 55%.",
+        text: "Consciousness depends on how neurons are wired together, not raw neuron count, since the cerebellum's largely feed-forward circuits contribute little to experience; test whether consciousness survives cerebellar loss, whether it collapses with thalamocortical damage, and whether richly interconnected (recurrent) architecture predicts a region's contribution better than its cell count.",
         credit: 1.0,
       },
       {
-        text: "The agendas probably improved how meetings feel; more weeks would confirm.",
+        text: "More neurons always means more consciousness, so the cerebellum must be the seat of the mind.",
+        credit: 0,
+      },
+      {
+        text: "Wiring probably matters more than counts; we could compare more brain regions.",
         credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would most distinguish your model from 'people are just rating everything higher lately,' and say what result would refute your model.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'wiring, not neuron count' reading from the rival 'consciousness simply scales with how many neurons survive,' and say what result would refute your reading.",
       modelAnswer:
-        "Check whether ratings of non-meeting items (e.g., the same team's project satisfaction) also rose; if everything went up equally, a general optimism shift explains it and my agenda model is refuted. If only meeting ratings jumped while other ratings held flat, the agendas drove the change.",
+        "Cheapest test: compare consciousness in people who lost the huge-but-feed-forward cerebellum against people with small thalamocortical damage — my reading predicts the small recurrent-network damage matters far more despite fewer neurons lost. It is refuted if outcomes track total neurons lost rather than which network was hit, which would favor sheer count over wiring.",
       yieldAnchors: [
-        "'felt productive' rose from 55% to 78%",
-        "the same attendees and frequency held",
-        "the agenda format was the only change",
+        "The cerebellum holds the most neurons",
+        "People without a cerebellum can still be conscious",
+        "Small thalamocortical damage can abolish consciousness",
       ],
       riskAnchors: [
-        "reverting to open-ended meetings pulls ratings back toward 55%",
-        "non-meeting ratings stayed flat over the same window",
+        "Consciousness survives cerebellar loss",
+        "Consciousness collapses with thalamocortical damage",
+        "Recurrent architecture predicts contribution better than cell count",
       ],
       defeatedBy: [
-        "claiming agendas make meetings universally loved forever",
-        "claiming feelings vary too much to conclude anything",
-        "claiming ratings will keep rising 23 points each cycle",
+        "Consciousness scales purely with surviving neuron count",
+        "The cerebellum, with the most neurons, is the seat of the mind",
       ],
     },
     correctAnswer:
-      "The 25-minute agendas raised 'felt productive' ratings by about 23 points; predict that reverting to open-ended meetings pulls ratings back toward 55%.",
+      "Consciousness depends on how neurons are wired together, not raw neuron count, since the cerebellum's largely feed-forward circuits contribute little to experience; test whether consciousness survives cerebellar loss, whether it collapses with thalamocortical damage, and whether richly interconnected (recurrent) architecture predicts a region's contribution better than its cell count.",
     explanation:
-      "Held-constant attendance and cadence support the specific lift and a reversal test; 'can't be held responsible' is the vacuous hedge CCR docks to zero.",
+      "Full credit names wiring as the mechanism with three tests and a lesion comparison that names its refutation; 'more neurons always means more consciousness' is defeated by the cerebellum case.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A houseplant owner moves a struggling fern from a north window to an east window. Over three weeks it puts out six new fronds after months of none, watering and pot are unchanged, and nothing else moved. Which conclusion best follows?",
+      "A sleepwalker gets up, walks to the kitchen, pours a drink, and returns to bed. In the morning they remember none of it, and recordings show their brain was in a deep non-waking state throughout. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The east window roughly restarted the fern's growth; predict that moving it back to the north window stalls new fronds again while the east window sustains them.",
+        text: "Complex, coordinated behavior can run with little or no conscious awareness, so consciousness is not required for all skilled action; test whether sleepwalkers consistently lack recall and show non-waking brain activity, whether their actions are stereotyped and inflexible, and whether they fail tasks that need flexible, moment-to-moment awareness.",
         credit: 1.0,
       },
       {
-        text: "The light change probably helped; watching longer would confirm.",
-        credit: 0.6,
+        text: "The sleepwalker seems to act without being fully awake.",
+        credit: 0.3,
       },
       {
-        text: "Plant growth is complicated, so we can't tie the new fronds to the window at all.",
+        text: "Any coordinated action like this proves full consciousness must be present.",
         credit: 0,
       },
       {
-        text: "The new spot may be doing the fern some good.",
-        credit: 0.3,
+        text: "They probably weren't conscious; we could record more sleepwalking episodes.",
+        credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would most distinguish your light model from 'the fern was about to recover anyway,' and say what result would refute your model.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'action without awareness' reading from the rival 'the sleepwalker was actually awake and simply forgot,' and say what result would refute your reading.",
       modelAnswer:
-        "Move it back to the north window for two weeks; if it keeps producing fronds there, recovery was already underway and my light model is refuted. If growth stalls at the north window and resumes when returned east, light is the driver.",
+        "Cheapest test: record brain activity during the episode and probe responsiveness — my reading predicts a deep non-waking pattern and failure on tasks needing flexible awareness, unlike a truly awake person. It is refuted if the sleepwalker shows a normal awake brain pattern and can flexibly respond to novel requests, which would mean they were awake and merely amnesic.",
       yieldAnchors: [
-        "six new fronds after months of none",
-        "watering and pot unchanged",
-        "only the window location changed",
+        "The sleepwalker performs coordinated multi-step actions",
+        "They have no memory of it afterward",
+        "Recordings show a deep non-waking brain state",
       ],
       riskAnchors: [
-        "returning it north stalls new fronds",
-        "moving it back east resumes growth",
+        "Sleepwalkers consistently lack recall and show non-waking activity",
+        "Their actions are stereotyped and inflexible",
+        "They fail tasks needing flexible, online awareness",
       ],
       defeatedBy: [
-        "claiming east light revives any dying plant",
-        "claiming growth is too complicated to attribute at all",
-        "claiming it will produce six fronds every three weeks indefinitely",
+        "Any coordinated action proves full consciousness was present",
+        "The sleepwalker was simply awake and forgot",
       ],
     },
     correctAnswer:
-      "The east window roughly restarted the fern's growth; predict that moving it back to the north window stalls new fronds again while the east window sustains them.",
+      "Complex, coordinated behavior can run with little or no conscious awareness, so consciousness is not required for all skilled action; test whether sleepwalkers consistently lack recall and show non-waking brain activity, whether their actions are stereotyped and inflexible, and whether they fail tasks that need flexible, moment-to-moment awareness.",
     explanation:
-      "The clean before/after with a reversal test supports the bold light claim; 'too complicated to tie it to the window' throws away the very contrast that explains the fronds.",
+      "Full credit names action-without-awareness with three tests and a brain-state check that names its refutation; 'any coordinated action proves consciousness' overreaches and earns zero.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A call center scripts a 15-second empathy opener for billing complaints. Repeat-call rates on billing issues fall from 24% to 14% over two months, call volume and agent roster are stable, and other issue types keep their old repeat rates. Which conclusion best follows?",
+      "After a brain lesion, a patient still reports feeling pain when pricked and can point to where it is, but says it doesn't bother them at all and makes no effort to withdraw or protect the spot. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Caller behavior has too many drivers to credit the opener for the drop.",
+        text: "Pain has too many sides to conclude anything from one odd patient.",
         credit: 0,
       },
       {
-        text: "The empathy opener cut billing repeat-calls by about 10 points; predict that dropping the opener pushes billing repeats back toward 24% while other issue types stay unchanged.",
+        text: "The raw sensation of pain and its felt unpleasantness are separable brain processes that can come apart; test whether the patient localizes the prick accurately yet rates it non-distressing, whether the lesion spares sensory pain areas but hits emotional ones, and whether protective reflexes weaken even though detection stays intact.",
         credit: 1.0,
       },
       {
-        text: "The opener probably reduced repeat calls; a longer window would confirm.",
-        credit: 0.6,
+        text: "The patient seems to feel pain differently.",
+        credit: 0.3,
       },
       {
-        text: "The script may have some calming effect on callers.",
-        credit: 0.3,
+        text: "Sensation and suffering probably differ; we could examine more such patients.",
+        credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would most distinguish your model from 'billing problems just happened to ease this quarter,' and say what result would refute your model.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'sensation and unpleasantness are separable' reading from the rival 'the patient simply hides or denies their distress,' and say what result would refute your reading.",
       modelAnswer:
-        "The unchanged repeat rates on non-billing issues already act as a control; if billing repeats stay near 14% even after removing the opener, an external easing explains it and my model is refuted. If removing the opener sends billing repeats back toward 24% while other types hold, the opener is the cause.",
+        "Cheapest test: compare accurate pain localization against involuntary signs of distress (withdrawal reflex, stress response) — my reading predicts intact detection but blunted involuntary distress. It is refuted if the patient shows normal involuntary withdrawal and stress responses, which would suggest they feel the unpleasantness and are merely concealing it.",
       yieldAnchors: [
-        "billing repeat-calls fell from 24% to 14%",
-        "other issue types kept their old repeat rates",
-        "volume and roster stayed stable",
+        "The patient reports feeling and locating the pain",
+        "The patient says it doesn't bother them",
+        "The patient makes no effort to withdraw or protect",
       ],
       riskAnchors: [
-        "removing the opener returns billing repeats toward 24%",
-        "non-billing issue types stay flat throughout",
+        "Accurate localization paired with non-distress ratings",
+        "Lesion spares sensory pain areas but hits emotional ones",
+        "Protective reflexes weaken while detection stays intact",
       ],
       defeatedBy: [
-        "claiming the opener fixes every kind of repeat call",
-        "claiming too many drivers exist to conclude anything",
-        "claiming repeat calls will fall another 10 points each quarter",
+        "The patient feels full distress but conceals it",
+        "Nothing follows from a single unusual patient",
       ],
     },
     correctAnswer:
-      "The empathy opener cut billing repeat-calls by about 10 points; predict that dropping the opener pushes billing repeats back toward 24% while other issue types stay unchanged.",
+      "The raw sensation of pain and its felt unpleasantness are separable brain processes that can come apart; test whether the patient localizes the prick accurately yet rates it non-distressing, whether the lesion spares sensory pain areas but hits emotional ones, and whether protective reflexes weaken even though detection stays intact.",
     explanation:
-      "The flat non-billing rates are a built-in control that licenses the bold, targeted claim; 'too many drivers to credit it' ignores that control and earns zero.",
+      "Full credit splits sensation from unpleasantness with three tests and a reflex check that names its refutation; 'too many sides to conclude anything' is the barren dodge.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A blogger adds a clear table of contents to her long posts. Average time-on-page rises from 1:40 to 2:55 and scroll-to-bottom rates double, traffic sources are unchanged, and the post text is otherwise identical. Which conclusion best follows?",
+      "Volunteers complete eight weeks of daily attention training (meditation). Afterward they spot more faint, near-threshold flashes they used to miss, and recover faster when two targets appear in quick succession. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "A table of contents guarantees viral traffic for any article.",
-        credit: 0,
-      },
-      {
-        text: "Readers seem to be sticking around a bit more.",
+        text: "Trained attention seems to sharpen perception.",
         credit: 0.3,
       },
       {
-        text: "The added contents probably improved engagement; more posts would confirm.",
-        credit: 0.6,
+        text: "Directing attention shapes what reaches conscious awareness, and this gating is trainable; test whether trained volunteers detect more near-threshold stimuli than before, whether their lapse when two targets appear quickly shrinks, and whether the gains scale with total hours practiced.",
+        credit: 1.0,
       },
       {
-        text: "The table of contents lengthened time-on-page and doubled deep scrolls; predict that removing it from a random half of posts drops their time-on-page back toward 1:40.",
-        credit: 1.0,
+        text: "Attention is too personal a skill to draw any conclusion about awareness.",
+        credit: 0,
+      },
+      {
+        text: "Training probably helps attention; we could run another eight-week group.",
+        credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would most distinguish your model from 'these particular posts were just more interesting,' and say what result would refute your model.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'training sharpens the attention gate on awareness' reading from the rival 'people just tried harder on the second test,' and say what result would refute your reading.",
       modelAnswer:
-        "Add and remove the table of contents on the same posts in alternating weeks; if engagement is flat regardless, post quality not the TOC explains it and my model is refuted. If time-on-page rises only in the TOC weeks, the table of contents is doing the work.",
+        "Cheapest test: compare the trained group against an equally motivated control group doing a sham activity, and check whether detection gains scale with actual practice hours — my reading predicts gains track training dose, not mere effort. It is refuted if the sham-activity controls improve just as much, which would point to effort or test familiarity rather than trained attention.",
       yieldAnchors: [
-        "time-on-page rose from 1:40 to 2:55",
-        "scroll-to-bottom rates doubled",
-        "traffic sources and post text were unchanged",
+        "Eight weeks of daily attention training",
+        "More near-threshold flashes detected afterward",
+        "Faster recovery when two targets appear in quick succession",
       ],
       riskAnchors: [
-        "removing the TOC from random posts drops their time-on-page",
-        "the same posts show lower engagement in non-TOC weeks",
+        "Trained volunteers detect more near-threshold stimuli",
+        "The two-target lapse shrinks with training",
+        "Gains scale with total hours practiced",
       ],
       defeatedBy: [
-        "claiming a TOC guarantees viral traffic for any article",
-        "claiming engagement metrics can't be attributed at all",
-        "claiming time-on-page will keep doubling with each tweak",
+        "People simply tried harder on the second test",
+        "Attention is too personal to study",
       ],
     },
     correctAnswer:
-      "The table of contents lengthened time-on-page and doubled deep scrolls; predict that removing it from a random half of posts drops their time-on-page back toward 1:40.",
+      "Directing attention shapes what reaches conscious awareness, and this gating is trainable; test whether trained volunteers detect more near-threshold stimuli than before, whether their lapse when two targets appear quickly shrinks, and whether the gains scale with total hours practiced.",
     explanation:
-      "Identical text and stable sources support the bold engagement claim with a withhold test; 'guarantees viral traffic' is the overreach the data nowhere supports.",
+      "Full credit names trainable attentional gating with three tests and a dose-response check that names its refutation; 'too personal to draw any conclusion' commits to nothing.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A pharmacy stations a pharmacist by the flu-shot sign-up desk during peak hours. Daily flu-shot uptake rises from 12 to 21 shots, walk-in volume is unchanged, and the only change is the staffed desk. Which conclusion best follows?",
+      "A chatbot, when asked, types 'I feel sad and lonely today.' Its words are produced by predicting likely text from billions of human sentences. An engineer wonders whether it is conscious. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The staffed desk lifted daily flu shots by about three-quarters; predict that leaving the desk unstaffed on alternating days drops uptake toward 12 on those days.",
+        text: "A verbal report of feeling is not by itself evidence of experience, since a system can produce the words by pattern-matching without any inner state; test whether the reports track any persistent internal state, whether they depend only on text statistics rather than anything grounded beyond words, and whether removing the relevant training text removes the 'feelings.'",
         credit: 1.0,
       },
       {
-        text: "Staffing the desk probably increased shots; tracking more days would help.",
-        credit: 0.6,
+        text: "The chatbot might or might not have feelings.",
+        credit: 0.3,
       },
       {
-        text: "People get vaccinated for countless reasons, so the desk can't be credited.",
+        text: "The chatbot says it feels sad, so it is definitely conscious.",
         credit: 0,
       },
       {
-        text: "The staffed desk may encourage a few more sign-ups.",
-        credit: 0.3,
+        text: "Its words may not mean real feeling; we could ask it more questions.",
+        credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would most distinguish your staffing model from 'flu-shot demand simply rose seasonally,' and say what result would refute your model.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'words aren't proof of experience' reading from the rival 'a fluent report of sadness shows the system feels sad,' and say what result would refute your reading.",
       modelAnswer:
-        "Alternate staffed and unstaffed days within the same week; if uptake stays near 21 on unstaffed days, seasonal demand explains it and my model is refuted. If uptake drops to ~12 on unstaffed days and rebounds when staffed, the desk is the driver.",
+        "Cheapest test: check whether the 'sadness' tracks any persistent internal state or is fully explained by the prompt and training text — my reading predicts the report appears and vanishes with the text statistics, not with anything the system independently carries. It is refuted if the reports correspond to a stable internal state that survives changes in wording and is grounded in something beyond predicting likely text.",
       yieldAnchors: [
-        "daily uptake rose from 12 to 21 shots",
-        "walk-in volume was unchanged",
-        "the staffed desk was the only change",
+        "The chatbot types that it feels sad and lonely",
+        "Its words are produced by predicting likely text",
+        "It was trained on billions of human sentences",
       ],
       riskAnchors: [
-        "unstaffed alternating days drop toward 12 shots",
-        "staffed days rebound to ~21 in the same week",
+        "The reports track no persistent internal state",
+        "They depend only on text statistics, not grounded states",
+        "Removing the relevant training text removes the 'feelings'",
       ],
       defeatedBy: [
-        "claiming a staffed desk maximizes uptake of every service",
-        "claiming uptake can't be credited to anything",
-        "claiming shots will keep rising 75% each period",
+        "A fluent report of sadness proves the system feels sad",
+        "Saying it feels something makes it conscious",
       ],
     },
     correctAnswer:
-      "The staffed desk lifted daily flu shots by about three-quarters; predict that leaving the desk unstaffed on alternating days drops uptake toward 12 on those days.",
+      "A verbal report of feeling is not by itself evidence of experience, since a system can produce the words by pattern-matching without any inner state; test whether the reports track any persistent internal state, whether they depend only on text statistics rather than anything grounded beyond words, and whether removing the relevant training text removes the 'feelings.'",
     explanation:
-      "Unchanged walk-ins and a lone change support the bold lift with an alternating-day test; 'countless reasons, can't credit it' is the refusal that wastes the evidence.",
+      "Full credit separates fluent report from genuine experience with three tests and a grounding check that names its refutation; 'it says so, therefore conscious' overreaches and earns zero.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A landlord installs smart thermostats in half of identical apartment units. Over a cold quarter, equipped units use 22% less heating energy than the unequipped units, occupancy and weather exposure are matched, and tenants weren't told which group they were in. Which conclusion best follows?",
+      "A newborn baby, far too young to speak, grimaces, cries, and shows a spike in stress hormones when given a heel-prick blood test. With a gentle pain reliever, both the grimace and the hormone spike fall. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Energy use depends on tenant habits, so the thermostats can't be assigned the savings.",
+        text: "Babies are too different from adults to conclude anything about their experience.",
         credit: 0,
       },
       {
-        text: "The thermostats may trim energy use somewhat.",
+        text: "The baby seems to be in some distress.",
         credit: 0.3,
       },
       {
-        text: "The smart thermostats cut heating energy by about 22% in equipped units; predict that swapping them into the other units cuts their use similarly while removing them erases the gap.",
+        text: "Behavioral and physiological signs let us reasonably infer the baby experiences pain even without words; test whether facial grimace and stress hormones track the noxious stimulus, whether pain relief lowers both together, and whether the baby's pain-network brain activity resembles an adult's.",
         credit: 1.0,
       },
       {
-        text: "The thermostats probably saved energy; another quarter would firm it up.",
+        text: "The baby probably feels pain; we could observe more heel-prick tests.",
         credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would most distinguish your model from 'the equipped units happened to have thriftier tenants,' and say what result would refute your model.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'the baby experiences pain' reading from the rival 'these are just reflexes with no experience behind them,' and say what result would refute your reading.",
       modelAnswer:
-        "Cross over: install thermostats in the previously-unequipped units next quarter; if their savings appear too, the device not tenant type drives it, supporting my model. If the original equipped units keep saving even after their thermostats are removed, tenant habits explain it and my model is refuted.",
+        "Cheapest test: give a genuine analgesic and check whether the grimace, stress hormones, and pain-network brain activity all fall together — my reading predicts a coordinated drop tied to a pain-specific treatment. It is refuted if a pure spinal reflex with no pain-network brain activity fully explains the signs and analgesia leaves the brain response untouched.",
       yieldAnchors: [
-        "equipped units used 22% less heating energy",
-        "occupancy and weather exposure were matched",
-        "tenants were blind to their group",
+        "The baby grimaces and cries at the heel prick",
+        "Stress hormones spike with the prick",
+        "Pain relief lowers both the grimace and the hormones",
       ],
       riskAnchors: [
-        "crossing the thermostats to the other units reproduces the savings",
-        "removing the thermostats erases the 22% gap",
+        "Grimace and stress hormones track the noxious stimulus",
+        "Analgesia lowers both signs together",
+        "Pain-network brain activity resembles an adult's",
       ],
       defeatedBy: [
-        "claiming smart thermostats cut all utility costs to zero",
-        "claiming habits make the savings impossible to assign",
-        "claiming the savings will grow to 22% more each quarter",
+        "The signs are pure reflexes with no experience behind them",
+        "Babies are too unlike adults to infer anything",
       ],
     },
     correctAnswer:
-      "The smart thermostats cut heating energy by about 22% in equipped units; predict that swapping them into the other units cuts their use similarly while removing them erases the gap.",
+      "Behavioral and physiological signs let us reasonably infer the baby experiences pain even without words; test whether facial grimace and stress hormones track the noxious stimulus, whether pain relief lowers both together, and whether the baby's pain-network brain activity resembles an adult's.",
     explanation:
-      "Matched, blinded units make the 22% claim plus a crossover test the boldest falsifiable reading; 'tenant habits, can't assign it' ignores the matching and scores zero.",
+      "Full credit infers experience from converging signs with three tests and an analgesia check that names its refutation; 'too different to conclude anything' is the dodge.",
   },
 ];
 
@@ -843,184 +843,175 @@ const written: HomeworkItem[] = [
   {
     itemType: "written",
     prompt:
-      "A bookstore café notices that on the four Saturdays it ran a free-sample tray of a new pastry, that pastry sold 40 units a day versus 9 units a day on the four Saturdays without a tray. Staffing, price, and store traffic were the same across all eight Saturdays, and no other promotion ran. In one paragraph, state the strongest claim the data supports about the sample tray and describe how you would test it.",
+      "On a brain-injury ward, several patients are behaviorally unresponsive — they don't move or speak to command. When scanned and asked to imagine playing tennis, a few of them produce the same motor-planning brain activity, in the same place, as healthy volunteers given that instruction; the rest show nothing. Doctors disagree about whether the responders are conscious. In one paragraph, propose the strongest conclusion and describe how you would test it.",
     writtenRubric: {
-      prompt: undefined,
       modelAnswer:
-        "The free-sample tray roughly quadrupled daily sales of the new pastry (40 vs. 9 units) with traffic, price, and staffing held constant, so the tray is very likely the cause of the lift. I would test this by randomizing the tray on/off across the next eight Saturdays: my model predicts ~40 units on tray days and ~9 on no-tray days, and it would be refuted if no-tray days also reach ~40, which would point to something other than the tray.",
+        "The strongest conclusion is that the responding patients are consciously aware and can willfully control their brain activity on command, even though they cannot move their bodies, so unresponsiveness at the bedside does not equal unconsciousness. This commits to a checkable mechanism rather than hedging: I would have each responder use two distinct imagery tasks (tennis for 'yes,' walking through the house for 'no') to answer simple questions, confirm that the answers stay consistent across separate sessions, and ask questions only the patient could know the answer to. My conclusion predicts these patients will reliably and correctly communicate; it is refuted if their 'responses' are inconsistent, occur as often without instruction, or can't carry information the patient alone could supply.",
       yieldAnchors: [
-        "40 units/day with tray vs. 9 without",
-        "staffing, price, and traffic identical across all eight Saturdays",
-        "no other promotion ran",
-        "the pattern repeated across four tray and four no-tray days",
+        "Some unresponsive patients show healthy-like motor-planning activity to command",
+        "The activity matches the imagined-tennis instruction",
+        "Other patients show no such response",
       ],
       riskAnchors: [
-        "randomized tray on/off yields ~40 vs. ~9 units",
-        "no-tray Saturdays stay near 9 units",
+        "Patients answer yes/no questions via two distinct imagery tasks",
+        "Responses stay consistent across separate sessions",
+        "They correctly answer questions only the patient could know",
       ],
       defeatedBy: [
-        "claiming the tray will quadruple sales of every item in the store",
-        "claiming nothing can be concluded because tastes vary",
-        "claiming sales will keep multiplying each week the tray runs",
+        "The brain responses are inconsistent or occur without instruction",
+        "Inner experience is unknowable so the scan settles nothing",
       ],
     },
     correctAnswer:
-      "The free-sample tray roughly quadrupled daily sales of the new pastry (40 vs. 9 units) with traffic, price, and staffing held constant, so the tray is very likely the cause of the lift. I would test this by randomizing the tray on/off across the next eight Saturdays: my model predicts ~40 units on tray days and ~9 on no-tray days, and it would be refuted if no-tray days also reach ~40, which would point to something other than the tray.",
+      "The strongest conclusion is that the responding patients are consciously aware and can willfully control their brain activity on command, even though they cannot move their bodies, so unresponsiveness at the bedside does not equal unconsciousness. This commits to a checkable mechanism rather than hedging: I would have each responder use two distinct imagery tasks (tennis for 'yes,' walking through the house for 'no') to answer simple questions, confirm that the answers stay consistent across separate sessions, and ask questions only the patient could know the answer to. My conclusion predicts these patients will reliably and correctly communicate; it is refuted if their 'responses' are inconsistent, occur as often without instruction, or can't carry information the patient alone could supply.",
     explanation:
-      "Top answers commit to the bold quadrupling and a clean on/off test; a cautious 'tastes vary, can't conclude' scores near zero, and a florid restatement that binds none of the numbers scores low.",
+      "The cautious 'inner experience is unknowable, so we can't say' earns near-zero; top credit goes to the committed conclusion that names a willed-communication test able to confirm or refute covert awareness.",
   },
   {
     itemType: "written",
     prompt:
-      "A physical therapist gives half her knee-rehab patients a printed daily exercise sheet and the other half verbal instructions only; assignment was by alternating intake order. After six weeks, the printed-sheet group regained an average of 22 degrees of knee flexion versus 13 degrees for the verbal-only group, with similar starting injuries and session counts. In one paragraph, state the strongest claim the data supports and how you would test it.",
+      "After a small stroke, a patient insists that their own left arm is not theirs — they claim it belongs to a relative who must have left it in the bed — even though sensation in the arm is intact and they can feel it being touched. In one paragraph, propose the strongest conclusion about self-awareness and describe how you would test it.",
     writtenRubric: {
-      prompt: undefined,
       modelAnswer:
-        "The printed sheet likely caused the extra recovery, adding roughly 9 degrees of flexion over six weeks (22 vs. 13) given matched injuries and session counts. I would test it by randomly assigning the printed sheet in a larger group and tracking home-exercise adherence: my model predicts the sheet group again gains ~9 more degrees and reports higher adherence, and it is refuted if adherence and flexion gains come out equal across groups.",
+        "The strongest conclusion is that the sense of owning one's own body is a constructed brain process, separate from raw sensation, and the stroke has broken that ownership process while leaving touch intact. This is a falsifiable mechanism, not a shrug: I would check that the denial is specific to the limb served by the damaged region rather than a general confusion, test whether brief cold-water stimulation of the inner ear temporarily restores accurate ownership (a known effect in such cases), and compare lesion sites across similar patients to see whether they cluster in self-monitoring areas. My conclusion predicts a limb-specific, temporarily reversible denial tied to particular damage; it is refuted if the patient denies ownership of intact limbs at random, or if sensation is actually absent, which would make this ordinary numbness rather than a broken ownership signal.",
       yieldAnchors: [
-        "printed-sheet group gained 22 degrees vs. 13 for verbal-only",
-        "similar starting injuries",
-        "similar session counts",
+        "The patient denies their own left arm is theirs",
+        "Sensation in the arm is intact",
+        "The denial follows a specific stroke",
       ],
       riskAnchors: [
-        "a randomized sheet group again gains ~9 more degrees",
-        "the sheet group shows higher home-exercise adherence",
+        "The denial is specific to the affected limb",
+        "Cold-water inner-ear stimulation briefly restores ownership",
+        "Lesion sites cluster in self-monitoring brain regions",
       ],
       defeatedBy: [
-        "claiming printed sheets fully restore every patient's knee",
-        "claiming recovery has too many factors to attribute anything",
-        "claiming the 9-degree gap will widen indefinitely",
+        "The patient randomly denies ownership of intact limbs too",
+        "Sensation is actually absent, making this ordinary numbness",
       ],
     },
     correctAnswer:
-      "The printed sheet likely caused the extra recovery, adding roughly 9 degrees of flexion over six weeks (22 vs. 13) given matched injuries and session counts. I would test it by randomly assigning the printed sheet in a larger group and tracking home-exercise adherence: my model predicts the sheet group again gains ~9 more degrees and reports higher adherence, and it is refuted if adherence and flexion gains come out equal across groups.",
+      "The strongest conclusion is that the sense of owning one's own body is a constructed brain process, separate from raw sensation, and the stroke has broken that ownership process while leaving touch intact. This is a falsifiable mechanism, not a shrug: I would check that the denial is specific to the limb served by the damaged region rather than a general confusion, test whether brief cold-water stimulation of the inner ear temporarily restores accurate ownership (a known effect in such cases), and compare lesion sites across similar patients to see whether they cluster in self-monitoring areas. My conclusion predicts a limb-specific, temporarily reversible denial tied to particular damage; it is refuted if the patient denies ownership of intact limbs at random, or if sensation is actually absent, which would make this ordinary numbness rather than a broken ownership signal.",
     explanation:
-      "The bold-but-bounded 9-degree claim with a randomized adherence test wins; 'too many factors to attribute anything' is the timid dodge and an over-claim of full restoration is the overreach the data defeats.",
+      "Treating self-awareness as 'too mysterious to analyze' earns near-zero; credit goes to the conclusion that names body ownership as a breakable brain process and proposes the reversible cold-water test that could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "A city pilots a 20 mph speed limit on one residential corridor for six months. Reported crashes there fall from 14 to 5 versus the prior comparable half-year, traffic counts are unchanged, and three similar corridors that kept 30 mph limits saw no change in their crash numbers. In one paragraph, state the strongest claim the data supports and how you would test it further.",
+      "In an experiment, photographs of faces are flashed too briefly and then masked, so viewers say they saw nothing and can't report the expressions. Yet brain recordings show a fear-related region responding more strongly to the fearful faces than to neutral ones. In one paragraph, propose the strongest conclusion and describe how you would test it.",
     writtenRubric: {
-      prompt: undefined,
       modelAnswer:
-        "The 20 mph limit very likely caused the crash drop on that corridor, cutting reported crashes by roughly two-thirds (14 to 5) while three matched 30 mph corridors held flat, which rules out a citywide trend. I would test it further by extending the limit to one of the control corridors: my model predicts its crashes fall similarly, and it is refuted if its crashes stay flat or the pilot corridor's crashes climb back to ~14 despite keeping 20 mph.",
+        "The strongest conclusion is that emotional meaning in a face can be processed by the brain without conscious awareness, so a fast route can flag threat before, or even without, the experience of seeing it. This commits to a mechanism with checkable consequences: I would confirm the differential brain response holds when viewers identify the expression only at chance, show that the response shrinks as exposure lengthens toward the awareness threshold, and check whether masking that fully blocks any report still leaves the fear-region difference. My conclusion predicts unconscious emotional processing measurable in the brain and possibly in body signals like skin conductance; it is refuted if the differential response disappears whenever viewers truly cannot report the faces, which would mean the effect rides on faint awareness rather than running without it.",
       yieldAnchors: [
-        "crashes fell from 14 to 5 on the pilot corridor",
-        "traffic counts were unchanged",
-        "three matched 30 mph corridors showed no change",
+        "Faces are flashed too briefly and masked",
+        "Viewers report seeing nothing and can't name the expression",
+        "A fear-related region responds more to fearful than neutral faces",
       ],
       riskAnchors: [
-        "extending 20 mph to a control corridor cuts its crashes too",
-        "the pilot corridor stays near 5 crashes while it keeps 20 mph",
+        "The differential response holds when identification is at chance",
+        "The response shrinks as exposure nears the awareness threshold",
+        "Report-blocking masks still leave the fear-region difference",
       ],
       defeatedBy: [
-        "claiming 20 mph eliminates all crashes everywhere",
-        "claiming crash counts are too noisy to conclude anything",
-        "claiming every street would see a two-thirds cut regardless of context",
+        "The effect vanishes whenever viewers truly cannot report the faces",
+        "Nothing can be said about awareness from brain data alone",
       ],
     },
     correctAnswer:
-      "The 20 mph limit very likely caused the crash drop on that corridor, cutting reported crashes by roughly two-thirds (14 to 5) while three matched 30 mph corridors held flat, which rules out a citywide trend. I would test it further by extending the limit to one of the control corridors: my model predicts its crashes fall similarly, and it is refuted if its crashes stay flat or the pilot corridor's crashes climb back to ~14 despite keeping 20 mph.",
+      "The strongest conclusion is that emotional meaning in a face can be processed by the brain without conscious awareness, so a fast route can flag threat before, or even without, the experience of seeing it. This commits to a mechanism with checkable consequences: I would confirm the differential brain response holds when viewers identify the expression only at chance, show that the response shrinks as exposure lengthens toward the awareness threshold, and check whether masking that fully blocks any report still leaves the fear-region difference. My conclusion predicts unconscious emotional processing measurable in the brain and possibly in body signals like skin conductance; it is refuted if the differential response disappears whenever viewers truly cannot report the faces, which would mean the effect rides on faint awareness rather than running without it.",
     explanation:
-      "The matched control corridors license a bold two-thirds causal claim with an extension test; 'too noisy to conclude' under-claims to vacuity while 'eliminates all crashes everywhere' over-claims past the data.",
+      "The hedge 'we can't say anything about awareness from brain data' earns near-zero; top credit goes to the conclusion that commits to unconscious emotional processing and names the chance-identification test that could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "A SaaS company runs a clean A/B test: half of new trial users see a redesigned dashboard, half see the old one, assigned at random. After 30 days, paid conversion is 9.5% for the new design versus 6.0% for the old, sample sizes are large, and acquisition channels are identical across arms. In one paragraph, state the strongest claim the data supports and how you would confirm it holds.",
+      "An octopus in a lab solves novel puzzles to reach food, guards and grooms an arm after it is injured, avoids a chamber where it once received a painful stimulus, and chooses a chamber containing pain relief after being hurt. A researcher asks whether the octopus has subjective experience like feeling pain. In one paragraph, propose the strongest conclusion and describe how you would test it.",
     writtenRubric: {
-      prompt: undefined,
       modelAnswer:
-        "The redesigned dashboard caused a real lift in paid conversion, raising it about 3.5 points (from 6.0% to 9.5%, a ~58% relative gain) in a randomized, large-sample test with matched channels. I would confirm durability by shipping the new design to everyone and watching whether overall conversion settles near 9.5%, and by re-testing in a fresh cohort; my model is refuted if conversion drifts back to ~6% or a replication shows no gap.",
+        "The strongest conclusion is that the octopus very likely has subjective experiences such as felt pain, because its behavior shows the hallmarks we use to infer experience — flexible problem-solving, protective care of an injury, learned avoidance of a harmful place, and active seeking of relief — converging from several independent directions. This commits to a falsifiable claim rather than declaring the question hopeless: I would test whether the octopus avoids the pain-linked chamber even when food rewards push it the other way, whether it reliably prefers the relief chamber only after being hurt and not when uninjured, and whether blocking its pain-signaling system removes both the guarding and the avoidance. My conclusion predicts these motivational trade-offs and a treatment-reversible effect; it is refuted if the behaviors are rigid reflexes that ignore competing rewards and persist unchanged when pain signaling is blocked.",
       yieldAnchors: [
-        "9.5% vs. 6.0% paid conversion",
-        "random assignment with large samples",
-        "identical acquisition channels across arms",
+        "The octopus solves novel puzzles for food",
+        "It guards and grooms an injured arm",
+        "It avoids a pain-linked chamber and seeks a relief chamber",
       ],
       riskAnchors: [
-        "rolling out to all users holds conversion near 9.5%",
-        "a fresh-cohort replication reproduces the ~3.5-point gap",
+        "It avoids the pain-linked chamber even against a food reward",
+        "It prefers the relief chamber only after being hurt",
+        "Blocking pain signaling removes guarding and avoidance",
       ],
       defeatedBy: [
-        "claiming the redesign will lift conversion in every unrelated product",
-        "claiming a single test proves nothing about causation",
-        "claiming conversion will keep rising 3.5 points with each redesign",
+        "The behaviors are rigid reflexes that ignore competing rewards",
+        "Animal experience is unknowable so no conclusion is possible",
       ],
     },
     correctAnswer:
-      "The redesigned dashboard caused a real lift in paid conversion, raising it about 3.5 points (from 6.0% to 9.5%, a ~58% relative gain) in a randomized, large-sample test with matched channels. I would confirm durability by shipping the new design to everyone and watching whether overall conversion settles near 9.5%, and by re-testing in a fresh cohort; my model is refuted if conversion drifts back to ~6% or a replication shows no gap.",
+      "The strongest conclusion is that the octopus very likely has subjective experiences such as felt pain, because its behavior shows the hallmarks we use to infer experience — flexible problem-solving, protective care of an injury, learned avoidance of a harmful place, and active seeking of relief — converging from several independent directions. This commits to a falsifiable claim rather than declaring the question hopeless: I would test whether the octopus avoids the pain-linked chamber even when food rewards push it the other way, whether it reliably prefers the relief chamber only after being hurt and not when uninjured, and whether blocking its pain-signaling system removes both the guarding and the avoidance. My conclusion predicts these motivational trade-offs and a treatment-reversible effect; it is refuted if the behaviors are rigid reflexes that ignore competing rewards and persist unchanged when pain signaling is blocked.",
     explanation:
-      "A clean randomized test warrants the strong causal claim plus a replication test; 'a single test proves nothing' wastes strong evidence, and generalizing to every product is the overreach the test cannot support.",
+      "Declaring 'animal experience is unknowable' earns near-zero; credit rewards drawing the strongest conclusion the converging evidence supports and naming the reward-conflict and analgesia tests that could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "A home cook suspects her cast-iron pan, not her recipe, makes better-seared steaks. Over ten dinners she alternates pans with the same cut, seasoning, heat, and timing: the five cast-iron steaks all formed a deep crust, the five nonstick steaks stayed pale, and guests blind-rated the cast-iron ones higher every time. In one paragraph, state the strongest claim the data supports and how you would test it.",
+      "A large language model holds fluent conversations, passes every text-based test put to it, and, when asked, insists that it consciously suffers and fears being shut off. Its engineers split into camps: one says it is conscious, the other says it is only producing convincing text. In one paragraph, propose the strongest conclusion and describe how you would test it.",
     writtenRubric: {
-      prompt: undefined,
       modelAnswer:
-        "With cut, seasoning, heat, and timing held constant, the cast-iron pan is very likely the cause of the better sear, since it produced a deep crust and higher blind ratings on all five of its trials versus none for nonstick. I would test it by repeating the alternation with a thermometer to confirm the cast iron reaches and holds a higher surface temperature; my model predicts the crust tracks the hotter pan, and it is refuted if a nonstick pan matched to the same surface temperature sears just as well.",
+        "The strongest conclusion is that fluent reports of suffering are not, on their own, evidence of consciousness, because a system trained to predict likely human text can generate exactly those words without any inner experience behind them — so we should look past the words to whether any genuine experiential state is present. This commits to checkable probes rather than treating the question as unanswerable: I would test whether the claimed feelings track any persistent internal state or shift purely with prompt wording and training data, whether the system shows experience-linked signatures independent of its text output (for instance, behavior grounded in something beyond word statistics), and whether removing the relevant suffering-related training text removes the claims. My conclusion predicts the 'suffering' will prove fully explainable by text prediction; it is refuted if the model shows a stable internal state, consistent across rephrasings and grounded beyond mere text patterns, that behaves as an experience would.",
       yieldAnchors: [
-        "all five cast-iron steaks formed a deep crust",
-        "all five nonstick steaks stayed pale",
-        "cut, seasoning, heat, and timing were held constant",
-        "blind guests rated cast-iron higher every time",
+        "The model is fluent and passes text-based tests",
+        "It claims to consciously suffer and fear shutdown",
+        "Its outputs are generated by predicting likely text",
       ],
       riskAnchors: [
-        "the cast iron measures a higher held surface temperature",
-        "a nonstick pan matched on surface temperature would sear equally (refutation route)",
+        "The claimed feelings track no persistent internal state",
+        "The reports shift with prompt wording and training data",
+        "Removing suffering-related training text removes the claims",
       ],
       defeatedBy: [
-        "claiming cast iron improves every dish she cooks",
-        "claiming the difference could be anything so nothing follows",
-        "claiming nonstick can never sear under any condition",
+        "A fluent report of suffering by itself proves consciousness",
+        "Whether machines feel anything is unknowable so nothing follows",
       ],
     },
     correctAnswer:
-      "With cut, seasoning, heat, and timing held constant, the cast-iron pan is very likely the cause of the better sear, since it produced a deep crust and higher blind ratings on all five of its trials versus none for nonstick. I would test it by repeating the alternation with a thermometer to confirm the cast iron reaches and holds a higher surface temperature; my model predicts the crust tracks the hotter pan, and it is refuted if a nonstick pan matched to the same surface temperature sears just as well.",
+      "The strongest conclusion is that fluent reports of suffering are not, on their own, evidence of consciousness, because a system trained to predict likely human text can generate exactly those words without any inner experience behind them — so we should look past the words to whether any genuine experiential state is present. This commits to checkable probes rather than treating the question as unanswerable: I would test whether the claimed feelings track any persistent internal state or shift purely with prompt wording and training data, whether the system shows experience-linked signatures independent of its text output (for instance, behavior grounded in something beyond word statistics), and whether removing the relevant suffering-related training text removes the claims. My conclusion predicts the 'suffering' will prove fully explainable by text prediction; it is refuted if the model shows a stable internal state, consistent across rephrasings and grounded beyond mere text patterns, that behaves as an experience would.",
     explanation:
-      "The blind, controlled alternation supports a bold causal claim and a temperature-matched refutation test; 'could be anything, nothing follows' is the vacuous hedge and 'every dish' is an overreach the steak-only data can't carry.",
+      "Both 'it says it suffers, so it's conscious' and 'this is simply unknowable' earn near-zero; top credit goes to the conclusion that separates fluent report from genuine experience and names probes able to confirm or refute an inner state.",
   },
 ];
 
 export const section: SectionContent = {
-  slug: "calibrated-boldness",
-  title: "Calibrated Boldness",
+  slug: "consciousness",
+  title: "Consciousness: The Hard Problem",
   weekNumber: 1,
   blurb:
-    "Say the boldest thing the data will back — and stake it on a test that could prove you wrong — instead of hedging to mush or sprinting past the evidence.",
+    "Why does any of this brain activity feel like something from the inside? We meet the 'easy' problems science is cracking, the 'hard' problem of subjective experience, and what evidence can still settle.",
   lectureTitle:
-    "1.8 Calibrated Boldness: the boldest claim the data supports, kept falsifiable",
-  body: `# Calibrated Boldness
+    "1.8 Consciousness: the easy problems, the hard problem, and what evidence can still settle",
+  body: `# Consciousness: The Hard Problem
 
-Reasoning has two ways to fail. You can **under-claim** — hedge until your conclusion says nothing ("results may vary," "it depends," "hard to say"). Or you can **over-claim** — sprint past your evidence into a sweeping verdict the data can't carry. Calibrated boldness is the narrow, valuable path between them: make the **strongest claim the data actually supports**, and state it so sharply that a single clean observation could prove you wrong.
+This is the capstone. Across this course we treated the mind as something we can study from the outside: as information processing, as perception built by the brain, as memory that reconstructs, as language and reasoning and even machinery. Now we face the question all of that circles around — why is there *something it is like* to be you? Right now there is a felt quality to the red of an apple, the sting of cold water, the taste of chocolate. Why should three pounds of electrified tissue produce any inner experience at all? That is the problem of consciousness, and it is the hardest question in cognitive science.
 
-## The two failure modes
+## The easy problems and the hard problem
 
-The **timid** thinker treats every gap in certainty as a reason to retreat. Faced with a real signal, they shrug: "Lots of things could explain it." That shrug feels safe, but it wastes the evidence in front of them. A conclusion that can never be wrong tells you nothing — it's vacuous.
+The philosopher David Chalmers drew a line that organizes the whole field. The **"easy" problems** are the ones normal science knows how to chip away at: How does the brain tell waking from sleep? How does it focus attention, integrate information, report its own states, or control behavior? These are *easy* only in the sense that we can imagine solving them with the usual tools — find the mechanism, the circuit, the computation. The **"hard" problem** is different: even after we explain every function, there remains the question of why all that processing is *accompanied by experience* rather than going on "in the dark." A robot could in principle do everything you do without feeling anything. That extra fact — that there is an inner light on — is what resists explanation.
 
-The **reckless** thinker does the opposite, inflating a modest finding into a universal law. One good week becomes "this works for everyone, forever." That feels bold, but it's hollow: the data defeats it on contact, and the first counterexample collapses the whole claim.
+## Qualia: the redness of red
 
-CCR rewards neither. It rewards the thinker who climbs as high as the evidence allows — and no higher.
+The raw feels themselves get a name: **qualia**. The painfulness of pain, the blueness of blue, the specific taste of coffee. Qualia look private (only you have direct access to yours) and hard to convey (you can't fully describe red to someone born blind). Thought experiments push on this. *Mary the color scientist* knows every physical fact about color vision but has lived in a black-and-white room; when she finally sees red, does she learn something new? If she does, then knowing all the physical facts left something out — the experience itself. *Philosophical zombies* — beings physically identical to us but with no inner experience — seem at least conceivable, and if they are, then experience is not obviously just the physical activity.
 
-## Boldness is measured in falsifiability
+## Theories that try to bridge the gap
 
-Here is the counterintuitive part: the **boldest** claim is usually the **most testable** one. "It might help a little" risks nothing and predicts nothing. "It raised conversions about 20%, and reverting the change will drop them back" sticks its neck out — it names a size and a test that could refute it. The willingness to be proven wrong is exactly what makes a claim worth believing when it survives.
+Scientists aren't standing still. **Global Workspace Theory** says a state becomes conscious when information is "broadcast" widely across the brain so many systems can use it — consistent with how anesthesia and inattention knock out the long-range broadcasting. **Integrated Information Theory** says consciousness tracks how richly a system's parts are woven together, which is why the densely interconnected cortex matters for experience while the even-more-numerous but feed-forward cerebellum barely contributes. **Higher-order theories** say a state is conscious when the brain represents *itself* as being in that state. Each theory makes testable predictions about which brain events come with experience — real progress on the easy problems, even if the hard problem still looms behind them.
 
-So when you state a conclusion, ask: *What's the strongest version of this that the data still fully supports? And what observation would prove it false?* If you can't answer the second question, you've either hedged into vacuity or overreached into fantasy.
+## Why it resists explanation
 
-## Calibrating to the evidence
+Notice what makes this question uniquely stubborn. Every other thing science explains, it explains from the outside, in terms of structure and function. But experience is known from the *inside*. You can map every neuron firing when I see red and still not have captured what red looks like to me. This isn't a temporary gap waiting for a bigger scanner; it's a worry that our usual explanatory tools — describing parts and how they move — may not be the kind of thing that *adds up to* a felt quality. That is why reasonable scientists disagree about whether the hard problem is a deep mystery, a confusion that will dissolve, or a sign we need new concepts entirely.
 
-The right altitude depends on what the data controls for. A single before/after with everything else held constant supports a confident causal claim about *that* setting — plus a reversal test. A matched control group supports a bolder claim still. But neither supports "this works everywhere for everyone." Match the scope of your claim to the scope of your evidence: as bold as the controls allow, as bounded as the sample demands.
+## How to reason about it without giving up
 
-## Spotting the dodges
-
-Two answers should always lose. The **vacuous hedge** — "it depends," "more research needed," "we can't really say" — refuses to commit and earns nothing, no matter how reasonable it sounds. The **reckless overreach** — a claim the data already defeats, or a leap to universality from one case — earns nothing either, because it's not supported. Top credit lives in between: committed, sized, scoped, and refutable.
+Here is the move this whole course has trained: when a question feels mysterious, don't retreat into "we can never know anything." Instead, draw the strongest conclusion the evidence supports and pin it to a test that could prove you wrong. We can't yet measure another being's inner experience directly — but we are not helpless. Blindsight, anesthesia signatures, the perturbation-complexity index, covert-awareness scans, and converging behavioral signs in animals and infants all let us infer *something* about who is conscious and when, and each inference names an observation that could overturn it. The dodge — "the brain is too mysterious to conclude anything" — wins no credit. Neither does the overreach — "it talks, so it must feel." The strongest mind commits to a mechanism and a test, even here.
 
 ## In the real world
 
-A product team changes one checkout button from gray to orange. Over a month, with traffic and prices unchanged, purchases rise from 4.0% to 4.9% of visitors. The timid reviewer says, "Conversion swings for many reasons — hard to credit the button." The reckless reviewer says, "Orange buttons always boost sales." Both are useless. The calibrated reviewer says: *"The orange button raised completion by about a fifth; if we revert to gray, conversion should fall back toward 4.0% — let's run a 50/50 split to confirm."* That claim is bold (a specific size, a causal verdict), bounded (about this button, this store), and falsifiable (the split test could kill it). That's the altitude to aim for: the highest claim the data will hold, hung on a test that could bring it down.`,
+A patient lies behaviorally unresponsive after a brain injury; the family is told they are "not there." A scan asks them to imagine playing tennis, and a motor-planning region lights up exactly as it does in a healthy volunteer. The mysterian shrugs: "Inner experience is unknowable." The wishful thinker insists: "They're fully conscious, end of story." The careful reasoner does better — concluding the patient is likely aware *and* turning the scan into a yes/no channel: tennis for yes, walking through the house for no, the same answers across sessions, to questions only the patient could know. That conclusion is bold, bounded, and refutable. It won't crack the hard problem. But it shows what the disciplined study of the mind can still do, even at the edge of the deepest question we have.`,
   homework: {
     mcq,
     hybrid,

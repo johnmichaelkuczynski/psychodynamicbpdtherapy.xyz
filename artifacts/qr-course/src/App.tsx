@@ -235,13 +235,13 @@ function ClerkProviderWithRoutes() {
         signIn: {
           start: {
             title: "Welcome back",
-            subtitle: "Sign in to continue your Constructive Critical Reasoning course",
+            subtitle: "Sign in to continue your Cognitive Science 101 course",
           },
         },
         signUp: {
           start: {
             title: "Create your account",
-            subtitle: "Start building your constructive critical reasoning",
+            subtitle: "Start your Cognitive Science 101 course",
           },
         },
       }}

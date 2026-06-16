@@ -27,7 +27,7 @@ const BLURBS: Record<Phase, string> = {
 };
 
 function instrumentLabel(_instrument: string): string {
-  return "Constructive Critical Reasoning";
+  return "Scientific Reasoning";
 }
 
 function Row({ a }: { a: ReasoningAssessmentSummary }) {

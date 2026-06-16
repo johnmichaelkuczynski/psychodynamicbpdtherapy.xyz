@@ -1,8 +1,8 @@
 // ---------------------------------------------------------------------------
-// Original content for the embedded Constructive Critical Reasoning (CCR)
-// diagnostic assessment (instrument = "ccr").
+// Original content for the embedded scientific-reasoning diagnostic assessment
+// (internal instrument key = "ccr", shown to students as "Scientific Reasoning").
 //
-// CCR is the discipline of drawing the STRONGEST conclusion the AVAILABLE
+// This instrument measures drawing the STRONGEST conclusion the AVAILABLE
 // EVIDENCE actually warrants. The best answer commits to the conclusion the
 // given evidence supports and/or names a cheap decisive test; the failure modes
 // are a reckless overreach the evidence defeats and a passive give-up. Every
@@ -17,20 +17,20 @@
 // refusal appears as a distractor ONLY where the scenario truly has enough
 // evidence to decide. Options are rotated at seed/generation time.
 //
-// Items are spread across the eight CCR sub-skills:
-//   fecund leads, explanatory yield, evidence-supported parsimony,
-//   abductive commitment, correlation->mechanism, anomaly clusters,
-//   cheap decisive tests, calibrated boldness.
+// Items are spread across eight reasoning sub-skills:
+//   pursuing a promising lead, explanatory yield, evidence-supported parsimony,
+//   committing to the best-supported explanation, correlation->mechanism,
+//   anomaly clusters, cheap decisive tests, calibrated boldness.
 //
 // All content is ORIGINAL and scenario-based.
 // ---------------------------------------------------------------------------
 
 import type { McqItem, OpenItem } from "./diagnosticContent";
 
-// The eight CCR sub-skills, used to spread freshly generated diagnostic items
-// across the discipline (one item per sub-skill, cycled as needed).
+// The eight reasoning sub-skills, used to spread freshly generated diagnostic
+// items across the discipline (one item per sub-skill, cycled as needed).
 export const CCR_SUBSKILLS: string[] = [
-  "treating a surprising pattern as a fecund lead worth actively pursuing",
+  "treating a surprising pattern as a promising lead worth actively pursuing",
   "preferring the explanation with the most explanatory yield (one cause binding many effects)",
   "preferring the single explanation that already accounts for ALL the observed evidence over a needlessly complicated one that adds extra causes the evidence gives no reason to posit",
   "committing to the explanation the available evidence best supports, and naming the check that would confirm it",
@@ -41,16 +41,16 @@ export const CCR_SUBSKILLS: string[] = [
 ];
 
 // ===========================================================================
-// CCR DIAGNOSTIC — original scenario MCQs (correct option FIRST, 4 total)
+// SCIENTIFIC-REASONING DIAGNOSTIC — original scenario MCQs (correct option FIRST, 4 total)
 // ===========================================================================
 
 export const CCR_MCQ_BANK: McqItem[] = [
-  // --- fecund leads ---------------------------------------------------------
+  // --- promising leads ------------------------------------------------------
   {
     prompt:
       "A small bakery notices that on the three days a particular regular customer visited, every leftover loaf sold out by noon, while on other days loaves lingered until evening. The owner has limited time to investigate. Which response reasons best?",
     options: [
-      "Treat the regular's visits as a fecund lead: hypothesize she brings or attracts other buyers, and track foot traffic on her next visit to confirm the spillover.",
+      "Treat the regular's visits as a promising lead: hypothesize she brings or attracts other buyers, and track foot traffic on her next visit to confirm the spillover.",
       "Conclude nothing can be inferred from only three days of data.",
       "Declare that the customer personally guarantees the bakery will always sell out.",
       "Assume loaves simply sell faster in general and ignore the pattern.",
@@ -223,18 +223,18 @@ export const CCR_MCQ_BANK: McqItem[] = [
 ];
 
 // ===========================================================================
-// CCR DIAGNOSTIC — short open-response items. keyPoints capture the strongest
+// SCIENTIFIC-REASONING DIAGNOSTIC — short open-response items. keyPoints capture the strongest
 // supported conclusion a good 1-2 sentence answer commits to, plus a test —
 // NOT a hedge.
 // ===========================================================================
 
 export const CCR_OPEN_BANK: OpenItem[] = [
-  // fecund leads
+  // promising leads
   {
     prompt:
       "Every time a particular sales rep joins a client call, the deal closes faster than average — it has happened on his last six calls. In one sentence, state the strongest conclusion worth pursuing and how you'd follow the lead.",
     keyPoints: [
-      "Treat the rep's involvement as a fecund lead: something he does likely accelerates closing.",
+      "Treat the rep's involvement as a promising lead: something he does likely accelerates closing.",
       "Follow it by assigning him to a fresh set of comparable deals and tracking whether they close faster too.",
     ],
   },

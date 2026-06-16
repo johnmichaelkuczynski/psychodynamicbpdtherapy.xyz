@@ -15,11 +15,11 @@ import { SECTIONS, type HomeworkItem } from "./homeworkContent";
 // the value stored in seed_meta; a mismatch forces a full re-seed, so content
 // edits self-heal in every environment (including a republished production)
 // without a manual database wipe.
-const SEED_CONTENT_VERSION = "2026-06-14-ccr-v1";
+const SEED_CONTENT_VERSION = "2026-06-16-cogsci-v1";
 
-// First CCR section slug — used as the marker topic that signals the current
-// curriculum is seeded. A database holding the prior curriculum will lack this
-// slug, so the seed reconciler replaces it on boot.
+// First Cognitive Science section slug — used as the marker topic that signals
+// the current curriculum is seeded. A database holding the prior curriculum
+// will lack this slug, so the seed reconciler replaces it on boot.
 const MARKER_TOPIC_SLUG = SECTIONS[0]!.slug;
 
 type SeedTopic = {
@@ -31,7 +31,7 @@ type SeedTopic = {
   body: string;
 };
 
-// The eight Constructive Critical Reasoning sections become the course topics.
+// The eight Cognitive Science sections become the course topics.
 // Each section's lecture is the short-depth body; medium/long are generated on
 // demand by the lecture route.
 const TOPICS: SeedTopic[] = SECTIONS.map((s) => ({
@@ -70,8 +70,8 @@ const HOMEWORK_INSTRUCTIONS =
   "One homework for this section. At the start you pick a single answer format — " +
   "Multiple choice (15 questions), Hybrid (9 questions: multiple choice plus a short written follow-up), " +
   "or Written (5 questions) — and you get one attempt that locks the moment you submit. " +
-  "Constructive Critical Reasoning rewards the boldest conclusion the evidence actually supports: " +
-  "name a concrete mechanism and the cheap test that would disconfirm it. The cautious " +
+  "This course grades reasoning on an inverted scale — it rewards the boldest conclusion the evidence actually supports: " +
+  "name a concrete mechanism about how the mind works and the cheap test that would disconfirm it. The cautious " +
   "\"you can't really conclude anything\" answer is a dodge and earns no credit; florid answers that " +
   "commit to nothing score low.";
 
@@ -117,10 +117,10 @@ const ASSIGNMENTS: SeedAssignment[] = SECTIONS.map((s, i) => {
   };
 });
 
-// Any primer / practice-prep lecture from earlier (pre-CCR) designs is obsolete.
-// The course now uses the eight CCR sections for content and a separate
-// phase-based diagnostic for assessment, so these stray topics are removed on
-// every boot to self-heal databases seeded under an older design.
+// Any primer / practice-prep lecture from earlier designs is obsolete.
+// The course now uses the eight Cognitive Science sections for content and a
+// separate phase-based diagnostic for assessment, so these stray topics are
+// removed on every boot to self-heal databases seeded under an older design.
 const LEGACY_PRIMER_SLUGS = [
   "reasoning-primer-subject",
   "reasoning-primer-reasoning",
@@ -141,7 +141,7 @@ export async function seedReasoningPrimersIfMissing(): Promise<void> {
 }
 
 export async function seedIfEmpty(): Promise<void> {
-  // The course was migrated to the Constructive Critical Reasoning syllabus. Detect the marker topic;
+  // The course was migrated to the Cognitive Science 101 syllabus. Detect the marker topic;
   // if present and the content version matches, the content is current and we
   // skip. This makes the seed self-healing across environments: a database that
   // still holds older content (e.g. a previous curriculum) is detected and
@@ -190,7 +190,7 @@ export async function seedIfEmpty(): Promise<void> {
     const row = (existing.rows[0] ?? {}) as { n?: number };
     if ((row.n ?? 0) > 0) {
       logger.warn(
-        "Seed: stale course content detected — replacing with the Constructive Critical Reasoning curriculum",
+        "Seed: stale course content detected — replacing with the Cognitive Science 101 curriculum",
       );
       await tx.execute(
         sql`TRUNCATE TABLE answers, attempts, practice_attempts, practice_problems, practice_sessions, problems, assignments, lectures, topics, diagnostic_responses, diagnostic_attempts, diagnostic_items, diagnostic_assessments RESTART IDENTITY CASCADE`,

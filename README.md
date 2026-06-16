@@ -1,31 +1,31 @@
-# 🧭 Constructive Critical Reasoning
+# 🧭 Cognitive Science 101
 
-**A One-Unit Course That Trains You to Draw the Strongest Conclusion the Data Actually Supports — Taught, Tutored, Drilled, and Graded by AI**
+**A One-Unit Baby Course on How the Mind Works — Taught, Tutored, Drilled, and Graded by AI**
 
 ---
 
 ## 🧩 Overview
 
-Constructive Critical Reasoning (CCR) is a self-paced, single-user web course that teaches the discipline of **committing to the richest, most-falsifiable conclusion a body of evidence will bear** — the opposite of reflexive skepticism. No math, coding, or technical background required.
+Cognitive Science 101 is a self-paced, single-user web course — a plain-language "baby course" on **how the mind works**: perception, memory, language, reasoning, machine minds, and consciousness. No math, coding, or technical background required.
 
-CCR inverts the usual grading instinct. Most "critical thinking" rewards caution: the more hedged the answer, the safer it feels. Here, hedging is the failure mode. The **richest, most-falsifiable, most-committed model earns top credit**; the cautious *"you can't really conclude anything"* dodge earns near-zero; florid padding that binds no data scores low; and a bold claim the data actively defeats also earns zero. Every question rewards committing harder to the most, while exposing the cleanest disconfirming test.
+The course teaches reasoning about the mind on an **inverted grading scale**. Most "critical thinking" rewards caution: the more hedged the answer, the safer it feels. Here, hedging is the failure mode. The **strongest, most-falsifiable conclusion the evidence supports about how the mind works earns top credit**; the cautious *"we can't really conclude anything / the brain is too complex"* dodge earns near-zero; florid padding that binds no evidence scores low; and a bold claim the evidence actively defeats also earns zero. Every question rewards committing to the richest supported conclusion while naming the cleanest disconfirming test.
 
-The curriculum is organized into **one unit and 8 sections**: 1.1 The Fecund Lead; 1.2 Model Selection by Explanatory Yield; 1.3 Parsimony as a Live Constraint; 1.4 Abductive Commitment; 1.5 From Correlation to Mechanism; 1.6 The Anomaly Cluster; 1.7 The Cheap Decisive Test; and 1.8 Calibrated Boldness.
+The curriculum is organized into **one unit and 8 sections**: 1.1 What Cognitive Science Is; 1.2 The Big Idea: Mind as Information Processing; 1.3 Perception; 1.4 Memory; 1.5 Language and Thought; 1.6 Reasoning and Bias; 1.7 Brains and Machines; and 1.8 Consciousness.
 
-Designed for **middle schoolers, curious adults wanting brief but meaningful exposure, instructors evaluating AI-taught coursework, and researchers studying AI academic integrity**, CCR pairs a real curriculum with two layers of AI-authorship detection — surfacing not just *whether* the writing looks AI-generated, but whether the *act of producing it* did.
+Designed for **middle schoolers, curious adults wanting brief but meaningful exposure, instructors evaluating AI-taught coursework, and researchers studying AI academic integrity**, Cognitive Science 101 pairs a real curriculum with two layers of AI-authorship detection — surfacing not just *whether* the writing looks AI-generated, but whether the *act of producing it* did.
 
 ---
 
 ## 🧠 What It Does
 
-- **One-Unit Structured Curriculum** — A complete plain-language reasoning syllabus across 8 sections. Each section ships with a lesson and one graded homework. There is no separate test, midterm, or final — homework is the graded model.
+- **One-Unit Structured Curriculum** — A complete plain-language cognitive science syllabus across 8 sections. Each section ships with a lesson and one graded homework. There is no separate test, midterm, or final — homework is the graded model.
 - **Three-Depth Lessons** — Every lesson is available at **Short / Medium / Long** length, AI-rewritten while preserving the same examples and learning objectives.
 - **Section-Scoped AI Tutor** — Ask a question about the paragraph you're reading and the answer streams back token-by-token, grounded in that exact lecture section. Suggested starter questions are pre-generated per lecture.
 - **One Homework Per Section, Your Format** — Each section's homework is offered in three formats and you pick exactly one: **MCQ (long)**, **Hybrid (medium — multiple choice + short written)**, or **Written (short)**. You get a **single attempt** — it locks the moment you submit.
-- **Inverted Partial-Credit Grading** — MC option weights act as data (one zero-credit dodge foil, plus a descending gradient of live options); written answers are scored against a yield/risk rubric with a penalty for claims the data defeats; hybrid blends both parts. Every item returns a written rationale.
+- **Inverted Partial-Credit Grading** — MC option weights act as data (one zero-credit dodge foil, plus a descending gradient of live options); written answers are scored against a yield/risk rubric with a penalty for claims the evidence defeats; hybrid blends both parts. Every item returns a written rationale.
 - **Adaptive Topic Practice** — Generated scenario problem sets that move difficulty up after a streak and down after a miss, with explanations on every answer. Per-session difficulty persists.
 - **Two-Layer AI Detection on Every Submission** — Each submitted answer is screened by both a static text classifier (GPTZero) and a diachronic keystroke-pattern detector, each with a human-readable rationale.
-- **Four-Phase Diagnostic Assessments** — A single CCR reasoning instrument runs at four phases (baseline, two mid-course checkpoints, and after the unit) using a 3×3 menu of generated items, so reasoning growth can be tracked across the course. A configurable minimum-to-pass governs pass/fail.
+- **Four-Phase Diagnostic Assessments** — A single Scientific Reasoning instrument runs at four phases (baseline, two mid-course checkpoints, and after the unit) using a 3×3 menu of generated items, so reasoning growth can be tracked across the course. A configurable minimum-to-pass governs pass/fail.
 - **Live Analytics** — Dashboard KPIs (attempts, accuracy, streak), per-section mastery percentages, and a recent-activity feed.
 - **Operator Diagnostics** — One-click self-tests (system health and synthetic-student end-to-end run) verify the entire stack — database, OpenAI integration, GPTZero, detection pipeline, and the practice/grade loop.
 - **Built-In Product Demo Video** — A screencast of the live UI ships as its own deployable artifact, so the product can show itself.
@@ -35,8 +35,8 @@ Designed for **middle schoolers, curious adults wanting brief but meaningful exp
 ## ⚙️ Technical Features
 
 - **Inverted Partial-Credit Grading Engine** —
-  - **MC / Hybrid MC part:** each option carries a stored weight in `[0,1]`. Exactly one option is a zero-credit dodge (a fallacy the data defeats, or a non-committal refusal); the rest form a descending gradient (richest/most-falsifiable = `1.0`, weaker commitment = `0.6`, timid partial = `0.3`). Credit is the chosen option's weight.
-  - **Written:** scored against a `{ modelAnswer, yieldAnchors, riskAnchors, defeatedBy }` rubric — credit rises with how much data the answer *binds* and how falsifiable a test it commits to, and falls for asserting claims the data defeats or for empty elaboration.
+  - **MC / Hybrid MC part:** each option carries a stored weight in `[0,1]`. Exactly one option is a zero-credit dodge (a claim the evidence defeats, or a non-committal refusal); the rest form a descending gradient (richest/most-falsifiable = `1.0`, weaker commitment = `0.6`, timid partial = `0.3`). Credit is the chosen option's weight.
+  - **Written:** scored against a `{ modelAnswer, yieldAnchors, riskAnchors, defeatedBy }` rubric — credit rises with how much evidence the answer *binds* and how falsifiable a test it commits to, and falls for asserting claims the evidence defeats or for empty elaboration.
   - **Hybrid:** averages the MC and written parts. Section percent rolls up per item, and the course aggregate honors **configurable format point values**.
 - **Two-Layer AI-Authorship Detection** —
   - **Static (GPTZero):** every submitted answer is sent to GPTZero; the per-document AI probability is blended with a structural heuristic. If GPTZero is unavailable, the system falls back to an LLM scorer plus heuristic — submissions never block.
@@ -55,7 +55,7 @@ Designed for **middle schoolers, curious adults wanting brief but meaningful exp
 
 ## 📊 Designed For
 
-- **Middle Schoolers & Curious Adults:** A complete, plain-language course in reasoning toward the strongest supported conclusion — with on-demand tutoring and adaptive practice, no instructor required.
+- **Middle Schoolers & Curious Adults:** A complete, plain-language course on how the mind works — with on-demand tutoring and adaptive practice, no instructor required.
 - **Instructors & Curriculum Designers:** A working reference for what AI-taught, AI-graded, AI-detection-screened coursework looks like end-to-end.
 - **Academic-Integrity Researchers:** A live testbed for layered AI-authorship detection combining text classification with behavioral keystroke evidence.
 - **Product & Engineering Teams:** A reference implementation of contract-first full-stack architecture, streaming AI UX, and self-diagnostic operator tooling in a Replit pnpm monorepo.
@@ -64,14 +64,8 @@ Designed for **middle schoolers, curious adults wanting brief but meaningful exp
 
 ## 💡 Core Idea
 
-Constructive Critical Reasoning reframes "critical thinking" as a *constructive* act.
+Cognitive Science 101 makes "learning how the mind works" an act of *committed reasoning*.
 
-It doesn't reward the student for finding reasons to doubt — it rewards them for **committing to the richest model the evidence supports and naming the cleanest test that could prove them wrong.** The course teaches that, tutors it, drills it, grades it on an inverted partial-credit scale, screens submissions for misuse, and proves the whole pipeline still works with a single click.
+It doesn't reward the student for finding reasons to doubt — it rewards them for **committing to the strongest conclusion the evidence supports about the mind and naming the cleanest test that could prove them wrong.** The course teaches that, tutors it, drills it, grades it on an inverted partial-credit scale, screens submissions for misuse, and proves the whole pipeline still works with a single click.
 
-**Constructive Critical Reasoning — where the strongest honest conclusion, not the safest hedge, earns the grade.**
-
----
-
-## 👤 User preferences
-
-- The user prefers to **convert the existing app in place** (e.g. replacing the prior course content/branding with the new subject) rather than create a standalone clone — keep all functionality and format intact when making content/branding changes.
+**Cognitive Science 101 — where the strongest honest conclusion about how the mind works, not the safest hedge, earns the grade.**

@@ -1,12 +1,12 @@
-# Constructive Critical Reasoning — App Blueprint
+# Cognitive Science 101 — App Blueprint
 
-A complete architectural blueprint for the Constructive Critical Reasoning (CCR) one-unit course. This document is the single reference for what the app does, how it's wired, and the contracts between pieces. For day-to-day commands and gotchas see `replit.md`.
+A complete architectural blueprint for the Cognitive Science 101 one-unit course. This document is the single reference for what the app does, how it's wired, and the contracts between pieces. For day-to-day commands and gotchas see `replit.md`.
 
 ---
 
 ## 1. Product summary
 
-Constructive Critical Reasoning (CCR) is a self-paced, single-user web course that trains students to commit to the **richest, most-falsifiable conclusion a body of evidence supports** (one unit, 8 sections — from The Fecund Lead through Calibrated Boldness). Students read AI-rewritten lecture notes at three lengths, ask an AI tutor scoped to the section they're reading, drill on adaptive scenario practice, and submit **one homework per section** that is AI-graded on an **inverted partial-credit scale** and AI-detection-screened. Grading is the inverted core: the most-committed, most-testable model earns top credit; the cautious "you can't conclude anything" dodge earns near-zero. There is **no separate test, midterm, or final** — homework is the graded model.
+Cognitive Science 101 is a self-paced, single-user web course — a plain-language "baby course" on how the mind works (one unit, 8 sections — from What Cognitive Science Is through Consciousness, covering perception, memory, language, reasoning & bias, and machine minds). Students read AI-rewritten lecture notes at three lengths, ask an AI tutor scoped to the section they're reading, drill on adaptive scenario practice, and submit **one homework per section** that is AI-graded on an **inverted partial-credit scale** and AI-detection-screened. Grading is the inverted core: the strongest, most-testable conclusion the evidence supports about the mind earns top credit; the cautious "we can't conclude anything / the brain is too complex" dodge earns near-zero. There is **no separate test, midterm, or final** — homework is the graded model.
 
 The product surface is three deployable artifacts in one pnpm monorepo:
 
@@ -95,7 +95,7 @@ artifacts/api-server/src/
     ├── ai.ts              OpenAI client (Replit AI Integrations proxy)
     ├── detection.ts       GPTZero + heuristic + diachronic scoring
     ├── homeworkGrading.ts inverted partial-credit grader (MC weights + written yield/risk rubric)
-    ├── homeworkContent/   seeded CCR section content + types (mcOptions, writtenRubric)
+    ├── homeworkContent/   seeded cognitive science section content + types (mcOptions, writtenRubric)
     └── logger.ts          singleton pino logger (req.log in routes)
 ```
 
@@ -231,7 +231,7 @@ React + Vite + Tailwind. Routes:
 | `/practice/topic/:topicId` | `TopicPractice` | Adaptive single-topic scenario drill |
 | `/assignments` | `Assignments` | All section homeworks (homework-only model) |
 | `/assignments/:id` | `AssignmentRunner` | Pick a format (MCQ / hybrid / written), take the single attempt, then review inverted partial-credit + detection per item; locked once submitted |
-| `/reasoning` | `Reasoning` | Four-phase CCR diagnostic instrument (3×3 menu, fresh items per attempt, longitudinal view) |
+| `/reasoning` | `Reasoning` | Four-phase Scientific Reasoning diagnostic instrument (3×3 menu, fresh items per attempt, longitudinal view) |
 | `/analytics` | `Analytics` | KPIs, section mastery table, recent activity |
 | `/admin` | `AdminMode` | Operator grader lab + admin toggles (disable detection, allow paste) |
 | `/diagnostics` | `Diagnostics` | Operator self-test UI (see §6) |

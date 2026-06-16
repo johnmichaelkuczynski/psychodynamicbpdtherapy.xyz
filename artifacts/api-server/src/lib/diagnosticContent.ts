@@ -1,12 +1,13 @@
 // ---------------------------------------------------------------------------
 // Original content for the embedded diagnostic reasoning assessments.
 //
-// A single subject-relevant instrument — "ccr" (Constructive Critical
-// Reasoning) — administered at four phases (before the course, one-third
-// through, two-thirds through, and after) with freshly generated items per
-// attempt. CCR measures whether a student draws the STRONGEST conclusion the
-// AVAILABLE EVIDENCE actually warrants: the best answer commits to the
-// evidence-supported model and/or names a cheap decisive test. The failure
+// A single subject-relevant instrument — internally keyed "ccr", shown to
+// students as "Scientific Reasoning" — administered at four phases (before the
+// course, one-third through, two-thirds through, and after) with freshly
+// generated items per attempt. It measures whether a student draws the
+// STRONGEST conclusion the AVAILABLE EVIDENCE actually warrants: the best
+// answer commits to the evidence-supported model and/or names a cheap decisive
+// test. The failure
 // modes are reckless overreach and passive give-up. Every scenario must carry
 // real discriminating evidence — when evidence is genuinely insufficient,
 // declining to guess (and naming the test that would settle it) is honest, not
@@ -48,7 +49,8 @@ export type OpenItem = {
 
 export type Phase = "before" | "third1" | "third2" | "after";
 
-// A single CCR instrument now backs every diagnostic.
+// A single reasoning instrument now backs every diagnostic. The internal key
+// stays "ccr"; it is shown to students as "Scientific Reasoning".
 export type Instrument = "ccr";
 
 export type DiagnosticSeed = {
@@ -64,10 +66,10 @@ export type DiagnosticSeed = {
 };
 
 const CCR_INSTRUCTIONS =
-  "Answer each question by choosing the best option (or, for written questions, typing a short 1-2 sentence answer). These questions measure constructive critical reasoning — drawing the strongest, most-testable conclusion the evidence actually supports, and, when the evidence is genuinely insufficient, naming the test that would settle it. This is practice only: it never affects your grade, and you can retake it any time with fresh questions.";
+  "Answer each question by choosing the best option (or, for written questions, typing a short 1-2 sentence answer). These questions measure scientific reasoning — drawing the strongest, most-testable conclusion the evidence actually supports, and, when the evidence is genuinely insufficient, naming the test that would settle it. This is practice only: it never affects your grade, and you can retake it any time with fresh questions.";
 
 // ===========================================================================
-// SEED — one CCR instrument × four phases (4 assessments)
+// SEED — one Scientific Reasoning instrument × four phases (4 assessments)
 // ===========================================================================
 
 const PHASES: { phase: Phase; label: string }[] = [
@@ -80,7 +82,7 @@ const PHASES: { phase: Phase; label: string }[] = [
 export const DIAGNOSTIC_SEED: DiagnosticSeed[] = PHASES.map((p) => ({
   instrument: "ccr" as const,
   phase: p.phase,
-  title: `Constructive Critical Reasoning Check — ${p.label}`,
+  title: `Scientific Reasoning Check — ${p.label}`,
   subtitle: p.label,
   instructions: CCR_INSTRUCTIONS,
   mcqs: CCR_MCQ_BANK,

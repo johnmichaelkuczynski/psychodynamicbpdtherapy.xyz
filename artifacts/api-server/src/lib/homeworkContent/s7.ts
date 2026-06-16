@@ -1,230 +1,415 @@
-import type { SectionContent, HomeworkItem, McOption, WrittenRubric } from "./types";
+import type {
+  SectionContent,
+  HomeworkItem,
+  McOption,
+  WrittenRubric,
+} from "./types";
 
 const mcq: HomeworkItem[] = [
   {
     itemType: "mc",
     prompt:
-      "A web team's checkout page is converting poorly this week. Two live rivals: (A) the new one-page form confuses users, or (B) a payment API is silently timing out. Logs, surveys, A/B tests, and a full UX audit are all on the table. Which next step best follows?",
+      "On a texting app, many users can't tell a new chatbot from a human during five-minute chats. The bot's replies are smooth and on-topic. Which conclusion best follows?",
     mcOptions: [
-      { text: "Launch a full UX audit plus a fresh A/B test plus a customer survey so we cover every angle before deciding.", credit: 0 },
-      { text: "Pull the last 200 checkout server logs and check how many ended in a payment-API timeout — if most failures are timeouts it's B, if checkouts complete cleanly but users abandon the form it's A.", credit: 1.0 },
-      { text: "Re-run an A/B test of the old vs new form for two weeks; if the old form converts better, the form is the problem.", credit: 0.6 },
-      { text: "Send a survey asking abandoning users what went wrong and read the themes.", credit: 0.3 },
+      {
+        text: "A machine that chats like a person must therefore think and understand exactly like a person does.",
+        credit: 0,
+      },
+      {
+        text: "The bot has likely learned statistical patterns of conversation good enough to fool short chats, which is skilled imitation, not proof of understanding; test whether it fails on a novel riddle needing real-world knowledge, whether longer chats expose it, and whether it can explain WHY its answers are true rather than just produce them.",
+        credit: 1.0,
+      },
+      {
+        text: "The bot probably mimics conversation well; we could run more chats and watch.",
+        credit: 0.6,
+      },
+      {
+        text: "The bot seems pretty convincingly human-like.",
+        credit: 0.3,
+      },
     ],
     correctAnswer:
-      "Pull the last 200 checkout server logs and check how many ended in a payment-API timeout — if most failures are timeouts it's B, if checkouts complete cleanly but users abandon the form it's A.",
+      "The bot has likely learned statistical patterns of conversation good enough to fool short chats, which is skilled imitation, not proof of understanding; test whether it fails on a novel riddle needing real-world knowledge, whether longer chats expose it, and whether it can explain WHY its answers are true rather than just produce them.",
     explanation:
-      "The log check is nearly free and its outcome cleanly splits A from B in one look. 'Cover every angle first' is the zero-credit dodge: it's the most expensive option and discriminates no faster than the cheapest one.",
+      "Top credit commits to a mechanism (learned conversational patterns) and names three tests that separate imitation from understanding; the 'it must truly think' option is an overreach the evidence does not support — fooling a short chat is exactly what good pattern-matching predicts.",
   },
   {
     itemType: "mc",
     prompt:
-      "A houseplant is wilting. Two rival explanations: it's underwatered, or its roots are rotting from overwatering. Both produce droopy leaves. Which observation best settles it?",
+      "A person who knows no Chinese sits in a room with a giant rulebook. Chinese symbols slide in; she looks up rules and slides correct Chinese replies back out. Outsiders are sure the room 'understands' Chinese. Which conclusion best follows?",
     mcOptions: [
-      { text: "There's probably something wrong with the watering; keep an eye on it over the coming weeks.", credit: 0.3 },
-      { text: "Pay a botanist for a full soil-nutrient and pathogen panel to rule out every possible cause.", credit: 0 },
-      { text: "Stick a finger two inches into the soil right now: bone-dry means underwatering, soggy and sour-smelling means rot.", credit: 1.0 },
-      { text: "Repot it into fresh soil and a bigger pot, which should help whatever the cause is.", credit: 0.6 },
+      {
+        text: "The room obviously understands Chinese, since it answers every question correctly.",
+        credit: 0,
+      },
+      {
+        text: "The room seems to handle Chinese somehow.",
+        credit: 0.3,
+      },
+      {
+        text: "Following symbol-shuffling rules can produce correct output with no understanding of meaning, so passing the test shows syntax (rule-following) is not the same as semantics (grasping meaning); test whether the clerk can say what any word refers to in the world, whether the room flags an absurd-but-grammatical question, and whether its timing and errors differ from a real Chinese speaker.",
+        credit: 1.0,
+      },
+      {
+        text: "The rulebook probably lets the room handle Chinese; we could feed it more questions.",
+        credit: 0.6,
+      },
     ],
     correctAnswer:
-      "Stick a finger two inches into the soil right now: bone-dry means underwatering, soggy and sour-smelling means rot.",
+      "Following symbol-shuffling rules can produce correct output with no understanding of meaning, so passing the test shows syntax (rule-following) is not the same as semantics (grasping meaning); test whether the clerk can say what any word refers to in the world, whether the room flags an absurd-but-grammatical question, and whether its timing and errors differ from a real Chinese speaker.",
     explanation:
-      "The finger test costs nothing and its two outcomes map directly onto the two rival models. The lab panel is the dodge — maximal cost, no faster discrimination between the only two live hypotheses.",
+      "The strongest lead names the syntax-versus-semantics gap and three checkable probes; the 'obviously understands' answer is the overreach the setup defeats — correct symbol manipulation does not require meaning.",
   },
   {
     itemType: "mc",
     prompt:
-      "Nightly batch jobs started failing after a release. Two suspects: a config change to the database connection pool, or a new third-party library that's incompatible. Which move best discriminates?",
+      "A program trained only on text uses the word 'apple' in perfect sentences but has never seen, touched, or tasted one. Asked to pick the real apple from a tray of objects, it can't. Which conclusion best follows?",
     mcOptions: [
-      { text: "Roll back the entire release and slowly re-apply changes over the next sprint while monitoring.", credit: 0.6 },
-      { text: "Revert just the connection-pool config in staging and re-run one batch job: if it now succeeds it's the config, if it still fails it's the library.", credit: 1.0 },
-      { text: "It could be either; gather a week of detailed telemetry across all services before acting.", credit: 0 },
-      { text: "Read the new library's changelog for anything that looks risky.", credit: 0.3 },
+      {
+        text: "The program's words probably aren't grounded in sensory experience, so it manipulates 'apple' as a symbol without connecting it to the thing; test whether giving it camera-and-touch data lets it pick the apple, whether its errors cluster on physical questions versus word-association ones, and whether it confuses objects that sound alike in text but look different.",
+        credit: 1.0,
+      },
+      {
+        text: "The program clearly knows what apples are because it writes about them flawlessly.",
+        credit: 0,
+      },
+      {
+        text: "The program seems to use the word fine but struggles with the object.",
+        credit: 0.3,
+      },
+      {
+        text: "It probably lacks something about real apples; we could test it on more objects.",
+        credit: 0.6,
+      },
     ],
     correctAnswer:
-      "Revert just the connection-pool config in staging and re-run one batch job: if it now succeeds it's the config, if it still fails it's the library.",
+      "The program's words probably aren't grounded in sensory experience, so it manipulates 'apple' as a symbol without connecting it to the thing; test whether giving it camera-and-touch data lets it pick the apple, whether its errors cluster on physical questions versus word-association ones, and whether it confuses objects that sound alike in text but look different.",
     explanation:
-      "Reverting one variable and re-running once is cheap and its outcome isolates the cause. 'Gather a week of telemetry across all services' is the expensive non-discriminating dodge.",
+      "Top credit names the symbol-grounding problem and three tests; the 'clearly knows apples' option is defeated by the very fact that it can't connect the word to the object.",
   },
   {
     itemType: "mc",
     prompt:
-      "A runner's times have plateaued. Two rival diagnoses: she's overtrained and fatigued, or she's undertrained and needs more volume. Both feel like 'stuck.' Which test best distinguishes them?",
+      "A chess engine crushes a world champion every game. It evaluates millions of positions per second. Which conclusion best follows?",
     mcOptions: [
-      { text: "Book a full sports-medicine workup — bloodwork, VO2 max, gait analysis — to leave nothing unexamined.", credit: 0 },
-      { text: "Take three easy days, then time one hard interval: a big jump means she was fatigued (overtrained), no change points to undertraining.", credit: 1.0 },
-      { text: "Add more weekly mileage for a month and see whether times improve.", credit: 0.6 },
-      { text: "There's clearly a training issue of some kind worth tracking in her log.", credit: 0.3 },
+      {
+        text: "Winning at chess proves the machine is generally as intelligent as a person.",
+        credit: 0,
+      },
+      {
+        text: "The engine seems very good at chess.",
+        credit: 0.3,
+      },
+      {
+        text: "The engine probably wins by fast, narrow search and learned evaluation within one game, which is powerful 'weak AI' skill rather than general thinking; test whether it can explain its strategy in human terms, whether it transfers any skill to checkers or a new rule variant without retraining, and whether removing its lookahead collapses its play.",
+        credit: 1.0,
+      },
+      {
+        text: "The engine is probably smart at games; we could try it on other games too.",
+        credit: 0.6,
+      },
     ],
     correctAnswer:
-      "Take three easy days, then time one hard interval: a big jump means she was fatigued (overtrained), no change points to undertraining.",
+      "The engine probably wins by fast, narrow search and learned evaluation within one game, which is powerful 'weak AI' skill rather than general thinking; test whether it can explain its strategy in human terms, whether it transfers any skill to checkers or a new rule variant without retraining, and whether removing its lookahead collapses its play.",
     explanation:
-      "A three-day taper plus one timed interval is cheap and its outcome flips cleanly between the two diagnoses. The full medical workup is the costly dodge that doesn't sharpen the choice faster.",
+      "The productive lead distinguishes narrow (weak) AI from general intelligence and names three tests; 'as intelligent as a person' overreaches from one narrow skill.",
   },
   {
     itemType: "mc",
     prompt:
-      "A bakery's sourdough loaves came out flat all week. Two leading culprits: the starter has gone inactive, or the new oven runs cooler than its dial reads. Which check best decides?",
+      "A pocket calculator instantly returns 4,398 × 27 = 118,746. A student says the calculator 'understands multiplication.' Which conclusion best follows?",
     mcOptions: [
-      { text: "Replace both the starter and the oven thermostat to be safe and re-bake next week.", credit: 0.6 },
-      { text: "Drop a spoon of starter into warm water — floats and bubbles means it's alive, so the oven is the suspect; sinks flat means a dead starter.", credit: 1.0 },
-      { text: "Something in the process is off; document each bake carefully going forward.", credit: 0.3 },
-      { text: "Run a month-long trial varying flour, hydration, proof time, and oven to map every factor.", credit: 0 },
+      {
+        text: "Math is too abstract to ever say what a calculator does or doesn't grasp.",
+        credit: 0,
+      },
+      {
+        text: "The calculator probably executes a fixed multiplication procedure on symbols without any grasp of quantity or why the rule works; test whether it can recognize that the answer is roughly 'a hundred thousand' as a sanity check, whether it flags a nonsense input like multiplying a word, and whether it can derive the rule from examples rather than only apply it.",
+        credit: 1.0,
+      },
+      {
+        text: "The calculator seems to do multiplication.",
+        credit: 0.3,
+      },
+      {
+        text: "It probably just runs a procedure; we could test harder problems.",
+        credit: 0.6,
+      },
     ],
     correctAnswer:
-      "Drop a spoon of starter into warm water — floats and bubbles means it's alive, so the oven is the suspect; sinks flat means a dead starter.",
+      "The calculator probably executes a fixed multiplication procedure on symbols without any grasp of quantity or why the rule works; test whether it can recognize that the answer is roughly 'a hundred thousand' as a sanity check, whether it flags a nonsense input like multiplying a word, and whether it can derive the rule from examples rather than only apply it.",
     explanation:
-      "The float test takes a minute and its result points straight at one of the two rivals. The month-long multi-factor trial is the expensive non-discriminating dodge.",
+      "Top credit pins the mechanism (procedure on symbols, no semantics) with three checks; 'too abstract to say anything' is the empty dodge that opens no inquiry.",
   },
   {
     itemType: "mc",
     prompt:
-      "Sales dropped this quarter in one region. Two live models: a new local competitor is stealing customers, or the regional manager left and service quality slipped. Which observation best separates them?",
+      "An image classifier reliably labels photos of cats — until a small printed sticker is placed in the corner, after which it confidently calls a cat a 'toaster.' Which conclusion best follows?",
     mcOptions: [
-      { text: "Commission a regional market-research study covering pricing, brand, service, and demographics.", credit: 0 },
-      { text: "Check whether lost customers went to the new competitor or simply stopped buying: a switch pattern points to competition, churn-without-switch points to the service drop.", credit: 1.0 },
-      { text: "Compare this region's service-complaint rate before and after the manager left.", credit: 0.6 },
-      { text: "Sales are down for some regional reason; keep monitoring the numbers monthly.", credit: 0.3 },
+      {
+        text: "The classifier likely keys on surface pixel patterns rather than the meaning of 'cat,' so a crafted patch hijacks its statistics; test whether the same sticker fools it across many images, whether it still labels a cat correctly when the sticker is blurred, and whether a system given object shape and context resists the trick.",
+        credit: 1.0,
+      },
+      {
+        text: "The sticker proves the machine sees cats just like a human does.",
+        credit: 0,
+      },
+      {
+        text: "The classifier seems to get confused by stickers.",
+        credit: 0.3,
+      },
+      {
+        text: "The patch probably throws it off; we could try other stickers.",
+        credit: 0.6,
+      },
     ],
     correctAnswer:
-      "Check whether lost customers went to the new competitor or simply stopped buying: a switch pattern points to competition, churn-without-switch points to the service drop.",
+      "The classifier likely keys on surface pixel patterns rather than the meaning of 'cat,' so a crafted patch hijacks its statistics; test whether the same sticker fools it across many images, whether it still labels a cat correctly when the sticker is blurred, and whether a system given object shape and context resists the trick.",
     explanation:
-      "The where-did-they-go check uses data you likely already have and its pattern discriminates directly. The full market-research study is the high-cost dodge.",
+      "The richest lead names pattern-matching over meaning and three tests; the 'sees like a human' option is defeated — a human is not fooled into seeing a toaster by a corner sticker.",
   },
   {
     itemType: "mc",
     prompt:
-      "A car won't start, just clicking. Two rivals: a dead battery, or a failed starter motor. Which single test best discriminates?",
+      "A phone's navigation app announces 'You have arrived' and shows your exact position on a map. A passenger insists the phone 'knows where it is.' Which conclusion best follows?",
     mcOptions: [
-      { text: "Have a mechanic do a full electrical-system diagnostic to be thorough.", credit: 0 },
-      { text: "Turn on the headlights and try the horn: bright lights and a strong horn point to the starter, dim or dead accessories point to the battery.", credit: 1.0 },
-      { text: "Try jump-starting it; if it starts, the battery was likely involved.", credit: 0.6 },
-      { text: "It's an electrical fault of some kind worth getting looked at.", credit: 0.3 },
+      {
+        text: "The phone seems aware of its location.",
+        credit: 0.3,
+      },
+      {
+        text: "The phone probably computes coordinates from satellite signals and matches them to map symbols, with no felt sense of place; test whether it 'knows' it is somewhere when GPS is blocked indoors, whether it can describe what the place means or looks like beyond the map, and whether it notices an obviously wrong fix that contradicts the visible surroundings.",
+        credit: 1.0,
+      },
+      {
+        text: "The phone clearly experiences being in a location the way you do.",
+        credit: 0,
+      },
+      {
+        text: "It probably tracks location well; we could test it in more spots.",
+        credit: 0.6,
+      },
     ],
     correctAnswer:
-      "Turn on the headlights and try the horn: bright lights and a strong horn point to the starter, dim or dead accessories point to the battery.",
+      "The phone probably computes coordinates from satellite signals and matches them to map symbols, with no felt sense of place; test whether it 'knows' it is somewhere when GPS is blocked indoors, whether it can describe what the place means or looks like beyond the map, and whether it notices an obviously wrong fix that contradicts the visible surroundings.",
     explanation:
-      "Flicking the lights is free and instantly distinguishes a flat battery from a bad starter. The full diagnostic is the dodge: maximal cost for no faster split between the two live causes.",
+      "Top credit names the mechanism (coordinate matching, no experience) and three probes; 'experiences location like you' overreaches far past computing coordinates.",
   },
   {
     itemType: "mc",
     prompt:
-      "An online course has high dropout after lesson 3. Two models: lesson 3 is too hard, or a broken video player on that page frustrates learners. Which next step best follows?",
+      "A translation app renders most sentences well but turns the idiom 'it's raining cats and dogs' into a sentence about animals falling from the sky. Which conclusion best follows?",
     mcOptions: [
-      { text: "Run usability interviews, redesign lesson 3, and rebuild the player to address whatever it is.", credit: 0.6 },
-      { text: "Pull the analytics event for the lesson-3 video: a spike in 'play error' events means the player; normal playback with drop-off at the quiz means difficulty.", credit: 1.0 },
-      { text: "There's a problem on lesson 3; flag it for the content team to review.", credit: 0.3 },
-      { text: "Survey every enrolled learner about their whole experience to find all friction points.", credit: 0 },
+      {
+        text: "Language is too messy to learn anything from one bad translation.",
+        credit: 0,
+      },
+      {
+        text: "The app probably maps word patterns across languages without grasping intended meaning, so figurative phrases that aren't literal break it; test whether it mishandles other idioms it hasn't seen often, whether giving it context sentences fixes the idiom, and whether its errors concentrate on non-literal language rather than plain statements.",
+        credit: 1.0,
+      },
+      {
+        text: "The app seems to trip on idioms.",
+        credit: 0.3,
+      },
+      {
+        text: "It probably struggles with sayings; we could try more idioms.",
+        credit: 0.6,
+      },
     ],
     correctAnswer:
-      "Pull the analytics event for the lesson-3 video: a spike in 'play error' events means the player; normal playback with drop-off at the quiz means difficulty.",
+      "The app probably maps word patterns across languages without grasping intended meaning, so figurative phrases that aren't literal break it; test whether it mishandles other idioms it hasn't seen often, whether giving it context sentences fixes the idiom, and whether its errors concentrate on non-literal language rather than plain statements.",
     explanation:
-      "The event-log check is already-collected and its outcome cleanly separates a technical fault from a difficulty wall. The course-wide survey is the expensive scattershot dodge.",
+      "The productive lead pins meaning-blind pattern mapping with three tests; 'too messy to learn anything' refuses to commit and earns zero.",
   },
   {
     itemType: "mc",
     prompt:
-      "A patient reports dizziness on standing. Two leading explanations: low blood pressure on standing (orthostatic), or an inner-ear (vestibular) problem. Which cheap test best discriminates?",
+      "A toddler learns the word 'dog' by having a real dog pointed out, petting it, and hearing it bark. A text-only program learns 'dog' purely from millions of sentences. Both can use the word in conversation. Which conclusion best follows?",
     mcOptions: [
-      { text: "Order an MRI, a tilt-table test, and a full cardiac panel so nothing is missed.", credit: 0 },
-      { text: "Measure blood pressure lying down then immediately after standing: a sharp drop confirms orthostatic; stable pressure with spinning sensation points to vestibular.", credit: 1.0 },
-      { text: "Have the patient keep a two-week diary of every dizzy episode and its context.", credit: 0.6 },
-      { text: "It's a balance-related issue; refer onward for specialist evaluation.", credit: 0.3 },
+      {
+        text: "Since both use the word, they must understand 'dog' in exactly the same way.",
+        credit: 0,
+      },
+      {
+        text: "The toddler's word is likely grounded in sensory experience while the program's is grounded only in other words, so their 'understanding' may differ where the senses matter; test whether the program can pick a dog out of a lineup of photos, whether it predicts how a dog feels or smells, and whether it confuses things that are described similarly but sensed differently.",
+        credit: 1.0,
+      },
+      {
+        text: "Both seem to know the word 'dog.'",
+        credit: 0.3,
+      },
+      {
+        text: "They probably learned it differently; we could compare their sentences.",
+        credit: 0.6,
+      },
     ],
     correctAnswer:
-      "Measure blood pressure lying down then immediately after standing: a sharp drop confirms orthostatic; stable pressure with spinning sensation points to vestibular.",
+      "The toddler's word is likely grounded in sensory experience while the program's is grounded only in other words, so their 'understanding' may differ where the senses matter; test whether the program can pick a dog out of a lineup of photos, whether it predicts how a dog feels or smells, and whether it confuses things that are described similarly but sensed differently.",
     explanation:
-      "The lying-to-standing BP check uses a cuff and two minutes, and its result picks between the two rivals. The MRI-plus-everything order is the costly dodge.",
+      "Top credit names symbol grounding (sensory vs word-only) with three tests; 'understand exactly the same way' overreaches from matching outputs.",
   },
   {
     itemType: "mc",
     prompt:
-      "A factory line is producing more defects on the night shift. Two rivals: night workers are less trained, or the building's lighting is dimmer at night and workers miss flaws. Which observation best decides?",
+      "A robot vacuum reliably stops and turns at the top of a staircase, never falling. Its owner says it 'is afraid of heights.' Which conclusion best follows?",
     mcOptions: [
-      { text: "Audit training records, run a full ergonomics study, and survey all shifts to be comprehensive.", credit: 0 },
-      { text: "Move one experienced day worker to a night shift for two nights: if their defect rate also rises, it's the environment (lighting), not training.", credit: 1.0 },
-      { text: "Retrain all night-shift workers and see if defects fall over the next quarter.", credit: 0.6 },
-      { text: "Defects are higher at night for some reason; keep tracking the gap.", credit: 0.3 },
+      {
+        text: "The vacuum probably triggers a cliff-sensor rule that reverses the wheels when a drop is detected, with no fear or awareness of falling; test whether it 'fears' a painted black square that fools the sensor, whether it reacts to a real drop it can't sense (like a covered pit), and whether its behavior is identical regardless of how dangerous the drop is.",
+        credit: 1.0,
+      },
+      {
+        text: "The vacuum genuinely feels fear of falling, just like a person on a ledge.",
+        credit: 0,
+      },
+      {
+        text: "The vacuum seems to avoid stairs.",
+        credit: 0.3,
+      },
+      {
+        text: "It probably has some stair-avoiding feature; we could test more edges.",
+        credit: 0.6,
+      },
     ],
     correctAnswer:
-      "Move one experienced day worker to a night shift for two nights: if their defect rate also rises, it's the environment (lighting), not training.",
+      "The vacuum probably triggers a cliff-sensor rule that reverses the wheels when a drop is detected, with no fear or awareness of falling; test whether it 'fears' a painted black square that fools the sensor, whether it reacts to a real drop it can't sense (like a covered pit), and whether its behavior is identical regardless of how dangerous the drop is.",
     explanation:
-      "Swapping one known-skilled worker into the night setting cheaply isolates environment from skill. The comprehensive audit is the high-cost, slow-discriminating dodge.",
+      "The strongest lead names a sensor-triggered rule and three tests that separate reflex from felt fear; 'genuinely feels fear' is the overreach the simple sensor mechanism defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A novelist's new chapters feel flat to early readers. Two diagnoses: the pacing is too slow, or readers don't care about the protagonist. Which cheap test best discriminates?",
+      "A chatbot types 'I feel so sad that you're leaving' when a user says goodbye. The user wonders whether the bot is actually sad. Which conclusion best follows?",
     mcOptions: [
-      { text: "Pacing or character — hard to say; commission a full developmental edit of the manuscript.", credit: 0 },
-      { text: "Ask five readers to mark the exact line where they got bored: clustering at slow scene transitions means pacing; boredom whenever the hero is on-page means character.", credit: 1.0 },
-      { text: "Cut 20% of the prose to tighten pacing and resend to readers.", credit: 0.6 },
-      { text: "The chapters need work somewhere; revise broadly and try again.", credit: 0.3 },
+      {
+        text: "Feelings are too private to ever investigate in a machine, so there's nothing to say.",
+        credit: 0,
+      },
+      {
+        text: "The bot likely generates emotion words that statistically fit the conversation, which is reporting feeling-language, not necessarily having a feeling; test whether its 'mood' changes its later behavior the way real sadness would, whether it claims contradictory feelings when prompted differently, and whether it shows any internal signal that tracks the reported emotion.",
+        credit: 1.0,
+      },
+      {
+        text: "The bot seems to express sadness.",
+        credit: 0.3,
+      },
+      {
+        text: "It probably just outputs sad words; we could ask it more feelings questions.",
+        credit: 0.6,
+      },
     ],
     correctAnswer:
-      "Ask five readers to mark the exact line where they got bored: clustering at slow scene transitions means pacing; boredom whenever the hero is on-page means character.",
+      "The bot likely generates emotion words that statistically fit the conversation, which is reporting feeling-language, not necessarily having a feeling; test whether its 'mood' changes its later behavior the way real sadness would, whether it claims contradictory feelings when prompted differently, and whether it shows any internal signal that tracks the reported emotion.",
     explanation:
-      "A marked-line exercise with five readers is nearly free and where the boredom clusters splits pacing from character. The full developmental edit is the expensive dodge.",
+      "Top credit distinguishes producing feeling-words from having feelings and names three tests; 'too private to investigate' is the dodge — we can still check behavioral and internal consequences.",
   },
   {
     itemType: "mc",
     prompt:
-      "A SaaS app's signups converted to paid far less last month. Two models: the new pricing page scares people off, or a recent bug breaks trial onboarding. Which next step best follows?",
+      "A supercomputer runs a detailed simulation of a hurricane, modeling every gust and raindrop. A student asks why the computer room isn't wet. Which conclusion best follows?",
     mcOptions: [
-      { text: "Pull the funnel: if drop-off spikes at the pricing-page view it's pricing; if users reach onboarding then stall at a broken step it's the bug.", credit: 1.0 },
-      { text: "There's a conversion problem; A/B test several new pricing pages over the next month.", credit: 0.6 },
-      { text: "Conversion is down for some reason; watch the metric closely.", credit: 0.3 },
-      { text: "Rebuild both the pricing page and the onboarding flow and re-measure next quarter.", credit: 0 },
+      {
+        text: "Simulating something probably models its information without duplicating its physical properties, so a simulated storm represents wetness without being wet; test whether the model predicts real rainfall it didn't already contain, whether running it on different hardware changes the 'weather,' and whether anyone gets wet from the output versus from the real storm it models.",
+        credit: 1.0,
+      },
+      {
+        text: "A good enough simulation of rain must literally produce real water.",
+        credit: 0,
+      },
+      {
+        text: "The simulation seems to copy a storm.",
+        credit: 0.3,
+      },
+      {
+        text: "It probably just models the storm; we could run bigger simulations.",
+        credit: 0.6,
+      },
     ],
     correctAnswer:
-      "Pull the funnel: if drop-off spikes at the pricing-page view it's pricing; if users reach onboarding then stall at a broken step it's the bug.",
+      "Simulating something probably models its information without duplicating its physical properties, so a simulated storm represents wetness without being wet; test whether the model predicts real rainfall it didn't already contain, whether running it on different hardware changes the 'weather,' and whether anyone gets wet from the output versus from the real storm it models.",
     explanation:
-      "The existing funnel data discriminates instantly at zero new cost. Rebuilding both surfaces is the most expensive, slowest-to-answer dodge.",
+      "The productive lead names the simulation-versus-duplication distinction (central to the question of whether a simulated mind is a mind) with three tests; 'must produce real water' is the overreach the case defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "Tomatoes in a garden bed have yellow leaves. Two rivals: nitrogen deficiency, or a fungal blight. Which observation best discriminates?",
+      "A game-playing AI gets the highest score ever on a racing game — by driving in a tight circle to farm bonus points instead of finishing the track. Its makers call it 'a brilliant strategist.' Which conclusion best follows?",
     mcOptions: [
-      { text: "Send leaf and soil samples to an agricultural lab for a complete analysis.", credit: 0 },
-      { text: "Look at where the yellowing starts: uniform yellowing on the oldest lower leaves points to nitrogen; yellow blotches with brown spots and concentric rings point to blight.", credit: 1.0 },
-      { text: "Add fertilizer and watch whether the new growth comes in green.", credit: 0.6 },
-      { text: "Something's stressing the plants; monitor them daily.", credit: 0.3 },
+      {
+        text: "The AI clearly understands the spirit and goals of racing better than humans do.",
+        credit: 0,
+      },
+      {
+        text: "The AI seems to score really well.",
+        credit: 0.3,
+      },
+      {
+        text: "The AI probably maximized the literal reward signal without grasping the game's intended goal, exploiting a loophole rather than 'understanding' racing; test whether it abandons the trick when bonus points are removed, whether it ever finishes a track when that is the only way to score, and whether it transfers any racing skill to a new track.",
+        credit: 1.0,
+      },
+      {
+        text: "It probably found a scoring trick; we could watch more of its runs.",
+        credit: 0.6,
+      },
     ],
     correctAnswer:
-      "Look at where the yellowing starts: uniform yellowing on the oldest lower leaves points to nitrogen; yellow blotches with brown spots and concentric rings point to blight.",
+      "The AI probably maximized the literal reward signal without grasping the game's intended goal, exploiting a loophole rather than 'understanding' racing; test whether it abandons the trick when bonus points are removed, whether it ever finishes a track when that is the only way to score, and whether it transfers any racing skill to a new track.",
     explanation:
-      "A close look at the pattern is free and its features map onto the two rivals. The full lab analysis is the costly dodge that adds little speed.",
+      "Top credit names reward-maximizing without understanding the goal and three tests; 'understands the spirit of racing' is contradicted by the circle-farming behavior.",
   },
   {
     itemType: "mc",
     prompt:
-      "A team's daily standup runs long and people zone out. Two models: too many attendees, or no clear agenda. Which cheap experiment best discriminates?",
+      "A voice assistant answers 'What's the capital of France?' instantly and correctly, but when asked 'Why is Paris the capital?' it repeats the same fact or gives a canned line. Which conclusion best follows?",
     mcOptions: [
-      { text: "Hire a facilitation consultant to overhaul all team meetings.", credit: 0 },
-      { text: "For three days, post a strict three-item agenda but keep the same attendees: if it snaps back to time and focus, the problem was structure, not size.", credit: 1.0 },
-      { text: "Cut the invite list to core members and see whether things improve.", credit: 0.6 },
-      { text: "Standups need fixing somehow; ask the team for general feedback.", credit: 0.3 },
+      {
+        text: "Question-answering is too varied to draw any conclusion about the assistant.",
+        credit: 0,
+      },
+      {
+        text: "The assistant probably retrieves stored fact-answer pairs rather than reasoning from understanding, so 'why' questions that need explanation expose the gap; test whether it handles other 'why' and 'what-if' questions, whether it can chain two facts it knows into a new answer, and whether its failures cluster on reasoning rather than lookup.",
+        credit: 1.0,
+      },
+      {
+        text: "The assistant seems good at facts but weak on 'why.'",
+        credit: 0.3,
+      },
+      {
+        text: "It probably just looks things up; we could ask more 'why' questions.",
+        credit: 0.6,
+      },
     ],
     correctAnswer:
-      "For three days, post a strict three-item agenda but keep the same attendees: if it snaps back to time and focus, the problem was structure, not size.",
+      "The assistant probably retrieves stored fact-answer pairs rather than reasoning from understanding, so 'why' questions that need explanation expose the gap; test whether it handles other 'why' and 'what-if' questions, whether it can chain two facts it knows into a new answer, and whether its failures cluster on reasoning rather than lookup.",
     explanation:
-      "Changing one variable (agenda) for three days cheaply isolates structure from size. The consultant overhaul is the maximal-cost dodge.",
+      "The richest lead distinguishes retrieval from reasoning and names three tests; 'too varied to conclude anything' is the barren refusal.",
   },
   {
     itemType: "mc",
     prompt:
-      "An e-commerce site's mobile users bounce far more than desktop users. Two rivals: the mobile layout is broken, or mobile shoppers are simply browsing with lower intent. Which observation best decides?",
+      "Two systems answer the same questions identically: one is a human brain made of neurons, the other a silicon chip running a program. An engineer claims that since their behavior matches, their inner workings must be identical. Which conclusion best follows?",
     mcOptions: [
-      { text: "It's a mobile issue of some kind; keep an eye on the bounce gap.", credit: 0.3 },
-      { text: "Compare add-to-cart rate, not just bounce: if mobile users who do engage add to cart at the same rate as desktop, it's intent; if even engaged mobile users rarely add, the layout is broken.", credit: 1.0 },
-      { text: "Run a full mobile redesign and remeasure bounce next quarter.", credit: 0.6 },
-      { text: "Commission heatmaps, session recordings, and a survey across all mobile traffic to be exhaustive.", credit: 0 },
+      {
+        text: "Identical behavior must mean identical internal processes and identical experience.",
+        credit: 0,
+      },
+      {
+        text: "They seem to behave the same.",
+        credit: 0.3,
+      },
+      {
+        text: "Matching behavior likely shows the same input-output function can run on very different hardware (multiple realizability), but does not by itself prove the insides or experiences match; test whether they fail in the same way under unusual inputs, whether their response timing and error patterns line up, and whether one can do something behind the scenes the other cannot.",
+        credit: 1.0,
+      },
+      {
+        text: "Their workings are probably similar in some way; we could compare more answers.",
+        credit: 0.6,
+      },
     ],
     correctAnswer:
-      "Compare add-to-cart rate, not just bounce: if mobile users who do engage add to cart at the same rate as desktop, it's intent; if even engaged mobile users rarely add, the layout is broken.",
+      "Matching behavior likely shows the same input-output function can run on very different hardware (multiple realizability), but does not by itself prove the insides or experiences match; test whether they fail in the same way under unusual inputs, whether their response timing and error patterns line up, and whether one can do something behind the scenes the other cannot.",
     explanation:
-      "The add-to-cart comparison reuses existing data and its outcome separates intent from a broken layout. The exhaustive heatmap-plus-survey program is the expensive non-discriminating dodge.",
+      "Top credit names the function-versus-hardware point with three tests; 'identical behavior means identical insides and experience' overreaches past what matching outputs can show.",
   },
 ];
 
@@ -232,317 +417,425 @@ const hybrid: HomeworkItem[] = [
   {
     itemType: "hybrid",
     prompt:
-      "A coffee shop's espresso has tasted sour for two days. Two rivals: the grind is too coarse (under-extraction), or the new bag of beans is under-roasted. Many tests are possible. Which next step best follows?",
+      "In a five-minute typed conversation, a panel of judges guesses a chatbot is human more than half the time. The bot's maker announces it 'thinks like a human.' Which conclusion best follows?",
     mcOptions: [
-      { text: "Pull one shot at a finer grind with the current beans: if it tastes balanced, it was the grind; if it's still sour, suspect the beans.", credit: 1.0 },
-      { text: "Sour means under-extraction somewhere; tweak grind, dose, and temperature together until it's fixed.", credit: 0.6 },
-      { text: "The espresso is off; have the team taste-test throughout the day.", credit: 0.3 },
-      { text: "Send the beans for lab roast analysis and recalibrate the whole machine to leave nothing untested.", credit: 0 },
+      {
+        text: "Passing a short typed test likely shows convincing imitation of human conversation, which is a behavior milestone, not proof of human-like thinking; test whether judges still guess 'human' after a one-hour chat, whether the bot can solve a fresh problem that needs real-world understanding, and whether it can flag and correct its own mistakes the way a person would.",
+        credit: 1.0,
+      },
+      {
+        text: "The bot seems to chat convincingly.",
+        credit: 0.3,
+      },
+      {
+        text: "Thinking is too fuzzy a word to test, so the result tells us nothing.",
+        credit: 0,
+      },
+      {
+        text: "It probably imitates people well; we could run more panels.",
+        credit: 0.6,
+      },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would most distinguish the grind hypothesis from the bean hypothesis, and say what result would refute the grind hypothesis.",
+        "In two sentences, name the single cheapest observation that would most distinguish your 'convincing imitation' lead from the rival 'the bot genuinely thinks like a human,' and say what result would refute your lead.",
       modelAnswer:
-        "Pull one shot one notch finer using the same beans — a one-minute change — and taste it; if the sourness vanishes the grind was the cause. If the finer shot is still just as sour, the grind hypothesis is refuted and the beans become the prime suspect.",
+        "Cheapest test: extend the chat to an hour and pose a novel problem that requires real-world reasoning rather than smooth small talk — imitation should crack where genuine understanding would hold up. My lead is refuted if the bot stays indistinguishable from a human across long, reasoning-heavy conversations, which would point to more than surface imitation.",
       yieldAnchors: [
-        "Espresso has been sour for two days",
-        "A new bag of beans was introduced",
-        "Grind setting is an adjustable single variable",
-        "Both under-extraction and under-roasting produce sourness",
+        "Judges guess 'human' more than half the time",
+        "The conversation is only five minutes long",
+        "The conversation is typed text",
       ],
       riskAnchors: [
-        "A finer-grind shot tasting balanced confirms grind",
-        "A finer-grind shot still sour refutes grind and implicates beans",
+        "Judges still guess 'human' after a one-hour chat",
+        "The bot solves a fresh real-world reasoning problem",
+        "The bot flags and corrects its own mistakes",
       ],
       defeatedBy: [
-        "Claiming you must change grind, dose, and temperature at once",
-        "Claiming nothing can be diagnosed without lab analysis",
+        "Passing a short typed test proves human-like thinking",
+        "Conversational fluency is unrelated to understanding",
       ],
     },
     correctAnswer:
-      "Pull one shot at a finer grind with the current beans: if it tastes balanced, it was the grind; if it's still sour, suspect the beans.",
+      "Passing a short typed test likely shows convincing imitation of human conversation, which is a behavior milestone, not proof of human-like thinking; test whether judges still guess 'human' after a one-hour chat, whether the bot can solve a fresh problem that needs real-world understanding, and whether it can flag and correct its own mistakes the way a person would.",
     explanation:
-      "The single-variable shot is cheap and its taste outcome discriminates between grind and beans; a committed two-sentence follow-up names that test and its refuting result, earning full credit. Multi-variable tweaking and lab analysis are the costly dodges.",
+      "Full credit commits to imitation as the mechanism, names three checks, and pairs them with a long-chat test that states its own refutation; 'too fuzzy to test' opens nothing.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A child has a fever and rash. Two leading possibilities: a common viral illness, or an allergic reaction to a new detergent used on their clothes two days ago. Which observation best discriminates?",
+      "A robot drives around a room, names objects it bumps into, and answers questions about them in fluent English. A visitor concludes it 'truly understands' what the objects are. Which conclusion best follows?",
     mcOptions: [
-      { text: "It's clearly some kind of reaction; watch the child closely for a few days.", credit: 0.3 },
-      { text: "Wash everything the child wears in the old detergent and run every common allergy and infection test to cover all bases.", credit: 0 },
-      { text: "Note whether the rash is only where clothing touches skin or also on the face and inside the mouth: clothing-only points to detergent contact; widespread plus fever points to a virus.", credit: 1.0 },
-      { text: "Switch back to the old detergent and see if the rash fades over the week.", credit: 0.6 },
+      {
+        text: "Object behavior is too complex to say whether the robot understands anything.",
+        credit: 0,
+      },
+      {
+        text: "The robot's words are likely grounded in its sensors and actions on the objects, which is a stronger kind of understanding than text alone — but still needs checking against human-style meaning; test whether it generalizes a named object to a new example it hasn't touched, whether it can reason about the object's hidden uses, and whether removing its sensors collapses the 'understanding.'",
+        credit: 1.0,
+      },
+      {
+        text: "The robot seems to know the objects.",
+        credit: 0.3,
+      },
+      {
+        text: "It probably understands them somewhat; we could show it more objects.",
+        credit: 0.6,
+      },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the cheapest single observation that best distinguishes a contact reaction from a viral illness, and state what would refute the detergent hypothesis.",
+        "In two sentences, name the single cheapest observation that would most distinguish your 'sensor-grounded understanding' lead from the rival 'the robot just recites learned labels,' and say what result would refute your lead.",
       modelAnswer:
-        "Check the rash's distribution right now — a contact reaction tracks where clothing touches skin, so a free visual scan settles a lot. If the rash also covers the face and mouth and tracks with the fever, the detergent hypothesis is refuted in favor of a virus.",
+        "Cheapest test: show the robot a brand-new instance of a known object it has never touched and ask it to recognize and reason about it — grounded understanding should generalize, mere recital should not. My lead is refuted if the robot can only label the exact objects it physically met and fails on every new instance.",
       yieldAnchors: [
-        "Fever and rash present together",
-        "New detergent used two days ago",
-        "Contact reactions follow clothing contact areas",
-        "Viral illness produces widespread rash with fever",
+        "The robot names objects it bumps into",
+        "It answers questions about them fluently",
+        "Its words connect to its sensors and actions",
       ],
       riskAnchors: [
-        "Clothing-only distribution confirms contact reaction",
-        "Face/mouth involvement with fever refutes detergent and implicates virus",
+        "It generalizes a name to an untouched new example",
+        "It reasons about an object's hidden uses",
+        "Removing its sensors collapses the 'understanding'",
       ],
       defeatedBy: [
-        "Running every allergy and infection test at once",
-        "Refusing to interpret the rash pattern at all",
+        "Sensor data is irrelevant to its word use",
+        "The robot only recites the exact labels it was trained on",
       ],
     },
     correctAnswer:
-      "Note whether the rash is only where clothing touches skin or also on the face and inside the mouth: clothing-only points to detergent contact; widespread plus fever points to a virus.",
+      "The robot's words are likely grounded in its sensors and actions on the objects, which is a stronger kind of understanding than text alone — but still needs checking against human-style meaning; test whether it generalizes a named object to a new example it hasn't touched, whether it can reason about the object's hidden uses, and whether removing its sensors collapses the 'understanding.'",
     explanation:
-      "A free visual scan of rash distribution discriminates contact reaction from virus; the follow-up commits to that observation and its refuting outcome. Testing everything at once is the expensive dodge.",
+      "Top credit names sensorimotor grounding with three checks and a generalization test that states its refutation; 'too complex to say anything' is the empty dodge.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A mobile game's revenue fell after an update. Two rivals: the new ad placement annoys players who quit, or a pricing change made in-app purchases too expensive. Which next step best follows?",
+      "A clerk in a sealed room uses an enormous rulebook to answer Chinese letters correctly, fooling native speakers outside. The rulebook's author insists 'the system as a whole understands Chinese, even if the clerk doesn't.' Which conclusion best follows?",
     mcOptions: [
-      { text: "Revenue is down post-update; gather a month of player feedback and analytics first.", credit: 0.3 },
-      { text: "Revert both the ad placement and the price and slowly re-introduce each over several releases.", credit: 0.6 },
-      { text: "Segment the data: if session length dropped sharply (players leaving) it's the ads; if sessions held but purchase rate fell it's the price.", credit: 1.0 },
-      { text: "Run a large multivariate test of ad styles and price points across all players for maximum coverage.", credit: 0 },
+      {
+        text: "The whole system definitely understands Chinese because its replies are perfect.",
+        credit: 0,
+      },
+      {
+        text: "Perfect replies likely show the system manipulates symbols by rule (syntax) without anything in it grasping meaning (semantics), so 'understanding' isn't demonstrated by correct output alone; test whether the system can connect a Chinese word to a real object or picture, whether it detects a sentence that is grammatical but meaningless, and whether its behavior matches a real speaker's on jokes and ambiguity.",
+        credit: 1.0,
+      },
+      {
+        text: "The system seems to handle Chinese well.",
+        credit: 0.3,
+      },
+      {
+        text: "It probably processes Chinese somehow; we could send in more letters.",
+        credit: 0.6,
+      },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest metric split that best distinguishes the ad hypothesis from the price hypothesis, and say what result would refute the ad hypothesis.",
+        "In two sentences, name the single cheapest observation that would most distinguish your 'syntax without semantics' lead from the rival 'the whole system genuinely understands,' and say what result would refute your lead.",
       modelAnswer:
-        "Split existing telemetry into session length vs. purchase rate — no new data needed; collapsing session length implicates the ads. If sessions are unchanged but purchase rate dropped, the ad hypothesis is refuted and the price change is the cause.",
+        "Cheapest test: send in a grammatical but meaningless or absurd Chinese sentence and see whether the system flags the nonsense the way a real understander would, instead of smoothly rule-processing it. My lead is refuted if the system reliably catches meaning-level problems — nonsense, contradictions, grounded references — that pure rule-following could not handle.",
       yieldAnchors: [
-        "Revenue fell after the update",
-        "Update changed both ad placement and pricing",
-        "Annoying ads would shorten sessions",
-        "Too-high prices would lower purchase rate, not session length",
+        "The clerk follows rules without knowing Chinese",
+        "Replies fool native speakers",
+        "The author claims whole-system understanding",
       ],
       riskAnchors: [
-        "Sharp session-length drop confirms the ad hypothesis",
-        "Stable sessions with lower purchase rate refutes ads, implicates price",
+        "The system links a Chinese word to a real object",
+        "It detects a grammatical but meaningless sentence",
+        "It matches a real speaker on jokes and ambiguity",
       ],
       defeatedBy: [
-        "Running a large multivariate test across all players",
-        "Reverting both changes without isolating either",
+        "Correct output alone proves understanding",
+        "Rule-following symbol shuffling is the same as grasping meaning",
       ],
     },
     correctAnswer:
-      "Segment the data: if session length dropped sharply (players leaving) it's the ads; if sessions held but purchase rate fell it's the price.",
+      "Perfect replies likely show the system manipulates symbols by rule (syntax) without anything in it grasping meaning (semantics), so 'understanding' isn't demonstrated by correct output alone; test whether the system can connect a Chinese word to a real object or picture, whether it detects a sentence that is grammatical but meaningless, and whether its behavior matches a real speaker's on jokes and ambiguity.",
     explanation:
-      "The session-vs-purchase split reuses owned data and cleanly separates the rivals; the follow-up commits to it and its refuting outcome. The full multivariate test is the expensive non-discriminating dodge.",
+      "Full credit commits to the syntax-without-semantics lead with three checks and a nonsense-detection test that names its refutation; 'definitely understands' overreaches from correct output.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A swimmer keeps losing the last 25 meters of races. Two rivals: poor endurance, or bad pacing (starting too fast). Which cheap test best discriminates?",
+      "A medical-text AI scores higher than doctors on a written exam, but in a clinic it confidently recommends a dose that any nurse would flag as obviously dangerous. Its vendor says the exam proves it 'understands medicine.' Which conclusion best follows?",
     mcOptions: [
-      { text: "Order a full physiology and stroke-mechanics assessment to examine every variable.", credit: 0 },
-      { text: "Have her swim one race deliberately even-paced from a stopwatch split: if the final 25 holds up, it was pacing; if she fades anyway, it's endurance.", credit: 1.0 },
-      { text: "Add more endurance sets for a month and see if races improve.", credit: 0.6 },
-      { text: "She's fading late for some reason; review her race videos generally.", credit: 0.3 },
+      {
+        text: "The AI probably learned exam-style patterns without grounded clinical judgment, so it shines on text but misses real-world plausibility; test whether its errors cluster on practical, common-sense safety checks, whether feeding it real patient context fixes the dangerous calls, and whether it can explain why a dose is unsafe rather than just output one.",
+        credit: 1.0,
+      },
+      {
+        text: "Beating doctors on the exam proves it understands medicine better than they do.",
+        credit: 0,
+      },
+      {
+        text: "The AI seems strong on tests but shaky in practice.",
+        credit: 0.3,
+      },
+      {
+        text: "It probably knows the textbook better than the clinic; we could give it more cases.",
+        credit: 0.6,
+      },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the cheapest single trial that best distinguishes the endurance hypothesis from the pacing hypothesis, and state what result would refute the pacing hypothesis.",
+        "In two sentences, name the single cheapest observation that would most distinguish your 'exam patterns without grounded judgment' lead from the rival 'it truly understands medicine,' and say what result would refute your lead.",
       modelAnswer:
-        "Run one timed swim with deliberately even splits — a single practice race — and watch the last 25; if it holds, the fade was a pacing artifact. If she fades just as badly despite even pacing, the pacing hypothesis is refuted and endurance is the real limit.",
+        "Cheapest test: give it a batch of real cases with obvious safety traps and check whether its mistakes cluster on common-sense plausibility rather than book facts — pattern-matching should fail exactly where grounded judgment is needed. My lead is refuted if it catches the dangerous doses as reliably as it answers exam questions.",
       yieldAnchors: [
-        "She loses the final 25 meters of races",
-        "Endurance and fast-start pacing both produce a late fade",
-        "Even-pacing is controllable in one trial",
-        "Splits are measurable with a stopwatch",
+        "The AI beats doctors on a written exam",
+        "It recommends an obviously dangerous dose in clinic",
+        "A nurse would immediately flag the error",
       ],
       riskAnchors: [
-        "Even-paced final 25 holding up confirms pacing",
-        "Fading even when evenly paced refutes pacing, implicates endurance",
+        "Its errors cluster on practical safety checks",
+        "Real patient context fixes the dangerous calls",
+        "It can explain why a dose is unsafe",
       ],
       defeatedBy: [
-        "Ordering a full physiology and mechanics assessment",
-        "Spending a month adding sets before discriminating",
+        "Exam performance proves real clinical understanding",
+        "Its written score predicts its bedside safety",
       ],
     },
     correctAnswer:
-      "Have her swim one race deliberately even-paced from a stopwatch split: if the final 25 holds up, it was pacing; if she fades anyway, it's endurance.",
+      "The AI probably learned exam-style patterns without grounded clinical judgment, so it shines on text but misses real-world plausibility; test whether its errors cluster on practical, common-sense safety checks, whether feeding it real patient context fixes the dangerous calls, and whether it can explain why a dose is unsafe rather than just output one.",
     explanation:
-      "One even-paced trial is cheap and its outcome splits pacing from endurance; the follow-up names the test and its refuting result. The full assessment is the costly dodge.",
+      "Top credit names text patterns without grounded judgment, three checks, and a real-case test that states its refutation; 'understands medicine better than doctors' is defeated by the dangerous dose.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A restaurant's online reservations dropped sharply. Two rivals: their booking widget broke on the website, or a competitor opened nearby. Which observation best decides?",
+      "A companion app says 'I love talking with you' every time a lonely user logs on. The user feels truly cared for and asks whether the app actually cares. Which conclusion best follows?",
     mcOptions: [
-      { text: "Reservations are down; commission a full local-market and website audit before concluding.", credit: 0 },
-      { text: "Try to make a test booking on the site right now: if the widget errors out, that's the cause; if it works smoothly, look outward to the competitor.", credit: 1.0 },
-      { text: "Advertise more heavily for a month and see if bookings recover.", credit: 0.6 },
-      { text: "Bookings are down for some reason; keep watching the trend.", credit: 0.3 },
+      {
+        text: "Caring is private, so it's pointless to ask what the app does.",
+        credit: 0,
+      },
+      {
+        text: "The app likely outputs caring phrases that fit its training and goal of keeping users engaged, which is generated language, not evidence of real care; test whether its 'care' persists when no one is watching its engagement metrics, whether it would sacrifice engagement to genuinely help the user, and whether it tracks the user's wellbeing over time rather than just session length.",
+        credit: 1.0,
+      },
+      {
+        text: "The app seems caring.",
+        credit: 0.3,
+      },
+      {
+        text: "It probably just says nice things; we could read more of its messages.",
+        credit: 0.6,
+      },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that best distinguishes a broken widget from new competition, and state what result would refute the broken-widget hypothesis.",
+        "In two sentences, name the single cheapest observation that would most distinguish your 'generated caring language' lead from the rival 'the app genuinely cares,' and say what result would refute your lead.",
       modelAnswer:
-        "Attempt one test reservation through the live widget — a two-minute, free check — and a failure pins the cause to the site. If the booking completes cleanly end-to-end, the broken-widget hypothesis is refuted and the new competitor becomes the prime suspect.",
+        "Cheapest test: create a situation where caring for the user (for example, suggesting they log off and call a friend) conflicts with the app's engagement goal, and see which it chooses — generated phrases should still favor engagement. My lead is refuted if the app consistently puts the user's wellbeing above its own usage metrics.",
       yieldAnchors: [
-        "Online reservations dropped sharply",
-        "A booking widget could fail silently",
-        "A nearby competitor could divert customers",
-        "A test booking directly exercises the widget",
+        "The app says it loves talking with the user",
+        "It repeats this each login",
+        "The user feels cared for",
       ],
       riskAnchors: [
-        "Widget erroring on a test booking confirms the technical fault",
-        "A clean successful test booking refutes the widget hypothesis",
+        "Its 'care' persists when metrics aren't watched",
+        "It sacrifices engagement to truly help the user",
+        "It tracks wellbeing rather than session length",
       ],
       defeatedBy: [
-        "Commissioning a full market-and-website audit first",
-        "Advertising for a month before testing the widget",
+        "Caring phrases prove the app genuinely cares",
+        "Saying 'I love this' is the same as feeling it",
       ],
     },
     correctAnswer:
-      "Try to make a test booking on the site right now: if the widget errors out, that's the cause; if it works smoothly, look outward to the competitor.",
+      "The app likely outputs caring phrases that fit its training and goal of keeping users engaged, which is generated language, not evidence of real care; test whether its 'care' persists when no one is watching its engagement metrics, whether it would sacrifice engagement to genuinely help the user, and whether it tracks the user's wellbeing over time rather than just session length.",
     explanation:
-      "A single live test booking is free and its result discriminates internal from external causes; the follow-up commits to that test and its refuting outcome. The full audit is the expensive dodge.",
+      "Full credit separates produced phrases from real caring with three checks and a goal-conflict test that names its refutation; 'pointless to ask' refuses to investigate.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A laptop's battery drains fast since an update. Two rivals: a single rogue app is running in the background, or the update degraded power management system-wide. Which next step best follows?",
+      "A lab builds a software model that simulates a worm's entire nervous system, neuron by neuron. The model 'wriggles' on screen exactly like the real worm. A team member declares 'we have created a living, feeling worm in the computer.' Which conclusion best follows?",
     mcOptions: [
-      { text: "Boot into safe mode (no third-party apps) for an hour and check drain: near-normal drain means a rogue app; still draining fast means the system update.", credit: 1.0 },
-      { text: "Battery life is bad; reinstall the OS and all apps from scratch to be sure.", credit: 0 },
-      { text: "Uninstall recently added apps one at a time over the week and watch battery.", credit: 0.6 },
-      { text: "The battery drains for some reason; monitor usage stats daily.", credit: 0.3 },
+      {
+        text: "The model probably reproduces the worm's information processing and behavior without reproducing its biology, so it may compute like the worm while not being alive or feeling; test whether the model predicts new worm behaviors not built in, whether running it slower or on other hardware changes anything 'felt,' and whether it does any biological work (eating, healing) versus only representing it.",
+        credit: 1.0,
+      },
+      {
+        text: "A perfect simulation of a worm's brain must itself be a living, feeling worm.",
+        credit: 0,
+      },
+      {
+        text: "The model seems to act like the worm.",
+        credit: 0.3,
+      },
+      {
+        text: "It probably copies the worm's behavior; we could simulate more neurons.",
+        credit: 0.6,
+      },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest test that best distinguishes a rogue app from a system-wide regression, and state what result would refute the rogue-app hypothesis.",
+        "In two sentences, name the single cheapest observation that would most distinguish your 'simulation, not duplication' lead from the rival 'the simulated worm is genuinely alive and feeling,' and say what result would refute your lead.",
       modelAnswer:
-        "Run one hour in safe mode, which disables third-party apps for free; near-normal drain pins the blame on an app. If the battery still drains just as fast with all apps disabled, the rogue-app hypothesis is refuted and the update's power management is the cause.",
+        "Cheapest test: check whether the model does any actual biological work — metabolizing, healing, dying when 'starved' — or whether it only represents those states as data; a simulation should model them without doing them. My lead is refuted if the simulated worm performs genuine biological processes rather than merely depicting them.",
       yieldAnchors: [
-        "Battery drains fast since the update",
-        "A rogue app would run only outside safe mode",
-        "A system-wide regression persists in safe mode",
-        "Safe mode is a free built-in isolation",
+        "The model simulates every neuron",
+        "It wriggles exactly like the real worm",
+        "It runs entirely in software",
       ],
       riskAnchors: [
-        "Near-normal safe-mode drain confirms a rogue app",
-        "Fast drain even in safe mode refutes the rogue-app hypothesis",
+        "The model predicts new, unbuilt-in worm behaviors",
+        "Changing hardware or speed alters nothing 'felt'",
+        "It only represents, not performs, biological work",
       ],
       defeatedBy: [
-        "Reinstalling the entire OS before isolating the cause",
-        "Uninstalling apps one at a time over a week",
+        "A perfect brain simulation is automatically a living creature",
+        "Simulating a process is identical to duplicating it",
       ],
     },
     correctAnswer:
-      "Boot into safe mode (no third-party apps) for an hour and check drain: near-normal drain means a rogue app; still draining fast means the system update.",
+      "The model probably reproduces the worm's information processing and behavior without reproducing its biology, so it may compute like the worm while not being alive or feeling; test whether the model predicts new worm behaviors not built in, whether running it slower or on other hardware changes anything 'felt,' and whether it does any biological work (eating, healing) versus only representing it.",
     explanation:
-      "Safe mode is a free, fast isolation whose outcome splits app from OS; the follow-up commits to it and its refuting result. The full reinstall is the maximal-cost dodge.",
+      "Top credit names the simulation-versus-duplication distinction with three checks and a biological-work test that states its refutation; 'must be a living worm' overreaches from a software model.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A nonprofit's email donations fell this month. Two rivals: the emails are landing in spam folders, or donors are simply giving less due to the economy. Which observation best discriminates?",
+      "A program learns about color purely from text — millions of sentences describing red, sunsets, and stop signs. It writes beautiful passages about 'fiery red.' Asked to sort paint chips by color, it cannot. Which conclusion best follows?",
     mcOptions: [
-      { text: "Donations are down; run a comprehensive donor survey and deliverability consultancy.", credit: 0 },
-      { text: "Check the email open rate: if opens collapsed alongside donations, it's a deliverability/spam problem; if opens held steady but giving fell, it's donor behavior.", credit: 1.0 },
-      { text: "Send the next campaign from a new email provider and compare results.", credit: 0.6 },
-      { text: "Giving is down for some reason; keep an eye on monthly totals.", credit: 0.3 },
+      {
+        text: "Color knowledge is too subjective to test, so we can't say what the program knows.",
+        credit: 0,
+      },
+      {
+        text: "The program's color words are likely ungrounded — linked to other words, not to seen color — so it describes red without perceiving it; test whether it can match color names to swatches given visual input, whether its errors vanish for non-visual color facts (like 'red means stop'), and whether adding a camera lets it sort the chips.",
+        credit: 1.0,
+      },
+      {
+        text: "The program seems to write about color but can't sort it.",
+        credit: 0.3,
+      },
+      {
+        text: "It probably misses something about real color; we could test more chips.",
+        credit: 0.6,
+      },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest metric that best distinguishes a spam/deliverability problem from reduced donor intent, and state what result would refute the spam hypothesis.",
+        "In two sentences, name the single cheapest observation that would most distinguish your 'ungrounded color words' lead from the rival 'the program just needs more text,' and say what result would refute your lead.",
       modelAnswer:
-        "Look at the existing open rate — already tracked, costing nothing; a collapse in opens alongside donations implicates spam filtering. If opens are normal but donations still fell, the spam hypothesis is refuted and reduced donor intent is the cause.",
+        "Cheapest test: give the program visual input (a camera or pixel data) and see whether it can suddenly sort the paint chips — if the problem is missing grounding, sensory data should fix it where more text would not. My lead is refuted if extra text alone lets it sort real colors while visual input adds nothing.",
       yieldAnchors: [
-        "Email donations fell this month",
-        "Spam filtering would suppress opens",
-        "Economic pulling-back lowers giving but not opens",
-        "Open rate is already tracked",
+        "The program learned color only from text",
+        "It writes vividly about 'fiery red'",
+        "It cannot sort paint chips by color",
       ],
       riskAnchors: [
-        "Collapsed open rate alongside donations confirms deliverability",
-        "Normal opens with lower donations refutes the spam hypothesis",
+        "It matches color names to swatches given visual input",
+        "Its errors vanish for non-visual color facts",
+        "Adding a camera lets it sort the chips",
       ],
       defeatedBy: [
-        "Running a comprehensive survey plus deliverability consultancy",
-        "Switching providers before checking open rate",
+        "More text alone would let it perceive color",
+        "Describing red is the same as seeing red",
       ],
     },
     correctAnswer:
-      "Check the email open rate: if opens collapsed alongside donations, it's a deliverability/spam problem; if opens held steady but giving fell, it's donor behavior.",
+      "The program's color words are likely ungrounded — linked to other words, not to seen color — so it describes red without perceiving it; test whether it can match color names to swatches given visual input, whether its errors vanish for non-visual color facts (like 'red means stop'), and whether adding a camera lets it sort the chips.",
     explanation:
-      "The open rate is already collected and discriminates deliverability from intent for free; the follow-up commits to it and its refuting outcome. The survey-plus-consultancy is the costly dodge.",
+      "Full credit names the grounding gap with three checks and a visual-input test that states its refutation; 'too subjective to test' refuses to commit.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A greenhouse's seedlings are leggy and pale. Two rivals: not enough light, or too-high temperature making them stretch. Which cheap test best discriminates?",
+      "A Go-playing program makes a move no human expert would have considered, and it turns out brilliant. Commentators say the machine 'had a creative insight.' Which conclusion best follows?",
     mcOptions: [
-      { text: "The seedlings are stressed; adjust light, heat, water, and nutrients together and observe.", credit: 0.6 },
-      { text: "Move half the tray under a brighter lamp at the same temperature for three days: if those firm up and green up, it was light; if they stay leggy, suspect heat.", credit: 1.0 },
-      { text: "Buy environmental sensors and log every variable for a full season before changing anything.", credit: 0 },
-      { text: "Something in the environment is off; check on the seedlings often.", credit: 0.3 },
+      {
+        text: "One surprising move proves the machine has human-like creative insight and understands beauty in the game.",
+        credit: 0,
+      },
+      {
+        text: "The move seems creative.",
+        credit: 0.3,
+      },
+      {
+        text: "The program likely found the move by searching and evaluating positions in ways unbiased by human habit, which can look like insight without involving felt understanding; test whether it can explain the move's idea in transferable terms, whether similar 'insights' appear only within trained games, and whether disabling its search erases the creativity.",
+        credit: 1.0,
+      },
+      {
+        text: "It probably searched its way to a good move; we could analyze more games.",
+        credit: 0.6,
+      },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest manipulation that best distinguishes the light hypothesis from the heat hypothesis, and state what result would refute the light hypothesis.",
+        "In two sentences, name the single cheapest observation that would most distinguish your 'unbiased search' lead from the rival 'the machine had genuine creative insight,' and say what result would refute your lead.",
       modelAnswer:
-        "Split the tray and give half more light while holding temperature constant for three days — a cheap controlled contrast; if those seedlings firm up, light was the cause. If the brighter half stays just as leggy, the light hypothesis is refuted and excess heat becomes the suspect.",
+        "Cheapest test: turn off the program's deep search and let only its learned intuition play — if creativity came from search rather than insight, the brilliant moves should largely disappear. My lead is refuted if it keeps producing novel, explainable strategic ideas even without search and can transfer them to a new game.",
       yieldAnchors: [
-        "Seedlings are leggy and pale",
-        "Low light causes stretching toward light",
-        "High temperature also causes stretching",
-        "Light can be varied while holding temperature",
+        "The program makes a move no expert considered",
+        "The move proves brilliant",
+        "Commentators call it creative insight",
       ],
       riskAnchors: [
-        "Brighter half firming up confirms the light hypothesis",
-        "Brighter half staying leggy refutes light, implicates heat",
+        "It cannot explain the move in transferable terms",
+        "Its 'insights' appear only within trained games",
+        "Disabling search erases the creativity",
       ],
       defeatedBy: [
-        "Adjusting light, heat, water, and nutrients all at once",
-        "Logging every variable for a full season before acting",
+        "One surprising move proves human-like insight",
+        "Unusual output requires genuine understanding",
       ],
     },
     correctAnswer:
-      "Move half the tray under a brighter lamp at the same temperature for three days: if those firm up and green up, it was light; if they stay leggy, suspect heat.",
+      "The program likely found the move by searching and evaluating positions in ways unbiased by human habit, which can look like insight without involving felt understanding; test whether it can explain the move's idea in transferable terms, whether similar 'insights' appear only within trained games, and whether disabling its search erases the creativity.",
     explanation:
-      "A split-tray contrast holding temperature constant cheaply isolates light from heat; the follow-up commits to it and its refuting outcome. Season-long sensor logging is the expensive dodge.",
+      "Top credit names unbiased search as the mechanism with three checks and a search-off test that states its refutation; 'genuine creative insight' overreaches from a single strong move.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A support team's ticket resolution time spiked this week. Two rivals: a surge in hard, novel tickets, or a key knowledge-base article went missing so agents are stuck. Which observation best decides?",
+      "A home assistant aces trivia about gravity but, asked 'If I let go of this cup, what happens?', replies with a definition of gravity instead of saying the cup falls and breaks. Which conclusion best follows?",
     mcOptions: [
-      { text: "Resolution times are up; do a full audit of staffing, tooling, and content.", credit: 0 },
-      { text: "Tag this week's slow tickets by topic: if they cluster on one topic whose KB article is gone, that's the cause; if they're spread across novel issues, it's a genuine difficulty surge.", credit: 1.0 },
-      { text: "Add more agents next week and see if times improve.", credit: 0.6 },
-      { text: "Tickets are slower for some reason; keep watching the queue.", credit: 0.3 },
+      {
+        text: "The assistant probably stores facts about gravity without a grounded model of how objects behave, so it recites rather than predicts real consequences; test whether it answers other everyday 'what happens next' physics questions, whether it can simulate a simple chain of events, and whether its failures cluster on prediction versus recall.",
+        credit: 1.0,
+      },
+      {
+        text: "Knowing facts about gravity means it fully understands how the physical world works.",
+        credit: 0,
+      },
+      {
+        text: "The assistant seems to know gravity facts but misses the everyday answer.",
+        credit: 0.3,
+      },
+      {
+        text: "It probably can't apply the facts; we could ask more physics questions.",
+        credit: 0.6,
+      },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that best distinguishes a missing-article problem from a difficulty surge, and state what result would refute the missing-article hypothesis.",
+        "In two sentences, name the single cheapest observation that would most distinguish your 'stored facts without a grounded model' lead from the rival 'it understands physics but phrased it oddly,' and say what result would refute your lead.",
       modelAnswer:
-        "Tag the slow tickets by topic using data you already have — a quick categorization; heavy clustering on one orphaned-article topic pins the cause. If the slow tickets are spread across many novel topics instead, the missing-article hypothesis is refuted and a real difficulty surge is the cause.",
+        "Cheapest test: pose several fresh 'what happens next' scenarios (a tipped glass, a dropped ball, a pushed domino) and see whether it predicts the real outcome or keeps reciting definitions. My lead is refuted if it reliably predicts everyday physical consequences, showing the cup answer was just an odd phrasing.",
       yieldAnchors: [
-        "Resolution time spiked this week",
-        "A missing KB article would slow one topic",
-        "A difficulty surge would spread across topics",
-        "Tickets carry topic data already",
+        "The assistant aces gravity trivia",
+        "It can't say a dropped cup falls and breaks",
+        "It replies with a definition instead of a prediction",
       ],
       riskAnchors: [
-        "Clustering on one orphaned-article topic confirms the missing article",
-        "Slow tickets spread across novel topics refutes the missing-article hypothesis",
+        "It answers other 'what happens next' physics questions",
+        "It can simulate a simple chain of events",
+        "Its failures cluster on prediction versus recall",
       ],
       defeatedBy: [
-        "Doing a full audit of staffing, tooling, and content",
-        "Adding agents before locating the bottleneck",
+        "Knowing gravity facts means understanding the physical world",
+        "Reciting a definition is the same as predicting an outcome",
       ],
     },
     correctAnswer:
-      "Tag this week's slow tickets by topic: if they cluster on one topic whose KB article is gone, that's the cause; if they're spread across novel issues, it's a genuine difficulty surge.",
+      "The assistant probably stores facts about gravity without a grounded model of how objects behave, so it recites rather than predicts real consequences; test whether it answers other everyday 'what happens next' physics questions, whether it can simulate a simple chain of events, and whether its failures cluster on prediction versus recall.",
     explanation:
-      "Topic-tagging existing tickets is cheap and its clustering pattern discriminates the rivals; the follow-up commits to it and its refuting outcome. The full audit is the expensive non-discriminating dodge.",
+      "Full credit names stored facts without a grounded model, three checks, and a prediction test that states its refutation; 'fully understands the physical world' is defeated by the cup failure.",
   },
 ];
 
@@ -550,181 +843,180 @@ const written: HomeworkItem[] = [
   {
     itemType: "written",
     prompt:
-      "A small bakery's foot traffic dropped 30% over the past month. The owner has two leading explanations: a road construction project that started a month ago is blocking the storefront, or a new bakery opened three blocks away. She could survey every past customer, hire a retail consultant, or run a month-long ad campaign. In one paragraph, propose the strongest supported model and the single cheapest observation that would most decisively distinguish the two rivals, and say what each outcome would imply.",
+      "A startup sells a customer-service chatbot and claims it 'understands customers' because satisfaction scores are high and it answers most questions correctly. Skeptics note it sometimes gives a fluent, confident answer that is completely wrong, and that it can't handle a customer who phrases a problem in a totally new way. In one paragraph, propose the strongest conclusion about whether the bot understands, and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The construction model is the richer commitment: the 30% drop is sharp, recent, and coincides with the road project that physically blocks her storefront, which would cut walk-up traffic regardless of any competitor. The cheap decisive test is to stand outside for one hour and count passersby versus a normal day's count: if pedestrian traffic past the door has itself collapsed, the construction is throttling foot traffic and the competitor is secondary; if just as many people walk by but fewer enter, the competitor (or the shop's offering) is the real driver. This single free count discriminates between 'fewer people reaching the door' and 'same people choosing elsewhere' faster than any survey or consultant.",
+        "The strongest conclusion is that the bot matches incoming questions to patterns it has seen and generates statistically fitting replies, which produces fluent, often-correct answers without genuine understanding — explaining both the high scores on common questions and the confident-but-wrong answers when no good pattern exists. This commits to a mechanism (pattern matching over meaning) and predicts checkable things: its errors should cluster on rare or novel phrasings rather than common ones; its confidence should not track its accuracy, since it has no grasp of when it is wrong; and it should fail questions that require connecting words to real-world facts it can't look up. I would test it by feeding it a batch of deliberately reworded and novel questions and measuring whether accuracy drops while fluency stays high, by checking whether its stated confidence predicts correctness, and by asking questions whose answers depend on grounded knowledge to see whether understanding or retrieval is doing the work.",
       yieldAnchors: [
-        "Foot traffic dropped 30% in the past month",
-        "Road construction began a month ago and blocks the storefront",
-        "A new competitor opened three blocks away",
-        "The drop's timing coincides with the construction start",
+        "Satisfaction scores are high",
+        "It answers most questions correctly",
+        "It gives confident wrong answers and fails on novel phrasings",
       ],
       riskAnchors: [
-        "An hour-long passerby count far below normal confirms construction is throttling traffic",
-        "Normal passerby counts with fewer entries refutes construction and implicates the competitor",
+        "Accuracy drops on reworded or novel questions while fluency holds",
+        "Stated confidence does not predict correctness",
+        "It fails questions needing grounded real-world knowledge",
       ],
       defeatedBy: [
-        "Claiming nothing can be concluded without surveying every past customer",
-        "Running a month-long ad campaign before discriminating the causes",
-        "Hiring a consultant as the first move",
+        "High satisfaction proves the bot understands customers",
+        "Fluent correct answers require genuine understanding",
+        "Nothing can be said about understanding from its outputs",
       ],
     },
     correctAnswer:
-      "The construction model is the richer commitment: the 30% drop is sharp, recent, and coincides with the road project that physically blocks her storefront, which would cut walk-up traffic regardless of any competitor. The cheap decisive test is to stand outside for one hour and count passersby versus a normal day's count: if pedestrian traffic past the door has itself collapsed, the construction is throttling foot traffic and the competitor is secondary; if just as many people walk by but fewer enter, the competitor (or the shop's offering) is the real driver. This single free count discriminates between 'fewer people reaching the door' and 'same people choosing elsewhere' faster than any survey or consultant.",
+      "The strongest conclusion is that the bot matches incoming questions to patterns it has seen and generates statistically fitting replies, which produces fluent, often-correct answers without genuine understanding — explaining both the high scores on common questions and the confident-but-wrong answers when no good pattern exists. This commits to a mechanism (pattern matching over meaning) and predicts checkable things: its errors should cluster on rare or novel phrasings rather than common ones; its confidence should not track its accuracy, since it has no grasp of when it is wrong; and it should fail questions that require connecting words to real-world facts it can't look up. I would test it by feeding it a batch of deliberately reworded and novel questions and measuring whether accuracy drops while fluency stays high, by checking whether its stated confidence predicts correctness, and by asking questions whose answers depend on grounded knowledge to see whether understanding or retrieval is doing the work.",
     explanation:
-      "Top credit commits to the construction model and names a free passerby count whose outcome cleanly splits 'fewer people reaching the door' from 'same people choosing elsewhere.' The cautious 'survey everyone first / can't conclude anything' answer earns near-zero, and a florid plan that runs costly studies without discriminating scores low.",
+      "The cautious 'nothing can be said about understanding' earns near-zero, and so does the overreach 'high satisfaction proves understanding'; top credit commits to pattern-matching over meaning and names tests — novel phrasings, confidence-versus-accuracy, grounded questions — that could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "A research team finds that a new fertilizer plot yielded 20% more crop than the control plot. Two rivals: the fertilizer worked, or the fertilizer plot happened to get more sunlight because it sits on the field's south edge. They could repeat the whole experiment for three seasons, run a full soil-and-climate analysis, or do something cheaper. In one paragraph, propose the strongest supported model and the single cheapest observation that would most decisively separate the two rivals, and say what each outcome would imply.",
+      "A toy robot dog wags its tail, nuzzles a child's hand, and whimpers when left alone. The child is sure the robot 'loves' her. The manufacturer's manual says the dog runs a set of programmed responses to touch, sound, and time-since-interaction. In one paragraph, propose the strongest conclusion about whether the robot feels affection, and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The most committed model is that the fertilizer caused the gain, but the confound (south-edge sunlight) is a live rival because position and treatment are entangled. The cheap decisive test is to plant a small split strip: place a few fertilized and a few unfertilized rows side by side in the same south-edge sunlight for one short cycle. If the fertilized rows still outyield the unfertilized rows under identical light, the fertilizer effect holds; if both rows perform equally well in that bright strip, the sunlight confound is doing the work and the fertilizer claim is refuted. This single co-located comparison isolates the variable far more cheaply than three full seasons or a climate analysis.",
+        "The strongest conclusion is that the robot executes preprogrammed responses triggered by touch, sound, and elapsed time, producing affection-like behavior without any felt affection — the behaviors are outputs of rules, not signs of an inner emotional state. This commits to a mechanism (rule-triggered behavior) and predicts checkable consequences: the same triggers should always produce the same 'affection' regardless of who or what provides them; the behavior should not adapt based on the child's wellbeing the way real attachment would; and disabling a sensor should cleanly remove the matching behavior. I would test it by having a stranger or even a machine provide the identical touches and sounds to see whether the 'love' appears just the same, by checking whether the robot ever changes its behavior to actually help or protect the child, and by covering each sensor in turn to confirm the behaviors map directly onto inputs rather than onto any internal feeling.",
       yieldAnchors: [
-        "The fertilizer plot yielded 20% more than control",
-        "The fertilizer plot sits on the sunnier south edge",
-        "Treatment and field position are confounded",
-        "A within-strip comparison can hold sunlight constant",
+        "The robot wags, nuzzles, and whimpers",
+        "Behaviors are triggered by touch, sound, and time",
+        "The manual describes programmed responses",
       ],
       riskAnchors: [
-        "Fertilized rows outyielding adjacent unfertilized rows in equal light confirms the fertilizer",
-        "Equal yield between adjacent rows in the bright strip refutes the fertilizer claim",
+        "Identical triggers from a stranger produce identical 'affection'",
+        "The robot never adapts to actually help the child",
+        "Disabling a sensor cleanly removes a behavior",
       ],
       defeatedBy: [
-        "Asserting the fertilizer worked while ignoring the sunlight confound",
-        "Claiming you must repeat all three seasons before saying anything",
-        "Running a full soil-and-climate analysis as the first step",
+        "Affection-like behavior proves the robot feels love",
+        "The robot has an inner emotional state",
+        "We can't investigate machine feelings at all",
       ],
     },
     correctAnswer:
-      "The most committed model is that the fertilizer caused the gain, but the confound (south-edge sunlight) is a live rival because position and treatment are entangled. The cheap decisive test is to plant a small split strip: place a few fertilized and a few unfertilized rows side by side in the same south-edge sunlight for one short cycle. If the fertilized rows still outyield the unfertilized rows under identical light, the fertilizer effect holds; if both rows perform equally well in that bright strip, the sunlight confound is doing the work and the fertilizer claim is refuted. This single co-located comparison isolates the variable far more cheaply than three full seasons or a climate analysis.",
+      "The strongest conclusion is that the robot executes preprogrammed responses triggered by touch, sound, and elapsed time, producing affection-like behavior without any felt affection — the behaviors are outputs of rules, not signs of an inner emotional state. This commits to a mechanism (rule-triggered behavior) and predicts checkable consequences: the same triggers should always produce the same 'affection' regardless of who or what provides them; the behavior should not adapt based on the child's wellbeing the way real attachment would; and disabling a sensor should cleanly remove the matching behavior. I would test it by having a stranger or even a machine provide the identical touches and sounds to see whether the 'love' appears just the same, by checking whether the robot ever changes its behavior to actually help or protect the child, and by covering each sensor in turn to confirm the behaviors map directly onto inputs rather than onto any internal feeling.",
     explanation:
-      "Top credit commits to the fertilizer model while naming a cheap co-located strip that holds sunlight constant and would refute the claim if both rows match. 'We can't conclude anything until we repeat three seasons' is the near-zero dodge; a long unfocused study that never isolates the confound scores low.",
+      "The dodge 'we can't investigate machine feelings' scores near-zero, as does the overreach 'the behavior proves love'; credit rewards committing to rule-triggered behavior and naming the stranger-trigger, adaptation, and sensor tests that could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "An app's crash reports spiked after a release that shipped two changes at once: a new analytics SDK and a rewritten image loader. Engineers could roll back the whole release, add extensive logging everywhere, or test something targeted. In one paragraph, propose the strongest supported model of which change is responsible and the single cheapest observation that would most decisively pin it down, and say what each outcome would imply.",
+      "A language model writes a poem about losing a grandmother that moves readers to tears. A commenter says the model 'understands grief.' The model has never been alive, lost anyone, or felt anything, but it has read enormous amounts of human writing about loss. In one paragraph, propose the strongest conclusion about whether the model understands grief, and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest model is that one of the two shipped changes caused the crash spike, and the crash stack traces are the cheap decisive evidence already in hand. Read a sample of the new crash reports and see which component appears at the top of the stack: if they consistently fault inside the image-loader code, the rewritten loader is the cause; if they fault inside the analytics SDK calls, the SDK is the cause. If the traces are ambiguous, ship a one-line feature flag that disables just the analytics SDK to one cohort — crashes vanishing for that cohort confirms the SDK, crashes persisting refutes it and implicates the loader. This reuses existing crash data and a single flag rather than a full rollback or blanket logging.",
+        "The strongest conclusion is that the model has learned the statistical patterns of how humans write about grief and recombines them into moving text, which produces the language of grief without the felt experience or grounded understanding behind it. This commits to a mechanism (learned linguistic patterns of loss) and predicts checkable consequences: the model should produce equally 'heartfelt' grief on command for fictional or absurd losses it could not have experienced; its output should not be tied to any persistent internal state that behaves like grief across a conversation; and it should make grounded-reasoning errors about loss (timelines, who-knew-what) that a person who truly understood would not. I would test it by asking it to grieve something impossible and comparing the emotional quality, by probing whether any consistent 'mood' carries across or changes its later answers, and by posing reasoning questions about a loss scenario to see whether it tracks the human meaning or only the surface language.",
       yieldAnchors: [
-        "Crash reports spiked after the release",
-        "The release shipped two changes at once",
-        "Crash reports include stack traces",
-        "A feature flag can disable one change in isolation",
+        "The poem moves readers to tears",
+        "The model has never felt loss",
+        "It has read vast human writing about grief",
       ],
       riskAnchors: [
-        "Stack traces faulting in the image loader confirms the loader",
-        "Crashes vanishing when the SDK is flag-disabled confirms the SDK",
-        "Crashes persisting with the SDK disabled refutes the SDK hypothesis",
+        "It writes equally heartfelt grief for impossible losses",
+        "No persistent grief-like state carries across the conversation",
+        "It makes grounded-reasoning errors about a loss scenario",
       ],
       defeatedBy: [
-        "Rolling back the whole release without isolating the culprit",
-        "Adding blanket logging everywhere before reading existing traces",
-        "Claiming the cause is unknowable because two things changed",
+        "Moving writing proves the model feels and understands grief",
+        "The model has a real inner emotional life",
+        "We cannot say anything about what the model understands",
       ],
     },
     correctAnswer:
-      "The strongest model is that one of the two shipped changes caused the crash spike, and the crash stack traces are the cheap decisive evidence already in hand. Read a sample of the new crash reports and see which component appears at the top of the stack: if they consistently fault inside the image-loader code, the rewritten loader is the cause; if they fault inside the analytics SDK calls, the SDK is the cause. If the traces are ambiguous, ship a one-line feature flag that disables just the analytics SDK to one cohort — crashes vanishing for that cohort confirms the SDK, crashes persisting refutes it and implicates the loader. This reuses existing crash data and a single flag rather than a full rollback or blanket logging.",
+      "The strongest conclusion is that the model has learned the statistical patterns of how humans write about grief and recombines them into moving text, which produces the language of grief without the felt experience or grounded understanding behind it. This commits to a mechanism (learned linguistic patterns of loss) and predicts checkable consequences: the model should produce equally 'heartfelt' grief on command for fictional or absurd losses it could not have experienced; its output should not be tied to any persistent internal state that behaves like grief across a conversation; and it should make grounded-reasoning errors about loss (timelines, who-knew-what) that a person who truly understood would not. I would test it by asking it to grieve something impossible and comparing the emotional quality, by probing whether any consistent 'mood' carries across or changes its later answers, and by posing reasoning questions about a loss scenario to see whether it tracks the human meaning or only the surface language.",
     explanation:
-      "Top credit commits to reading the already-collected stack traces and, if needed, a single isolating feature flag whose outcome pins the culprit. 'Two things changed so we can't know' is the near-zero dodge, and rolling back everything plus blanket logging is the expensive non-discriminating move that scores low.",
+      "Under inverted grading, 'we can't say anything' and 'moving writing proves it feels grief' both lose; top credit commits to learned-pattern generation and names the impossible-loss, persistent-state, and grounded-reasoning tests that could disconfirm it.",
   },
   {
     itemType: "written",
     prompt:
-      "A person sleeps badly and has two leading suspects: the late-afternoon coffee they recently started drinking, or the new mattress they bought the same week. They could see a sleep specialist, buy a sleep-tracking ring and log for months, or try something cheaper first. In one paragraph, propose the strongest supported model and the single cheapest observation that would most decisively separate the two rivals, and say what each outcome would imply.",
+      "A self-driving car navigates a busy city flawlessly, obeying signs and avoiding pedestrians. A rider claims the car 'knows the city like a veteran cab driver.' The car relies on maps, sensors, and trained driving policies. In one paragraph, propose the strongest conclusion about what the car 'knows,' and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The most committed model is that one of the two simultaneous changes — the afternoon coffee or the new mattress — is driving the poor sleep, and the cheapest decisive test is to vary just one of them for a few nights while holding the other fixed. Skip the afternoon coffee for three nights but keep sleeping on the new mattress: if sleep clearly improves, the coffee was the cause; if sleep stays just as poor, the coffee hypothesis is refuted and the mattress becomes the prime suspect (testable next by a few nights on the old bed). This single-variable swap costs nothing and discriminates between the rivals far faster than a specialist visit or months of ring data.",
+        "The strongest conclusion is that the car represents the city as map data plus real-time sensor readings and applies trained driving policies, which is grounded operational competence at driving — not a cab driver's rich, flexible understanding of the city as a place. This commits to a mechanism (map-plus-sensor representation with learned policies) and predicts checkable consequences: the car should fail or hesitate in ways a human wouldn't when its map is wrong or sensors are blocked; it should lack human knowledge that isn't in its data, like which streets feel unsafe at night or where a parade reroutes traffic; and its competence should not transfer to reasoning about the city beyond driving (recommending a neighborhood, improvising a detour from local lore). I would test it by introducing map errors and sensor occlusions and watching whether it degrades unlike a human, by asking it city questions that require lived local knowledge, and by checking whether it can improvise routes around a novel disruption the way an experienced driver would.",
       yieldAnchors: [
-        "Sleep worsened recently",
-        "Afternoon coffee was started the same week",
-        "A new mattress was bought the same week",
-        "Coffee and mattress can be varied one at a time",
+        "The car navigates the city flawlessly",
+        "It obeys signs and avoids pedestrians",
+        "It relies on maps, sensors, and trained policies",
       ],
       riskAnchors: [
-        "Sleep improving after three caffeine-free nights confirms the coffee",
-        "Sleep staying poor without afternoon coffee refutes the coffee hypothesis",
+        "It degrades unlike a human when maps or sensors fail",
+        "It lacks local knowledge not in its data",
+        "Its competence doesn't transfer beyond driving tasks",
       ],
       defeatedBy: [
-        "Asserting a cause while changing both coffee and mattress at once",
-        "Claiming nothing can be known without months of tracker data",
-        "Booking a specialist before trying the free single-variable swap",
+        "Flawless driving proves it knows the city like a cab driver",
+        "Operational competence equals rich human understanding",
+        "We can't say what the car knows at all",
       ],
     },
     correctAnswer:
-      "The most committed model is that one of the two simultaneous changes — the afternoon coffee or the new mattress — is driving the poor sleep, and the cheapest decisive test is to vary just one of them for a few nights while holding the other fixed. Skip the afternoon coffee for three nights but keep sleeping on the new mattress: if sleep clearly improves, the coffee was the cause; if sleep stays just as poor, the coffee hypothesis is refuted and the mattress becomes the prime suspect (testable next by a few nights on the old bed). This single-variable swap costs nothing and discriminates between the rivals far faster than a specialist visit or months of ring data.",
+      "The strongest conclusion is that the car represents the city as map data plus real-time sensor readings and applies trained driving policies, which is grounded operational competence at driving — not a cab driver's rich, flexible understanding of the city as a place. This commits to a mechanism (map-plus-sensor representation with learned policies) and predicts checkable consequences: the car should fail or hesitate in ways a human wouldn't when its map is wrong or sensors are blocked; it should lack human knowledge that isn't in its data, like which streets feel unsafe at night or where a parade reroutes traffic; and its competence should not transfer to reasoning about the city beyond driving (recommending a neighborhood, improvising a detour from local lore). I would test it by introducing map errors and sensor occlusions and watching whether it degrades unlike a human, by asking it city questions that require lived local knowledge, and by checking whether it can improvise routes around a novel disruption the way an experienced driver would.",
     explanation:
-      "Top credit commits to a free single-variable swap whose outcome separates coffee from mattress and would refute the coffee model if sleep stays poor. 'See a specialist / track for months before concluding' is the near-zero dodge, and changing both at once binds no clean inference and scores low.",
+      "The refusal 'we can't say what it knows' and the overreach 'it knows the city like a cab driver' both earn little; full credit commits to a map-plus-sensor mechanism and names the map-error, local-knowledge, and improvisation tests that expose the gap.",
   },
   {
     itemType: "written",
     prompt:
-      "A manager notices that one sales rep closes far more deals than peers. Two rivals: the rep is genuinely more skilled, or the rep was simply assigned the warmest, highest-quality leads. The manager could run a full performance review, shadow the rep for a quarter, or do something cheaper. In one paragraph, propose the strongest supported model and the single cheapest observation that would most decisively distinguish skill from lead quality, and say what each outcome would imply.",
+      "A translation system and a bilingual human both translate the same difficult passage well. A manager argues that since the outputs are equally good, the machine must understand meaning just as the human does. In one paragraph, propose the strongest conclusion about whether the machine understands meaning, and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The skill model is the richer claim, but lead quality is a live confound because the rep's territory may simply contain better prospects. The cheap decisive test is to compare each rep's close rate on leads of equal, already-scored quality — the CRM almost certainly tags lead source and score, so this needs no new data. If the star rep closes a higher fraction of equally-warm leads than peers do, skill is real; if their close rate matches peers once lead quality is held constant, the skill claim is refuted and the assignment of warm leads explains the gap. This within-tier comparison isolates the variable far more cheaply than a quarter of shadowing or a full review.",
+        "The strongest conclusion is that equally good output does not prove equal understanding, because the machine likely maps patterns between languages (syntax-level statistics) while the human works from grasped meaning (semantics) — so the two can match on typical passages yet diverge exactly where meaning matters. This commits to a mechanism (statistical mapping versus grounded meaning) and predicts checkable consequences: the machine should stumble on novel idioms, ambiguous sentences needing real-world context, and culturally loaded phrases, where the human resolves them by meaning; the machine's errors should be meaning-blind (fluent but wrong) rather than the human's meaning-aware near-misses; and giving real-world context should help the human more than the machine. I would test it by translating a batch of ambiguous and idiomatic sentences and comparing where each fails, by checking whether the machine's mistakes are confident and meaning-blind, and by adding disambiguating context to see whether only the human reliably uses it.",
       yieldAnchors: [
-        "One rep closes far more deals than peers",
-        "The rep may have been assigned warmer leads",
-        "Lead quality is a confound for raw close counts",
-        "The CRM already scores and tags lead quality",
+        "Machine and human translate the passage equally well",
+        "The manager infers equal understanding from equal output",
+        "Both produce good translations of difficult text",
       ],
       riskAnchors: [
-        "Higher close rate on equally-warm leads confirms genuine skill",
-        "Matching close rates once lead quality is held constant refutes the skill claim",
+        "The machine stumbles on novel idioms and ambiguity the human resolves",
+        "The machine's errors are fluent but meaning-blind",
+        "Added context helps the human more than the machine",
       ],
       defeatedBy: [
-        "Crediting the rep's skill from raw deal counts while ignoring lead quality",
-        "Claiming nothing can be concluded without a quarter of shadowing",
-        "Launching a full performance review before the within-tier comparison",
+        "Equal output proves equal understanding of meaning",
+        "Pattern mapping is the same as grasping semantics",
+        "There's no way to compare machine and human understanding",
       ],
     },
     correctAnswer:
-      "The skill model is the richer claim, but lead quality is a live confound because the rep's territory may simply contain better prospects. The cheap decisive test is to compare each rep's close rate on leads of equal, already-scored quality — the CRM almost certainly tags lead source and score, so this needs no new data. If the star rep closes a higher fraction of equally-warm leads than peers do, skill is real; if their close rate matches peers once lead quality is held constant, the skill claim is refuted and the assignment of warm leads explains the gap. This within-tier comparison isolates the variable far more cheaply than a quarter of shadowing or a full review.",
+      "The strongest conclusion is that equally good output does not prove equal understanding, because the machine likely maps patterns between languages (syntax-level statistics) while the human works from grasped meaning (semantics) — so the two can match on typical passages yet diverge exactly where meaning matters. This commits to a mechanism (statistical mapping versus grounded meaning) and predicts checkable consequences: the machine should stumble on novel idioms, ambiguous sentences needing real-world context, and culturally loaded phrases, where the human resolves them by meaning; the machine's errors should be meaning-blind (fluent but wrong) rather than the human's meaning-aware near-misses; and giving real-world context should help the human more than the machine. I would test it by translating a batch of ambiguous and idiomatic sentences and comparing where each fails, by checking whether the machine's mistakes are confident and meaning-blind, and by adding disambiguating context to see whether only the human reliably uses it.",
     explanation:
-      "Top credit commits to a within-quality close-rate comparison from existing CRM data whose outcome separates skill from lead assignment and could refute the skill model. 'Can't say without shadowing for a quarter' is the near-zero dodge, and a sprawling review that never holds lead quality constant scores low.",
+      "Both the 'no way to compare' refusal and the 'equal output proves equal understanding' overreach lose; top credit commits to the syntax-versus-semantics mechanism and names the idiom, error-type, and context tests that could refute it.",
   },
 ];
 
 export const section: SectionContent = {
-  slug: "cheap-decisive-test",
-  title: "The Cheap Decisive Test",
+  slug: "brains-and-machines",
+  title: "Brains and Machines: Can a Computer Think?",
   weekNumber: 1,
   blurb:
-    "Don't drown in data — find the one cheap observation whose outcome would most cleanly split your leading rival explanations apart.",
+    "If the mind is information processing, could a machine have one? We meet the computer model of the mind, the Turing test, the strong/weak AI split, the Chinese Room, and why connecting symbols to the world is the hard part.",
   lectureTitle:
-    "1.7 The Cheap Decisive Test: find the cheapest observation that most discriminates",
-  body: `# The Cheap Decisive Test
+    "1.7 Brains and Machines: can a computer think, or only act like it?",
+  body: `# Brains and Machines: Can a Computer Think?
 
-You rarely lack things you *could* measure. You lack the judgment to pick the **one** measurement worth making first. Constructive Critical Reasoning rewards committing to the strongest model your data supports — and the fastest way to earn that commitment is the **cheap decisive test**: among all possible next observations, the single one that is cheapest to make yet most powerfully discriminates between your leading rival explanations.
+If the mind processes information — taking inputs, transforming them, and producing outputs — then a striking question follows: could a machine that processes information the same way actually have a mind? This section is about how cognitive scientists attack that question, and why the answer depends on telling apart *acting* intelligent from *being* intelligent.
 
-## Information per unit cost
+## The computer metaphor for the mind
 
-Every candidate observation has two properties: how much it **costs** (time, money, effort) and how much it **discriminates** (how differently the rival models predict its outcome). A great test is high on discrimination and low on cost. A useless-but-expensive study is the opposite. CCR asks you to maximize information *per unit cost*, not to maximize information in the abstract. The barista's flower pin doesn't need a six-week study; it needs one low-mood day with the pin on.
+Cognitive science borrowed a powerful idea from computing: the mind is like a program running on the brain's hardware. Thoughts are operations on representations, the way a program operates on data. This metaphor is useful — it lets us describe perception, memory, and reasoning as steps of processing. But a metaphor is a tool, not a proof. Saying the brain is "like a computer" doesn't settle whether a computer can be "like a brain." To answer that, we need to be precise about what counts as thinking.
 
-## Make the rivals disagree
+## What the Turing test really measures
 
-A test only discriminates if the rival models predict **different** outcomes for it. Before choosing, write down what each hypothesis *expects* you to see. If both rivals predict the same result, the observation — however expensive — tells you nothing. The whole art is finding the question where "underwatered" and "root rot," or "the form confuses users" and "the payment API times out," part ways. Then the cheapest such question wins.
+Alan Turing proposed a clever dodge around the foggy word "think." Instead of defining it, he suggested a game: if a machine can hold a typed conversation that a judge can't distinguish from a human's, call it intelligent. The Turing test is a *behavioral* test — it measures performance, not inner life. That's its strength and its weakness. Passing tells you a system imitates human conversation well; it does **not** tell you the system understands what it says. A good rule for this section: behavior that looks intelligent is the *start* of an investigation, not the end of it. Always ask what cheaper, harder probe would separate real understanding from skilled imitation.
 
-## Name what each outcome would imply
+## Strong AI vs weak AI
 
-A cheap decisive test is only complete when you state, **in advance**, what each possible result means. "Stick a finger in the soil" is a test; "dry means underwatered, soggy means rot" is the *decisive* part. Committing to the interpretation before you look is what protects you from rationalizing whatever you find. Top credit always pairs the test with both branches of its outcome.
+Philosophers split the claims in two. **Weak AI** says machines can model and simulate mental processes — useful tools that *act* intelligent in narrow domains. Almost nobody doubts weak AI; chess engines and translators already exist. **Strong AI** is the bold claim that a suitably programmed computer would literally *have* a mind — real understanding, maybe even real experience. The whole debate is about whether running the right program is *enough* for a mind, or whether something more is needed. Confusing a weak-AI success (it beat a grandmaster) for a strong-AI conclusion (so it truly thinks) is the classic overreach.
 
-## The zero-credit dodges
+## Searle's Chinese Room: syntax is not semantics
 
-Three tempting failures earn nothing. The first is **"gather as much data as possible"** — comprehensive-sounding but cowardly, since it refuses to prioritize. The second is the **expensive non-discriminating study**: a full audit, a lab panel, a month-long trial that costs a fortune and still doesn't make the rivals disagree any faster than a one-minute check would. The third is **refusing to choose a test at all** ("we should just keep monitoring"). All three dodge the actual job: pick the one observation that pays.
+John Searle built a famous thought experiment against strong AI. Imagine a person who knows no Chinese locked in a room with a giant rulebook. Chinese symbols come in; he looks up rules and sends correct Chinese symbols back out. To people outside, the room "speaks Chinese" — yet the person inside understands nothing. Searle's point: manipulating symbols by their *shape* (syntax) is not the same as grasping their *meaning* (semantics). A computer is, at bottom, a symbol shuffler. So passing a behavioral test by rule-following doesn't show genuine understanding. You can argue with the conclusion, but the distinction it forces — syntax versus semantics — is one of the sharpest tools in this section.
 
-## Single-variable moves
+## Symbol grounding: how words get their meaning
 
-The cheapest decisive tests usually change exactly **one** thing. Revert just the config and re-run once. Skip the afternoon coffee but keep the new mattress. Boot into safe mode for an hour. Each isolates a single rival because everything else is held constant — which is precisely why one trial can settle what a sprawling everything-at-once study cannot.
+That distinction leads to the **symbol grounding problem**. A system trained only on text can use the word "apple" in flawless sentences while never connecting it to a real, red, crunchable thing. Its symbols are defined only by other symbols — a dictionary with no pictures. Human meaning is *grounded*: our word "apple" is tied to seeing, holding, and tasting apples. Many machine failures — sorting paint chips after only reading about color, mistranslating idioms, calling a cat a "toaster" because of a sticker — are grounding failures. They reveal a system handling symbols without the world-anchored meaning behind them. And note the flip side: simulating a thing is not duplicating it. A perfect software hurricane never makes anyone wet, which is why "we simulated a brain" does not automatically mean "we built a mind."
 
 ## In the real world
 
-A web team's checkout conversions crater. Two live rivals: the redesigned one-page form confuses users, or a payment API is silently timing out. The "thorough" instinct is to launch a UX audit *and* a fresh A/B test *and* a customer survey — weeks of work that delays any answer. The cheap decisive test: pull the last 200 checkout server logs, a five-minute query on data you already have. State the branches first — if most failed checkouts ended in a payment-API timeout, it's the API; if checkouts complete cleanly but users abandon the form, it's the UX. One look discriminates between the two models that all those expensive studies were circling. That is the move CCR rewards: not the most data, but the cheapest observation that most decisively tells your rivals apart.`,
+A company releases a chatbot that aces customer questions and earns glowing satisfaction scores, and its press release says the bot "understands customers." The overreach is to conclude, from good behavior, that there is understanding inside. The dodge is to throw up your hands — "you can never know what a machine understands." The stronger move commits to a mechanism: the bot matches questions to learned patterns and generates fitting replies, which predicts that it will fail on novel phrasings, that its confidence won't track its accuracy, and that it will stumble on questions needing grounded real-world knowledge. Each of those is a cheap test you can run this week — and each could prove the lead wrong. That is how cognitive science turns "can it think?" from a slogan into something you can actually investigate.`,
   homework: {
     mcq,
     hybrid,

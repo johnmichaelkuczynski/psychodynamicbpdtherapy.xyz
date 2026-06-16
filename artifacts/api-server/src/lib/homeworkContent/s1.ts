@@ -9,407 +9,407 @@ const mcq: HomeworkItem[] = [
   {
     itemType: "mc",
     prompt:
-      "A bakery notices that loaves baked on its oldest oven sell out within an hour, while identical loaves from the new oven linger. Staff say the old oven 'just makes better bread.' Which lead best follows?",
+      "Researchers show people two drawings of the same 3-D shape, one turned at an angle, and ask whether they match. The more one shape is rotated away from the other, the longer people take to answer — and the time grows steadily with the angle. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The bread is identical, so the difference is random; nothing here is worth chasing.",
-        credit: 0,
-      },
-      {
-        text: "The old oven's uneven heat likely darkens the crust, which draws buyers; check whether sell-out tracks crust color, whether matching the new oven's browning closes the gap, and whether sales shift when the ovens swap positions in the display case.",
+        text: "The mind likely 'rotates' a mental image step by step until the shapes line up, so bigger angles take more time; test whether response time rises in even steps with each added degree, whether people report imagining the shape turning, and whether practice at one angle speeds only similar angles.",
         credit: 1.0,
       },
       {
-        text: "The old oven probably bakes better; we could compare the two ovens again next week.",
+        text: "Turning the shape more probably makes the task take longer; we could try a few more angles and see.",
         credit: 0.6,
       },
       {
-        text: "Something about the old oven seems to help sales.",
+        text: "Bigger rotations seem to slow people down.",
         credit: 0.3,
+      },
+      {
+        text: "The mind is far too complex to say anything about what happens between seeing the shapes and answering.",
+        credit: 0,
       },
     ],
     correctAnswer:
-      "The old oven's uneven heat likely darkens the crust, which draws buyers; check whether sell-out tracks crust color, whether matching the new oven's browning closes the gap, and whether sales shift when the ovens swap positions in the display case.",
+      "The mind likely 'rotates' a mental image step by step until the shapes line up, so bigger angles take more time; test whether response time rises in even steps with each added degree, whether people report imagining the shape turning, and whether practice at one angle speeds only similar angles.",
     explanation:
-      "Top credit commits to a concrete mechanism (crust browning) and spawns three checkable follow-ups; the 'it's just random' option refuses to pick any lead and so generates no inquiry.",
+      "Top credit commits to a concrete hidden process (an analog mental rotation) and names three checkable tests; the 'too complex to say anything' option refuses to infer the process and earns zero under the inverted standard.",
   },
   {
     itemType: "mc",
     prompt:
-      "A SaaS team sees that users who connect their calendar in week one renew at triple the rate of those who don't. Which conclusion opens the most checkable inquiry?",
+      "A three-year-old who has always said 'went' suddenly starts saying 'goed' and 'foots,' words she has never heard any adult use. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Calendar-connecting may matter, but renewal has too many causes to say anything useful yet.",
-        credit: 0,
-      },
-      {
-        text: "Calendar connection seems linked to renewal in some way.",
+        text: "The child seems to be making more mistakes than before.",
         credit: 0.3,
       },
       {
-        text: "Connecting likely signals that the product became part of users' daily routine; test it by prompting a random half to connect on day one and seeing if their renewal rises, by checking whether daily logins jump after connecting, and by asking whether non-connectors who still log in daily renew just as well.",
+        text: "Kids just say random things, so there is nothing to learn from these errors.",
+        credit: 0,
+      },
+      {
+        text: "The child has likely extracted a general grammar rule ('add -ed,' 'add -s') and is over-applying it rather than memorizing each word; test whether her errors appear only on irregular words, whether she also adds endings to made-up words like 'wug,' and whether the errors fade as she relearns the exceptions.",
         credit: 1.0,
       },
       {
-        text: "Connecting the calendar probably boosts renewal; we could watch next quarter's cohort.",
+        text: "The child is probably learning a rule and applying it too widely; we could write down more of her sentences.",
         credit: 0.6,
       },
     ],
     correctAnswer:
-      "Connecting likely signals that the product became part of users' daily routine; test it by prompting a random half to connect on day one and seeing if their renewal rises, by checking whether daily logins jump after connecting, and by asking whether non-connectors who still log in daily renew just as well.",
+      "The child has likely extracted a general grammar rule ('add -ed,' 'add -s') and is over-applying it rather than memorizing each word; test whether her errors appear only on irregular words, whether she also adds endings to made-up words like 'wug,' and whether the errors fade as she relearns the exceptions.",
     explanation:
-      "The richest lead names a mechanism (habit formation) and three concrete tests; the 'too many causes to say anything' answer is the fertile-free dodge CCR penalizes.",
+      "The strongest conclusion names a mechanism (a self-discovered rule) and three tests that could disconfirm it; 'kids say random things' is defeated by the systematic, never-heard errors and opens no inquiry.",
   },
   {
     itemType: "mc",
     prompt:
-      "A runner finds her fastest 5K times all came on mornings she ate oatmeal beforehand. Her slow times followed skipped breakfasts. Which lead is strongest?",
+      "People are asked to name the ink color a word is printed in. They are fast when the word 'BLUE' appears in blue ink, but much slower when the word 'RED' appears in blue ink. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Oatmeal likely steadies her blood sugar for the effort; test it by alternating oatmeal and a no-carb breakfast on matched routes, by logging mid-run energy dips, and by checking whether other slow-release carbs reproduce the effect.",
-        credit: 1.0,
-      },
-      {
-        text: "Oatmeal seems to help her running a bit.",
-        credit: 0.3,
-      },
-      {
-        text: "Diet and performance are too tangled to draw any actionable conclusion.",
+        text: "Color and reading are too tangled in the brain to draw any conclusion.",
         credit: 0,
       },
       {
-        text: "Oatmeal probably helps; she could keep eating it and track her times.",
+        text: "Reading the word likely happens automatically and interferes with naming the color, so skilled reading is hard to switch off; test whether the slowdown shrinks in people who can't yet read, whether it appears in a second language only once that language is fluent, and whether non-color words like 'TABLE' cause no such delay.",
+        credit: 1.0,
+      },
+      {
+        text: "The mismatched word probably slows people down; we could test more color words.",
         credit: 0.6,
+      },
+      {
+        text: "People seem slower when the word and the color disagree.",
+        credit: 0.3,
       },
     ],
     correctAnswer:
-      "Oatmeal likely steadies her blood sugar for the effort; test it by alternating oatmeal and a no-carb breakfast on matched routes, by logging mid-run energy dips, and by checking whether other slow-release carbs reproduce the effect.",
+      "Reading the word likely happens automatically and interferes with naming the color, so skilled reading is hard to switch off; test whether the slowdown shrinks in people who can't yet read, whether it appears in a second language only once that language is fluent, and whether non-color words like 'TABLE' cause no such delay.",
     explanation:
-      "The winning lead proposes a fuel mechanism and three follow-up checks, including a generalizing one; the 'too tangled' refusal yields no next step.",
+      "Full credit pins automatic reading as the cause and lists three checks that could refute it; 'too tangled to draw any conclusion' commits to nothing and earns zero.",
   },
   {
     itemType: "mc",
     prompt:
-      "A clinic notices patients booked for the last appointment of the day miss their visits twice as often as morning patients. Which conclusion best follows?",
+      "People hear a list of words — bed, rest, awake, tired, dream, night — and a minute later many confidently 'remember' hearing the word 'sleep,' which was never on the list. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Late slots seem to have more no-shows.",
+        text: "People seem to misremember the list sometimes.",
         credit: 0.3,
       },
       {
-        text: "Late patients probably forget after a long workday, so reminders fade; test whether a 4 p.m. same-day text cuts late no-shows, whether late-slot no-shows cluster on busy weekdays, and whether patients who set their own late time still skip.",
-        credit: 1.0,
+        text: "They probably remember the gist more than the exact words; we could try other word lists.",
+        credit: 0.6,
       },
       {
-        text: "No-show behavior is too personal to generalize from a schedule pattern.",
+        text: "Memory is so unreliable that nothing useful can be concluded from it.",
         credit: 0,
       },
       {
-        text: "Late appointments likely cause more misses; we could try moving some patients earlier.",
-        credit: 0.6,
+        text: "Memory likely stores the overall meaning or theme rather than an exact recording, so a strongly implied word feels remembered; test whether unrelated lists never trigger the false memory, whether warning people in advance reduces it, and whether the false 'sleep' memory is held as confidently as the real list words.",
+        credit: 1.0,
       },
     ],
     correctAnswer:
-      "Late patients probably forget after a long workday, so reminders fade; test whether a 4 p.m. same-day text cuts late no-shows, whether late-slot no-shows cluster on busy weekdays, and whether patients who set their own late time still skip.",
+      "Memory likely stores the overall meaning or theme rather than an exact recording, so a strongly implied word feels remembered; test whether unrelated lists never trigger the false memory, whether warning people in advance reduces it, and whether the false 'sleep' memory is held as confidently as the real list words.",
     explanation:
-      "The fecund lead pins a cause and generates three distinct probes; 'too personal to generalize' commits to nothing and earns zero.",
+      "The winning conclusion names a mechanism (gist-based storage) with three checkable tests; 'memory is so unreliable nothing can be concluded' is an overreach the orderly, predictable error actually defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A vineyard's east-facing rows yield sweeter grapes than its west-facing rows every harvest for five years. Which lead opens the most inquiry?",
+      "After a small stroke in one part of the brain, a patient can no longer recognize his wife's or his own face, yet he reads fluently, names everyday objects, and knows people instantly by their voices. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Morning sun on the east rows likely warms grapes earlier and lengthens sugar build-up; check whether shaded east vines lose the edge, whether west rows catch up in a year with cool mornings, and whether soil sugar sensors show an earlier east-row rise.",
+        text: "Face recognition likely relies on a specialized brain system separate from object naming and reading; test whether other patients with damage to the same spot show the same face-only deficit, whether he can still tell faces apart by a single feature like a scar, and whether brain scans show that area lighting up for faces in healthy people.",
         credit: 1.0,
       },
       {
-        text: "East rows just seem to do better.",
+        text: "Something about faces seems to be affected.",
         credit: 0.3,
       },
       {
-        text: "Vineyards vary so much that the pattern can't really tell us anything.",
+        text: "The brain is too interconnected to say any one area does any one job.",
         credit: 0,
       },
       {
-        text: "The east exposure probably matters; we could test it with more harvests.",
+        text: "Face recognition is probably handled separately; we could test a few more patients.",
         credit: 0.6,
       },
     ],
     correctAnswer:
-      "Morning sun on the east rows likely warms grapes earlier and lengthens sugar build-up; check whether shaded east vines lose the edge, whether west rows catch up in a year with cool mornings, and whether soil sugar sensors show an earlier east-row rise.",
+      "Face recognition likely relies on a specialized brain system separate from object naming and reading; test whether other patients with damage to the same spot show the same face-only deficit, whether he can still tell faces apart by a single feature like a scar, and whether brain scans show that area lighting up for faces in healthy people.",
     explanation:
-      "Top credit fixes a mechanism (morning warmth) and lists three checkable consequences; 'can't tell us anything' is the unfruitful dodge.",
+      "Top credit commits to a specialized-system mechanism with three tests; the 'too interconnected to say' option is the barren refusal the selective deficit contradicts.",
   },
   {
     itemType: "mc",
     prompt:
-      "An online store finds that orders with gift-wrap selected are returned 60% less often. Which conclusion best follows?",
+      "People are asked to answer 'true' or 'false' to statements like 'A robin is a bird' and 'A penguin is a bird.' Everyone says 'true' to both, but they are reliably slower for the penguin. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Returns have countless drivers, so this link isn't safe to act on.",
+        text: "The mind is a black box, so the timing difference can't tell us anything.",
         credit: 0,
       },
       {
-        text: "Gift orders are likely chosen carefully for someone else, so they fit better; test whether wrap-and-keep buyers also return less, whether returns rise when wrap is auto-added for free, and whether gift recipients exchange rather than refund.",
+        text: "Penguins seem to take a bit longer to judge.",
+        credit: 0.3,
+      },
+      {
+        text: "The mind likely organizes categories around typical examples, so a robin matches 'bird' faster than an oddball penguin; test whether the most typical bird people name is judged fastest, whether the slowdown shrinks after practice with penguins, and whether the same pattern appears for fruits and vehicles.",
         credit: 1.0,
       },
       {
-        text: "Gift-wrapped orders come back less; we might promote wrapping.",
+        text: "People probably treat some birds as more 'birdlike'; we could test more animals.",
         credit: 0.6,
-      },
-      {
-        text: "There seems to be some tie between wrapping and fewer returns.",
-        credit: 0.3,
       },
     ],
     correctAnswer:
-      "Gift orders are likely chosen carefully for someone else, so they fit better; test whether wrap-and-keep buyers also return less, whether returns rise when wrap is auto-added for free, and whether gift recipients exchange rather than refund.",
+      "The mind likely organizes categories around typical examples, so a robin matches 'bird' faster than an oddball penguin; test whether the most typical bird people name is judged fastest, whether the slowdown shrinks after practice with penguins, and whether the same pattern appears for fruits and vehicles.",
     explanation:
-      "The strongest lead names buyer intent as the cause and proposes three tests that could refute it; the 'countless drivers' answer is a fruitless refusal.",
+      "The richest conclusion names typicality as the organizing principle and three tests that could refute it; the 'black box' answer is the dodge the reliable timing difference itself defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A teacher observes that students who handwrite notes score higher on essays than laptop note-takers, even on the same lectures. Which lead is strongest?",
+      "A behavior experiment, a brain-imaging study, and a computer simulation — done by three separate labs — all independently point to the same conclusion: that people store word meanings and personal memories using two different systems. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Note-taking style might link to scores, but learning is too complex to commit to a cause.",
-        credit: 0,
-      },
-      {
-        text: "Handwriting seems to go with better essays.",
+        text: "The three studies seem to roughly agree.",
         credit: 0.3,
       },
       {
-        text: "Handwriting probably forces summarizing rather than transcribing, deepening processing; test whether laptop users told to paraphrase catch up, whether handwritten notes contain fewer verbatim phrases, and whether essay gains track note-summary density.",
+        text: "Because independent methods from different fields converge on the same answer, two separate memory systems is the strongest supported conclusion; test whether a brain injury can knock out one system while sparing the other, whether the simulation fails in the same way patients do, and whether a new method like eye-tracking lands on the same split.",
         credit: 1.0,
       },
       {
-        text: "Handwriting likely helps essays; we could assign it and see scores.",
+        text: "Three studies is still too few to commit to anything.",
+        credit: 0,
+      },
+      {
+        text: "The agreement probably means there are two systems; we could wait for more studies.",
         credit: 0.6,
       },
     ],
     correctAnswer:
-      "Handwriting probably forces summarizing rather than transcribing, deepening processing; test whether laptop users told to paraphrase catch up, whether handwritten notes contain fewer verbatim phrases, and whether essay gains track note-summary density.",
+      "Because independent methods from different fields converge on the same answer, two separate memory systems is the strongest supported conclusion; test whether a brain injury can knock out one system while sparing the other, whether the simulation fails in the same way patients do, and whether a new method like eye-tracking lands on the same split.",
     explanation:
-      "The fecund lead isolates summarizing as the active ingredient and spawns three measurable checks; the 'too complex to commit' option opens no inquiry.",
+      "Converging evidence from independent methods is exactly what makes a conclusion strong; the answer names three further tests, while 'too few to commit' refuses the inference the convergence supports.",
   },
   {
     itemType: "mc",
     prompt:
-      "A city sees bike-share trips spike on the three days after it repaints a crosswalk bright green near a station. Which conclusion best follows?",
+      "As people read, their eyes pause much longer on a sentence's final word when it is surprising ('She spread the warm bread with socks') than when it is expected ('...with butter'). Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Urban behavior is too noisy to credit a paint job for ridership.",
+        text: "Reading involves so much that we can't say why a word slows someone down.",
         credit: 0,
       },
       {
-        text: "Riders seem to respond to the new crosswalk.",
+        text: "Odd words seem to slow reading.",
         credit: 0.3,
       },
       {
-        text: "The green crosswalk probably makes the crossing feel safer, drawing riders; test whether ridership holds past the novelty week, whether other stations spike when painted, and whether near-miss reports at the crossing drop.",
-        credit: 1.0,
+        text: "The surprising word probably takes longer to process; we could test more sentences.",
+        credit: 0.6,
       },
       {
-        text: "The crosswalk likely boosted trips; we could repaint and watch.",
-        credit: 0.6,
+        text: "The mind likely predicts the upcoming word from context, so a violation costs extra time to recover; test whether weakly predictable endings fall between the two, whether the slowdown vanishes when the sentence gives no hint about the ending, and whether brain responses spike at exactly the surprising word.",
+        credit: 1.0,
       },
     ],
     correctAnswer:
-      "The green crosswalk probably makes the crossing feel safer, drawing riders; test whether ridership holds past the novelty week, whether other stations spike when painted, and whether near-miss reports at the crossing drop.",
+      "The mind likely predicts the upcoming word from context, so a violation costs extra time to recover; test whether weakly predictable endings fall between the two, whether the slowdown vanishes when the sentence gives no hint about the ending, and whether brain responses spike at exactly the surprising word.",
     explanation:
-      "Top credit commits to a safety-perception mechanism and three follow-ups, one guarding against novelty; the 'too noisy' answer is the barren dodge.",
+      "Top credit commits to prediction as the hidden process with three graded tests; 'we can't say why a word slows someone down' opens no inquiry and earns zero.",
   },
   {
     itemType: "mc",
     prompt:
-      "A support team finds tickets resolved by phone get 5-star ratings far more than those resolved by email, even for the same issue types. Which lead opens the most inquiry?",
+      "Fluent bilinguals name pictures quickly, but when they must switch back and forth between their two languages on cue, each switch costs them a fraction of a second. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Phone calls probably let agents reassure customers in real time, lifting ratings; test whether email replies with a personal video clip close the gap, whether call ratings drop on long hold times, and whether tone-matched emails score better.",
+        text: "A mental control process likely has to suppress one language and activate the other, which takes time; test whether the cost grows when switches come faster, whether it shrinks with practice switching, and whether people with stronger general self-control switch with less cost.",
         credit: 1.0,
       },
       {
-        text: "Phone support seems to please customers more.",
-        credit: 0.3,
+        text: "Switching languages probably has a cost; we could measure more switches.",
+        credit: 0.6,
       },
       {
-        text: "Satisfaction depends on too many things to attribute it to the channel.",
+        text: "Bilingual minds are unique to each person, so no general conclusion is possible.",
         credit: 0,
       },
       {
-        text: "Phone likely raises ratings; we could route more issues to calls.",
-        credit: 0.6,
+        text: "Switching seems to slow them a little.",
+        credit: 0.3,
       },
     ],
     correctAnswer:
-      "Phone calls probably let agents reassure customers in real time, lifting ratings; test whether email replies with a personal video clip close the gap, whether call ratings drop on long hold times, and whether tone-matched emails score better.",
+      "A mental control process likely has to suppress one language and activate the other, which takes time; test whether the cost grows when switches come faster, whether it shrinks with practice switching, and whether people with stronger general self-control switch with less cost.",
     explanation:
-      "The richest lead names real-time reassurance and three tests that could disconfirm it; the 'too many things' option refuses to lead.",
+      "The strongest conclusion names a control process and three tests that could disconfirm it; 'unique to each person, no general conclusion' is the refusal the reliable switch cost defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A gardener notes tomato plants beside the basil row produce more fruit than identical plants across the yard. Which conclusion best follows?",
+      "People instantly spot a single red dot among blue dots, no matter how many blue dots there are. But finding a red vertical line hidden among red horizontal lines and blue vertical lines takes longer the more items are on the screen. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Basil-adjacent tomatoes seem more productive.",
+        text: "Some searches seem harder than others.",
         credit: 0.3,
       },
       {
-        text: "Gardens have too many variables to say basil did anything.",
+        text: "Vision is too complicated to explain why one search is fast and the other slow.",
         credit: 0,
       },
       {
-        text: "Basil likely repels a pest that saps the tomatoes; test whether netted tomatoes without basil match the yield, whether pest counts are lower in the basil row, and whether other aromatic herbs reproduce the boost.",
+        text: "A single feature like color likely 'pops out' automatically, but combining two features (red AND vertical) requires attention to check items one by one; test whether search time rises in even steps with each added item only in the combined case, whether telling people the exact target speeds the hard search, and whether any unique single feature is always found in constant time.",
         credit: 1.0,
       },
       {
-        text: "Basil probably helps the tomatoes; we could plant more basil next year.",
+        text: "Combining features probably takes more effort; we could add more items and time it.",
         credit: 0.6,
       },
     ],
     correctAnswer:
-      "Basil likely repels a pest that saps the tomatoes; test whether netted tomatoes without basil match the yield, whether pest counts are lower in the basil row, and whether other aromatic herbs reproduce the boost.",
+      "A single feature like color likely 'pops out' automatically, but combining two features (red AND vertical) requires attention to check items one by one; test whether search time rises in even steps with each added item only in the combined case, whether telling people the exact target speeds the hard search, and whether any unique single feature is always found in constant time.",
     explanation:
-      "The fecund lead proposes a pest mechanism and three concrete checks; 'too many variables' yields no testable next move.",
+      "Top credit distinguishes automatic feature detection from attentive combination and names three tests; 'too complicated to explain' is the dodge the two clean search patterns contradict.",
   },
   {
     itemType: "mc",
     prompt:
-      "A podcast finds episodes released on Tuesday get 40% more downloads in week one than Friday episodes. Which lead is strongest?",
+      "A word is flashed on a screen too briefly for people to consciously see it. Even so, they then recognize a related word faster than an unrelated one, while insisting they saw nothing. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Download patterns are too fickle to build a release strategy on.",
+        text: "If people say they saw nothing, there is nothing here to study.",
         credit: 0,
       },
       {
-        text: "Tuesday episodes likely catch a midweek commute-listening peak; test whether download timestamps cluster at commute hours, whether a Friday episode moved to Tuesday gains, and whether subscribers vs. new listeners drive the Tuesday bump.",
+        text: "The mind likely processes meaning even without conscious awareness, so an unseen word can still prime a related one; test whether the priming fades as the flash gets shorter, whether unrelated words give no speed-up, and whether forcing people to guess the hidden word stays at chance while the priming persists.",
         credit: 1.0,
       },
       {
-        text: "Tuesday seems like a better release day.",
+        text: "Hidden words seem to have some effect.",
         credit: 0.3,
       },
       {
-        text: "Tuesday probably wins; we could keep releasing then and watch.",
+        text: "The unseen word probably still registers; we could test more word pairs.",
         credit: 0.6,
       },
     ],
     correctAnswer:
-      "Tuesday episodes likely catch a midweek commute-listening peak; test whether download timestamps cluster at commute hours, whether a Friday episode moved to Tuesday gains, and whether subscribers vs. new listeners drive the Tuesday bump.",
+      "The mind likely processes meaning even without conscious awareness, so an unseen word can still prime a related one; test whether the priming fades as the flash gets shorter, whether unrelated words give no speed-up, and whether forcing people to guess the hidden word stays at chance while the priming persists.",
     explanation:
-      "Top credit names a commute mechanism and three follow-up observations; the 'too fickle' answer commits to nothing.",
+      "The winning conclusion names unconscious meaning-processing with three tests; 'nothing here to study' is the overreach the measurable priming effect directly defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A factory finds that defect rates climb on the afternoon shift even though the same machines and workers rotate through. Which conclusion best follows?",
+      "Five-month-old babies watch a toy roll behind a screen. When the screen drops to reveal that the toy has somehow passed through a solid wall, babies stare much longer than when it stops at the wall as expected. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Afternoon glare from west windows probably strains inspectors' eyes; test whether blinds cut afternoon defects, whether defects track sunny vs. cloudy afternoons, and whether the missed defects are visual rather than mechanical types.",
-        credit: 1.0,
-      },
-      {
-        text: "Afternoons seem to have more defects.",
-        credit: 0.3,
-      },
-      {
-        text: "Defects probably rise in the afternoon; we could inspect twice then.",
+        text: "Babies probably expect solid objects to stop; we could test more babies.",
         credit: 0.6,
       },
       {
-        text: "Shift effects are too murky to pin on any single factor.",
+        text: "Babies seem surprised by the wall trick.",
+        credit: 0.3,
+      },
+      {
+        text: "Babies can't talk, so we can't know anything about what they think.",
         credit: 0,
+      },
+      {
+        text: "Even pre-verbal infants likely hold expectations that solid objects can't pass through one another, revealed by longer looking at impossible events; test whether possible-but-unusual events draw no extra looking, whether the surprise grows with a more blatant violation, and whether younger babies show a weaker reaction.",
+        credit: 1.0,
       },
     ],
     correctAnswer:
-      "Afternoon glare from west windows probably strains inspectors' eyes; test whether blinds cut afternoon defects, whether defects track sunny vs. cloudy afternoons, and whether the missed defects are visual rather than mechanical types.",
+      "Even pre-verbal infants likely hold expectations that solid objects can't pass through one another, revealed by longer looking at impossible events; test whether possible-but-unusual events draw no extra looking, whether the surprise grows with a more blatant violation, and whether younger babies show a weaker reaction.",
     explanation:
-      "The strongest lead pins glare as a cause and lists three checkable consequences; 'too murky' refuses to lead and earns zero.",
+      "Top credit infers infant expectations from looking time and names three tests; 'babies can't talk so we can't know' is the dodge the looking-time method was designed to overcome.",
   },
   {
     itemType: "mc",
     prompt:
-      "A streaming app sees users who finish the first episode of any show within 24 hours are far likelier to finish the season. Which lead opens the most inquiry?",
+      "A team studying how people recognize a friend's voice describes it three ways: as a behavior (you answer faster to familiar voices), as brain activity (certain neurons fire), and as a computation (matching sound patterns to stored templates). Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Binge behavior is too idiosyncratic to draw a usable lead from.",
-        credit: 0,
-      },
-      {
-        text: "Fast first-episode finishers seem more committed.",
-        credit: 0.3,
-      },
-      {
-        text: "Early completion likely reflects a strong hook that builds momentum; test whether nudging slow starters with a recap raises completion, whether shows with cliffhanger pilots show bigger gaps, and whether the effect survives controlling for total watch time.",
+        text: "The same mental ability can likely be studied at several levels — behavior, brain, and computation — that should fit together rather than compete; test whether the brain region's activity tracks the behavioral speed-up, whether a template-matching computer model reproduces the human pattern, and whether damaging that region slows familiar-voice recognition specifically.",
         credit: 1.0,
       },
       {
-        text: "Quick starters probably finish more; we could track future seasons.",
+        text: "There seem to be different ways to describe the ability.",
+        credit: 0.3,
+      },
+      {
+        text: "Since the three descriptions use different words, only one of them can be the real explanation.",
+        credit: 0,
+      },
+      {
+        text: "The levels probably describe one ability; we could compare them more.",
         credit: 0.6,
       },
     ],
     correctAnswer:
-      "Early completion likely reflects a strong hook that builds momentum; test whether nudging slow starters with a recap raises completion, whether shows with cliffhanger pilots show bigger gaps, and whether the effect survives controlling for total watch time.",
+      "The same mental ability can likely be studied at several levels — behavior, brain, and computation — that should fit together rather than compete; test whether the brain region's activity tracks the behavioral speed-up, whether a template-matching computer model reproduces the human pattern, and whether damaging that region slows familiar-voice recognition specifically.",
     explanation:
-      "The fecund lead names momentum and three tests, including a confound check; 'too idiosyncratic' opens no path.",
+      "The strongest conclusion treats the levels of analysis as complementary and names three tests that should agree; 'only one can be real' is the overreach the converging descriptions defeat.",
   },
   {
     itemType: "mc",
     prompt:
-      "A coffee chain finds stores that play instrumental music sell more pastries than stores playing songs with lyrics. Which conclusion best follows?",
+      "When shown dots for a split second, people instantly and accurately report 'three' or 'four' without counting, but for seven or eight dots their answers slow down and become error-prone. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Music and sales are too loosely connected to act on.",
+        text: "Number sense varies so much between people that no general claim is safe.",
         credit: 0,
       },
       {
-        text: "Instrumental music probably keeps customers lingering and browsing the case longer; test whether dwell time is longer in instrumental stores, whether switching a lyric store to instrumental lifts pastry sales, and whether tempo, not lyrics, is what matters.",
-        credit: 1.0,
-      },
-      {
-        text: "Instrumental stores seem to sell more pastries.",
+        text: "Small amounts seem easier to judge.",
         credit: 0.3,
       },
       {
-        text: "Instrumental music likely helps; we could switch a few stores and see.",
+        text: "The mind likely has a fast system for grasping small quantities (up to about four) at a glance, separate from slow counting for larger sets; test whether reaction time is flat up to four then jumps, whether distraction hurts large-set judgments more, and whether the same small-number limit appears across cultures.",
+        credit: 1.0,
+      },
+      {
+        text: "People are probably better with small numbers; we could test more dot counts.",
         credit: 0.6,
       },
     ],
     correctAnswer:
-      "Instrumental music probably keeps customers lingering and browsing the case longer; test whether dwell time is longer in instrumental stores, whether switching a lyric store to instrumental lifts pastry sales, and whether tempo, not lyrics, is what matters.",
+      "The mind likely has a fast system for grasping small quantities (up to about four) at a glance, separate from slow counting for larger sets; test whether reaction time is flat up to four then jumps, whether distraction hurts large-set judgments more, and whether the same small-number limit appears across cultures.",
     explanation:
-      "Top credit commits to a dwell-time mechanism and three probes, one isolating the real variable; the 'too loosely connected' option is the unfruitful dodge.",
+      "Top credit names two separate quantity systems and three tests, including a cross-cultural one; 'varies too much to say anything' is the refusal the sharp, reliable break at four defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A school finds that classes held right after lunch score lowest on quizzes regardless of subject or teacher. Which lead is strongest?",
+      "Researchers show photographs of faces to people in many cultures, including a remote group with little contact with the outside world. Across all groups, people match the same faces to 'happy,' 'angry,' and 'afraid.' Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Post-lunch digestion probably dips alertness; test whether a short walk before class lifts scores, whether lighter lunches predict better quizzes, and whether the dip shrinks for material taught interactively rather than by lecture.",
-        credit: 1.0,
-      },
-      {
-        text: "After-lunch classes seem to do worse.",
-        credit: 0.3,
-      },
-      {
-        text: "The timing probably hurts scores; we could reshuffle the schedule.",
+        text: "Some expressions probably mean the same everywhere; we could test more cultures.",
         credit: 0.6,
       },
       {
-        text: "Quiz performance has too many inputs to blame the lunch slot.",
+        text: "Recognition of a few basic emotional expressions is likely part of shared human nature rather than purely learned from one culture; test whether people blind from birth, who never saw faces, still produce the same expressions, whether infants react to them, and whether any culture reliably reverses two of the meanings.",
+        credit: 1.0,
+      },
+      {
+        text: "People in different places seem to agree on some faces.",
+        credit: 0.3,
+      },
+      {
+        text: "Emotions are personal, so studying them across cultures can't show anything.",
         credit: 0,
       },
     ],
     correctAnswer:
-      "Post-lunch digestion probably dips alertness; test whether a short walk before class lifts scores, whether lighter lunches predict better quizzes, and whether the dip shrinks for material taught interactively rather than by lecture.",
+      "Recognition of a few basic emotional expressions is likely part of shared human nature rather than purely learned from one culture; test whether people blind from birth, who never saw faces, still produce the same expressions, whether infants react to them, and whether any culture reliably reverses two of the meanings.",
     explanation:
-      "The fecund lead names an alertness mechanism and three distinct interventions to check; the 'too many inputs' answer commits to no lead.",
+      "The richest conclusion commits to a shared human capacity and names three tests that could refute it; 'emotions are personal, nothing can be shown' is the dodge the cross-cultural agreement contradicts.",
   },
 ];
 
@@ -417,425 +417,425 @@ const hybrid: HomeworkItem[] = [
   {
     itemType: "hybrid",
     prompt:
-      "A gym finds that members who book classes through the app attend 70% of the time, while drop-ins attend sporadically. Membership cancellations are lowest among app-bookers. Which lead best follows?",
+      "People can walk and chat easily, but when asked to do two demanding mental tasks at once — solving math problems while memorizing a list — performance on both collapses, even though they can do each alone. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Booking through the app likely creates a small commitment that locks in attendance; test whether forcing drop-ins to pre-book raises their show rate, whether app-bookers who miss a class cancel sooner, and whether a one-tap 'I'm coming' reminder lifts attendance further.",
+        text: "The mind likely has a limited central capacity that the two demanding tasks must share, so they interfere only when both need it; test whether pairing a hard task with an easy automatic one causes little interference, whether the drop grows as either task gets harder, and whether heavy practice that makes one task automatic removes the interference.",
         credit: 1.0,
       },
       {
-        text: "App-bookers seem more loyal.",
+        text: "Doing two hard things at once seems to hurt performance.",
         credit: 0.3,
       },
       {
-        text: "Gym habits are too personal to credit the booking flow.",
+        text: "Multitasking is too individual to draw any general conclusion.",
         credit: 0,
       },
       {
-        text: "The app probably drives attendance; we could push more members to use it.",
+        text: "The two tasks probably compete for something; we could test more task pairs.",
         credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would most distinguish your commitment lead from the rival 'app-users are simply more motivated people,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'shared limited capacity' lead from the rival 'people are simply slowed by switching back and forth,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: randomly require pre-booking from a subset of current drop-ins and watch their attendance — if booking causes the commitment, their show rate should jump toward 70%. My lead is refuted if forced pre-bookers attend no more than they did as drop-ins, which would point to motivation rather than the booking act.",
+        "Cheapest test: pair the hard memory task with a truly automatic task like walking instead of another demanding one — my lead predicts little interference because the automatic task barely draws on the shared capacity. It is refuted if even an effortless second task wrecks performance as badly as a demanding one, which would point to switching rather than a shared pool of capacity.",
       yieldAnchors: [
-        "App-bookers attend 70% of the time",
-        "Drop-ins attend sporadically",
-        "Cancellations are lowest among app-bookers",
+        "Each task can be done well alone",
+        "Doing both demanding tasks at once collapses performance",
+        "Easy pairs like walking and chatting don't interfere",
       ],
       riskAnchors: [
-        "Forcing drop-ins to pre-book raises their show rate",
-        "App-bookers who miss a class cancel sooner",
-        "A one-tap reminder lifts attendance further",
+        "Pairing a hard task with an automatic one causes little interference",
+        "The drop grows as either task gets harder",
+        "Making one task automatic through practice removes the interference",
       ],
       defeatedBy: [
-        "The app has no effect and only motivated people use it",
-        "Booking method is unrelated to cancellation",
+        "Any second task, however easy, ruins performance equally",
+        "People are simply unmotivated when given two tasks",
       ],
     },
     correctAnswer:
-      "Booking through the app likely creates a small commitment that locks in attendance; test whether forcing drop-ins to pre-book raises their show rate, whether app-bookers who miss a class cancel sooner, and whether a one-tap 'I'm coming' reminder lifts attendance further.",
+      "The mind likely has a limited central capacity that the two demanding tasks must share, so they interfere only when both need it; test whether pairing a hard task with an easy automatic one causes little interference, whether the drop grows as either task gets harder, and whether heavy practice that makes one task automatic removes the interference.",
     explanation:
-      "Full credit goes to the lead that commits to a commitment-mechanism, spawns three checks, and is paired with a cheap randomized test that names its own refutation; 'too personal' opens nothing.",
+      "Full credit commits to a shared-capacity mechanism, spawns three checks, and is paired with a cheap easy-vs-hard test that names its own refutation; 'too individual' opens nothing.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A wildlife camera shows that a meadow's deer feed at dawn on most days, but on the few days a nearby owl calls before sunrise, the deer feed an hour later and stay near tree cover. Which lead is strongest?",
+      "People memorize a short set of digits, then see a single digit and answer whether it was in the set. The more digits they were asked to hold, the longer they take to answer — and the time rises by a steady amount for each extra digit, whether the answer is yes or no. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Deer behavior is too variable to tie to owl calls.",
+        text: "What the mind does in that fraction of a second is unknowable.",
         credit: 0,
       },
       {
-        text: "The owl call likely signals predator activity, making deer cautious; test whether played-back owl calls reproduce the delay, whether the effect fades after repeated harmless mornings, and whether other predator sounds trigger the same caution.",
-        credit: 1.0,
-      },
-      {
-        text: "Owl mornings seem to change the deer's routine.",
+        text: "Bigger sets seem to take longer to search.",
         credit: 0.3,
       },
       {
-        text: "The owl probably affects feeding; we could record more owl days.",
+        text: "The mind likely scans the memorized items one at a time, adding a fixed step per item and checking the whole set even after a match; test whether each added digit adds the same amount of time, whether 'yes' and 'no' answers rise at the same rate, and whether a much longer set eventually forces a different strategy.",
+        credit: 1.0,
+      },
+      {
+        text: "Holding more digits probably slows the search; we could test more set sizes.",
         credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would most distinguish your predator-cue lead from the rival 'the deer just happen to feed late on those days,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'item-by-item scan' lead from the rival 'people just feel less sure with bigger sets,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: play a recorded owl call before dawn on otherwise normal mornings and see whether the deer delay and hug cover as predicted. My lead is refuted if the playback produces no change in feeding time or location, meaning the call is not the cue.",
+        "Cheapest test: check whether response time rises in equal steps with each added digit and rises the same for 'yes' and 'no' answers — a steady per-item step is the signature of a serial scan. My lead is refuted if time stays flat as the set grows, or if 'yes' answers are much faster than 'no,' which would fit a confidence or all-at-once matching account instead.",
       yieldAnchors: [
-        "Deer normally feed at dawn",
-        "On owl-call mornings they feed an hour later",
-        "On owl-call mornings they stay near tree cover",
+        "Response time grows with set size",
+        "The growth is a steady amount per extra digit",
+        "Yes and no answers slow at the same rate",
       ],
       riskAnchors: [
-        "Played-back owl calls reproduce the delay",
-        "The effect fades after repeated harmless mornings",
-        "Other predator sounds trigger the same caution",
+        "Each added digit adds the same fixed time",
+        "Yes and no answers rise at the same rate",
+        "A very long set forces a different strategy",
       ],
       defeatedBy: [
-        "Owl calls and feeding times are unrelated",
-        "The deer feed late on those days for random reasons",
+        "Set size has no effect on response time",
+        "People answer instantly regardless of how many digits they hold",
       ],
     },
     correctAnswer:
-      "The owl call likely signals predator activity, making deer cautious; test whether played-back owl calls reproduce the delay, whether the effect fades after repeated harmless mornings, and whether other predator sounds trigger the same caution.",
+      "The mind likely scans the memorized items one at a time, adding a fixed step per item and checking the whole set even after a match; test whether each added digit adds the same amount of time, whether 'yes' and 'no' answers rise at the same rate, and whether a much longer set eventually forces a different strategy.",
     explanation:
-      "Top credit commits to a predator-cue mechanism with three follow-ups and a cheap playback test that states its own disconfirmation; 'too variable' is the barren refusal.",
+      "Top credit reads a hidden serial scan out of the steady timing and names three tests, including a per-item-step check that could refute it; 'unknowable' is the empty refusal.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A startup notices its blog posts that include a hand-drawn diagram get shared three times as often as text-only posts, across many topics and authors. Which conclusion best follows?",
+      "People are flashed a single letter very briefly and asked whether it was a 'D' or a 'K.' They are reliably more accurate when the letter appeared inside a real word like 'WORD' than when it appeared alone or inside a random string like 'OWRD.' Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Hand-drawn diagrams likely make ideas feel approachable and screenshot-worthy; test whether the same posts with polished stock graphics share less, whether shares cluster on the diagram image itself, and whether adding a diagram to an old text post revives its sharing.",
-        credit: 1.0,
+        text: "Words probably help letter recognition; we could test more words.",
+        credit: 0.6,
       },
       {
-        text: "Diagram posts seem to get shared more.",
-        credit: 0.3,
-      },
-      {
-        text: "Sharing depends on too many factors to credit the diagrams.",
+        text: "Reading is too automatic to study by flashing letters.",
         credit: 0,
       },
       {
-        text: "Diagrams probably help sharing; we could add more of them.",
-        credit: 0.6,
+        text: "Letters in words seem easier to see.",
+        credit: 0.3,
+      },
+      {
+        text: "The mind likely uses knowledge of whole words to support its reading of the parts, so a letter is recognized better inside a familiar word than in nonsense; test whether pronounceable non-words like 'MAVE' give a partial boost, whether the advantage disappears for unfamiliar foreign words, and whether the boost grows with the word's frequency.",
+        credit: 1.0,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would most distinguish your 'hand-drawn approachability' lead from the rival 'any image boosts shares,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'whole-word knowledge helps the parts' lead from the rival 'real words are just more familiar visual shapes,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: take matched posts and give half a hand-drawn diagram and half a polished stock graphic, then compare shares — my lead predicts the hand-drawn version wins. It is refuted if the stock-graphic posts share just as much, showing it is images in general, not the hand-drawn style.",
+        "Cheapest test: compare a never-before-seen but pronounceable non-word ('MAVE') against a random string ('OWRD') — my lead predicts the pronounceable item still boosts letter recognition because the reading system can use spelling rules, not just memorized shapes. It is refuted if only real, familiar words help and pronounceable non-words give no advantage at all.",
       yieldAnchors: [
-        "Diagram posts get shared three times as often",
-        "The effect holds across topics",
-        "The effect holds across authors",
+        "Letters are recognized better inside real words",
+        "A single letter alone is harder to identify",
+        "Random strings give no advantage",
       ],
       riskAnchors: [
-        "Polished stock graphics share less than hand-drawn ones",
-        "Shares cluster on the diagram image itself",
-        "Adding a diagram revives an old post's sharing",
+        "Pronounceable non-words give a partial boost",
+        "Unfamiliar foreign words lose the advantage",
+        "The boost grows with word frequency",
       ],
       defeatedBy: [
-        "Any image at all produces the same boost",
-        "Diagrams are unrelated to sharing",
+        "Letters are always recognized equally regardless of context",
+        "Only the brightness of the display matters",
       ],
     },
     correctAnswer:
-      "Hand-drawn diagrams likely make ideas feel approachable and screenshot-worthy; test whether the same posts with polished stock graphics share less, whether shares cluster on the diagram image itself, and whether adding a diagram to an old text post revives its sharing.",
+      "The mind likely uses knowledge of whole words to support its reading of the parts, so a letter is recognized better inside a familiar word than in nonsense; test whether pronounceable non-words like 'MAVE' give a partial boost, whether the advantage disappears for unfamiliar foreign words, and whether the boost grows with the word's frequency.",
     explanation:
-      "The richest lead specifies the hand-drawn quality as the active ingredient with three checks and a head-to-head test that names its refutation; 'too many factors' leads nowhere.",
+      "Full credit names top-down word knowledge as the active ingredient with three checks and a pronounceable-non-word test that states its own refutation; 'too automatic to study' leads nowhere.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A hospital finds that surgical patients given a printed recovery checklist have fewer readmissions than those given only verbal instructions, across surgeons and procedures. Which lead is strongest?",
+      "After a stroke in the left front of the brain, a patient struggles to produce speech — his sentences come out halting and broken — yet he understands what others say to him almost perfectly. Another patient with damage farther back shows the opposite. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Readmissions have too many causes to attribute to a checklist.",
-        credit: 0,
-      },
-      {
-        text: "Checklist patients seem to recover better.",
+        text: "Different brain damage seems to cause different language problems.",
         credit: 0.3,
       },
       {
-        text: "The checklist probably lets patients catch warning signs early at home; test whether checklist users call the clinic sooner, whether readmission causes shift toward preventable ones, and whether a phone-app version reproduces the benefit.",
+        text: "Producing speech and understanding it likely depend on at least two separable brain systems, since damage can knock out one while sparing the other; test whether this double pattern holds across many patients, whether scans show distinct regions for production versus comprehension in healthy people, and whether temporarily disrupting each region in volunteers reproduces the matching deficit.",
         credit: 1.0,
       },
       {
-        text: "The checklist likely helps; we could give it to everyone.",
+        text: "Language is spread all over the brain, so localizing it is hopeless.",
+        credit: 0,
+      },
+      {
+        text: "Speaking and understanding are probably handled separately; we could study more patients.",
         credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would most distinguish your 'early self-monitoring' lead from the rival 'checklist patients were healthier to begin with,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'two separable systems' lead from the rival 'one language system that the second stroke simply damaged more,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: randomize the checklist among comparable post-op patients and compare readmissions — random assignment removes baseline-health differences, so a remaining gap supports self-monitoring. My lead is refuted if randomized checklist and verbal-only groups readmit at the same rate.",
+        "Cheapest test: find patients with the opposite pattern — fluent speech but poor comprehension — because a genuine double dissociation, each ability lost while the other survives, can't come from one system merely damaged by degrees. My lead is refuted if no patient ever shows spared production with lost comprehension, which would suggest one graded system rather than two.",
       yieldAnchors: [
-        "Checklist patients have fewer readmissions",
-        "The effect holds across surgeons",
-        "The effect holds across procedures",
+        "One patient can understand but not produce speech",
+        "Another shows the reverse pattern",
+        "The two patients have damage in different regions",
       ],
       riskAnchors: [
-        "Checklist users call the clinic sooner",
-        "Readmission causes shift toward preventable ones",
-        "A phone-app version reproduces the benefit",
+        "The double pattern holds across many patients",
+        "Scans show distinct regions for production and comprehension",
+        "Disrupting each region reproduces the matching deficit",
       ],
       defeatedBy: [
-        "Checklist patients were simply healthier to begin with",
-        "The checklist has no effect on readmission",
+        "Language sits in a single all-or-nothing region",
+        "Comprehension and production always fail together",
       ],
     },
     correctAnswer:
-      "The checklist probably lets patients catch warning signs early at home; test whether checklist users call the clinic sooner, whether readmission causes shift toward preventable ones, and whether a phone-app version reproduces the benefit.",
+      "Producing speech and understanding it likely depend on at least two separable brain systems, since damage can knock out one while sparing the other; test whether this double pattern holds across many patients, whether scans show distinct regions for production versus comprehension in healthy people, and whether temporarily disrupting each region in volunteers reproduces the matching deficit.",
     explanation:
-      "Full credit commits to an early-monitoring mechanism with three follow-ups and a randomized test that names its refutation; 'too many causes' is the dodge.",
+      "Top credit reasons from the double dissociation to separable systems and names tests, including the opposite-pattern search that would refute it; 'localizing is hopeless' is the dodge the two opposite patients defeat.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A bookstore finds that displaying a staff hand-written review card next to a book triples that title's sales, even for obscure titles. Which conclusion best follows?",
+      "In a study, people watch a movie and fail to notice that the actor's scarf changes color between shots — even huge changes go unseen unless attention happens to land on them. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The review card likely lends a trusted personal recommendation that lowers buying risk; test whether unsigned generic cards work as well, whether sales drop when the same staffer reviews too many books, and whether online listings with staff quotes show the same lift.",
+        text: "Conscious awareness of a scene likely depends on attention rather than on the eyes capturing everything, so unattended changes go unnoticed; test whether cueing people to the changing object makes them spot it easily, whether changes hidden by a brief blank or a blink are missed more, and whether experts notice changes in their area of expertise faster.",
         credit: 1.0,
       },
       {
-        text: "Cards seem to sell books.",
-        credit: 0.3,
+        text: "People probably miss changes they aren't focused on; we could test more changes.",
+        credit: 0.6,
       },
       {
-        text: "Book sales swing for too many reasons to credit the cards.",
+        text: "Perception is too rich to study with simple movie tricks.",
         credit: 0,
       },
       {
-        text: "The cards probably help; we could add more of them.",
-        credit: 0.6,
+        text: "People seem to miss some changes.",
+        credit: 0.3,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would most distinguish your 'trusted personal recommendation' lead from the rival 'any extra display signage sells books,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'awareness needs attention' lead from the rival 'people see the change but instantly forget it,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: put a generic 'Recommended' card on some titles and a signed personal staff review on others, then compare sales — my lead predicts the signed personal card wins. It is refuted if the generic card sells just as well, showing it is signage, not the personal trust.",
+        "Cheapest test: cue people in advance to watch the scarf — my lead predicts they will now catch the change easily because attention is the missing ingredient, whereas a forgetting account predicts they should still lose it. It is refuted if cued, attending viewers miss the change just as often, which would point to memory rather than attention.",
       yieldAnchors: [
-        "Review card triples sales",
-        "The effect holds even for obscure titles",
-        "Cards are hand-written by staff",
+        "Large changes between shots go unnoticed",
+        "Changes are caught only when attention lands on them",
+        "Even obvious color changes are missed",
       ],
       riskAnchors: [
-        "Unsigned generic cards work less well",
-        "Sales drop when one staffer reviews too many books",
-        "Online staff quotes show the same lift",
+        "Cueing the object makes the change easy to spot",
+        "Changes hidden by a blank or blink are missed more",
+        "Experts spot changes in their domain faster",
       ],
       defeatedBy: [
-        "Any signage at all produces the boost",
-        "The cards are unrelated to sales",
+        "People always see every change in a scene",
+        "The eyes record the whole scene into awareness at once",
       ],
     },
     correctAnswer:
-      "The review card likely lends a trusted personal recommendation that lowers buying risk; test whether unsigned generic cards work as well, whether sales drop when the same staffer reviews too many books, and whether online listings with staff quotes show the same lift.",
+      "Conscious awareness of a scene likely depends on attention rather than on the eyes capturing everything, so unattended changes go unnoticed; test whether cueing people to the changing object makes them spot it easily, whether changes hidden by a brief blank or a blink are missed more, and whether experts notice changes in their area of expertise faster.",
     explanation:
-      "The fecund lead names trusted personal endorsement with three checks and a controlled comparison that states its own refutation; 'too many reasons' opens no inquiry.",
+      "Full credit ties awareness to attention with three checks and a cueing test that names its refutation; 'too rich to study' is the empty refusal.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A delivery company sees that routes assigned to drivers who choose their own stop order finish faster than algorithm-ordered routes, despite covering the same addresses. Which lead is strongest?",
+      "People press a button matching a light that comes on. With two possible lights they respond almost instantly; with four, eight, or sixteen, their reaction time climbs in a regular way as the number of choices grows. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Driver-chosen orders probably exploit local knowledge the algorithm lacks, like school traffic times; test whether drivers narrate the shortcuts they use, whether the gap shrinks on unfamiliar routes, and whether feeding driver-known constraints to the algorithm closes the gap.",
-        credit: 1.0,
-      },
-      {
-        text: "Driver-chosen routes seem faster.",
-        credit: 0.3,
-      },
-      {
-        text: "Route times depend on too much to credit who orders the stops.",
+        text: "Reaction speed depends on the person, so the pattern means little.",
         credit: 0,
       },
       {
-        text: "Letting drivers choose probably helps; we could expand it.",
+        text: "More choices seem to slow people down.",
+        credit: 0.3,
+      },
+      {
+        text: "The mind likely takes time to decide among options, and that time grows with the number of choices in a regular way that suggests narrowing down possibilities; test whether making some lights far more likely shortens the time for those, whether grouping the lights into clusters speeds the choice, and whether the increase flattens once the choices are highly practiced.",
+        credit: 1.0,
+      },
+      {
+        text: "More options probably take longer to choose; we could add more lights.",
         credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would most distinguish your 'local-knowledge' lead from the rival 'drivers just rush more on their own routes,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'decision time grows with choices' lead from the rival 'more lights are simply harder to see,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: compare the gap on drivers' familiar routes versus brand-new routes they've never run — my lead predicts the advantage shrinks where local knowledge can't apply. It is refuted if driver-chosen routes stay equally faster on unfamiliar territory, pointing to effort rather than knowledge.",
+        "Cheapest test: keep the display equally busy but make only two of the lights ever relevant — my lead predicts fast responses because the decision, not the visual clutter, drives the time. It is refuted if reaction time stays slow whenever many lights are visible regardless of how many are actually choices, which would point to perception rather than decision.",
       yieldAnchors: [
-        "Driver-chosen routes finish faster",
-        "They cover the same addresses",
-        "The comparison is against algorithm ordering",
+        "Two choices give near-instant responses",
+        "Reaction time climbs as choices increase",
+        "The climb is regular, not random",
       ],
       riskAnchors: [
-        "The gap shrinks on unfamiliar routes",
-        "Drivers can narrate specific shortcuts",
-        "Feeding driver constraints to the algorithm closes the gap",
+        "Making some options more likely speeds those responses",
+        "Grouping the lights speeds the choice",
+        "Heavy practice flattens the increase",
       ],
       defeatedBy: [
-        "Drivers simply rush on self-chosen routes",
-        "Stop order is unrelated to finish time",
+        "Reaction time is the same no matter how many choices",
+        "Only the brightness of the lights affects speed",
       ],
     },
     correctAnswer:
-      "Driver-chosen orders probably exploit local knowledge the algorithm lacks, like school traffic times; test whether drivers narrate the shortcuts they use, whether the gap shrinks on unfamiliar routes, and whether feeding driver-known constraints to the algorithm closes the gap.",
+      "The mind likely takes time to decide among options, and that time grows with the number of choices in a regular way that suggests narrowing down possibilities; test whether making some lights far more likely shortens the time for those, whether grouping the lights into clusters speeds the choice, and whether the increase flattens once the choices are highly practiced.",
     explanation:
-      "Top credit commits to a local-knowledge mechanism with three follow-ups and a familiar-vs-new test that names its refutation; 'too much' is the empty refusal.",
+      "Top credit names a decision process and three tests, with a same-display-different-choices test that names its refutation; 'depends on the person' is the dodge the regular pattern defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A language app finds that learners who review with audio-only flashcards retain vocabulary longer than those using text flashcards, across many languages. Which conclusion best follows?",
+      "People memorize a map of an island with several landmarks, then close their eyes and imagine moving a dot from one landmark to another. The farther apart two landmarks were on the map, the longer they take to 'arrive' in their imagination. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Retention is too individual to attribute to the card format.",
-        credit: 0,
-      },
-      {
-        text: "Audio cards probably force active recall of sound-to-meaning, strengthening memory; test whether learners who say the word aloud with text cards catch up, whether audio's edge is largest for spoken-test items, and whether mixed audio-text cards beat both.",
-        credit: 1.0,
-      },
-      {
-        text: "Audio cards seem to help retention.",
+        text: "Imagining longer trips seems to take longer.",
         credit: 0.3,
       },
       {
-        text: "Audio probably helps; we could make more audio cards.",
+        text: "Imagination is private, so we can't study it scientifically.",
+        credit: 0,
+      },
+      {
+        text: "Mental images probably preserve distances; we could test more landmark pairs.",
         credit: 0.6,
+      },
+      {
+        text: "Mental images likely preserve spatial layout, so scanning a longer imagined distance takes proportionally more time, much like scanning a real picture; test whether scan time rises in step with map distance, whether imagined zooming in or out changes the times predictably, and whether people who report vivid imagery show the cleanest distance effect.",
+        credit: 1.0,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would most distinguish your 'active sound recall' lead from the rival 'audio learners simply study more,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'images preserve spatial layout' lead from the rival 'people just guess that farther should take longer,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: match study time across the two groups and compare retention — if time is equal and audio still wins, the format matters. My lead is refuted if equal-time audio and text learners retain the same, meaning study volume, not recall mode, drove the gap.",
+        "Cheapest test: have people scan between pairs without telling them distance matters, and check whether scan time still rises smoothly with the actual map distance — a clean proportional curve they were never told to produce supports a genuine spatial image. My lead is refuted if times only track distance when people know the experiment expects it, or if times are flat across distances.",
       yieldAnchors: [
-        "Audio-only learners retain vocabulary longer",
-        "The effect holds across many languages",
-        "The comparison is against text flashcards",
+        "People scan between imagined landmarks",
+        "Farther landmarks take longer to reach",
+        "Scan time tracks the map distance",
       ],
       riskAnchors: [
-        "Saying text words aloud lets text learners catch up",
-        "Audio's edge is largest for spoken-test items",
-        "Mixed audio-text cards beat both",
+        "Scan time rises in step with distance",
+        "Imagined zooming changes times predictably",
+        "Vivid imagers show the cleanest effect",
       ],
       defeatedBy: [
-        "Audio learners simply spend more time studying",
-        "Card format is unrelated to retention",
+        "Imagined distance has no effect on scan time",
+        "People answer at the same speed for all pairs",
       ],
     },
     correctAnswer:
-      "Audio cards probably force active recall of sound-to-meaning, strengthening memory; test whether learners who say the word aloud with text cards catch up, whether audio's edge is largest for spoken-test items, and whether mixed audio-text cards beat both.",
+      "Mental images likely preserve spatial layout, so scanning a longer imagined distance takes proportionally more time, much like scanning a real picture; test whether scan time rises in step with map distance, whether imagined zooming in or out changes the times predictably, and whether people who report vivid imagery show the cleanest distance effect.",
     explanation:
-      "The richest lead specifies active sound recall with three checks and a matched-time test that names its refutation; 'too individual' is the unfruitful dodge.",
+      "Full credit claims images keep spatial structure with three checks and a 'don't tell them distance matters' test that names its refutation; 'imagination is private, can't study it' is the dodge the orderly scan times defeat.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A nonprofit finds that donors who receive a photo of the specific child they sponsor renew at far higher rates than those who get only a thank-you letter. Which lead is strongest?",
+      "Reading difficulty in some children is studied three ways: psychologists find they struggle to break words into sounds, geneticists find it runs in families, and brain scientists find unusual activity in a sound-processing region. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Donation behavior is too complex to pin on a photo.",
-        credit: 0,
+        text: "The three findings probably fit together; we could gather more studies.",
+        credit: 0.6,
       },
       {
-        text: "Photo donors seem more loyal.",
-        credit: 0.3,
-      },
-      {
-        text: "The specific photo probably makes the impact feel concrete and personal, sustaining commitment; test whether a generic stock photo works as well, whether renewal rises with photo update frequency, and whether short video clips outperform photos.",
+        text: "Because evidence from psychology, genetics, and brain science converges, the difficulty likely stems from a specific problem handling speech sounds rather than from low overall intelligence; test whether training in sound-segmentation improves reading, whether unaffected relatives share milder versions, and whether the brain region's activity predicts who responds to that training.",
         credit: 1.0,
       },
       {
-        text: "Photos probably help renewal; we could send more of them.",
-        credit: 0.6,
+        text: "Three different fields means three different problems, so no single conclusion is possible.",
+        credit: 0,
+      },
+      {
+        text: "The different studies seem related somehow.",
+        credit: 0.3,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would most distinguish your 'concrete personal impact' lead from the rival 'any image lifts renewal,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'specific sound-processing problem' lead from the rival 'these children are just generally slower learners,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: send some donors a generic stock child photo and others the specific sponsored child's photo, then compare renewals — my lead predicts the specific photo wins. It is refuted if the generic photo renews just as well, showing it is imagery, not personal specificity.",
+        "Cheapest test: check whether the same children perform normally on tasks that don't involve speech sounds, like spatial puzzles or math, while failing sound-segmentation — a sharp, sound-specific deficit rules out general slowness. My lead is refuted if they are equally behind on every kind of task, which would point to overall ability rather than a specific sound-processing problem.",
       yieldAnchors: [
-        "Photo donors renew at far higher rates",
-        "The photo shows the specific sponsored child",
-        "The comparison is against a thank-you letter only",
+        "The children struggle to break words into sounds",
+        "The difficulty runs in families",
+        "A sound-processing brain region behaves unusually",
       ],
       riskAnchors: [
-        "A generic stock photo works less well",
-        "Renewal rises with photo update frequency",
-        "Short video clips outperform photos",
+        "Sound-segmentation training improves reading",
+        "Unaffected relatives show milder versions",
+        "The brain region predicts who responds to training",
       ],
       defeatedBy: [
-        "Any image at all produces the renewal lift",
-        "The photo is unrelated to renewal",
+        "The children are simply low in overall intelligence",
+        "The three findings are unrelated coincidences",
       ],
     },
     correctAnswer:
-      "The specific photo probably makes the impact feel concrete and personal, sustaining commitment; test whether a generic stock photo works as well, whether renewal rises with photo update frequency, and whether short video clips outperform photos.",
+      "Because evidence from psychology, genetics, and brain science converges, the difficulty likely stems from a specific problem handling speech sounds rather than from low overall intelligence; test whether training in sound-segmentation improves reading, whether unaffected relatives share milder versions, and whether the brain region's activity predicts who responds to that training.",
     explanation:
-      "Full credit names concrete personal impact with three follow-ups and a specific-vs-generic test that states its refutation; 'too complex' commits to no lead.",
+      "Full credit leans on converging evidence to name a specific cause with three tests and a domain-specificity check that would refute it; 'three fields means three problems' is the dodge the convergence itself defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A research lab finds that experiments run by pairs of scientists are reproduced by other labs more often than solo-run experiments, across fields. Which conclusion best follows?",
+      "A wild crow, faced with food in a tube too deep to reach, bends a straight piece of wire into a hook on its first try and fishes the food out. It had never been given wire before. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Pairs probably cross-check protocol steps that solo workers skip or misremember; test whether solo experiments with a written-protocol audit reproduce better, whether pair advantage is largest for procedure-heavy methods, and whether pairs' lab notebooks record more detail.",
+        text: "The crow likely solved a new problem by mentally representing the goal and shaping a tool to fit it, not just by blind trial and error; test whether it makes the right tool before any fumbling, whether it picks the correct tool when several lengths are offered, and whether it transfers the trick to a new container it has never seen.",
         credit: 1.0,
       },
       {
-        text: "Paired experiments seem more reproducible.",
+        text: "The crow seems pretty clever with the wire.",
         credit: 0.3,
       },
       {
-        text: "Reproducibility has too many drivers to credit team size.",
+        text: "Animals can't tell us their thoughts, so claims about crow reasoning are off-limits.",
         credit: 0,
       },
       {
-        text: "Pairs probably help; we could require two scientists per study.",
+        text: "The crow probably planned the tool; we could test a few more crows.",
         credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would most distinguish your 'cross-checking protocol' lead from the rival 'better scientists choose to work in pairs,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'mental planning' lead from the rival 'the crow stumbled onto the hook by random bending,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: give solo workers a mandatory written-protocol audit step and see whether their reproduction rate rises toward the pairs' — if cross-checking is the mechanism, the audit should close much of the gap. My lead is refuted if audited solo experiments reproduce no better, pointing to scientist quality instead.",
+        "Cheapest test: offer the crow several tools of different shapes and lengths and see whether it selects or makes the correct one before any trial-and-error fishing — choosing the right tool up front signals a represented goal, not luck. My lead is refuted if the crow only succeeds after many random attempts and shows no above-chance first-try tool choice.",
       yieldAnchors: [
-        "Paired experiments are reproduced more often",
-        "The effect holds across fields",
-        "The comparison is against solo-run experiments",
+        "The crow had never been given wire before",
+        "It bent the wire into a working hook on the first try",
+        "It used the hook to retrieve out-of-reach food",
       ],
       riskAnchors: [
-        "A written-protocol audit lifts solo reproduction",
-        "Pair advantage is largest for procedure-heavy methods",
-        "Pairs' notebooks record more detail",
+        "It makes the right tool before any fumbling",
+        "It picks the correct tool from several options",
+        "It transfers the solution to a new container",
       ],
       defeatedBy: [
-        "Better scientists simply choose to work in pairs",
-        "Team size is unrelated to reproducibility",
+        "The crow succeeded only by random trial and error",
+        "The hook formed by accident with no role for the crow",
       ],
     },
     correctAnswer:
-      "Pairs probably cross-check protocol steps that solo workers skip or misremember; test whether solo experiments with a written-protocol audit reproduce better, whether pair advantage is largest for procedure-heavy methods, and whether pairs' lab notebooks record more detail.",
+      "The crow likely solved a new problem by mentally representing the goal and shaping a tool to fit it, not just by blind trial and error; test whether it makes the right tool before any fumbling, whether it picks the correct tool when several lengths are offered, and whether it transfers the trick to a new container it has never seen.",
     explanation:
-      "The fecund lead pins cross-checking as the cause with three checks and an audit test that names its refutation; 'too many drivers' yields no actionable lead.",
+      "Full credit infers goal-directed planning from the first-try success with three checks and a tool-choice test that names its refutation; 'claims about crow reasoning are off-limits' is the dodge the measurable behavior defeats.",
   },
 ];
 
@@ -843,180 +843,175 @@ const written: HomeworkItem[] = [
   {
     itemType: "written",
     prompt:
-      "A neighborhood coffee shop notices that on rainy days it sells far more of its lemon cake than usual, while its other pastries hold steady. The owner also recalls that rainy days bring in more remote workers who stay for hours. In one paragraph, propose the strongest lead for why lemon-cake sales spike on rainy days and describe how you would test it.",
+      "A researcher measures how quickly people decide whether two letters are 'the same.' People are fastest for identical letters like 'A' and 'A,' slower for same-name pairs like 'A' and 'a,' and slowest when judging whether two letters are both vowels, like 'A' and 'E.' In one paragraph, propose the strongest conclusion about what the mind is doing between seeing the letters and answering, and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest lead is that rain brings in long-staying remote workers who pair a bright, comforting lemon cake with their second or third coffee, so lemon cake is a 'lingering treat' rather than a rain-weather craving in general. This is fecund because it predicts checkable consequences: lemon-cake buyers should have longer dwell times and more drinks per visit than other-pastry buyers; the spike should track the count of laptop/long-stay customers rather than rainfall itself; and offering a second comforting cake should split the rainy-day bump. I would test it by logging dwell time and drink count against pastry choice for two weeks, by checking whether a sunny but slow workday with many laptop stayers also lifts lemon cake, and by adding a rival comfort cake to see whether lemon's spike shrinks.",
+        "The strongest conclusion is that matching letters runs through successive mental stages — first a quick visual match of shape, then a slower match of letter name, then a still slower match of category such as 'vowel' — so each kind of judgment must wait for a later, more abstract stage to finish. This is a strong claim because it predicts checkable consequences: response time should increase in a fixed order (shape < name < category) across many letter pairs; making the printed shapes harder to see should slow only the shape-based judgments and leave the others roughly unchanged; and people should never be slower on an identical-shape match than on a category match. I would test it by timing all three judgment types on the same letters, by degrading the image quality to see whether only the visual stage slows, and by checking whether the time gaps between stages stay consistent across different people and letter sets.",
       yieldAnchors: [
-        "Lemon cake sales spike on rainy days",
-        "Other pastries hold steady",
-        "Rainy days bring more remote workers who stay for hours",
+        "Identical letters are judged fastest",
+        "Same-name pairs are judged slower",
+        "Vowel-category pairs are judged slowest",
       ],
       riskAnchors: [
-        "Lemon-cake buyers show longer dwell times and more drinks per visit",
-        "The spike tracks long-stay customer counts rather than rainfall",
-        "Adding a second comfort cake splits the rainy-day bump",
+        "Response times line up in the order shape < name < category",
+        "Degrading the image slows only the visual judgment",
+        "Identical-shape matches are never slower than category matches",
       ],
       defeatedBy: [
-        "Rain directly causes lemon cravings regardless of customer type",
-        "All pastries rise on rainy days",
-        "Nothing can be concluded without more rainy-day data",
+        "All three judgments take exactly the same time",
+        "Nothing can be inferred about hidden stages from reaction times",
       ],
     },
     correctAnswer:
-      "The strongest lead is that rain brings in long-staying remote workers who pair a bright, comforting lemon cake with their second or third coffee, so lemon cake is a 'lingering treat' rather than a rain-weather craving in general. This is fecund because it predicts checkable consequences: lemon-cake buyers should have longer dwell times and more drinks per visit than other-pastry buyers; the spike should track the count of laptop/long-stay customers rather than rainfall itself; and offering a second comforting cake should split the rainy-day bump. I would test it by logging dwell time and drink count against pastry choice for two weeks, by checking whether a sunny but slow workday with many laptop stayers also lifts lemon cake, and by adding a rival comfort cake to see whether lemon's spike shrinks.",
+      "The strongest conclusion is that matching letters runs through successive mental stages — first a quick visual match of shape, then a slower match of letter name, then a still slower match of category such as 'vowel' — so each kind of judgment must wait for a later, more abstract stage to finish. This is a strong claim because it predicts checkable consequences: response time should increase in a fixed order (shape < name < category) across many letter pairs; making the printed shapes harder to see should slow only the shape-based judgments and leave the others roughly unchanged; and people should never be slower on an identical-shape match than on a category match. I would test it by timing all three judgment types on the same letters, by degrading the image quality to see whether only the visual stage slows, and by checking whether the time gaps between stages stay consistent across different people and letter sets.",
     explanation:
-      "Under CCR's inverted standard, the cautious 'we need more rainy days before saying anything' earns near-zero, and a florid answer that names no test scores low; top credit goes to the lead that spawns the most checkable follow-up observations.",
+      "Under the inverted standard, the cautious 'nothing can be inferred from reaction times' earns near-zero; top credit goes to the staged-processing conclusion that commits to a fixed order and names a degrade-the-image test that could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "A high-school robotics team notices that in the last four competitions, their robot jams only during matches played on the carpeted arena, never on the bare-floor arena. The jams always happen right after a sharp turn. In one paragraph, propose the strongest lead for the jamming and describe how you would test it.",
+      "A patient who lost the ability to form new conscious memories after brain surgery cannot recall meeting his doctor yesterday, yet when he practices a tricky mirror-drawing task day after day he steadily improves — all while insisting he has never tried it before. In one paragraph, propose the strongest conclusion and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest lead is that carpet fibers catch in the wheels or treads during sharp turns, where lateral force lets fibers wedge into the drivetrain and bind it. This lead is fecund because it predicts many checkable things: inspecting the wheels after a carpet jam should reveal trapped fibers; jams should worsen with tighter, faster turns and ease with gentler ones; and a wheel guard or smoother tire should reduce or eliminate carpet jams without hurting bare-floor runs. I would test it by examining the drivetrain immediately after each carpet match, by deliberately running tight versus wide turns on carpet to see whether jam frequency tracks turn sharpness, and by fitting a fiber guard and rerunning the same course.",
+        "The strongest conclusion is that the mind has at least two separate memory systems — one for conscious facts and events, which the surgery damaged, and one for skills and habits, which it spared — because the patient improves at a skill while having no conscious memory of practicing it. This is a strong claim because it predicts checkable consequences: he should learn other motor and perceptual skills normally while still failing every test of conscious recall; brain scans of healthy people should show different regions active for skill learning versus fact memory; and other patients with damage to the skill system should show the reverse pattern, losing skills while keeping conscious memory. I would test it by training him on several new skills and separately quizzing his conscious recall, by imaging healthy volunteers during each kind of learning, and by searching for patients with the opposite dissociation.",
       yieldAnchors: [
-        "Jams occur only on the carpeted arena",
-        "Jams never occur on bare floor",
-        "Jams always follow a sharp turn",
+        "The patient cannot form new conscious memories",
+        "He improves at mirror-drawing with practice",
+        "He denies ever having done the task",
       ],
       riskAnchors: [
-        "Post-jam inspection reveals fibers trapped in the drivetrain",
-        "Jam frequency tracks turn sharpness on carpet",
-        "A wheel guard or smoother tire reduces carpet jams",
+        "He learns other skills while failing all conscious-recall tests",
+        "Different brain regions support skill versus fact learning",
+        "Other patients show the opposite dissociation",
       ],
       defeatedBy: [
-        "The jams are random and unrelated to surface",
-        "The robot's software is at fault regardless of floor",
-        "Four competitions is too few to suspect anything",
+        "Memory is a single all-or-nothing store",
+        "One unusual patient can tell us nothing about normal minds",
       ],
     },
     correctAnswer:
-      "The strongest lead is that carpet fibers catch in the wheels or treads during sharp turns, where lateral force lets fibers wedge into the drivetrain and bind it. This lead is fecund because it predicts many checkable things: inspecting the wheels after a carpet jam should reveal trapped fibers; jams should worsen with tighter, faster turns and ease with gentler ones; and a wheel guard or smoother tire should reduce or eliminate carpet jams without hurting bare-floor runs. I would test it by examining the drivetrain immediately after each carpet match, by deliberately running tight versus wide turns on carpet to see whether jam frequency tracks turn sharpness, and by fitting a fiber guard and rerunning the same course.",
+      "The strongest conclusion is that the mind has at least two separate memory systems — one for conscious facts and events, which the surgery damaged, and one for skills and habits, which it spared — because the patient improves at a skill while having no conscious memory of practicing it. This is a strong claim because it predicts checkable consequences: he should learn other motor and perceptual skills normally while still failing every test of conscious recall; brain scans of healthy people should show different regions active for skill learning versus fact memory; and other patients with damage to the skill system should show the reverse pattern, losing skills while keeping conscious memory. I would test it by training him on several new skills and separately quizzing his conscious recall, by imaging healthy volunteers during each kind of learning, and by searching for patients with the opposite dissociation.",
     explanation:
-      "The 'four competitions is too few to suspect anything' refusal earns near-zero under CCR; credit rewards committing to the surface-and-turn lead that opens the most concrete inspections and interventions.",
+      "The inverted standard gives near-zero to 'one patient tells us nothing'; credit goes to the two-systems conclusion that names a mechanism and proposes a search for the opposite dissociation as its own refutation test.",
   },
   {
     itemType: "written",
     prompt:
-      "A regional manager finds that one of her twelve stores consistently outperforms the rest on customer-satisfaction scores, despite the same products, prices, and training. She notices that store also has the lowest staff turnover and that its manager personally greets regulars by name. In one paragraph, propose the strongest lead and how you would test it.",
+      "Master chess players can glance at a real game position for five seconds and then reconstruct it almost perfectly, far better than beginners. But when the pieces are scattered randomly on the board, masters remember no better than beginners do. In one paragraph, propose the strongest conclusion about how expert memory works and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest lead is that the manager's personal recognition builds regular-customer relationships and low staff turnover, and those stable relationships are what drive the satisfaction scores. This lead is fecund because it generates checkable predictions: satisfaction at the store should be highest among repeat customers and among those the manager greets by name; if that manager were rotated to a low-scoring store, satisfaction there should climb over a few months; and stores that cut turnover through retention bonuses should see satisfaction rise even without the greeting habit. I would test it by segmenting satisfaction scores by customer-repeat status, by running a temporary manager swap and tracking both stores' scores, and by piloting a retention program at a weaker store to isolate the turnover channel.",
+        "The strongest conclusion is that masters don't have better raw memory but have stored thousands of meaningful patterns, so they recall real positions by recognizing familiar chunks — an advantage that vanishes when random scatter offers no patterns to match. This is a strong claim because it predicts checkable consequences: the master's advantage should appear only for game-like, rule-following positions; masters should reconstruct boards in bursts of related pieces rather than one piece at a time; and the same pattern should hold for experts in other fields, such as nurses recalling realistic but not scrambled patient charts. I would test it by comparing recall for legal versus random positions across skill levels, by tracking the order and timing of piece placement to look for chunked bursts, and by repeating the study in a different domain of expertise.",
       yieldAnchors: [
-        "One store outperforms on satisfaction despite identical products, prices, and training",
-        "That store has the lowest staff turnover",
-        "Its manager greets regulars by name",
+        "Masters reconstruct real positions almost perfectly",
+        "Beginners do far worse on real positions",
+        "Masters lose their advantage on random positions",
       ],
       riskAnchors: [
-        "Satisfaction is highest among repeat and greeted customers",
-        "Rotating the manager lifts a weaker store's scores",
-        "A retention program raises satisfaction at another store",
+        "The advantage appears only for game-like positions",
+        "Masters place pieces in related bursts",
+        "The same pattern holds in other expert domains",
       ],
       defeatedBy: [
-        "The high scores are random luck across twelve stores",
-        "Products, prices, or training secretly differ",
-        "Nothing can be said until all stores are surveyed identically",
+        "Masters simply have better memory for everything",
+        "Random and real positions are recalled equally by masters",
       ],
     },
     correctAnswer:
-      "The strongest lead is that the manager's personal recognition builds regular-customer relationships and low staff turnover, and those stable relationships are what drive the satisfaction scores. This lead is fecund because it generates checkable predictions: satisfaction at the store should be highest among repeat customers and among those the manager greets by name; if that manager were rotated to a low-scoring store, satisfaction there should climb over a few months; and stores that cut turnover through retention bonuses should see satisfaction rise even without the greeting habit. I would test it by segmenting satisfaction scores by customer-repeat status, by running a temporary manager swap and tracking both stores' scores, and by piloting a retention program at a weaker store to isolate the turnover channel.",
+      "The strongest conclusion is that masters don't have better raw memory but have stored thousands of meaningful patterns, so they recall real positions by recognizing familiar chunks — an advantage that vanishes when random scatter offers no patterns to match. This is a strong claim because it predicts checkable consequences: the master's advantage should appear only for game-like, rule-following positions; masters should reconstruct boards in bursts of related pieces rather than one piece at a time; and the same pattern should hold for experts in other fields, such as nurses recalling realistic but not scrambled patient charts. I would test it by comparing recall for legal versus random positions across skill levels, by tracking the order and timing of piece placement to look for chunked bursts, and by repeating the study in a different domain of expertise.",
     explanation:
-      "CCR gives near-zero to 'it's just random luck' or 'we can't say until everyone is surveyed'; top credit goes to the relationship lead that commits to a mechanism and names a manager-swap test that could refute it.",
+      "The cautious 'masters just have better memory for everything' is the overreach the random-board result defeats; top credit goes to the chunking conclusion that names a domain-transfer test and several checkable consequences.",
   },
   {
     itemType: "written",
     prompt:
-      "A physical therapist observes that patients recovering from knee surgery who keep a daily pain-and-activity journal regain mobility faster than those who don't, even when given the same exercises. Journal-keepers also report fewer skipped sessions. In one paragraph, propose the strongest lead and describe how you would test it.",
+      "Across the world, children learn whatever language surrounds them on a strikingly similar timetable, babbling around six months and combining words around age two, with no formal lessons. Deaf children exposed to sign language hit the same milestones, and even babble with their hands. In one paragraph, propose the strongest conclusion about the mind and language and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest lead is that journaling makes patients notice and adjust their daily activity, which improves exercise adherence and lets them push the right amount, speeding mobility. This lead is fecund because it predicts checkable consequences: journal-keepers should show steadier session attendance and more consistent home-exercise logs; the mobility advantage should be largest for patients whose journals reveal the most adjustments; and giving non-journalers a simple checkbox adherence prompt should narrow the gap. I would test it by randomizing the journal among new post-op patients to rule out self-selection, by correlating mobility gains with journal-recorded adjustments, and by adding a lightweight reminder prompt to a control group to see whether adherence alone reproduces the benefit.",
+        "The strongest conclusion is that the human mind comes prepared to acquire language through a specialized capacity that works on any natural language — spoken or signed — rather than through general imitation alone, which is why the timetable and even hand-babbling appear regardless of the specific language. This is a strong claim because it predicts checkable consequences: deaf and hearing children should pass the same milestones in the same order; children should produce grammatical patterns no adult explicitly taught them; and the capacity should show a sensitive period, so those who get no language early struggle to master it later. I would test it by comparing milestone timing across spoken and signed languages, by documenting child-invented grammar in communities of deaf children who create new sign languages, and by studying language outcomes in people first exposed to any language at different ages.",
       yieldAnchors: [
-        "Journal-keepers regain mobility faster",
-        "Both groups get the same exercises",
-        "Journal-keepers report fewer skipped sessions",
+        "Children worldwide learn language on a similar timetable",
+        "They learn without formal lessons",
+        "Deaf children hit the same milestones and babble with their hands",
       ],
       riskAnchors: [
-        "Randomized journaling still speeds mobility",
-        "Mobility gains track the number of journal-recorded adjustments",
-        "An adherence prompt narrows the gap for non-journalers",
+        "Deaf and hearing children pass milestones in the same order",
+        "Children produce untaught grammatical patterns",
+        "A sensitive period limits late learners",
       ],
       defeatedBy: [
-        "Journal-keepers were simply more motivated patients",
-        "The journal has no effect at all",
-        "Recovery is too individual to draw any lead",
+        "Language is learned purely by imitating adults",
+        "Spoken and signed languages develop on totally different schedules",
       ],
     },
     correctAnswer:
-      "The strongest lead is that journaling makes patients notice and adjust their daily activity, which improves exercise adherence and lets them push the right amount, speeding mobility. This lead is fecund because it predicts checkable consequences: journal-keepers should show steadier session attendance and more consistent home-exercise logs; the mobility advantage should be largest for patients whose journals reveal the most adjustments; and giving non-journalers a simple checkbox adherence prompt should narrow the gap. I would test it by randomizing the journal among new post-op patients to rule out self-selection, by correlating mobility gains with journal-recorded adjustments, and by adding a lightweight reminder prompt to a control group to see whether adherence alone reproduces the benefit.",
+      "The strongest conclusion is that the human mind comes prepared to acquire language through a specialized capacity that works on any natural language — spoken or signed — rather than through general imitation alone, which is why the timetable and even hand-babbling appear regardless of the specific language. This is a strong claim because it predicts checkable consequences: deaf and hearing children should pass the same milestones in the same order; children should produce grammatical patterns no adult explicitly taught them; and the capacity should show a sensitive period, so those who get no language early struggle to master it later. I would test it by comparing milestone timing across spoken and signed languages, by documenting child-invented grammar in communities of deaf children who create new sign languages, and by studying language outcomes in people first exposed to any language at different ages.",
     explanation:
-      "The cautious 'recovery is too individual to draw any lead' earns near-zero; credit goes to the adherence-and-awareness lead that names a randomized test and several checkable follow-ups.",
+      "The inverted standard gives near-zero to a vague 'kids just copy adults' that the hand-babbling already strains; credit goes to the prepared-capacity conclusion that names untaught grammar and a sensitive-period test that could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "An indie game studio notices that players who finish the tutorial level are five times more likely to still be playing a week later, while most quitters leave during the tutorial's third puzzle. Analytics show that third puzzle has the longest average attempt time. In one paragraph, propose the strongest lead and how you would test it.",
+      "A patient who became blind after damage to his visual brain insists he sees nothing in part of his field — yet when asked to 'just guess' where a light flashed there, he points correctly far more often than chance. In one paragraph, propose the strongest conclusion about vision and awareness and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest lead is that the third puzzle is a difficulty wall that frustrates new players before they're invested, so smoothing it should raise both tutorial completion and week-one retention. This lead is fecund because it spawns checkable predictions: quit timestamps should cluster tightly at the third puzzle's attempt spikes; players who get an optional hint there should complete the tutorial more often; and easing only that puzzle—not others—should move retention while leaving later-quitting players unchanged. I would test it by plotting exact quit points against attempt time, by A/B testing a hint or slight difficulty reduction on the third puzzle, and by confirming that the change lifts week-one retention without altering where the remaining quitters drop off.",
+        "The strongest conclusion is that vision and conscious awareness rely on partly separate pathways, so the patient's brain still processes the light's location through an intact route even though the damaged route that supports conscious seeing is gone. This is a strong claim because it predicts checkable consequences: his 'guesses' should stay above chance for location and movement but fail for fine detail the surviving pathway can't carry; the spared ability should track an alternative visual route in brain scans; and damaging that alternative route should erase the guessing while leaving conscious vision intact in other people. I would test it by measuring which visual features he can guess versus not, by imaging which intact pathways activate when he guesses correctly, and by checking patients with the complementary damage for the opposite profile.",
       yieldAnchors: [
-        "Tutorial-finishers are five times likelier to still be playing a week later",
-        "Most quitters leave during the third puzzle",
-        "The third puzzle has the longest average attempt time",
+        "The patient reports seeing nothing in part of his field",
+        "He points to flashes there far above chance",
+        "He believes he is only guessing",
       ],
       riskAnchors: [
-        "Quit timestamps cluster at the third puzzle's attempt spikes",
-        "An optional hint there raises tutorial completion",
-        "Easing only that puzzle lifts week-one retention",
+        "Guessing stays above chance for location but fails for fine detail",
+        "An alternative visual pathway activates during correct guesses",
+        "Damaging that pathway erases the guessing ability",
       ],
       defeatedBy: [
-        "Players quit for unrelated reasons scattered through the tutorial",
-        "Difficulty is irrelevant and retention is fixed by player type",
-        "We can't act until far more players are tracked",
+        "Vision and awareness are one and the same process",
+        "A patient's verbal report is the only valid measure of sight",
       ],
     },
     correctAnswer:
-      "The strongest lead is that the third puzzle is a difficulty wall that frustrates new players before they're invested, so smoothing it should raise both tutorial completion and week-one retention. This lead is fecund because it spawns checkable predictions: quit timestamps should cluster tightly at the third puzzle's attempt spikes; players who get an optional hint there should complete the tutorial more often; and easing only that puzzle—not others—should move retention while leaving later-quitting players unchanged. I would test it by plotting exact quit points against attempt time, by A/B testing a hint or slight difficulty reduction on the third puzzle, and by confirming that the change lifts week-one retention without altering where the remaining quitters drop off.",
+      "The strongest conclusion is that vision and conscious awareness rely on partly separate pathways, so the patient's brain still processes the light's location through an intact route even though the damaged route that supports conscious seeing is gone. This is a strong claim because it predicts checkable consequences: his 'guesses' should stay above chance for location and movement but fail for fine detail the surviving pathway can't carry; the spared ability should track an alternative visual route in brain scans; and damaging that alternative route should erase the guessing while leaving conscious vision intact in other people. I would test it by measuring which visual features he can guess versus not, by imaging which intact pathways activate when he guesses correctly, and by checking patients with the complementary damage for the opposite profile.",
     explanation:
-      "Under CCR, 'we can't act until far more players are tracked' scores near-zero, and an elaborate answer with no test scores low; top credit goes to the difficulty-wall lead that names an A/B test and several checkable consequences.",
+      "'A verbal report is the only valid measure of sight' is the overreach the above-chance guessing defeats; top credit goes to the separate-pathways conclusion that names a which-features test and an imaging test that could refute it.",
   },
 ];
 
 export const section: SectionContent = {
-  slug: "fecund-lead",
-  title: "The Fecund Lead",
+  slug: "what-is-cogsci",
+  title: "What Cognitive Science Is",
   weekNumber: 1,
   blurb:
-    "When several explanations fit the same facts, back the most fecund one — the lead that spawns the most concrete, checkable questions and predicts the most you can go out and verify.",
+    "Cognitive science studies the mind as a scientific object, pooling psychology, neuroscience, linguistics, philosophy, AI, and anthropology to infer the hidden processes behind what people say and do.",
   lectureTitle:
-    "1.1 The Fecund Lead: prefer the hypothesis that opens the most checkable questions",
-  body: `# The Fecund Lead
+    "1.1 What Cognitive Science Is: studying the mind through the traces it leaves in behavior",
+  body: `# What Cognitive Science Is
 
-When the data fit more than one story, which story should you back? Reflexive caution says "back none — we need more data." Constructive Critical Reasoning says the opposite: commit to the **most fecund** lead. A fecund hypothesis is a *fruitful* one — it opens the most new, concrete, checkable lines of inquiry and predicts the most further observations you can actually go and collect.
+You can't open up a mind and look inside. You can't weigh a thought or photograph a memory in the act of being formed. Yet the mind is real, and it does specific work: it sees, remembers, talks, decides, and learns. Cognitive science is the project of studying that work the way other sciences study their objects — by careful measurement, testable explanations, and predictions you can go out and check. Its core bet is that the mind is not off-limits to science just because it is invisible.
 
-## Fertility is a virtue, not a luxury
+## The mind as an object of study
 
-Two hypotheses can fit the evidence in front of you equally well and still differ enormously in value. A "safe" hypothesis that fits the data but predicts nothing further is a dead end: there is nowhere to go next. A fertile hypothesis pays rent by generating consequences — "if this is true, then we should also see X, Y, and Z." Each of those is a question you can answer cheaply and a chance to be proven wrong. The lead that gives you the longest to-do list of checkable predictions is the strongest, because it teaches you the most fastest.
+The trick is that we never observe the mind directly; we observe its **outputs** — what people say, what they remember, how fast they answer, what mistakes they make. From those traces we **infer** the hidden processes in between. When someone takes longer to confirm that a penguin is a bird than that a robin is, the extra fraction of a second is a clue about how the mind stores categories. The behavior is the data; the mental process is the explanation we build to account for it. That move — reasoning from visible behavior to an invisible mechanism — is the heartbeat of the whole field.
 
-## Why "we just need more data" is the failure mode
+## Many fields, one mind
 
-"We just need more data" *sounds* responsible, but on its own it is the zero-credit dodge. It names no lead, so it tells you nothing about *which* data to gather. Data collection without a hypothesis is wandering. The fecund move is to commit to a candidate explanation precisely *because* doing so tells you exactly what data would confirm or kill it. You don't wait for more data to pick a lead; you pick a lead to know what data to chase.
+No single discipline owns the mind, so cognitive science is deliberately **interdisciplinary**. Psychology runs experiments on perception, memory, and reasoning. Neuroscience asks which brain systems carry out each job. Linguistics studies the structure of language and how children acquire it. Philosophy sharpens the hard questions — what is a representation, what is consciousness. Computer science and artificial intelligence build working models to see whether a proposed mechanism could actually compute the behavior. Anthropology checks which mental patterns hold across cultures and which are local. These fields don't take turns; they attack the same target with different tools.
 
-## How to spot the fecund lead
+## Levels of analysis
 
-Ask of each rival explanation: *If this were true, what else would have to be true — and could I check it this week?* Count the concrete follow-ups each one generates. Prefer the lead that (1) names a specific mechanism, (2) predicts several further observations, and (3) exposes itself to a cheap test that could refute it. A mechanism is fertile; a vague "there's some link" is barren. "Morning sun lengthens sugar build-up" tells you to shade some vines and watch; "the east rows just do better" tells you nothing to do next.
+Because the mind can be described at several **levels**, a complete explanation usually needs more than one. Take recognizing a friend's voice. At the level of behavior, you respond faster to familiar voices. At the level of the brain, particular regions become active. At the level of computation, the mind is matching incoming sound to stored templates. These are not three rival theories; they are three views of one ability that should fit together. A good cognitive-science explanation says how the computation is carried out by the brain and shows up in behavior — and it gets stronger when the levels line up.
 
-## Naming the follow-ups is the work
+## Reading the mind from behavior
 
-Top credit isn't just picking the fertile lead — it's *naming* the checkable questions it generates. "Connecting the calendar builds a daily habit" earns its keep when you add: so daily logins should jump after connecting, prompted connectors should renew more, and non-connectors who still log in daily should renew just as well. Each clause is a test. A committed lead with three named, cheap tests beats a cautious shrug every time.
+How do you turn a clue into a conclusion? You commit to a specific mechanism and then name the checkable consequences it predicts. "The mind rotates a mental image step by step" is a real claim because it predicts that response time should climb steadily with the rotation angle — and you can measure that. The weak move is to stop at "people are slower on harder trials," which names no mechanism and predicts nothing new. The strongest conclusion is the one that both fits the data in front of you **and** spells out a fresh test that could prove it wrong. A claim that risks nothing teaches nothing.
 
-## Overreach still loses
+## Converging evidence
 
-Fecundity is not recklessness. A lead that the existing data already defeats — "the pin causes the tips, full stop," ignoring her mood — is not fertile, it's wrong. The winning lead is the richest one *the data actually supports*, stated as a mechanism, with the tests that would catch it if it's false.
+One study is rarely enough, because any single method can mislead. The field's strongest conclusions come from **converging evidence**: when an experiment, a brain scan, and a computer model — often from different labs and different fields — independently point to the same answer, that agreement is hard to explain away. If behavior, biology, and computation all say memory has two separate systems, the conclusion earns real confidence. Convergence is also why "we need more data" is a weak stopping point: the point of picking a mechanism is to know exactly which new evidence would confirm or kill it.
 
 ## In the real world
 
-A product team sees that users who import contacts in week one retain far better. The dodge: "retention is multi-causal; gather more data." The fecund lead: "importing contacts makes the app socially sticky." Notice how much that opens up — randomly prompt half of new users to import and compare retention; check whether retention tracks number of contacts imported; see whether users who message an imported contact retain best of all. Three cheap experiments, each able to refute the lead. That is what backing the fecund hypothesis buys you: not certainty today, but the fastest path to it.`,
+Suppose a friend keeps blanking on a coworker's name even though she sees him daily. The dodge is "memory is just unreliable" — true-sounding, but it predicts nothing and suggests nothing to do. A cognitive-science move commits to a mechanism: maybe names are stored loosely and need a strong cue to retrieve. Notice how much that opens up. It predicts she should recognize the name instantly when she hears its first sound; that giving herself a cue ("his name rhymes with...") should help; and that she forgets *names* far more than *faces*, because faces have richer cues. Three cheap checks, each able to refute the idea. That is what studying the mind scientifically buys you — not a shrug at how mysterious people are, but a testable story about the machinery underneath.`,
   homework: {
     mcq,
     hybrid,
