@@ -8,13 +8,12 @@ A complete architectural blueprint for the Psychodynamic Therapy 101 one-unit co
 
 Psychodynamic Therapy 101 is a self-paced, single-user web course — a plain-language "baby course" on the mind beneath the surface (one unit, 8 sections — from What Psychodynamic Therapy Is through A Session, Start to Finish, covering the unconscious, defense mechanisms, transference, the therapeutic relationship, insight & working through, and the evidence). Students read AI-rewritten lecture notes at three lengths, ask an AI tutor scoped to the section they're reading, drill on adaptive scenario practice, and submit **one homework per section** that is AI-graded on an **inverted partial-credit scale** and AI-detection-screened. Grading is the inverted core: the strongest, most-testable interpretation the clinical evidence supports about the hidden dynamic earns top credit; the cautious "we can't conclude anything / the psyche is too complex" dodge earns near-zero. There is **no separate test, midterm, or final** — homework is the graded model.
 
-The product surface is three deployable artifacts in one pnpm monorepo:
+The product surface is two deployable artifacts in one pnpm monorepo:
 
 | Artifact | Slug | Role |
 | --- | --- | --- |
 | `@workspace/api-server` | `api-server` | Express 5 API mounted at `/api`. Owns the DB, OpenAI calls, AI detection, grading, diagnostics. |
 | `@workspace/qr-course` | `qr-course` | Student-facing React + Vite app. The actual course. |
-| `@workspace/qr-course-demo` | `qr-course-demo` | A screencast-style product demo video, exported as MP4 from the preview pane. |
 
 Shared contracts live in `lib/`:
 
@@ -252,63 +251,18 @@ The trace is included in the answer `PUT` body and on `POST submit`, then stored
 
 ---
 
-## 8. Demo video — `@workspace/qr-course-demo`
-
-A **screencast-style** product walkthrough, **not** a marketing reel. Built per the `video-js` skill: React + framer-motion, exported to MP4 from the preview pane via the browser recorder.
-
-### 8.1 Structure
-
-```
-artifacts/qr-course-demo/src/components/video/
-├── VideoTemplate.tsx        scene router + persistent sidebar + persistent cursor + background audio
-├── VideoWithControls.tsx    iframe-only wrapper: scene jump, scene-lock, mute toggle
-├── useSceneControls.ts      hook hiding jump/lock workarounds for the read-only useVideoPlayer
-├── CursorPointer.tsx        animated SVG arrow that drives the "user is clicking" feel
-├── TypewriterText.tsx       char-by-char typing into inputs
-├── StreamingText.tsx        word-by-word AI-response streaming
-├── TypingIndicator.tsx      three pulsing dots
-└── video_scenes/
-    ├── Scene1.tsx           Dashboard → Week 1 (8s)
-    ├── Scene2.tsx           Lecture: Short/Long toggle + Practice/Tutor tabs (8s)
-    ├── Scene3.tsx           Tutor Q&A with streaming response (12s)
-    ├── Scene4.tsx           Analytics with counting KPIs + topic mastery click (10s)
-    ├── Scene5.tsx           Topic Practice: wrong → adjust ↓ → right → adjust ↑ (14s)
-    └── Scene6.tsx           Assignments review with AI grade + AI-detection chip (10s)
-```
-
-`SCENE_DURATIONS` sums to **62 seconds**, looped.
-
-### 8.2 Key architectural rules
-
-- **Sidebar persistence.** The Dashboard / Assignments / Analytics sidebar lives in `VideoTemplate.tsx` outside `<AnimatePresence>`. Only the right-pane scene swaps. Active highlight is derived from `sceneIndex`.
-- **Cursor persistence.** `CursorPointer` lives outside `<AnimatePresence>` and is driven by `setCursorPos / setIsClicking` passed into every scene.
-- **The UI is rebuilt, not screenshotted.** Scenes use the real fonts and colors but every pixel is JSX. `attached_assets/qr-screens/*.jpg` were reference-only.
-- **`AnimatePresence` key = `currentSceneKey`** (NOT `baseSceneKey`). When scene-lock toggles `_r1` / `_r2` on the durations object, both iterations must remount and re-animate.
-- **Audio.** One bg music file at `public/audio/bg_music.mp3` (62s, instrumental piano + strings, generated). Scene-synced via `SCENE_START_SEC` — on every scene change the audio seeks to that scene's canonical start offset (epsilon 0.18s).
-- **Mute wiring.** Iframe preview defaults to muted; control bar exposes `Volume2` / `VolumeX`. Export path renders `<VideoTemplate />` with no props → unmuted, no controls. The mute toggle is **declarative JSX (`<audio muted={muted}>`) only** — it must not also re-seek `audio.currentTime`, or unmute restarts the scene's audio.
-
-### 8.3 Scene controls
-
-`useSceneControls` exposes `jumpTo(index)`, `toggleLock()`, `activeIndex`, `locked`, `durations`, `mountKey`, `tick`. It rotates the durations object on jump and replaces it with `{ key_r1, key_r2 }` on lock to force `useVideoPlayer` to loop a single scene. `VideoWithControls` reads `window.self !== window.top` and renders the control bar only inside the iframe so MP4 exports stay clean.
-
-### 8.4 Export
-
-Recording fires `window.startRecording()` on first scene mount and `window.stopRecording()` after the last scene. Audio is part of the recorded tab capture — so the exported MP4 contains the music.
-
----
-
-## 9. README contract
+## 8. README contract
 
 `replit.md` is the always-loaded project README. It contains:
 
 1. **Run & Operate** — every command needed in day-to-day work.
 2. **Required env / secrets** — `DATABASE_URL`, `GPTZERO_API_KEY`, `SESSION_SECRET`; OpenAI via Replit AI Integrations proxy (no key).
 3. **Stack** — exact runtime versions and tools.
-4. **Where things live** — pointer map: OpenAPI spec, generated hooks, DB schema, route files, detection lib, AI lib, pages, demo scenes.
+4. **Where things live** — pointer map: OpenAPI spec, generated hooks, DB schema, route files, detection lib, AI lib, pages.
 5. **Product** — 6-bullet description of what the student actually does.
-6. **Architecture decisions** — non-obvious choices: contract-first API, single composite logger, GPTZero failure is non-fatal, demo video is a real React app.
-7. **User preferences** — be direct, no preamble, screencast not marketing reel.
-8. **Gotchas** — don't edit generated files; don't rename `info.title`; video scaffold typecheck noise is harmless; restart workflows, don't `pnpm dev` at root; demo export includes audio.
+6. **Architecture decisions** — non-obvious choices: contract-first API, single composite logger, GPTZero failure is non-fatal.
+7. **User preferences** — be direct, no preamble.
+8. **Gotchas** — don't edit generated files; don't rename `info.title`; restart workflows, don't `pnpm dev` at root.
 
 If you change anything in this blueprint, update `replit.md` to match — they are the long-form and short-form views of the same truth.
 

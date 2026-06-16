@@ -28,8 +28,6 @@ Designed for **middle schoolers, curious adults wanting brief but meaningful exp
 - **Four-Phase Diagnostic Assessments** — A single Scientific Reasoning instrument runs at four phases (baseline, two mid-course checkpoints, and after the unit) using a 3×3 menu of generated items, so reasoning growth can be tracked across the course. A configurable minimum-to-pass governs pass/fail.
 - **Live Analytics** — Dashboard KPIs (attempts, accuracy, streak), per-section mastery percentages, and a recent-activity feed.
 - **Operator Diagnostics** — One-click self-tests (system health and synthetic-student end-to-end run) verify the entire stack — database, OpenAI integration, GPTZero, detection pipeline, and the practice/grade loop.
-- **Built-In Product Demo Video** — A screencast of the live UI ships as its own deployable artifact, so the product can show itself.
-
 ---
 
 ## ⚙️ Technical Features
@@ -48,7 +46,6 @@ Designed for **middle schoolers, curious adults wanting brief but meaningful exp
 - **Contract-First API** — A single OpenAPI document is the source of truth; React Query hooks for the UI and Zod validators for the server are generated from it, so request and response shapes can't drift.
 - **Streaming AI Tutor** — Token-by-token Server-Sent-Event streaming with a section-scoped system prompt so responses stay grounded in the lecture being read.
 - **Adaptive Practice Engine** — Per-session difficulty (1–4 continuous) adjusts after each attempt; the next-problem generator takes current difficulty and section as input.
-- **Real-React Demo Video** — The product walkthrough is a real React app exported as MP4 from a single browser tab.
 - **Living README** — This README plus a companion `BLUEPRINT.md` architecture document are kept in lock-step with the code.
 
 ---
@@ -74,7 +71,7 @@ It doesn't reward the student for finding reasons to doubt — it rewards them f
 
 ## 🚀 Running It Yourself
 
-This is a Replit pnpm monorepo. The two services that matter are the **course web app** (`artifacts/qr-course`) and the **API server** (`artifacts/api-server`); a promo video ships as a separate artifact (`artifacts/course-promo`).
+This is a Replit pnpm monorepo. The two services that matter are the **course web app** (`artifacts/qr-course`) and the **API server** (`artifacts/api-server`).
 
 ### 1. Database
 
