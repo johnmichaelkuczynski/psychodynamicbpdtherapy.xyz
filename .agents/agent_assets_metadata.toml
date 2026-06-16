@@ -71,3 +71,9 @@ id = "4xfJyXzoXhIQymWBIdnk5"
 uri = "file://artifacts/qr-course-demo/YOUTUBE_DESCRIPTION.md"
 type = "text"
 title = "YouTube Description — CCR Walkthrough Video"
+
+[[outputs]]
+id = "vTz7Xjmr02SYp4SSdbnAY"
+uri = "file://artifacts/course-promo/youtube-description.md"
+type = "text"
+title = "YouTube Description & Publishing Kit"
