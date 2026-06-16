@@ -5,13 +5,14 @@ export function Scene2() {
   const [phase, setPhase] = useState(0);
 
   const topics = [
-    "Information Processing",
-    "Perception",
-    "Memory",
-    "Language & Thought",
-    "Reasoning & Bias",
-    "Brains & Machines",
-    "Consciousness"
+    "What It Is",
+    "The Unconscious",
+    "Defense Mechanisms",
+    "Transference",
+    "The Alliance",
+    "Insight & Working Through",
+    "Does It Work?",
+    "A Full Session"
   ];
 
   useEffect(() => {
@@ -42,7 +43,7 @@ export function Scene2() {
           animate={phase >= 1 ? { y: 0, opacity: 1 } : { y: -50, opacity: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          No Math. No Coding. Just the Mind.
+          No Jargon. No Background. Just the Mind.
         </motion.div>
 
         <div className="flex flex-wrap justify-center gap-6 max-w-[80vw]">

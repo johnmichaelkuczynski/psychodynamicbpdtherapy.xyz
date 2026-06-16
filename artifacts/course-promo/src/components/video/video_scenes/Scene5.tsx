@@ -29,7 +29,7 @@ export function Scene5() {
         transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
       >
         <div className="text-[6vw] font-display font-black tracking-tight leading-none text-center mb-6">
-          COGNITIVE<br/>SCIENCE 101
+          PSYCHODYNAMIC<br/>THERAPY 101
         </div>
 
         <motion.div 
@@ -38,7 +38,7 @@ export function Scene5() {
           animate={phase >= 2 ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.8 }}
         >
-          A baby course on how the mind works — taught, tutored, drilled, and graded by AI.
+          A baby course on the mind beneath the surface — taught, tutored, drilled, and graded by AI.
         </motion.div>
       </motion.div>
 

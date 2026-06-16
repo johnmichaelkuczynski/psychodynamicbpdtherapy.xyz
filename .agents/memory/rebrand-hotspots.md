@@ -18,3 +18,5 @@ When converting this course app to a new subject "in place", a plain text grep f
 **Why:** these conversions have drifted across several subjects; each pass left non-text branding behind, and a code review caught them only after the text sweep looked clean.
 
 **How to apply:** after the text rebrand, run a wide stale-term sweep that includes old taglines/concept phrases, then explicitly check the four spots above. A fresh/empty DB also needs `pnpm --filter @workspace/db run push` before the seed's self-healing reseed can run (it errors with `relation "topics" does not exist` otherwise).
+
+- **Duplicate doc files** — course-promo carried TWO youtube-description docs (`youtube-description.md` AND a stale uppercase `YOUTUBE_DESCRIPTION.md` from an even-older subject). A case-sensitive sweep that only fixes one leaves the other; list `artifacts/<promo>/*.md` and delete unreferenced legacy duplicates.

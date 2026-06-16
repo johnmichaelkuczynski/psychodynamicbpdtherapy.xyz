@@ -50,7 +50,7 @@ export function Scene4() {
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
         >
           <div className="text-[2vw] font-bold text-white/80">
-            "The brain is too complex to say for sure..."
+            "The psyche is too complex to say for sure..."
           </div>
           <div className="text-[4vw] font-black text-secondary mt-2">
             SCORE: 0
@@ -63,7 +63,7 @@ export function Scene4() {
           animate={phase >= 4 ? { opacity: 1 } : { opacity: 0 }}
           transition={{ duration: 0.5 }}
         >
-          Reward the strongest falsifiable conclusion.
+          Reward the strongest interpretation the evidence supports.
         </motion.div>
       </div>
     </motion.div>

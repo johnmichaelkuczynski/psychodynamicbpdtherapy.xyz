@@ -35,13 +35,13 @@ export function Scene1() {
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
           className="text-accent tracking-[0.2em] text-[1.5vw] uppercase mb-8 font-bold"
         >
-          A Baby Course On
+          A Baby Course On The Mind
         </motion.div>
 
         <motion.h1 
           className="text-[8vw] leading-none font-display text-white text-center tracking-tight"
         >
-          {'HOW THE'.split(' ').map((word, i) => (
+          {'BENEATH THE'.split(' ').map((word, i) => (
             <motion.span 
               key={`w1-${i}`}
               className="inline-block mr-[2vw]"
@@ -53,7 +53,7 @@ export function Scene1() {
             </motion.span>
           ))}
           <br/>
-          {'MIND WORKS'.split(' ').map((word, i) => (
+          {'SURFACE'.split(' ').map((word, i) => (
             <motion.span 
               key={`w2-${i}`}
               className="inline-block mr-[2vw]"
@@ -72,7 +72,7 @@ export function Scene1() {
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
           className="mt-12 bg-white text-black px-8 py-4 text-[1.8vw] font-bold tracking-widest rounded-sm"
         >
-          COGNITIVE SCIENCE 101
+          PSYCHODYNAMIC THERAPY 101
         </motion.div>
       </div>
     </motion.div>
