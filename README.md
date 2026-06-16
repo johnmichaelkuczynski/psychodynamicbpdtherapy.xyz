@@ -78,7 +78,15 @@ This is a Replit pnpm monorepo. The two services that matter are the **course we
 
 ### 1. Database
 
-The app uses **PostgreSQL** via a `DATABASE_URL` connection string. Any standard Postgres works — Replit's built-in database or an external provider such as **Neon**. Set `DATABASE_URL` to your connection string (for managed providers like Neon, the password is part of that URL). On boot the API server creates the schema and seeds the full 8-section course automatically; the seed self-heals, so updated content replaces stale content in an existing database.
+The app uses **PostgreSQL** via a `DATABASE_URL` connection string. Any standard Postgres works — Replit's built-in database or an external provider such as **Neon**. Set `DATABASE_URL` to your connection string (for managed providers like Neon, the password is part of that URL).
+
+Before the first run, create the schema in your database:
+
+```bash
+pnpm --filter @workspace/db run push
+```
+
+This applies the Drizzle schema (`drizzle-kit push`). Then start (or restart) the API server: on boot it **seeds the full 8-section course automatically** into the existing tables. The seed self-heals, so updated content replaces stale content in an already-seeded database. (Schema creation is the `push` step above — it is **not** done automatically on boot, so skipping it against a fresh external database will fail before seeding.)
 
 ### 2. Required secrets
 
