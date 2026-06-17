@@ -31,7 +31,7 @@ type SeedTopic = {
   body: string;
 };
 
-// The eight Psychodynamic Therapy sections become the course topics.
+// The eight Psychodynamic Treatment of OCD sections become the course topics.
 // Each section's lecture is the short-depth body; medium/long are generated on
 // demand by the lecture route.
 const TOPICS: SeedTopic[] = SECTIONS.map((s) => ({
@@ -118,7 +118,7 @@ const ASSIGNMENTS: SeedAssignment[] = SECTIONS.map((s, i) => {
 });
 
 // Any primer / practice-prep lecture from earlier designs is obsolete.
-// The course now uses the eight Psychodynamic Therapy sections for content and a
+// The course now uses the eight Psychodynamic Treatment of OCD sections for content and a
 // separate phase-based diagnostic for assessment, so these stray topics are
 // removed on every boot to self-heal databases seeded under an older design.
 const LEGACY_PRIMER_SLUGS = [
@@ -141,7 +141,7 @@ export async function seedReasoningPrimersIfMissing(): Promise<void> {
 }
 
 export async function seedIfEmpty(): Promise<void> {
-  // The course was migrated to the Psychodynamic Therapy 101 syllabus. Detect the marker topic;
+  // The course was migrated to the Psychodynamic Treatment of OCD 101 syllabus. Detect the marker topic;
   // if present and the content version matches, the content is current and we
   // skip. This makes the seed self-healing across environments: a database that
   // still holds older content (e.g. a previous curriculum) is detected and
@@ -190,7 +190,7 @@ export async function seedIfEmpty(): Promise<void> {
     const row = (existing.rows[0] ?? {}) as { n?: number };
     if ((row.n ?? 0) > 0) {
       logger.warn(
-        "Seed: stale course content detected — replacing with the Psychodynamic Therapy 101 curriculum",
+        "Seed: stale course content detected — replacing with the Psychodynamic Treatment of OCD 101 curriculum",
       );
       await tx.execute(
         sql`TRUNCATE TABLE answers, attempts, practice_attempts, practice_problems, practice_sessions, problems, assignments, lectures, topics, diagnostic_responses, diagnostic_attempts, diagnostic_items, diagnostic_assessments RESTART IDENTITY CASCADE`,
