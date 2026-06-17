@@ -16,7 +16,7 @@ export function SceneClose() {
         transition={{ delay: 0.5, duration: 1 }}
       >
         <h1 className="text-5xl md:text-6xl font-display font-bold tracking-tight text-white mb-10">
-          Psychodynamic Treatment of OCD 101
+          Psychodynamic Treatment of BPD 101
         </h1>
         <p className="text-xl md:text-2xl text-slate-300 font-light tracking-wide leading-relaxed">
           Where the strongest honest interpretation of the underlying conflict<br/>

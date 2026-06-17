@@ -16,11 +16,11 @@ export function SceneOpen() {
         className="text-center"
       >
         <h1 className="text-5xl md:text-7xl font-display font-bold tracking-tight text-white mb-6">
-          Psychodynamic Treatment<br />of OCD 101
+          Psychodynamic Treatment<br />of BPD 101
         </h1>
         <div className="w-24 h-1 bg-indigo-500 mx-auto mb-6" />
         <p className="text-xl md:text-2xl text-slate-400 font-light tracking-wide max-w-2xl mx-auto">
-          The treatment of OCD. Taught, tutored, and graded entirely by AI.
+          The treatment of BPD. Taught, tutored, and graded entirely by AI.
         </p>
       </motion.div>
     </motion.div>
