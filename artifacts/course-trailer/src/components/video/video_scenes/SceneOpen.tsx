@@ -20,7 +20,7 @@ export function SceneOpen() {
         </h1>
         <div className="w-24 h-1 bg-indigo-500 mx-auto mb-6" />
         <p className="text-xl md:text-2xl text-slate-400 font-light tracking-wide max-w-2xl mx-auto">
-          The treatment of BPD. Taught, tutored, and graded entirely by AI.
+          The psychodynamic treatment of BPD. Taught, tutored, drilled, and graded entirely by AI.
         </p>
       </motion.div>
     </motion.div>

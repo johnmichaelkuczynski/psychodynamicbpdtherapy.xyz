@@ -1,5 +1,11 @@
 @import "tailwindcss";
 
+@theme {
+  --font-sans: 'Inter', sans-serif;
+  --font-serif: 'Georgia', 'Lora', serif;
+  --font-display: 'Space Grotesk', sans-serif;
+}
+
 :root {
   --color-primary: #f8fafc;
   --color-secondary: #94a3b8;
@@ -14,34 +20,41 @@
   --color-text-muted: #64748b;
   --color-text-inverse: #0f172a;
 
-  --color-success: #10B981;
-  --color-warning: #F59E0B;
-  --color-error: #EF4444;
-
-  --font-display: 'Space Grotesk', sans-serif;
-  --font-body: 'DM Sans', sans-serif;
-  --font-mono: 'JetBrains Mono', monospace;
-}
-
-@theme inline {
-  --color-primary: var(--color-primary);
-  --color-secondary: var(--color-secondary);
-  --color-accent: var(--color-accent);
-  --color-bg-light: var(--color-bg-light);
-  --color-bg-dark: var(--color-bg-dark);
-  --color-bg-muted: var(--color-bg-muted);
-  --color-text-primary: var(--color-text-primary);
-  --color-text-secondary: var(--color-text-secondary);
-  --color-text-muted: var(--color-text-muted);
-  --color-text-inverse: var(--color-text-inverse);
-  --font-display: var(--font-display);
-  --font-body: var(--font-body);
+  /* App Theme Variables */
+  --app-bg: hsl(44 20% 98%);
+  --app-card: hsl(0 0% 100%);
+  --app-border: hsl(214 32% 91%);
+  --app-primary: hsl(222 47% 20%);
+  --app-fg: hsl(222 47% 11%);
+  --app-muted: hsl(215 16% 47%);
+  --app-red: hsl(0 84% 60%);
 }
 
 body {
-  font-family: var(--font-body);
+  font-family: var(--font-sans);
   background-color: var(--color-bg-dark);
   color: var(--color-text-primary);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.app-canvas {
+  background-color: var(--app-bg);
+  color: var(--app-fg);
+  font-family: var(--font-sans);
+}
+
+.app-card {
+  background-color: var(--app-card);
+  border: 1px solid var(--app-border);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.app-heading {
+  font-family: var(--font-serif);
+  color: var(--app-primary);
+}
+
+.app-text-muted {
+  color: var(--app-muted);
 }

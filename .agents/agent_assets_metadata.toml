@@ -83,3 +83,9 @@ id = "yNXha7DAtLgf9-W9ZOTZc"
 uri = "file://artifacts/course-trailer/public/audio/bg_music.mp3"
 type = "audio"
 title = "trailer background music"
+
+[[outputs]]
+id = "HAw8TXLYZUPXHzZmwgezy"
+uri = "file://YOUTUBE_DESCRIPTION.md"
+type = "text"
+title = "YouTube Title & Description"

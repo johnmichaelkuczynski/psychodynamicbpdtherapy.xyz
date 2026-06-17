@@ -1,8 +1,18 @@
 import { motion } from 'framer-motion';
 import { BrowserFrame } from '../BrowserFrame';
-import dashboardImg from "@assets/course_shots/dashboard.jpg";
 
 export function SceneDashboard() {
+  const sections = [
+    "Understanding BPD: Emotion, Identity, and Unstable Relationships",
+    "Splitting and the Black-and-White World",
+    "Object Relations: How Early Bonds Become Inner Templates",
+    "Identity Diffusion: The Unstable Sense of Self",
+    "Mentalization: Learning to Read Minds, Including One's Own (MBT)",
+    "Transference-Focused Psychotherapy: Healing Through the Relationship (TFP)",
+    "The Evidence: Where Psychodynamic Treatment Genuinely Shines",
+    "A Treatment Arc, Start to Finish"
+  ];
+
   return (
     <motion.div 
       className="absolute inset-0 flex items-center justify-center px-12"
@@ -30,13 +40,39 @@ export function SceneDashboard() {
           animate={{ opacity: 1, scale: 1, rotateY: 0 }}
           transition={{ delay: 0.2, duration: 1 }}
         >
-          <BrowserFrame className="aspect-video">
-            <motion.img 
-              src={dashboardImg} 
-              className="w-full h-full object-cover object-top"
-              animate={{ y: ["0%", "-5%"] }}
-              transition={{ duration: 4, ease: "linear" }}
-            />
+          <BrowserFrame className="aspect-video app-canvas overflow-hidden flex flex-col relative text-left p-6">
+             <div className="flex justify-between items-center mb-6">
+                <h1 className="text-2xl app-heading font-bold">Psychodynamic Treatment of BPD 101</h1>
+                <div className="app-card rounded-full px-4 py-1 text-sm font-semibold flex items-center gap-2">
+                  <div className="w-2 h-2 rounded-full bg-[#1b2a4a]"></div>
+                  15% Complete
+                </div>
+             </div>
+
+             <div className="grid grid-cols-2 gap-4">
+                {sections.map((title, i) => (
+                  <motion.div 
+                    key={i}
+                    className="app-card p-4 rounded-lg flex flex-col"
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.8 + (i * 0.1) }}
+                  >
+                    <div className="text-xs font-bold text-[#1b2a4a] mb-1">SECTION 1.{i+1}</div>
+                    <div className="text-sm font-semibold mb-2">{title}</div>
+                    <div className="mt-auto pt-2">
+                      <div className="h-1.5 w-full bg-slate-100 rounded-full overflow-hidden">
+                        <motion.div 
+                          className="h-full bg-[#1b2a4a]" 
+                          initial={{ width: 0 }}
+                          animate={{ width: i === 0 ? '100%' : i === 1 ? '30%' : '0%' }}
+                          transition={{ delay: 1.5, duration: 1 }}
+                        />
+                      </div>
+                    </div>
+                  </motion.div>
+                ))}
+             </div>
           </BrowserFrame>
         </motion.div>
       </div>
