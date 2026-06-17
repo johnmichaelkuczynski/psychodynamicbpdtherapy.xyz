@@ -9,407 +9,407 @@ const mcq: HomeworkItem[] = [
   {
     itemType: "mc",
     prompt:
-      "A devoted new mother is flooded with vivid intrusive images of stabbing her baby whenever she holds a kitchen knife. She is horrified by them, has hidden the knives, and refuses to be alone with the child. Which conclusion best follows?",
+      "A patient three weeks into therapy tells her counselor, 'you are the only person who has ever truly understood me.' The week the counselor takes a long-planned vacation, the patient declares her 'cold and useless, just like everyone else.' Which conclusion best follows?",
     mcOptions: [
       {
-        text: "She seems to be having frightening thoughts about her baby.",
+        text: "She seems to change how she feels about her counselor.",
         credit: 0.3,
       },
       {
-        text: "The content is the clue: harm imagery aimed at the person she loves most, met with horror, points not to a wish but to the crushing weight of total responsibility and the unspeakable mix of love and resentment a newborn stirs — the thought says what she cannot, that she is terrified of her own potential to fail or hurt; test whether the images target precisely her most-loved dependent and not strangers, whether her dread rises with how much harm she could do, and whether they ease once she can voice the ambivalence and fear of inadequacy underneath.",
+        text: "The flip tracks the let-down, not the person: an all-good image that collapses into all-bad the moment the counselor is unavailable points to splitting — she cannot hold that someone she loves has also disappointed her, so the cherished 'good' counselor is swapped wholesale for an 'all-bad' one to keep love and anger from ever touching; test whether the devaluation began precisely with the vacation rather than any real failing, whether the counselor is now seen as entirely bad with no good remembered, and whether the warm image returns intact once they reconnect.",
         credit: 1.0,
       },
       {
-        text: "It's probably anxiety about being a mother; we could keep talking about it.",
+        text: "She might have mixed feelings about the counselor leaving; we could explore the reaction.",
         credit: 0.6,
       },
       {
-        text: "The thoughts reveal a hidden urge to harm the child, so she is right to keep herself away from the baby.",
+        text: "People are entitled to change their minds about who helps them, so there is nothing here to read into.",
         credit: 0,
       },
     ],
     correctAnswer:
-      "The content is the clue: harm imagery aimed at the person she loves most, met with horror, points not to a wish but to the crushing weight of total responsibility and the unspeakable mix of love and resentment a newborn stirs — the thought says what she cannot, that she is terrified of her own potential to fail or hurt; test whether the images target precisely her most-loved dependent and not strangers, whether her dread rises with how much harm she could do, and whether they ease once she can voice the ambivalence and fear of inadequacy underneath.",
+      "The flip tracks the let-down, not the person: an all-good image that collapses into all-bad the moment the counselor is unavailable points to splitting — she cannot hold that someone she loves has also disappointed her, so the cherished 'good' counselor is swapped wholesale for an 'all-bad' one to keep love and anger from ever touching; test whether the devaluation began precisely with the vacation rather than any real failing, whether the counselor is now seen as entirely bad with no good remembered, and whether the warm image returns intact once they reconnect.",
     explanation:
-      "Top credit reads the ego-dystonic harm-content aimed at her most-loved as expressing dread of her own inadequacy and names a targets-the-loved-one test; 'a hidden urge to harm' is the lurid overreach her horror and avoidance defeat.",
+      "Top credit reads an idealized image collapsing to all-bad at the exact moment of the vacation as splitting and names a flip-tracks-the-let-down test; 'people change their minds' is the dodge the disappointment-locked timing defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A devout churchgoer is assaulted by obscene, blasphemous images precisely during prayer and communion — the more sacred the moment, the worse they get. He is mortified and prays harder to drive them out. Which conclusion best follows?",
+      "For three weeks a woman calls her new boyfriend 'perfect, my soulmate, the one.' The night he forgets a dinner reservation, she decides he is 'a selfish liar who never cared about me at all.' Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Intrusive thoughts are random electrical noise in the brain; their religious content is meaningless and not worth examining.",
+        text: "The soulmate talk was an act; she was lying about liking him the whole time.",
         credit: 0,
       },
       {
-        text: "The content tracking sacredness is the tell: blasphemy that peaks at the holiest moments likely voices a forbidden doubt or anger toward a faith he is not allowed to question, the symptom carrying the rebellion he cannot say aloud; test whether the intrusions spike specifically at the most sacred moments and not neutral ones, whether they ease when he can openly name any resentment or doubt about his religion, and whether 'praying harder' reliably makes them worse.",
+        text: "The valuation flips on a tiny disappointment, not new information: 'soulmate' becoming 'liar who never cared' over one forgotten reservation points to splitting — a single let-down introduced 'bad' into an all-good image she cannot integrate, so the whole person is rewritten as all-bad to keep the good love uncontaminated by anger; test whether the devaluation is out of all proportion to the mistake, whether nothing good about him survives the flip, and whether the adoring image snaps back the moment he makes amends.",
         credit: 1.0,
       },
       {
-        text: "He seems to get bad thoughts when he prays.",
+        text: "She seems to go back and forth on her boyfriend.",
         credit: 0.3,
       },
       {
-        text: "It might have something to do with his religion; we could explore his faith.",
+        text: "She might have caught real warning signs; we could talk about the relationship.",
         credit: 0.6,
       },
     ],
     correctAnswer:
-      "The content tracking sacredness is the tell: blasphemy that peaks at the holiest moments likely voices a forbidden doubt or anger toward a faith he is not allowed to question, the symptom carrying the rebellion he cannot say aloud; test whether the intrusions spike specifically at the most sacred moments and not neutral ones, whether they ease when he can openly name any resentment or doubt about his religion, and whether 'praying harder' reliably makes them worse.",
+      "The valuation flips on a tiny disappointment, not new information: 'soulmate' becoming 'liar who never cared' over one forgotten reservation points to splitting — a single let-down introduced 'bad' into an all-good image she cannot integrate, so the whole person is rewritten as all-bad to keep the good love uncontaminated by anger; test whether the devaluation is out of all proportion to the mistake, whether nothing good about him survives the flip, and whether the adoring image snaps back the moment he makes amends.",
     explanation:
-      "Full credit reads blasphemy that peaks at the holiest moments as a disguised forbidden doubt and names a spikes-at-sacred-moments test; 'random noise, content meaningless' is the dodge the precise sacred-timing defeats.",
+      "Top credit reads a soulmate-to-liar flip over one small letdown as splitting and names a disproportion-to-the-mistake test; 'she was lying the whole time' is the lurid overreach the sincerity and suddenness of the shift defeat.",
   },
   {
     itemType: "mc",
     prompt:
-      "A man with no prior history suddenly feels 'dirty' and washes his hands raw, the compulsion dating from the week he had a one-time affair. He scrubs hardest before coming home to his wife. Which conclusion best follows?",
+      "On an inpatient unit a patient insists her day nurse is 'an angel who actually cares' while the night nurse is 'abusive and out to get me.' Within days the two nurses are quietly feuding about her care. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He probably feels guilty about something; we could look into the washing.",
-        credit: 0.6,
+        text: "Patients are allowed to like some staff more than others, so there is nothing to read into her preferences.",
+        credit: 0,
       },
       {
-        text: "He seems to wash his hands a lot lately.",
+        text: "She seems to like one nurse and dislike the other.",
         credit: 0.3,
       },
       {
-        text: "The content literalizes a moral stain: feeling 'dirty' and scrubbing hardest before facing his wife, all dating from the affair, points to a guilt he can't put into words, the body enacting a cleansing his conscience demands; test whether the urge tracks reminders of the betrayal and of his wife specifically, whether it began at no other change but the affair, and whether it eases once the guilt is spoken rather than washed.",
+        text: "The all-angel/all-devil split, spilling into a staff feud, is the tell: she is parceling out a 'good' and a 'bad' caregiver onto two real people because holding both care and disappointment in one relationship is intolerable — the staff are now living out the split she cannot hold inside; test whether each nurse is painted as wholly good or wholly bad with no nuance, whether the praise and blame track who last gratified versus frustrated her, and whether the labels swap if the 'good' nurse ever lets her down.",
         credit: 1.0,
       },
       {
-        text: "Hand-washing has countless causes, so connecting it to the affair is reading far too much into a hygiene habit.",
-        credit: 0,
+        text: "It might be classic staff splitting; the team could compare notes on her.",
+        credit: 0.6,
       },
     ],
     correctAnswer:
-      "The content literalizes a moral stain: feeling 'dirty' and scrubbing hardest before facing his wife, all dating from the affair, points to a guilt he can't put into words, the body enacting a cleansing his conscience demands; test whether the urge tracks reminders of the betrayal and of his wife specifically, whether it began at no other change but the affair, and whether it eases once the guilt is spoken rather than washed.",
+      "The all-angel/all-devil split, spilling into a staff feud, is the tell: she is parceling out a 'good' and a 'bad' caregiver onto two real people because holding both care and disappointment in one relationship is intolerable — the staff are now living out the split she cannot hold inside; test whether each nurse is painted as wholly good or wholly bad with no nuance, whether the praise and blame track who last gratified versus frustrated her, and whether the labels swap if the 'good' nurse ever lets her down.",
     explanation:
-      "Top credit reads 'dirtiness' worst before facing his wife as a literalized moral guilt and names a tracks-reminders-of-the-betrayal test; 'washing has countless causes' is the dodge the exact onset and wife-specific timing defeat.",
+      "Top credit reads the angel/devil division spilling into a staff feud as externalized splitting and names a wholly-good-vs-wholly-bad test; 'patients are allowed favorites' is the dodge the team-fracturing, all-or-nothing pattern defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "After her twin sister died, a woman developed an exact 'evening-up' ritual — every touch on the left must be matched on the right, every action balanced — that intensifies on the anniversary and on her sister's birthday. Which conclusion best follows?",
+      "A graduate student describes herself as 'brilliant, destined for greatness' on the days her work is praised, then as 'worthless human garbage' the day a single paper comes back with a B. There is no middle. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The balancing content carries the loss: an 'evening-up' that flares on the very dates tied to her twin likely enacts a need to restore a symmetry death destroyed — perhaps to undo the loss or quiet a survivor's guilt that she remains while her twin does not; test whether the ritual spikes on anniversaries and her sister's birthday specifically, whether it began at no loss but this one, and whether it eases as the grief and any guilt are put into words.",
+        text: "The self-image flips wholesale with each verdict: 'brilliant' becoming 'garbage' over one B, with no middle, points to splitting turned on the self — she cannot hold a self that is both capable and flawed, so a single disappointment converts an all-good self into an all-bad one to keep the two from mixing; test whether her self-worth swings entirely with the last piece of feedback, whether nothing good about herself survives a setback, and whether the grandiose self returns intact the next time she is praised.",
         credit: 1.0,
       },
       {
-        text: "She seems to need things balanced since her sister died.",
-        credit: 0.3,
-      },
-      {
-        text: "Some people simply like symmetry and order, so there's nothing about her sister to read into the ritual.",
+        text: "She is just fishing for reassurance and exaggerating to get attention.",
         credit: 0,
       },
       {
-        text: "It's probably grief-related; we could keep an eye on the ritual.",
+        text: "She seems to feel very up and down about herself.",
+        credit: 0.3,
+      },
+      {
+        text: "She might be hard on herself; we could look at her standards.",
         credit: 0.6,
       },
     ],
     correctAnswer:
-      "The balancing content carries the loss: an 'evening-up' that flares on the very dates tied to her twin likely enacts a need to restore a symmetry death destroyed — perhaps to undo the loss or quiet a survivor's guilt that she remains while her twin does not; test whether the ritual spikes on anniversaries and her sister's birthday specifically, whether it began at no loss but this one, and whether it eases as the grief and any guilt are put into words.",
+      "The self-image flips wholesale with each verdict: 'brilliant' becoming 'garbage' over one B, with no middle, points to splitting turned on the self — she cannot hold a self that is both capable and flawed, so a single disappointment converts an all-good self into an all-bad one to keep the two from mixing; test whether her self-worth swings entirely with the last piece of feedback, whether nothing good about herself survives a setback, and whether the grandiose self returns intact the next time she is praised.",
     explanation:
-      "Full credit reads an evening-up that flares on dates tied to her twin as enacting an undoing of the loss and names a spikes-on-the-anniversary test; 'some people just like symmetry' is the dodge the death-linked onset and timing defeat.",
+      "Top credit reads a self-image that swings from brilliant to garbage over one B as splitting of the self and names a swings-with-the-last-verdict test; 'fishing for attention' is the lurid overreach her genuine, all-or-nothing distress defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A man began compulsively retracing his drives, certain he has run someone over without noticing, in the months after his father died of an illness the man believes he 'should have caught sooner.' The fear is always of unseen harm he failed to prevent. Which conclusion best follows?",
+      "A teenager calls her best friend 'the only person who truly gets me, my whole world.' After the friend spends one Saturday with someone else, she announces the friend is 'a backstabbing fake who was never really my friend.' Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He seems worried about hurting people when he drives.",
-        credit: 0.3,
-      },
-      {
-        text: "It might be tied to his father's death; we could discuss his guilt.",
-        credit: 0.6,
-      },
-      {
-        text: "Thoughts about car accidents are common and mean nothing in particular, so there's no link to his father worth pursuing.",
+        text: "Teenage friendships are fickle and everyone drifts apart, so there is nothing to read into it.",
         credit: 0,
       },
       {
-        text: "The content is specific and revealing: a dread of unseen harm he failed to prevent, arising right after a death he blames himself for not catching, points to a guilt that has migrated onto the road — the checking enacting a vigilance his conscience now demands everywhere; test whether the fear is always of harm-by-negligence rather than other dangers, whether it began with his father's death and no other change, and whether it eases as the guilt about his father is named directly.",
+        text: "It might sting to feel left out; we could talk about the friendship.",
+        credit: 0.6,
+      },
+      {
+        text: "The reversal follows the slight, not any real betrayal: 'my whole world' becoming 'never really my friend' over one ordinary Saturday points to splitting — the small abandonment introduced 'bad' into a perfect friendship she cannot hold as both loving and imperfect, so the whole bond is rewritten as fake to keep love and hurt apart; test whether the devaluation began exactly when she felt excluded, whether the friend is now all-bad with no good remembered, and whether the adoring image returns the moment the friend gives her attention again.",
         credit: 1.0,
+      },
+      {
+        text: "She seems to flip on her friends a lot.",
+        credit: 0.3,
       },
     ],
     correctAnswer:
-      "The content is specific and revealing: a dread of unseen harm he failed to prevent, arising right after a death he blames himself for not catching, points to a guilt that has migrated onto the road — the checking enacting a vigilance his conscience now demands everywhere; test whether the fear is always of harm-by-negligence rather than other dangers, whether it began with his father's death and no other change, and whether it eases as the guilt about his father is named directly.",
+      "The reversal follows the slight, not any real betrayal: 'my whole world' becoming 'never really my friend' over one ordinary Saturday points to splitting — the small abandonment introduced 'bad' into a perfect friendship she cannot hold as both loving and imperfect, so the whole bond is rewritten as fake to keep love and hurt apart; test whether the devaluation began exactly when she felt excluded, whether the friend is now all-bad with no good remembered, and whether the adoring image returns the moment the friend gives her attention again.",
     explanation:
-      "Top credit reads a fear specifically of negligent, unseen harm beginning at the father's death as displaced guilt and names a harm-by-negligence-specifically test; 'accident thoughts mean nothing' is the dodge the precise content and onset defeat.",
+      "Top credit reads a whole-world-to-fake flip over one missed Saturday as splitting and names a began-when-she-felt-excluded test; 'teen friendships are just fickle' is the dodge the all-or-nothing reversal and slight-locked timing defeat.",
   },
   {
     itemType: "mc",
     prompt:
-      "Engaged to a man she calls wonderful, a woman is tormented by the intrusive doubt 'maybe I don't really love him,' and seeks constant reassurance. The doubts reliably strike hardest right after their warmest, most intimate moments. Which conclusion best follows?",
+      "A man idolizes a mentor as 'the wisest person I know, a genius.' The first time the mentor gives him critical feedback, he recasts him as 'a fraud who has secretly always hated me and wanted me to fail.' Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Doubts like these are just random worries with no pattern, so the timing after closeness is coincidence.",
+        text: "He is lying about ever respecting the mentor; the praise was never sincere.",
         credit: 0,
       },
       {
-        text: "She might be afraid of commitment; we could talk about the relationship.",
+        text: "He might be sensitive to criticism; we could discuss the feedback.",
         credit: 0.6,
       },
       {
-        text: "The timing decodes the content: doubt that strikes hardest right after intimacy, not after conflict, suggests the 'do I love him?' question is managing a fear of closeness itself — the doubt creating distance exactly when nearness becomes threatening; test whether the doubts reliably follow warm moments rather than distant ones, whether reassurance brings only brief relief, and whether they ease once the fear of being engulfed or trapped is named.",
-        credit: 1.0,
+        text: "He seems to have turned against his mentor.",
+        credit: 0.3,
       },
       {
-        text: "She seems to keep doubting her relationship.",
-        credit: 0.3,
+        text: "The 'genius' becomes a 'fraud who always hated me' the instant criticism arrives, which is the signature of splitting: a single disappointment introduced 'bad' into an idealized figure he cannot hold as both wise and disappointing, so the mentor is rewritten as wholly malign to protect the love from anger; test whether the reversal began precisely with the feedback rather than any new fact, whether nothing admirable about the mentor survives it, and whether the idealization returns once the mentor offers warmth again.",
+        credit: 1.0,
       },
     ],
     correctAnswer:
-      "The timing decodes the content: doubt that strikes hardest right after intimacy, not after conflict, suggests the 'do I love him?' question is managing a fear of closeness itself — the doubt creating distance exactly when nearness becomes threatening; test whether the doubts reliably follow warm moments rather than distant ones, whether reassurance brings only brief relief, and whether they ease once the fear of being engulfed or trapped is named.",
+      "The 'genius' becomes a 'fraud who always hated me' the instant criticism arrives, which is the signature of splitting: a single disappointment introduced 'bad' into an idealized figure he cannot hold as both wise and disappointing, so the mentor is rewritten as wholly malign to protect the love from anger; test whether the reversal began precisely with the feedback rather than any new fact, whether nothing admirable about the mentor survives it, and whether the idealization returns once the mentor offers warmth again.",
     explanation:
-      "Full credit reads doubt that peaks after intimacy as managing a fear of closeness and names a follows-warm-moments test; 'random worries, coincidence' is the dodge the closeness-locked timing defeats.",
+      "Top credit reads a genius-to-fraud reversal triggered by one critique as splitting and names a began-with-the-feedback test; 'he was never sincere' is the lurid overreach his genuine prior idealization defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A polite, mild-mannered teenager is gripped by intrusive urges to shout slurs and obscenities — but only in the settings where it is most forbidden: funerals, libraries, the middle of class. Which conclusion best follows?",
+      "A man describes his mother as 'a literal saint' the weeks she dotes on him and 'a monster who ruined my life' the weeks she frustrates him. He never holds both at once, and the label tracks the latest visit. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He's probably anxious in quiet places; we could look into it.",
-        credit: 0.6,
+        text: "Everyone's feelings about their parents go up and down, so there is nothing to read into it.",
+        credit: 0,
       },
       {
-        text: "The content targets prohibition itself: an urge to blurt the forbidden precisely where decorum is strictest likely voices a strain against constraint — an anger or rebelliousness this 'good' boy isn't allowed to feel, surfacing as the very thing he'd never do; test whether the urges cluster only in the most rule-bound settings and not relaxed ones, whether they ease when he can openly voice resentment at always having to be good, and whether the more he forbids the thought the stronger it gets.",
+        text: "The saint/monster labels swap with each visit, never coexisting, which points to splitting: he cannot hold a mother who both loves and disappoints him, so she is filed as all-good or all-bad depending on whether she just gratified or frustrated him — keeping the cherished good mother safe from his anger at the bad one; test whether the label tracks the most recent interaction rather than any stable truth, whether the 'good' and 'bad' mother are ever allowed to be the same person, and whether the praise returns the moment she gratifies him again.",
         credit: 1.0,
       },
       {
-        text: "He seems to get these urges in quiet settings.",
-        credit: 0.3,
+        text: "He might have a complicated relationship with his mother; we could explore it.",
+        credit: 0.6,
       },
       {
-        text: "He secretly wants to humiliate people in public and is barely holding it back.",
-        credit: 0,
+        text: "He seems to flip between loving and hating his mother.",
+        credit: 0.3,
       },
     ],
     correctAnswer:
-      "The content targets prohibition itself: an urge to blurt the forbidden precisely where decorum is strictest likely voices a strain against constraint — an anger or rebelliousness this 'good' boy isn't allowed to feel, surfacing as the very thing he'd never do; test whether the urges cluster only in the most rule-bound settings and not relaxed ones, whether they ease when he can openly voice resentment at always having to be good, and whether the more he forbids the thought the stronger it gets.",
+      "The saint/monster labels swap with each visit, never coexisting, which points to splitting: he cannot hold a mother who both loves and disappoints him, so she is filed as all-good or all-bad depending on whether she just gratified or frustrated him — keeping the cherished good mother safe from his anger at the bad one; test whether the label tracks the most recent interaction rather than any stable truth, whether the 'good' and 'bad' mother are ever allowed to be the same person, and whether the praise returns the moment she gratifies him again.",
     explanation:
-      "Top credit reads urges aimed at the most rule-bound settings as a strain against constraint and names a clusters-only-where-decorum-is-strictest test; 'he secretly wants to humiliate people' is the lurid overreach his mild, distressed character defeats.",
+      "Top credit reads saint/monster labels that never coexist and track the latest visit as splitting and names a labels-follow-the-last-interaction test; 'everyone's feelings change' is the dodge the all-or-nothing, gratify-versus-frustrate pattern defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "Since his mother died, a man cannot discard a single thing that was hers — not an expired coupon, not a worn dishrag — and is gripped by dread that throwing anything out would be 'erasing her.' He keeps his own clutter in check. Which conclusion best follows?",
+      "A woman calls her roommate 'the best friend I've ever had, basically family.' After the roommate borrows her charger and forgets to return it, she declares her 'a selfish user who was only ever using me.' Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He seems to hold on to his mother's things.",
+        text: "She seems to have soured on her roommate.",
         credit: 0.3,
       },
       {
-        text: "Lots of people are sentimental pack-rats; there's nothing about mourning to read into keeping his mother's belongings.",
+        text: "She is just being dramatic to manipulate the roommate into apologizing.",
         credit: 0,
       },
       {
-        text: "The content names a stalled grief: an inability to part with only her things, paired with the dread of 'erasing her,' suggests the keeping substitutes for a mourning he cannot bear to begin — to discard the objects would mean admitting she is gone; test whether the difficulty applies specifically to her possessions and not his own, whether the dread is of loss rather than of needing the items, and whether it eases as he is helped to grieve her directly.",
-        credit: 1.0,
+        text: "It might be more than the charger; we could ask what is bothering her.",
+        credit: 0.6,
       },
       {
-        text: "It's probably about losing his mother; we could revisit it.",
-        credit: 0.6,
+        text: "'Basically family' becoming 'a user who was only using me' over a forgotten charger is splitting: a trivial let-down introduced 'bad' into an idealized friendship she cannot hold as both close and imperfect, so the whole relationship is rewritten as exploitative to keep the love free of disappointment; test whether the devaluation is wildly out of proportion to the charger, whether anything good about the roommate survives it, and whether the 'family' image returns the instant the roommate makes it right.",
+        credit: 1.0,
       },
     ],
     correctAnswer:
-      "The content names a stalled grief: an inability to part with only her things, paired with the dread of 'erasing her,' suggests the keeping substitutes for a mourning he cannot bear to begin — to discard the objects would mean admitting she is gone; test whether the difficulty applies specifically to her possessions and not his own, whether the dread is of loss rather than of needing the items, and whether it eases as he is helped to grieve her directly.",
+      "'Basically family' becoming 'a user who was only using me' over a forgotten charger is splitting: a trivial let-down introduced 'bad' into an idealized friendship she cannot hold as both close and imperfect, so the whole relationship is rewritten as exploitative to keep the love free of disappointment; test whether the devaluation is wildly out of proportion to the charger, whether anything good about the roommate survives it, and whether the 'family' image returns the instant the roommate makes it right.",
     explanation:
-      "Full credit reads keeping only her things plus 'erasing her' dread as a substitute for mourning and names an only-her-possessions test; 'just a sentimental pack-rat' is the dodge the her-things-only selectivity and loss-themed dread defeat.",
+      "Top credit reads a family-to-user flip over a forgotten charger as splitting and names a disproportion-to-the-offense test; 'she's just being manipulative' is the lurid overreach the genuine, instant reversal defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A loving new father is horrified by intrusive sexual thoughts about his infant during diaper changes and baths. He is sickened by them, and has started avoiding caregiving so as never to be alone with the baby. Which conclusion best follows?",
+      "A patient speaks of her late father as 'a flawless, perfect man' and of her living mother as 'pure poison, the source of everything wrong with me.' Neither portrait admits a single exception. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The thoughts expose a hidden predatory desire, and his instinct to avoid the baby is correct.",
+        text: "Lots of people prefer one parent over the other, so there is nothing to read into it.",
         credit: 0,
       },
       {
-        text: "The horror is the data: taboo content that disgusts him and drives him to avoid the child points away from desire and toward its opposite — an overwhelmed hyper-vigilance about being a good, safe father, the mind fixating on the worst imaginable violation precisely because it matters most; test whether the thoughts are ego-dystonic and revolting to him rather than arousing, whether they cluster around caregiving he badly wants to do right, and whether they ease as his anxiety about his fitness as a father is addressed.",
+        text: "The flawless-father/poison-mother division, with no exceptions allowed, points to splitting across two people: she keeps one parent perfectly good by depositing all the 'bad' into the other, because a father who was both loved and disappointing — and a mother who is both — is intolerable to hold; test whether each portrait is absolute with no counter-examples permitted, whether faults of the 'good' father are minimized or denied, and whether challenging the all-bad mother image is met with the bad simply migrating rather than integrating.",
         credit: 1.0,
       },
       {
-        text: "He's probably anxious about being a new parent; we could talk about it.",
-        credit: 0.6,
+        text: "She seems to idealize her father and blame her mother.",
+        credit: 0.3,
       },
       {
-        text: "He seems disturbed by thoughts during caregiving.",
-        credit: 0.3,
+        text: "She might have unresolved feelings about her parents; we could explore them.",
+        credit: 0.6,
       },
     ],
     correctAnswer:
-      "The horror is the data: taboo content that disgusts him and drives him to avoid the child points away from desire and toward its opposite — an overwhelmed hyper-vigilance about being a good, safe father, the mind fixating on the worst imaginable violation precisely because it matters most; test whether the thoughts are ego-dystonic and revolting to him rather than arousing, whether they cluster around caregiving he badly wants to do right, and whether they ease as his anxiety about his fitness as a father is addressed.",
+      "The flawless-father/poison-mother division, with no exceptions allowed, points to splitting across two people: she keeps one parent perfectly good by depositing all the 'bad' into the other, because a father who was both loved and disappointing — and a mother who is both — is intolerable to hold; test whether each portrait is absolute with no counter-examples permitted, whether faults of the 'good' father are minimized or denied, and whether challenging the all-bad mother image is met with the bad simply migrating rather than integrating.",
     explanation:
-      "Top credit reads revulsion-laden taboo content driving avoidance as anxiety about being a safe father and names an ego-dystonic-not-arousing test; 'hidden predatory desire' is the lurid overreach his disgust and avoidance defeat.",
+      "Top credit reads an exceptionless good-parent/bad-parent division as splitting that protects one love by dumping 'bad' into the other and names a no-counter-examples-allowed test; 'people prefer one parent' is the dodge the absolute, all-or-nothing portraits defeat.",
   },
   {
     itemType: "mc",
     prompt:
-      "A woman repeatedly confesses trivial 'sins' and fears she is secretly evil. Examined over weeks, the confession urges reliably follow ordinary moments of irritation at her domineering mother. Which conclusion best follows?",
+      "A woman joins a new community and within a week calls it 'perfect, I've finally found my people, my real family.' After one member gently disagrees with her, she declares the whole group 'toxic and fake' and quits. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "She might feel guilty about her mother; we could explore the confessions.",
-        credit: 0.6,
+        text: "She is faking the enthusiasm to fit in and never really meant it.",
+        credit: 0,
       },
       {
-        text: "She seems to confess minor things a lot.",
+        text: "She seems to have turned on the group.",
         credit: 0.3,
       },
       {
-        text: "The 'evil' content decodes the trigger: a conviction of secret badness that flares right after anger at her mother likely literalizes a forbidden hostility she judges as sinful — the confession discharging a guilt for feelings she isn't permitted to have; test whether the urges follow moments of irritation at her mother specifically, whether the 'sins' she confesses are really ordinary angry feelings, and whether they ease once normal anger is allowed to be just anger.",
-        credit: 1.0,
+        text: "It might not have been the right fit; we could talk about what happened.",
+        credit: 0.6,
       },
       {
-        text: "She is simply a very moral, conscientious person, so her confessing means nothing beyond strong values.",
-        credit: 0,
+        text: "'My real family' becoming 'toxic and fake' over a single disagreement is splitting: the instant idealization left no room for ordinary friction, so one note of 'bad' collapsed the all-good group into an all-bad one she had to flee, keeping the fantasy of perfect belonging from being spoiled; test whether the rejection followed the disagreement rather than any real harm, whether the whole group is condemned with no good member spared, and whether she would re-idealize a different group just as fast.",
+        credit: 1.0,
       },
     ],
     correctAnswer:
-      "The 'evil' content decodes the trigger: a conviction of secret badness that flares right after anger at her mother likely literalizes a forbidden hostility she judges as sinful — the confession discharging a guilt for feelings she isn't permitted to have; test whether the urges follow moments of irritation at her mother specifically, whether the 'sins' she confesses are really ordinary angry feelings, and whether they ease once normal anger is allowed to be just anger.",
+      "'My real family' becoming 'toxic and fake' over a single disagreement is splitting: the instant idealization left no room for ordinary friction, so one note of 'bad' collapsed the all-good group into an all-bad one she had to flee, keeping the fantasy of perfect belonging from being spoiled; test whether the rejection followed the disagreement rather than any real harm, whether the whole group is condemned with no good member spared, and whether she would re-idealize a different group just as fast.",
     explanation:
-      "Full credit reads secret-evil convictions following anger at her mother as literalized forbidden hostility and names a follows-irritation-at-mother test; 'just very moral' is the dodge the anger-locked timing defeats.",
+      "Top credit reads instant idealization collapsing to 'all toxic' over one disagreement as splitting and names a followed-the-disagreement test; 'she was faking it' is the lurid overreach her sincere search for belonging defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A man rigidly avoids the number 14 — refusing floors, addresses, and times that contain it — a compulsion that began the year his brother died on the 14th. No other number troubles him. Which conclusion best follows?",
+      "After one heated argument in which his wife snapped at him, a man concludes 'she has never loved me, the entire marriage has been a lie.' Twenty years of warmth are erased in an afternoon. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He seems to have a thing about the number 14.",
+        text: "He seems very upset about the argument.",
         credit: 0.3,
       },
       {
-        text: "Plenty of people are superstitious about numbers, so there's nothing about his brother to read into avoiding 14.",
+        text: "Couples say harsh things in fights and people reconsider, so there is nothing to read into it.",
         credit: 0,
       },
       {
-        text: "It's probably linked to his brother; we could note when it comes up.",
-        credit: 0.6,
+        text: "Twenty years of love erased by one snapped remark is splitting: the argument introduced 'bad' into an image of his wife he cannot hold as both loving and capable of hurting him, so the whole marriage is rewritten as a lie to keep love and anger from coexisting; test whether the 'she never loved me' verdict appeared only after the fight, whether all prior good is genuinely wiped out rather than balanced against the hurt, and whether the loving image returns the moment they reconcile.",
+        credit: 1.0,
       },
       {
-        text: "The chosen number is the clue: dread fixed to the exact date of his brother's death, sparing all other numbers, likely binds an unbearable loss into a single avoidable symbol — magic that lets him feel he is keeping the catastrophe at bay; test whether only the death-linked number troubles him, whether the avoidance began at no loss but this one, and whether it eases as the grief over his brother is worked through directly.",
-        credit: 1.0,
+        text: "He might be hurt and reactive; we could revisit it once he's calmer.",
+        credit: 0.6,
       },
     ],
     correctAnswer:
-      "The chosen number is the clue: dread fixed to the exact date of his brother's death, sparing all other numbers, likely binds an unbearable loss into a single avoidable symbol — magic that lets him feel he is keeping the catastrophe at bay; test whether only the death-linked number troubles him, whether the avoidance began at no loss but this one, and whether it eases as the grief over his brother is worked through directly.",
+      "Twenty years of love erased by one snapped remark is splitting: the argument introduced 'bad' into an image of his wife he cannot hold as both loving and capable of hurting him, so the whole marriage is rewritten as a lie to keep love and anger from coexisting; test whether the 'she never loved me' verdict appeared only after the fight, whether all prior good is genuinely wiped out rather than balanced against the hurt, and whether the loving image returns the moment they reconcile.",
     explanation:
-      "Top credit reads dread fixed to the death-date number as bound grief and names an only-that-number test; 'plenty of people are superstitious' is the dodge the exact date-matching specificity defeats.",
+      "Top credit reads twenty years erased by one remark as splitting and names an appeared-only-after-the-fight test; 'couples say harsh things' is the dodge the total wipeout of all prior good defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A woman compulsively rereads her sent emails hunting for a cruel or insulting line she fears she slipped in. The urge reliably spikes on days she felt slighted by a colleague but said nothing. Which conclusion best follows?",
+      "A high-schooler adores her favorite teacher as 'the only one who believes in me.' When the teacher marks her essay down a grade, she tells everyone the teacher is 'cruel and has always been out to destroy me.' Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Everyone worries about their emails sometimes; reading meaning into careful proofreading is overthinking it.",
+        text: "She is manipulating the situation to pressure the teacher into a better grade.",
         credit: 0,
       },
       {
-        text: "She seems to check her emails over and over.",
-        credit: 0.3,
+        text: "It might feel like a betrayal; we could talk about the grade.",
+        credit: 0.6,
       },
       {
-        text: "The feared content points to disowned anger: a dread of having written something cruel, spiking exactly when she swallowed a slight, suggests the hostility she won't let herself express is being attributed to her own pen — she fears doing what she actually wishes she could do; test whether the rereading follows moments she felt angry but stayed silent, whether the dreaded line is always aggressive rather than merely mistaken, and whether it eases once she can own and voice the anger directly.",
+        text: "The beloved teacher becoming 'cruel and always out to destroy me' over one lowered grade is splitting: a disappointment introduced 'bad' into an idealized figure she cannot hold as both supportive and capable of marking her down, so the teacher is recast as wholly malicious to shield the cherished belief that someone believes in her; test whether the hatred began exactly with the grade rather than any pattern, whether nothing good about the teacher survives it, and whether the adoration returns the next time the teacher encourages her.",
         credit: 1.0,
       },
       {
-        text: "She might have some anger she's holding in; we could discuss it.",
-        credit: 0.6,
+        text: "She seems to have changed her mind about the teacher.",
+        credit: 0.3,
       },
     ],
     correctAnswer:
-      "The feared content points to disowned anger: a dread of having written something cruel, spiking exactly when she swallowed a slight, suggests the hostility she won't let herself express is being attributed to her own pen — she fears doing what she actually wishes she could do; test whether the rereading follows moments she felt angry but stayed silent, whether the dreaded line is always aggressive rather than merely mistaken, and whether it eases once she can own and voice the anger directly.",
+      "The beloved teacher becoming 'cruel and always out to destroy me' over one lowered grade is splitting: a disappointment introduced 'bad' into an idealized figure she cannot hold as both supportive and capable of marking her down, so the teacher is recast as wholly malicious to shield the cherished belief that someone believes in her; test whether the hatred began exactly with the grade rather than any pattern, whether nothing good about the teacher survives it, and whether the adoration returns the next time the teacher encourages her.",
     explanation:
-      "Full credit reads fear of a cruel line spiking after swallowed slights as disowned anger and names a follows-silent-anger test; 'everyone worries about emails' is the dodge the anger-locked timing defeats.",
+      "Top credit reads a beloved-to-cruel reversal over one grade as splitting and names a began-with-the-grade test; 'she's manipulating for a better grade' is the lurid overreach her genuine prior adoration and distress defeat.",
   },
   {
     itemType: "mc",
     prompt:
-      "A gentle, committed animal-rights activist is tormented by vivid intrusive images of stabbing animals and people. The images always run exactly counter to her deepest values, and they revolt her. Which conclusion best follows?",
+      "Describing a recent ex, a woman swings between 'he was the most amazing man alive' and 'he was a pure monster' with each phone call between them, never settling on a mixed picture. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "She's probably stressed; we could keep talking about the images.",
-        credit: 0.6,
-      },
-      {
-        text: "The content's opposition to her identity is the tell: violent images that target precisely what she most cherishes and disgust her point not to a wish but to anxiety about her own ordinary aggression — feelings her gentle self-image forbids, so they return as their most shocking form; test whether the intrusions always contradict her values rather than express them, whether they revolt rather than tempt her, and whether they ease once she can accept that having aggressive feelings is normal and not the same as acting.",
-        credit: 1.0,
-      },
-      {
-        text: "Beneath the gentle image she harbors real violent desires she's suppressing.",
+        text: "People have complicated feelings about their exes, so there is nothing to read into it.",
         credit: 0,
       },
       {
-        text: "She seems to have violent thoughts that upset her.",
+        text: "She seems unsure how she feels about him.",
         credit: 0.3,
+      },
+      {
+        text: "The swing between 'most amazing' and 'pure monster' with each contact, never integrated, is splitting: she cannot hold a single ex who was both loved and hurtful, so each call resets him to all-good or all-bad depending on whether it gratified or wounded her — keeping the good love quarantined from the rage; test whether the portrait flips with the tone of the latest call rather than new facts, whether 'amazing' and 'monster' are ever allowed to be the same man, and whether a warm call instantly restores the idealized version.",
+        credit: 1.0,
+      },
+      {
+        text: "She might still be processing the breakup; we could give it time.",
+        credit: 0.6,
       },
     ],
     correctAnswer:
-      "The content's opposition to her identity is the tell: violent images that target precisely what she most cherishes and disgust her point not to a wish but to anxiety about her own ordinary aggression — feelings her gentle self-image forbids, so they return as their most shocking form; test whether the intrusions always contradict her values rather than express them, whether they revolt rather than tempt her, and whether they ease once she can accept that having aggressive feelings is normal and not the same as acting.",
+      "The swing between 'most amazing' and 'pure monster' with each contact, never integrated, is splitting: she cannot hold a single ex who was both loved and hurtful, so each call resets him to all-good or all-bad depending on whether it gratified or wounded her — keeping the good love quarantined from the rage; test whether the portrait flips with the tone of the latest call rather than new facts, whether 'amazing' and 'monster' are ever allowed to be the same man, and whether a warm call instantly restores the idealized version.",
     explanation:
-      "Top credit reads value-opposite, revolting images as anxiety about disowned ordinary aggression and names an always-contradicts-her-values test; 'real violent desires beneath' is the lurid overreach her disgust and value-opposition defeat.",
+      "Top credit reads an amazing/monster swing that resets with each call as splitting and names a flips-with-the-latest-contact test; 'people have complicated feelings about exes' is the dodge the never-integrated, all-or-nothing oscillation defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A man checks the locks dozens of times, fearing an intruder will harm his wife — but only on the nights she is away, and the compulsion began as their marriage soured and he caught himself fantasizing about leaving. Which conclusion best follows?",
+      "A man in recovery calls his sponsor 'a lifesaver, the best man I know.' The night the sponsor says he cannot take a 3 a.m. call, the man brands him 'a phony who never actually gave a damn.' Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He seems to check the locks when his wife is gone.",
-        credit: 0.3,
-      },
-      {
-        text: "Checking locks is just sensible caution, so there's nothing about the marriage to read into it.",
+        text: "He is lying about the sponsor mattering; it was never genuine gratitude.",
         credit: 0,
       },
       {
-        text: "The protective content masks its opposite: harm-fears for his wife that appear only as the marriage sours and he imagines leaving likely bind a guilt over his own hostile wishes — the elaborate protecting undoing the wish to be rid of her; test whether the checking tracks nights linked to conflict rather than real danger, whether it began with the marital strain and his leaving fantasies, and whether it eases once the ambivalence toward his wife is named.",
-        credit: 1.0,
+        text: "He might feel let down; we could talk about what he needed.",
+        credit: 0.6,
       },
       {
-        text: "He might have mixed feelings about his marriage; we could explore that.",
-        credit: 0.6,
+        text: "He seems to have flipped on his sponsor.",
+        credit: 0.3,
+      },
+      {
+        text: "A 'lifesaver' becoming 'a phony who never gave a damn' the moment one limit is set is splitting: the boundary introduced 'bad' into an idealized helper he cannot hold as both caring and unavailable, so the sponsor is rewritten as wholly false to keep the cherished sense of being saved from any disappointment; test whether the contempt began precisely with the declined call rather than any real neglect, whether all the sponsor's prior help is wiped out, and whether the gratitude returns the next time the sponsor is available.",
+        credit: 1.0,
       },
     ],
     correctAnswer:
-      "The protective content masks its opposite: harm-fears for his wife that appear only as the marriage sours and he imagines leaving likely bind a guilt over his own hostile wishes — the elaborate protecting undoing the wish to be rid of her; test whether the checking tracks nights linked to conflict rather than real danger, whether it began with the marital strain and his leaving fantasies, and whether it eases once the ambivalence toward his wife is named.",
+      "A 'lifesaver' becoming 'a phony who never gave a damn' the moment one limit is set is splitting: the boundary introduced 'bad' into an idealized helper he cannot hold as both caring and unavailable, so the sponsor is rewritten as wholly false to keep the cherished sense of being saved from any disappointment; test whether the contempt began precisely with the declined call rather than any real neglect, whether all the sponsor's prior help is wiped out, and whether the gratitude returns the next time the sponsor is available.",
     explanation:
-      "Full credit reads protective checking that began with leaving-fantasies as undoing hostile wishes and names a tracks-conflict-not-danger test; 'just sensible caution' is the dodge the strain-linked onset and away-nights-only timing defeat.",
+      "Top credit reads a lifesaver-to-phony flip the moment a boundary is set as splitting and names a began-with-the-declined-call test; 'he was never grateful' is the lurid overreach his genuine prior reliance defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A student redoes his homework until it feels 'just right,' sometimes for hours, and the ritual intensifies specifically on the college applications his demanding father picked out for him — never on work he chose himself. Which conclusion best follows?",
+      "A patient calls a new specialist 'the only doctor who can save me, brilliant.' When the appointment starts twenty minutes late, she storms out calling him 'incompetent and dismissive, just like all the rest.' Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He's just a perfectionist by temperament, so there's nothing about his father to read into it.",
+        text: "Everyone gets annoyed when a doctor runs late, so there is nothing to read into it.",
         credit: 0,
       },
       {
-        text: "It might be about pressure from his father; we could look at his standards.",
-        credit: 0.6,
+        text: "The brilliant savior becoming 'incompetent, just like all the rest' over a late start is splitting: a small frustration introduced 'bad' into an idealized rescuer she cannot hold as both skilled and fallible, so he is collapsed into the all-bad pile to protect the fantasy of a perfect savior elsewhere; test whether the contempt is wildly disproportionate to a late start, whether his competence is now denied wholesale, and whether the next clinician will be idealized just as quickly before the cycle repeats.",
+        credit: 1.0,
       },
       {
-        text: "He seems to redo his father's chosen work a lot.",
+        text: "She seems impatient with the doctor.",
         credit: 0.3,
       },
       {
-        text: "The trigger-specific content is the clue: 'just right' rituals that flare only on his father's chosen tasks likely carry a fear of that father's judgment — and perhaps a buried wish to fail or refuse — so the perfection both placates the father and stalls the work; test whether the rituals intensify on father-linked tasks but not self-chosen ones, whether dread rather than pride accompanies finishing them, and whether they ease once the pressure and any resentment toward his father are named.",
-        credit: 1.0,
+        text: "She might have had a long wait and felt dismissed; we could discuss it.",
+        credit: 0.6,
       },
     ],
     correctAnswer:
-      "The trigger-specific content is the clue: 'just right' rituals that flare only on his father's chosen tasks likely carry a fear of that father's judgment — and perhaps a buried wish to fail or refuse — so the perfection both placates the father and stalls the work; test whether the rituals intensify on father-linked tasks but not self-chosen ones, whether dread rather than pride accompanies finishing them, and whether they ease once the pressure and any resentment toward his father are named.",
+      "The brilliant savior becoming 'incompetent, just like all the rest' over a late start is splitting: a small frustration introduced 'bad' into an idealized rescuer she cannot hold as both skilled and fallible, so he is collapsed into the all-bad pile to protect the fantasy of a perfect savior elsewhere; test whether the contempt is wildly disproportionate to a late start, whether his competence is now denied wholesale, and whether the next clinician will be idealized just as quickly before the cycle repeats.",
     explanation:
-      "Top credit reads perfection flaring only on father-chosen tasks as fear of his judgment and names a father-linked-vs-self-chosen test; 'just a perfectionist by temperament' is the dodge the task-specific pattern defeats.",
+      "Top credit reads a savior-to-incompetent flip over a late start as splitting and names a disproportion-and-repeating-cycle test; 'everyone gets annoyed at a late doctor' is the dodge the wholesale denial of competence defeats.",
   },
 ];
 
@@ -417,425 +417,425 @@ const hybrid: HomeworkItem[] = [
   {
     itemType: "hybrid",
     prompt:
-      "A loving mother is struck by intrusive images of pushing her toddler down the stairs — but only when standing at the top of a staircase with the child. She is horrified and now takes the elevator everywhere. Which conclusion best follows?",
+      "On a psychiatric unit a patient tells everyone her primary nurse is 'the only one who actually cares' and the charge nurse is 'cruel and trying to hurt me.' Soon the two nurses are arguing over her treatment plan. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "She seems to have scary thoughts near stairs.",
+        text: "She seems to favor one nurse over the other.",
         credit: 0.3,
       },
       {
-        text: "The content's precision is the clue: harm imagery aimed at her own child, triggered exactly by the situation that makes such harm physically possible, and met with horror, points to a hyper-responsibility and the terror of her own power to do damage rather than any wish; test whether the images fire only where she could act and target only her child, whether her dread scales with the danger of the spot, and whether they ease once the fear of being a harmful mother is voiced.",
+        text: "The all-caring/all-cruel split that has set the staff against each other is the tell: she is depositing a 'good' and a 'bad' caregiver onto two real people because holding care and disappointment together in one relationship is intolerable, so the team is now enacting the split she cannot hold inside; test whether each nurse is painted wholly good or wholly bad with no nuance, whether the praise and blame track who last gratified versus frustrated her, and whether the 'good' nurse would be recast as bad the first time she sets a limit.",
         credit: 1.0,
       },
       {
-        text: "The thoughts reveal a buried wish to be rid of the child, so avoiding stairs is wise.",
+        text: "She is playing the nurses against each other to get her way.",
         credit: 0,
       },
       {
-        text: "It's probably new-parent anxiety; we could keep discussing it.",
+        text: "It might be staff splitting; the team could compare notes.",
         credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'the images express terror of her own power to harm' lead from the rival 'they reveal a hidden wish to hurt the child,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'this is splitting' lead from the rival 'the charge nurse really is treating her worse,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: check whether the images horrify and repel her and drive her to protect the child rather than tempting or satisfying her — revulsion and avoidance point to feared responsibility, not desire. My lead is refuted if she finds the images gratifying or seeks out chances to act on them, which would fit a genuine wish rather than dread of her own potential.",
+        "Cheapest test: have the team compare actual care notes and watch whether each nurse is painted in absolute, no-exception terms that track who last gratified or frustrated her — all-or-nothing labels untethered from the real care point to splitting, not a real difference. My lead is refuted if the records show the charge nurse genuinely provided worse, neglectful care, which would make the 'bad' label an accurate report rather than a split.",
       yieldAnchors: [
-        "Images of harming her own toddler",
-        "They fire only at the top of stairs",
-        "She is horrified and now avoids stairs",
+        "One nurse is 'the only one who cares,' the other 'cruel'",
+        "The two nurses are now feuding over her care",
+        "The portraits are absolute, with no nuance",
       ],
       riskAnchors: [
-        "Images target only her child and only where she could act",
-        "Dread scales with the danger of the spot",
-        "They ease once fear of being harmful is voiced",
+        "Each nurse is painted wholly good or wholly bad",
+        "Praise and blame track who last gratified or frustrated her",
+        "The 'good' nurse would be recast as bad after one limit",
       ],
       defeatedBy: [
-        "She finds the images gratifying rather than horrifying",
-        "She seeks chances to be alone with the child to act",
+        "Records show the charge nurse really did give neglectful care",
+        "Her judgments stay stable and proportionate over time",
       ],
     },
     correctAnswer:
-      "The content's precision is the clue: harm imagery aimed at her own child, triggered exactly by the situation that makes such harm physically possible, and met with horror, points to a hyper-responsibility and the terror of her own power to do damage rather than any wish; test whether the images fire only where she could act and target only her child, whether her dread scales with the danger of the spot, and whether they ease once the fear of being a harmful mother is voiced.",
+      "The all-caring/all-cruel split that has set the staff against each other is the tell: she is depositing a 'good' and a 'bad' caregiver onto two real people because holding care and disappointment together in one relationship is intolerable, so the team is now enacting the split she cannot hold inside; test whether each nurse is painted wholly good or wholly bad with no nuance, whether the praise and blame track who last gratified versus frustrated her, and whether the 'good' nurse would be recast as bad the first time she sets a limit.",
     explanation:
-      "Full credit reads precise, horror-laden harm-content as terror of her own power and is paired with a revulsion-vs-gratification test that names its refutation; 'a buried wish to be rid of the child' is the lurid overreach her horror and avoidance defeat.",
+      "Top credit reads the caring/cruel division fracturing the team as externalized splitting and is paired with a compare-the-care-notes test that names its refutation; 'she's playing them against each other' is the lurid overreach her genuine inability to integrate defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A man feels his late father's house is 'contaminated' and cannot enter the room where his father died without scrubbing afterward, though he has no germ fears anywhere else. The compulsion began the week of the death. Which conclusion best follows?",
+      "A woman three weeks into dating calls her partner 'flawless, the love of my life.' The night he does not answer one phone call, she decides he is 'a cold-hearted liar who never cared.' Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Contamination fears are a brain glitch with no meaning, so the link to his father's death is illusory.",
-        credit: 0,
+        text: "He probably gave her real reasons to doubt him; we could examine the relationship.",
+        credit: 0.6,
       },
       {
-        text: "The content localizes the grief: a sense of contamination confined to the room his father died in, beginning that very week, likely binds an unbearable loss and dread to a single avoidable place — the scrubbing managing a feeling about death he can't otherwise face; test whether the contamination fear is specific to that room and absent elsewhere, whether it began at the death and no other change, and whether it eases as the grief and any fear of death are named.",
-        credit: 1.0,
-      },
-      {
-        text: "He seems to feel his father's house is dirty.",
+        text: "She seems to swing on her partner.",
         credit: 0.3,
       },
       {
-        text: "It's probably about his father's death; we could revisit it.",
-        credit: 0.6,
+        text: "She is exaggerating to guilt-trip him into more attention.",
+        credit: 0,
+      },
+      {
+        text: "'The love of my life' becoming 'a cold-hearted liar' over one missed call is splitting: a tiny disappointment introduced 'bad' into an all-good image she cannot integrate, so the whole partner is rewritten as all-bad to keep the love uncontaminated by anger; test whether the devaluation is grossly out of proportion to a missed call, whether nothing good about him survives it, and whether the adoring image returns the instant he calls back.",
+        credit: 1.0,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'the contamination localizes grief to the death-room' lead from the rival 'he has a general emerging germ phobia,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'this is splitting' lead from the rival 'she spotted a genuine red flag,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: see whether the contamination feeling is confined to the room he associates with the death while every other space feels clean — place-specific dread points to grief, not a spreading phobia. My lead is refuted if he develops contamination fears across many unrelated settings, which would fit a general germ phobia rather than a feeling about his father.",
+        "Cheapest test: check whether the devaluation is wildly out of proportion to a single missed call and erases everything good about him at once — an instant, total reversal over a trivial trigger points to splitting, not a measured response to a real warning sign. My lead is refuted if the missed call turns out to sit atop a real pattern of deceit she has been weighing, which would make her conclusion a proportionate judgment.",
       yieldAnchors: [
-        "Only his father's death-room feels contaminated",
-        "No germ fears anywhere else",
-        "The compulsion began the week of the death",
+        "Three weeks of calling him 'flawless, the love of my life'",
+        "He is recast as a 'liar who never cared' over one missed call",
+        "The reversal is total, with no good remembered",
       ],
       riskAnchors: [
-        "The fear is specific to that room",
-        "It began at the death and no other change",
-        "It eases as grief is named",
+        "The devaluation is out of all proportion to the trigger",
+        "Nothing good about him survives the flip",
+        "The adoring image returns the instant he calls back",
       ],
       defeatedBy: [
-        "He develops contamination fears in many unrelated places",
-        "The fear predates his father's death",
+        "The missed call caps a real, weighed pattern of deceit",
+        "Her view of him is stable and proportionate over time",
       ],
     },
     correctAnswer:
-      "The content localizes the grief: a sense of contamination confined to the room his father died in, beginning that very week, likely binds an unbearable loss and dread to a single avoidable place — the scrubbing managing a feeling about death he can't otherwise face; test whether the contamination fear is specific to that room and absent elsewhere, whether it began at the death and no other change, and whether it eases as the grief and any fear of death are named.",
+      "'The love of my life' becoming 'a cold-hearted liar' over one missed call is splitting: a tiny disappointment introduced 'bad' into an all-good image she cannot integrate, so the whole partner is rewritten as all-bad to keep the love uncontaminated by anger; test whether the devaluation is grossly out of proportion to a missed call, whether nothing good about him survives it, and whether the adoring image returns the instant he calls back.",
     explanation:
-      "Full credit reads contamination confined to the death-room as localized grief and is paired with a one-room-vs-everywhere test that names its refutation; 'a brain glitch with no meaning' is the dodge the room-specific, death-timed onset defeats.",
+      "Top credit reads a love-of-my-life-to-liar flip over one missed call as splitting and is paired with a disproportion-to-the-trigger test that names its refutation; 'she's guilt-tripping him' is the lurid overreach the sincere, instant reversal defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A woman who never cared about tidiness now arranges her kitchen with rigid precision and re-does it until it's exact — a ritual that took hold as she discovered her husband's affairs and her home life turned chaotic. Which conclusion best follows?",
+      "A man calls his sister 'my rock, the one person I can always count on.' When she cannot lend him money one month, he declares her 'dead to me, a selfish snake who never loved me.' Which conclusion best follows?",
     mcOptions: [
       {
-        text: "She might be coping with stress at home; we could discuss the ritual.",
-        credit: 0.6,
-      },
-      {
-        text: "She seems very particular about her kitchen now.",
-        credit: 0.3,
-      },
-      {
-        text: "Some people just become neat freaks; there's nothing about her marriage to read into it.",
+        text: "Money strains a lot of families, so there is nothing to read into it.",
         credit: 0,
       },
       {
-        text: "The content answers the chaos: a sudden need for rigid order arising exactly as her home became uncontrollable likely enacts a bid to master, in one small domain, the helplessness she feels about a marriage she cannot control — the ritual restoring a control reality has taken; test whether the ordering urge tracks the moments her home life feels most chaotic, whether it began with the affairs and no other change, and whether it eases as the helplessness about her marriage is named.",
+        text: "The 'rock' becoming 'a selfish snake who never loved me' over one declined loan is splitting: a single refusal introduced 'bad' into an idealized sister he cannot hold as both loving and unable to help this once, so she is rewritten as all-bad to keep love and resentment from mixing; test whether the cutoff began precisely with the refusal rather than any real betrayal, whether years of support are wiped out at once, and whether the 'rock' image returns the next time she comes through for him.",
         credit: 1.0,
+      },
+      {
+        text: "He seems angry at his sister.",
+        credit: 0.3,
+      },
+      {
+        text: "He might feel unsupported; we could talk it through.",
+        credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'the ordering restores control lost in her marriage' lead from the rival 'she simply became a tidy person,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'this is splitting' lead from the rival 'his sister really has a history of letting him down,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: check whether the ordering urge surges precisely when her marriage feels most out of control rather than holding steady like a settled habit — intensity that tracks the chaos points to a control function. My lead is refuted if the tidiness is constant and unrelated to events at home, which would fit an ordinary new preference for neatness.",
+        "Cheapest test: see whether one declined loan instantly erases years of reliable support and recasts her as wholly bad — a total reversal triggered by a single refusal points to splitting, not a fair tally of a real pattern. My lead is refuted if she actually has a long record of abandoning him and the loan was the latest in a documented series, which would make 'snake' a weighed conclusion.",
       yieldAnchors: [
-        "She never cared about tidiness before",
-        "Rigid ordering began as the affairs surfaced",
-        "Her home life turned chaotic",
+        "He calls his sister 'my rock' he can always count on",
+        "One declined loan makes her 'dead to me'",
+        "Years of support are erased at once",
       ],
       riskAnchors: [
-        "The urge tracks the most chaotic moments",
-        "It began with the affairs and no other change",
-        "It eases as helplessness about the marriage is named",
+        "The cutoff began precisely with the refusal",
+        "Years of support are wiped out wholesale",
+        "The 'rock' image returns when she next comes through",
       ],
       defeatedBy: [
-        "The tidiness is constant and event-independent",
-        "It began long before the marital chaos",
+        "She has a real, documented history of abandoning him",
+        "His view of her stays stable and proportionate",
       ],
     },
     correctAnswer:
-      "The content answers the chaos: a sudden need for rigid order arising exactly as her home became uncontrollable likely enacts a bid to master, in one small domain, the helplessness she feels about a marriage she cannot control — the ritual restoring a control reality has taken; test whether the ordering urge tracks the moments her home life feels most chaotic, whether it began with the affairs and no other change, and whether it eases as the helplessness about her marriage is named.",
+      "The 'rock' becoming 'a selfish snake who never loved me' over one declined loan is splitting: a single refusal introduced 'bad' into an idealized sister he cannot hold as both loving and unable to help this once, so she is rewritten as all-bad to keep love and resentment from mixing; test whether the cutoff began precisely with the refusal rather than any real betrayal, whether years of support are wiped out at once, and whether the 'rock' image returns the next time she comes through for him.",
     explanation:
-      "Top credit reads sudden rigid order arising with marital chaos as a bid to restore control and is paired with a tracks-the-chaos test that names its refutation; 'just became a neat freak' is the dodge the chaos-linked onset defeats.",
+      "Top credit reads a rock-to-snake reversal over one declined loan as splitting and is paired with a one-refusal-erases-years test that names its refutation; 'money strains families' is the dodge the total wipeout of years of support defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A devout teenager preparing for confirmation is plagued by blasphemous intrusive thoughts that worsen the closer the ceremony approaches and peak during religious instruction. She is ashamed and prays them away. Which conclusion best follows?",
+      "A patient describes herself as 'exceptional, better than everyone here' on good days and 'subhuman, a piece of trash' the day after a minor setback. The two self-images never coexist. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "She seems to get bad thoughts around church.",
+        text: "She seems to have low self-esteem some days.",
         credit: 0.3,
       },
       {
-        text: "Intrusive thoughts are meaningless static, so their religious timing tells us nothing.",
+        text: "She is exaggerating both extremes to get reactions from staff.",
         credit: 0,
       },
       {
-        text: "It might relate to her faith; we could keep talking about it.",
-        credit: 0.6,
+        text: "The self swinging from 'exceptional' to 'trash' over a minor setback, never integrated, is splitting turned inward: she cannot hold a self that is both worthy and flawed, so a single disappointment converts an all-good self into an all-bad one to keep them from touching; test whether her self-worth swings entirely with the latest outcome, whether any stable middle self survives a setback, and whether the grandiose self returns intact the next time things go well.",
+        credit: 1.0,
       },
       {
-        text: "The content rising with the rite is the clue: blasphemy that intensifies as she is pushed toward a public profession of faith likely voices a doubt or reluctance she isn't allowed to feel — the symptom carrying an ambivalence about being confirmed that she can't say aloud; test whether the thoughts track proximity to the ceremony and instruction specifically, whether they ease when she can openly voice any doubt about confirming, and whether fighting them makes them worse.",
-        credit: 1.0,
+        text: "She might judge herself harshly; we could look at her self-talk.",
+        credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'the blasphemy voices reluctance about confirming' lead from the rival 'this is generic anxiety unrelated to her faith,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'splitting of the self-image' lead from the rival 'this is ordinary disappointment after a setback,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: see whether the intrusions intensify specifically as the ceremony nears and during religious instruction rather than spreading across unrelated stressors — timing locked to the rite points to ambivalence about confirming. My lead is refuted if the thoughts are just as intense during non-religious stress and indifferent to the ceremony's approach, which would fit generic anxiety.",
+        "Cheapest test: watch whether a minor setback flips her entire self-image to 'subhuman trash' with no stable middle and then resets to 'exceptional' at the next success — total, polarized swings tied to the latest outcome point to splitting of the self, not normal letdown. My lead is refuted if she holds a steady, mixed view of herself through setbacks and only feels proportionate, passing disappointment.",
       yieldAnchors: [
-        "Blasphemous thoughts worsen as confirmation nears",
-        "They peak during religious instruction",
-        "She is ashamed and prays them away",
+        "She is 'exceptional' on good days, 'subhuman trash' after setbacks",
+        "The two self-images never coexist",
+        "A minor setback triggers the crash",
       ],
       riskAnchors: [
-        "The thoughts track proximity to the ceremony",
-        "They ease when doubt about confirming is voiced",
-        "Fighting them makes them worse",
+        "Self-worth swings entirely with the latest outcome",
+        "No stable middle self survives a setback",
+        "The grandiose self returns intact after a success",
       ],
       defeatedBy: [
-        "The thoughts ignore the ceremony and follow unrelated stress",
-        "They are unchanged by religious context",
+        "She holds a steady, mixed view of herself through setbacks",
+        "Her low moments are proportionate and passing",
       ],
     },
     correctAnswer:
-      "The content rising with the rite is the clue: blasphemy that intensifies as she is pushed toward a public profession of faith likely voices a doubt or reluctance she isn't allowed to feel — the symptom carrying an ambivalence about being confirmed that she can't say aloud; test whether the thoughts track proximity to the ceremony and instruction specifically, whether they ease when she can openly voice any doubt about confirming, and whether fighting them makes them worse.",
+      "The self swinging from 'exceptional' to 'trash' over a minor setback, never integrated, is splitting turned inward: she cannot hold a self that is both worthy and flawed, so a single disappointment converts an all-good self into an all-bad one to keep them from touching; test whether her self-worth swings entirely with the latest outcome, whether any stable middle self survives a setback, and whether the grandiose self returns intact the next time things go well.",
     explanation:
-      "Full credit reads blasphemy rising with the rite as unspeakable reluctance to confirm and is paired with a tracks-the-ceremony test that names its refutation; 'meaningless static' is the dodge the rite-linked timing defeats.",
+      "Top credit reads an exceptional-to-trash swing over a minor setback as splitting of the self and is paired with a swings-with-the-latest-outcome test that names its refutation; 'she's exaggerating for reactions' is the lurid overreach the genuine, polarized self-states defeat.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "Shortly after he carelessly let a friend down at a crucial moment, a man began an exhausting compulsion to circle back while driving, sure he has struck a pedestrian and left them hurt. The fear is always of harm he caused and failed to face. Which conclusion best follows?",
+      "A client idealizes her therapist as 'the warmest, most caring person I've ever met.' When the therapist ends a session on time while she is mid-story, she recasts her as 'robotic, cold, and uncaring like everyone else.' Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Worries about hitting someone are common and mean nothing, so there's no link to letting his friend down.",
+        text: "Therapists can come across as cold; we could ask if she felt dismissed.",
+        credit: 0.6,
+      },
+      {
+        text: "She is performing hurt to manipulate the therapist into longer sessions.",
         credit: 0,
       },
       {
-        text: "He seems afraid he's hurt someone while driving.",
-        credit: 0.3,
-      },
-      {
-        text: "The content mirrors the guilt: a dread specifically of harm he caused and didn't face, arising right after he failed a friend, likely displaces a guilt he can't tolerate onto the road, where checking lets him keep 'making sure' he isn't a person who hurts others and walks away; test whether the fear is always of caused-and-abandoned harm rather than other dangers, whether it began with the letdown and no other change, and whether it eases as the guilt toward his friend is addressed.",
+        text: "The warmest person becoming 'robotic and uncaring' the moment a session ends on time is splitting: the ordinary boundary introduced 'bad' into an idealized caregiver she cannot hold as both warm and limit-setting, so the therapist is collapsed into the all-bad pile to keep the cherished warmth from being spoiled by frustration; test whether the coldness verdict began exactly at the session boundary rather than any real neglect, whether all prior warmth is denied, and whether the idealized image returns at the next attuned moment.",
         credit: 1.0,
       },
       {
-        text: "It might be connected to guilt; we could explore the driving fear.",
-        credit: 0.6,
+        text: "She seems to have changed her view of the therapist.",
+        credit: 0.3,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'the driving fear displaces guilt about failing his friend' lead from the rival 'he has an ordinary fear of car accidents,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'this is splitting' lead from the rival 'the therapist genuinely was cold and dismissive,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: check whether the dread is always of harm he caused and abandoned rather than of random road dangers, and whether it began right when he let his friend down — content and timing matched to the guilt point to displacement. My lead is refuted if the fear is a general worry about crashes that predates the letdown and shows no caused-and-abandoned theme.",
+        "Cheapest test: check whether the 'uncaring' verdict was triggered solely by the on-time ending and erased all the warmth she described minutes earlier — a total reversal pinned to a routine boundary points to splitting, not an accurate read of real coldness. My lead is refuted if the therapist actually behaved curtly or dismissively beyond simply keeping time, which would make the patient's reaction a fair response.",
       yieldAnchors: [
-        "The compulsion began after he failed a friend",
-        "He is sure he struck someone and left them hurt",
-        "The fear is always of harm he caused and abandoned",
+        "She called the therapist the warmest person she's met",
+        "Ending on time made her 'robotic and uncaring'",
+        "All prior warmth is suddenly denied",
       ],
       riskAnchors: [
-        "The fear is of caused-and-abandoned harm specifically",
-        "It began with the letdown and no other change",
-        "It eases as guilt toward his friend is addressed",
+        "The coldness verdict began exactly at the boundary",
+        "All prior warmth is wiped out",
+        "The idealized image returns at the next attuned moment",
       ],
       defeatedBy: [
-        "The fear is a general worry about crashes",
-        "It predates letting his friend down",
+        "The therapist actually behaved curtly beyond keeping time",
+        "Her view of the therapist stays stable and proportionate",
       ],
     },
     correctAnswer:
-      "The content mirrors the guilt: a dread specifically of harm he caused and didn't face, arising right after he failed a friend, likely displaces a guilt he can't tolerate onto the road, where checking lets him keep 'making sure' he isn't a person who hurts others and walks away; test whether the fear is always of caused-and-abandoned harm rather than other dangers, whether it began with the letdown and no other change, and whether it eases as the guilt toward his friend is addressed.",
+      "The warmest person becoming 'robotic and uncaring' the moment a session ends on time is splitting: the ordinary boundary introduced 'bad' into an idealized caregiver she cannot hold as both warm and limit-setting, so the therapist is collapsed into the all-bad pile to keep the cherished warmth from being spoiled by frustration; test whether the coldness verdict began exactly at the session boundary rather than any real neglect, whether all prior warmth is denied, and whether the idealized image returns at the next attuned moment.",
     explanation:
-      "Top credit reads a fear of caused-and-abandoned harm arising after he failed a friend as displaced guilt and is paired with a content-and-timing test that names its refutation; 'worries about hitting someone mean nothing' is the dodge the matched content and onset defeat.",
+      "Top credit reads a warmest-to-uncaring flip at an on-time ending as splitting and is paired with a triggered-by-the-boundary test that names its refutation; 'she's performing hurt to manipulate' is the lurid overreach the genuine prior idealization defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A devoted granddaughter who cares daily for her frail, gentle grandmother is tormented by intrusive urges to scream something vicious at her. The urges are worst during the most tender caregiving moments. Which conclusion best follows?",
+      "A teenager calls her friend group 'the best friends anyone could have.' After she is not invited to one weekend outing, she sobs that 'they all secretly hate me and always have.' Which conclusion best follows?",
     mcOptions: [
       {
-        text: "She's probably worn out; we could talk about the caregiving.",
-        credit: 0.6,
-      },
-      {
-        text: "The content against the tenderness is the tell: vicious urges that peak precisely in the most loving moments likely carry a resentment of the caregiving burden she isn't allowed to feel toward someone so gentle and dependent — the forbidden anger surfacing as its most shocking form; test whether the urges cluster in moments of greatest tenderness and demand, whether they revolt rather than satisfy her, and whether they ease once she can admit that resenting the burden is normal and not the same as hating her grandmother.",
-        credit: 1.0,
-      },
-      {
-        text: "Deep down she despises her grandmother and the urges show her true feelings.",
+        text: "Kids leave each other out sometimes; there is nothing to read into it.",
         credit: 0,
       },
       {
-        text: "She seems to get mean urges while caregiving.",
+        text: "She seems hurt about being left out.",
         credit: 0.3,
+      },
+      {
+        text: "'The best friends anyone could have' becoming 'they all secretly hate me' over one missed invite is splitting: the exclusion introduced 'bad' into an all-good group she cannot hold as both loving and capable of leaving her out, so the whole group is recast as secretly hostile to keep love and rejection from coexisting; test whether the 'they hate me' verdict began precisely with the missed invite, whether every member is condemned with no exception, and whether the warm image returns the moment they include her again.",
+        credit: 1.0,
+      },
+      {
+        text: "She might feel excluded; we could talk about what happened.",
+        credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'the urges carry forbidden resentment of the burden' lead from the rival 'she truly hates her grandmother,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'this is splitting' lead from the rival 'the group really is excluding and disliking her,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: check whether the urges horrify her and coexist with genuine devoted care rather than matching open hostility or neglect — revulsion alongside tenderness points to disowned resentment of the burden, not hatred. My lead is refuted if she actually treats her grandmother cruelly or feels relief and satisfaction in the urges, which would fit real hatred.",
+        "Cheapest test: see whether one missed invitation flips the whole group from 'best friends' to 'all secretly hate me' with no member spared and no real evidence of dislike — a total, sudden reversal over a single slight points to splitting, not an accurate read of rejection. My lead is refuted if the group actually has been consistently freezing her out and treating her with hostility, which would make her conclusion a fair appraisal.",
       yieldAnchors: [
-        "She cares daily and devotedly for her grandmother",
-        "Vicious urges peak during tender caregiving",
-        "The urges torment her",
+        "She calls them 'the best friends anyone could have'",
+        "One missed invite makes 'they all secretly hate me'",
+        "Every member is condemned with no exception",
       ],
       riskAnchors: [
-        "Urges cluster in moments of greatest tenderness and demand",
-        "They revolt rather than satisfy her",
-        "They ease once resentment is allowed as normal",
+        "The 'they hate me' verdict began with the missed invite",
+        "No member is spared the condemnation",
+        "The warm image returns once they include her",
       ],
       defeatedBy: [
-        "She actually treats her grandmother cruelly",
-        "She feels satisfaction rather than horror at the urges",
+        "The group has consistently frozen her out and been hostile",
+        "Her view of the group is stable and proportionate",
       ],
     },
     correctAnswer:
-      "The content against the tenderness is the tell: vicious urges that peak precisely in the most loving moments likely carry a resentment of the caregiving burden she isn't allowed to feel toward someone so gentle and dependent — the forbidden anger surfacing as its most shocking form; test whether the urges cluster in moments of greatest tenderness and demand, whether they revolt rather than satisfy her, and whether they ease once she can admit that resenting the burden is normal and not the same as hating her grandmother.",
+      "'The best friends anyone could have' becoming 'they all secretly hate me' over one missed invite is splitting: the exclusion introduced 'bad' into an all-good group she cannot hold as both loving and capable of leaving her out, so the whole group is recast as secretly hostile to keep love and rejection from coexisting; test whether the 'they hate me' verdict began precisely with the missed invite, whether every member is condemned with no exception, and whether the warm image returns the moment they include her again.",
     explanation:
-      "Full credit reads vicious urges peaking in tender moments as forbidden resentment of the burden and is paired with a revulsion-amid-devotion test that names its refutation; 'deep down she despises her' is the lurid overreach her horror and daily care defeat.",
+      "Top credit reads a best-friends-to-all-hate-me flip over one missed invite as splitting and is paired with a began-with-the-missed-invite test that names its refutation; 'kids leave each other out' is the dodge the no-exception condemnation of the whole group defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A salesman who recently began pushing a product he privately believes is a scam developed a compulsion to wash his hands after every shift, feeling 'slimy.' He has no contamination fears outside of work. Which conclusion best follows?",
+      "A woman speaks of her late father as 'a perfect, gentle saint' and of her living mother as 'pure evil who poisoned everything.' She bristles at any fact that complicates either picture. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He seems to wash up after work a lot.",
+        text: "She seems to love her father and resent her mother.",
         credit: 0.3,
       },
       {
-        text: "Hand-washing is just hygiene, so tying it to his sales job is overinterpreting.",
+        text: "Plenty of people prefer one parent, so there is nothing to read into it.",
         credit: 0,
       },
       {
-        text: "He might dislike his job; we could discuss the washing.",
-        credit: 0.6,
+        text: "The perfect-saint father and pure-evil mother, defended against any complicating fact, point to splitting across two people: she keeps one parent flawlessly good by depositing all the 'bad' into the other, because a parent who is both loved and disappointing is intolerable to hold together; test whether each portrait is absolute with no exceptions permitted, whether faults of the 'good' father are denied outright, and whether challenging the all-bad mother makes the 'bad' migrate rather than integrate into a mixed view.",
+        credit: 1.0,
       },
       {
-        text: "The content literalizes the compromise: feeling 'slimy' and washing only after shifts spent deceiving customers points to a moral disgust he can't voice, the body enacting a cleansing his conscience demands of work he finds dirty; test whether the urge appears only after ethically compromising shifts and not on days off, whether it began when he started pushing the product he distrusts, and whether it eases once he can name the guilt about the work directly.",
-        credit: 1.0,
+        text: "She might have unresolved family feelings; we could explore them.",
+        credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'the washing literalizes moral disgust at his work' lead from the rival 'he is developing an ordinary contamination phobia,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'this is splitting' lead from the rival 'her father really was kind and her mother really was abusive,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: see whether the washing urge is confined to days he spent deceiving customers and is absent on days off — an urge bounded by the ethically compromising work points to moral disgust, not germ fear. My lead is refuted if he washes compulsively regardless of work and across unrelated settings, which would fit a general contamination phobia.",
+        "Cheapest test: offer one mild, true complication to each portrait and watch whether she can hold it — a flat refusal to allow her father any fault or her mother any virtue points to splitting, not an accurate memory of two very different parents. My lead is refuted if she can acknowledge real flaws in her father and real kindnesses in her mother while still judging the mother harshly, which would fit a fair, integrated appraisal of genuinely different people.",
       yieldAnchors: [
-        "He pushes a product he believes is a scam",
-        "He feels 'slimy' and washes after every shift",
-        "No contamination fears outside work",
+        "Father is a 'perfect, gentle saint'",
+        "Mother is 'pure evil who poisoned everything'",
+        "She bristles at any complicating fact",
       ],
       riskAnchors: [
-        "The urge appears only after compromising shifts",
-        "It began when he started the dishonest sales",
-        "It eases once the guilt is named",
+        "Each portrait is absolute, with no exceptions",
+        "Faults of the 'good' father are denied outright",
+        "Challenged, the 'bad' migrates rather than integrates",
       ],
       defeatedBy: [
-        "He washes compulsively regardless of work",
-        "Contamination fears appear in unrelated settings",
+        "She can hold real flaws in the father and virtues in the mother",
+        "The mother was genuinely, verifiably abusive",
       ],
     },
     correctAnswer:
-      "The content literalizes the compromise: feeling 'slimy' and washing only after shifts spent deceiving customers points to a moral disgust he can't voice, the body enacting a cleansing his conscience demands of work he finds dirty; test whether the urge appears only after ethically compromising shifts and not on days off, whether it began when he started pushing the product he distrusts, and whether it eases once he can name the guilt about the work directly.",
+      "The perfect-saint father and pure-evil mother, defended against any complicating fact, point to splitting across two people: she keeps one parent flawlessly good by depositing all the 'bad' into the other, because a parent who is both loved and disappointing is intolerable to hold together; test whether each portrait is absolute with no exceptions permitted, whether faults of the 'good' father are denied outright, and whether challenging the all-bad mother makes the 'bad' migrate rather than integrate into a mixed view.",
     explanation:
-      "Top credit reads 'slimy' washing confined to dishonest shifts as literalized moral disgust and is paired with a work-days-vs-days-off test that names its refutation; 'just hygiene' is the dodge the work-bounded timing and onset defeat.",
+      "Top credit reads an exceptionless saint/evil division defended against all nuance as splitting that keeps one love pure and is paired with a try-a-mild-complication test that names its refutation; 'people prefer one parent' is the dodge the absolute, all-or-nothing portraits defeat.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A woman apologizes compulsively — 'sorry, sorry' — and replays conversations for hours certain she offended someone. The urge spikes specifically after interactions where she actually asserted herself or said no. Which conclusion best follows?",
+      "A new employee gushes that her supervisor is 'a visionary, the best boss alive.' The first time the supervisor corrects a small error, she tells colleagues he is 'a tyrant who has always wanted me gone.' Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Polite people apologize a lot; there's nothing to read into being considerate.",
+        text: "She is bad-mouthing him to build allies and undermine him.",
         credit: 0,
       },
       {
-        text: "She might struggle with confidence; we could talk it over.",
-        credit: 0.6,
+        text: "She seems to have turned on her boss.",
+        credit: 0.3,
       },
       {
-        text: "The trigger decodes the content: a conviction she's given offense that flares right after she asserted herself suggests the apology is undoing a self-assertion she experiences as forbidden aggression — saying 'sorry' to take back the 'no'; test whether the apology urge follows acts of self-assertion specifically rather than real rudeness, whether the 'offense' she fears is just her having had a need, and whether it eases once she can own asserting herself as legitimate.",
+        text: "The 'visionary' becoming 'a tyrant who always wanted me gone' over a small correction is splitting: the criticism introduced 'bad' into an idealized boss she cannot hold as both admirable and capable of correcting her, so he is recast as wholly hostile to keep her admiration safe from the sting; test whether the contempt began exactly with the correction rather than any pattern, whether nothing good about him survives it, and whether the idealization returns the next time he praises her.",
         credit: 1.0,
       },
       {
-        text: "She seems to apologize and replay conversations a lot.",
-        credit: 0.3,
+        text: "She might feel criticized; we could talk about the feedback.",
+        credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'the apologizing undoes forbidden self-assertion' lead from the rival 'she is just an anxious, polite person,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'this is splitting' lead from the rival 'the supervisor really is a hostile, punitive boss,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: check whether the apology urge spikes specifically after she said no or stood her ground rather than after genuine slips — timing tied to self-assertion points to undoing forbidden aggression. My lead is refuted if she apologizes uniformly regardless of whether she asserted herself, which would fit general anxious politeness.",
+        "Cheapest test: check whether a single small correction flipped him instantly from 'best boss alive' to 'tyrant who always wanted me gone,' erasing all the good with no real pattern of hostility — a total reversal pinned to one piece of feedback points to splitting. My lead is refuted if he has a documented history of punitive, targeting behavior toward her, which would make 'tyrant' a fair description rather than a split.",
       yieldAnchors: [
-        "She apologizes compulsively and replays conversations",
-        "The urge spikes after she asserted herself or said no",
-        "She is sure she gave offense",
+        "She called him 'a visionary, the best boss alive'",
+        "One small correction made him 'a tyrant'",
+        "She claims he 'always wanted me gone'",
       ],
       riskAnchors: [
-        "The urge follows self-assertion specifically",
-        "The feared 'offense' is just having had a need",
-        "It eases once self-assertion is owned as legitimate",
+        "The contempt began exactly with the correction",
+        "Nothing good about him survives the flip",
+        "The idealization returns the next time he praises her",
       ],
       defeatedBy: [
-        "She apologizes uniformly regardless of asserting herself",
-        "The urge tracks real rudeness, not assertion",
+        "He has a real history of punitive, targeting behavior",
+        "Her view of him stays stable and proportionate",
       ],
     },
     correctAnswer:
-      "The trigger decodes the content: a conviction she's given offense that flares right after she asserted herself suggests the apology is undoing a self-assertion she experiences as forbidden aggression — saying 'sorry' to take back the 'no'; test whether the apology urge follows acts of self-assertion specifically rather than real rudeness, whether the 'offense' she fears is just her having had a need, and whether it eases once she can own asserting herself as legitimate.",
+      "The 'visionary' becoming 'a tyrant who always wanted me gone' over a small correction is splitting: the criticism introduced 'bad' into an idealized boss she cannot hold as both admirable and capable of correcting her, so he is recast as wholly hostile to keep her admiration safe from the sting; test whether the contempt began exactly with the correction rather than any pattern, whether nothing good about him survives it, and whether the idealization returns the next time he praises her.",
     explanation:
-      "Full credit reads apology urges spiking after self-assertion as undoing forbidden aggression and is paired with an after-saying-no test that names its refutation; 'just polite' is the dodge the assertion-locked timing defeats.",
+      "Top credit reads a visionary-to-tyrant flip over one correction as splitting and is paired with a began-with-the-correction test that names its refutation; 'she's bad-mouthing him to build allies' is the lurid overreach her genuine prior admiration defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A man must perform actions in fours — flicking a switch, tapping a doorframe — believing that if he doesn't, his young son will die. The compulsion began the month his son was hospitalized with a frightening illness. Which conclusion best follows?",
+      "In one day a woman calls her boyfriend 'my whole world, the only good thing in my life' in the morning and 'a monster I have to escape' by night — the shift coming after he disagreed with her about a movie. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He seems to repeat things to protect his son.",
-        credit: 0.3,
-      },
-      {
-        text: "Rituals like counting are meaningless tics, so the link to his son's illness is imagined.",
+        text: "Couples bicker and feelings shift; there is nothing to read into a single day.",
         credit: 0,
       },
       {
-        text: "The content carries the terror: a magic ritual whose sole stated stake is his son's survival, beginning the month the boy nearly died, likely binds an unbearable helplessness about a danger he couldn't control — the ritual buying an illusion of power over life and death; test whether the compulsion's feared outcome is specifically his son's death and not other harms, whether it began with the hospitalization and no other change, and whether it eases as the helplessness and fear of losing his son are named.",
+        text: "The same-day swing from 'my whole world' to 'a monster' over a disagreement about a movie is splitting at high speed: a trivial difference introduced 'bad' into an all-good image she cannot integrate, so within hours he is rewritten as all-bad to keep love and anger from ever overlapping; test whether the flip tracks the disagreement rather than anything serious, whether the morning's good is wholly erased by night, and whether 'my whole world' returns by the next morning if he placates her.",
         credit: 1.0,
       },
       {
-        text: "It's probably about his son's illness; we could keep noting it.",
+        text: "She seems to run hot and cold on her boyfriend.",
+        credit: 0.3,
+      },
+      {
+        text: "She might be overwhelmed today; we could check in tomorrow.",
         credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'the ritual binds helplessness about his son's illness' lead from the rival 'he has a generic counting compulsion,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'rapid splitting' lead from the rival 'this is an ordinary couple's spat,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: check whether the ritual's feared consequence is specifically his son's death and whether it began the month of the hospitalization — a stake and onset fixed to the illness point to bound helplessness. My lead is refuted if the counting has no connection to his son, attaches to varied unrelated fears, and predates the illness, which would fit a generic compulsion.",
+        "Cheapest test: watch whether a minor disagreement flips 'my whole world' to 'a monster' within hours, wiping out the morning's adoration, and then resets to idealization once he placates her — same-day total reversals over trivia point to rapid splitting, not a normal spat. My lead is refuted if her feelings stay proportionate and mixed through the disagreement rather than collapsing into all-good or all-bad extremes.",
       yieldAnchors: [
-        "Actions in fours to prevent his son's death",
-        "The compulsion began the month of the hospitalization",
-        "The stated stake is specifically his son",
+        "Morning: 'my whole world, the only good thing'",
+        "Night: 'a monster I have to escape'",
+        "The trigger was disagreeing about a movie",
       ],
       riskAnchors: [
-        "The feared outcome is his son's death specifically",
-        "It began with the hospitalization and no other change",
-        "It eases as helplessness about the illness is named",
+        "The flip tracks the disagreement, not anything serious",
+        "The morning's good is wholly erased by night",
+        "Idealization returns by morning if he placates her",
       ],
       defeatedBy: [
-        "The ritual is unrelated to his son",
-        "It predates the hospitalization",
+        "Her feelings stay proportionate and mixed through the spat",
+        "The 'monster' label reflects genuinely serious behavior",
       ],
     },
     correctAnswer:
-      "The content carries the terror: a magic ritual whose sole stated stake is his son's survival, beginning the month the boy nearly died, likely binds an unbearable helplessness about a danger he couldn't control — the ritual buying an illusion of power over life and death; test whether the compulsion's feared outcome is specifically his son's death and not other harms, whether it began with the hospitalization and no other change, and whether it eases as the helplessness and fear of losing his son are named.",
+      "The same-day swing from 'my whole world' to 'a monster' over a disagreement about a movie is splitting at high speed: a trivial difference introduced 'bad' into an all-good image she cannot integrate, so within hours he is rewritten as all-bad to keep love and anger from ever overlapping; test whether the flip tracks the disagreement rather than anything serious, whether the morning's good is wholly erased by night, and whether 'my whole world' returns by the next morning if he placates her.",
     explanation:
-      "Top credit reads a survival-ritual beginning with the hospitalization as bound helplessness and is paired with a feared-outcome-and-onset test that names its refutation; 'meaningless tics' is the dodge the son-specific stake and timing defeat.",
+      "Top credit reads a same-day whole-world-to-monster swing over a movie disagreement as rapid splitting and is paired with a flip-tracks-the-disagreement test that names its refutation; 'couples bicker' is the dodge the total, hours-long reversal over trivia defeats.",
   },
 ];
 
@@ -843,183 +843,183 @@ const written: HomeworkItem[] = [
   {
     itemType: "written",
     prompt:
-      "A new mother confides that she is tormented by intrusive thoughts of drowning her baby during bath time. She is appalled by them, loves her child fiercely, and has begun asking her partner to handle every bath. In one paragraph, propose the strongest conclusion about what the content of these thoughts is expressing and describe how you would test it.",
+      "Early in treatment a patient tells you 'you've already saved my life, you're the only good therapist I've ever had.' In one paragraph, propose the strongest conclusion about what this instant idealization is expressing and what it predicts, and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that the very content — harm aimed at the child she loves most, arriving in the exact caregiving moment, and met with appalled avoidance — is saying the opposite of a wish: it expresses the crushing weight of sole responsibility and a terror of her own capacity to fail or harm, the mind fixating on the worst imaginable act precisely because protecting the baby matters more than anything. This is a strong claim because it predicts checkable consequences: the thoughts should be ego-dystonic and revolting rather than gratifying; they should cluster around the caregiving she most wants to do right and target her own child rather than strangers; and they should ease as her fear of being an inadequate or dangerous mother is named and normalized. I would test it by asking whether the images horrify or tempt her, by checking whether they track the moments of greatest responsibility, and by watching whether naming the fear of her own potential to harm loosens their grip — while staying alert to the refuting signs of genuine intent.",
+        "The strongest conclusion is that an instant, total idealization is the front half of a split: by making me all-good she keeps care and disappointment from ever mixing, which means the same all-or-nothing machinery will recast me as all-bad the first time I frustrate her — a missed appointment, a limit, a vacation. This is a strong claim because it predicts checkable consequences: the idealization should be absolute and exceptionless rather than warm-but-realistic; it should rest on very little actual knowledge of me; and it should flip to wholesale devaluation upon the first ordinary let-down, then swing back when I am attuned again. I would test it by noting how nuanced or absolute her view of me is, by watching what happens at the first small disappointment, and by tracking whether her image of me reorganizes around the latest interaction rather than holding steady — refuted if she can already hold me as helpful but imperfect and stays proportionate when I let her down.",
       yieldAnchors: [
-        "Intrusive thoughts of drowning her baby at bath time",
-        "She is appalled and loves the child fiercely",
-        "She now avoids bathing the baby",
+        "Instant, total idealization of the therapist",
+        "'The only good therapist,' with no qualification",
+        "It rests on very little real knowledge of me",
       ],
       riskAnchors: [
-        "The thoughts are revolting rather than gratifying",
-        "They cluster around caregiving and target her own child",
-        "They ease as fear of being a harmful mother is named",
+        "The idealization is absolute and exceptionless",
+        "It will flip to devaluation at the first let-down",
+        "The image reorganizes around the latest interaction",
       ],
       defeatedBy: [
-        "She finds the thoughts gratifying or arousing",
-        "She seeks chances to be alone with the baby to act",
+        "She holds me as helpful but imperfect from the start",
+        "She stays proportionate when I first disappoint her",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that the very content — harm aimed at the child she loves most, arriving in the exact caregiving moment, and met with appalled avoidance — is saying the opposite of a wish: it expresses the crushing weight of sole responsibility and a terror of her own capacity to fail or harm, the mind fixating on the worst imaginable act precisely because protecting the baby matters more than anything. This is a strong claim because it predicts checkable consequences: the thoughts should be ego-dystonic and revolting rather than gratifying; they should cluster around the caregiving she most wants to do right and target her own child rather than strangers; and they should ease as her fear of being an inadequate or dangerous mother is named and normalized. I would test it by asking whether the images horrify or tempt her, by checking whether they track the moments of greatest responsibility, and by watching whether naming the fear of her own potential to harm loosens their grip — while staying alert to the refuting signs of genuine intent.",
+      "The strongest conclusion is that an instant, total idealization is the front half of a split: by making me all-good she keeps care and disappointment from ever mixing, which means the same all-or-nothing machinery will recast me as all-bad the first time I frustrate her — a missed appointment, a limit, a vacation. This is a strong claim because it predicts checkable consequences: the idealization should be absolute and exceptionless rather than warm-but-realistic; it should rest on very little actual knowledge of me; and it should flip to wholesale devaluation upon the first ordinary let-down, then swing back when I am attuned again. I would test it by noting how nuanced or absolute her view of me is, by watching what happens at the first small disappointment, and by tracking whether her image of me reorganizes around the latest interaction rather than holding steady — refuted if she can already hold me as helpful but imperfect and stays proportionate when I let her down.",
     explanation:
-      "Under the inverted standard, 'these thoughts mean she's dangerous and must be kept away' and 'thoughts are random and mean nothing' both miss; top credit reads horror-laden harm-content as terror of her own capacity to fail and names an ego-dystonic-not-gratifying test that could refute it.",
+      "Under the inverted standard, 'she just appreciates me' and 'idealization is meaningless flattery' both miss; top credit reads an instant, exceptionless idealization as the front half of a split and names a watch-the-first-disappointment test that could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "A lifelong believer reports obscene, blasphemous images that intrude only during his most heartfelt prayer and worsen the harder he tries to banish them. He is ashamed and tells no one. In one paragraph, propose the strongest conclusion about what the content of these intrusions is expressing and describe how you would test it.",
+      "A patient's relationships all follow the same arc: a new person is 'amazing, the one,' then after a single disappointment becomes 'a monster I have to escape,' with no one ever landing in between. In one paragraph, propose the strongest conclusion about what this recurring pattern is expressing and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that blasphemy striking precisely at his most sacred, heartfelt moments is not random but a disguised communication: it likely voices a forbidden doubt, anger, or rebellion toward a faith he is not permitted to question, the symptom carrying aloud what he cannot let himself think. This is a strong claim because it predicts checkable consequences: the intrusions should peak at the holiest moments and stay quiet during neutral activity; they should worsen the harder he fights them, as suppression feeds them; and they should ease when he can openly acknowledge ambivalence or doubt about his religion rather than only piety. I would test it by mapping the intrusions against how sacred each moment is, by noting whether resistance amplifies them, and by checking whether giving his doubts a voice reduces them — refuted if the thoughts ignore sacredness and track ordinary stress instead.",
+        "The strongest conclusion is that the repeating 'amazing-then-monster' arc is splitting operating as her default way of holding people: because a person who is both loved and disappointing feels intolerable, each relationship is filed as all-good until a let-down introduces 'bad,' at which point the whole person is rewritten as all-bad to keep love and anger from touching. This is a strong claim because it predicts checkable consequences: the flip should reliably follow a disappointment rather than new information about the person's character; no one should be allowed a stable, mixed picture; and the devaluation should be grossly out of proportion to the triggering let-down. I would test it by mapping each reversal against what actually happened just before it, by checking whether anyone is ever held as good-and-flawed at once, and by watching whether the same arc repeats with the next person — refuted if her shifts track genuine, proportionate evidence about each individual and she can sustain an integrated view of someone over time.",
       yieldAnchors: [
-        "Blasphemy intrudes only during heartfelt prayer",
-        "It worsens the harder he fights it",
-        "He is ashamed and secretive",
+        "Every relationship runs 'amazing' then 'monster'",
+        "The flip follows a single disappointment",
+        "No one ever lands in a stable middle",
       ],
       riskAnchors: [
-        "Intrusions peak at the holiest moments",
-        "Resistance amplifies them",
-        "They ease when doubt is openly named",
+        "The flip follows a let-down, not new character information",
+        "No one is held as good-and-flawed at once",
+        "The devaluation is out of proportion to the trigger",
       ],
       defeatedBy: [
-        "The thoughts ignore sacredness and track ordinary stress",
-        "They are unchanged whether he resists or not",
+        "Her shifts track genuine, proportionate evidence",
+        "She can sustain a mixed view of someone over time",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that blasphemy striking precisely at his most sacred, heartfelt moments is not random but a disguised communication: it likely voices a forbidden doubt, anger, or rebellion toward a faith he is not permitted to question, the symptom carrying aloud what he cannot let himself think. This is a strong claim because it predicts checkable consequences: the intrusions should peak at the holiest moments and stay quiet during neutral activity; they should worsen the harder he fights them, as suppression feeds them; and they should ease when he can openly acknowledge ambivalence or doubt about his religion rather than only piety. I would test it by mapping the intrusions against how sacred each moment is, by noting whether resistance amplifies them, and by checking whether giving his doubts a voice reduces them — refuted if the thoughts ignore sacredness and track ordinary stress instead.",
+      "The strongest conclusion is that the repeating 'amazing-then-monster' arc is splitting operating as her default way of holding people: because a person who is both loved and disappointing feels intolerable, each relationship is filed as all-good until a let-down introduces 'bad,' at which point the whole person is rewritten as all-bad to keep love and anger from touching. This is a strong claim because it predicts checkable consequences: the flip should reliably follow a disappointment rather than new information about the person's character; no one should be allowed a stable, mixed picture; and the devaluation should be grossly out of proportion to the triggering let-down. I would test it by mapping each reversal against what actually happened just before it, by checking whether anyone is ever held as good-and-flawed at once, and by watching whether the same arc repeats with the next person — refuted if her shifts track genuine, proportionate evidence about each individual and she can sustain an integrated view of someone over time.",
     explanation:
-      "The cautious 'thoughts are random, content is meaningless' earns near-zero; top credit reads blasphemy peaking at the holiest moments as disguised forbidden doubt and names a track-the-sacredness test that could refute it.",
+      "'People just have bad luck with relationships' and 'her exes were all really monsters' both miss; top credit reads the repeating amazing-then-monster arc as habitual splitting and names a map-each-flip-to-the-prior-event test that could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "A man seeks help for a sudden, severe hand-washing compulsion in which he feels permanently 'dirty.' In passing he mentions it started the week he ended a secret affair. In one paragraph, propose the strongest conclusion about what the content of this compulsion is expressing and describe how you would test it.",
+      "A man cannot name a single fault in his late father or a single virtue in his living mother; the father is 'perfect' and the mother is 'all bad,' and he resists any fact that blurs the line. In one paragraph, propose the strongest conclusion about what this rigid division is expressing and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that the specific content — feeling indelibly dirty and washing to get clean — literalizes a moral guilt about the affair that he cannot say in words, the body enacting the cleansing his conscience demands. This is a strong claim because it predicts checkable consequences: the compulsion should date precisely from the affair and no other change; the 'dirtiness' and washing should intensify around reminders of the betrayal and of the person he wronged; and it should ease as the guilt is spoken and worked through rather than scrubbed away. I would test it by pinning the onset to the affair, by checking whether the urge spikes near reminders of his partner or the affair, and by watching whether naming the guilt reduces the washing — refuted if the contamination fear predates the affair or spreads into many unrelated germ situations, which would fit an ordinary phobia.",
+        "The strongest conclusion is that the perfect-father/all-bad-mother division is splitting spread across two real people: by keeping his father flawlessly good and depositing every 'bad' feeling into his mother, he avoids the unbearable task of holding either parent as a mixture of love and disappointment. This is a strong claim because it predicts checkable consequences: each portrait should be absolute and defended against any exception; faults of the idealized father should be denied or minimized rather than integrated; and when the all-bad mother image is gently challenged, the 'bad' should migrate or intensify rather than soften into a mixed view. I would test it by offering one mild, true complication to each portrait and watching whether he can tolerate it, and by checking whether his anger has a designated container that never lets the good parent be touched — refuted if he can acknowledge real flaws in his father and real kindnesses in his mother while still judging her harshly, which would fit an integrated appraisal of genuinely different parents.",
       yieldAnchors: [
-        "Severe washing and a feeling of being 'dirty'",
-        "It began the week he ended the affair",
-        "The dirtiness feels moral and permanent",
+        "No fault allowed in the father, no virtue in the mother",
+        "Father is 'perfect,' mother is 'all bad'",
+        "He resists any fact that blurs the line",
       ],
       riskAnchors: [
-        "Onset dates precisely from the affair",
-        "The urge spikes near reminders of the betrayal",
-        "It eases as guilt is spoken rather than washed",
+        "Each portrait is absolute and defended against exceptions",
+        "Faults of the idealized father are denied or minimized",
+        "Challenged, the 'bad' migrates rather than integrates",
       ],
       defeatedBy: [
-        "The contamination fear predates the affair",
-        "It spreads into many unrelated germ situations",
+        "He can hold real flaws in the father and virtues in the mother",
+        "His judgment of each parent is proportionate to real evidence",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that the specific content — feeling indelibly dirty and washing to get clean — literalizes a moral guilt about the affair that he cannot say in words, the body enacting the cleansing his conscience demands. This is a strong claim because it predicts checkable consequences: the compulsion should date precisely from the affair and no other change; the 'dirtiness' and washing should intensify around reminders of the betrayal and of the person he wronged; and it should ease as the guilt is spoken and worked through rather than scrubbed away. I would test it by pinning the onset to the affair, by checking whether the urge spikes near reminders of his partner or the affair, and by watching whether naming the guilt reduces the washing — refuted if the contamination fear predates the affair or spreads into many unrelated germ situations, which would fit an ordinary phobia.",
+      "The strongest conclusion is that the perfect-father/all-bad-mother division is splitting spread across two real people: by keeping his father flawlessly good and depositing every 'bad' feeling into his mother, he avoids the unbearable task of holding either parent as a mixture of love and disappointment. This is a strong claim because it predicts checkable consequences: each portrait should be absolute and defended against any exception; faults of the idealized father should be denied or minimized rather than integrated; and when the all-bad mother image is gently challenged, the 'bad' should migrate or intensify rather than soften into a mixed view. I would test it by offering one mild, true complication to each portrait and watching whether he can tolerate it, and by checking whether his anger has a designated container that never lets the good parent be touched — refuted if he can acknowledge real flaws in his father and real kindnesses in his mother while still judging her harshly, which would fit an integrated appraisal of genuinely different parents.",
     explanation:
-      "'Washing has medical and habit causes, so the affair is irrelevant' is the dodge the exact onset defeats; top credit reads 'dirtiness' as literalized moral guilt and names a tracks-reminders-of-the-betrayal test that could refute it.",
+      "'People are entitled to favor one parent' earns near-zero; top credit reads the exceptionless good-parent/bad-parent split as a defense that keeps one love pure and names a try-a-mild-complication test that could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "A woman developed a compulsion to 'cancel out' any bad thought by deliberately thinking a good one and tapping a surface an equal number of times. It began after her infant nephew, whom she had briefly resented, died of sudden illness. In one paragraph, propose the strongest conclusion about what the content of this compulsion is expressing and describe how you would test it.",
+      "A patient's sense of herself swings between grandiosity ('I'm extraordinary, above the rules') and worthlessness ('I'm nothing, a complete failure') with each success or setback, and the two never blend. In one paragraph, propose the strongest conclusion about what this self-image swing is expressing and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that the undoing ritual — canceling a 'bad' thought with a 'good' one — enacts a magical attempt to take back the resentment she felt toward a nephew who then died, binding an unbearable guilt that her hostile feeling somehow caused the loss. This is a strong claim because it predicts checkable consequences: the compulsion should center on neutralizing 'bad' or hostile thoughts specifically rather than general anxiety; it should have begun with the death and no other change; and it should ease as the guilt over her ambivalence toward the child is named and separated from any real causal power. I would test it by checking whether the ritual targets hostile thoughts in particular, by pinning its onset to the death, and by watching whether voicing the guilt reduces it — refuted if the ritual predates the loss or has no connection to undoing 'bad' thoughts.",
+        "The strongest conclusion is that the grandiosity-to-worthlessness swing is splitting turned on the self: unable to hold a single self that is both capable and flawed, she lets each outcome convert her into an all-good or an all-bad self, so that a success makes her 'extraordinary' and a setback makes her 'nothing,' with no stable middle to absorb either. This is a strong claim because it predicts checkable consequences: her self-worth should track the latest result almost entirely rather than rest on a steady baseline; the two self-states should never coexist or moderate each other; and the grandiose self should return intact after the next success rather than chastened by the prior crash. I would test it by mapping her self-descriptions against recent wins and losses, by checking whether any integrated 'good-enough' self ever appears, and by watching whether each extreme resets with the next outcome — refuted if she maintains a stable, mixed self-appraisal through ups and downs and feels only proportionate pride or disappointment.",
       yieldAnchors: [
-        "Canceling 'bad' thoughts with 'good' ones and equal taps",
-        "It began after the nephew she resented died",
-        "The ritual is an undoing of hostile thoughts",
+        "Self swings between 'extraordinary' and 'nothing'",
+        "The swing tracks each success or setback",
+        "The two self-states never blend",
       ],
       riskAnchors: [
-        "The ritual targets hostile thoughts specifically",
-        "It began with the death and no other change",
-        "It eases as guilt over the ambivalence is named",
+        "Self-worth tracks the latest result, not a baseline",
+        "The two self-states never coexist or moderate",
+        "The grandiose self resets intact after a success",
       ],
       defeatedBy: [
-        "The ritual predates the nephew's death",
-        "It has nothing to do with undoing 'bad' thoughts",
+        "She holds a stable, mixed self-appraisal through ups and downs",
+        "Her pride and disappointment are proportionate and passing",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that the undoing ritual — canceling a 'bad' thought with a 'good' one — enacts a magical attempt to take back the resentment she felt toward a nephew who then died, binding an unbearable guilt that her hostile feeling somehow caused the loss. This is a strong claim because it predicts checkable consequences: the compulsion should center on neutralizing 'bad' or hostile thoughts specifically rather than general anxiety; it should have begun with the death and no other change; and it should ease as the guilt over her ambivalence toward the child is named and separated from any real causal power. I would test it by checking whether the ritual targets hostile thoughts in particular, by pinning its onset to the death, and by watching whether voicing the guilt reduces it — refuted if the ritual predates the loss or has no connection to undoing 'bad' thoughts.",
+      "The strongest conclusion is that the grandiosity-to-worthlessness swing is splitting turned on the self: unable to hold a single self that is both capable and flawed, she lets each outcome convert her into an all-good or an all-bad self, so that a success makes her 'extraordinary' and a setback makes her 'nothing,' with no stable middle to absorb either. This is a strong claim because it predicts checkable consequences: her self-worth should track the latest result almost entirely rather than rest on a steady baseline; the two self-states should never coexist or moderate each other; and the grandiose self should return intact after the next success rather than chastened by the prior crash. I would test it by mapping her self-descriptions against recent wins and losses, by checking whether any integrated 'good-enough' self ever appears, and by watching whether each extreme resets with the next outcome — refuted if she maintains a stable, mixed self-appraisal through ups and downs and feels only proportionate pride or disappointment.",
     explanation:
-      "'Rituals are just rituals, the death is coincidence' earns near-zero; top credit reads an undoing-of-hostile-thoughts beginning at the death as bound survivor guilt and names a targets-hostile-thoughts test that could refute it.",
+      "'Everyone's confidence goes up and down' earns near-zero; top credit reads a grandiosity-to-worthlessness swing tied to each outcome as splitting of the self and names a maps-to-the-latest-result test that could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "A man devoted to his wife is plagued by intrusive doubts — 'what if she's not the one?' — that surge precisely after their happiest, closest evenings and drive him to seek reassurance. In one paragraph, propose the strongest conclusion about what the content and timing of these doubts are expressing and describe how you would test it.",
+      "A client who has called her best friend 'the most loyal person alive' for years declares overnight, after the friend cancels one lunch, that the friend is 'a fake who never truly cared.' In one paragraph, propose the strongest conclusion about what this sudden reversal is expressing and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that doubt arriving right after closeness, rather than after conflict, is doing a job: the 'what if she's not the one' question manages a fear of intimacy itself, manufacturing distance exactly when nearness becomes threatening, so the content is less about her suitability than about his own difficulty tolerating love. This is a strong claim because it predicts checkable consequences: the doubts should reliably follow the warmest moments rather than fights or distance; reassurance should bring only brief relief before the doubt returns; and they should ease as the fear of dependency or engulfment beneath the closeness is named. I would test it by mapping the doubts against the relationship's warm and cool moments, by noting whether reassurance lastingly helps, and by checking whether addressing the fear of intimacy reduces them — refuted if the doubts track genuine problems with his wife or appear randomly rather than after closeness.",
+        "The strongest conclusion is that an overnight reversal from 'most loyal person alive' to 'a fake who never cared,' triggered by a single cancelled lunch, is splitting: the small let-down introduced 'bad' into an idealized friendship she cannot hold as both loving and imperfect, so the whole relationship is rewritten as false to keep love and disappointment from coexisting. This is a strong claim because it predicts checkable consequences: the devaluation should be wildly out of proportion to a cancelled lunch; years of genuine loyalty should be erased wholesale rather than weighed against the slight; and the loyal image should snap back the moment the friend reaches out and makes it right. I would test it by checking how proportionate the reaction is to the trigger, by asking whether any of the friend's prior loyalty still counts, and by watching whether reconnection instantly restores the idealized version — refuted if the cancellation actually capped a real, weighed pattern of the friend repeatedly abandoning her, which would make 'fake' a fair conclusion.",
       yieldAnchors: [
-        "Intrusive doubts about whether his wife is 'the one'",
-        "They surge after their closest evenings",
-        "They drive constant reassurance-seeking",
+        "Years of calling the friend 'the most loyal person alive'",
+        "One cancelled lunch makes her 'a fake who never cared'",
+        "The reversal happened overnight",
       ],
       riskAnchors: [
-        "Doubts follow the warmest moments specifically",
-        "Reassurance gives only brief relief",
-        "They ease as the fear of intimacy is named",
+        "The devaluation is out of proportion to the trigger",
+        "Years of loyalty are erased wholesale",
+        "The loyal image snaps back when the friend makes it right",
       ],
       defeatedBy: [
-        "The doubts track real problems with his wife",
-        "They appear randomly rather than after closeness",
+        "The cancellation caps a real, weighed pattern of abandonment",
+        "Her view of the friend stays stable and proportionate",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that doubt arriving right after closeness, rather than after conflict, is doing a job: the 'what if she's not the one' question manages a fear of intimacy itself, manufacturing distance exactly when nearness becomes threatening, so the content is less about her suitability than about his own difficulty tolerating love. This is a strong claim because it predicts checkable consequences: the doubts should reliably follow the warmest moments rather than fights or distance; reassurance should bring only brief relief before the doubt returns; and they should ease as the fear of dependency or engulfment beneath the closeness is named. I would test it by mapping the doubts against the relationship's warm and cool moments, by noting whether reassurance lastingly helps, and by checking whether addressing the fear of intimacy reduces them — refuted if the doubts track genuine problems with his wife or appear randomly rather than after closeness.",
+      "The strongest conclusion is that an overnight reversal from 'most loyal person alive' to 'a fake who never cared,' triggered by a single cancelled lunch, is splitting: the small let-down introduced 'bad' into an idealized friendship she cannot hold as both loving and imperfect, so the whole relationship is rewritten as false to keep love and disappointment from coexisting. This is a strong claim because it predicts checkable consequences: the devaluation should be wildly out of proportion to a cancelled lunch; years of genuine loyalty should be erased wholesale rather than weighed against the slight; and the loyal image should snap back the moment the friend reaches out and makes it right. I would test it by checking how proportionate the reaction is to the trigger, by asking whether any of the friend's prior loyalty still counts, and by watching whether reconnection instantly restores the idealized version — refuted if the cancellation actually capped a real, weighed pattern of the friend repeatedly abandoning her, which would make 'fake' a fair conclusion.",
     explanation:
-      "'Maybe he just shouldn't be with her' and 'doubts are random' both miss; top credit reads doubt peaking after closeness as a defense against intimacy and names a follows-the-warmest-moments test that could refute it.",
+      "'People drift and reassess friendships' and 'the friend was clearly never loyal' both miss; top credit reads an overnight loyal-to-fake reversal over one cancelled lunch as splitting and names a proportion-and-snap-back test that could refute it.",
   },
 ];
 
 export const section: SectionContent = {
-  slug: "symptom-meaning-psychodynamic-view",
-  title: "The Psychodynamic View: What the Symptom Might Be \"Saying\"",
+  slug: "splitting-black-and-white",
+  title: "Splitting and the Black-and-White World",
   weekNumber: 1,
   blurb:
-    "In a psychodynamic view the specific content of an obsession or compulsion is not random — the particular theme a symptom fixes on (harm, contamination, blasphemy, symmetry, doubt) often points to a feeling, wish, or fear the person can't say directly. This section is about reading that disguised communication from the evidence and naming a cheap test that could prove the reading wrong.",
+    "In borderline personality disorder, the same person can be adored one day and despised the next. This section is about splitting — the defense of keeping all-good and all-bad images of self and others apart because holding love and disappointment together feels intolerable — and about reading a sudden flip from the evidence and naming a cheap test that could prove the reading wrong.",
   lectureTitle:
-    "1.2 The Psychodynamic View: what the symptom might be saying",
-  body: `# The Psychodynamic View: What the Symptom Might Be "Saying"
+    "1.2 Splitting and the Black-and-White World",
+  body: `# Splitting and the Black-and-White World
 
-Two people can both have OCD and look nothing alike from the inside. One is terrified of stabbing her baby; another can't stop confessing imaginary sins; a third must even up every left with a right. The cycle — intrusion, spike, ritual, relief — is shared, but the *subject* each mind fixes on is wildly specific. The psychodynamic view starts from a simple, testable hunch: that specificity is not noise. The particular theme a symptom keeps returning to often points toward a feeling, wish, or fear the person can't say out loud. The symptom is a kind of disguised communication, and the content is the message.
+A patient calls her therapist the only person who has ever understood her. Two weeks later, after the therapist takes a vacation, the same patient calls her cold and useless, just like everyone else. Nothing about the therapist changed — but the *image* of her flipped completely, from all-good to all-bad, with nothing in between. This is splitting, and once you can see it you will see it everywhere in borderline personality disorder (BPD): in relationships, in self-image, and even in how a treatment team starts to argue with itself. The strong move is not to take either snapshot at face value, but to read the flip itself.
 
-## The symptom has a subject, not just a shape
+## All-good and all-bad, never both
 
-It is easy to stop at the shape of a compulsion — "he checks," "she washes," "he counts" — as if the form were the whole story. But OCD almost never picks its targets at random. The new mother's intrusions are about *her own child*, not strangers. The devout man's blasphemy erupts *during prayer*, not while watching television. The grieving son can't discard *his mother's* things while his own clutter goes out fine. When you notice that a symptom has a narrow, insistent subject, you've found the part worth reading. The shape tells you it's OCD; the subject tells you what it might be about.
+Most of us hold mixed pictures of the people we love: a partner can be kind *and* forgetful, a parent loving *and* maddening. Splitting is the loss of that "and." People and even the self get filed as wholly good or wholly bad, and the two files are never open at once. The same friend is "my whole world" or "a backstabbing fake," the same mother a "saint" or a "monster," the same self "extraordinary" or "nothing" — but never a single person who is both. When you notice that a description admits no exceptions and no middle, you have found a split worth reading.
 
-## Why the content is a clue, not noise
+## Why integration feels intolerable
 
-The reason content matters is that the mind tends to fix on what is most charged — what carries the strongest feeling and the least permission to be felt directly. A wish, a fear, or a hostility that can't be acknowledged doesn't disappear; it gets disguised, and the disguise often takes the shape of its opposite or its symbol. A man who feels morally "dirty" after an affair washes his hands. A woman whose world has spun out of control arranges her kitchen to the millimeter. The content is doing translation work: it converts something unspeakable into something the person can at least act on, even if they no longer recognize what it was about.
+Splitting is not laziness or drama; it is protection. For someone whose early world felt unsafe, holding love and hate toward the same person at the same time can feel unbearable — as if the anger would destroy the love, or the love would leave them defenseless against the hurt. Keeping the good image and the bad image apart is a way to keep the cherished good from being spoiled by disappointment, and to keep the rage from contaminating the love. The cost is that the inner world becomes brittle: any let-down can tip a whole relationship from one file into the other.
 
-## Themes that point somewhere
+## The flip follows a disappointment, not new information
 
-Certain themes recur because certain feelings are hard to own. Harm content — images of hurting the people one loves most — tends to show up where responsibility and love are heaviest, and almost always horrifies the person rather than tempting them. Contamination and washing often literalize a moral stain: guilt about something one did or wishes one hadn't. Blasphemy and "bad thoughts" cluster around exactly the faith or value the person is forbidden to question. Symmetry and undoing rituals tend to appear where something has been broken — a loss, a death, a piece of bad luck — as if balance could be restored by hand. None of these mappings is automatic, but each is a hypothesis you can check.
+Here is the most useful diagnostic fact: the switch from idealization to devaluation almost always tracks a *let-down*, not a discovery. The therapist did not turn cruel; she went on vacation. The boyfriend did not reveal a hidden character; he forgot a reservation. The mentor did not become a fraud; he gave one piece of criticism. A small disappointment introduces "bad" into an all-good image, and because that image cannot tolerate any bad, the whole person is rewritten as all-bad. So the question to ask is always: did the valuation flip because the person revealed something new, or because they let the patient down? Track the trigger and you can usually tell.
 
-## Content opposite to a wish often points away from it
+## Idealization and devaluation are two sides of one coin
 
-The most misread symptoms are the taboo ones — violent or sexual intrusions about a child, a loved one, a sacred figure. The instinct is to treat the thought as a confession of a secret desire. The evidence usually says the reverse. When the content disgusts the person, drives them to avoid the very situation it names, and runs exactly counter to who they are, that revulsion is the data: the mind has seized on the worst imaginable thing *because* it matters most, not because it is wished for. A gentle person's violent image and a doting father's taboo thought point toward anxiety about their own goodness, not toward hidden monstrosity. Reading it the lurid way isn't bold — it's wrong, and the person's horror is what defeats it.
+It is tempting to treat the warm phase as "the good part" and the contempt as "the problem," but they are the same mechanism running in two directions. An instant, total idealization — "you've already saved my life" after one session — is not a compliment to take at face value; it is the front half of a split, and the same all-or-nothing machinery that built the pedestal will tear it down at the first frustration. Reading the idealization as fragile lets you *predict* the devaluation instead of being surprised by it.
 
-## Timing and trigger decode the content
+## Splitting shows up between people too
 
-The cheapest way to read a symptom's meaning is to watch *when* it fires. A doubt that strikes hardest right after a couple's closest evenings is probably about closeness, not about the partner. A confession urge that follows every flash of anger at a controlling parent is probably about that anger. A number dreaded only because it matches the date of a death is carrying the death. Trigger-specificity turns a vague theme into a sharp claim: the symptom should appear in one situation and stay quiet in others, and that "should" is something you can check this week rather than speculate about forever.
+Splitting does not stay inside one mind. On an inpatient unit a patient may experience one nurse as an angel and another as abusive, and within days the staff are quietly feuding — each one drawn into playing the "good" or "bad" object the patient cannot hold together internally. This is "staff splitting," and the tell is not just the patient's words but the fracture in the team. When clinicians who normally agree find themselves split into the patient's defenders and accusers, the split has migrated outward, and naming it usually does more than relitigating who was right.
 
 ## Two ways to get it wrong
 
-There are two opposite failures, and the course penalizes both. The first is the shrug: "intrusive thoughts are just random brain noise; the content means nothing." That gives up before looking, and it's defeated the moment a symptom turns out to track one specific subject. The second is the lurid leap: reading a horrified mother's harm-thought as a murderous wish, or a gentle activist's violent image as suppressed savagery. That overreaches past the evidence, and it's defeated by the person's revulsion and avoidance. The strong reading lives between them — committed to a specific meaning the content actually supports, and no more.
+The course penalizes two opposite errors. The first is the shrug: "people change their minds," "everyone has favorites," "teenage friendships are fickle." That gives up before looking, and it is defeated the moment a reaction turns out to be a total, exceptionless reversal triggered by a trivial let-down. The second is the lurid leap: "she's lying about how she ever felt," "he's just manipulating people," "she's faking the enthusiasm." That overreaches past the evidence, and it is defeated by the sincerity and suddenness of the shift — the idealization was real, which is exactly why its collapse is splitting and not deceit.
 
-## Reading the meaning — and naming a test
+## Reading the flip — and naming a test
 
-A good interpretation does two things at once: it commits to what the content is saying *and* it names the cheap observation that would prove it wrong. "His washing literalizes guilt about the affair" is a real claim, because it predicts the urge should spike near reminders of the betrayal and ease once the guilt is spoken — and you can watch for that. The weak move stops at "he washes a lot" (which explains nothing) or retreats to "thoughts are random" (which explains away). The worst move is the lurid story the person's own horror defeats. The strongest reading binds the specific content in front of you and spells out the single result that would refute it.
+A good interpretation commits to what the flip is doing *and* names the cheap observation that would prove it wrong. "Her devaluation is splitting" is a real claim, because it predicts that the flip began at a disappointment rather than a discovery, that nothing good survives the reversal, and that the idealized image will return once the person makes amends — and you can watch for all three. The weak move stops at "she runs hot and cold" (which explains nothing) or retreats to "people just change" (which explains away). The worst move is the lurid story the patient's genuine prior love defeats. The strongest reading binds the specific reversal in front of you and spells out the single result — a proportionate, weighed judgment that holds someone as both good and flawed — that would refute it.
 
 ## In the real world
 
-Suppose a friend tells you she keeps getting a horrible image of shoving a stranger onto the train tracks, and she's so shaken she's started avoiding the platform. The dodge is "thoughts are just thoughts, ignore it" — kind, but it reads nothing. The lurid leap is "some part of you must want to" — cruel, and almost certainly false. The content move commits to a meaning: an image of harm she finds revolting, aimed at a defenseless stranger, in the one place she could act, probably expresses a fear of her own capacity to do harm, not a wish to. And it predicts: the thought should disgust rather than tempt her; it should cluster exactly where she could act and feels most responsible; and it should loosen once she can say out loud that having the thought is not the same as wanting it. Three cheap checks, each able to refute the reading. That is what taking the content seriously buys you — not a shrug at how strange minds are, and not a horror story, but a testable account of what the symptom is trying to say.`,
+Suppose a friend who raved last month about a new coworker now insists that coworker is "a two-faced snake who was always out to get me," and the change dates to the afternoon the coworker disagreed with her in a meeting. The dodge is "people clash at work, who knows" — easy, but it reads nothing. The lurid leap is "she's just being dramatic and manipulative" — and it ignores that her admiration was real. The splitting read commits to a meaning: a small disappointment introduced "bad" into an all-good image she cannot hold as mixed, so the whole coworker got rewritten as all-bad to keep the earlier warmth from being spoiled. And it predicts: the flip should track the disagreement rather than any real betrayal; nothing good about the coworker should survive it; and the warm image should come back the moment the coworker smooths things over. Three cheap checks, each able to refute the reading. That is what taking the flip seriously buys you — not a shrug at how changeable people are, and not an accusation, but a testable account of why love became hatred overnight.`,
   homework: {
     mcq,
     hybrid,

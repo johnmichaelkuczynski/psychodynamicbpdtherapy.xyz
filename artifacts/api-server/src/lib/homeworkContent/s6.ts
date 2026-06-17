@@ -9,407 +9,407 @@ const mcq: HomeworkItem[] = [
   {
     itemType: "mc",
     prompt:
-      "A man with severe contamination fears washes his hands until they crack and avoids every public doorknob. He tells his new therapist he wants to 'get to the deep root' through talking and refuses to try exposure, calling it 'just managing the surface.' Which conclusion best follows?",
+      "Three sessions in, a patient who had warmly thanked her therapist arrives icy and clipped after he started two minutes late, saying flatly that he 'clearly has more important people to see.' Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The best-supported move is to start with exposure and response prevention — the first-line, strongly evidenced treatment for contamination OCD — while folding in a meaning-focused understanding where it aids engagement, since insight-only talk has the weakest record here; test whether his washing and avoidance actually drop once he resists rituals during graded exposures, whether his refusal softens when ERP is framed as facing the fear rather than suppressing it, and whether any added meaning work improves his follow-through rather than replacing the exposures.",
+        text: "The strongest reading is that a split object-relations dyad has been activated in the room — a two-minute lateness recast the warm, attentive therapist as a neglectful, withholding figure and the patient as the discarded one — and the move is to name that dyad out loud rather than just apologize; test whether putting words to the shift ('right now I seem to have become someone who can't be bothered with you') softens her iciness within the session, whether the reaction is far larger than two minutes would warrant, and whether the same abandoned-by-a-cold-figure pattern recurs at other small ruptures.",
         credit: 1.0,
       },
       {
-        text: "Exposure is probably the way to go; we could suggest he give it a try at some point.",
+        text: "She might be reacting to the lateness more strongly than it deserves; we could gently explore that.",
         credit: 0.6,
       },
       {
-        text: "He seems to have bad contamination OCD and wants talk therapy.",
+        text: "She seems upset that the session started a couple of minutes late.",
         credit: 0.3,
       },
       {
-        text: "He's right that exposure only suppresses symptoms — real OCD lifts only once the buried childhood conflict is uncovered, so insight-only talk is the deeper cure.",
+        text: "She's just being manipulative and punishing him for attention, so the sensible thing is to ignore it and move on.",
         credit: 0,
       },
     ],
     correctAnswer:
-      "The best-supported move is to start with exposure and response prevention — the first-line, strongly evidenced treatment for contamination OCD — while folding in a meaning-focused understanding where it aids engagement, since insight-only talk has the weakest record here; test whether his washing and avoidance actually drop once he resists rituals during graded exposures, whether his refusal softens when ERP is framed as facing the fear rather than suppressing it, and whether any added meaning work improves his follow-through rather than replacing the exposures.",
+      "The strongest reading is that a split object-relations dyad has been activated in the room — a two-minute lateness recast the warm, attentive therapist as a neglectful, withholding figure and the patient as the discarded one — and the move is to name that dyad out loud rather than just apologize; test whether putting words to the shift ('right now I seem to have become someone who can't be bothered with you') softens her iciness within the session, whether the reaction is far larger than two minutes would warrant, and whether the same abandoned-by-a-cold-figure pattern recurs at other small ruptures.",
     explanation:
-      "Top credit commits to the best-supported plan (ERP first-line, meaning work as a complement) and names a does-it-drop-with-response-prevention test; 'exposure only suppresses, insight is the real cure' is the anti-evidence dodge the strong ERP record defeats.",
+      "Top credit names the activated abandoning-figure dyad and a does-naming-it-shift-it test; 'she's just being manipulative' is the overreach dodge that the wildly disproportionate, patterned reaction defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A clinician treating a woman who checks her locks dozens of times nightly says she 'doesn't believe in behavioral techniques' and will use only open-ended exploration, expecting the checking to fade as hidden conflicts surface. Which conclusion best follows?",
+      "A patient who often describes a contemptuous, belittling father spends a whole session minutely criticizing her therapist's word choices, tone, and 'amateur' technique, watching coldly for him to flinch. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "She seems to prefer one kind of therapy over another.",
-        credit: 0.3,
+        text: "She may be turning the criticism she's known onto her therapist; we could look into that.",
+        credit: 0.6,
       },
       {
-        text: "The strongest reading is that this plan is poorly matched to the evidence: checking OCD responds best to ERP (and often an SSRI), so meaning-focused work should complement rather than substitute for the exposure that actually reduces checking; test whether the checking falls when response prevention is added, whether months of insight-only talk leave the rituals essentially unchanged, and whether her openness to ERP grows once its track record is laid out.",
+        text: "The strongest reading is a role reversal of a contemptuous-critic/worthless-one dyad: the patient has stepped into the belittling-father role she usually suffers under and cast the therapist as the demeaned child, replaying the bond from the powerful end; the move is to name the reversal ('the harsh judge who used to land on you seems to be in the room — only aimed at me now') and predict it shifts the interaction; test whether naming it loosens the cold scrutiny, whether the contempt mirrors how she's described her father, and whether the pattern recurs whenever she feels vulnerable.",
         credit: 1.0,
       },
       {
-        text: "There's no real evidence any one approach beats another for OCD, so her exploration-only plan is as good as anything.",
-        credit: 0,
+        text: "She is being very critical of her therapist today.",
+        credit: 0.3,
       },
       {
-        text: "Exploration alone might not be enough; we could think about adding some behavioral work later.",
-        credit: 0.6,
+        text: "The therapist just needs thicker skin and better technique; this is ordinary feedback, not anything to interpret.",
+        credit: 0,
       },
     ],
     correctAnswer:
-      "The strongest reading is that this plan is poorly matched to the evidence: checking OCD responds best to ERP (and often an SSRI), so meaning-focused work should complement rather than substitute for the exposure that actually reduces checking; test whether the checking falls when response prevention is added, whether months of insight-only talk leave the rituals essentially unchanged, and whether her openness to ERP grows once its track record is laid out.",
+      "The strongest reading is a role reversal of a contemptuous-critic/worthless-one dyad: the patient has stepped into the belittling-father role she usually suffers under and cast the therapist as the demeaned child, replaying the bond from the powerful end; the move is to name the reversal ('the harsh judge who used to land on you seems to be in the room — only aimed at me now') and predict it shifts the interaction; test whether naming it loosens the cold scrutiny, whether the contempt mirrors how she's described her father, and whether the pattern recurs whenever she feels vulnerable.",
     explanation:
-      "Full credit commits to ERP (plus SSRI) as best-supported with meaning work as complement and names a does-checking-fall-with-response-prevention test; 'no approach beats another' is the anti-evidence dodge the ERP evidence defeats.",
+      "Full credit identifies the role reversal of a critic/worthless-one dyad and names a does-naming-it-shift-it test; 'just toughen up, it's ordinary feedback' is the dodge that ignores the transference and the father-matching contempt.",
   },
   {
     itemType: "mc",
     prompt:
-      "After a full course of ERP, a man's washing rituals have dropped by about eighty percent, but a nagging sense of being 'morally dirty' and unworthy persists — and it predates the OCD. Which conclusion best follows?",
+      "A new patient tells her therapist by the second session that he is 'the only person who has ever truly understood her,' unlike every useless clinician before him, and asks to meet far more often. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The strongest plan keeps the gains from ERP — which clearly worked on the rituals — and adds meaning-focused work on the older sense of unworthiness the exposures didn't touch, treating the two as complementary rather than rival; test whether the residual 'moral dirtiness' theme has its own history independent of the washing, whether it stays put while the rituals stay reduced, and whether exploring it brings relief without the compulsions returning.",
-        credit: 1.0,
-      },
-      {
-        text: "There might be something deeper still going on; we could keep talking about it.",
+        text: "The strong praise might not last; we could keep an eye on it.",
         credit: 0.6,
       },
       {
-        text: "The lingering feeling proves ERP failed and only suppressed the surface — he needs to drop the behavioral work and uncover the root instead.",
-        credit: 0,
+        text: "She thinks very highly of her new therapist.",
+        credit: 0.3,
       },
       {
-        text: "He's better at washing but still feels bad about himself.",
-        credit: 0.3,
+        text: "The strongest reading is that an all-good rescuer/rescued-child dyad has been activated and walled off from any disappointment — the idealization is the same splitting that will later flip to devaluation — so the move is to hold the frame, decline the escalation, and name the all-or-nothing quality rather than enjoy the praise; test whether the idealization is brittle (a small letdown flips it to contempt), whether 'everyone before was useless' reflects an all-good/all-bad split rather than a real account, and whether naming the pattern steadies it.",
+        credit: 1.0,
+      },
+      {
+        text: "She's right that he's finally the perfect therapist for her, so he should accept the praise and add the extra sessions she wants.",
+        credit: 0,
       },
     ],
     correctAnswer:
-      "The strongest plan keeps the gains from ERP — which clearly worked on the rituals — and adds meaning-focused work on the older sense of unworthiness the exposures didn't touch, treating the two as complementary rather than rival; test whether the residual 'moral dirtiness' theme has its own history independent of the washing, whether it stays put while the rituals stay reduced, and whether exploring it brings relief without the compulsions returning.",
+      "The strongest reading is that an all-good rescuer/rescued-child dyad has been activated and walled off from any disappointment — the idealization is the same splitting that will later flip to devaluation — so the move is to hold the frame, decline the escalation, and name the all-or-nothing quality rather than enjoy the praise; test whether the idealization is brittle (a small letdown flips it to contempt), whether 'everyone before was useless' reflects an all-good/all-bad split rather than a real account, and whether naming the pattern steadies it.",
     explanation:
-      "Top credit reads the durable 80% ERP gain plus a separate older theme as a case for integration and names a does-the-theme-have-its-own-history test; 'ERP failed, drop it' is the dodge the large, holding symptom reduction defeats.",
+      "Top credit reads the instant idealization as an activated, brittle all-good dyad and names a does-it-flip-with-a-letdown test; 'he really is the perfect therapist, so accept it' is the overreach the splitting structure defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A teenager with severe 'just right' ordering rituals is offered ERP. Her parents hesitate, asking whether deliberately triggering her anxiety is 'cruel' and whether gentle talking wouldn't be kinder. Which conclusion best follows?",
+      "A patient repeatedly texts her therapist at all hours between sessions, then in session says that a 'real' helper would always be available and that his insistence on set times proves he doesn't care. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The parents are right that provoking anxiety is harmful; talk-only therapy is the humane and equally effective choice.",
+        text: "She's right that a caring therapist would always be reachable, so he should loosen the frame and answer her texts to prove it.",
         credit: 0,
       },
       {
-        text: "They seem worried about the exposure part of treatment.",
-        credit: 0.3,
+        text: "Holding the boundary might be stirring something up; we could talk about the texting.",
+        credit: 0.6,
       },
       {
-        text: "The best-supported answer is that graded, collaborative ERP is the most effective treatment for these rituals and that its brief, planned distress is the mechanism of lasting relief rather than harm — while a kind, well-explained rationale improves uptake; test whether her ordering eases as she tolerates 'not-just-right' on purpose, whether her distress during exposures falls across sessions rather than mounting, and whether framing it collaboratively lowers the family's resistance.",
+        text: "The strongest reading is that the frame itself has activated an abandoning-caregiver/desperate-child dyad — the boundary is experienced as proof of a withholding, uncaring figure — so holding the frame while interpreting it is the treatment, not a lapse of warmth; the move is to keep the agreed structure and name the dyad ('the limit turns me into someone who doesn't care, the way others haven't'); test whether naming it lowers the between-session texting, whether the 'you don't care' reaction tracks the boundary rather than any real coldness, and whether the pattern repeats at every limit.",
         credit: 1.0,
       },
       {
-        text: "ERP is probably worth doing even if it's uncomfortable; we could reassure them.",
-        credit: 0.6,
+        text: "She wants her therapist to be available outside of sessions.",
+        credit: 0.3,
       },
     ],
     correctAnswer:
-      "The best-supported answer is that graded, collaborative ERP is the most effective treatment for these rituals and that its brief, planned distress is the mechanism of lasting relief rather than harm — while a kind, well-explained rationale improves uptake; test whether her ordering eases as she tolerates 'not-just-right' on purpose, whether her distress during exposures falls across sessions rather than mounting, and whether framing it collaboratively lowers the family's resistance.",
+      "The strongest reading is that the frame itself has activated an abandoning-caregiver/desperate-child dyad — the boundary is experienced as proof of a withholding, uncaring figure — so holding the frame while interpreting it is the treatment, not a lapse of warmth; the move is to keep the agreed structure and name the dyad ('the limit turns me into someone who doesn't care, the way others haven't'); test whether naming it lowers the between-session texting, whether the 'you don't care' reaction tracks the boundary rather than any real coldness, and whether the pattern repeats at every limit.",
     explanation:
-      "Full credit commits to graded ERP as most effective and names a does-distress-fall-across-sessions test; 'provoking anxiety is harmful, talk-only is equal' is the dodge the strong ERP evidence and habituation pattern defeat.",
+      "Full credit treats the frame as the trigger for an abandoning-caregiver dyad and names a does-naming-it-lower-the-texting test; 'loosen the frame to prove you care' is the dodge that collapses the structure and feeds the dyad.",
   },
   {
     itemType: "mc",
     prompt:
-      "A new mother is tormented by intrusive images of harming her baby and has never acted on them; she is horrified by the thoughts. Her therapist avoids any exposure, fearing it could 'plant ideas,' and offers only repeated reassurance that she's a good person. Which conclusion best follows?",
+      "A therapist, distracted, twice mixes up key facts of his patient's history and once calls her by another client's name; she becomes angry and says she doesn't feel safe continuing. He wonders whether her anger is 'just transference.' Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The strongest, evidence-based reading is that these are classic ego-dystonic harm obsessions, that repeated reassurance is itself a compulsion feeding the cycle, and that imaginal exposure plus response prevention is the supported treatment — with meaning-focused work optional alongside; test whether the reassurance brings only brief relief before the thoughts return, whether the intrusions ease as she faces them without seeking reassurance, and whether her horror at the thoughts (not any wish to act) confirms the obsessional rather than dangerous nature.",
+        text: "The strongest reading is that this is a real, warranted rupture, not a transference distortion to be interpreted away: the therapist actually erred, and the evidence-based move is to acknowledge the mistakes and repair before reading any deeper meaning; test whether a genuine acknowledgment and corrected attention restore her sense of safety, whether her anger is proportionate to real lapses rather than to a trivial trigger, and whether it resolves once the errors stop rather than recurring without cause.",
         credit: 1.0,
       },
       {
-        text: "She seems to have scary thoughts and her therapist is reassuring her.",
-        credit: 0.3,
-      },
-      {
-        text: "Reassurance might not be the best approach; we could consider exposure.",
+        text: "Some of her anger might be a fair response to real mistakes; we could acknowledge them.",
         credit: 0.6,
       },
       {
-        text: "Exposing her to those images is far too risky and could push her to act, so endless reassurance is the only safe path.",
+        text: "She is angry after her therapist made some errors.",
+        credit: 0.3,
+      },
+      {
+        text: "Her reaction is pure transference replaying an old betrayal, so he should interpret the dyad rather than apologize for the mix-ups.",
         credit: 0,
       },
     ],
     correctAnswer:
-      "The strongest, evidence-based reading is that these are classic ego-dystonic harm obsessions, that repeated reassurance is itself a compulsion feeding the cycle, and that imaginal exposure plus response prevention is the supported treatment — with meaning-focused work optional alongside; test whether the reassurance brings only brief relief before the thoughts return, whether the intrusions ease as she faces them without seeking reassurance, and whether her horror at the thoughts (not any wish to act) confirms the obsessional rather than dangerous nature.",
+      "The strongest reading is that this is a real, warranted rupture, not a transference distortion to be interpreted away: the therapist actually erred, and the evidence-based move is to acknowledge the mistakes and repair before reading any deeper meaning; test whether a genuine acknowledgment and corrected attention restore her sense of safety, whether her anger is proportionate to real lapses rather than to a trivial trigger, and whether it resolves once the errors stop rather than recurring without cause.",
     explanation:
-      "Top credit identifies ego-dystonic harm obsessions, flags reassurance as a compulsion, commits to imaginal ERP, and names a does-reassurance-only-briefly-relieve test; 'exposure could push her to act' is the dodge the evidence on harm obsessions defeats.",
+      "Top credit commits to repairing a genuine rupture and names a does-acknowledgment-restore-safety test; 'it's pure transference, interpret the dyad' is the overreach defeated by the fact that the therapist truly erred.",
   },
   {
     itemType: "mc",
     prompt:
-      "In session, a man with health-anxiety-tinged OCD asks his therapist the same question — 'But you're sure it's not cancer, right?' — a dozen times, calmer for a moment after each answer, then asking again. Which conclusion best follows?",
+      "Mid-session a patient escalates into shouting that her therapist is 'worthless garbage' and throws a pen at the wall, watching to see whether he retaliates or crumbles. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He's probably looking for reassurance; we could try giving him less of it.",
+        text: "She may be testing how he handles her anger; we could try to stay steady.",
         credit: 0.6,
       },
       {
-        text: "He clearly just needs more thorough reassurance; once he's fully convinced, the questioning will stop for good.",
+        text: "She's simply being abusive and manipulative, so the right response is to threaten to end therapy unless she behaves.",
         credit: 0,
       },
       {
-        text: "The best-supported reading is that the reassurance-seeking is a compulsion — relief is brief and the question returns, so answering feeds the loop — and the evidence-based move is response prevention: declining to supply certainty while supporting him to tolerate doubt; test whether each answer calms him only briefly before the next ask, whether the urge to ask falls when reassurance is withheld kindly, and whether his anxiety drops over time rather than spiking forever.",
+        text: "The strongest reading is that a sadistic-attacker/annihilated-victim dyad is live in the room and she is testing whether her aggression destroys the therapist or provokes counterattack; the TFP move is to contain it — stay intact, hold the safety frame, and name the dyad ('something in you needs to know if your rage wrecks me or makes me strike back') rather than retaliate or collapse; test whether calm containment plus naming de-escalates her, whether the attack aims at testing his survival rather than at a real provocation, and whether the pattern recurs when she fears closeness.",
         credit: 1.0,
       },
       {
-        text: "He keeps asking whether he's sick.",
+        text: "She is very angry and aggressive in the session today.",
         credit: 0.3,
       },
     ],
     correctAnswer:
-      "The best-supported reading is that the reassurance-seeking is a compulsion — relief is brief and the question returns, so answering feeds the loop — and the evidence-based move is response prevention: declining to supply certainty while supporting him to tolerate doubt; test whether each answer calms him only briefly before the next ask, whether the urge to ask falls when reassurance is withheld kindly, and whether his anxiety drops over time rather than spiking forever.",
+      "The strongest reading is that a sadistic-attacker/annihilated-victim dyad is live in the room and she is testing whether her aggression destroys the therapist or provokes counterattack; the TFP move is to contain it — stay intact, hold the safety frame, and name the dyad ('something in you needs to know if your rage wrecks me or makes me strike back') rather than retaliate or collapse; test whether calm containment plus naming de-escalates her, whether the attack aims at testing his survival rather than at a real provocation, and whether the pattern recurs when she fears closeness.",
     explanation:
-      "Full credit names reassurance-seeking as a compulsion, commits to response prevention, and names a brief-relief-then-return test; 'just give more reassurance' is the dodge the relief-then-return pattern defeats.",
+      "Full credit reads an attacker/victim dyad being tested and commits to containment plus naming, with a does-containment-de-escalate test; 'she's just abusive, threaten to quit' is the overreach that misses the dyad and the survival test.",
   },
   {
     itemType: "mc",
     prompt:
-      "A woman with long-standing, disabling OCD has gained partial relief from a high-dose SSRI but still spends two hours a day on rituals. She asks whether adding anything could help. Which conclusion best follows?",
+      "After many months of TFP, a patient who used to flip between 'you're my savior' and 'you're a fraud' now says, in a calm session, that her therapist is 'helpful but sometimes frustrating, and that's okay.' Which conclusion best follows?",
     mcOptions: [
       {
-        text: "She seems partly better on medication but still has rituals.",
-        credit: 0.3,
-      },
-      {
-        text: "The best-supported plan is to add ERP to the SSRI, since the combination outperforms either alone for residual OCD, while keeping the medication that already helped; test whether her daily ritual time falls further once structured exposures begin, whether gains hold as ERP skills are practiced between sessions, and whether dropping either component lets symptoms creep back.",
-        credit: 1.0,
-      },
-      {
-        text: "Maybe therapy could be added to the medication; we could look into options.",
+        text: "She might be seeing her therapist in a more balanced way; we could note the change.",
         credit: 0.6,
       },
       {
-        text: "Medication is a crutch that masks the real issue, so she should stop the SSRI and rely on uncovering the deeper cause alone.",
+        text: "Therapy can't really change someone's core personality, so this is probably just a good mood that means nothing.",
         credit: 0,
+      },
+      {
+        text: "The strongest reading is that this is early identity integration — the all-good and all-bad images of the therapist are starting to fuse into one whole, ambivalently held person, which is the central goal of TFP — and the move is to mark and consolidate it; test whether the integrated view holds under a real disappointment rather than instantly splitting again, whether the same fusing shows up in how she describes people outside therapy, and whether her self-descriptions grow correspondingly more stable and less contradictory.",
+        credit: 1.0,
+      },
+      {
+        text: "She has calmer, mixed feelings about her therapist now.",
+        credit: 0.3,
       },
     ],
     correctAnswer:
-      "The best-supported plan is to add ERP to the SSRI, since the combination outperforms either alone for residual OCD, while keeping the medication that already helped; test whether her daily ritual time falls further once structured exposures begin, whether gains hold as ERP skills are practiced between sessions, and whether dropping either component lets symptoms creep back.",
+      "The strongest reading is that this is early identity integration — the all-good and all-bad images of the therapist are starting to fuse into one whole, ambivalently held person, which is the central goal of TFP — and the move is to mark and consolidate it; test whether the integrated view holds under a real disappointment rather than instantly splitting again, whether the same fusing shows up in how she describes people outside therapy, and whether her self-descriptions grow correspondingly more stable and less contradictory.",
     explanation:
-      "Top credit commits to adding ERP to an effective SSRI (the best-supported combination) and names a does-ritual-time-fall test; 'medication is a crutch, stop it' is the anti-evidence dodge the partial SSRI benefit defeats.",
+      "Top credit reads the whole-object, ambivalent view as early identity integration and names a does-it-hold-under-disappointment test; 'personality can't change, it means nothing' is the nihilistic dodge that refuses to read a measurable shift.",
   },
   {
     itemType: "mc",
     prompt:
-      "A man finishes ERP with his checking nearly gone and his life reclaimed, but says he feels uneasy that he 'still doesn't understand why I ever got OCD in the first place.' Which conclusion best follows?",
+      "A patient who grew up under a scrutinizing, never-satisfied mother begins every session convinced her therapist is silently judging and grading her, and performs answers to 'pass.' Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Since he doesn't understand the cause, the ERP gains are hollow and bound to collapse; only uncovering the origin counts as real treatment.",
-        credit: 0,
-      },
-      {
-        text: "He might benefit from understanding it more; we could explore the why.",
+        text: "She may be expecting judgment that isn't there; we could explore where that comes from.",
         credit: 0.6,
       },
       {
-        text: "He's better but still curious about the cause.",
+        text: "He just needs to smile more and constantly reassure her she's doing well; it's only a matter of putting her at ease.",
+        credit: 0,
+      },
+      {
+        text: "She feels her therapist is judging her.",
         credit: 0.3,
       },
       {
-        text: "The strongest reading is that symptom relief and insight are separable goods: the ERP gains are real and worth protecting, and optional meaning-focused exploration can address his wish to understand and any lingering vulnerability without implying the behavioral work was incomplete; test whether his gains hold regardless of whether the 'why' is ever answered, whether exploring origins adds meaning without reviving rituals, and whether his unease is about understanding rather than returning symptoms.",
+        text: "The strongest reading is a critical-examiner/judged-child dyad imported into the room — the neutral, attentive therapist is experienced as the never-satisfied evaluator, and the patient as the one always failing inspection — so the move is to name the dyad rather than just reassure her; test whether naming it ('you seem certain I'm grading you the way you were always graded') eases the performing, whether the conviction of being judged tracks the old maternal pattern rather than anything he's actually done, and whether it recurs whenever she feels exposed.",
         credit: 1.0,
       },
     ],
     correctAnswer:
-      "The strongest reading is that symptom relief and insight are separable goods: the ERP gains are real and worth protecting, and optional meaning-focused exploration can address his wish to understand and any lingering vulnerability without implying the behavioral work was incomplete; test whether his gains hold regardless of whether the 'why' is ever answered, whether exploring origins adds meaning without reviving rituals, and whether his unease is about understanding rather than returning symptoms.",
+      "The strongest reading is a critical-examiner/judged-child dyad imported into the room — the neutral, attentive therapist is experienced as the never-satisfied evaluator, and the patient as the one always failing inspection — so the move is to name the dyad rather than just reassure her; test whether naming it ('you seem certain I'm grading you the way you were always graded') eases the performing, whether the conviction of being judged tracks the old maternal pattern rather than anything he's actually done, and whether it recurs whenever she feels exposed.",
     explanation:
-      "Full credit treats relief and insight as separable, protects the real ERP gains, offers optional meaning work, and names a do-gains-hold-without-the-why test; 'gains are hollow without the cause' is the dodge his reclaimed functioning defeats.",
+      "Full credit names the examiner/judged-child dyad and a does-naming-it-ease-the-performing test; 'just smile and reassure her' is the only-rapport dodge that bypasses the transference instead of interpreting it.",
   },
   {
     itemType: "mc",
     prompt:
-      "For three years a man has had insight-oriented therapy exploring the childhood roots of his symmetry compulsions. He can explain their origins eloquently, yet still spends hours arranging objects and is no better. Which conclusion best follows?",
+      "A patient who idolized her therapist for months arrives furious after he took a long-planned vacation, declaring he is 'just like all the rest — selfish and useless' and demanding to know why she ever trusted him. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The strongest, evidence-guided conclusion is that insight alone has not reduced the compulsions and the plan should change to include ERP, the treatment with the best record for exactly this presentation — keeping any genuinely useful understanding but no longer relying on it to do the work; test whether his ritual time finally falls once response prevention starts, whether three more months of insight-only talk leave the arranging unchanged, and whether his eloquent 'why' has translated into any behavioral shift.",
-        credit: 1.0,
-      },
-      {
-        text: "Maybe the current therapy isn't working; we could think about trying something else.",
+        text: "Her sudden anger might be a reaction to his being away; we could look at the timing.",
         credit: 0.6,
       },
       {
-        text: "Three years isn't long for deep work — he just needs to keep exploring until the true root finally surfaces.",
+        text: "She's right that any therapist who takes a vacation is selfish and unreliable, so the rupture simply proves he's a bad fit.",
         credit: 0,
       },
       {
-        text: "He understands his rituals but still does them.",
+        text: "The strongest reading is a split flipping in real time: the planned absence introduced disappointment into the all-good image, and rather than hold a therapist who is both caring and separately lived, the split converts him wholesale into the all-bad, abandoning figure; the move is to name the flip and its trigger; test whether the devaluation tracks the let-down (the vacation) rather than any new information about his character, whether the same idealize-then-trash pattern marks her other relationships, and whether naming the split begins to let the two images coexist.",
+        credit: 1.0,
+      },
+      {
+        text: "She is angry that her therapist went away on vacation.",
         credit: 0.3,
       },
     ],
     correctAnswer:
-      "The strongest, evidence-guided conclusion is that insight alone has not reduced the compulsions and the plan should change to include ERP, the treatment with the best record for exactly this presentation — keeping any genuinely useful understanding but no longer relying on it to do the work; test whether his ritual time finally falls once response prevention starts, whether three more months of insight-only talk leave the arranging unchanged, and whether his eloquent 'why' has translated into any behavioral shift.",
+      "The strongest reading is a split flipping in real time: the planned absence introduced disappointment into the all-good image, and rather than hold a therapist who is both caring and separately lived, the split converts him wholesale into the all-bad, abandoning figure; the move is to name the flip and its trigger; test whether the devaluation tracks the let-down (the vacation) rather than any new information about his character, whether the same idealize-then-trash pattern marks her other relationships, and whether naming the split begins to let the two images coexist.",
     explanation:
-      "Top credit reads three unchanged years as a case to switch to ERP and names a does-ritual-time-fall-once-response-prevention-starts test; 'just keep exploring' is the anti-evidence dodge the long, change-free course defeats.",
+      "Top credit reads the devaluation as a split flipping on a let-down and names a does-it-track-the-trigger test; 'a therapist who vacations really is selfish' is the overreach the ordinary, planned absence defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A woman started ERP for contamination OCD but quit after two sessions, saying the exposures felt 'mechanical and pointless' and that the therapist never seemed to grasp how terrifying it was. Which conclusion best follows?",
+      "A supervisor reviewing a stalled case insists the only problem is that the therapist 'hasn't built enough rapport,' and tells him to be warmer and more agreeable — ignoring that the patient swings between adoring and despising him each week. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "She seems to have dropped out of exposure therapy.",
+        text: "More rapport alone might not be the answer; we could consider what the swings mean.",
+        credit: 0.6,
+      },
+      {
+        text: "The patient's feelings about the therapist change a lot from week to week.",
         credit: 0.3,
       },
       {
-        text: "Her dropout proves ERP doesn't work for her; she should abandon exposure and seek a purely supportive approach instead.",
+        text: "The supervisor is right that this is purely a rapport problem, so being consistently warmer and more agreeable will fix the swings.",
         credit: 0,
       },
       {
-        text: "The best-supported reading is that ERP remains the indicated treatment but its delivery failed on engagement — a stronger alliance and a shared rationale (where meaning-focused understanding earns its keep) would likely improve follow-through; test whether she stays in treatment when exposures are built collaboratively and her fear is taken seriously, whether her dropout traces to the relationship rather than to ERP itself, and whether re-engaged exposures then reduce her washing.",
+        text: "The strongest reading is that the weekly swings between adoration and contempt are split dyads being activated in the relationship — the very material TFP works with — so 'just be warmer' would feed the idealization and postpone the work, not resolve it; the supported move is to keep a steady frame and interpret the activated dyad; test whether naming the swings reduces them where added warmth has not, whether the flips track disappointments rather than any deficit of niceness, and whether more agreeableness simply intensifies the next devaluation.",
         credit: 1.0,
-      },
-      {
-        text: "Maybe she needs a better connection with her therapist; we could try again.",
-        credit: 0.6,
       },
     ],
     correctAnswer:
-      "The best-supported reading is that ERP remains the indicated treatment but its delivery failed on engagement — a stronger alliance and a shared rationale (where meaning-focused understanding earns its keep) would likely improve follow-through; test whether she stays in treatment when exposures are built collaboratively and her fear is taken seriously, whether her dropout traces to the relationship rather than to ERP itself, and whether re-engaged exposures then reduce her washing.",
+      "The strongest reading is that the weekly swings between adoration and contempt are split dyads being activated in the relationship — the very material TFP works with — so 'just be warmer' would feed the idealization and postpone the work, not resolve it; the supported move is to keep a steady frame and interpret the activated dyad; test whether naming the swings reduces them where added warmth has not, whether the flips track disappointments rather than any deficit of niceness, and whether more agreeableness simply intensifies the next devaluation.",
     explanation:
-      "Full credit keeps ERP as indicated but locates the failure in engagement and names a does-she-stay-with-a-better-alliance test; 'ERP doesn't work for her, abandon it' is the dodge a two-session delivery failure can't support.",
+      "Full credit reads the swings as split dyads to interpret and names a does-naming-beat-added-warmth test; 'it's purely a rapport problem' is the only-rapport dodge that ignores the transference driving the flips.",
   },
   {
     itemType: "mc",
     prompt:
-      "A devout man is plagued by blasphemous intrusive thoughts during prayer and performs elaborate mental 'undoing' rituals to cancel them, leaving him exhausted and doubting his faith. Which conclusion best follows?",
+      "A patient who describes a fragile, depended-on mother spends sessions 'managing' her therapist — scheduling him, worrying he looks tired, insisting she's fine so she won't burden him. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He's probably struggling with religious OCD; we could look into treatment.",
+        text: "She might be taking care of her therapist instead of being cared for; we could notice that.",
         credit: 0.6,
       },
       {
-        text: "The best-supported plan is ERP adapted for scrupulosity — exposure to the feared thoughts with prevention of the mental undoing, ideally with input that respects his faith — while a meaning-focused view of why this content torments him can complement it; test whether the intrusions lose their grip as he stops neutralizing them, whether the mental rituals function as compulsions (brief relief, quick return), and whether his distress eases without his actually abandoning his religion.",
-        credit: 1.0,
-      },
-      {
-        text: "The thoughts are a genuine spiritual failing, so more prayer and stricter ritual — not exposure — are what he needs.",
+        text: "She's simply a considerate person, so there's nothing here to interpret.",
         credit: 0,
       },
       {
-        text: "He has upsetting religious thoughts and does mental rituals.",
+        text: "The strongest reading is a role reversal of a fragile-caregiver/parentified-child dyad: the patient has taken the caretaking role and cast the therapist as the depleted one who must be protected, replaying the bond from the caretaker's end so her own needs stay hidden; the move is to name the reversal; test whether naming it ('you've become the one looking after me, so your own needs disappear') lets her neediness surface, whether the caretaking mirrors her described role at home, and whether it recurs whenever she starts to depend on him.",
+        credit: 1.0,
+      },
+      {
+        text: "She spends her sessions worrying about her therapist.",
         credit: 0.3,
       },
     ],
     correctAnswer:
-      "The best-supported plan is ERP adapted for scrupulosity — exposure to the feared thoughts with prevention of the mental undoing, ideally with input that respects his faith — while a meaning-focused view of why this content torments him can complement it; test whether the intrusions lose their grip as he stops neutralizing them, whether the mental rituals function as compulsions (brief relief, quick return), and whether his distress eases without his actually abandoning his religion.",
+      "The strongest reading is a role reversal of a fragile-caregiver/parentified-child dyad: the patient has taken the caretaking role and cast the therapist as the depleted one who must be protected, replaying the bond from the caretaker's end so her own needs stay hidden; the move is to name the reversal; test whether naming it ('you've become the one looking after me, so your own needs disappear') lets her neediness surface, whether the caretaking mirrors her described role at home, and whether it recurs whenever she starts to depend on him.",
     explanation:
-      "Top credit commits to scrupulosity-adapted ERP with mental-ritual prevention plus optional meaning work and names a do-intrusions-fade-when-neutralizing-stops test; 'it's a spiritual failing needing more ritual' is the dodge the compulsive structure defeats.",
+      "Top credit identifies the role reversal of a caregiver/parentified-child dyad and a does-naming-it-surface-her-needs test; 'she's just considerate, nothing to read' is the dodge that the home-matching, need-hiding pattern defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A man agrees that ERP is the right treatment for his contamination OCD but freezes at the first exposure, saying he 'can't possibly' touch the trash can and wants to skip ahead to easier wins. Which conclusion best follows?",
+      "On an inpatient unit, a patient praises her TFP therapist as the only competent one while branding the nurses cruel and incompetent; the staff begin to argue with one another about her care. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He seems too scared to start the exposures.",
+        text: "The team disagreement might be linked to how she sees different staff; we could compare notes.",
+        credit: 0.6,
+      },
+      {
+        text: "She likes her therapist and dislikes the nurses.",
         credit: 0.3,
       },
       {
-        text: "If the first exposure is that frightening, ERP is simply too much for him and should be dropped entirely.",
+        text: "The nurses must simply be doing a worse job, so the solution is to assign her only to the therapist she likes.",
         credit: 0,
       },
       {
-        text: "The best-supported move is to keep ERP but build a gentler graded hierarchy so he starts with a tolerable step, since titrating difficulty preserves the treatment that works while meeting his fear; test whether he can complete a lower-rung exposure he rates as manageable, whether his distress on that step falls within the session, and whether success there raises his willingness to climb the hierarchy.",
+        text: "The strongest reading is splitting played out across the team — the all-good and all-bad images are distributed onto different staff, and the team's conflict is her internal split externalized — so the move is to recognize it, keep the team aligned, and interpret the split rather than take sides; test whether the team's friction eases once staff compare notes and refuse the all-good/all-bad casting, whether the praise-and-condemnation tracks who last disappointed her, and whether naming the pattern to her reduces the splitting.",
         credit: 1.0,
-      },
-      {
-        text: "Maybe the exposures are too hard right now; we could ease into it.",
-        credit: 0.6,
       },
     ],
     correctAnswer:
-      "The best-supported move is to keep ERP but build a gentler graded hierarchy so he starts with a tolerable step, since titrating difficulty preserves the treatment that works while meeting his fear; test whether he can complete a lower-rung exposure he rates as manageable, whether his distress on that step falls within the session, and whether success there raises his willingness to climb the hierarchy.",
+      "The strongest reading is splitting played out across the team — the all-good and all-bad images are distributed onto different staff, and the team's conflict is her internal split externalized — so the move is to recognize it, keep the team aligned, and interpret the split rather than take sides; test whether the team's friction eases once staff compare notes and refuse the all-good/all-bad casting, whether the praise-and-condemnation tracks who last disappointed her, and whether naming the pattern to her reduces the splitting.",
     explanation:
-      "Full credit keeps ERP but regrades the hierarchy and names a can-he-complete-a-lower-rung test; 'ERP is too much, drop it' is the dodge that titration directly answers.",
+      "Full credit reads staff splitting as the internal split externalized and names a does-the-team-friction-ease-when-aligned test; 'the nurses are just worse' is the overreach the team-wide, disappointment-tracking pattern defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A woman with checking OCD says she's read that 'OCD is a lifelong brain disease nothing can really fix,' so she sees no point starting treatment. She has never tried ERP or medication. Which conclusion best follows?",
+      "A therapist notices that whenever he reflects a patient's feeling accurately, she immediately accuses him of 'putting words in her mouth' and controlling her, then withdraws. He plans to simply stop reflecting. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "She's essentially right — OCD is largely untreatable, so trying ERP or medication is unlikely to be worth the effort.",
-        credit: 0,
-      },
-      {
-        text: "The strongest, evidence-based correction is that OCD is among the more treatable conditions — ERP and SSRIs have strong records and most patients improve substantially — so her pessimism is a reason to start, not to abstain; test whether a course of ERP measurably reduces her checking, whether her belief that 'nothing works' eases as she sees early gains, and whether her never having tried treatment, rather than treatment having failed, explains her despair.",
-        credit: 1.0,
-      },
-      {
-        text: "Treatment might help more than she thinks; we could encourage her to try.",
+        text: "Reflecting might be triggering her; we could adjust the approach.",
         credit: 0.6,
       },
       {
-        text: "She thinks OCD can't be treated and hasn't tried anything.",
+        text: "The strongest reading is that an intrusive-controller/invaded-self dyad is activated by closeness — being understood is experienced as being controlled — so abandoning reflection would collude with the dyad rather than resolve it; the move is to name the dyad and predict that naming it changes the interaction; test whether interpreting it ('the moment I get close, I seem to become someone forcing myself into you') reduces the accusing withdrawal, whether the reaction follows accurate empathy specifically rather than clumsy phrasing, and whether the same control-versus-closeness pattern marks her relationships.",
+        credit: 1.0,
+      },
+      {
+        text: "She doesn't like it when her therapist reflects her feelings.",
         credit: 0.3,
+      },
+      {
+        text: "He should just stop reflecting and keep things superficial so she stays comfortable.",
+        credit: 0,
       },
     ],
     correctAnswer:
-      "The strongest, evidence-based correction is that OCD is among the more treatable conditions — ERP and SSRIs have strong records and most patients improve substantially — so her pessimism is a reason to start, not to abstain; test whether a course of ERP measurably reduces her checking, whether her belief that 'nothing works' eases as she sees early gains, and whether her never having tried treatment, rather than treatment having failed, explains her despair.",
+      "The strongest reading is that an intrusive-controller/invaded-self dyad is activated by closeness — being understood is experienced as being controlled — so abandoning reflection would collude with the dyad rather than resolve it; the move is to name the dyad and predict that naming it changes the interaction; test whether interpreting it ('the moment I get close, I seem to become someone forcing myself into you') reduces the accusing withdrawal, whether the reaction follows accurate empathy specifically rather than clumsy phrasing, and whether the same control-versus-closeness pattern marks her relationships.",
     explanation:
-      "Top credit corrects with the strong ERP/SSRI evidence and names a does-a-course-reduce-checking test; 'OCD is largely untreatable' is the anti-evidence dodge her never having tried it exposes.",
+      "Top credit names the controller/invaded-self dyad triggered by closeness and a does-interpreting-it-reduce-the-withdrawal test; 'just stop reflecting and stay superficial' is the dodge that colludes with the dyad instead of working it.",
   },
   {
     itemType: "mc",
     prompt:
-      "A college student with moderate OCD wants 'just a pill, no therapy,' citing his busy schedule. His clinician notes his rituals are circumscribed and that he's willing to do homework. Which conclusion best follows?",
+      "A patient in crisis demands her therapist promise to answer late-night calls and says that refusing means he wants her to die; he is tempted to abandon the agreed crisis plan and promise unlimited availability. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Therapy might help alongside medication; we could mention it.",
+        text: "Promising unlimited availability might backfire; we could revisit the crisis plan together.",
         credit: 0.6,
       },
       {
-        text: "He wants medication and not therapy.",
-        credit: 0.3,
-      },
-      {
-        text: "Medication is the complete answer for OCD, so therapy would add nothing and he's right to skip it.",
+        text: "She's right that a caring therapist would always pick up, so he should promise unlimited late-night availability.",
         credit: 0,
       },
       {
-        text: "The best-supported guidance is that ERP is at least as effective as medication for OCD and the two combined often work best, so — given he'll do homework — offering ERP (with or without an SSRI) is better grounded than medication alone; test whether his ritual time falls more with added ERP than with the pill alone, whether his willingness to do exposures predicts a good response, and whether relapse is lower when he has learned ERP skills rather than relying on medication only.",
+        text: "The strongest reading is that the demand activates a life-or-death abandoning-figure dyad, and that collapsing the frame would confirm the dyad (only total availability counts as care) while undermining safety planning rather than improving it; the supported move is to hold the agreed crisis plan, keep her safe through it, and interpret the dyad; test whether naming it ('anything short of being always-on turns me into someone who wants you gone') lowers the all-or-nothing demand, whether the 'you want me to die' reaction tracks the limit rather than real abandonment, and whether the established crisis plan in fact keeps her safe.",
         credit: 1.0,
+      },
+      {
+        text: "She wants her therapist to be available during late-night crises.",
+        credit: 0.3,
       },
     ],
     correctAnswer:
-      "The best-supported guidance is that ERP is at least as effective as medication for OCD and the two combined often work best, so — given he'll do homework — offering ERP (with or without an SSRI) is better grounded than medication alone; test whether his ritual time falls more with added ERP than with the pill alone, whether his willingness to do exposures predicts a good response, and whether relapse is lower when he has learned ERP skills rather than relying on medication only.",
+      "The strongest reading is that the demand activates a life-or-death abandoning-figure dyad, and that collapsing the frame would confirm the dyad (only total availability counts as care) while undermining safety planning rather than improving it; the supported move is to hold the agreed crisis plan, keep her safe through it, and interpret the dyad; test whether naming it ('anything short of being always-on turns me into someone who wants you gone') lowers the all-or-nothing demand, whether the 'you want me to die' reaction tracks the limit rather than real abandonment, and whether the established crisis plan in fact keeps her safe.",
     explanation:
-      "Full credit commits to ERP (alone or combined) over medication-only given his willingness and names a does-ERP-add-benefit test; 'medication is the complete answer' is the dodge the comparative evidence defeats.",
+      "Full credit holds the frame, keeps safety through the plan, and names a does-naming-the-dyad-lower-the-demand test; 'promise unlimited availability' is the dodge that collapses the frame and confirms the dyad.",
   },
   {
     itemType: "mc",
     prompt:
-      "A therapist asserts that a single dramatic session uncovering a patient's repressed anger 'cured' his decade of severe washing OCD, and plans no exposure or follow-up. The patient still washes for an hour each morning. Which conclusion best follows?",
+      "A therapist privately formulates that, in the room, his patient is treating him as a cold critic while she plays the helpless failure — exactly her described bond with her father — and wonders whether to voice it. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The therapist thinks one session fixed the OCD, but the patient still washes.",
-        credit: 0.3,
-      },
-      {
-        text: "The breakthrough clearly worked, so the remaining washing will simply fade on its own without any further treatment.",
-        credit: 0,
-      },
-      {
-        text: "One session probably didn't cure it; we could keep working.",
+        text: "Voicing the pattern might help; we could try naming it.",
         credit: 0.6,
       },
       {
-        text: "The strongest, evidence-aware reading is that an hour of daily washing means the OCD is not cured, that single-session catharsis has no track record for OCD, and that the supported plan is ERP (with meaning-focused insight as a possible complement, not a substitute); test whether the washing actually stops in the days after the 'breakthrough,' whether structured exposure is what finally reduces it, and whether the dramatic insight, however real, changed the behavior at all.",
+        text: "He thinks she's relating to him the way she related to her father.",
+        credit: 0.3,
+      },
+      {
+        text: "Interpreting relationships is guesswork — you can never really know what's happening between two people — so he should keep it to himself.",
+        credit: 0,
+      },
+      {
+        text: "The strongest reading is that the here-and-now dyad (cold critic / helpless failure) is the disorder live in the session, and the central TFP intervention is to name it and predict that naming it shifts the interaction; the move is to interpret the activated dyad rather than wait it out; test whether voicing it ('right now I seem to be the critic and you the one who can't get it right') changes the felt atmosphere in the session, whether the configuration matches her account of her father, and whether the same dyad recurs and responds to being named over time.",
         credit: 1.0,
       },
     ],
     correctAnswer:
-      "The strongest, evidence-aware reading is that an hour of daily washing means the OCD is not cured, that single-session catharsis has no track record for OCD, and that the supported plan is ERP (with meaning-focused insight as a possible complement, not a substitute); test whether the washing actually stops in the days after the 'breakthrough,' whether structured exposure is what finally reduces it, and whether the dramatic insight, however real, changed the behavior at all.",
+      "The strongest reading is that the here-and-now dyad (cold critic / helpless failure) is the disorder live in the session, and the central TFP intervention is to name it and predict that naming it shifts the interaction; the move is to interpret the activated dyad rather than wait it out; test whether voicing it ('right now I seem to be the critic and you the one who can't get it right') changes the felt atmosphere in the session, whether the configuration matches her account of her father, and whether the same dyad recurs and responds to being named over time.",
     explanation:
-      "Top credit reads persistent daily washing as proof the OCD isn't cured and commits to ERP, naming a did-the-washing-actually-stop test; 'the breakthrough worked, it'll fade' is the overreach the continued hour of washing defeats.",
+      "Top credit commits to interpreting the live dyad and names a does-voicing-it-change-the-atmosphere test; 'you can never know what's between two people' is the nihilistic dodge that refuses to read the dyad at all.",
   },
 ];
 
@@ -417,425 +417,425 @@ const hybrid: HomeworkItem[] = [
   {
     itemType: "hybrid",
     prompt:
-      "A woman with contamination OCD has spent a year in insight-only therapy understanding her fears but still showers six times a day. She asks whether ERP would be 'giving up on the deeper work.' Which conclusion best follows?",
+      "A patient who has been collaborative for weeks turns silent and guarded the session after her therapist gently disagreed with her, treating him as though he is now firmly 'against' her. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "She seems unsure whether to add exposure therapy.",
+        text: "She seems quieter and more guarded after the disagreement.",
         credit: 0.3,
       },
       {
-        text: "The best-supported reading is that a year of insight without symptom change argues for adding ERP — the first-line treatment for contamination OCD — while keeping any genuinely useful understanding, so the two complement rather than compete; test whether her showering finally drops once response prevention begins, whether the insight-only year left the rituals essentially unchanged, and whether combining the approaches beats continuing insight alone.",
+        text: "The strongest reading is that a single mild disagreement activated an ally-turned-enemy dyad — the collaborative partner is suddenly recast as an opponent and she as the one under attack — so the move is to name the dyad rather than soften the disagreement away; test whether naming it ('one disagreement seems to have turned me into someone against you') loosens the guardedness, whether the shift is far larger than the disagreement warrants, and whether the same with-me-or-against-me flip recurs at other small frictions.",
         credit: 1.0,
       },
       {
-        text: "She's right that ERP would abandon the real work; only continued insight can resolve OCD at its root.",
+        text: "She's just sulking to punish him for not agreeing; he should wait until she gets over it.",
         credit: 0,
       },
       {
-        text: "Adding exposure might help; we could consider it.",
+        text: "The disagreement might have stirred something; we could gently look at it.",
         credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'add ERP because insight alone hasn't reduced the rituals' lead from the rival 'the insight work just needs more time,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'a mild disagreement flipped me into an enemy dyad' lead from the rival 'she's reasonably annoyed and will pass,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: introduce response prevention and watch whether her daily showering drops over a few weeks — a fall once ERP starts points to ERP being the missing active ingredient. My lead is refuted if her rituals were already steadily declining on insight alone before any ERP, which would suggest the talking just needed more time.",
+        "Cheapest test: name the flip ('one disagreement seems to have made me your opponent') and watch whether her guardedness eases within the session and whether the same all-or-nothing shift recurs at other tiny frictions — a quick shift plus a recurring pattern points to an activated dyad. My lead is refuted if the reaction is proportionate, settles on its own without any naming, and never recurs at small disagreements, which would make it ordinary annoyance.",
       yieldAnchors: [
-        "A year of insight-only therapy",
-        "She still showers six times a day",
-        "She fears ERP means abandoning deep work",
+        "Weeks of collaborative work",
+        "A single gentle disagreement",
+        "She now treats him as 'against' her",
       ],
       riskAnchors: [
-        "Showering drops once response prevention begins",
-        "The insight year left rituals unchanged",
-        "The combined approach beats insight alone",
+        "Naming the flip loosens the guardedness",
+        "The reaction far exceeds the disagreement",
+        "The with-me-or-against-me flip recurs at small frictions",
       ],
       defeatedBy: [
-        "Her rituals were already falling on insight alone",
-        "ERP makes no difference to her washing",
+        "The reaction is proportionate and passes on its own",
+        "It never recurs at other minor disagreements",
       ],
     },
     correctAnswer:
-      "The best-supported reading is that a year of insight without symptom change argues for adding ERP — the first-line treatment for contamination OCD — while keeping any genuinely useful understanding, so the two complement rather than compete; test whether her showering finally drops once response prevention begins, whether the insight-only year left the rituals essentially unchanged, and whether combining the approaches beats continuing insight alone.",
+      "The strongest reading is that a single mild disagreement activated an ally-turned-enemy dyad — the collaborative partner is suddenly recast as an opponent and she as the one under attack — so the move is to name the dyad rather than soften the disagreement away; test whether naming it ('one disagreement seems to have turned me into someone against you') loosens the guardedness, whether the shift is far larger than the disagreement warrants, and whether the same with-me-or-against-me flip recurs at other small frictions.",
     explanation:
-      "Full credit reads an unchanged year as a case to add first-line ERP and is paired with a does-showering-drop test that names its refutation; 'ERP abandons the real work' is the anti-evidence dodge the change-free year defeats.",
+      "Full credit names the ally-turned-enemy dyad and is paired with a does-naming-it-loosen-the-guardedness test; 'she's just sulking to punish him' is the overreach the disproportionate, patterned flip defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A man with severe checking OCD has done ERP with good results but relapses hard during high-stress months at work. He asks whether anything could make the gains sturdier. Which conclusion best follows?",
+      "A patient who repeatedly describes feeling unlovable begins arriving in revealing clothes and steering each session toward whether her therapist finds her attractive, growing dismissive when he keeps the focus on the work. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Something might help him hold his gains; we could explore add-ons.",
-        credit: 0.6,
-      },
-      {
-        text: "Relapse under stress means ERP failed, so he should abandon it and look only for the hidden emotional cause.",
-        credit: 0,
-      },
-      {
-        text: "The best-supported plan is to shore up the ERP gains — booster sessions and continued practice, and considering an SSRI, both of which have evidence for reducing relapse — while a meaning-focused look at what the stress stirs up can complement it; test whether stress-period relapses shrink with boosters or medication, whether his checking returns specifically under work pressure rather than randomly, and whether the relapses ease as he keeps practicing response prevention.",
+        text: "The strongest reading is that a desired-object/desiring-other dyad has been activated to test her worth — making the therapist want her would 'prove' she is lovable, and being kept to the work is felt as rejection — so the move is to hold the frame and name the dyad rather than be flattered or recoil; test whether naming it ('it seems that unless I want you, you must be unlovable') eases the seductiveness, whether the bid intensifies precisely when she feels most worthless, and whether the same prove-I'm-wanted pattern marks her other relationships.",
         credit: 1.0,
       },
       {
-        text: "He does well with ERP but relapses when stressed.",
+        text: "She seems to be acting seductively toward her therapist.",
         credit: 0.3,
+      },
+      {
+        text: "She's just trying to manipulate him with sex, so he should warn her to stop or end the therapy.",
+        credit: 0,
+      },
+      {
+        text: "Her behavior might be about more than attraction; we could explore it.",
+        credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'stress-linked relapse needs booster ERP and relapse-prevention support' lead from the rival 'the ERP never really worked,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'this is a prove-I'm-wanted dyad' lead from the rival 'she's simply attracted to him,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: check whether his checking is well-controlled during low-stress stretches and spikes only under work pressure — good baseline control with stress-linked flares points to relapse-prevention needs, not treatment failure. My lead is refuted if his checking is severe even during calm periods, which would mean ERP never achieved real control in the first place.",
+        "Cheapest test: track whether the seductive bids spike specifically when she feels most worthless and ease once the dyad ('unless I'm wanted I must be unlovable') is named — a worthlessness-linked surge that responds to naming points to the dyad, not simple attraction. My lead is refuted if the behavior bears no relation to her self-worth and continues unchanged after the dyad is accurately named and the frame held.",
       yieldAnchors: [
-        "ERP produced good results",
-        "He relapses hard during stressful months",
-        "He wants sturdier gains",
+        "She repeatedly feels unlovable",
+        "She steers sessions toward being found attractive",
+        "She turns dismissive when kept to the work",
       ],
       riskAnchors: [
-        "Relapses shrink with boosters or medication",
-        "Checking returns under work pressure specifically",
-        "Continued response prevention eases relapse",
+        "Naming the dyad eases the seductiveness",
+        "Bids intensify when she feels most worthless",
+        "A prove-I'm-wanted pattern marks other relationships",
       ],
       defeatedBy: [
-        "His checking is severe even in calm periods",
-        "ERP never reduced his checking at all",
+        "The bids bear no relation to her self-worth",
+        "The behavior is unchanged after the dyad is named",
       ],
     },
     correctAnswer:
-      "The best-supported plan is to shore up the ERP gains — booster sessions and continued practice, and considering an SSRI, both of which have evidence for reducing relapse — while a meaning-focused look at what the stress stirs up can complement it; test whether stress-period relapses shrink with boosters or medication, whether his checking returns specifically under work pressure rather than randomly, and whether the relapses ease as he keeps practicing response prevention.",
+      "The strongest reading is that a desired-object/desiring-other dyad has been activated to test her worth — making the therapist want her would 'prove' she is lovable, and being kept to the work is felt as rejection — so the move is to hold the frame and name the dyad rather than be flattered or recoil; test whether naming it ('it seems that unless I want you, you must be unlovable') eases the seductiveness, whether the bid intensifies precisely when she feels most worthless, and whether the same prove-I'm-wanted pattern marks her other relationships.",
     explanation:
-      "Full credit treats stress-linked relapse as a relapse-prevention problem (boosters, SSRI, optional meaning work) and is paired with a controlled-when-calm test; 'ERP failed, abandon it' is the dodge his good baseline results defeat.",
+      "Full credit reads a prove-I'm-wanted dyad and pairs it with a does-it-track-worthlessness-and-respond-to-naming test; 'she's just manipulating him with sex' is the overreach the worthlessness link defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A man has intrusive thoughts of stabbing loved ones and has hidden every knife in the house; he's never been violent and is sickened by the thoughts. A counselor refuses imaginal exposure as 'too dangerous.' Which conclusion best follows?",
+      "After an unusually warm, connected session, a patient opens the next one by coldly informing her therapist that she's been thinking he is 'actually pretty incompetent' and is considering quitting. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The counselor is right; exposing him to those images could trigger violence, so avoidance is the responsible plan.",
-        credit: 0,
-      },
-      {
-        text: "The best-supported reading is that these are ego-dystonic harm obsessions with no link to actual violence, that the knife-hiding and avoidance are compulsions feeding the cycle, and that imaginal ERP is the indicated, safe treatment; test whether his horror (not urge) at the thoughts marks them as obsessional, whether the intrusions intensify the more he avoids, and whether facing the images without neutralizing reduces their grip.",
-        credit: 1.0,
-      },
-      {
-        text: "He has violent thoughts and his counselor won't do exposure.",
+        text: "She's changed her mind about her therapist's competence.",
         credit: 0.3,
       },
       {
-        text: "Exposure might actually be appropriate here; we could reconsider.",
+        text: "The strongest reading is that the warmth itself triggered a devaluation: closeness raised the threat of dependence and abandonment, so a contemptuous-judge/incompetent-other dyad is deployed to push the therapist away and regain safety — the cold attack follows the connection, not any failure of his; the move is to name the sequence; test whether the devaluation reliably follows close sessions rather than poor ones, whether naming it ('the closer we got, the more I had to find me useless') softens the urge to quit, and whether the same retreat-after-closeness pattern marks her life.",
+        credit: 1.0,
+      },
+      {
+        text: "She's right that he's incompetent — the good session was a fluke and she should probably quit.",
+        credit: 0,
+      },
+      {
+        text: "The timing after a good session is striking; we could look at what closeness stirs up.",
         credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'these are ego-dystonic obsessions treatable with imaginal ERP' lead from the rival 'these signal genuine danger requiring avoidance,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'closeness triggered a defensive devaluation' lead from the rival 'she has a fair, growing doubt about his competence,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: assess his reaction to the thoughts — revulsion, fear, and active resistance mark ego-dystonic obsessions, not intent. My lead is refuted if he reports any wish, plan, or pleasure connected to the thoughts, which would shift the picture from OCD toward genuine risk needing a different response.",
+        "Cheapest test: check whether the devaluation reliably follows the warmest, most connected sessions rather than genuinely poor ones, and whether naming the closeness-then-retreat sequence softens the urge to quit — that timing pattern points to a defense against dependence. My lead is refuted if her competence concerns track real lapses in his work and persist regardless of how close the prior session was.",
       yieldAnchors: [
-        "Intrusive harm thoughts about loved ones",
-        "He has hidden every knife",
-        "He is sickened by the thoughts and never violent",
+        "An unusually warm, connected session",
+        "She opens the next session with cold contempt",
+        "She is suddenly considering quitting",
       ],
       riskAnchors: [
-        "Horror not urge marks them obsessional",
-        "Intrusions worsen with avoidance",
-        "Facing images without neutralizing reduces them",
+        "Devaluation follows close sessions, not poor ones",
+        "Naming the sequence softens the urge to quit",
+        "A retreat-after-closeness pattern marks her life",
       ],
       defeatedBy: [
-        "He reports a wish or plan to act",
-        "He feels pleasure rather than dread at the thoughts",
+        "Her doubts track real lapses in his work",
+        "The contempt is unrelated to how close the prior session was",
       ],
     },
     correctAnswer:
-      "The best-supported reading is that these are ego-dystonic harm obsessions with no link to actual violence, that the knife-hiding and avoidance are compulsions feeding the cycle, and that imaginal ERP is the indicated, safe treatment; test whether his horror (not urge) at the thoughts marks them as obsessional, whether the intrusions intensify the more he avoids, and whether facing the images without neutralizing reduces their grip.",
+      "The strongest reading is that the warmth itself triggered a devaluation: closeness raised the threat of dependence and abandonment, so a contemptuous-judge/incompetent-other dyad is deployed to push the therapist away and regain safety — the cold attack follows the connection, not any failure of his; the move is to name the sequence; test whether the devaluation reliably follows close sessions rather than poor ones, whether naming it ('the closer we got, the more I had to find me useless') softens the urge to quit, and whether the same retreat-after-closeness pattern marks her life.",
     explanation:
-      "Full credit identifies ego-dystonic harm obsessions, names the avoidance as compulsive, commits to imaginal ERP, and is paired with an assess-his-reaction test; 'exposure could trigger violence' is the dodge the harm-obsession evidence defeats.",
+      "Full credit ties the devaluation to a defense against closeness and pairs it with a does-it-follow-the-warm-sessions test; 'he really is incompetent, quit' is the overreach the closeness-linked timing defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A woman with OCD calls her husband twenty times a day to ask whether she 'said something offensive'; he patiently reassures her each time, and her anxiety briefly settles before she calls again. Which conclusion best follows?",
+      "A patient spends sessions issuing crisp instructions about how her therapist should 'do his job better,' treating his comments as the bumbling efforts of an underling she must supervise. She has described a contemptuous, demanding boss who runs her ragged. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "She keeps calling her husband for reassurance.",
-        credit: 0.3,
-      },
-      {
-        text: "Maybe the reassurance isn't helping; we could look at that.",
+        text: "She might be replaying a work dynamic with her therapist; we could notice that.",
         credit: 0.6,
       },
       {
-        text: "The best-supported reading is that the husband's reassurance is an accommodation that maintains the compulsion — brief relief, quick return — and the evidence-based move is to coach the family to reduce reassurance while she practices tolerating doubt; test whether each reassurance calms her only briefly, whether the call frequency drops when reassurance is gently withheld, and whether her anxiety falls over time rather than escalating without it.",
+        text: "The strongest reading is a role reversal of a contemptuous-boss/inadequate-underling dyad: she has taken the demanding-boss position she suffers under and cast the therapist as the bumbling subordinate, living the bond from the powerful end so she isn't the one found wanting; the move is to name the reversal; test whether naming it ('the demanding boss who runs you ragged is in the room — but now I'm the one falling short') changes the supervising tone, whether the role mirrors her described boss, and whether it recurs whenever she feels exposed to judgment.",
         credit: 1.0,
       },
       {
-        text: "Her husband should simply reassure her more completely and more often until she finally feels certain and stops calling.",
+        text: "She's bossing her therapist around in sessions.",
+        credit: 0.3,
+      },
+      {
+        text: "She's just being arrogant and controlling, so he should put her in her place.",
         credit: 0,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'reassurance is an accommodation maintaining the compulsion' lead from the rival 'she just needs enough reassurance to feel settled,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'role reversal of a boss/underling dyad' lead from the rival 'she's simply a controlling person,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: have the husband briefly reduce reassurance and watch whether her calling urge falls over days rather than climbing forever — a decline points to reassurance having fed the loop. My lead is refuted if reducing reassurance makes her distress rise without limit and never settle, while abundant reassurance reliably ends the calls for good.",
+        "Cheapest test: name the reversal and check whether the supervising tone surfaces specifically when she feels exposed to judgment and whether it mirrors the contemptuous boss she's described — a fear-linked, template-matching pattern points to a role reversal. My lead is refuted if the bossiness is constant across all states, bears no resemblance to her boss, and doesn't shift when the reversal is accurately named.",
       yieldAnchors: [
-        "Twenty reassurance calls a day",
-        "Each answer settles her only briefly",
-        "She calls again right after",
+        "She supervises the therapist like an underling",
+        "She treats his comments as bumbling",
+        "She describes a contemptuous, demanding boss",
       ],
       riskAnchors: [
-        "Each reassurance calms only briefly",
-        "Call frequency drops when reassurance is reduced",
-        "Anxiety falls over time without reassurance",
+        "Naming the reversal changes the supervising tone",
+        "The role mirrors her described boss",
+        "It recurs when she feels exposed to judgment",
       ],
       defeatedBy: [
-        "Full reassurance permanently ends the calls",
-        "Reducing reassurance helps her settle faster",
+        "The bossiness is constant regardless of feeling judged",
+        "It bears no resemblance to her described boss",
       ],
     },
     correctAnswer:
-      "The best-supported reading is that the husband's reassurance is an accommodation that maintains the compulsion — brief relief, quick return — and the evidence-based move is to coach the family to reduce reassurance while she practices tolerating doubt; test whether each reassurance calms her only briefly, whether the call frequency drops when reassurance is gently withheld, and whether her anxiety falls over time rather than escalating without it.",
+      "The strongest reading is a role reversal of a contemptuous-boss/inadequate-underling dyad: she has taken the demanding-boss position she suffers under and cast the therapist as the bumbling subordinate, living the bond from the powerful end so she isn't the one found wanting; the move is to name the reversal; test whether naming it ('the demanding boss who runs you ragged is in the room — but now I'm the one falling short') changes the supervising tone, whether the role mirrors her described boss, and whether it recurs whenever she feels exposed to judgment.",
     explanation:
-      "Full credit names family reassurance as accommodation and commits to reducing it, paired with a does-the-urge-fall-when-withheld test; 'just reassure her more' is the dodge the brief-relief-then-return pattern defeats.",
+      "Full credit names the role reversal of a boss/underling dyad and a does-naming-it-change-the-tone test; 'she's just arrogant, put her in her place' is the overreach that the fear-linked, boss-matching pattern defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A man's contamination rituals resolved with ERP, but he then notices he picks fights with anyone who gets close — a pattern that long predates the OCD and that the exposures didn't touch. Which conclusion best follows?",
+      "A therapist arrives flustered and ten minutes late after losing his notes, then double-books and has to cut the session short. The patient, usually steady, is hurt and says she feels like an afterthought; the therapist files it under 'her abandonment transference.' Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The returning relationship trouble proves the ERP only suppressed his OCD, which has now resurfaced as conflict; he should drop ERP and uncover the root.",
-        credit: 0,
-      },
-      {
-        text: "There might be a separate issue worth exploring; we could keep talking.",
+        text: "Some of this hurt is probably a fair reaction to real disorganization; we could acknowledge it.",
         credit: 0.6,
       },
       {
-        text: "The best-supported reading is that the ERP genuinely cleared the contamination OCD and what remains is a distinct, older relational pattern better served by meaning-focused work — complement, not replacement; test whether the contamination rituals stay gone while the conflict pattern persists, whether the fighting has its own history independent of the OCD, and whether exploring it helps without the washing returning.",
-        credit: 1.0,
+        text: "It's her abandonment dyad firing, so he should interpret it rather than apologize for being late and double-booking.",
+        credit: 0,
       },
       {
-        text: "His OCD is better but he fights with people close to him.",
+        text: "She's hurt after a disorganized, shortened session.",
         credit: 0.3,
+      },
+      {
+        text: "The strongest reading is that this is a real, warranted rupture rather than transference to interpret away: the therapist genuinely treated her carelessly, and feeling like an afterthought is an accurate response, so the move is to own the lapses and repair before reading any deeper meaning; test whether a sincere acknowledgment and reliable next sessions restore her trust, whether her hurt is proportionate to real carelessness rather than a trivial trigger, and whether it resolves once his organization does rather than recurring without cause.",
+        credit: 1.0,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'the conflict is a separate older pattern for meaning-focused work' lead from the rival 'the OCD has resurfaced in disguise,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'this is a real rupture to repair' lead from the rival 'this is her abandonment transference to interpret,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: check whether the contamination rituals stay absent while the fighting continues, and whether the conflict pattern existed before the OCD ever began — independence on both points marks it as a separate issue. My lead is refuted if the washing returns in lockstep with the conflicts or the fighting only started as the OCD lifted, which would suggest one underlying problem shifting form.",
+        "Cheapest test: sincerely acknowledge the real lapses and run the next sessions reliably, then watch whether her trust returns — repair working where interpretation would have dismissed her points to a warranted rupture. My lead is refuted if the same feeling of being an afterthought recurs with full force even when he is perfectly organized and attentive, which would point back toward a transference pattern.",
       yieldAnchors: [
-        "ERP resolved the contamination rituals",
-        "He picks fights with anyone close",
-        "The conflict pattern predates the OCD",
+        "The therapist was late, lost notes, and double-booked",
+        "He cut the session short",
+        "She, usually steady, feels like an afterthought",
       ],
       riskAnchors: [
-        "Rituals stay gone while conflict persists",
-        "The fighting has its own independent history",
-        "Exploring it helps without rituals returning",
+        "Acknowledgment and reliability restore her trust",
+        "Her hurt is proportionate to real carelessness",
+        "It resolves once his organization does",
       ],
       defeatedBy: [
-        "Washing returns in step with the conflicts",
-        "The fighting began only as the OCD lifted",
+        "The afterthought feeling recurs even when he's attentive",
+        "Her reaction is wildly out of proportion to the lapses",
       ],
     },
     correctAnswer:
-      "The best-supported reading is that the ERP genuinely cleared the contamination OCD and what remains is a distinct, older relational pattern better served by meaning-focused work — complement, not replacement; test whether the contamination rituals stay gone while the conflict pattern persists, whether the fighting has its own history independent of the OCD, and whether exploring it helps without the washing returning.",
+      "The strongest reading is that this is a real, warranted rupture rather than transference to interpret away: the therapist genuinely treated her carelessly, and feeling like an afterthought is an accurate response, so the move is to own the lapses and repair before reading any deeper meaning; test whether a sincere acknowledgment and reliable next sessions restore her trust, whether her hurt is proportionate to real carelessness rather than a trivial trigger, and whether it resolves once his organization does rather than recurring without cause.",
     explanation:
-      "Full credit reads a cleared OCD plus a separate older pattern as a case for complementary meaning work and is paired with a do-rituals-stay-gone test; 'the OCD resurfaced in disguise' is the dodge the independent history defeats.",
+      "Full credit commits to repairing a genuine rupture and pairs it with a does-acknowledgment-restore-trust test; 'it's just her abandonment transference, interpret it' is the overreach defeated by the therapist's real carelessness.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A therapist tells a parent that ERP for her son's counting rituals is 'shallow symptom-management' and that only years of depth work can truly help, despite the rituals consuming most of the boy's day. Which conclusion best follows?",
+      "A patient who has spoken movingly about wanting closeness begins missing or arriving very late to sessions whenever the work goes well, then apologizes profusely and books extra time. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The therapist's plan might be too slow; we could get another opinion.",
-        credit: 0.6,
-      },
-      {
-        text: "The therapist is right that ERP only manages symptoms, so the family should commit to years of depth work instead.",
+        text: "She's just disorganized about appointments; he should focus on better scheduling.",
         credit: 0,
       },
       {
-        text: "The best-supported reading is that this advice is poorly aligned with the evidence — ERP is first-line and effective for counting rituals, and depth work, where useful, should complement rather than delay it; test whether the rituals fall once ERP begins, whether the proposed depth-only plan would leave the boy impaired for years first, and whether combining approaches serves him better than waiting on insight alone.",
+        text: "The strongest reading is that the lateness is an enactment of an approach-avoidance dyad: as closeness grows, the threat of dependence and abandonment rises, so distancing through absence regulates the fear — and the profuse apology plus extra booking pulls the therapist back in; the move is to name the enactment rather than just tighten scheduling; test whether the missed and late sessions cluster after good ones, whether naming the pattern ('we get close, then you need distance') reduces the no-shows, and whether the same closeness-then-flight pattern marks her relationships.",
         credit: 1.0,
       },
       {
-        text: "The therapist prefers depth work over ERP.",
+        text: "She keeps missing or coming late to her sessions.",
         credit: 0.3,
+      },
+      {
+        text: "The timing might mean something; we could keep an eye on the no-shows.",
+        credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'ERP should lead and depth work can complement' lead from the rival 'depth work alone is the genuine cure,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'the lateness enacts a closeness-then-flight dyad' lead from the rival 'she's simply disorganized,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: start ERP and track whether his daily ritual time falls within weeks — a clear drop shows ERP is doing real work, not just 'managing.' My lead is refuted if ERP produces no change while a course of depth-only work measurably reduces his counting, which would support the therapist's claim.",
+        "Cheapest test: chart whether the missed and very-late sessions cluster right after the warmest, most productive ones and whether naming the closeness-then-distance pattern reduces them — that timing link points to an enactment, not mere disorganization. My lead is refuted if her absences are randomly scattered regardless of how the work is going and are unaffected when the pattern is named.",
       yieldAnchors: [
-        "ERP dismissed as shallow management",
-        "Rituals consume most of the boy's day",
-        "Only years of depth work offered",
+        "She speaks movingly of wanting closeness",
+        "She misses or comes late when work goes well",
+        "She over-apologizes and books extra time",
       ],
       riskAnchors: [
-        "Rituals fall once ERP begins",
-        "The depth-only plan leaves him impaired for years",
-        "The combined approach beats insight alone",
+        "Absences cluster after good sessions",
+        "Naming the pattern reduces the no-shows",
+        "A closeness-then-flight pattern marks her relationships",
       ],
       defeatedBy: [
-        "ERP produces no change in his rituals",
-        "Depth-only work alone clearly reduces the counting",
+        "Absences are random regardless of how the work is going",
+        "Naming the pattern changes nothing",
       ],
     },
     correctAnswer:
-      "The best-supported reading is that this advice is poorly aligned with the evidence — ERP is first-line and effective for counting rituals, and depth work, where useful, should complement rather than delay it; test whether the rituals fall once ERP begins, whether the proposed depth-only plan would leave the boy impaired for years first, and whether combining approaches serves him better than waiting on insight alone.",
+      "The strongest reading is that the lateness is an enactment of an approach-avoidance dyad: as closeness grows, the threat of dependence and abandonment rises, so distancing through absence regulates the fear — and the profuse apology plus extra booking pulls the therapist back in; the move is to name the enactment rather than just tighten scheduling; test whether the missed and late sessions cluster after good ones, whether naming the pattern ('we get close, then you need distance') reduces the no-shows, and whether the same closeness-then-flight pattern marks her relationships.",
     explanation:
-      "Full credit reads the advice as misaligned with the ERP evidence and commits to ERP-led care with optional depth work, paired with a do-rituals-fall test; 'ERP only manages symptoms' is the anti-evidence dodge.",
+      "Full credit reads the no-shows as an approach-avoidance enactment and pairs it with a do-absences-cluster-after-good-sessions test; 'she's just disorganized' is the dodge the post-closeness clustering defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A woman has cycled through three SSRIs over five years with only modest OCD relief and has never been offered psychotherapy. She wonders if she's simply 'treatment-resistant.' Which conclusion best follows?",
+      "A patient praises her TFP therapist endlessly while bitterly trashing her former therapist as 'a cold, useless fraud,' and wants her current therapist to agree how terrible the last one was. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "She's tried several medications without much benefit.",
+        text: "She prefers her current therapist to her previous one.",
         credit: 0.3,
       },
       {
-        text: "The best-supported reading is that 'treatment-resistant' is premature when she's never had ERP — the most effective psychotherapy for OCD and a standard next step for partial medication response; test whether adding ERP reduces her symptoms beyond what medication achieved, whether her 'resistance' reflects an untried treatment rather than a true ceiling, and whether the gains hold as she practices response prevention.",
+        text: "The strongest reading is splitting across time: the all-good image now resting on the current therapist and the all-bad image dumped on the former one are two halves of the same instability, and being recruited to agree would harden the split rather than resolve it; the move is to decline the casting and name the pattern; test whether the same idealize-then-devalue arc that swallowed the last therapist begins to surface toward the current one, whether the trashing tracks past disappointments rather than fair appraisal, and whether naming the split loosens the all-good/all-bad casting.",
         credit: 1.0,
       },
       {
-        text: "Maybe therapy is worth trying before calling it resistant; we could suggest it.",
-        credit: 0.6,
+        text: "The last therapist was clearly a fraud, so the current one should agree and validate her.",
+        credit: 0,
       },
       {
-        text: "Three failed medications confirm she's treatment-resistant, so further treatment is unlikely to help.",
-        credit: 0,
+        text: "Her view of the old therapist might be one-sided; we could be a bit cautious about agreeing.",
+        credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'she's not truly resistant because ERP is untried' lead from the rival 'she has genuinely treatment-resistant OCD,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'this is splitting across time' lead from the rival 'her current therapist really is better and her account is fair,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: add a proper course of ERP and measure whether her symptoms drop beyond the modest medication response — improvement shows the earlier 'resistance' was just an untried treatment. My lead is refuted if well-delivered ERP, fully practiced, produces no meaningful change on top of medication, which would support genuine treatment resistance.",
+        "Cheapest test: decline to join the all-bad casting and watch whether the same idealize-then-devalue arc that consumed the former therapist starts to appear toward the current one, especially after disappointments — that recurring arc points to splitting. My lead is refuted if her account of the old therapist holds up as a balanced, evidence-based appraisal and she sustains a stable, whole-object view of the current therapist through real letdowns.",
       yieldAnchors: [
-        "Three SSRIs over five years",
-        "Only modest relief",
-        "Never offered psychotherapy",
+        "Endless praise for the current therapist",
+        "Bitter trashing of the former one",
+        "She wants the current therapist to agree",
       ],
       riskAnchors: [
-        "ERP reduces symptoms beyond medication",
-        "Resistance reflects an untried treatment",
-        "Gains hold with response prevention",
+        "The idealize-then-devalue arc starts toward the current therapist",
+        "The trashing tracks past disappointments, not fair appraisal",
+        "Naming the split loosens the all-good/all-bad casting",
       ],
       defeatedBy: [
-        "Well-delivered ERP produces no change",
-        "She has fully tried ERP already",
+        "Her account of the old therapist is balanced and evidence-based",
+        "She holds a stable whole-object view through real letdowns",
       ],
     },
     correctAnswer:
-      "The best-supported reading is that 'treatment-resistant' is premature when she's never had ERP — the most effective psychotherapy for OCD and a standard next step for partial medication response; test whether adding ERP reduces her symptoms beyond what medication achieved, whether her 'resistance' reflects an untried treatment rather than a true ceiling, and whether the gains hold as she practices response prevention.",
+      "The strongest reading is splitting across time: the all-good image now resting on the current therapist and the all-bad image dumped on the former one are two halves of the same instability, and being recruited to agree would harden the split rather than resolve it; the move is to decline the casting and name the pattern; test whether the same idealize-then-devalue arc that swallowed the last therapist begins to surface toward the current one, whether the trashing tracks past disappointments rather than fair appraisal, and whether naming the split loosens the all-good/all-bad casting.",
     explanation:
-      "Full credit reframes 'resistance' as an untried first-line treatment and commits to ERP, paired with a does-ERP-add-benefit test; 'three failed meds confirm resistance' is the dodge the never-tried-ERP fact defeats.",
+      "Full credit reads splitting across time and pairs it with a does-the-arc-recur-toward-the-current-therapist test; 'the last one was a fraud, agree with her' is the overreach that joining the split would only harden.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A man following a strict manualized ERP protocol completes every exposure but reports feeling like a 'compliance robot,' and his gains are flat. His therapist suspects the rote delivery isn't engaging the real fear. Which conclusion best follows?",
+      "As a session reaches a tender moment about her childhood, a patient suddenly goes flat and far away, says she 'can't feel anything,' and seems not quite present in the room. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Maybe the exposures need adjusting; we could rework them.",
-        credit: 0.6,
-      },
-      {
-        text: "Flat gains prove ERP doesn't suit him, so he should switch to insight-only therapy with no exposures.",
-        credit: 0,
-      },
-      {
-        text: "He's doing the exposures but not improving much.",
+        text: "She's gone quiet and detached in the session.",
         credit: 0.3,
       },
       {
-        text: "The best-supported reading is that ERP remains the right treatment but must target his actual feared outcome with real emotional engagement — exposures that don't activate the fear don't extinguish it — and a meaning-focused understanding of what he most dreads can sharpen them; test whether gains improve once exposures provoke genuine anxiety tied to his core fear, whether his flat response traces to under-activated exposures, and whether tailored exposures outperform the rote protocol.",
+        text: "She's just bored or shutting down because the therapy isn't working, so he should change the subject.",
+        credit: 0,
+      },
+      {
+        text: "The strongest reading is that closeness to painful material triggered a protective withdrawal — a dissociative retreat in which an overwhelmed-self/unreachable-figure dyad takes over to escape unbearable affect — so the move is to slow down, help her stay present, and name what just happened rather than push on or drop it; test whether the flatness reliably appears at the most affect-laden moments, whether gently naming it ('something here felt too much, and you stepped away') brings her back into the room, and whether the same shutdown recurs when feeling runs high.",
         credit: 1.0,
+      },
+      {
+        text: "The timing near painful material is notable; we could ease off a little.",
+        credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'rote exposures aren't engaging his real fear' lead from the rival 'ERP simply doesn't work for him,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'this is a protective dissociative retreat from overwhelming affect' lead from the rival 'she's simply bored or disengaged,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: redesign exposures to hit his actual feared outcome and check whether he reports real anxiety during them and better gains afterward — activation plus improvement shows the problem was engagement, not ERP. My lead is refuted if exposures that clearly provoke his core fear still yield no improvement, which would point away from a delivery problem.",
+        "Cheapest test: note whether the flatness appears precisely at the most affect-laden moments and whether gently naming it brings her back into the room — affect-triggered shutdown that responds to grounding points to a protective retreat, not boredom. My lead is refuted if she goes blank at neutral, low-feeling moments and stays disengaged regardless of how emotionally charged the material is.",
       yieldAnchors: [
-        "He completes every exposure",
-        "He feels like a compliance robot",
-        "His gains are flat",
+        "Detachment hits at a tender childhood moment",
+        "She says she can't feel anything",
+        "She seems not quite present in the room",
       ],
       riskAnchors: [
-        "Gains improve with fear-activating exposures",
-        "Flat response traces to under-activation",
-        "Tailored exposures beat the rote protocol",
+        "Flatness appears at the most affect-laden moments",
+        "Naming it gently brings her back",
+        "The shutdown recurs when feeling runs high",
       ],
       defeatedBy: [
-        "Fear-activating exposures still yield nothing",
-        "He was never actually completing the exposures",
+        "She goes blank at neutral, low-feeling moments",
+        "She stays disengaged regardless of emotional charge",
       ],
     },
     correctAnswer:
-      "The best-supported reading is that ERP remains the right treatment but must target his actual feared outcome with real emotional engagement — exposures that don't activate the fear don't extinguish it — and a meaning-focused understanding of what he most dreads can sharpen them; test whether gains improve once exposures provoke genuine anxiety tied to his core fear, whether his flat response traces to under-activated exposures, and whether tailored exposures outperform the rote protocol.",
+      "The strongest reading is that closeness to painful material triggered a protective withdrawal — a dissociative retreat in which an overwhelmed-self/unreachable-figure dyad takes over to escape unbearable affect — so the move is to slow down, help her stay present, and name what just happened rather than push on or drop it; test whether the flatness reliably appears at the most affect-laden moments, whether gently naming it ('something here felt too much, and you stepped away') brings her back into the room, and whether the same shutdown recurs when feeling runs high.",
     explanation:
-      "Full credit keeps ERP but demands fear-activating, meaning-informed exposures and is paired with a does-activation-improve-gains test; 'ERP doesn't suit him, switch to insight-only' is the dodge that under-activated exposures explain.",
+      "Full credit reads the shutdown as a protective dissociative retreat from affect and pairs it with a does-it-hit-the-charged-moments test; 'she's just bored, change the subject' is the dodge the affect-linked timing defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "Two clinicians debate a case of moderate OCD: one insists on ERP alone, the other on psychodynamic therapy alone. The patient is capable, motivated, and asks what gives her the best odds. Which conclusion best follows?",
+      "Over a year of TFP, a patient who once experienced her therapist as a cold critic each week now mostly relates to him as a steady collaborator, and the cold-critic dyad surfaces only briefly and softens when he names it. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Since the experts disagree, no approach is better than another, so she may as well pick whichever she likes.",
+        text: "She seems to be getting along better with her therapist lately.",
+        credit: 0.3,
+      },
+      {
+        text: "You can't really measure something as fuzzy as a therapy relationship, so it's impossible to say anything changed.",
         credit: 0,
       },
       {
-        text: "The best-supported answer is that ERP (with or without an SSRI) has the strongest evidence and should anchor the plan, while psychodynamic, meaning-focused work can complement it for engagement or residual themes — not replace it; test whether ERP reduces her rituals as expected, whether adding meaning work improves adherence or addresses leftover issues, and whether an insight-only plan would leave the core symptoms largely untouched.",
+        text: "The strongest reading is that interpreting the dyad over time is doing its work: the cold-critic configuration now arises less often and yields when named, which is the predicted signature of an integrating internal world and the central mechanism of TFP; the move is to keep interpreting while consolidating the gains; test whether the dyad keeps surfacing less and softening faster when named, whether her self- and other-descriptions outside therapy grow more stable and whole, and whether the integrated stance holds under a real disappointment rather than collapsing back into all-good/all-bad.",
         credit: 1.0,
       },
       {
-        text: "ERP is probably the safer bet; we could lean that way.",
+        text: "Naming the pattern seems to be helping; we could keep doing that.",
         credit: 0.6,
-      },
-      {
-        text: "The clinicians disagree about which therapy to use.",
-        credit: 0.3,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'ERP should anchor with meaning work as complement' lead from the rival 'psychodynamic therapy alone is just as likely to work,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'interpreting the dyad is driving real integration' lead from the rival 'she's just having a calmer stretch that means little,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: begin with ERP and track whether her ritual time falls as the evidence predicts — a clear reduction confirms ERP as the right anchor. My lead is refuted if, in her case, insight-only therapy reduces the rituals just as much and as quickly as ERP, which would undercut anchoring on ERP.",
+        "Cheapest test: track whether the cold-critic dyad keeps arising less often and softening faster specifically after it's named, and whether her descriptions of others outside therapy grow more whole — naming-linked change plus spillover points to genuine integration. My lead is refuted if the calmer relating bears no relation to whether the dyad is interpreted and instantly collapses back into all-good/all-bad at the first real disappointment.",
       yieldAnchors: [
-        "Moderate OCD",
-        "She is capable and motivated",
-        "She asks for the best odds",
+        "A year of TFP interpreting the cold-critic dyad",
+        "The dyad now surfaces only briefly",
+        "It softens when the therapist names it",
       ],
       riskAnchors: [
-        "ERP reduces rituals as expected",
-        "Meaning work improves adherence or residual themes",
-        "Insight-only leaves core symptoms untouched",
+        "The dyad keeps surfacing less and softening faster when named",
+        "Self- and other-descriptions outside therapy grow more whole",
+        "The integrated stance holds under a real disappointment",
       ],
       defeatedBy: [
-        "Insight-only reduces rituals as fast as ERP",
-        "ERP fails to change her rituals at all",
+        "The calm is unrelated to whether the dyad is interpreted",
+        "She collapses into all-good/all-bad at the first letdown",
       ],
     },
     correctAnswer:
-      "The best-supported answer is that ERP (with or without an SSRI) has the strongest evidence and should anchor the plan, while psychodynamic, meaning-focused work can complement it for engagement or residual themes — not replace it; test whether ERP reduces her rituals as expected, whether adding meaning work improves adherence or addresses leftover issues, and whether an insight-only plan would leave the core symptoms largely untouched.",
+      "The strongest reading is that interpreting the dyad over time is doing its work: the cold-critic configuration now arises less often and yields when named, which is the predicted signature of an integrating internal world and the central mechanism of TFP; the move is to keep interpreting while consolidating the gains; test whether the dyad keeps surfacing less and softening faster when named, whether her self- and other-descriptions outside therapy grow more stable and whole, and whether the integrated stance holds under a real disappointment rather than collapsing back into all-good/all-bad.",
     explanation:
-      "Full credit anchors on the best-supported ERP plan with complementary meaning work and is paired with a does-ERP-reduce-rituals test; 'experts disagree so anything goes' is the dodge the comparative evidence defeats.",
+      "Full credit reads less-frequent, naming-responsive dyads as the signature of integration and pairs it with a does-it-hold-under-disappointment test; 'you can't measure a relationship' is the nihilistic dodge that refuses to read a clear, trackable change.",
   },
 ];
 
@@ -843,183 +843,188 @@ const written: HomeworkItem[] = [
   {
     itemType: "written",
     prompt:
-      "A woman with disabling contamination OCD has spent two years in insight-oriented therapy. She can describe the childhood roots of her fears in vivid detail, yet she still washes until her skin bleeds and avoids leaving home. She wonders whether she should 'stay the course' or try something else. In one paragraph, propose the strongest conclusion about what the evidence supports for her care and describe how you would test it.",
+      "A patient who has warmly trusted her therapist for two months arrives one day cold and accusatory, certain he 'secretly can't stand her' and is only pretending to care; nothing unusual happened in the prior session, though she had felt unusually close and understood at the end of it. In one paragraph, propose the strongest conclusion about what is happening in the room and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that two years of insight without symptom change is good reason to change the plan toward exposure and response prevention — the first-line, best-supported treatment for contamination OCD — while keeping whatever understanding has genuinely helped, since meaning-focused work and ERP are complements rather than rivals. This is a strong, falsifiable claim: it predicts her washing and avoidance should fall once structured response prevention begins, that the prior insight-only years left the rituals essentially unchanged, and that combining the approaches should beat continuing insight alone. I would test it by introducing a graded ERP course and tracking her daily washing time and housebound hours, by reviewing whether her symptoms moved at all during the insight-only period, and by watching whether gains appear specifically once exposures start rather than from more talking — and I would revise toward the insight-only plan only if her rituals were already steadily declining without ERP.",
+        "The strongest conclusion is that a split object-relations dyad has been activated by the closeness itself: feeling unusually understood raised the threat of depending on someone who could then abandon her, so the warm, caring therapist is suddenly converted into a secretly hostile, pretending figure — a contemptuous-rejecter/unwanted-child dyad live in the room — and the move is to name the dyad rather than defend his sincerity. This is a strong, falsifiable claim: it predicts the cold accusation followed the most connected session rather than any real coldness, that putting the shift into words ('the closer we got, the more I seem to have become someone who can't stand you') will soften the accusation within the session, and that the same idealize-then-recoil pattern will recur at other moments of closeness. I would test it by checking whether the reversal tracks closeness rather than any provocation, by naming the dyad and watching whether her iciness eases, and by looking for the same closeness-then-attack arc in her outside relationships — and I would revise toward a real rupture if it turned out he had actually slighted her, or if the reaction were proportionate, isolated, and gone on its own.",
       yieldAnchors: [
-        "Two years of insight-oriented therapy",
-        "She washes until her skin bleeds",
-        "She can describe the roots but hasn't changed",
+        "Two months of warm trust",
+        "She had felt unusually close and understood",
+        "She now insists he secretly can't stand her",
       ],
       riskAnchors: [
-        "Washing falls once response prevention begins",
-        "The insight-only years left rituals unchanged",
-        "The combined approach beats insight alone",
+        "The reversal followed the most connected session",
+        "Naming the dyad softens the accusation",
+        "The closeness-then-recoil arc recurs elsewhere",
       ],
       defeatedBy: [
-        "Her rituals were already declining on insight alone",
-        "ERP produces no change in her washing",
+        "He had actually slighted her, making it a real rupture",
+        "The reaction was proportionate, isolated, and self-resolving",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that two years of insight without symptom change is good reason to change the plan toward exposure and response prevention — the first-line, best-supported treatment for contamination OCD — while keeping whatever understanding has genuinely helped, since meaning-focused work and ERP are complements rather than rivals. This is a strong, falsifiable claim: it predicts her washing and avoidance should fall once structured response prevention begins, that the prior insight-only years left the rituals essentially unchanged, and that combining the approaches should beat continuing insight alone. I would test it by introducing a graded ERP course and tracking her daily washing time and housebound hours, by reviewing whether her symptoms moved at all during the insight-only period, and by watching whether gains appear specifically once exposures start rather than from more talking — and I would revise toward the insight-only plan only if her rituals were already steadily declining without ERP.",
+      "The strongest conclusion is that a split object-relations dyad has been activated by the closeness itself: feeling unusually understood raised the threat of depending on someone who could then abandon her, so the warm, caring therapist is suddenly converted into a secretly hostile, pretending figure — a contemptuous-rejecter/unwanted-child dyad live in the room — and the move is to name the dyad rather than defend his sincerity. This is a strong, falsifiable claim: it predicts the cold accusation followed the most connected session rather than any real coldness, that putting the shift into words ('the closer we got, the more I seem to have become someone who can't stand you') will soften the accusation within the session, and that the same idealize-then-recoil pattern will recur at other moments of closeness. I would test it by checking whether the reversal tracks closeness rather than any provocation, by naming the dyad and watching whether her iciness eases, and by looking for the same closeness-then-attack arc in her outside relationships — and I would revise toward a real rupture if it turned out he had actually slighted her, or if the reaction were proportionate, isolated, and gone on its own.",
     explanation:
-      "Under the inverted standard, 'stay the course, the deep work just needs more time' earns near-zero; top credit commits to evidence-based ERP and names a does-washing-fall-once-response-prevention-starts test that could refute it.",
+      "Under the inverted standard, 'you can't really know what's going on inside her' earns near-zero; top credit names the activated dyad triggered by closeness and a does-naming-it-soften-the-accusation test that could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "A father is tortured by intrusive thoughts of harming his children, has never been violent, and is so frightened by the thoughts that he refuses to be alone with them and has quit his job to avoid 'risk.' A previous therapist treated him only with reassurance and avoidance. In one paragraph, propose the strongest conclusion about what the evidence supports and describe how you would test it.",
+      "In session, a patient who describes a harshly critical mother grows cold and imperious, dissecting every word her therapist says as 'sloppy' and 'beneath a real professional,' and watches for him to shrink. In one paragraph, propose the strongest conclusion about the dyad in the room and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that these are classic ego-dystonic harm obsessions — marked by horror rather than any wish to act — that the reassurance and avoidance are compulsions feeding the cycle, and that the evidence-based treatment is exposure and response prevention, including imaginal exposure to the feared thoughts, with meaning-focused work optional alongside. This is a strong, falsifiable claim: it predicts the intrusions have grown worse the more he avoids, that his reaction is revulsion and fear rather than urge or plan, and that facing the thoughts without neutralizing will loosen their grip. I would test it by assessing his relationship to the thoughts (resistance and distress, not intent), by tracking whether avoidance has amplified the obsessions, and by beginning graded imaginal exposure with response prevention and watching the intrusions fade — and I would shift to a risk-focused plan only if he ever reported a genuine wish, plan, or pleasure connected to harming them.",
+        "The strongest conclusion is that this is a role reversal of a harsh-critic/worthless-one dyad: the patient has stepped into the position of the critical mother she has long suffered under and cast the therapist as the inadequate child, living the painful bond from the powerful end so that, for once, she is the judge rather than the judged. This is a strong, falsifiable claim: it predicts that the contempt will mirror how she has described her mother, that naming the reversal ('the harsh judge who used to land on you is in the room — only now I'm the one falling short') will loosen the imperious scrutiny, and that the same reversal will recur precisely when she feels most exposed to being judged herself. I would test it by comparing the tone to her account of her mother, by interpreting the reversal and watching whether the cold dissection eases, and by tracking whether it flares when her own vulnerability rises — and I would revise toward a real rupture if her criticisms turned out to be fair responses to genuine lapses in his work rather than a disproportionate, template-matching attack.",
       yieldAnchors: [
-        "Intrusive harm thoughts about his children",
-        "He has never been violent and is horrified",
-        "He quit his job to avoid risk",
+        "She describes a harshly critical mother",
+        "She coldly dissects his every word as beneath a professional",
+        "She watches for him to shrink",
       ],
       riskAnchors: [
-        "Intrusions worsened with avoidance",
-        "His reaction is revulsion, not urge",
-        "Facing thoughts without neutralizing loosens them",
+        "The contempt mirrors her described mother",
+        "Naming the reversal loosens the scrutiny",
+        "It recurs when she feels exposed to judgment",
       ],
       defeatedBy: [
-        "He reports a real wish or plan to harm them",
-        "He feels pleasure rather than dread at the thoughts",
+        "Her criticisms are fair responses to real lapses",
+        "The attack is proportionate rather than template-matching",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that these are classic ego-dystonic harm obsessions — marked by horror rather than any wish to act — that the reassurance and avoidance are compulsions feeding the cycle, and that the evidence-based treatment is exposure and response prevention, including imaginal exposure to the feared thoughts, with meaning-focused work optional alongside. This is a strong, falsifiable claim: it predicts the intrusions have grown worse the more he avoids, that his reaction is revulsion and fear rather than urge or plan, and that facing the thoughts without neutralizing will loosen their grip. I would test it by assessing his relationship to the thoughts (resistance and distress, not intent), by tracking whether avoidance has amplified the obsessions, and by beginning graded imaginal exposure with response prevention and watching the intrusions fade — and I would shift to a risk-focused plan only if he ever reported a genuine wish, plan, or pleasure connected to harming them.",
+      "The strongest conclusion is that this is a role reversal of a harsh-critic/worthless-one dyad: the patient has stepped into the position of the critical mother she has long suffered under and cast the therapist as the inadequate child, living the painful bond from the powerful end so that, for once, she is the judge rather than the judged. This is a strong, falsifiable claim: it predicts that the contempt will mirror how she has described her mother, that naming the reversal ('the harsh judge who used to land on you is in the room — only now I'm the one falling short') will loosen the imperious scrutiny, and that the same reversal will recur precisely when she feels most exposed to being judged herself. I would test it by comparing the tone to her account of her mother, by interpreting the reversal and watching whether the cold dissection eases, and by tracking whether it flares when her own vulnerability rises — and I would revise toward a real rupture if her criticisms turned out to be fair responses to genuine lapses in his work rather than a disproportionate, template-matching attack.",
     explanation:
-      "The inverted standard gives near-zero to 'exposure is too dangerous, keep reassuring and avoiding'; top credit commits to imaginal ERP for ego-dystonic obsessions and names an assess-his-relationship-to-the-thoughts test that could refute it.",
+      "Near-zero goes to 'she's just an arrogant, difficult person' and to 'you can't psychoanalyze her motives'; top credit names the role reversal of a critic/worthless-one dyad and a does-naming-it-loosen-the-scrutiny test that could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "A man with severe OCD has gained partial relief from a maximized SSRI but still spends three hours a day checking. His doctor suggests simply switching to yet another medication; the patient asks whether there's a better-supported path. In one paragraph, propose the strongest conclusion about what the evidence supports and describe how you would test it.",
+      "A patient repeatedly demands that her therapist text her reassurance between sessions and extend appointments on the spot, insisting that any limit proves he is 'just like everyone who abandons me.' He is tempted to drop the agreed frame to prove he cares. In one paragraph, propose the strongest conclusion about what the evidence supports and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that, with a partial response to a maximized SSRI, the best-supported next step is to add exposure and response prevention — the combination outperforms medication alone for residual OCD — rather than reflexively cycling to another pill, while keeping the medication that already helped. This is a strong, falsifiable claim: it predicts his three hours of daily checking should fall further once structured ERP begins, that the added benefit should track the exposure practice rather than any new drug, and that gains should hold as he keeps using response prevention. I would test it by adding ERP while holding his current SSRI steady and tracking daily checking time, by checking whether improvement follows the exposures rather than a medication change, and by watching whether dropping the ERP practice lets the checking creep back — and I would favor a medication switch only if a proper ERP trial added nothing.",
+        "The strongest conclusion is that the frame itself is activating an abandoning-caregiver/desperate-child dyad — each limit is experienced as proof of a withholding, uncaring figure — and that holding the frame while interpreting the dyad is the treatment, whereas collapsing it would confirm the dyad (only total availability counts as love) and undermine, not deepen, the work. This is a strong, falsifiable claim: it predicts the 'you abandon me like everyone' reaction will track the boundary rather than any real coldness on his part, that naming the dyad ('the limit turns me into someone who doesn't care, the way others have') will lower the between-session demands, and that the same pattern will repeat at every limit until it is worked through. I would test it by holding the agreed frame and interpreting it, then watching whether the demands and accusations decrease over time, by checking whether the reaction reliably follows limits rather than genuine lapses, and by noting whether the same all-or-nothing pattern marks her other relationships — and I would reconsider if a limit had in fact been needlessly harsh, making the protest a fair response rather than an activated dyad.",
       yieldAnchors: [
-        "Partial relief from a maximized SSRI",
-        "Three hours a day checking",
-        "Doctor proposes another medication",
+        "She demands reassurance texts and on-the-spot extensions",
+        "Any limit 'proves' he abandons her like everyone",
+        "He is tempted to drop the frame to prove he cares",
       ],
       riskAnchors: [
-        "Checking falls further once ERP begins",
-        "Benefit tracks exposure, not a new drug",
-        "Gains hold with continued response prevention",
+        "The reaction tracks the boundary, not real coldness",
+        "Naming the dyad lowers the between-session demands",
+        "The pattern repeats at every limit",
       ],
       defeatedBy: [
-        "A proper ERP trial adds nothing",
-        "His checking is already near zero on medication",
+        "A limit was in fact needlessly harsh",
+        "Her protest is a fair response rather than an activated dyad",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that, with a partial response to a maximized SSRI, the best-supported next step is to add exposure and response prevention — the combination outperforms medication alone for residual OCD — rather than reflexively cycling to another pill, while keeping the medication that already helped. This is a strong, falsifiable claim: it predicts his three hours of daily checking should fall further once structured ERP begins, that the added benefit should track the exposure practice rather than any new drug, and that gains should hold as he keeps using response prevention. I would test it by adding ERP while holding his current SSRI steady and tracking daily checking time, by checking whether improvement follows the exposures rather than a medication change, and by watching whether dropping the ERP practice lets the checking creep back — and I would favor a medication switch only if a proper ERP trial added nothing.",
+      "The strongest conclusion is that the frame itself is activating an abandoning-caregiver/desperate-child dyad — each limit is experienced as proof of a withholding, uncaring figure — and that holding the frame while interpreting the dyad is the treatment, whereas collapsing it would confirm the dyad (only total availability counts as love) and undermine, not deepen, the work. This is a strong, falsifiable claim: it predicts the 'you abandon me like everyone' reaction will track the boundary rather than any real coldness on his part, that naming the dyad ('the limit turns me into someone who doesn't care, the way others have') will lower the between-session demands, and that the same pattern will repeat at every limit until it is worked through. I would test it by holding the agreed frame and interpreting it, then watching whether the demands and accusations decrease over time, by checking whether the reaction reliably follows limits rather than genuine lapses, and by noting whether the same all-or-nothing pattern marks her other relationships — and I would reconsider if a limit had in fact been needlessly harsh, making the protest a fair response rather than an activated dyad.",
     explanation:
-      "Near-zero goes to 'just keep switching medications' and to 'pills are a crutch, stop them'; top credit commits to adding ERP to an effective SSRI and names a does-checking-fall-with-ERP test that could refute it.",
+      "The inverted standard gives near-zero to 'loosen the frame to prove you care'; top credit holds the frame, interprets the abandoning-caregiver dyad, and names a does-naming-it-lower-the-demands test that could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "A young woman with checking and counting rituals has decided treatment is pointless after reading that 'OCD is incurable.' She has never tried ERP or medication and is ready to give up on getting better. In one paragraph, propose the strongest conclusion about what the evidence actually supports and describe how you would test it.",
+      "An inpatient with BPD insists her TFP therapist is the only good clinician on the unit while condemning the nurses as cruel and incompetent; soon the staff are quarreling, some defending the patient and some resenting her. The team asks the therapist what is going on. In one paragraph, propose the strongest conclusion and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that her pessimism is unwarranted: OCD is among the more treatable conditions, with ERP and SSRIs both well-supported and most patients improving substantially, so the fact that she has never tried either treatment — not any failure of treatment — best explains her despair. This is a strong, falsifiable claim: it predicts that a proper course of ERP should measurably reduce her checking and counting, that her belief 'nothing works' should soften as she sees early gains, and that her hopelessness traces to inexperience rather than a true ceiling. I would test it by starting a graded ERP course (with or without an SSRI) and tracking her ritual time over weeks, by noting whether her outlook shifts as symptoms drop, and by distinguishing never-tried from genuinely-tried-and-failed — and I would take her 'incurable' claim seriously only if well-delivered, fully-practiced treatment produced no change at all.",
+        "The strongest conclusion is that the patient's internal split is being played out across the whole team: the all-good and all-bad images she cannot hold together inside herself are being distributed onto different staff, and the team's quarreling is that split externalized — so the cure is not to crown the 'good' staff and discipline the 'bad' ones but to keep the team aligned and interpret the splitting. This is a strong, falsifiable claim: it predicts that the staff's friction will ease once they compare notes and refuse the all-good/all-bad casting, that the praise and condemnation will track who most recently gratified or disappointed her rather than real differences in competence, and that naming the split to the patient will reduce it. I would test it by having the team share their experiences and present a united front, by watching whether the 'good' and 'bad' labels migrate as different staff disappoint or please her, and by interpreting the pattern with her and tracking whether the splitting softens — and I would revise if it turned out the nurses were genuinely providing poor care, which would make her complaints accurate rather than a split.",
       yieldAnchors: [
-        "She believes OCD is incurable",
-        "She has never tried ERP or medication",
-        "She is ready to give up",
+        "She idealizes the therapist and condemns the nurses",
+        "The staff are quarreling over her care",
+        "The team asks what is going on",
       ],
       riskAnchors: [
-        "A course of ERP reduces her rituals",
-        "Her pessimism softens with early gains",
-        "Despair traces to inexperience, not a ceiling",
+        "Friction eases once staff align and refuse the casting",
+        "The good/bad labels track recent gratification or disappointment",
+        "Naming the split to her reduces it",
       ],
       defeatedBy: [
-        "Well-delivered treatment produces no change",
-        "She has already fully tried ERP and medication",
+        "The nurses are genuinely providing poor care",
+        "Her complaints prove accurate rather than a split",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that her pessimism is unwarranted: OCD is among the more treatable conditions, with ERP and SSRIs both well-supported and most patients improving substantially, so the fact that she has never tried either treatment — not any failure of treatment — best explains her despair. This is a strong, falsifiable claim: it predicts that a proper course of ERP should measurably reduce her checking and counting, that her belief 'nothing works' should soften as she sees early gains, and that her hopelessness traces to inexperience rather than a true ceiling. I would test it by starting a graded ERP course (with or without an SSRI) and tracking her ritual time over weeks, by noting whether her outlook shifts as symptoms drop, and by distinguishing never-tried from genuinely-tried-and-failed — and I would take her 'incurable' claim seriously only if well-delivered, fully-practiced treatment produced no change at all.",
+      "The strongest conclusion is that the patient's internal split is being played out across the whole team: the all-good and all-bad images she cannot hold together inside herself are being distributed onto different staff, and the team's quarreling is that split externalized — so the cure is not to crown the 'good' staff and discipline the 'bad' ones but to keep the team aligned and interpret the splitting. This is a strong, falsifiable claim: it predicts that the staff's friction will ease once they compare notes and refuse the all-good/all-bad casting, that the praise and condemnation will track who most recently gratified or disappointed her rather than real differences in competence, and that naming the split to the patient will reduce it. I would test it by having the team share their experiences and present a united front, by watching whether the 'good' and 'bad' labels migrate as different staff disappoint or please her, and by interpreting the pattern with her and tracking whether the splitting softens — and I would revise if it turned out the nurses were genuinely providing poor care, which would make her complaints accurate rather than a split.",
     explanation:
-      "The inverted standard gives near-zero to 'she's right, OCD can't be treated'; top credit corrects with the strong ERP/SSRI evidence and names a does-a-course-reduce-her-rituals test that could refute it.",
+      "Near-zero goes to 'the nurses are just worse, side with her' and to 'people are too complicated to say'; top credit reads staff splitting as the internal split externalized and names a does-aligning-the-team-ease-the-friction test that could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "A man completes ERP with his washing rituals nearly gone, but a year later he develops new symmetry compulsions, and he notices both flared during periods of unspoken anger at his domineering father. He asks whether ERP 'didn't really work' or whether something deeper is at play. In one paragraph, propose the strongest conclusion about what the evidence supports for his ongoing care and describe how you would test it.",
+      "A therapist, running late and preoccupied, repeatedly checks the clock, forgets a detail his patient shared last week, and seems half-present; she becomes hurt and withdrawn and says she feels unimportant to him. He starts to interpret her reaction as her 'abandonment dyad,' but pauses. In one paragraph, propose the strongest conclusion about what the evidence supports and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that the ERP genuinely worked on the washing — that gain is real and worth protecting — while the new symmetry compulsions are best met with more ERP plus, this time, meaning-focused work on the conflict the symptoms seem to track, since both flares cluster around unspoken anger at his father; ERP and psychodynamic understanding here are complements, not rivals. This is a strong, falsifiable claim: it predicts the washing should stay reduced even as new symptoms appear, that the symmetry rituals should fall with fresh ERP, and that both should ease as the warded-off anger at his father is named and worked through. I would test it by tracking the washing and the new compulsions separately, by checking whether the flares really coincide with periods of conflict with his father rather than occurring at random, and by adding meaning-focused work to ERP and watching whether symptom-shifting slows — and I would drop the conflict hypothesis if the flares bear no relation to his father and respond fully to ERP alone.",
+        "The strongest conclusion is that this is most likely a real, warranted rupture rather than a transference distortion to interpret away: the therapist actually was half-present, clock-watching, and forgetful, so feeling unimportant is an accurate read of the situation, and the evidence-based move is to acknowledge his lapse and repair before reaching for any deeper dyad. This is a strong, falsifiable claim: it predicts that her hurt is proportionate to genuine inattention rather than to a trivial trigger, that a sincere acknowledgment plus reliably present sessions will restore her sense of mattering, and that the feeling will resolve once his attentiveness returns rather than recurring without cause. I would test it by owning the lapse and being fully present next time, then watching whether her trust returns, by gauging whether her reaction fits the size of the real inattention, and by checking whether the unimportant feeling recurs even when he is attentive — and I would shift toward interpreting an abandonment dyad only if the same reaction kept firing at full force when he was genuinely warm and attentive, marking it as out of proportion to anything he had actually done.",
       yieldAnchors: [
-        "Washing rituals nearly gone after ERP",
-        "New symmetry compulsions a year later",
-        "Both flared during unspoken anger at his father",
+        "He was late, clock-watching, and forgetful",
+        "He seemed half-present",
+        "She feels unimportant to him",
       ],
       riskAnchors: [
-        "Washing stays reduced as new symptoms appear",
-        "Symmetry rituals fall with fresh ERP",
-        "Both ease as the anger is named and worked through",
+        "Her hurt is proportionate to genuine inattention",
+        "Acknowledgment and presence restore her sense of mattering",
+        "It resolves once his attentiveness returns",
       ],
       defeatedBy: [
-        "The flares bear no relation to his father",
-        "The original washing returned, showing ERP failed",
+        "The unimportant feeling recurs even when he is attentive",
+        "Her reaction is wildly out of proportion to the lapse",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that the ERP genuinely worked on the washing — that gain is real and worth protecting — while the new symmetry compulsions are best met with more ERP plus, this time, meaning-focused work on the conflict the symptoms seem to track, since both flares cluster around unspoken anger at his father; ERP and psychodynamic understanding here are complements, not rivals. This is a strong, falsifiable claim: it predicts the washing should stay reduced even as new symptoms appear, that the symmetry rituals should fall with fresh ERP, and that both should ease as the warded-off anger at his father is named and worked through. I would test it by tracking the washing and the new compulsions separately, by checking whether the flares really coincide with periods of conflict with his father rather than occurring at random, and by adding meaning-focused work to ERP and watching whether symptom-shifting slows — and I would drop the conflict hypothesis if the flares bear no relation to his father and respond fully to ERP alone.",
+      "The strongest conclusion is that this is most likely a real, warranted rupture rather than a transference distortion to interpret away: the therapist actually was half-present, clock-watching, and forgetful, so feeling unimportant is an accurate read of the situation, and the evidence-based move is to acknowledge his lapse and repair before reaching for any deeper dyad. This is a strong, falsifiable claim: it predicts that her hurt is proportionate to genuine inattention rather than to a trivial trigger, that a sincere acknowledgment plus reliably present sessions will restore her sense of mattering, and that the feeling will resolve once his attentiveness returns rather than recurring without cause. I would test it by owning the lapse and being fully present next time, then watching whether her trust returns, by gauging whether her reaction fits the size of the real inattention, and by checking whether the unimportant feeling recurs even when he is attentive — and I would shift toward interpreting an abandonment dyad only if the same reaction kept firing at full force when he was genuinely warm and attentive, marking it as out of proportion to anything he had actually done.",
     explanation:
-      "Near-zero goes to 'ERP failed' and to 'symptoms are random, nothing connects them'; top credit protects the real ERP gain, adds ERP plus meaning work for the conflict-linked new symptoms, and names a do-the-flares-track-the-father test that could refute it.",
+      "The inverted standard gives near-zero to 'it's purely her abandonment dyad, interpret it away'; top credit commits to repairing a genuine rupture and names a does-acknowledgment-and-presence-restore-trust test that could refute it.",
   },
 ];
 
 export const section: SectionContent = {
-  slug: "psychodynamic-meets-evidence",
-  title: "Where Psychodynamic Meets the Evidence: ERP, CBT, and Integration",
+  slug: "transference-focused-psychotherapy-tfp",
+  title:
+    "Transference-Focused Psychotherapy: Healing Through the Relationship (TFP)",
   weekNumber: 1,
   blurb:
-    "OCD has genuinely effective, well-tested treatments — exposure and response prevention (ERP), cognitive behavioral therapy, and medication — and a meaning-focused, psychodynamic understanding works best when it complements those proven tools rather than replacing them. This section is about reading what the evidence actually supports for a given case, and naming the cheapest observation that would change the plan.",
+    "Transference-Focused Psychotherapy treats the patient–therapist relationship as the operating table: the split, unstable patterns of borderline personality disorder come alive in the room, where the therapist holds a clear frame, watches for role reversals, contains aggression, and names the object-relations dyad activated between them. This section is about reading which dyad is live in the relationship, predicting that naming it shifts the interaction, and telling that apart from a real, warranted rupture.",
   lectureTitle:
-    "1.6 Where Psychodynamic Meets the Evidence: ERP, CBT, and integration",
-  body: `# Where Psychodynamic Meets the Evidence: ERP, CBT, and Integration
+    "1.6 Transference-Focused Psychotherapy: Healing Through the Relationship (TFP)",
+  body: `# Transference-Focused Psychotherapy: Healing Through the Relationship (TFP)
 
-It is one thing to understand what an obsession might mean; it is another to know what actually helps a person stop washing until their skin bleeds. OCD is, happily, one of the more treatable conditions in mental health — and that is not a matter of opinion but of decades of careful study. This section is about taking the evidence seriously: knowing which treatments have the strongest track record, knowing where a meaning-focused understanding fits, and resisting two opposite temptations — the purist who dismisses proven methods as "shallow," and the defeatist who shrugs that "nothing really works." The strongest reasoning here commits to the best-supported plan for the case in front of you and names the cheap observation that would tell you to change course.
+It is one thing to understand, from the outside, that a person with borderline personality disorder swings between idealizing and despising the people they love. It is another to watch it happen to you, in real time, in a quiet consulting room — to be the trusted ally one week and the cold betrayer the next, for no reason you can see. Transference-Focused Psychotherapy, developed by Otto Kernberg and his colleagues, takes that uncanny experience and turns it into the treatment. Instead of only talking about the patient's relationships out there, TFP works with the one relationship happening right here, because the disorder shows up live in the room — and what is live in the room can be named, understood, and changed.
 
-## What the evidence actually says about OCD
+## The relationship as the operating table
 
-For OCD specifically, the research points in a clear direction. Exposure and response prevention — gradually facing the feared thing while resisting the ritual — has the strongest record of any treatment, and certain medications (SSRIs, often at higher doses than for depression) also help many people. Most patients who get a proper course of these treatments improve substantially. That is the backdrop against which every individual decision should be read: when someone has never tried the well-supported options, "nothing works for me" usually means "I haven't yet had what works."
+In TFP the here-and-now bond between patient and therapist is not background to the work; it is the work. Borderline patterns of feeling and relating do not stay politely in the past — they get re-activated with whoever is close, and the therapist is close. So the very reactions that derail the patient's outside life come to the surface in the session, where two people can look at them together as they happen. That is a gift, not a problem: the disorder brings itself into the room for examination.
 
-## ERP: facing the fear, dropping the ritual
+## Object-relations dyads: the templates that get activated
 
-ERP can sound harsh — why deliberately make an anxious person more anxious? But the brief, planned distress is the mechanism, not a side effect. When a person touches the doorknob and does not wash, the feared catastrophe does not come, and the anxiety, given time, falls on its own. Do that again and again, up a graded ladder of difficulty, and the whole loop weakens. The distress during a good exposure should fall across sessions; if it only ever mounts, something about the delivery — too steep a step, too little engagement — needs fixing, not abandoning.
+The building block TFP works with is the object-relations dyad — a paired template of a self and an other, bound by a feeling: abandoning-caregiver and desperate-child, cold-critic and worthless-one, all-good-rescuer and rescued-child. These templates formed in early relationships and now get switched on in the present. When one is activated, the patient experiences the therapist not as he actually is but as the "other" in the template, and herself as the matching "self." A warm, attentive therapist becomes, in an instant, a withholding figure who can't be bothered with her — because a dyad has been switched on. The therapist's first job is to notice which dyad is live.
 
-## CBT and medication
+## Splitting in the room: idealization and devaluation
 
-Cognitive and behavioral work helps people see the faulty rules driving the rituals ("a thought about harm means I am dangerous") and test them against reality. Medication can take enough edge off the anxiety that the harder work of exposure becomes possible. For many people the combination of ERP and an SSRI outperforms either alone, especially when symptoms are severe or only partly relieved by one approach. Knowing this keeps us from two errors: treating medication as a "crutch" to be refused, and treating it as a complete answer that makes therapy unnecessary.
+Because these images stay split — kept apart so that love and disappointment never touch — the patient may idealize the therapist completely one week and condemn him completely the next. The flip usually follows a let-down: a vacation, a limit, a moment of feeling too close. The strongest reading does not take either extreme at face value. It notices that the devaluation tracks a disappointment rather than new information about the therapist's character, and that the same idealize-then-trash arc swallowed the previous therapist too. Splitting can also spread across a treatment team, with the "good" therapist and "bad" nurses standing in for two halves the patient cannot hold together inside herself.
 
-## Where a meaning-focused view fits
+## Role reversals: same bond, opposite ends
 
-So what becomes of the psychodynamic, meaning-focused understanding this course has been building? It complements the evidence-based core; it does not compete with it. Understanding why a particular person dreads a particular thing can make exposures sharper and more personal, can strengthen the alliance so a frightened patient stays in treatment, and can address the older themes — shame, unworthiness, buried conflict — that the exposures themselves do not touch. The integration is the point: ERP to break the loop, meaning to address what the loop was carrying.
+A dyad has two ends, and the patient can occupy either. In a role reversal, the patient who usually suffers under a contemptuous critic becomes the contemptuous critic, and casts the therapist as the belittled one; the patient with a fragile, depended-on parent becomes the caretaker and treats the therapist as the depleted one to be protected. Living the bond from the powerful end is a way of escaping the painful end. The clue is that the role mirrors a relationship the patient has described, and it flares when she feels most exposed.
 
-## When insight should complement, not replace
+## The frame: why structure is the treatment, not coldness
 
-The clearest sign that meaning work belongs is a residue that the symptom relief leaves behind: a man whose washing is gone but who still feels "morally dirty," a woman whose rituals lifted but who keeps choosing partners who belittle her. These older patterns have their own history, independent of the OCD, and respond to being understood and worked through. The trap is letting insight stand in for the proven treatment — three years of eloquent self-explanation while the rituals consume the day is not "deep work in progress"; it is a plan that needs ERP added to it.
+TFP holds a clear frame — set times, agreed limits, a crisis plan, expectations on both sides. To a patient in an abandoning-caregiver dyad, a limit can feel like proof that the therapist doesn't care, and the temptation is to dissolve the frame to "prove" otherwise. But collapsing the frame confirms the dyad — only total availability counts as love — and undermines the work. The frame is not coldness; it is the steady structure that makes it safe to interpret what the limits stir up.
 
-## The two dodges: purism and despair
+## Containing aggression without retaliating or collapsing
 
-There are two ways to go wrong here, and they look like opposites. The first is anti-evidence purism: dismissing ERP as "just symptom-suppression," insisting that only uncovering the root can truly cure, calling exposure "cruel." The second is therapeutic defeatism: "OCD is incurable," "nothing really works," "no approach beats any other." Both ignore what the evidence plainly shows, and both leave a treatable person untreated. Under this course's inverted grading, both earn near-zero — they refuse to commit where the evidence supports commitment.
+Sometimes what comes alive is raw aggression — contempt, rage, a need to test whether the patient's fury destroys the therapist or provokes him to strike back. The TFP move is to contain it: to stay intact, hold the line on safety, and put the dyad into words ('something in you needs to know whether your anger wrecks me or makes me attack you') rather than retaliating or crumbling. Surviving the aggression without retaliation or collapse is itself therapeutic; it shows the patient that the bond, and the therapist, can hold.
 
-## Reading the evidence — and naming a test
+## Interpreting the dyad — and when it's a real rupture
 
-The honest move is the same as everywhere else in this course: commit to the best-supported reading and name the cheap observation that could prove you wrong. "Add ERP to her partially-effective medication" is a real claim, because it predicts her ritual time should fall once exposures begin — and you can measure that. "Keep the ERP gains and add meaning work for the leftover shame" is a real claim, because it predicts the rituals stay gone while the older theme persists on its own history — and you can check that too. The weak move is to stop at "she has OCD and should get help" (which decides nothing), and the worst move is either dodge. The strongest plan is the one that both fits the evidence and spells out the single result that would make you revise it.
+The central intervention is to name the dyad activated in the room and predict that naming it shifts the interaction. 'Right now I seem to have become the cold critic, and you the one who can't get it right' is a real, testable claim: if it's correct, putting it into words changes the felt atmosphere of the session, and the configuration matches the patient's history. But not every reaction is transference. If the therapist genuinely showed up late, forgot key facts, or was half-present, the patient's hurt is a warranted rupture to be acknowledged and repaired — not interpreted away. The test is proportion and pattern: a reaction that fits a real lapse and resolves when it's fixed is a rupture; one that fires at full force even when the therapist is attentive, and recurs without cause, is a dyad.
+
+## The goal: identity integration
+
+All of this aims at one thing: integration. As the split dyads are named again and again, the all-good and all-bad images begin to fuse into whole people who can be both cared for and disappointing — and, crucially, the patient's own fragmented self-states begin to cohere too. The signature of progress is a patient who can say her therapist is 'helpful but sometimes frustrating, and that's okay,' and hold that view even through a real let-down. When the dyads surface less often and soften faster when named, the internal world is integrating — and that change shows up outside the room as well.
 
 ## In the real world
 
-Suppose a friend with disabling checking tells you she's read that OCD is a lifelong disease nothing can fix, so she won't bother trying. The dodge is to agree sympathetically — it sounds kind, but it abandons her to a treatable illness. The evidence-based move commits to a reading and a test: OCD responds well to ERP and to medication, most people improve, and she has simply never tried either — so the prediction is that a proper course should measurably reduce her checking and that her despair should ease as she sees the first gains. If well-delivered, fully-practiced treatment truly changed nothing, you'd revise. But you don't start from surrender, and you don't start from purism. You start from what the evidence supports — and you name exactly what would tell you you're wrong.`,
+Suppose a close friend who has always adored you suddenly turns icy and accuses you of secretly looking down on her — right after an evening when the two of you felt unusually close. The dodge is to throw up your hands ('you can't really know what's going on inside someone') or to fire back ('she's just being manipulative'). The stronger move reads the dyad and names a test: closeness raised the threat of depending on someone who might abandon her, so a warm friend got converted into a sneering one — which predicts the chill followed the closeness rather than anything you did, that gently naming the shift will soften it, and that the same closeness-then-recoil pattern shows up elsewhere in her life. If it turned out you really had slighted her, you'd revise and simply repair. But you don't start from surrender, and you don't start from contempt. You read which dyad is live — and you name exactly what would tell you you're wrong.`,
   homework: {
     mcq,
     hybrid,

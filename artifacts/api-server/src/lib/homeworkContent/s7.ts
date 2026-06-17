@@ -9,407 +9,407 @@ const mcq: HomeworkItem[] = [
   {
     itemType: "mc",
     prompt:
-      "A man finishes a course of exposure work and no longer checks the locks before bed. Within a few weeks, though, he starts silently repeating a reassuring phrase to himself every time he leaves the house — in the same situations that used to trigger checking. Which conclusion best follows?",
+      "A clinic runs a trial for borderline personality disorder (BPD): patients are randomly assigned either to a year of mentalization-based therapy (MBT) or to the usual care the clinic already offered. Eighteen months later, the MBT group has far fewer self-harm episodes and hospital admissions than the usual-care group. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He seems to have picked up a new little ritual.",
+        text: "The MBT patients did better than the usual-care patients.",
         credit: 0.3,
       },
       {
-        text: "The lock-checking eased without working through his underlying intolerance of doubt, so the same function has migrated into a quieter mental ritual — the surface behavior changed but its job did not; test whether the phrase appears in the exact situations checking used to, whether it spikes when he feels most uncertain about safety, and whether it fades once the fear of being responsible for a catastrophe is faced rather than soothed.",
+        text: "Because patients were randomly assigned, the two groups should have started out comparable, so the larger drop in self-harm and admissions in the MBT arm is good evidence that MBT itself caused the improvement rather than chance or who-chose-what; test whether the gap holds when independent raters blind to group count the episodes, whether it survives at longer follow-up, and whether it shrinks once any baseline difference in severity between the arms is adjusted for.",
         credit: 1.0,
       },
       {
-        text: "Rituals come and go on their own for no reason, so a new one means nothing and there's nothing here to understand.",
-        credit: 0,
+        text: "MBT probably helped these patients; we could look into using it more.",
+        credit: 0.6,
       },
       {
-        text: "He's probably just swapped one habit for another; we could keep an eye on it.",
-        credit: 0.6,
+        text: "Therapy outcomes can't really be measured and all therapies work about the same anyway, so the difference tells us nothing.",
+        credit: 0,
       },
     ],
     correctAnswer:
-      "The lock-checking eased without working through his underlying intolerance of doubt, so the same function has migrated into a quieter mental ritual — the surface behavior changed but its job did not; test whether the phrase appears in the exact situations checking used to, whether it spikes when he feels most uncertain about safety, and whether it fades once the fear of being responsible for a catastrophe is faced rather than soothed.",
+      "Because patients were randomly assigned, the two groups should have started out comparable, so the larger drop in self-harm and admissions in the MBT arm is good evidence that MBT itself caused the improvement rather than chance or who-chose-what; test whether the gap holds when independent raters blind to group count the episodes, whether it survives at longer follow-up, and whether it shrinks once any baseline difference in severity between the arms is adjusted for.",
     explanation:
-      "Top credit reads the new mental ritual as the old function migrating because relief came without working through, and names a same-situations test; \"rituals come and go for no reason\" is the dodge the exact substitution defeats.",
+      "Top credit reads random-assignment-plus-a-group-difference as causal evidence for MBT and names a blind-rater/baseline-adjustment test; \"therapy can't be measured and all treatments are equal\" is the dodge the randomized design and clear gap defeat.",
   },
   {
     itemType: "mc",
     prompt:
-      "A woman in therapy can explain eloquently that her contamination fears trace to a wish to feel morally clean after her mother's death — yet she still washes for two hours a day and avoids her own kitchen. Which conclusion best follows?",
+      "A therapist reports that 20 of her BPD patients all \"felt much better\" after a year of her own brand of psychodynamic therapy — but there was no comparison group, and the patients were the ones who chose to stay in treatment with her. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "If she already understands the cause, the washing should be gone — so her insight must be fake and there is nothing left to do.",
+        text: "Twenty patients all improving proves her therapy works and is clearly the best treatment for BPD.",
         credit: 0,
       },
       {
-        text: "She washes a great deal even though she understands why.",
+        text: "Her patients said they felt better after a year.",
         credit: 0.3,
       },
       {
-        text: "Her insight has outrun her symptom relief — understanding the meaning has not yet changed the behavior, so working through must pair that understanding with actually facing the feared dirt and uncertainty; test whether her washing time drops only when she practices resisting the urge rather than merely discussing it, whether the explanation she recites carries felt emotion or stays purely intellectual, and whether linking the washing to the grief in the moment of the urge reduces it.",
+        text: "The improvement may be real, but with no comparison group and only patients who chose to stay, we can't tell whether the therapy caused it rather than time, hope, or the fact that the ones who quit aren't counted; the cheapest fix is to add a control group who get usual care and randomly assign patients to each — if her therapy still beats the control, the claim stands, and if the gap vanishes, it was never the therapy.",
         credit: 1.0,
       },
       {
-        text: "She gets it but still washes; we could keep exploring what it means.",
+        text: "It sounds like her therapy may help; we might study it further.",
         credit: 0.6,
       },
     ],
     correctAnswer:
-      "Her insight has outrun her symptom relief — understanding the meaning has not yet changed the behavior, so working through must pair that understanding with actually facing the feared dirt and uncertainty; test whether her washing time drops only when she practices resisting the urge rather than merely discussing it, whether the explanation she recites carries felt emotion or stays purely intellectual, and whether linking the washing to the grief in the moment of the urge reduces it.",
+      "The improvement may be real, but with no comparison group and only patients who chose to stay, we can't tell whether the therapy caused it rather than time, hope, or the fact that the ones who quit aren't counted; the cheapest fix is to add a control group who get usual care and randomly assign patients to each — if her therapy still beats the control, the claim stands, and if the gap vanishes, it was never the therapy.",
     explanation:
-      "Full credit reads understanding-without-behavior-change as insight outrunning relief and names a resist-the-urge test; \"if she understands it the washing should be gone, so it's fake\" is the overreach the persistence of a real, meaningful symptom defeats.",
+      "Full credit reads the uncontrolled, self-selected report as too weak to attribute the improvement and names an add-a-randomized-control test; \"twenty improved so it's proven and best\" is the overreach the missing comparison group defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "After treatment, a man who used to count to ward off \"bad luck\" attends a funeral, feels the old urge to count, chooses not to, and finds himself feeling plain sadness instead of anxiety. He remarks that the counting \"used to keep the sadness away.\" Which conclusion best follows?",
+      "A head-to-head trial randomly assigns BPD patients to either DBT or MBT. After two years both groups show large, similar drops in self-harm and emergency-room visits, with no meaningful difference between them. A reviewer writes: \"This proves only DBT works for BPD.\" Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He managed not to count at the funeral.",
-        credit: 0.3,
-      },
-      {
-        text: "One good moment proves nothing about OCD, which is too unpredictable to read either way.",
+        text: "The reviewer is right — DBT is the only thing that works for BPD.",
         credit: 0,
       },
       {
-        text: "Change is consolidating: he can meet the trigger without the ritual and tolerate the very feeling — grief — the counting used to bind, which is the sign symptom relief and insight are joining; test whether he can repeatedly face such triggers without the urge escalating, whether the freed-up sadness stays bearable rather than driving a new compulsion, and whether dropping the ritual now reliably leaves feeling rather than a fresh symptom.",
+        text: "Since both arms improved by similar large amounts from a randomized start, the evidence supports that MBT and DBT are both effective for BPD, not that one is uniquely so; test whether the equivalence holds at longer follow-up, whether it repeats in another sample, and whether it survives when blind raters score the outcomes — if MBT keeps matching DBT, \"only DBT works\" is refuted.",
         credit: 1.0,
       },
       {
-        text: "He seems to be doing better; we could check in again later.",
+        text: "Both groups got better by about the same amount.",
+        credit: 0.3,
+      },
+      {
+        text: "It looks like both therapies might help; we could consider either.",
         credit: 0.6,
       },
     ],
     correctAnswer:
-      "Change is consolidating: he can meet the trigger without the ritual and tolerate the very feeling — grief — the counting used to bind, which is the sign symptom relief and insight are joining; test whether he can repeatedly face such triggers without the urge escalating, whether the freed-up sadness stays bearable rather than driving a new compulsion, and whether dropping the ritual now reliably leaves feeling rather than a fresh symptom.",
+      "Since both arms improved by similar large amounts from a randomized start, the evidence supports that MBT and DBT are both effective for BPD, not that one is uniquely so; test whether the equivalence holds at longer follow-up, whether it repeats in another sample, and whether it survives when blind raters score the outcomes — if MBT keeps matching DBT, \"only DBT works\" is refuted.",
     explanation:
-      "Top credit reads facing-the-trigger-while-feeling-the-bound-emotion as consolidation and names a repeatable-trigger test; \"one good moment proves nothing\" is the dodge the linked relief-plus-tolerated-grief defeats.",
+      "Top credit reads two-arms-improving-equally as evidence both treatments work and names a does-the-equivalence-replicate test; \"only DBT works\" is the overreach the matched MBT results defeat.",
   },
   {
     itemType: "mc",
     prompt:
-      "A woman symptom-free for a year after exposure work relapses into intense checking the month she starts a high-pressure new job — and the checking fixes entirely on \"did I make a catastrophic mistake at work today?\" Which conclusion best follows?",
+      "In a trial comparing transference-focused psychotherapy (TFP) with a supportive therapy, both groups felt less distressed — but only the TFP group showed measured gains in \"reflective functioning\" (the ability to think about minds) and a more integrated sense of identity on a standardized interview. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The relapse suggests her fear of being responsible for disaster was relieved but never fully worked through, so a new stressor that loads that exact fear has reactivated the old solution; test whether the relapse content maps onto the job's specific responsibility pressures, whether it eases as she processes the dread of failing rather than only resuming exposures, and whether booster exposure paired with naming that fear settles it faster than exposure alone.",
-        credit: 1.0,
-      },
-      {
-        text: "She seems to be checking again since starting the job.",
+        text: "The TFP group improved on the mind-reading measure and the supportive group didn't.",
         credit: 0.3,
       },
       {
-        text: "The new job probably set off her OCD again; we could restart treatment.",
+        text: "TFP may produce some deeper changes; we could look at that more.",
         credit: 0.6,
       },
       {
-        text: "Relapse means the therapy never really worked, so there's nothing to learn from when it came back.",
+        text: "Because both arms eased distress but only TFP moved reflective functioning and identity integration, the evidence supports that TFP produces a specific structural change supportive therapy does not, not merely general relief; test whether that reflective-functioning gain predicts who stays well later, whether it shows up again in a new sample, and whether it disappears when an independent interviewer scores the recordings blind.",
+        credit: 1.0,
+      },
+      {
+        text: "All therapies are really the same underneath, so a difference on one measure means nothing.",
         credit: 0,
       },
     ],
     correctAnswer:
-      "The relapse suggests her fear of being responsible for disaster was relieved but never fully worked through, so a new stressor that loads that exact fear has reactivated the old solution; test whether the relapse content maps onto the job's specific responsibility pressures, whether it eases as she processes the dread of failing rather than only resuming exposures, and whether booster exposure paired with naming that fear settles it faster than exposure alone.",
+      "Because both arms eased distress but only TFP moved reflective functioning and identity integration, the evidence supports that TFP produces a specific structural change supportive therapy does not, not merely general relief; test whether that reflective-functioning gain predicts who stays well later, whether it shows up again in a new sample, and whether it disappears when an independent interviewer scores the recordings blind.",
     explanation:
-      "Full credit reads the job-triggered, responsibility-themed relapse as an unaddressed conflict reactivated and names a content-maps-onto-the-job test; \"relapse means the therapy never worked\" is the dodge the year of remission and specific timing defeat.",
+      "Full credit reads the TFP-only gain in reflective functioning/identity as a specific structural effect and names a does-it-predict-staying-well test; \"all therapies are the same\" is the dodge the measured, TFP-specific difference defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A man completes a brief course of exposure work; his washing drops to almost nothing, but he says he has \"no idea why I ever did it\" and feels strangely uneasy, as though \"something's missing.\" Which conclusion best follows?",
+      "Eight years after a course of MBT ended, former patients are interviewed: most are working or studying, few have been rehospitalized, and self-harm is rare — and these gains are larger than in a comparison group who had received only standard care in the same era. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He seems uneasy even though the washing stopped.",
-        credit: 0.3,
-      },
-      {
-        text: "Maybe the treatment left something unfinished; we could talk it over.",
-        credit: 0.6,
-      },
-      {
-        text: "Relief without any working-through of what the washing was for can leave the original conflict untouched and the gain brittle, and his unease may mark a feeling the ritual used to manage now lacking an outlet; test whether the uneasy feeling shows up in the same situations washing used to, whether a new symptom emerges to take the washing's place, and whether briefly exploring what the ritual protected him from eases the \"something's missing\" sense.",
+        text: "Gains this far past the end of treatment, and larger than the comparison group's, are good evidence that MBT produced durable, structural change rather than a temporary lift while in therapy; test whether the difference holds when employment and hospital records are checked against documents rather than self-report, whether it survives matching the groups on baseline severity, and whether it fades if the comparison group turns out to have been sicker to begin with.",
         credit: 1.0,
       },
       {
-        text: "If the washing is gone, the treatment is a complete success and the uneasy feeling is irrelevant.",
+        text: "The gains seem to have lasted; we could keep following them.",
+        credit: 0.6,
+      },
+      {
+        text: "The former MBT patients are mostly doing well eight years on.",
+        credit: 0.3,
+      },
+      {
+        text: "People with BPD just get better on their own with age, so the therapy gets no credit and nothing can really be concluded.",
         credit: 0,
       },
     ],
     correctAnswer:
-      "Relief without any working-through of what the washing was for can leave the original conflict untouched and the gain brittle, and his unease may mark a feeling the ritual used to manage now lacking an outlet; test whether the uneasy feeling shows up in the same situations washing used to, whether a new symptom emerges to take the washing's place, and whether briefly exploring what the ritual protected him from eases the \"something's missing\" sense.",
+      "Gains this far past the end of treatment, and larger than the comparison group's, are good evidence that MBT produced durable, structural change rather than a temporary lift while in therapy; test whether the difference holds when employment and hospital records are checked against documents rather than self-report, whether it survives matching the groups on baseline severity, and whether it fades if the comparison group turns out to have been sicker to begin with.",
     explanation:
-      "Top credit reads symptom-gone-but-uneasy as relief without working-through leaving the conflict live, and names a watch-for-a-replacement test; \"the washing's gone so it's a complete success\" is the overreach the lingering unease defeats.",
+      "Top credit reads durable, comparison-beating gains as evidence of structural change and names a check-records-and-match-severity test; \"they'd recover anyway, so nothing can be concluded\" is the dodge the comparison group's worse outcome defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A patient announces she is \"completely over\" her harm obsessions and refuses to discuss them again, changing the subject whenever they arise. Her rituals have stopped — but she still won't go near knives or hold her baby alone. Which conclusion best follows?",
+      "A clinician insists \"nothing actually works for borderline personality disorder — it's untreatable.\" You show him a randomized trial in which the psychodynamic-therapy arm had half the self-harm rate of the control arm at follow-up. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "She says she's over it, so she's cured, and pushing further would only stir up trouble.",
+        text: "He has a point — BPD is basically untreatable, so the trial can't mean much.",
         credit: 0,
       },
       {
-        text: "Her rituals are gone but the fear is not worked through — avoidance has simply replaced compulsion, so the relief is partly cosmetic; test whether she still steers around the feared objects and situations, whether her refusal to discuss tightens specifically when harm themes arise, and whether the avoidance shrinks once the harm thought is faced as a thought rather than treated as a danger.",
-        credit: 1.0,
-      },
-      {
-        text: "She has stopped her rituals but avoids knives and being alone with the baby.",
+        text: "The therapy arm had less self-harm than the control arm.",
         credit: 0.3,
       },
       {
-        text: "She might still be afraid underneath; we could gently revisit it.",
+        text: "The randomized halving of self-harm relative to a control directly contradicts \"nothing works\" — it is evidence the therapy reduced self-harm for these patients; test whether the effect repeats in other trials, whether it holds when raters are blind to group, and whether it shrinks once you account for any difference in baseline severity between the arms.",
+        credit: 1.0,
+      },
+      {
+        text: "It seems BPD may be treatable after all; we could read more trials.",
         credit: 0.6,
       },
     ],
     correctAnswer:
-      "Her rituals are gone but the fear is not worked through — avoidance has simply replaced compulsion, so the relief is partly cosmetic; test whether she still steers around the feared objects and situations, whether her refusal to discuss tightens specifically when harm themes arise, and whether the avoidance shrinks once the harm thought is faced as a thought rather than treated as a danger.",
+      "The randomized halving of self-harm relative to a control directly contradicts \"nothing works\" — it is evidence the therapy reduced self-harm for these patients; test whether the effect repeats in other trials, whether it holds when raters are blind to group, and whether it shrinks once you account for any difference in baseline severity between the arms.",
     explanation:
-      "Full credit reads continued avoidance as the fear surviving the ritual's end and names a does-she-still-steer-around-triggers test; \"she says she's over it so she's cured\" is the overreach her ongoing avoidance defeats.",
+      "Full credit reads the randomized halving of self-harm as direct evidence the treatment works and names a does-it-replicate test; \"BPD is untreatable\" is the dodge the controlled result defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "After her solo checking rituals stop, a woman begins phoning her husband a dozen times a day to ask whether she locked the door — handing him the checking she used to do herself. Which conclusion best follows?",
+      "A trial finds that BPD patients in TFP had markedly fewer suicide attempts than controls over a year. A newspaper headline declares: \"Psychodynamic therapy CURES borderline personality disorder.\" Which conclusion best follows?",
     mcOptions: [
       {
-        text: "She seems to lean on her husband a lot now; we could look into it.",
+        text: "The therapy seemed to help with suicide attempts; the headline may be a bit strong.",
         credit: 0.6,
       },
       {
-        text: "She calls her husband often to ask about the door.",
-        credit: 0.3,
-      },
-      {
-        text: "The compulsion has migrated from solo checking into reassurance-seeking through her husband — same function, new vehicle — so working through requires response prevention for the reassurance too and facing the doubt itself; test whether the calls cluster around the exact triggers checking used to, whether her anxiety simply transfers in full when he can't answer, and whether tolerating the uncertainty without his confirmation reduces both.",
+        text: "The data support a specific, bounded claim — TFP reduced suicide attempts versus controls — but \"cures BPD\" goes far beyond what was measured, since the trial tracked one outcome over one year, not the disappearance of the whole disorder; test the real claim by seeing whether the suicide-attempt gap replicates and holds at longer follow-up, and judge \"cure\" only against measures of identity, relationships, and remission the study never reported.",
         credit: 1.0,
       },
       {
-        text: "Asking a spouse a question is normal married life, so there's nothing here worth reading into.",
+        text: "Patients in TFP had fewer suicide attempts than controls.",
+        credit: 0.3,
+      },
+      {
+        text: "The headline is right: the therapy cures BPD.",
         credit: 0,
       },
     ],
     correctAnswer:
-      "The compulsion has migrated from solo checking into reassurance-seeking through her husband — same function, new vehicle — so working through requires response prevention for the reassurance too and facing the doubt itself; test whether the calls cluster around the exact triggers checking used to, whether her anxiety simply transfers in full when he can't answer, and whether tolerating the uncertainty without his confirmation reduces both.",
+      "The data support a specific, bounded claim — TFP reduced suicide attempts versus controls — but \"cures BPD\" goes far beyond what was measured, since the trial tracked one outcome over one year, not the disappearance of the whole disorder; test the real claim by seeing whether the suicide-attempt gap replicates and holds at longer follow-up, and judge \"cure\" only against measures of identity, relationships, and remission the study never reported.",
     explanation:
-      "Top credit reads the calls as checking outsourced to her husband and names a does-anxiety-transfer-when-he-can't-answer test; \"asking a spouse is normal\" is the dodge the dozen-times-a-day, same-trigger pattern defeats.",
+      "Top credit commits to the bounded finding (fewer suicide attempts) while rejecting \"cure\" as beyond the measured outcome, and names a replication test; \"it cures BPD\" is the overreach the single one-year outcome defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A man recites, in a flat and detached tone, a textbook account of how his need for symmetry \"represents a wish for control\" — but he shows no feeling, and the arranging compulsions are exactly as frequent as before. Which conclusion best follows?",
+      "Two BPD programs are compared in a randomized trial: a structured psychodynamic program and usual care. A year in, far fewer patients dropped out of the structured program, and dropping out is known to predict worse outcomes for BPD. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He plainly understands his OCD deeply, so the therapy has done its job.",
-        credit: 0,
-      },
-      {
-        text: "He can explain his compulsions but still does them.",
+        text: "More patients stayed in the structured program than in usual care.",
         credit: 0.3,
       },
       {
-        text: "His understanding doesn't seem to have helped yet; we could keep working on it.",
-        credit: 0.6,
+        text: "Dropping out is just personal choice and can't be pinned on a program, so this number means nothing.",
+        credit: 0,
       },
       {
-        text: "The insight is intellectualized — itself a defense that lets him discuss the meaning while keeping the feeling at arm's length, so it changes nothing; working through needs the understanding to connect to live emotion at the moment of the urge; test whether any feeling surfaces when he resists arranging, whether the recited explanation ever shifts his behavior, and whether tying the urge to a felt loss of control rather than a concept finally moves it.",
+        text: "Because patients were randomized, the lower dropout in the structured program is evidence the program itself holds patients better — a real advantage, since staying in treatment predicts better outcomes; test whether the retention gap repeats in another sample, whether the retained patients actually end up better off, and whether it disappears if the structured arm happened to enroll less severe patients despite randomization.",
         credit: 1.0,
+      },
+      {
+        text: "The structured program may keep people engaged; we could explore why.",
+        credit: 0.6,
       },
     ],
     correctAnswer:
-      "The insight is intellectualized — itself a defense that lets him discuss the meaning while keeping the feeling at arm's length, so it changes nothing; working through needs the understanding to connect to live emotion at the moment of the urge; test whether any feeling surfaces when he resists arranging, whether the recited explanation ever shifts his behavior, and whether tying the urge to a felt loss of control rather than a concept finally moves it.",
+      "Because patients were randomized, the lower dropout in the structured program is evidence the program itself holds patients better — a real advantage, since staying in treatment predicts better outcomes; test whether the retention gap repeats in another sample, whether the retained patients actually end up better off, and whether it disappears if the structured arm happened to enroll less severe patients despite randomization.",
     explanation:
-      "Full credit reads flat, behavior-free understanding as intellectualized defense and names a does-feeling-appear-when-he-resists test; \"he understands it deeply so therapy did its job\" is the overreach the unchanged compulsions defeat.",
+      "Full credit reads randomized lower dropout as evidence the program retains patients better and names a do-the-retained-patients-do-better test; \"dropping out is just personal choice\" is the dodge the randomized design defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "Six months after treatment a woman has a hard week and washes \"the old way\" twice — but she catches herself, links it to a sick relative, and returns to her plan without spiraling. Which conclusion best follows?",
+      "An RCT of MBT for BPD shows a clear drop in self-harm versus the control group, but no difference between groups in whether patients were employed at the end. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "She washed a couple of times this week.",
-        credit: 0.3,
-      },
-      {
-        text: "She slipped a little but seems okay; we could watch how it goes.",
+        text: "MBT helped with some things but maybe not others; we could look closer.",
         credit: 0.6,
       },
       {
-        text: "Any return of washing means the treatment failed and she is back to square one.",
-        credit: 0,
+        text: "Self-harm went down but employment didn't change.",
+        credit: 0.3,
       },
       {
-        text: "This looks like a lapse rather than a relapse — change is consolidating, because she can recognize the slip, tie it to a trigger, and self-correct with what she learned; test whether such slips stay brief and self-limited, whether she can name the feared feeling each time, and whether her baseline holds across months despite the occasional lapse.",
+        text: "The evidence supports a specific claim — MBT reduced self-harm but did not, in this trial and time frame, improve employment — so the honest read commits to the symptom benefit while not claiming a work benefit the data don't show; test this by checking whether employment differs at longer follow-up (work may lag symptom change), whether the self-harm effect replicates, and whether a larger sample would reveal a small employment effect this one missed.",
         credit: 1.0,
+      },
+      {
+        text: "Since it didn't fix everything, MBT clearly doesn't work for BPD at all.",
+        credit: 0,
       },
     ],
     correctAnswer:
-      "This looks like a lapse rather than a relapse — change is consolidating, because she can recognize the slip, tie it to a trigger, and self-correct with what she learned; test whether such slips stay brief and self-limited, whether she can name the feared feeling each time, and whether her baseline holds across months despite the occasional lapse.",
+      "The evidence supports a specific claim — MBT reduced self-harm but did not, in this trial and time frame, improve employment — so the honest read commits to the symptom benefit while not claiming a work benefit the data don't show; test this by checking whether employment differs at longer follow-up (work may lag symptom change), whether the self-harm effect replicates, and whether a larger sample would reveal a small employment effect this one missed.",
     explanation:
-      "Top credit reads recognize-link-self-correct as a consolidating lapse and names a do-slips-stay-self-limited test; \"any washing means total failure\" is the overreach her quick self-correction defeats.",
+      "Top credit commits to the domain-specific finding (self-harm down, employment unchanged) and names a check-employment-at-longer-follow-up test; \"it didn't fix everything so it doesn't work\" is the overreach the clear self-harm benefit defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A teenager's counting rituals clear up with exposure work, but within two months he develops daily stomachaches — medical tests all clean — that are worst right before school exams, the very situations counting used to manage. Which conclusion best follows?",
+      "In an MBT trial, the patients whose mentalizing capacity improved the most over treatment were also the ones whose self-harm dropped the most, while patients whose mentalizing didn't change improved little. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The performance dread the counting used to bind likely lost its outlet when the ritual stopped and has re-emerged as a bodily symptom, so the underlying conflict was not worked through; test whether the stomachaches occupy the exact trigger situations counting did, whether they ease once the fear of failing is named and faced, and whether they began only after the rituals stopped and not before.",
-        credit: 1.0,
-      },
-      {
-        text: "The stomachaches might be linked to his old anxiety; we could keep tracking them.",
-        credit: 0.6,
-      },
-      {
-        text: "Stomachaches have countless physical causes, so connecting them to his former OCD is reading too much in.",
+        text: "You can't really connect an inner thing like mentalizing to behavior, so this pattern is meaningless.",
         credit: 0,
       },
       {
-        text: "He gets stomachaches before exams now.",
+        text: "The tight link between gains in mentalizing and drops in self-harm is evidence that improving mentalizing is part of how MBT works — the mechanism the therapy targets is tracking the outcome it aims at, not just two unrelated numbers; test whether the mentalizing gain comes before the self-harm drop in time, whether boosting mentalizing experimentally moves self-harm, and whether the link vanishes once you control for general distress dropping in everyone.",
+        credit: 1.0,
+      },
+      {
+        text: "Patients who mentalized better also self-harmed less.",
         credit: 0.3,
+      },
+      {
+        text: "Mentalizing might be involved in the improvement; we could study it.",
+        credit: 0.6,
       },
     ],
     correctAnswer:
-      "The performance dread the counting used to bind likely lost its outlet when the ritual stopped and has re-emerged as a bodily symptom, so the underlying conflict was not worked through; test whether the stomachaches occupy the exact trigger situations counting did, whether they ease once the fear of failing is named and faced, and whether they began only after the rituals stopped and not before.",
+      "The tight link between gains in mentalizing and drops in self-harm is evidence that improving mentalizing is part of how MBT works — the mechanism the therapy targets is tracking the outcome it aims at, not just two unrelated numbers; test whether the mentalizing gain comes before the self-harm drop in time, whether boosting mentalizing experimentally moves self-harm, and whether the link vanishes once you control for general distress dropping in everyone.",
     explanation:
-      "Full credit reads exam-timed stomachaches in the old trigger slot as the bound dread re-emerging and names a did-they-start-only-after-rituals-stopped test; \"stomachaches have countless causes\" is the dodge the clean tests and exact trigger-matching defeat.",
+      "Full credit reads the mentalizing–self-harm coupling as evidence for the proposed mechanism and names a does-mentalizing-change-come-first test; \"you can't connect an inner thing to behavior\" is the dodge the matched pattern defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "Three weeks in, a patient wants to stop therapy the moment his visible rituals vanish, declaring \"problem solved\" — though he has never once faced his worst feared situation and still arranges his life to avoid it. Which conclusion best follows?",
+      "Two reports land on your desk. Report A: BPD patients in a psychodynamic therapy improved a lot over a year, with no comparison group. Report B: BPD patients randomly assigned to the same therapy improved more than a randomly assigned control group. A colleague says both equally prove the therapy works. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "His rituals have stopped after three weeks.",
+        text: "Both reports show patients getting better.",
         credit: 0.3,
       },
       {
-        text: "His rituals are gone, so he has recovered and continuing would just waste everyone's time.",
+        text: "Report B is probably a bit stronger; we could weigh them.",
+        credit: 0.6,
+      },
+      {
+        text: "Evidence is evidence, so the two reports count exactly the same.",
         credit: 0,
       },
       {
-        text: "Stopping now risks leaving the core fear un-worked-through, since fast surface relief that never confronts the worst trigger tends to relapse; test whether he can face the avoided situation without a ritual before terminating, whether his gains survive a deliberately provoked trigger, and whether a planned booster period prevents the return an abrupt stop would invite.",
+        text: "Report B is far stronger because its random control group rules out time, hope, and self-selection as explanations, while Report A's improvement could be any of those — so only B supports the claim that the therapy caused the gain; test by checking whether B's effect replicates and survives blind rating, and treat A as a lead worth confirming rather than as proof.",
         credit: 1.0,
-      },
-      {
-        text: "It might be early to stop; we could suggest a few more sessions.",
-        credit: 0.6,
       },
     ],
     correctAnswer:
-      "Stopping now risks leaving the core fear un-worked-through, since fast surface relief that never confronts the worst trigger tends to relapse; test whether he can face the avoided situation without a ritual before terminating, whether his gains survive a deliberately provoked trigger, and whether a planned booster period prevents the return an abrupt stop would invite.",
+      "Report B is far stronger because its random control group rules out time, hope, and self-selection as explanations, while Report A's improvement could be any of those — so only B supports the claim that the therapy caused the gain; test by checking whether B's effect replicates and survives blind rating, and treat A as a lead worth confirming rather than as proof.",
     explanation:
-      "Top credit reads untested-worst-fear-plus-avoidance as incomplete working-through and names a can-he-face-the-avoided-situation test; \"rituals gone so he's recovered\" is the overreach his persisting avoidance defeats.",
+      "Top credit ranks the randomized-controlled Report B above the uncontrolled Report A and names a replication/blind-rating test; \"the two count the same\" is the dodge the missing control in A defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A woman no longer performs any rituals, but she describes each day as an exhausting battle to \"hold the urges down\" by sheer willpower, dreading every trigger as much as ever. Which conclusion best follows?",
+      "A health system compares BPD patients randomly given a year of MBT against those given usual care. Over the next three years the MBT group spent far fewer days in hospital — a difference visible in the system's own admission records, not just patient reports. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "She's white-knuckling it a bit; we could keep supporting her.",
+        text: "MBT may cut hospital use; we could look at the numbers more.",
         credit: 0.6,
       },
       {
-        text: "She is suppressing rather than working through — the urge and the fear beneath it are still fully charged and only held back by effort, which is brittle and apt to break under load; test whether her distress at triggers actually falls over time rather than staying maxed out, whether she can approach triggers willingly instead of gritting through them, and whether the effort eases once the feared outcome is faced and disconfirmed.",
+        text: "A randomized difference in actual recorded hospital days over three years is strong evidence MBT reduced hospitalization, since the records sidestep memory and wishful reporting and randomization balances the groups; test whether the gap holds after matching for baseline admissions, whether it persists in a second health system, and whether it shrinks if the usual-care group happened to have less access to beds.",
         credit: 1.0,
       },
       {
-        text: "She doesn't do rituals but finds each day a struggle.",
-        credit: 0.3,
+        text: "Hospital admissions depend on so many things that you can never attribute them to a therapy.",
+        credit: 0,
       },
       {
-        text: "She has stopped all rituals, so she is fully recovered regardless of how it feels.",
-        credit: 0,
+        text: "The MBT group spent fewer days in hospital than the usual-care group.",
+        credit: 0.3,
       },
     ],
     correctAnswer:
-      "She is suppressing rather than working through — the urge and the fear beneath it are still fully charged and only held back by effort, which is brittle and apt to break under load; test whether her distress at triggers actually falls over time rather than staying maxed out, whether she can approach triggers willingly instead of gritting through them, and whether the effort eases once the feared outcome is faced and disconfirmed.",
+      "A randomized difference in actual recorded hospital days over three years is strong evidence MBT reduced hospitalization, since the records sidestep memory and wishful reporting and randomization balances the groups; test whether the gap holds after matching for baseline admissions, whether it persists in a second health system, and whether it shrinks if the usual-care group happened to have less access to beds.",
     explanation:
-      "Full credit reads constant maximal effort with undiminished dread as suppression, not working-through, and names a does-distress-actually-fall test; \"no rituals means fully recovered\" is the overreach her unrelenting struggle defeats.",
+      "Full credit reads randomized, records-based fewer hospital days as strong evidence MBT cut hospitalization and names a match-baseline/second-system test; \"admissions depend on too much to attribute\" is the dodge the randomized record-based gap defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "Months after being treated for contamination fears, a man notices he has also become less rigid about lateness and better able to sit with uncertainty at work — changes no one targeted directly. Which conclusion best follows?",
+      "A psychodynamic BPD program beat a waitlist (people waiting with no treatment) on self-harm. The authors conclude it is \"better than other active treatments for BPD.\" Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Unrelated traits can shift for any reason, so linking them to his OCD treatment is pure guesswork.",
+        text: "Beating a waitlist proves it's the best active treatment for BPD.",
         credit: 0,
       },
       {
-        text: "He seems more relaxed in a few areas now.",
+        text: "The program did better than the waitlist group.",
         credit: 0.3,
       },
       {
-        text: "The working-through likely reached a general intolerance of uncertainty sitting under several rigidities, so the gains generalize beyond the treated symptom — a mark of durable, structural change rather than a narrow fix; test whether the spread tracks situations sharing the uncertainty theme, whether it holds at long-term follow-up, and whether it is absent for traits unrelated to that theme.",
+        text: "Beating a waitlist shows the program helps more than no treatment, but says nothing about how it compares to other real treatments, since a waitlist controls only for time, not for the attention and structure any therapy provides — so \"better than other active treatments\" is unsupported; test the bigger claim by running it head-to-head against an established treatment like DBT, where only a win would justify the authors' words.",
         credit: 1.0,
       },
       {
-        text: "His treatment may have had broader effects; we could ask about other areas.",
+        text: "It beat the waitlist, so it probably works, though the comparison may be limited.",
         credit: 0.6,
       },
     ],
     correctAnswer:
-      "The working-through likely reached a general intolerance of uncertainty sitting under several rigidities, so the gains generalize beyond the treated symptom — a mark of durable, structural change rather than a narrow fix; test whether the spread tracks situations sharing the uncertainty theme, whether it holds at long-term follow-up, and whether it is absent for traits unrelated to that theme.",
+      "Beating a waitlist shows the program helps more than no treatment, but says nothing about how it compares to other real treatments, since a waitlist controls only for time, not for the attention and structure any therapy provides — so \"better than other active treatments\" is unsupported; test the bigger claim by running it head-to-head against an established treatment like DBT, where only a win would justify the authors' words.",
     explanation:
-      "Top credit reads theme-linked spread of gains as generalized structural change and names a does-it-track-the-uncertainty-theme test; \"traits shift for any reason\" is the dodge the coherent, theme-specific spread defeats.",
+      "Top credit commits to the supported claim (beats no treatment) while rejecting \"best active treatment\" as needing a head-to-head test; \"beating a waitlist proves it's best\" is the overreach the weak comparison defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "After two years of meaning-focused talk therapy, a man understands his washing in rich detail — but the behavior has barely budged, and he has never done any structured exposure. Which conclusion best follows?",
+      "A psychodynamic BPD treatment showed a big benefit in one small trial. Three later, larger trials by independent teams found the same benefit. A skeptic says \"one study is never enough to believe anything.\" Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He understands his washing well but still washes.",
+        text: "Several studies found the same benefit.",
         credit: 0.3,
       },
       {
-        text: "Talk alone hasn't shifted it; we could consider another approach.",
-        credit: 0.6,
+        text: "While the skeptic is right that a lone small trial is weak, the benefit here has now repeated across several larger, independent trials, which is exactly what turns a tentative finding into a dependable one — so the evidence supports that the treatment works; test it further by checking whether a pooled analysis keeps the effect, whether blind raters reproduce it, and whether any failed trials are sitting unpublished.",
+        credit: 1.0,
       },
       {
-        text: "Real change can only come from insight, so adding exposure would just paper over the symptom — there's nothing more worth trying.",
+        text: "Since one study is never enough, we still can't conclude anything about this treatment.",
         credit: 0,
       },
       {
-        text: "Insight without exposure has left the behavior intact, since understanding alone rarely dislodges an entrenched compulsion, so working through here means adding response prevention to the meaning work; test whether introducing structured exposure finally moves the washing, whether the stubbornness reflects his never having faced the feared dirt, and whether combining understanding with exposure outperforms either alone for him.",
-        credit: 1.0,
+        text: "The repeated results are encouraging; we could keep watching the literature.",
+        credit: 0.6,
       },
     ],
     correctAnswer:
-      "Insight without exposure has left the behavior intact, since understanding alone rarely dislodges an entrenched compulsion, so working through here means adding response prevention to the meaning work; test whether introducing structured exposure finally moves the washing, whether the stubbornness reflects his never having faced the feared dirt, and whether combining understanding with exposure outperforms either alone for him.",
+      "While the skeptic is right that a lone small trial is weak, the benefit here has now repeated across several larger, independent trials, which is exactly what turns a tentative finding into a dependable one — so the evidence supports that the treatment works; test it further by checking whether a pooled analysis keeps the effect, whether blind raters reproduce it, and whether any failed trials are sitting unpublished.",
     explanation:
-      "Full credit reads rich-understanding-with-zero-behavior-change as insight needing exposure added and names a does-adding-exposure-move-it test; \"only insight produces real change\" is the anti-evidence dodge the two unmoved years defeat.",
+      "Full credit reads independent replication as turning a weak finding into a dependable one and names a check-for-unpublished-failures test; \"one study is never enough, so we know nothing\" is the dodge the multiple replications defeat.",
   },
   {
     itemType: "mc",
     prompt:
-      "Across three relationships since treatment, a man relapses into scrupulosity rituals each time a romance turns toward serious commitment — and at no other time. Which conclusion best follows?",
+      "A trial reports that its TFP group ended with less self-harm than its control group. Reading the methods, you notice the TFP group also started with much milder symptoms than the control group. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Commitment seems to set off his rituals; we could explore his relationships.",
+        text: "The starting difference might matter; we could take the result with caution.",
         credit: 0.6,
       },
       {
-        text: "Relationships are complicated and relapses happen, so there's no pattern worth reading in when his rituals return.",
+        text: "Trials are always biased, so no result from any of them can tell us anything.",
         credit: 0,
       },
       {
-        text: "He starts doing rituals again when relationships get serious.",
-        credit: 0.3,
+        text: "Because the TFP group began milder, its better ending could reflect that head start rather than the therapy, so this particular result is a weak basis for crediting TFP — the cheap fix is to compare each group's change from its own baseline or statistically adjust for starting severity; if TFP's advantage survives that adjustment it stands, and if it vanishes the gap was just the head start.",
+        credit: 1.0,
       },
       {
-        text: "The relapses, timed only to deepening commitment, suggest the rituals still serve a conflict about intimacy and guilt that symptom relief never worked through, reactivated whenever closeness loads it; test whether the relapses cluster precisely as commitment deepens and not otherwise, whether processing the guilt and fear around intimacy settles them better than exposures alone, and whether they fade once that conflict is named.",
-        credit: 1.0,
+        text: "The TFP group started milder and ended with less self-harm.",
+        credit: 0.3,
       },
     ],
     correctAnswer:
-      "The relapses, timed only to deepening commitment, suggest the rituals still serve a conflict about intimacy and guilt that symptom relief never worked through, reactivated whenever closeness loads it; test whether the relapses cluster precisely as commitment deepens and not otherwise, whether processing the guilt and fear around intimacy settles them better than exposures alone, and whether they fade once that conflict is named.",
+      "Because the TFP group began milder, its better ending could reflect that head start rather than the therapy, so this particular result is a weak basis for crediting TFP — the cheap fix is to compare each group's change from its own baseline or statistically adjust for starting severity; if TFP's advantage survives that adjustment it stands, and if it vanishes the gap was just the head start.",
     explanation:
-      "Top credit reads commitment-only relapses as an unaddressed intimacy conflict reactivated and names a do-they-cluster-only-at-deepening-commitment test; \"relapses just happen\" is the dodge the three-times, commitment-specific timing defeats.",
+      "Top credit reads the baseline imbalance as a rival explanation and names an adjust-for-starting-severity test; \"all trials are biased so nothing tells us anything\" is the dodge that throws out a fixable, checkable problem.",
   },
 ];
 
@@ -417,425 +417,425 @@ const hybrid: HomeworkItem[] = [
   {
     itemType: "hybrid",
     prompt:
-      "A woman's hours of bedtime checking resolve after exposure work. A month later she begins counting her keystrokes in sets of four whenever she sends an important email — a behavior she never had before. Which conclusion best follows?",
+      "A randomized trial assigns BPD patients to MBT or to usual care. Eighteen months later, independent assessors who don't know which group each patient was in count far fewer self-harm episodes in the MBT group. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "She seems to have a new counting habit at work.",
+        text: "The MBT group had fewer self-harm episodes.",
         credit: 0.3,
       },
       {
-        text: "The checking eased without working through her need for certainty before acting, so the same function has reappeared as counting at the moment she most fears a mistake — new form, old job; test whether the counting attaches specifically to high-stakes actions like sending an email, whether her anxiety jumps if she's stopped from counting, and whether facing the dread of an uncorrectable error reduces it rather than the count.",
+        text: "Random assignment plus blind assessors makes this strong evidence MBT itself reduced self-harm — the groups should have started comparable and the people counting couldn't be swayed by knowing who got what; test whether the effect holds at longer follow-up, whether it repeats in another clinic, and whether it shrinks if a baseline imbalance in severity is found and adjusted for.",
         credit: 1.0,
       },
       {
-        text: "People develop quirks all the time, so a new counting habit tells us nothing about her old OCD.",
-        credit: 0,
+        text: "MBT may have reduced the self-harm; we could investigate further.",
+        credit: 0.6,
       },
       {
-        text: "She might be channeling the old anxiety somewhere new; we could keep watching.",
-        credit: 0.6,
+        text: "Self-harm is too personal and variable to measure, so the comparison means nothing.",
+        credit: 0,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your \"the counting is the old compulsion in a new form\" lead from the rival \"it's an unrelated new habit,\" and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your \"MBT caused the drop in self-harm\" lead from the rival \"the groups differed for some other reason,\" and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: check whether the counting fires specifically at high-stakes, mistake-prone moments like sending an important email — function that lands exactly where her checking used to points to the same compulsion in new clothing. My lead is refuted if the counting appears randomly across calm and charged moments alike with no tie to fear of error, which would fit an unrelated habit.",
+        "Cheapest test: check whether the two groups were actually balanced at baseline on symptom severity and past self-harm — randomization plus a balanced start means the later gap is most plausibly the therapy. My lead is refuted if the MBT group started markedly less severe, or if the self-harm gap disappears once baseline severity is adjusted for.",
       yieldAnchors: [
-        "Bedtime checking resolved after exposure work",
-        "Counting began about a month later",
-        "It appears when she sends important emails",
+        "Patients randomly assigned to MBT or usual care",
+        "Blind assessors counted the episodes",
+        "MBT group had far fewer self-harm episodes",
       ],
       riskAnchors: [
-        "Counting attaches to high-stakes actions specifically",
-        "Anxiety jumps if she is blocked from counting",
-        "Facing the fear of an uncorrectable error reduces it",
+        "The effect holds at longer follow-up",
+        "It repeats in another clinic",
+        "It survives adjusting for baseline severity",
       ],
       defeatedBy: [
-        "The counting occurs randomly with no tie to fear of error",
-        "It carries no anxiety when interrupted",
+        "The MBT group started much less severe",
+        "The gap vanishes after adjusting for baseline",
       ],
     },
     correctAnswer:
-      "The checking eased without working through her need for certainty before acting, so the same function has reappeared as counting at the moment she most fears a mistake — new form, old job; test whether the counting attaches specifically to high-stakes actions like sending an email, whether her anxiety jumps if she's stopped from counting, and whether facing the dread of an uncorrectable error reduces it rather than the count.",
+      "Random assignment plus blind assessors makes this strong evidence MBT itself reduced self-harm — the groups should have started comparable and the people counting couldn't be swayed by knowing who got what; test whether the effect holds at longer follow-up, whether it repeats in another clinic, and whether it shrinks if a baseline imbalance in severity is found and adjusted for.",
     explanation:
-      "Full credit reads the new counting as the old certainty-seeking migrated and is paired with a does-it-fire-at-high-stakes-moments test that names its refutation; \"people develop quirks\" is the dodge the same-function timing defeats.",
+      "Full credit reads randomization-plus-blind-rating as causal evidence for MBT and is paired with a check-baseline-balance test that names its refutation; \"self-harm is too personal to measure\" is the dodge the controlled, blind-rated design defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A man's contamination washing drops sharply after a short exposure program, but he insists the whole thing was \"just a bad habit, nothing underneath it,\" and refuses to look at what it might have meant. Six weeks later, under a family crisis, the washing roars back. Which conclusion best follows?",
+      "A workshop leader presents glowing testimonials from BPD clients who improved during her psychodynamic program, but there is no comparison group and clients who left early were not surveyed. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The relapse proves exposure therapy simply doesn't work for him.",
+        text: "The testimonials prove her program is highly effective for BPD.",
         credit: 0,
       },
       {
-        text: "Maybe the quick fix didn't hold; we could try the exposures again.",
+        text: "Her clients say they improved.",
+        credit: 0.3,
+      },
+      {
+        text: "It sounds promising; we could look at it more carefully.",
         credit: 0.6,
       },
       {
-        text: "Relief that never touched what the washing was managing left the underlying conflict live, so a crisis that reloaded it brought the symptom straight back; test whether the relapse coincides with the family stress rather than appearing at random, whether the washing again tracks the same feared contamination theme, and whether pairing renewed exposure with working through what the ritual protected him from holds better than exposure alone.",
+        text: "Without a comparison group and with early leavers excluded, the testimonials can't separate a real treatment effect from time, hope, and counting only the successes, so they support only a hypothesis worth testing, not a claim that the program works; the cheap fix is a randomized comparison against usual care that counts everyone who started, including dropouts.",
         credit: 1.0,
-      },
-      {
-        text: "His washing came back during the family crisis.",
-        credit: 0.3,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your \"the conflict was never worked through, so stress reactivated it\" lead from the rival \"the exposures simply wore off on their own,\" and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your \"this is weak, uncontrolled evidence\" lead from the rival \"this really shows the program works,\" and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: line up the relapse against the family crisis — washing that returns exactly as the stressor hits, on the same contamination theme, points to a reactivated conflict rather than a fix randomly fading. My lead is refuted if the washing crept back gradually with no tie to any stressor or feared theme, which would fit exposures merely wearing off.",
+        "Cheapest test: ask whether there was any comparison group and whether everyone who started — including those who dropped out — was counted; testimonials from only the stayers, with nothing to compare against, can't show the program caused anything. My lead is refuted if it turns out there was a randomized control group and all enrolled patients were tracked, with the program still coming out ahead.",
       yieldAnchors: [
-        "Washing dropped after a short program",
-        "He denies any meaning beneath it",
-        "It returned under a family crisis",
+        "Glowing testimonials from clients",
+        "No comparison group",
+        "Early leavers were not surveyed",
       ],
       riskAnchors: [
-        "Relapse coincides with the family stress",
-        "Washing tracks the same contamination theme",
-        "Exposure plus meaning-work holds better than exposure alone",
+        "A randomized control changes the picture",
+        "Counting dropouts shrinks the apparent benefit",
+        "Improvement matches what time alone would give",
       ],
       defeatedBy: [
-        "The washing returned gradually with no stressor",
-        "The relapse bears no relation to any feared theme",
+        "There was a randomized control group all along",
+        "All enrolled patients, including dropouts, improved",
       ],
     },
     correctAnswer:
-      "Relief that never touched what the washing was managing left the underlying conflict live, so a crisis that reloaded it brought the symptom straight back; test whether the relapse coincides with the family stress rather than appearing at random, whether the washing again tracks the same feared contamination theme, and whether pairing renewed exposure with working through what the ritual protected him from holds better than exposure alone.",
+      "Without a comparison group and with early leavers excluded, the testimonials can't separate a real treatment effect from time, hope, and counting only the successes, so they support only a hypothesis worth testing, not a claim that the program works; the cheap fix is a randomized comparison against usual care that counts everyone who started, including dropouts.",
     explanation:
-      "Full credit reads the stress-timed return as an un-worked-through conflict reactivated and is paired with a line-it-up-against-the-crisis test that names its refutation; \"exposure just doesn't work for him\" is the dodge the clean stress-triggered timing defeats.",
+      "Full credit reads the uncontrolled, completer-only testimonials as a hypothesis needing a randomized control and is paired with a count-the-dropouts test that names its refutation; \"the testimonials prove it's highly effective\" is the overreach the missing comparison group defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A patient whose home rituals have faded now spends much of each session asking the therapist, in slightly different words, the same question — \"You're sure these thoughts don't mean I'm dangerous, right?\" — and looks momentarily relieved each time it's answered. Which conclusion best follows?",
+      "A trial randomly assigns BPD patients to MBT or DBT. After two years both show similar large reductions in self-harm and hospital visits, with no meaningful gap. An administrator wants to cut MBT because \"DBT is obviously the only real treatment.\" Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He seems to want a lot of reassurance now; we could notice that.",
+        text: "Both seemed to work; maybe keep both for now.",
         credit: 0.6,
       },
       {
-        text: "The compulsion has moved into the room — reassurance-seeking from the therapist now does the job his rituals used to, briefly relieving the doubt without resolving it, so working through means declining to answer and helping him sit with the uncertainty; test whether the questioning clusters around his core feared theme, whether the relief is brief and quickly needs renewing, and whether withholding reassurance while naming the urge reduces the seeking over time.",
+        text: "The administrator is right that DBT is the only real treatment for BPD.",
+        credit: 0,
+      },
+      {
+        text: "Two arms improving by similar large amounts from a randomized start is evidence both MBT and DBT work for BPD, so cutting MBT as \"not real\" isn't supported by these data; test whether the equivalence repeats in another trial and holds at longer follow-up, and whether subgroups exist who do better on one than the other — but absent such evidence, both earn their place.",
         credit: 1.0,
       },
       {
-        text: "He keeps asking the therapist the same reassuring question.",
+        text: "Both groups improved by about the same amount.",
         credit: 0.3,
-      },
-      {
-        text: "Asking a clinician questions is exactly what therapy is for, so there's nothing to interpret in it.",
-        credit: 0,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your \"the questioning is a compulsion enacted with the therapist\" lead from the rival \"he's just an inquisitive, engaged patient,\" and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your \"both treatments work\" lead from the rival \"only DBT really works,\" and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: watch what happens after an answer — if relief is brief and the same core-fear question returns soon, that cycle marks reassurance-seeking rather than genuine inquiry. My lead is refuted if his questions range widely, build on the answers, and don't circle back to the same feared theme, which would fit ordinary engagement.",
+        "Cheapest test: compare the two arms' outcomes directly — near-identical large gains from a randomized start mean both worked, not just one. My lead is refuted if a fair head-to-head actually shows DBT consistently beating MBT on the key outcomes.",
       yieldAnchors: [
-        "Home rituals have faded",
-        "He repeatedly asks the same reassuring question",
-        "He looks briefly relieved each time it's answered",
+        "Patients randomized to MBT or DBT",
+        "Both showed large drops in self-harm and hospital visits",
+        "No meaningful gap between them",
       ],
       riskAnchors: [
-        "The questioning clusters on his core feared theme",
-        "Relief is brief and quickly needs renewing",
-        "Withholding reassurance reduces the seeking over time",
+        "The equivalence repeats in another trial",
+        "It holds at longer follow-up",
+        "No subgroup does clearly better on one",
       ],
       defeatedBy: [
-        "His questions range widely and build on answers",
-        "He needs no repetition once a question is answered",
+        "A fair head-to-head shows DBT consistently beating MBT",
+        "MBT's gains disappear at follow-up while DBT's hold",
       ],
     },
     correctAnswer:
-      "The compulsion has moved into the room — reassurance-seeking from the therapist now does the job his rituals used to, briefly relieving the doubt without resolving it, so working through means declining to answer and helping him sit with the uncertainty; test whether the questioning clusters around his core feared theme, whether the relief is brief and quickly needs renewing, and whether withholding reassurance while naming the urge reduces the seeking over time.",
+      "Two arms improving by similar large amounts from a randomized start is evidence both MBT and DBT work for BPD, so cutting MBT as \"not real\" isn't supported by these data; test whether the equivalence repeats in another trial and holds at longer follow-up, and whether subgroups exist who do better on one than the other — but absent such evidence, both earn their place.",
     explanation:
-      "Top credit reads the repeated same-question-for-brief-relief as a compulsion enacted with the therapist and is paired with a what-happens-after-an-answer test that names its refutation; \"asking a clinician is what therapy is for\" is the dodge the brief-relief-then-repeat cycle defeats.",
+      "Top credit reads matched gains from a randomized start as evidence both treatments work and is paired with a does-the-equivalence-replicate test that names its refutation; \"only DBT is real\" is the overreach the matched MBT results defeat.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A woman delivers a polished psychological account of how her intrusive harm thoughts \"symbolize buried anger at her father,\" speaking calmly and almost proudly — yet she still avoids all knives and her mental reviewing is unchanged. Which conclusion best follows?",
+      "In a trial of TFP versus supportive therapy for BPD, both groups felt less anxious, but only the TFP group showed measured gains in reflective functioning and a more coherent narrative of their own life on a standardized interview. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "She can explain her harm thoughts but still avoids knives.",
+        text: "The TFP group improved on the mind-reading and life-story measures.",
         credit: 0.3,
       },
       {
-        text: "She has clearly achieved deep insight, so the work is essentially finished.",
+        text: "Inner changes like these can't be measured, so the difference is meaningless.",
         credit: 0,
       },
       {
-        text: "Her articulate, affect-free account looks like intellectualization — a defense that lets her master the meaning in words while the feeling and the symptom stay untouched, so it moves nothing; working through needs the understanding to meet live emotion as she approaches the feared object; test whether any feeling stirs when she actually nears a knife, whether her tidy explanation ever changes her avoidance, and whether connecting the thought to felt anger in the moment shifts the reviewing.",
+        text: "Because both eased anxiety but only TFP moved reflective functioning and life-narrative coherence, the data support that TFP produces a specific structural change beyond general relief — the kind of identity-level change the therapy aims at; test whether that structural gain predicts who stays well, whether it replicates, and whether it survives blind scoring of the interviews.",
         credit: 1.0,
       },
       {
-        text: "Her insight doesn't seem to have helped the avoidance; we could keep at it.",
+        text: "TFP might do something deeper; we could examine that.",
         credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your \"her insight is intellectualized and inert\" lead from the rival \"she has genuinely worked it through and just needs time,\" and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your \"TFP produced a specific structural change\" lead from the rival \"it's just general improvement like the other group's,\" and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: see whether any feeling appears and any behavior shifts when she actually approaches a knife — genuine working-through shows up as changed avoidance and live affect, not a polished explanation alone. My lead is refuted if her understanding is already loosening the avoidance and stirring real emotion, which would mean the insight is doing work rather than defending against feeling.",
+        "Cheapest test: check whether the reflective-functioning and narrative gains appear ONLY in the TFP arm while both arms ease anxiety equally — a change specific to TFP points to a specific mechanism, not general relief. My lead is refuted if the supportive group shows the same structural gains, or if TFP's edge vanishes when an independent rater scores the interviews blind.",
       yieldAnchors: [
-        "She gives a polished account of her harm thoughts",
-        "She speaks calmly and almost proudly",
-        "Avoidance and mental reviewing are unchanged",
+        "Both groups felt less anxious",
+        "Only TFP gained in reflective functioning",
+        "Only TFP gained a more coherent life narrative",
       ],
       riskAnchors: [
-        "Feeling stirs when she nears a knife",
-        "The explanation begins to change her avoidance",
-        "Connecting thought to felt anger shifts the reviewing",
+        "The structural gain predicts staying well",
+        "It replicates in a new sample",
+        "It survives blind scoring",
       ],
       defeatedBy: [
-        "Her understanding is already loosening the avoidance",
-        "Real emotion accompanies her account",
+        "The supportive group showed the same structural gains",
+        "TFP's edge vanishes under blind rating",
       ],
     },
     correctAnswer:
-      "Her articulate, affect-free account looks like intellectualization — a defense that lets her master the meaning in words while the feeling and the symptom stay untouched, so it moves nothing; working through needs the understanding to meet live emotion as she approaches the feared object; test whether any feeling stirs when she actually nears a knife, whether her tidy explanation ever changes her avoidance, and whether connecting the thought to felt anger in the moment shifts the reviewing.",
+      "Because both eased anxiety but only TFP moved reflective functioning and life-narrative coherence, the data support that TFP produces a specific structural change beyond general relief — the kind of identity-level change the therapy aims at; test whether that structural gain predicts who stays well, whether it replicates, and whether it survives blind scoring of the interviews.",
     explanation:
-      "Full credit reads the calm, behavior-free explanation as intellectualization and is paired with a does-anything-change-as-she-approaches-a-knife test that names its refutation; \"she has deep insight so the work is finished\" is the overreach the unchanged avoidance defeats.",
+      "Full credit reads the TFP-only structural gain as a specific mechanism and is paired with a does-it-appear-only-in-TFP test that names its refutation; \"inner changes can't be measured\" is the dodge the standardized, TFP-specific difference defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A man eight months out of treatment reports one rough fortnight of heavier checking after a burglary on his street, then says he \"talked himself back down\" using what he learned and is steady again. Which conclusion best follows?",
+      "Five years after MBT ended, a follow-up finds former patients mostly employed, rarely rehospitalized, and seldom self-harming — and doing clearly better than a comparison group who got standard care back then. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Once checking returns at all, the gains are lost and he's effectively back where he started.",
-        credit: 0,
+        text: "The gains seem to have lasted; we could keep tracking them.",
+        credit: 0.6,
       },
       {
-        text: "He checked more for a couple of weeks after the burglary.",
-        credit: 0.3,
-      },
-      {
-        text: "This reads as a lapse, not a relapse — a real trigger briefly raised the checking, but he could name the trigger and self-correct with his tools, which is what consolidation looks like; test whether the surge stayed time-limited and tied to the burglary, whether his baseline returned without formal treatment, and whether he can articulate the feared outcome that drove the spike.",
+        text: "Gains five years past the end of treatment that also beat a comparison group are good evidence MBT produced durable, structural change rather than a temporary in-therapy lift; test whether the employment and hospital figures match official records, whether the groups were similar in baseline severity, and whether the advantage holds once any such difference is adjusted for.",
         credit: 1.0,
       },
       {
-        text: "He had a wobble but seems fine; we could keep an eye on it.",
-        credit: 0.6,
+        text: "People with BPD just settle down with age, so the therapy can't be credited and nothing's really knowable.",
+        credit: 0,
+      },
+      {
+        text: "The former MBT patients are doing better than the comparison group.",
+        credit: 0.3,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your \"this is a self-corrected lapse\" lead from the rival \"this is the start of a full relapse,\" and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your \"MBT produced durable change\" lead from the rival \"they'd have settled down with age anyway,\" and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: track whether the checking surge stayed brief, tied to the burglary, and resolved on its own back to baseline — a time-limited, trigger-linked, self-corrected blip is a lapse, not a relapse. My lead is refuted if the checking keeps climbing and spreading beyond the burglary despite his efforts, which would signal a genuine relapse.",
+        "Cheapest test: compare the MBT group against the standard-care comparison group at the same follow-up age — if aging alone explained it, the comparison group (same age) would have caught up, but they didn't. My lead is refuted if the comparison group ends up just as well, or if the MBT group started much milder and the gap disappears after adjusting for that.",
       yieldAnchors: [
-        "Heavier checking for one fortnight",
-        "It followed a burglary on his street",
-        "He talked himself back down with his tools",
+        "Five years after MBT ended",
+        "Former patients mostly employed and rarely hospitalized",
+        "They beat a standard-care comparison group",
       ],
       riskAnchors: [
-        "The surge stayed time-limited and trigger-linked",
-        "Baseline returned without formal treatment",
-        "He can name the feared outcome that drove it",
+        "The figures match official records",
+        "The groups were similar at baseline",
+        "The advantage survives adjustment",
       ],
       defeatedBy: [
-        "The checking keeps climbing despite his efforts",
-        "It spreads well beyond the burglary",
+        "The comparison group did just as well",
+        "The MBT group started much milder",
       ],
     },
     correctAnswer:
-      "This reads as a lapse, not a relapse — a real trigger briefly raised the checking, but he could name the trigger and self-correct with his tools, which is what consolidation looks like; test whether the surge stayed time-limited and tied to the burglary, whether his baseline returned without formal treatment, and whether he can articulate the feared outcome that drove the spike.",
+      "Gains five years past the end of treatment that also beat a comparison group are good evidence MBT produced durable, structural change rather than a temporary in-therapy lift; test whether the employment and hospital figures match official records, whether the groups were similar in baseline severity, and whether the advantage holds once any such difference is adjusted for.",
     explanation:
-      "Top credit reads brief, trigger-linked, self-corrected checking as a consolidating lapse and is paired with a did-it-stay-time-limited test that names its refutation; \"any checking means total loss\" is the overreach his self-correction defeats.",
+      "Full credit reads durable, comparison-beating gains as structural change and is paired with a same-age-comparison test that names its refutation; \"they'd settle down with age, so nothing's knowable\" is the dodge the comparison group's worse outcome defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A man's hand-washing has dropped dramatically, which his family celebrates — but they don't mention that he now simply never touches doorknobs, railings, or shared surfaces, routing his whole day around them. Which conclusion best follows?",
+      "A trainee believes BPD is hopeless. You hand her a randomized trial in which patients given a psychodynamic therapy had half as many suicide attempts over the year as patients given usual care. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He might be avoiding instead of washing; we could ask about his daily routine.",
-        credit: 0.6,
-      },
-      {
-        text: "He washes less but avoids touching shared surfaces.",
-        credit: 0.3,
-      },
-      {
-        text: "His washing is way down, so the OCD is beaten and the rest is just sensible hygiene.",
+        text: "BPD is basically hopeless, so even this trial can't really show anything.",
         credit: 0,
       },
       {
-        text: "The washing fell because avoidance has taken over its job — by never contacting the feared surfaces he never triggers the urge, so the contamination fear is untouched and the relief is hollow; test whether his life is now organized around dodging the very things he used to wash off, whether anxiety spikes when contact is unavoidable, and whether deliberately touching surfaces without washing is what actually brings the fear down.",
+        text: "A randomized halving of suicide attempts against a control directly refutes \"nothing works\" — it is evidence the therapy reduced attempts for these patients; test whether the result repeats in independent trials, whether it survives blind counting of attempts, and whether any baseline severity gap between the arms could explain part of it.",
         credit: 1.0,
+      },
+      {
+        text: "The therapy group had fewer suicide attempts than usual care.",
+        credit: 0.3,
+      },
+      {
+        text: "Maybe BPD isn't hopeless after all; we could read more.",
+        credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your \"avoidance has replaced the washing\" lead from the rival \"he has genuinely overcome the contamination fear,\" and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your \"the therapy reduced suicide attempts\" lead from the rival \"the two groups just differed by chance or at the start,\" and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: check whether he can touch a doorknob or railing and leave it unwashed without distress — genuine recovery tolerates contact, whereas avoidance simply prevents the trigger. My lead is refuted if he can readily touch shared surfaces and feel calm, which would mean the fear, not just the washing, is truly gone.",
+        "Cheapest test: check that the groups were balanced at baseline and that the halving is too large to be a fluke given the sample size — a randomized, sizable gap points to the therapy. My lead is refuted if the arms differed in severity at the start, or if the difference is within what chance could produce in so few patients.",
       yieldAnchors: [
-        "Hand-washing dropped dramatically",
-        "He now never touches shared surfaces",
-        "His day is routed around avoiding them",
+        "Patients randomized to therapy or usual care",
+        "Therapy group had half the suicide attempts",
+        "Outcome measured over a year",
       ],
       riskAnchors: [
-        "His life is organized around dodging feared surfaces",
-        "Anxiety spikes when contact is unavoidable",
-        "Touching without washing is what brings fear down",
+        "The result repeats in independent trials",
+        "It survives blind counting",
+        "It holds after checking baseline balance",
       ],
       defeatedBy: [
-        "He can touch shared surfaces and stay calm",
-        "His avoidance is mere ordinary hygiene",
+        "The arms differed in severity at baseline",
+        "The gap is within chance for the sample size",
       ],
     },
     correctAnswer:
-      "The washing fell because avoidance has taken over its job — by never contacting the feared surfaces he never triggers the urge, so the contamination fear is untouched and the relief is hollow; test whether his life is now organized around dodging the very things he used to wash off, whether anxiety spikes when contact is unavoidable, and whether deliberately touching surfaces without washing is what actually brings the fear down.",
+      "A randomized halving of suicide attempts against a control directly refutes \"nothing works\" — it is evidence the therapy reduced attempts for these patients; test whether the result repeats in independent trials, whether it survives blind counting of attempts, and whether any baseline severity gap between the arms could explain part of it.",
     explanation:
-      "Full credit reads the washing's drop as avoidance doing its job and is paired with a can-he-touch-and-not-wash test that names its refutation; \"washing's down so the OCD is beaten\" is the overreach his all-day avoidance defeats.",
+      "Top credit reads the randomized halving of attempts as direct evidence against \"nothing works\" and is paired with a check-baseline-and-chance test that names its refutation; \"BPD is hopeless\" is the dodge the controlled result defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A woman treated for checking compulsions reports months later that she has also stopped re-reading her texts five times before sending and no longer needs her desk \"perfect\" before she can start work — gains nobody set out to produce. Which conclusion best follows?",
+      "A trial shows TFP patients had far fewer hospital admissions than controls over a year. A brochure now advertises TFP as \"the cure for borderline personality disorder.\" Which conclusion best follows?",
     mcOptions: [
       {
-        text: "She seems less fussy about a few things now.",
+        text: "TFP patients had fewer admissions than controls.",
         credit: 0.3,
       },
       {
-        text: "The treatment may have spread to other areas; we could ask what else changed.",
+        text: "TFP helped with admissions; the word \"cure\" may be too much.",
         credit: 0.6,
       },
       {
-        text: "The working-through likely loosened a shared driver — an intolerance of doubt and a need to forestall error — beneath several of her rigidities, so improvement generalized past the targeted checking, a sign of durable structural change; test whether the spread covers exactly the behaviors sharing that doubt-and-error theme, whether the broader gains hold at long follow-up, and whether habits unrelated to that theme are unchanged.",
-        credit: 1.0,
+        text: "The brochure is right — TFP cures BPD.",
+        credit: 0,
       },
       {
-        text: "Different habits change for all sorts of reasons, so crediting her therapy for any of this is a stretch.",
-        credit: 0,
+        text: "The data support a bounded claim — TFP cut hospital admissions versus controls over a year — but \"cure\" overreaches what was measured, since one outcome over one year is not the disappearance of the disorder; test the real claim by checking whether the admissions effect replicates and lasts, and reserve \"cure\" for evidence on remission, identity, and relationships the trial never reported.",
+        credit: 1.0,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your \"the gains generalized from a shared underlying driver\" lead from the rival \"these other changes are unrelated coincidences,\" and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your \"the data show reduced admissions, not cure\" lead from the rival \"the brochure's cure claim is fair,\" and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: check whether the newly eased behaviors are exactly the ones sharing her doubt-and-error theme while unrelated habits stay put — theme-coherent spread points to a generalized driver, not coincidence. My lead is refuted if the changes are scattered across unrelated behaviors with no common thread, which would fit chance.",
+        "Cheapest test: read exactly which outcomes the trial measured — if it tracked only hospital admissions over a year, it cannot support \"cure,\" which would require remission and identity measures it never collected. My lead is refuted if the trial actually showed full, lasting remission across the disorder's core features, not just fewer admissions.",
       yieldAnchors: [
-        "Treated for checking compulsions",
-        "Now re-reads texts and arranges her desk far less",
-        "No one targeted these changes",
+        "TFP patients had fewer hospital admissions",
+        "Outcome measured over one year",
+        "Brochure claims a \"cure\"",
       ],
       riskAnchors: [
-        "The spread covers behaviors sharing the doubt-and-error theme",
-        "The broader gains hold at long follow-up",
-        "Unrelated habits are unchanged",
+        "The admissions effect replicates",
+        "It lasts beyond a year",
+        "Remission measures would be needed to claim cure",
       ],
       defeatedBy: [
-        "The changes are scattered with no common theme",
-        "Unrelated habits changed just as much",
+        "The trial actually showed full lasting remission",
+        "Core BPD features disappeared, not just admissions",
       ],
     },
     correctAnswer:
-      "The working-through likely loosened a shared driver — an intolerance of doubt and a need to forestall error — beneath several of her rigidities, so improvement generalized past the targeted checking, a sign of durable structural change; test whether the spread covers exactly the behaviors sharing that doubt-and-error theme, whether the broader gains hold at long follow-up, and whether habits unrelated to that theme are unchanged.",
+      "The data support a bounded claim — TFP cut hospital admissions versus controls over a year — but \"cure\" overreaches what was measured, since one outcome over one year is not the disappearance of the disorder; test the real claim by checking whether the admissions effect replicates and lasts, and reserve \"cure\" for evidence on remission, identity, and relationships the trial never reported.",
     explanation:
-      "Top credit reads theme-coherent spread as generalization from a shared driver and is paired with a does-it-track-the-doubt-theme test that names its refutation; \"habits change for all sorts of reasons\" is the dodge the coherent, theme-specific spread defeats.",
+      "Full credit commits to the bounded admissions finding while rejecting \"cure\" and is paired with a which-outcomes-were-measured test that names its refutation; \"TFP cures BPD\" is the overreach the single one-year outcome defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "After a teenager's late-night ordering rituals are eliminated, she develops trouble falling asleep that began the same week the rituals stopped and is worst on nights before big social events — the exact occasions the ordering used to precede. Which conclusion best follows?",
+      "Clinic A says its BPD patients improved over a year of psychodynamic therapy (no comparison group). Clinic B randomly assigned its BPD patients to the same therapy or to usual care and found the therapy group improved more. Both clinics claim equal proof. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Teenagers have sleep problems constantly, so tying her insomnia to the old rituals is overthinking it.",
-        credit: 0,
-      },
-      {
-        text: "The social dread the ordering used to absorb likely lost its outlet when the ritual stopped and now surfaces as insomnia, so the conflict wasn't worked through, only the behavior removed; test whether the sleeplessness occupies the same pre-social-event slot the ordering did, whether it began precisely when the rituals stopped, and whether naming and facing the social fear eases the insomnia.",
-        credit: 1.0,
-      },
-      {
-        text: "Her sleep trouble could be related to the old anxiety; we could track when it happens.",
+        text: "Clinic B's evidence looks a bit better; we could weigh them.",
         credit: 0.6,
       },
       {
-        text: "She can't sleep well before big social events now.",
+        text: "Both clinics report patients improving.",
         credit: 0.3,
+      },
+      {
+        text: "Clinic B's randomized comparison is far stronger because it rules out time, hope, and self-selection, while Clinic A's improvement could be any of those — so only B supports a causal claim, and A is a lead to confirm, not proof; test by seeing whether B's effect replicates and survives blind rating, and whether A's result would even survive adding a control group.",
+        credit: 1.0,
+      },
+      {
+        text: "Evidence is evidence, so the two clinics' claims are equally good.",
+        credit: 0,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your \"the insomnia is the old social dread without its ritual outlet\" lead from the rival \"it's ordinary teenage sleep trouble,\" and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your \"Clinic B's evidence is stronger\" lead from the rival \"the two are equally convincing,\" and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: check whether the insomnia clusters on nights before big social events — the very slot the ordering used to fill — and started exactly when the rituals stopped, which points to a redirected dread rather than generic sleep trouble. My lead is refuted if her sleeplessness is spread evenly across all nights with no tie to social events or to when the rituals ended.",
+        "Cheapest test: ask which clinic had a comparison group — B's randomized control rules out time and self-selection that A cannot, so B's causal claim is the defensible one. My lead is refuted if Clinic A turns out to have had a randomized control too, making the two designs equivalent.",
       yieldAnchors: [
-        "Ordering rituals were eliminated",
-        "Insomnia began the same week",
-        "It is worst before big social events",
+        "Clinic A had no comparison group",
+        "Clinic B randomized therapy versus usual care",
+        "Both claim equal proof",
       ],
       riskAnchors: [
-        "Insomnia occupies the pre-social-event slot",
-        "It began precisely when rituals stopped",
-        "Facing the social fear eases it",
+        "B's effect replicates",
+        "B's effect survives blind rating",
+        "A's result would shrink with a control added",
       ],
       defeatedBy: [
-        "The insomnia is spread evenly across all nights",
-        "It predates the end of the rituals",
+        "Clinic A also used a randomized control",
+        "B's advantage disappears under blind rating",
       ],
     },
     correctAnswer:
-      "The social dread the ordering used to absorb likely lost its outlet when the ritual stopped and now surfaces as insomnia, so the conflict wasn't worked through, only the behavior removed; test whether the sleeplessness occupies the same pre-social-event slot the ordering did, whether it began precisely when the rituals stopped, and whether naming and facing the social fear eases the insomnia.",
+      "Clinic B's randomized comparison is far stronger because it rules out time, hope, and self-selection, while Clinic A's improvement could be any of those — so only B supports a causal claim, and A is a lead to confirm, not proof; test by seeing whether B's effect replicates and survives blind rating, and whether A's result would even survive adding a control group.",
     explanation:
-      "Full credit reads event-timed insomnia in the old ritual slot as redirected social dread and is paired with a did-it-start-when-rituals-stopped test that names its refutation; \"teens have sleep problems constantly\" is the dodge the exact slot-and-onset matching defeats.",
+      "Top credit ranks the randomized Clinic B above the uncontrolled Clinic A and is paired with a which-clinic-had-a-control test that names its refutation; \"evidence is evidence, so they're equal\" is the dodge the missing control in A defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A man no longer performs his mental neutralizing rituals, but he says he gets through each day by \"clamping down hard\" on every intrusive harm thought the instant it appears, and the thoughts terrify him as much as ever. Which conclusion best follows?",
+      "Re-analyzing a randomized MBT trial, researchers find the self-harm benefit over controls was largest in the most severely ill patients and small in the mildest. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He's stopped his mental rituals but still battles the thoughts.",
+        text: "Picking apart subgroups is just fishing, so this tells us nothing at all.",
+        credit: 0,
+      },
+      {
+        text: "The sickest patients benefited the most.",
         credit: 0.3,
       },
       {
-        text: "He seems to be forcing it; we could keep checking in.",
-        credit: 0.6,
-      },
-      {
-        text: "Clamping down is suppression, not working through — the intrusive thoughts and the terror beneath them are still fully charged and merely held off by effort, which tends to rebound; real change comes from letting the thoughts come without fighting them, so test whether his fear of the thoughts actually declines over time rather than staying maxed, whether he can allow a thought to pass without neutralizing or suppressing, and whether accepting the thought as just a thought lowers its charge.",
+        text: "The pattern suggests MBT's advantage is concentrated where the illness is worst, which would make it especially worth offering to severe BPD — a usable, falsifiable claim; test whether the severity-by-benefit pattern was predicted in advance rather than dredged after the fact, whether it repeats in a new sample, and whether it holds when the subgroups are defined the same way again.",
         credit: 1.0,
       },
       {
-        text: "He has stopped the rituals, so he is cured no matter how the thoughts feel to him.",
-        credit: 0,
+        text: "It may help the severe patients more; we could look into that.",
+        credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your \"he's suppressing rather than working through\" lead from the rival \"he has genuinely recovered and just describes it dramatically,\" and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your \"MBT helps the severe most\" lead from the rival \"this is just a chance subgroup result,\" and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: check whether his fear of the thoughts is falling over time or staying maxed out despite the effort — undiminished terror held back by constant clamping is suppression, not recovery. My lead is refuted if he can let an intrusive thought arise and pass without fighting it and his distress is genuinely low, which would mean real working-through.",
+        "Cheapest test: check whether this severity-by-benefit pattern was a pre-registered prediction or found by slicing the data afterward — a planned, replicated pattern is trustworthy, a post-hoc one often isn't. My lead is refuted if the pattern was dredged after the fact and fails to reappear when a fresh sample is split the same way.",
       yieldAnchors: [
-        "Mental neutralizing rituals have stopped",
-        "He clamps down on every intrusive thought",
-        "The thoughts terrify him as much as ever",
+        "Randomized MBT trial re-analyzed",
+        "Benefit largest in the most severe patients",
+        "Benefit small in the mildest",
       ],
       riskAnchors: [
-        "Fear of the thoughts declines over time",
-        "He can let a thought pass without neutralizing",
-        "Accepting the thought as a thought lowers its charge",
+        "The pattern was predicted in advance",
+        "It repeats in a new sample",
+        "It holds with the same subgroup definitions",
       ],
       defeatedBy: [
-        "He can let intrusive thoughts come and go calmly",
-        "His distress is genuinely low without effort",
+        "The pattern was dredged post-hoc",
+        "It fails to reappear in a fresh sample",
       ],
     },
     correctAnswer:
-      "Clamping down is suppression, not working through — the intrusive thoughts and the terror beneath them are still fully charged and merely held off by effort, which tends to rebound; real change comes from letting the thoughts come without fighting them, so test whether his fear of the thoughts actually declines over time rather than staying maxed, whether he can allow a thought to pass without neutralizing or suppressing, and whether accepting the thought as just a thought lowers its charge.",
+      "The pattern suggests MBT's advantage is concentrated where the illness is worst, which would make it especially worth offering to severe BPD — a usable, falsifiable claim; test whether the severity-by-benefit pattern was predicted in advance rather than dredged after the fact, whether it repeats in a new sample, and whether it holds when the subgroups are defined the same way again.",
     explanation:
-      "Top credit reads constant clamping with undiminished terror as suppression and is paired with a is-his-fear-actually-falling test that names its refutation; \"rituals stopped so he's cured\" is the overreach his unrelenting battle defeats.",
+      "Top credit reads the severity-by-benefit pattern as a usable claim and is paired with a was-it-pre-registered test that names its refutation; \"subgroups are just fishing, so it tells us nothing\" is the dodge that discards a checkable, replicable pattern.",
   },
 ];
 
@@ -843,179 +843,179 @@ const written: HomeworkItem[] = [
   {
     itemType: "written",
     prompt:
-      "A man completes exposure work and his compulsive door-checking disappears. Within a month, though, he develops a new routine: before he can leave any room, he must mentally picture the door locked and silently say \"it's fine\" three times. He insists this \"isn't OCD, it's just a calming thing I do.\" In one paragraph, propose the strongest conclusion about what has happened and describe how you would test it.",
+      "A health service runs a randomized trial for borderline personality disorder: patients are assigned by chance either to a year of mentalization-based therapy (MBT) or to the standard care the service already offered. Eighteen months later, independent assessors blind to group find the MBT patients had markedly fewer self-harm episodes and hospital admissions. In one paragraph, propose the strongest conclusion the evidence supports and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that the compulsion was relieved at the surface without working through the intolerance of doubt that drove it, so the same function has migrated from physical checking into a mental ritual — picturing the lock and repeating \"it's fine\" does exactly what checking did, buying brief certainty at the cost of keeping the fear alive. This is a strong claim because it predicts checkable consequences: the new ritual should fire in the very situations checking used to (leaving a room, leaving the house) rather than at random; his anxiety should spike if he is prevented from completing the mental routine; and the urge should fade only when he faces the dread of being responsible for a catastrophe rather than soothing it. I would test it by mapping when the mental ritual appears against his old checking triggers, by having him resist completing it and watching whether anxiety surges, and by checking whether tolerating the uncertainty without the routine — not the routine itself — is what finally settles him.",
+        "The strongest conclusion is that MBT itself caused the reduction in self-harm and admissions, not chance, time, or who-chose-what: because patients were randomly assigned, the two groups should have started comparable, and because the assessors were blind, the lower counts in the MBT arm can't be wishful scoring — so this is good causal evidence that MBT helps. This is a strong, falsifiable claim because it predicts checkable consequences: the gap should survive a check that the groups were balanced at baseline on severity and past self-harm; it should hold at longer follow-up rather than fading the moment therapy ends; and it should reappear if another service runs the same trial. I would test it by examining the baseline tables for imbalance and adjusting for any, by following both groups for several more years, and by looking for independent replications — and I would count the claim refuted if the MBT group started much milder, or if the advantage vanishes once baseline severity is adjusted for.",
       yieldAnchors: [
-        "Door-checking disappeared after exposure work",
-        "A mental ritual began within a month",
-        "It occupies the same leaving-the-room situations",
+        "Patients randomly assigned to MBT or standard care",
+        "Blind assessors counted the outcomes",
+        "MBT group had fewer self-harm episodes and admissions",
       ],
       riskAnchors: [
-        "The ritual fires in the old checking situations",
-        "Anxiety spikes if he can't complete it",
-        "Facing the catastrophe fear, not the ritual, settles him",
+        "The groups were balanced at baseline",
+        "The gap holds at longer follow-up",
+        "It replicates in another service",
       ],
       defeatedBy: [
-        "The mental routine appears randomly, unrelated to leaving",
-        "Blocking it causes no anxiety at all",
+        "The MBT group started much less severe",
+        "The advantage disappears after adjusting for baseline",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that the compulsion was relieved at the surface without working through the intolerance of doubt that drove it, so the same function has migrated from physical checking into a mental ritual — picturing the lock and repeating \"it's fine\" does exactly what checking did, buying brief certainty at the cost of keeping the fear alive. This is a strong claim because it predicts checkable consequences: the new ritual should fire in the very situations checking used to (leaving a room, leaving the house) rather than at random; his anxiety should spike if he is prevented from completing the mental routine; and the urge should fade only when he faces the dread of being responsible for a catastrophe rather than soothing it. I would test it by mapping when the mental ritual appears against his old checking triggers, by having him resist completing it and watching whether anxiety surges, and by checking whether tolerating the uncertainty without the routine — not the routine itself — is what finally settles him.",
+      "The strongest conclusion is that MBT itself caused the reduction in self-harm and admissions, not chance, time, or who-chose-what: because patients were randomly assigned, the two groups should have started comparable, and because the assessors were blind, the lower counts in the MBT arm can't be wishful scoring — so this is good causal evidence that MBT helps. This is a strong, falsifiable claim because it predicts checkable consequences: the gap should survive a check that the groups were balanced at baseline on severity and past self-harm; it should hold at longer follow-up rather than fading the moment therapy ends; and it should reappear if another service runs the same trial. I would test it by examining the baseline tables for imbalance and adjusting for any, by following both groups for several more years, and by looking for independent replications — and I would count the claim refuted if the MBT group started much milder, or if the advantage vanishes once baseline severity is adjusted for.",
     explanation:
-      "Under the inverted standard, \"it's just a calming thing, nothing to read into\" earns near-zero; top credit reads the mental routine as the old compulsion migrated and names a does-it-fire-in-the-old-triggers test that could refute it.",
+      "Under the inverted standard, \"therapy can't be measured and all treatments are equal\" earns near-zero; top credit reads randomization-plus-blind-rating as causal evidence for MBT and names a check-baseline-balance test that could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "A woman has spent two years in talk therapy and can describe, movingly, how her washing rituals grew out of guilt over a sibling's accident she always felt responsible for. Her understanding is rich and genuine — but she still washes for hours and has never done any structured exposure. In one paragraph, propose the strongest conclusion about why the symptom persists and describe how you would test it.",
+      "A respected therapist publishes a glowing report: every one of the BPD patients who completed her year-long psychodynamic program rated themselves much improved. There was no comparison group, and the patients who dropped out partway were left out of the tally. In one paragraph, propose the strongest conclusion about what this evidence can and cannot show, and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that insight has outrun symptom relief: understanding the guilt the washing carries is real and valuable, but understanding alone rarely dislodges an entrenched compulsion, because the behavior is maintained by the relief it brings each time she gives in, and she has never practiced facing the feared contamination without washing. This is a strong claim because it predicts checkable consequences: adding structured exposure and response prevention should finally move the washing in a way two years of talk did not; the persistence should trace to her never having tolerated the feared dirt rather than to any gap in understanding; and combining the meaning work with exposure should outperform either alone for her. I would test it by introducing a graded exposure plan and tracking whether washing time drops, by checking whether her resistance is strongest exactly where she has avoided real contact, and by comparing her progress with exposure added against her flat two-year baseline.",
+        "The strongest conclusion is that the report is too weak to show the program caused the improvement, even though the improvement may be real: with no comparison group, ordinary time, hope, and the natural ebb of crises could account for the gains, and counting only the completers while dropping the early leavers stacks the deck toward a rosy result. This is a strong, falsifiable claim because it predicts that a better-designed study would shrink or change the finding: a randomized control group getting usual care would reveal how much of the improvement is just time and attention, and counting everyone who started — dropouts included — would lower the apparent success rate. I would test it by pushing for a randomized comparison that tracks all enrolled patients from the start, and I would count my skepticism refuted if the program still beat a real control group even when the dropouts are counted in.",
       yieldAnchors: [
-        "Two years of rich, genuine insight",
-        "Washing rituals are essentially unchanged",
-        "She has never done structured exposure",
+        "Completers rated themselves much improved",
+        "There was no comparison group",
+        "Dropouts were excluded from the tally",
       ],
       riskAnchors: [
-        "Adding exposure finally moves the washing",
-        "The persistence traces to never facing the feared dirt",
-        "Meaning-work plus exposure beats either alone",
+        "A randomized control shrinks the apparent benefit",
+        "Counting dropouts lowers the success rate",
+        "The gain matches what time alone would give",
       ],
       defeatedBy: [
-        "The washing was already resolving through insight alone",
-        "Exposure adds nothing to her flat baseline",
+        "The program beats a randomized control even counting dropouts",
+        "Improvement far exceeds any plausible time effect",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that insight has outrun symptom relief: understanding the guilt the washing carries is real and valuable, but understanding alone rarely dislodges an entrenched compulsion, because the behavior is maintained by the relief it brings each time she gives in, and she has never practiced facing the feared contamination without washing. This is a strong claim because it predicts checkable consequences: adding structured exposure and response prevention should finally move the washing in a way two years of talk did not; the persistence should trace to her never having tolerated the feared dirt rather than to any gap in understanding; and combining the meaning work with exposure should outperform either alone for her. I would test it by introducing a graded exposure plan and tracking whether washing time drops, by checking whether her resistance is strongest exactly where she has avoided real contact, and by comparing her progress with exposure added against her flat two-year baseline.",
+      "The strongest conclusion is that the report is too weak to show the program caused the improvement, even though the improvement may be real: with no comparison group, ordinary time, hope, and the natural ebb of crises could account for the gains, and counting only the completers while dropping the early leavers stacks the deck toward a rosy result. This is a strong, falsifiable claim because it predicts that a better-designed study would shrink or change the finding: a randomized control group getting usual care would reveal how much of the improvement is just time and attention, and counting everyone who started — dropouts included — would lower the apparent success rate. I would test it by pushing for a randomized comparison that tracks all enrolled patients from the start, and I would count my skepticism refuted if the program still beat a real control group even when the dropouts are counted in.",
     explanation:
-      "The inverted standard gives near-zero to \"only insight produces real change, so exposure would be shallow\"; top credit reads insight-without-behavior-change as needing exposure added and names a does-adding-exposure-move-it test that could refute it.",
+      "The inverted standard gives near-zero to \"everyone improved, so the program is proven and best\"; top credit reads the uncontrolled, completer-only report as a hypothesis needing a randomized control and names a count-the-dropouts test that could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "A man was free of his symmetry compulsions for over a year after treatment. They have now returned, intensely, in the weeks since his first child was born — and the new compulsions center on arranging the baby's room \"exactly right\" before he can leave it. In one paragraph, propose the strongest conclusion about what the relapse reveals and describe how you would test it.",
+      "A two-year randomized trial compares MBT and DBT for borderline personality disorder. Both groups show large, closely matched reductions in self-harm and emergency visits, with no meaningful difference between them. A manager argues the service should drop MBT because \"DBT is the only treatment with real evidence.\" In one paragraph, propose the strongest conclusion the data support and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that symptom relief never fully worked through the conflict the compulsions served — likely an intolerance of the helplessness and high-stakes responsibility that uncertainty brings — so the arrival of a baby, which loads exactly that fear, has reactivated the old solution in a new, parenting-shaped form. This is a strong claim because it predicts checkable consequences: the relapse content should map onto the baby's safety and his responsibility for it rather than spreading randomly; it should ease as he processes the dread of being unable to protect his child rather than only redoing exposures; and booster exposure paired with naming that fear should settle it faster than exposure alone. I would test it by checking whether the new compulsions cluster around the baby's care and safety, by exploring whether his anxiety is really about responsibility and helplessness, and by comparing exposure-plus-meaning-work against exposure alone for how durably the relapse resolves.",
+        "The strongest conclusion is that both MBT and DBT work for BPD, since two randomized arms improved by similar large amounts from a comparable start — so the manager's claim that only DBT has real evidence is contradicted by this very trial, in which MBT matched it. This is a strong, falsifiable claim because it predicts checkable consequences: the equivalence should repeat in another sample rather than being a one-off; it should hold at longer follow-up rather than one therapy's gains collapsing; and no large subgroup should turn out to do clearly better on one than the other. I would test it by looking for replication of the head-to-head result, by following both arms further in time, and by checking for subgroup differences — and I would count \"only DBT works\" supported only if a fair, repeated comparison showed DBT consistently beating MBT, which these data do not.",
       yieldAnchors: [
-        "A year free of symmetry compulsions",
-        "They returned intensely after his child's birth",
-        "They now center on the baby's room",
+        "Randomized comparison of MBT and DBT",
+        "Both showed large matched reductions",
+        "No meaningful difference between arms",
       ],
       riskAnchors: [
-        "Relapse content maps onto the baby's safety and his responsibility",
-        "It eases as he processes fear of being unable to protect the child",
-        "Exposure plus meaning-work settles it faster than exposure alone",
+        "The equivalence repeats in another sample",
+        "It holds at longer follow-up",
+        "No subgroup clearly favors one therapy",
       ],
       defeatedBy: [
-        "The relapse is unrelated to the baby or to responsibility",
-        "It returned gradually with no triggering event",
+        "A repeated head-to-head shows DBT consistently beating MBT",
+        "MBT's gains collapse at follow-up while DBT's hold",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that symptom relief never fully worked through the conflict the compulsions served — likely an intolerance of the helplessness and high-stakes responsibility that uncertainty brings — so the arrival of a baby, which loads exactly that fear, has reactivated the old solution in a new, parenting-shaped form. This is a strong claim because it predicts checkable consequences: the relapse content should map onto the baby's safety and his responsibility for it rather than spreading randomly; it should ease as he processes the dread of being unable to protect his child rather than only redoing exposures; and booster exposure paired with naming that fear should settle it faster than exposure alone. I would test it by checking whether the new compulsions cluster around the baby's care and safety, by exploring whether his anxiety is really about responsibility and helplessness, and by comparing exposure-plus-meaning-work against exposure alone for how durably the relapse resolves.",
+      "The strongest conclusion is that both MBT and DBT work for BPD, since two randomized arms improved by similar large amounts from a comparable start — so the manager's claim that only DBT has real evidence is contradicted by this very trial, in which MBT matched it. This is a strong, falsifiable claim because it predicts checkable consequences: the equivalence should repeat in another sample rather than being a one-off; it should hold at longer follow-up rather than one therapy's gains collapsing; and no large subgroup should turn out to do clearly better on one than the other. I would test it by looking for replication of the head-to-head result, by following both arms further in time, and by checking for subgroup differences — and I would count \"only DBT works\" supported only if a fair, repeated comparison showed DBT consistently beating MBT, which these data do not.",
     explanation:
-      "The cautious \"relapses just happen, there's nothing to read\" earns near-zero; top credit reads the birth-timed, baby-focused relapse as an un-worked-through responsibility conflict reactivated and names a does-it-map-onto-the-baby test that could refute it.",
+      "The overreach \"only DBT has real evidence\" is what the matched MBT results defeat; top credit commits to \"both work\" and names a does-the-equivalence-replicate test that could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "A year after finishing treatment, a woman tells you she had a hard stretch last month — two days of \"sliding back\" into reassurance-seeking after a health scare — but she recognized what was happening, reminded herself it was the old pattern, sat with the uncertainty, and was back to normal within days without calling anyone. In one paragraph, propose the strongest conclusion about the state of her recovery and describe how you would test it.",
+      "In a randomized trial of TFP versus a supportive therapy for BPD, both groups end up less distressed — but only the TFP group shows measured improvement in reflective functioning (the capacity to understand minds) and in the coherence of their sense of self on a standardized interview. In one paragraph, propose the strongest conclusion the evidence supports and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that her change is genuinely consolidating rather than fragile: she met a real trigger, briefly slid toward her old compulsion, but could recognize the lapse, link it to the health scare, and self-correct using what she learned — which is exactly what durable, worked-through recovery looks like, a lapse handled rather than a relapse begun. This is a strong claim because it predicts checkable consequences: such slips should stay brief, trigger-linked, and self-limited rather than escalating; she should be able to name the feared feeling each time and tolerate it without ritual; and her baseline should hold across months despite occasional lapses under stress. I would test it by tracking whether future slips stay short and self-corrected, by checking whether she can articulate and sit with the fear each one carries, and by following her baseline over time to confirm it holds rather than eroding.",
+        "The strongest conclusion is that TFP produces a specific structural change — improved reflective functioning and a more integrated identity — that goes beyond the general relief both therapies provided, which is exactly the deeper, identity-level change TFP is designed to target. This is a strong, falsifiable claim because it predicts checkable consequences: the structural gain should appear only in the TFP arm even though both arms ease distress; it should predict who stays well later, since structural change ought to outlast symptom relief; and it should survive an independent rater scoring the interviews blind to group. I would test it by confirming the reflective-functioning gain is TFP-specific, by following whether that gain predicts durable outcome, and by re-scoring the interviews blind — and I would count the claim refuted if the supportive group showed the same structural gains, or if TFP's edge disappeared under blind scoring.",
       yieldAnchors: [
-        "A year out of treatment",
-        "Two days of sliding back after a health scare",
-        "She recognized it and self-corrected without calling anyone",
+        "Both groups ended less distressed",
+        "Only TFP improved reflective functioning",
+        "Only TFP gained a more coherent sense of self",
       ],
       riskAnchors: [
-        "Slips stay brief, trigger-linked, and self-limited",
-        "She can name and tolerate the feared feeling",
-        "Her baseline holds across months",
+        "The structural gain is TFP-specific",
+        "It predicts who stays well",
+        "It survives blind scoring",
       ],
       defeatedBy: [
-        "The slips escalate and spread instead of self-correcting",
-        "She cannot recognize or sit with the underlying fear",
+        "The supportive group showed the same structural gains",
+        "TFP's edge vanishes under blind rating",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that her change is genuinely consolidating rather than fragile: she met a real trigger, briefly slid toward her old compulsion, but could recognize the lapse, link it to the health scare, and self-correct using what she learned — which is exactly what durable, worked-through recovery looks like, a lapse handled rather than a relapse begun. This is a strong claim because it predicts checkable consequences: such slips should stay brief, trigger-linked, and self-limited rather than escalating; she should be able to name the feared feeling each time and tolerate it without ritual; and her baseline should hold across months despite occasional lapses under stress. I would test it by tracking whether future slips stay short and self-corrected, by checking whether she can articulate and sit with the fear each one carries, and by following her baseline over time to confirm it holds rather than eroding.",
+      "The strongest conclusion is that TFP produces a specific structural change — improved reflective functioning and a more integrated identity — that goes beyond the general relief both therapies provided, which is exactly the deeper, identity-level change TFP is designed to target. This is a strong, falsifiable claim because it predicts checkable consequences: the structural gain should appear only in the TFP arm even though both arms ease distress; it should predict who stays well later, since structural change ought to outlast symptom relief; and it should survive an independent rater scoring the interviews blind to group. I would test it by confirming the reflective-functioning gain is TFP-specific, by following whether that gain predicts durable outcome, and by re-scoring the interviews blind — and I would count the claim refuted if the supportive group showed the same structural gains, or if TFP's edge disappeared under blind scoring.",
     explanation:
-      "The overreach \"any slip means she's relapsing\" is what her recognition-and-self-correction defeats; top credit reads the brief, trigger-linked, self-corrected slide as consolidation and names a do-future-slips-stay-self-limited test that could refute it.",
+      "The dodge \"inner changes can't be measured, so the difference means nothing\" earns near-zero; top credit reads the TFP-only structural gain as a specific mechanism and names a blind-rescore test that could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "A man finishes a quick, effective exposure program; his counting compulsions are gone and his therapist is pleased. But he tells a friend that he feels oddly flat and restless, \"like I lost a job I hated but don't know what to do with myself,\" and he has started snapping at people in a way that's new for him. In one paragraph, propose the strongest conclusion about what is going on and describe how you would test it.",
+      "Eight years after finishing MBT, former BPD patients are mostly working or studying, are rarely hospitalized, and seldom self-harm — and they are doing clearly better than a comparison group of similar patients who received only standard care in the same era. A colleague shrugs that \"people with BPD just calm down with age, so the therapy deserves no credit.\" In one paragraph, propose the strongest conclusion the evidence supports and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that the counting was removed without working through what it was managing, so the feeling the ritual used to bind — likely a tension or distress it discharged — now has no outlet and is leaking out as flatness, restlessness, and irritability; the symptom relief is real but the underlying conflict is untouched, which makes the gain brittle and risks a new symptom forming. This is a strong claim because it predicts checkable consequences: the new irritability and restlessness should track the same situations that used to trigger counting rather than appearing at random; a fresh ritual or symptom may emerge to take counting's place if nothing else absorbs the feeling; and briefly exploring what the counting protected him from should ease the \"don't know what to do with myself\" sense. I would test it by mapping his irritable moments against his old counting triggers, by watching for a replacement symptom over the coming weeks, and by checking whether naming and facing the feeling the ritual used to manage reduces the restlessness.",
+        "The strongest conclusion is that MBT produced durable, structural change rather than a passing in-therapy lift, because the gains persist eight years after treatment ended AND exceed those of a same-era comparison group of similar patients — if age alone explained recovery, that comparison group, now equally older, would have caught up, and they did not. This is a strong, falsifiable claim because it predicts checkable consequences: the employment and hospital figures should match official records rather than rosy self-report; the two groups should have been similar in baseline severity; and the advantage should survive adjusting for any baseline difference. I would test it by verifying the outcomes against documented records, by comparing baseline severity across the groups, and by adjusting for any imbalance — and I would count the claim refuted if the comparison group did just as well, or if the MBT group had started much milder and the gap dissolved after adjustment.",
       yieldAnchors: [
-        "Counting compulsions are gone after a quick program",
-        "He feels flat, restless, and newly irritable",
-        "He likens it to losing a hated job",
+        "Gains persist eight years after MBT ended",
+        "They exceed a same-era standard-care comparison group",
+        "Most are working and rarely hospitalized",
       ],
       riskAnchors: [
-        "Irritability tracks the old counting triggers",
-        "A replacement symptom may emerge",
-        "Exploring what counting managed eases the restlessness",
+        "Outcomes match official records",
+        "The groups were similar at baseline",
+        "The advantage survives adjustment",
       ],
       defeatedBy: [
-        "The restlessness is unrelated to his old triggers",
-        "No feeling or symptom fills the gap and he feels fine",
+        "The comparison group did just as well",
+        "The MBT group had started much milder",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that the counting was removed without working through what it was managing, so the feeling the ritual used to bind — likely a tension or distress it discharged — now has no outlet and is leaking out as flatness, restlessness, and irritability; the symptom relief is real but the underlying conflict is untouched, which makes the gain brittle and risks a new symptom forming. This is a strong claim because it predicts checkable consequences: the new irritability and restlessness should track the same situations that used to trigger counting rather than appearing at random; a fresh ritual or symptom may emerge to take counting's place if nothing else absorbs the feeling; and briefly exploring what the counting protected him from should ease the \"don't know what to do with myself\" sense. I would test it by mapping his irritable moments against his old counting triggers, by watching for a replacement symptom over the coming weeks, and by checking whether naming and facing the feeling the ritual used to manage reduces the restlessness.",
+      "The strongest conclusion is that MBT produced durable, structural change rather than a passing in-therapy lift, because the gains persist eight years after treatment ended AND exceed those of a same-era comparison group of similar patients — if age alone explained recovery, that comparison group, now equally older, would have caught up, and they did not. This is a strong, falsifiable claim because it predicts checkable consequences: the employment and hospital figures should match official records rather than rosy self-report; the two groups should have been similar in baseline severity; and the advantage should survive adjusting for any baseline difference. I would test it by verifying the outcomes against documented records, by comparing baseline severity across the groups, and by adjusting for any imbalance — and I would count the claim refuted if the comparison group did just as well, or if the MBT group had started much milder and the gap dissolved after adjustment.",
     explanation:
-      "The inverted standard gives near-zero to \"the counting's gone so it's a complete success\"; top credit reads the new flatness and irritability as the bound feeling without its outlet and names a watch-for-a-replacement-symptom test that could refute it.",
+      "The dodge \"they'd calm down with age, so no credit and nothing's knowable\" is defeated by the comparison group's worse outcome; top credit reads durable, comparison-beating gains as structural change and names a check-against-records test that could refute it.",
   },
 ];
 
 export const section: SectionContent = {
-  slug: "working-through-insight-relief",
-  title: "Working Through: Insight Alongside Symptom Relief",
+  slug: "evidence-where-psychodynamic-shines",
+  title: "The Evidence: Where Psychodynamic Treatment Genuinely Shines",
   weekNumber: 1,
   blurb:
-    "Durable recovery from OCD pairs symptom relief with insight into what the ritual was for, so the meaning doesn't just resurface as a new symptom. This section is about reading when change is consolidating, when relief is brittle, and what still needs working through.",
+    "Borderline personality disorder is one of the few conditions where psychodynamic treatments (MBT, TFP) have randomized-trial evidence, alongside strongly-evidenced DBT — reducing self-harm and hospitalization and producing real structural change. This section is about reading that evidence: committing to the conclusion the data genuinely support and naming the cheapest observation that would disconfirm it.",
   lectureTitle:
-    "1.7 Working Through: insight alongside symptom relief",
-  body: `# Working Through: Insight Alongside Symptom Relief
+    "1.7 The Evidence: where psychodynamic treatment genuinely shines",
+  body: `# The Evidence: Where Psychodynamic Treatment Genuinely Shines
 
-Getting the rituals to stop is not the same as being well. A man can quit checking the locks and feel, for a few weeks, that he has won — only to find a new mental routine has quietly taken the old one's place. \"Working through\" is the name for the slower, deeper part of treatment: not just removing the behavior but settling the conflict the behavior was managing, so the relief holds and the meaning doesn't pop up somewhere else. This section is about reading that process from the evidence — telling the difference between change that is consolidating and change that is only skin-deep, and naming the cheap check that would tell you which you are looking at.
+For most of the twentieth century, borderline personality disorder (BPD) was treated as a near-hopeless diagnosis — talked about with dread, often considered untreatable. That picture has changed, and the reason is evidence. BPD is now one of the few conditions where depth-oriented, psychodynamic treatments — mentalization-based therapy (MBT) and transference-focused psychotherapy (TFP) — have been put through randomized controlled trials and have held up, sitting alongside the strongly-evidenced behavioral treatment, dialectical behavior therapy (DBT). This section is not about a new clinical idea; it is about reading the evidence well — committing to exactly what a study supports and naming the cheapest observation that would tell you you're wrong.
 
-## When relief comes without understanding
+## A rare bright spot: BPD and the randomized trial
 
-Exposure work can drop a compulsion fast, and that is genuinely good. But when the behavior goes and nothing else changes — the person can't say what the ritual was for, and a vague unease or new irritability creeps in — the gain can be brittle. The feeling the ritual used to bind still has to go somewhere. The tell is not that relief is suspect, but that relief with no working-through tends to leave the original conflict live, ready to be reactivated by the next stressor that loads it.
+Many psychotherapy claims rest on testimonials and clinician impressions. BPD is unusual: here the depth-oriented therapies were actually randomized against control conditions and measured on hard outcomes — self-harm episodes, suicide attempts, hospital days, employment, and standardized ratings of identity and the capacity to read minds. That makes BPD a place where you can do something the rest of this course keeps asking for: draw a committed, falsifiable conclusion because there is real discriminating evidence to draw it from. The job in this section is to use that evidence, not to hide behind \"we can't really know.\"
 
-## When understanding comes without relief
+## What a controlled study buys you (versus \"patients felt better\")
 
-The opposite failure is just as common. Someone can describe, beautifully and truly, how their washing grew out of guilt, and still wash for two hours a day. Insight alone rarely dislodges an entrenched compulsion, because the behavior is held in place by the relief it delivers every time the person gives in. Worse, an articulate, feeling-free account can itself become a defense — intellectualizing the symptom keeps the emotion at arm's length while the ritual rolls on. Understanding only changes things when it meets live feeling at the moment of the urge, and when it is paired with actually facing the feared situation.
+The single most important distinction here is between a controlled finding and an uncontrolled impression. \"All my patients felt better after a year\" sounds persuasive, but with no comparison group it cannot separate the therapy from time, hope, the natural ebb of crises, or the quiet trick of counting only the people who stayed. A randomized control group fixes this: assign patients by chance to the therapy or to usual care, and the two groups start comparable, so a later difference points to the treatment. Blind assessors and official records add more: they keep wishful thinking out of the scoring. When you read a result, the first question is always — compared to what?
 
-## Symptom substitution and the migrating compulsion
+## What the trials actually show
 
-One of the clearest signs that working-through is unfinished is substitution: checking stops and silent reassurance phrases begin; solo washing stops and the person starts phoning a spouse a dozen times a day; a ritual stops and a bodily symptom appears in the same trigger slot. The surface form changes but the function is identical — buy brief certainty, dodge the feared feeling. The cheap check is to ask whether the new behavior fires in the very situations the old one did. When it does, you are looking at the same compulsion in new clothing, not a fresh and unrelated habit.
+Across the strongest trials, the depth-oriented treatments reduce self-harm and suicide attempts, cut hospital admissions, lower dropout, and — for TFP especially — move measures of reflective functioning and identity integration that lighter, supportive therapies leave untouched. Head-to-head, MBT and DBT tend to produce similar large gains, which means the honest read is \"both work,\" not \"only one is real.\" Some gains persist for years after treatment ends and exceed those of comparison groups, which is the signature of durable, structural change rather than a temporary lift while someone is in the room each week.
 
-## Lapse, relapse, and what consolidation looks like
+## Commit to what the evidence supports — and no more
 
-Recovery is not a straight line, and the difference between a lapse and a relapse is one of the most useful things to read. A consolidating patient can have a hard week — a slip back into the old behavior under a real trigger — and then recognize it, link it to the trigger, sit with the feeling, and self-correct without spiraling. That is a lapse handled, and it is actually a sign of durable change. A relapse, by contrast, keeps climbing and spreading. Reading the slip well means asking whether it stayed brief and trigger-linked, and whether the person could name and tolerate the fear underneath it.
+The inverted standard of this course fits the evidence beautifully, in both directions. The boldest defensible reading commits to the specific conclusion the data earn — \"this therapy reduced self-harm versus a control\" — and names the cheap test that would overturn it. But commitment cuts both ways: a trial that measured fewer hospital admissions over one year does not show a \"cure,\" and beating a do-nothing waitlist does not make a therapy \"the best.\" The strong answer says exactly what was shown, refuses the inflation, and stays inside the measured outcome.
 
-## White-knuckling versus working through
+## Reading a finding — and naming the cheap disconfirming test
 
-A person can stop all rituals and still not be well, if they are holding the urges down by sheer effort while the dread stays maxed out. Suppression is brittle: it costs enormous energy and tends to rebound under load. Genuine working-through looks different — the distress at triggers actually falls over time, the person can approach feared situations willingly rather than gritting through them, and the feared outcome has been faced and disconfirmed rather than merely resisted. The cheap check is whether fear is dropping or just being contained.
+The habit to build is to read a study and immediately name the observation that would refute your reading. Were the groups balanced at the start, or did one begin milder? Does the effect survive when raters are blind and when outcomes come from records instead of memory? Does it replicate in another sample? Does the proposed mechanism — say, improved mentalizing — actually track the outcome and come before it in time? A conclusion that names its own cheapest disconfirming check is worth far more than \"it seems to help\" or \"who can say.\"
 
-## Reading the change — and naming a test
+## Two ways to go wrong: the dodge and the overreach
 
-The habit this course trains applies here too. Don't stop at \"the rituals are gone.\" Commit to the strongest supported reading of where the change really stands — *consolidating*, *brittle relief*, *insight without relief*, *substitution*, or *suppression* — and then say exactly what would tell you you're wrong. Does the new behavior fire in the old triggers? Does distress fall over time or stay pinned? Does a slip self-correct or keep climbing? Do the gains spread to behaviors sharing the same underlying fear, which would signal real structural change? A reading that names its own disconfirming check is worth far more than \"he's better\" or \"it never really worked.\"
+There are two cheap failures, and the evidence defeats both. The dodge says \"therapy can't really be measured,\" \"all therapies work the same,\" or \"nothing works for BPD\" — refusals the randomized trials flatly contradict. The overreach runs the other way: \"psychodynamic therapy cures BPD,\" \"only DBT works,\" or \"beating a waitlist makes it the best\" — claims that sail past what was actually measured. The strongest reading threads between them, committing hard to the real finding while refusing both the shrug and the inflation.
 
 ## In the real world
 
-Think of someone you know who \"fixed\" a problem and then sprouted a new one in its place — quit smoking and started overeating, ended one anxious habit and grew another. The same logic governs OCD recovery. The point of working through is not to chase every symptom forever, but to settle the conflict underneath so that relief in one place doesn't quietly demand a new symptom somewhere else. When relief and insight finally join — when a person can meet the old trigger, feel the feeling the ritual used to mask, and let it pass — that is what lasting change looks like, and it is worth far more than a quiet that only holds until the next storm.`,
+You meet this every day outside the clinic — a supplement that \"works\" because the people who took it felt better, a teaching method praised on the strength of its success stories, a drug ad that turns one modest result into a miracle. The same questions rescue you each time: compared to what, measured how, and what would have shown the opposite? BPD's treatment evidence is a clean place to practice, because here the controlled comparisons exist and the honest move is to use them — to say plainly what the data support, no less and no more, and to keep in view the one cheap observation that would change your mind.`,
   homework: {
     mcq,
     hybrid,

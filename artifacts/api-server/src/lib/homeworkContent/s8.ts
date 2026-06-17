@@ -9,122 +9,122 @@ const mcq: HomeworkItem[] = [
   {
     itemType: "mc",
     prompt:
-      "At intake, a new patient describes two hours of daily hand-washing set off by touching doorknobs, plus a fear of contaminating his baby daughter. The clinician feels tempted to start exposures in the first session. Which conclusion best follows?",
+      "At intake, a new patient describes relationships that swing from adoration to hatred within days, panic and frantic calling whenever a partner is slow to reply, and cutting herself 'to take the edge off.' The clinician feels tempted to start teaching coping skills in the first session. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Before any exposure, the strongest first move is a shared formulation — mapping the exact triggers, the feared catastrophe (harming his daughter), the rituals, and what they accomplish — because aiming exposures at the wrong link wastes the work; test whether the washing tracks the daughter-contamination fear specifically, whether avoidance has quietly spread beyond washing, and whether he can name the feared outcome the ritual is meant to prevent.",
+        text: "Before any skills work, the strongest first move is a shared formulation — mapping the exact interpersonal triggers, the unbearable affect they ignite (panic at being left), the impulsive acts, and what they accomplish — because aiming the work at the wrong link wastes it; test whether the cutting tracks moments of perceived rejection specifically, whether each impulsive act brings brief relief that then reinforces the pattern, and whether she can name the feeling the act is meant to discharge.",
         credit: 1.0,
       },
       {
-        text: "It's probably contamination OCD; we could start some exposures soon.",
+        text: "It's probably BPD; we could start some coping skills soon.",
         credit: 0.6,
       },
       {
-        text: "He seems to wash his hands a lot.",
+        text: "She seems to have a lot of relationship drama.",
         credit: 0.3,
       },
       {
-        text: "Since the symptom is obvious, a formulation is a waste of time and exposures should begin the first hour no matter what the details turn out to be.",
+        text: "Since the diagnosis is obvious, a formulation is a waste of time and skills should begin the first hour no matter what the details turn out to be.",
         credit: 0,
       },
     ],
     correctAnswer:
-      "Before any exposure, the strongest first move is a shared formulation — mapping the exact triggers, the feared catastrophe (harming his daughter), the rituals, and what they accomplish — because aiming exposures at the wrong link wastes the work; test whether the washing tracks the daughter-contamination fear specifically, whether avoidance has quietly spread beyond washing, and whether he can name the feared outcome the ritual is meant to prevent.",
+      "Before any skills work, the strongest first move is a shared formulation — mapping the exact interpersonal triggers, the unbearable affect they ignite (panic at being left), the impulsive acts, and what they accomplish — because aiming the work at the wrong link wastes it; test whether the cutting tracks moments of perceived rejection specifically, whether each impulsive act brings brief relief that then reinforces the pattern, and whether she can name the feeling the act is meant to discharge.",
     explanation:
-      "Top credit reads the case as sitting at the assessment-and-formulation step and names checkable mapping tasks; 'skip formulation, the symptom is obvious' is the overreach the specific harm-fear and hidden avoidance defeat.",
+      "Top credit reads the case as sitting at the assessment-and-formulation step and names checkable mapping tasks; 'skip formulation, the diagnosis is obvious' is the overreach the specific abandonment-affect link and hidden behaviors defeat.",
   },
   {
     itemType: "mc",
     prompt:
-      "A patient with checking compulsions says in the first session, 'I've done therapy before and they just shoved me into the scariest stuff and I quit — are you going to do that?' and watches the clinician carefully. Which conclusion best follows?",
+      "A patient with a long history of unstable relationships says in the first session, 'Every therapist I've had eventually gives up on me and dumps me — are you going to do that too?' and watches the clinician carefully. Which conclusion best follows?",
     mcOptions: [
       {
         text: "He seems nervous about starting therapy.",
         credit: 0.3,
       },
       {
-        text: "His prior dropout proves he is untreatable and that no working relationship can be built with checking OCD.",
+        text: "His past dropouts prove he is untreatable and that no working relationship can be built with BPD.",
         credit: 0,
       },
       {
-        text: "His question marks the case as sitting at the alliance-building stage — early exposure work will fail without a collaborative, graded plan he helps design and can trust; test whether his engagement rises when he's given a say in the pace, whether naming the past rupture lowers his guard, and whether he stays in the room once exposures are introduced gradually rather than forced.",
+        text: "His question marks the case as sitting at the alliance-and-frame stage — deeper work will fail without a clear, reliable frame and a relationship he helps shape and can trust; test whether his engagement rises when the frame and his role are made explicit, whether naming the feared abandonment lowers his guard, and whether he stays once limits are set warmly rather than punitively.",
         credit: 1.0,
       },
       {
-        text: "He's probably worried about the approach; we could reassure him it'll be fine.",
+        text: "He's probably worried we'll abandon him; we could reassure him it'll be fine.",
         credit: 0.6,
       },
     ],
     correctAnswer:
-      "His question marks the case as sitting at the alliance-building stage — early exposure work will fail without a collaborative, graded plan he helps design and can trust; test whether his engagement rises when he's given a say in the pace, whether naming the past rupture lowers his guard, and whether he stays in the room once exposures are introduced gradually rather than forced.",
+      "His question marks the case as sitting at the alliance-and-frame stage — deeper work will fail without a clear, reliable frame and a relationship he helps shape and can trust; test whether his engagement rises when the frame and his role are made explicit, whether naming the feared abandonment lowers his guard, and whether he stays once limits are set warmly rather than punitively.",
     explanation:
-      "Full credit reads the case as needing alliance-building before exposure and names tests of engagement; 'he is untreatable' is the overreach his very willingness to ask and stay defeats.",
+      "Full credit reads the case as needing alliance-and-frame work before deeper work and names tests of engagement; 'he is untreatable' is the overreach his very willingness to ask and stay defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "Eager to get better fast, a contamination patient insists on starting with the single hardest task on her list — sitting on a public restroom floor — before any easier steps. Which conclusion best follows?",
+      "Eager to get to the root of it, a patient in frequent crisis insists on diving straight into her most painful childhood trauma in the first weeks, before any work on safety or managing overwhelming feelings. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "She probably wants to rush; we could suggest slowing down.",
+        text: "She probably wants to dig in fast; we could suggest slowing down.",
         credit: 0.6,
       },
       {
-        text: "Her wish to leap to the top of the ladder marks a planning step: a graded hierarchy is what makes exposure tolerable enough to actually complete without ritualizing, so the strong move is to build that ladder with her rather than honor the leap; test whether she can stay in an easier exposure without washing first, whether a too-hard start drives covert rituals or escape, and whether steady graded steps hold her engagement better than one overwhelming plunge.",
+        text: "Her wish to plunge into the deepest trauma before any stabilization marks the early-safety phase: deep exploratory work is intolerable and destabilizing until affect regulation and a safe frame are in place, so the strong move is to build stabilization with her first; test whether she can stay regulated in a lower-intensity session without a crisis, whether a too-deep start triggers self-harm or flight, and whether steady graded work holds her better than one overwhelming plunge.",
         credit: 1.0,
       },
       {
-        text: "She seems very motivated to start.",
+        text: "She seems very eager to get started.",
         credit: 0.3,
       },
       {
-        text: "Since she's motivated, throw her straight into the worst exposure — hierarchies are coddling and motivated patients don't need them.",
+        text: "Since she's motivated, go straight into the deepest trauma — stabilization is coddling and motivated patients don't need it.",
         credit: 0,
       },
     ],
     correctAnswer:
-      "Her wish to leap to the top of the ladder marks a planning step: a graded hierarchy is what makes exposure tolerable enough to actually complete without ritualizing, so the strong move is to build that ladder with her rather than honor the leap; test whether she can stay in an easier exposure without washing first, whether a too-hard start drives covert rituals or escape, and whether steady graded steps hold her engagement better than one overwhelming plunge.",
+      "Her wish to plunge into the deepest trauma before any stabilization marks the early-safety phase: deep exploratory work is intolerable and destabilizing until affect regulation and a safe frame are in place, so the strong move is to build stabilization with her first; test whether she can stay regulated in a lower-intensity session without a crisis, whether a too-deep start triggers self-harm or flight, and whether steady graded work holds her better than one overwhelming plunge.",
     explanation:
-      "Top credit reads the case as needing a graded hierarchy and names tests of tolerable exposure; 'skip the ladder, motivation is enough' is the overreach the risk of escape and covert ritualizing defeats.",
+      "Top credit reads the case as needing safety and stabilization first and names tests of tolerable work; 'skip stabilization, motivation is enough' is the overreach the risk of crisis and flight defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "Months into successful ERP, a man's stove-checking has nearly stopped — but a brand-new obsession, an intrusive fear of stabbing his wife, has appeared and is now consuming him. Which conclusion best follows?",
+      "Months into treatment, a woman's self-harm has nearly stopped — but a brand-new pattern of binge drinking and reckless spending has appeared and is now consuming her, flaring in the same moments the cutting used to. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The fresh harm-obsession arriving just as checking faded suggests the work has relieved the surface ritual without touching the conflict the symptom was carrying, so the same anxiety has found a new outlet; test whether the new obsession shares the old one's emotional theme of fearing he'll damage what he loves, whether it flares in the same situations the checking used to, and whether pairing continued ERP with attention to that underlying fear stops the symptom from simply migrating again.",
+        text: "The new impulsive behavior arriving just as the cutting stopped suggests the work curbed one outlet without addressing the affect it was regulating, so the same unbearable feeling has found a new discharge; test whether the new behavior flares in the same rejection-and-abandonment moments the cutting did, whether it delivers the same brief relief, and whether pairing skills with attention to the underlying affect stops the behavior from simply migrating again.",
         credit: 1.0,
       },
       {
-        text: "It's probably related to the old symptom; we could keep doing exposures.",
+        text: "It's probably related to the old self-harm; we could keep doing skills.",
         credit: 0.6,
       },
       {
-        text: "He seems to have a new worry now.",
+        text: "She seems to have a new problem behavior now.",
         credit: 0.3,
       },
       {
-        text: "The new violent thought proves he is secretly dangerous and the real risk to his wife was there all along.",
+        text: "The new drinking proves she was just an addict all along and the self-harm was never the real issue.",
         credit: 0,
       },
     ],
     correctAnswer:
-      "The fresh harm-obsession arriving just as checking faded suggests the work has relieved the surface ritual without touching the conflict the symptom was carrying, so the same anxiety has found a new outlet; test whether the new obsession shares the old one's emotional theme of fearing he'll damage what he loves, whether it flares in the same situations the checking used to, and whether pairing continued ERP with attention to that underlying fear stops the symptom from simply migrating again.",
+      "The new impulsive behavior arriving just as the cutting stopped suggests the work curbed one outlet without addressing the affect it was regulating, so the same unbearable feeling has found a new discharge; test whether the new behavior flares in the same rejection-and-abandonment moments the cutting did, whether it delivers the same brief relief, and whether pairing skills with attention to the underlying affect stops the behavior from simply migrating again.",
     explanation:
-      "Top credit reads symptom substitution as a sign the meaning needs working alongside ERP and names a shared-theme test; 'he's secretly dangerous' is the overreach that confuses an ego-dystonic OCD fear with real intent.",
+      "Top credit reads behavior substitution as a sign the affect needs addressing alongside skills and names a same-trigger test; 'she's just an addict' is the overreach that ignores the shared affect-regulating function.",
   },
   {
     itemType: "mc",
     prompt:
-      "An ERP patient who had been improving keeps texting the clinician between sessions — 'Did I do the exposure right? Are you sure I'm not contaminated?' — and her progress has stalled exactly as the texts increased. Which conclusion best follows?",
+      "A patient who had been improving keeps texting the clinician between sessions — 'Are you angry at me? Are you still going to be my therapist?' — and her progress has stalled exactly as the texts increased. Which conclusion best follows?",
     mcOptions: [
       {
         text: "She seems to text a lot between sessions.",
         credit: 0.3,
       },
       {
-        text: "The reassurance texts have become a new compulsion that quietly cancels the exposures — relief from the clinician's answer does the same anxiety-lowering work the old ritual did, so the plateau makes sense; test whether her gains resume when between-session reassurance is gently withheld, whether the urge to text spikes right after harder exposures, and whether she can tolerate the uncertainty when the clinician reflects the question back instead of answering it.",
+        text: "The reassurance texts have become a between-session safety behavior that discharges abandonment panic — relief from the clinician's reply does the same affect-regulating work the old self-harm did, so the plateau makes sense; test whether her gains resume when between-session reassurance is gently held to the frame, whether the urge to text spikes after sessions that touched on closeness or ending, and whether she can tolerate the uncertainty when the clinician reflects the feeling back instead of simply reassuring.",
         credit: 1.0,
       },
       {
@@ -132,134 +132,134 @@ const mcq: HomeworkItem[] = [
         credit: 0.6,
       },
       {
-        text: "Answering every question fully and instantly is the caring thing to do, and refusing would just be cold and damage the relationship.",
+        text: "Answering every text instantly and warmly is the only caring thing to do, and holding any limit would just be cold and abandon her.",
         credit: 0,
       },
     ],
     correctAnswer:
-      "The reassurance texts have become a new compulsion that quietly cancels the exposures — relief from the clinician's answer does the same anxiety-lowering work the old ritual did, so the plateau makes sense; test whether her gains resume when between-session reassurance is gently withheld, whether the urge to text spikes right after harder exposures, and whether she can tolerate the uncertainty when the clinician reflects the question back instead of answering it.",
+      "The reassurance texts have become a between-session safety behavior that discharges abandonment panic — relief from the clinician's reply does the same affect-regulating work the old self-harm did, so the plateau makes sense; test whether her gains resume when between-session reassurance is gently held to the frame, whether the urge to text spikes after sessions that touched on closeness or ending, and whether she can tolerate the uncertainty when the clinician reflects the feeling back instead of simply reassuring.",
     explanation:
-      "Full credit reads reassurance-seeking as a ritual stalling ERP and names a withhold-and-watch test; 'always answer fully or you're cold' is the dodge that mistakes accommodation for care.",
+      "Full credit reads the reassurance texts as a between-session safety behavior stalling progress and names a hold-the-frame test; 'always answer instantly or you're cold' is the dodge that mistakes accommodation for care.",
   },
   {
     itemType: "mc",
     prompt:
-      "A patient's contamination rituals barely improve despite good in-session work; it emerges that his wife wipes down every surface, opens all doors, and handles the mail for him so he 'doesn't have to.' Which conclusion best follows?",
+      "A patient's crises barely improve despite good in-session work; it emerges that her partner organizes their whole life around never upsetting her — he never disagrees, cancels his own plans, and smooths over every conflict so she 'doesn't spiral.' Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He's lucky to have a supportive wife, so there's nothing in the home setup worth changing.",
+        text: "She's lucky to have such a devoted partner, so there's nothing in the home setup worth changing.",
         credit: 0,
       },
       {
-        text: "It's probably about the home situation; we could mention it to his wife.",
+        text: "It's probably about the home situation; we could mention it to her partner.",
         credit: 0.6,
       },
       {
-        text: "The wife's helping is family accommodation that performs the avoidance for him, so the loop keeps running outside session no matter what happens inside it — the arc now needs the accommodation addressed; test whether his out-of-session anxiety has any room to extinguish given she removes every trigger, whether his symptoms ease as she gradually steps back from the rituals, and whether the couple can tolerate the distress that surfaces when she stops.",
+        text: "The partner's walking-on-eggshells is accommodation that absorbs every trigger for her, so the dysregulation loop never gets faced outside session no matter what happens inside it — the arc now needs the accommodation addressed; test whether her distress tolerance has any room to grow while he removes all friction, whether her flares ease as he gradually holds ordinary limits, and whether the couple can tolerate the affect that surfaces when he stops.",
         credit: 1.0,
       },
       {
-        text: "He seems to get a lot of help at home.",
+        text: "She seems to get a lot of support at home.",
         credit: 0.3,
       },
     ],
     correctAnswer:
-      "The wife's helping is family accommodation that performs the avoidance for him, so the loop keeps running outside session no matter what happens inside it — the arc now needs the accommodation addressed; test whether his out-of-session anxiety has any room to extinguish given she removes every trigger, whether his symptoms ease as she gradually steps back from the rituals, and whether the couple can tolerate the distress that surfaces when she stops.",
+      "The partner's walking-on-eggshells is accommodation that absorbs every trigger for her, so the dysregulation loop never gets faced outside session no matter what happens inside it — the arc now needs the accommodation addressed; test whether her distress tolerance has any room to grow while he removes all friction, whether her flares ease as he gradually holds ordinary limits, and whether the couple can tolerate the affect that surfaces when he stops.",
     explanation:
-      "Top credit reads stalled progress as driven by family accommodation and names a step-back test; 'he's just lucky, nothing to change' is the dodge the symptom-maintaining help defeats.",
+      "Top credit reads stalled progress as driven by accommodation and names a hold-limits test; 'she's just lucky, nothing to change' is the dodge the loop-maintaining help defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "After his symmetry-and-counting rituals fade with ERP, a previously placid man becomes aware of a simmering anger at his father he says he 'never knew was there,' and it surfaces in the same moments the counting used to. Which conclusion best follows?",
+      "After her self-harm fades and her affect steadies, a previously numb woman becomes aware of a deep grief and anger toward her mother she says she 'never knew was there,' and it surfaces in the same moments the cutting used to. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He seems to be feeling some anger lately.",
+        text: "She seems to be feeling some anger lately.",
         credit: 0.3,
       },
       {
-        text: "With the ritual no longer absorbing it, a feeling the counting had been managing — anger at his father — is now reaching awareness, which marks a shift from symptom relief into working through the conflict beneath it; test whether the anger arises in the very situations that used to trigger counting, whether staying with the feeling rather than re-ritualizing keeps the symptom from returning, and whether naming the conflict deepens relief rather than worsening it.",
+        text: "With the self-harm no longer discharging it, a feeling the cutting had been managing — grief and anger at her mother — is now reaching awareness, which marks a shift from crisis stabilization into working through the conflict beneath it; test whether the feeling arises in the very situations that used to trigger self-harm, whether staying with it rather than acting on it keeps the symptom from returning, and whether naming the conflict deepens relief rather than worsening it.",
         credit: 1.0,
       },
       {
-        text: "It's probably connected to the old ritual; we could explore his family.",
+        text: "It's probably connected to the old self-harm; we could explore her family.",
         credit: 0.6,
       },
       {
-        text: "The anger means the ERP backfired and made him worse, so the symptom work should be undone.",
+        text: "The anger means the treatment backfired and made her worse, so the stabilization work should be undone.",
         credit: 0,
       },
     ],
     correctAnswer:
-      "With the ritual no longer absorbing it, a feeling the counting had been managing — anger at his father — is now reaching awareness, which marks a shift from symptom relief into working through the conflict beneath it; test whether the anger arises in the very situations that used to trigger counting, whether staying with the feeling rather than re-ritualizing keeps the symptom from returning, and whether naming the conflict deepens relief rather than worsening it.",
+      "With the self-harm no longer discharging it, a feeling the cutting had been managing — grief and anger at her mother — is now reaching awareness, which marks a shift from crisis stabilization into working through the conflict beneath it; test whether the feeling arises in the very situations that used to trigger self-harm, whether staying with it rather than acting on it keeps the symptom from returning, and whether naming the conflict deepens relief rather than worsening it.",
     explanation:
-      "Full credit reads the emerging feeling as the working-through phase opening and names a same-trigger test; 'the ERP backfired' is the overreach the symptom relief and surfacing meaning defeat.",
+      "Full credit reads the emerging feeling as the working-through phase opening and names a same-trigger test; 'the treatment backfired' is the overreach the genuine symptom relief and surfacing meaning defeat.",
   },
   {
     itemType: "mc",
     prompt:
-      "After a year of work, a checking patient now resists most urges on his own, recovers quickly from the occasional slip, and recently handled a new contamination worry by building his own exposure without calling the clinician. Which conclusion best follows?",
+      "After a year of work, a patient now rides out abandonment scares on her own, recovers quickly from a friendship rupture, and recently handled a breakup without self-harm by stopping to read the other person's mind and her own. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He should stay in weekly therapy indefinitely, because stopping at any point guarantees full relapse.",
+        text: "She should stay in twice-weekly therapy indefinitely, because stopping at any point guarantees full collapse.",
         credit: 0,
       },
       {
-        text: "He's probably doing well; we could think about wrapping up sometime.",
+        text: "She's probably doing well; we could think about wrapping up sometime.",
         credit: 0.6,
       },
       {
-        text: "His independent use of the skills on a brand-new trigger marks the case as approaching termination readiness — he has internalized the method rather than leaning on the clinician — so the strong move is to taper while building relapse-prevention; test whether he keeps recovering from slips without help as sessions space out, whether he can plan and run an exposure unprompted, and whether his gains hold over a deliberate gap between sessions.",
+        text: "Her independent handling of a real rupture without self-harm marks the case as approaching termination readiness — she has internalized mentalizing and affect regulation rather than leaning on the clinician — so the strong move is to taper while building relapse-prevention; test whether she keeps recovering from interpersonal slips without help as sessions space out, whether she can re-regulate unprompted, and whether her gains hold across a deliberate gap between sessions.",
         credit: 1.0,
       },
       {
-        text: "He seems to be handling things on his own.",
+        text: "She seems to be handling things on her own.",
         credit: 0.3,
       },
     ],
     correctAnswer:
-      "His independent use of the skills on a brand-new trigger marks the case as approaching termination readiness — he has internalized the method rather than leaning on the clinician — so the strong move is to taper while building relapse-prevention; test whether he keeps recovering from slips without help as sessions space out, whether he can plan and run an exposure unprompted, and whether his gains hold over a deliberate gap between sessions.",
+      "Her independent handling of a real rupture without self-harm marks the case as approaching termination readiness — she has internalized mentalizing and affect regulation rather than leaning on the clinician — so the strong move is to taper while building relapse-prevention; test whether she keeps recovering from interpersonal slips without help as sessions space out, whether she can re-regulate unprompted, and whether her gains hold across a deliberate gap between sessions.",
     explanation:
-      "Top credit reads independent skill use as termination readiness and names a session-spacing test; 'stay weekly forever or relapse' is the overreach his demonstrated independence defeats.",
+      "Top credit reads independent rupture-handling as termination readiness and names a session-spacing test; 'stay in therapy forever or collapse' is the overreach her demonstrated independence defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "Three sessions before the planned final exposure to his worst fear, a patient who has struggled all year suddenly announces he's 'completely cured,' feels no anxiety at all, and sees no reason to keep going. Which conclusion best follows?",
+      "A few sessions before the planned work on her feelings about the relationship ending, a patient who has struggled all year suddenly announces she's 'completely better,' feels nothing painful at all, and sees no reason to keep going. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He's probably feeling better; we could check whether he's really ready to stop.",
+        text: "She's probably feeling better; we could check whether she's really ready to stop.",
         credit: 0.6,
       },
       {
-        text: "A total 'cure' appearing right before the hardest exposure looks more like a flight into health to avoid that feared step than a genuine, sudden resolution of a year-long struggle; test whether the timing tracks the looming exposure rather than real-world gains, whether he can actually face the avoided trigger now without ritual, and whether the 'cure' survives a concrete situation that would normally set off the obsession.",
+        text: "A total 'cure' appearing right as the feared work on closeness and ending nears looks more like a flight into health — a way to escape the dread of separation — than a genuine, sudden resolution of a year-long struggle; test whether the timing tracks the looming ending rather than real-world gains, whether she can actually stay with the avoided feeling now without numbing, and whether the 'cure' survives a concrete situation that would normally dysregulate her.",
         credit: 1.0,
       },
       {
-        text: "He seems to feel a lot better suddenly.",
+        text: "She seems to feel a lot better suddenly.",
         credit: 0.3,
       },
       {
-        text: "He says he's cured, so he is — taking his word for it is the only respectful option.",
+        text: "She says she's cured, so she is — taking her word for it is the only respectful option.",
         credit: 0,
       },
     ],
     correctAnswer:
-      "A total 'cure' appearing right before the hardest exposure looks more like a flight into health to avoid that feared step than a genuine, sudden resolution of a year-long struggle; test whether the timing tracks the looming exposure rather than real-world gains, whether he can actually face the avoided trigger now without ritual, and whether the 'cure' survives a concrete situation that would normally set off the obsession.",
+      "A total 'cure' appearing right as the feared work on closeness and ending nears looks more like a flight into health — a way to escape the dread of separation — than a genuine, sudden resolution of a year-long struggle; test whether the timing tracks the looming ending rather than real-world gains, whether she can actually stay with the avoided feeling now without numbing, and whether the 'cure' survives a concrete situation that would normally dysregulate her.",
     explanation:
-      "Full credit reads the timed 'cure' as avoidance of the feared exposure and names a face-the-trigger test; 'just take his word' is the dodge the suspicious timing defeats.",
+      "Full credit reads the timed 'cure' as a flight into health and names a stay-with-the-feeling test; 'just take her word' is the dodge the suspicious timing defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "Six months after a successful course of treatment ends, a patient calls in a panic: a stressful job loss has set off a flare of his old checking, and he says, 'It's all back, I've failed, the whole treatment was useless.' Which conclusion best follows?",
+      "Six months after a successful course of treatment ends, a patient calls in a panic: a sudden breakup has set off a flare of his old emptiness and urges to self-harm, and he says, 'It's all back, I've failed, the whole treatment was useless.' Which conclusion best follows?",
     mcOptions: [
       {
         text: "He seems upset that some symptoms came back.",
         credit: 0.3,
       },
       {
-        text: "A stress-triggered uptick after months of stability reads as a lapse, not a collapse — exactly the situation relapse-prevention prepared him for — so the strong move is to treat it as a signal to re-deploy his skills rather than proof of failure; test whether the flare tracks the acute stressor and eases as he resumes exposures, whether he can still recover from individual urges, and whether his baseline returns once the stressor passes.",
+        text: "A stress-triggered uptick after months of stability reads as a lapse, not a collapse — exactly the situation relapse-prevention prepared him for — so the strong move is to treat it as a signal to re-deploy his skills rather than proof of failure; test whether the flare tracks the acute loss and eases as he re-engages his tools, whether he can still re-regulate from a single urge, and whether his baseline returns once the stressor passes.",
         credit: 1.0,
       },
       {
@@ -272,75 +272,75 @@ const mcq: HomeworkItem[] = [
       },
     ],
     correctAnswer:
-      "A stress-triggered uptick after months of stability reads as a lapse, not a collapse — exactly the situation relapse-prevention prepared him for — so the strong move is to treat it as a signal to re-deploy his skills rather than proof of failure; test whether the flare tracks the acute stressor and eases as he resumes exposures, whether he can still recover from individual urges, and whether his baseline returns once the stressor passes.",
+      "A stress-triggered uptick after months of stability reads as a lapse, not a collapse — exactly the situation relapse-prevention prepared him for — so the strong move is to treat it as a signal to re-deploy his skills rather than proof of failure; test whether the flare tracks the acute loss and eases as he re-engages his tools, whether he can still re-regulate from a single urge, and whether his baseline returns once the stressor passes.",
     explanation:
       "Top credit reads the flare as a manageable lapse and names a stressor-tracking test; 'back to square one, treatment never worked' is the overreach his months of stability and intact skills defeat.",
   },
   {
     itemType: "mc",
     prompt:
-      "At assessment, a devout patient reports intrusive blasphemous images during prayer, which he neutralizes by silently repeating a 'clean' prayer a set number of times until it 'feels right.' He is ashamed and convinced the images reveal his true wickedness. Which conclusion best follows?",
+      "At assessment, a patient reports that she feels 'completely empty, like nobody's home,' takes on the personality and opinions of whoever she's with, and panics when she's alone with no one to mirror. She is ashamed and frightened by how little of 'her' there seems to be. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The case is scrupulosity OCD with a mental ritual: the unwanted images are ego-dystonic obsessions and the repeated 'clean' prayer is a covert compulsion, so formulation and exposure must target the mental ritual, not the faith; test whether the images horrify rather than please him, whether the repeating is done to undo them and 'feel right,' and whether his distress eases as he learns to allow the images without neutralizing.",
+        text: "The picture is identity diffusion: the chronic emptiness and the chameleon-like reshaping around whoever she's with are one pattern — borrowing a self to fill an inner void — so the plan must target building a stable, integrated sense of self, not just the surface mood; test whether her self-descriptions reorganize around the present company, whether the emptiness spikes when she's alone with no one to mirror, and whether the shifts are driven by fear of the void rather than genuine growth.",
         credit: 1.0,
       },
       {
-        text: "He's probably struggling with religious thoughts; we could explore his beliefs.",
+        text: "She's probably still figuring herself out; we could explore her interests.",
         credit: 0.6,
       },
       {
-        text: "He seems to feel guilty about his thoughts.",
+        text: "She seems to change a lot around different people.",
         credit: 0.3,
       },
       {
-        text: "The blasphemous images show his faith is the real problem and treatment should aim to talk him out of his religion.",
+        text: "The constant shifting shows she's just fake and manipulative and there's no real self to treat.",
         credit: 0,
       },
     ],
     correctAnswer:
-      "The case is scrupulosity OCD with a mental ritual: the unwanted images are ego-dystonic obsessions and the repeated 'clean' prayer is a covert compulsion, so formulation and exposure must target the mental ritual, not the faith; test whether the images horrify rather than please him, whether the repeating is done to undo them and 'feel right,' and whether his distress eases as he learns to allow the images without neutralizing.",
+      "The picture is identity diffusion: the chronic emptiness and the chameleon-like reshaping around whoever she's with are one pattern — borrowing a self to fill an inner void — so the plan must target building a stable, integrated sense of self, not just the surface mood; test whether her self-descriptions reorganize around the present company, whether the emptiness spikes when she's alone with no one to mirror, and whether the shifts are driven by fear of the void rather than genuine growth.",
     explanation:
-      "Full credit formulates scrupulosity with a covert ritual and names an ego-dystonia test; 'his religion is the problem' is the overreach that confuses the symptom's content with its cause.",
+      "Full credit formulates identity diffusion driving the emptiness and chameleon shifts and names an audience-tracking test; 'she's just fake and manipulative' is the overreach the sincere, distress-laden emptiness defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A clinician must decide whether a man's worry is OCD: he frets daily about a real upcoming layoff at his company, but the worry shifts topic with the news, has no rituals, and eases when he gets accurate information. Which conclusion best follows?",
+      "A clinician must decide whether a man's mood swings are BPD: he has been low and irritable since a real bereavement, the mood tracks reminders of his loss and eases with support, and his relationships and sense of self have always been stable. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "All worry is basically the same, so it doesn't matter whether we call it OCD or not.",
+        text: "All mood swings are basically the same, so it doesn't matter whether we call it BPD or not.",
         credit: 0,
       },
       {
-        text: "It's probably just normal stress; we could keep watching it.",
+        text: "It's probably just normal grief; we could keep watching it.",
         credit: 0.6,
       },
       {
-        text: "The picture fits realistic, information-responsive worry rather than OCD: it lacks the trigger-specific intrusions, the ritualized neutralizing, and the immunity to reassurance that define the disorder, so formulation should not force an OCD frame; test whether any compulsion is actually present, whether accurate information genuinely settles the worry rather than feeding it, and whether the concern stays proportionate to the real-world odds.",
+        text: "The picture fits ordinary grief rather than BPD: it lacks the pervasive cross-relationship instability, the abandonment-triggered impulsivity, and the chronic identity disturbance that define the disorder, and it tracks a real loss and responds to support, so the formulation should not force a BPD frame; test whether the instability predates and spans his relationships rather than this loss, whether his sense of self is stable, and whether support settles the mood rather than failing to touch it.",
         credit: 1.0,
       },
       {
-        text: "He seems worried about losing his job.",
+        text: "He seems sad since his loss.",
         credit: 0.3,
       },
     ],
     correctAnswer:
-      "The picture fits realistic, information-responsive worry rather than OCD: it lacks the trigger-specific intrusions, the ritualized neutralizing, and the immunity to reassurance that define the disorder, so formulation should not force an OCD frame; test whether any compulsion is actually present, whether accurate information genuinely settles the worry rather than feeding it, and whether the concern stays proportionate to the real-world odds.",
+      "The picture fits ordinary grief rather than BPD: it lacks the pervasive cross-relationship instability, the abandonment-triggered impulsivity, and the chronic identity disturbance that define the disorder, and it tracks a real loss and responds to support, so the formulation should not force a BPD frame; test whether the instability predates and spans his relationships rather than this loss, whether his sense of self is stable, and whether support settles the mood rather than failing to touch it.",
     explanation:
-      "Top credit uses the absence of rituals and reassurance-immunity to rule OCD out at the formulation step; 'all worry is the same' is the dodge the clean diagnostic contrast defeats.",
+      "Top credit uses the absence of pervasive instability and the loss-tracking, support-responsive mood to rule BPD out at the formulation step; 'all mood swings are the same' is the dodge the clean diagnostic contrast defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "Mid-treatment, a contamination patient repeatedly asks the clinician, 'Be honest — are you secretly disgusted by me?' and seems to scan her face for reassurance each time before she can settle into the session's exposure. Which conclusion best follows?",
+      "Mid-treatment, a patient repeatedly asks the clinician, 'Be honest — are you secretly sick of me?' and seems to scan her face for reassurance each time before she can settle into the session's work. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "She's probably insecure; we could reassure her we aren't disgusted.",
+        text: "She's probably insecure; we could reassure her we aren't sick of her.",
         credit: 0.6,
       },
       {
-        text: "The repeated 'are you disgusted by me?' question is the contamination theme migrating into the relationship as a reassurance ritual aimed at the clinician, so it both feeds the OCD and shows the dynamic live in the room; test whether the urge to ask spikes right before harder exposures, whether her settling depends on the clinician's answer rather than on tolerating doubt, and whether reflecting the question back instead of answering loosens its grip.",
+        text: "The repeated 'are you sick of me?' question is the abandonment theme playing out live in the relationship — a dyad of the about-to-be-discarded child and the rejecting other activated with the clinician — so it both feeds the disorder and shows it in the room; test whether the urge to ask spikes after moments of closeness or before breaks, whether her settling depends on the clinician's answer rather than on tolerating the uncertainty, and whether naming the activated pattern instead of just reassuring loosens its grip.",
         credit: 1.0,
       },
       {
@@ -348,68 +348,68 @@ const mcq: HomeworkItem[] = [
         credit: 0.3,
       },
       {
-        text: "Her question proves the clinician really has shown disgust and has damaged the patient irreparably.",
+        text: "Her question proves the clinician really has grown cold and has damaged the patient irreparably.",
         credit: 0,
       },
     ],
     correctAnswer:
-      "The repeated 'are you disgusted by me?' question is the contamination theme migrating into the relationship as a reassurance ritual aimed at the clinician, so it both feeds the OCD and shows the dynamic live in the room; test whether the urge to ask spikes right before harder exposures, whether her settling depends on the clinician's answer rather than on tolerating doubt, and whether reflecting the question back instead of answering loosens its grip.",
+      "The repeated 'are you sick of me?' question is the abandonment theme playing out live in the relationship — a dyad of the about-to-be-discarded child and the rejecting other activated with the clinician — so it both feeds the disorder and shows it in the room; test whether the urge to ask spikes after moments of closeness or before breaks, whether her settling depends on the clinician's answer rather than on tolerating the uncertainty, and whether naming the activated pattern instead of just reassuring loosens its grip.",
     explanation:
-      "Full credit reads the in-session reassurance question as the symptom playing out in the relationship and names a spike-before-exposure test; 'the clinician really disgusted her' is the overreach her steady stance defeats.",
+      "Full credit reads the in-session 'are you sick of me?' question as the abandonment pattern playing out live and names a spike-after-closeness test; 'the clinician really grew cold' is the overreach her steady stance defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A patient can explain the OCD cycle flawlessly — obsession, anxiety spike, ritual, brief relief, reinforcement — and has lectured the clinician on it for months, yet still washes for an hour each morning exactly as before. Which conclusion best follows?",
+      "A patient can explain splitting, mentalizing, and her whole BPD pattern flawlessly — and has lectured the clinician on it for months — yet still flips from idealizing to hating her partner over small letdowns exactly as before. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Because he understands the cycle so thoroughly, he is essentially recovered and just needs to decide to stop.",
+        text: "Because she understands her pattern so thoroughly, she is essentially recovered and just needs to decide to stop.",
         credit: 0,
       },
       {
-        text: "He seems to understand his OCD really well.",
+        text: "She seems to understand her BPD really well.",
         credit: 0.3,
       },
       {
-        text: "His perfect account is intellectual insight that hasn't been worked through into the moments that matter — knowing the cycle on paper hasn't reached the bathroom at 7 a.m., so the washing persists; test whether his understanding carries any real anxiety when an exposure is set up, whether he can interrupt a ritual in the actual charged moment rather than only explain it later, and whether repeated practice in real triggers slowly changes the behavior.",
+        text: "Her flawless account is intellectual insight that hasn't been worked through into the charged moments — knowing about splitting on paper hasn't reached the fight at 11 p.m., so the flips persist; test whether her understanding carries any real feeling when a rupture is live, whether she can hold the mixed picture in the actual heated moment rather than only explain it later, and whether repeated practice in real ruptures slowly changes the behavior.",
         credit: 1.0,
       },
       {
-        text: "His insight probably hasn't changed his behavior yet; we could try some exposures.",
+        text: "Her insight probably hasn't changed her behavior yet; we could practice in real moments.",
         credit: 0.6,
       },
     ],
     correctAnswer:
-      "His perfect account is intellectual insight that hasn't been worked through into the moments that matter — knowing the cycle on paper hasn't reached the bathroom at 7 a.m., so the washing persists; test whether his understanding carries any real anxiety when an exposure is set up, whether he can interrupt a ritual in the actual charged moment rather than only explain it later, and whether repeated practice in real triggers slowly changes the behavior.",
+      "Her flawless account is intellectual insight that hasn't been worked through into the charged moments — knowing about splitting on paper hasn't reached the fight at 11 p.m., so the flips persist; test whether her understanding carries any real feeling when a rupture is live, whether she can hold the mixed picture in the actual heated moment rather than only explain it later, and whether repeated practice in real ruptures slowly changes the behavior.",
     explanation:
-      "Top credit distinguishes intellectual insight from worked-through change and names a real-trigger test; 'he's essentially recovered' is the overreach the unchanged morning washing defeats.",
+      "Top credit distinguishes intellectual insight from worked-through change and names a real-rupture test; 'she's essentially recovered' is the overreach the unchanged flips defeat.",
   },
   {
     itemType: "mc",
     prompt:
-      "In one consultation, a clinician hears that a patient avoids knives entirely, asks his wife hourly whether he 'seems dangerous,' and treats the very fact that he has violent images as proof he must be a monster. Which conclusion best follows?",
+      "In one consultation, a clinician hears that a patient idealized then abruptly devalued three friends this month, panics at any sign of being left, and read 'she canceled lunch' as flat proof she is worthless and unlovable. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He seems frightened of his own thoughts.",
+        text: "She seems to have a lot of friendship trouble.",
         credit: 0.3,
       },
       {
-        text: "Read together, the pieces form one harm-OCD picture sitting at the formulation stage: knife-avoidance is the avoidance arm, hourly 'am I dangerous?' questions are a reassurance compulsion, and 'having the thought proves I'm a monster' is the thought-action fusion driving it — so the plan must target the rituals and the belief, not the imagined danger; test whether the images repel rather than tempt him, whether the avoidance and questioning track the harm fear specifically, and whether challenging the 'thought equals deed' belief lowers his distress.",
+        text: "Read together, the pieces form one BPD picture sitting at the formulation stage: the idealize-then-devalue flips are splitting, the panic at being left is abandonment sensitivity, and 'she canceled, so I'm worthless' is a thought felt as literal fact — so the plan must target the affect regulation and the splitting and identity, not each friendship in isolation; test whether the devaluations follow a disappointment rather than new information, whether the abandonment reading tracks ambiguous cues, and whether helping her hold mixed views softens the flips.",
         credit: 1.0,
       },
       {
-        text: "It's probably harm OCD; we could look at his violent thoughts together.",
+        text: "It's probably BPD; we could look at her friendships together.",
         credit: 0.6,
       },
       {
-        text: "Because he has violent images and avoids knives, he is genuinely dangerous and the priority is to protect others from him.",
+        text: "Her friends keep leaving, so she is simply a toxic person others are right to abandon.",
         credit: 0,
       },
     ],
     correctAnswer:
-      "Read together, the pieces form one harm-OCD picture sitting at the formulation stage: knife-avoidance is the avoidance arm, hourly 'am I dangerous?' questions are a reassurance compulsion, and 'having the thought proves I'm a monster' is the thought-action fusion driving it — so the plan must target the rituals and the belief, not the imagined danger; test whether the images repel rather than tempt him, whether the avoidance and questioning track the harm fear specifically, and whether challenging the 'thought equals deed' belief lowers his distress.",
+      "Read together, the pieces form one BPD picture sitting at the formulation stage: the idealize-then-devalue flips are splitting, the panic at being left is abandonment sensitivity, and 'she canceled, so I'm worthless' is a thought felt as literal fact — so the plan must target the affect regulation and the splitting and identity, not each friendship in isolation; test whether the devaluations follow a disappointment rather than new information, whether the abandonment reading tracks ambiguous cues, and whether helping her hold mixed views softens the flips.",
     explanation:
-      "Full credit integrates the pieces into a harm-OCD formulation and names an ego-dystonia test; 'he is genuinely dangerous' is the overreach that mistakes a tormenting OCD fear for real intent.",
+      "Full credit integrates the pieces into a BPD formulation and names a flips-follow-disappointment test; 'she's simply toxic and others are right to leave' is the overreach the abandonment-sensitivity and splitting defeat.",
   },
 ];
 
@@ -417,61 +417,61 @@ const hybrid: HomeworkItem[] = [
   {
     itemType: "hybrid",
     prompt:
-      "At intake a young woman reports that every time she leaves home she returns three or four times to check the lock, the stove, and the taps, often making her late, and she says she 'just can't trust' that she did it. The clinician is deciding what the case needs first. Which conclusion best follows?",
+      "At intake a young woman reports that whenever a friend takes a few hours to reply she becomes convinced she's being abandoned, floods with panic, and either sends dozens of texts or cuts the person off entirely; she says she 'just can't stand' the not-knowing. The clinician is deciding what the case needs first. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The first task is a shared formulation of this checking loop — the doubt-trigger, the feared catastrophe, the repeated checking, and the brief relief — so exposure later targets the real driver rather than a guess; test whether the checking tracks the specific can't-trust-myself doubt, whether more checks actually lower her confidence rather than raise it, and whether the urge centers on intolerable uncertainty rather than genuine forgetfulness.",
+        text: "The first task is a shared formulation of this loop — the interpersonal trigger (a delayed reply read as abandonment), the fast-rising panic, the flooding-or-cutoff, and the brief relief — so later work targets the real driver rather than a guess; test whether the reaction tracks the specific abandonment fear, whether the impulsive act briefly relieves then reinforces, and whether the urge centers on intolerable uncertainty about the bond rather than genuine evidence she is being left.",
         credit: 1.0,
       },
       {
-        text: "It's probably checking OCD; we could start exposures soon.",
+        text: "It's probably BPD; we could start some skills soon.",
         credit: 0.6,
       },
       {
-        text: "She seems to check her locks a lot.",
+        text: "She seems to overreact to texts.",
         credit: 0.3,
       },
       {
-        text: "She just needs better memory habits, so the fix is a checklist and there's nothing to formulate.",
+        text: "She just needs better communication habits, so the fix is a texting rule and there's nothing to formulate.",
         credit: 0,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'checking loop driven by intolerable doubt' lead from the rival 'she genuinely keeps forgetting and just needs reminders,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'abandonment-panic loop driven by intolerable uncertainty' lead from the rival 'her friends really are flaky and she just needs communication tips,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: watch whether each extra check leaves her more uncertain rather than reassured and whether the urge centers on a feeling of not-knowing despite clear evidence she locked up — a doubt that grows with checking points to OCD, not forgetfulness. My lead is refuted if a single check or a simple reminder genuinely settles her and the doubt doesn't return.",
+        "Cheapest test: watch whether the panic floods on ambiguous, minor delays regardless of how reliable the friend actually is, and whether each impulsive act (mass-texting or cutoff) briefly relieves then deepens the instability — a reaction that tracks her fear rather than the friend's behavior points to a BPD loop, not a communication gap. My lead is refuted if her friends are genuinely unreliable and a simple plan settles her with no recurring panic.",
       yieldAnchors: [
-        "She returns three or four times to check",
-        "She says she 'can't trust' she did it",
-        "The checking makes her late",
+        "A delayed reply convinces her she's abandoned",
+        "She floods with texts or cuts the person off",
+        "She says she can't stand the not-knowing",
       ],
       riskAnchors: [
-        "The checking tracks the can't-trust-myself doubt",
-        "More checks lower rather than raise her confidence",
-        "The urge centers on uncertainty, not real forgetting",
+        "The reaction tracks the specific abandonment fear",
+        "The impulsive act relieves briefly then reinforces",
+        "The urge centers on uncertainty, not real evidence of leaving",
       ],
       defeatedBy: [
-        "A single check genuinely settles her",
-        "A simple reminder ends the doubt for good",
+        "Her friends really are flaky and unreliable",
+        "A simple communication plan ends the panic for good",
       ],
     },
     correctAnswer:
-      "The first task is a shared formulation of this checking loop — the doubt-trigger, the feared catastrophe, the repeated checking, and the brief relief — so exposure later targets the real driver rather than a guess; test whether the checking tracks the specific can't-trust-myself doubt, whether more checks actually lower her confidence rather than raise it, and whether the urge centers on intolerable uncertainty rather than genuine forgetfulness.",
+      "The first task is a shared formulation of this loop — the interpersonal trigger (a delayed reply read as abandonment), the fast-rising panic, the flooding-or-cutoff, and the brief relief — so later work targets the real driver rather than a guess; test whether the reaction tracks the specific abandonment fear, whether the impulsive act briefly relieves then reinforces, and whether the urge centers on intolerable uncertainty about the bond rather than genuine evidence she is being left.",
     explanation:
-      "Full credit places the case at formulation and names a checking-erodes-confidence test that states its refutation; 'just needs a checklist' is the dodge the doubt-driven loop defeats.",
+      "Full credit places the case at formulation and names a tracks-the-fear test that states its refutation; 'just needs a texting rule' is the dodge the abandonment-driven loop defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A new patient with intrusive harm thoughts is visibly braced in the first session, says 'I've never told anyone this because they'll think I'm a psycho,' and waits to see how the clinician reacts. Which conclusion best follows?",
+      "A new patient is visibly braced in the first session, says 'I've never told anyone how much I hate myself or how often I want to hurt myself — you'll just panic and lock me up,' and waits to see how the clinician reacts. Which conclusion best follows?",
     mcOptions: [
       {
         text: "He seems anxious about opening up.",
         credit: 0.3,
       },
       {
-        text: "This moment is the alliance forming or failing: the case needs a safe, nonjudgmental response that normalizes intrusive thoughts before any exposure, because his willingness to engage hinges on not being seen as the monster he fears; test whether his disclosure deepens once the thoughts are met without alarm, whether his guard drops as the cycle is explained without judgment, and whether he returns and engages after the first session.",
+        text: "This moment is the alliance forming or failing: the case needs a calm, nonjudgmental response that takes the self-harm seriously without panic before any deeper work, because his willingness to engage hinges on not being abandoned or controlled for telling the truth; test whether his disclosure deepens once the urges are met steadily, whether his guard drops as safety is planned collaboratively rather than imposed, and whether he returns and engages after the first session.",
         credit: 1.0,
       },
       {
@@ -479,363 +479,363 @@ const hybrid: HomeworkItem[] = [
         credit: 0.6,
       },
       {
-        text: "His secrecy proves he's hiding genuine dangerousness, so the priority is to assess him as a threat rather than build rapport.",
+        text: "His secrecy proves he's just seeking attention, so the priority is to call his bluff rather than build rapport.",
         credit: 0,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'alliance-building moment with ego-dystonic thoughts' lead from the rival 'his secrecy signals real danger to be assessed,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'alliance-defining disclosure of genuine self-harm urges' lead from the rival 'he's exaggerating for attention,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: notice whether the thoughts horrify him and whether meeting them calmly without judgment lets him open up further — relief at being understood and revulsion at the thoughts point to OCD and an alliance taking hold. My lead is refuted if he describes the thoughts with intent or pleasure and disclosure makes him more guarded rather than more engaged.",
+        "Cheapest test: notice whether the urges are described with shame and dread and whether meeting them calmly without panic or control lets him open up further — relief at being taken seriously without being abandoned points to a real alliance forming. My lead is refuted if the 'urges' evaporate the moment they get no dramatic reaction and disclosure makes him more guarded rather than more engaged.",
       yieldAnchors: [
         "He is braced and secretive in session one",
-        "He fears being seen as a 'psycho'",
+        "He fears being 'locked up' for the truth",
         "He watches the clinician's reaction",
       ],
       riskAnchors: [
-        "Disclosure deepens once met without alarm",
-        "His guard drops as the cycle is normalized",
+        "Disclosure deepens once met steadily",
+        "His guard drops as safety is planned collaboratively",
         "He returns and engages after session one",
       ],
       defeatedBy: [
-        "He describes the thoughts with intent or pleasure",
+        "The urges evaporate once they get no dramatic reaction",
         "Calm acceptance makes him more guarded, not less",
       ],
     },
     correctAnswer:
-      "This moment is the alliance forming or failing: the case needs a safe, nonjudgmental response that normalizes intrusive thoughts before any exposure, because his willingness to engage hinges on not being seen as the monster he fears; test whether his disclosure deepens once the thoughts are met without alarm, whether his guard drops as the cycle is explained without judgment, and whether he returns and engages after the first session.",
+      "This moment is the alliance forming or failing: the case needs a calm, nonjudgmental response that takes the self-harm seriously without panic before any deeper work, because his willingness to engage hinges on not being abandoned or controlled for telling the truth; test whether his disclosure deepens once the urges are met steadily, whether his guard drops as safety is planned collaboratively rather than imposed, and whether he returns and engages after the first session.",
     explanation:
-      "Full credit reads the disclosure as an alliance-defining moment and names a met-without-alarm test that states its refutation; 'his secrecy proves danger' is the overreach the ego-dystonic horror defeats.",
+      "Full credit reads the disclosure as an alliance-defining moment and names a met-steadily test that states its refutation; 'his secrecy proves attention-seeking' is the overreach the shame and dread defeat.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "Partway through treatment, a 'just right' patient is doing exposures well in session but reports she still spends an hour each night re-aligning objects on her desk until they 'feel correct,' which she'd never mentioned because 'it's not really a fear of anything.' Which conclusion best follows?",
+      "Partway through treatment, a patient who is doing well reveals that she still cuts lightly 'a couple times a week,' which she'd never mentioned because 'it's not a big deal, it just makes the noise in my head stop.' Which conclusion best follows?",
     mcOptions: [
       {
-        text: "She probably has another ritual; we could add it to the plan.",
+        text: "She probably has another behavior; we could add it to the plan.",
         credit: 0.6,
       },
       {
-        text: "The hidden 'just right' ritual reveals the formulation was incomplete — this compulsion is driven by an intolerable not-right sensation rather than a feared catastrophe, so exposure must target tolerating the 'wrong' feeling without fixing it; test whether the urge tracks that incompleteness sensation specifically, whether leaving objects 'wrong' triggers mounting discomfort that then eases on its own, and whether her overall gains improve once this previously hidden ritual is included.",
+        text: "The hidden cutting reveals the formulation was incomplete — this is self-harm doing affect regulation ('makes the noise stop') rather than a minor habit, so the work must target tolerating that unbearable affect without discharging it; test whether the cutting tracks the moments the inner 'noise' peaks, whether the relief is immediate and brief, and whether her overall gains improve once this hidden behavior is brought into the plan.",
         credit: 1.0,
       },
       {
-        text: "She seems to like her desk arranged neatly.",
+        text: "She seems to have a small habit she didn't mention.",
         credit: 0.3,
       },
       {
-        text: "Without a feared catastrophe it can't be OCD, so this nightly habit is just a harmless preference to leave alone.",
+        text: "If it's only a couple times a week and she says it's no big deal, it's a harmless coping habit to leave alone.",
         credit: 0,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your '\"just right\" compulsion driven by an incompleteness feeling' lead from the rival 'it's a harmless tidiness preference,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'self-harm functioning as affect regulation' lead from the rival 'it's a minor harmless habit,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: have her deliberately leave a few objects 'wrong' and watch whether distress mounts and pulls her to fix them, then eases if she resists — a felt not-right pressure that demands correcting points to a compulsion, not a preference. My lead is refuted if leaving things 'wrong' causes no real distress and she can walk away unbothered.",
+        "Cheapest test: have her track what precedes an episode and watch whether unbearable affect peaks just before and drops right after the cut — a discharge that reliably 'makes the noise stop' marks affect-regulating self-harm, not a trivial habit. My lead is refuted if the cutting bears no relation to her affect and stopping it causes no pull or distress.",
       yieldAnchors: [
-        "An hour nightly re-aligning objects",
-        "She fixes them until they 'feel correct'",
-        "She says it isn't a fear of anything",
+        "She cuts lightly a couple times a week",
+        "She never mentioned it",
+        "She says it 'makes the noise stop'",
       ],
       riskAnchors: [
-        "The urge tracks the incompleteness sensation",
-        "Leaving things 'wrong' triggers discomfort that then eases",
-        "Including the ritual improves overall gains",
+        "The cutting tracks peaks of inner 'noise'",
+        "Relief is immediate and brief",
+        "Including it improves overall gains",
       ],
       defeatedBy: [
-        "Leaving objects 'wrong' causes no real distress",
-        "She can walk away from it unbothered",
+        "The cutting bears no relation to her affect",
+        "Stopping it causes no pull or distress",
       ],
     },
     correctAnswer:
-      "The hidden 'just right' ritual reveals the formulation was incomplete — this compulsion is driven by an intolerable not-right sensation rather than a feared catastrophe, so exposure must target tolerating the 'wrong' feeling without fixing it; test whether the urge tracks that incompleteness sensation specifically, whether leaving objects 'wrong' triggers mounting discomfort that then eases on its own, and whether her overall gains improve once this previously hidden ritual is included.",
+      "The hidden cutting reveals the formulation was incomplete — this is self-harm doing affect regulation ('makes the noise stop') rather than a minor habit, so the work must target tolerating that unbearable affect without discharging it; test whether the cutting tracks the moments the inner 'noise' peaks, whether the relief is immediate and brief, and whether her overall gains improve once this hidden behavior is brought into the plan.",
     explanation:
-      "Full credit recognizes a 'just right' compulsion missed in the formulation and names a leave-it-wrong test that states its refutation; 'no catastrophe means not OCD' is the dodge the incompleteness-driven ritual defeats.",
+      "Full credit recognizes affect-regulating self-harm missed in the formulation and names a precedes-and-relieves test that states its refutation; 'it's a harmless habit' is the dodge the discharge function defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A patient whose washing has dropped sharply with ERP now seems oddly low and irritable, and mentions that without the rituals filling his evenings he feels 'empty, like I don't know what I was so busy avoiding.' Which conclusion best follows?",
+      "A patient whose self-harm and rage outbursts have dropped sharply now seems oddly low and empty, and mentions that without the crises filling her life she feels 'empty, like I don't know who I am without the chaos.' Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He seems a bit down since the rituals stopped.",
+        text: "She seems a bit down since the crises stopped.",
         credit: 0.3,
       },
       {
-        text: "As the rituals stop consuming his evenings, a feeling they had been crowding out is surfacing, which signals the case is moving from symptom relief into working through what the washing was keeping him too busy to feel; test whether the low feeling arises in the time the rituals used to fill, whether staying with it rather than resuming washing prevents relapse, and whether naming what he was avoiding brings relief rather than a return of symptoms.",
+        text: "As the crises stop consuming her life, a feeling they had been crowding out — the chronic emptiness and the question of who she is — is surfacing, which signals the case is moving from crisis stabilization into working through identity; test whether the empty feeling arises in the space the chaos used to fill, whether staying with it rather than reigniting a crisis prevents relapse, and whether naming what the chaos was warding off brings relief rather than a return of symptoms.",
         credit: 1.0,
       },
       {
-        text: "It's probably about the change; we could ask how he's adjusting.",
+        text: "It's probably about the change; we could ask how she's adjusting.",
         credit: 0.6,
       },
       {
-        text: "The low mood proves the ERP harmed him and the rituals should be reinstated for his own good.",
+        text: "The low mood proves the treatment harmed her and the structure should be loosened so the old intensity can return.",
         credit: 0,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'a warded-off feeling surfacing as the ritual recedes' lead from the rival 'the ERP itself caused a depression that means it should stop,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'warded-off emptiness surfacing as the crises recede' lead from the rival 'the treatment itself caused a depression that means it should stop,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: see whether the empty feeling shows up precisely in the freed-up ritual time and softens when he names and stays with it rather than washing — a feeling tied to the vacated ritual space points to working-through, not iatrogenic harm. My lead is refuted if the low mood is global and unrelated to ritual time and only resuming washing relieves it.",
+        "Cheapest test: see whether the empty feeling shows up precisely in the space the chaos used to fill and softens when she names and stays with it rather than reigniting a crisis — emptiness tied to the vacated chaos points to working-through, not iatrogenic harm. My lead is refuted if the low mood is global and unrelated to the freed-up space and only a return of chaos relieves it.",
       yieldAnchors: [
-        "Washing dropped sharply with ERP",
-        "He now feels empty and irritable",
-        "He senses he was 'avoiding' something",
+        "Self-harm and rage have dropped sharply",
+        "She now feels empty and low",
+        "She senses she doesn't know herself without the chaos",
       ],
       riskAnchors: [
-        "The feeling arises in the freed-up ritual time",
-        "Staying with it rather than washing prevents relapse",
-        "Naming what he avoided brings relief",
+        "The feeling arises in the space the chaos used to fill",
+        "Staying with it rather than reigniting crisis prevents relapse",
+        "Naming what it warded off brings relief",
       ],
       defeatedBy: [
-        "The low mood is global and unrelated to ritual time",
-        "Only resuming washing relieves it",
+        "The low mood is global and unrelated to the freed-up space",
+        "Only a return of chaos relieves it",
       ],
     },
     correctAnswer:
-      "As the rituals stop consuming his evenings, a feeling they had been crowding out is surfacing, which signals the case is moving from symptom relief into working through what the washing was keeping him too busy to feel; test whether the low feeling arises in the time the rituals used to fill, whether staying with it rather than resuming washing prevents relapse, and whether naming what he was avoiding brings relief rather than a return of symptoms.",
+      "As the crises stop consuming her life, a feeling they had been crowding out — the chronic emptiness and the question of who she is — is surfacing, which signals the case is moving from crisis stabilization into working through identity; test whether the empty feeling arises in the space the chaos used to fill, whether staying with it rather than reigniting a crisis prevents relapse, and whether naming what the chaos was warding off brings relief rather than a return of symptoms.",
     explanation:
-      "Full credit reads the surfacing feeling as the working-through phase and names a freed-up-time test that states its refutation; 'the ERP harmed him, reinstate rituals' is the overreach the symptom relief defeats.",
+      "Full credit reads the surfacing emptiness as the working-through phase and names a freed-up-space test that states its refutation; 'the treatment harmed her, loosen the structure' is the overreach the genuine symptom relief defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "Near the end of treatment, a recovered checking patient grows quiet and says, 'If I stop coming, what if it all comes back and I have no one?' and asks whether he can keep weekly sessions 'just in case' indefinitely. Which conclusion best follows?",
+      "Near the end of treatment, a recovered patient grows quiet and says, 'If I stop coming, what if I fall apart and there's no one?' and asks whether she can keep weekly sessions 'just in case' indefinitely. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The request to keep coming 'just in case' looks like the doubt-and-reassurance dynamic of his OCD reappearing around termination — seeking the clinician as a safety crutch against uncertainty — so the strong move is to treat the wish as material and build confidence in his own skills rather than simply granting endless sessions; test whether the urge to keep coming spikes as the end nears, whether he can in fact handle a slip during a planned gap, and whether his anxiety eases once a relapse-prevention plan replaces the clinician as the safety net.",
+        text: "The request to keep coming 'just in case' looks like the abandonment dynamic reappearing around termination — seeking the clinician as a permanent safety figure against the dread of being alone — so the strong move is to treat the wish as material and build her confidence in her own capacities rather than simply granting endless sessions; test whether the urge to keep coming spikes as the end nears, whether she can in fact ride out a rough patch during a planned gap, and whether her anxiety eases once a relapse-prevention plan replaces the clinician as the safety net.",
         credit: 1.0,
       },
       {
-        text: "He's probably nervous about stopping; we could space sessions out gradually.",
+        text: "She's probably nervous about stopping; we could space sessions out gradually.",
         credit: 0.6,
       },
       {
-        text: "He seems worried about ending therapy.",
+        text: "She seems worried about ending therapy.",
         credit: 0.3,
       },
       {
-        text: "He clearly still needs full weekly treatment forever, so the safest course is to keep him in indefinite therapy.",
+        text: "She clearly still needs full weekly treatment forever, so the safest course is to keep her in indefinite therapy.",
         credit: 0,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'OCD doubt resurfacing as a safety-crutch wish around termination' lead from the rival 'he objectively still needs full ongoing treatment,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'abandonment dread resurfacing as a safety-figure wish at termination' lead from the rival 'she objectively still needs full ongoing treatment,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: try a planned gap between sessions and watch whether he can ride out a slip on his own using his skills — coping well through the gap shows the wish is reassurance-seeking, not genuine ongoing need. My lead is refuted if he genuinely deteriorates and cannot manage urges during the gap despite a solid relapse-prevention plan.",
+        "Cheapest test: try a planned gap between sessions and watch whether she can ride out a rough patch on her own using what she's learned — coping well through the gap shows the wish is abandonment-driven reassurance, not genuine ongoing need. My lead is refuted if she genuinely deteriorates and cannot self-regulate during the gap despite a solid relapse-prevention plan.",
       yieldAnchors: [
-        "He has recovered from checking",
-        "He fears it will 'all come back' if he stops",
-        "He asks for indefinite weekly sessions",
+        "She has recovered substantially",
+        "She fears falling apart with 'no one' if she stops",
+        "She asks for indefinite weekly sessions",
       ],
       riskAnchors: [
         "The urge to keep coming spikes as the end nears",
-        "He can handle a slip during a planned gap",
+        "She can ride out a rough patch during a planned gap",
         "Anxiety eases once a relapse plan replaces the clinician",
       ],
       defeatedBy: [
-        "He genuinely deteriorates during the gap",
-        "He cannot manage urges despite a solid plan",
+        "She genuinely deteriorates during the gap",
+        "She cannot self-regulate despite a solid plan",
       ],
     },
     correctAnswer:
-      "The request to keep coming 'just in case' looks like the doubt-and-reassurance dynamic of his OCD reappearing around termination — seeking the clinician as a safety crutch against uncertainty — so the strong move is to treat the wish as material and build confidence in his own skills rather than simply granting endless sessions; test whether the urge to keep coming spikes as the end nears, whether he can in fact handle a slip during a planned gap, and whether his anxiety eases once a relapse-prevention plan replaces the clinician as the safety net.",
+      "The request to keep coming 'just in case' looks like the abandonment dynamic reappearing around termination — seeking the clinician as a permanent safety figure against the dread of being alone — so the strong move is to treat the wish as material and build her confidence in her own capacities rather than simply granting endless sessions; test whether the urge to keep coming spikes as the end nears, whether she can in fact ride out a rough patch during a planned gap, and whether her anxiety eases once a relapse-prevention plan replaces the clinician as the safety net.",
     explanation:
-      "Full credit reads the 'just in case' wish as reassurance-seeking around termination and names a planned-gap test that states its refutation; 'he needs therapy forever' is the overreach his recovery defeats.",
+      "Full credit reads the 'just in case' wish as abandonment-driven reassurance around termination and names a planned-gap test that states its refutation; 'she needs therapy forever' is the overreach her recovery defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A patient mid-treatment says her contamination fears have shrunk, but she now spends the saved time researching diseases online for hours and asking forums whether her symptoms are 'normal.' Which conclusion best follows?",
+      "A patient mid-treatment says her self-harm has shrunk, but she now throws herself into intense new romances that flame out in days — each one 'the love of my life' and then, after a small letdown, 'a monster.' Which conclusion best follows?",
     mcOptions: [
       {
-        text: "She seems to spend a lot of time online.",
+        text: "She seems to date a lot.",
         credit: 0.3,
       },
       {
-        text: "She's probably found a new worry; we could look at the internet use.",
+        text: "She's probably found a new pattern; we could look at the dating.",
         credit: 0.6,
       },
       {
-        text: "The compulsion has shifted form rather than resolved — online checking and forum reassurance now do the same anxiety-relieving job the washing did, so the case needs the new ritual folded into the same response-prevention plan; test whether the searching tracks the same contamination fear, whether each search briefly relieves but then reignites doubt, and whether blocking the reassurance-seeking lets the underlying anxiety finally extinguish.",
+        text: "The pattern has shifted form rather than resolved — the whirlwind idealize-then-devalue romances now do the same affect-regulating, emptiness-filling job the self-harm did, so the case needs this folded into the same plan; test whether each new romance briefly relieves the emptiness then collapses into devaluation, whether the flips follow a disappointment rather than new information, and whether addressing the underlying affect slows the cycle.",
         credit: 1.0,
       },
       {
-        text: "Researching health online is just being responsible, so there's nothing here connected to her OCD.",
+        text: "Dating around is just normal at her age, so there's nothing here connected to her BPD.",
         credit: 0,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'the compulsion has changed form into online reassurance' lead from the rival 'she is just doing responsible health research,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'the pattern has migrated into whirlwind relationships' lead from the rival 'she's just dating normally,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: watch whether each search gives brief relief that quickly collapses back into doubt and more searching — a relief-then-reignite loop tied to the same fear marks a migrated compulsion, not genuine research. My lead is refuted if a reasonable amount of reading actually settles her, the searching ends, and the doubt doesn't return.",
+        "Cheapest test: watch whether each romance gives brief relief from emptiness that quickly collapses into all-bad devaluation after a small letdown — a relief-then-devalue loop tied to the same affect marks a migrated pattern, not ordinary dating. My lead is refuted if the relationships are stable, end for real reasons, and don't track her inner emptiness.",
       yieldAnchors: [
-        "Washing has shrunk",
-        "She now researches diseases for hours",
-        "She seeks reassurance on forums",
+        "Self-harm has shrunk",
+        "She now has whirlwind romances",
+        "Each is 'the love of my life' then 'a monster'",
       ],
       riskAnchors: [
-        "The searching tracks the same contamination fear",
-        "Each search relieves briefly then reignites doubt",
-        "Blocking it lets the anxiety extinguish",
+        "Each romance relieves emptiness then collapses into devaluation",
+        "The flips follow a disappointment, not new information",
+        "Addressing the affect slows the cycle",
       ],
       defeatedBy: [
-        "A reasonable amount of reading settles her for good",
-        "The searching ends and the doubt doesn't return",
+        "The relationships are stable and end for real reasons",
+        "They don't track her inner emptiness",
       ],
     },
     correctAnswer:
-      "The compulsion has shifted form rather than resolved — online checking and forum reassurance now do the same anxiety-relieving job the washing did, so the case needs the new ritual folded into the same response-prevention plan; test whether the searching tracks the same contamination fear, whether each search briefly relieves but then reignites doubt, and whether blocking the reassurance-seeking lets the underlying anxiety finally extinguish.",
+      "The pattern has shifted form rather than resolved — the whirlwind idealize-then-devalue romances now do the same affect-regulating, emptiness-filling job the self-harm did, so the case needs this folded into the same plan; test whether each new romance briefly relieves the emptiness then collapses into devaluation, whether the flips follow a disappointment rather than new information, and whether addressing the underlying affect slows the cycle.",
     explanation:
-      "Full credit reads online checking as a migrated compulsion and names a relief-then-reignite test that states its refutation; 'it's just responsible research' is the dodge the same-fear loop defeats.",
+      "Full credit reads the whirlwind romances as a migrated pattern and names a relief-then-devalue test that states its refutation; 'it's just normal dating' is the dodge the same-affect loop defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A man treated for symmetry OCD has done well, but as termination approaches he reveals that his wife still silently re-evens things he leaves crooked, and neither of them realized this was 'part of it.' Which conclusion best follows?",
+      "A patient has done well, but as termination approaches she reveals that her mother still rescues her from every consequence — pays off impulsive debts, calls in sick for her, smooths over every blowup — and neither of them realized this was 'part of it.' Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He's lucky his wife is so considerate, so there's nothing to address before ending.",
+        text: "She's lucky her mother is so devoted, so there's nothing to address before ending.",
         credit: 0,
       },
       {
-        text: "It's probably worth mentioning to his wife before we finish.",
+        text: "It's probably worth mentioning to her mother before we finish.",
         credit: 0.6,
       },
       {
-        text: "The wife's silent re-evening is leftover family accommodation propping up the symmetry need, so ending now would leave an active maintenance loop in the home and invite relapse — the arc isn't complete until the accommodation is dismantled; test whether his urges resurface when she stops fixing things, whether he can tolerate visibly 'crooked' surfaces himself, and whether removing her help is required for his gains to hold after termination.",
+        text: "The mother's constant rescuing is leftover accommodation that shields her from the consequences that would otherwise build distress tolerance, so ending now would leave an active maintenance loop in place and invite relapse — the arc isn't complete until the rescuing is addressed; test whether her impulsive acts and crises resurface when her mother stops absorbing them, whether she can tolerate the consequences and affect herself, and whether removing the rescue is required for her gains to hold after termination.",
         credit: 1.0,
       },
       {
-        text: "He seems to get help from his wife with the symmetry.",
+        text: "She seems to get a lot of help from her mother.",
         credit: 0.3,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'residual accommodation that will undermine termination' lead from the rival 'his wife's tidiness is irrelevant to his recovery,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'residual rescuing that will undermine termination' lead from the rival 'her mother's support is irrelevant to recovery,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: have his wife stop re-evening things for a week and watch whether his urges and distress flare — a return of symptoms when her help stops shows the accommodation was still maintaining the loop. My lead is refuted if he stays comfortable with crooked surfaces and shows no urge or distress once she stops.",
+        "Cheapest test: have her mother step back from absorbing one round of consequences and watch whether crises and impulsivity flare — a return of symptoms when the rescuing stops shows the accommodation was still maintaining the loop. My lead is refuted if she manages the consequences herself with no surge in impulsivity or distress once her mother steps back.",
       yieldAnchors: [
-        "He has done well with symmetry OCD",
-        "His wife silently re-evens crooked things",
-        "Neither saw it as part of the OCD",
+        "She has done well in treatment",
+        "Her mother absorbs every consequence",
+        "Neither saw it as part of the disorder",
       ],
       riskAnchors: [
-        "His urges resurface when she stops fixing things",
-        "He can tolerate 'crooked' surfaces himself",
-        "Removing her help is needed for gains to hold",
+        "Crises resurface when her mother stops rescuing",
+        "She can tolerate the consequences herself",
+        "Removing the rescue is needed for gains to hold",
       ],
       defeatedBy: [
-        "He stays comfortable with crooked surfaces",
-        "No urge or distress appears once she stops",
+        "She manages consequences herself with no flare",
+        "No surge in impulsivity once her mother steps back",
       ],
     },
     correctAnswer:
-      "The wife's silent re-evening is leftover family accommodation propping up the symmetry need, so ending now would leave an active maintenance loop in the home and invite relapse — the arc isn't complete until the accommodation is dismantled; test whether his urges resurface when she stops fixing things, whether he can tolerate visibly 'crooked' surfaces himself, and whether removing her help is required for his gains to hold after termination.",
+      "The mother's constant rescuing is leftover accommodation that shields her from the consequences that would otherwise build distress tolerance, so ending now would leave an active maintenance loop in place and invite relapse — the arc isn't complete until the rescuing is addressed; test whether her impulsive acts and crises resurface when her mother stops absorbing them, whether she can tolerate the consequences and affect herself, and whether removing the rescue is required for her gains to hold after termination.",
     explanation:
-      "Full credit reads the hidden accommodation as an unfinished part of the arc and names a stop-the-help test that states its refutation; 'he's just lucky' is the dodge the symptom-maintaining loop defeats.",
+      "Full credit reads the hidden rescuing as an unfinished part of the arc and names a step-back test that states its refutation; 'she's just lucky' is the dodge the loop-maintaining help defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A scrupulosity patient has stopped his out-loud confessing rituals, but the clinician notices he now pauses and silently 'checks his conscience' for several seconds before answering questions in session. Which conclusion best follows?",
+      "A patient has stopped her dramatic rage outbursts, but the clinician notices she now goes silent and subtly cold for the rest of a session whenever she feels slighted, 'checking out' instead of exploding. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He seems thoughtful before he speaks.",
+        text: "She seems quiet sometimes.",
         credit: 0.3,
       },
       {
-        text: "The silent conscience-check is a covert mental ritual that has quietly replaced the out-loud confessing, so the visible symptom dropped while the same neutralizing continues underground — the plan must target the hidden ritual too; test whether the pauses cluster before morally charged statements, whether resisting the check raises then settles his anxiety, and whether his progress was overstated because the ritual merely went covert.",
+        text: "The silent withdrawal is a covert version of the old outburst — the dramatic rage dropped while the same devalue-and-cut-off response continues underground as icy withdrawal, so the visible symptom fell but the pattern persists; test whether the withdrawals cluster right after she feels slighted or let down, whether naming the shift in the room thaws it, and whether her progress was overstated because the rage merely went quiet.",
         credit: 1.0,
       },
       {
-        text: "He's probably still doing something mentally; we could ask about the pauses.",
+        text: "She's probably still upset sometimes; we could ask about the quiet spells.",
         credit: 0.6,
       },
       {
-        text: "Since the visible confessing has stopped, the OCD is essentially resolved and the pauses are nothing.",
+        text: "Since the outbursts have stopped, the BPD is essentially resolved and the quiet spells are nothing.",
         credit: 0,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'covert mental ritual replacing the confessing' lead from the rival 'he is simply a careful, deliberate speaker,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'covert withdrawal replacing the outbursts' lead from the rival 'she is simply a calm, reserved person now,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: notice whether the pauses concentrate before morally loaded statements and whether stopping the silent check spikes his anxiety before it settles — a neutralizing routine tied to moral content marks a covert ritual, not ordinary care. My lead is refuted if the pauses are evenly spread across all topics and dropping them causes no anxiety.",
+        "Cheapest test: notice whether the cold spells concentrate right after a perceived slight and whether naming the shift in the room brings her back — a withdraw-and-devalue response tied to feeling let down marks a covert continuation, not genuine calm. My lead is refuted if the quiet is evenly spread, unrelated to slights, and naming it finds no hurt underneath.",
       yieldAnchors: [
-        "Out-loud confessing has stopped",
-        "He silently 'checks his conscience' before answering",
-        "The pause precedes his replies",
+        "The rage outbursts have stopped",
+        "She goes silent and cold when slighted",
+        "The withdrawal follows perceived letdowns",
       ],
       riskAnchors: [
-        "The pauses cluster before morally charged statements",
-        "Resisting the check raises then settles anxiety",
-        "Progress was overstated as the ritual went covert",
+        "The withdrawals cluster after feeling slighted",
+        "Naming the shift in the room thaws it",
+        "Progress was overstated as the rage went covert",
       ],
       defeatedBy: [
-        "The pauses are evenly spread across all topics",
-        "Dropping the check causes no anxiety",
+        "The quiet is evenly spread and unrelated to slights",
+        "Naming it finds no hurt underneath",
       ],
     },
     correctAnswer:
-      "The silent conscience-check is a covert mental ritual that has quietly replaced the out-loud confessing, so the visible symptom dropped while the same neutralizing continues underground — the plan must target the hidden ritual too; test whether the pauses cluster before morally charged statements, whether resisting the check raises then settles his anxiety, and whether his progress was overstated because the ritual merely went covert.",
+      "The silent withdrawal is a covert version of the old outburst — the dramatic rage dropped while the same devalue-and-cut-off response continues underground as icy withdrawal, so the visible symptom fell but the pattern persists; test whether the withdrawals cluster right after she feels slighted or let down, whether naming the shift in the room thaws it, and whether her progress was overstated because the rage merely went quiet.",
     explanation:
-      "Full credit reads the pause as a covert ritual that replaced the overt one and names a moral-content test that states its refutation; 'the OCD is essentially resolved' is the overreach the hidden neutralizing defeats.",
+      "Full credit reads the cold spell as a covert continuation of the outburst and names a follows-a-slight test that states its refutation; 'the BPD is essentially resolved' is the overreach the hidden devaluation defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "Late in treatment, a patient who has handled exposures well suddenly snaps at the clinician, 'You keep pushing me into this stuff — you don't actually care if it's too much for me,' over a routine exposure plan he'd previously agreed to. Which conclusion best follows?",
+      "Late in treatment, a patient who has been collaborative suddenly snaps, 'You only see me for the money — you don't actually give a damn whether I live or die,' after the clinician mentions an upcoming holiday break. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He's probably feeling pushed; we could ease up on the exposures.",
+        text: "She's probably feeling abandoned by the break; we could reassure her we care.",
         credit: 0.6,
       },
       {
-        text: "His outsized 'you don't care' reaction to a plan he agreed to looks like an old template about being coerced by people who claim to help, now surfacing in the alliance as a rupture worth working through — not evidence the exposure was wrong; test whether the same coerced-and-uncared-for feeling appears with other authority figures, whether repairing the rupture by inviting his control restores the collaboration, and whether the reaction eases as he sees the plan really is shared rather than imposed.",
+        text: "Her outsized 'you don't give a damn' reaction to a routine break looks like an old abandoning-caregiver/discarded-child dyad activated in the alliance — the break read as proof of abandonment — surfacing as a rupture to work through, not evidence the clinician is callous; test whether the same discarded-and-uncared-for feeling appears with other people who set limits, whether naming the activated pattern and the break's meaning repairs the rift, and whether the reaction eases as she sees the care is real and the frame isn't abandonment.",
         credit: 1.0,
       },
       {
-        text: "He seems annoyed about the exposure plan.",
+        text: "She seems upset about the holiday break.",
         credit: 0.3,
       },
       {
-        text: "His anger proves the clinician has been abusive and the whole treatment was coercive and harmful.",
+        text: "Her anger proves the clinician is only in it for the money and the whole treatment was a sham.",
         credit: 0,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'old coercion template surfacing as a workable rupture' lead from the rival 'the exposure plan really was being forced on him,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'abandonment dyad activated as a workable rupture' lead from the rival 'the break really was a callous, unilateral abandonment,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: check whether the 'you don't care, you're forcing me' feeling shows up with other helpers and whether repairing it by handing him control of the pace restores collaboration — a relationship theme that travels and mends points to a transference rupture, not genuine coercion. My lead is refuted if the plan really exceeded what he agreed to and his protest resolves simply by correcting an objectively pushed pace.",
+        "Cheapest test: check whether the 'you don't care, you're discarding me' feeling shows up with other people who set normal limits and whether naming the pattern and the break's meaning repairs the alliance — a relationship theme that travels and mends points to a transference rupture, not real callousness. My lead is refuted if the break truly was handled carelessly or unilaterally and her protest resolves simply by correcting that.",
       yieldAnchors: [
-        "He has handled exposures well before",
-        "He snaps that the clinician doesn't care",
-        "It's over a plan he had agreed to",
+        "She had been collaborative",
+        "She snaps that the clinician only cares about money",
+        "It's over a routine holiday break",
       ],
       riskAnchors: [
-        "The coerced-and-uncared-for feeling appears with other authorities",
-        "Repairing the rupture by inviting control restores collaboration",
-        "It eases as he sees the plan is shared",
+        "The discarded-and-uncared-for feeling appears with others who set limits",
+        "Naming the pattern and the break's meaning repairs the rift",
+        "It eases as she sees the care is real",
       ],
       defeatedBy: [
-        "The plan really exceeded what he agreed to",
-        "Correcting an objectively pushed pace fully resolves it",
+        "The break truly was handled carelessly or unilaterally",
+        "Correcting that fully resolves her protest",
       ],
     },
     correctAnswer:
-      "His outsized 'you don't care' reaction to a plan he agreed to looks like an old template about being coerced by people who claim to help, now surfacing in the alliance as a rupture worth working through — not evidence the exposure was wrong; test whether the same coerced-and-uncared-for feeling appears with other authority figures, whether repairing the rupture by inviting his control restores the collaboration, and whether the reaction eases as he sees the plan really is shared rather than imposed.",
+      "Her outsized 'you don't give a damn' reaction to a routine break looks like an old abandoning-caregiver/discarded-child dyad activated in the alliance — the break read as proof of abandonment — surfacing as a rupture to work through, not evidence the clinician is callous; test whether the same discarded-and-uncared-for feeling appears with other people who set limits, whether naming the activated pattern and the break's meaning repairs the rift, and whether the reaction eases as she sees the care is real and the frame isn't abandonment.",
     explanation:
-      "Full credit reads the disproportionate snap as a transference rupture to repair and names a travels-and-mends test that states its refutation; 'the clinician was abusive' is the overreach the previously shared, agreed plan defeats.",
+      "Full credit reads the disproportionate snap as a transference rupture to repair and names a travels-and-mends test that states its refutation; 'the clinician is only in it for the money' is the overreach the previously collaborative work defeats.",
   },
 ];
 
@@ -843,99 +843,99 @@ const written: HomeworkItem[] = [
   {
     itemType: "written",
     prompt:
-      "A 28-year-old arrives for an initial consultation: she describes intrusive images of her apartment burning down, checks the stove and outlets up to twenty times before leaving, is now late to work daily, has started avoiding cooking entirely, and her roommate has begun doing the 'final check' so she can leave. In one paragraph, propose the strongest formulation of where this case sits and what the first phase of treatment should target, and describe how you would test it.",
+      "A 28-year-old arrives for an initial consultation: she describes relationships that swing from adoration to hatred within days, panic and frantic calling whenever a partner is slow to respond, cutting 'to take the edge off,' a chronic sense of emptiness, and a partner who now cancels his own plans and never disagrees so she 'doesn't spiral.' In one paragraph, propose the strongest formulation of where this case sits and what the first phase of treatment should target, and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest formulation is that this is a checking-type OCD loop — intrusive fire images spike anxiety, repeated stove-and-outlet checking and cooking-avoidance bring brief relief, and that relief reinforces the cycle — with the roommate's 'final check' now functioning as family accommodation that keeps the loop alive, so the case sits at the assessment-and-formulation phase and the first targets are a shared map of the loop plus a plan to wind down both the checking and the accommodation. This is a strong claim because it predicts checkable consequences: the checking should track the specific fire-catastrophe fear rather than general forgetfulness; each extra check should leave her less certain rather than reassured; and her anxiety should have no chance to extinguish as long as the roommate removes the trigger for her. I would test it by mapping whether the rituals cluster around the fire fear, by watching whether more checking erodes rather than builds her confidence, and by seeing whether her distress and avoidance shift once the roommate gradually stops doing the final check — and if the checking is actually settled by a single look, the doubt doesn't return, and the roommate's help is irrelevant to her anxiety, the OCD-loop formulation is wrong.",
+        "The strongest formulation is a BPD pattern — interpersonal triggers (a partner's delay read as abandonment) spike unbearable affect, and idealize-devalue flips, frantic calling, and cutting bring brief relief that reinforces the cycle — with the partner's cancel-everything, never-disagree stance now functioning as accommodation that keeps the loop alive, so the case sits at the assessment-and-formulation phase and the first targets are a shared map of the loop plus early safety and a plan to wind down both the self-harm and the accommodation. This is a strong claim because it predicts checkable consequences: the flips and cutting should track perceived abandonment rather than the partner's actual behavior; each impulsive act should bring brief relief that then deepens the instability; and her affect should have no room to settle while the partner removes every trigger for her. I would test it by mapping whether the crises cluster around abandonment cues, by watching whether self-harm reliably discharges affect and then reinforces it, and by seeing whether her distress shifts as the partner gradually holds ordinary limits — and if the swings actually track his genuine unreliability, the relief isn't tied to affect, and his stepping back is irrelevant to her, the BPD-loop formulation is wrong.",
       yieldAnchors: [
-        "Intrusive fire images and up to twenty checks",
-        "She avoids cooking and is late daily",
-        "The roommate does the 'final check' for her",
+        "Idealize-to-hate swings within days",
+        "Panic and cutting when a partner is slow to respond",
+        "The partner cancels plans and never disagrees",
       ],
       riskAnchors: [
-        "The checking tracks the specific fire fear",
-        "Each extra check lowers rather than raises certainty",
-        "Anxiety can't extinguish while the roommate removes the trigger",
+        "The flips and cutting track perceived abandonment",
+        "Each impulsive act relieves briefly then reinforces",
+        "Affect can't settle while the partner removes every trigger",
       ],
       defeatedBy: [
-        "A single check genuinely settles her for good",
-        "The roommate's help is irrelevant to her anxiety",
+        "The swings track the partner's genuine unreliability",
+        "His stepping back is irrelevant to her affect",
       ],
     },
     correctAnswer:
-      "The strongest formulation is that this is a checking-type OCD loop — intrusive fire images spike anxiety, repeated stove-and-outlet checking and cooking-avoidance bring brief relief, and that relief reinforces the cycle — with the roommate's 'final check' now functioning as family accommodation that keeps the loop alive, so the case sits at the assessment-and-formulation phase and the first targets are a shared map of the loop plus a plan to wind down both the checking and the accommodation. This is a strong claim because it predicts checkable consequences: the checking should track the specific fire-catastrophe fear rather than general forgetfulness; each extra check should leave her less certain rather than reassured; and her anxiety should have no chance to extinguish as long as the roommate removes the trigger for her. I would test it by mapping whether the rituals cluster around the fire fear, by watching whether more checking erodes rather than builds her confidence, and by seeing whether her distress and avoidance shift once the roommate gradually stops doing the final check — and if the checking is actually settled by a single look, the doubt doesn't return, and the roommate's help is irrelevant to her anxiety, the OCD-loop formulation is wrong.",
+      "The strongest formulation is a BPD pattern — interpersonal triggers (a partner's delay read as abandonment) spike unbearable affect, and idealize-devalue flips, frantic calling, and cutting bring brief relief that reinforces the cycle — with the partner's cancel-everything, never-disagree stance now functioning as accommodation that keeps the loop alive, so the case sits at the assessment-and-formulation phase and the first targets are a shared map of the loop plus early safety and a plan to wind down both the self-harm and the accommodation. This is a strong claim because it predicts checkable consequences: the flips and cutting should track perceived abandonment rather than the partner's actual behavior; each impulsive act should bring brief relief that then deepens the instability; and her affect should have no room to settle while the partner removes every trigger for her. I would test it by mapping whether the crises cluster around abandonment cues, by watching whether self-harm reliably discharges affect and then reinforces it, and by seeing whether her distress shifts as the partner gradually holds ordinary limits — and if the swings actually track his genuine unreliability, the relief isn't tied to affect, and his stepping back is irrelevant to her, the BPD-loop formulation is wrong.",
     explanation:
-      "The dodge — 'she's just forgetful and overcautious, nothing to formulate' — ignores the loop and the accommodation; top credit commits to a checking-OCD formulation with an accommodation component and names tests that could refute it.",
+      "The dodge — 'she's just emotional and overreacts, nothing to formulate' — ignores the loop and the accommodation; top credit commits to a BPD-loop formulation with an accommodation component and names tests that could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "A man has done six months of ERP for contamination fears with real success: his washing is down from three hours to fifteen minutes a day and he can use public restrooms. But he now reports feeling strangely adrift and has begun picking fights with his wife, saying he 'doesn't know who he is without the routines.' In one paragraph, propose the strongest integrated conclusion about where this case now sits and what it needs next, and describe how you would test it.",
+      "A woman has done a year of treatment with real success: her self-harm has stopped and her relationships are far steadier. But she now reports feeling strangely adrift and has begun picking fights with her partner, saying she 'doesn't know who she is without the crises.' In one paragraph, propose the strongest integrated conclusion about where this case now sits and what it needs next, and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that the case has moved past the symptom-relief phase into working through: with the rituals no longer organizing his days and binding his anxiety, feelings and questions the washing had kept at bay — about identity, control, and his marriage — are surfacing, which is why he feels adrift and is fighting with his wife rather than relapsing. This is a strong claim because it predicts checkable consequences: the unsettledness should appear in the time and mental space the rituals used to fill; staying with the new feelings rather than resuming washing should preserve his gains; and naming what the routines were doing for him should bring relief rather than a return of symptoms. I would test it by tracing whether the adrift feeling and conflicts cluster in the vacated ritual space, by checking whether his washing stays low as he engages the feelings instead of avoiding them, and by watching whether exploring what 'who I am without the routines' means deepens his stability — and if instead the distress is global and unrelated to the freed-up time and only resuming rituals relieves it, the working-through reading is wrong.",
+        "The strongest conclusion is that the case has moved past crisis stabilization into working through identity: with the crises no longer organizing her life and discharging her affect, feelings and questions the chaos had kept at bay — about who she is, emptiness, and her relationships — are surfacing, which is why she feels adrift and is fighting with her partner rather than relapsing. This is a strong claim because it predicts checkable consequences: the unsettledness should appear in the space the crises used to fill; staying with the new feelings rather than reigniting a crisis should preserve her gains; and naming what the chaos was doing for her should bring relief rather than a return of symptoms. I would test it by tracing whether the adrift feeling and conflicts cluster in the vacated space, by checking whether her stability holds as she engages the feelings instead of acting on them, and by watching whether exploring 'who I am without the crises' deepens her sense of self — and if instead the distress is global and unrelated to the freed-up space and only a return of chaos relieves it, the working-through reading is wrong.",
       yieldAnchors: [
-        "Washing dropped from three hours to fifteen minutes",
-        "He feels adrift and fights with his wife",
-        "He says he doesn't know who he is without the routines",
+        "Self-harm has stopped and relationships are steadier",
+        "She feels adrift and picks fights",
+        "She says she doesn't know herself without the crises",
       ],
       riskAnchors: [
-        "The unsettledness appears in the vacated ritual space",
-        "Staying with the feelings preserves his gains",
-        "Naming what the routines did brings relief",
+        "The unsettledness appears in the vacated space",
+        "Staying with the feelings preserves her gains",
+        "Naming what the chaos did brings relief",
       ],
       defeatedBy: [
-        "The distress is global and unrelated to freed-up time",
-        "Only resuming rituals relieves it",
+        "The distress is global and unrelated to freed-up space",
+        "Only a return of chaos relieves it",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that the case has moved past the symptom-relief phase into working through: with the rituals no longer organizing his days and binding his anxiety, feelings and questions the washing had kept at bay — about identity, control, and his marriage — are surfacing, which is why he feels adrift and is fighting with his wife rather than relapsing. This is a strong claim because it predicts checkable consequences: the unsettledness should appear in the time and mental space the rituals used to fill; staying with the new feelings rather than resuming washing should preserve his gains; and naming what the routines were doing for him should bring relief rather than a return of symptoms. I would test it by tracing whether the adrift feeling and conflicts cluster in the vacated ritual space, by checking whether his washing stays low as he engages the feelings instead of avoiding them, and by watching whether exploring what 'who I am without the routines' means deepens his stability — and if instead the distress is global and unrelated to the freed-up time and only resuming rituals relieves it, the working-through reading is wrong.",
+      "The strongest conclusion is that the case has moved past crisis stabilization into working through identity: with the crises no longer organizing her life and discharging her affect, feelings and questions the chaos had kept at bay — about who she is, emptiness, and her relationships — are surfacing, which is why she feels adrift and is fighting with her partner rather than relapsing. This is a strong claim because it predicts checkable consequences: the unsettledness should appear in the space the crises used to fill; staying with the new feelings rather than reigniting a crisis should preserve her gains; and naming what the chaos was doing for her should bring relief rather than a return of symptoms. I would test it by tracing whether the adrift feeling and conflicts cluster in the vacated space, by checking whether her stability holds as she engages the feelings instead of acting on them, and by watching whether exploring 'who I am without the crises' deepens her sense of self — and if instead the distress is global and unrelated to the freed-up space and only a return of chaos relieves it, the working-through reading is wrong.",
     explanation:
-      "The dodge — calling the unrest proof the ERP backfired and should be reversed — ignores the genuine relief; top credit commits to a working-through phase and names a vacated-space test that could refute it.",
+      "The dodge — calling the unrest proof the treatment backfired and should be loosened — ignores the genuine relief; top credit commits to a working-through phase and names a vacated-space test that could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "Two weeks before a planned termination, a patient who spent a year battling harm obsessions declares he is 'one hundred percent better,' wants to cancel the remaining sessions, and in particular wants to skip the final agreed exposure of holding a kitchen knife near his partner. In one paragraph, propose the strongest conclusion about what is happening and what the arc still needs, and describe how you would test it.",
+      "Two weeks before a planned termination, a patient who spent a year working on abandonment fears and self-harm declares she is 'completely better,' wants to cancel the remaining sessions, and in particular wants to skip the planned work on her feelings about the relationship ending. In one paragraph, propose the strongest conclusion about what is happening and what the arc still needs, and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that the sudden, total 'cure' arriving exactly as the most feared exposure looms is more likely a flight into health — a way to declare victory and escape the terrifying knife exposure — than a genuine resolution, which means the arc still needs that last exposure and a careful read of whether his confidence is real or defensive. This is a strong claim because it predicts checkable consequences: the timing should track the dreaded exposure rather than any new real-world gain; he should still flinch from or avoid the specific feared situation if asked to face it now; and the 'cure' should wobble when the avoided trigger is brought concretely into the room. I would test it by checking whether his improvement shows up in real situations or only in his declarations, by inviting him to attempt the very exposure he wants to skip and watching whether he can do it without ritual or escape, and by seeing whether his certainty holds when the feared scenario is made vivid — and if he can actually face the knife exposure calmly and his gains are evident in daily life, the flight-into-health reading is wrong and he may genuinely be ready to finish.",
+        "The strongest conclusion is that a sudden, total 'cure' arriving exactly as the feared work on ending and loss looms is more likely a flight into health — a way to declare victory and escape the dread of separation — than a genuine resolution of a year-long struggle, which means the arc still needs that work on the ending and a careful read of whether her confidence is real or defensive. This is a strong claim because it predicts checkable consequences: the timing should track the looming termination rather than any new real-world gain; the old abandonment affect should still surface if the ending is engaged concretely; and the 'cure' should wobble when separation is made vivid. I would test it by checking whether her improvement shows up in real relationships or only in her declarations, by inviting her to stay with feelings about the ending and watching whether she can without numbing or bolting, and by seeing whether her certainty holds when loss is made concrete — and if she can genuinely face the ending calmly and her gains are evident in daily life, the flight-into-health reading is wrong and she may genuinely be ready to finish.",
       yieldAnchors: [
-        "He declares himself '100% better'",
+        "She declares herself 'completely better'",
         "It arrives two weeks before termination",
-        "He wants to skip the final feared exposure",
+        "She wants to skip the work on the ending",
       ],
       riskAnchors: [
-        "The timing tracks the dreaded exposure",
-        "He still avoids the specific feared situation",
-        "The 'cure' wobbles when the trigger is made vivid",
+        "The timing tracks the looming termination",
+        "The abandonment affect still surfaces if engaged",
+        "The 'cure' wobbles when separation is made vivid",
       ],
       defeatedBy: [
-        "He faces the knife exposure calmly without ritual",
-        "His gains are evident across daily life",
+        "She faces the ending calmly without numbing",
+        "Her gains are evident across daily life",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that the sudden, total 'cure' arriving exactly as the most feared exposure looms is more likely a flight into health — a way to declare victory and escape the terrifying knife exposure — than a genuine resolution, which means the arc still needs that last exposure and a careful read of whether his confidence is real or defensive. This is a strong claim because it predicts checkable consequences: the timing should track the dreaded exposure rather than any new real-world gain; he should still flinch from or avoid the specific feared situation if asked to face it now; and the 'cure' should wobble when the avoided trigger is brought concretely into the room. I would test it by checking whether his improvement shows up in real situations or only in his declarations, by inviting him to attempt the very exposure he wants to skip and watching whether he can do it without ritual or escape, and by seeing whether his certainty holds when the feared scenario is made vivid — and if he can actually face the knife exposure calmly and his gains are evident in daily life, the flight-into-health reading is wrong and he may genuinely be ready to finish.",
+      "The strongest conclusion is that a sudden, total 'cure' arriving exactly as the feared work on ending and loss looms is more likely a flight into health — a way to declare victory and escape the dread of separation — than a genuine resolution of a year-long struggle, which means the arc still needs that work on the ending and a careful read of whether her confidence is real or defensive. This is a strong claim because it predicts checkable consequences: the timing should track the looming termination rather than any new real-world gain; the old abandonment affect should still surface if the ending is engaged concretely; and the 'cure' should wobble when separation is made vivid. I would test it by checking whether her improvement shows up in real relationships or only in her declarations, by inviting her to stay with feelings about the ending and watching whether she can without numbing or bolting, and by seeing whether her certainty holds when loss is made concrete — and if she can genuinely face the ending calmly and her gains are evident in daily life, the flight-into-health reading is wrong and she may genuinely be ready to finish.",
     explanation:
-      "The dodge — taking the '100% better' at face value and ending early — ignores the suspicious timing tied to the dreaded step; top credit commits to a flight into health and names a face-the-exposure test that could refute it.",
+      "The dodge — taking the 'completely better' at face value and ending early — ignores the suspicious timing tied to the dreaded work on separation; top credit commits to a flight into health and names a stay-with-the-ending test that could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "Eight months after finishing treatment for symmetry-and-ordering OCD, a woman returns shaken: a difficult pregnancy and move have brought back some ordering urges, and she says, 'I'm right back where I started, the therapy clearly didn't take.' Her records show she was symptom-free and functioning well for those eight months. In one paragraph, propose the strongest conclusion about what is happening and what it calls for, and describe how you would test it.",
+      "Eight months after finishing treatment, a woman returns shaken: a breakup and a job loss have brought back some urges to self-harm and her old sense of emptiness, and she says, 'I'm right back where I started, the therapy clearly didn't take.' Her records show she was stable and functioning well for those eight months. In one paragraph, propose the strongest conclusion about what is happening and what it calls for, and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that this is a stress-triggered lapse, not a relapse to baseline: eight months of symptom-free functioning show the treatment did take, and a major stressor like a hard pregnancy and a move has temporarily reactivated familiar urges, so what it calls for is re-deploying her existing skills and relapse-prevention plan rather than starting over or concluding the therapy failed. This is a strong claim because it predicts checkable consequences: the uptick should track the acute stressors and stay far short of her original severity; she should still be able to resist or recover from individual urges using what she learned; and her symptoms should recede toward her recovered baseline as the stressors resolve and she resumes exposures. I would test it by comparing the current intensity against both her pre-treatment level and her recovered baseline, by checking whether she can still apply response-prevention to a single urge, and by watching whether the flare eases as the pregnancy and move settle and she re-engages her plan — and if instead she has truly returned to full pre-treatment severity and her skills no longer help at all, the simple-lapse reading would need revising toward a fuller relapse.",
+        "The strongest conclusion is that this is a stress-triggered lapse, not a relapse to baseline: eight months of stable functioning show the treatment did take, and major stressors like a breakup and a job loss have temporarily reactivated familiar urges and emptiness, so what it calls for is re-deploying her existing skills and relapse-prevention plan rather than starting over or concluding the therapy failed. This is a strong claim because it predicts checkable consequences: the uptick should track the acute losses and stay far short of her original severity; she should still be able to re-regulate or resist individual urges using what she learned; and her symptoms should recede toward her recovered baseline as the stressors resolve. I would test it by comparing the current intensity against both her pre-treatment level and her recovered baseline, by checking whether she can still apply her skills to a single urge, and by watching whether the flare eases as the breakup and job loss settle and she re-engages her plan — and if instead she has truly returned to full pre-treatment severity and her skills no longer help at all, the simple-lapse reading would need revising toward a fuller relapse.",
       yieldAnchors: [
-        "Ordering urges returned under stress",
+        "Self-harm urges and emptiness returned under stress",
         "She says the therapy 'didn't take'",
-        "She was symptom-free for eight months",
+        "She was stable for eight months",
       ],
       riskAnchors: [
-        "The uptick tracks the acute stressors",
-        "She can still recover from individual urges",
+        "The uptick tracks the acute losses",
+        "She can still re-regulate from individual urges",
         "Symptoms recede toward baseline as stressors resolve",
       ],
       defeatedBy: [
@@ -944,36 +944,36 @@ const written: HomeworkItem[] = [
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that this is a stress-triggered lapse, not a relapse to baseline: eight months of symptom-free functioning show the treatment did take, and a major stressor like a hard pregnancy and a move has temporarily reactivated familiar urges, so what it calls for is re-deploying her existing skills and relapse-prevention plan rather than starting over or concluding the therapy failed. This is a strong claim because it predicts checkable consequences: the uptick should track the acute stressors and stay far short of her original severity; she should still be able to resist or recover from individual urges using what she learned; and her symptoms should recede toward her recovered baseline as the stressors resolve and she resumes exposures. I would test it by comparing the current intensity against both her pre-treatment level and her recovered baseline, by checking whether she can still apply response-prevention to a single urge, and by watching whether the flare eases as the pregnancy and move settle and she re-engages her plan — and if instead she has truly returned to full pre-treatment severity and her skills no longer help at all, the simple-lapse reading would need revising toward a fuller relapse.",
+      "The strongest conclusion is that this is a stress-triggered lapse, not a relapse to baseline: eight months of stable functioning show the treatment did take, and major stressors like a breakup and a job loss have temporarily reactivated familiar urges and emptiness, so what it calls for is re-deploying her existing skills and relapse-prevention plan rather than starting over or concluding the therapy failed. This is a strong claim because it predicts checkable consequences: the uptick should track the acute losses and stay far short of her original severity; she should still be able to re-regulate or resist individual urges using what she learned; and her symptoms should recede toward her recovered baseline as the stressors resolve. I would test it by comparing the current intensity against both her pre-treatment level and her recovered baseline, by checking whether she can still apply her skills to a single urge, and by watching whether the flare eases as the breakup and job loss settle and she re-engages her plan — and if instead she has truly returned to full pre-treatment severity and her skills no longer help at all, the simple-lapse reading would need revising toward a fuller relapse.",
     explanation:
       "The dodge — agreeing the therapy 'didn't take' and starting from scratch — ignores eight months of recovery; top credit commits to a stress-triggered lapse and names a severity-comparison test that could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "A clinician is forming an overall plan for a man with severe contamination OCD who is also curious about 'the deeper meaning' of his fear of being 'dirty,' which he links to a shaming childhood. He asks whether they should do exposure work or 'figure out where it comes from' first. In one paragraph, propose the strongest conclusion about how to sequence and combine the work across his treatment arc, and describe how you would test it.",
+      "A clinician is forming an overall plan for a woman with severe BPD who is in frequent crisis and is also curious about 'where it all comes from' in her childhood. She asks whether they should do safety-and-stabilization work or 'figure out where it comes from' first. In one paragraph, propose the strongest conclusion about how to sequence and combine the work across her treatment arc, and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that the arc should lead with the well-supported, first-line approach for severe OCD — ERP to break the contamination loop — while treating his interest in the 'deeper meaning' not as an alternative but as a complement that becomes most useful for working through once the symptoms loosen, so insight and exposure are integrated rather than pitted against each other. This is a strong claim because it predicts checkable consequences: symptom severity should drop fastest when ERP is actually doing the work, not when they only discuss origins; the childhood-shame meaning should become more accessible and more useful as the rituals stop crowding it out; and addressing that meaning during working-through should reduce the risk of the symptom simply migrating to a new form. I would test it by tracking whether his contamination symptoms fall as exposures proceed, by watching whether the shame theme can be engaged more productively after the rituals ease, and by checking whether weaving in that meaning lowers relapse and symptom-substitution compared with exposure alone — and if pure origin-talk with no exposure actually resolved a severe contamination loop, this evidence-led sequencing would be wrong.",
+        "The strongest conclusion is that the arc should lead with the well-supported priorities for severe, crisis-prone BPD — establishing the frame, safety, and affect regulation through an evidence-based approach such as MBT, TFP, or DBT — while treating her interest in 'where it comes from' not as an alternative but as a complement that becomes most useful for working through once the crises settle, so insight and stabilization are integrated rather than pitted against each other. This is a strong claim because it predicts checkable consequences: crises and self-harm should drop fastest when the structured work is actually doing its job, not when they only discuss origins; the childhood meaning should become more accessible and useful as the chaos stops crowding it out; and addressing that meaning during working-through should reduce the risk of the pattern simply migrating to a new form. I would test it by tracking whether her crises fall as the structured work proceeds, by watching whether the origin themes can be engaged more productively after stabilization, and by checking whether weaving in that meaning lowers relapse compared with stabilization alone — and if pure origin-talk with no stabilization actually resolved a severe, crisis-prone BPD presentation, this evidence-led sequencing would be wrong.",
       yieldAnchors: [
-        "Severe contamination OCD",
-        "He links 'dirty' to a shaming childhood",
-        "He asks whether to do exposure or origins first",
+        "Severe, crisis-prone BPD",
+        "She links it to her childhood",
+        "She asks whether to stabilize or explore origins first",
       ],
       riskAnchors: [
-        "Severity drops fastest when ERP does the work",
-        "The shame meaning grows accessible as rituals ease",
-        "Addressing meaning reduces symptom migration",
+        "Crises drop fastest when structured work does the job",
+        "Origin meaning grows accessible as chaos eases",
+        "Addressing meaning reduces pattern migration",
       ],
       defeatedBy: [
-        "Origin-talk alone resolves the severe loop",
-        "Exposure produces no symptom reduction",
+        "Origin-talk alone resolves the severe crises",
+        "Structured stabilization produces no symptom reduction",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that the arc should lead with the well-supported, first-line approach for severe OCD — ERP to break the contamination loop — while treating his interest in the 'deeper meaning' not as an alternative but as a complement that becomes most useful for working through once the symptoms loosen, so insight and exposure are integrated rather than pitted against each other. This is a strong claim because it predicts checkable consequences: symptom severity should drop fastest when ERP is actually doing the work, not when they only discuss origins; the childhood-shame meaning should become more accessible and more useful as the rituals stop crowding it out; and addressing that meaning during working-through should reduce the risk of the symptom simply migrating to a new form. I would test it by tracking whether his contamination symptoms fall as exposures proceed, by watching whether the shame theme can be engaged more productively after the rituals ease, and by checking whether weaving in that meaning lowers relapse and symptom-substitution compared with exposure alone — and if pure origin-talk with no exposure actually resolved a severe contamination loop, this evidence-led sequencing would be wrong.",
+      "The strongest conclusion is that the arc should lead with the well-supported priorities for severe, crisis-prone BPD — establishing the frame, safety, and affect regulation through an evidence-based approach such as MBT, TFP, or DBT — while treating her interest in 'where it comes from' not as an alternative but as a complement that becomes most useful for working through once the crises settle, so insight and stabilization are integrated rather than pitted against each other. This is a strong claim because it predicts checkable consequences: crises and self-harm should drop fastest when the structured work is actually doing its job, not when they only discuss origins; the childhood meaning should become more accessible and useful as the chaos stops crowding it out; and addressing that meaning during working-through should reduce the risk of the pattern simply migrating to a new form. I would test it by tracking whether her crises fall as the structured work proceeds, by watching whether the origin themes can be engaged more productively after stabilization, and by checking whether weaving in that meaning lowers relapse compared with stabilization alone — and if pure origin-talk with no stabilization actually resolved a severe, crisis-prone BPD presentation, this evidence-led sequencing would be wrong.",
     explanation:
-      "The dodge — choosing meaning-only exploration over the evidence-based exposure for severe OCD — is anti-evidence purism; top credit commits to an ERP-led, meaning-integrated arc and names a symptoms-fall-with-exposure test that could refute it.",
+      "The dodge — choosing meaning-only exploration over the evidence-based stabilization for severe BPD — is anti-evidence purism; top credit commits to a stabilization-led, meaning-integrated arc and names a crises-fall-with-structure test that could refute it.",
   },
 ];
 
@@ -982,36 +982,40 @@ export const section: SectionContent = {
   title: "A Treatment Arc, Start to Finish",
   weekNumber: 1,
   blurb:
-    "A capstone that follows a single course of OCD treatment from assessment and formulation through building the alliance, combining ERP with meaning-focused work, working through, and termination — into one integrated way of reading where a case sits and what it needs next.",
+    "A capstone that follows a single course of BPD treatment from assessment and formulation through establishing the frame and alliance, early safety and stabilization, working with splitting, identity, and the transference, working through, and termination — into one integrated way of reading where a case sits and what it needs next.",
   lectureTitle:
     "1.8 A Treatment Arc, Start to Finish",
   body: `# A Treatment Arc, Start to Finish
 
-By now you have a toolkit: OCD runs as a cycle of obsession, anxiety, ritual, and brief relief that quietly reinforces itself; the content of a symptom can carry meaning; rituals serve a function as defenses; conflict and ambivalence often sit beneath them; the therapy relationship is both a tool and a place the symptom shows itself; exposure and response prevention is the well-supported core; and lasting change pairs symptom relief with working through. This final section puts the whole kit to work across one course of treatment, start to finish. A real case doesn't arrive labeled by phase. It offers signals — a hidden ritual, a stalled plateau, a sudden "cure" — and the craft is reading where in the arc a case sits and committing to the strongest next move the evidence warrants, while naming the cheapest observation that could prove you wrong.
+By now you have a toolkit: BPD runs as a cycle in which an interpersonal trigger — usually a whiff of rejection or abandonment — sets off fast-rising, unbearable affect, which an impulsive act (self-harm, rage, frantic clinging, an abrupt cutoff) briefly relieves, and that relief quietly reinforces the pattern; splitting keeps people all-good or all-bad; identity can feel diffuse and empty; early bonds become templates replayed in present relationships; mentalizing collapses under attachment stress; the therapy relationship is both a tool and a place the disorder shows itself; and well-supported treatments such as MBT, TFP, and DBT genuinely help. This final section puts the whole kit to work across one course of treatment, start to finish. A real case doesn't arrive labeled by phase. It offers signals — a hidden cutting habit, a stalled plateau, a sudden "cure" — and the craft is reading where in the arc a case sits and committing to the strongest next move the evidence warrants, while naming the cheapest observation that could prove you wrong.
 
 ## Assessment and formulation
 
-The arc begins before any exposure, with understanding. A good formulation maps the specific triggers, the feared catastrophe, the rituals (overt and covert), the avoidance, and what the whole loop accomplishes. Skipping this to "just start exposures" risks aiming at the wrong link — chasing the washing while missing the reassurance-seeking that really drives it, or forcing an OCD frame onto worry that is actually realistic and information-responsive. The discipline is the same one running through the course: treat the observable symptom as a clue to a loop, then ask what else should be true if your map is right. A strong formulation binds the trigger, the ritual, and the relief into one picture and carries a test: the ritual should track the specific fear, and more checking should erode confidence rather than build it.
+The arc begins before any deeper work, with understanding. A good formulation maps the specific interpersonal triggers, the unbearable affect they ignite, the impulsive acts (self-harm, idealize-devalue flips, cutoffs), the chronic emptiness, and what the whole loop accomplishes — usually regulating affect or warding off abandonment. Skipping this to "just start skills" risks aiming at the wrong link, or forcing a BPD frame onto what is actually ordinary grief or moodiness that tracks a real loss and responds to support. The discipline runs through the whole course: treat the observable behavior as a clue to a loop, then ask what else should be true if your map is right. A strong formulation binds the trigger, the act, and the relief into one picture and carries a test: the self-harm should track perceived abandonment, and each impulsive act should bring relief that then deepens the instability.
 
-## Building the alliance
+## Building the alliance and the frame
 
-Nothing in OCD treatment works without a working relationship, and exposure work especially can't begin on a foundation of mistrust. Many patients arrive ashamed — of intrusive harm or taboo thoughts they fear make them monsters, or burned by past treatment that pushed too hard too fast. The early phase is about safety and collaboration: normalizing intrusive thoughts, explaining the cycle without judgment, and designing a graded plan the patient helps build and can trust. The check is concrete: engagement should rise when the patient is given a real say in the pace, and guard should drop when shame is met with calm rather than alarm. Force exposure before the alliance holds and the patient quits; build it first and the hardest work becomes possible.
+Nothing in BPD treatment works without a working relationship and a clear, reliable frame, and deeper work especially can't begin on a foundation of mistrust. Many patients arrive braced — ashamed of self-harm, or convinced that every helper eventually abandons or controls them. The early phase is about safety and collaboration: taking self-harm seriously without panic, normalizing the disclosure, and setting a frame the patient helps shape and can trust. The check is concrete: engagement should rise when the patient is given a real say and the frame is made explicit, and guard should drop when shame and dread are met with steadiness rather than alarm or punishment. Force the hard work before the alliance holds and the patient flees; build it first and the hardest work becomes possible.
 
-## ERP combined with meaning-focused work
+## Early safety and stabilization
 
-The core engine of change for OCD is exposure and response prevention: facing the trigger while not performing the ritual, so the anxiety can finally extinguish and the loop weakens. A graded hierarchy makes this tolerable; leaping to the worst step invites escape or covert ritualizing. But exposure alone sometimes leaves the conflict the symptom carried untouched, and the anxiety migrates — checking fades and a harm obsession appears, or washing shrinks and online reassurance-seeking swells. The integrated stance is not exposure versus insight but exposure leading, with meaning-focused understanding as a complement that matters most for what comes next. The test is whether symptoms actually fall as exposures proceed, and whether attending to the underlying fear keeps the symptom from simply changing costume.
+With severe BPD, safety comes first. When self-harm and suicidality are doing affect regulation, the early work is stabilization — building the capacity to tolerate unbearable feeling without discharging it. Plunging into the deepest trauma before that capacity exists is destabilizing and can trigger crises; a graded approach makes the work tolerable enough to actually complete. The integrated stance is not stabilization versus depth but stabilization leading, with meaning-focused understanding as a complement that matters most for what comes next. The test is whether crises actually fall as the structured work proceeds, and whether the patient can stay regulated in a lower-intensity session without a crisis.
+
+## Working with splitting, identity, and the transference
+
+As safety holds, the core work turns to the disorder's structure: the splitting that keeps people all-good or all-bad, the diffuse and empty sense of self, and the old templates replayed in present relationships — including the one with the clinician. Much of this surfaces live in the room: a warm clinician suddenly experienced as cold, an abandonment dyad activated by a break, an idealize-then-devalue flip after a small letdown. Naming the activated pattern as it happens is how splitting and identity slowly get integrated. The check is whether the flips track a disappointment rather than new information, and whether naming the dyad in the room actually shifts it.
 
 ## Working through
 
-As rituals stop consuming time and binding anxiety, something often surfaces: a feeling, a conflict, an emptiness the symptom had been crowding out. This marks the shift from symptom relief into working through — the slow, repeated process by which understanding reaches the moments that matter and becomes new behavior rather than a recited explanation. A patient who can flawlessly describe his cycle yet still washes for an hour each morning has intellectual insight that hasn't been worked through; the avoidance persists precisely because the knowing hasn't reached the bathroom at 7 a.m. The check is whether insight carries real feeling, whether it can be applied in the charged moment rather than after, and whether repeated practice in fresh triggers slowly changes what the person does.
+As crises stop consuming time and discharging affect, something often surfaces: a feeling, a grief, an emptiness the chaos had been crowding out. This marks the shift from stabilization into working through — the slow, repeated process by which understanding reaches the charged moments and becomes new behavior rather than a recited explanation. A patient who can flawlessly describe splitting yet still flips from idealizing to hating her partner has intellectual insight that hasn't been worked through; the pattern persists precisely because the knowing hasn't reached the fight at 11 p.m. The check is whether insight carries real feeling, whether it can be applied in the heated moment rather than after, and whether repeated practice in real ruptures slowly changes what the person does.
 
 ## Termination and relapse prevention
 
-A course of treatment aims at its own ending. Readiness shows when a patient uses the skills independently — recovering from slips without help, building an exposure on his own for a brand-new trigger — at which point the strong move is to taper while consolidating a relapse-prevention plan. Watch for the OCD reappearing around the ending itself: a wish to keep coming "just in case" can be the doubt-and-reassurance dynamic seeking the clinician as a safety crutch. And after treatment, expect lapses, not perfection: a stress-triggered flare months into stability is a signal to re-deploy skills, not proof the work failed. The check is whether the flare tracks the stressor and stays far short of baseline, and whether the patient can still recover from individual urges on his own.
+A course of treatment aims at its own ending. Readiness shows when a patient handles ruptures independently — recovering from an interpersonal scare without self-harm, re-regulating on her own — at which point the strong move is to taper while consolidating a relapse-prevention plan. Watch for the abandonment dynamic reappearing around the ending itself: a wish to keep coming "just in case" can be the dread of being alone seeking the clinician as a permanent safety figure. And after treatment, expect lapses, not perfection: a stress-triggered flare months into stability is a signal to re-deploy skills, not proof the work failed. The check is whether the flare tracks the stressor and stays far short of baseline, and whether the patient can still re-regulate from individual urges on her own.
 
 ## In the real world
 
-Picture one case from first call to last. A man arrives washing three hours a day, sure his intrusive harm thoughts make him dangerous; you formulate the loop and meet the shame with calm, build a graded plan he trusts, run exposures that drop the washing while watching for the fear to migrate, and as the rituals recede a long-avoided feeling about his father surfaces to be worked through — until, recovered, he handles a new trigger himself and you taper toward an ending he can own. The dodge at every step is the shrug: "OCD is just mysterious, you can't really say where this case is or what it needs." The integrated move reads each phase for what it is and commits to the strongest next step with a test attached — does the ritual track the fear, does engagement rise with collaboration, do symptoms fall with exposure, does the flare track the stressor. That is the whole course in a single arc: not a shrug at how stubborn OCD is, but a disciplined, testable reading of where a case stands and what will move it forward.`,
+Picture one case from first call to last. A woman arrives in constant crisis — self-harming to quiet unbearable feeling, sure every partner will abandon her; you formulate the loop and meet the shame with steadiness, build a frame she trusts, stabilize safety so the crises drop, then work with the splitting and the abandonment dyads as they ignite in the room, and as the chaos recedes a long-avoided emptiness and grief surface to be worked through — until, steadier, she rides out a breakup without self-harm and you taper toward an ending she can own. The dodge at every step is the shrug: "people either get better or they don't — you can't really say where this case is or what it needs." The integrated move reads each phase for what it is and commits to the strongest next step with a test attached — does the self-harm track abandonment, does engagement rise with collaboration, do crises fall with structure, does the flare track the stressor. That is the whole course in a single arc: not a shrug at how stubborn BPD is, nor a promise of certain cure or certain collapse, but a disciplined, testable reading of where a case stands and what will move it forward.`,
   homework: {
     mcq,
     hybrid,

@@ -9,407 +9,407 @@ const mcq: HomeworkItem[] = [
   {
     itemType: "mc",
     prompt:
-      "Several times each session a patient asks her therapist, 'You're sure you don't think I'm a terrible person, right?' Each reassurance brings a few seconds of relief, then a fresh version of the same question. She never asks about anything else this way. Which conclusion best follows?",
+      "A patient's partner doesn't reply to a text for three hours. By the time he calls, she has cut herself and packed a bag, certain — with no doubt at all — that he was leaving her; it turns out his phone had died at work. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "She seems to need a lot of reassurance.",
-        credit: 0.3,
-      },
-      {
-        text: "The reassurance-seeking is likely a compulsion that has migrated into the relationship — each answer briefly relieves the doubt and thereby strengthens the urge to ask again, so the therapist's reassurance feeds the very loop it seems to soothe; test whether relief is always short-lived and followed by a new version of the question, whether withholding reassurance spikes anxiety that then subsides on its own, and whether the asking clusters around her feared 'bad person' theme rather than ordinary topics.",
+        text: "Under the stress of feeling abandoned her mentalizing likely collapsed into psychic equivalence — the thought 'he is leaving me' was experienced not as a fear to be checked but as literal, certain reality, which is why no alternative such as a dead battery or a busy shift could even occur to her; test whether the certainty was total and admitted no other reading, whether it spiked precisely with the attachment threat, and whether the conviction softens once her arousal drops or she is genuinely invited to wonder what else the silence could mean.",
         credit: 1.0,
       },
       {
-        text: "She's probably using reassurance like a ritual; we could look at her questions more.",
+        text: "She might have been in a non-mentalizing state where the thought felt like fact; we could look at what set it off.",
         credit: 0.6,
       },
       {
-        text: "Some people are just anxious and need reassurance, so there's nothing more to read into it.",
+        text: "She gets very upset and certain when she isn't answered.",
+        credit: 0.3,
+      },
+      {
+        text: "You can never really know what someone else is thinking, so there's no way to say what the silence meant.",
         credit: 0,
       },
     ],
     correctAnswer:
-      "The reassurance-seeking is likely a compulsion that has migrated into the relationship — each answer briefly relieves the doubt and thereby strengthens the urge to ask again, so the therapist's reassurance feeds the very loop it seems to soothe; test whether relief is always short-lived and followed by a new version of the question, whether withholding reassurance spikes anxiety that then subsides on its own, and whether the asking clusters around her feared 'bad person' theme rather than ordinary topics.",
+      "Under the stress of feeling abandoned her mentalizing likely collapsed into psychic equivalence — the thought 'he is leaving me' was experienced not as a fear to be checked but as literal, certain reality, which is why no alternative such as a dead battery or a busy shift could even occur to her; test whether the certainty was total and admitted no other reading, whether it spiked precisely with the attachment threat, and whether the conviction softens once her arousal drops or she is genuinely invited to wonder what else the silence could mean.",
     explanation:
-      "Top credit reads reassurance-seeking as a compulsion the therapist's answers reinforce and names a withhold-and-watch test; 'just anxious, nothing to read into' is the dodge the relief-then-return pattern defeats.",
+      "Top credit names psychic equivalence under attachment stress and a does-it-soften-when-arousal-drops test; 'you can never know what someone is thinking' is the nihilistic refusal the total, threat-triggered certainty defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "Throughout each session a patient repeatedly scans the therapist's face, asking 'Did that come out wrong? Are you annoyed?' whenever the therapist so much as shifts in her chair. He is relaxed about every other relationship in his life. Which conclusion best follows?",
+      "A patient tells her therapist that his caring words mean nothing; the only thing that would prove he cares is if he gives her his personal cell number and answers at any hour. Warmth, reliability, and remembering details of her life she waves away as worthless. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Reading faces is so subjective that nothing can be made of his scanning.",
-        credit: 0,
+        text: "She wants concrete proof that her therapist cares.",
+        credit: 0.3,
       },
       {
-        text: "He's probably checking for disapproval; we could ask what he's watching for.",
-        credit: 0.6,
-      },
-      {
-        text: "The face-scanning is likely a checking compulsion enacted in the room — he treats the therapist's neutral expression as ambiguous evidence of harm done and checks it to relieve doubt, which only renews the doubt; test whether the scanning spikes right after he says something he fears was offensive, whether reassurance gives only brief relief before the next check, and whether the same checking is absent in the relationships he calls easy.",
+        text: "She is likely operating in teleological mode — under attachment stress only a physical action counts as evidence of a mental state, so 'he cares' can be believed only if it is cashed out in a concrete act like the cell number, while intentions and words register as nothing; test whether only physical demonstrations ever satisfy her while words and reliability don't, whether the demand for proof escalates as she feels less secure, and whether her ability to credit non-physical care returns when her arousal settles.",
         credit: 1.0,
       },
       {
-        text: "He seems to watch the therapist's face a lot.",
-        credit: 0.3,
+        text: "She may only count physical gestures as proof of care; we could notice what she dismisses.",
+        credit: 0.6,
+      },
+      {
+        text: "Some people just need grand gestures, so there's nothing more to read into it.",
+        credit: 0,
       },
     ],
     correctAnswer:
-      "The face-scanning is likely a checking compulsion enacted in the room — he treats the therapist's neutral expression as ambiguous evidence of harm done and checks it to relieve doubt, which only renews the doubt; test whether the scanning spikes right after he says something he fears was offensive, whether reassurance gives only brief relief before the next check, and whether the same checking is absent in the relationships he calls easy.",
+      "She is likely operating in teleological mode — under attachment stress only a physical action counts as evidence of a mental state, so 'he cares' can be believed only if it is cashed out in a concrete act like the cell number, while intentions and words register as nothing; test whether only physical demonstrations ever satisfy her while words and reliability don't, whether the demand for proof escalates as she feels less secure, and whether her ability to credit non-physical care returns when her arousal settles.",
     explanation:
-      "Full credit reads the face-scanning as a checking compulsion run on the relationship and names a topic-specificity test; 'too subjective to make anything of' is the refusal the after-feared-statement timing defeats.",
+      "Top credit names teleological mode and an only-physical-proof test; 'some people just need grand gestures' is the dodge the dismissal-of-all-words pattern defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "After months of hinting, a patient finally confesses an intrusive image of harming his infant, bracing for the therapist to be horrified and call someone. The therapist stays calm and curious, treats it as a classic intrusive thought, and the patient — stunned — visibly relaxes and begins to talk openly about the obsession for the first time. Which conclusion best follows?",
+      "In session a patient discusses her 'fear of abandonment' and 'splitting' fluently, using the right terms and analyzing her childhood with apparent insight — yet her tone is flat, nothing she says seems to touch her, and her life outside is unchanged month after month. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The therapist's calm survival of the confession likely gave the patient a corrective experience that contradicts his dread that disclosure brings condemnation, which is why he could finally open up; test whether his openness rose specifically after the non-horrified response, whether any hint of alarm from the therapist would shut him back down, and whether he had withheld precisely the themes he expected to be condemned for.",
-        credit: 1.0,
-      },
-      {
-        text: "He admitted the thought and then felt better.",
-        credit: 0.3,
-      },
-      {
-        text: "What goes on inside someone is too private to say why he opened up.",
+        text: "Talking about feelings is what therapy is, so the fluent insight means she's doing fine.",
         credit: 0,
       },
       {
-        text: "The calm response probably helped; we could see if he keeps sharing.",
+        text: "This is likely pretend mode — talk about mental states that is decoupled from any real affect, so the words about feelings float free of the feelings themselves and nothing changes; the fluent insight is a defense against contact with the experience rather than evidence of it; test whether the talk ever connects to felt emotion in the room, whether anything she 'understands' alters her behavior outside, and whether genuinely slowing her down to feel one moment breaks the smooth, untouched flow.",
+        credit: 1.0,
+      },
+      {
+        text: "Her insight might be disconnected from real feeling; we could check whether it changes anything.",
         credit: 0.6,
+      },
+      {
+        text: "She talks about her feelings without seeming to feel them.",
+        credit: 0.3,
       },
     ],
     correctAnswer:
-      "The therapist's calm survival of the confession likely gave the patient a corrective experience that contradicts his dread that disclosure brings condemnation, which is why he could finally open up; test whether his openness rose specifically after the non-horrified response, whether any hint of alarm from the therapist would shut him back down, and whether he had withheld precisely the themes he expected to be condemned for.",
+      "This is likely pretend mode — talk about mental states that is decoupled from any real affect, so the words about feelings float free of the feelings themselves and nothing changes; the fluent insight is a defense against contact with the experience rather than evidence of it; test whether the talk ever connects to felt emotion in the room, whether anything she 'understands' alters her behavior outside, and whether genuinely slowing her down to feel one moment breaks the smooth, untouched flow.",
     explanation:
-      "Top credit reads a corrective experience from the survived confession and names a timing test that could refute it; 'too private to say' refuses the inference the stunned-then-opened sequence supports.",
+      "Top credit names pretend mode (insight detached from affect) and a does-it-touch-feeling-or-change-behavior test; 'talking about feelings means she's doing fine' is the dodge the flat, unchanged pattern defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "When a patient demands, 'Just tell me one more time the door was locked and we're safe,' the therapist gently declines and instead invites her to sit with the uncertainty. Her anxiety climbs sharply for several minutes and then, without any reassurance, slowly subsides on its own. This repeats over several sessions. Which conclusion best follows?",
+      "Mid-argument a patient is utterly certain her friend 'despises' her and won't hear otherwise. Twenty minutes later, calmer, she spontaneously says, 'Maybe she was just stressed about her mom — I do that when I'm overwhelmed.' Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Not reassuring her probably helps; we could keep trying it.",
-        credit: 0.6,
-      },
-      {
-        text: "The spike-then-settle pattern likely shows the reassurance had been functioning as a compulsion — withholding it (response prevention) lets the anxiety crest and fall by itself, teaching her the feared catastrophe doesn't arrive, so the relief no longer has to come from the therapist; test whether the settling happens reliably without reassurance, whether each repetition lowers the starting spike, and whether giving in and reassuring instead leaves the urge stronger next time.",
+        text: "Her mentalizing likely went offline at peak arousal and came back as she settled — the certainty about being despised was a non-mentalizing state driven by the threat, and the return of curiosity about her friend's mind (and her own parallel) is mentalizing coming back online; test whether her capacity to imagine alternatives reliably tracks her arousal level, whether the same softening recurs each time she calms, and whether deliberately lowering arousal in the moment restores her ability to consider other readings.",
         credit: 1.0,
       },
       {
-        text: "Anxiety rises and falls for all sorts of reasons, so the withholding tells us nothing.",
-        credit: 0,
+        text: "She calmed down and then saw it differently.",
+        credit: 0.3,
       },
       {
-        text: "She gets anxious when not reassured and then calms down.",
-        credit: 0.3,
+        text: "Her certainty may depend on how worked up she is; we could watch the pattern.",
+        credit: 0.6,
+      },
+      {
+        text: "People say all kinds of things when they're upset, so you can't read anything into either version.",
+        credit: 0,
       },
     ],
     correctAnswer:
-      "The spike-then-settle pattern likely shows the reassurance had been functioning as a compulsion — withholding it (response prevention) lets the anxiety crest and fall by itself, teaching her the feared catastrophe doesn't arrive, so the relief no longer has to come from the therapist; test whether the settling happens reliably without reassurance, whether each repetition lowers the starting spike, and whether giving in and reassuring instead leaves the urge stronger next time.",
+      "Her mentalizing likely went offline at peak arousal and came back as she settled — the certainty about being despised was a non-mentalizing state driven by the threat, and the return of curiosity about her friend's mind (and her own parallel) is mentalizing coming back online; test whether her capacity to imagine alternatives reliably tracks her arousal level, whether the same softening recurs each time she calms, and whether deliberately lowering arousal in the moment restores her ability to consider other readings.",
     explanation:
-      "Full credit reads withheld reassurance as extinguishing a compulsion and names a lower-spike-each-time test; 'anxiety rises and falls for all sorts of reasons' is the dodge the reliable spike-then-settle defeats.",
+      "Top credit reads mentalizing collapsing under arousal and returning, and names an arousal-tracks-curiosity test; 'you can't read anything into it' is the dodge the reliable calm-brings-perspective pattern defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A patient spends much of each session asking whether this is definitely the right therapy, the right therapist, and the right diagnosis — never satisfied with any answer, researching alternatives nightly, yet never actually leaving. The same all-or-nothing doubting drives his contamination obsessions. Which conclusion best follows?",
+      "Walking into a meeting, a patient sees two colleagues stop talking and glance at her. She is instantly, unshakably sure they were mocking her and that everyone in the office secretly finds her repulsive — a conviction that lasts the whole day. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He seems unsure whether the therapy is right for him.",
-        credit: 0.3,
+        text: "She might be reading the glance as proof of contempt; we could explore how sure she felt.",
+        credit: 0.6,
       },
       {
-        text: "Choosing a therapy is genuinely hard, so his doubts are just reasonable shopping around.",
-        credit: 0,
-      },
-      {
-        text: "His doubt about the treatment is likely the same OCD doubting playing out on a new object — an intolerance of uncertainty that demands a guarantee no answer can give, so reassurance about the therapy only feeds the next doubt; test whether his questions about therapy follow the same never-satisfied loop as his contamination doubts, whether settling one doubt simply spawns another, and whether he doubts most the things he is most invested in rather than genuinely shopping to leave.",
+        text: "Under stress her mind likely slipped into psychic equivalence — the thought 'they're mocking me' is felt as plain fact rather than one possible reading, so an ambiguous glance becomes certain proof and no benign explanation can get a foothold; test whether the certainty admits zero alternatives, whether it tracks moments she already feels exposed or shaky, and whether it loosens when she is calmer or genuinely invited to imagine what else the pause could have meant.",
         credit: 1.0,
       },
       {
-        text: "His doubts about therapy might be part of his OCD; we could explore that.",
-        credit: 0.6,
+        text: "She felt sure the colleagues were mocking her.",
+        credit: 0.3,
+      },
+      {
+        text: "Nobody can know what other people are really thinking, so there's nothing to conclude here.",
+        credit: 0,
       },
     ],
     correctAnswer:
-      "His doubt about the treatment is likely the same OCD doubting playing out on a new object — an intolerance of uncertainty that demands a guarantee no answer can give, so reassurance about the therapy only feeds the next doubt; test whether his questions about therapy follow the same never-satisfied loop as his contamination doubts, whether settling one doubt simply spawns another, and whether he doubts most the things he is most invested in rather than genuinely shopping to leave.",
+      "Under stress her mind likely slipped into psychic equivalence — the thought 'they're mocking me' is felt as plain fact rather than one possible reading, so an ambiguous glance becomes certain proof and no benign explanation can get a foothold; test whether the certainty admits zero alternatives, whether it tracks moments she already feels exposed or shaky, and whether it loosens when she is calmer or genuinely invited to imagine what else the pause could have meant.",
     explanation:
-      "Top credit reads treatment-doubt as the same intolerance of uncertainty and names a does-one-answer-spawn-another test; 'reasonable shopping around' is the dodge the never-leaving, same-loop pattern defeats.",
+      "Top credit names psychic equivalence turning ambiguity into certainty and a does-it-loosen-when-calm test; 'nobody can know what others think' is the refusal the zero-alternatives certainty defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A patient cannot begin talking until the chair is angled exactly so, the clock is out of her sightline, and she has restarted her opening sentence until it feels 'right,' sometimes three or four times. Sessions where the therapist gently prevents the re-do leave her anxious at first but able to continue. Which conclusion best follows?",
+      "A patient says that when her inner pain becomes unbearable and no one believes how bad it is, cutting is the only thing that makes the pain 'real and visible' — once there's a wound to point to, she feels briefly understood. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Everyone has little preferences about how they like a room, so there's nothing here to interpret.",
-        credit: 0,
-      },
-      {
-        text: "The arranging and sentence-restarting are likely 'just right' compulsions enacted in session to discharge an intolerable not-right feeling, and the alliance is becoming the place to practice tolerating it; test whether the rituals appear specifically when she feels the not-right sensation rather than at random, whether blocking the re-do spikes anxiety that then eases, and whether the urge weakens over sessions as she sits with the discomfort instead of fixing it.",
+        text: "This likely reflects teleological mode — when she cannot trust that an internal state can be known or believed without a physical sign, a visible wound becomes the only proof that her pain exists and is recognized, so the self-harm functions to make an unbearable feeling concrete; test whether the urge spikes specifically when she feels disbelieved or unseen, whether being genuinely felt and understood in words reduces the need for a physical sign, and whether the function eases as she becomes able to trust that an inner state can register without proof.",
         credit: 1.0,
       },
       {
-        text: "She probably has some 'just right' rituals; we could watch when they show up.",
+        text: "The cutting might be a way to make her pain physically real; we could track when the urge comes.",
         credit: 0.6,
       },
       {
-        text: "She likes things arranged a certain way before she starts.",
+        text: "She cuts when her pain feels unbearable and unseen.",
         credit: 0.3,
+      },
+      {
+        text: "She's just doing it for attention, plain and simple.",
+        credit: 0,
       },
     ],
     correctAnswer:
-      "The arranging and sentence-restarting are likely 'just right' compulsions enacted in session to discharge an intolerable not-right feeling, and the alliance is becoming the place to practice tolerating it; test whether the rituals appear specifically when she feels the not-right sensation rather than at random, whether blocking the re-do spikes anxiety that then eases, and whether the urge weakens over sessions as she sits with the discomfort instead of fixing it.",
+      "This likely reflects teleological mode — when she cannot trust that an internal state can be known or believed without a physical sign, a visible wound becomes the only proof that her pain exists and is recognized, so the self-harm functions to make an unbearable feeling concrete; test whether the urge spikes specifically when she feels disbelieved or unseen, whether being genuinely felt and understood in words reduces the need for a physical sign, and whether the function eases as she becomes able to trust that an inner state can register without proof.",
     explanation:
-      "Full credit reads the in-session arranging as 'just right' compulsions and names a block-and-watch test; 'everyone has room preferences' is the dodge the blocking-spikes-then-eases pattern defeats.",
+      "Top credit reads self-harm as teleological proof of inner pain and a does-being-understood-reduce-it test; 'just for attention' is the overreach the privately-driven, relief-when-believed detail defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "Reviewing his notes, a therapist finds that the sessions in which he answered the patient's 'am I sure I didn't say something cruel?' questions are reliably followed by sessions with even more such questions, while the few times he declined to answer were followed by fewer. Which conclusion best follows?",
+      "When a patient declares flatly that the therapist 'obviously regrets ever taking me on,' the therapist resists defending himself and instead says slowly, 'I genuinely don't know what gave you that — can we slow down and look at the moment it came over you?' The patient pauses, and her certainty visibly loosens. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Answering the questions might be backfiring; we could try answering less.",
-        credit: 0.6,
-      },
-      {
-        text: "He seems to ask more after being reassured.",
+        text: "Slowing down seemed to help her feel less sure.",
         credit: 0.3,
       },
       {
-        text: "The pattern likely shows the therapist's reassurance is reinforcing the compulsion rather than relieving it — each answer rewards the asking and so breeds more asking, the signature of a compulsion fed from inside the relationship; test whether answered sessions are consistently followed by more questions and withheld ones by fewer, whether the relief after each answer is brief, and whether a planned stretch of not answering steadily reduces the asking.",
+        text: "The therapist's curiosity might have reopened her thinking; we could see if it repeats.",
+        credit: 0.6,
+      },
+      {
+        text: "The therapist's 'stop and stand back' move — marking his own not-knowing and inviting joint curiosity rather than arguing the content — likely re-engaged her mentalizing, which had collapsed into a fixed conviction under attachment stress, because restoring curiosity about minds is the active ingredient of MBT; test whether her certainty reliably softens when curiosity is genuinely invited rather than when she is reassured, whether arguing the facts instead hardens it, and whether the loosening tracks the not-knowing stance specifically.",
         credit: 1.0,
       },
       {
-        text: "Question counts go up and down on their own, so the link to reassurance is meaningless.",
+        text: "Therapists can get patients to say almost anything, so the shift doesn't tell us much.",
         credit: 0,
       },
     ],
     correctAnswer:
-      "The pattern likely shows the therapist's reassurance is reinforcing the compulsion rather than relieving it — each answer rewards the asking and so breeds more asking, the signature of a compulsion fed from inside the relationship; test whether answered sessions are consistently followed by more questions and withheld ones by fewer, whether the relief after each answer is brief, and whether a planned stretch of not answering steadily reduces the asking.",
+      "The therapist's 'stop and stand back' move — marking his own not-knowing and inviting joint curiosity rather than arguing the content — likely re-engaged her mentalizing, which had collapsed into a fixed conviction under attachment stress, because restoring curiosity about minds is the active ingredient of MBT; test whether her certainty reliably softens when curiosity is genuinely invited rather than when she is reassured, whether arguing the facts instead hardens it, and whether the loosening tracks the not-knowing stance specifically.",
     explanation:
-      "Top credit reads the answered-then-more pattern as reinforcement and names a planned-no-answer test; 'counts go up and down on their own' is the refusal the consistent answered-versus-declined contrast defeats.",
+      "Top credit names the not-knowing/curiosity stance as restoring mentalizing and a curiosity-versus-reassurance test; 'therapists can get patients to say anything' is the dodge the curiosity-specific softening defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A patient apologizes constantly in session — for 'wasting your time,' for 'probably being a burden,' for 'maybe having thought something rude about you' — and asks each time whether the therapist forgives her. Relief from each forgiveness lasts moments before the next apology. Which conclusion best follows?",
+      "A patient narrates a recent overdose in a calm, almost clinical voice, supplying precise details and tidy psychological explanations, but appears to feel nothing as she does so and seems puzzled that the therapist looks shaken. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "She apologizes and asks for forgiveness a lot.",
-        credit: 0.3,
-      },
-      {
-        text: "The apologizing-and-seeking-forgiveness is likely a scrupulosity compulsion enacted in the relationship — confessing imagined moral failings to extract an absolution that briefly quiets guilt and then must be renewed; test whether each forgiveness relieves her only briefly before a new confession, whether the apologies cluster on moral 'did I harm or offend you' themes rather than real lapses, and whether declining to absolve, while staying warm, lets the guilt crest and pass.",
-        credit: 1.0,
-      },
-      {
-        text: "Some people are just polite to a fault, so the apologizing means nothing in particular.",
+        text: "She's clearly processed it already, so there's no need to dwell on it.",
         credit: 0,
       },
       {
-        text: "Her apologizing could be a kind of ritual; we could pay attention to it.",
+        text: "Her detached account might be a sign she's cut off from the feeling; we could slow it down.",
         credit: 0.6,
+      },
+      {
+        text: "She describes the overdose without any emotion.",
+        credit: 0.3,
+      },
+      {
+        text: "Her flat, fluent narration with no felt affect likely reflects pretend mode — she is talking about the event from outside it, the words wholly decoupled from the experience, which lets her report a near-death act without contact with its terror; test whether any genuine feeling enters when she is slowed to a single concrete moment, whether her calm is a stable detachment rather than real resolution, and whether the dissociation lifts as curiosity about her own state is rebuilt.",
+        credit: 1.0,
       },
     ],
     correctAnswer:
-      "The apologizing-and-seeking-forgiveness is likely a scrupulosity compulsion enacted in the relationship — confessing imagined moral failings to extract an absolution that briefly quiets guilt and then must be renewed; test whether each forgiveness relieves her only briefly before a new confession, whether the apologies cluster on moral 'did I harm or offend you' themes rather than real lapses, and whether declining to absolve, while staying warm, lets the guilt crest and pass.",
+      "Her flat, fluent narration with no felt affect likely reflects pretend mode — she is talking about the event from outside it, the words wholly decoupled from the experience, which lets her report a near-death act without contact with its terror; test whether any genuine feeling enters when she is slowed to a single concrete moment, whether her calm is a stable detachment rather than real resolution, and whether the dissociation lifts as curiosity about her own state is rebuilt.",
     explanation:
-      "Full credit reads serial apology as a scrupulosity compulsion and names a decline-to-absolve test; 'polite to a fault' is the dodge the moments-long relief and imagined-sin theme defeat.",
+      "Top credit names pretend mode (narration decoupled from affect) and a does-feeling-enter-when-slowed test; 'she's clearly processed it' is the dodge the puzzled-at-the-therapist's-alarm detachment defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A patient saves his most distressing intrusive thoughts for the final minute of each session, blurting a confession just as time runs out so there is never a chance to discuss it. The pattern holds week after week. Which conclusion best follows?",
+      "After a minor setback at work a patient states, with total conviction, 'I feel worthless, so I am worthless — it's just a fact.' She treats the feeling as direct evidence about her actual value, not as a feeling that could be examined. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "People often remember important things at the end; the timing is just chance.",
-        credit: 0,
-      },
-      {
-        text: "He might be confessing to avoid really facing it; we could notice the timing.",
+        text: "She may be treating a feeling as proof about herself; we could look at how fixed that is.",
         credit: 0.6,
       },
       {
-        text: "The doorknob confession is likely itself a compulsion — confessing discharges the guilt while the precise timing guarantees he avoids the exposure of actually sitting with the thought, so it relieves without risking change; test whether the disclosures land reliably at the very end and not when there is time to explore, whether he resists when invited to raise them earlier, and whether the urge to confess eases once the thoughts are worked with rather than just unloaded.",
+        text: "She feels worthless after the setback.",
+        credit: 0.3,
+      },
+      {
+        text: "This is likely psychic equivalence turned on the self — an inner state ('I feel worthless') is experienced as a literal fact about reality ('I am worthless'), with no gap in which the feeling could be one datum among others; test whether the equation is total and resists any counter-evidence about her actual record, whether it intensifies with emotional arousal, and whether the 'fact' reopens into a 'feeling' once she is calmer or invited to separate the two.",
         credit: 1.0,
       },
       {
-        text: "He tends to bring up the big things right at the end.",
-        credit: 0.3,
+        text: "Everyone feels worthless sometimes, so it doesn't really mean anything.",
+        credit: 0,
       },
     ],
     correctAnswer:
-      "The doorknob confession is likely itself a compulsion — confessing discharges the guilt while the precise timing guarantees he avoids the exposure of actually sitting with the thought, so it relieves without risking change; test whether the disclosures land reliably at the very end and not when there is time to explore, whether he resists when invited to raise them earlier, and whether the urge to confess eases once the thoughts are worked with rather than just unloaded.",
+      "This is likely psychic equivalence turned on the self — an inner state ('I feel worthless') is experienced as a literal fact about reality ('I am worthless'), with no gap in which the feeling could be one datum among others; test whether the equation is total and resists any counter-evidence about her actual record, whether it intensifies with emotional arousal, and whether the 'fact' reopens into a 'feeling' once she is calmer or invited to separate the two.",
     explanation:
-      "Top credit reads the end-of-session confession as a relief-without-exposure compulsion and names an offer-an-earlier-slot test; 'the timing is just chance' is the dodge the week-after-week last-minute pattern defeats.",
+      "Top credit names self-directed psychic equivalence (feeling treated as fact) and a does-it-reopen-when-calm test; 'everyone feels worthless sometimes' is the dodge the treats-it-as-literal-fact rigidity defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A patient who is open about checking and washing goes vague and changes the subject every time the conversation nears his sexual intrusive thoughts, later admitting he was sure the therapist would 'see him as a pervert' and end treatment. He is otherwise candid. Which conclusion best follows?",
+      "Asked what she imagines her sister might have been feeling during their fight, a patient shrugs: 'There's no point guessing — you can never know what's in anyone's head, so why even try.' She says this not as humility but as a flat door slammed on the whole question. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He avoids talking about certain thoughts.",
-        credit: 0.3,
-      },
-      {
-        text: "Everyone has private topics they'd rather skip, so there's nothing to make of it.",
+        text: "She's right that you can't truly know another person's mind, so the question is unanswerable.",
         credit: 0,
       },
       {
-        text: "He is likely transferring onto the therapist the condemning judge he fears, so the very themes he expects to be punished for — the taboo intrusions — are the ones he hides, while neutral symptoms flow freely; test whether the avoidance is specific to the feared-condemnation themes and not his other symptoms, whether his manner tightens just before he swerves, and whether a calm, non-condemning response to a first disclosure opens the rest.",
+        text: "Her blanket refusal to imagine her sister's mind is itself a non-mentalizing stance — a giving-up on minds that forecloses curiosity, not genuine epistemic humility, and it likely protects her from a feared or painful state she would meet if she did wonder; test whether the refusal lifts when her arousal is lower or the topic is less threatening, whether she can mentalize easily about emotionally neutral people, and whether gently modeling tentative, not-certain guessing reopens her curiosity.",
         credit: 1.0,
       },
       {
-        text: "He's probably afraid of being judged; we could gently revisit those thoughts.",
+        text: "She doesn't want to guess what her sister felt.",
+        credit: 0.3,
+      },
+      {
+        text: "Her refusal to wonder might be defensive; we could see when she can and can't do it.",
         credit: 0.6,
       },
     ],
     correctAnswer:
-      "He is likely transferring onto the therapist the condemning judge he fears, so the very themes he expects to be punished for — the taboo intrusions — are the ones he hides, while neutral symptoms flow freely; test whether the avoidance is specific to the feared-condemnation themes and not his other symptoms, whether his manner tightens just before he swerves, and whether a calm, non-condemning response to a first disclosure opens the rest.",
+      "Her blanket refusal to imagine her sister's mind is itself a non-mentalizing stance — a giving-up on minds that forecloses curiosity, not genuine epistemic humility, and it likely protects her from a feared or painful state she would meet if she did wonder; test whether the refusal lifts when her arousal is lower or the topic is less threatening, whether she can mentalize easily about emotionally neutral people, and whether gently modeling tentative, not-certain guessing reopens her curiosity.",
     explanation:
-      "Full credit reads a condemning-judge transference from the theme-specific avoidance and names a topic-specificity test; 'everyone has private topics' is the dodge the open-about-everything-else contrast defeats.",
+      "Top credit reads the 'why even try' refusal as a non-mentalizing collapse, not real humility, and names a does-it-lift-on-neutral-topics test; the matching 'you can't truly know a mind' option is the dodge — it sounds reasonable but forecloses the very curiosity mentalizing requires.",
   },
   {
     itemType: "mc",
     prompt:
-      "A patient who is doing exposure homework spends each session asking the therapist to confirm she did every exercise 'correctly,' re-describing each one in exhaustive detail until the therapist signs off. Without that sign-off she cannot move on, though her actual logs show she did the work fine. Which conclusion best follows?",
+      "A patient explains that if her boyfriend takes more than a few minutes to text back, it proves he doesn't really love her; a fast reply, and only a fast reply, briefly convinces her she matters. Reassuring words from him afterward never land the same way. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Her need for sign-off might be a ritual; we could look at it.",
-        credit: 0.6,
-      },
-      {
-        text: "It's normal to want to know you did an assignment right, so this is just diligence.",
-        credit: 0,
-      },
-      {
-        text: "She likes to confirm she did the homework correctly.",
+        text: "She needs quick replies to feel loved.",
         credit: 0.3,
       },
       {
-        text: "The demand for the therapist's sign-off is likely the OCD doubting attaching itself to the treatment — exposure work re-purposed into a checking ritual where the therapist's certainty replaces her own — so the very homework meant to build uncertainty tolerance becomes a new reassurance source; test whether the re-describing seeks certainty rather than help, whether sign-off relieves her only until the next exercise, and whether withholding it lets her tolerate the not-knowing and proceed anyway.",
+        text: "She is likely in teleological mode about love — only an observable physical action, the speed of a reply, can serve as proof of his feelings, so words of love can't register while the timed behavior carries the entire weight of 'does he care'; test whether only concrete, measurable actions ever reassure her while spoken affection doesn't, whether the standard tightens as her insecurity rises, and whether her ability to credit non-physical signs of love returns when she is calmer.",
         credit: 1.0,
+      },
+      {
+        text: "She might be treating reply speed as the only proof of love; we could notice what reassures her.",
+        credit: 0.6,
+      },
+      {
+        text: "Everybody likes a prompt text back, so there's nothing unusual here.",
+        credit: 0,
       },
     ],
     correctAnswer:
-      "The demand for the therapist's sign-off is likely the OCD doubting attaching itself to the treatment — exposure work re-purposed into a checking ritual where the therapist's certainty replaces her own — so the very homework meant to build uncertainty tolerance becomes a new reassurance source; test whether the re-describing seeks certainty rather than help, whether sign-off relieves her only until the next exercise, and whether withholding it lets her tolerate the not-knowing and proceed anyway.",
+      "She is likely in teleological mode about love — only an observable physical action, the speed of a reply, can serve as proof of his feelings, so words of love can't register while the timed behavior carries the entire weight of 'does he care'; test whether only concrete, measurable actions ever reassure her while spoken affection doesn't, whether the standard tightens as her insecurity rises, and whether her ability to credit non-physical signs of love returns when she is calmer.",
     explanation:
-      "Top credit reads the sign-off demand as the doubt re-purposing exposure into a checking ritual and names a withhold-and-watch test; 'just diligence' is the dodge the cannot-move-on-without-certainty pattern defeats.",
+      "Top credit names teleological mode (timed action as sole proof of love) and an only-physical-signs-reassure test; 'everybody likes a prompt text' is the dodge the words-never-land contrast defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "Months into successful treatment, a patient resists any talk of ending, certain that without the therapist available to consult, his contamination doubts will come roaring back. Yet during the therapist's recent two-week absence he managed the doubts himself using what they had practiced. Which conclusion best follows?",
+      "A patient reasons thoughtfully about other people's motives all session — until the therapist mentions taking a two-week vacation, at which point she snaps into flat certainty that he is 'abandoning me because I'm too much,' unable to consider any other reason for the trip. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "His dread of ending likely reflects the therapist still serving as an external source of certainty he hasn't fully internalized — yet the survived absence suggests he is closer than he fears, so the work is to transfer the function inward rather than to keep relying on consultation; test whether his doubt-management during breaks improves across successive absences, whether he can evoke the therapist's stance on his own when anxious, and whether brief planned separations lower the dread rather than confirm it.",
-        credit: 1.0,
-      },
-      {
-        text: "He doesn't want therapy to end.",
-        credit: 0.3,
-      },
-      {
-        text: "He may still be leaning on the therapist; we could talk about ending.",
+        text: "Her thinking might shut down around abandonment; we could watch what triggers it.",
         credit: 0.6,
       },
       {
-        text: "Ending therapy is scary for everyone, so his reluctance means nothing in particular.",
+        text: "She gets very certain and upset about being left.",
+        credit: 0.3,
+      },
+      {
+        text: "Anyone would feel bad about their therapist leaving, so her reaction is just normal.",
         credit: 0,
+      },
+      {
+        text: "Her mentalizing likely stayed intact until the attachment system was activated, then collapsed — the vacation triggered the threat of abandonment, switching off curiosity about the therapist's mind and replacing it with the fixed, psychic-equivalent certainty that the trip means she is too much; test whether her loss of perspective is specific to attachment-threat moments while she mentalizes well otherwise, whether the certainty admits no alternative reading of the trip, and whether it eases as the threat is named and her arousal settles.",
+        credit: 1.0,
       },
     ],
     correctAnswer:
-      "His dread of ending likely reflects the therapist still serving as an external source of certainty he hasn't fully internalized — yet the survived absence suggests he is closer than he fears, so the work is to transfer the function inward rather than to keep relying on consultation; test whether his doubt-management during breaks improves across successive absences, whether he can evoke the therapist's stance on his own when anxious, and whether brief planned separations lower the dread rather than confirm it.",
+      "Her mentalizing likely stayed intact until the attachment system was activated, then collapsed — the vacation triggered the threat of abandonment, switching off curiosity about the therapist's mind and replacing it with the fixed, psychic-equivalent certainty that the trip means she is too much; test whether her loss of perspective is specific to attachment-threat moments while she mentalizes well otherwise, whether the certainty admits no alternative reading of the trip, and whether it eases as the threat is named and her arousal settles.",
     explanation:
-      "Top credit reads the dread as incomplete internalization against the survived-absence evidence and names a shrinking-dips test; 'ending is scary for everyone' is the dodge the managed-the-doubts-himself detail defeats.",
+      "Top credit reads an attachment-triggered collapse of mentalizing and names a specific-to-attachment-threat test; 'anyone would feel bad' is the dodge the snap-into-zero-alternatives certainty defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A patient refuses to use the chair other patients use, brings her own pen, and asks the therapist to confirm the office was cleaned — but only on weeks her contamination obsessions are flaring; in calm weeks she sits anywhere without a thought. Which conclusion best follows?",
+      "A patient recounts that her roommate left a dish in the sink and declares she now knows 'for an absolute fact' that the roommate did it deliberately to disrespect her and has always secretly hated her. She presents this not as a worry but as established truth. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Plenty of people prefer their own pen and a clean room, so this is just ordinary hygiene.",
-        credit: 0,
-      },
-      {
-        text: "The office precautions are likely her contamination compulsions enacted in the treatment setting, since they track her symptom flares rather than any real change in cleanliness; test whether the precautions appear only in high-symptom weeks and vanish in calm ones, whether reassurance about cleaning relieves her only briefly, and whether gently preventing the precautions spikes then settles her anxiety.",
+        text: "Her leap from a dish to a certain, mind-read motive ('deliberate disrespect, always hated me') is likely psychic equivalence — a feeling of being slighted experienced as a known fact about the roommate's intent, the inner state projected outward as certain reality; the tell is that she is treating an interpretation as proof rather than the slight itself; test whether she allows any alternative reading of the dish, whether the certainty rose with her own hurt rather than with new evidence, and whether it softens when she is calmer or asked to imagine other reasons.",
         credit: 1.0,
       },
       {
-        text: "Her caution about the office might be part of her OCD; we could watch the pattern.",
+        text: "She's certain her roommate left the dish on purpose to disrespect her.",
+        credit: 0.3,
+      },
+      {
+        text: "She might be reading hostile intent into a small act; we could check how sure she is.",
         credit: 0.6,
       },
       {
-        text: "She takes precautions about the office sometimes.",
-        credit: 0.3,
+        text: "You truly can't know why someone leaves a dish, so there's nothing to say.",
+        credit: 0,
       },
     ],
     correctAnswer:
-      "The office precautions are likely her contamination compulsions enacted in the treatment setting, since they track her symptom flares rather than any real change in cleanliness; test whether the precautions appear only in high-symptom weeks and vanish in calm ones, whether reassurance about cleaning relieves her only briefly, and whether gently preventing the precautions spikes then settles her anxiety.",
+      "Her leap from a dish to a certain, mind-read motive ('deliberate disrespect, always hated me') is likely psychic equivalence — a feeling of being slighted experienced as a known fact about the roommate's intent, the inner state projected outward as certain reality; the tell is that she is treating an interpretation as proof rather than the slight itself; test whether she allows any alternative reading of the dish, whether the certainty rose with her own hurt rather than with new evidence, and whether it softens when she is calmer or asked to imagine other reasons.",
     explanation:
-      "Full credit reads the office precautions as flare-tracking compulsions and names an only-in-high-symptom-weeks test; 'ordinary hygiene' is the dodge the sits-anywhere-in-calm-weeks contrast defeats.",
+      "Top credit names psychic equivalence (a hurt felt as certain knowledge of intent) and a does-she-allow-alternatives test; 'you can't know why someone leaves a dish' is the nihilistic dodge the as-established-truth certainty should push you past.",
   },
   {
     itemType: "mc",
     prompt:
-      "A patient who had refused every exposure for a year finally agrees to touch a 'contaminated' doorknob — but only once she trusts that the therapist 'won't push her off a cliff' and will stay with her through the panic. She succeeds, and credits being able to do it to that trust. Which conclusion best follows?",
+      "A patient insists her mother's brief phone call proves her mother 'couldn't care less.' Rather than argue, the therapist says, 'I'm curious — what do you imagine was going on for her right then?' After a silence the patient offers, 'She was probably rushing to a shift... actually she does that when she's stressed.' Which conclusion best follows?",
     mcOptions: [
       {
-        text: "She did the exposure after she came to trust the therapist.",
-        credit: 0.3,
-      },
-      {
-        text: "The trust probably helped her try it; we could see what else she'll attempt.",
+        text: "Inviting her to wonder might have reopened other explanations; we could try it again.",
         credit: 0.6,
       },
       {
-        text: "Whether someone trusts you is too vague to count as the reason she did the exposure.",
-        credit: 0,
+        text: "The genuine invitation to imagine her mother's mind likely switched mentalizing back on — the conviction 'she couldn't care less' was a non-mentalizing certainty, and being asked to wonder, rather than reassured, is what restored curiosity and produced an alternative; test whether her access to other explanations reliably follows the curiosity prompt rather than reassurance, whether the same move repeatedly reopens her thinking, and whether arguing the facts instead would have hardened the conviction.",
+        credit: 1.0,
       },
       {
-        text: "The working alliance likely supplied the safety that made the feared exposure tolerable, so the bond functions as the platform the technique stands on rather than as a mere nicety; test whether her willingness to attempt exposures tracks moments she feels the therapist is with her, whether a rupture or a sense of being pushed revives her refusal, and whether the same exposure offered without that trust would still be refused.",
-        credit: 1.0,
+        text: "When asked, she came up with another reason.",
+        credit: 0.3,
+      },
+      {
+        text: "People can always invent a nicer story if you push them, so this proves nothing.",
+        credit: 0,
       },
     ],
     correctAnswer:
-      "The working alliance likely supplied the safety that made the feared exposure tolerable, so the bond functions as the platform the technique stands on rather than as a mere nicety; test whether her willingness to attempt exposures tracks moments she feels the therapist is with her, whether a rupture or a sense of being pushed revives her refusal, and whether the same exposure offered without that trust would still be refused.",
+      "The genuine invitation to imagine her mother's mind likely switched mentalizing back on — the conviction 'she couldn't care less' was a non-mentalizing certainty, and being asked to wonder, rather than reassured, is what restored curiosity and produced an alternative; test whether her access to other explanations reliably follows the curiosity prompt rather than reassurance, whether the same move repeatedly reopens her thinking, and whether arguing the facts instead would have hardened the conviction.",
     explanation:
-      "Top credit names the alliance as the platform exposure stands on and proposes a same-exposure-without-trust test; 'too vague to count' is the refusal her own attribution and the year of refusal defeat.",
+      "Top credit reads the curiosity invitation as restoring mentalizing and names a curiosity-versus-reassurance test; 'people can always invent a nicer story' is the dodge the prompt-produced spontaneous alternative defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "After each session a patient spends hours mentally replaying everything she told the therapist, searching for any statement that might have been 'not completely accurate,' then emails long corrections. She does this only about therapy, not other conversations. Which conclusion best follows?",
+      "A patient cannot say what she feels — asked, she goes blank or answers 'I don't know, bad' — and instead the feelings seem to come out as sudden actions: she walks out, slams a door, or cancels everything, only later guessing she might have been hurt. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Her replaying and correcting might be a mental ritual; we could note it.",
-        credit: 0.6,
-      },
-      {
-        text: "Wanting to be accurate with your therapist is reasonable, so the corrections are just conscientiousness.",
+        text: "Lots of people aren't in touch with their feelings, so there's nothing special to read here.",
         credit: 0,
       },
       {
-        text: "The replaying-and-correcting is likely a mental checking ritual aimed at an impossible certainty that she was perfectly honest, with the therapist enlisted as the one who must certify it; test whether the review seeks certainty rather than genuine new information, whether each correction relieves her only until the next doubt, and whether the ritual is specific to therapy — the relationship she most fears 'getting wrong' — rather than to conversations generally.",
+        text: "She acts on feelings she can't name.",
+        credit: 0.3,
+      },
+      {
+        text: "She likely has a deficit in self-mentalizing — feelings that aren't represented in mind as feelings get discharged directly into action, so an unnamed hurt becomes a slammed door rather than a thought she can hold, and the work is to build curiosity about her own states so they can be felt and named instead of enacted; test whether the impulsive actions cluster around moments of unrecognized affect, whether helping her name a feeling in the moment reduces the need to act it out, and whether her acting-out falls as her self-awareness grows.",
         credit: 1.0,
       },
       {
-        text: "She goes over what she said and sends corrections.",
-        credit: 0.3,
+        text: "Her actions might be standing in for feelings she can't name; we could slow those moments down.",
+        credit: 0.6,
       },
     ],
     correctAnswer:
-      "The replaying-and-correcting is likely a mental checking ritual aimed at an impossible certainty that she was perfectly honest, with the therapist enlisted as the one who must certify it; test whether the review seeks certainty rather than genuine new information, whether each correction relieves her only until the next doubt, and whether the ritual is specific to therapy — the relationship she most fears 'getting wrong' — rather than to conversations generally.",
+      "She likely has a deficit in self-mentalizing — feelings that aren't represented in mind as feelings get discharged directly into action, so an unnamed hurt becomes a slammed door rather than a thought she can hold, and the work is to build curiosity about her own states so they can be felt and named instead of enacted; test whether the impulsive actions cluster around moments of unrecognized affect, whether helping her name a feeling in the moment reduces the need to act it out, and whether her acting-out falls as her self-awareness grows.",
     explanation:
-      "Full credit reads the post-session review as a mental checking ritual and names a certainty-not-information test; 'just conscientiousness' is the dodge the only-about-therapy specificity defeats.",
+      "Top credit names a self-mentalizing deficit (affect discharged as action) and a does-naming-it-reduce-acting-out test; 'lots of people aren't in touch with feelings' is the dodge the feelings-come-out-as-sudden-actions pattern defeats.",
   },
 ];
 
@@ -417,425 +417,425 @@ const hybrid: HomeworkItem[] = [
   {
     itemType: "hybrid",
     prompt:
-      "A patient texts her therapist between every session asking him to confirm that a remark she made to a coworker 'wasn't actually offensive.' His replies calm her for an hour or two, after which a new version of the worry arrives. Which conclusion best follows?",
+      "A patient's partner is twenty minutes late with no message. By the time he arrives she is convinced beyond any doubt that he is cheating and has 'always been planning to leave,' and is already throwing his things into a bag. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The between-session texting is likely a reassurance compulsion that has spilled into the relationship — the therapist's confirmation briefly relieves the doubt and thereby trains her to seek it again, so answering feeds the loop; test whether each reply relieves her only briefly before a fresh doubt, whether the texts cluster on her feared 'did I cause harm' theme, and whether a planned stretch of not replying lets the anxiety crest and fall on its own.",
+        text: "Under the abandonment threat her mentalizing likely collapsed into psychic equivalence — 'he is cheating and leaving' is felt as literal certainty rather than one possibility, so lateness becomes proof and no innocent reason can register; test whether the certainty admits no alternatives, whether it ignited precisely with the attachment threat, and whether it dissolves once she is calmer or genuinely invited to consider what else twenty minutes could mean.",
         credit: 1.0,
       },
       {
-        text: "The texting might be a reassurance ritual; we could look at how she uses his replies.",
+        text: "She might be in a state where the fear feels like fact; we could look at what triggered it.",
         credit: 0.6,
       },
       {
-        text: "She texts a lot asking for reassurance.",
+        text: "She gets certain he's leaving when he's late.",
         credit: 0.3,
       },
       {
-        text: "People text their therapists all the time; there's nothing to read into it.",
+        text: "You can never really know if a partner is faithful, so who's to say.",
         credit: 0,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'reassurance-seeking compulsion' lead from the rival 'she genuinely needs information about social norms,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'psychic equivalence under attachment stress' lead from the rival 'she has real, specific evidence he is cheating,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: check whether his answers settle the worry for good or only for an hour before the same doubt returns in new form — my lead predicts brief relief followed by renewed asking, the signature of a compulsion. It is refuted if a single clear answer durably resolves the worry and she does not return to it, which would fit a genuine, one-time need for information.",
+        "Cheapest test: check whether her certainty rests on the lateness alone and dissolves once she calms or is asked to imagine other reasons — my lead predicts a threat-triggered conviction that admits no alternatives and softens with arousal. It is refuted if she is pointing to concrete, specific evidence of cheating that survives her calming down, which would be reality-based suspicion rather than a non-mentalizing collapse.",
       yieldAnchors: [
-        "She texts between every session for confirmation",
-        "Relief lasts only an hour or two",
-        "A new version of the worry then arrives",
+        "Partner is twenty minutes late with no message",
+        "She is certain beyond doubt he's cheating and leaving",
+        "She is already packing his bag",
       ],
       riskAnchors: [
-        "Each reply relieves her only briefly",
-        "The texts cluster on the 'did I cause harm' theme",
-        "A stretch of not replying lets anxiety crest and fall",
+        "The certainty admits no alternatives",
+        "It ignited with the attachment threat",
+        "It dissolves once she is calmer or invited to wonder",
       ],
       defeatedBy: [
-        "One clear answer durably resolves the worry",
-        "She never returns to the same doubt",
+        "She has concrete, specific evidence of cheating",
+        "The certainty survives her calming and reflecting",
       ],
     },
     correctAnswer:
-      "The between-session texting is likely a reassurance compulsion that has spilled into the relationship — the therapist's confirmation briefly relieves the doubt and thereby trains her to seek it again, so answering feeds the loop; test whether each reply relieves her only briefly before a fresh doubt, whether the texts cluster on her feared 'did I cause harm' theme, and whether a planned stretch of not replying lets the anxiety crest and fall on its own.",
+      "Under the abandonment threat her mentalizing likely collapsed into psychic equivalence — 'he is cheating and leaving' is felt as literal certainty rather than one possibility, so lateness becomes proof and no innocent reason can register; test whether the certainty admits no alternatives, whether it ignited precisely with the attachment threat, and whether it dissolves once she is calmer or genuinely invited to consider what else twenty minutes could mean.",
     explanation:
-      "Full credit reads the texting as a reassurance compulsion fed by the therapist's replies with three checks and a does-one-answer-end-it test; 'people text their therapists all the time' opens nothing.",
+      "Full credit reads a psychic-equivalence collapse under abandonment threat with three checks and a does-it-survive-calming test; 'you can never know if a partner is faithful' opens nothing.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A patient with violent intrusive thoughts has hidden the worst of them for fear the therapist will recoil. When he finally shares one and the therapist responds with calm understanding rather than alarm, he is visibly shocked and, over the next weeks, brings out thought after thought he had buried. Which conclusion best follows?",
+      "A patient tells her therapist that nothing he says convinces her he cares; the only thing that would is if he texted her good night every evening. When he reflects that this is something they should understand rather than enact, she hears it as final proof he doesn't care. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He shared a thought and then shared more.",
+        text: "She wants a nightly text to feel cared about.",
         credit: 0.3,
       },
       {
-        text: "The therapist's calm survival of the disclosure likely gave him a corrective experience contradicting his certainty that the thoughts would bring condemnation, which is why the rest came out; test whether his disclosures followed specifically the non-alarmed response, whether any sign of alarm would shut him down again, and whether he had hidden precisely the themes he most expected to be judged for.",
+        text: "She is likely in teleological mode — a mental state like 'he cares' can be believed only if it is proven by a physical action, so words and understanding count for nothing and a nightly text becomes the sole acceptable evidence; test whether only concrete actions ever satisfy her while words never do, whether the demand for proof rises as she feels less secure, and whether her ability to credit non-physical care returns once her arousal settles.",
         credit: 1.0,
       },
       {
-        text: "The calm reaction probably helped him open up; we could watch what else he shares.",
+        text: "She might only count actions as proof of care; we could notice what she dismisses.",
         credit: 0.6,
       },
       {
-        text: "Why anyone decides to disclose is ultimately unknowable.",
+        text: "Some people just need more from a therapist than others, so there's nothing to interpret.",
         credit: 0,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'the calm survival opened him up' lead from the rival 'he was simply ready to talk now,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'teleological mode' lead from the rival 'she is simply asking for a reasonable accommodation,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: check whether the flood of disclosures dated to the moment the therapist responded without alarm rather than building gradually before it — my lead predicts an in-session shift tied to the survived confession. It is refuted if he was already disclosing freely before any such moment, which would credit his own readiness rather than the therapist's response.",
+        "Cheapest test: watch whether any non-physical sign of care — warmth, reliability, remembering her life — ever registers, or whether only a concrete action will do; my lead predicts that words consistently fail to land while only physical proof counts. It is refuted if ordinary verbal and relational signs of care actually reassure her, which would make the text request a simple preference rather than teleological mode.",
       yieldAnchors: [
-        "He hid the worst thoughts fearing recoil",
-        "The therapist responded calmly, not with alarm",
-        "He was shocked and then disclosed much more",
+        "She says words never convince her he cares",
+        "Only a nightly text would prove it",
+        "She hears reflection as proof he doesn't care",
       ],
       riskAnchors: [
-        "Disclosures followed the non-alarmed response",
-        "Any sign of alarm would shut him down",
-        "He hid precisely the most-feared themes",
+        "Only concrete actions ever satisfy her",
+        "The demand rises as she feels less secure",
+        "Crediting non-physical care returns when calmer",
       ],
       defeatedBy: [
-        "He was already disclosing freely beforehand",
-        "Nothing in the therapist's response can be linked to it",
+        "Ordinary verbal and relational care reassures her",
+        "She can credit caring without a physical proof",
       ],
     },
     correctAnswer:
-      "The therapist's calm survival of the disclosure likely gave him a corrective experience contradicting his certainty that the thoughts would bring condemnation, which is why the rest came out; test whether his disclosures followed specifically the non-alarmed response, whether any sign of alarm would shut him down again, and whether he had hidden precisely the themes he most expected to be judged for.",
+      "She is likely in teleological mode — a mental state like 'he cares' can be believed only if it is proven by a physical action, so words and understanding count for nothing and a nightly text becomes the sole acceptable evidence; test whether only concrete actions ever satisfy her while words never do, whether the demand for proof rises as she feels less secure, and whether her ability to credit non-physical care returns once her arousal settles.",
     explanation:
-      "Full credit reads a corrective experience with three checks and an in-session timing test that names its refutation; 'ultimately unknowable' opens nothing.",
+      "Full credit names teleological mode with three checks and an only-actions-count test that names its refutation; 'some people just need more' opens nothing.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A patient interrupts himself every few minutes to ask, 'You're not judging me, are you? You'd tell me if you were?' He studies the therapist's expression for a beat after each answer before going on. Which conclusion best follows?",
+      "Each week a patient delivers a polished, insightful analysis of her own 'attachment wounds,' complete with the right terminology, but the talk never seems to move her and her relationships outside go on exactly as before. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He keeps checking whether he's being judged; we could ask about it.",
+        text: "Her insight might be cut off from feeling; we could check whether it changes anything.",
         credit: 0.6,
       },
       {
-        text: "He checks a lot whether the therapist is judging him.",
+        text: "She analyzes her feelings without seeming moved.",
         credit: 0.3,
       },
       {
-        text: "The repeated checking of the therapist's reaction is likely a checking compulsion run on the relationship — he treats her expression as ambiguous evidence to be resolved by asking, which relieves doubt only momentarily and renews it; test whether the checking spikes right after he says something he fears was bad, whether each reassurance relieves him only briefly, and whether withholding the reassurance, while staying warm, lets the doubt subside on its own.",
-        credit: 1.0,
+        text: "She understands herself unusually well, so therapy is mostly working.",
+        credit: 0,
       },
       {
-        text: "It's natural to wonder what your therapist thinks of you, so the checking means nothing.",
-        credit: 0,
+        text: "This is likely pretend mode — talk about mental states detached from any real affect, so the fluent insight floats free of the experience and binds to no change, functioning as a defense against contact with the feelings rather than evidence of working them through; test whether genuine emotion ever enters when she is slowed to a concrete moment, whether any 'insight' alters her behavior outside, and whether breaking the smooth flow brings real feeling into the room.",
+        credit: 1.0,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'checking compulsion' lead from the rival 'he is just socially anxious about being liked,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'pretend mode' lead from the rival 'she has genuine insight that simply needs time to translate into change,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: watch whether the checking spikes specifically right after statements he fears were 'bad' and is relieved only briefly by each answer — my lead predicts a doubt-relief-doubt loop tied to feared content. It is refuted if his checking is steady regardless of what he just said and is durably settled by a single reassurance, which fits ordinary social anxiety rather than a compulsion.",
+        "Cheapest test: slow her to a single concrete moment and watch whether real feeling enters or the talk stays smooth and untouched — my lead predicts insight decoupled from affect with no behavioral footprint. It is refuted if her analysis is accompanied by felt emotion and is already producing small, traceable changes outside, which would be genuine working-through rather than pretend mode.",
       yieldAnchors: [
-        "He asks every few minutes if he's being judged",
-        "He studies her expression after each answer",
-        "Each answer holds him only briefly",
+        "She delivers polished, insightful analysis weekly",
+        "The talk never seems to move her",
+        "Her outside relationships are unchanged",
       ],
       riskAnchors: [
-        "Checking spikes after feared statements",
-        "Each reassurance relieves only briefly",
-        "Withholding reassurance lets doubt subside",
+        "Real emotion enters when she is slowed down",
+        "No insight alters her outside behavior",
+        "Breaking the smooth flow brings feeling in",
       ],
       defeatedBy: [
-        "Checking is steady regardless of content",
-        "One reassurance durably settles it",
+        "Her insight is accompanied by felt emotion",
+        "It is already producing real change outside",
       ],
     },
     correctAnswer:
-      "The repeated checking of the therapist's reaction is likely a checking compulsion run on the relationship — he treats her expression as ambiguous evidence to be resolved by asking, which relieves doubt only momentarily and renews it; test whether the checking spikes right after he says something he fears was bad, whether each reassurance relieves him only briefly, and whether withholding the reassurance, while staying warm, lets the doubt subside on its own.",
+      "This is likely pretend mode — talk about mental states detached from any real affect, so the fluent insight floats free of the experience and binds to no change, functioning as a defense against contact with the feelings rather than evidence of working them through; test whether genuine emotion ever enters when she is slowed to a concrete moment, whether any 'insight' alters her behavior outside, and whether breaking the smooth flow brings real feeling into the room.",
     explanation:
-      "Full credit reads the checking as a relationship-run compulsion with three checks and a withhold-and-watch test that names its refutation; 'it's natural to wonder' is the dodge the after-feared-statement spike defeats.",
+      "Full credit names pretend mode with three checks and a does-feeling-enter-when-slowed test that names its refutation; 'she understands herself well' opens nothing.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "Each time a patient pleads, 'Promise me nothing bad will happen if I don't wash,' the therapist warmly declines to promise and instead stays with her through the surge of dread. The dread peaks and then fades without any reassurance, a little faster each week. Which conclusion best follows?",
+      "A patient screams that her group-mate 'humiliated her on purpose' and storms out; after pacing the hall she returns and says quietly, 'Actually I think he was nervous and it came out wrong — I do that.' Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Anxiety naturally comes and goes, so the therapist's choice not to reassure is beside the point.",
+        text: "People say opposite things when they're angry, so neither version tells us anything.",
         credit: 0,
       },
       {
-        text: "The reliable spike-then-settle without reassurance likely shows the reassurance had been a compulsion, and withholding it (response prevention inside the alliance) is teaching her the dread passes on its own and the feared catastrophe doesn't come; test whether the dread settles each time without a promise, whether the peak gets lower across weeks, and whether caving and reassuring instead leaves the urge stronger next session.",
+        text: "Her mentalizing likely went offline at peak arousal — the certainty of deliberate humiliation was a non-mentalizing state — and came back online as she settled, restoring curiosity about his mind and her own parallel; test whether her capacity for alternatives reliably tracks her arousal, whether the same softening recurs each time she calms, and whether deliberately bringing the arousal down in the moment restores her perspective.",
         credit: 1.0,
       },
       {
-        text: "She gets very anxious when not reassured and then calms down.",
+        text: "She calmed down and changed her mind.",
         credit: 0.3,
       },
       {
-        text: "Not giving the promise seems to help; we could keep doing it.",
+        text: "Her certainty may rise and fall with how upset she is; we could watch for that.",
         credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'withholding reassurance is extinguishing a compulsion' lead from the rival 'she just happens to calm down over time anyway,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'arousal switched mentalizing off and on' lead from the rival 'she just changes her story to look reasonable,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: compare sessions where the therapist withholds the promise with any session where he gives in and reassures — my lead predicts withholding lowers the next session's urge while reassuring keeps it high. It is refuted if her urge declines just as much on sessions she is fully reassured, showing the calming is unrelated to response prevention.",
+        "Cheapest test: track whether her access to alternative explanations reliably returns as her arousal falls, across repeated incidents — my lead predicts the perspective tracks arousal, not audience. It is refuted if she keeps the benign reading only when others are watching and reverts to certainty in private, which would point to impression management rather than mentalizing coming back online.",
       yieldAnchors: [
-        "She pleads for a promise of safety",
-        "The therapist declines and stays with her",
-        "Dread peaks then fades without reassurance",
+        "She is certain she was humiliated on purpose and storms out",
+        "She returns calmer",
+        "She offers a benign reading and a parallel to herself",
       ],
       riskAnchors: [
-        "Dread settles each time without a promise",
-        "The peak lowers across weeks",
-        "Reassuring instead leaves the urge stronger",
+        "Her access to alternatives tracks arousal",
+        "The softening recurs each time she calms",
+        "Lowering arousal in the moment restores perspective",
       ],
       defeatedBy: [
-        "Her urge drops just as much when reassured",
-        "The calming has nothing to do with withholding",
+        "The benign reading appears only with an audience",
+        "Her perspective ignores her arousal level",
       ],
     },
     correctAnswer:
-      "The reliable spike-then-settle without reassurance likely shows the reassurance had been a compulsion, and withholding it (response prevention inside the alliance) is teaching her the dread passes on its own and the feared catastrophe doesn't come; test whether the dread settles each time without a promise, whether the peak gets lower across weeks, and whether caving and reassuring instead leaves the urge stronger next session.",
+      "Her mentalizing likely went offline at peak arousal — the certainty of deliberate humiliation was a non-mentalizing state — and came back online as she settled, restoring curiosity about his mind and her own parallel; test whether her capacity for alternatives reliably tracks her arousal, whether the same softening recurs each time she calms, and whether deliberately bringing the arousal down in the moment restores her perspective.",
     explanation:
-      "Full credit reads withheld reassurance as response prevention with three checks and a withhold-versus-reassure test that names its refutation; 'anxiety naturally comes and goes' is the dodge the lower-peak-each-week pattern defeats.",
+      "Full credit reads mentalizing collapsing and returning with arousal, with three checks and an arousal-tracks-perspective test; 'people say opposite things when angry' opens nothing.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A patient devotes whole sessions to asking whether she has 'the exactly right diagnosis' and whether a different therapist might be better, researching credentials for hours nightly — yet she has renewed for another year and the same need for certainty drives her checking rituals at home. Which conclusion best follows?",
+      "When a patient announces the therapist is 'clearly sick of me,' he doesn't reassure her but says, 'I notice I genuinely don't know where that came from — can we rewind to the second it hit you?' She slows, and the conviction starts to come apart. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "She keeps questioning whether the therapy is right for her.",
+        text: "Slowing down helped her feel less certain.",
         credit: 0.3,
       },
       {
-        text: "Her doubts about the therapy might be more OCD; we could explore that.",
+        text: "His curiosity may have reopened her thinking; we could test if it repeats.",
         credit: 0.6,
       },
       {
-        text: "Her relentless doubt about the treatment is likely the same intolerance of uncertainty that fuels her checking, now aimed at the therapy — a demand for a guarantee no answer can supply, so each reassurance only seeds the next doubt; test whether her therapy-doubts follow the same never-satisfied loop as her checking, whether resolving one doubt simply spawns another, and whether she doubts most where she is most invested rather than truly preparing to leave.",
-        credit: 1.0,
+        text: "A therapist can nudge a patient into agreeing to almost anything, so this shows little.",
+        credit: 0,
       },
       {
-        text: "Picking the right therapist is a hard, legitimate decision, so her questioning is just sensible caution.",
-        credit: 0,
+        text: "The therapist's 'stop and stand back' move — marking his own not-knowing and inviting joint inquiry instead of arguing or reassuring — likely re-engaged mentalizing that had collapsed under attachment stress, since restoring curiosity about minds is MBT's active ingredient; test whether her certainty softens specifically when curiosity is invited rather than when she is reassured, whether arguing the content instead hardens it, and whether the loosening reliably tracks the not-knowing stance.",
+        credit: 1.0,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'OCD doubt aimed at the therapy' lead from the rival 'she is reasonably evaluating her care,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'the not-knowing stance restored mentalizing' lead from the rival 'any kind response would have calmed her,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: check whether settling one doubt about the therapy durably satisfies her or simply spawns a fresh doubt in the same never-ending loop as her home checking — my lead predicts the latter. It is refuted if a clear answer about diagnosis or fit actually resolves her concern and she either settles or makes a real decision, which would fit reasonable evaluation.",
+        "Cheapest test: compare moments the therapist invites curiosity with moments he simply reassures, and see which reliably softens her certainty — my lead predicts curiosity, not reassurance, reopens her thinking. It is refuted if plain reassurance calms her just as well or better, which would mean soothing, not restored mentalizing, did the work.",
       yieldAnchors: [
-        "She doubts the diagnosis and the therapist endlessly",
-        "She researches for hours yet renews for a year",
-        "The same certainty-need drives her checking",
+        "She declares the therapist is sick of her",
+        "He marks not-knowing and invites joint inquiry",
+        "Her conviction starts to come apart",
       ],
       riskAnchors: [
-        "Therapy-doubts follow the never-satisfied loop",
-        "Resolving one doubt spawns another",
-        "She doubts most where she is most invested",
+        "Certainty softens when curiosity is invited",
+        "Arguing the content hardens it",
+        "The loosening tracks the not-knowing stance",
       ],
       defeatedBy: [
-        "A clear answer durably resolves the concern",
-        "She is actually preparing to leave",
+        "Plain reassurance calms her just as well",
+        "Curiosity makes no difference versus soothing",
       ],
     },
     correctAnswer:
-      "Her relentless doubt about the treatment is likely the same intolerance of uncertainty that fuels her checking, now aimed at the therapy — a demand for a guarantee no answer can supply, so each reassurance only seeds the next doubt; test whether her therapy-doubts follow the same never-satisfied loop as her checking, whether resolving one doubt simply spawns another, and whether she doubts most where she is most invested rather than truly preparing to leave.",
+      "The therapist's 'stop and stand back' move — marking his own not-knowing and inviting joint inquiry instead of arguing or reassuring — likely re-engaged mentalizing that had collapsed under attachment stress, since restoring curiosity about minds is MBT's active ingredient; test whether her certainty softens specifically when curiosity is invited rather than when she is reassured, whether arguing the content instead hardens it, and whether the loosening reliably tracks the not-knowing stance.",
     explanation:
-      "Full credit reads treatment-doubt as the same intolerance of uncertainty with three checks and a does-one-answer-spawn-another test; 'sensible caution' is the dodge the renewed-for-a-year, same-loop pattern defeats.",
+      "Full credit names the not-knowing/curiosity stance as restoring mentalizing with three checks and a curiosity-versus-reassurance test; 'a therapist can nudge anyone' opens nothing.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "Before she can speak, a patient must square the tissue box, dim one lamp, and restart her first sentence until it 'sounds right,' often several times. When the therapist gently asks her to leave a sentence un-redone, she is anxious but, to her surprise, can keep going. Which conclusion best follows?",
+      "A patient explains that telling people she is in pain never changes anything, but an injury they can see finally makes them take her seriously; the urge to hurt herself rises exactly when she feels disbelieved. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Those routines might be 'just right' rituals; we could watch when they appear.",
+        text: "The self-harm might be a way to make her pain visible; we could track when the urge comes.",
         credit: 0.6,
       },
       {
-        text: "The arranging and restarting are likely 'just right' compulsions performed in session to discharge a not-right feeling, and the room is becoming a place to practice tolerating it rather than fixing it; test whether the rituals appear specifically with the not-right sensation and not at random, whether blocking a re-do spikes anxiety that then eases, and whether the urge weakens across sessions as she sits with the discomfort.",
+        text: "This likely reflects teleological mode — when an inner state feels unrecognizable unless it has a physical form, a visible injury becomes the only proof her pain is real and believed, so the self-harm functions to make unbearable feeling concrete and seen; test whether the urge spikes specifically when she feels disbelieved, whether being genuinely understood in words lowers it, and whether the need for a physical sign fades as she comes to trust that an inner state can register without proof.",
         credit: 1.0,
       },
       {
-        text: "She arranges things and restarts sentences before she can talk.",
+        text: "She hurts herself when she feels no one believes her pain.",
         credit: 0.3,
       },
       {
-        text: "Lots of people have little warm-up habits, so there's nothing here worth interpreting.",
+        text: "She's just doing it to get a reaction out of people.",
         credit: 0,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'just-right compulsion' lead from the rival 'these are harmless warm-up habits,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'teleological proof-of-pain' lead from the rival 'she is doing it to manipulate others into reacting,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: block one re-do and watch whether anxiety spikes and then eases as she continues — my lead predicts a discharge-of-not-right-feeling pattern that can be tolerated. It is refuted if blocking the routine causes her no distress at all, which would fit a harmless habit rather than a compulsion.",
+        "Cheapest test: check whether being genuinely believed and understood in words reduces the urge while feeling disbelieved spikes it — my lead predicts the function is to make pain real and recognized, not to control others. It is refuted if the urge tracks getting people to do things for her rather than feeling her pain is registered, which would fit instrumental manipulation rather than teleological mode.",
       yieldAnchors: [
-        "She must arrange the room and restart sentences",
-        "The restarting repeats until it 'sounds right'",
-        "Blocking a re-do leaves her anxious but able to continue",
+        "Words about her pain change nothing for her",
+        "A visible injury makes people take her seriously",
+        "The urge rises when she feels disbelieved",
       ],
       riskAnchors: [
-        "Rituals appear with the not-right sensation",
-        "Blocking a re-do spikes then eases anxiety",
-        "The urge weakens as she tolerates discomfort",
+        "The urge spikes when she feels disbelieved",
+        "Being understood in words lowers it",
+        "The need for a physical sign fades with trust",
       ],
       defeatedBy: [
-        "Blocking the routine causes no distress",
-        "The habits appear randomly, unlinked to any feeling",
+        "The urge tracks getting others to act, not being believed",
+        "Being understood makes no difference to it",
       ],
     },
     correctAnswer:
-      "The arranging and restarting are likely 'just right' compulsions performed in session to discharge a not-right feeling, and the room is becoming a place to practice tolerating it rather than fixing it; test whether the rituals appear specifically with the not-right sensation and not at random, whether blocking a re-do spikes anxiety that then eases, and whether the urge weakens across sessions as she sits with the discomfort.",
+      "This likely reflects teleological mode — when an inner state feels unrecognizable unless it has a physical form, a visible injury becomes the only proof her pain is real and believed, so the self-harm functions to make unbearable feeling concrete and seen; test whether the urge spikes specifically when she feels disbelieved, whether being genuinely understood in words lowers it, and whether the need for a physical sign fades as she comes to trust that an inner state can register without proof.",
     explanation:
-      "Full credit reads the in-session routines as 'just right' compulsions with three checks and a block-a-re-do test that names its refutation; 'harmless warm-up habits' is the dodge the anxious-when-blocked pattern defeats.",
+      "Full credit reads self-harm as teleological proof of pain with three checks and a does-being-believed-reduce-it test; 'just to get a reaction' is the overreach the relief-when-understood detail defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A supervisor reviewing tapes notices that whenever this therapist answers the patient's 'are you sure I'm not dangerous?' questions, the next session contains more of them; on the rare occasions he reflects the question back instead, the next session contains fewer. Which conclusion best follows?",
+      "Because the therapist glanced at the clock, a patient states as plain fact that he 'can't wait to be rid of her' and has been counting the minutes all session, and treats anyone who questions this as naive. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The number of questions drifts up and down on its own, so the link to the therapist's answers is illusory.",
-        credit: 0,
-      },
-      {
-        text: "He asks more after getting answers and less after not.",
-        credit: 0.3,
-      },
-      {
-        text: "The pattern likely shows the therapist's answers are reinforcing the questioning rather than resolving it — each reassurance rewards the asking, so it breeds more, the hallmark of a compulsion fed within the relationship; test whether answered sessions are reliably followed by more questions and reflected ones by fewer, whether the post-answer relief is brief, and whether a planned run of not answering steadily reduces the asking.",
+        text: "Her jump from a glance to a certain, mind-read intent ('can't wait to be rid of me') is likely psychic equivalence — a feeling of being unwanted experienced as established fact about his inner state, the inner feeling projected outward as reality; test whether she allows any alternative reading of the glance, whether the certainty rose with her own insecurity rather than new evidence, and whether it loosens when she is calmer or genuinely invited to imagine other reasons he might check the time.",
         credit: 1.0,
       },
       {
-        text: "Answering might be backfiring; we could try answering less and see.",
+        text: "She's sure the clock-glance means he wants her gone.",
+        credit: 0.3,
+      },
+      {
+        text: "She might be reading rejection into a small act; we could check how fixed it is.",
         credit: 0.6,
+      },
+      {
+        text: "Nobody can really know what a glance means, so there's no saying.",
+        credit: 0,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'answers reinforce the questioning' lead from the rival 'question counts just fluctuate randomly,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'psychic equivalence' lead from the rival 'the therapist really did signal impatience,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: run a deliberate stretch of not answering and see whether the asking steadily falls, then a stretch of answering and see whether it rises — my lead predicts the asking tracks the therapist's response. It is refuted if question counts move the same regardless of whether he answers, which would mean they fluctuate on their own.",
+        "Cheapest test: see whether she can entertain any alternative reading of the clock-glance and whether her certainty tracks her own insecurity rather than his actual behavior — my lead predicts a fixed, feeling-as-fact conviction that admits no alternatives. It is refuted if the therapist genuinely was signaling impatience across multiple real cues and her reading survives calm reflection, which would make it accurate perception rather than psychic equivalence.",
       yieldAnchors: [
-        "Answered sessions are followed by more questions",
-        "Reflected sessions are followed by fewer",
-        "The pattern is consistent on the tapes",
+        "He glanced at the clock once",
+        "She states as fact he can't wait to be rid of her",
+        "She treats doubters as naive",
       ],
       riskAnchors: [
-        "Answering reliably precedes more questions",
-        "Post-answer relief is brief",
-        "A run of not answering reduces the asking",
+        "She allows no alternative reading of the glance",
+        "The certainty rose with her insecurity",
+        "It loosens when she is calmer or invited to wonder",
       ],
       defeatedBy: [
-        "Question counts move regardless of his response",
-        "Answering and not answering yield identical trends",
+        "The therapist really did signal impatience on multiple cues",
+        "Her reading survives calm reflection on the evidence",
       ],
     },
     correctAnswer:
-      "The pattern likely shows the therapist's answers are reinforcing the questioning rather than resolving it — each reassurance rewards the asking, so it breeds more, the hallmark of a compulsion fed within the relationship; test whether answered sessions are reliably followed by more questions and reflected ones by fewer, whether the post-answer relief is brief, and whether a planned run of not answering steadily reduces the asking.",
+      "Her jump from a glance to a certain, mind-read intent ('can't wait to be rid of me') is likely psychic equivalence — a feeling of being unwanted experienced as established fact about his inner state, the inner feeling projected outward as reality; test whether she allows any alternative reading of the glance, whether the certainty rose with her own insecurity rather than new evidence, and whether it loosens when she is calmer or genuinely invited to imagine other reasons he might check the time.",
     explanation:
-      "Full credit reads the answered-then-more pattern as reinforcement with three checks and a planned-no-answer test that names its refutation; 'drifts up and down on its own' is the dodge the answer-versus-reflect contrast defeats.",
+      "Full credit names psychic equivalence (a feeling of being unwanted taken as fact) with three checks and a does-she-allow-alternatives test; 'nobody can know what a glance means' opens nothing.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A patient opens nearly every session by confessing some small 'sin' against the therapist — a stray critical thought, a worry she was rude last week — and cannot settle until she is forgiven, after which the relief lasts only minutes. Which conclusion best follows?",
+      "A patient can discuss her partner's 'avoidant attachment style' and her own 'fear of engulfment' for an hour with striking articulateness, yet when asked simply how she felt last night when he left, she draws a blank and returns to theory. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "She confesses and asks forgiveness at the start of sessions.",
-        credit: 0.3,
-      },
-      {
-        text: "She's just an unusually conscientious, polite person, so the confessing means nothing in particular.",
+        text: "She has clearly done the reading and gets it, so she's ahead of most patients.",
         credit: 0,
       },
       {
-        text: "The serial confessing-and-seeking-forgiveness is likely a scrupulosity compulsion enacted in the alliance — unloading imagined moral failings to win an absolution that quiets guilt briefly and then must be renewed; test whether each forgiveness relieves her only momentarily before a new confession, whether the 'sins' are imagined moral ones rather than real lapses, and whether warmly declining to absolve lets the guilt rise and pass on its own.",
-        credit: 1.0,
+        text: "Her theorizing might be a way around real feeling; we could keep bringing her back to the moment.",
+        credit: 0.6,
       },
       {
-        text: "Her confessing could be a forgiveness ritual; we could pay attention to it.",
-        credit: 0.6,
+        text: "She talks in theory instead of saying how she felt.",
+        credit: 0.3,
+      },
+      {
+        text: "This looks like pretend mode — fluent talk about mental states with no live affect behind it, so the theory substitutes for contact with the actual feeling and protects her from it; test whether she can locate any real feeling when held to a concrete moment, whether the retreat to theory recurs precisely when emotion is approached, and whether staying with the moment rather than the concept lets genuine affect surface.",
+        credit: 1.0,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'scrupulosity compulsion' lead from the rival 'she is simply very conscientious,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'pretend mode' lead from the rival 'she is just an intellectual person who explains things in concepts,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: watch whether each granted forgiveness settles her for good or only for minutes before the next confession — my lead predicts a confess-relieve-confess loop over imagined sins. It is refuted if a single acknowledgment durably reassures her and the confessions stop, which would fit ordinary conscientiousness rather than a compulsion.",
+        "Cheapest test: hold her to one concrete moment ('how did you feel when he walked out') and watch whether real feeling surfaces or she reflexively retreats to theory — my lead predicts the abstraction appears precisely where affect would. It is refuted if, asked plainly, she can readily name and feel a specific emotion and the theory is merely her style, which would not be pretend mode.",
       yieldAnchors: [
-        "She confesses a 'sin' against the therapist most sessions",
-        "She cannot settle until forgiven",
-        "Relief lasts only minutes",
+        "She discusses attachment theory fluently for an hour",
+        "Asked how she felt, she draws a blank",
+        "She returns to theory when emotion is approached",
       ],
       riskAnchors: [
-        "Each forgiveness relieves only briefly",
-        "The 'sins' are imagined, not real lapses",
-        "Declining to absolve lets guilt rise and pass",
+        "She finds no real feeling when held to a moment",
+        "The retreat to theory recurs as emotion nears",
+        "Staying with the moment lets affect surface",
       ],
       defeatedBy: [
-        "One acknowledgment durably reassures her",
-        "The confessions concern real, not imagined, lapses",
+        "Asked plainly, she names and feels a specific emotion",
+        "The theory is merely style, not avoidance",
       ],
     },
     correctAnswer:
-      "The serial confessing-and-seeking-forgiveness is likely a scrupulosity compulsion enacted in the alliance — unloading imagined moral failings to win an absolution that quiets guilt briefly and then must be renewed; test whether each forgiveness relieves her only momentarily before a new confession, whether the 'sins' are imagined moral ones rather than real lapses, and whether warmly declining to absolve lets the guilt rise and pass on its own.",
+      "This looks like pretend mode — fluent talk about mental states with no live affect behind it, so the theory substitutes for contact with the actual feeling and protects her from it; test whether she can locate any real feeling when held to a concrete moment, whether the retreat to theory recurs precisely when emotion is approached, and whether staying with the moment rather than the concept lets genuine affect surface.",
     explanation:
-      "Full credit reads serial confession as a scrupulosity compulsion with three checks and a decline-to-absolve test that names its refutation; 'unusually conscientious' is the dodge the minutes-long relief over imagined sins defeats.",
+      "Full credit names pretend mode with three checks and a can-she-feel-a-concrete-moment test; 'she's just intellectual' is the dodge the blanks-out-when-asked-how-she-felt pattern defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A patient consistently waits until his hand is on the door to blurt his most disturbing thought of the week, leaving no time to discuss it; invited to raise such thoughts earlier, he says he 'can't' and falls silent. Which conclusion best follows?",
+      "A patient repeatedly storms out of sessions without warning and cannot say why; lately, when the therapist gently names a possible feeling just before she bolts ('it seems something just stung'), she sometimes stays and the feeling can be talked about instead. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He might confess late to avoid facing it; we could note the timing.",
-        credit: 0.6,
-      },
-      {
-        text: "The doorknob confession is likely a compulsion in its own right — confessing discharges the guilt while the last-second timing guarantees he avoids the exposure of actually sitting with the thought, giving relief without risking change; test whether the disclosures land reliably at the very end and never when there's time to explore, whether he resists when offered an earlier slot, and whether the urge eases once the thoughts are worked through rather than just unloaded.",
-        credit: 1.0,
-      },
-      {
-        text: "He brings up the hardest things right at the end.",
+        text: "Naming a feeling sometimes keeps her from leaving.",
         credit: 0.3,
       },
       {
-        text: "People often blurt things on the way out; the timing is just how conversations go.",
+        text: "Putting words to the feeling might reduce the walkouts; we could keep trying it.",
+        credit: 0.6,
+      },
+      {
+        text: "Her walkouts likely reflect a self-mentalizing deficit — unrepresented feelings get discharged as action rather than held as thoughts — and naming the feeling just in time gives the affect a mental form so it can be felt instead of enacted, which is why she can stay; test whether the walkouts cluster on moments of unrecognized affect, whether timely naming reliably reduces them, and whether her acting-out falls overall as her capacity to identify her own states grows.",
+        credit: 1.0,
+      },
+      {
+        text: "Some people are just walkers-out, so there's nothing deeper to it.",
         credit: 0,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'confession-as-avoidance compulsion' lead from the rival 'he only gets up the nerve at the very end,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'naming gives the affect a mental form' lead from the rival 'she just stays when the therapist is being nice,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: offer to start a session with the disturbing thought and watch whether he can use the time or balks to protect the no-time-to-discuss escape — my lead predicts he avoids real exploration even when given room. It is refuted if, given an earlier slot, he willingly sits with and explores the thought, which would fit simple end-of-session courage rather than avoidance.",
+        "Cheapest test: see whether it is specifically accurate naming of the feeling — not general warmth — that lets her stay and talk, and whether walkouts drop as her own ability to name feelings grows; my lead predicts representing the affect is the active ingredient. It is refuted if any warm remark keeps her regardless of whether it names the feeling, which would credit soothing rather than restored self-mentalizing.",
       yieldAnchors: [
-        "He confesses only as he reaches the door",
-        "There is never time to discuss it",
-        "Invited to raise it earlier, he 'can't'",
+        "She storms out without warning and can't say why",
+        "Naming a likely feeling sometimes makes her stay",
+        "The feeling can then be talked about",
       ],
       riskAnchors: [
-        "Disclosures land reliably at the very end",
-        "He resists an earlier slot",
-        "The urge eases once thoughts are worked through",
+        "Walkouts cluster on unrecognized-affect moments",
+        "Timely naming reliably reduces them",
+        "Acting-out falls as she can name her states",
       ],
       defeatedBy: [
-        "Given time, he willingly explores the thought",
-        "He raises hard thoughts early when offered the chance",
+        "Any warm remark keeps her, naming or not",
+        "Walkouts ignore whether the feeling is named",
       ],
     },
     correctAnswer:
-      "The doorknob confession is likely a compulsion in its own right — confessing discharges the guilt while the last-second timing guarantees he avoids the exposure of actually sitting with the thought, giving relief without risking change; test whether the disclosures land reliably at the very end and never when there's time to explore, whether he resists when offered an earlier slot, and whether the urge eases once the thoughts are worked through rather than just unloaded.",
+      "Her walkouts likely reflect a self-mentalizing deficit — unrepresented feelings get discharged as action rather than held as thoughts — and naming the feeling just in time gives the affect a mental form so it can be felt instead of enacted, which is why she can stay; test whether the walkouts cluster on moments of unrecognized affect, whether timely naming reliably reduces them, and whether her acting-out falls overall as her capacity to identify her own states grows.",
     explanation:
-      "Full credit reads the doorknob confession as a relief-without-exposure compulsion with three checks and an offer-an-earlier-slot test that names its refutation; 'just how conversations go' is the dodge the cannot-raise-it-earlier detail defeats.",
+      "Full credit names a self-mentalizing deficit with three checks and a is-it-the-naming-or-just-warmth test; 'some people are just walkers-out' opens nothing.",
   },
 ];
 
@@ -843,182 +843,183 @@ const written: HomeworkItem[] = [
   {
     itemType: "written",
     prompt:
-      "Between every session, a patient emails her therapist several times asking him to confirm that something she said or did 'didn't hurt anyone.' His confirmations calm her briefly, after which a new worry of the same kind appears, and the emails have steadily increased over the months. In one paragraph, propose the strongest conclusion about what the reassurance-seeking is doing and describe how you would test it.",
+      "A patient's friend cancels dinner by text, citing a work emergency. Within minutes the patient is certain the friend secretly despises her and has been pretending to like her for years; she spends the night sure of it and only the next day, calmer, can entertain that the emergency was real. In one paragraph, propose the strongest conclusion about what happened in her mind and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that the emailing is a reassurance compulsion that has migrated into the therapy relationship: each confirmation briefly relieves her doubt and, by relieving it, rewards and strengthens the urge to ask again, which is why the emails have multiplied rather than tapered as a genuine need would. This is a strong claim because it predicts checkable consequences: the relief after each reply should be short-lived and followed by a fresh version of the same 'did I cause harm' worry; the requests should cluster on her feared themes rather than spread across ordinary topics; and a planned, supported stretch in which the therapist stops answering should let the anxiety crest and fall and, over time, reduce the asking rather than make it permanently worse. I would test it by logging how long relief lasts after each reply, by checking whether the worries stay locked on the harm theme, and by running a response-prevention trial of withholding reassurance to see whether the urge to email declines.",
+        "The strongest conclusion is that the attachment threat of being cancelled on collapsed her mentalizing into psychic equivalence: the thought 'she despises me and has been faking it' was experienced not as a worry to be checked but as literal, certain reality, which is why an ordinary work emergency could not register as an alternative until she had calmed down. This is a strong claim because it predicts checkable consequences: at its peak the certainty should admit no alternative readings of the cancellation; it should have ignited precisely with the rejection cue rather than from any new information about the friend; and it should soften specifically as her arousal drops or when she is genuinely invited to imagine other reasons. I would test it by checking whether her conviction rests on the cancellation alone, whether it tracks her arousal across the night-into-morning shift, and whether it survives or dissolves once she is calm — dissolution would confirm a non-mentalizing collapse, while a certainty grounded in concrete prior evidence that survives calming would refute it.",
       yieldAnchors: [
-        "She emails several times between every session",
-        "Relief is brief and a new worry follows",
-        "The emails have steadily increased over months",
+        "A simple text cancellation triggered total certainty of being despised",
+        "The conviction lasted all night",
+        "It loosened only the next day when she was calmer",
       ],
       riskAnchors: [
-        "Relief after each reply is short-lived",
-        "Requests cluster on the 'did I cause harm' theme",
-        "Withholding reassurance reduces the asking over time",
+        "The certainty admitted no alternatives at its peak",
+        "It ignited precisely with the rejection cue",
+        "It softened as her arousal dropped",
       ],
       defeatedBy: [
-        "A single confirmation durably ends the worry",
-        "The asking tapers on its own as a real need would",
+        "She had concrete prior evidence the friend dislikes her",
+        "The certainty survived her calming completely",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that the emailing is a reassurance compulsion that has migrated into the therapy relationship: each confirmation briefly relieves her doubt and, by relieving it, rewards and strengthens the urge to ask again, which is why the emails have multiplied rather than tapered as a genuine need would. This is a strong claim because it predicts checkable consequences: the relief after each reply should be short-lived and followed by a fresh version of the same 'did I cause harm' worry; the requests should cluster on her feared themes rather than spread across ordinary topics; and a planned, supported stretch in which the therapist stops answering should let the anxiety crest and fall and, over time, reduce the asking rather than make it permanently worse. I would test it by logging how long relief lasts after each reply, by checking whether the worries stay locked on the harm theme, and by running a response-prevention trial of withholding reassurance to see whether the urge to email declines.",
+      "The strongest conclusion is that the attachment threat of being cancelled on collapsed her mentalizing into psychic equivalence: the thought 'she despises me and has been faking it' was experienced not as a worry to be checked but as literal, certain reality, which is why an ordinary work emergency could not register as an alternative until she had calmed down. This is a strong claim because it predicts checkable consequences: at its peak the certainty should admit no alternative readings of the cancellation; it should have ignited precisely with the rejection cue rather than from any new information about the friend; and it should soften specifically as her arousal drops or when she is genuinely invited to imagine other reasons. I would test it by checking whether her conviction rests on the cancellation alone, whether it tracks her arousal across the night-into-morning shift, and whether it survives or dissolves once she is calm — dissolution would confirm a non-mentalizing collapse, while a certainty grounded in concrete prior evidence that survives calming would refute it.",
     explanation:
-      "Under the inverted standard, 'people email their therapists, it means nothing' earns near-zero; top credit goes to the reassurance-compulsion reading that names a withhold-and-watch test as its own refutation.",
+      "Under the inverted standard, 'you can never know what a friend really feels' earns near-zero; top credit goes to the psychic-equivalence reading that names a does-it-soften-with-arousal test as its own refutation.",
   },
   {
     itemType: "written",
     prompt:
-      "For months a patient with taboo intrusive thoughts disclosed only his 'acceptable' symptoms, certain that revealing the rest would make the therapist see him as a monster and end treatment. The first time he risks one and the therapist responds with calm, ordinary understanding, he opens up dramatically over the following weeks. In one paragraph, propose the strongest conclusion about what changed and describe how you would test it.",
+      "A patient insists that the only way she will believe her therapist cares about her is if he agrees to take her calls at home; his steadiness, his memory for her life, and his evident concern in the room she dismisses as meaningless. In one paragraph, propose the strongest conclusion about how she is processing 'caring' and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that the patient had been transferring onto the therapist the condemning judge he most feared, so he hid precisely the themes he expected to be punished for — and the therapist's calm, non-condemning response to his first disclosure was a corrective experience that contradicted the expectation, which is why the rest came out. This is a strong claim because it predicts checkable consequences: the surge of disclosure should date specifically to the non-alarmed response rather than build before it; the material he had withheld should be exactly the most feared-condemnation themes, not random topics; and any genuine sign of alarm or judgment from the therapist should shut him back down. I would test it by dating his openings against that key moment, by checking whether the previously hidden content matches his feared themes, and by watching whether his disclosure retreats if he ever reads judgment in the therapist's reaction.",
+        "The strongest conclusion is that she is in teleological mode: a mental state like 'he cares' cannot be believed unless it is proven by a concrete physical action, so words, reliability, and remembered details register as nothing while only an observable act — taking her calls at home — can carry the weight of 'does he care.' This is a strong claim because it predicts checkable consequences: only physical demonstrations should ever satisfy her while verbal and relational signs of care consistently fail to land; the demand for a concrete proof should escalate as she feels less secure; and her ability to credit non-physical care should return as her arousal settles. I would test it by tracking whether any non-action sign of caring ever reassures her, whether the proof-demand rises with her insecurity, and whether warmth registers when she is calm — if ordinary verbal and relational care does reassure her, the reading is refuted and the call request is a simple preference rather than teleological mode.",
       yieldAnchors: [
-        "He disclosed only 'acceptable' symptoms for months",
-        "He feared being seen as a monster",
-        "He opened up after the calm response",
+        "Only taking her calls at home would prove he cares",
+        "She dismisses steadiness, memory, and concern as meaningless",
+        "Words consistently fail to convince her",
       ],
       riskAnchors: [
-        "The opening dates to the non-alarmed response",
-        "Hidden content matches the feared-condemnation themes",
-        "A sign of judgment would shut him down again",
+        "Only physical demonstrations ever satisfy her",
+        "The proof-demand rises as she feels less secure",
+        "Crediting non-physical care returns when calmer",
       ],
       defeatedBy: [
-        "He was already disclosing freely before that moment",
-        "The therapist's response cannot be linked to the change",
+        "Ordinary verbal and relational care reassures her",
+        "She can credit caring without a physical proof",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that the patient had been transferring onto the therapist the condemning judge he most feared, so he hid precisely the themes he expected to be punished for — and the therapist's calm, non-condemning response to his first disclosure was a corrective experience that contradicted the expectation, which is why the rest came out. This is a strong claim because it predicts checkable consequences: the surge of disclosure should date specifically to the non-alarmed response rather than build before it; the material he had withheld should be exactly the most feared-condemnation themes, not random topics; and any genuine sign of alarm or judgment from the therapist should shut him back down. I would test it by dating his openings against that key moment, by checking whether the previously hidden content matches his feared themes, and by watching whether his disclosure retreats if he ever reads judgment in the therapist's reaction.",
+      "The strongest conclusion is that she is in teleological mode: a mental state like 'he cares' cannot be believed unless it is proven by a concrete physical action, so words, reliability, and remembered details register as nothing while only an observable act — taking her calls at home — can carry the weight of 'does he care.' This is a strong claim because it predicts checkable consequences: only physical demonstrations should ever satisfy her while verbal and relational signs of care consistently fail to land; the demand for a concrete proof should escalate as she feels less secure; and her ability to credit non-physical care should return as her arousal settles. I would test it by tracking whether any non-action sign of caring ever reassures her, whether the proof-demand rises with her insecurity, and whether warmth registers when she is calm — if ordinary verbal and relational care does reassure her, the reading is refuted and the call request is a simple preference rather than teleological mode.",
     explanation:
-      "The cautious 'why anyone discloses is unknowable' earns near-zero; credit goes to the transference-and-corrective-experience reading that names a timing test which could refute it.",
+      "The cautious 'some people just need more' earns near-zero; credit goes to the teleological-mode reading that names an only-actions-count test which could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "Reviewing a year of records, a therapist sees that his patient's reassurance-seeking questions are most numerous in the weeks following sessions where he answered them fully, and least numerous after the few sessions where he gently declined. In one paragraph, propose the strongest conclusion about the role the therapist's reassurance is playing and describe how you would test it.",
+      "A patient produces eloquent, well-read accounts of her 'core wound' and 'maladaptive schemas' session after session, yet seems untouched as she speaks and her life outside never shifts. In one paragraph, propose the strongest conclusion about what this fluent self-analysis is doing and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that the therapist's reassurance is reinforcing the reassurance-seeking rather than resolving it: because each answer briefly relieves the patient's doubt, it rewards the asking and so produces more of it, which is exactly why questions spike after answered sessions and fall after declined ones. This is a strong claim because it predicts checkable consequences: answered sessions should be reliably followed by more questions and declined ones by fewer, even after accounting for how bad the patient's week was; the relief following each answer should be brief; and a deliberately planned stretch of not answering should drive the asking steadily down. I would test it by relating question counts to whether the prior session was answered while controlling for symptom severity, by timing how long relief lasts after each answer, and by running a planned response-prevention period to see whether the questioning declines.",
+        "The strongest conclusion is that her self-analysis is pretend mode: talk about mental states that is decoupled from any real affect, so the eloquent words about her 'core wound' float free of the feelings themselves, function as a defense against contact with the experience, and therefore bind to no change in her life. This is a strong claim because it predicts checkable consequences: genuine emotion should fail to enter the room as long as the talk stays smooth and conceptual; nothing she 'understands' should alter her behavior outside; and deliberately slowing her to a single concrete moment should either break the untouched flow and let real feeling surface or expose that the insight cannot reach it. I would test it by watching whether affect ever accompanies the analysis, whether any of it produces a traceable change outside, and whether holding her to a concrete moment brings feeling in — if her insight is in fact accompanied by felt emotion and is already producing small real changes, the reading is refuted and it is genuine working-through rather than pretend mode.",
       yieldAnchors: [
-        "Questions spike after answered sessions",
-        "Questions fall after declined ones",
-        "The pattern holds across a year of records",
+        "She gives eloquent self-analysis session after session",
+        "She seems untouched as she speaks",
+        "Her life outside never shifts",
       ],
       riskAnchors: [
-        "Answered sessions precede more questions after controlling for severity",
-        "Relief after each answer is brief",
-        "A planned no-answer stretch reduces asking",
+        "Genuine emotion fails to enter while talk stays conceptual",
+        "Nothing she understands changes her outside behavior",
+        "Slowing her to a concrete moment brings feeling in",
       ],
       defeatedBy: [
-        "Question counts track only how bad the week was",
-        "Answering and declining make no difference to counts",
+        "Her insight is accompanied by felt emotion",
+        "It is already producing real change outside",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that the therapist's reassurance is reinforcing the reassurance-seeking rather than resolving it: because each answer briefly relieves the patient's doubt, it rewards the asking and so produces more of it, which is exactly why questions spike after answered sessions and fall after declined ones. This is a strong claim because it predicts checkable consequences: answered sessions should be reliably followed by more questions and declined ones by fewer, even after accounting for how bad the patient's week was; the relief following each answer should be brief; and a deliberately planned stretch of not answering should drive the asking steadily down. I would test it by relating question counts to whether the prior session was answered while controlling for symptom severity, by timing how long relief lasts after each answer, and by running a planned response-prevention period to see whether the questioning declines.",
+      "The strongest conclusion is that her self-analysis is pretend mode: talk about mental states that is decoupled from any real affect, so the eloquent words about her 'core wound' float free of the feelings themselves, function as a defense against contact with the experience, and therefore bind to no change in her life. This is a strong claim because it predicts checkable consequences: genuine emotion should fail to enter the room as long as the talk stays smooth and conceptual; nothing she 'understands' should alter her behavior outside; and deliberately slowing her to a single concrete moment should either break the untouched flow and let real feeling surface or expose that the insight cannot reach it. I would test it by watching whether affect ever accompanies the analysis, whether any of it produces a traceable change outside, and whether holding her to a concrete moment brings feeling in — if her insight is in fact accompanied by felt emotion and is already producing small real changes, the reading is refuted and it is genuine working-through rather than pretend mode.",
     explanation:
-      "The inverted standard gives near-zero to 'the counts drift on their own'; top credit goes to the reassurance-reinforces-the-compulsion reading that names a response-prevention test as its own refutation.",
+      "The inverted standard gives near-zero to 'she understands herself well, so therapy is working'; top credit goes to the pretend-mode reading that names a does-feeling-enter-when-slowed test as its own refutation.",
   },
   {
     itemType: "written",
     prompt:
-      "A patient who spent a year refusing every exposure finally begins attempting them, and says she can only do so because she has come to trust that her therapist 'won't trick her or abandon her mid-panic.' Her willingness to attempt new exposures seems to rise and fall with how connected she feels. In one paragraph, propose the strongest conclusion about the role of the relationship and describe how you would test it.",
+      "A patient routinely arrives certain that the people in her life are angry at her and will not be talked out of it; lately, when her therapist responds not by reassuring her but by wondering aloud, with genuine not-knowing, what else might be going on, her certainty begins to loosen and she generates other explanations. In one paragraph, propose the strongest conclusion about why this works and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that the working alliance is functioning as the platform that makes the feared exposures tolerable — the trust that the therapist will stay with her and not abandon her supplies the safety she needs to face the panic, so the bond is what lets the technique work rather than a mere nicety alongside it. This is a strong claim because it predicts checkable consequences: her willingness to attempt exposures should track moments she feels connected and dip when she feels pushed or let down; a genuine rupture should revive her refusal until it is repaired; and the same exposures offered without that trust — earlier in treatment or by a clinician she doesn't trust — should be refused. I would test it by relating her exposure attempts to her session-by-session sense of connection, by watching whether a rupture brings back avoidance, and by comparing her willingness now with the year she refused identical exposures absent the trust.",
+        "The strongest conclusion is that the therapist's genuine not-knowing, curious stance is restoring mentalizing that had collapsed under attachment stress: her fixed certainty that everyone is angry was a non-mentalizing state, and being invited to wonder — rather than reassured — re-engages curiosity about minds, which is the active ingredient of MBT and is why she can suddenly generate alternatives. This is a strong claim because it predicts checkable consequences: her certainty should soften specifically when curiosity is invited and not merely when she is reassured; arguing the content or supplying facts should harden rather than loosen the conviction; and the loosening should reliably track the not-knowing stance across repetitions. I would test it by comparing curiosity-prompts with plain reassurance and with fact-arguing to see which reopens her thinking — if plain reassurance softens her just as well, the reading is refuted and soothing rather than restored mentalizing is doing the work.",
       yieldAnchors: [
-        "She refused all exposures for a year",
-        "She now attempts them, crediting trust",
-        "Willingness rises and falls with connection",
+        "She arrives certain everyone is angry and won't be talked out of it",
+        "The therapist wonders aloud with genuine not-knowing",
+        "Her certainty loosens and she generates alternatives",
       ],
       riskAnchors: [
-        "Exposure attempts track felt connection",
-        "A rupture revives refusal until repaired",
-        "Identical exposures without trust are refused",
+        "Certainty softens when curiosity is invited, not when reassured",
+        "Arguing the content hardens it",
+        "The loosening tracks the not-knowing stance across repetitions",
       ],
       defeatedBy: [
-        "She attempts exposures just as readily when disconnected",
-        "Her willingness ignores ruptures entirely",
+        "Plain reassurance softens her just as well",
+        "Curiosity makes no difference versus soothing",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that the working alliance is functioning as the platform that makes the feared exposures tolerable — the trust that the therapist will stay with her and not abandon her supplies the safety she needs to face the panic, so the bond is what lets the technique work rather than a mere nicety alongside it. This is a strong claim because it predicts checkable consequences: her willingness to attempt exposures should track moments she feels connected and dip when she feels pushed or let down; a genuine rupture should revive her refusal until it is repaired; and the same exposures offered without that trust — earlier in treatment or by a clinician she doesn't trust — should be refused. I would test it by relating her exposure attempts to her session-by-session sense of connection, by watching whether a rupture brings back avoidance, and by comparing her willingness now with the year she refused identical exposures absent the trust.",
+      "The strongest conclusion is that the therapist's genuine not-knowing, curious stance is restoring mentalizing that had collapsed under attachment stress: her fixed certainty that everyone is angry was a non-mentalizing state, and being invited to wonder — rather than reassured — re-engages curiosity about minds, which is the active ingredient of MBT and is why she can suddenly generate alternatives. This is a strong claim because it predicts checkable consequences: her certainty should soften specifically when curiosity is invited and not merely when she is reassured; arguing the content or supplying facts should harden rather than loosen the conviction; and the loosening should reliably track the not-knowing stance across repetitions. I would test it by comparing curiosity-prompts with plain reassurance and with fact-arguing to see which reopens her thinking — if plain reassurance softens her just as well, the reading is refuted and soothing rather than restored mentalizing is doing the work.",
     explanation:
-      "The cautious 'trust is too vague to be the reason' earns near-zero; credit goes to the alliance-as-platform reading that names a does-willingness-track-connection test which could refute it.",
+      "The cautious 'people can always invent a nicer story if pushed' earns near-zero; credit goes to the restored-curiosity reading that names a curiosity-versus-reassurance test which could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "Late in a successful treatment, a patient dreads ending, convinced his doubts will overwhelm him without the therapist on call to consult — yet during a recent two-week absence he managed those doubts himself using their shared approach, with only a small, brief dip. In one paragraph, propose the strongest conclusion about what is happening and describe how you would test it.",
+      "A patient mentalizes thoughtfully about colleagues and friends all session, but the moment her therapist mentions reducing to every other week she snaps into flat certainty that she is being discarded for being 'too much,' unable to consider any other reason. In one paragraph, propose the strongest conclusion about what is happening and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that the patient has been relying on the therapist as an external source of certainty he has not yet fully taken inside, but the survived absence shows he is closer to internalizing that function than his dread admits — so the remaining work is to transfer the steadying, doubt-tolerating stance inward rather than to keep him dependent on consultation. This is a strong claim because it predicts checkable consequences: his ability to manage doubts during separations should improve across successive breaks rather than stay flat; he should increasingly be able to evoke the therapist's stance on his own when anxious; and brief, planned separations should lower his dread of ending rather than confirm it. I would test it by measuring the size and length of his dips across successive absences, by checking whether he can call the shared approach to mind unprompted when doubt strikes, and by using short planned breaks to see whether the termination dread falls.",
+        "The strongest conclusion is that her mentalizing is intact until the attachment system is activated and then collapses: she reasons well about minds all session, but the threat of being 'discarded' switches off curiosity about the therapist's mind and replaces it with the psychic-equivalent certainty that the schedule change means she is too much. This is a strong claim because it predicts checkable consequences: her loss of perspective should be specific to attachment-threat moments while she mentalizes well about everyone else in the same hour; the certainty about the schedule change should admit no alternative reading; and it should ease as the threat is explicitly named and her arousal settles rather than persisting as a reasoned judgment. I would test it by checking whether her collapse is confined to attachment-threat cues, whether she can hold any alternative explanation for the reduction, and whether naming the abandonment fear and lowering her arousal restores her perspective — a certainty that persists across calm, careful reflection would refute the reading.",
       yieldAnchors: [
-        "He dreads ending without the therapist on call",
-        "He managed a two-week absence himself",
-        "The dip was small and brief",
+        "She mentalizes well about colleagues and friends all session",
+        "A schedule reduction triggers flat certainty of being discarded",
+        "She cannot consider any other reason for the change",
       ],
       riskAnchors: [
-        "Dip size shrinks across successive breaks",
-        "He can evoke the therapist's stance unprompted",
-        "Planned separations lower the dread of ending",
+        "The collapse is specific to attachment-threat moments",
+        "The certainty admits no alternative reading",
+        "It eases as the threat is named and arousal settles",
       ],
       defeatedBy: [
-        "His dips stay just as large at every break",
-        "He cannot manage doubts at all without consulting",
+        "Her certainty persists across calm, careful reflection",
+        "She loses perspective on neutral topics too, not just attachment ones",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that the patient has been relying on the therapist as an external source of certainty he has not yet fully taken inside, but the survived absence shows he is closer to internalizing that function than his dread admits — so the remaining work is to transfer the steadying, doubt-tolerating stance inward rather than to keep him dependent on consultation. This is a strong claim because it predicts checkable consequences: his ability to manage doubts during separations should improve across successive breaks rather than stay flat; he should increasingly be able to evoke the therapist's stance on his own when anxious; and brief, planned separations should lower his dread of ending rather than confirm it. I would test it by measuring the size and length of his dips across successive absences, by checking whether he can call the shared approach to mind unprompted when doubt strikes, and by using short planned breaks to see whether the termination dread falls.",
+      "The strongest conclusion is that her mentalizing is intact until the attachment system is activated and then collapses: she reasons well about minds all session, but the threat of being 'discarded' switches off curiosity about the therapist's mind and replaces it with the psychic-equivalent certainty that the schedule change means she is too much. This is a strong claim because it predicts checkable consequences: her loss of perspective should be specific to attachment-threat moments while she mentalizes well about everyone else in the same hour; the certainty about the schedule change should admit no alternative reading; and it should ease as the threat is explicitly named and her arousal settles rather than persisting as a reasoned judgment. I would test it by checking whether her collapse is confined to attachment-threat cues, whether she can hold any alternative explanation for the reduction, and whether naming the abandonment fear and lowering her arousal restores her perspective — a certainty that persists across calm, careful reflection would refute the reading.",
     explanation:
-      "The inverted standard gives near-zero to 'ending is scary for everyone, it means nothing'; top credit goes to the internalization reading that names a shrinking-dips-across-breaks test as its own refutation.",
+      "The inverted standard gives near-zero to 'anyone would feel bad about fewer sessions'; top credit goes to the attachment-triggered-collapse reading that names a specific-to-attachment-threat test as its own refutation.",
   },
 ];
 
 export const section: SectionContent = {
-  slug: "therapeutic-relationship-ocd",
-  title: "The Therapeutic Relationship in OCD Treatment",
+  slug: "mentalization-mbt",
+  title: "Mentalization: Learning to Read Minds, Including One's Own (MBT)",
   weekNumber: 1,
   blurb:
-    "In OCD treatment the therapy relationship is both a tool and a stage: the same doubting, checking, and reassurance-seeking that drive the disorder show up live with the therapist, and the working alliance becomes the place to recognize them and practice tolerating uncertainty.",
-  lectureTitle: "1.5 The Therapeutic Relationship in OCD Treatment",
-  body: `# The Therapeutic Relationship in OCD Treatment
+    "Mentalizing is the ordinary capacity to read behavior in terms of minds — our own and others'. In BPD it collapses under attachment stress into non-mentalizing modes where thoughts feel like facts, only actions count as proof, or talk floats free of feeling; MBT works by restoring curiosity about minds.",
+  lectureTitle:
+    "1.5 Mentalization: Learning to Read Minds, Including One's Own (MBT)",
+  body: `# Mentalization: Learning to Read Minds, Including One's Own (MBT)
 
-It is tempting to picture treatment for obsessive-compulsive disorder as a set of techniques handed to a patient from across the room — exposures to do, rituals to resist, worksheets to fill in. But the relationship between patient and therapist is never just the backdrop. With OCD it is doubly important: the bond is the platform that makes frightening work possible, and it is also a stage on which the very symptoms — the doubting, the checking, the reassurance-seeking — quietly re-stage themselves. Learning to see the disorder play out live, in the room, is one of the most useful skills in the work.
+We spend most of our lives quietly guessing at minds. A friend goes quiet and we wonder if she is tired or hurt; a partner is short with us and we consider that his day was hard before deciding he is angry. This ordinary, mostly automatic act of understanding behavior in terms of mental states — feelings, intentions, beliefs, desires — is called **mentalizing**. In borderline personality disorder this capacity is not absent, but it is fragile: under the heat of a close relationship it can switch off in an instant. Mentalization-based treatment (MBT) is built on a simple, powerful idea — that helping the mind come back online is itself the therapy.
 
-## The alliance: tool and stage
+## What mentalizing is
 
-A trusting **working alliance** does real work in OCD treatment. A patient terrified of touching a "contaminated" surface will attempt it far sooner with someone she believes won't trick her or abandon her mid-panic. So the bond is a tool — the platform a technique like exposure stands on. But it is also a stage: the same patterns that run her life will, sooner or later, run in the relationship too. The strong move is to treat both at once — to use the bond and to read what shows up on it.
+Mentalizing means holding minds in mind: seeing that your own behavior springs from inner states, and that other people's does too, and treating those states as real but uncertain — knowable only by tentative guessing, never by proof. A person who mentalizes well can say "I felt rejected, but maybe he was just preoccupied," keeping the gap open between a feeling and a fact. It is a balancing act between thinking about yourself and thinking about others, and between what you feel and what you can know. The strong move in this course is to read which way that balance has tipped.
 
-## Reassurance-seeking moves into the room
+## When mentalizing collapses
 
-The most common way OCD enters the relationship is reassurance-seeking. "You're sure I'm not a bad person?" "Promise nothing bad will happen if I don't wash." Each answer brings a few seconds of relief — and that relief is exactly the problem. Because relief rewards the asking, answering trains the patient to ask again, so well-meant reassurance feeds the loop it seems to soothe. The tell is always the same: relief is brief, a new version of the question follows, and the asking clusters on the feared theme rather than on ordinary topics.
+The thing that most reliably knocks mentalizing offline is **attachment stress** — the very closeness that matters most. When someone with BPD feels rejected, abandoned, or threatened in a relationship, arousal spikes and the capacity to imagine minds shuts down, replaced by older, cruder ways of experiencing inner life. These are the **non-mentalizing modes**. The useful clinical question is never just "is she upset?" but "which mode is she in, and what knocked her into it?" — because each mode has a tell and each has a way back.
 
-## The therapist as the feared judge
+## Psychic equivalence: thoughts felt as reality
 
-Patients often arrive expecting that if they reveal their worst intrusive thoughts — of harm, of taboo, of blasphemy — the listener will be horrified and turn away. That expectation gets laid onto the therapist, who becomes, in the patient's mind, the condemning judge. This is **transference**, and you can read it from what gets hidden: the patient is candid about neutral symptoms but goes vague exactly where condemnation is feared. The strong reading names the transferred judge and tests it — does the avoidance track the feared themes specifically, and does a calm, non-condemning response open the rest?
+In **psychic equivalence**, the gap between a thought and reality closes: what is felt is simply taken to be true. "He didn't text back, so he hates me — full stop." There is no "maybe," no alternative; the inner state is experienced as a fact about the world, and no benign explanation can get a foothold. You can read it from the totality of the certainty: it admits no other reading, it ignites precisely with the attachment threat, and — the cheap test — it tends to soften once arousal drops or curiosity about the other's mind is genuinely invited.
 
-## When the room becomes the place for response prevention
+## Teleological mode: only actions count
 
-The same relationship that can supply reassurance can also, deliberately, withhold it. When a therapist warmly declines to promise safety and instead stays with the patient through the surge of dread, something instructive happens: the anxiety peaks and then fades on its own, a little faster each time. That spike-then-settle is **response prevention** running inside the alliance — lived evidence that the feared catastrophe doesn't come and the relief need not be supplied from outside. The clean test is whether the dread settles without the promise and whether caving and reassuring leaves the urge stronger next time.
+In **teleological mode**, mental states can be believed only when they are cashed out in physical action. Words of care mean nothing; only a concrete deed — answering instantly, handing over a phone number, showing up at the door — proves that someone cares. Self-harm can serve here too: when an inner pain feels unrecognizable unless it has a visible form, a wound becomes the only proof the pain is real and believed. The tell is that words and reliability never land while only a physical demonstration satisfies; the test is whether being genuinely understood, without any deed, reduces the demand.
 
-## Checking, control, and "just right" with the therapist
+## Pretend mode: talk without feeling
 
-OCD does not only show up as reassurance-seeking. A patient may scan the therapist's face for signs of disapproval — a checking compulsion run on the relationship. Another must square the tissue box and restart her opening sentence until it "sounds right" — a "just right" compulsion enacted in session. Another saves his most disturbing thought for the final second, so a confession discharges the guilt while the timing guarantees he never has to sit with the thought. Each of these is the disorder using the room. Seeing it lets you work with it directly rather than only hearing about it secondhand.
+In **pretend mode**, talk about feelings becomes detached from the feelings themselves. A patient can analyze her "abandonment schema" fluently, with all the right terms, and remain entirely untouched as she does so, while her life outside never changes. The words float free of any real affect; the insight is a defense against contact with experience, not evidence of it. The tell is fluency with no feeling and no change; the test is whether slowing her to a single concrete moment lets real emotion enter or whether the smooth, conceptual flow simply resumes.
 
-## Surviving the disclosure
+## How MBT restores curiosity
 
-A pivotal moment in OCD treatment often comes when a patient finally risks the confession he was sure would end everything — and the therapist responds with calm, ordinary understanding instead of alarm. That non-horrified response is a **corrective experience**: it contradicts the certainty that disclosure brings condemnation, and it is frequently what unlocks the rest of the obsessions. The strong reading commits to that mechanism and names a test — the opening should date to the calm response, the hidden content should match the feared-condemnation themes, and any real sign of alarm should shut him back down.
+MBT does not try to win arguments about whose version of reality is correct. When a patient collapses into certainty — "you're sick of me" — the therapist does the opposite of arguing or reassuring: he **stops and stands back**, marks his own not-knowing, and invites joint curiosity about the moment the conviction hit. Lowering arousal and modeling a tentative, "I wonder what was going on" stance is what brings mentalizing back online. The active ingredient is curiosity about minds, so the clean test is whether certainty softens specifically when curiosity is invited rather than when the patient is reassured — and whether arguing the facts instead only hardens it.
 
-## Reading the dynamic — and naming a test
+## Reading the mode — and naming a test
 
-The discipline this course trains applies sharply here: read the pattern playing out between you, commit to the richest account of what it is doing, and name the cheapest observation that would tell you if you are wrong. Is the questioning a compulsion? Then relief should be brief and a planned stretch of not answering should reduce the asking. Is the office caution a contamination ritual? Then it should appear only in flare weeks and vanish in calm ones. Is the dread of ending unfinished internalization? Then the dips around each break should shrink over time. The weak move is to shrug — "people seek reassurance," "ending is scary for everyone" — which explains nothing and tests nothing.
+The discipline this course trains applies sharply here: when a mind goes offline, commit to which mode is running and name the cheapest observation that would tell you if you are wrong. Is it psychic equivalence? Then the certainty should admit no alternatives and should loosen as arousal falls. Teleological mode? Then only actions, never words, should satisfy. Pretend mode? Then there should be fluent talk, no feeling, and no change. Beware two weak moves. One is the nihilistic shrug — "you can never know what anyone is thinking" — which sounds humble but is itself a collapse, a giving-up on minds rather than the careful guessing mentalizing requires. The other is claiming to know someone's exact intent for certain — which is not insight at all but psychic equivalence wearing a confident face.
 
 ## In the real world
 
-Suppose a friend in OCD treatment tells you, "My therapist won't just tell me it's fine anymore, and somehow I'm getting better." The dismissive read is that the therapist is being withholding for no reason. The trained read treats the relationship as the place the disorder is being worked: by not supplying the reassurance that fed the loop, the therapist is letting your friend learn that the dread passes on its own. If that account is right, her urge to ask should fall over time, her relief should no longer depend on being told it's fine, and the same change should generalize beyond the therapy room. Notice what this buys you — not a vague tribute to "a good relationship," but a testable claim about how the bond is being used to dismantle the very symptoms it once carried.`,
+Suppose a friend tells you, "My partner didn't call when he said he would, so I know he's done with me — I just know it." The dismissive read is to argue the facts ("I'm sure he still loves you") or to shrug that no one can know. The trained read names the mode: this is psychic equivalence, a feeling of abandonment experienced as a certain fact, knocked online by the attachment threat. If that account is right, your friend's certainty should admit no alternatives at its peak, should track how panicked she feels, and should ease if you can lower the heat and gently wonder aloud what else a missed call could mean. Notice what this buys you — not a tug-of-war over reality and not a helpless "who can say," but a testable claim about which way a mind has tipped and the cheapest move that would bring it back.`,
   homework: {
     mcq,
     hybrid,

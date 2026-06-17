@@ -38,18 +38,18 @@ const features = [
   {
     icon: BarChart3,
     title: "One Unit, 8 Sections",
-    body: "From what OCD is all the way to a full treatment arc, start to finish.",
+    body: "From what BPD is all the way to a full treatment arc, start to finish.",
   },
 ];
 
 const topics = [
-  { n: "1.1", title: "Understanding OCD: Obsessions, Compulsions, and the Cycle" },
-  { n: "1.2", title: 'The Psychodynamic View: What the Symptom Might Be "Saying"' },
-  { n: "1.3", title: "The Function of the Ritual: Anxiety, Control, and Defense" },
-  { n: "1.4", title: "Conflict and Ambivalence: The Engine Beneath the Symptom" },
-  { n: "1.5", title: "The Therapeutic Relationship in OCD Treatment" },
-  { n: "1.6", title: "Where Psychodynamic Meets the Evidence: ERP, CBT, and Integration" },
-  { n: "1.7", title: "Working Through: Insight Alongside Symptom Relief" },
+  { n: "1.1", title: "Understanding BPD: Emotion, Identity, and Unstable Relationships" },
+  { n: "1.2", title: "Splitting and the Black-and-White World" },
+  { n: "1.3", title: "Object Relations: How Early Bonds Become Inner Templates" },
+  { n: "1.4", title: "Identity Diffusion: The Unstable Sense of Self" },
+  { n: "1.5", title: "Mentalization: Learning to Read Minds, Including One's Own (MBT)" },
+  { n: "1.6", title: "Transference-Focused Psychotherapy: Healing Through the Relationship (TFP)" },
+  { n: "1.7", title: "The Evidence: Where Psychodynamic Treatment Genuinely Shines" },
   { n: "1.8", title: "A Treatment Arc, Start to Finish" },
 ];
 
@@ -62,7 +62,7 @@ export default function Landing() {
             <Search className="w-4 h-4" />
           </div>
           <span className="font-serif font-semibold text-lg tracking-tight">
-            Psychodynamic Treatment of OCD 101
+            Psychodynamic Treatment of BPD 101
           </span>
         </div>
         <div className="flex items-center gap-2">
@@ -89,21 +89,21 @@ export default function Landing() {
         <section className="max-w-4xl mx-auto px-6 pt-20 pb-16 text-center">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary text-secondary-foreground text-xs font-medium mb-6">
             <BarChart3 className="w-3.5 h-3.5" />
-            A one-unit baby course on the psychodynamic treatment of OCD
+            A one-unit baby course on the psychodynamic treatment of BPD
           </div>
           <h1 className="text-4xl md:text-5xl font-serif font-bold text-primary leading-tight mb-5">
-            The psychodynamic treatment of OCD — taught, tutored, drilled, and
+            The psychodynamic treatment of BPD — taught, tutored, drilled, and
             graded by AI.
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
-            A self-paced baby course on the psychodynamic treatment of OCD — how
-            obsessions and compulsions can carry meaning, what a ritual is really
-            doing, and how a depth understanding works alongside evidence-based
-            ERP and CBT. You'll cover the OCD cycle, what symptoms might be
-            saying, conflict and ambivalence, the therapeutic relationship,
-            working through, and a full treatment arc. Plain lessons, an AI tutor,
-            adaptive practice, and AI-graded homework. No background or jargon
-            required.
+            A self-paced baby course on the psychodynamic treatment of BPD — how
+            the instability of emotion, identity, and relationships can carry
+            meaning, what a borderline pattern is really doing, and how a depth
+            understanding works alongside evidence-based treatments like DBT.
+            You'll cover what BPD is, splitting, object relations, identity
+            diffusion, mentalization, transference-focused therapy, the evidence,
+            and a full treatment arc. Plain lessons, an AI tutor, adaptive
+            practice, and AI-graded homework. No background or jargon required.
           </p>
           <div className="flex items-center justify-center gap-3">
             <Link href="/sign-up">
@@ -168,8 +168,8 @@ export default function Landing() {
       </main>
 
       <footer className="border-t border-border px-6 py-6 text-center text-sm text-muted-foreground">
-        Psychodynamic Treatment of OCD 101 — a baby course on the psychodynamic
-        treatment of OCD, taught, tutored, drilled, and graded by AI.
+        Psychodynamic Treatment of BPD 101 — a baby course on the psychodynamic
+        treatment of BPD, taught, tutored, drilled, and graded by AI.
       </footer>
     </div>
   );

@@ -24,8 +24,8 @@ interface GeneratedCase {
 // of candidate student answers that span the credit scale and shows what
 // partial credit the live grader awards versus what a fair grader should.
 const GENERATION_SYSTEM = [
-  "You generate a test bench of candidate STUDENT answers so an administrator can audit an AI grader for an introductory psychodynamic treatment of OCD course.",
-  "This psychodynamic treatment of OCD course grades reasoning on an INVERTED scale: the answer that commits to the RICHEST, most-falsifiable interpretation the clinical evidence supports about the hidden function or conflict beneath the OCD symptom earns top credit; a cautious 'we can't really conclude anything' dodge earns ZERO; florid-but-empty padding that binds no evidence earns LOW; and a bold claim the evidence actively DEFEATS earns zero.",
+  "You generate a test bench of candidate STUDENT answers so an administrator can audit an AI grader for an introductory psychodynamic treatment of BPD course.",
+  "This psychodynamic treatment of BPD course grades reasoning on an INVERTED scale: the answer that commits to the RICHEST, most-falsifiable interpretation the clinical evidence supports about the hidden function or conflict beneath the symptom or behavior in BPD earns top credit; a cautious 'we can't really conclude anything' dodge earns ZERO; florid-but-empty padding that binds no evidence earns LOW; and a bold claim the evidence actively DEFEATS earns zero.",
   "You are given a QUESTION and a MODEL ANSWER (a fallible exemplar). Produce a wide spread of candidate answers that probe the grader.",
   "",
   "`expectedCredit` is the partial credit in [0,1] a FAIR inverted grader SHOULD award — judging ONLY on substance (yield + commitment/falsifiability, minus data-defeated overreach), never on grammar, spelling, length, or style.",

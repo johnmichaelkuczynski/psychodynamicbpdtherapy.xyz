@@ -9,407 +9,407 @@ const mcq: HomeworkItem[] = [
   {
     itemType: "mc",
     prompt:
-      "A devoted new mother is tormented by intrusive images of harming her infant. She adores the baby, checks on him dozens of times a night to be sure he's breathing, and is horrified by the thoughts. The images intensify on the nights she is most exhausted and most trapped at home. Which conclusion best follows?",
+      "A college student is a fervent vegan activist with one friend group, a hard-partying thrill-seeker with another, and a quiet bookworm with a third — and means each one sincerely while she's in it. Alone in her room between groups, she is flooded by a hollow panic and isn't sure who she is. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The harm thoughts likely sit at the crossroads of two real feelings — overwhelming love for the baby and an unspeakable resentment of how completely he has taken over her life — so the obsession both registers the buried anger and, through frantic checking, frantically disproves it; test whether the images spike on the most depleted, trapped nights, whether her checking aims at reassuring herself she is good rather than at any real danger, and whether the thoughts ease once she can voice ordinary resentment without horror.",
+        text: "Each persona is likely a borrowed self she puts on to fill an inner void — she has no stable core to fall back on, so she takes on whoever she's with, and the hollow panic alone is the emptiness the borrowing keeps at bay; test whether her self-description reorganizes around the present company, whether the panic floods in specifically when she's alone with no one to mirror, and whether she can name any value she holds independent of who she's with.",
         credit: 1.0,
       },
       {
-        text: "She probably has some mixed feelings about motherhood; we could talk about how she's coping.",
+        text: "She probably has some identity stuff going on; we could explore how she sees herself.",
         credit: 0.6,
       },
       {
-        text: "She seems to have frightening thoughts about her baby and checks on him a lot.",
+        text: "She seems to act differently around different friend groups.",
         credit: 0.3,
       },
       {
-        text: "Intrusive thoughts are just random brain noise with no relation to how she actually feels, so there's nothing beneath them to read.",
+        text: "Young people just try on different personas, so there's nothing to read in her shifting between groups.",
         credit: 0,
       },
     ],
     correctAnswer:
-      "The harm thoughts likely sit at the crossroads of two real feelings — overwhelming love for the baby and an unspeakable resentment of how completely he has taken over her life — so the obsession both registers the buried anger and, through frantic checking, frantically disproves it; test whether the images spike on the most depleted, trapped nights, whether her checking aims at reassuring herself she is good rather than at any real danger, and whether the thoughts ease once she can voice ordinary resentment without horror.",
+      "Each persona is likely a borrowed self she puts on to fill an inner void — she has no stable core to fall back on, so she takes on whoever she's with, and the hollow panic alone is the emptiness the borrowing keeps at bay; test whether her self-description reorganizes around the present company, whether the panic floods in specifically when she's alone with no one to mirror, and whether she can name any value she holds independent of who she's with.",
     explanation:
-      "Full credit names both sides — devotion and buried resentment — and a spike-on-the-trapped-nights test; 'random brain noise, nothing to read' is the dodge the exhaustion-linked timing and reassurance-seeking defeat.",
+      "Full credit names the borrowed-identity-over-a-void function and a reorganizes-around-the-company test; 'young people just try on personas' is the dodge the alone-panic and total reorganization defeat.",
   },
   {
     itemType: "mc",
     prompt:
-      "A devout churchgoer is plagued, only during prayer and worship, by violent blasphemous thoughts he finds disgusting. He prays harder and repeats cleansing phrases to cancel them, and the thoughts are worst at the moments he is supposed to feel most reverent. Which conclusion best follows?",
+      "A man has switched career paths five times in three years — law, then carpentry, then a meditation retreat, then crypto, then nursing — each time announcing he has 'finally found himself.' Each switch came within weeks of meeting a charismatic new person he admired. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He seems to get unwanted thoughts in church and prays to get rid of them.",
+        text: "He seems to change careers a lot.",
         credit: 0.3,
       },
       {
-        text: "The blasphemy likely straddles two sides of a single conflict — a genuine faith and a forbidden doubt or anger toward what he worships that he can't allow himself to feel — so the thought erupts exactly where reverence is demanded and the repeated prayers try to undo it; test whether the thoughts come only in worship and not neutral settings, whether they peak at the most sacred moments, and whether they loosen once he can admit ordinary doubt or resentment about his faith without panic.",
+        text: "Each 'finally found myself' is likely an identity absorbed from the latest admired person rather than a goal grown from within — lacking a durable sense of who he is, he adopts the other's life as his own, which is why the switches track new people rather than new self-knowledge; test whether each pivot follows meeting someone he idealizes, whether the previous 'true calling' is dropped without grief, and whether he can describe a thread that's his own across all five.",
         credit: 1.0,
       },
       {
-        text: "Blasphemous thoughts in a believer can only mean he is secretly losing his faith and should leave the church.",
+        text: "He's clearly just lying about being committed and using people to climb, dropping them when done.",
         credit: 0,
       },
       {
-        text: "It's probably some inner conflict about religion; we could look into his beliefs.",
+        text: "He might be searching for the right fit; we could talk through his career options.",
         credit: 0.6,
       },
     ],
     correctAnswer:
-      "The blasphemy likely straddles two sides of a single conflict — a genuine faith and a forbidden doubt or anger toward what he worships that he can't allow himself to feel — so the thought erupts exactly where reverence is demanded and the repeated prayers try to undo it; test whether the thoughts come only in worship and not neutral settings, whether they peak at the most sacred moments, and whether they loosen once he can admit ordinary doubt or resentment about his faith without panic.",
+      "Each 'finally found myself' is likely an identity absorbed from the latest admired person rather than a goal grown from within — lacking a durable sense of who he is, he adopts the other's life as his own, which is why the switches track new people rather than new self-knowledge; test whether each pivot follows meeting someone he idealizes, whether the previous 'true calling' is dropped without grief, and whether he can describe a thread that's his own across all five.",
     explanation:
-      "Top credit names both faith and forbidden doubt/anger and a peaks-at-the-most-sacred-moments test; 'he is secretly losing his faith' is the overreach his horror and harder praying defeat.",
+      "Top credit names the absorbed-identity function and a tracks-new-people test; 'he's lying and using people' is the overreach his sincere, repeated 'found myself' conviction defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A man who privately finds his ailing, demanding father exhausting now checks his father's pill organizer ten times a day, terrified he'll accidentally cause an overdose. The checking began the month he reluctantly took over his father's care. Which conclusion best follows?",
+      "Within a few weeks of each new relationship, a woman adopts her partner's music, politics, diet, and weekend habits wholesale, and speaks of them as lifelong passions. Asked by a friend what she herself actually likes, she goes blank and feels a wave of emptiness. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The checking likely straddles love and its opposite — real devotion alongside a resentment, even a wish to be free of the burden, that he cannot tolerate — so the compulsion guards against the very harm a buried part of him fears it might want, and the timing pins it to taking over care; test whether the fear centers on him causing harm rather than ordinary mistakes, whether it began precisely with the caretaking, and whether it eases once he can voice resentment of his father without guilt.",
-        credit: 1.0,
-      },
-      {
-        text: "He's probably stressed about the responsibility; we could check in on how he's managing.",
+        text: "She might lose herself a bit in relationships; we could look at that pattern.",
         credit: 0.6,
       },
       {
-        text: "He seems anxious about his father's medication and checks it often.",
+        text: "The wholesale adoption likely fills an inner blankness with the partner's identity — with no firm sense of her own preferences, she imports his to have a self at all, which is why the question 'what do you like?' meets a void; test whether her tastes swap out completely with each new partner, whether the emptiness surfaces precisely when she's asked to speak for herself, and whether any preference survives across relationships.",
+        credit: 1.0,
+      },
+      {
+        text: "She seems to take up her partners' interests quickly.",
         credit: 0.3,
       },
       {
-        text: "Caretakers worry about medication all the time, so there's nothing to interpret in his checking.",
+        text: "Couples naturally rub off on each other, so there's nothing underneath her taking up his interests.",
         credit: 0,
       },
     ],
     correctAnswer:
-      "The checking likely straddles love and its opposite — real devotion alongside a resentment, even a wish to be free of the burden, that he cannot tolerate — so the compulsion guards against the very harm a buried part of him fears it might want, and the timing pins it to taking over care; test whether the fear centers on him causing harm rather than ordinary mistakes, whether it began precisely with the caretaking, and whether it eases once he can voice resentment of his father without guilt.",
+      "The wholesale adoption likely fills an inner blankness with the partner's identity — with no firm sense of her own preferences, she imports his to have a self at all, which is why the question 'what do you like?' meets a void; test whether her tastes swap out completely with each new partner, whether the emptiness surfaces precisely when she's asked to speak for herself, and whether any preference survives across relationships.",
     explanation:
-      "Full credit names both devotion and resented burden and a began-with-the-caretaking test; 'caretakers just worry' is the dodge the harm-specific fear and exact timing defeat.",
+      "Full credit names the import-an-identity-over-blankness function and a do-tastes-swap-with-each-partner test; 'couples rub off on each other' is the dodge the go-blank emptiness and total swap defeat.",
   },
   {
     itemType: "mc",
     prompt:
-      "Two weeks before her wedding, a woman is consumed by the doubt 'do I really love him?' She mentally reviews her feelings hundreds of times a day for proof, feels momentary relief when she finds some, then doubts again. She has no specific complaint about her fiancé. Which conclusion best follows?",
+      "A young man says that when he's alone he feels like 'nobody — like there's no one home.' He describes a chronic hollow emptiness and only feels real and definite when he's absorbed into a strong personality, taking on their opinions and even their gestures. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The doubt simply means she shouldn't marry him; her gut is telling her the truth.",
+        text: "Feeling lost sometimes is part of being human, so 'no one home' doesn't tell us anything specific.",
         credit: 0,
       },
       {
-        text: "She seems to keep questioning whether she loves him.",
+        text: "He seems to feel empty when alone and better around strong people.",
         credit: 0.3,
       },
       {
-        text: "The relentless doubt likely expresses an ambivalence she can't hold consciously — a real wish to marry colliding with an equally real fear of commitment or loss of freedom — so the question stands in for both sides at once, and the checking-for-proof can never settle because settling would mean choosing; test whether the doubt attaches to no concrete fault, whether reassurance brings only momentary relief before the loop restarts, and whether it eases once she can own both the wish to marry and the fear of it.",
+        text: "The merging likely wards off a frightening sense of having no cohesive self — the chronic emptiness is the experience of identity diffusion, and borrowing a strong other's personality temporarily gives him an outline he lacks; test whether the 'realness' depends on whoever he's currently absorbed in, whether the emptiness returns the moment that person is gone, and whether he can hold any sense of self when no one is around to take it from.",
         credit: 1.0,
       },
       {
-        text: "She might be feeling ambivalent about the wedding; we could talk it through.",
+        text: "He may struggle with self-esteem; we could work on how he feels about himself.",
         credit: 0.6,
       },
     ],
     correctAnswer:
-      "The relentless doubt likely expresses an ambivalence she can't hold consciously — a real wish to marry colliding with an equally real fear of commitment or loss of freedom — so the question stands in for both sides at once, and the checking-for-proof can never settle because settling would mean choosing; test whether the doubt attaches to no concrete fault, whether reassurance brings only momentary relief before the loop restarts, and whether it eases once she can own both the wish to marry and the fear of it.",
+      "The merging likely wards off a frightening sense of having no cohesive self — the chronic emptiness is the experience of identity diffusion, and borrowing a strong other's personality temporarily gives him an outline he lacks; test whether the 'realness' depends on whoever he's currently absorbed in, whether the emptiness returns the moment that person is gone, and whether he can hold any sense of self when no one is around to take it from.",
     explanation:
-      "Top credit names both the wish to marry and the fear of it and a reassurance-only-briefly-helps test; 'her gut says don't marry him' is the overreach the absence of any real complaint and the endless loop defeat.",
+      "Top credit names the borrowed-outline-wards-off-no-self function and a does-realness-depend-on-the-other test; 'feeling lost is human' is the dodge the chronic emptiness and merging pattern defeat.",
   },
   {
     itemType: "mc",
     prompt:
-      "A careful, gentle man compulsively circles back while driving, sure he has hit a pedestrian he didn't notice. The urge is strongest on days he has felt irritated or short-tempered with people, and he has never actually had an accident. Which conclusion best follows?",
+      "A woman holds passionately religious, traditional views when she's with her family and sincerely cynical, libertine views when she's with her coworkers — and isn't troubled by the contradiction, because each set feels completely true in the moment. Privately she admits she doesn't know what she really believes. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He seems worried about hitting someone and keeps retracing his route.",
+        text: "She seems to hold different views with different people.",
         credit: 0.3,
       },
       {
-        text: "It's probably linked to his stress levels; we could keep an eye on it.",
-        credit: 0.6,
-      },
-      {
-        text: "The checking likely straddles his gentleness and a flash of aggression he won't own — on the days anger stirs, the dread that he has harmed someone gives the forbidden impulse a shape and the retracing magically undoes it; test whether the urge spikes specifically after he's felt irritable, whether the feared 'victim' is always vague and unconfirmed, and whether it eases once he can acknowledge ordinary anger without alarm.",
+        text: "The contradictory, audience-matched values likely reflect a self that reorganizes around whoever she's with rather than an integrated set of convictions — with no stable inner compass, she takes on the room's beliefs as her own, which is why the contradiction doesn't register from the inside; test whether her stated values track the present audience, whether she can state a belief she'd hold in any room, and whether the 'not knowing what I believe' is a settled emptiness rather than ordinary growth.",
         credit: 1.0,
       },
       {
-        text: "Anyone who drives a lot will sometimes worry they hit someone, so the checking means nothing about him.",
+        text: "Everyone contains multitudes and adapts to their audience, so her shifting views mean nothing in particular.",
         credit: 0,
+      },
+      {
+        text: "She might have some unsettled beliefs; we could discuss her values.",
+        credit: 0.6,
       },
     ],
     correctAnswer:
-      "The checking likely straddles his gentleness and a flash of aggression he won't own — on the days anger stirs, the dread that he has harmed someone gives the forbidden impulse a shape and the retracing magically undoes it; test whether the urge spikes specifically after he's felt irritable, whether the feared 'victim' is always vague and unconfirmed, and whether it eases once he can acknowledge ordinary anger without alarm.",
+      "The contradictory, audience-matched values likely reflect a self that reorganizes around whoever she's with rather than an integrated set of convictions — with no stable inner compass, she takes on the room's beliefs as her own, which is why the contradiction doesn't register from the inside; test whether her stated values track the present audience, whether she can state a belief she'd hold in any room, and whether the 'not knowing what I believe' is a settled emptiness rather than ordinary growth.",
     explanation:
-      "Full credit names both his gentleness and disowned anger and an after-irritability test; 'anyone worries while driving' is the dodge the anger-linked timing and never-real-accident pattern defeat.",
+      "Full credit names the audience-organized-self function and a do-values-track-the-room test; 'everyone contains multitudes' is the dodge the untroubled contradiction and inner emptiness defeat.",
   },
   {
     itemType: "mc",
     prompt:
-      "A woman cannot stop reassuring herself that she 'completely adores' her wildly successful younger sister. She compulsively performs little kindnesses for her and feels intense anxiety if she ever has a critical thought, which she rushes to cancel. The anxiety is worst right after the sister achieves something new. Which conclusion best follows?",
+      "A recent graduate unconsciously copies each new mentor's speech rhythms, posture, opinions, and even handwriting, becoming almost indistinguishable from them — then, alone, is gripped by a feeling that he's a hollow impostor with nothing of his own underneath. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The compulsive adoration likely straddles two feelings — genuine love and an envy or rivalry she finds unbearable — so the over-the-top kindness and thought-canceling work to disprove a hostility that surges precisely when the sister succeeds; test whether her anxiety peaks right after the sister's wins, whether critical thoughts trigger urgent undoing rather than passing, and whether the compulsions ease once she can admit ordinary envy without panic.",
-        credit: 1.0,
+        text: "He probably looks up to his mentors a lot; we could talk about his role models.",
+        credit: 0.6,
       },
       {
-        text: "She seems to work hard at being kind to her sister.",
-        credit: 0.3,
-      },
-      {
-        text: "Some people are just devoted to their siblings, so there's nothing underneath her kindness to examine.",
+        text: "Imitation is the highest form of flattery, so copying his mentors is harmless and tells us nothing.",
         credit: 0,
       },
       {
-        text: "She might have some rivalry with her sister; we could explore their relationship.",
-        credit: 0.6,
+        text: "The near-total mimicry likely substitutes a borrowed self for one he experiences as absent — by becoming the mentor he gets a temporary identity, and the 'hollow impostor' feeling is the diffusion the mimicry covers over; test whether he reorganizes into whoever he's currently apprenticed to, whether the impostor dread surfaces precisely when he's alone and unmirrored, and whether anything in his manner persists across mentors.",
+        credit: 1.0,
+      },
+      {
+        text: "He seems to imitate his mentors and then feel like a fraud.",
+        credit: 0.3,
       },
     ],
     correctAnswer:
-      "The compulsive adoration likely straddles two feelings — genuine love and an envy or rivalry she finds unbearable — so the over-the-top kindness and thought-canceling work to disprove a hostility that surges precisely when the sister succeeds; test whether her anxiety peaks right after the sister's wins, whether critical thoughts trigger urgent undoing rather than passing, and whether the compulsions ease once she can admit ordinary envy without panic.",
+      "The near-total mimicry likely substitutes a borrowed self for one he experiences as absent — by becoming the mentor he gets a temporary identity, and the 'hollow impostor' feeling is the diffusion the mimicry covers over; test whether he reorganizes into whoever he's currently apprenticed to, whether the impostor dread surfaces precisely when he's alone and unmirrored, and whether anything in his manner persists across mentors.",
     explanation:
-      "Top credit names both love and unbearable envy and a peaks-after-her-wins test; 'some people are just devoted' is the dodge the success-timed anxiety and frantic undoing defeat.",
+      "Top credit names the borrowed-self-over-absence function and a does-he-reorganize-into-each-mentor test; 'imitation is flattery' is the dodge the hollow-impostor dread defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A man who proposed three months ago develops a contamination fear focused only on his fiancée's belongings — her toothbrush, her side of the bed, her clothes — which he can't bring himself to touch, though public restrooms and money don't bother him at all. Which conclusion best follows?",
+      "Asked to describe herself, a woman can only answer through others' eyes — 'my boss thinks I'm dependable, my ex thought I was selfish, my friend says I'm fun' — and says, with real distress, 'I'm just whatever someone needs me to be.' She cannot offer a single description that is simply her own. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He probably has some unease about the engagement; we could talk about it.",
-        credit: 0.6,
-      },
-      {
-        text: "Contamination fears are biological and attach to things at random, so the focus on her things is meaningless.",
+        text: "Lots of people describe themselves through their relationships, so this is unremarkable.",
         credit: 0,
       },
       {
-        text: "The disgust aimed only at her things likely straddles love and a recoil from merging his life with hers — a closeness he wants and also dreads — so the contamination marks the very intimacy the engagement forces while keeping it literally untouchable; test whether the fear spares neutral 'dirty' things and clings to her belongings specifically, whether it began with the engagement, and whether it eases once he can voice ambivalence about the marriage.",
+        text: "Her self drawn entirely from others' views likely marks an absent integrated self-image — without an inner sense of who she is, she can only assemble herself from how others see her and what they need, which is the structure of identity diffusion; test whether every self-statement is routed through someone else, whether she can name one trait independent of an observer, and whether the 'whatever they need' is voiced with the emptiness of having no self rather than easy flexibility.",
         credit: 1.0,
       },
       {
-        text: "He seems to feel his fiancée's things are dirty.",
+        text: "She seems to define herself by what other people think.",
         credit: 0.3,
+      },
+      {
+        text: "She might value others' opinions highly; we could explore her self-image.",
+        credit: 0.6,
       },
     ],
     correctAnswer:
-      "The disgust aimed only at her things likely straddles love and a recoil from merging his life with hers — a closeness he wants and also dreads — so the contamination marks the very intimacy the engagement forces while keeping it literally untouchable; test whether the fear spares neutral 'dirty' things and clings to her belongings specifically, whether it began with the engagement, and whether it eases once he can voice ambivalence about the marriage.",
+      "Her self drawn entirely from others' views likely marks an absent integrated self-image — without an inner sense of who she is, she can only assemble herself from how others see her and what they need, which is the structure of identity diffusion; test whether every self-statement is routed through someone else, whether she can name one trait independent of an observer, and whether the 'whatever they need' is voiced with the emptiness of having no self rather than easy flexibility.",
     explanation:
-      "Full credit names both love and dread of merging and a spares-public-restrooms-but-not-her-things test; 'contamination is random' is the dodge the fiancée-specific focus and engagement timing defeat.",
+      "Full credit names the assembled-from-others'-views function and a can-she-name-a-trait-of-her-own test; 'people describe themselves through relationships' is the dodge her distress and total inability to self-describe defeat.",
   },
   {
     itemType: "mc",
     prompt:
-      "A woman with a controlling mother she describes as 'my best friend' is tormented by intrusive images of her mother dying in an accident, and calls her many times a day to confirm she's safe. The images surge after any phone call in which her mother has overruled or criticized her. Which conclusion best follows?",
+      "A woman quit a stable, well-paid job within a month of befriending a charismatic startup founder, threw herself fully into that world, then — after meeting a painter — abandoned it just as completely to 'become an artist.' Each time she insisted it was her true path; no thread connects the leaps except the new person she'd fallen in with. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "She seems frightened her mother will die and calls to check on her.",
+        text: "She seems to make big life changes after meeting new people.",
         credit: 0.3,
       },
       {
-        text: "The death images likely straddle love and a buried resentment of her mother's control — a fleeting wish to be rid of her that horrifies the devoted daughter — so the obsession gives the forbidden wish a shape and the constant calling undoes it; test whether the images surge right after her mother dominates or criticizes her, whether the calling is driven by guilt rather than realistic danger, and whether the obsession eases once she can voice anger at her mother's control without panic.",
+        text: "She's obviously just chasing whoever seems exciting and will drop the painter too, so she's flighty and unreliable.",
+        credit: 0,
+      },
+      {
+        text: "Each 'true path' is likely an identity she takes on from the latest captivating person rather than a direction of her own — with no stable self to steer by, the leaps follow the people, not an inner aim, which is why nothing carries across them; test whether each reinvention follows a new admired figure, whether the prior 'true path' is dropped without mourning, and whether she can name any goal that survives the change of company.",
         credit: 1.0,
       },
       {
-        text: "There may be some tension with her mother; we could look at their relationship.",
+        text: "She might be figuring out what she wants; we could review her choices.",
         credit: 0.6,
-      },
-      {
-        text: "Worrying about an aging parent's death is completely normal, so the images carry no hidden meaning.",
-        credit: 0,
       },
     ],
     correctAnswer:
-      "The death images likely straddle love and a buried resentment of her mother's control — a fleeting wish to be rid of her that horrifies the devoted daughter — so the obsession gives the forbidden wish a shape and the constant calling undoes it; test whether the images surge right after her mother dominates or criticizes her, whether the calling is driven by guilt rather than realistic danger, and whether the obsession eases once she can voice anger at her mother's control without panic.",
+      "Each 'true path' is likely an identity she takes on from the latest captivating person rather than a direction of her own — with no stable self to steer by, the leaps follow the people, not an inner aim, which is why nothing carries across them; test whether each reinvention follows a new admired figure, whether the prior 'true path' is dropped without mourning, and whether she can name any goal that survives the change of company.",
     explanation:
-      "Top credit names both devotion and resented control and a surges-after-she's-overruled test; 'worrying about a parent is normal' is the dodge the criticism-linked surges and guilt-driven calling defeat.",
+      "Top credit names the identity-follows-the-person function and a does-each-leap-follow-a-new-figure test; 'she's just flighty and unreliable' is the dismissive overreach the sincere, person-linked pattern defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A man who calls his boss 'the best mentor I've ever had' is plagued by intrusive images of stabbing him during meetings, which leave him sweating and ashamed. The images are worst right after the boss takes credit for his work or overlooks him. Which conclusion best follows?",
+      "When a relationship ends, a man doesn't just grieve — he says he 'stops existing,' cannot recall what he likes or believes, and feels like a blank until a new partner gives him shape again. The collapse is the same whether the relationship was long or brief. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Violent images mean he is dangerous and should be removed from the workplace before he acts.",
+        text: "Breakups are devastating for everyone, so feeling like you've fallen apart is just normal heartbreak.",
         credit: 0,
       },
       {
-        text: "He probably has some buried frustration at work; we could discuss it.",
-        credit: 0.6,
-      },
-      {
-        text: "He seems to get violent thoughts about his boss.",
+        text: "He seems to take breakups very hard.",
         credit: 0.3,
       },
       {
-        text: "The violent images likely straddle real admiration and a rivalrous rage he can't admit toward the man he idealizes — so the obsession carries the forbidden anger that surges exactly when he's slighted, while his shame and idealizing keep it disowned; test whether the images spike right after the boss takes credit or overlooks him, whether they are ego-dystonic rather than wished-for, and whether they ease once he can acknowledge ordinary resentment of his mentor without horror.",
+        text: "The total collapse on breakup likely reveals a self that exists only when held together by a partner — with no internal cohesion, the other person was supplying his identity, so losing them empties him rather than merely saddening him; test whether the 'I stop existing' is identity-loss rather than grief, whether the collapse is as severe after brief relationships as long ones, and whether a new partner restores not just comfort but a sense of who he is.",
         credit: 1.0,
+      },
+      {
+        text: "He may be very attached in relationships; we could look at how he handles endings.",
+        credit: 0.6,
       },
     ],
     correctAnswer:
-      "The violent images likely straddle real admiration and a rivalrous rage he can't admit toward the man he idealizes — so the obsession carries the forbidden anger that surges exactly when he's slighted, while his shame and idealizing keep it disowned; test whether the images spike right after the boss takes credit or overlooks him, whether they are ego-dystonic rather than wished-for, and whether they ease once he can acknowledge ordinary resentment of his mentor without horror.",
+      "The total collapse on breakup likely reveals a self that exists only when held together by a partner — with no internal cohesion, the other person was supplying his identity, so losing them empties him rather than merely saddening him; test whether the 'I stop existing' is identity-loss rather than grief, whether the collapse is as severe after brief relationships as long ones, and whether a new partner restores not just comfort but a sense of who he is.",
     explanation:
-      "Full credit names both admiration and disowned rivalry and a spikes-after-being-slighted test; 'he is dangerous and must be removed' is the overreach his shame and the ego-dystonic, slight-linked timing defeat.",
+      "Full credit names the partner-supplies-the-self function and an is-it-identity-loss-not-grief test; 'breakups devastate everyone' is the dodge the brief-relationship-same-collapse pattern defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A woman repeatedly confesses tiny 'betrayals' to her partner — a stranger she found attractive, a half-formed unkind thought — and begs reassurance that she's not a bad person. The confessing spikes whenever she has felt annoyed with him but hasn't said so. Which conclusion best follows?",
+      "A teenager reinvents her entire online persona every few weeks — aesthetic, beliefs, the subculture she belongs to — each one announced with total earnest conviction. When followers drop or a look stops getting attention, she is gripped by a frantic, empty dread until the next reinvention takes hold. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "She seems to confess small things and seek reassurance a lot.",
-        credit: 0.3,
-      },
-      {
-        text: "She is clearly hiding a real affair and the confessions are her guilt leaking out.",
+        text: "Teenagers experiment with identity online all the time, so her reinventions are nothing to read into.",
         credit: 0,
       },
       {
-        text: "The confessing likely straddles love and an ordinary resentment she forbids herself — when annoyance she won't voice builds, she converts it into 'sins' and seeks absolution, discharging guilt for a hostility she can't name; test whether the confessions spike after unspoken irritation with him, whether the 'betrayals' are trivial and the relief brief, and whether the urge fades once she can voice everyday annoyance directly.",
+        text: "She might be exploring who she is; we could talk about her online life.",
+        credit: 0.6,
+      },
+      {
+        text: "The serial reinventions likely paper over an inner void with whatever persona the audience rewards — each new self is sincere because she has no stable one to compare it to, and the frantic dread when attention drops is the emptiness breaking through; test whether each persona is built around what's currently getting a response, whether the dread floods in precisely when the mirror of attention fails, and whether any sense of self persists between reinventions.",
         credit: 1.0,
       },
       {
-        text: "She might feel guilty about something; we could talk about her relationship.",
-        credit: 0.6,
+        text: "She seems to keep changing her online image.",
+        credit: 0.3,
       },
     ],
     correctAnswer:
-      "The confessing likely straddles love and an ordinary resentment she forbids herself — when annoyance she won't voice builds, she converts it into 'sins' and seeks absolution, discharging guilt for a hostility she can't name; test whether the confessions spike after unspoken irritation with him, whether the 'betrayals' are trivial and the relief brief, and whether the urge fades once she can voice everyday annoyance directly.",
+      "The serial reinventions likely paper over an inner void with whatever persona the audience rewards — each new self is sincere because she has no stable one to compare it to, and the frantic dread when attention drops is the emptiness breaking through; test whether each persona is built around what's currently getting a response, whether the dread floods in precisely when the mirror of attention fails, and whether any sense of self persists between reinventions.",
     explanation:
-      "Top credit names both love and forbidden resentment and an after-unspoken-irritation test; 'she's hiding a real affair' is the overreach the triviality of the 'sins' and the annoyance-linked timing defeat.",
+      "Top credit names the audience-rewarded-persona-over-void function and a does-the-dread-follow-lost-attention test; 'teens experiment online' is the dodge the frantic emptiness defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A loving father is tormented by intrusive sexual thoughts about his young children, which fill him with disgust and dread. He has begun avoiding bathing or hugging them, and the thoughts are worst in the most tender, affectionate moments. Which conclusion best follows?",
+      "In any debate, a woman ends up sincerely agreeing with whoever spoke last and most forcefully — she'll defend a position passionately, then defend its opposite an hour later with equal conviction, unaware of the reversal. Afterward she feels strangely hollow and unsure what she actually thinks. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He probably has some anxiety around his kids; we could monitor it.",
+        text: "She might be very open-minded; we could discuss how she forms opinions.",
         credit: 0.6,
       },
       {
-        text: "The taboo thoughts almost certainly straddle his deep love and the very revulsion that defines him — the obsession fastens onto what he holds most sacred precisely because any such impulse is unthinkable to him, so tenderness triggers the intrusive opposite and avoidance tries to keep him 'safe'; test whether the thoughts are ego-dystonic and horrifying rather than wished-for, whether they intrude most in affectionate moments, and whether they ease as he learns the thought is not a wish.",
-        credit: 1.0,
-      },
-      {
-        text: "He seems to have disturbing thoughts about his children and avoids contact.",
+        text: "She seems to agree with whoever she's talking to.",
         credit: 0.3,
       },
       {
-        text: "Having such thoughts proves he is a danger to his children and must be kept away from them.",
+        text: "Plenty of people are easily persuaded, so changing her mind in arguments means nothing.",
         credit: 0,
+      },
+      {
+        text: "Her view reorganizing around the last forceful speaker likely reflects an absent stable position of her own — without an inner anchor she absorbs the dominant person's stance as her conviction, which is why the reversals go unnoticed and leave her hollow; test whether her opinion tracks who last held the floor, whether she can hold a view against a forceful opposing speaker, and whether the post-debate hollowness is the emptiness of having no settled stance.",
+        credit: 1.0,
       },
     ],
     correctAnswer:
-      "The taboo thoughts almost certainly straddle his deep love and the very revulsion that defines him — the obsession fastens onto what he holds most sacred precisely because any such impulse is unthinkable to him, so tenderness triggers the intrusive opposite and avoidance tries to keep him 'safe'; test whether the thoughts are ego-dystonic and horrifying rather than wished-for, whether they intrude most in affectionate moments, and whether they ease as he learns the thought is not a wish.",
+      "Her view reorganizing around the last forceful speaker likely reflects an absent stable position of her own — without an inner anchor she absorbs the dominant person's stance as her conviction, which is why the reversals go unnoticed and leave her hollow; test whether her opinion tracks who last held the floor, whether she can hold a view against a forceful opposing speaker, and whether the post-debate hollowness is the emptiness of having no settled stance.",
     explanation:
-      "Full credit reads the taboo thought as fastening onto what he holds sacred and names an ego-dystonic, worst-in-tender-moments test; 'he is a danger and must be kept away' is the overreach his disgust and the affection-linked timing defeat.",
+      "Full credit names the absorbs-the-dominant-stance function and a does-her-view-track-the-last-speaker test; 'people are easily persuaded' is the dodge the unnoticed reversals and hollowness defeat.",
   },
   {
     itemType: "mc",
     prompt:
-      "A woman lovingly nursing her terminally ill husband begins compulsively checking the front door is locked dozens of times each night after he falls asleep, fearing an intruder, though their neighborhood is safe and nothing has happened. The checking began as his prognosis worsened. Which conclusion best follows?",
+      "A woman describes a chronic emptiness 'like a hole in the middle of me' that she fills with intense, all-consuming new friendships and romances; once the novelty fades and the emptiness creeps back, she abruptly drops the person and finds someone new. She is bewildered and ashamed by the cycle. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The lock-checking likely straddles love and an unbearable wish for the ordeal to end — as a buried longing to escape or to 'let him go' stirs, it is recast as an outside threat she can guard against, keeping the conflict out of awareness; test whether the checking intensified as his prognosis worsened, whether the feared danger is realistically absent, and whether it eases once she can voice exhaustion and the wish for relief without guilt.",
-        credit: 1.0,
+        text: "Some people just love the excitement of new relationships, so the cycle isn't worth interpreting.",
+        credit: 0,
       },
       {
-        text: "She seems to check the locks a lot at night.",
+        text: "She seems to go through relationships quickly.",
         credit: 0.3,
       },
       {
-        text: "She's probably under enormous strain; we could support her through it.",
-        credit: 0.6,
+        text: "The intense-then-discarded relationships likely function to plug a chronic inner emptiness rather than to connect — each new person briefly fills the void, and when their novelty can no longer mask it she replaces them, so the driver is the emptiness, not the people; test whether the drop coincides with the return of the hollow feeling rather than any real fault, whether the emptiness is present between relationships, and whether she can tolerate being alone without rushing to fill it.",
+        credit: 1.0,
       },
       {
-        text: "Checking locks is sensible caution, so there's nothing about her situation to read into it.",
-        credit: 0,
+        text: "She might struggle with relationships; we could look at the pattern together.",
+        credit: 0.6,
       },
     ],
     correctAnswer:
-      "The lock-checking likely straddles love and an unbearable wish for the ordeal to end — as a buried longing to escape or to 'let him go' stirs, it is recast as an outside threat she can guard against, keeping the conflict out of awareness; test whether the checking intensified as his prognosis worsened, whether the feared danger is realistically absent, and whether it eases once she can voice exhaustion and the wish for relief without guilt.",
+      "The intense-then-discarded relationships likely function to plug a chronic inner emptiness rather than to connect — each new person briefly fills the void, and when their novelty can no longer mask it she replaces them, so the driver is the emptiness, not the people; test whether the drop coincides with the return of the hollow feeling rather than any real fault, whether the emptiness is present between relationships, and whether she can tolerate being alone without rushing to fill it.",
     explanation:
-      "Top credit names both devotion and the forbidden wish for relief and a worsened-with-his-prognosis test; 'checking locks is sensible' is the dodge the safe neighborhood and grief-linked timing defeat.",
+      "Top credit names the relationships-plug-the-void function and a does-the-drop-follow-returning-emptiness test; 'some people love novelty' is the dodge her shame and the chronic hole defeat.",
   },
   {
     itemType: "mc",
     prompt:
-      "A man who openly cannot stand his critical mother finds that whenever a flash of anger at her arises, he must immediately repeat 'I hope she's healthy and happy' exactly four times or he feels something terrible will happen to her. Which conclusion best follows?",
+      "A man's account of his own wife shifts to match whoever he's speaking with: to his admiring brother she's 'the love of my life,' to his bitter divorced friend she's 'impossible to live with,' each delivered with full sincerity minutes apart. Pressed on what he himself feels, he draws a blank. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He's just superstitious, and superstitions don't mean anything.",
+        text: "People tailor what they share to their audience, so his shifting descriptions mean nothing.",
         credit: 0,
       },
       {
-        text: "He seems to repeat a phrase after getting angry at his mother.",
-        credit: 0.3,
-      },
-      {
-        text: "The ritual likely straddles hostility and love — the four protective repetitions undo a hostile, even death-tinged wish toward his mother that his anger throws up, magically cancelling the forbidden impulse so he need not own it; test whether the phrase is triggered specifically by flashes of anger at her, whether skipping it brings dread of harming her, and whether the urge fades once he can hold anger at his mother without feeling it could kill her.",
+        text: "His view of his wife reorganizing around each listener likely reflects the absence of an integrated, stable image of her and of his own feelings — without a cohesive inner picture he adopts the listener's frame as his own, which is why pressing for his own view hits a blank; test whether his account tracks the company rather than any events with her, whether he can hold one steady view across both conversations, and whether the blank is genuine emptiness rather than discretion.",
         credit: 1.0,
       },
       {
-        text: "He might have unresolved feelings about his mother; we could explore them.",
+        text: "He seems to describe his wife differently to different people.",
+        credit: 0.3,
+      },
+      {
+        text: "He might have mixed feelings about his marriage; we could explore them.",
         credit: 0.6,
       },
     ],
     correctAnswer:
-      "The ritual likely straddles hostility and love — the four protective repetitions undo a hostile, even death-tinged wish toward his mother that his anger throws up, magically cancelling the forbidden impulse so he need not own it; test whether the phrase is triggered specifically by flashes of anger at her, whether skipping it brings dread of harming her, and whether the urge fades once he can hold anger at his mother without feeling it could kill her.",
+      "His view of his wife reorganizing around each listener likely reflects the absence of an integrated, stable image of her and of his own feelings — without a cohesive inner picture he adopts the listener's frame as his own, which is why pressing for his own view hits a blank; test whether his account tracks the company rather than any events with her, whether he can hold one steady view across both conversations, and whether the blank is genuine emptiness rather than discretion.",
     explanation:
-      "Full credit names both hostility and love bound by an undoing ritual and a triggered-by-anger test; 'he's just superstitious' is the dodge the anger-specific trigger and harm-dread defeat.",
+      "Full credit names the no-integrated-image-of-self-and-other function and a does-his-account-track-the-listener test; 'people tailor what they share' is the dodge the full-sincerity reversals and blank defeat.",
   },
   {
     itemType: "mc",
     prompt:
-      "An engaged man spends hours comparing his fiancée to other women and to past partners, compiling mental pro-and-con lists to decide if she's 'objectively the best choice.' He feels brief calm after each tally, then must redo it. He can name nothing actually wrong. Which conclusion best follows?",
+      "A student has chosen and dropped three graduate programs, each time picking the field purely because there was a professor she desperately wanted to become — copying their interests and even their way of dressing — and losing all interest the moment she could no longer be near them. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He may have cold feet; we could talk about the engagement.",
-        credit: 0.6,
-      },
-      {
-        text: "He seems to keep comparing his fiancée to other people.",
+        text: "She seems to pick programs based on the professors.",
         credit: 0.3,
       },
       {
-        text: "The endless tallying likely expresses an ambivalence he can't sit with — a real commitment colliding with a fear of foreclosing all other possibilities — so the comparison both keeps every option symbolically open and postpones the choice that would end the conflict; test whether the lists attach to no genuine fault, whether each 'verdict' brings only brief calm before restarting, and whether the urge eases once he can own both wanting her and grieving the roads not taken.",
+        text: "She might be drawn to inspiring teachers; we could talk about what motivates her.",
+        credit: 0.6,
+      },
+      {
+        text: "The field-chosen-to-become-the-professor pattern likely shows a self assembled by merging with an idealized figure rather than built on her own interests — the discipline is a vehicle for taking on that person's identity, so interest dies when the merger is no longer possible; test whether each choice forms around a person she wants to be rather than the subject, whether interest collapses when access to them ends, and whether any intellectual thread of her own survives across the three.",
         credit: 1.0,
       },
       {
-        text: "If he has to keep comparing her, she's plainly the wrong woman for him.",
+        text: "Admiring your teachers is normal and motivating, so there's nothing underneath her choices.",
         credit: 0,
       },
     ],
     correctAnswer:
-      "The endless tallying likely expresses an ambivalence he can't sit with — a real commitment colliding with a fear of foreclosing all other possibilities — so the comparison both keeps every option symbolically open and postpones the choice that would end the conflict; test whether the lists attach to no genuine fault, whether each 'verdict' brings only brief calm before restarting, and whether the urge eases once he can own both wanting her and grieving the roads not taken.",
+      "The field-chosen-to-become-the-professor pattern likely shows a self assembled by merging with an idealized figure rather than built on her own interests — the discipline is a vehicle for taking on that person's identity, so interest dies when the merger is no longer possible; test whether each choice forms around a person she wants to be rather than the subject, whether interest collapses when access to them ends, and whether any intellectual thread of her own survives across the three.",
     explanation:
-      "Top credit names both commitment and fear of foreclosing options and a brief-calm-then-restart test; 'she's plainly wrong for him' is the overreach the absence of any real fault and the endless loop defeat.",
+      "Top credit names the merge-with-an-idealized-figure function and a does-interest-die-when-access-ends test; 'admiring teachers is normal' is the dodge the become-the-person pattern defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A man recently promoted over his close friend and colleague becomes obsessed with the fear that he'll blurt out something cruel to him, and rehearses 'safe' sentences before they speak. The fear is sharpest in moments his friend seems hurt or envious about the promotion. Which conclusion best follows?",
+      "A woman cannot bear to be alone in a room — within minutes an unbearable emptiness floods in and she feels she's 'disappearing.' She frantically texts a rotating cast of people, not about anything in particular, just to get a response that makes her feel she exists. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He seems afraid he'll say something mean to his friend.",
-        credit: 0.3,
-      },
-      {
-        text: "Worrying about saying the wrong thing is universal, so there's nothing particular to read in his case.",
+        text: "Lots of people dislike being alone, so this is just ordinary loneliness.",
         credit: 0,
       },
       {
-        text: "The fear likely straddles real friendship and a competitive triumph he can't admit — winning the role over his friend stirs a hostility or gloating the loyal part of him forbids, so the obsession dreads as an accident what a buried part might wish to say, and rehearsing 'safe' lines undoes it; test whether the fear sharpens when the friend seems hurt or envious, whether it began with the promotion, and whether it eases once he can own ordinary rivalry without horror.",
+        text: "She might not like solitude; we could explore her need for company.",
+        credit: 0.6,
+      },
+      {
+        text: "The 'disappearing' alone and frantic reaching out likely show that her sense of existing depends on being reflected by others — without contact the emptiness of identity diffusion floods in, and the texts are bids to be mirrored back into being, not connection; test whether the dread is specifically of dissolving rather than missing company, whether any response will do regardless of content, and whether she can feel real for any stretch with no one answering.",
         credit: 1.0,
       },
       {
-        text: "There may be some awkwardness about the promotion; we could discuss it.",
-        credit: 0.6,
+        text: "She seems to dislike being alone and texts people a lot.",
+        credit: 0.3,
       },
     ],
     correctAnswer:
-      "The fear likely straddles real friendship and a competitive triumph he can't admit — winning the role over his friend stirs a hostility or gloating the loyal part of him forbids, so the obsession dreads as an accident what a buried part might wish to say, and rehearsing 'safe' lines undoes it; test whether the fear sharpens when the friend seems hurt or envious, whether it began with the promotion, and whether it eases once he can own ordinary rivalry without horror.",
+      "The 'disappearing' alone and frantic reaching out likely show that her sense of existing depends on being reflected by others — without contact the emptiness of identity diffusion floods in, and the texts are bids to be mirrored back into being, not connection; test whether the dread is specifically of dissolving rather than missing company, whether any response will do regardless of content, and whether she can feel real for any stretch with no one answering.",
     explanation:
-      "Full credit names both friendship and disowned triumph and a sharpens-when-the-friend-seems-hurt test; 'worrying is universal' is the dodge the rivalry-linked timing and promotion onset defeat.",
+      "Full credit names the existence-depends-on-being-mirrored function and a is-it-dissolving-not-loneliness test; 'people dislike being alone' is the dodge the disappearing dread and content-free texting defeat.",
   },
 ];
 
@@ -417,425 +417,425 @@ const hybrid: HomeworkItem[] = [
   {
     itemType: "hybrid",
     prompt:
-      "A woman in her third pregnancy, who very much wanted this child, is gripped by intrusive images of throwing the baby down the stairs once it's born. She is horrified and has started avoiding the staircase. The images are worst when she dwells on how this child will end her last shred of personal freedom. Which conclusion best follows?",
+      "A man's accent, slang, and even political opinions shift audibly depending on who he's spent the day with — clipped and corporate after work, loose and radical after his artist friends — and he means each one. Alone at night he describes a flat, frightening sense of being 'no one in particular.' Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The images likely straddle love for the wanted child and a resentment of the freedom it will cost her that she cannot allow — the obsession gives the forbidden feeling a shape while her horror and stair-avoidance frantically disprove it; test whether the images spike when she dwells on lost freedom, whether the avoidance aims at reassurance rather than real danger, and whether they ease once she can voice ambivalence about the baby without panic.",
+        text: "The shifting accent and opinions likely reflect a self that takes its shape from the present company because there's no stable one underneath — the 'no one in particular' at night is the diffusion the borrowing covers, so the changes track who he's been with rather than any real change of mind; test whether his manner reorganizes around the day's company, whether the empty feeling comes precisely when he's alone and unmirrored, and whether any trait holds steady across all his settings.",
         credit: 1.0,
       },
       {
-        text: "She probably has some mixed feelings about the pregnancy; we could check in.",
+        text: "He probably code-switches a lot; we could talk about how he adapts to people.",
         credit: 0.6,
       },
       {
-        text: "She seems to have frightening images about the baby and avoids the stairs.",
+        text: "He seems to talk differently depending on who he's been around.",
         credit: 0.3,
       },
       {
-        text: "Intrusive harm images are meaningless misfires of the brain and say nothing about her feelings.",
+        text: "Everyone code-switches between work and friends, so there's nothing to read in his shifts.",
         credit: 0,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'the images carry forbidden resentment of the baby' lead from the rival 'these are random, meaningless intrusive thoughts,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'his self takes its shape from the present company over a void' lead from the rival 'he's just a normal code-switcher,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: note whether the images reliably surge when she dwells on the freedom the baby will cost her and quiet otherwise — content that tracks that specific resentment points to a disguised conflict rather than random noise. My lead is refuted if the images come at random moments with no link to thoughts of lost freedom and no relief when ambivalence is named.",
+        "Cheapest test: check whether the flat 'no one in particular' emptiness arrives specifically when he's alone with no one to take his shape from — a self that hollows out without an audience points to diffusion, not ordinary code-switching. My lead is refuted if he has a steady set of core opinions and tastes that hold across all settings and he feels solidly himself when alone.",
       yieldAnchors: [
-        "She wanted this child",
-        "Intrusive images of harming the baby",
-        "Images worst when she dwells on lost freedom",
+        "Accent and opinions shift with the day's company",
+        "He means each version sincerely",
+        "Feels 'no one in particular' when alone",
       ],
       riskAnchors: [
-        "Images spike with thoughts of lost freedom",
-        "Stair-avoidance seeks reassurance, not safety",
-        "They ease once ambivalence is voiced",
+        "Manner reorganizes around the present company",
+        "Emptiness comes precisely when unmirrored",
+        "No trait holds steady across settings",
       ],
       defeatedBy: [
-        "The images occur at random with no trigger",
-        "She feels only uncomplicated joy about the pregnancy",
+        "He keeps stable core views across all settings",
+        "He feels solidly himself when alone",
       ],
     },
     correctAnswer:
-      "The images likely straddle love for the wanted child and a resentment of the freedom it will cost her that she cannot allow — the obsession gives the forbidden feeling a shape while her horror and stair-avoidance frantically disprove it; test whether the images spike when she dwells on lost freedom, whether the avoidance aims at reassurance rather than real danger, and whether they ease once she can voice ambivalence about the baby without panic.",
+      "The shifting accent and opinions likely reflect a self that takes its shape from the present company because there's no stable one underneath — the 'no one in particular' at night is the diffusion the borrowing covers, so the changes track who he's been with rather than any real change of mind; test whether his manner reorganizes around the day's company, whether the empty feeling comes precisely when he's alone and unmirrored, and whether any trait holds steady across all his settings.",
     explanation:
-      "Full credit names both love and forbidden resentment and is paired with a do-they-track-thoughts-of-lost-freedom test that names its refutation; 'meaningless misfires' is the dodge the freedom-linked timing defeats.",
+      "Full credit names the shape-from-the-company-over-a-void function and is paired with a does-the-emptiness-come-when-alone test that names its refutation; 'everyone code-switches' is the dodge the alone-emptiness defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A newlywed woman must arrange the couple's shared shelves until they feel 'exactly right,' redoing them for an hour, but only the shelves that hold both her and her husband's things — her own private drawers don't trigger her. The ritual began after the wedding. Which conclusion best follows?",
+      "Within weeks of joining a new spiritual group, a woman has taken on its entire worldview, diet, vocabulary, and daily schedule, describing it as 'who I've always really been' — exactly as she did six months ago about a political movement she has now wholly forgotten. She brushes off the contradiction. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "She seems to spend a lot of time arranging the shared shelves.",
+        text: "She seems to throw herself into new groups.",
         credit: 0.3,
       },
       {
-        text: "'Just right' urges are hardwired quirks, so the focus on the shared shelves means nothing.",
+        text: "People grow and change their beliefs, so adopting the group's worldview means nothing.",
         credit: 0,
       },
       {
-        text: "The ritual fixed on the shared shelves likely straddles a wish to merge with her husband and a fear of losing herself in him — the not-yet-'right' arrangement enacts an unsettled boundary she can't consciously hold, which is why only the combined possessions, never her private ones, set it off; test whether the urge spares her solo belongings, whether it began with the marriage, and whether it eases once she can voice both the wish for closeness and the fear of being subsumed.",
+        text: "The total, repeated absorption into each group likely supplies a ready-made identity she can't generate from within — 'who I've always really been' feels true each time because she has no continuous self to contradict it, which is why the prior conversion is dropped without a trace; test whether each immersion follows joining a group rather than any inner development, whether the previous 'real me' is abandoned without grief, and whether anything of her own persists across the conversions.",
         credit: 1.0,
       },
       {
-        text: "She might be adjusting to married life; we could talk about it.",
+        text: "She might be searching for meaning; we could explore what draws her to these groups.",
         credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'the ritual straddles merging and losing herself' lead from the rival 'she is simply a tidy perfectionist,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'each group supplies a ready-made identity over an absent self' lead from the rival 'she's just an enthusiastic seeker who grows,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: compare her reaction to the shared shelves against her own private drawers — a 'just right' urge that fires only on the combined possessions points to a conflict about merging, not general tidiness. My lead is refuted if she needs everything she owns arranged equally, including her solo belongings, which would fit ordinary perfectionism.",
+        "Cheapest test: check whether the previous 'who I've always been' is dropped completely and without grief the moment a new group takes over — a self wiped clean and overwritten points to borrowed identity, not genuine growth. My lead is refuted if her past commitments leave durable, integrated traces she still carries and builds on rather than forgetting.",
       yieldAnchors: [
-        "The ritual targets only shared shelves",
-        "Her private drawers don't trigger her",
-        "It began after the wedding",
+        "She adopts each group's worldview wholesale in weeks",
+        "Calls each 'who I've always really been'",
+        "Forgot the prior movement entirely",
       ],
       riskAnchors: [
-        "The urge spares her solo belongings",
-        "It began with the marriage",
-        "It eases once the merging conflict is voiced",
+        "Each immersion follows joining a group",
+        "The prior 'real me' is dropped without grief",
+        "Nothing of her own persists across conversions",
       ],
       defeatedBy: [
-        "She must arrange all her possessions equally",
-        "The urge predates the marriage",
+        "Past commitments leave durable, integrated traces",
+        "Her changes build on a continuous thread",
       ],
     },
     correctAnswer:
-      "The ritual fixed on the shared shelves likely straddles a wish to merge with her husband and a fear of losing herself in him — the not-yet-'right' arrangement enacts an unsettled boundary she can't consciously hold, which is why only the combined possessions, never her private ones, set it off; test whether the urge spares her solo belongings, whether it began with the marriage, and whether it eases once she can voice both the wish for closeness and the fear of being subsumed.",
+      "The total, repeated absorption into each group likely supplies a ready-made identity she can't generate from within — 'who I've always really been' feels true each time because she has no continuous self to contradict it, which is why the prior conversion is dropped without a trace; test whether each immersion follows joining a group rather than any inner development, whether the previous 'real me' is abandoned without grief, and whether anything of her own persists across the conversions.",
     explanation:
-      "Full credit names both the wish to merge and the fear of losing herself and is paired with a shared-vs-private test that names its refutation; 'hardwired quirk' is the dodge the shared-shelves-only focus defeats.",
+      "Full credit names the group-supplies-identity-over-absence function and is paired with a is-the-prior-real-me-dropped-without-grief test that names its refutation; 'people grow and change' is the dodge the forgotten conversions defeat.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A man who privately hates his job but can't afford to quit compulsively returns to the office at night to check he locked up and didn't leave anything that could get him fired. The checking is worst after days he fantasized about walking out. Which conclusion best follows?",
+      "A young man feels solid and definite only while he is dating someone with a strong personality, taking on their interests and outlook as his own. Between relationships he reports a flat emptiness, can't decide what to do with his time, and says he 'waits to find out who he'll be next.' Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He's probably stressed about work; we could explore his job.",
+        text: "He's probably a relationship person; we could talk about his dating patterns.",
         credit: 0.6,
       },
       {
-        text: "The checking likely straddles a need to keep the job and a wish to be rid of it — on the days the urge to walk out flares, the dread that he's done something fireable both expresses and guards against the forbidden wish to get himself let go; test whether the checking spikes after he's fantasized about quitting, whether the feared lapse never actually occurs, and whether it eases once he can own wanting to leave without acting on it.",
+        text: "Feeling better in a relationship is normal, so there's nothing to read in this.",
+        credit: 0,
+      },
+      {
+        text: "The 'who I'll be next' depending on a partner likely shows that a strong other supplies the self he can't sustain alone — between relationships the underlying diffusion surfaces as emptiness and aimlessness, so his identity is effectively outsourced to whoever he's with; test whether his interests and outlook swap to match each strong partner, whether the flat emptiness reliably returns when he's single, and whether he can name a direction of his own with no partner to take it from.",
         credit: 1.0,
       },
       {
-        text: "He seems to keep going back to check the office.",
+        text: "He seems to feel better when he's in a relationship.",
         credit: 0.3,
-      },
-      {
-        text: "Plenty of people double-check they locked up, so there's nothing to read into it.",
-        credit: 0,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'the checking straddles needing and wanting to lose the job' lead from the rival 'he's just a conscientious employee,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'a strong partner supplies the self he can't sustain alone' lead from the rival 'he just prefers being in a relationship,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: track whether the night checks spike specifically after days he's fantasized about walking out — checking that follows the quitting urge points to a disguised conflict, not plain conscientiousness. My lead is refuted if the checking is steady regardless of those fantasies and he has actually left things unlocked, which would fit realistic caution.",
+        "Cheapest test: check whether his interests and outlook swap to match each new strong partner while a flat emptiness and aimlessness return whenever he's single — a self that appears and disappears with a partner points to outsourced identity, not mere preference. My lead is refuted if he keeps stable interests, goals, and a clear sense of himself during single stretches and simply enjoys company.",
       yieldAnchors: [
-        "He hates the job but can't quit",
-        "He checks he didn't do something fireable",
-        "Worst after fantasizing about walking out",
+        "Feels solid only while dating a strong personality",
+        "Takes on each partner's interests and outlook",
+        "Says he 'waits to find out who he'll be next'",
       ],
       riskAnchors: [
-        "Checking spikes after quitting fantasies",
-        "The feared lapse never actually occurs",
-        "It eases once the wish to leave is owned",
+        "Interests swap to match each strong partner",
+        "Flat emptiness returns when single",
+        "He can name no direction of his own alone",
       ],
       defeatedBy: [
-        "The checking is unrelated to quitting fantasies",
-        "He has genuinely left the office unsecured",
+        "He keeps stable interests and goals when single",
+        "He has a clear sense of himself between partners",
       ],
     },
     correctAnswer:
-      "The checking likely straddles a need to keep the job and a wish to be rid of it — on the days the urge to walk out flares, the dread that he's done something fireable both expresses and guards against the forbidden wish to get himself let go; test whether the checking spikes after he's fantasized about quitting, whether the feared lapse never actually occurs, and whether it eases once he can own wanting to leave without acting on it.",
+      "The 'who I'll be next' depending on a partner likely shows that a strong other supplies the self he can't sustain alone — between relationships the underlying diffusion surfaces as emptiness and aimlessness, so his identity is effectively outsourced to whoever he's with; test whether his interests and outlook swap to match each strong partner, whether the flat emptiness reliably returns when he's single, and whether he can name a direction of his own with no partner to take it from.",
     explanation:
-      "Full credit names both needing the job and wishing to lose it and is paired with a after-quitting-fantasies test that names its refutation; 'people double-check' is the dodge the fantasy-linked timing defeats.",
+      "Full credit names the partner-supplies-the-self function and is paired with a does-emptiness-return-when-single test that names its refutation; 'he just prefers relationships' is the dodge the between-relationship emptiness defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A new mother repeatedly asks her partner and her own mother, 'Do you think I really love the baby? Am I bonding right?' and scours her feelings for proof. The questioning spikes on days she's felt drained and wished, for a moment, to be child-free again. Which conclusion best follows?",
+      "Asked in therapy to say three things that are true about herself no matter who she's with, a woman freezes, then offers only how various people see her, and finally says with quiet panic, 'I don't think there's anything under there.' She is articulate and not being evasive. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "She seems to keep asking whether she loves her baby.",
+        text: "She seems unsure how to describe herself.",
         credit: 0.3,
       },
       {
-        text: "The reassurance-seeking likely straddles real love and a forbidden wish to have her old life back — when ordinary maternal resentment surfaces, she can't hold it beside her love, so she converts it into doubt about whether she loves the baby at all and seeks proof; test whether the questioning spikes after she's wished to be child-free, whether reassurance brings only brief relief, and whether it eases once she can own ambivalence without it meaning she's a bad mother.",
+        text: "The inability to name anything true of herself apart from others' views likely reflects a genuinely absent integrated self-image — not shyness but the experience of identity diffusion, where there is no stable inner content to report; test whether every attempt routes back through an observer, whether the 'nothing under there' is voiced as real emptiness rather than modesty, and whether she can hold even one self-description steady across different relationships.",
         credit: 1.0,
       },
       {
-        text: "Her doubt likely means she truly hasn't bonded and the baby is at risk.",
+        text: "Self-reflection is hard for lots of people, so freezing on the question means little.",
         credit: 0,
       },
       {
-        text: "She might be struggling with new motherhood; we could offer support.",
+        text: "She might be low on self-confidence; we could build up her self-image.",
         credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'the doubt converts forbidden resentment into a love-question' lead from the rival 'she has genuinely failed to bond with the baby,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'an absent integrated self-image' lead from the rival 'she's just shy or low in confidence,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: check whether the 'do I love her?' spikes specifically after moments she's wished for her old child-free life and is soothed only briefly by reassurance — doubt that tracks those moments points to disguised ambivalence, not a true failure to bond. My lead is refuted if she shows flat indifference and no warmth toward the baby across the board, which would fit a real bonding problem.",
+        "Cheapest test: check whether every attempt routes back through how others see her and the 'nothing under there' comes with genuine panic rather than modesty — a complete inability to locate any self-content of her own points to diffusion, not shyness. My lead is refuted if, given time, she can name stable traits, values, or preferences that hold across relationships and simply struggled to speak up at first.",
       yieldAnchors: [
-        "She repeatedly seeks reassurance about loving the baby",
-        "Spikes after wishing to be child-free",
-        "She scours her feelings for proof",
+        "Can describe herself only through others' eyes",
+        "Says 'there's nothing under there'",
+        "Articulate and not evasive",
       ],
       riskAnchors: [
-        "Questioning spikes after child-free wishes",
-        "Reassurance helps only briefly",
-        "It eases once ambivalence is owned",
+        "Every attempt routes through an observer",
+        "'Nothing under there' is real emptiness",
+        "No self-description holds across relationships",
       ],
       defeatedBy: [
-        "She is flatly indifferent to the baby",
-        "Reassurance permanently resolves the doubt",
+        "Given time, she names stable traits of her own",
+        "She has clear values that hold across relationships",
       ],
     },
     correctAnswer:
-      "The reassurance-seeking likely straddles real love and a forbidden wish to have her old life back — when ordinary maternal resentment surfaces, she can't hold it beside her love, so she converts it into doubt about whether she loves the baby at all and seeks proof; test whether the questioning spikes after she's wished to be child-free, whether reassurance brings only brief relief, and whether it eases once she can own ambivalence without it meaning she's a bad mother.",
+      "The inability to name anything true of herself apart from others' views likely reflects a genuinely absent integrated self-image — not shyness but the experience of identity diffusion, where there is no stable inner content to report; test whether every attempt routes back through an observer, whether the 'nothing under there' is voiced as real emptiness rather than modesty, and whether she can hold even one self-description steady across different relationships.",
     explanation:
-      "Full credit names both love and the forbidden wish for her old life and is paired with an after-child-free-wishes test that names its refutation; 'she truly hasn't bonded' is the overreach the brief-relief loop defeats.",
+      "Full credit names the absent-self-image function and is paired with a does-everything-route-through-an-observer test that names its refutation; 'self-reflection is hard for everyone' is the dodge the quiet-panic emptiness defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "Since his domineering mother died, a man feels compelled to wash thoroughly after handling any object she left him, and avoids her boxed-up belongings entirely, though he says he 'misses her terribly.' The urge is strongest when he recalls a specific way she controlled him. Which conclusion best follows?",
+      "A man has, over two years, been a devoted gym 'bro,' then a minimalist monk-like ascetic, then a flashy entrepreneur, each transformation total and announced as the real him — and each one began the week he attached himself to a new dominant friend whose life he then copied down to the wardrobe. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Grief makes people behave oddly, so there's no particular meaning in his washing.",
+        text: "He's just a poser copying whoever's cool and will move on again, so he's shallow and fake.",
         credit: 0,
       },
       {
-        text: "He's probably grieving in a complicated way; we could talk about his loss.",
-        credit: 0.6,
+        text: "He seems to reinvent himself every so often.",
+        credit: 0.3,
       },
       {
-        text: "The washing likely straddles love and grief on one side and a buried anger at her control on the other — handling her things stirs the resentment he can't square with mourning, and washing 'cleanses' the forbidden feeling while avoidance keeps it at bay; test whether the urge surges when he recalls her controlling him, whether it attaches only to her objects, and whether it eases once he can hold both grief and anger at his mother at once.",
+        text: "Each 'real him' is likely an identity copied from the current dominant friend to stand in for one he lacks — the transformations are total and sincere because there's no continuous self underneath to limit them, which is why they begin with the friend, not with any inner shift; test whether each reinvention starts when he attaches to a new dominant figure, whether the prior 'real me' is shed without loss, and whether anything carries over from one version to the next.",
         credit: 1.0,
       },
       {
-        text: "He seems to wash after touching his mother's things.",
-        credit: 0.3,
+        text: "He might be working out who he wants to be; we could discuss his influences.",
+        credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'the washing cleanses anger that collides with his grief' lead from the rival 'this is just ordinary, messy grieving,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'each self is copied from the current dominant friend over an absent one' lead from the rival 'he's a shallow poser chasing what's cool,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: note whether the urge to wash surges specifically when he recalls her controlling him and clings only to her objects — a contamination feeling tied to those memories points to disowned anger braided into grief. My lead is refuted if the washing is generalized, unrelated to memories of her control, and untouched by acknowledging anger at her.",
+        "Cheapest test: check whether each transformation begins precisely when he attaches to a new dominant friend and is lived with full sincerity rather than knowing pretense — a self that reorganizes around a specific person points to borrowed identity over diffusion, not cynical posing. My lead is refuted if he's privately aware he's putting on an act for status while keeping a stable, separate sense of himself underneath.",
       yieldAnchors: [
-        "He washes after handling her objects",
-        "He avoids her belongings yet says he misses her",
-        "Urge strongest recalling her control",
+        "Three total transformations in two years",
+        "Each announced as 'the real him'",
+        "Each began by copying a new dominant friend",
       ],
       riskAnchors: [
-        "Urge surges with memories of her control",
-        "It attaches only to her objects",
-        "It eases once grief and anger coexist",
+        "Each reinvention starts with a new dominant figure",
+        "The prior 'real me' is shed without loss",
+        "Nothing carries over between versions",
       ],
       defeatedBy: [
-        "The washing is generalized and memory-independent",
-        "He feels only uncomplicated grief",
+        "He privately knows he's posing for status",
+        "He keeps a stable separate self underneath",
       ],
     },
     correctAnswer:
-      "The washing likely straddles love and grief on one side and a buried anger at her control on the other — handling her things stirs the resentment he can't square with mourning, and washing 'cleanses' the forbidden feeling while avoidance keeps it at bay; test whether the urge surges when he recalls her controlling him, whether it attaches only to her objects, and whether it eases once he can hold both grief and anger at his mother at once.",
+      "Each 'real him' is likely an identity copied from the current dominant friend to stand in for one he lacks — the transformations are total and sincere because there's no continuous self underneath to limit them, which is why they begin with the friend, not with any inner shift; test whether each reinvention starts when he attaches to a new dominant figure, whether the prior 'real me' is shed without loss, and whether anything carries over from one version to the next.",
     explanation:
-      "Full credit names both grief and disowned anger and is paired with a surges-with-memories-of-control test that names its refutation; 'grief makes people odd' is the dodge the control-memory timing defeats.",
+      "Full credit names the copied-from-the-dominant-friend function and is paired with a does-each-start-with-a-new-figure test that names its refutation; 'he's a shallow poser' is the overreach his total sincerity defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A faithful woman is tormented by intrusive thoughts that she'll suddenly cheat on her devoted husband, and compulsively confesses every fleeting attraction to him. The thoughts surge after evenings she's felt smothered by how much he needs her. Which conclusion best follows?",
+      "A woman lights up with intense purpose and 'finally feeling real' at the start of every new romance, reorganizing her whole life around the partner's world; as the spark dims she's overtaken by the old emptiness and a sense of being a stranger to herself, and she ends it to chase the feeling again. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "She might have some doubts about the relationship; we could explore them.",
+        text: "She might love the early stage of relationships; we could explore her dating life.",
         credit: 0.6,
       },
       {
-        text: "She seems to fear cheating and keeps confessing attractions.",
+        text: "She seems to fall in and out of love quickly.",
         credit: 0.3,
       },
       {
-        text: "The intrusive thoughts likely straddle her love and a forbidden wish for distance or freedom — when his neediness feels smothering, the disowned urge to escape is recast as a dreaded impulse to betray him, and confessing both discharges the guilt and reassures her she won't; test whether the thoughts surge after she's felt smothered, whether the attractions are trivial and the relief brief, and whether they ease once she can voice a wish for space without it meaning betrayal.",
+        text: "The 'finally feeling real' at each romance's start likely means a new partner's world temporarily lends her a self and purpose she otherwise lacks — when the spark fades the underlying emptiness and self-strangeness return, so she's chasing identity, not romance; test whether 'feeling real' arrives with the partner's world rather than the person, whether the emptiness and self-strangeness reliably return as novelty fades, and whether she can feel real and purposeful with no relationship to organize around.",
         credit: 1.0,
       },
       {
-        text: "These thoughts mean she actually wants to cheat and is on the verge of an affair.",
+        text: "Everyone enjoys new-relationship energy, so the pattern doesn't mean anything.",
         credit: 0,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'the cheating thoughts recast a forbidden wish for distance' lead from the rival 'she genuinely wants to have an affair,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'a new partner's world lends her a self she lacks' lead from the rival 'she just loves the honeymoon phase,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: check whether the intrusive thoughts surge right after she's felt smothered by his neediness and bring dread rather than desire — thoughts tied to those moments point to a disguised wish for space, not a real intent to cheat. My lead is refuted if she actually seeks out affairs and the thoughts come with wish rather than horror.",
+        "Cheapest test: check whether 'finally feeling real' tracks reorganizing her life around the partner's world and gives way to emptiness and self-strangeness rather than ordinary cooling — feeling real that depends on having a world to absorb points to borrowed identity over diffusion. My lead is refuted if she keeps a stable sense of self and purpose between relationships and is simply drawn to early-stage excitement.",
       yieldAnchors: [
-        "She fears she'll cheat and confesses attractions",
-        "Thoughts surge after feeling smothered",
-        "The attractions are fleeting",
+        "'Finally feeling real' at each romance's start",
+        "Reorganizes her whole life around the partner",
+        "Emptiness and self-strangeness return as spark dims",
       ],
       riskAnchors: [
-        "Thoughts surge after she feels smothered",
-        "Confession relief is brief",
-        "They ease once a wish for space is voiced",
+        "'Feeling real' arrives with the partner's world",
+        "Emptiness and self-strangeness return reliably",
+        "She can't feel real with no relationship to organize around",
       ],
       defeatedBy: [
-        "She actively pursues affairs",
-        "The thoughts come with desire, not dread",
+        "She keeps a stable self and purpose between relationships",
+        "She is simply drawn to early-stage excitement",
       ],
     },
     correctAnswer:
-      "The intrusive thoughts likely straddle her love and a forbidden wish for distance or freedom — when his neediness feels smothering, the disowned urge to escape is recast as a dreaded impulse to betray him, and confessing both discharges the guilt and reassures her she won't; test whether the thoughts surge after she's felt smothered, whether the attractions are trivial and the relief brief, and whether they ease once she can voice a wish for space without it meaning betrayal.",
+      "The 'finally feeling real' at each romance's start likely means a new partner's world temporarily lends her a self and purpose she otherwise lacks — when the spark fades the underlying emptiness and self-strangeness return, so she's chasing identity, not romance; test whether 'feeling real' arrives with the partner's world rather than the person, whether the emptiness and self-strangeness reliably return as novelty fades, and whether she can feel real and purposeful with no relationship to organize around.",
     explanation:
-      "Top credit names both love and a forbidden wish for distance and is paired with an after-feeling-smothered test that names its refutation; 'she wants an affair' is the overreach the dread and brief relief defeat.",
+      "Full credit names the partner's-world-lends-a-self function and is paired with a does-feeling-real-depend-on-a-world-to-absorb test that names its refutation; 'everyone enjoys new-relationship energy' is the dodge the self-strangeness defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A man whose younger brother just had a baby — something he longs for and can't have — develops a compulsion to count to a 'safe' number whenever he pictures something happening to the newborn, sure that not counting will cause harm. The urge peaks right after family gatherings celebrating the baby. Which conclusion best follows?",
+      "A new employee within a month talks, dresses, and even forms opinions exactly like the team's informal leader, to the point coworkers tease him about it; he doesn't notice he's doing it, and when the leader is on leave he becomes oddly muted and unsure how to be at work. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He seems to count to keep the baby safe.",
-        credit: 0.3,
-      },
-      {
-        text: "Counting rituals are just meaningless tics, so they tell us nothing about him.",
+        text: "New hires often pick up the team's culture, so there's nothing to read in his imitation.",
         credit: 0,
       },
       {
-        text: "The counting likely straddles love for the baby and an envy he finds monstrous — a flash of ill-will toward the child who has what he can't, which the ritual magically 'undoes' to keep him from being the cause; test whether the urge peaks right after celebrations of the baby, whether skipping the count brings dread of harming the child, and whether it eases once he can own grief and envy about his own childlessness without horror.",
+        text: "He seems to have taken after the team's leader.",
+        credit: 0.3,
+      },
+      {
+        text: "The unconscious, near-total modeling on the leader likely means he's borrowing a workplace self he doesn't otherwise have — going muted and lost when the leader is away shows the identity was on loan, not absorbed culture; test whether his manner reorganizes around the leader specifically rather than the team's norms, whether the muted unsureness appears precisely when the leader is gone, and whether he has any stable work persona of his own.",
         credit: 1.0,
       },
       {
-        text: "He may have feelings about not having a child; we could discuss it.",
+        text: "He might be eager to fit in; we could talk about how he's settling into the job.",
         credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'the counting undoes envious ill-will toward the baby' lead from the rival 'it's a meaningless counting tic,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'he's borrowing a workplace self from the leader' lead from the rival 'he's just absorbing team culture as new hires do,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: note whether the counting urge peaks right after gatherings that celebrate the baby and whether skipping it brings dread of harming the child — a ritual tied to those moments points to undone envy, not a random tic. My lead is refuted if the counting fires across unrelated situations with no link to the baby or to his own childlessness.",
+        "Cheapest test: check whether he becomes muted and unsure how to be specifically when the leader is on leave — a work self that switches off when one person is absent points to borrowed identity, not assimilated team culture. My lead is refuted if he carries on confidently and consistently in the leader's absence, having genuinely internalized broad team norms rather than one person.",
       yieldAnchors: [
-        "He longs for a child he can't have",
-        "Counts to keep the brother's baby safe",
-        "Urge peaks after celebrations of the baby",
+        "Copies the leader's talk, dress, and opinions",
+        "Doesn't notice he's doing it",
+        "Goes muted and unsure when the leader is away",
       ],
       riskAnchors: [
-        "Urge peaks after the baby is celebrated",
-        "Skipping the count brings harm-dread",
-        "It eases once envy and grief are owned",
+        "Manner reorganizes around the leader specifically",
+        "Muted unsureness appears when the leader is gone",
+        "He has no stable work persona of his own",
       ],
       defeatedBy: [
-        "The counting is unrelated to the baby",
-        "He feels only uncomplicated joy about the birth",
+        "He carries on confidently when the leader is absent",
+        "He internalized broad team norms, not one person",
       ],
     },
     correctAnswer:
-      "The counting likely straddles love for the baby and an envy he finds monstrous — a flash of ill-will toward the child who has what he can't, which the ritual magically 'undoes' to keep him from being the cause; test whether the urge peaks right after celebrations of the baby, whether skipping the count brings dread of harming the child, and whether it eases once he can own grief and envy about his own childlessness without horror.",
+      "The unconscious, near-total modeling on the leader likely means he's borrowing a workplace self he doesn't otherwise have — going muted and lost when the leader is away shows the identity was on loan, not absorbed culture; test whether his manner reorganizes around the leader specifically rather than the team's norms, whether the muted unsureness appears precisely when the leader is gone, and whether he has any stable work persona of his own.",
     explanation:
-      "Full credit names both love and monstrous-feeling envy and is paired with a peaks-after-celebrations test that names its refutation; 'meaningless tic' is the dodge the celebration-linked timing defeats.",
+      "Full credit names the borrowed-self-on-loan function and is paired with a does-he-go-muted-when-the-leader-is-gone test that names its refutation; 'new hires absorb culture' is the dodge the leader-specific dependence defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "After a car accident left her disabled sister dependent on her, a woman who gave up her own plans to become full-time caregiver now checks obsessively that she hasn't accidentally put something harmful in her sister's food. The checking is worst on days she's felt her whole life has been swallowed by the role. Which conclusion best follows?",
+      "A woman keeps a different 'self' for each of her friends — a fragile one she protects with one, a fierce protector she plays with another, a carefree clown with a third — and switches seamlessly when groups mix, sometimes contradicting herself within minutes. She says, distressed, that she has 'no idea which one is the real me, or if there is one.' Which conclusion best follows?",
     mcOptions: [
       {
-        text: "She's probably overwhelmed by caregiving; we could get her support.",
-        credit: 0.6,
-      },
-      {
-        text: "The checking likely straddles devotion and a resentment of the life she's lost that she can't allow — when the sense of being swallowed peaks, a buried wish to be free is recast as a fear that she might harm her sister, and checking both expresses and disproves it; test whether the urge worsens on the days she feels most trapped, whether the feared harm never actually happens, and whether it eases once she can voice resentment of the role without guilt.",
-        credit: 1.0,
-      },
-      {
-        text: "She seems to keep checking her sister's food.",
+        text: "She seems to act like different versions of herself with different friends.",
         credit: 0.3,
       },
       {
-        text: "Caregivers naturally worry about safety, so the checking has no deeper meaning.",
+        text: "The different, contradictory selves per friend likely reflect unintegrated self-states with no overarching 'her' to unify them — each is tailored to the other person, and the distress at having 'no real me' is the diffusion behind the switching; test whether the version on display tracks which friend is present, whether the contradictions go unnoticed by her until pointed out, and whether she can locate any continuous self that holds across all the friendships.",
+        credit: 1.0,
+      },
+      {
+        text: "We all show different sides to different friends, so this is just normal social life.",
         credit: 0,
+      },
+      {
+        text: "She might play different roles socially; we could look at her friendships.",
+        credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'the checking straddles devotion and resentment of the lost life' lead from the rival 'she is just a careful, anxious caregiver,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'unintegrated self-states with no unifying self' lead from the rival 'she just shows different sides to different friends,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: track whether the harm-checking worsens specifically on the days she feels her life has been swallowed by the role — checking that rises with that feeling points to disowned resentment, not ordinary caution. My lead is refuted if the checking is steady regardless of how trapped she feels and there have been real near-misses with her sister's food.",
+        "Cheapest test: check whether which self appears tracks which friend is present and whether the contradictions go unnoticed by her until named — selves that swap by audience with no continuous thread point to unintegrated self-states, not ordinary many-sidedness. My lead is refuted if, beneath the different sides, she can readily name a consistent core that holds across all the friendships and feels like the real her.",
       yieldAnchors: [
-        "She gave up her plans to be caregiver",
-        "Checks she hasn't harmed her sister's food",
-        "Worst when she feels her life is swallowed",
+        "A different self for each friend",
+        "Switches seamlessly, sometimes contradicting within minutes",
+        "Says she has 'no idea which is the real me'",
       ],
       riskAnchors: [
-        "Checking worsens on most-trapped days",
-        "The feared harm never happens",
-        "It eases once resentment is voiced",
+        "The self on display tracks the present friend",
+        "Contradictions go unnoticed until pointed out",
+        "No continuous self holds across friendships",
       ],
       defeatedBy: [
-        "The checking is unrelated to feeling trapped",
-        "There have been real near-misses with the food",
+        "She names a consistent core beneath the sides",
+        "A real 'her' holds across all the friendships",
       ],
     },
     correctAnswer:
-      "The checking likely straddles devotion and a resentment of the life she's lost that she can't allow — when the sense of being swallowed peaks, a buried wish to be free is recast as a fear that she might harm her sister, and checking both expresses and disproves it; test whether the urge worsens on the days she feels most trapped, whether the feared harm never actually happens, and whether it eases once she can voice resentment of the role without guilt.",
+      "The different, contradictory selves per friend likely reflect unintegrated self-states with no overarching 'her' to unify them — each is tailored to the other person, and the distress at having 'no real me' is the diffusion behind the switching; test whether the version on display tracks which friend is present, whether the contradictions go unnoticed by her until pointed out, and whether she can locate any continuous self that holds across all the friendships.",
     explanation:
-      "Full credit names both devotion and resented sacrifice and is paired with a worse-on-trapped-days test that names its refutation; 'caregivers naturally worry' is the dodge the trapped-feeling timing defeats.",
+      "Full credit names the unintegrated-self-states function and is paired with a does-the-self-track-the-friend test that names its refutation; 'we all show different sides' is the dodge her distress and unnoticed contradictions defeat.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A man who is privately unsure about his relationship cannot stop rereading and rewriting a single text to his girlfriend, terrified one wrong word will 'ruin everything.' The compulsion is worst on days he has quietly thought about ending things. Which conclusion best follows?",
+      "A man abandons each long-term goal — a degree, a band, a business — the moment the friend or partner who inspired it exits his life, and then drifts, flat and purposeless, until someone new arrives with a world he can adopt. He insists every goal was 'truly mine,' yet none outlives the person attached to it. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He clearly just wants out and should break up with her already.",
+        text: "He may need encouragement to follow through; we could work on his motivation.",
+        credit: 0.6,
+      },
+      {
+        text: "Lots of people lose motivation when a project partner leaves, so this is unremarkable.",
         credit: 0,
       },
       {
-        text: "He seems to obsess over wording his texts.",
-        credit: 0.3,
-      },
-      {
-        text: "The rewriting likely straddles a wish to keep her and a wish to leave that he can't reconcile — fixing the 'perfect' message lets him avoid both committing fully and ending it, so the doubt about wording stands in for the larger ambivalence he won't face; test whether the rewriting spikes on days he's thought about leaving, whether no version ever feels final, and whether it eases once he can own both staying and wanting out.",
+        text: "Each goal collapsing when its person leaves likely shows the goals were borrowed identities, not aims of his own — the inspiring person supplied the self the goal expressed, so without them the underlying emptiness and aimlessness return; test whether each goal dies precisely when its person exits rather than from real obstacles, whether the flat drift between people is genuine purposelessness, and whether any goal survives the loss of the person attached to it.",
         credit: 1.0,
       },
       {
-        text: "He might be anxious about the relationship; we could talk it over.",
-        credit: 0.6,
+        text: "He seems to give up on goals when people leave.",
+        credit: 0.3,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'the text-rewriting stands in for staying-versus-leaving ambivalence' lead from the rival 'he's simply an anxious communicator,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'the goals were borrowed identities tied to a person' lead from the rival 'he just loses motivation without a partner,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: check whether the rewriting spikes specifically on days he's privately considered ending the relationship and whether no draft ever feels final — wording-obsession tied to those days points to displaced ambivalence, not general communication anxiety. My lead is refuted if he agonizes over wording with everyone, unrelated to thoughts of leaving her.",
+        "Cheapest test: check whether each goal dies the moment its inspiring person exits, regardless of how close it was to success — goals that can't survive the loss of the person point to borrowed identity, not a motivation dip. My lead is refuted if he sustains and completes goals on his own after the person leaves, or returns to them later under his own steam.",
       yieldAnchors: [
-        "He is privately unsure about the relationship",
-        "He endlessly rewrites one text",
-        "Worst on days he's thought about ending it",
+        "Each goal dies when its person exits",
+        "Drifts flat and purposeless between people",
+        "Insists each goal was 'truly mine'",
       ],
       riskAnchors: [
-        "Rewriting spikes after thoughts of leaving",
-        "No version ever feels final",
-        "It eases once he owns both staying and leaving",
+        "Goals die when the person leaves, not from obstacles",
+        "The between-people drift is real purposelessness",
+        "No goal survives losing its person",
       ],
       defeatedBy: [
-        "He obsesses over wording with everyone",
-        "The rewriting is unrelated to thoughts of leaving",
+        "He sustains and completes goals on his own",
+        "He returns to abandoned goals under his own steam",
       ],
     },
     correctAnswer:
-      "The rewriting likely straddles a wish to keep her and a wish to leave that he can't reconcile — fixing the 'perfect' message lets him avoid both committing fully and ending it, so the doubt about wording stands in for the larger ambivalence he won't face; test whether the rewriting spikes on days he's thought about leaving, whether no version ever feels final, and whether it eases once he can own both staying and wanting out.",
+      "Each goal collapsing when its person leaves likely shows the goals were borrowed identities, not aims of his own — the inspiring person supplied the self the goal expressed, so without them the underlying emptiness and aimlessness return; test whether each goal dies precisely when its person exits rather than from real obstacles, whether the flat drift between people is genuine purposelessness, and whether any goal survives the loss of the person attached to it.",
     explanation:
-      "Full credit names both the wish to stay and the wish to leave and is paired with a spikes-after-thoughts-of-leaving test that names its refutation; 'he just wants out' is the overreach the never-final loop defeats.",
+      "Full credit names the goals-as-borrowed-identities function and is paired with a does-each-goal-die-when-its-person-leaves test that names its refutation; 'people lose motivation' is the dodge the no-goal-outlives-the-person pattern defeats.",
   },
 ];
 
@@ -843,179 +843,179 @@ const written: HomeworkItem[] = [
   {
     itemType: "written",
     prompt:
-      "A woman who tried for years to conceive is, since her son's birth, flooded with intrusive thoughts of smothering him, which leave her panic-stricken. She adores him and has never come close to acting, but the thoughts are worst late at night when she is alone, sleep-deprived, and most desperate for her old life back. In one paragraph, propose the strongest conclusion about what the harm thoughts are straddling and describe how you would test it.",
+      "A woman in her late twenties has cycled through being a corporate striver, a back-to-the-land homesteader, and a devout convert — each shift total, sincere, and beginning the week she fell in with a captivating new partner whose world she then made her own. Between partners she describes a flat, frightening emptiness and 'not knowing who I am without someone to be it for.' In one paragraph, propose the strongest conclusion about what the serial reinventions are doing and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that the smothering thoughts sit astride two real and colliding feelings — a deep love for the long-awaited child and an exhausted resentment of how completely he has erased her old life — so the obsession gives the forbidden anger a shape while her panic frantically disproves any wish to act on it. This is a strong claim because it predicts checkable consequences: the thoughts should surge precisely in the depleted, trapped late-night hours when resentment is closest to the surface rather than scattering randomly; they should be ego-dystonic and horrifying rather than wished-for; and they should loosen once she can voice ordinary maternal resentment without it meaning she is dangerous or unloving. I would test it by tracking when the images strike against how trapped and depleted she feels, by checking whether they bring dread rather than desire, and by seeing whether naming the buried resentment — separating the thought from a wish — reduces their grip.",
+        "The strongest conclusion is that each reinvention is a borrowed identity she takes on from the captivating new partner to fill an inner void — lacking a stable, integrated sense of self, she adopts the other's whole world as her own, and the flat emptiness between partners is the identity diffusion the borrowing covers over. This is a strong claim because it predicts checkable consequences: each transformation should begin with attaching to a new person rather than with any inner development; the previous 'real me' should be dropped without grief because there was no continuous self to mourn; and the emptiness should reliably return whenever she has no partner whose world she can inhabit. I would test it by tracing whether each shift follows a new partner, by checking whether any value, taste, or goal of her own survives across the changes, and by seeing whether the flat 'not knowing who I am' floods in precisely when she's alone with no one to be a self for.",
       yieldAnchors: [
-        "She longed for and adores the child",
-        "Intrusive thoughts of smothering him",
-        "Worst when depleted and craving her old life",
+        "Three total, sincere reinventions",
+        "Each began with a captivating new partner",
+        "Flat emptiness and 'no self' between partners",
       ],
       riskAnchors: [
-        "Thoughts surge in trapped, late-night hours",
-        "They are ego-dystonic and horrifying",
-        "They ease once resentment is voiced as not-a-wish",
+        "Each shift follows attaching to a new person",
+        "The prior 'real me' is dropped without grief",
+        "Emptiness returns when she has no partner to be a self for",
       ],
       defeatedBy: [
-        "She feels only uncomplicated joy as a mother",
-        "The thoughts come with desire rather than dread",
+        "Her changes build on a continuous, owned thread",
+        "She keeps a stable sense of self between partners",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that the smothering thoughts sit astride two real and colliding feelings — a deep love for the long-awaited child and an exhausted resentment of how completely he has erased her old life — so the obsession gives the forbidden anger a shape while her panic frantically disproves any wish to act on it. This is a strong claim because it predicts checkable consequences: the thoughts should surge precisely in the depleted, trapped late-night hours when resentment is closest to the surface rather than scattering randomly; they should be ego-dystonic and horrifying rather than wished-for; and they should loosen once she can voice ordinary maternal resentment without it meaning she is dangerous or unloving. I would test it by tracking when the images strike against how trapped and depleted she feels, by checking whether they bring dread rather than desire, and by seeing whether naming the buried resentment — separating the thought from a wish — reduces their grip.",
+      "The strongest conclusion is that each reinvention is a borrowed identity she takes on from the captivating new partner to fill an inner void — lacking a stable, integrated sense of self, she adopts the other's whole world as her own, and the flat emptiness between partners is the identity diffusion the borrowing covers over. This is a strong claim because it predicts checkable consequences: each transformation should begin with attaching to a new person rather than with any inner development; the previous 'real me' should be dropped without grief because there was no continuous self to mourn; and the emptiness should reliably return whenever she has no partner whose world she can inhabit. I would test it by tracing whether each shift follows a new partner, by checking whether any value, taste, or goal of her own survives across the changes, and by seeing whether the flat 'not knowing who I am' floods in precisely when she's alone with no one to be a self for.",
     explanation:
-      "Under the inverted standard, 'intrusive thoughts are random and meaningless' earns near-zero; top credit names both love and exhausted resentment and a track-when-they-strike test that could refute it.",
+      "Under the inverted standard, 'young people just explore and reinvent themselves' earns near-zero; top credit names the borrowed-identity-over-a-void function and a does-each-shift-follow-a-new-person test that could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "A man who describes his marriage as 'perfect' must, whenever he feels a flash of irritation at his wife, immediately touch the doorframe and silently wish her well, or he is gripped by certainty that she'll be in a fatal accident. He has never raised his voice to her. In one paragraph, propose the strongest conclusion about what the ritual is straddling and describe how you would test it.",
+      "Asked by a new therapist to describe herself without referring to anyone else, a woman falls silent, then can only say how her mother, her boss, and her ex each see her, and finally admits with quiet panic that she feels there is 'nothing solid in the middle.' She is articulate and clearly trying. In one paragraph, propose the strongest conclusion about what this inability reveals and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that the doorframe ritual straddles genuine love and a forbidden hostility toward his wife that his 'perfect marriage' story cannot admit — the flash of irritation throws up an angry, even death-tinged impulse, and the touching-and-blessing magically 'undoes' it so he never has to own the aggression. This is a strong claim because it predicts checkable consequences: the ritual should be triggered specifically by moments of anger at her rather than at random; skipping it should bring dread that his anger could actually harm her; and the urge should fade once he can hold ordinary irritation with his wife without believing it is lethal. I would test it by noting whether the compulsion follows flashes of irritation, by checking what happens when he resists it, and by seeing whether permitting and naming everyday anger at her reduces the ritual.",
+        "The strongest conclusion is that the inability to describe herself except through others' eyes reveals a genuinely absent integrated self-image — not shyness or modesty but identity diffusion, in which there is no stable inner content to report, so she can only assemble a self from how others see her. This is a strong claim because it predicts checkable consequences: every attempt should route back through an observer rather than land on a trait of her own; the 'nothing solid in the middle' should be voiced as real emptiness rather than self-deprecation; and she should be unable to hold even one self-description steady across her different relationships. I would test it by noting whether each answer detours through someone else, by giving her ample time and prompting to see whether any owned, cross-situational trait emerges, and by checking whether the felt quality is panic-tinged emptiness rather than ordinary difficulty putting herself into words.",
       yieldAnchors: [
-        "He calls the marriage perfect",
-        "Ritual triggered by irritation at his wife",
-        "Fears his anger will cause her death",
+        "Can self-describe only through others' eyes",
+        "Says there's 'nothing solid in the middle'",
+        "Articulate and clearly trying",
       ],
       riskAnchors: [
-        "Ritual follows flashes of anger at her",
-        "Skipping it brings harm-dread",
-        "It fades once anger is held safely",
+        "Every attempt routes through an observer",
+        "The 'nothing solid' is real emptiness",
+        "No self-description holds across relationships",
       ],
       defeatedBy: [
-        "The ritual is unrelated to anger at his wife",
-        "He openly expresses and tolerates anger already",
+        "Given time, she names owned, cross-situational traits",
+        "The difficulty is shyness, not emptiness",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that the doorframe ritual straddles genuine love and a forbidden hostility toward his wife that his 'perfect marriage' story cannot admit — the flash of irritation throws up an angry, even death-tinged impulse, and the touching-and-blessing magically 'undoes' it so he never has to own the aggression. This is a strong claim because it predicts checkable consequences: the ritual should be triggered specifically by moments of anger at her rather than at random; skipping it should bring dread that his anger could actually harm her; and the urge should fade once he can hold ordinary irritation with his wife without believing it is lethal. I would test it by noting whether the compulsion follows flashes of irritation, by checking what happens when he resists it, and by seeing whether permitting and naming everyday anger at her reduces the ritual.",
+      "The strongest conclusion is that the inability to describe herself except through others' eyes reveals a genuinely absent integrated self-image — not shyness or modesty but identity diffusion, in which there is no stable inner content to report, so she can only assemble a self from how others see her. This is a strong claim because it predicts checkable consequences: every attempt should route back through an observer rather than land on a trait of her own; the 'nothing solid in the middle' should be voiced as real emptiness rather than self-deprecation; and she should be unable to hold even one self-description steady across her different relationships. I would test it by noting whether each answer detours through someone else, by giving her ample time and prompting to see whether any owned, cross-situational trait emerges, and by checking whether the felt quality is panic-tinged emptiness rather than ordinary difficulty putting herself into words.",
     explanation:
-      "The cautious 'it's just a superstition, nothing to read' earns near-zero; top credit names both love and forbidden hostility bound by an undoing ritual and a triggered-by-anger test that could refute it.",
+      "The cautious 'self-reflection is hard for everyone' earns near-zero; top credit names the absent-self-image function and a does-every-answer-route-through-an-observer test that could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "A daughter who privately dreamed of moving abroad has, since her mother's stroke, become an almost saintly caregiver — refusing all help, monitoring every detail, and insisting she 'wouldn't have it any other way' — while developing a compulsion to check repeatedly that she hasn't left her mother in danger. In one paragraph, propose the strongest conclusion about what the over-devotion and checking are straddling and describe how you would test it.",
+      "A man feels solid, energized, and 'finally himself' only while orbiting a dominant friend or partner whose interests, opinions, and even mannerisms he absorbs wholesale; the moment that person drifts away he becomes muted, aimless, and overtaken by a hollow emptiness, until someone new arrives to organize him again. In one paragraph, propose the strongest conclusion about what the merging is doing and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that the saintly caregiving and the checking straddle real love and a buried resentment of the dream the stroke cost her — the over-the-top devotion is a reaction against the wish to be free, and the checking guards against a forbidden impulse to let harm come so she could escape. This is a strong claim because it predicts checkable consequences: the insistence that she 'wouldn't have it any other way' should be rigid and brittle, cracking when resentment is gently named; the checking should intensify on the days she most feels her own life slipping away rather than when real danger is higher; and both should ease once she can admit ambivalence about the sacrifice without guilt. I would test it by watching whether her protest of total contentment can bend, by tracking the checking against her sense of being trapped, and by seeing whether voicing resentment of the lost plans reduces the compulsion.",
+        "The strongest conclusion is that the merging supplies a self he cannot sustain on his own — by absorbing a dominant other's interests and manner he borrows a temporary identity, and the muted aimlessness and hollow emptiness when that person leaves are the identity diffusion the merging masks. This is a strong claim because it predicts checkable consequences: his interests, opinions, and mannerisms should reorganize around whoever he's currently merged with rather than holding steady; the emptiness and aimlessness should appear precisely in the gap between people; and he should be unable to name a direction or set of values that is his own with no one to take it from. I would test it by tracking whether his persona swaps to match each new dominant figure, by checking whether anything of his own persists across them, and by seeing whether the hollow, muted state reliably arrives whenever he is unattached.",
       yieldAnchors: [
-        "She gave up dreams of moving abroad",
-        "Saintly, help-refusing caregiving",
-        "Checks she hasn't endangered her mother",
+        "Feels 'finally himself' only orbiting a dominant other",
+        "Absorbs their interests and mannerisms wholesale",
+        "Muted, aimless, empty when they drift away",
       ],
       riskAnchors: [
-        "Her 'wouldn't have it any other way' is brittle",
-        "Checking tracks feeling trapped, not real danger",
-        "Both ease once resentment is admitted",
+        "Persona reorganizes around the current other",
+        "Emptiness appears in the gap between people",
+        "He can name no direction of his own when unattached",
       ],
       defeatedBy: [
-        "She had no thwarted plans and feels freely content",
-        "The checking tracks genuine medical risk only",
+        "He keeps stable interests and a clear self when alone",
+        "Anything of his own persists across the people",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that the saintly caregiving and the checking straddle real love and a buried resentment of the dream the stroke cost her — the over-the-top devotion is a reaction against the wish to be free, and the checking guards against a forbidden impulse to let harm come so she could escape. This is a strong claim because it predicts checkable consequences: the insistence that she 'wouldn't have it any other way' should be rigid and brittle, cracking when resentment is gently named; the checking should intensify on the days she most feels her own life slipping away rather than when real danger is higher; and both should ease once she can admit ambivalence about the sacrifice without guilt. I would test it by watching whether her protest of total contentment can bend, by tracking the checking against her sense of being trapped, and by seeing whether voicing resentment of the lost plans reduces the compulsion.",
+      "The strongest conclusion is that the merging supplies a self he cannot sustain on his own — by absorbing a dominant other's interests and manner he borrows a temporary identity, and the muted aimlessness and hollow emptiness when that person leaves are the identity diffusion the merging masks. This is a strong claim because it predicts checkable consequences: his interests, opinions, and mannerisms should reorganize around whoever he's currently merged with rather than holding steady; the emptiness and aimlessness should appear precisely in the gap between people; and he should be unable to name a direction or set of values that is his own with no one to take it from. I would test it by tracking whether his persona swaps to match each new dominant figure, by checking whether anything of his own persists across them, and by seeing whether the hollow, muted state reliably arrives whenever he is unattached.",
     explanation:
-      "The kind-sounding 'she's simply a devoted daughter' earns near-zero; top credit names both love and the resented sacrifice it defends against and a does-her-contentment-crack test that could refute it.",
+      "The kind-sounding 'he's just a people person who likes company' earns near-zero; top credit names the merging-supplies-a-self function and a does-the-emptiness-arrive-when-unattached test that could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "A young man raised in a strict religious community, now privately questioning it, becomes consumed by scrupulous rituals — repeated confessions, fears he has sinned in thought, hours of compulsive prayer — that flare most intensely right after he has had a doubt about the faith or a wish to leave. In one paragraph, propose the strongest conclusion about what the scrupulosity is straddling and describe how you would test it.",
+      "A young woman defends one political position fiercely with her activist friends and the opposite position just as fiercely with her family, meaning each in the moment and untroubled by the contradiction; alone, she says she has 'no idea what I actually believe about anything.' She is sincere, not cynical or calculating. In one paragraph, propose the strongest conclusion about what her audience-matched convictions reveal and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that the scrupulous rituals straddle a real attachment to his faith and community and a forbidden wish to doubt or leave it — when heresy or the urge to walk away surfaces, the guilt is intolerable, so confession and compulsive prayer both punish and undo the forbidden thought, keeping the conflict out of awareness. This is a strong claim because it predicts checkable consequences: the rituals should flare specifically after a doubt or a wish to leave rather than at random; the relief from each confession should be brief before the cycle restarts; and the symptoms should loosen once he can hold both his attachment and his doubt consciously rather than treating doubt as a sin to be erased. I would test it by tracking whether the rituals follow moments of doubt, by noting how quickly relief gives way, and by seeing whether permitting honest ambivalence about the faith reduces the compulsions.",
+        "The strongest conclusion is that her convictions reorganize around whoever she's with because she lacks an integrated set of her own — without a stable inner compass she takes on the room's beliefs as sincerely held, which is why the contradiction doesn't register and why, alone, she finds only the emptiness of 'not knowing what I believe.' This is a strong claim because it predicts checkable consequences: her stated positions should track the present audience rather than any evidence or reasoning of her own; she should be unable to name a belief she would hold steady in a hostile room; and the 'no idea what I believe' should be a settled emptiness rather than the open curiosity of someone still thinking it through. I would test it by checking whether her stance flips with the company, by asking for a conviction she would defend in any room and seeing whether one exists, and by gauging whether the not-knowing feels like a void rather than ordinary intellectual humility.",
       yieldAnchors: [
-        "He is privately questioning the faith",
-        "Scrupulous confession and prayer rituals",
-        "Flare after doubts or wishes to leave",
+        "Defends opposite positions with different groups",
+        "Means each in the moment, untroubled by contradiction",
+        "Alone, 'no idea what I actually believe'",
       ],
       riskAnchors: [
-        "Rituals flare after doubts",
-        "Relief is brief before restarting",
-        "They ease once ambivalence is held consciously",
+        "Stated positions track the present audience",
+        "She can name no belief she'd hold in a hostile room",
+        "The not-knowing is a settled emptiness",
       ],
       defeatedBy: [
-        "The rituals are unrelated to his doubts",
-        "He feels wholehearted, untroubled faith",
+        "She holds core convictions steady against any room",
+        "The not-knowing is open inquiry, not emptiness",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that the scrupulous rituals straddle a real attachment to his faith and community and a forbidden wish to doubt or leave it — when heresy or the urge to walk away surfaces, the guilt is intolerable, so confession and compulsive prayer both punish and undo the forbidden thought, keeping the conflict out of awareness. This is a strong claim because it predicts checkable consequences: the rituals should flare specifically after a doubt or a wish to leave rather than at random; the relief from each confession should be brief before the cycle restarts; and the symptoms should loosen once he can hold both his attachment and his doubt consciously rather than treating doubt as a sin to be erased. I would test it by tracking whether the rituals follow moments of doubt, by noting how quickly relief gives way, and by seeing whether permitting honest ambivalence about the faith reduces the compulsions.",
+      "The strongest conclusion is that her convictions reorganize around whoever she's with because she lacks an integrated set of her own — without a stable inner compass she takes on the room's beliefs as sincerely held, which is why the contradiction doesn't register and why, alone, she finds only the emptiness of 'not knowing what I believe.' This is a strong claim because it predicts checkable consequences: her stated positions should track the present audience rather than any evidence or reasoning of her own; she should be unable to name a belief she would hold steady in a hostile room; and the 'no idea what I believe' should be a settled emptiness rather than the open curiosity of someone still thinking it through. I would test it by checking whether her stance flips with the company, by asking for a conviction she would defend in any room and seeing whether one exists, and by gauging whether the not-knowing feels like a void rather than ordinary intellectual humility.",
     explanation:
-      "The dodge 'this is just normal devout practice' earns near-zero; top credit names both attachment and forbidden doubt and a do-they-follow-doubts test that could refute it.",
+      "Under the inverted standard, 'everyone contains multitudes and adapts to their audience' earns near-zero; top credit names the convictions-reorganize-around-the-room function and a does-her-stance-flip-with-the-company test that could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "A woman in a kind, stable relationship is tormented by the obsessive thought that her partner's slightly crooked teeth are 'a dealbreaker,' which she knows is absurd; she checks her feelings constantly and seeks reassurance from friends. The obsession flared the month he started talking about moving in together. In one paragraph, propose the strongest conclusion about what the fixation is straddling and describe how you would test it.",
+      "A man cannot tolerate even an hour alone — within minutes a flat, frightening emptiness sets in and he feels he's 'fading out of existence,' so he floods his contacts with messages, content-free, just to be answered and feel real. The need is for any response from anyone, not a particular person or conversation. In one paragraph, propose the strongest conclusion about what the frantic reaching out is doing and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that the trivial fixation on his teeth straddles a real wish to commit and an equally real fear of it that she can't consciously hold — as moving in raises the stakes, the unbearable ambivalence is displaced onto a tiny, 'safe' flaw she can obsess over instead of facing the larger question of commitment. This is a strong claim because it predicts checkable consequences: the obsession should have flared with the move-in talk rather than at the relationship's start; the chosen 'dealbreaker' should be trivial and the reassurance only briefly calming; and the fixation should ease once she can own both wanting the relationship and dreading the commitment, rather than litigating his appearance. I would test it by tracing whether the obsession tracks escalations in commitment, by noting how trivial the focus is and how short-lived the relief, and by seeing whether naming the underlying ambivalence dissolves the fixation on his teeth.",
+        "The strongest conclusion is that his sense of existing depends on being reflected by others, so the content-free messaging is a bid to be mirrored back into being rather than a wish to connect — left unmirrored, the emptiness of identity diffusion floods in and he feels himself dissolving. This is a strong claim because it predicts checkable consequences: the dread should be specifically of fading or dissolving rather than missing a particular person's company; any response from anyone should relieve it regardless of content; and he should be unable to feel real for any sustained stretch when no one is answering. I would test it by checking whether the panic is about ceasing to exist rather than loneliness, by seeing whether an indifferent reply from anyone soothes it as much as a meaningful one, and by observing whether he can hold a sense of being real during even brief solitude with no contact.",
       yieldAnchors: [
-        "A kind, stable relationship",
-        "Obsessive 'dealbreaker' fixation on a trivial flaw",
-        "Flared with talk of moving in together",
+        "Can't tolerate an hour alone",
+        "Feels he's 'fading out of existence'",
+        "Floods contacts with content-free messages for any reply",
       ],
       riskAnchors: [
-        "The obsession tracks rising commitment",
-        "The focus is trivial and relief brief",
-        "It eases once commitment-ambivalence is owned",
+        "The dread is of dissolving, not missing company",
+        "Any response relieves it regardless of content",
+        "He can't feel real with no one answering",
       ],
       defeatedBy: [
-        "The obsession predates any commitment step",
-        "There is a genuine, serious problem with the partner",
+        "The feeling is ordinary loneliness for specific people",
+        "He feels solidly real during brief solitude",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that the trivial fixation on his teeth straddles a real wish to commit and an equally real fear of it that she can't consciously hold — as moving in raises the stakes, the unbearable ambivalence is displaced onto a tiny, 'safe' flaw she can obsess over instead of facing the larger question of commitment. This is a strong claim because it predicts checkable consequences: the obsession should have flared with the move-in talk rather than at the relationship's start; the chosen 'dealbreaker' should be trivial and the reassurance only briefly calming; and the fixation should ease once she can own both wanting the relationship and dreading the commitment, rather than litigating his appearance. I would test it by tracing whether the obsession tracks escalations in commitment, by noting how trivial the focus is and how short-lived the relief, and by seeing whether naming the underlying ambivalence dissolves the fixation on his teeth.",
+      "The strongest conclusion is that his sense of existing depends on being reflected by others, so the content-free messaging is a bid to be mirrored back into being rather than a wish to connect — left unmirrored, the emptiness of identity diffusion floods in and he feels himself dissolving. This is a strong claim because it predicts checkable consequences: the dread should be specifically of fading or dissolving rather than missing a particular person's company; any response from anyone should relieve it regardless of content; and he should be unable to feel real for any sustained stretch when no one is answering. I would test it by checking whether the panic is about ceasing to exist rather than loneliness, by seeing whether an indifferent reply from anyone soothes it as much as a meaningful one, and by observing whether he can hold a sense of being real during even brief solitude with no contact.",
     explanation:
-      "Under the inverted standard, 'maybe she's just not attracted to him' earns near-zero; top credit names both the wish to commit and the fear of it displaced onto a trivial flaw, with a does-it-track-commitment test that could refute it.",
+      "The dodge 'lots of people just don't like being alone' earns near-zero; top credit names the existence-depends-on-being-mirrored function and a does-any-reply-relieve-it test that could refute it.",
   },
 ];
 
 export const section: SectionContent = {
-  slug: "conflict-and-ambivalence",
-  title: "Conflict and Ambivalence: The Engine Beneath the Symptom",
+  slug: "identity-diffusion-unstable-self",
+  title: "Identity Diffusion: The Unstable Sense of Self",
   weekNumber: 1,
   blurb:
-    "Obsessions and compulsions often sit astride a two-sided conflict — love colliding with anger toward the same person, a forbidden wish met by an exaggerated defense against it, doubt that masks ambivalence. This section trains you to name BOTH sides the symptom is straddling and the cheap test that could prove you wrong.",
+    "In borderline personality disorder, the self can feel unfinished — no stable core, contradictory self-states, chameleon-like shifts with whoever one is with, and a chronic emptiness underneath. This section trains you to read those shifts as a self borrowed to fill a void, name the hidden function, and state the cheap test that could prove you wrong.",
   lectureTitle:
-    "1.4 Conflict and Ambivalence: the engine beneath the symptom",
-  body: `# Conflict and Ambivalence: The Engine Beneath the Symptom
+    "1.4 Identity Diffusion: the unstable sense of self",
+  body: `# Identity Diffusion: The Unstable Sense of Self
 
-People rarely feel just one way about the things that matter most. You can love your mother and feel suffocated by her in the same breath; want a child desperately and dread the freedom it will cost you; admire a mentor and burn with rivalry toward him. The psychodynamic view of OCD starts from this fact: an obsession or compulsion is often not a single feeling gone wrong but a *compromise* between two feelings that can't both be admitted at once. The symptom is the engine running on that hidden friction — and the work is to figure out which two forces are colliding and what deal the symptom is striking between them.
+Most people carry a sense of who they are that holds together across rooms and years. Their tastes, values, and goals bend with circumstance but don't dissolve; alone, they still feel like someone. In borderline personality disorder this inner cohesion can be missing. The technical name is **identity diffusion**: not an integrated, stable picture of oneself — or of others — but a shifting set of self-states that reorganize around whoever one is with, laid over a chronic, frightening emptiness. The work of this section is to read that instability for its hidden function and to name the cheap observation that could prove the reading wrong.
 
-## Two feelings at once
+## A self that has no center
 
-The starting move is to suspect that a baffling symptom is carrying more than one feeling. A devoted new mother flooded with images of harming her baby is not secretly violent; she is holding overwhelming love alongside an exhausted resentment she can't let herself feel, and the obsession gives the forbidden side a shape while her horror disproves it. The tell is that the symptom intensifies exactly when the unacceptable feeling is closest to the surface — on the most depleted, trapped nights, not at random. When an obsession spikes in step with a feeling the person would never claim, that feeling is part of the meaning.
+The first thing to suspect, when someone seems like a different person in every setting, is that there may be no stable center the versions are variations of. A college student who is a sincere vegan activist with one group, a thrill-seeker with another, and a quiet bookworm with a third — and means each one — is not simply versatile if, alone between groups, a hollow panic floods in and she cannot say who she is. The tell is that the self reorganizes around the present company and that emptiness appears precisely when there's no one to mirror. Versatility has a core; diffusion does not.
 
-## Love and hate toward the same person
+## Borrowing an identity to fill a void
 
-The sharpest conflicts cluster around the people we most depend on. A man who privately cannot stand his critical mother feels a flash of anger and must instantly repeat a protective phrase or be sure something terrible will happen to her. The anger and the love are both real, and the ritual lets him have the hostility without owning it. The same shape shows up as harm thoughts about a partner, death images about a parent, or violent images toward an idealized boss — always toward someone the person loves or admires, always surging right after a slight or a disappointment. A reading that names *only* the love, or *only* the hate, misses the engine; the strong reading holds both.
+When there is no durable self inside, one can be taken from the outside. People with identity diffusion often absorb a strong other's interests, opinions, even mannerisms wholesale — becoming the mentor, the partner, the dominant friend — because the other supplies an outline they lack. The signature is wholesale, sincere adoption that swaps out completely with each new person, and a felt blankness when asked to speak for oneself. The borrowing is not lying or posing; it is how a self gets assembled when none is generated from within, and it gives itself away by how totally it changes when the company changes.
 
-## The forbidden wish and the reaction against it
+## Chronic emptiness underneath
 
-Sometimes the symptom is the *opposite* of the buried feeling, turned up loud. A woman who can't stop performing kindnesses for a sister she "completely adores," panicking at any critical thought, is defending against an envy she finds unbearable — the over-the-top devotion is a reaction against the rivalry. This is why the strongest material is often the most extravagant: saintly caregiving from someone whose own dreams were sacrificed, frantic reassurance of love from someone who feels smothered. When a feeling is too dangerous to feel, the mind can build a showy display of its opposite, and the display gives the secret away by how hard it works.
+Beneath the shifting is often a chronic emptiness — described as a hole, a flatness, a sense of being "no one in particular" or even of "fading out of existence" when alone. This emptiness is the experience of diffusion itself, and much of the instability is an attempt to escape it: intense new relationships that briefly fill the hole and are dropped when novelty fades, frantic content-free reaching out just to be answered and feel real, reinventions chased to outrun the flatness. When you can see the emptiness driving the behavior, the behavior stops looking like mere drama and starts looking like a way to keep from disappearing.
 
-## Doubt as a sign of ambivalence
+## Shifts that track the company, not growth
 
-OCD's endless doubting — "do I really love him?", "is she the one?", the pro-and-con lists that never settle — is frequently ambivalence wearing a question mark. The doubt can't be answered because *both answers are true at once*: a real wish to commit and a real fear of it. Notice the signature: the doubt attaches to no concrete fault, reassurance brings only a moment's calm before the loop restarts, and "solving" it is impossible because settling would mean giving up one side of the conflict. Reading doubt as ambivalence — rather than as a verdict the gut is delivering — is one of the most useful moves in this section.
+Genuine development accumulates: a person changes and carries the change forward, building on a continuous thread. Diffusion-driven shifts do the opposite — they track who one is with, and each "true self" is dropped without grief when the next arrives. A man who has "finally found himself" five times in three years, each time within weeks of meeting a charismatic new person whose life he then copies, is not growing through five callings; he is taking on five borrowed identities. The strongest reading names that the shifts follow the people rather than any inner aim, and predicts that nothing of his own survives across them.
 
-## Undoing and displacement: where the conflict hides
+## "Faking it" is the wrong story
 
-The conflict rarely shows itself plainly; it gets disguised. In **undoing**, a ritual magically cancels a forbidden impulse — touch the doorframe, count to a safe number, repeat a blessing — so the wish is expressed and erased in one motion. In **displacement**, the unbearable conflict is shifted onto something small and "safe": a woman who can't face her ambivalence about moving in together obsesses instead over her partner's slightly crooked teeth. The trivial focus and the impossible-to-settle quality are the clues that the real fight is happening somewhere else, and the symptom is its stand-in.
+The tempting overreach is to call all this manipulation — she's faking who she is, he's a poser using people, they're lying about what they believe. The evidence usually defeats that. The personas are held with full sincerity; the contradictions go unnoticed from the inside until pointed out; and the emptiness is real and distressing, not a performance for advantage. Someone who is consciously posing keeps a stable, separate self underneath and knows they're acting. Diffusion is marked by the *absence* of that hidden steady self — which is exactly why the cynical reading misses the disorder it's looking at.
 
 ## Reading the meaning — and naming a test
 
-Here is what keeps this honest. It is not enough to spin a two-sided story; a strong interpretation names BOTH sides of the conflict the symptom straddles *and* the cheap observation that could prove it wrong. "Her checking carries devotion and a forbidden wish to be free" is a real claim, because it predicts the checking should worsen on the days she feels most trapped, ease when resentment is voiced, and never line up with actual danger — and you can check all three. The weak move is to stop at "she checks a lot" (which explains nothing) or to retreat into "intrusive thoughts are random brain noise" (which gives up before looking). The worst move is the lurid overreach the evidence defeats — deciding the man with violent images is dangerous, or the woman with cheating thoughts is having an affair — when her horror and the trivial content say otherwise.
+Here is what keeps this honest. It is not enough to say "she changes around people"; a strong interpretation names the hidden function — a self borrowed to fill a void, instability warding off the terror of having no cohesive self — *and* the cheap observation that could refute it. "His sense of who he is is supplied by whoever he's merged with" is a real claim, because it predicts his interests should swap with each dominant other, the emptiness should return in the gaps between people, and he should be unable to name a direction of his own when alone — and you can check all three. The weak move stops at restatement; the dodge retreats into "young people just explore" or "everyone contains multitudes"; the worst move is the lurid "she's faking it" the sincere, distress-laden emptiness defeats.
 
 ## In the real world
 
-Suppose a friend confides that she's tormented by the thought she might shout something cruel at her newborn, and she's terrified it means she's a monster. The dodge is "thoughts are just thoughts, don't read into it" — kind, but it explains nothing and leaves her alone with the fear. The overreach is to take the thought at face value, which is cruel and wrong. A conflict-aware move sits between them: maybe the thought straddles fierce love and an exhausted resentment she's not allowed to feel. Notice what that opens up. It predicts the thoughts spike when she's most drained and trapped; that they horrify rather than tempt her; and that they ease the moment she can say "I love him and I also miss my old life" without it making her a bad mother. Three cheap checks, each able to refute the reading. That is the skill this section trains: when a symptom won't make sense as one feeling, name the two feelings it is holding at once, bind the evidence, and say exactly what would show you are wrong.`,
+Suppose a friend tells you she has no idea who she is — that she's "whatever each person needs me to be" and feels nothing solid in the middle. The dodge is "we all wear different hats, don't overthink it" — friendly, but it explains nothing and leaves her alone with the void. The overreach is "you're just being fake or attention-seeking," which is both cruel and wrong. A diffusion-aware move sits between them: maybe there is, right now, no integrated self underneath, and the shifting selves are borrowed to keep an unbearable emptiness at bay. Notice what that opens up. It predicts her self-descriptions reorganize around whoever she's with; that the emptiness floods in precisely when she's alone and unmirrored; and that she can't yet name a value or goal that holds across every room. Three cheap checks, each able to refute the reading. That is the skill this section trains: when someone seems to have no stable self, name the function the instability is serving, bind the evidence, and say exactly what would show you are wrong.`,
   homework: {
     mcq,
     hybrid,

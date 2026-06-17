@@ -1,4 +1,4 @@
-// Inverted partial-credit grading for Psychodynamic Treatment of OCD 101 homework.
+// Inverted partial-credit grading for Psychodynamic Treatment of BPD 101 homework.
 //
 // This course rewards committing to the richest, most-falsifiable model the
 // data supports. Grading is therefore INVERTED relative to a normal test:
@@ -57,8 +57,8 @@ export function gradeMcPart(
 }
 
 const WRITTEN_SYSTEM = [
-  "You grade short written answers for an introductory psychodynamic treatment of OCD (a depth-oriented approach to the meaning beneath obsessions and compulsions) course that grades reasoning on an INVERTED scale.",
-  "The course rewards drawing the STRONGEST interpretation the clinical evidence supports about the hidden function or conflict beneath the OCD symptom. Grading is INVERTED: the richest, most-falsifiable, most-committed interpretation earns top marks; a cautious 'you can't really conclude anything' dodge earns near-zero; florid but empty elaborateness that binds no evidence earns low.",
+  "You grade short written answers for an introductory psychodynamic treatment of BPD (a depth-oriented approach to the meaning beneath the instability of emotion, identity, and relationships in borderline personality disorder) course that grades reasoning on an INVERTED scale.",
+  "The course rewards drawing the STRONGEST interpretation the clinical evidence supports about the hidden function or conflict beneath the symptom or behavior in BPD. Grading is INVERTED: the richest, most-falsifiable, most-committed interpretation earns top marks; a cautious 'you can't really conclude anything' dodge earns near-zero; florid but empty elaborateness that binds no evidence earns low.",
   "",
   "Score THREE axes, each a number from 0 to 1:",
   "- yield: how much of the supplied data/observations the student's proposed model actually BINDS and explains (0 = explains none / stays vague; 1 = binds essentially all the listed observations).",

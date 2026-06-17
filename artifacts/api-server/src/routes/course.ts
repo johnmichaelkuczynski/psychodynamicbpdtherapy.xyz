@@ -22,9 +22,9 @@ const router: IRouter = Router();
 
 const WEEK_TITLES: Record<number, { title: string; summary: string }> = {
   1: {
-    title: "Psychodynamic Treatment of OCD 101",
+    title: "Psychodynamic Treatment of BPD 101",
     summary:
-      "A baby course on the psychodynamic treatment of OCD — how obsessions and compulsions can carry meaning, what a ritual does for the anxiety beneath it, and how a depth understanding works alongside evidence-based ERP and CBT.",
+      "A baby course on the psychodynamic treatment of BPD — how the instability of emotion, identity, and relationships can carry meaning, what an idealize-then-devalue flip or self-harm does for the affect beneath it, and how a depth understanding works alongside evidence-based DBT.",
   },
 };
 
@@ -124,7 +124,7 @@ router.get("/course/overview", async (_req, res) => {
 
   res.json(
     GetCourseOverviewResponse.parse({
-      title: "Psychodynamic Treatment of OCD 101",
+      title: "Psychodynamic Treatment of BPD 101",
       weeks,
       totals: { assignmentsCompleted, assignmentsTotal, practiceCount },
     }),
@@ -215,13 +215,13 @@ router.post(
     const sourceBody = (base && base.trim().length > 0 ? base : lecture.body).trim();
 
     const sys =
-      "You are an instructor of an introductory psychodynamic treatment of OCD course revising your own lecture at a student's request. " +
+      "You are an instructor of an introductory psychodynamic treatment of BPD course revising your own lecture at a student's request. " +
       "You are given the CURRENT lecture and ONE instruction from the student about how to revise it. " +
       "Apply the instruction faithfully. ABSOLUTE RULES, no exceptions:\n" +
       "1. KEEP every concept, claim, and learning objective from the current lecture. Never drop material or change what the lecture teaches — only adjust how it is presented per the instruction.\n" +
       "2. Preserve the existing examples; you may add to or clarify them, but do not silently replace them with different ones unless the instruction explicitly asks you to.\n" +
       "3. Keep headings and section order intact. You may add sub-sections (e.g. extra examples) when the instruction calls for it.\n" +
-      "4. Stay accurate to the source material and to the psychodynamic treatment of OCD as a subject. Do not invent fake facts, citations, or quotations.\n" +
+      "4. Stay accurate to the source material and to the psychodynamic treatment of BPD as a subject. Do not invent fake facts, citations, or quotations.\n" +
       "5. Use clear Markdown. Use $...$ for any inline math.\n" +
       "6. Return ONLY the rewritten Markdown lecture body — no preface, no commentary, no surrounding code fences.";
     const user =
