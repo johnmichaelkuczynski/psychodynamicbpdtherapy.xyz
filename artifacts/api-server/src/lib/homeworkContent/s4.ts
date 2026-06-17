@@ -9,407 +9,407 @@ const mcq: HomeworkItem[] = [
   {
     itemType: "mc",
     prompt:
-      "A patient is calm and friendly until the therapist arrives two minutes late; then she becomes cold and accuses him of not caring whether she lives or dies. She mentions, in passing, that her mother often forgot to pick her up from school as a child. Which conclusion best follows?",
+      "A devoted new mother is tormented by intrusive images of harming her infant. She adores the baby, checks on him dozens of times a night to be sure he's breathing, and is horrified by the thoughts. The images intensify on the nights she is most exhausted and most trapped at home. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The patient seems upset that the therapist was late.",
-        credit: 0.3,
+        text: "The harm thoughts likely sit at the crossroads of two real feelings — overwhelming love for the baby and an unspeakable resentment of how completely he has taken over her life — so the obsession both registers the buried anger and, through frantic checking, frantically disproves it; test whether the images spike on the most depleted, trapped nights, whether her checking aims at reassuring herself she is good rather than at any real danger, and whether the thoughts ease once she can voice ordinary resentment without horror.",
+        credit: 1.0,
       },
       {
-        text: "Her reaction is probably about her past somehow; we could ask more about her childhood.",
+        text: "She probably has some mixed feelings about motherhood; we could talk about how she's coping.",
         credit: 0.6,
       },
       {
-        text: "A two-minute delay can't really matter, so she must be inventing a grievance to manipulate the therapist into apologizing.",
-        credit: 0,
+        text: "She seems to have frightening thoughts about her baby and checks on him a lot.",
+        credit: 0.3,
       },
       {
-        text: "The tiny lateness likely triggered an old template of being abandoned by an unreliable caregiver, so a trivial delay reads as proof of not being cared about; test whether the same outsized reaction appears with other people who keep her waiting, whether it traces to the school-pickup history, and whether it softens once she sees the therapist reliably returns and explains.",
-        credit: 1.0,
+        text: "Intrusive thoughts are just random brain noise with no relation to how she actually feels, so there's nothing beneath them to read.",
+        credit: 0,
       },
     ],
     correctAnswer:
-      "The tiny lateness likely triggered an old template of being abandoned by an unreliable caregiver, so a trivial delay reads as proof of not being cared about; test whether the same outsized reaction appears with other people who keep her waiting, whether it traces to the school-pickup history, and whether it softens once she sees the therapist reliably returns and explains.",
+      "The harm thoughts likely sit at the crossroads of two real feelings — overwhelming love for the baby and an unspeakable resentment of how completely he has taken over her life — so the obsession both registers the buried anger and, through frantic checking, frantically disproves it; test whether the images spike on the most depleted, trapped nights, whether her checking aims at reassuring herself she is good rather than at any real danger, and whether the thoughts ease once she can voice ordinary resentment without horror.",
     explanation:
-      "Top credit binds the size of the reaction to an old abandonment template and names three checks, including whether it fades with a reliable present figure; the 'inventing a grievance to manipulate' option is the cynical overreach the genuine childhood pattern defeats.",
+      "Full credit names both sides — devotion and buried resentment — and a spike-on-the-trapped-nights test; 'random brain noise, nothing to read' is the dodge the exhaustion-linked timing and reassurance-seeking defeat.",
   },
   {
     itemType: "mc",
     prompt:
-      "A man has dated five different women over ten years. Each one started out warm but, he says, 'turned distant and unreachable.' He describes his mother the same way — physically present but emotionally far off. Which conclusion best follows?",
+      "A devout churchgoer is plagued, only during prayer and worship, by violent blasphemous thoughts he finds disgusting. He prays harder and repeats cleansing phrases to cancel them, and the thoughts are worst at the moments he is supposed to feel most reverent. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He keeps picking distant women; we could look at his dating history more closely.",
-        credit: 0.6,
+        text: "He seems to get unwanted thoughts in church and prays to get rid of them.",
+        credit: 0.3,
       },
       {
-        text: "He has just had bad luck with cold partners five times in a row.",
-        credit: 0,
-      },
-      {
-        text: "He likely carries a template from an emotionally distant mother and is drawn to partners who fit it — or draws distance out of them — so the same ending repeats; test whether he overlooks available warm women, whether he withdraws first and reads their response as coldness, and whether the pattern matches how he describes his mother.",
+        text: "The blasphemy likely straddles two sides of a single conflict — a genuine faith and a forbidden doubt or anger toward what he worships that he can't allow himself to feel — so the thought erupts exactly where reverence is demanded and the repeated prayers try to undo it; test whether the thoughts come only in worship and not neutral settings, whether they peak at the most sacred moments, and whether they loosen once he can admit ordinary doubt or resentment about his faith without panic.",
         credit: 1.0,
       },
       {
-        text: "His relationships seem to keep ending the same way.",
-        credit: 0.3,
+        text: "Blasphemous thoughts in a believer can only mean he is secretly losing his faith and should leave the church.",
+        credit: 0,
+      },
+      {
+        text: "It's probably some inner conflict about religion; we could look into his beliefs.",
+        credit: 0.6,
       },
     ],
     correctAnswer:
-      "He likely carries a template from an emotionally distant mother and is drawn to partners who fit it — or draws distance out of them — so the same ending repeats; test whether he overlooks available warm women, whether he withdraws first and reads their response as coldness, and whether the pattern matches how he describes his mother.",
+      "The blasphemy likely straddles two sides of a single conflict — a genuine faith and a forbidden doubt or anger toward what he worships that he can't allow himself to feel — so the thought erupts exactly where reverence is demanded and the repeated prayers try to undo it; test whether the thoughts come only in worship and not neutral settings, whether they peak at the most sacred moments, and whether they loosen once he can admit ordinary doubt or resentment about his faith without panic.",
     explanation:
-      "Full credit reads a repeated relational template behind the identical endings and names three tests; 'just bad luck five times' is the dodge the systematic repetition defeats.",
+      "Top credit names both faith and forbidden doubt/anger and a peaks-at-the-most-sacred-moments test; 'he is secretly losing his faith' is the overreach his horror and harder praying defeat.",
   },
   {
     itemType: "mc",
     prompt:
-      "A new client meets a therapist who is plainly warm and encouraging, yet within minutes she is braced and guarded, certain he is 'building me up so he can tear me down later.' Her father praised her in public and ridiculed her in private. Which conclusion best follows?",
+      "A man who privately finds his ailing, demanding father exhausting now checks his father's pill organizer ten times a day, terrified he'll accidentally cause an overdose. The checking began the month he reluctantly took over his father's care. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The mind is too private to know why a stranger would distrust kindness, so no conclusion is safe.",
-        credit: 0,
-      },
-      {
-        text: "She seems suspicious of the therapist's warmth.",
-        credit: 0.3,
-      },
-      {
-        text: "She is likely replaying a template in which warmth is the setup for humiliation, learned from a father who praised then ridiculed her, so present kindness reads as a coming attack; test whether she shows the same suspicion toward other warm people, whether the dread tracks her father's two-faced pattern, and whether it eases as the therapist stays consistently kind over time.",
+        text: "The checking likely straddles love and its opposite — real devotion alongside a resentment, even a wish to be free of the burden, that he cannot tolerate — so the compulsion guards against the very harm a buried part of him fears it might want, and the timing pins it to taking over care; test whether the fear centers on him causing harm rather than ordinary mistakes, whether it began precisely with the caretaking, and whether it eases once he can voice resentment of his father without guilt.",
         credit: 1.0,
       },
       {
-        text: "Her distrust probably comes from her past; we could explore her father more.",
+        text: "He's probably stressed about the responsibility; we could check in on how he's managing.",
         credit: 0.6,
+      },
+      {
+        text: "He seems anxious about his father's medication and checks it often.",
+        credit: 0.3,
+      },
+      {
+        text: "Caretakers worry about medication all the time, so there's nothing to interpret in his checking.",
+        credit: 0,
       },
     ],
     correctAnswer:
-      "She is likely replaying a template in which warmth is the setup for humiliation, learned from a father who praised then ridiculed her, so present kindness reads as a coming attack; test whether she shows the same suspicion toward other warm people, whether the dread tracks her father's two-faced pattern, and whether it eases as the therapist stays consistently kind over time.",
+      "The checking likely straddles love and its opposite — real devotion alongside a resentment, even a wish to be free of the burden, that he cannot tolerate — so the compulsion guards against the very harm a buried part of him fears it might want, and the timing pins it to taking over care; test whether the fear centers on him causing harm rather than ordinary mistakes, whether it began precisely with the caretaking, and whether it eases once he can voice resentment of his father without guilt.",
     explanation:
-      "Top credit names the specific warmth-equals-trap template and three checks including consistency over time; 'too private to know' is the refusal the clear father history and present reaction defeat.",
+      "Full credit names both devotion and resented burden and a began-with-the-caretaking test; 'caretakers just worry' is the dodge the harm-specific fear and exact timing defeat.",
   },
   {
     itemType: "mc",
     prompt:
-      "A woman has been fired or has quit four jobs after explosive fights with her supervisor. In each case the trigger was the boss 'telling me what to do.' She grew up with a father who controlled every detail of her life. Which conclusion best follows?",
+      "Two weeks before her wedding, a woman is consumed by the doubt 'do I really love him?' She mentally reviews her feelings hundreds of times a day for proof, feels momentary relief when she finds some, then doubts again. She has no specific complaint about her fiancé. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "All four of her bosses happened to be genuinely controlling tyrants.",
+        text: "The doubt simply means she shouldn't marry him; her gut is telling her the truth.",
         credit: 0,
       },
       {
-        text: "She likely brings a template from a controlling father into every authority relationship, so ordinary direction feels like domination and provokes a fight; test whether the clashes erupt even with mild, reasonable supervisors, whether the intensity matches her history with her father, and whether she reacts far less to instructions from peers than from anyone in charge.",
+        text: "She seems to keep questioning whether she loves him.",
+        credit: 0.3,
+      },
+      {
+        text: "The relentless doubt likely expresses an ambivalence she can't hold consciously — a real wish to marry colliding with an equally real fear of commitment or loss of freedom — so the question stands in for both sides at once, and the checking-for-proof can never settle because settling would mean choosing; test whether the doubt attaches to no concrete fault, whether reassurance brings only momentary relief before the loop restarts, and whether it eases once she can own both the wish to marry and the fear of it.",
         credit: 1.0,
       },
       {
-        text: "She keeps clashing with bosses; we could review what happened at each job.",
+        text: "She might be feeling ambivalent about the wedding; we could talk it through.",
         credit: 0.6,
-      },
-      {
-        text: "She seems to have trouble with authority.",
-        credit: 0.3,
       },
     ],
     correctAnswer:
-      "She likely brings a template from a controlling father into every authority relationship, so ordinary direction feels like domination and provokes a fight; test whether the clashes erupt even with mild, reasonable supervisors, whether the intensity matches her history with her father, and whether she reacts far less to instructions from peers than from anyone in charge.",
+      "The relentless doubt likely expresses an ambivalence she can't hold consciously — a real wish to marry colliding with an equally real fear of commitment or loss of freedom — so the question stands in for both sides at once, and the checking-for-proof can never settle because settling would mean choosing; test whether the doubt attaches to no concrete fault, whether reassurance brings only momentary relief before the loop restarts, and whether it eases once she can own both the wish to marry and the fear of it.",
     explanation:
-      "Full credit ties the repeating authority conflict to a controlling-father template and names three tests, including the peer-versus-boss contrast; 'all four were genuine tyrants' is the overreach the cross-situational repetition defeats.",
+      "Top credit names both the wish to marry and the fear of it and a reassurance-only-briefly-helps test; 'her gut says don't marry him' is the overreach the absence of any real complaint and the endless loop defeat.",
   },
   {
     itemType: "mc",
     prompt:
-      "Whenever a patient talks about a success, he suddenly becomes charming and faintly flirtatious with his therapist, as if performing for her approval. He recalls that his father only paid attention to him when he won awards. Which conclusion best follows?",
+      "A careful, gentle man compulsively circles back while driving, sure he has hit a pedestrian he didn't notice. The urge is strongest on days he has felt irritated or short-tempered with people, and he has never actually had an accident. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He probably wants approval; we could note when the charm shows up.",
-        credit: 0.6,
-      },
-      {
-        text: "He seems to get a bit flirtatious during sessions.",
+        text: "He seems worried about hitting someone and keeps retracing his route.",
         credit: 0.3,
       },
       {
-        text: "He likely replays a template in which love must be earned by performing, learned from a father who only noticed his wins, so reporting a success automatically switches him into approval-seeking display; test whether the charm appears specifically after achievements rather than at random, whether it tracks his account of his father, and whether it fades when the therapist values him for ordinary disclosures too.",
+        text: "It's probably linked to his stress levels; we could keep an eye on it.",
+        credit: 0.6,
+      },
+      {
+        text: "The checking likely straddles his gentleness and a flash of aggression he won't own — on the days anger stirs, the dread that he has harmed someone gives the forbidden impulse a shape and the retracing magically undoes it; test whether the urge spikes specifically after he's felt irritable, whether the feared 'victim' is always vague and unconfirmed, and whether it eases once he can acknowledge ordinary anger without alarm.",
         credit: 1.0,
       },
       {
-        text: "His charm clearly means he is romantically attracted to the therapist and is trying to start a relationship with her.",
+        text: "Anyone who drives a lot will sometimes worry they hit someone, so the checking means nothing about him.",
         credit: 0,
       },
     ],
     correctAnswer:
-      "He likely replays a template in which love must be earned by performing, learned from a father who only noticed his wins, so reporting a success automatically switches him into approval-seeking display; test whether the charm appears specifically after achievements rather than at random, whether it tracks his account of his father, and whether it fades when the therapist values him for ordinary disclosures too.",
+      "The checking likely straddles his gentleness and a flash of aggression he won't own — on the days anger stirs, the dread that he has harmed someone gives the forbidden impulse a shape and the retracing magically undoes it; test whether the urge spikes specifically after he's felt irritable, whether the feared 'victim' is always vague and unconfirmed, and whether it eases once he can acknowledge ordinary anger without alarm.",
     explanation:
-      "Top credit reads a love-must-be-earned template behind the achievement-triggered display and names three checks; the literal 'he's romantically attracted and trying to date her' is the overreach the achievement-specific timing defeats.",
+      "Full credit names both his gentleness and disowned anger and an after-irritability test; 'anyone worries while driving' is the dodge the anger-linked timing and never-real-accident pattern defeat.",
   },
   {
     itemType: "mc",
     prompt:
-      "A patient grows tense whenever the therapist quietly writes a note, convinced she is 'marking down everything wrong with me.' His mother kept a running mental ledger of his faults and recited them during arguments. Which conclusion best follows?",
+      "A woman cannot stop reassuring herself that she 'completely adores' her wildly successful younger sister. She compulsively performs little kindnesses for her and feels intense anxiety if she ever has a critical thought, which she rushes to cancel. The anxiety is worst right after the sister achieves something new. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Note-taking is genuinely hostile, so he is right that the therapist is collecting evidence against him.",
-        credit: 0,
-      },
-      {
-        text: "He seems uneasy when the therapist takes notes.",
-        credit: 0.3,
-      },
-      {
-        text: "The neutral note-taking likely activates a template of a fault-cataloguing parent, so an ordinary clinical act reads as evidence-gathering against him; test whether he reacts the same way to other people who write near him, whether the unease matches his account of his mother's ledger, and whether it eases when the therapist shows him the notes are mundane and routine.",
+        text: "The compulsive adoration likely straddles two feelings — genuine love and an envy or rivalry she finds unbearable — so the over-the-top kindness and thought-canceling work to disprove a hostility that surges precisely when the sister succeeds; test whether her anxiety peaks right after the sister's wins, whether critical thoughts trigger urgent undoing rather than passing, and whether the compulsions ease once she can admit ordinary envy without panic.",
         credit: 1.0,
       },
       {
-        text: "His unease about the notes probably ties to his past; we could ask about his mother.",
+        text: "She seems to work hard at being kind to her sister.",
+        credit: 0.3,
+      },
+      {
+        text: "Some people are just devoted to their siblings, so there's nothing underneath her kindness to examine.",
+        credit: 0,
+      },
+      {
+        text: "She might have some rivalry with her sister; we could explore their relationship.",
         credit: 0.6,
       },
     ],
     correctAnswer:
-      "The neutral note-taking likely activates a template of a fault-cataloguing parent, so an ordinary clinical act reads as evidence-gathering against him; test whether he reacts the same way to other people who write near him, whether the unease matches his account of his mother's ledger, and whether it eases when the therapist shows him the notes are mundane and routine.",
+      "The compulsive adoration likely straddles two feelings — genuine love and an envy or rivalry she finds unbearable — so the over-the-top kindness and thought-canceling work to disprove a hostility that surges precisely when the sister succeeds; test whether her anxiety peaks right after the sister's wins, whether critical thoughts trigger urgent undoing rather than passing, and whether the compulsions ease once she can admit ordinary envy without panic.",
     explanation:
-      "Full credit binds the disproportionate reaction to a fault-ledger template and names three disconfirming checks; 'the note-taking is genuinely hostile' is the overreach a neutral clinical act defeats.",
+      "Top credit names both love and unbearable envy and a peaks-after-her-wins test; 'some people are just devoted' is the dodge the success-timed anxiety and frantic undoing defeat.",
   },
   {
     itemType: "mc",
     prompt:
-      "After eight steady months, the therapist takes a planned two-week vacation. On her return the patient is icy and says, 'I knew you'd leave like everyone does.' His father walked out when he was seven and never came back. Which conclusion best follows?",
+      "A man who proposed three months ago develops a contamination fear focused only on his fiancée's belongings — her toothbrush, her side of the bed, her clothes — which he can't bring himself to touch, though public restrooms and money don't bother him at all. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "People come and go, so there is nothing to interpret about his coldness.",
-        credit: 0,
-      },
-      {
-        text: "A brief, announced absence likely reactivated a template of permanent abandonment laid down when his father left, so a two-week break feels like being walked out on again; test whether other ordinary separations trigger the same dread, whether the reaction matches his father's disappearance, and whether his trust rebuilds once the therapist predictably returns.",
-        credit: 1.0,
-      },
-      {
-        text: "The break probably stirred up old feelings; we could talk about his father leaving.",
+        text: "He probably has some unease about the engagement; we could talk about it.",
         credit: 0.6,
       },
       {
-        text: "He seems hurt that the therapist went away.",
+        text: "Contamination fears are biological and attach to things at random, so the focus on her things is meaningless.",
+        credit: 0,
+      },
+      {
+        text: "The disgust aimed only at her things likely straddles love and a recoil from merging his life with hers — a closeness he wants and also dreads — so the contamination marks the very intimacy the engagement forces while keeping it literally untouchable; test whether the fear spares neutral 'dirty' things and clings to her belongings specifically, whether it began with the engagement, and whether it eases once he can voice ambivalence about the marriage.",
+        credit: 1.0,
+      },
+      {
+        text: "He seems to feel his fiancée's things are dirty.",
         credit: 0.3,
       },
     ],
     correctAnswer:
-      "A brief, announced absence likely reactivated a template of permanent abandonment laid down when his father left, so a two-week break feels like being walked out on again; test whether other ordinary separations trigger the same dread, whether the reaction matches his father's disappearance, and whether his trust rebuilds once the therapist predictably returns.",
+      "The disgust aimed only at her things likely straddles love and a recoil from merging his life with hers — a closeness he wants and also dreads — so the contamination marks the very intimacy the engagement forces while keeping it literally untouchable; test whether the fear spares neutral 'dirty' things and clings to her belongings specifically, whether it began with the engagement, and whether it eases once he can voice ambivalence about the marriage.",
     explanation:
-      "Top credit links the icy reaction to a permanent-abandonment template and names three checks, including whether trust rebuilds with a reliable return; 'people come and go, nothing to interpret' is the refusal the matching father history defeats.",
+      "Full credit names both love and dread of merging and a spares-public-restrooms-but-not-her-things test; 'contamination is random' is the dodge the fiancée-specific focus and engagement timing defeat.",
   },
   {
     itemType: "mc",
     prompt:
-      "A woman is sure every partner will cheat on her, checking phones and reading suspicion into innocent texts, though none has ever been unfaithful. Her first serious boyfriend, years ago, betrayed her badly. Which conclusion best follows?",
+      "A woman with a controlling mother she describes as 'my best friend' is tormented by intrusive images of her mother dying in an accident, and calls her many times a day to confirm she's safe. The images surge after any phone call in which her mother has overruled or criticized her. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "She seems worried about being cheated on.",
+        text: "She seems frightened her mother will die and calls to check on her.",
         credit: 0.3,
       },
       {
-        text: "Her suspicion probably comes from being cheated on before; we could discuss that relationship.",
-        credit: 0.6,
-      },
-      {
-        text: "She likely carries a betrayal template from the early infidelity and applies it to faithful partners, so neutral signals get read as proof of cheating; test whether the suspicion fires even with partners who are demonstrably reliable, whether its intensity matches the original betrayal, and whether it eases as a partner stays consistently faithful over time.",
+        text: "The death images likely straddle love and a buried resentment of her mother's control — a fleeting wish to be rid of her that horrifies the devoted daughter — so the obsession gives the forbidden wish a shape and the constant calling undoes it; test whether the images surge right after her mother dominates or criticizes her, whether the calling is driven by guilt rather than realistic danger, and whether the obsession eases once she can voice anger at her mother's control without panic.",
         credit: 1.0,
       },
       {
-        text: "Her current partner is probably hiding an affair, since her instincts were right the first time.",
+        text: "There may be some tension with her mother; we could look at their relationship.",
+        credit: 0.6,
+      },
+      {
+        text: "Worrying about an aging parent's death is completely normal, so the images carry no hidden meaning.",
         credit: 0,
       },
     ],
     correctAnswer:
-      "She likely carries a betrayal template from the early infidelity and applies it to faithful partners, so neutral signals get read as proof of cheating; test whether the suspicion fires even with partners who are demonstrably reliable, whether its intensity matches the original betrayal, and whether it eases as a partner stays consistently faithful over time.",
+      "The death images likely straddle love and a buried resentment of her mother's control — a fleeting wish to be rid of her that horrifies the devoted daughter — so the obsession gives the forbidden wish a shape and the constant calling undoes it; test whether the images surge right after her mother dominates or criticizes her, whether the calling is driven by guilt rather than realistic danger, and whether the obsession eases once she can voice anger at her mother's control without panic.",
     explanation:
-      "Full credit names a betrayal template imported onto faithful partners and three tests; 'her current partner must be cheating' is the overreach the absence of any present evidence defeats.",
+      "Top credit names both devotion and resented control and a surges-after-she's-overruled test; 'worrying about a parent is normal' is the dodge the criticism-linked surges and guilt-driven calling defeat.",
   },
   {
     itemType: "mc",
     prompt:
-      "In session a usually articulate man goes quiet and deferential, waiting to be told what to discuss and apologizing for 'doing it wrong.' He describes a father who mocked any opinion he offered. Which conclusion best follows?",
+      "A man who calls his boss 'the best mentor I've ever had' is plagued by intrusive images of stabbing him during meetings, which leave him sweating and ashamed. The images are worst right after the boss takes credit for his work or overlooks him. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "It is impossible to know why anyone falls silent, so we should not speculate.",
+        text: "Violent images mean he is dangerous and should be removed from the workplace before he acts.",
         credit: 0,
       },
       {
-        text: "He seems to clam up in session.",
-        credit: 0.3,
-      },
-      {
-        text: "His silence probably relates to his father; we could ask more about that.",
+        text: "He probably has some buried frustration at work; we could discuss it.",
         credit: 0.6,
       },
       {
-        text: "He likely replays a template from a mocking father in which voicing an opinion invites ridicule, so he defers and waits to be directed rather than risk being wrong; test whether the same submissiveness appears with other authority figures, whether it matches how he describes his father, and whether it loosens as the therapist consistently welcomes his views without mockery.",
+        text: "He seems to get violent thoughts about his boss.",
+        credit: 0.3,
+      },
+      {
+        text: "The violent images likely straddle real admiration and a rivalrous rage he can't admit toward the man he idealizes — so the obsession carries the forbidden anger that surges exactly when he's slighted, while his shame and idealizing keep it disowned; test whether the images spike right after the boss takes credit or overlooks him, whether they are ego-dystonic rather than wished-for, and whether they ease once he can acknowledge ordinary resentment of his mentor without horror.",
         credit: 1.0,
       },
     ],
     correctAnswer:
-      "He likely replays a template from a mocking father in which voicing an opinion invites ridicule, so he defers and waits to be directed rather than risk being wrong; test whether the same submissiveness appears with other authority figures, whether it matches how he describes his father, and whether it loosens as the therapist consistently welcomes his views without mockery.",
+      "The violent images likely straddle real admiration and a rivalrous rage he can't admit toward the man he idealizes — so the obsession carries the forbidden anger that surges exactly when he's slighted, while his shame and idealizing keep it disowned; test whether the images spike right after the boss takes credit or overlooks him, whether they are ego-dystonic rather than wished-for, and whether they ease once he can acknowledge ordinary resentment of his mentor without horror.",
     explanation:
-      "Top credit reads a ridicule-avoidance template behind the deference and names three checks; 'impossible to know, don't speculate' is the dodge the clear father history and in-session pattern defeat.",
+      "Full credit names both admiration and disowned rivalry and a spikes-after-being-slighted test; 'he is dangerous and must be removed' is the overreach his shame and the ego-dystonic, slight-linked timing defeat.",
   },
   {
     itemType: "mc",
     prompt:
-      "Near the end of nearly every session, a patient abruptly starts an argument or storms out a minute early. She grew up with a mother who would coldly end conversations the moment she was done, leaving the patient mid-sentence. Which conclusion best follows?",
+      "A woman repeatedly confesses tiny 'betrayals' to her partner — a stranger she found attractive, a half-formed unkind thought — and begs reassurance that she's not a bad person. The confessing spikes whenever she has felt annoyed with him but hasn't said so. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "She probably dislikes endings; we could watch how sessions wrap up.",
-        credit: 0.6,
-      },
-      {
-        text: "She just gets argumentative sometimes; people have moods, so it means nothing.",
-        credit: 0,
-      },
-      {
-        text: "She seems to act out when sessions are ending.",
+        text: "She seems to confess small things and seek reassurance a lot.",
         credit: 0.3,
       },
       {
-        text: "She likely replays a template of being abruptly dismissed by a cold mother, and by leaving first she controls the ending instead of being left mid-sentence again; test whether the pre-ending flare-ups track the clock rather than the topic, whether the pattern matches her mother's abrupt cutoffs, and whether it eases when endings are made gradual and predictable.",
+        text: "She is clearly hiding a real affair and the confessions are her guilt leaking out.",
+        credit: 0,
+      },
+      {
+        text: "The confessing likely straddles love and an ordinary resentment she forbids herself — when annoyance she won't voice builds, she converts it into 'sins' and seeks absolution, discharging guilt for a hostility she can't name; test whether the confessions spike after unspoken irritation with him, whether the 'betrayals' are trivial and the relief brief, and whether the urge fades once she can voice everyday annoyance directly.",
         credit: 1.0,
+      },
+      {
+        text: "She might feel guilty about something; we could talk about her relationship.",
+        credit: 0.6,
       },
     ],
     correctAnswer:
-      "She likely replays a template of being abruptly dismissed by a cold mother, and by leaving first she controls the ending instead of being left mid-sentence again; test whether the pre-ending flare-ups track the clock rather than the topic, whether the pattern matches her mother's abrupt cutoffs, and whether it eases when endings are made gradual and predictable.",
+      "The confessing likely straddles love and an ordinary resentment she forbids herself — when annoyance she won't voice builds, she converts it into 'sins' and seeks absolution, discharging guilt for a hostility she can't name; test whether the confessions spike after unspoken irritation with him, whether the 'betrayals' are trivial and the relief brief, and whether the urge fades once she can voice everyday annoyance directly.",
     explanation:
-      "Full credit explains the leaving-first behavior as a controlled re-enactment of being dismissed and names three checks, including timing-versus-topic; 'people have moods, it means nothing' is the refusal the clock-locked pattern defeats.",
+      "Top credit names both love and forbidden resentment and an after-unspoken-irritation test; 'she's hiding a real affair' is the overreach the triviality of the 'sins' and the annoyance-linked timing defeat.",
   },
   {
     itemType: "mc",
     prompt:
-      "A patient is relaxed with his female therapist but, when he meets a male colleague of hers, reads the man's neutral, even-toned questions as cold and threatening. His mother was gentle; his father was harsh and intimidating. Which conclusion best follows?",
+      "A loving father is tormented by intrusive sexual thoughts about his young children, which fill him with disgust and dread. He has begun avoiding bathing or hugging them, and the thoughts are worst in the most tender, affectionate moments. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The male colleague is probably actually intimidating, which is why the patient feels threatened.",
-        credit: 0,
-      },
-      {
-        text: "He seems more comfortable with women than men.",
-        credit: 0.3,
-      },
-      {
-        text: "His reaction to men likely comes from his father; we could explore that relationship.",
+        text: "He probably has some anxiety around his kids; we could monitor it.",
         credit: 0.6,
       },
       {
-        text: "He likely brings a harsh-father template to men specifically, so the same neutral manner feels safe from a woman but menacing from a man; test whether other neutral men trigger the same threat reading, whether the reaction matches his account of his father, and whether identical questions feel benign when posed by a woman.",
+        text: "The taboo thoughts almost certainly straddle his deep love and the very revulsion that defines him — the obsession fastens onto what he holds most sacred precisely because any such impulse is unthinkable to him, so tenderness triggers the intrusive opposite and avoidance tries to keep him 'safe'; test whether the thoughts are ego-dystonic and horrifying rather than wished-for, whether they intrude most in affectionate moments, and whether they ease as he learns the thought is not a wish.",
         credit: 1.0,
+      },
+      {
+        text: "He seems to have disturbing thoughts about his children and avoids contact.",
+        credit: 0.3,
+      },
+      {
+        text: "Having such thoughts proves he is a danger to his children and must be kept away from them.",
+        credit: 0,
       },
     ],
     correctAnswer:
-      "He likely brings a harsh-father template to men specifically, so the same neutral manner feels safe from a woman but menacing from a man; test whether other neutral men trigger the same threat reading, whether the reaction matches his account of his father, and whether identical questions feel benign when posed by a woman.",
+      "The taboo thoughts almost certainly straddle his deep love and the very revulsion that defines him — the obsession fastens onto what he holds most sacred precisely because any such impulse is unthinkable to him, so tenderness triggers the intrusive opposite and avoidance tries to keep him 'safe'; test whether the thoughts are ego-dystonic and horrifying rather than wished-for, whether they intrude most in affectionate moments, and whether they ease as he learns the thought is not a wish.",
     explanation:
-      "Top credit reads a gender-specific harsh-father template from the split reaction and names three checks, including the same-question-different-sex contrast; 'the colleague is genuinely intimidating' is the overreach the neutral, even tone defeats.",
+      "Full credit reads the taboo thought as fastening onto what he holds sacred and names an ego-dystonic, worst-in-tender-moments test; 'he is a danger and must be kept away' is the overreach his disgust and the affection-linked timing defeat.",
   },
   {
     itemType: "mc",
     prompt:
-      "Whenever the therapist falls silent to let the patient think, the patient concludes she is 'bored and disappointed in me' and rushes to fill the gap. His mother had severe depression and would go silent and withdrawn for days, which he learned to read as his fault. Which conclusion best follows?",
+      "A woman lovingly nursing her terminally ill husband begins compulsively checking the front door is locked dozens of times each night after he falls asleep, fearing an intruder, though their neighborhood is safe and nothing has happened. The checking began as his prognosis worsened. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Silence is genuinely a sign of disapproval, so he correctly senses the therapist is disappointed.",
-        credit: 0,
+        text: "The lock-checking likely straddles love and an unbearable wish for the ordeal to end — as a buried longing to escape or to 'let him go' stirs, it is recast as an outside threat she can guard against, keeping the conflict out of awareness; test whether the checking intensified as his prognosis worsened, whether the feared danger is realistically absent, and whether it eases once she can voice exhaustion and the wish for relief without guilt.",
+        credit: 1.0,
       },
       {
-        text: "His reading of silence probably ties to his mother; we could talk about her depression.",
-        credit: 0.6,
-      },
-      {
-        text: "He seems anxious during pauses.",
+        text: "She seems to check the locks a lot at night.",
         credit: 0.3,
       },
       {
-        text: "He likely replays a template from a withdrawn, depressed mother in which silence meant he had caused her unhappiness, so an ordinary pause reads as disappointment in him; test whether he reads other people's silences the same way, whether the reaction matches his mother's withdrawals, and whether it eases once the therapist names the silence as neutral thinking time.",
-        credit: 1.0,
+        text: "She's probably under enormous strain; we could support her through it.",
+        credit: 0.6,
+      },
+      {
+        text: "Checking locks is sensible caution, so there's nothing about her situation to read into it.",
+        credit: 0,
       },
     ],
     correctAnswer:
-      "He likely replays a template from a withdrawn, depressed mother in which silence meant he had caused her unhappiness, so an ordinary pause reads as disappointment in him; test whether he reads other people's silences the same way, whether the reaction matches his mother's withdrawals, and whether it eases once the therapist names the silence as neutral thinking time.",
+      "The lock-checking likely straddles love and an unbearable wish for the ordeal to end — as a buried longing to escape or to 'let him go' stirs, it is recast as an outside threat she can guard against, keeping the conflict out of awareness; test whether the checking intensified as his prognosis worsened, whether the feared danger is realistically absent, and whether it eases once she can voice exhaustion and the wish for relief without guilt.",
     explanation:
-      "Full credit ties the misread silence to a depressed-mother template and names three checks; 'silence genuinely signals disapproval' is the overreach a neutral thinking pause defeats.",
+      "Top credit names both devotion and the forbidden wish for relief and a worsened-with-his-prognosis test; 'checking locks is sensible' is the dodge the safe neighborhood and grief-linked timing defeat.",
   },
   {
     itemType: "mc",
     prompt:
-      "When the therapist asks a simple clarifying question — 'What did you mean by that?' — the patient bristles and snaps, 'Why are you interrogating me?' He grew up with a suspicious parent who cross-examined his every move as if he were guilty. Which conclusion best follows?",
+      "A man who openly cannot stand his critical mother finds that whenever a flash of anger at her arises, he must immediately repeat 'I hope she's healthy and happy' exactly four times or he feels something terrible will happen to her. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He seems defensive when asked questions.",
-        credit: 0.3,
-      },
-      {
-        text: "His defensiveness probably comes from his past; we could ask about his upbringing.",
-        credit: 0.6,
-      },
-      {
-        text: "Questions are inherently accusatory, so he is right to feel interrogated.",
+        text: "He's just superstitious, and superstitions don't mean anything.",
         credit: 0,
       },
       {
-        text: "He likely replays a template from an accusing parent in which any question presumed guilt, so a neutral clarifying question reads as interrogation; test whether he reacts the same way to innocent questions from others, whether the reaction matches his account of the suspicious parent, and whether it eases as the therapist's questions reliably turn out to be non-accusatory.",
+        text: "He seems to repeat a phrase after getting angry at his mother.",
+        credit: 0.3,
+      },
+      {
+        text: "The ritual likely straddles hostility and love — the four protective repetitions undo a hostile, even death-tinged wish toward his mother that his anger throws up, magically cancelling the forbidden impulse so he need not own it; test whether the phrase is triggered specifically by flashes of anger at her, whether skipping it brings dread of harming her, and whether the urge fades once he can hold anger at his mother without feeling it could kill her.",
         credit: 1.0,
+      },
+      {
+        text: "He might have unresolved feelings about his mother; we could explore them.",
+        credit: 0.6,
       },
     ],
     correctAnswer:
-      "He likely replays a template from an accusing parent in which any question presumed guilt, so a neutral clarifying question reads as interrogation; test whether he reacts the same way to innocent questions from others, whether the reaction matches his account of the suspicious parent, and whether it eases as the therapist's questions reliably turn out to be non-accusatory.",
+      "The ritual likely straddles hostility and love — the four protective repetitions undo a hostile, even death-tinged wish toward his mother that his anger throws up, magically cancelling the forbidden impulse so he need not own it; test whether the phrase is triggered specifically by flashes of anger at her, whether skipping it brings dread of harming her, and whether the urge fades once he can hold anger at his mother without feeling it could kill her.",
     explanation:
-      "Top credit reads an interrogation template behind the disproportionate snap and names three checks; 'questions are inherently accusatory' is the overreach a neutral clarifying question defeats.",
+      "Full credit names both hostility and love bound by an undoing ritual and a triggered-by-anger test; 'he's just superstitious' is the dodge the anger-specific trigger and harm-dread defeat.",
   },
   {
     itemType: "mc",
     prompt:
-      "A patient who, as a child, cared for a chronically ill mother spends sessions worrying aloud about whether the therapist is tired, overworked, or upset, and tries to keep things easy for her. Which conclusion best follows?",
+      "An engaged man spends hours comparing his fiancée to other women and to past partners, compiling mental pro-and-con lists to decide if she's 'objectively the best choice.' He feels brief calm after each tally, then must redo it. He can name nothing actually wrong. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He is just a thoughtful, considerate person, so there is nothing to understand here.",
-        credit: 0,
-      },
-      {
-        text: "He seems concerned about the therapist's wellbeing.",
-        credit: 0.3,
-      },
-      {
-        text: "His caretaking probably relates to nursing his mother; we could explore that role.",
+        text: "He may have cold feet; we could talk about the engagement.",
         credit: 0.6,
       },
       {
-        text: "He likely replays the caretaker role he held with an ill mother, casting the therapist as the fragile one he must protect rather than letting himself be cared for; test whether he takes the same caretaking role in his other relationships, whether it matches his history with his mother, and whether it eases when the therapist makes clear she is well and it is his hour.",
+        text: "He seems to keep comparing his fiancée to other people.",
+        credit: 0.3,
+      },
+      {
+        text: "The endless tallying likely expresses an ambivalence he can't sit with — a real commitment colliding with a fear of foreclosing all other possibilities — so the comparison both keeps every option symbolically open and postpones the choice that would end the conflict; test whether the lists attach to no genuine fault, whether each 'verdict' brings only brief calm before restarting, and whether the urge eases once he can own both wanting her and grieving the roads not taken.",
         credit: 1.0,
+      },
+      {
+        text: "If he has to keep comparing her, she's plainly the wrong woman for him.",
+        credit: 0,
       },
     ],
     correctAnswer:
-      "He likely replays the caretaker role he held with an ill mother, casting the therapist as the fragile one he must protect rather than letting himself be cared for; test whether he takes the same caretaking role in his other relationships, whether it matches his history with his mother, and whether it eases when the therapist makes clear she is well and it is his hour.",
+      "The endless tallying likely expresses an ambivalence he can't sit with — a real commitment colliding with a fear of foreclosing all other possibilities — so the comparison both keeps every option symbolically open and postpones the choice that would end the conflict; test whether the lists attach to no genuine fault, whether each 'verdict' brings only brief calm before restarting, and whether the urge eases once he can own both wanting her and grieving the roads not taken.",
     explanation:
-      "Full credit reads a caretaker-role template reversing who tends whom and names three checks; 'just a considerate person, nothing to understand' is the dodge the role-reversal pattern defeats.",
+      "Top credit names both commitment and fear of foreclosing options and a brief-calm-then-restart test; 'she's plainly wrong for him' is the overreach the absence of any real fault and the endless loop defeat.",
   },
   {
     itemType: "mc",
     prompt:
-      "A patient idolizes her therapist for months, calling her 'the only person who has ever understood me,' then turns scornful the first time the therapist mishears a detail. She describes doing exactly this with a favorite teacher and a former best friend. Which conclusion best follows?",
+      "A man recently promoted over his close friend and colleague becomes obsessed with the fear that he'll blurt out something cruel to him, and rehearses 'safe' sentences before they speak. The fear is sharpest in moments his friend seems hurt or envious about the promotion. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "She probably swings between idealizing and devaluing; we could track those shifts.",
-        credit: 0.6,
-      },
-      {
-        text: "The therapist clearly failed her, which is why the admiration collapsed.",
-        credit: 0,
-      },
-      {
-        text: "She seems to change her mind about people.",
+        text: "He seems afraid he'll say something mean to his friend.",
         credit: 0.3,
       },
       {
-        text: "She likely replays an all-or-nothing template in which a person is either perfect or worthless, so one small lapse flips idealization into contempt; test whether the same rise-and-crash appears across her other close relationships, whether the trigger is always a minor, ordinary failing, and whether the contempt softens when she can hold the therapist's good and flawed sides together.",
+        text: "Worrying about saying the wrong thing is universal, so there's nothing particular to read in his case.",
+        credit: 0,
+      },
+      {
+        text: "The fear likely straddles real friendship and a competitive triumph he can't admit — winning the role over his friend stirs a hostility or gloating the loyal part of him forbids, so the obsession dreads as an accident what a buried part might wish to say, and rehearsing 'safe' lines undoes it; test whether the fear sharpens when the friend seems hurt or envious, whether it began with the promotion, and whether it eases once he can own ordinary rivalry without horror.",
         credit: 1.0,
+      },
+      {
+        text: "There may be some awkwardness about the promotion; we could discuss it.",
+        credit: 0.6,
       },
     ],
     correctAnswer:
-      "She likely replays an all-or-nothing template in which a person is either perfect or worthless, so one small lapse flips idealization into contempt; test whether the same rise-and-crash appears across her other close relationships, whether the trigger is always a minor, ordinary failing, and whether the contempt softens when she can hold the therapist's good and flawed sides together.",
+      "The fear likely straddles real friendship and a competitive triumph he can't admit — winning the role over his friend stirs a hostility or gloating the loyal part of him forbids, so the obsession dreads as an accident what a buried part might wish to say, and rehearsing 'safe' lines undoes it; test whether the fear sharpens when the friend seems hurt or envious, whether it began with the promotion, and whether it eases once he can own ordinary rivalry without horror.",
     explanation:
-      "Top credit names an all-or-nothing relational template behind the repeated idealize-then-crash cycle and three checks; 'the therapist clearly failed her' is the overreach the trivial trigger and identical history defeat.",
+      "Full credit names both friendship and disowned triumph and a sharpens-when-the-friend-seems-hurt test; 'worrying is universal' is the dodge the rivalry-linked timing and promotion onset defeat.",
   },
 ];
 
@@ -417,425 +417,425 @@ const hybrid: HomeworkItem[] = [
   {
     itemType: "hybrid",
     prompt:
-      "A patient reports the same story about his boss, his landlord, his last two partners, and now, hesitantly, about the therapist: each one, he says, 'starts out fine and then tries to control me.' No one else describes these people as controlling. Which conclusion best follows?",
+      "A woman in her third pregnancy, who very much wanted this child, is gripped by intrusive images of throwing the baby down the stairs once it's born. She is horrified and has started avoiding the staircase. The images are worst when she dwells on how this child will end her last shred of personal freedom. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He seems to feel controlled by a lot of people.",
-        credit: 0.3,
-      },
-      {
-        text: "He has simply been unlucky enough to surround himself with controlling people in every area of life.",
-        credit: 0,
-      },
-      {
-        text: "He likely carries a single relational template — 'closeness leads to being controlled' — and projects it onto each new figure including the therapist, so ordinary requests feel like domination; test whether the others are described as controlling by anyone but him, whether the pattern traces to a specific early controlling figure, and whether it surfaces with the therapist exactly as trust grows.",
+        text: "The images likely straddle love for the wanted child and a resentment of the freedom it will cost her that she cannot allow — the obsession gives the forbidden feeling a shape while her horror and stair-avoidance frantically disprove it; test whether the images spike when she dwells on lost freedom, whether the avoidance aims at reassurance rather than real danger, and whether they ease once she can voice ambivalence about the baby without panic.",
         credit: 1.0,
       },
       {
-        text: "He probably brings the same expectation to everyone; we could compare the relationships.",
+        text: "She probably has some mixed feelings about the pregnancy; we could check in.",
         credit: 0.6,
+      },
+      {
+        text: "She seems to have frightening images about the baby and avoids the stairs.",
+        credit: 0.3,
+      },
+      {
+        text: "Intrusive harm images are meaningless misfires of the brain and say nothing about her feelings.",
+        credit: 0,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'one imported template' lead from the rival 'he keeps genuinely choosing controlling people,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'the images carry forbidden resentment of the baby' lead from the rival 'these are random, meaningless intrusive thoughts,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: check whether anyone besides the patient — coworkers, friends, the therapist's own behavior — would describe these figures as controlling, since an imported template predicts the control is in his reading, not in them. My lead is refuted if independent observers consistently confirm that these people really are domineering, which would point to repeated real choices rather than a projected template.",
+        "Cheapest test: note whether the images reliably surge when she dwells on the freedom the baby will cost her and quiet otherwise — content that tracks that specific resentment points to a disguised conflict rather than random noise. My lead is refuted if the images come at random moments with no link to thoughts of lost freedom and no relief when ambivalence is named.",
       yieldAnchors: [
-        "The same 'tries to control me' story repeats across boss, landlord, partners, and therapist",
-        "No one else describes these people as controlling",
-        "The feeling appears only after closeness develops",
+        "She wanted this child",
+        "Intrusive images of harming the baby",
+        "Images worst when she dwells on lost freedom",
       ],
       riskAnchors: [
-        "Independent observers do not see the others as controlling",
-        "The pattern traces to a specific early controlling figure",
-        "It emerges with the therapist as trust grows",
+        "Images spike with thoughts of lost freedom",
+        "Stair-avoidance seeks reassurance, not safety",
+        "They ease once ambivalence is voiced",
       ],
       defeatedBy: [
-        "Independent observers confirm all of them are genuinely controlling",
-        "The therapist is in fact behaving in a controlling way",
+        "The images occur at random with no trigger",
+        "She feels only uncomplicated joy about the pregnancy",
       ],
     },
     correctAnswer:
-      "He likely carries a single relational template — 'closeness leads to being controlled' — and projects it onto each new figure including the therapist, so ordinary requests feel like domination; test whether the others are described as controlling by anyone but him, whether the pattern traces to a specific early controlling figure, and whether it surfaces with the therapist exactly as trust grows.",
+      "The images likely straddle love for the wanted child and a resentment of the freedom it will cost her that she cannot allow — the obsession gives the forbidden feeling a shape while her horror and stair-avoidance frantically disprove it; test whether the images spike when she dwells on lost freedom, whether the avoidance aims at reassurance rather than real danger, and whether they ease once she can voice ambivalence about the baby without panic.",
     explanation:
-      "Full credit names one imported template behind the identical cross-relationship story and a cheap independent-observer test that states its own refutation; 'just unlucky with controlling people everywhere' is the dodge the universality of the pattern defeats.",
+      "Full credit names both love and forbidden resentment and is paired with a do-they-track-thoughts-of-lost-freedom test that names its refutation; 'meaningless misfires' is the dodge the freedom-linked timing defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "The therapist has to cancel one session because of illness. The patient, generally composed, spirals for days, convinced the therapist 'finally got sick of me.' She was raised by a parent who used silence and withdrawal as punishment whenever she 'misbehaved.' Which conclusion best follows?",
+      "A newlywed woman must arrange the couple's shared shelves until they feel 'exactly right,' redoing them for an hour, but only the shelves that hold both her and her husband's things — her own private drawers don't trigger her. The ritual began after the wedding. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Her distress probably has roots in her childhood; we could look into the withdrawal punishments.",
-        credit: 0.6,
-      },
-      {
-        text: "A single cancellation is no big deal, so she must be exaggerating for attention.",
-        credit: 0,
-      },
-      {
-        text: "She seems thrown by the cancellation.",
+        text: "She seems to spend a lot of time arranging the shared shelves.",
         credit: 0.3,
       },
       {
-        text: "The cancellation likely activated a template in which a caregiver's absence is punishment for being bad, so a neutral, illness-driven cancellation reads as rejection she caused; test whether other unavoidable absences trigger the same self-blame, whether it matches the parent's withdrawal-as-punishment pattern, and whether it eases once she learns the reason was simple illness.",
+        text: "'Just right' urges are hardwired quirks, so the focus on the shared shelves means nothing.",
+        credit: 0,
+      },
+      {
+        text: "The ritual fixed on the shared shelves likely straddles a wish to merge with her husband and a fear of losing herself in him — the not-yet-'right' arrangement enacts an unsettled boundary she can't consciously hold, which is why only the combined possessions, never her private ones, set it off; test whether the urge spares her solo belongings, whether it began with the marriage, and whether it eases once she can voice both the wish for closeness and the fear of being subsumed.",
         credit: 1.0,
+      },
+      {
+        text: "She might be adjusting to married life; we could talk about it.",
+        credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'absence-as-punishment template' lead from the rival 'she is simply very sensitive to any disruption,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'the ritual straddles merging and losing herself' lead from the rival 'she is simply a tidy perfectionist,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: see whether a neutral disruption that carries no hint of rejection — say, the office building closing for repairs — provokes the same self-blame, since a punishment template should fire on perceived rejection, not on disruption itself. My lead is refuted if every schedule change, however impersonal, distresses her equally, which would point to general intolerance of disruption rather than a rejection template.",
+        "Cheapest test: compare her reaction to the shared shelves against her own private drawers — a 'just right' urge that fires only on the combined possessions points to a conflict about merging, not general tidiness. My lead is refuted if she needs everything she owns arranged equally, including her solo belongings, which would fit ordinary perfectionism.",
       yieldAnchors: [
-        "One unavoidable cancellation triggers days of spiraling",
-        "She concludes the therapist 'got sick of me'",
-        "Her parent used withdrawal as punishment for misbehaving",
+        "The ritual targets only shared shelves",
+        "Her private drawers don't trigger her",
+        "It began after the wedding",
       ],
       riskAnchors: [
-        "Other rejection-tinged absences trigger the same self-blame",
-        "Impersonal disruptions provoke far less reaction",
-        "The reaction eases once she learns the cause was illness",
+        "The urge spares her solo belongings",
+        "It began with the marriage",
+        "It eases once the merging conflict is voiced",
       ],
       defeatedBy: [
-        "Every impersonal schedule change distresses her equally",
-        "The cancellation was actually a deliberate brush-off",
+        "She must arrange all her possessions equally",
+        "The urge predates the marriage",
       ],
     },
     correctAnswer:
-      "The cancellation likely activated a template in which a caregiver's absence is punishment for being bad, so a neutral, illness-driven cancellation reads as rejection she caused; test whether other unavoidable absences trigger the same self-blame, whether it matches the parent's withdrawal-as-punishment pattern, and whether it eases once she learns the reason was simple illness.",
+      "The ritual fixed on the shared shelves likely straddles a wish to merge with her husband and a fear of losing herself in him — the not-yet-'right' arrangement enacts an unsettled boundary she can't consciously hold, which is why only the combined possessions, never her private ones, set it off; test whether the urge spares her solo belongings, whether it began with the marriage, and whether it eases once she can voice both the wish for closeness and the fear of being subsumed.",
     explanation:
-      "Top credit binds the spiral to an absence-as-punishment template and a cheap impersonal-disruption test that names its refutation; 'exaggerating for attention' is the cynical overreach the genuine punishment history defeats.",
+      "Full credit names both the wish to merge and the fear of losing herself and is paired with a shared-vs-private test that names its refutation; 'hardwired quirk' is the dodge the shared-shelves-only focus defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "When the therapist gently points out a contradiction, the patient experiences it as a 'brutal attack' and feels crushed for the rest of the session. The comment was mild and kindly worded. His mother criticized him so relentlessly that any feedback came to mean 'you are worthless.' Which conclusion best follows?",
+      "A man who privately hates his job but can't afford to quit compulsively returns to the office at night to check he locked up and didn't leave anything that could get him fired. The checking is worst after days he fantasized about walking out. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He seems hurt by the feedback.",
-        credit: 0.3,
-      },
-      {
-        text: "Even gentle feedback is a form of attack, so his crushed reaction is appropriate.",
-        credit: 0,
-      },
-      {
-        text: "His sensitivity to feedback probably stems from his mother; we could explore her criticism.",
+        text: "He's probably stressed about work; we could explore his job.",
         credit: 0.6,
       },
       {
-        text: "A mild observation likely lands on a template from a relentlessly critical mother in which any feedback equals 'you are worthless,' so a kind comment is felt as a brutal attack; test whether neutral feedback from others lands the same way, whether the reaction matches his mother's relentless criticism, and whether it lessens as the therapist's gentle comments repeatedly prove non-destructive.",
+        text: "The checking likely straddles a need to keep the job and a wish to be rid of it — on the days the urge to walk out flares, the dread that he's done something fireable both expresses and guards against the forbidden wish to get himself let go; test whether the checking spikes after he's fantasized about quitting, whether the feared lapse never actually occurs, and whether it eases once he can own wanting to leave without acting on it.",
         credit: 1.0,
+      },
+      {
+        text: "He seems to keep going back to check the office.",
+        credit: 0.3,
+      },
+      {
+        text: "Plenty of people double-check they locked up, so there's nothing to read into it.",
+        credit: 0,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'feedback-equals-worthlessness template' lead from the rival 'the comment really was harsher than it looked,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'the checking straddles needing and wanting to lose the job' lead from the rival 'he's just a conscientious employee,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: review the exact wording with the patient, or have a neutral third party rate its harshness, since a template account predicts the devastation outruns anything in the actual words. My lead is refuted if the comment, examined plainly, really was cutting or contemptuous, which would make his reaction a fair response rather than a replayed template.",
+        "Cheapest test: track whether the night checks spike specifically after days he's fantasized about walking out — checking that follows the quitting urge points to a disguised conflict, not plain conscientiousness. My lead is refuted if the checking is steady regardless of those fantasies and he has actually left things unlocked, which would fit realistic caution.",
       yieldAnchors: [
-        "A mild, kindly comment is experienced as a brutal attack",
-        "He feels crushed for the rest of the session",
-        "His mother's relentless criticism made feedback mean 'worthless'",
+        "He hates the job but can't quit",
+        "He checks he didn't do something fireable",
+        "Worst after fantasizing about walking out",
       ],
       riskAnchors: [
-        "Neutral feedback from others lands as an attack too",
-        "The reaction matches his mother's pattern of criticism",
-        "It lessens as gentle comments repeatedly prove harmless",
+        "Checking spikes after quitting fantasies",
+        "The feared lapse never actually occurs",
+        "It eases once the wish to leave is owned",
       ],
       defeatedBy: [
-        "The comment, examined plainly, really was cutting",
-        "He reacts calmly to all other forms of feedback",
+        "The checking is unrelated to quitting fantasies",
+        "He has genuinely left the office unsecured",
       ],
     },
     correctAnswer:
-      "A mild observation likely lands on a template from a relentlessly critical mother in which any feedback equals 'you are worthless,' so a kind comment is felt as a brutal attack; test whether neutral feedback from others lands the same way, whether the reaction matches his mother's relentless criticism, and whether it lessens as the therapist's gentle comments repeatedly prove non-destructive.",
+      "The checking likely straddles a need to keep the job and a wish to be rid of it — on the days the urge to walk out flares, the dread that he's done something fireable both expresses and guards against the forbidden wish to get himself let go; test whether the checking spikes after he's fantasized about quitting, whether the feared lapse never actually occurs, and whether it eases once he can own wanting to leave without acting on it.",
     explanation:
-      "Full credit ties the crushed reaction to a feedback-equals-worthlessness template and a cheap word-rating test that names its refutation; 'even gentle feedback is an attack' is the overreach the mild wording defeats.",
+      "Full credit names both needing the job and wishing to lose it and is paired with a after-quitting-fantasies test that names its refutation; 'people double-check' is the dodge the fantasy-linked timing defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A woman keeps choosing partners in crisis — addicts, the chronically unemployed, the deeply troubled — and pours herself into rescuing each one until she is exhausted and they leave. She grew up managing an alcoholic father's life. Which conclusion best follows?",
+      "A new mother repeatedly asks her partner and her own mother, 'Do you think I really love the baby? Am I bonding right?' and scours her feelings for proof. The questioning spikes on days she's felt drained and wished, for a moment, to be child-free again. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "She just keeps meeting people who happen to need help.",
-        credit: 0,
-      },
-      {
-        text: "She seems to end up with troubled partners.",
+        text: "She seems to keep asking whether she loves her baby.",
         credit: 0.3,
       },
       {
-        text: "She likely replays a rescuer template formed with an alcoholic father, seeking partners who let her re-enact saving him, so being needed feels like love; test whether she overlooks stable partners who don't need rescuing, whether the role matches her history with her father, and whether she feels strangely empty or anxious when a relationship doesn't require saving anyone.",
+        text: "The reassurance-seeking likely straddles real love and a forbidden wish to have her old life back — when ordinary maternal resentment surfaces, she can't hold it beside her love, so she converts it into doubt about whether she loves the baby at all and seeks proof; test whether the questioning spikes after she's wished to be child-free, whether reassurance brings only brief relief, and whether it eases once she can own ambivalence without it meaning she's a bad mother.",
         credit: 1.0,
       },
       {
-        text: "Her rescuing pattern probably ties to her father; we could look at those relationships.",
+        text: "Her doubt likely means she truly hasn't bonded and the baby is at risk.",
+        credit: 0,
+      },
+      {
+        text: "She might be struggling with new motherhood; we could offer support.",
         credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'rescuer template' lead from the rival 'she is simply a caring person drawn to help anyone,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'the doubt converts forbidden resentment into a love-question' lead from the rival 'she has genuinely failed to bond with the baby,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: introduce or notice a stable, self-sufficient partner and watch her response, since a rescuer template predicts she will lose interest or feel uneasy when there is no one to save. My lead is refuted if she is equally drawn to and content with partners who need nothing fixed, which would point to general kindness rather than a specific re-enactment of rescuing her father.",
+        "Cheapest test: check whether the 'do I love her?' spikes specifically after moments she's wished for her old child-free life and is soothed only briefly by reassurance — doubt that tracks those moments points to disguised ambivalence, not a true failure to bond. My lead is refuted if she shows flat indifference and no warmth toward the baby across the board, which would fit a real bonding problem.",
       yieldAnchors: [
-        "She repeatedly chooses partners in crisis",
-        "She rescues them to the point of exhaustion",
-        "She grew up managing an alcoholic father",
+        "She repeatedly seeks reassurance about loving the baby",
+        "Spikes after wishing to be child-free",
+        "She scours her feelings for proof",
       ],
       riskAnchors: [
-        "She overlooks stable partners who need no rescuing",
-        "The role matches her history with her father",
-        "She feels empty when no one needs saving",
+        "Questioning spikes after child-free wishes",
+        "Reassurance helps only briefly",
+        "It eases once ambivalence is owned",
       ],
       defeatedBy: [
-        "She is equally drawn to and happy with self-sufficient partners",
-        "Her partners' crises are pure coincidence with no selection on her part",
+        "She is flatly indifferent to the baby",
+        "Reassurance permanently resolves the doubt",
       ],
     },
     correctAnswer:
-      "She likely replays a rescuer template formed with an alcoholic father, seeking partners who let her re-enact saving him, so being needed feels like love; test whether she overlooks stable partners who don't need rescuing, whether the role matches her history with her father, and whether she feels strangely empty or anxious when a relationship doesn't require saving anyone.",
+      "The reassurance-seeking likely straddles real love and a forbidden wish to have her old life back — when ordinary maternal resentment surfaces, she can't hold it beside her love, so she converts it into doubt about whether she loves the baby at all and seeks proof; test whether the questioning spikes after she's wished to be child-free, whether reassurance brings only brief relief, and whether it eases once she can own ambivalence without it meaning she's a bad mother.",
     explanation:
-      "Full credit names a rescuer template re-enacted from the father and a cheap stable-partner test that states its refutation; 'just keeps meeting people who need help' is the dodge the consistent selection defeats.",
+      "Full credit names both love and the forbidden wish for her old life and is paired with an after-child-free-wishes test that names its refutation; 'she truly hasn't bonded' is the overreach the brief-relief loop defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "Each time the therapist shows genuine warmth, the patient narrows his eyes and asks, 'What do you want from me?' His mother was affectionate only when she needed something, then turned cold once she got it. Which conclusion best follows?",
+      "Since his domineering mother died, a man feels compelled to wash thoroughly after handling any object she left him, and avoids her boxed-up belongings entirely, though he says he 'misses her terribly.' The urge is strongest when he recalls a specific way she controlled him. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "His suspicion of warmth probably comes from his mother; we could explore that.",
-        credit: 0.6,
-      },
-      {
-        text: "Warmth always hides an agenda, so he is right to suspect the therapist wants something.",
+        text: "Grief makes people behave oddly, so there's no particular meaning in his washing.",
         credit: 0,
       },
       {
-        text: "He seems wary of kindness.",
-        credit: 0.3,
+        text: "He's probably grieving in a complicated way; we could talk about his loss.",
+        credit: 0.6,
       },
       {
-        text: "He likely carries a template in which affection is always transactional, learned from a mother who was warm only to extract things, so present warmth automatically reads as a setup; test whether he distrusts warmth from everyone, whether the suspicion matches his mother's pattern, and whether it eases as the therapist's warmth repeatedly comes with no strings attached.",
+        text: "The washing likely straddles love and grief on one side and a buried anger at her control on the other — handling her things stirs the resentment he can't square with mourning, and washing 'cleanses' the forbidden feeling while avoidance keeps it at bay; test whether the urge surges when he recalls her controlling him, whether it attaches only to her objects, and whether it eases once he can hold both grief and anger at his mother at once.",
         credit: 1.0,
+      },
+      {
+        text: "He seems to wash after touching his mother's things.",
+        credit: 0.3,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'affection-is-transactional template' lead from the rival 'he is just generally cynical about people,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'the washing cleanses anger that collides with his grief' lead from the rival 'this is just ordinary, messy grieving,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: notice whether his suspicion spikes specifically at warmth and affection rather than at every interaction, since a transactional-affection template predicts kindness, not neutrality, is the trigger. My lead is refuted if he is equally distrustful of cold and warm behavior alike, which would point to broad cynicism rather than a template tied to affection.",
+        "Cheapest test: note whether the urge to wash surges specifically when he recalls her controlling him and clings only to her objects — a contamination feeling tied to those memories points to disowned anger braided into grief. My lead is refuted if the washing is generalized, unrelated to memories of her control, and untouched by acknowledging anger at her.",
       yieldAnchors: [
-        "Warmth specifically triggers 'what do you want from me?'",
-        "His mother was affectionate only to extract things",
-        "She turned cold once she got what she wanted",
+        "He washes after handling her objects",
+        "He avoids her belongings yet says he misses her",
+        "Urge strongest recalling her control",
       ],
       riskAnchors: [
-        "He distrusts warmth from many different people",
-        "The suspicion matches his mother's transactional pattern",
-        "It eases as warmth repeatedly comes with no strings",
+        "Urge surges with memories of her control",
+        "It attaches only to her objects",
+        "It eases once grief and anger coexist",
       ],
       defeatedBy: [
-        "He is equally suspicious of cold and warm behavior alike",
-        "The therapist actually does want something from him",
+        "The washing is generalized and memory-independent",
+        "He feels only uncomplicated grief",
       ],
     },
     correctAnswer:
-      "He likely carries a template in which affection is always transactional, learned from a mother who was warm only to extract things, so present warmth automatically reads as a setup; test whether he distrusts warmth from everyone, whether the suspicion matches his mother's pattern, and whether it eases as the therapist's warmth repeatedly comes with no strings attached.",
+      "The washing likely straddles love and grief on one side and a buried anger at her control on the other — handling her things stirs the resentment he can't square with mourning, and washing 'cleanses' the forbidden feeling while avoidance keeps it at bay; test whether the urge surges when he recalls her controlling him, whether it attaches only to her objects, and whether it eases once he can hold both grief and anger at his mother at once.",
     explanation:
-      "Top credit names a transactional-affection template behind the wariness of warmth and a cheap trigger-specificity test that names its refutation; 'warmth always hides an agenda' is the overreach the therapist's no-strings warmth defeats.",
+      "Full credit names both grief and disowned anger and is paired with a surges-with-memories-of-control test that names its refutation; 'grief makes people odd' is the dodge the control-memory timing defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A patient turns every interpretation into a contest, rushing to top the therapist's observations with sharper ones and visibly pleased when he 'wins.' He grew up with a brilliant older brother against whom he was constantly measured. Which conclusion best follows?",
+      "A faithful woman is tormented by intrusive thoughts that she'll suddenly cheat on her devoted husband, and compulsively confesses every fleeting attraction to him. The thoughts surge after evenings she's felt smothered by how much he needs her. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He seems competitive in session.",
-        credit: 0.3,
-      },
-      {
-        text: "His competitiveness probably ties to his brother; we could discuss that rivalry.",
+        text: "She might have some doubts about the relationship; we could explore them.",
         credit: 0.6,
       },
       {
-        text: "He likely replays a sibling-rivalry template formed against a favored brother, casting the therapist as a rival he must outdo to feel worthy; test whether the same one-upmanship appears with other figures he could compete with, whether it matches his history of being measured against his brother, and whether it eases when collaboration, not winning, is rewarded in session.",
+        text: "She seems to fear cheating and keeps confessing attractions.",
+        credit: 0.3,
+      },
+      {
+        text: "The intrusive thoughts likely straddle her love and a forbidden wish for distance or freedom — when his neediness feels smothering, the disowned urge to escape is recast as a dreaded impulse to betray him, and confessing both discharges the guilt and reassures her she won't; test whether the thoughts surge after she's felt smothered, whether the attractions are trivial and the relief brief, and whether they ease once she can voice a wish for space without it meaning betrayal.",
         credit: 1.0,
       },
       {
-        text: "He is simply more intelligent than the therapist, which is why he keeps winning the exchanges.",
+        text: "These thoughts mean she actually wants to cheat and is on the verge of an affair.",
         credit: 0,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'sibling-rivalry template' lead from the rival 'he is just a naturally competitive personality,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'the cheating thoughts recast a forbidden wish for distance' lead from the rival 'she genuinely wants to have an affair,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: see whether the contest specifically targets a figure he can frame as a sibling-like rival rather than appearing evenly across all situations, since a rivalry template should fire in measured-against-a-peer contexts. My lead is refuted if he competes just as hard in settings with no one to be compared to, which would point to a general competitive trait rather than a replayed sibling dynamic.",
+        "Cheapest test: check whether the intrusive thoughts surge right after she's felt smothered by his neediness and bring dread rather than desire — thoughts tied to those moments point to a disguised wish for space, not a real intent to cheat. My lead is refuted if she actually seeks out affairs and the thoughts come with wish rather than horror.",
       yieldAnchors: [
-        "He turns interpretations into contests to win",
-        "He is visibly pleased when he 'beats' the therapist",
-        "He was constantly measured against a brilliant brother",
+        "She fears she'll cheat and confesses attractions",
+        "Thoughts surge after feeling smothered",
+        "The attractions are fleeting",
       ],
       riskAnchors: [
-        "The one-upmanship appears with other rival-like figures",
-        "It matches his history of being measured against his brother",
-        "It eases when collaboration rather than winning is rewarded",
+        "Thoughts surge after she feels smothered",
+        "Confession relief is brief",
+        "They ease once a wish for space is voiced",
       ],
       defeatedBy: [
-        "He competes equally hard where there is no one to be compared to",
-        "He genuinely outclasses the therapist on every point",
+        "She actively pursues affairs",
+        "The thoughts come with desire, not dread",
       ],
     },
     correctAnswer:
-      "He likely replays a sibling-rivalry template formed against a favored brother, casting the therapist as a rival he must outdo to feel worthy; test whether the same one-upmanship appears with other figures he could compete with, whether it matches his history of being measured against his brother, and whether it eases when collaboration, not winning, is rewarded in session.",
+      "The intrusive thoughts likely straddle her love and a forbidden wish for distance or freedom — when his neediness feels smothering, the disowned urge to escape is recast as a dreaded impulse to betray him, and confessing both discharges the guilt and reassures her she won't; test whether the thoughts surge after she's felt smothered, whether the attractions are trivial and the relief brief, and whether they ease once she can voice a wish for space without it meaning betrayal.",
     explanation:
-      "Full credit reads a sibling-rivalry template behind the contest and a cheap context-specificity test that names its refutation; 'he is simply smarter than the therapist' is the overreach the compulsive need to win defeats.",
+      "Top credit names both love and a forbidden wish for distance and is paired with an after-feeling-smothered test that names its refutation; 'she wants an affair' is the overreach the dread and brief relief defeat.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A patient apologizes constantly in session — for talking too long, for 'wasting your time,' for 'being a burden' — though she pays for the hour and uses it normally. Her mother, depleted and overwhelmed, often sighed that the children were 'too much.' Which conclusion best follows?",
+      "A man whose younger brother just had a baby — something he longs for and can't have — develops a compulsion to count to a 'safe' number whenever he pictures something happening to the newborn, sure that not counting will cause harm. The urge peaks right after family gatherings celebrating the baby. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "She really might be a burden, so the apologies make sense.",
-        credit: 0,
-      },
-      {
-        text: "Her apologizing probably relates to her mother; we could look at that history.",
-        credit: 0.6,
-      },
-      {
-        text: "She seems to apologize a lot.",
+        text: "He seems to count to keep the baby safe.",
         credit: 0.3,
       },
       {
-        text: "She likely replays a template in which her needs overwhelm the caregiver, learned from a depleted mother, so simply using her own paid hour feels like being 'too much'; test whether she apologizes for taking up space in her other relationships, whether it matches her mother's 'too much' refrain, and whether it eases when the therapist makes clear the time is hers to use.",
+        text: "Counting rituals are just meaningless tics, so they tell us nothing about him.",
+        credit: 0,
+      },
+      {
+        text: "The counting likely straddles love for the baby and an envy he finds monstrous — a flash of ill-will toward the child who has what he can't, which the ritual magically 'undoes' to keep him from being the cause; test whether the urge peaks right after celebrations of the baby, whether skipping the count brings dread of harming the child, and whether it eases once he can own grief and envy about his own childlessness without horror.",
         credit: 1.0,
+      },
+      {
+        text: "He may have feelings about not having a child; we could discuss it.",
+        credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'I-am-a-burden template' lead from the rival 'she is just an unusually polite person,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'the counting undoes envious ill-will toward the baby' lead from the rival 'it's a meaningless counting tic,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: notice whether the apologies cluster specifically around having needs and taking up space rather than appearing as all-purpose politeness, since a burden template should target need, not manners in general. My lead is refuted if she apologizes evenly for everything in a merely courteous way and shows no special distress about occupying her own time, which would point to politeness rather than a burden template.",
+        "Cheapest test: note whether the counting urge peaks right after gatherings that celebrate the baby and whether skipping it brings dread of harming the child — a ritual tied to those moments points to undone envy, not a random tic. My lead is refuted if the counting fires across unrelated situations with no link to the baby or to his own childlessness.",
       yieldAnchors: [
-        "She apologizes for 'wasting your time' and 'being a burden'",
-        "She is using a normal, paid-for hour",
-        "Her mother called the children 'too much'",
+        "He longs for a child he can't have",
+        "Counts to keep the brother's baby safe",
+        "Urge peaks after celebrations of the baby",
       ],
       riskAnchors: [
-        "She apologizes for taking up space in other relationships",
-        "It matches her mother's 'too much' refrain",
-        "It eases when the time is framed as hers to use",
+        "Urge peaks after the baby is celebrated",
+        "Skipping the count brings harm-dread",
+        "It eases once envy and grief are owned",
       ],
       defeatedBy: [
-        "She apologizes evenly for everything as plain courtesy",
-        "She shows no special distress about having needs",
+        "The counting is unrelated to the baby",
+        "He feels only uncomplicated joy about the birth",
       ],
     },
     correctAnswer:
-      "She likely replays a template in which her needs overwhelm the caregiver, learned from a depleted mother, so simply using her own paid hour feels like being 'too much'; test whether she apologizes for taking up space in her other relationships, whether it matches her mother's 'too much' refrain, and whether it eases when the therapist makes clear the time is hers to use.",
+      "The counting likely straddles love for the baby and an envy he finds monstrous — a flash of ill-will toward the child who has what he can't, which the ritual magically 'undoes' to keep him from being the cause; test whether the urge peaks right after celebrations of the baby, whether skipping the count brings dread of harming the child, and whether it eases once he can own grief and envy about his own childlessness without horror.",
     explanation:
-      "Top credit binds the constant apologizing to an I-am-a-burden template and a cheap apology-specificity test that names its refutation; 'she really might be a burden' is the overreach the normal use of her own hour defeats.",
+      "Full credit names both love and monstrous-feeling envy and is paired with a peaks-after-celebrations test that names its refutation; 'meaningless tic' is the dodge the celebration-linked timing defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A man speaks of his father, his old mentor, and now the therapist with the same arc: first 'the wisest person I've ever met,' then, after one disappointment, 'a fraud who never cared.' Each fall followed a small, ordinary letdown. Which conclusion best follows?",
+      "After a car accident left her disabled sister dependent on her, a woman who gave up her own plans to become full-time caregiver now checks obsessively that she hasn't accidentally put something harmful in her sister's food. The checking is worst on days she's felt her whole life has been swallowed by the role. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He seems to change his opinion of people over time.",
-        credit: 0.3,
-      },
-      {
-        text: "Each of these mentors really did turn out to be a fraud once he got to know them.",
-        credit: 0,
-      },
-      {
-        text: "His shifting view probably reflects something about his past; we could trace the relationships.",
+        text: "She's probably overwhelmed by caregiving; we could get her support.",
         credit: 0.6,
       },
       {
-        text: "He likely replays an idealize-then-devalue template across mentor figures, in which a flawless guide must crash into a fraud the moment he disappoints, so an ordinary letdown triggers total reversal; test whether the same arc repeats with each new mentor, whether the trigger is always a minor failing, and whether he can, with help, hold a mentor's wisdom and limits together at once.",
+        text: "The checking likely straddles devotion and a resentment of the life she's lost that she can't allow — when the sense of being swallowed peaks, a buried wish to be free is recast as a fear that she might harm her sister, and checking both expresses and disproves it; test whether the urge worsens on the days she feels most trapped, whether the feared harm never actually happens, and whether it eases once she can voice resentment of the role without guilt.",
         credit: 1.0,
+      },
+      {
+        text: "She seems to keep checking her sister's food.",
+        credit: 0.3,
+      },
+      {
+        text: "Caregivers naturally worry about safety, so the checking has no deeper meaning.",
+        credit: 0,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'idealize-then-devalue template' lead from the rival 'his mentors genuinely keep failing him,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'the checking straddles devotion and resentment of the lost life' lead from the rival 'she is just a careful, anxious caregiver,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: examine the size of the triggering letdown each time, since a template account predicts a small, ordinary disappointment precedes a total collapse of regard. My lead is refuted if the falls consistently follow real, serious betrayals rather than minor failings, which would mean his mentors actually failed him rather than that he is replaying a template.",
+        "Cheapest test: track whether the harm-checking worsens specifically on the days she feels her life has been swallowed by the role — checking that rises with that feeling points to disowned resentment, not ordinary caution. My lead is refuted if the checking is steady regardless of how trapped she feels and there have been real near-misses with her sister's food.",
       yieldAnchors: [
-        "Father, mentor, and therapist all follow idealize-then-crash",
-        "Each fall followed a small, ordinary letdown",
-        "The reversal is total, from 'wisest' to 'fraud'",
+        "She gave up her plans to be caregiver",
+        "Checks she hasn't harmed her sister's food",
+        "Worst when she feels her life is swallowed",
       ],
       riskAnchors: [
-        "The arc repeats with each new mentor figure",
-        "The trigger is always a minor failing",
-        "He can, with help, hold wisdom and limits together",
+        "Checking worsens on most-trapped days",
+        "The feared harm never happens",
+        "It eases once resentment is voiced",
       ],
       defeatedBy: [
-        "The falls consistently follow real, serious betrayals",
-        "Each mentor is independently shown to be a fraud",
+        "The checking is unrelated to feeling trapped",
+        "There have been real near-misses with the food",
       ],
     },
     correctAnswer:
-      "He likely replays an idealize-then-devalue template across mentor figures, in which a flawless guide must crash into a fraud the moment he disappoints, so an ordinary letdown triggers total reversal; test whether the same arc repeats with each new mentor, whether the trigger is always a minor failing, and whether he can, with help, hold a mentor's wisdom and limits together at once.",
+      "The checking likely straddles devotion and a resentment of the life she's lost that she can't allow — when the sense of being swallowed peaks, a buried wish to be free is recast as a fear that she might harm her sister, and checking both expresses and disproves it; test whether the urge worsens on the days she feels most trapped, whether the feared harm never actually happens, and whether it eases once she can voice resentment of the role without guilt.",
     explanation:
-      "Full credit names an idealize-then-devalue template across mentors and a cheap trigger-size test that states its refutation; 'each mentor really was a fraud' is the overreach the trivial, repeated triggers defeat.",
+      "Full credit names both devotion and resented sacrifice and is paired with a worse-on-trapped-days test that names its refutation; 'caregivers naturally worry' is the dodge the trapped-feeling timing defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A patient is lively and entertaining in session, cracking jokes and telling vivid stories, but goes flat and anxious the moment the therapist looks merely thoughtful rather than delighted. As a child he could only hold a distracted parent's attention by performing. Which conclusion best follows?",
+      "A man who is privately unsure about his relationship cannot stop rereading and rewriting a single text to his girlfriend, terrified one wrong word will 'ruin everything.' The compulsion is worst on days he has quietly thought about ending things. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He is just a naturally funny, outgoing person, so there is nothing to read into it.",
+        text: "He clearly just wants out and should break up with her already.",
         credit: 0,
       },
       {
-        text: "He seems to like entertaining the therapist.",
+        text: "He seems to obsess over wording his texts.",
         credit: 0.3,
       },
       {
-        text: "His performing probably ties to his parent's distraction; we could explore that.",
-        credit: 0.6,
+        text: "The rewriting likely straddles a wish to keep her and a wish to leave that he can't reconcile — fixing the 'perfect' message lets him avoid both committing fully and ending it, so the doubt about wording stands in for the larger ambivalence he won't face; test whether the rewriting spikes on days he's thought about leaving, whether no version ever feels final, and whether it eases once he can own both staying and wanting out.",
+        credit: 1.0,
       },
       {
-        text: "He likely replays a template in which attention must be earned by performing, learned from a distracted parent, so a merely thoughtful face reads as losing the audience and triggers anxiety; test whether the performing intensifies whenever the therapist seems less engaged, whether it matches his history of entertaining for attention, and whether it eases as he finds the therapist stays attentive even when he is quiet.",
-        credit: 1.0,
+        text: "He might be anxious about the relationship; we could talk it over.",
+        credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'attention-must-be-performed template' lead from the rival 'he simply enjoys being entertaining,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'the text-rewriting stands in for staying-versus-leaving ambivalence' lead from the rival 'he's simply an anxious communicator,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: watch what happens when the therapist's attention is plainly steady but undelighted, since a performance template predicts a spike of anxiety and harder performing precisely when the 'audience' seems to cool. My lead is refuted if he stays relaxed and merely playful regardless of how engaged the therapist looks, which would point to genuine enjoyment rather than anxious attention-seeking.",
+        "Cheapest test: check whether the rewriting spikes specifically on days he's privately considered ending the relationship and whether no draft ever feels final — wording-obsession tied to those days points to displaced ambivalence, not general communication anxiety. My lead is refuted if he agonizes over wording with everyone, unrelated to thoughts of leaving her.",
       yieldAnchors: [
-        "He performs to keep the therapist entertained",
-        "He goes flat and anxious when she looks merely thoughtful",
-        "He could only hold a distracted parent's attention by performing",
+        "He is privately unsure about the relationship",
+        "He endlessly rewrites one text",
+        "Worst on days he's thought about ending it",
       ],
       riskAnchors: [
-        "The performing intensifies when the therapist seems less engaged",
-        "It matches his history of entertaining for attention",
-        "It eases as he finds attention persists when he is quiet",
+        "Rewriting spikes after thoughts of leaving",
+        "No version ever feels final",
+        "It eases once he owns both staying and leaving",
       ],
       defeatedBy: [
-        "He stays relaxed regardless of how engaged the therapist looks",
-        "He is equally playful whether or not anyone is watching",
+        "He obsesses over wording with everyone",
+        "The rewriting is unrelated to thoughts of leaving",
       ],
     },
     correctAnswer:
-      "He likely replays a template in which attention must be earned by performing, learned from a distracted parent, so a merely thoughtful face reads as losing the audience and triggers anxiety; test whether the performing intensifies whenever the therapist seems less engaged, whether it matches his history of entertaining for attention, and whether it eases as he finds the therapist stays attentive even when he is quiet.",
+      "The rewriting likely straddles a wish to keep her and a wish to leave that he can't reconcile — fixing the 'perfect' message lets him avoid both committing fully and ending it, so the doubt about wording stands in for the larger ambivalence he won't face; test whether the rewriting spikes on days he's thought about leaving, whether no version ever feels final, and whether it eases once he can own both staying and wanting out.",
     explanation:
-      "Full credit ties the anxious performing to an attention-must-be-earned template and a cheap cooling-attention test that names its refutation; 'just a naturally funny person' is the dodge the anxiety at a thoughtful face defeats.",
+      "Full credit names both the wish to stay and the wish to leave and is paired with a spikes-after-thoughts-of-leaving test that names its refutation; 'he just wants out' is the overreach the never-final loop defeats.",
   },
 ];
 
@@ -843,179 +843,179 @@ const written: HomeworkItem[] = [
   {
     itemType: "written",
     prompt:
-      "A man describes the same downfall at three jobs in a row: he grows close to a mentor, becomes convinced the mentor is secretly plotting to get rid of him, acts hostile, and is eventually let go. Now, four months in, he tells his therapist he suspects she is 'documenting reasons to drop me.' He once mentioned that his father promised to support his education, then abruptly cut him off without explanation. In one paragraph, propose the strongest conclusion about the old relationship template being replayed and describe how you would test it.",
+      "A woman who tried for years to conceive is, since her son's birth, flooded with intrusive thoughts of smothering him, which leave her panic-stricken. She adores him and has never come close to acting, but the thoughts are worst late at night when she is alone, sleep-deprived, and most desperate for her old life back. In one paragraph, propose the strongest conclusion about what the harm thoughts are straddling and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that he carries a relational template laid down with a father who offered support and then betrayed it without warning, so as soon as he depends on someone he expects a hidden plan to abandon him — and he now imports that template onto the therapist, reading her neutral record-keeping as evidence of the coming betrayal. This is a strong claim because it predicts checkable consequences: the suspicion should appear specifically once he has grown close and dependent rather than at the start; independent observers should not see his mentors or therapist as actually plotting against him; and the dread should map onto the father's broken promise, intensifying around situations that echo being cut off. I would test it by tracking whether his distrust reliably switches on as closeness deepens, by checking others' accounts of whether these figures were genuinely hostile, and by watching whether the suspicion eases when the therapist proves steadily reliable across the very moments his template predicts abandonment.",
+        "The strongest conclusion is that the smothering thoughts sit astride two real and colliding feelings — a deep love for the long-awaited child and an exhausted resentment of how completely he has erased her old life — so the obsession gives the forbidden anger a shape while her panic frantically disproves any wish to act on it. This is a strong claim because it predicts checkable consequences: the thoughts should surge precisely in the depleted, trapped late-night hours when resentment is closest to the surface rather than scattering randomly; they should be ego-dystonic and horrifying rather than wished-for; and they should loosen once she can voice ordinary maternal resentment without it meaning she is dangerous or unloving. I would test it by tracking when the images strike against how trapped and depleted she feels, by checking whether they bring dread rather than desire, and by seeing whether naming the buried resentment — separating the thought from a wish — reduces their grip.",
       yieldAnchors: [
-        "The same close-then-suspect-then-fired arc repeats across three jobs",
-        "He now suspects the therapist is documenting reasons to drop him",
-        "His father promised support and then abruptly cut him off",
+        "She longed for and adores the child",
+        "Intrusive thoughts of smothering him",
+        "Worst when depleted and craving her old life",
       ],
       riskAnchors: [
-        "The suspicion switches on once closeness and dependence develop",
-        "Independent observers do not see these figures as plotting",
-        "It eases as the therapist proves reliable over time",
+        "Thoughts surge in trapped, late-night hours",
+        "They are ego-dystonic and horrifying",
+        "They ease once resentment is voiced as not-a-wish",
       ],
       defeatedBy: [
-        "Independent accounts confirm the mentors really were plotting against him",
-        "The therapist is in fact preparing to terminate him",
+        "She feels only uncomplicated joy as a mother",
+        "The thoughts come with desire rather than dread",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that he carries a relational template laid down with a father who offered support and then betrayed it without warning, so as soon as he depends on someone he expects a hidden plan to abandon him — and he now imports that template onto the therapist, reading her neutral record-keeping as evidence of the coming betrayal. This is a strong claim because it predicts checkable consequences: the suspicion should appear specifically once he has grown close and dependent rather than at the start; independent observers should not see his mentors or therapist as actually plotting against him; and the dread should map onto the father's broken promise, intensifying around situations that echo being cut off. I would test it by tracking whether his distrust reliably switches on as closeness deepens, by checking others' accounts of whether these figures were genuinely hostile, and by watching whether the suspicion eases when the therapist proves steadily reliable across the very moments his template predicts abandonment.",
+      "The strongest conclusion is that the smothering thoughts sit astride two real and colliding feelings — a deep love for the long-awaited child and an exhausted resentment of how completely he has erased her old life — so the obsession gives the forbidden anger a shape while her panic frantically disproves any wish to act on it. This is a strong claim because it predicts checkable consequences: the thoughts should surge precisely in the depleted, trapped late-night hours when resentment is closest to the surface rather than scattering randomly; they should be ego-dystonic and horrifying rather than wished-for; and they should loosen once she can voice ordinary maternal resentment without it meaning she is dangerous or unloving. I would test it by tracking when the images strike against how trapped and depleted she feels, by checking whether they bring dread rather than desire, and by seeing whether naming the buried resentment — separating the thought from a wish — reduces their grip.",
     explanation:
-      "Under the inverted standard the timid 'maybe his bosses really were against him, we can't know' earns near-zero; top credit goes to the committed betrayal-template reading that maps onto the father, predicts a closeness-triggered onset, and names an independent-observer test that could refute it.",
+      "Under the inverted standard, 'intrusive thoughts are random and meaningless' earns near-zero; top credit names both love and exhausted resentment and a track-when-they-strike test that could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "A woman becomes intensely angry when her female therapist pauses for even a few seconds, accusing her of 'tuning out,' yet she barely reacts when a male consulting therapist sits in silence for much longer. She was raised by a withholding, easily distracted mother and a kind but peripheral father. In one paragraph, propose the strongest conclusion about the template at work and describe how you would test it.",
+      "A man who describes his marriage as 'perfect' must, whenever he feels a flash of irritation at his wife, immediately touch the doorframe and silently wish her well, or he is gripped by certainty that she'll be in a fatal accident. He has never raised his voice to her. In one paragraph, propose the strongest conclusion about what the ritual is straddling and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that she carries a template from a withholding mother in which a woman's withdrawn attention means rejection, so she imports it specifically onto the female therapist — whose brief, neutral pause reads as the mother 'tuning out' — while the same silence from a man, who matches her peripheral but kind father, carries no such charge. This is a strong claim because it predicts checkable consequences: her anger should track the caregiver's gender rather than the actual length of the silence; the reaction should match how she describes her mother's distraction; and it should ease as the female therapist's attention proves reliable across exactly the pauses that now trigger her. I would test it by comparing her responses to identical silences from women versus men, by checking whether the intensity maps onto her account of her mother, and by watching whether trust in the female therapist grows as the predicted rejections fail to materialize.",
+        "The strongest conclusion is that the doorframe ritual straddles genuine love and a forbidden hostility toward his wife that his 'perfect marriage' story cannot admit — the flash of irritation throws up an angry, even death-tinged impulse, and the touching-and-blessing magically 'undoes' it so he never has to own the aggression. This is a strong claim because it predicts checkable consequences: the ritual should be triggered specifically by moments of anger at her rather than at random; skipping it should bring dread that his anger could actually harm her; and the urge should fade once he can hold ordinary irritation with his wife without believing it is lethal. I would test it by noting whether the compulsion follows flashes of irritation, by checking what happens when he resists it, and by seeing whether permitting and naming everyday anger at her reduces the ritual.",
       yieldAnchors: [
-        "She rages at a few seconds of the female therapist's silence",
-        "She barely reacts to much longer silence from a male therapist",
-        "Her mother was withholding and distracted; her father kind but peripheral",
+        "He calls the marriage perfect",
+        "Ritual triggered by irritation at his wife",
+        "Fears his anger will cause her death",
       ],
       riskAnchors: [
-        "Her anger tracks the therapist's gender, not the silence length",
-        "The reaction matches her account of her mother's distraction",
-        "It eases as the female therapist proves reliably attentive",
+        "Ritual follows flashes of anger at her",
+        "Skipping it brings harm-dread",
+        "It fades once anger is held safely",
       ],
       defeatedBy: [
-        "She reacts identically to silence regardless of the therapist's gender",
-        "The female therapist really was disengaged and the male was not",
+        "The ritual is unrelated to anger at his wife",
+        "He openly expresses and tolerates anger already",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that she carries a template from a withholding mother in which a woman's withdrawn attention means rejection, so she imports it specifically onto the female therapist — whose brief, neutral pause reads as the mother 'tuning out' — while the same silence from a man, who matches her peripheral but kind father, carries no such charge. This is a strong claim because it predicts checkable consequences: her anger should track the caregiver's gender rather than the actual length of the silence; the reaction should match how she describes her mother's distraction; and it should ease as the female therapist's attention proves reliable across exactly the pauses that now trigger her. I would test it by comparing her responses to identical silences from women versus men, by checking whether the intensity maps onto her account of her mother, and by watching whether trust in the female therapist grows as the predicted rejections fail to materialize.",
+      "The strongest conclusion is that the doorframe ritual straddles genuine love and a forbidden hostility toward his wife that his 'perfect marriage' story cannot admit — the flash of irritation throws up an angry, even death-tinged impulse, and the touching-and-blessing magically 'undoes' it so he never has to own the aggression. This is a strong claim because it predicts checkable consequences: the ritual should be triggered specifically by moments of anger at her rather than at random; skipping it should bring dread that his anger could actually harm her; and the urge should fade once he can hold ordinary irritation with his wife without believing it is lethal. I would test it by noting whether the compulsion follows flashes of irritation, by checking what happens when he resists it, and by seeing whether permitting and naming everyday anger at her reduces the ritual.",
     explanation:
-      "The cautious 'people are sensitive to silence, we can't say why' earns near-zero; credit goes to the gendered-template conclusion that explains the male-female asymmetry, maps onto the mother, and names a same-silence-different-gender test that could refute it.",
+      "The cautious 'it's just a superstition, nothing to read' earns near-zero; top credit names both love and forbidden hostility bound by an undoing ritual and a triggered-by-anger test that could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "A man quietly takes charge of his own therapy: he sets the agenda, reassures the therapist that 'we're making good progress,' tracks the time, and smooths over any awkward moment. He grew up as the steady one in a chaotic household, calming a volatile mother and parenting younger siblings. In one paragraph, propose the strongest conclusion about the relational role he is replaying and describe how you would test it.",
+      "A daughter who privately dreamed of moving abroad has, since her mother's stroke, become an almost saintly caregiver — refusing all help, monitoring every detail, and insisting she 'wouldn't have it any other way' — while developing a compulsion to check repeatedly that she hasn't left her mother in danger. In one paragraph, propose the strongest conclusion about what the over-devotion and checking are straddling and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that he replays the caretaker-manager role he held in a chaotic home, where safety depended on his keeping the volatile adult calm, so he casts the therapist as someone he must steady and reassure rather than allowing himself to be the one looked after. This is a strong claim because it predicts checkable consequences: he should take the same managing, reassuring role across his other relationships; the role should map onto his history of calming his mother and parenting his siblings; and he should become anxious or disoriented when invited to simply receive care and let the therapist hold the structure. I would test it by checking whether he runs his friendships and work relationships the same way, by tracing the role to his described childhood, and by watching his reaction when the therapist gently takes back the agenda and offers to look after him instead.",
+        "The strongest conclusion is that the saintly caregiving and the checking straddle real love and a buried resentment of the dream the stroke cost her — the over-the-top devotion is a reaction against the wish to be free, and the checking guards against a forbidden impulse to let harm come so she could escape. This is a strong claim because it predicts checkable consequences: the insistence that she 'wouldn't have it any other way' should be rigid and brittle, cracking when resentment is gently named; the checking should intensify on the days she most feels her own life slipping away rather than when real danger is higher; and both should ease once she can admit ambivalence about the sacrifice without guilt. I would test it by watching whether her protest of total contentment can bend, by tracking the checking against her sense of being trapped, and by seeing whether voicing resentment of the lost plans reduces the compulsion.",
       yieldAnchors: [
-        "He sets the agenda, tracks time, and reassures the therapist",
-        "He smooths over every awkward moment in session",
-        "He was the steady one calming a volatile mother and parenting siblings",
+        "She gave up dreams of moving abroad",
+        "Saintly, help-refusing caregiving",
+        "Checks she hasn't endangered her mother",
       ],
       riskAnchors: [
-        "He takes the same managing role in other relationships",
-        "The role maps onto his childhood caretaking",
-        "He grows anxious when invited to simply be cared for",
+        "Her 'wouldn't have it any other way' is brittle",
+        "Checking tracks feeling trapped, not real danger",
+        "Both ease once resentment is admitted",
       ],
       defeatedBy: [
-        "He readily lets others lead and care for him elsewhere",
-        "His managing is purely practical with no anxiety when it is removed",
+        "She had no thwarted plans and feels freely content",
+        "The checking tracks genuine medical risk only",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that he replays the caretaker-manager role he held in a chaotic home, where safety depended on his keeping the volatile adult calm, so he casts the therapist as someone he must steady and reassure rather than allowing himself to be the one looked after. This is a strong claim because it predicts checkable consequences: he should take the same managing, reassuring role across his other relationships; the role should map onto his history of calming his mother and parenting his siblings; and he should become anxious or disoriented when invited to simply receive care and let the therapist hold the structure. I would test it by checking whether he runs his friendships and work relationships the same way, by tracing the role to his described childhood, and by watching his reaction when the therapist gently takes back the agenda and offers to look after him instead.",
+      "The strongest conclusion is that the saintly caregiving and the checking straddle real love and a buried resentment of the dream the stroke cost her — the over-the-top devotion is a reaction against the wish to be free, and the checking guards against a forbidden impulse to let harm come so she could escape. This is a strong claim because it predicts checkable consequences: the insistence that she 'wouldn't have it any other way' should be rigid and brittle, cracking when resentment is gently named; the checking should intensify on the days she most feels her own life slipping away rather than when real danger is higher; and both should ease once she can admit ambivalence about the sacrifice without guilt. I would test it by watching whether her protest of total contentment can bend, by tracking the checking against her sense of being trapped, and by seeing whether voicing resentment of the lost plans reduces the compulsion.",
     explanation:
-      "The dodge 'he is just an organized, considerate client, nothing to interpret' earns near-zero; top credit goes to the caretaker-role conclusion that binds the in-session managing to his childhood and names a hand-back-the-agenda test that could refute it.",
+      "The kind-sounding 'she's simply a devoted daughter' earns near-zero; top credit names both love and the resented sacrifice it defends against and a does-her-contentment-crack test that could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "A patient has a history of finding a 'perfect' helper — a doctor, then a coach, then a spiritual teacher — adoring them, and then dropping each one cold the instant they reveal an ordinary human flaw. Six months in, she has begun describing her therapist as 'the one who finally gets it,' and the therapist notices the same adoration building. In one paragraph, propose the strongest conclusion about the template being replayed and describe how you would test it, including what it implies for the work ahead.",
+      "A young man raised in a strict religious community, now privately questioning it, becomes consumed by scrupulous rituals — repeated confessions, fears he has sinned in thought, hours of compulsive prayer — that flare most intensely right after he has had a doubt about the faith or a wish to leave. In one paragraph, propose the strongest conclusion about what the scrupulosity is straddling and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that she carries an all-or-nothing template in which a helper must be flawless to be safe, so she idealizes each new figure and then must drop them entirely the moment an ordinary flaw appears — and she is now building the same idealization toward the therapist, which predicts a coming crash when the therapist inevitably proves human. This is a strong claim because it predicts checkable consequences: the rise-and-fall should repeat across her helpers; the fall should be triggered each time by a minor, ordinary lapse rather than a real failure; and, crucially, the same collapse should threaten the therapy once the therapist disappoints her in some small way. I would test it by tracing whether each past drop followed a trivial flaw, by watching for the predicted devaluation as the alliance deepens, and by deliberately working, before the crash, on whether she can hold the therapist's helpful and flawed sides together — if she can begin to tolerate an imperfect helper without dropping them, the template is loosening rather than simply repeating.",
+        "The strongest conclusion is that the scrupulous rituals straddle a real attachment to his faith and community and a forbidden wish to doubt or leave it — when heresy or the urge to walk away surfaces, the guilt is intolerable, so confession and compulsive prayer both punish and undo the forbidden thought, keeping the conflict out of awareness. This is a strong claim because it predicts checkable consequences: the rituals should flare specifically after a doubt or a wish to leave rather than at random; the relief from each confession should be brief before the cycle restarts; and the symptoms should loosen once he can hold both his attachment and his doubt consciously rather than treating doubt as a sin to be erased. I would test it by tracking whether the rituals follow moments of doubt, by noting how quickly relief gives way, and by seeing whether permitting honest ambivalence about the faith reduces the compulsions.",
       yieldAnchors: [
-        "She idealizes each helper then drops them at the first ordinary flaw",
-        "The pattern has repeated across a doctor, coach, and teacher",
-        "She is now idealizing the therapist the same way",
+        "He is privately questioning the faith",
+        "Scrupulous confession and prayer rituals",
+        "Flare after doubts or wishes to leave",
       ],
       riskAnchors: [
-        "Each past drop followed a minor, ordinary lapse",
-        "A devaluation crash is predicted as the alliance deepens",
-        "Tolerating an imperfect helper would show the template loosening",
+        "Rituals flare after doubts",
+        "Relief is brief before restarting",
+        "They ease once ambivalence is held consciously",
       ],
       defeatedBy: [
-        "Her past helpers each committed a genuine, serious failure",
-        "She can already hold helpers' good and flawed sides together",
+        "The rituals are unrelated to his doubts",
+        "He feels wholehearted, untroubled faith",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that she carries an all-or-nothing template in which a helper must be flawless to be safe, so she idealizes each new figure and then must drop them entirely the moment an ordinary flaw appears — and she is now building the same idealization toward the therapist, which predicts a coming crash when the therapist inevitably proves human. This is a strong claim because it predicts checkable consequences: the rise-and-fall should repeat across her helpers; the fall should be triggered each time by a minor, ordinary lapse rather than a real failure; and, crucially, the same collapse should threaten the therapy once the therapist disappoints her in some small way. I would test it by tracing whether each past drop followed a trivial flaw, by watching for the predicted devaluation as the alliance deepens, and by deliberately working, before the crash, on whether she can hold the therapist's helpful and flawed sides together — if she can begin to tolerate an imperfect helper without dropping them, the template is loosening rather than simply repeating.",
+      "The strongest conclusion is that the scrupulous rituals straddle a real attachment to his faith and community and a forbidden wish to doubt or leave it — when heresy or the urge to walk away surfaces, the guilt is intolerable, so confession and compulsive prayer both punish and undo the forbidden thought, keeping the conflict out of awareness. This is a strong claim because it predicts checkable consequences: the rituals should flare specifically after a doubt or a wish to leave rather than at random; the relief from each confession should be brief before the cycle restarts; and the symptoms should loosen once he can hold both his attachment and his doubt consciously rather than treating doubt as a sin to be erased. I would test it by tracking whether the rituals follow moments of doubt, by noting how quickly relief gives way, and by seeing whether permitting honest ambivalence about the faith reduces the compulsions.",
     explanation:
-      "The timid 'maybe each helper really did let her down, we shouldn't predict' earns near-zero; credit goes to the all-or-nothing template conclusion that forecasts a devaluation crash with the therapist and names a hold-both-sides test that could refute or confirm it.",
+      "The dodge 'this is just normal devout practice' earns near-zero; top credit names both attachment and forbidden doubt and a do-they-follow-doubts test that could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "A woman expects rejection from everyone close to her and, to get ahead of it, turns cold and distant first — with friends, with partners, and now, after a warm early stretch, with her therapist, whom she has started meeting with crossed arms and clipped answers. She was raised by a parent who was affectionate one day and icy the next, for no reason she could ever predict. In one paragraph, propose the strongest conclusion about the template she is replaying and describe how you would test it.",
+      "A woman in a kind, stable relationship is tormented by the obsessive thought that her partner's slightly crooked teeth are 'a dealbreaker,' which she knows is absurd; she checks her feelings constantly and seeks reassurance from friends. The obsession flared the month he started talking about moving in together. In one paragraph, propose the strongest conclusion about what the fixation is straddling and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that she carries a template from an unpredictably affectionate-then-icy parent in which closeness is dangerous because rejection can strike at any moment, so she rejects first to control the timing — and she now imports this onto the therapist, going cold precisely as the relationship warms in order to preempt the abandonment she expects. This is a strong claim because it predicts checkable consequences: her coldness should switch on as closeness grows rather than after any actual rejection; the same reject-first pattern should appear across friends, partners, and the therapist; and it should map onto the parent's unpredictable warm-then-cold swings. I would test it by checking whether her withdrawal reliably follows warmth rather than any real slight, by comparing the pattern across her relationships, and by watching whether the coldness eases as the therapist stays steadily warm and predictable, disconfirming the expectation that affection will suddenly turn to ice.",
+        "The strongest conclusion is that the trivial fixation on his teeth straddles a real wish to commit and an equally real fear of it that she can't consciously hold — as moving in raises the stakes, the unbearable ambivalence is displaced onto a tiny, 'safe' flaw she can obsess over instead of facing the larger question of commitment. This is a strong claim because it predicts checkable consequences: the obsession should have flared with the move-in talk rather than at the relationship's start; the chosen 'dealbreaker' should be trivial and the reassurance only briefly calming; and the fixation should ease once she can own both wanting the relationship and dreading the commitment, rather than litigating his appearance. I would test it by tracing whether the obsession tracks escalations in commitment, by noting how trivial the focus is and how short-lived the relief, and by seeing whether naming the underlying ambivalence dissolves the fixation on his teeth.",
       yieldAnchors: [
-        "She turns cold first with friends, partners, and now the therapist",
-        "The withdrawal followed a warm early stretch, not any rejection",
-        "Her parent swung unpredictably from affectionate to icy",
+        "A kind, stable relationship",
+        "Obsessive 'dealbreaker' fixation on a trivial flaw",
+        "Flared with talk of moving in together",
       ],
       riskAnchors: [
-        "Her coldness switches on as closeness grows, not after a slight",
-        "The reject-first pattern repeats across her relationships",
-        "It eases as the therapist stays steadily warm and predictable",
+        "The obsession tracks rising commitment",
+        "The focus is trivial and relief brief",
+        "It eases once commitment-ambivalence is owned",
       ],
       defeatedBy: [
-        "Her withdrawal each time followed a real rejection by the other person",
-        "She stays warm and open as relationships deepen",
+        "The obsession predates any commitment step",
+        "There is a genuine, serious problem with the partner",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that she carries a template from an unpredictably affectionate-then-icy parent in which closeness is dangerous because rejection can strike at any moment, so she rejects first to control the timing — and she now imports this onto the therapist, going cold precisely as the relationship warms in order to preempt the abandonment she expects. This is a strong claim because it predicts checkable consequences: her coldness should switch on as closeness grows rather than after any actual rejection; the same reject-first pattern should appear across friends, partners, and the therapist; and it should map onto the parent's unpredictable warm-then-cold swings. I would test it by checking whether her withdrawal reliably follows warmth rather than any real slight, by comparing the pattern across her relationships, and by watching whether the coldness eases as the therapist stays steadily warm and predictable, disconfirming the expectation that affection will suddenly turn to ice.",
+      "The strongest conclusion is that the trivial fixation on his teeth straddles a real wish to commit and an equally real fear of it that she can't consciously hold — as moving in raises the stakes, the unbearable ambivalence is displaced onto a tiny, 'safe' flaw she can obsess over instead of facing the larger question of commitment. This is a strong claim because it predicts checkable consequences: the obsession should have flared with the move-in talk rather than at the relationship's start; the chosen 'dealbreaker' should be trivial and the reassurance only briefly calming; and the fixation should ease once she can own both wanting the relationship and dreading the commitment, rather than litigating his appearance. I would test it by tracing whether the obsession tracks escalations in commitment, by noting how trivial the focus is and how short-lived the relief, and by seeing whether naming the underlying ambivalence dissolves the fixation on his teeth.",
     explanation:
-      "The cautious 'she's just guarded, we can't say why' earns near-zero; top credit goes to the reject-first template conclusion that ties the withdrawal to an unpredictable parent, predicts coldness rising with closeness, and names a follows-warmth-not-slight test that could refute it.",
+      "Under the inverted standard, 'maybe she's just not attracted to him' earns near-zero; top credit names both the wish to commit and the fear of it displaced onto a trivial flaw, with a does-it-track-commitment test that could refute it.",
   },
 ];
 
 export const section: SectionContent = {
-  slug: "transference",
-  title: "Transference",
+  slug: "conflict-and-ambivalence",
+  title: "Conflict and Ambivalence: The Engine Beneath the Symptom",
   weekNumber: 1,
   blurb:
-    "Transference is the way we carry templates from old, important relationships into new ones — especially toward the therapist — so a present person gets reacted to as if they were someone from the past.",
+    "Obsessions and compulsions often sit astride a two-sided conflict — love colliding with anger toward the same person, a forbidden wish met by an exaggerated defense against it, doubt that masks ambivalence. This section trains you to name BOTH sides the symptom is straddling and the cheap test that could prove you wrong.",
   lectureTitle:
-    "1.4 Transference: why we replay old relationships with new people",
-  body: `# Transference
+    "1.4 Conflict and Ambivalence: the engine beneath the symptom",
+  body: `# Conflict and Ambivalence: The Engine Beneath the Symptom
 
-You have probably had the strange experience of disliking a stranger on sight, or trusting someone instantly, before they have done much of anything. Often the reason is not the person in front of you at all. It is that they rhyme with someone from your past — a tone of voice, a way of pausing, a kind of authority — and your mind quietly reaches for an old script and starts running it. Psychodynamic therapy gives this everyday phenomenon a name: **transference**. It is the tendency to bring templates from old, important relationships into new ones, and to react to a present person as if they were a figure from before.
+People rarely feel just one way about the things that matter most. You can love your mother and feel suffocated by her in the same breath; want a child desperately and dread the freedom it will cost you; admire a mentor and burn with rivalry toward him. The psychodynamic view of OCD starts from this fact: an obsession or compulsion is often not a single feeling gone wrong but a *compromise* between two feelings that can't both be admitted at once. The symptom is the engine running on that hidden friction — and the work is to figure out which two forces are colliding and what deal the symptom is striking between them.
 
-## Templates from old relationships
+## Two feelings at once
 
-Early relationships teach us what to expect from people. A child with a reliable caregiver learns that closeness is safe; a child with an unpredictable one learns to brace for sudden withdrawal. These lessons harden into **templates** — fast, automatic expectations about how others will treat us and how we must behave to stay safe. The templates are useful shortcuts, but they are built from old data. When a new relationship is even loosely similar to an old one, the mind applies the old template by default, often without our noticing. Transference is simply this default applied to people who don't actually fit it.
+The starting move is to suspect that a baffling symptom is carrying more than one feeling. A devoted new mother flooded with images of harming her baby is not secretly violent; she is holding overwhelming love alongside an exhausted resentment she can't let herself feel, and the obsession gives the forbidden side a shape while her horror disproves it. The tell is that the symptom intensifies exactly when the unacceptable feeling is closest to the surface — on the most depleted, trapped nights, not at random. When an obsession spikes in step with a feeling the person would never claim, that feeling is part of the meaning.
 
-## Reacting to the past in the present
+## Love and hate toward the same person
 
-The signature of transference is a reaction that fits an old figure better than the present person. A patient flares with rage when the therapist is two minutes late — not because two minutes matters, but because lateness lands on a template of being abandoned by an unreliable parent. Another reads a therapist's neutral note-taking as an attack, because in childhood any record of his behavior was used against him. The present act is small and ordinary; the reaction is large and specific. That mismatch — a big, patterned response to a neutral trigger — is the clue that an old relationship is being replayed.
+The sharpest conflicts cluster around the people we most depend on. A man who privately cannot stand his critical mother feels a flash of anger and must instantly repeat a protective phrase or be sure something terrible will happen to her. The anger and the love are both real, and the ritual lets him have the hostility without owning it. The same shape shows up as harm thoughts about a partner, death images about a parent, or violent images toward an idealized boss — always toward someone the person loves or admires, always surging right after a slight or a disappointment. A reading that names *only* the love, or *only* the hate, misses the engine; the strong reading holds both.
 
-## Transference toward the therapist
+## The forbidden wish and the reaction against it
 
-The therapy room is a perfect stage for transference. The therapist is an important figure who matters to the patient, yet says relatively little about themselves, so the patient fills in the blanks with expectations from the past. A warm therapist gets treated as a setup for humiliation by someone whose warmth was always a trap; a quiet therapist gets read as disappointed by someone whose withdrawn parent meant silence was punishment. This is not a nuisance to be cleared away. It is gold: the old pattern, which usually plays out invisibly in the patient's life, now appears live in the room where it can be seen, named, and worked with.
+Sometimes the symptom is the *opposite* of the buried feeling, turned up loud. A woman who can't stop performing kindnesses for a sister she "completely adores," panicking at any critical thought, is defending against an envy she finds unbearable — the over-the-top devotion is a reaction against the rivalry. This is why the strongest material is often the most extravagant: saintly caregiving from someone whose own dreams were sacrificed, frantic reassurance of love from someone who feels smothered. When a feeling is too dangerous to feel, the mind can build a showy display of its opposite, and the display gives the secret away by how hard it works.
 
-## The same conflict, again and again
+## Doubt as a sign of ambivalence
 
-Transference also shows up as repetition. When the *same* relationship conflict recurs across a boss, a partner, a friend, and now the therapist — "everyone eventually tries to control me," "everyone eventually leaves" — the common factor is not four unlucky coincidences but one template the person carries into each new bond. The strongest reading looks for the single old relationship the pattern fits and asks how that template is being imported onto each new figure. The cross-situational repetition is what turns a one-off reaction into convincing evidence of a template.
+OCD's endless doubting — "do I really love him?", "is she the one?", the pro-and-con lists that never settle — is frequently ambivalence wearing a question mark. The doubt can't be answered because *both answers are true at once*: a real wish to commit and a real fear of it. Notice the signature: the doubt attaches to no concrete fault, reassurance brings only a moment's calm before the loop restarts, and "solving" it is impossible because settling would mean giving up one side of the conflict. Reading doubt as ambivalence — rather than as a verdict the gut is delivering — is one of the most useful moves in this section.
 
-## Reading transference without overreading it
+## Undoing and displacement: where the conflict hides
 
-As always in this course, the goal is to commit to the strongest interpretation the evidence supports — and to name what would prove it wrong. A good transference reading does three things. It identifies the specific old template (not "something about his past" but "a controlling father, so direction feels like domination"). It binds the present evidence: the size of the reaction, its trigger, the matching history. And it names cheap, concrete tests. The best transference tests are nearly always the same three: **Does the reaction appear with other figures, or only this one? Does it match the original relationship it supposedly comes from? Does it fade when the present person reliably behaves differently from the old figure?** A real template keeps firing across people and clings even to disconfirming evidence; a fair response to the present person changes when the present person changes.
+The conflict rarely shows itself plainly; it gets disguised. In **undoing**, a ritual magically cancels a forbidden impulse — touch the doorframe, count to a safe number, repeat a blessing — so the wish is expressed and erased in one motion. In **displacement**, the unbearable conflict is shifted onto something small and "safe": a woman who can't face her ambivalence about moving in together obsesses instead over her partner's slightly crooked teeth. The trivial focus and the impossible-to-settle quality are the clues that the real fight is happening somewhere else, and the symptom is its stand-in.
 
-## The two ways to get it wrong
+## Reading the meaning — and naming a test
 
-There are two failure modes, and they mirror each other. The first is the timid dodge: "the mind is too complex, we can't know why she reacted that way." But the evidence — a disproportionate reaction, a matching history, a pattern across relationships — is exactly what we *can* reason from, and refusing to do so wastes it. The second is the lurid overreach: deciding the therapist really is hostile, or that the patient's suspicious partner really must be cheating, when the present facts plainly don't support it. The discipline of transference work is to read the old template from the evidence while testing it against the present reality, rather than collapsing into either "nothing can be said" or "the alarming story must be true."
+Here is what keeps this honest. It is not enough to spin a two-sided story; a strong interpretation names BOTH sides of the conflict the symptom straddles *and* the cheap observation that could prove it wrong. "Her checking carries devotion and a forbidden wish to be free" is a real claim, because it predicts the checking should worsen on the days she feels most trapped, ease when resentment is voiced, and never line up with actual danger — and you can check all three. The weak move is to stop at "she checks a lot" (which explains nothing) or to retreat into "intrusive thoughts are random brain noise" (which gives up before looking). The worst move is the lurid overreach the evidence defeats — deciding the man with violent images is dangerous, or the woman with cheating thoughts is having an affair — when her horror and the trivial content say otherwise.
 
 ## In the real world
 
-Suppose a friend tells you her new manager is "obviously out to get her," though she has known him a week and nothing has actually happened. The dodge is "people are complicated, who knows." The overreach is "yes, sounds like a toxic boss, quit." A transference-aware move sits between them: maybe a present authority figure is being fitted to an old template. Notice what that opens up. It predicts she has felt this way about previous bosses; that the dread is out of proportion to anything the new manager has done; and that it should ease if he turns out to be reasonable over the coming weeks — whereas a genuinely hostile boss would keep giving real evidence. Three cheap checks, each able to refute the reading. That is the skill this section trains: when someone reacts to the present as if it were the past, name the old relationship being replayed, bind the evidence, and say exactly what would show you are wrong.`,
+Suppose a friend confides that she's tormented by the thought she might shout something cruel at her newborn, and she's terrified it means she's a monster. The dodge is "thoughts are just thoughts, don't read into it" — kind, but it explains nothing and leaves her alone with the fear. The overreach is to take the thought at face value, which is cruel and wrong. A conflict-aware move sits between them: maybe the thought straddles fierce love and an exhausted resentment she's not allowed to feel. Notice what that opens up. It predicts the thoughts spike when she's most drained and trapped; that they horrify rather than tempt her; and that they ease the moment she can say "I love him and I also miss my old life" without it making her a bad mother. Three cheap checks, each able to refute the reading. That is the skill this section trains: when a symptom won't make sense as one feeling, name the two feelings it is holding at once, bind the evidence, and say exactly what would show you are wrong.`,
   homework: {
     mcq,
     hybrid,

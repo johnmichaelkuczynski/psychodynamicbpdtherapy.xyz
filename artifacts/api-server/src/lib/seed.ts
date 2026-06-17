@@ -15,9 +15,9 @@ import { SECTIONS, type HomeworkItem } from "./homeworkContent";
 // the value stored in seed_meta; a mismatch forces a full re-seed, so content
 // edits self-heal in every environment (including a republished production)
 // without a manual database wipe.
-const SEED_CONTENT_VERSION = "2026-06-16-psychodynamic-v1";
+const SEED_CONTENT_VERSION = "2026-06-17-ocd-v1";
 
-// First Psychodynamic Therapy section slug — used as the marker topic that signals
+// First section slug — used as the marker topic that signals
 // the current curriculum is seeded. A database holding the prior curriculum
 // will lack this slug, so the seed reconciler replaces it on boot.
 const MARKER_TOPIC_SLUG = SECTIONS[0]!.slug;
@@ -71,7 +71,7 @@ const HOMEWORK_INSTRUCTIONS =
   "Multiple choice (15 questions), Hybrid (9 questions: multiple choice plus a short written follow-up), " +
   "or Written (5 questions) — and you get one attempt that locks the moment you submit. " +
   "This course grades reasoning on an inverted scale — it rewards the boldest conclusion the evidence actually supports: " +
-  "name a specific hidden dynamic beneath the clinical material and the cheap observation that would disconfirm it. The cautious " +
+  "name a specific hidden function or conflict beneath the OCD symptom and the cheap observation that would disconfirm it. The cautious " +
   "\"you can't really conclude anything\" answer is a dodge and earns no credit; florid answers that " +
   "commit to nothing score low.";
 

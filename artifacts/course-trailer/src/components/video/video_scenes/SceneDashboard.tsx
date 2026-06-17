@@ -20,7 +20,7 @@ export function SceneDashboard() {
         >
           <h2 className="text-4xl font-display font-bold text-white mb-4">
             One unit. Eight sections.<br/>
-            <span className="text-indigo-400">The mind in conflict.</span>
+            <span className="text-indigo-400">The meaning beneath OCD.</span>
           </h2>
         </motion.div>
         

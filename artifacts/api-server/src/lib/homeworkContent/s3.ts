@@ -9,407 +9,407 @@ const mcq: HomeworkItem[] = [
   {
     itemType: "mc",
     prompt:
-      "A man who is constantly tempted by other women and barely resists becomes convinced — with no evidence at all — that his faithful partner is cheating, checks her phone nightly, and reads betrayal into her every text. Which conclusion best follows?",
+      "A man checks that the stove is off seven times before he can leave the house, but only on mornings he is the last one out and feels responsible for the empty home; on days his partner leaves after him, he doesn't check at all. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He likely protects himself from his own guilt over wanting to stray by attributing the urge to her, so the accusation says more about his impulses than her behavior; test whether his suspicion spikes right after he himself feels tempted, whether he ignores clear proof of her loyalty, and whether the jealousy fades when his own temptation is addressed directly.",
+        text: "The checking likely does a job — it discharges an unbearable sense of being the one to blame should the house burn down, so the ritual binds a responsibility-anxiety rather than reflecting real doubt about the stove; test whether the urge appears only when he's the last one out and responsible, whether stopping at one check leaves him flooded with dread, and whether the ritual eases once the fear of being to blame is named.",
         credit: 1.0,
       },
       {
-        text: "He seems pretty jealous about the relationship.",
-        credit: 0.3,
+        text: "It's probably some anxiety about the stove; we could look into his checking.",
+        credit: 0.6,
       },
       {
-        text: "His partner must actually be doing something suspicious, because nobody gets that jealous without a real reason.",
+        text: "He secretly wants the house to burn down, and the checking is his guilt about that wish.",
         credit: 0,
       },
       {
-        text: "He's probably worried about losing her; we could ask him more about it.",
-        credit: 0.6,
+        text: "He seems to check the stove a lot before leaving.",
+        credit: 0.3,
       },
     ],
     correctAnswer:
-      "He likely protects himself from his own guilt over wanting to stray by attributing the urge to her, so the accusation says more about his impulses than her behavior; test whether his suspicion spikes right after he himself feels tempted, whether he ignores clear proof of her loyalty, and whether the jealousy fades when his own temptation is addressed directly.",
+      "The checking likely does a job — it discharges an unbearable sense of being the one to blame should the house burn down, so the ritual binds a responsibility-anxiety rather than reflecting real doubt about the stove; test whether the urge appears only when he's the last one out and responsible, whether stopping at one check leaves him flooded with dread, and whether the ritual eases once the fear of being to blame is named.",
     explanation:
-      "Top credit reads projection — the disowned impulse pinned on the partner — and names a timing test that could refute it; 'she must really be cheating' is the overreach the total lack of evidence defeats.",
+      "Top credit reads the checking as binding a responsibility-anxiety and names a last-one-out test; 'he secretly wants the house to burn down' is the overreach the responsibility-tracking timing defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A heavy smoker who has coughed up blood twice insists he is 'perfectly healthy,' calls it 'just a cold that's going around,' cancels the appointment his wife made, and refuses to discuss it. Which conclusion best follows?",
+      "A nurse washes her hands until they crack, but only after touching anything in the room of one particular patient she finds frightening; with every other patient she washes normally. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He just hasn't gotten around to seeing a doctor yet; we could remind him.",
-        credit: 0.6,
-      },
-      {
-        text: "Health is unpredictable and the body is too complex to say what his refusal means.",
-        credit: 0,
-      },
-      {
-        text: "He seems to be avoiding the doctor.",
+        text: "She seems to wash her hands very thoroughly at work.",
         credit: 0.3,
       },
       {
-        text: "He likely keeps a frightening possibility out of awareness by denying the obvious signs, because facing it would mean facing real fear; test whether his calm cracks into anger or panic when pushed on the blood specifically, whether he downplays other people's symptoms far less than his own, and whether he can suddenly recall the warnings once the fear is made safe to feel.",
+        text: "The washing likely accomplishes something beyond hygiene — it lets her scrub away a dread attached to this one frightening patient, so the ritual binds a specific fear rather than a general germ worry; test whether the over-washing appears only after contact with this patient, whether being stopped from washing leaves her panicky, and whether the urge fades once she can name what frightens her about him.",
         credit: 1.0,
+      },
+      {
+        text: "It's probably about contamination fears; we could keep an eye on the washing.",
+        credit: 0.6,
+      },
+      {
+        text: "Compulsive washing is just how some brains are wired, so there's nothing about this patient to read into.",
+        credit: 0,
       },
     ],
     correctAnswer:
-      "He likely keeps a frightening possibility out of awareness by denying the obvious signs, because facing it would mean facing real fear; test whether his calm cracks into anger or panic when pushed on the blood specifically, whether he downplays other people's symptoms far less than his own, and whether he can suddenly recall the warnings once the fear is made safe to feel.",
+      "The washing likely accomplishes something beyond hygiene — it lets her scrub away a dread attached to this one frightening patient, so the ritual binds a specific fear rather than a general germ worry; test whether the over-washing appears only after contact with this patient, whether being stopped from washing leaves her panicky, and whether the urge fades once she can name what frightens her about him.",
     explanation:
-      "Full credit names denial protecting against fear and offers a 'does the calm crack' test; 'the body is too complex to say' is the refusal the pointed, selective dismissal of his own symptoms defeats.",
+      "Full credit reads patient-specific washing as binding a particular dread and names an only-after-this-patient test; 'just how some brains are wired' is the dodge the one-patient specificity defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A student who never opened the book fails an exam and delivers a long, detailed explanation: the questions were unfair, the professor has a grudge, the room was too cold, the curve was rigged — but never once mentions not studying. Which conclusion best follows?",
+      "Whenever the thought 'what if I stab my daughter' flashes through a father's mind, he taps the table four times and silently says her name; he does this only after that thought, never otherwise, and feels he has 'cancelled' it. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Exams have so many moving parts that there's no way to say why anyone fails.",
-        credit: 0,
-      },
-      {
-        text: "He likely builds reasonable-sounding excuses to protect himself from the painful truth that he didn't prepare, so the real cause stays conveniently off the list; test whether the one obvious factor — not studying — is the single thing he never raises, whether he accepts those same excuses from classmates who did study, and whether he prepares no differently next time.",
+        text: "The tapping likely works as an undoing ritual — it magically 'cancels' an intrusive thought he finds horrifying, so the compulsion neutralizes a forbidden idea precisely because he loves her and is appalled by it; test whether the ritual fires only after that specific thought, whether blocking it leaves him convinced something terrible will happen, and whether it loosens once he learns the thought is not a wish.",
         credit: 1.0,
       },
       {
-        text: "He seems upset about the grade.",
+        text: "He seems to tap and say her name a lot.",
         credit: 0.3,
       },
       {
-        text: "Maybe the test really was hard for him; we could look at his other grades.",
+        text: "It's probably his way of coping with a scary thought; we could talk about it.",
         credit: 0.6,
+      },
+      {
+        text: "The ritual proves he genuinely wants to harm his daughter and is fighting the urge.",
+        credit: 0,
       },
     ],
     correctAnswer:
-      "He likely builds reasonable-sounding excuses to protect himself from the painful truth that he didn't prepare, so the real cause stays conveniently off the list; test whether the one obvious factor — not studying — is the single thing he never raises, whether he accepts those same excuses from classmates who did study, and whether he prepares no differently next time.",
+      "The tapping likely works as an undoing ritual — it magically 'cancels' an intrusive thought he finds horrifying, so the compulsion neutralizes a forbidden idea precisely because he loves her and is appalled by it; test whether the ritual fires only after that specific thought, whether blocking it leaves him convinced something terrible will happen, and whether it loosens once he learns the thought is not a wish.",
     explanation:
-      "Top credit reads rationalization by the telling omission and names a 'what does he never mention' test; 'no way to say why anyone fails' is the dodge the conspicuous gap in his account defeats.",
+      "Top credit reads the tapping as undoing a horrifying intrusive thought and names a fires-only-after-that-thought test; 'he genuinely wants to harm her' is the overreach his horror and love defeat.",
   },
   {
     itemType: "mc",
     prompt:
-      "A woman whose father died last week explains his death to friends in flat, clinical detail — the exact blockage, the survival statistics, the funeral-home logistics — and when someone asks how she's feeling, she returns to the medical facts. Which conclusion best follows?",
+      "A college student rearranges the objects on her desk until they feel 'just right,' redoing it for up to an hour — but only the night before an exam she fears she'll fail; on ordinary nights the desk stays messy and she feels no urge. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "She probably copes by thinking it through; we could give her time.",
+        text: "It's probably exam stress showing up as tidying; we could look into it.",
         credit: 0.6,
       },
       {
-        text: "She likely holds unbearable grief at a safe distance by turning it into facts and procedures, keeping the feeling out of reach; test whether emotion breaks through when she's asked about a specific shared memory rather than the diagnosis, whether the clinical detail intensifies exactly when feeling threatens, and whether she shows the same flatness only around this loss and not in general.",
-        credit: 1.0,
-      },
-      {
-        text: "Grief is a mystery, so there's nothing to read into how she talks.",
+        text: "People arrange their desks however they like; there's nothing underneath when someone tidies up.",
         credit: 0,
       },
       {
-        text: "She seems to know a lot about what happened to him.",
+        text: "The arranging likely restores a feeling of control she can't get over the exam itself — making one small corner 'just right' substitutes for the unbearable uncertainty of whether she'll pass, so the ritual binds exam-dread; test whether the urge appears only before feared evaluations, whether being unable to finish arranging spikes her anxiety, and whether it fades once the fear of failing is faced directly.",
+        credit: 1.0,
+      },
+      {
+        text: "She seems to spend a long time arranging her desk.",
         credit: 0.3,
       },
     ],
     correctAnswer:
-      "She likely holds unbearable grief at a safe distance by turning it into facts and procedures, keeping the feeling out of reach; test whether emotion breaks through when she's asked about a specific shared memory rather than the diagnosis, whether the clinical detail intensifies exactly when feeling threatens, and whether she shows the same flatness only around this loss and not in general.",
+      "The arranging likely restores a feeling of control she can't get over the exam itself — making one small corner 'just right' substitutes for the unbearable uncertainty of whether she'll pass, so the ritual binds exam-dread; test whether the urge appears only before feared evaluations, whether being unable to finish arranging spikes her anxiety, and whether it fades once the fear of failing is faced directly.",
     explanation:
-      "Full credit names intellectualization — feeling swapped for facts — with a memory-versus-diagnosis test; 'grief is a mystery' is the refusal the precise retreat into detail whenever feeling nears defeats.",
+      "Full credit reads 'just right' arranging as substituting control for exam-uncertainty and names an only-before-feared-exams test; 'people tidy however they like' is the dodge the exam-only timing defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A man lights up whenever a particular coworker enters the room, then becomes conspicuously cold and harsh to her — far ruder than to anyone else — and goes out of his way to criticize her in meetings. Which conclusion best follows?",
+      "Before sending any work email a woman re-reads it eleven times, but only messages to her demanding manager; emails to friends and peers she fires off without a glance. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He seems to dislike working with her.",
+        text: "She seems to proofread her emails carefully.",
         credit: 0.3,
       },
       {
-        text: "His exaggerated hostility likely defends against an attraction he can't accept, flipping the forbidden feeling into its opposite; test whether the rudeness spikes precisely when she's warm or nearby, whether he can't stop tracking her despite the coldness, and whether the harshness eases if the attraction becomes safe to acknowledge.",
+        text: "It's probably anxiety about her boss; we could keep noticing the re-reading.",
+        credit: 0.6,
+      },
+      {
+        text: "The re-reading likely does a job — it tries to make impossible the catastrophe she dreads (sending something that exposes her to her manager's judgment), so the checking binds a fear of being found wanting rather than reflecting real doubt about typos; test whether the ritual attaches only to messages that can be judged by him, whether being made to send after one read leaves her anxious for hours, and whether it eases once the fear of his disapproval is named.",
         credit: 1.0,
       },
       {
-        text: "He clearly just finds her annoying for some real reason we haven't seen yet.",
+        text: "She must be incompetent at writing and the re-reading is her covering up genuine errors.",
         credit: 0,
-      },
-      {
-        text: "Something about her probably bothers him; we could watch how they interact.",
-        credit: 0.6,
       },
     ],
     correctAnswer:
-      "His exaggerated hostility likely defends against an attraction he can't accept, flipping the forbidden feeling into its opposite; test whether the rudeness spikes precisely when she's warm or nearby, whether he can't stop tracking her despite the coldness, and whether the harshness eases if the attraction becomes safe to acknowledge.",
+      "The re-reading likely does a job — it tries to make impossible the catastrophe she dreads (sending something that exposes her to her manager's judgment), so the checking binds a fear of being found wanting rather than reflecting real doubt about typos; test whether the ritual attaches only to messages that can be judged by him, whether being made to send after one read leaves her anxious for hours, and whether it eases once the fear of his disapproval is named.",
     explanation:
-      "Top credit reads reaction formation from the over-the-top, target-specific hostility and names a proximity test; 'he just finds her annoying' is the flat reading the lighting-up and excess intensity defeat.",
+      "Top credit reads manager-only re-reading as binding a fear of judgment and names an only-messages-he-can-judge test; 'she must be incompetent' is the overreach her glance-free peer emails defeat.",
   },
   {
     itemType: "mc",
     prompt:
-      "A man is humiliated by his boss all day and says nothing, then comes home and explodes at his children over a spilled cup and snaps at the dog — reactions wildly out of scale with what they did. Which conclusion best follows?",
+      "A devout man is plagued by blasphemous images during prayer, and each time one appears he must restart the entire prayer from the beginning and recite a fixed apology; the ritual fires only after a blasphemous image, never otherwise. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "People are unpredictable, so there's no telling why he blew up at home.",
-        credit: 0,
-      },
-      {
-        text: "He likely redirects anger he couldn't safely express at his boss onto safer targets at home, which is why the reaction dwarfs its trigger; test whether his home outbursts cluster on his worst days at work, whether the anger shrinks when he can address the boss directly, and whether the targets are reliably the ones who can't retaliate.",
+        text: "The restart-and-apologize ritual likely functions to undo a thought he experiences as a sin — neutralizing a forbidden image precisely because his faith matters so much to him, so the compulsion binds the guilt the intrusion triggers; test whether the ritual fires only after blasphemous images and not other distractions, whether forbidding the restart leaves him certain he's damned, and whether it eases once he learns an unwanted thought is not a chosen sin.",
         credit: 1.0,
       },
       {
-        text: "His kids are probably genuinely pushing his buttons and deserve the reaction.",
+        text: "It's probably religious anxiety; we could discuss his prayers.",
         credit: 0.6,
       },
       {
-        text: "He seems short-tempered at home.",
+        text: "Religious people have their rituals; there's nothing to interpret in how he prays.",
+        credit: 0,
+      },
+      {
+        text: "He seems to restart his prayers often.",
         credit: 0.3,
       },
     ],
     correctAnswer:
-      "He likely redirects anger he couldn't safely express at his boss onto safer targets at home, which is why the reaction dwarfs its trigger; test whether his home outbursts cluster on his worst days at work, whether the anger shrinks when he can address the boss directly, and whether the targets are reliably the ones who can't retaliate.",
+      "The restart-and-apologize ritual likely functions to undo a thought he experiences as a sin — neutralizing a forbidden image precisely because his faith matters so much to him, so the compulsion binds the guilt the intrusion triggers; test whether the ritual fires only after blasphemous images and not other distractions, whether forbidding the restart leaves him certain he's damned, and whether it eases once he learns an unwanted thought is not a chosen sin.",
     explanation:
-      "Full credit names displacement from the mismatch between trigger and reaction and offers a 'do outbursts track bad work days' test; 'people are unpredictable' is the refusal the clear day-to-day pattern defeats.",
+      "Full credit reads the restart ritual as undoing a thought felt as sin and names a fires-only-after-blasphemous-images test; 'religious people have their rituals' is the dodge the image-triggered specificity defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A woman has no memory of a serious car crash she was in as a child, yet she goes pale and short of breath at the smell of gasoline and refuses, without knowing why, to sit in the front seat. Which conclusion best follows?",
+      "Each night a man asks his wife four times whether he definitely locked the front door, even though he watched himself lock it; her 'yes, you did' calms him for a few minutes, then the doubt returns and he asks again. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "She probably just doesn't like cars; we could ask her about it.",
-        credit: 0.6,
+        text: "He seems to ask about the door a lot.",
+        credit: 0.3,
       },
       {
-        text: "The memory is gone, so her reactions are random quirks we can't explain.",
+        text: "Worrying about locks is so common it can't mean anything in particular.",
         credit: 0,
       },
       {
-        text: "A painful memory may be held out of conscious recall while its emotional charge still drives reactions to specific cues, which is why the fear is precise but the memory is blank; test whether her panic is triggered only by crash-linked cues and not unrelated ones, whether the bodily reaction appears before any conscious thought, and whether reactions ease as the event is gradually brought into words.",
+        text: "The asking likely does something his own memory can't — it briefly offloads onto his wife the unbearable responsibility for a break-in, so the reassurance binds a doubt that no amount of checking can satisfy; test whether her answer calms him only momentarily before the doubt rebuilds, whether blocking the question leaves him flooded with dread, and whether the urge eases once the need to be certain (rather than the lock) is addressed.",
         credit: 1.0,
       },
       {
-        text: "She seems nervous around cars.",
-        credit: 0.3,
+        text: "It's probably some doubt about the door; we could look into the reassurance-seeking.",
+        credit: 0.6,
       },
     ],
     correctAnswer:
-      "A painful memory may be held out of conscious recall while its emotional charge still drives reactions to specific cues, which is why the fear is precise but the memory is blank; test whether her panic is triggered only by crash-linked cues and not unrelated ones, whether the bodily reaction appears before any conscious thought, and whether reactions ease as the event is gradually brought into words.",
+      "The asking likely does something his own memory can't — it briefly offloads onto his wife the unbearable responsibility for a break-in, so the reassurance binds a doubt that no amount of checking can satisfy; test whether her answer calms him only momentarily before the doubt rebuilds, whether blocking the question leaves him flooded with dread, and whether the urge eases once the need to be certain (rather than the lock) is addressed.",
     explanation:
-      "Top credit reads a repressed memory still steering cue-bound reactions and names a cue-specificity test; 'random quirks we can't explain' is the dodge the tight match between cues and the forgotten crash defeats.",
+      "Top credit reads repeated asking as offloading responsibility for a doubt checking can't settle and names a calms-only-momentarily test; 'worrying about locks is common' is the dodge the never-satisfied loop defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A man who badly wants a relationship but dreads rejection never asks anyone out, keeps his schedule so packed he 'has no time' to date, and smoothly changes the subject whenever friends raise it. Which conclusion best follows?",
+      "A teenager must avoid stepping on pavement cracks and touch each lamppost on her walk home, convinced that skipping the routine will cause her mother to fall ill; the urge is strongest on days her mother seems unwell. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Dating is so personal there's nothing general to conclude about why he stays single.",
-        credit: 0,
-      },
-      {
-        text: "He likely protects himself from the pain of possible rejection by arranging his life so the risk never comes up, trading the wanted relationship for guaranteed safety; test whether the 'no time' busyness appears mainly around dating and not other goals, whether his anxiety rises the moment a real opportunity nears, and whether he can act when rejection is made to feel survivable.",
-        credit: 1.0,
-      },
-      {
-        text: "He's just a busy guy who hasn't met the right person; we could keep an eye on it.",
+        text: "It's probably worry about her mother; we could keep an eye on the routine.",
         credit: 0.6,
       },
       {
-        text: "He seems to keep to himself about dating.",
+        text: "The routine likely gives her magical control over an intolerable uncertainty — by performing it perfectly she feels she is preventing her mother's illness, so the ritual binds a helplessness she can't otherwise bear; test whether the urge intensifies exactly when her mother seems sick, whether skipping a lamppost leaves her terrified she's caused harm, and whether it eases once the helplessness about her mother is faced directly.",
+        credit: 1.0,
+      },
+      {
+        text: "She seems to have a strict walking routine home.",
         credit: 0.3,
+      },
+      {
+        text: "Deep down she wishes her mother ill, and the ritual is her hidden guilt about that wish.",
+        credit: 0,
       },
     ],
     correctAnswer:
-      "He likely protects himself from the pain of possible rejection by arranging his life so the risk never comes up, trading the wanted relationship for guaranteed safety; test whether the 'no time' busyness appears mainly around dating and not other goals, whether his anxiety rises the moment a real opportunity nears, and whether he can act when rejection is made to feel survivable.",
+      "The routine likely gives her magical control over an intolerable uncertainty — by performing it perfectly she feels she is preventing her mother's illness, so the ritual binds a helplessness she can't otherwise bear; test whether the urge intensifies exactly when her mother seems sick, whether skipping a lamppost leaves her terrified she's caused harm, and whether it eases once the helplessness about her mother is faced directly.",
     explanation:
-      "Full credit names avoidance built to dodge rejection and offers a 'is the busyness dating-specific' test; 'nothing general to conclude' is the refusal the wanting-yet-systematically-evading pattern defeats.",
+      "Full credit reads the routine as magical control over helplessness about her mother and names an intensifies-when-mother-seems-sick test; 'she wishes her mother ill' is the overreach her protective intent defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A manager who is privately seething with resentment toward his team insists, to anyone who'll listen, that they are 'angry and resentful' toward him — though they show no sign of it and rate him well in anonymous surveys. Which conclusion best follows?",
+      "A new mother gets up to check that her sleeping baby is breathing twenty times a night, but the urge spikes specifically after intrusive images of the baby dying flash through her mind; on nights without the images she sleeps. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The team is probably hiding real resentment, since he wouldn't sense it otherwise.",
+        text: "New parents check on babies; there's nothing to read into a worried mother.",
         credit: 0,
       },
       {
-        text: "He seems to think his team doesn't like him.",
+        text: "She seems to check on the baby very often at night.",
         credit: 0.3,
       },
       {
-        text: "He may be experiencing tension with the team; we could survey them again.",
-        credit: 0.6,
+        text: "The checking likely binds the terror set off by the intrusive images — each look reassures her the feared catastrophe hasn't happened, so the ritual neutralizes a specific dread rather than reflecting realistic risk; test whether the trips spike right after the death images, whether being kept in bed leaves her panicked, and whether the urge eases once she learns the images are intrusions, not premonitions.",
+        credit: 1.0,
       },
       {
-        text: "He likely disowns his own resentment by perceiving it in his team, so his read on them mirrors his hidden feeling rather than their behavior; test whether his certainty about their anger tracks his own bad moods, whether he dismisses the positive surveys as fake, and whether his perception shifts once his own resentment is named and explored.",
-        credit: 1.0,
+        text: "It's probably new-parent anxiety; we could talk about the night-checking.",
+        credit: 0.6,
       },
     ],
     correctAnswer:
-      "He likely disowns his own resentment by perceiving it in his team, so his read on them mirrors his hidden feeling rather than their behavior; test whether his certainty about their anger tracks his own bad moods, whether he dismisses the positive surveys as fake, and whether his perception shifts once his own resentment is named and explored.",
+      "The checking likely binds the terror set off by the intrusive images — each look reassures her the feared catastrophe hasn't happened, so the ritual neutralizes a specific dread rather than reflecting realistic risk; test whether the trips spike right after the death images, whether being kept in bed leaves her panicked, and whether the urge eases once she learns the images are intrusions, not premonitions.",
     explanation:
-      "Top credit reads projection — his own resentment seen in others — and names a mood-tracking test; 'the team must be hiding it' is the overreach the positive anonymous surveys defeat.",
+      "Top credit reads the night-checks as binding terror from intrusive images and names a spikes-after-the-images test; 'new parents check on babies' is the dodge the image-triggered, twenty-times-a-night pattern defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A woman whose husband has quietly moved his things out and stopped coming home insists 'everything is completely fine,' enthusiastically plans their anniversary party, and brushes aside every worried question from friends. Which conclusion best follows?",
+      "After every social gathering a man spends hours mentally replaying his conversations word by word to be sure he didn't say anything offensive; the reviewing fires only after events where he spoke to people he wants to impress. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Marriages are complicated, so we can't say anything about what she's doing.",
-        credit: 0,
-      },
-      {
-        text: "She likely shields herself from an unbearable truth by refusing to register the plain signs that the marriage is ending, since acknowledging it would mean facing the loss; test whether her cheer collapses into distress when the absence is named concretely, whether she avoids any topic that would force the issue, and whether she can take it in once support is in place.",
-        credit: 1.0,
-      },
-      {
-        text: "She seems optimistic about her marriage.",
+        text: "He seems to think back on his conversations a lot.",
         credit: 0.3,
       },
       {
-        text: "Maybe things really are okay between them; we could talk to her more.",
+        text: "The replaying likely works as a mental checking ritual — it tries to rule out the catastrophe of having humiliated himself before people whose regard he craves, so the review binds a fear of judgment rather than any real lapse; test whether it fires only after high-stakes social events, whether stopping the review mid-way leaves him convinced he blundered, and whether it eases once the fear of others' disapproval is named.",
+        credit: 1.0,
+      },
+      {
+        text: "It's probably social anxiety; we could look into the replaying.",
         credit: 0.6,
+      },
+      {
+        text: "The reviewing proves he actually did say something offensive each time and knows it.",
+        credit: 0,
       },
     ],
     correctAnswer:
-      "She likely shields herself from an unbearable truth by refusing to register the plain signs that the marriage is ending, since acknowledging it would mean facing the loss; test whether her cheer collapses into distress when the absence is named concretely, whether she avoids any topic that would force the issue, and whether she can take it in once support is in place.",
+      "The replaying likely works as a mental checking ritual — it tries to rule out the catastrophe of having humiliated himself before people whose regard he craves, so the review binds a fear of judgment rather than any real lapse; test whether it fires only after high-stakes social events, whether stopping the review mid-way leaves him convinced he blundered, and whether it eases once the fear of others' disapproval is named.",
     explanation:
-      "Full credit names denial that wards off loss and offers a 'does the cheer collapse when named' test; 'we can't say anything' is the refusal the stark gap between the facts and her story defeats.",
+      "Full credit reads the mental replay as a checking ritual binding fear of judgment and names an only-after-high-stakes-events test; 'he actually did offend each time' is the overreach the impress-only trigger defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A man drinks heavily every night and, whenever it comes up, explains smoothly that 'everyone in my industry drinks this much — it's just how deals get done,' never touching on how he feels when he stops. Which conclusion best follows?",
+      "A man flips the bedroom light on and off until it 'feels right,' sometimes thirty times, but only on nights he's lying awake dreading a medical test the next day; on calm nights he flips it once. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He seems to drink a fair amount after work.",
-        credit: 0.3,
-      },
-      {
-        text: "He may be drinking more than he should; we could track how often it happens.",
+        text: "It's probably anxiety about the test; we could notice the switching.",
         credit: 0.6,
       },
       {
-        text: "He likely defends the drinking with a socially acceptable reason so he never has to face what it's actually doing for him, keeping the real motive out of view; test whether he gets irritable or evasive when asked how he feels on nights he doesn't drink, whether the 'industry norm' excuse holds up against peers who drink little, and whether the justifications multiply as the drinking grows.",
-        credit: 1.0,
+        text: "He seems to flip the light many times some nights.",
+        credit: 0.3,
       },
       {
-        text: "Drinking habits vary so much that there's nothing to be learned from his explanation.",
+        text: "Some people have quirky bedtime habits; there's nothing to make of light-switching.",
         credit: 0,
+      },
+      {
+        text: "The switching likely manufactures a feeling of control he can't get over the medical test — repeating until it 'feels right' substitutes a solvable task for an unbearable uncertainty, so the ritual binds his dread; test whether the urge appears only when he faces a feared unknown, whether being stopped before it 'feels right' spikes his anxiety, and whether it fades once the fear about the test is faced directly.",
+        credit: 1.0,
       },
     ],
     correctAnswer:
-      "He likely defends the drinking with a socially acceptable reason so he never has to face what it's actually doing for him, keeping the real motive out of view; test whether he gets irritable or evasive when asked how he feels on nights he doesn't drink, whether the 'industry norm' excuse holds up against peers who drink little, and whether the justifications multiply as the drinking grows.",
+      "The switching likely manufactures a feeling of control he can't get over the medical test — repeating until it 'feels right' substitutes a solvable task for an unbearable uncertainty, so the ritual binds his dread; test whether the urge appears only when he faces a feared unknown, whether being stopped before it 'feels right' spikes his anxiety, and whether it fades once the fear about the test is faced directly.",
     explanation:
-      "Top credit reads rationalization shielding the real motive and names a 'does the excuse survive scrutiny' test; 'nothing to be learned' is the dodge the convenient, feeling-avoiding excuse defeats.",
+      "Top credit reads light-switching as substituting control for medical-test dread and names an only-before-feared-unknowns test; 'quirky bedtime habits' is the dodge the test-night-only timing defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A nurse who has just received a frightening diagnosis of her own responds by lecturing her family on treatment protocols, printing out journal articles, and debating survival percentages — but waves off every question about how she's holding up. Which conclusion best follows?",
+      "A young woman takes long, scalding showers, but only after an unwanted sexual thought about a relative intrudes; she says she feels 'dirty in her mind' and the shower is the only thing that helps, briefly. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Being scared is so private that her behavior can't tell us anything.",
-        credit: 0,
-      },
-      {
-        text: "She probably feels more in control with information; we could check in later.",
-        credit: 0.6,
-      },
-      {
-        text: "She likely keeps terror at bay by living in the facts of the illness, using expertise as armor against feeling it; test whether her composure cracks when asked about fear rather than figures, whether the flood of data peaks right when emotion threatens, and whether she's far more clinical about her own case than she is comforting with patients.",
+        text: "The showering likely works to wash away a mental 'contamination' — it neutralizes the disgust and guilt an intrusive taboo thought stirs, so the ritual undoes a forbidden idea precisely because it horrifies her; test whether the showers follow these specific thoughts and not ordinary dirt, whether being unable to shower leaves her flooded with shame, and whether the urge eases once she learns the thought is an intrusion, not a desire.",
         credit: 1.0,
       },
       {
-        text: "She seems very informed about her condition.",
+        text: "She seems to take a lot of long showers.",
         credit: 0.3,
+      },
+      {
+        text: "It's probably about feeling unclean; we could discuss the showering.",
+        credit: 0.6,
+      },
+      {
+        text: "The thoughts reveal a real hidden desire toward the relative that the showering expresses.",
+        credit: 0,
       },
     ],
     correctAnswer:
-      "She likely keeps terror at bay by living in the facts of the illness, using expertise as armor against feeling it; test whether her composure cracks when asked about fear rather than figures, whether the flood of data peaks right when emotion threatens, and whether she's far more clinical about her own case than she is comforting with patients.",
+      "The showering likely works to wash away a mental 'contamination' — it neutralizes the disgust and guilt an intrusive taboo thought stirs, so the ritual undoes a forbidden idea precisely because it horrifies her; test whether the showers follow these specific thoughts and not ordinary dirt, whether being unable to shower leaves her flooded with shame, and whether the urge eases once she learns the thought is an intrusion, not a desire.",
     explanation:
-      "Full credit names intellectualization — expertise as armor — with a 'fear versus figures' test; 'being scared is private, can't tell us anything' is the refusal the precise retreat into data when feeling nears defeats.",
+      "Full credit reads scalding showers as undoing a 'mental contamination' from an intrusive taboo thought and names a follow-the-thoughts-not-dirt test; 'a real hidden desire' is the overreach her disgust and horror defeat.",
   },
   {
     itemType: "mc",
     prompt:
-      "A teenager who is secretly eaten up with envy at her best friend's sudden popularity becomes gushingly, over-the-top complimentary toward her, praising her constantly and clinging closer than ever. Which conclusion best follows?",
+      "A commuter circles back and re-drives stretches of road convinced he may have hit a pedestrian he didn't see; the urge fires only after he feels a bump or passes someone close to the curb, and a clean re-drive calms him for a mile before doubt returns. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "She probably really does admire her friend that much; nothing more to it.",
+        text: "Careful drivers double back sometimes; there's nothing to interpret here.",
         credit: 0,
       },
       {
-        text: "Her exaggerated adoration likely covers an envy she can't admit, converting the ugly feeling into its showy opposite; test whether the praise rings hollow or strained rather than warm, whether small put-downs slip out underneath the flattery, and whether the gushing intensifies right after her friend gets new attention.",
+        text: "It's probably driving anxiety; we could look into the doubling back.",
+        credit: 0.6,
+      },
+      {
+        text: "The re-driving likely tries to discharge an unbearable doubt about having caused harm — it briefly proves he isn't responsible for a death, so the checking binds a responsibility-guilt that no single look can settle; test whether the urge fires only after cues of possible harm, whether a clean re-drive calms him only briefly before doubt rebuilds, and whether it eases once the need for certainty (not the road) is addressed.",
         credit: 1.0,
       },
       {
-        text: "She seems to look up to her friend.",
+        text: "He seems to re-drive parts of his route.",
         credit: 0.3,
-      },
-      {
-        text: "She might be a little jealous; we could see how the friendship goes.",
-        credit: 0.6,
       },
     ],
     correctAnswer:
-      "Her exaggerated adoration likely covers an envy she can't admit, converting the ugly feeling into its showy opposite; test whether the praise rings hollow or strained rather than warm, whether small put-downs slip out underneath the flattery, and whether the gushing intensifies right after her friend gets new attention.",
+      "The re-driving likely tries to discharge an unbearable doubt about having caused harm — it briefly proves he isn't responsible for a death, so the checking binds a responsibility-guilt that no single look can settle; test whether the urge fires only after cues of possible harm, whether a clean re-drive calms him only briefly before doubt rebuilds, and whether it eases once the need for certainty (not the road) is addressed.",
     explanation:
-      "Top credit reads reaction formation from the strained excess of the praise and names a 'do put-downs leak through' test; 'she just really admires her' is the surface reading the secret envy and overdone intensity defeat.",
+      "Top credit reads re-driving as discharging an unsettleable responsibility-doubt and names a calms-only-briefly test; 'careful drivers double back' is the dodge the harm-cue trigger and rebuilding doubt defeat.",
   },
   {
     itemType: "mc",
     prompt:
-      "A woman is furious at her controlling mother but stays sugary-sweet and dutiful with her, while picking constant, bitter fights with her gentle boyfriend — especially whenever he does some small thing that reminds her of her mother. Which conclusion best follows?",
+      "A boy lines his shoes up in a precise order each night and counts to a fixed number, believing that if he gets it wrong his older brother will die in an accident; the ritual grows longer whenever his brother travels. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Relationships are too tangled to say why she fights with her boyfriend.",
-        credit: 0,
-      },
-      {
-        text: "She seems to argue with her boyfriend a lot.",
+        text: "He seems to have a careful bedtime arranging routine.",
         credit: 0.3,
       },
       {
-        text: "She likely diverts anger she can't safely aim at her mother onto her boyfriend, which is why the fights flare on exactly the mother-like cues; test whether the conflicts spike right after tense contact with her mother, whether the boyfriend's 'offenses' are trivial echoes of the mother's behavior, and whether the fighting eases when the real anger at her mother is faced.",
-        credit: 1.0,
+        text: "It's probably worry about his brother; we could keep an eye on the routine.",
+        credit: 0.6,
       },
       {
-        text: "Her boyfriend might genuinely be doing annoying things; we could hear his side.",
-        credit: 0.6,
+        text: "He must secretly wish his brother dead, and the ritual is his guilt over the wish.",
+        credit: 0,
+      },
+      {
+        text: "The arranging likely gives him magical control over an unbearable possibility — performing it perfectly feels like it keeps his brother safe, so the ritual binds the helplessness he feels when his brother is at risk; test whether it lengthens exactly when his brother travels, whether getting the count wrong leaves him terrified he's caused harm, and whether it eases once the helplessness about his brother is faced directly.",
+        credit: 1.0,
       },
     ],
     correctAnswer:
-      "She likely diverts anger she can't safely aim at her mother onto her boyfriend, which is why the fights flare on exactly the mother-like cues; test whether the conflicts spike right after tense contact with her mother, whether the boyfriend's 'offenses' are trivial echoes of the mother's behavior, and whether the fighting eases when the real anger at her mother is faced.",
+      "The arranging likely gives him magical control over an unbearable possibility — performing it perfectly feels like it keeps his brother safe, so the ritual binds the helplessness he feels when his brother is at risk; test whether it lengthens exactly when his brother travels, whether getting the count wrong leaves him terrified he's caused harm, and whether it eases once the helplessness about his brother is faced directly.",
     explanation:
-      "Full credit names displacement from the mother-linked triggers and offers a 'do fights follow contact with mother' test; 'too tangled to say' is the refusal the precise cueing by mother-like acts defeats.",
+      "Full credit reads the arranging as magical control over helplessness about his brother and names a lengthens-when-he-travels test; 'he wishes his brother dead' is the overreach his protective fear defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A man gets a letter marked 'urgent' from a medical clinic, sets it on the counter unopened, lets it sit for three weeks behind a stack of mail, throws himself into a home-renovation project, and twice 'forgets' to call back. Which conclusion best follows?",
+      "An accountant must touch each corner of his desk twice whenever the number 6 appears in his work, which he considers 'a bad number'; the ritual fires only at the sight of that number and leaves him briefly calm. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He's probably just disorganized; we could help him sort his mail.",
+        text: "It's probably superstition about numbers; we could discuss the touching.",
         credit: 0.6,
       },
       {
-        text: "He seems to be putting off the clinic.",
-        credit: 0.3,
+        text: "The touching likely neutralizes the dread a 'bad' number triggers — it undoes a feared catastrophe he can't otherwise control, so the ritual binds a specific anxiety rather than reflecting any real property of the number; test whether the ritual fires only at that number and not others, whether being stopped from touching leaves him convinced something bad will happen, and whether it eases once the dread the number stands for is faced directly.",
+        credit: 1.0,
       },
       {
-        text: "People forget things all the time, so there's nothing to read into it.",
+        text: "Lots of people have lucky and unlucky numbers; there's nothing to read into it.",
         credit: 0,
       },
       {
-        text: "He likely keeps a dreaded result at arm's length by not opening, not calling, and burying himself in a project, because engaging would make the fear real; test whether his avoidance is specific to this letter and not his bills, whether his tension rises whenever the letter is mentioned, and whether he can act once the fear of the result is talked through.",
-        credit: 1.0,
+        text: "He seems to touch his desk when he sees a certain number.",
+        credit: 0.3,
       },
     ],
     correctAnswer:
-      "He likely keeps a dreaded result at arm's length by not opening, not calling, and burying himself in a project, because engaging would make the fear real; test whether his avoidance is specific to this letter and not his bills, whether his tension rises whenever the letter is mentioned, and whether he can act once the fear of the result is talked through.",
+      "The touching likely neutralizes the dread a 'bad' number triggers — it undoes a feared catastrophe he can't otherwise control, so the ritual binds a specific anxiety rather than reflecting any real property of the number; test whether the ritual fires only at that number and not others, whether being stopped from touching leaves him convinced something bad will happen, and whether it eases once the dread the number stands for is faced directly.",
     explanation:
-      "Top credit reads fear-driven avoidance from the layered evasion and names a 'is it specific to this letter' test; 'he's just disorganized' is the bland reading the targeted, anxious dodging of one dreaded item defeats.",
+      "Top credit reads the touching as neutralizing dread a 'bad' number triggers and names a fires-only-at-that-number test; 'lots of people have unlucky numbers' is the dodge the number-locked, catastrophe-averting pattern defeats.",
   },
 ];
 
@@ -417,425 +417,425 @@ const hybrid: HomeworkItem[] = [
   {
     itemType: "hybrid",
     prompt:
-      "A woman who has just been laid off spends the week energetically reassuring everyone that she's 'totally fine, honestly better off,' refuses to update her résumé, and gets irritated when anyone treats it as a setback. Which conclusion best follows?",
+      "A woman unplugs every appliance and photographs each outlet before leaving for work, but only on days her elderly father is home alone; when he's at his sister's, she leaves without a single check. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "She likely fends off the fear and shame of the loss by insisting it doesn't hurt, which is why she won't take the practical steps that would force her to face it; test whether her brightness gives way when the layoff is named plainly, whether she avoids tasks that would make it real, and whether she can plan once the feeling is acknowledged as safe.",
-        credit: 1.0,
-      },
-      {
-        text: "She seems to be taking the layoff in stride.",
+        text: "She seems to check the outlets carefully before work.",
         credit: 0.3,
       },
       {
-        text: "Maybe she really is relieved to be out of that job; people lose jobs all the time and there's nothing to interpret.",
+        text: "The unplugging-and-photographing likely does a job — it discharges an unbearable sense of being responsible for a fire that could kill her father, so the ritual binds a responsibility-fear rather than reflecting real doubt about the appliances; test whether the checking appears only when he's home and she feels responsible, whether reviewing the photos calms her only briefly before doubt returns, and whether it eases once the fear of being to blame for harm to him is named.",
+        credit: 1.0,
+      },
+      {
+        text: "Unplugging appliances is sensible safety; there's nothing to interpret in a careful person.",
         credit: 0,
       },
       {
-        text: "She might be more upset than she lets on; we could keep checking in.",
+        text: "It's probably worry about her father; we could look into the checking.",
         credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'denial protecting against the loss' lead from the rival 'she is genuinely relieved to be free of a bad job,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'the ritual binds responsibility-fear about her father' lead from the rival 'she's simply a cautious, safety-minded person,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: watch what happens when the layoff is named plainly as a loss rather than a relief — my lead predicts her bright front cracks into distress or anger because the calm is a defense, while genuine relief would stay steady and even welcome the conversation. It is refuted if she can discuss the loss openly, acknowledge the sting, and still move forward, which would point to real relief rather than denial.",
+        "Cheapest test: compare her checking on days her father is home against days he's away — a ritual that appears only when he's home and she's responsible points to a responsibility-fear, not general caution. My lead is refuted if she unplugs and photographs just as thoroughly when the house is empty, which would fit an across-the-board safety habit.",
       yieldAnchors: [
-        "She insists she is 'totally fine, better off'",
-        "She refuses the practical steps a job loss requires",
-        "She gets irritated when it's treated as a setback",
+        "She unplugs and photographs every outlet",
+        "The ritual appears only when her father is home alone",
+        "She skips it entirely when he's away",
       ],
       riskAnchors: [
-        "Her brightness gives way when the loss is named plainly",
-        "She avoids tasks that would make the loss real",
-        "She can plan once the feeling is made safe to feel",
+        "The checking tracks days she feels responsible for him",
+        "Reviewing the photos calms her only briefly",
+        "It eases once the fear of being to blame is named",
       ],
       defeatedBy: [
-        "She discusses the loss openly and still feels genuinely relieved",
-        "She takes practical steps without distress",
+        "She checks just as much when the house is empty",
+        "The ritual is unrelated to whether anyone is at risk",
       ],
     },
     correctAnswer:
-      "She likely fends off the fear and shame of the loss by insisting it doesn't hurt, which is why she won't take the practical steps that would force her to face it; test whether her brightness gives way when the layoff is named plainly, whether she avoids tasks that would make it real, and whether she can plan once the feeling is acknowledged as safe.",
+      "The unplugging-and-photographing likely does a job — it discharges an unbearable sense of being responsible for a fire that could kill her father, so the ritual binds a responsibility-fear rather than reflecting real doubt about the appliances; test whether the checking appears only when he's home and she feels responsible, whether reviewing the photos calms her only briefly before doubt returns, and whether it eases once the fear of being to blame for harm to him is named.",
     explanation:
-      "Full credit names denial and pairs it with a 'does the calm crack when named' test that states its own refutation; 'there's nothing to interpret' is the dodge the refusal of every reality-facing step defeats.",
+      "Full credit reads the photographing as binding a responsibility-fear about her father and is paired with a home-vs-away test that names its refutation; 'sensible safety' is the dodge the father-home-only timing defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A man who routinely cuts corners and pads his expense reports is loudly, relentlessly suspicious that his colleagues are 'all on the take,' demanding audits of everyone but himself. Which conclusion best follows?",
+      "A man scrubs his hands raw after handling mail, but the urge fires only since a news story about a chemical scare; he says ordinary dirt doesn't bother him at all, only the thought of the contaminant from the mail. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "His office is probably full of cheaters; honest people don't accuse without cause.",
-        credit: 0,
-      },
-      {
-        text: "He seems distrustful of his coworkers.",
-        credit: 0.3,
-      },
-      {
-        text: "He may have some workplace conflicts; we could review the team's reports.",
+        text: "It's probably a contamination worry; we could keep an eye on the washing.",
         credit: 0.6,
       },
       {
-        text: "He likely offloads his own dishonesty by seeing it everywhere but in himself, so the suspicion maps his behavior onto others; test whether his accusations spike right after his own worst cheating, whether he exempts only himself from the audits he demands, and whether the suspicion subsides when his own conduct is examined.",
+        text: "He seems to wash his hands hard after the mail.",
+        credit: 0.3,
+      },
+      {
+        text: "The scrubbing likely works to discharge a specific dread the news story planted — it neutralizes a feared contaminant rather than reflecting any general germ concern, so the washing binds that particular fear; test whether the over-washing attaches only to mail and the chemical it represents, whether being stopped from washing floods him with dread, and whether it eases once the fear behind the contaminant is faced directly.",
         credit: 1.0,
+      },
+      {
+        text: "Germ worries are everywhere these days; there's nothing specific to read in his washing.",
+        credit: 0,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'projection of his own dishonesty' lead from the rival 'he has accurately spotted real corruption around him,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'the washing binds a specific dread from the news story' lead from the rival 'he's just a generally germ-averse person,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: run the same audit on everyone including him — my lead predicts the records will show his own padding while the colleagues come up clean, because the suspicion is his behavior projected outward. It is refuted if independent audits actually turn up widespread cheating by others and clear him, which would mean he was perceiving a real pattern rather than his own.",
+        "Cheapest test: check whether the raw scrubbing fires only after handling mail (the feared contaminant) and not after ordinary dirt — washing locked to that one trigger points to a specific planted dread, not general germ-aversion. My lead is refuted if he over-washes after all kinds of contact regardless of the mail, which would fit a broad germ phobia.",
       yieldAnchors: [
-        "He pads his own expense reports and cuts corners",
-        "He is relentlessly suspicious of colleagues",
-        "He demands audits of everyone but himself",
+        "He scrubs his hands raw after handling mail",
+        "The urge began with a chemical-scare news story",
+        "Ordinary dirt doesn't bother him",
       ],
       riskAnchors: [
-        "His accusations spike right after his own worst cheating",
-        "He alone is exempt from the audits he demands",
-        "The suspicion subsides once his own conduct is examined",
+        "The washing attaches only to mail and that contaminant",
+        "Being stopped from washing floods him with dread",
+        "It eases once the underlying fear is faced",
       ],
       defeatedBy: [
-        "Independent audits reveal his colleagues really are cheating",
-        "His own records come back completely clean",
+        "He over-washes after every kind of contact",
+        "The urge predates the news story",
       ],
     },
     correctAnswer:
-      "He likely offloads his own dishonesty by seeing it everywhere but in himself, so the suspicion maps his behavior onto others; test whether his accusations spike right after his own worst cheating, whether he exempts only himself from the audits he demands, and whether the suspicion subsides when his own conduct is examined.",
+      "The scrubbing likely works to discharge a specific dread the news story planted — it neutralizes a feared contaminant rather than reflecting any general germ concern, so the washing binds that particular fear; test whether the over-washing attaches only to mail and the chemical it represents, whether being stopped from washing floods him with dread, and whether it eases once the fear behind the contaminant is faced directly.",
     explanation:
-      "Full credit names projection and offers an audit-everyone test that names its own refutation; 'honest people don't accuse without cause' is the overreach his own padded reports defeat.",
+      "Top credit reads the scrubbing as discharging a specific planted dread and is paired with a mail-vs-ordinary-dirt test that names its refutation; 'germ worries are everywhere' is the dodge the only-the-contaminant specificity defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A therapist notices that a client, whenever the talk turns to his recent divorce, immediately shifts into analyzing 'the sociology of modern marriage' and the statistics on divorce rates, never landing on his own pain. Which conclusion best follows?",
+      "A woman cooking dinner gets a flash of 'what if I stab my husband,' and immediately puts the knife down, taps the counter three times, and replaces it; she does this only after that thought and feels she's 'made it safe.' Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He seems interested in the topic of marriage.",
-        credit: 0.3,
-      },
-      {
-        text: "He likely escapes the raw hurt of his own divorce by floating up into abstract analysis, keeping the feeling at a manageable distance; test whether the abstraction kicks in exactly when a personal feeling is approached, whether he can stay with a concrete memory without theorizing, and whether emotion surfaces when the general talk is gently redirected to him.",
+        text: "The put-down-tap-replace sequence likely functions as undoing — it cancels an intrusive thought she finds horrifying precisely because she loves her husband, so the ritual neutralizes a forbidden idea rather than reflecting any wish; test whether the sequence fires only after that thought, whether being prevented from completing it leaves her sure something terrible will happen, and whether it loosens once she learns the thought is an intrusion, not a desire.",
         credit: 1.0,
       },
       {
-        text: "He probably likes thinking about big-picture issues; we could let him talk it out.",
+        text: "It's probably a way of coping with a scary thought; we could talk it over.",
         credit: 0.6,
       },
       {
-        text: "Some people are just intellectual, so there's nothing here worth reading into.",
+        text: "The ritual shows she actually wants to harm her husband and is barely holding back.",
         credit: 0,
+      },
+      {
+        text: "She seems to put the knife down and tap when cooking.",
+        credit: 0.3,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'intellectualization to avoid the pain' lead from the rival 'he is simply a naturally analytical person,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'the sequence undoes a horrifying intrusive thought' lead from the rival 'she has a genuine urge to harm her husband,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: gently steer him from the general topic to one concrete moment of his own divorce and watch whether he can stay with the feeling or instantly abstracts again — my lead predicts the retreat into theory fires precisely when personal emotion is near. It is refuted if he can dwell on his own pain with feeling when asked, and the analytic style shows up evenly across emotional and neutral topics alike.",
+        "Cheapest test: note whether the ritual fires only right after the intrusive thought and is accompanied by horror rather than desire — neutralizing a thought she's appalled by points to undoing, not a real urge. My lead is refuted if she shows genuine hostility toward her husband and the rituals track anger at him rather than the unwanted thought.",
       yieldAnchors: [
-        "He shifts to abstract sociology whenever his divorce comes up",
-        "He cites divorce statistics instead of his experience",
-        "He never lands on his own pain",
+        "The ritual fires only after the 'what if I stab him' thought",
+        "She loves her husband and is horrified by the thought",
+        "She feels she has 'made it safe'",
       ],
       riskAnchors: [
-        "The abstraction starts exactly when a personal feeling is approached",
-        "He can't stay with a concrete memory without theorizing",
-        "Emotion surfaces when the talk is redirected to him",
+        "The sequence fires only after that specific thought",
+        "Being prevented leaves her sure harm will follow",
+        "It loosens once she learns the thought is an intrusion",
       ],
       defeatedBy: [
-        "He can dwell on his own pain with feeling when asked",
-        "He is equally analytical about neutral, non-painful topics",
+        "She harbors real hostility toward her husband",
+        "The rituals track anger at him, not the unwanted thought",
       ],
     },
     correctAnswer:
-      "He likely escapes the raw hurt of his own divorce by floating up into abstract analysis, keeping the feeling at a manageable distance; test whether the abstraction kicks in exactly when a personal feeling is approached, whether he can stay with a concrete memory without theorizing, and whether emotion surfaces when the general talk is gently redirected to him.",
+      "The put-down-tap-replace sequence likely functions as undoing — it cancels an intrusive thought she finds horrifying precisely because she loves her husband, so the ritual neutralizes a forbidden idea rather than reflecting any wish; test whether the sequence fires only after that thought, whether being prevented from completing it leaves her sure something terrible will happen, and whether it loosens once she learns the thought is an intrusion, not a desire.",
     explanation:
-      "Full credit names intellectualization with a 'general-to-personal' test that states its refutation; 'some people are just intellectual' is the dodge the feeling-timed retreat into abstraction defeats.",
+      "Full credit reads the knife-down-tap-replace ritual as undoing a horrifying intrusion and is paired with a horror-vs-desire test that names its refutation; 'she actually wants to harm him' is the overreach her horror and love defeat.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A volunteer at an animal shelter who privately can't stand one needy dog becomes that dog's most fervent champion — fussing over it endlessly, insisting she 'loves it most' — while quietly handling it more roughly than the others. Which conclusion best follows?",
+      "A man squares every picture frame and aligns every book spine until it 'feels right,' redoing it for an hour — but only on evenings he's waiting to hear about a job he desperately wants; once he hears, the urge vanishes. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "She clearly just loves that dog the most; the rough handling is nothing.",
-        credit: 0,
-      },
-      {
-        text: "Her loud devotion likely masks a dislike she can't admit, with the real feeling leaking out in how she actually handles the dog; test whether the rough handling appears only when she thinks no one is watching, whether the gushing devotion spikes when others are present, and whether her warmth toward easier dogs is calmer and more genuine.",
-        credit: 1.0,
-      },
-      {
-        text: "She seems very attached to that dog.",
+        text: "He seems to straighten things for a long time some evenings.",
         credit: 0.3,
       },
       {
-        text: "She might have mixed feelings about it; we could watch her with the animals.",
+        text: "Tidy people straighten their homes; there's nothing underneath a love of order.",
+        credit: 0,
+      },
+      {
+        text: "The aligning likely manufactures a control he can't have over the job decision — getting one corner of the world 'just right' substitutes for the intolerable uncertainty of waiting, so the ritual binds that dread; test whether the urge appears only while he's awaiting a feared verdict, whether being stopped before it 'feels right' spikes his anxiety, and whether it disappears the moment the uncertainty resolves.",
+        credit: 1.0,
+      },
+      {
+        text: "It's probably stress about the job; we could notice the straightening.",
         credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'reaction formation hiding dislike' lead from the rival 'she genuinely loves the dog and the rough handling is meaningless,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'the aligning substitutes control for job-waiting uncertainty' lead from the rival 'he simply loves a tidy, ordered home,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: compare how she handles the dog when observed versus when she thinks she's alone — my lead predicts the warmth is for the audience while the rougher, truer feeling shows when unwatched. It is refuted if she is gentle and affectionate with the dog even when no one is looking, which would mean the love is real rather than a cover.",
+        "Cheapest test: track whether the hour-long aligning appears only while he's awaiting an uncertain verdict and vanishes once he hears — a ritual tied to waiting points to control-substitution, not a love of order. My lead is refuted if he straightens just as compulsively on ordinary, low-uncertainty evenings, which would fit a general tidiness trait.",
       yieldAnchors: [
-        "She loudly insists she loves the dog most",
-        "She fusses over it more than any other",
-        "She handles it more roughly when unobserved",
+        "He aligns frames and books until it 'feels right'",
+        "The urge appears only while awaiting the job decision",
+        "It vanishes once he hears",
       ],
       riskAnchors: [
-        "Rough handling appears only when she's unwatched",
-        "The gushing spikes when others are present",
-        "Her warmth toward easier dogs is calmer and genuine",
+        "The urge tracks periods of feared uncertainty",
+        "Being stopped before 'just right' spikes anxiety",
+        "It disappears when the uncertainty resolves",
       ],
       defeatedBy: [
-        "She is gentle with the dog even when alone",
-        "The rough handling never actually occurs",
+        "He aligns just as much on ordinary calm evenings",
+        "The straightening is unrelated to any pending decision",
       ],
     },
     correctAnswer:
-      "Her loud devotion likely masks a dislike she can't admit, with the real feeling leaking out in how she actually handles the dog; test whether the rough handling appears only when she thinks no one is watching, whether the gushing devotion spikes when others are present, and whether her warmth toward easier dogs is calmer and more genuine.",
+      "The aligning likely manufactures a control he can't have over the job decision — getting one corner of the world 'just right' substitutes for the intolerable uncertainty of waiting, so the ritual binds that dread; test whether the urge appears only while he's awaiting a feared verdict, whether being stopped before it 'feels right' spikes his anxiety, and whether it disappears the moment the uncertainty resolves.",
     explanation:
-      "Full credit names reaction formation and offers a watched-versus-unwatched test that names its refutation; 'she just loves it most' is the surface reading the secret roughness leaking through defeats.",
+      "Top credit reads 'just right' aligning as substituting control for waiting-uncertainty and is paired with a waiting-vs-ordinary-evenings test that names its refutation; 'tidy people straighten' is the dodge the only-while-waiting timing defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A woman who is terrified by her own ambition and the thought of outshining her family insists at every turn that she's 'just not the competitive type,' turns down promotions, and downplays each success as luck. Which conclusion best follows?",
+      "After any disagreement, a woman repeatedly confesses to her partner small things she might have done wrong that day, seeking his 'it's fine'; the urge fires only after conflict and his reassurance calms her for minutes before she confesses again. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Ambition is too personal to say anything about why she turns things down.",
-        credit: 0,
-      },
-      {
-        text: "She seems modest about her achievements.",
-        credit: 0.3,
-      },
-      {
-        text: "She may lack confidence; we could encourage her more.",
+        text: "It's probably guilt after arguments; we could look into the confessing.",
         credit: 0.6,
       },
       {
-        text: "She likely guards against the guilt of wanting to surpass her family by disowning her ambition and shrinking from anything that would prove it, paying the price in a stalled career; test whether her self-erasing spikes right when real success looms, whether private moments reveal strong drive she won't claim, and whether she can accept an opportunity once the guilt is named and eased.",
+        text: "The confessing likely works to discharge an unbearable doubt about being bad or blameworthy — his 'it's fine' briefly offloads the guilt conflict stirs, so the reassurance binds a doubt no single answer can settle; test whether the confessing fires specifically after conflict, whether his reassurance calms her only briefly before the urge rebuilds, and whether it eases once the need to be certain she's not bad is addressed rather than each 'sin.'",
         credit: 1.0,
+      },
+      {
+        text: "She seems to confess little things after arguments.",
+        credit: 0.3,
+      },
+      {
+        text: "Couples reassure each other all the time; there's nothing to read in her confessing.",
+        credit: 0,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'she defends against guilt over her ambition' lead from the rival 'she genuinely lacks ambition and prefers a quiet role,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'the confessing offloads an unsettleable guilt-doubt' lead from the rival 'she's just an honest person who likes to clear the air,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: see what happens to her drive in a low-stakes setting where outshining her family isn't in play — my lead predicts vivid ambition surfaces when the guilt isn't triggered, then vanishes the instant success threatens that boundary. It is refuted if she shows no drive in any context and feels genuine contentment turning opportunities down, which would mean she truly prefers a quiet role.",
+        "Cheapest test: watch whether his reassurance calms her only momentarily before she confesses again, and whether the urge fires specifically after conflict — a never-satisfied loop tied to disagreements points to a guilt-doubt, not ordinary openness. My lead is refuted if a single 'it's fine' settles her lastingly and the confessing happens evenly regardless of conflict.",
       yieldAnchors: [
-        "She insists she's 'just not competitive'",
-        "She turns down promotions she could take",
-        "She writes off each success as luck",
+        "She repeatedly confesses minor possible wrongs",
+        "The urge fires only after a disagreement",
+        "His reassurance calms her only briefly",
       ],
       riskAnchors: [
-        "Her self-erasing spikes right when success looms",
-        "Private moments reveal a drive she won't claim",
-        "She can accept an opportunity once the guilt is eased",
+        "The confessing follows conflict specifically",
+        "Reassurance calms her only momentarily",
+        "It eases once the need for certainty is addressed",
       ],
       defeatedBy: [
-        "She shows no ambition in any setting and is content",
-        "She turns down promotions with genuine ease and no conflict",
+        "One reassurance settles her for good",
+        "The confessing is unrelated to conflict",
       ],
     },
     correctAnswer:
-      "She likely guards against the guilt of wanting to surpass her family by disowning her ambition and shrinking from anything that would prove it, paying the price in a stalled career; test whether her self-erasing spikes right when real success looms, whether private moments reveal strong drive she won't claim, and whether she can accept an opportunity once the guilt is named and eased.",
+      "The confessing likely works to discharge an unbearable doubt about being bad or blameworthy — his 'it's fine' briefly offloads the guilt conflict stirs, so the reassurance binds a doubt no single answer can settle; test whether the confessing fires specifically after conflict, whether his reassurance calms her only briefly before the urge rebuilds, and whether it eases once the need to be certain she's not bad is addressed rather than each 'sin.'",
     explanation:
-      "Full credit reads a defense disowning ambition, names its career cost, and offers a low-stakes test of hidden drive that could refute it; 'too personal to say anything' is the refusal the success-timed self-sabotage defeats.",
+      "Full credit reads repeated confessing as offloading an unsettleable guilt-doubt and is paired with a calms-only-momentarily test that names its refutation; 'couples reassure each other' is the dodge the post-conflict, rebuilding loop defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A new father who is overwhelmed and resentful about how the baby has upended his life can't tolerate those feelings, so he becomes a tirelessly doting, picture-perfect dad — yet he's developed headaches, can't sleep, and snaps at strangers. Which conclusion best follows?",
+      "A man checks his pulse and searches his symptoms online for hours, but the urge spikes only after he notices an ordinary bodily sensation he fears signals cancer; a 'normal' reading calms him briefly before the doubt returns. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He's probably just a devoted dad adjusting to a new baby; we could give him time.",
-        credit: 0.6,
-      },
-      {
-        text: "He likely converts unbearable resentment into showy over-devotion, but the buried feeling exacts its price in his body and his temper elsewhere; test whether the symptoms ease when the resentment is acknowledged as normal, whether his irritability lands on safe outsiders rather than the baby, and whether the doting feels driven and anxious rather than relaxed.",
-        credit: 1.0,
-      },
-      {
-        text: "He seems like a caring father.",
+        text: "He seems to check his health a lot online.",
         credit: 0.3,
       },
       {
-        text: "New parenthood is so individual that his symptoms could mean anything or nothing.",
+        text: "It's probably health anxiety; we could keep an eye on the searching.",
+        credit: 0.6,
+      },
+      {
+        text: "All the checking proves he really does have a serious undiagnosed illness.",
         credit: 0,
+      },
+      {
+        text: "The checking likely tries to discharge an unbearable uncertainty about his body — each search briefly rules out the feared catastrophe, so the ritual binds a doubt that no reassurance can settle; test whether the searching spikes only after sensations he reads as cancer, whether a normal result calms him only briefly before doubt rebuilds, and whether it eases once the intolerance of uncertainty (not the symptom) is addressed.",
+        credit: 1.0,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'over-devotion defending against resentment, paid for in symptoms' lead from the rival 'he is simply a devoted dad who is run-down from new-parent exhaustion,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'the checking binds an unsettleable uncertainty about illness' lead from the rival 'he has a real medical problem driving genuine concern,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: gently normalize that many new parents feel resentment and watch whether his headaches and edginess ease as the feeling becomes sayable — my lead predicts relief follows owning the buried resentment, because the symptoms carry what the over-devotion won't let him feel. It is refuted if his symptoms are fully explained by sleep loss and resolve with rest while no resentment ever surfaces, pointing to plain exhaustion.",
+        "Cheapest test: see whether a reassuring pulse or normal result calms him only briefly before the doubt rebuilds and the searching resumes — a loop no reassurance settles points to intolerance of uncertainty, not a real illness. My lead is refuted if a normal check lastingly relieves him or if a genuine diagnosis accounts for the sensations.",
       yieldAnchors: [
-        "He feels overwhelmed and resentful but can't tolerate it",
-        "He has become a tirelessly perfect dad",
-        "He has headaches, insomnia, and snaps at strangers",
+        "He checks his pulse and searches symptoms for hours",
+        "The urge spikes after sensations he fears mean cancer",
+        "A normal reading calms him only briefly",
       ],
       riskAnchors: [
-        "Symptoms ease when the resentment is acknowledged as normal",
-        "His irritability lands on safe outsiders, not the baby",
-        "The doting feels driven and anxious, not relaxed",
+        "Searching spikes only after feared sensations",
+        "Reassurance calms him only briefly",
+        "It eases once intolerance of uncertainty is addressed",
       ],
       defeatedBy: [
-        "His symptoms resolve with sleep and no resentment exists",
-        "His devotion is relaxed and carries no hidden strain",
+        "A normal check relieves him for good",
+        "A genuine diagnosis explains the sensations",
       ],
     },
     correctAnswer:
-      "He likely converts unbearable resentment into showy over-devotion, but the buried feeling exacts its price in his body and his temper elsewhere; test whether the symptoms ease when the resentment is acknowledged as normal, whether his irritability lands on safe outsiders rather than the baby, and whether the doting feels driven and anxious rather than relaxed.",
+      "The checking likely tries to discharge an unbearable uncertainty about his body — each search briefly rules out the feared catastrophe, so the ritual binds a doubt that no reassurance can settle; test whether the searching spikes only after sensations he reads as cancer, whether a normal result calms him only briefly before doubt rebuilds, and whether it eases once the intolerance of uncertainty (not the symptom) is addressed.",
     explanation:
-      "Full credit names reaction formation plus its bodily cost and offers a 'does naming the resentment bring relief' test that states its refutation; 'could mean anything or nothing' is the dodge the symptoms-plus-displaced-temper pattern defeats.",
+      "Top credit reads the searching as discharging an unsettleable bodily uncertainty and is paired with a does-reassurance-last test that names its refutation; 'he really is ill' is the overreach the briefly-calmed, rebuilding doubt defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A woman who was deeply hurt by a friend's betrayal says, with a shrug, that she 'honestly can't even remember the details' of what happened — yet she tenses up and changes the subject the instant that friend's name comes up. Which conclusion best follows?",
+      "A teenager silently recites a 'protection phrase' exactly five times whenever an immoral image crosses his mind in class; the ritual fires only after such an image and he believes skipping it will make him 'a bad person.' Which conclusion best follows?",
     mcOptions: [
       {
-        text: "People forget old arguments all the time, so the blank memory means nothing.",
-        credit: 0,
-      },
-      {
-        text: "She seems uncomfortable talking about her former friend.",
-        credit: 0.3,
-      },
-      {
-        text: "The painful memory may be held out of recall while its charge still shows in her body's reaction, which is why the details are 'gone' but the name still stings; test whether her tension is specific to this friend and not other old acquaintances, whether the bodily reaction precedes any conscious thought, and whether details return as the hurt is approached in a safe setting.",
+        text: "The recitation likely functions to undo a thought he experiences as proof of badness — neutralizing an intrusive image precisely because being good matters so much to him, so the ritual binds the guilt the intrusion triggers; test whether it fires only after moral-themed images, whether forbidding the phrase leaves him certain he's bad, and whether it eases once he learns an unwanted thought isn't a measure of character.",
         credit: 1.0,
       },
       {
-        text: "She might still be a bit bothered by it; we could ask her again later.",
+        text: "It's probably guilt about his thoughts; we could discuss the phrase.",
         credit: 0.6,
+      },
+      {
+        text: "He seems to repeat a phrase to himself in class.",
+        credit: 0.3,
+      },
+      {
+        text: "Teenagers have all kinds of private habits; there's nothing to interpret in a repeated phrase.",
+        credit: 0,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'the painful memory is repressed but still charged' lead from the rival 'she has genuinely, neutrally forgotten an unimportant old spat,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'the phrase undoes a thought felt as proof of badness' lead from the rival 'it's just an idiosyncratic verbal tic,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: track whether her body reacts — tensing, subject-changing — specifically to this friend's name and not to other old acquaintances, since a live charge with a blank memory points to repression rather than ordinary forgetting. It is refuted if she stays relaxed and can recall the details easily once prompted, which would mean the event simply faded without any defensive blocking.",
+        "Cheapest test: check whether the phrase fires specifically after morally charged images and is tied to a fear of being bad — a ritual locked to those intrusions points to undoing guilt, not a random tic. My lead is refuted if he recites it at unrelated, neutral moments with no link to any feared thought.",
       yieldAnchors: [
-        "She claims she can't remember the betrayal's details",
-        "She tenses up when the friend's name comes up",
-        "She abruptly changes the subject",
+        "He recites a 'protection phrase' five times",
+        "It fires only after an immoral image",
+        "He believes skipping it makes him bad",
       ],
       riskAnchors: [
-        "Her tension is specific to this friend, not others",
-        "The bodily reaction precedes any conscious thought",
-        "Details return as the hurt is approached safely",
+        "The ritual fires only after moral-themed images",
+        "Forbidding the phrase leaves him certain he's bad",
+        "It eases once he learns thoughts aren't character",
       ],
       defeatedBy: [
-        "She stays relaxed and recalls the details easily when prompted",
-        "She reacts the same way to many neutral old acquaintances",
+        "He recites it at random, neutral moments",
+        "The phrase has no link to any feared thought",
       ],
     },
     correctAnswer:
-      "The painful memory may be held out of recall while its charge still shows in her body's reaction, which is why the details are 'gone' but the name still stings; test whether her tension is specific to this friend and not other old acquaintances, whether the bodily reaction precedes any conscious thought, and whether details return as the hurt is approached in a safe setting.",
+      "The recitation likely functions to undo a thought he experiences as proof of badness — neutralizing an intrusive image precisely because being good matters so much to him, so the ritual binds the guilt the intrusion triggers; test whether it fires only after moral-themed images, whether forbidding the phrase leaves him certain he's bad, and whether it eases once he learns an unwanted thought isn't a measure of character.",
     explanation:
-      "Full credit names repression with a live charge and offers a cue-specificity test that names its refutation; 'the blank memory means nothing' is the dodge the body's targeted reaction to that one name defeats.",
+      "Full credit reads the phrase as undoing a thought felt as proof of badness and is paired with a fires-after-moral-images test that names its refutation; 'idiosyncratic verbal tic' is the dodge the image-triggered timing defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A man who is anxious about commitment but won't admit it keeps booking himself solid — extra shifts, weekend trips, side projects — and tells his frustrated girlfriend he 'would love to talk about the future, there's just never time.' Which conclusion best follows?",
+      "A woman takes a forty-minute detour to avoid driving past the lake, ever since intrusive thoughts of swerving in began; she feels calm only by avoiding the route entirely and dreads the thoughts returning if she goes near it. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He's clearly just a busy, ambitious guy with a packed life; nothing to interpret.",
+        text: "She seems to avoid driving by the lake.",
+        credit: 0.3,
+      },
+      {
+        text: "Her avoidance shows she truly intends to drive into the lake someday.",
         credit: 0,
       },
       {
-        text: "He likely keeps commitment-anxiety at bay by staying too busy to ever face the relationship question, trading closeness for the safety of avoidance; test whether the sudden busyness clusters around moments the relationship deepens, whether his anxiety rises when a real conversation is scheduled, and whether time appears once the fear of commitment is talked through.",
-        credit: 1.0,
-      },
-      {
-        text: "He may be a little nervous about the relationship; we could nudge him to make time.",
+        text: "It's probably anxiety about the lake road; we could look into the detour.",
         credit: 0.6,
       },
       {
-        text: "He seems to have a lot going on.",
-        credit: 0.3,
+        text: "The detour likely functions to bind the terror her intrusive swerving thoughts provoke — avoiding the lake removes the cue and the unbearable doubt about acting on the thought, so the ritual neutralizes a feared impulse she's horrified by rather than any real intent; test whether the avoidance attaches only to cues that trigger the thoughts, whether being made to drive the route floods her with dread, and whether it eases once she learns the thoughts are intrusions, not plans.",
+        credit: 1.0,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'busyness as avoidance of commitment' lead from the rival 'he is genuinely overcommitted and would engage if he truly had time,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'the detour binds terror from intrusive swerving thoughts' lead from the rival 'she genuinely intends to harm herself at the lake,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: clear the calendar by handing him a genuinely free evening set aside for 'the future' talk and see whether he suddenly manufactures a new obligation — my lead predicts fresh busyness materializes precisely to dodge the conversation. It is refuted if, given real free time, he eagerly and calmly engages with the relationship question, which would mean he was simply overcommitted.",
+        "Cheapest test: note whether the avoidance attaches only to cues that trigger the unwanted thoughts and is driven by horror rather than intent — avoidance aimed at removing a dreaded intrusion points to neutralizing a feared impulse, not a real plan. My lead is refuted if she shows genuine intent or desire to harm herself rather than dread of the thought itself.",
       yieldAnchors: [
-        "He's anxious about commitment but won't admit it",
-        "He keeps himself booked solid",
-        "He says he'd 'love to talk' but never has time",
+        "She detours forty minutes to avoid the lake",
+        "The avoidance began with intrusive swerving thoughts",
+        "She feels calm only by avoiding the route",
       ],
       riskAnchors: [
-        "Busyness clusters when the relationship deepens",
-        "His anxiety rises when a real talk is scheduled",
-        "Time appears once the fear of commitment is addressed",
+        "Avoidance attaches only to thought-triggering cues",
+        "Being made to drive the route floods her with dread",
+        "It eases once she learns the thoughts are intrusions",
       ],
       defeatedBy: [
-        "Given genuinely free time, he engages eagerly and calmly",
-        "His schedule is forced on him and unrelated to the relationship",
+        "She shows genuine intent to harm herself",
+        "The avoidance is unrelated to the intrusive thoughts",
       ],
     },
     correctAnswer:
-      "He likely keeps commitment-anxiety at bay by staying too busy to ever face the relationship question, trading closeness for the safety of avoidance; test whether the sudden busyness clusters around moments the relationship deepens, whether his anxiety rises when a real conversation is scheduled, and whether time appears once the fear of commitment is talked through.",
+      "The detour likely functions to bind the terror her intrusive swerving thoughts provoke — avoiding the lake removes the cue and the unbearable doubt about acting on the thought, so the ritual neutralizes a feared impulse she's horrified by rather than any real intent; test whether the avoidance attaches only to cues that trigger the thoughts, whether being made to drive the route floods her with dread, and whether it eases once she learns the thoughts are intrusions, not plans.",
     explanation:
-      "Full credit names avoidance dressed as busyness and offers a 'give him free time and watch' test that names its refutation; 'nothing to interpret' is the dodge the relationship-timed scheduling defeats.",
+      "Top credit reads the detour as binding terror from intrusive thoughts and is paired with a cue-specific, horror-vs-intent test that names its refutation; 'she truly intends to drive in' is the overreach her dread of the thought defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "After being passed over for a promotion he badly wanted, a man declares he 'never even cared about that job — it's beneath me, really,' and lists all the reasons the role is undesirable, though he'd campaigned hard for it weeks earlier. Which conclusion best follows?",
+      "A man arranges his keys, wallet, and phone in a fixed line and taps each one before leaving, sure that doing it wrong means his wife will be hurt that day; the ritual takes longer on mornings she has a long commute. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He seems to have changed his mind about the job.",
-        credit: 0.3,
-      },
-      {
-        text: "He likely softens the sting of rejection by recasting the prize he lost as worthless, so the disappointment never has to be felt; test whether his disdain appeared only after the rejection and not before, whether he still shows envy or hurt when the role comes up, and whether the contempt fades once the disappointment is acknowledged.",
-        credit: 1.0,
-      },
-      {
-        text: "Maybe the job really wasn't right for him after all; we could ask why he applied.",
+        text: "It's probably worry about his wife; we could keep an eye on the routine.",
         credit: 0.6,
       },
       {
-        text: "People's preferences shift constantly, so there's nothing to make of it.",
+        text: "He seems to line up his things before leaving.",
+        credit: 0.3,
+      },
+      {
+        text: "The lining-up likely gives him magical control over an intolerable possibility — done perfectly, it feels like it keeps his wife safe, so the ritual binds the helplessness he feels about a danger he can't actually prevent; test whether the routine lengthens exactly when she faces more risk, whether doing it wrong leaves him terrified he's caused harm, and whether it eases once the helplessness about her safety is faced directly.",
+        credit: 1.0,
+      },
+      {
+        text: "Deep down he wishes his wife harm, and the ritual is his guilt over the wish.",
         credit: 0,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'rationalizing away the loss (sour grapes)' lead from the rival 'he genuinely reconsidered and decided the role was wrong for him,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'the routine is magical control over helplessness about his wife' lead from the rival 'he secretly wishes her harm,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: check the timing — did his contempt for the job appear only after he was rejected, despite his hard campaigning days earlier — because a sudden post-loss reversal is the signature of protecting against disappointment. It is refuted if he had voiced real doubts about the role before the decision, or if he can both admit it stings and stand by his new view, which would mean a genuine reconsideration.",
+        "Cheapest test: check whether the ritual lengthens precisely when his wife faces more danger (a long commute) and is driven by protective dread — effort that scales with her risk points to magical control over helplessness, not a hidden wish. My lead is refuted if the ritual is unrelated to her risk or if he shows genuine hostility toward her rather than fear for her.",
       yieldAnchors: [
-        "He campaigned hard for the job weeks earlier",
-        "After losing, he calls it 'beneath me'",
-        "He lists reasons the role is undesirable",
+        "He lines up and taps his keys, wallet, and phone",
+        "He believes errors will get his wife hurt",
+        "The ritual lengthens when she has a long commute",
       ],
       riskAnchors: [
-        "The disdain appeared only after the rejection",
-        "He still shows envy or hurt about the role",
-        "The contempt fades once disappointment is acknowledged",
+        "The routine lengthens when she faces more risk",
+        "Doing it wrong leaves him terrified he caused harm",
+        "It eases once the helplessness about her is faced",
       ],
       defeatedBy: [
-        "He had voiced real doubts about the role beforehand",
-        "He can admit it stings yet genuinely stand by his new view",
+        "The ritual is unrelated to her level of risk",
+        "He shows genuine hostility toward his wife",
       ],
     },
     correctAnswer:
-      "He likely softens the sting of rejection by recasting the prize he lost as worthless, so the disappointment never has to be felt; test whether his disdain appeared only after the rejection and not before, whether he still shows envy or hurt when the role comes up, and whether the contempt fades once the disappointment is acknowledged.",
+      "The lining-up likely gives him magical control over an intolerable possibility — done perfectly, it feels like it keeps his wife safe, so the ritual binds the helplessness he feels about a danger he can't actually prevent; test whether the routine lengthens exactly when she faces more risk, whether doing it wrong leaves him terrified he's caused harm, and whether it eases once the helplessness about her safety is faced directly.",
     explanation:
-      "Full credit names rationalization (sour grapes) and offers a timing-of-the-disdain test that states its refutation; 'preferences shift, nothing to make of it' is the dodge the abrupt post-rejection reversal defeats.",
+      "Full credit reads the lining-up as magical control over helplessness about his wife and is paired with a scales-with-her-risk test that names its refutation; 'he wishes her harm' is the overreach his protective fear defeats.",
   },
 ];
 
@@ -843,175 +843,183 @@ const written: HomeworkItem[] = [
   {
     itemType: "written",
     prompt:
-      "A man whose younger brother recently died describes the funeral and his brother's illness without a flicker of feeling, throws himself into organizing the estate paperwork with brisk efficiency, and gently steers every conversation away from how he himself is doing — yet his friends notice he has stopped sleeping. In one paragraph, propose the strongest conclusion about the dynamic at work and describe how you would test it.",
+      "A man rereads and re-saves every important document up to thirty times before closing it, certain that a single missed error will get him fired; the urge fires only on high-stakes files for his most critical client, never on routine ones, and each save calms him for a moment before the doubt returns. In one paragraph, propose the strongest conclusion about what the re-saving is doing and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that he is defending against overwhelming grief by holding it out of awareness — staying busy and factual so the feeling never reaches him — but the cost is leaking out in his sleeplessness, because feelings kept from the mind tend to surface in the body. This is a strong claim because it predicts checkable consequences: his composure should crack specifically when the loss is named in personal, emotional terms rather than logistical ones; the insomnia and other strain should ease as the grief becomes sayable and is shared; and his flatness should be specific to this loss, not a lifelong style. I would test it by gently shifting talk from estate paperwork to a concrete shared memory and watching whether feeling breaks through, by tracking whether his sleep improves as the grief is acknowledged, and by checking whether he shows normal emotion about everything except his brother's death.",
+        "The strongest conclusion is that the re-saving isn't really about errors but does a job — it tries to discharge an unbearable doubt about being responsible for a catastrophe (getting fired) that no single check can settle, so the ritual binds a fear of blame rather than reflecting genuine uncertainty about the file. This is a strong claim because it predicts checkable consequences: the re-saving should attach only to high-stakes files where he feels responsible and not to routine ones; each save should calm him only briefly before the doubt rebuilds and the cycle repeats; and the urge should ease once the intolerance of being to blame, rather than the document, is addressed. I would test it by comparing his behavior on critical versus routine files, by timing how long a completed save reassures him before the doubt returns, and by checking whether naming the fear of blame loosens the ritual.",
       yieldAnchors: [
-        "He describes the death without any feeling",
-        "He buries himself in brisk estate paperwork",
-        "He has stopped sleeping",
+        "He re-saves important documents up to thirty times",
+        "The urge fires only on high-stakes files",
+        "Each save calms him only for a moment",
       ],
       riskAnchors: [
-        "His composure cracks when the loss is named personally",
-        "The insomnia eases as grief becomes sayable and shared",
-        "The flatness is specific to this loss, not a lifelong style",
+        "The ritual attaches only to files he feels responsible for",
+        "Each save reassures him only briefly",
+        "It eases once the fear of blame is addressed",
       ],
       defeatedBy: [
-        "He is simply a calm person and feels no buried grief",
-        "Nothing about a person's coping can be inferred from how they talk",
+        "A single save lastingly relieves him",
+        "He re-saves routine files just as much",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that he is defending against overwhelming grief by holding it out of awareness — staying busy and factual so the feeling never reaches him — but the cost is leaking out in his sleeplessness, because feelings kept from the mind tend to surface in the body. This is a strong claim because it predicts checkable consequences: his composure should crack specifically when the loss is named in personal, emotional terms rather than logistical ones; the insomnia and other strain should ease as the grief becomes sayable and is shared; and his flatness should be specific to this loss, not a lifelong style. I would test it by gently shifting talk from estate paperwork to a concrete shared memory and watching whether feeling breaks through, by tracking whether his sleep improves as the grief is acknowledged, and by checking whether he shows normal emotion about everything except his brother's death.",
+      "The strongest conclusion is that the re-saving isn't really about errors but does a job — it tries to discharge an unbearable doubt about being responsible for a catastrophe (getting fired) that no single check can settle, so the ritual binds a fear of blame rather than reflecting genuine uncertainty about the file. This is a strong claim because it predicts checkable consequences: the re-saving should attach only to high-stakes files where he feels responsible and not to routine ones; each save should calm him only briefly before the doubt rebuilds and the cycle repeats; and the urge should ease once the intolerance of being to blame, rather than the document, is addressed. I would test it by comparing his behavior on critical versus routine files, by timing how long a completed save reassures him before the doubt returns, and by checking whether naming the fear of blame loosens the ritual.",
     explanation:
-      "Under the inverted standard, 'nothing can be inferred from how he talks' earns near-zero; top credit goes to naming a grief defense that binds the flatness and insomnia and proposes a memory test that could refute it.",
+      "Under the inverted standard, 'compulsive checking is just how some brains work' earns near-zero; top credit reads the re-saving as binding a fear of blame and names a high-stakes-vs-routine test that could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "A woman who is often sharply critical and quick to find fault is utterly convinced that her partner, friends, and coworkers are all 'so judgmental and harsh,' and she feels constantly attacked by them — though others describe those same people as warm and easygoing. In one paragraph, propose the strongest conclusion about the dynamic and describe how you would test it.",
+      "A young mother, every time an image of dropping her infant down the stairs flashes through her mind, must walk up and down the stairs three times while holding the baby tight; she does this only after the image, is horrified by it, and feels she has 'undone' the danger. In one paragraph, propose the strongest conclusion about what the stair-walking is doing and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that she protects herself from owning her own harsh, critical streak by experiencing it as coming from everyone around her, so the judgment she can't accept in herself feels like it's aimed at her from outside. This is a strong claim because it predicts checkable consequences: her sense of being attacked should spike right after her own most critical moments; the people she calls harsh should be ones others find warm, marking the perception as hers rather than theirs; and the feeling of being judged should ease as she comes to recognize and accept her own critical side. I would test it by tracking whether her 'they're so judgmental' episodes follow her own bouts of fault-finding, by gathering outside descriptions of the same people to see whether the harshness is really there, and by watching whether owning her critical streak softens her sense of being attacked.",
+        "The strongest conclusion is that the stair-walking is an undoing ritual — it magically cancels an intrusive image she finds horrifying precisely because she loves the baby, so the compulsion neutralizes a forbidden idea rather than expressing any wish to harm. This is a strong claim because it predicts checkable consequences: the ritual should fire only after that specific image and not at random; being prevented from completing it should leave her convinced something terrible will happen; and the urge should loosen once she learns that an unwanted thought is an intrusion, not a desire or a plan. I would test it by noting whether the walking is tied strictly to the image, by observing her distress when the ritual is blocked, and by checking whether psychoeducation that separates thought from intent reduces the compulsion.",
       yieldAnchors: [
-        "She is herself sharply critical and quick to fault others",
-        "She's convinced everyone around her is judgmental and harsh",
-        "Others describe those same people as warm and easygoing",
+        "She walks the stairs three times after the dropping image",
+        "She is horrified by the image and loves the baby",
+        "She feels she has 'undone' the danger",
       ],
       riskAnchors: [
-        "Her sense of being attacked spikes after her own critical moments",
-        "Outsiders find the 'harsh' people warm",
-        "Feeling judged eases as she owns her own critical side",
+        "The ritual fires only after that specific image",
+        "Blocking it leaves her sure harm will follow",
+        "It loosens once thought is separated from intent",
       ],
       defeatedBy: [
-        "Independent accounts confirm the others really are harsh to her",
-        "The unconscious is unknowable, so her complaints can't be read",
+        "She has a genuine wish to harm the baby",
+        "The ritual is unrelated to the intrusive image",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that she protects herself from owning her own harsh, critical streak by experiencing it as coming from everyone around her, so the judgment she can't accept in herself feels like it's aimed at her from outside. This is a strong claim because it predicts checkable consequences: her sense of being attacked should spike right after her own most critical moments; the people she calls harsh should be ones others find warm, marking the perception as hers rather than theirs; and the feeling of being judged should ease as she comes to recognize and accept her own critical side. I would test it by tracking whether her 'they're so judgmental' episodes follow her own bouts of fault-finding, by gathering outside descriptions of the same people to see whether the harshness is really there, and by watching whether owning her critical streak softens her sense of being attacked.",
+      "The strongest conclusion is that the stair-walking is an undoing ritual — it magically cancels an intrusive image she finds horrifying precisely because she loves the baby, so the compulsion neutralizes a forbidden idea rather than expressing any wish to harm. This is a strong claim because it predicts checkable consequences: the ritual should fire only after that specific image and not at random; being prevented from completing it should leave her convinced something terrible will happen; and the urge should loosen once she learns that an unwanted thought is an intrusion, not a desire or a plan. I would test it by noting whether the walking is tied strictly to the image, by observing her distress when the ritual is blocked, and by checking whether psychoeducation that separates thought from intent reduces the compulsion.",
     explanation:
-      "The inverted standard gives near-zero to 'the unconscious is unknowable'; credit goes to naming projection that binds the gap between her view and others' and proposes a timing test that could refute it.",
+      "The inverted standard gives near-zero to 'the image means she secretly wants to hurt the baby'; credit goes to reading the stair-walking as undoing a horrifying intrusion and naming a tied-to-the-image test that could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "A teenage boy who is privately frightened and confused by his own tender, vulnerable feelings has become aggressively 'tough' — mocking anything sentimental, picking fights to prove he's hard, and sneering at friends who show emotion — yet he secretly writes poetry he hides from everyone. In one paragraph, propose the strongest conclusion about the dynamic and describe how you would test it.",
+      "A woman cannot leave her apartment until everything on her shelves is arranged in a precise, symmetrical order that 'feels right,' sometimes redoing it for two hours; the ritual is worst on mornings she faces something uncertain and uncontrollable — a medical result, a first date — and absent on predictable days. In one paragraph, propose the strongest conclusion about what the arranging is doing and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that his exaggerated toughness is a defense against tender feelings he finds unbearable, flipping the soft, vulnerable side he can't accept into its loud opposite — and the hidden poetry is the disowned feeling still alive underneath. This is a strong claim because it predicts checkable consequences: his hardness should intensify exactly when something threatens to move him; the contempt should ring forced and brittle rather than relaxed; and the aggression should soften if his tender feelings are made safe to have rather than shameful. I would test it by watching whether his toughest displays come right on the heels of emotional moments, by noting whether his sneering feels strained when sentiment appears, and by checking whether validating the feelings behind the poetry reduces the need for the tough front.",
+        "The strongest conclusion is that the arranging manufactures a feeling of control she cannot get over the real uncertainty she's facing — making one small, solvable corner of the world 'just right' substitutes for the intolerable not-knowing of a medical result or a date, so the ritual binds that dread rather than reflecting a love of order. This is a strong claim because it predicts checkable consequences: the urge should appear specifically before uncontrollable, feared events and be absent on predictable days; being stopped before it 'feels right' should sharply spike her anxiety; and the ritual should fade once the underlying uncertainty is faced or resolved. I would test it by mapping the arranging against her calendar of certain versus uncertain days, by noting her distress when interrupted, and by checking whether addressing the feared uncertainty directly shrinks the ritual.",
       yieldAnchors: [
-        "He's privately frightened by his own tender feelings",
-        "He acts aggressively tough and mocks all sentiment",
-        "He secretly writes poetry he hides",
+        "She arranges shelves until they 'feel right'",
+        "The ritual is worst before uncertain, uncontrollable events",
+        "It is absent on predictable days",
       ],
       riskAnchors: [
-        "His hardness intensifies when something threatens to move him",
-        "The contempt rings forced and brittle, not relaxed",
-        "The aggression softens when tender feelings are made safe",
+        "The urge appears only before feared uncertainty",
+        "Being stopped before 'just right' spikes anxiety",
+        "It fades once the uncertainty is faced or resolved",
       ],
       defeatedBy: [
-        "He is simply a naturally tough kid with no hidden tenderness",
-        "Teenagers are unreadable, so his behavior means nothing",
+        "She arranges just as much on predictable, calm days",
+        "The ritual is unrelated to any feared event",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that his exaggerated toughness is a defense against tender feelings he finds unbearable, flipping the soft, vulnerable side he can't accept into its loud opposite — and the hidden poetry is the disowned feeling still alive underneath. This is a strong claim because it predicts checkable consequences: his hardness should intensify exactly when something threatens to move him; the contempt should ring forced and brittle rather than relaxed; and the aggression should soften if his tender feelings are made safe to have rather than shameful. I would test it by watching whether his toughest displays come right on the heels of emotional moments, by noting whether his sneering feels strained when sentiment appears, and by checking whether validating the feelings behind the poetry reduces the need for the tough front.",
+      "The strongest conclusion is that the arranging manufactures a feeling of control she cannot get over the real uncertainty she's facing — making one small, solvable corner of the world 'just right' substitutes for the intolerable not-knowing of a medical result or a date, so the ritual binds that dread rather than reflecting a love of order. This is a strong claim because it predicts checkable consequences: the urge should appear specifically before uncontrollable, feared events and be absent on predictable days; being stopped before it 'feels right' should sharply spike her anxiety; and the ritual should fade once the underlying uncertainty is faced or resolved. I would test it by mapping the arranging against her calendar of certain versus uncertain days, by noting her distress when interrupted, and by checking whether addressing the feared uncertainty directly shrinks the ritual.",
     explanation:
-      "The cautious 'teenagers are unreadable' earns near-zero; top credit goes to naming reaction formation that binds the hidden poetry and proposes a 'does toughness spike after emotional moments' test that could refute it.",
+      "'People just like order' is the surface story the uncertain-day timing defeats; top credit reads the arranging as substituting control for intolerable uncertainty and names a certain-vs-uncertain-days test that could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "For fifteen years a woman who longs for closeness has turned down every chance at a serious relationship the moment it gets real — ending things 'before they can go wrong,' staying friendly but never letting anyone in — and now, lonely, she insists she 'just hasn't met the right person.' In one paragraph, propose the strongest conclusion about the dynamic and the cost it has carried, and describe how you would test it.",
+      "A man texts his wife dozens of times a day asking whether she still loves him and whether he said anything wrong that morning; her warm answers calm him for a few minutes, then the doubt rebuilds and he texts again, and the pattern is worst after they've had even a minor disagreement. In one paragraph, propose the strongest conclusion about what the reassurance-seeking is doing and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that she protects herself from the risk of being hurt or abandoned by avoiding real closeness — pulling away exactly when intimacy deepens — and the long-term cost is the very loneliness she's now suffering, so the defense has bought safety at the price of what she most wants. This is a strong claim because it predicts checkable consequences: her urge to end things should fire precisely at the points where a relationship turns serious rather than at random; her anxiety should rise as closeness grows and drop once she's retreated to safe distance; and she should be able to stay in a relationship if the fear of being hurt is faced and made bearable. I would test it by mapping whether her breakups cluster at moments of deepening intimacy, by tracking whether her anxiety tracks closeness, and by seeing whether addressing the underlying fear lets her tolerate staying rather than fleeing.",
+        "The strongest conclusion is that the texting is a reassurance ritual that briefly offloads onto his wife an unbearable doubt — about being loved or being bad — that no answer can permanently settle, so the asking binds an inner uncertainty rather than reflecting a real problem in the marriage. This is a strong claim because it predicts checkable consequences: her reassurance should calm him only for minutes before the doubt rebuilds and he asks again; the urge should spike specifically after disagreements that stir the fear of being unloved or wrong; and it should ease once the intolerance of uncertainty itself, rather than each individual worry, is addressed. I would test it by timing how long each reassurance lasts, by tracking whether the texting clusters after conflict, and by checking whether working on tolerating doubt reduces the asking more than any single answer does.",
       yieldAnchors: [
-        "She longs for closeness yet ends every serious relationship",
-        "She pulls away the moment things get real",
-        "She is now lonely but blames 'not meeting the right person'",
+        "He texts dozens of times asking if she loves him",
+        "Her answers calm him only for minutes",
+        "The pattern is worst after a disagreement",
       ],
       riskAnchors: [
-        "Her urge to end things fires when intimacy deepens",
-        "Her anxiety rises with closeness and drops after retreat",
-        "She can stay once the fear of being hurt is faced",
+        "Reassurance calms him only briefly before doubt rebuilds",
+        "The urge spikes after conflict specifically",
+        "It eases once intolerance of uncertainty is addressed",
       ],
       defeatedBy: [
-        "She genuinely prefers being single and feels no real loss",
-        "She has simply had bad luck meeting compatible partners",
+        "A single reassurance settles him lastingly",
+        "The texting is unrelated to conflict or doubt",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that she protects herself from the risk of being hurt or abandoned by avoiding real closeness — pulling away exactly when intimacy deepens — and the long-term cost is the very loneliness she's now suffering, so the defense has bought safety at the price of what she most wants. This is a strong claim because it predicts checkable consequences: her urge to end things should fire precisely at the points where a relationship turns serious rather than at random; her anxiety should rise as closeness grows and drop once she's retreated to safe distance; and she should be able to stay in a relationship if the fear of being hurt is faced and made bearable. I would test it by mapping whether her breakups cluster at moments of deepening intimacy, by tracking whether her anxiety tracks closeness, and by seeing whether addressing the underlying fear lets her tolerate staying rather than fleeing.",
+      "The strongest conclusion is that the texting is a reassurance ritual that briefly offloads onto his wife an unbearable doubt — about being loved or being bad — that no answer can permanently settle, so the asking binds an inner uncertainty rather than reflecting a real problem in the marriage. This is a strong claim because it predicts checkable consequences: her reassurance should calm him only for minutes before the doubt rebuilds and he asks again; the urge should spike specifically after disagreements that stir the fear of being unloved or wrong; and it should ease once the intolerance of uncertainty itself, rather than each individual worry, is addressed. I would test it by timing how long each reassurance lasts, by tracking whether the texting clusters after conflict, and by checking whether working on tolerating doubt reduces the asking more than any single answer does.",
     explanation:
-      "The inverted standard gives near-zero to 'she just hasn't met the right person'; credit goes to naming avoidance that binds the fifteen-year pattern, names its cost in loneliness, and proposes a 'do breakups cluster at deepening intimacy' test that could refute it.",
+      "The cautious 'couples just reassure each other' earns near-zero; top credit reads the texting as offloading an unsettleable doubt and names a how-long-does-reassurance-last test that could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "A surgeon who is quietly devastated by a patient's death on the table responds by immediately reviewing the operative statistics, discussing the case as a 'technically interesting complication,' and correcting a colleague's terminology — while declining, with a tight smile, to say how the loss affected him. In one paragraph, propose the strongest conclusion about the dynamic and describe how you would test it.",
+      "A grandmother performs a fixed sequence of prayers and door-touches in a strict order each night, certain that any deviation will cause one of her grandchildren to be hurt; the sequence grows longer and more elaborate during the weeks her grandchildren are away on a trip. In one paragraph, propose the strongest conclusion about what the sequence is doing and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that he keeps the grief and guilt of losing a patient at a safe distance by retreating into technical analysis, letting facts and procedure stand in for feeling so the loss never lands emotionally. This is a strong claim because it predicts checkable consequences: the rush into statistics and terminology should intensify exactly when the human side of the loss is approached; his tight composure should give way if he's asked about the patient as a person rather than as a case; and the clinical detachment should be specific to emotionally loaded losses rather than his manner with every routine case. I would test it by steering the conversation from the operative numbers to the patient as a person and watching whether feeling surfaces or the abstraction redoubles, by noting whether his analysis peaks precisely when emotion threatens, and by comparing his detachment on this case to his tone on ordinary, low-stakes ones.",
+        "The strongest conclusion is that the nightly sequence gives her a sense of magical control over an intolerable possibility — performed perfectly, it feels as though it keeps her grandchildren safe, so the ritual binds the helplessness she feels about dangers she cannot actually prevent rather than reflecting ordinary devotion. This is a strong claim because it predicts checkable consequences: the ritual should grow longer and more elaborate exactly when the grandchildren are most at risk, as during their trip; deviating from the order should leave her terrified she has caused harm; and the compulsion should ease once the underlying helplessness about their safety is faced directly. I would test it by tracking the ritual's length against the children's level of risk, by noting her reaction when the sequence is interrupted, and by checking whether addressing her fear of being unable to protect them reduces the ritual.",
       yieldAnchors: [
-        "He's quietly devastated by the patient's death",
-        "He retreats into statistics and a 'technically interesting' framing",
-        "He won't say how the loss affected him",
+        "She performs prayers and door-touches in a strict order",
+        "She believes any deviation will harm a grandchild",
+        "The sequence grows longer when they are away",
       ],
       riskAnchors: [
-        "The technical talk intensifies when the human side is approached",
-        "His composure gives way if asked about the patient as a person",
-        "The detachment is specific to emotionally loaded losses",
+        "The ritual lengthens when the children are most at risk",
+        "Deviating leaves her terrified she caused harm",
+        "It eases once helplessness about their safety is faced",
       ],
       defeatedBy: [
-        "He is genuinely unaffected and feels no grief or guilt",
-        "A person's coping can't be read from how clinically they speak",
+        "The ritual's length is unrelated to the children's risk",
+        "It is ordinary devotion with no fear of causing harm",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that he keeps the grief and guilt of losing a patient at a safe distance by retreating into technical analysis, letting facts and procedure stand in for feeling so the loss never lands emotionally. This is a strong claim because it predicts checkable consequences: the rush into statistics and terminology should intensify exactly when the human side of the loss is approached; his tight composure should give way if he's asked about the patient as a person rather than as a case; and the clinical detachment should be specific to emotionally loaded losses rather than his manner with every routine case. I would test it by steering the conversation from the operative numbers to the patient as a person and watching whether feeling surfaces or the abstraction redoubles, by noting whether his analysis peaks precisely when emotion threatens, and by comparing his detachment on this case to his tone on ordinary, low-stakes ones.",
+      "The strongest conclusion is that the nightly sequence gives her a sense of magical control over an intolerable possibility — performed perfectly, it feels as though it keeps her grandchildren safe, so the ritual binds the helplessness she feels about dangers she cannot actually prevent rather than reflecting ordinary devotion. This is a strong claim because it predicts checkable consequences: the ritual should grow longer and more elaborate exactly when the grandchildren are most at risk, as during their trip; deviating from the order should leave her terrified she has caused harm; and the compulsion should ease once the underlying helplessness about their safety is faced directly. I would test it by tracking the ritual's length against the children's level of risk, by noting her reaction when the sequence is interrupted, and by checking whether addressing her fear of being unable to protect them reduces the ritual.",
     explanation:
-      "'Coping can't be read from how clinically he speaks' is the refusal the tight smile and feeling-timed retreat defeat; top credit goes to naming intellectualization that binds the evidence and proposes a 'person versus case' test that could refute it.",
+      "The inverted standard gives near-zero to 'it's just her religious routine'; credit goes to reading the sequence as magical control over helplessness and naming a scales-with-their-risk test that could refute it.",
   },
 ];
 
 export const section: SectionContent = {
-  slug: "defense-mechanisms",
-  title: "Defense Mechanisms",
+  slug: "function-of-the-ritual",
+  title: "The Function of the Ritual: Anxiety, Control, and Defense",
   weekNumber: 1,
   blurb:
-    "Defenses are the automatic moves the mind makes to keep painful feelings out of awareness — denial, projection, rationalization, and the rest — and the craft is reading which one is at work from its behavioral signature and the price it quietly exacts.",
+    "Compulsions and rituals are not pointless tics — they DO something: binding unbearable anxiety, magically undoing a forbidden thought, or restoring a sense of control over an intolerable uncertainty. The craft is reading what a ritual accomplishes from when it fires and what it costs, and naming the cheapest observation that would prove the reading wrong.",
   lectureTitle:
-    "1.3 Defense Mechanisms: how we protect ourselves, and what it costs",
-  body: `# Defense Mechanisms
+    "1.3 The Function of the Ritual: anxiety, control, and defense",
+  body: `# The Function of the Ritual: Anxiety, Control, and Defense
 
-Some feelings are too painful, too frightening, or too shameful to hold in mind, so the mind does something clever: it keeps them out of awareness. The maneuvers it uses are called **defense mechanisms**, and everyone uses them. A defense isn't a flaw or a lie; it's an automatic, out-of-awareness move that protects you from a feeling you can't yet face. The trouble is that protection is never free. A defense buys relief in the moment but charges interest over time — a stalled career, a strained marriage, a body that won't sleep. The clinical skill is to read which defense is running from the pattern it leaves behind, and to notice the cost it quietly exacts.
+A compulsion can look senseless from the outside — checking a locked door for the tenth time, washing already-clean hands until they crack, tapping a counter to "cancel" a thought. But in obsessive-compulsive trouble, the ritual is almost never pointless. It is doing a job. The anxiety from an obsession is unbearable, and the compulsion is the maneuver that brings it down — fast, reliably, and at a cost. The clinical skill in this section is to stop asking "why would anyone do that?" and start asking "what does this ritual accomplish?" Once you see the function, the strange behavior becomes readable, and you can name the cheap test that would confirm or refute your reading.
 
-## What a defense is — and isn't
+## A ritual is not pointless — it does a job
 
-A defense is not a conscious decision. The man who can't face that he's seriously ill doesn't sit down and choose to ignore the blood he coughed up; the ignoring happens automatically, below the level of deliberate thought. That's what makes defenses worth studying the same way we study any hidden process: you don't see the defense directly, you see its **signature** in behavior — what the person does, avoids, insists on, or can't quite feel. From that signature you infer the feeling being warded off. The behavior is the data; the defense is the explanation that accounts for it.
+The first move is to assume the compulsion serves a purpose the person may not be able to state. An obsession spikes a feeling — dread, doubt, disgust, guilt — that feels impossible to sit with, and the ritual is what discharges it. That is why compulsions are so hard to drop: they work. They deliver real relief in the moment. The behavior is the data; the feeling it manages is the explanation we build to account for it. The question that unlocks a case is always the same: when the ritual fires, what does it do for the person right then?
 
-## A field guide to the common defenses
+## Binding anxiety
 
-**Denial** refuses to register a painful reality — the spouse who plans an anniversary party while the marriage visibly collapses. **Projection** disowns a feeling by seeing it in someone else — the man tempted to cheat who becomes certain his faithful partner is cheating. **Rationalization** supplies a reasonable-sounding excuse so the real cause stays hidden — the student who failed because the test was "unfair," never because he didn't study. **Intellectualization** swaps feeling for facts — the grieving daughter who recites survival statistics instead of crying. **Reaction formation** flips a forbidden feeling into its loud opposite — the man who's attracted to a coworker and treats her with conspicuous coldness. **Displacement** redirects a feeling onto a safer target — the worker humiliated by his boss who comes home and yells at his kids. **Repression** holds a painful memory out of recall while its emotional charge still drives reactions. **Avoidance** simply arranges life so the feared thing never comes up.
+The most common job a ritual does is to bind anxiety — to take a flood of unbearable feeling and tie it down to something small and doable. A woman waiting on a frightening medical result cannot control the result, so she arranges her shelves until they "feel right." The arranging does nothing about the test, but it converts a vast, uncontrollable dread into a small, solvable task, and for a moment the anxiety drops. When you see a ritual that has no logical bearing on the feared event but reliably appears alongside it, suspect that its job is to bind a feeling the person can't otherwise hold.
 
-## How to read the signature
+## Undoing a forbidden thought
 
-Each defense leaves tell-tale marks. Look for **disproportion**: a reaction far bigger or smaller than its trigger, like exploding at a spilled cup after a humiliating day. Look for **conspicuous omission**: the one obvious cause a person never mentions, like the student who lists every excuse except not studying. Look for **timing**: a feeling that flares precisely when something threatens, like abstraction that kicks in the instant grief is approached. Look for **leakage**: the warded-off feeling slipping out sideways — small put-downs underneath gushing praise, insomnia under a calm front. None of these proves a defense by itself, but together they point one way.
+Some rituals do a different job: they magically "undo" an intrusive thought the person finds horrifying. A loving father who gets a flash of harming his child taps the table and says her name to "cancel" it; a devout man restarts a whole prayer to erase a blasphemous image. Crucially, the ritual fires precisely because the thought is abhorrent to the person — the horror is the engine, not a hidden wish. The compulsion neutralizes a forbidden idea so it doesn't feel real or owned. Reading this correctly matters enormously, because the lurid misreading ("the thought means he secretly wants to") is exactly what the person's distress defeats.
 
-## Always name a test
+## Restoring control over the unbearable unknown
 
-A strong reading of a defense doesn't just slap on a label; it commits to a specific feeling being defended and then names the cheapest observation that would prove it wrong. If you think a man's loud devotion to a dog is reaction formation hiding dislike, predict that he'll handle the dog roughly when unwatched — and look. If you think a woman's busyness is avoidance of commitment, predict that fresh obligations will appear exactly when a real conversation is scheduled — and watch. The weak move is the lazy diagnosis that risks nothing. The strong move fits the evidence in front of you **and** spells out the result that would refute it.
+A third job rituals do is restore a sense of control over an uncertainty no one can actually master. A child lines up his shoes in a fixed order, sure that doing it perfectly keeps his traveling brother safe. He cannot make the world safe, so the ritual hands him a stand-in for control — a private deal that converts helplessness into something he can perform. Watch for rituals that grow more elaborate exactly when the real danger or uncertainty rises: that scaling is the tell that the ritual is binding helplessness, not responding to anything it literally touches.
 
-## The cost side of the ledger
+## Reading what the ritual accomplishes — when it fires
 
-Because defenses work, it's tempting to leave them alone. But the whole reason they matter clinically is the **cost**. Avoidance of rejection can cost someone the relationship they most want. Displacement can wreck the home life of someone who never confronts their boss. Repressed feelings tend to surface in the body — headaches, sleeplessness, panic at a stray cue. Reading a defense isn't about catching someone out; it's about seeing what the protection is costing them, so the warded-off feeling can eventually be faced more cheaply than the defense charges.
+You read a ritual's function the way you read any hidden process: from its signature in behavior, especially its timing. Does the compulsion fire only after one specific trigger — a particular thought, a particular person, a particular looming uncertainty? Does it bring relief that is real but brief, so the doubt rebuilds and the ritual repeats? Does blocking it flood the person with dread? These three marks — trigger-specificity, brief relief, and distress on prevention — point past the surface behavior to the feeling the ritual is managing. A compulsion that fires everywhere, soothes lastingly, or costs nothing to skip is telling you a different story.
+
+## The relief that strengthens the loop — and its cost
+
+Here is the trap: because the ritual works, it teaches the brain to do it again. Each round of brief relief is a reward that strengthens the loop and grows the compulsion over time, until checking the stove seven times becomes seventeen and a quick wash becomes an hour. The relief is real, which is why the cost is easy to ignore — the lost hours, the cracked skin, the avoided life. Seeing the function isn't about catching anyone out; it's about seeing what the protection costs, so the underlying feeling can eventually be faced more cheaply than the ritual charges.
+
+## Reading the meaning — and naming a test
+
+This stays honest only if every reading commits to a function AND names the cheap observation that would refute it. "The checking binds a fear of being to blame" is a real claim, because it predicts the checking should appear only when he feels responsible and vanish when someone else is — and you can check that. The weak move is to stop at "he checks a lot" (which explains nothing) or to retreat into "compulsions are random / that's just how some brains are wired" (which gives up before looking). The worst move is the lurid overreach the evidence defeats — "the ritual proves a hidden wish to harm." The strongest reading binds the specific timing in front of you and spells out the single result that would prove it wrong.
 
 ## In the real world
 
-Suppose a friend who just got dumped announces he "never even liked her — total relief, honestly." The dodge is to take it at face value, or to throw up your hands and say feelings are too private to read. A sharper move commits to a reading: this sudden contempt for someone he was crazy about last week looks like rationalization softening a loss he can't admit. Notice how much that opens up. It predicts the disdain appeared only after she ended it, not before; that hurt or longing still leaks through when her name comes up; and that the contempt fades once the disappointment is actually felt. Three cheap checks, each able to refute the idea. That's the habit this course is built on — not labeling people, but committing to the strongest reading the evidence supports and naming the observation that could prove you wrong.`,
+Suppose a friend admits he can't leave the house until he's checked the locks again and again, and shrugs that he's "just careful." The dodge is to agree, or to throw up your hands at how mysterious habits are — both explain nothing. A sharper move commits to a function: the checking briefly offloads an unbearable doubt about being responsible for a break-in, a doubt no single look can settle. Notice how much that opens up. It predicts the relief is only momentary before the doubt rebuilds; that the urge spikes when he feels most responsible; and that the checking eases once the need for certainty, not the lock, is addressed. Three cheap checks, each able to refute the idea. That is what reading the function of a ritual buys you — not a shrug at how strange compulsions are, but a testable story about what the ritual is doing, and a way to loosen it.`,
   homework: {
     mcq,
     hybrid,

@@ -9,407 +9,407 @@ const mcq: HomeworkItem[] = [
   {
     itemType: "mc",
     prompt:
-      "A patient eloquently explains, in session after session, that his fear of commitment grew out of his parents' bitter divorce. He can trace it perfectly. Yet he keeps ending each relationship the moment it turns serious, exactly as before. Which conclusion best follows?",
+      "A man with severe contamination fears washes his hands until they crack and avoids every public doorknob. He tells his new therapist he wants to 'get to the deep root' through talking and refuses to try exposure, calling it 'just managing the surface.' Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He has worked out the root cause, so the problem is essentially solved.",
-        credit: 0,
-      },
-      {
-        text: "He seems to understand himself pretty well.",
-        credit: 0.3,
-      },
-      {
-        text: "This looks like intellectual insight without change — he can narrate the pattern but it has not touched how he acts, so real change would require working the understanding through in lived situations; test whether his behavior shifts in the next serious relationship, whether the explanation ever arrives with feeling rather than as a recital, and whether naming it in the moment ever interrupts the impulse to bolt.",
+        text: "The best-supported move is to start with exposure and response prevention — the first-line, strongly evidenced treatment for contamination OCD — while folding in a meaning-focused understanding where it aids engagement, since insight-only talk has the weakest record here; test whether his washing and avoidance actually drop once he resists rituals during graded exposures, whether his refusal softens when ERP is framed as facing the fear rather than suppressing it, and whether any added meaning work improves his follow-through rather than replacing the exposures.",
         credit: 1.0,
       },
       {
-        text: "He probably needs to keep talking about his parents; we could explore the divorce more.",
+        text: "Exposure is probably the way to go; we could suggest he give it a try at some point.",
         credit: 0.6,
+      },
+      {
+        text: "He seems to have bad contamination OCD and wants talk therapy.",
+        credit: 0.3,
+      },
+      {
+        text: "He's right that exposure only suppresses symptoms — real OCD lifts only once the buried childhood conflict is uncovered, so insight-only talk is the deeper cure.",
+        credit: 0,
       },
     ],
     correctAnswer:
-      "This looks like intellectual insight without change — he can narrate the pattern but it has not touched how he acts, so real change would require working the understanding through in lived situations; test whether his behavior shifts in the next serious relationship, whether the explanation ever arrives with feeling rather than as a recital, and whether naming it in the moment ever interrupts the impulse to bolt.",
+      "The best-supported move is to start with exposure and response prevention — the first-line, strongly evidenced treatment for contamination OCD — while folding in a meaning-focused understanding where it aids engagement, since insight-only talk has the weakest record here; test whether his washing and avoidance actually drop once he resists rituals during graded exposures, whether his refusal softens when ERP is framed as facing the fear rather than suppressing it, and whether any added meaning work improves his follow-through rather than replacing the exposures.",
     explanation:
-      "Top credit commits to intellectual-insight-only and names three disconfirming checks; 'the root cause is found, so it's solved' is the overreach the unchanged behavior directly defeats.",
+      "Top credit commits to the best-supported plan (ERP first-line, meaning work as a complement) and names a does-it-drop-with-response-prevention test; 'exposure only suppresses, insight is the real cure' is the anti-evidence dodge the strong ERP record defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A woman who for years exploded at any hint of criticism now, over several months, notices the urge to lash out at her boss, then catches the same urge with her sister, then with her partner — and each time she pauses and responds differently. Which conclusion best follows?",
+      "A clinician treating a woman who checks her locks dozens of times nightly says she 'doesn't believe in behavioral techniques' and will use only open-ended exploration, expecting the checking to fade as hidden conflicts surface. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "She seems to be getting along with people better lately.",
+        text: "She seems to prefer one kind of therapy over another.",
         credit: 0.3,
       },
       {
-        text: "She is probably improving; we could keep an eye on it.",
-        credit: 0.6,
-      },
-      {
-        text: "The same shift appearing across boss, sister, and partner suggests genuine working through — she is recognizing one pattern in many separate situations and acting on it, not just understanding it; test whether the new response holds with a brand-new person she hasn't discussed, whether it survives a genuinely stinging criticism, and whether she reports actually feeling the urge and choosing against it rather than merely suppressing it.",
+        text: "The strongest reading is that this plan is poorly matched to the evidence: checking OCD responds best to ERP (and often an SSRI), so meaning-focused work should complement rather than substitute for the exposure that actually reduces checking; test whether the checking falls when response prevention is added, whether months of insight-only talk leave the rituals essentially unchanged, and whether her openness to ERP grows once its track record is laid out.",
         credit: 1.0,
       },
       {
-        text: "People's moods come and go, so there is nothing here we can really conclude.",
+        text: "There's no real evidence any one approach beats another for OCD, so her exploration-only plan is as good as anything.",
         credit: 0,
+      },
+      {
+        text: "Exploration alone might not be enough; we could think about adding some behavioral work later.",
+        credit: 0.6,
       },
     ],
     correctAnswer:
-      "The same shift appearing across boss, sister, and partner suggests genuine working through — she is recognizing one pattern in many separate situations and acting on it, not just understanding it; test whether the new response holds with a brand-new person she hasn't discussed, whether it survives a genuinely stinging criticism, and whether she reports actually feeling the urge and choosing against it rather than merely suppressing it.",
+      "The strongest reading is that this plan is poorly matched to the evidence: checking OCD responds best to ERP (and often an SSRI), so meaning-focused work should complement rather than substitute for the exposure that actually reduces checking; test whether the checking falls when response prevention is added, whether months of insight-only talk leave the rituals essentially unchanged, and whether her openness to ERP grows once its track record is laid out.",
     explanation:
-      "Full credit reads working-through from the cross-context repetition and names three tests; 'moods come and go, nothing to conclude' is the refusal the consistent multi-context shift defeats.",
+      "Full credit commits to ERP (plus SSRI) as best-supported with meaning work as complement and names a does-checking-fall-with-response-prevention test; 'no approach beats another' is the anti-evidence dodge the ERP evidence defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A man states flatly, in a bored monotone as if reading a grocery list, 'I know I push people away.' He has said it a dozen times. His friendships keep dissolving in exactly the same way. Which conclusion best follows?",
+      "After a full course of ERP, a man's washing rituals have dropped by about eighty percent, but a nagging sense of being 'morally dirty' and unworthy persists — and it predates the OCD. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "His understanding carries no feeling and changes nothing — this is intellectual insight that may even shield him from the emotion that would drive change; test whether any session ever brings real affect to the topic, whether he can connect the words to a specific painful moment, and whether the flat recital ever gives way to actually catching himself pushing someone away.",
+        text: "The strongest plan keeps the gains from ERP — which clearly worked on the rituals — and adds meaning-focused work on the older sense of unworthiness the exposures didn't touch, treating the two as complementary rather than rival; test whether the residual 'moral dirtiness' theme has its own history independent of the washing, whether it stays put while the rituals stay reduced, and whether exploring it brings relief without the compulsions returning.",
         credit: 1.0,
       },
       {
-        text: "He clearly already knows the problem, so therapy has done its job here.",
+        text: "There might be something deeper still going on; we could keep talking about it.",
+        credit: 0.6,
+      },
+      {
+        text: "The lingering feeling proves ERP failed and only suppressed the surface — he needs to drop the behavioral work and uncover the root instead.",
         credit: 0,
       },
       {
-        text: "He seems aware that he pushes people away.",
+        text: "He's better at washing but still feels bad about himself.",
         credit: 0.3,
-      },
-      {
-        text: "He probably has more to say about it; we could ask him to elaborate.",
-        credit: 0.6,
       },
     ],
     correctAnswer:
-      "His understanding carries no feeling and changes nothing — this is intellectual insight that may even shield him from the emotion that would drive change; test whether any session ever brings real affect to the topic, whether he can connect the words to a specific painful moment, and whether the flat recital ever gives way to actually catching himself pushing someone away.",
+      "The strongest plan keeps the gains from ERP — which clearly worked on the rituals — and adds meaning-focused work on the older sense of unworthiness the exposures didn't touch, treating the two as complementary rather than rival; test whether the residual 'moral dirtiness' theme has its own history independent of the washing, whether it stays put while the rituals stay reduced, and whether exploring it brings relief without the compulsions returning.",
     explanation:
-      "Top credit names affectless, change-free intellectual insight and three checks; 'he knows it, so therapy's done' is the overreach the unchanged friendships defeat.",
+      "Top credit reads the durable 80% ERP gain plus a separate older theme as a case for integration and names a does-the-theme-have-its-own-history test; 'ERP failed, drop it' is the dodge the large, holding symptom reduction defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "After months of circling it, a patient suddenly connects, with tears, her lifelong people-pleasing to the way she used to calm her anxious mother as a small child. In the following weeks she starts, for the first time, declining unreasonable requests at work and at home. Which conclusion best follows?",
+      "A teenager with severe 'just right' ordering rituals is offered ERP. Her parents hesitate, asking whether deliberately triggering her anxiety is 'cruel' and whether gentle talking wouldn't be kinder. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Some realizations are too personal to judge from the outside, so we can't really say if this matters.",
+        text: "The parents are right that provoking anxiety is harmful; talk-only therapy is the humane and equally effective choice.",
         credit: 0,
       },
       {
-        text: "She probably had a meaningful session; we could see how she feels next week.",
-        credit: 0.6,
+        text: "They seem worried about the exposure part of treatment.",
+        credit: 0.3,
       },
       {
-        text: "This looks like emotional insight that is beginning to generalize — the understanding arrived with feeling and is already changing behavior across more than one setting; test whether the new limit-setting keeps appearing in fresh situations, whether it survives a guilt-inducing pushback, and whether she can stay with the feeling rather than retreating into old pleasing when stressed.",
+        text: "The best-supported answer is that graded, collaborative ERP is the most effective treatment for these rituals and that its brief, planned distress is the mechanism of lasting relief rather than harm — while a kind, well-explained rationale improves uptake; test whether her ordering eases as she tolerates 'not-just-right' on purpose, whether her distress during exposures falls across sessions rather than mounting, and whether framing it collaboratively lowers the family's resistance.",
         credit: 1.0,
       },
       {
-        text: "She seems to have had an emotional moment.",
-        credit: 0.3,
+        text: "ERP is probably worth doing even if it's uncomfortable; we could reassure them.",
+        credit: 0.6,
       },
     ],
     correctAnswer:
-      "This looks like emotional insight that is beginning to generalize — the understanding arrived with feeling and is already changing behavior across more than one setting; test whether the new limit-setting keeps appearing in fresh situations, whether it survives a guilt-inducing pushback, and whether she can stay with the feeling rather than retreating into old pleasing when stressed.",
+      "The best-supported answer is that graded, collaborative ERP is the most effective treatment for these rituals and that its brief, planned distress is the mechanism of lasting relief rather than harm — while a kind, well-explained rationale improves uptake; test whether her ordering eases as she tolerates 'not-just-right' on purpose, whether her distress during exposures falls across sessions rather than mounting, and whether framing it collaboratively lowers the family's resistance.",
     explanation:
-      "Full credit ties felt insight to early behavioral change and names three tests; 'too personal to judge' is the dodge the observable new behavior defeats.",
+      "Full credit commits to graded ERP as most effective and names a does-distress-fall-across-sessions test; 'provoking anxiety is harmful, talk-only is equal' is the dodge the strong ERP evidence and habituation pattern defeat.",
   },
   {
     itemType: "mc",
     prompt:
-      "In one session a student 'gets' why he procrastinates — a fear of being judged — and leaves feeling lighter and relieved. The very next week he has procrastinated on everything exactly as before. Which conclusion best follows?",
+      "A new mother is tormented by intrusive images of harming her baby and has never acted on them; she is horrified by the thoughts. Her therapist avoids any exposure, fearing it could 'plant ideas,' and offers only repeated reassurance that she's a good person. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He seems to have figured out why he procrastinates.",
-        credit: 0.3,
-      },
-      {
-        text: "One relieving insight is not the same as change — a single realization rarely rewires a habit, and the relief may have discharged the urgency to act; test whether the insight returns and gains traction over repeated weeks, whether it ever shows up at the moment he's about to avoid a task, and whether any actual change in his work behavior follows.",
+        text: "The strongest, evidence-based reading is that these are classic ego-dystonic harm obsessions, that repeated reassurance is itself a compulsion feeding the cycle, and that imaginal exposure plus response prevention is the supported treatment — with meaning-focused work optional alongside; test whether the reassurance brings only brief relief before the thoughts return, whether the intrusions ease as she faces them without seeking reassurance, and whether her horror at the thoughts (not any wish to act) confirms the obsessional rather than dangerous nature.",
         credit: 1.0,
       },
       {
-        text: "Now that he understands the fear, the procrastination should take care of itself.",
-        credit: 0,
+        text: "She seems to have scary thoughts and her therapist is reassuring her.",
+        credit: 0.3,
       },
       {
-        text: "He probably needs another session or two; we could revisit it.",
+        text: "Reassurance might not be the best approach; we could consider exposure.",
         credit: 0.6,
+      },
+      {
+        text: "Exposing her to those images is far too risky and could push her to act, so endless reassurance is the only safe path.",
+        credit: 0,
       },
     ],
     correctAnswer:
-      "One relieving insight is not the same as change — a single realization rarely rewires a habit, and the relief may have discharged the urgency to act; test whether the insight returns and gains traction over repeated weeks, whether it ever shows up at the moment he's about to avoid a task, and whether any actual change in his work behavior follows.",
+      "The strongest, evidence-based reading is that these are classic ego-dystonic harm obsessions, that repeated reassurance is itself a compulsion feeding the cycle, and that imaginal exposure plus response prevention is the supported treatment — with meaning-focused work optional alongside; test whether the reassurance brings only brief relief before the thoughts return, whether the intrusions ease as she faces them without seeking reassurance, and whether her horror at the thoughts (not any wish to act) confirms the obsessional rather than dangerous nature.",
     explanation:
-      "Top credit distinguishes a one-time insight from durable change and names three checks; 'understanding the fear fixes it' is the overreach the unchanged next week defeats.",
+      "Top credit identifies ego-dystonic harm obsessions, flags reassurance as a compulsion, commits to imaginal ERP, and names a does-reassurance-only-briefly-relieve test; 'exposure could push her to act' is the dodge the evidence on harm obsessions defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A patient who understood her jealousy months ago handles it calmly whenever life is relaxed. But the moment she is exhausted and under pressure, the old accusatory phone calls and snooping come roaring straight back. Which conclusion best follows?",
+      "In session, a man with health-anxiety-tinged OCD asks his therapist the same question — 'But you're sure it's not cancer, right?' — a dozen times, calmer for a moment after each answer, then asking again. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Her good and bad spells seem to alternate.",
-        credit: 0.3,
+        text: "He's probably looking for reassurance; we could try giving him less of it.",
+        credit: 0.6,
       },
       {
-        text: "The change is real but not yet consolidated — the new response holds under easy conditions but collapses under stress, which is the signature of insight that hasn't been fully worked through; test whether the calm response gradually starts to survive stressful periods, whether she can catch the urge specifically when tired, and whether the relapses grow shorter and less intense over time.",
-        credit: 1.0,
-      },
-      {
-        text: "She understands her jealousy, so any remaining outbursts must be someone else's fault.",
+        text: "He clearly just needs more thorough reassurance; once he's fully convinced, the questioning will stop for good.",
         credit: 0,
       },
       {
-        text: "She is probably still working on it; we could check back in a while.",
-        credit: 0.6,
+        text: "The best-supported reading is that the reassurance-seeking is a compulsion — relief is brief and the question returns, so answering feeds the loop — and the evidence-based move is response prevention: declining to supply certainty while supporting him to tolerate doubt; test whether each answer calms him only briefly before the next ask, whether the urge to ask falls when reassurance is withheld kindly, and whether his anxiety drops over time rather than spiking forever.",
+        credit: 1.0,
+      },
+      {
+        text: "He keeps asking whether he's sick.",
+        credit: 0.3,
       },
     ],
     correctAnswer:
-      "The change is real but not yet consolidated — the new response holds under easy conditions but collapses under stress, which is the signature of insight that hasn't been fully worked through; test whether the calm response gradually starts to survive stressful periods, whether she can catch the urge specifically when tired, and whether the relapses grow shorter and less intense over time.",
+      "The best-supported reading is that the reassurance-seeking is a compulsion — relief is brief and the question returns, so answering feeds the loop — and the evidence-based move is response prevention: declining to supply certainty while supporting him to tolerate doubt; test whether each answer calms him only briefly before the next ask, whether the urge to ask falls when reassurance is withheld kindly, and whether his anxiety drops over time rather than spiking forever.",
     explanation:
-      "Full credit reads partial, not-yet-consolidated change from the stress-dependent relapse and names three tests; blaming others is the overreach her own pattern defeats.",
+      "Full credit names reassurance-seeking as a compulsion, commits to response prevention, and names a brief-relief-then-return test; 'just give more reassurance' is the dodge the relief-then-return pattern defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A man recounts the same insight — 'my anger is really fear' — session after session, almost proudly, polishing the phrase. He never once applies it, and the repetition has the feel of a rehearsed performance. Which conclusion best follows?",
+      "A woman with long-standing, disabling OCD has gained partial relief from a high-dose SSRI but still spends two hours a day on rituals. She asks whether adding anything could help. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The mind is too layered to know why someone repeats a phrase, so we can't say much.",
-        credit: 0,
-      },
-      {
-        text: "He probably finds the insight comforting; we could encourage him to use it.",
-        credit: 0.6,
-      },
-      {
-        text: "He seems to repeat the same point a lot.",
+        text: "She seems partly better on medication but still has rituals.",
         credit: 0.3,
       },
       {
-        text: "The insight has become a defense — reciting the understanding lets him feel he is working while sparing him the change it implies; test whether he ever sits with the underlying fear instead of producing the slogan, whether any of his behavior outside session shifts, and whether interrupting the recital provokes discomfort rather than more polished phrasing.",
+        text: "The best-supported plan is to add ERP to the SSRI, since the combination outperforms either alone for residual OCD, while keeping the medication that already helped; test whether her daily ritual time falls further once structured exposures begin, whether gains hold as ERP skills are practiced between sessions, and whether dropping either component lets symptoms creep back.",
         credit: 1.0,
+      },
+      {
+        text: "Maybe therapy could be added to the medication; we could look into options.",
+        credit: 0.6,
+      },
+      {
+        text: "Medication is a crutch that masks the real issue, so she should stop the SSRI and rely on uncovering the deeper cause alone.",
+        credit: 0,
       },
     ],
     correctAnswer:
-      "The insight has become a defense — reciting the understanding lets him feel he is working while sparing him the change it implies; test whether he ever sits with the underlying fear instead of producing the slogan, whether any of his behavior outside session shifts, and whether interrupting the recital provokes discomfort rather than more polished phrasing.",
+      "The best-supported plan is to add ERP to the SSRI, since the combination outperforms either alone for residual OCD, while keeping the medication that already helped; test whether her daily ritual time falls further once structured exposures begin, whether gains hold as ERP skills are practiced between sessions, and whether dropping either component lets symptoms creep back.",
     explanation:
-      "Top credit names insight-as-defense and three disconfirming checks; 'too layered to know' is the refusal the proud, change-free repetition defeats.",
+      "Top credit commits to adding ERP to an effective SSRI (the best-supported combination) and names a does-ritual-time-fall test; 'medication is a crutch, stop it' is the anti-evidence dodge the partial SSRI benefit defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A woman first recognizes, in therapy, that she keeps choosing emotionally unavailable partners. Over the following months she catches the pull toward a distant new date, then notices it in a flirtation at work, then in a one-sided friendship — each time spotting it earlier than before. Which conclusion best follows?",
+      "A man finishes ERP with his checking nearly gone and his life reclaimed, but says he feels uneasy that he 'still doesn't understand why I ever got OCD in the first place.' Which conclusion best follows?",
     mcOptions: [
       {
-        text: "She seems to be noticing her type more.",
-        credit: 0.3,
-      },
-      {
-        text: "Catching the same pattern across dating, work, and friendship — and earlier each time — is exactly what working through looks like: one recognition being applied and sharpened across many situations; test whether she eventually acts differently and not just notices, whether the earlier-catching trend continues with new people, and whether the recognition holds when she's strongly drawn to someone unavailable.",
-        credit: 1.0,
-      },
-      {
-        text: "Now that she sees her type, she is bound to be fine from here on.",
+        text: "Since he doesn't understand the cause, the ERP gains are hollow and bound to collapse; only uncovering the origin counts as real treatment.",
         credit: 0,
       },
       {
-        text: "She is probably making progress; we could keep tracking it.",
+        text: "He might benefit from understanding it more; we could explore the why.",
         credit: 0.6,
+      },
+      {
+        text: "He's better but still curious about the cause.",
+        credit: 0.3,
+      },
+      {
+        text: "The strongest reading is that symptom relief and insight are separable goods: the ERP gains are real and worth protecting, and optional meaning-focused exploration can address his wish to understand and any lingering vulnerability without implying the behavioral work was incomplete; test whether his gains hold regardless of whether the 'why' is ever answered, whether exploring origins adds meaning without reviving rituals, and whether his unease is about understanding rather than returning symptoms.",
+        credit: 1.0,
       },
     ],
     correctAnswer:
-      "Catching the same pattern across dating, work, and friendship — and earlier each time — is exactly what working through looks like: one recognition being applied and sharpened across many situations; test whether she eventually acts differently and not just notices, whether the earlier-catching trend continues with new people, and whether the recognition holds when she's strongly drawn to someone unavailable.",
+      "The strongest reading is that symptom relief and insight are separable goods: the ERP gains are real and worth protecting, and optional meaning-focused exploration can address his wish to understand and any lingering vulnerability without implying the behavioral work was incomplete; test whether his gains hold regardless of whether the 'why' is ever answered, whether exploring origins adds meaning without reviving rituals, and whether his unease is about understanding rather than returning symptoms.",
     explanation:
-      "Full credit reads working through from the cross-context, earlier-each-time recognition and names three tests; 'she's bound to be fine' is the overreach noticing-without-acting doesn't yet support.",
+      "Full credit treats relief and insight as separable, protects the real ERP gains, offers optional meaning work, and names a do-gains-hold-without-the-why test; 'gains are hollow without the cause' is the dodge his reclaimed functioning defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A patient has a dramatic, cathartic session, sobbing for an hour about his cold father, and leaves saying he feels completely transformed. A month later, nothing in his daily life — his relationships, his temper, his habits — has shifted at all. Which conclusion best follows?",
+      "For three years a man has had insight-oriented therapy exploring the childhood roots of his symmetry compulsions. He can explain their origins eloquently, yet still spends hours arranging objects and is no better. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He had a big emotional release, so he must be better now.",
-        credit: 0,
-      },
-      {
-        text: "He seems to have cried a lot about his father.",
-        credit: 0.3,
-      },
-      {
-        text: "An intense emotional discharge is not the same as change — catharsis can feel transformative yet leave the underlying pattern untouched unless it is worked through over time; test whether any concrete behavior shifts in the weeks after, whether the feeling reconnects to present-day situations rather than just the past, and whether the sense of transformation survives a return to ordinary stress.",
+        text: "The strongest, evidence-guided conclusion is that insight alone has not reduced the compulsions and the plan should change to include ERP, the treatment with the best record for exactly this presentation — keeping any genuinely useful understanding but no longer relying on it to do the work; test whether his ritual time finally falls once response prevention starts, whether three more months of insight-only talk leave the arranging unchanged, and whether his eloquent 'why' has translated into any behavioral shift.",
         credit: 1.0,
       },
       {
-        text: "It was probably an important session; we could see where it leads.",
+        text: "Maybe the current therapy isn't working; we could think about trying something else.",
         credit: 0.6,
+      },
+      {
+        text: "Three years isn't long for deep work — he just needs to keep exploring until the true root finally surfaces.",
+        credit: 0,
+      },
+      {
+        text: "He understands his rituals but still does them.",
+        credit: 0.3,
       },
     ],
     correctAnswer:
-      "An intense emotional discharge is not the same as change — catharsis can feel transformative yet leave the underlying pattern untouched unless it is worked through over time; test whether any concrete behavior shifts in the weeks after, whether the feeling reconnects to present-day situations rather than just the past, and whether the sense of transformation survives a return to ordinary stress.",
+      "The strongest, evidence-guided conclusion is that insight alone has not reduced the compulsions and the plan should change to include ERP, the treatment with the best record for exactly this presentation — keeping any genuinely useful understanding but no longer relying on it to do the work; test whether his ritual time finally falls once response prevention starts, whether three more months of insight-only talk leave the arranging unchanged, and whether his eloquent 'why' has translated into any behavioral shift.",
     explanation:
-      "Top credit separates catharsis from durable change and names three checks; 'a big release means he's better' is the overreach the unchanged month defeats.",
+      "Top credit reads three unchanged years as a case to switch to ERP and names a does-ritual-time-fall-once-response-prevention-starts test; 'just keep exploring' is the anti-evidence dodge the long, change-free course defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A long-avoidant man, who used to flee any tension, now manages a hard conversation with his mother that he'd have dodged before — and within the same period also handles a confrontation with his landlord and speaks up in a tense meeting. Which conclusion best follows?",
+      "A woman started ERP for contamination OCD but quit after two sessions, saying the exposures felt 'mechanical and pointless' and that the therapist never seemed to grasp how terrifying it was. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Avoidance is too ingrained to ever really shift, so this probably means little.",
+        text: "She seems to have dropped out of exposure therapy.",
+        credit: 0.3,
+      },
+      {
+        text: "Her dropout proves ERP doesn't work for her; she should abandon exposure and seek a purely supportive approach instead.",
         credit: 0,
       },
       {
-        text: "He probably had a few good days; we could wait and see.",
-        credit: 0.6,
-      },
-      {
-        text: "The new tolerance for tension showing up with his mother, landlord, and colleagues at once points to genuine change generalizing across contexts, not a one-off fluke; test whether it appears in further unrehearsed situations, whether it holds when the stakes are high, and whether he reports actually feeling the old pull to flee and overriding it.",
+        text: "The best-supported reading is that ERP remains the indicated treatment but its delivery failed on engagement — a stronger alliance and a shared rationale (where meaning-focused understanding earns its keep) would likely improve follow-through; test whether she stays in treatment when exposures are built collaboratively and her fear is taken seriously, whether her dropout traces to the relationship rather than to ERP itself, and whether re-engaged exposures then reduce her washing.",
         credit: 1.0,
       },
       {
-        text: "He seems to be handling conflict a bit better.",
-        credit: 0.3,
+        text: "Maybe she needs a better connection with her therapist; we could try again.",
+        credit: 0.6,
       },
     ],
     correctAnswer:
-      "The new tolerance for tension showing up with his mother, landlord, and colleagues at once points to genuine change generalizing across contexts, not a one-off fluke; test whether it appears in further unrehearsed situations, whether it holds when the stakes are high, and whether he reports actually feeling the old pull to flee and overriding it.",
+      "The best-supported reading is that ERP remains the indicated treatment but its delivery failed on engagement — a stronger alliance and a shared rationale (where meaning-focused understanding earns its keep) would likely improve follow-through; test whether she stays in treatment when exposures are built collaboratively and her fear is taken seriously, whether her dropout traces to the relationship rather than to ERP itself, and whether re-engaged exposures then reduce her washing.",
     explanation:
-      "Full credit reads generalizing change from the multi-context shift and names three tests; 'avoidance can never shift' is the refusal the three independent successes defeat.",
+      "Full credit keeps ERP as indicated but locates the failure in engagement and names a does-she-stay-with-a-better-alliance test; 'ERP doesn't work for her, abandon it' is the dodge a two-session delivery failure can't support.",
   },
   {
     itemType: "mc",
     prompt:
-      "A woman can describe her habit of deflecting every painful topic with a joke in flawless, almost textbook terms, and she even announces 'there I go, using humor again' as she does it. She still deflects every single time. Which conclusion best follows?",
+      "A devout man is plagued by blasphemous intrusive thoughts during prayer and performs elaborate mental 'undoing' rituals to cancel them, leaving him exhausted and doubting his faith. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "She is clearly very self-aware, so the deflecting will resolve on its own.",
-        credit: 0,
+        text: "He's probably struggling with religious OCD; we could look into treatment.",
+        credit: 0.6,
       },
       {
-        text: "She seems to know she uses humor to deflect.",
-        credit: 0.3,
-      },
-      {
-        text: "Naming the defense has not loosened it — accurate labeling is intellectual insight, and here the labeling may itself be one more way to skate past the feeling; test whether she can ever stay with a painful topic instead of joking, whether the feeling she's deflecting can surface in session, and whether the running commentary ever gives way to actually changing the behavior.",
+        text: "The best-supported plan is ERP adapted for scrupulosity — exposure to the feared thoughts with prevention of the mental undoing, ideally with input that respects his faith — while a meaning-focused view of why this content torments him can complement it; test whether the intrusions lose their grip as he stops neutralizing them, whether the mental rituals function as compulsions (brief relief, quick return), and whether his distress eases without his actually abandoning his religion.",
         credit: 1.0,
       },
       {
-        text: "She probably needs to practice catching it; we could remind her.",
-        credit: 0.6,
+        text: "The thoughts are a genuine spiritual failing, so more prayer and stricter ritual — not exposure — are what he needs.",
+        credit: 0,
+      },
+      {
+        text: "He has upsetting religious thoughts and does mental rituals.",
+        credit: 0.3,
       },
     ],
     correctAnswer:
-      "Naming the defense has not loosened it — accurate labeling is intellectual insight, and here the labeling may itself be one more way to skate past the feeling; test whether she can ever stay with a painful topic instead of joking, whether the feeling she's deflecting can surface in session, and whether the running commentary ever gives way to actually changing the behavior.",
+      "The best-supported plan is ERP adapted for scrupulosity — exposure to the feared thoughts with prevention of the mental undoing, ideally with input that respects his faith — while a meaning-focused view of why this content torments him can complement it; test whether the intrusions lose their grip as he stops neutralizing them, whether the mental rituals function as compulsions (brief relief, quick return), and whether his distress eases without his actually abandoning his religion.",
     explanation:
-      "Top credit notes that naming-without-changing is still intellectual insight and names three checks; 'she's self-aware, so it resolves itself' is the overreach the unbroken deflecting defeats.",
+      "Top credit commits to scrupulosity-adapted ERP with mental-ritual prevention plus optional meaning work and names a do-intrusions-fade-when-neutralizing-stops test; 'it's a spiritual failing needing more ritual' is the dodge the compulsive structure defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "After understanding that her perfectionism shields her from feeling worthless, a patient gradually lets a colleague see a rough draft, then submits a project on time despite small flaws, then shrugs off a minor mistake that once would have wrecked her week. Which conclusion best follows?",
+      "A man agrees that ERP is the right treatment for his contamination OCD but freezes at the first exposure, saying he 'can't possibly' touch the trash can and wants to skip ahead to easier wins. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "She seems a little more relaxed about her work.",
+        text: "He seems too scared to start the exposures.",
         credit: 0.3,
       },
       {
-        text: "She is probably easing up; we could keep watching.",
-        credit: 0.6,
+        text: "If the first exposure is that frightening, ERP is simply too much for him and should be dropped entirely.",
+        credit: 0,
       },
       {
-        text: "The understanding is being worked through into behavior — tolerating imperfection across drafts, deadlines, and mistakes shows the insight changing how she acts in several real situations; test whether the new tolerance extends to higher-stakes work, whether it holds during a stressful stretch, and whether she reports the old worthless feeling arising and being borne rather than avoided.",
+        text: "The best-supported move is to keep ERP but build a gentler graded hierarchy so he starts with a tolerable step, since titrating difficulty preserves the treatment that works while meeting his fear; test whether he can complete a lower-rung exposure he rates as manageable, whether his distress on that step falls within the session, and whether success there raises his willingness to climb the hierarchy.",
         credit: 1.0,
       },
       {
-        text: "Perfectionism is part of who someone is, so there's nothing here to read into.",
-        credit: 0,
+        text: "Maybe the exposures are too hard right now; we could ease into it.",
+        credit: 0.6,
       },
     ],
     correctAnswer:
-      "The understanding is being worked through into behavior — tolerating imperfection across drafts, deadlines, and mistakes shows the insight changing how she acts in several real situations; test whether the new tolerance extends to higher-stakes work, whether it holds during a stressful stretch, and whether she reports the old worthless feeling arising and being borne rather than avoided.",
+      "The best-supported move is to keep ERP but build a gentler graded hierarchy so he starts with a tolerable step, since titrating difficulty preserves the treatment that works while meeting his fear; test whether he can complete a lower-rung exposure he rates as manageable, whether his distress on that step falls within the session, and whether success there raises his willingness to climb the hierarchy.",
     explanation:
-      "Full credit reads worked-through change from the spreading behavioral shift and names three tests; 'it's just who she is, nothing to read' is the dodge the concrete changes defeat.",
+      "Full credit keeps ERP but regrades the hierarchy and names a can-he-complete-a-lower-rung test; 'ERP is too much, drop it' is the dodge that titration directly answers.",
   },
   {
     itemType: "mc",
     prompt:
-      "A man insists therapy 'worked' because he now deeply understands himself. His wife, asked separately, reports that he treats her in exactly the same dismissive way he always has. Which conclusion best follows?",
+      "A woman with checking OCD says she's read that 'OCD is a lifelong brain disease nothing can really fix,' so she sees no point starting treatment. She has never tried ERP or medication. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He says he understands himself, so we should take it that he has changed.",
+        text: "She's essentially right — OCD is largely untreatable, so trying ERP or medication is unlikely to be worth the effort.",
         credit: 0,
       },
       {
-        text: "He seems to feel he has gotten something out of therapy.",
-        credit: 0.3,
-      },
-      {
-        text: "His self-reported insight is not matched by any observable change in how he treats his wife — a gap that suggests intellectual insight rather than worked-through change; test whether a neutral third party notices any difference, whether his behavior shifts in concrete daily interactions, and whether the understanding ever shows up when he's actually being dismissive.",
+        text: "The strongest, evidence-based correction is that OCD is among the more treatable conditions — ERP and SSRIs have strong records and most patients improve substantially — so her pessimism is a reason to start, not to abstain; test whether a course of ERP measurably reduces her checking, whether her belief that 'nothing works' eases as she sees early gains, and whether her never having tried treatment, rather than treatment having failed, explains her despair.",
         credit: 1.0,
       },
       {
-        text: "He probably has changed in some ways; we could ask him for examples.",
+        text: "Treatment might help more than she thinks; we could encourage her to try.",
         credit: 0.6,
+      },
+      {
+        text: "She thinks OCD can't be treated and hasn't tried anything.",
+        credit: 0.3,
       },
     ],
     correctAnswer:
-      "His self-reported insight is not matched by any observable change in how he treats his wife — a gap that suggests intellectual insight rather than worked-through change; test whether a neutral third party notices any difference, whether his behavior shifts in concrete daily interactions, and whether the understanding ever shows up when he's actually being dismissive.",
+      "The strongest, evidence-based correction is that OCD is among the more treatable conditions — ERP and SSRIs have strong records and most patients improve substantially — so her pessimism is a reason to start, not to abstain; test whether a course of ERP measurably reduces her checking, whether her belief that 'nothing works' eases as she sees early gains, and whether her never having tried treatment, rather than treatment having failed, explains her despair.",
     explanation:
-      "Top credit weighs observable behavior over self-report and names three checks; 'he says he understands, so he's changed' is the overreach the wife's account defeats.",
+      "Top credit corrects with the strong ERP/SSRI evidence and names a does-a-course-reduce-checking test; 'OCD is largely untreatable' is the anti-evidence dodge her never having tried it exposes.",
   },
   {
     itemType: "mc",
     prompt:
-      "A patient grasped a pattern intellectually a year ago and nothing happened. Only now, after re-encountering that same realization many times — with real feeling, in session and in his life — is his behavior finally shifting. Which conclusion best follows?",
+      "A college student with moderate OCD wants 'just a pill, no therapy,' citing his busy schedule. His clinician notes his rituals are circumscribed and that he's willing to do homework. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Change is so mysterious that we can't say what made the difference here.",
-        credit: 0,
+        text: "Therapy might help alongside medication; we could mention it.",
+        credit: 0.6,
       },
       {
-        text: "Something seems to have clicked for him eventually.",
+        text: "He wants medication and not therapy.",
         credit: 0.3,
       },
       {
-        text: "Change came from repeated emotional re-encounter, not the original idea — this is working through, where the same insight has to be felt and applied over and over before it takes; test whether the change tracks the repetitions rather than the year-old realization, whether it now appears in new situations, and whether it survives stress that a fresh, untested insight would not.",
-        credit: 1.0,
+        text: "Medication is the complete answer for OCD, so therapy would add nothing and he's right to skip it.",
+        credit: 0,
       },
       {
-        text: "The first insight probably caused it on a delay; we could trace the timeline.",
-        credit: 0.6,
+        text: "The best-supported guidance is that ERP is at least as effective as medication for OCD and the two combined often work best, so — given he'll do homework — offering ERP (with or without an SSRI) is better grounded than medication alone; test whether his ritual time falls more with added ERP than with the pill alone, whether his willingness to do exposures predicts a good response, and whether relapse is lower when he has learned ERP skills rather than relying on medication only.",
+        credit: 1.0,
       },
     ],
     correctAnswer:
-      "Change came from repeated emotional re-encounter, not the original idea — this is working through, where the same insight has to be felt and applied over and over before it takes; test whether the change tracks the repetitions rather than the year-old realization, whether it now appears in new situations, and whether it survives stress that a fresh, untested insight would not.",
+      "The best-supported guidance is that ERP is at least as effective as medication for OCD and the two combined often work best, so — given he'll do homework — offering ERP (with or without an SSRI) is better grounded than medication alone; test whether his ritual time falls more with added ERP than with the pill alone, whether his willingness to do exposures predicts a good response, and whether relapse is lower when he has learned ERP skills rather than relying on medication only.",
     explanation:
-      "Full credit names working through as the engine and names three tests including the timeline check; 'change is mysterious' is the refusal the clear repetition-then-change sequence defeats.",
+      "Full credit commits to ERP (alone or combined) over medication-only given his willingness and names a does-ERP-add-benefit test; 'medication is the complete answer' is the dodge the comparative evidence defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A patient describes feeling the old, familiar urge to abandon a project the instant it got difficult — but for the first time he stayed with it. That same week, instead of ghosting a friend after a tense exchange, he stayed in that too. Which conclusion best follows?",
+      "A therapist asserts that a single dramatic session uncovering a patient's repressed anger 'cured' his decade of severe washing OCD, and plans no exposure or follow-up. The patient still washes for an hour each morning. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He seems to be sticking with things more.",
+        text: "The therapist thinks one session fixed the OCD, but the patient still washes.",
         credit: 0.3,
       },
       {
-        text: "Feeling the old pull and overriding it in two different fresh situations in one week points to real change taking hold — change felt as a struggle, not just understood — rather than a lucky coincidence; test whether the new staying-power keeps showing up in unrehearsed situations, whether it holds when the difficulty is greater, and whether he keeps reporting the urge-then-choice rather than a frictionless calm.",
-        credit: 1.0,
+        text: "The breakthrough clearly worked, so the remaining washing will simply fade on its own without any further treatment.",
+        credit: 0,
       },
       {
-        text: "He probably had a productive week; we could see if it continues.",
+        text: "One session probably didn't cure it; we could keep working.",
         credit: 0.6,
       },
       {
-        text: "People have good weeks and bad weeks, so there's nothing to conclude.",
-        credit: 0,
+        text: "The strongest, evidence-aware reading is that an hour of daily washing means the OCD is not cured, that single-session catharsis has no track record for OCD, and that the supported plan is ERP (with meaning-focused insight as a possible complement, not a substitute); test whether the washing actually stops in the days after the 'breakthrough,' whether structured exposure is what finally reduces it, and whether the dramatic insight, however real, changed the behavior at all.",
+        credit: 1.0,
       },
     ],
     correctAnswer:
-      "Feeling the old pull and overriding it in two different fresh situations in one week points to real change taking hold — change felt as a struggle, not just understood — rather than a lucky coincidence; test whether the new staying-power keeps showing up in unrehearsed situations, whether it holds when the difficulty is greater, and whether he keeps reporting the urge-then-choice rather than a frictionless calm.",
+      "The strongest, evidence-aware reading is that an hour of daily washing means the OCD is not cured, that single-session catharsis has no track record for OCD, and that the supported plan is ERP (with meaning-focused insight as a possible complement, not a substitute); test whether the washing actually stops in the days after the 'breakthrough,' whether structured exposure is what finally reduces it, and whether the dramatic insight, however real, changed the behavior at all.",
     explanation:
-      "Full credit reads genuine, effortful change from the felt urge-then-override across contexts and names three tests; 'good weeks and bad weeks, nothing to conclude' is the dodge the two concrete overrides defeat.",
+      "Top credit reads persistent daily washing as proof the OCD isn't cured and commits to ERP, naming a did-the-washing-actually-stop test; 'the breakthrough worked, it'll fade' is the overreach the continued hour of washing defeats.",
   },
 ];
 
@@ -417,425 +417,425 @@ const hybrid: HomeworkItem[] = [
   {
     itemType: "hybrid",
     prompt:
-      "A patient who learned that his harsh self-criticism echoes his father's voice now reports catching that critical voice when he flubs something at work, again when he burns dinner, and again when he loses patience with his kids — and he says the criticism has gotten noticeably quieter. Which conclusion best follows?",
+      "A woman with contamination OCD has spent a year in insight-only therapy understanding her fears but still showers six times a day. She asks whether ERP would be 'giving up on the deeper work.' Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Catching and softening the same critical voice across work, cooking, and parenting is what working through looks like — the insight is being applied and is changing the experience across several unrelated settings; test whether the quieter voice holds after a real failure, whether it shows up in a brand-new situation he hasn't discussed, and whether he reports actually feeling the criticism start and choosing against it.",
-        credit: 1.0,
-      },
-      {
-        text: "He seems to be criticizing himself a bit less.",
+        text: "She seems unsure whether to add exposure therapy.",
         credit: 0.3,
       },
       {
-        text: "He probably just has had a calm stretch; we could keep watching.",
-        credit: 0.6,
+        text: "The best-supported reading is that a year of insight without symptom change argues for adding ERP — the first-line treatment for contamination OCD — while keeping any genuinely useful understanding, so the two complement rather than compete; test whether her showering finally drops once response prevention begins, whether the insight-only year left the rituals essentially unchanged, and whether combining the approaches beats continuing insight alone.",
+        credit: 1.0,
       },
       {
-        text: "Self-criticism is too deep-rooted to really change, so this likely means nothing.",
+        text: "She's right that ERP would abandon the real work; only continued insight can resolve OCD at its root.",
         credit: 0,
+      },
+      {
+        text: "Adding exposure might help; we could consider it.",
+        credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'working through' lead from the rival 'he's just having a low-stress few weeks,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'add ERP because insight alone hasn't reduced the rituals' lead from the rival 'the insight work just needs more time,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: wait for a genuine failure or stressful stretch and see whether he still catches and softens the critical voice — working through predicts the new response survives stress, while a mere calm spell predicts the old criticism returns full force the moment life gets hard. My lead is refuted if the softer voice vanishes under any real pressure and only reappears once things are easy again.",
+        "Cheapest test: introduce response prevention and watch whether her daily showering drops over a few weeks — a fall once ERP starts points to ERP being the missing active ingredient. My lead is refuted if her rituals were already steadily declining on insight alone before any ERP, which would suggest the talking just needed more time.",
       yieldAnchors: [
-        "He catches the critical voice at work, cooking, and parenting",
-        "The same pattern appears in several unrelated settings",
-        "He reports the criticism has grown quieter",
+        "A year of insight-only therapy",
+        "She still showers six times a day",
+        "She fears ERP means abandoning deep work",
       ],
       riskAnchors: [
-        "The quieter voice holds after a real failure",
-        "It appears in a brand-new, undiscussed situation",
-        "He feels the criticism start and chooses against it",
+        "Showering drops once response prevention begins",
+        "The insight year left rituals unchanged",
+        "The combined approach beats insight alone",
       ],
       defeatedBy: [
-        "The softer voice disappears the moment he is stressed",
-        "Nothing actually changes in how he treats himself",
+        "Her rituals were already falling on insight alone",
+        "ERP makes no difference to her washing",
       ],
     },
     correctAnswer:
-      "Catching and softening the same critical voice across work, cooking, and parenting is what working through looks like — the insight is being applied and is changing the experience across several unrelated settings; test whether the quieter voice holds after a real failure, whether it shows up in a brand-new situation he hasn't discussed, and whether he reports actually feeling the criticism start and choosing against it.",
+      "The best-supported reading is that a year of insight without symptom change argues for adding ERP — the first-line treatment for contamination OCD — while keeping any genuinely useful understanding, so the two complement rather than compete; test whether her showering finally drops once response prevention begins, whether the insight-only year left the rituals essentially unchanged, and whether combining the approaches beats continuing insight alone.",
     explanation:
-      "Full credit reads working through from the cross-context change and names a stress test that states its own refutation; 'too deep-rooted to change' is the refusal the multi-setting shift defeats.",
+      "Full credit reads an unchanged year as a case to add first-line ERP and is paired with a does-showering-drop test that names its refutation; 'ERP abandons the real work' is the anti-evidence dodge the change-free year defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A woman gives a polished, complete account of why she fears intimacy, but she delivers it without a flicker of emotion, and after a year of these accounts her dating life is exactly as it was. Which conclusion best follows?",
+      "A man with severe checking OCD has done ERP with good results but relapses hard during high-stress months at work. He asks whether anything could make the gains sturdier. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "She probably needs to understand the fear more deeply; we could dig further.",
+        text: "Something might help him hold his gains; we could explore add-ons.",
         credit: 0.6,
       },
       {
-        text: "She clearly understands her fear, so the work here is basically finished.",
+        text: "Relapse under stress means ERP failed, so he should abandon it and look only for the hidden emotional cause.",
         credit: 0,
       },
       {
-        text: "This is intellectual insight functioning as a defense — a complete, affectless explanation that substitutes understanding for the feeling and change it should lead to; test whether any session ever brings real emotion to the topic, whether a single concrete dating behavior changes, and whether stating the insight ever interrupts the pattern in a live situation.",
+        text: "The best-supported plan is to shore up the ERP gains — booster sessions and continued practice, and considering an SSRI, both of which have evidence for reducing relapse — while a meaning-focused look at what the stress stirs up can complement it; test whether stress-period relapses shrink with boosters or medication, whether his checking returns specifically under work pressure rather than randomly, and whether the relapses ease as he keeps practicing response prevention.",
         credit: 1.0,
       },
       {
-        text: "She seems to have thought a lot about her fear of intimacy.",
+        text: "He does well with ERP but relapses when stressed.",
         credit: 0.3,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'insight-as-defense' lead from the rival 'she simply needs more time before change shows,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'stress-linked relapse needs booster ERP and relapse-prevention support' lead from the rival 'the ERP never really worked,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: notice whether her explanation ever arrives with any feeling, or whether it stays a flat recital no matter how close the topic gets — insight serving as a defense predicts the affect is reliably kept out, where genuine slow progress predicts feeling gradually breaking through. My lead is refuted if emotion does surface over time and even one dating behavior begins to shift, which would fit a slow but real process rather than a defense.",
+        "Cheapest test: check whether his checking is well-controlled during low-stress stretches and spikes only under work pressure — good baseline control with stress-linked flares points to relapse-prevention needs, not treatment failure. My lead is refuted if his checking is severe even during calm periods, which would mean ERP never achieved real control in the first place.",
       yieldAnchors: [
-        "Her account of the fear is polished and complete",
-        "She delivers it with no emotion",
-        "A year on, her dating life is unchanged",
+        "ERP produced good results",
+        "He relapses hard during stressful months",
+        "He wants sturdier gains",
       ],
       riskAnchors: [
-        "Real emotion eventually surfaces around the topic",
-        "A concrete dating behavior changes",
-        "Stating the insight interrupts the pattern in the moment",
+        "Relapses shrink with boosters or medication",
+        "Checking returns under work pressure specifically",
+        "Continued response prevention eases relapse",
       ],
       defeatedBy: [
-        "Feeling breaks through and behavior begins to shift over time",
-        "The understanding is wrong about the source of the fear",
+        "His checking is severe even in calm periods",
+        "ERP never reduced his checking at all",
       ],
     },
     correctAnswer:
-      "This is intellectual insight functioning as a defense — a complete, affectless explanation that substitutes understanding for the feeling and change it should lead to; test whether any session ever brings real emotion to the topic, whether a single concrete dating behavior changes, and whether stating the insight ever interrupts the pattern in a live situation.",
+      "The best-supported plan is to shore up the ERP gains — booster sessions and continued practice, and considering an SSRI, both of which have evidence for reducing relapse — while a meaning-focused look at what the stress stirs up can complement it; test whether stress-period relapses shrink with boosters or medication, whether his checking returns specifically under work pressure rather than randomly, and whether the relapses ease as he keeps practicing response prevention.",
     explanation:
-      "Top credit names insight-as-defense and pairs it with an affect-watch test that names its refutation; 'she understands, so the work is finished' is the overreach the unchanged year defeats.",
+      "Full credit treats stress-linked relapse as a relapse-prevention problem (boosters, SSRI, optional meaning work) and is paired with a controlled-when-calm test; 'ERP failed, abandon it' is the dodge his good baseline results defeat.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A man has a powerful, tearful realization about his absent mother and declares afterward that he is 'a completely different person now.' Two months later, friends and family who see him daily report no change at all in how he acts. Which conclusion best follows?",
+      "A man has intrusive thoughts of stabbing loved ones and has hidden every knife in the house; he's never been violent and is sickened by the thoughts. A counselor refuses imaginal exposure as 'too dangerous.' Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He felt transformed, so he must genuinely be different now.",
+        text: "The counselor is right; exposing him to those images could trigger violence, so avoidance is the responsible plan.",
         credit: 0,
       },
       {
-        text: "He seems to have had a strong emotional experience.",
-        credit: 0.3,
-      },
-      {
-        text: "A vivid emotional release is being mistaken for change — catharsis can feel like transformation while leaving the actual pattern untouched until it is worked through; test whether anyone who sees him daily notices a concrete difference, whether his behavior shifts in fresh real situations, and whether the felt transformation outlasts a return to ordinary stress.",
+        text: "The best-supported reading is that these are ego-dystonic harm obsessions with no link to actual violence, that the knife-hiding and avoidance are compulsions feeding the cycle, and that imaginal ERP is the indicated, safe treatment; test whether his horror (not urge) at the thoughts marks them as obsessional, whether the intrusions intensify the more he avoids, and whether facing the images without neutralizing reduces their grip.",
         credit: 1.0,
       },
       {
-        text: "He probably did change somewhat; we could give it more time.",
+        text: "He has violent thoughts and his counselor won't do exposure.",
+        credit: 0.3,
+      },
+      {
+        text: "Exposure might actually be appropriate here; we could reconsider.",
         credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'catharsis, not change' lead from the rival 'real change is happening but is still invisible,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'these are ego-dystonic obsessions treatable with imaginal ERP' lead from the rival 'these signal genuine danger requiring avoidance,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: ask the people who interact with him every day whether anything concrete in his behavior is different — change too real to see should still leave traces others can point to. My lead is refuted if close observers independently report specific behavioral differences, which would mean the transformation is real and just hadn't reached his own account yet.",
+        "Cheapest test: assess his reaction to the thoughts — revulsion, fear, and active resistance mark ego-dystonic obsessions, not intent. My lead is refuted if he reports any wish, plan, or pleasure connected to the thoughts, which would shift the picture from OCD toward genuine risk needing a different response.",
       yieldAnchors: [
-        "He had a tearful realization about his mother",
-        "He declares himself a different person",
-        "Daily observers report no change two months on",
+        "Intrusive harm thoughts about loved ones",
+        "He has hidden every knife",
+        "He is sickened by the thoughts and never violent",
       ],
       riskAnchors: [
-        "People who see him daily notice a concrete difference",
-        "His behavior shifts in fresh real situations",
-        "The sense of change outlasts ordinary stress",
+        "Horror not urge marks them obsessional",
+        "Intrusions worsen with avoidance",
+        "Facing images without neutralizing reduces them",
       ],
       defeatedBy: [
-        "Close observers independently report specific behavioral changes",
-        "His daily relationships clearly operate differently now",
+        "He reports a wish or plan to act",
+        "He feels pleasure rather than dread at the thoughts",
       ],
     },
     correctAnswer:
-      "A vivid emotional release is being mistaken for change — catharsis can feel like transformation while leaving the actual pattern untouched until it is worked through; test whether anyone who sees him daily notices a concrete difference, whether his behavior shifts in fresh real situations, and whether the felt transformation outlasts a return to ordinary stress.",
+      "The best-supported reading is that these are ego-dystonic harm obsessions with no link to actual violence, that the knife-hiding and avoidance are compulsions feeding the cycle, and that imaginal ERP is the indicated, safe treatment; test whether his horror (not urge) at the thoughts marks them as obsessional, whether the intrusions intensify the more he avoids, and whether facing the images without neutralizing reduces their grip.",
     explanation:
-      "Full credit separates catharsis from change and names a third-party test that states its refutation; 'he felt transformed, so he is' is the overreach the unchanged two months defeat.",
+      "Full credit identifies ego-dystonic harm obsessions, names the avoidance as compulsive, commits to imaginal ERP, and is paired with an assess-his-reaction test; 'exposure could trigger violence' is the dodge the harm-obsession evidence defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A patient who understood her conflict-avoidance manages one hard conversation — but only after her therapist explicitly encourages her, and only that one. Everywhere else, with everyone else, she keeps avoiding exactly as before. Which conclusion best follows?",
+      "A woman with OCD calls her husband twenty times a day to ask whether she 'said something offensive'; he patiently reassures her each time, and her anxiety briefly settles before she calls again. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "She had one hard conversation, so she has clearly overcome her avoidance.",
-        credit: 0,
-      },
-      {
-        text: "She seems to manage conflict when she's prompted.",
+        text: "She keeps calling her husband for reassurance.",
         credit: 0.3,
       },
       {
-        text: "The change is still tied to the therapy frame — it appears only with the therapist's prompting and hasn't generalized, which is insight not yet worked through into independent behavior; test whether she initiates a hard conversation without being encouraged, whether the new behavior shows up in a relationship outside therapy, and whether it holds when the other person reacts badly.",
+        text: "Maybe the reassurance isn't helping; we could look at that.",
+        credit: 0.6,
+      },
+      {
+        text: "The best-supported reading is that the husband's reassurance is an accommodation that maintains the compulsion — brief relief, quick return — and the evidence-based move is to coach the family to reduce reassurance while she practices tolerating doubt; test whether each reassurance calms her only briefly, whether the call frequency drops when reassurance is gently withheld, and whether her anxiety falls over time rather than escalating without it.",
         credit: 1.0,
       },
       {
-        text: "She is probably starting to change; we could keep encouraging her.",
-        credit: 0.6,
+        text: "Her husband should simply reassure her more completely and more often until she finally feels certain and stops calling.",
+        credit: 0,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'change still tied to the therapy frame' lead from the rival 'real, generalizing change has begun,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'reassurance is an accommodation maintaining the compulsion' lead from the rival 'she just needs enough reassurance to feel settled,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: see whether she ever handles a conflict on her own, with no prompting and outside the therapy relationship — context-bound change predicts she only manages it when the therapist supplies the push. My lead is refuted if she spontaneously initiates and sustains hard conversations in everyday relationships without any encouragement, which would show the change has generalized.",
+        "Cheapest test: have the husband briefly reduce reassurance and watch whether her calling urge falls over days rather than climbing forever — a decline points to reassurance having fed the loop. My lead is refuted if reducing reassurance makes her distress rise without limit and never settle, while abundant reassurance reliably ends the calls for good.",
       yieldAnchors: [
-        "She managed one hard conversation",
-        "It happened only after explicit therapist encouragement",
-        "She keeps avoiding conflict everywhere else",
+        "Twenty reassurance calls a day",
+        "Each answer settles her only briefly",
+        "She calls again right after",
       ],
       riskAnchors: [
-        "She initiates a hard conversation without being prompted",
-        "The new behavior appears outside therapy",
-        "It holds when the other person reacts badly",
+        "Each reassurance calms only briefly",
+        "Call frequency drops when reassurance is reduced",
+        "Anxiety falls over time without reassurance",
       ],
       defeatedBy: [
-        "She handles conflicts on her own across many relationships",
-        "The new behavior persists without any prompting",
+        "Full reassurance permanently ends the calls",
+        "Reducing reassurance helps her settle faster",
       ],
     },
     correctAnswer:
-      "The change is still tied to the therapy frame — it appears only with the therapist's prompting and hasn't generalized, which is insight not yet worked through into independent behavior; test whether she initiates a hard conversation without being encouraged, whether the new behavior shows up in a relationship outside therapy, and whether it holds when the other person reacts badly.",
+      "The best-supported reading is that the husband's reassurance is an accommodation that maintains the compulsion — brief relief, quick return — and the evidence-based move is to coach the family to reduce reassurance while she practices tolerating doubt; test whether each reassurance calms her only briefly, whether the call frequency drops when reassurance is gently withheld, and whether her anxiety falls over time rather than escalating without it.",
     explanation:
-      "Top credit reads context-bound, not-yet-generalized change and names an unprompted test that states its refutation; 'one conversation means she's overcome it' is the overreach her continued avoidance defeats.",
+      "Full credit names family reassurance as accommodation and commits to reducing it, paired with a does-the-urge-fall-when-withheld test; 'just reassure her more' is the dodge the brief-relief-then-return pattern defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A long-term patient keeps noticing the same self-sabotage — quitting just before he might be rejected — first quitting a job, then breaking off a relationship, then dropping a class, but catching himself earlier each time, and once actually stopping before he quit. Which conclusion best follows?",
+      "A man's contamination rituals resolved with ERP, but he then notices he picks fights with anyone who gets close — a pattern that long predates the OCD and that the exposures didn't touch. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He seems to quit things a lot.",
-        credit: 0.3,
-      },
-      {
-        text: "The same pattern recognized across job, relationship, and class — caught earlier each time and once interrupted — is working through in action, the slow conversion of one insight into changed behavior; test whether the earlier-catching trend continues with new situations, whether he interrupts the quitting more than once, and whether the gains survive an actual rejection.",
-        credit: 1.0,
-      },
-      {
-        text: "Self-sabotage is just part of his character, so there's nothing to be drawn from this.",
+        text: "The returning relationship trouble proves the ERP only suppressed his OCD, which has now resurfaced as conflict; he should drop ERP and uncover the root.",
         credit: 0,
       },
       {
-        text: "He is probably getting a little better at it; we could keep notes.",
+        text: "There might be a separate issue worth exploring; we could keep talking.",
         credit: 0.6,
+      },
+      {
+        text: "The best-supported reading is that the ERP genuinely cleared the contamination OCD and what remains is a distinct, older relational pattern better served by meaning-focused work — complement, not replacement; test whether the contamination rituals stay gone while the conflict pattern persists, whether the fighting has its own history independent of the OCD, and whether exploring it helps without the washing returning.",
+        credit: 1.0,
+      },
+      {
+        text: "His OCD is better but he fights with people close to him.",
+        credit: 0.3,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'working through' lead from the rival 'the single interruption was just luck,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'the conflict is a separate older pattern for meaning-focused work' lead from the rival 'the OCD has resurfaced in disguise,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: keep tracking whether he catches the quitting urge earlier and interrupts it again in new situations — working through predicts a continuing trend of earlier catches and repeated interruptions, not a one-off. My lead is refuted if he never stops himself again and the catches don't keep getting earlier, which would make the single success look like chance.",
+        "Cheapest test: check whether the contamination rituals stay absent while the fighting continues, and whether the conflict pattern existed before the OCD ever began — independence on both points marks it as a separate issue. My lead is refuted if the washing returns in lockstep with the conflicts or the fighting only started as the OCD lifted, which would suggest one underlying problem shifting form.",
       yieldAnchors: [
-        "He repeats the quitting pattern across job, relationship, and class",
-        "He catches it earlier each time",
-        "He once stopped himself before quitting",
+        "ERP resolved the contamination rituals",
+        "He picks fights with anyone close",
+        "The conflict pattern predates the OCD",
       ],
       riskAnchors: [
-        "The earlier-catching trend continues with new situations",
-        "He interrupts the quitting more than once",
-        "The gains survive an actual rejection",
+        "Rituals stay gone while conflict persists",
+        "The fighting has its own independent history",
+        "Exploring it helps without rituals returning",
       ],
       defeatedBy: [
-        "He never interrupts the quitting again",
-        "The catches stop getting earlier",
+        "Washing returns in step with the conflicts",
+        "The fighting began only as the OCD lifted",
       ],
     },
     correctAnswer:
-      "The same pattern recognized across job, relationship, and class — caught earlier each time and once interrupted — is working through in action, the slow conversion of one insight into changed behavior; test whether the earlier-catching trend continues with new situations, whether he interrupts the quitting more than once, and whether the gains survive an actual rejection.",
+      "The best-supported reading is that the ERP genuinely cleared the contamination OCD and what remains is a distinct, older relational pattern better served by meaning-focused work — complement, not replacement; test whether the contamination rituals stay gone while the conflict pattern persists, whether the fighting has its own history independent of the OCD, and whether exploring it helps without the washing returning.",
     explanation:
-      "Full credit reads working through from the cross-context, earlier-each-time trend and names a continuing-trend test that states its refutation; 'it's just his character' is the dodge the repeated catches defeat.",
+      "Full credit reads a cleared OCD plus a separate older pattern as a case for complementary meaning work and is paired with a do-rituals-stay-gone test; 'the OCD resurfaced in disguise' is the dodge the independent history defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "Every few weeks a patient arrives with an exciting new insight about himself, presents it with real enthusiasm, and then never builds on it. Each insight is dropped for the next one, and across a year nothing in his life has changed. Which conclusion best follows?",
+      "A therapist tells a parent that ERP for her son's counting rituals is 'shallow symptom-management' and that only years of depth work can truly help, despite the rituals consuming most of the boy's day. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He is obviously a deep thinker, so the changes are surely coming.",
+        text: "The therapist's plan might be too slow; we could get another opinion.",
+        credit: 0.6,
+      },
+      {
+        text: "The therapist is right that ERP only manages symptoms, so the family should commit to years of depth work instead.",
         credit: 0,
       },
       {
-        text: "He seems to come up with a lot of insights.",
-        credit: 0.3,
-      },
-      {
-        text: "Producing insights has become a substitute for change — the steady supply of fresh realizations lets him feel he's working while sidestepping the harder work of applying any one of them; test whether any single insight is ever carried into action, whether he can stay with one uncomfortable theme instead of generating a new theory, and whether interrupting the flow of insights produces frustration rather than progress.",
+        text: "The best-supported reading is that this advice is poorly aligned with the evidence — ERP is first-line and effective for counting rituals, and depth work, where useful, should complement rather than delay it; test whether the rituals fall once ERP begins, whether the proposed depth-only plan would leave the boy impaired for years first, and whether combining approaches serves him better than waiting on insight alone.",
         credit: 1.0,
       },
       {
-        text: "He probably needs help focusing on one insight; we could pick one to pursue.",
-        credit: 0.6,
+        text: "The therapist prefers depth work over ERP.",
+        credit: 0.3,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'insights as a substitute for change' lead from the rival 'he is a deep thinker who will change in time,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'ERP should lead and depth work can complement' lead from the rival 'depth work alone is the genuine cure,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: pick one insight and see whether he can actually stay with it and act on it, or whether he slides off into a shinier new realization — insight as a substitute predicts he won't tolerate staying with one. My lead is refuted if he can hold a single theme, work it through, and let it change a concrete behavior, which would show the insights are real raw material rather than a dodge.",
+        "Cheapest test: start ERP and track whether his daily ritual time falls within weeks — a clear drop shows ERP is doing real work, not just 'managing.' My lead is refuted if ERP produces no change while a course of depth-only work measurably reduces his counting, which would support the therapist's claim.",
       yieldAnchors: [
-        "He arrives with a new insight every few weeks",
-        "He never builds on the previous one",
-        "Across a year nothing in his life changes",
+        "ERP dismissed as shallow management",
+        "Rituals consume most of the boy's day",
+        "Only years of depth work offered",
       ],
       riskAnchors: [
-        "A single insight is ever carried into action",
-        "He can stay with one uncomfortable theme",
-        "Interrupting the flow produces frustration rather than progress",
+        "Rituals fall once ERP begins",
+        "The depth-only plan leaves him impaired for years",
+        "The combined approach beats insight alone",
       ],
       defeatedBy: [
-        "He holds one insight, works it through, and changes a behavior",
-        "His enthusiasm reliably translates into real-world action",
+        "ERP produces no change in his rituals",
+        "Depth-only work alone clearly reduces the counting",
       ],
     },
     correctAnswer:
-      "Producing insights has become a substitute for change — the steady supply of fresh realizations lets him feel he's working while sidestepping the harder work of applying any one of them; test whether any single insight is ever carried into action, whether he can stay with one uncomfortable theme instead of generating a new theory, and whether interrupting the flow of insights produces frustration rather than progress.",
+      "The best-supported reading is that this advice is poorly aligned with the evidence — ERP is first-line and effective for counting rituals, and depth work, where useful, should complement rather than delay it; test whether the rituals fall once ERP begins, whether the proposed depth-only plan would leave the boy impaired for years first, and whether combining approaches serves him better than waiting on insight alone.",
     explanation:
-      "Top credit names insight-collecting as a defense and pairs it with a stay-with-one test that states its refutation; 'he's a deep thinker, change is coming' is the overreach the unchanged year defeats.",
+      "Full credit reads the advice as misaligned with the ERP evidence and commits to ERP-led care with optional depth work, paired with a do-rituals-fall test; 'ERP only manages symptoms' is the anti-evidence dodge.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A woman who understood her habit of dissolving into her partners — dropping her own plans and friends — now, in a new relationship, feels that familiar pull but keeps a couple of her own commitments, and over the following months keeps more and more of them. Which conclusion best follows?",
+      "A woman has cycled through three SSRIs over five years with only modest OCD relief and has never been offered psychotherapy. She wonders if she's simply 'treatment-resistant.' Which conclusion best follows?",
     mcOptions: [
       {
-        text: "She seems to be holding on to her own life more.",
+        text: "She's tried several medications without much benefit.",
         credit: 0.3,
       },
       {
-        text: "She is probably doing better in this relationship; we could check in later.",
-        credit: 0.6,
-      },
-      {
-        text: "This looks like gradual working through — she feels the old pull yet keeps an increasing share of her own life, so the insight is being converted into changed behavior incrementally in a live relationship; test whether she holds her ground with a more demanding partner, whether she reports the internal struggle rather than a frictionless ease, and whether the gains persist through a stressful patch.",
+        text: "The best-supported reading is that 'treatment-resistant' is premature when she's never had ERP — the most effective psychotherapy for OCD and a standard next step for partial medication response; test whether adding ERP reduces her symptoms beyond what medication achieved, whether her 'resistance' reflects an untried treatment rather than a true ceiling, and whether the gains hold as she practices response prevention.",
         credit: 1.0,
       },
       {
-        text: "Her new partner is probably just easier, so this tells us little about her.",
+        text: "Maybe therapy is worth trying before calling it resistant; we could suggest it.",
+        credit: 0.6,
+      },
+      {
+        text: "Three failed medications confirm she's treatment-resistant, so further treatment is unlikely to help.",
         credit: 0,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'gradual working through' lead from the rival 'this partner just happens to be undemanding,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'she's not truly resistant because ERP is untried' lead from the rival 'she has genuinely treatment-resistant OCD,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: notice whether she reports feeling the old pull to dissolve and actively resisting it, rather than simply not feeling it — working through predicts an internal struggle she's winning, while an easy partner predicts no pull at all. My lead is refuted if she keeps her plans only because nothing in the relationship draws her in, and the pull returns full force the moment a partner asks more of her.",
+        "Cheapest test: add a proper course of ERP and measure whether her symptoms drop beyond the modest medication response — improvement shows the earlier 'resistance' was just an untried treatment. My lead is refuted if well-delivered ERP, fully practiced, produces no meaningful change on top of medication, which would support genuine treatment resistance.",
       yieldAnchors: [
-        "She feels the familiar pull to dissolve into the partner",
-        "She keeps a couple of her own commitments anyway",
-        "She keeps more of her own life over the months",
+        "Three SSRIs over five years",
+        "Only modest relief",
+        "Never offered psychotherapy",
       ],
       riskAnchors: [
-        "She holds her ground with a more demanding partner",
-        "She reports an internal struggle, not frictionless ease",
-        "The gains persist through a stressful patch",
+        "ERP reduces symptoms beyond medication",
+        "Resistance reflects an untried treatment",
+        "Gains hold with response prevention",
       ],
       defeatedBy: [
-        "She keeps her plans only because the partner asks nothing of her",
-        "The pull returns in full the moment more is demanded",
+        "Well-delivered ERP produces no change",
+        "She has fully tried ERP already",
       ],
     },
     correctAnswer:
-      "This looks like gradual working through — she feels the old pull yet keeps an increasing share of her own life, so the insight is being converted into changed behavior incrementally in a live relationship; test whether she holds her ground with a more demanding partner, whether she reports the internal struggle rather than a frictionless ease, and whether the gains persist through a stressful patch.",
+      "The best-supported reading is that 'treatment-resistant' is premature when she's never had ERP — the most effective psychotherapy for OCD and a standard next step for partial medication response; test whether adding ERP reduces her symptoms beyond what medication achieved, whether her 'resistance' reflects an untried treatment rather than a true ceiling, and whether the gains hold as she practices response prevention.",
     explanation:
-      "Full credit reads incremental working through from the felt-pull-yet-holding pattern and names a demanding-partner test that states its refutation; 'the partner is just easier' is the overreach the reported struggle defeats.",
+      "Full credit reframes 'resistance' as an untried first-line treatment and commits to ERP, paired with a does-ERP-add-benefit test; 'three failed meds confirm resistance' is the dodge the never-tried-ERP fact defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A man can label his own intellectualizing in real time — 'I'm doing the thing again, turning this into an analysis' — but he uses that very labeling to keep any feeling at a safe distance, and nothing about how he relates to others shifts. Which conclusion best follows?",
+      "A man following a strict manualized ERP protocol completes every exposure but reports feeling like a 'compliance robot,' and his gains are flat. His therapist suspects the rote delivery isn't engaging the real fear. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He is developing great self-awareness, which means he is bound to improve.",
+        text: "Maybe the exposures need adjusting; we could rework them.",
+        credit: 0.6,
+      },
+      {
+        text: "Flat gains prove ERP doesn't suit him, so he should switch to insight-only therapy with no exposures.",
         credit: 0,
       },
       {
-        text: "He seems to know when he's intellectualizing.",
+        text: "He's doing the exposures but not improving much.",
         credit: 0.3,
       },
       {
-        text: "The act of naming the defense has itself become a defense — the running commentary is one more layer of analysis that keeps feeling away, so the labeling is intellectual insight, not change; test whether the labeling ever gives way to actually feeling something, whether any emotionally charged topic breaks through, and whether his way of relating to others changes at all.",
+        text: "The best-supported reading is that ERP remains the right treatment but must target his actual feared outcome with real emotional engagement — exposures that don't activate the fear don't extinguish it — and a meaning-focused understanding of what he most dreads can sharpen them; test whether gains improve once exposures provoke genuine anxiety tied to his core fear, whether his flat response traces to under-activated exposures, and whether tailored exposures outperform the rote protocol.",
         credit: 1.0,
-      },
-      {
-        text: "He probably needs to act on the labeling; we could encourage that.",
-        credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'naming has become the defense' lead from the rival 'his self-awareness is a real step toward change,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'rote exposures aren't engaging his real fear' lead from the rival 'ERP simply doesn't work for him,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: watch what happens right after he labels the intellectualizing — does feeling come in, or does the labeling simply seal it off and let him keep analyzing? My lead is refuted if naming the defense reliably opens the door to real emotion and his relating begins to change, which would make the self-awareness a genuine first step rather than a fresh hiding place.",
+        "Cheapest test: redesign exposures to hit his actual feared outcome and check whether he reports real anxiety during them and better gains afterward — activation plus improvement shows the problem was engagement, not ERP. My lead is refuted if exposures that clearly provoke his core fear still yield no improvement, which would point away from a delivery problem.",
       yieldAnchors: [
-        "He labels his intellectualizing in real time",
-        "The labeling keeps feeling at a distance",
-        "Nothing in how he relates to others shifts",
+        "He completes every exposure",
+        "He feels like a compliance robot",
+        "His gains are flat",
       ],
       riskAnchors: [
-        "The labeling ever gives way to actual feeling",
-        "An emotionally charged topic breaks through",
-        "His way of relating to others changes",
+        "Gains improve with fear-activating exposures",
+        "Flat response traces to under-activation",
+        "Tailored exposures beat the rote protocol",
       ],
       defeatedBy: [
-        "Naming the defense reliably opens the door to real emotion",
-        "His relationships begin to change after he labels it",
+        "Fear-activating exposures still yield nothing",
+        "He was never actually completing the exposures",
       ],
     },
     correctAnswer:
-      "The act of naming the defense has itself become a defense — the running commentary is one more layer of analysis that keeps feeling away, so the labeling is intellectual insight, not change; test whether the labeling ever gives way to actually feeling something, whether any emotionally charged topic breaks through, and whether his way of relating to others changes at all.",
+      "The best-supported reading is that ERP remains the right treatment but must target his actual feared outcome with real emotional engagement — exposures that don't activate the fear don't extinguish it — and a meaning-focused understanding of what he most dreads can sharpen them; test whether gains improve once exposures provoke genuine anxiety tied to his core fear, whether his flat response traces to under-activated exposures, and whether tailored exposures outperform the rote protocol.",
     explanation:
-      "Top credit notes the naming has become a defense and pairs it with a what-happens-after test that states its refutation; 'great self-awareness means he'll improve' is the overreach the unchanged relating defeats.",
+      "Full credit keeps ERP but demands fear-activating, meaning-informed exposures and is paired with a does-activation-improve-gains test; 'ERP doesn't suit him, switch to insight-only' is the dodge that under-activated exposures explain.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A patient who 'understood' the roots of her anxiety a year ago saw no change then. Only now, after re-living that same understanding with real feeling many times — in sessions and in difficult moments at home — is she finally acting differently. Which conclusion best follows?",
+      "Two clinicians debate a case of moderate OCD: one insists on ERP alone, the other on psychodynamic therapy alone. The patient is capable, motivated, and asks what gives her the best odds. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "She understood it a year ago, so that original insight is what finally fixed her.",
+        text: "Since the experts disagree, no approach is better than another, so she may as well pick whichever she likes.",
         credit: 0,
       },
       {
-        text: "She seems to have changed at last.",
-        credit: 0.3,
-      },
-      {
-        text: "Change followed the repeated emotional re-encounter, not the year-old idea — this is working through, where an insight has to be felt and re-applied many times before behavior shifts; test whether the timing of the change tracks the repetitions rather than the original realization, whether the new behavior now appears in fresh situations, and whether it survives stress that a fresh, untested insight would not.",
+        text: "The best-supported answer is that ERP (with or without an SSRI) has the strongest evidence and should anchor the plan, while psychodynamic, meaning-focused work can complement it for engagement or residual themes — not replace it; test whether ERP reduces her rituals as expected, whether adding meaning work improves adherence or addresses leftover issues, and whether an insight-only plan would leave the core symptoms largely untouched.",
         credit: 1.0,
       },
       {
-        text: "The first insight probably worked slowly; we could map out the timeline.",
+        text: "ERP is probably the safer bet; we could lean that way.",
         credit: 0.6,
+      },
+      {
+        text: "The clinicians disagree about which therapy to use.",
+        credit: 0.3,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'change came from working through' lead from the rival 'the original insight just acted on a long delay,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'ERP should anchor with meaning work as complement' lead from the rival 'psychodynamic therapy alone is just as likely to work,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: line up when the behavior actually changed against the year of repeated emotional re-encounters versus the single year-old insight — working through predicts the change tracks the recent repetitions, not the distant first realization. My lead is refuted if the behavior shifted right after the original insight with no role for the intervening repetitions, which would support a delayed effect of that one insight.",
+        "Cheapest test: begin with ERP and track whether her ritual time falls as the evidence predicts — a clear reduction confirms ERP as the right anchor. My lead is refuted if, in her case, insight-only therapy reduces the rituals just as much and as quickly as ERP, which would undercut anchoring on ERP.",
       yieldAnchors: [
-        "The year-old understanding produced no change at the time",
-        "She re-lived it with feeling many times since",
-        "Behavior is changing only now",
+        "Moderate OCD",
+        "She is capable and motivated",
+        "She asks for the best odds",
       ],
       riskAnchors: [
-        "The change tracks the repetitions, not the original insight",
-        "The new behavior appears in fresh situations",
-        "It survives stress a fresh insight would not",
+        "ERP reduces rituals as expected",
+        "Meaning work improves adherence or residual themes",
+        "Insight-only leaves core symptoms untouched",
       ],
       defeatedBy: [
-        "The behavior changed right after the original insight",
-        "The intervening repetitions played no role in the timing",
+        "Insight-only reduces rituals as fast as ERP",
+        "ERP fails to change her rituals at all",
       ],
     },
     correctAnswer:
-      "Change followed the repeated emotional re-encounter, not the year-old idea — this is working through, where an insight has to be felt and re-applied many times before behavior shifts; test whether the timing of the change tracks the repetitions rather than the original realization, whether the new behavior now appears in fresh situations, and whether it survives stress that a fresh, untested insight would not.",
+      "The best-supported answer is that ERP (with or without an SSRI) has the strongest evidence and should anchor the plan, while psychodynamic, meaning-focused work can complement it for engagement or residual themes — not replace it; test whether ERP reduces her rituals as expected, whether adding meaning work improves adherence or addresses leftover issues, and whether an insight-only plan would leave the core symptoms largely untouched.",
     explanation:
-      "Full credit names working through as the cause and pairs it with a timeline test that states its refutation; 'the original insight fixed her' is the overreach the year of no change defeats.",
+      "Full credit anchors on the best-supported ERP plan with complementary meaning work and is paired with a does-ERP-reduce-rituals test; 'experts disagree so anything goes' is the dodge the comparative evidence defeats.",
   },
 ];
 
@@ -843,179 +843,183 @@ const written: HomeworkItem[] = [
   {
     itemType: "written",
     prompt:
-      "A patient can explain, with precision and even a sense of relief, that his fear of success comes from never wanting to outshine a struggling sibling. He returns to this account often. Yet he keeps quietly sabotaging promotions and opportunities, just as he always has. In one paragraph, propose the strongest conclusion about whether real change is occurring and describe how you would test it.",
+      "A woman with disabling contamination OCD has spent two years in insight-oriented therapy. She can describe the childhood roots of her fears in vivid detail, yet she still washes until her skin bleeds and avoids leaving home. She wonders whether she should 'stay the course' or try something else. In one paragraph, propose the strongest conclusion about what the evidence supports for her care and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that this is intellectual insight without change: he understands the pattern and even finds explaining it soothing, but the understanding has not been worked through into how he acts, and the relief may actually drain off the pressure that would force change. This is a strong claim because it predicts checkable consequences: his self-sabotage should continue unchanged in the next real opportunity despite his clear understanding; the explanation should keep arriving as a tidy recital rather than with the fear it describes; and naming the pattern in the moment he's about to sabotage should fail to interrupt it. I would test it by tracking his behavior at the next promotion rather than his ability to narrate the cause, by watching whether the account ever carries genuine feeling, and by seeing whether the insight ever shows up as a changed choice rather than a repeated story.",
+        "The strongest conclusion is that two years of insight without symptom change is good reason to change the plan toward exposure and response prevention — the first-line, best-supported treatment for contamination OCD — while keeping whatever understanding has genuinely helped, since meaning-focused work and ERP are complements rather than rivals. This is a strong, falsifiable claim: it predicts her washing and avoidance should fall once structured response prevention begins, that the prior insight-only years left the rituals essentially unchanged, and that combining the approaches should beat continuing insight alone. I would test it by introducing a graded ERP course and tracking her daily washing time and housebound hours, by reviewing whether her symptoms moved at all during the insight-only period, and by watching whether gains appear specifically once exposures start rather than from more talking — and I would revise toward the insight-only plan only if her rituals were already steadily declining without ERP.",
       yieldAnchors: [
-        "He explains his fear of success precisely",
-        "He returns to the account often and feels relief",
-        "He keeps sabotaging promotions as before",
+        "Two years of insight-oriented therapy",
+        "She washes until her skin bleeds",
+        "She can describe the roots but hasn't changed",
       ],
       riskAnchors: [
-        "The self-sabotage continues at the next real opportunity",
-        "The explanation stays a recital, not a felt fear",
-        "Naming it in the moment fails to interrupt it",
+        "Washing falls once response prevention begins",
+        "The insight-only years left rituals unchanged",
+        "The combined approach beats insight alone",
       ],
       defeatedBy: [
-        "His behavior changes at the next opportunity",
-        "Understanding the cause is the same as being changed by it",
+        "Her rituals were already declining on insight alone",
+        "ERP produces no change in her washing",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that this is intellectual insight without change: he understands the pattern and even finds explaining it soothing, but the understanding has not been worked through into how he acts, and the relief may actually drain off the pressure that would force change. This is a strong claim because it predicts checkable consequences: his self-sabotage should continue unchanged in the next real opportunity despite his clear understanding; the explanation should keep arriving as a tidy recital rather than with the fear it describes; and naming the pattern in the moment he's about to sabotage should fail to interrupt it. I would test it by tracking his behavior at the next promotion rather than his ability to narrate the cause, by watching whether the account ever carries genuine feeling, and by seeing whether the insight ever shows up as a changed choice rather than a repeated story.",
+      "The strongest conclusion is that two years of insight without symptom change is good reason to change the plan toward exposure and response prevention — the first-line, best-supported treatment for contamination OCD — while keeping whatever understanding has genuinely helped, since meaning-focused work and ERP are complements rather than rivals. This is a strong, falsifiable claim: it predicts her washing and avoidance should fall once structured response prevention begins, that the prior insight-only years left the rituals essentially unchanged, and that combining the approaches should beat continuing insight alone. I would test it by introducing a graded ERP course and tracking her daily washing time and housebound hours, by reviewing whether her symptoms moved at all during the insight-only period, and by watching whether gains appear specifically once exposures start rather than from more talking — and I would revise toward the insight-only plan only if her rituals were already steadily declining without ERP.",
     explanation:
-      "Under the inverted standard, 'understanding the cause means he's changed' earns near-zero; top credit commits to intellectual-insight-only and names a next-opportunity test that could refute it.",
+      "Under the inverted standard, 'stay the course, the deep work just needs more time' earns near-zero; top credit commits to evidence-based ERP and names a does-washing-fall-once-response-prevention-starts test that could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "Over many months, a woman has repeatedly caught her lifelong habit of caretaking everyone at her own expense — first with her mother, then her boss, then her friends — and now she sets reasonable limits with all of them, holding firm even during a stressful week when she was exhausted. In one paragraph, propose the strongest conclusion about whether genuine change has taken hold and describe how you would test it.",
+      "A father is tortured by intrusive thoughts of harming his children, has never been violent, and is so frightened by the thoughts that he refuses to be alone with them and has quit his job to avoid 'risk.' A previous therapist treated him only with reassurance and avoidance. In one paragraph, propose the strongest conclusion about what the evidence supports and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that this is genuine working through: the same caretaking pattern has been recognized and acted on across several independent relationships, and because the new limit-setting held even under exhaustion, the change has begun to consolidate rather than depending on easy conditions. This is a strong claim because it predicts checkable consequences: the new behavior should keep appearing with brand-new people she hasn't discussed in therapy; it should survive future high-pressure stretches and guilt-inducing pushback; and she should report feeling the old urge to caretake and choosing against it rather than simply not feeling it. I would test it by watching for the limit-setting in unrehearsed relationships, by checking whether it endures the next genuinely stressful period, and by asking whether the change feels like an effortful choice she can describe rather than a mood that happened to lift.",
+        "The strongest conclusion is that these are classic ego-dystonic harm obsessions — marked by horror rather than any wish to act — that the reassurance and avoidance are compulsions feeding the cycle, and that the evidence-based treatment is exposure and response prevention, including imaginal exposure to the feared thoughts, with meaning-focused work optional alongside. This is a strong, falsifiable claim: it predicts the intrusions have grown worse the more he avoids, that his reaction is revulsion and fear rather than urge or plan, and that facing the thoughts without neutralizing will loosen their grip. I would test it by assessing his relationship to the thoughts (resistance and distress, not intent), by tracking whether avoidance has amplified the obsessions, and by beginning graded imaginal exposure with response prevention and watching the intrusions fade — and I would shift to a risk-focused plan only if he ever reported a genuine wish, plan, or pleasure connected to harming them.",
       yieldAnchors: [
-        "She caught the caretaking pattern across mother, boss, and friends",
-        "She now sets limits with all of them",
-        "The limits held during an exhausting, stressful week",
+        "Intrusive harm thoughts about his children",
+        "He has never been violent and is horrified",
+        "He quit his job to avoid risk",
       ],
       riskAnchors: [
-        "The behavior appears with brand-new, undiscussed people",
-        "It survives future high-pressure stretches and guilt",
-        "She feels the old urge and chooses against it",
+        "Intrusions worsened with avoidance",
+        "His reaction is revulsion, not urge",
+        "Facing thoughts without neutralizing loosens them",
       ],
       defeatedBy: [
-        "The limits collapse the moment she is stressed",
-        "Cross-context, stress-proof change tells us nothing real",
+        "He reports a real wish or plan to harm them",
+        "He feels pleasure rather than dread at the thoughts",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that this is genuine working through: the same caretaking pattern has been recognized and acted on across several independent relationships, and because the new limit-setting held even under exhaustion, the change has begun to consolidate rather than depending on easy conditions. This is a strong claim because it predicts checkable consequences: the new behavior should keep appearing with brand-new people she hasn't discussed in therapy; it should survive future high-pressure stretches and guilt-inducing pushback; and she should report feeling the old urge to caretake and choosing against it rather than simply not feeling it. I would test it by watching for the limit-setting in unrehearsed relationships, by checking whether it endures the next genuinely stressful period, and by asking whether the change feels like an effortful choice she can describe rather than a mood that happened to lift.",
+      "The strongest conclusion is that these are classic ego-dystonic harm obsessions — marked by horror rather than any wish to act — that the reassurance and avoidance are compulsions feeding the cycle, and that the evidence-based treatment is exposure and response prevention, including imaginal exposure to the feared thoughts, with meaning-focused work optional alongside. This is a strong, falsifiable claim: it predicts the intrusions have grown worse the more he avoids, that his reaction is revulsion and fear rather than urge or plan, and that facing the thoughts without neutralizing will loosen their grip. I would test it by assessing his relationship to the thoughts (resistance and distress, not intent), by tracking whether avoidance has amplified the obsessions, and by beginning graded imaginal exposure with response prevention and watching the intrusions fade — and I would shift to a risk-focused plan only if he ever reported a genuine wish, plan, or pleasure connected to harming them.",
     explanation:
-      "The inverted standard gives near-zero to 'cross-context, stress-proof change tells us nothing'; credit goes to the working-through conclusion that commits to consolidated change and names a stress-and-novelty test that could refute it.",
+      "The inverted standard gives near-zero to 'exposure is too dangerous, keep reassuring and avoiding'; top credit commits to imaginal ERP for ego-dystonic obsessions and names an assess-his-relationship-to-the-thoughts test that could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "A man has a single explosive session in which he rages and weeps about his childhood for the first time, and he leaves convinced he is 'finally healed.' Over the next several weeks his temper, his relationships, and his old habits carry on exactly as before. In one paragraph, propose the strongest conclusion about what happened and describe how you would test it.",
+      "A man with severe OCD has gained partial relief from a maximized SSRI but still spends three hours a day checking. His doctor suggests simply switching to yet another medication; the patient asks whether there's a better-supported path. In one paragraph, propose the strongest conclusion about what the evidence supports and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that he experienced catharsis rather than change: a powerful emotional release can feel like transformation, but without the slow work of recognizing and re-handling the pattern across situations, the underlying habits stay intact. This is a strong claim because it predicts checkable consequences: people who see him regularly should notice no concrete difference in the weeks that follow; his temper and relationship patterns should recur in fresh situations unchanged; and the feeling of being healed should fade as ordinary stress returns rather than translating into new behavior. I would test it by gathering observations from people in his daily life, by tracking whether any specific behavior actually shifts over the following weeks, and by checking whether the sense of transformation outlasts the first real provocation or only lived in the heat of that one session.",
+        "The strongest conclusion is that, with a partial response to a maximized SSRI, the best-supported next step is to add exposure and response prevention — the combination outperforms medication alone for residual OCD — rather than reflexively cycling to another pill, while keeping the medication that already helped. This is a strong, falsifiable claim: it predicts his three hours of daily checking should fall further once structured ERP begins, that the added benefit should track the exposure practice rather than any new drug, and that gains should hold as he keeps using response prevention. I would test it by adding ERP while holding his current SSRI steady and tracking daily checking time, by checking whether improvement follows the exposures rather than a medication change, and by watching whether dropping the ERP practice lets the checking creep back — and I would favor a medication switch only if a proper ERP trial added nothing.",
       yieldAnchors: [
-        "He had one explosive, tearful session",
-        "He left convinced he was healed",
-        "His temper, relationships, and habits continue unchanged",
+        "Partial relief from a maximized SSRI",
+        "Three hours a day checking",
+        "Doctor proposes another medication",
       ],
       riskAnchors: [
-        "Daily observers notice no concrete difference",
-        "His old patterns recur in fresh situations",
-        "The 'healed' feeling fades as stress returns",
+        "Checking falls further once ERP begins",
+        "Benefit tracks exposure, not a new drug",
+        "Gains hold with continued response prevention",
       ],
       defeatedBy: [
-        "Close observers report specific, lasting behavior change",
-        "A single emotional release equals being cured",
+        "A proper ERP trial adds nothing",
+        "His checking is already near zero on medication",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that he experienced catharsis rather than change: a powerful emotional release can feel like transformation, but without the slow work of recognizing and re-handling the pattern across situations, the underlying habits stay intact. This is a strong claim because it predicts checkable consequences: people who see him regularly should notice no concrete difference in the weeks that follow; his temper and relationship patterns should recur in fresh situations unchanged; and the feeling of being healed should fade as ordinary stress returns rather than translating into new behavior. I would test it by gathering observations from people in his daily life, by tracking whether any specific behavior actually shifts over the following weeks, and by checking whether the sense of transformation outlasts the first real provocation or only lived in the heat of that one session.",
+      "The strongest conclusion is that, with a partial response to a maximized SSRI, the best-supported next step is to add exposure and response prevention — the combination outperforms medication alone for residual OCD — rather than reflexively cycling to another pill, while keeping the medication that already helped. This is a strong, falsifiable claim: it predicts his three hours of daily checking should fall further once structured ERP begins, that the added benefit should track the exposure practice rather than any new drug, and that gains should hold as he keeps using response prevention. I would test it by adding ERP while holding his current SSRI steady and tracking daily checking time, by checking whether improvement follows the exposures rather than a medication change, and by watching whether dropping the ERP practice lets the checking creep back — and I would favor a medication switch only if a proper ERP trial added nothing.",
     explanation:
-      "The inverted standard gives near-zero to 'one release equals a cure'; credit goes to the catharsis-not-change conclusion that names a third-party and durability test that could refute it.",
+      "Near-zero goes to 'just keep switching medications' and to 'pills are a crutch, stop them'; top credit commits to adding ERP to an effective SSRI and names a does-checking-fall-with-ERP test that could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "A patient acts noticeably more open and assertive inside the therapy room and whenever his therapist is present or has just coached him, but the moment he is on his own — at work, at home, with friends — he reverts entirely to his old passive, closed-off self. In one paragraph, propose the strongest conclusion about whether real change is occurring and describe how you would test it.",
+      "A young woman with checking and counting rituals has decided treatment is pointless after reading that 'OCD is incurable.' She has never tried ERP or medication and is ready to give up on getting better. In one paragraph, propose the strongest conclusion about what the evidence actually supports and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that the change is so far context-bound to the therapy relationship: the new openness depends on the therapist's presence or prompting and has not yet generalized, which is the mark of an insight that hasn't been worked through into independent behavior. This is a strong claim because it predicts checkable consequences: the assertiveness should fail to appear in situations where the therapist plays no role; it should not survive when no one has primed him beforehand; and it should be absent precisely in the relationships that matter most to him outside the room. I would test it by looking for any unprompted assertive behavior in everyday settings, by asking the people in his life whether they see the openness he shows in session, and by checking whether the change can hold during a stretch with no recent coaching at all.",
+        "The strongest conclusion is that her pessimism is unwarranted: OCD is among the more treatable conditions, with ERP and SSRIs both well-supported and most patients improving substantially, so the fact that she has never tried either treatment — not any failure of treatment — best explains her despair. This is a strong, falsifiable claim: it predicts that a proper course of ERP should measurably reduce her checking and counting, that her belief 'nothing works' should soften as she sees early gains, and that her hopelessness traces to inexperience rather than a true ceiling. I would test it by starting a graded ERP course (with or without an SSRI) and tracking her ritual time over weeks, by noting whether her outlook shifts as symptoms drop, and by distinguishing never-tried from genuinely-tried-and-failed — and I would take her 'incurable' claim seriously only if well-delivered, fully-practiced treatment produced no change at all.",
       yieldAnchors: [
-        "He is open and assertive inside the therapy room",
-        "It appears only when the therapist is present or has coached him",
-        "He reverts to passivity once on his own",
+        "She believes OCD is incurable",
+        "She has never tried ERP or medication",
+        "She is ready to give up",
       ],
       riskAnchors: [
-        "Unprompted assertiveness appears in everyday settings",
-        "People in his life see the openness he shows in session",
-        "The change holds with no recent coaching",
+        "A course of ERP reduces her rituals",
+        "Her pessimism softens with early gains",
+        "Despair traces to inexperience, not a ceiling",
       ],
       defeatedBy: [
-        "He is reliably assertive when entirely on his own",
-        "Change confined to the therapy room is full recovery",
+        "Well-delivered treatment produces no change",
+        "She has already fully tried ERP and medication",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that the change is so far context-bound to the therapy relationship: the new openness depends on the therapist's presence or prompting and has not yet generalized, which is the mark of an insight that hasn't been worked through into independent behavior. This is a strong claim because it predicts checkable consequences: the assertiveness should fail to appear in situations where the therapist plays no role; it should not survive when no one has primed him beforehand; and it should be absent precisely in the relationships that matter most to him outside the room. I would test it by looking for any unprompted assertive behavior in everyday settings, by asking the people in his life whether they see the openness he shows in session, and by checking whether the change can hold during a stretch with no recent coaching at all.",
+      "The strongest conclusion is that her pessimism is unwarranted: OCD is among the more treatable conditions, with ERP and SSRIs both well-supported and most patients improving substantially, so the fact that she has never tried either treatment — not any failure of treatment — best explains her despair. This is a strong, falsifiable claim: it predicts that a proper course of ERP should measurably reduce her checking and counting, that her belief 'nothing works' should soften as she sees early gains, and that her hopelessness traces to inexperience rather than a true ceiling. I would test it by starting a graded ERP course (with or without an SSRI) and tracking her ritual time over weeks, by noting whether her outlook shifts as symptoms drop, and by distinguishing never-tried from genuinely-tried-and-failed — and I would take her 'incurable' claim seriously only if well-delivered, fully-practiced treatment produced no change at all.",
     explanation:
-      "The inverted standard gives near-zero to treating room-only change as recovery; credit goes to the context-bound conclusion that names an unprompted, real-world test that could refute it.",
+      "The inverted standard gives near-zero to 'she's right, OCD can't be treated'; top credit corrects with the strong ERP/SSRI evidence and names a does-a-course-reduce-her-rituals test that could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "A patient who grasped the source of her social anxiety handles it well whenever she is calm and rested — she speaks up, stays in conversations, lets herself be seen. But under real pressure, after a bad night or a stressful day, the old avoidance and silence come straight back. In one paragraph, propose the strongest conclusion about the durability of her change and describe how you would test it.",
+      "A man completes ERP with his washing rituals nearly gone, but a year later he develops new symmetry compulsions, and he notices both flared during periods of unspoken anger at his domineering father. He asks whether ERP 'didn't really work' or whether something deeper is at play. In one paragraph, propose the strongest conclusion about what the evidence supports for his ongoing care and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that her change is real but not yet consolidated: the new behavior holds under easy conditions and collapses under stress, which is exactly what insight looks like before it has been worked through enough to become automatic. This is a strong claim because it predicts checkable consequences: as working through continues, the new behavior should begin to survive stressful periods rather than only calm ones; she should become able to catch the avoidance specifically when she's depleted; and her relapses should grow shorter and shallower over time even if they don't vanish at once. I would test it by tracking how she does during genuinely stressful stretches over the coming months, by checking whether she can recognize and resist the avoidance when tired, and by watching whether the gap between her calm-day and bad-day behavior narrows as the work goes on.",
+        "The strongest conclusion is that the ERP genuinely worked on the washing — that gain is real and worth protecting — while the new symmetry compulsions are best met with more ERP plus, this time, meaning-focused work on the conflict the symptoms seem to track, since both flares cluster around unspoken anger at his father; ERP and psychodynamic understanding here are complements, not rivals. This is a strong, falsifiable claim: it predicts the washing should stay reduced even as new symptoms appear, that the symmetry rituals should fall with fresh ERP, and that both should ease as the warded-off anger at his father is named and worked through. I would test it by tracking the washing and the new compulsions separately, by checking whether the flares really coincide with periods of conflict with his father rather than occurring at random, and by adding meaning-focused work to ERP and watching whether symptom-shifting slows — and I would drop the conflict hypothesis if the flares bear no relation to his father and respond fully to ERP alone.",
       yieldAnchors: [
-        "She handles the anxiety well when calm and rested",
-        "She speaks up and stays present under easy conditions",
-        "The old avoidance returns under stress and fatigue",
+        "Washing rituals nearly gone after ERP",
+        "New symmetry compulsions a year later",
+        "Both flared during unspoken anger at his father",
       ],
       riskAnchors: [
-        "The new behavior begins to survive stressful periods",
-        "She catches the avoidance when depleted",
-        "Relapses grow shorter and shallower over time",
+        "Washing stays reduced as new symptoms appear",
+        "Symmetry rituals fall with fresh ERP",
+        "Both ease as the anger is named and worked through",
       ],
       defeatedBy: [
-        "The change never survives any stress no matter how long the work continues",
-        "Stress-dependent behavior tells us nothing about consolidation",
+        "The flares bear no relation to his father",
+        "The original washing returned, showing ERP failed",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that her change is real but not yet consolidated: the new behavior holds under easy conditions and collapses under stress, which is exactly what insight looks like before it has been worked through enough to become automatic. This is a strong claim because it predicts checkable consequences: as working through continues, the new behavior should begin to survive stressful periods rather than only calm ones; she should become able to catch the avoidance specifically when she's depleted; and her relapses should grow shorter and shallower over time even if they don't vanish at once. I would test it by tracking how she does during genuinely stressful stretches over the coming months, by checking whether she can recognize and resist the avoidance when tired, and by watching whether the gap between her calm-day and bad-day behavior narrows as the work goes on.",
+      "The strongest conclusion is that the ERP genuinely worked on the washing — that gain is real and worth protecting — while the new symmetry compulsions are best met with more ERP plus, this time, meaning-focused work on the conflict the symptoms seem to track, since both flares cluster around unspoken anger at his father; ERP and psychodynamic understanding here are complements, not rivals. This is a strong, falsifiable claim: it predicts the washing should stay reduced even as new symptoms appear, that the symmetry rituals should fall with fresh ERP, and that both should ease as the warded-off anger at his father is named and worked through. I would test it by tracking the washing and the new compulsions separately, by checking whether the flares really coincide with periods of conflict with his father rather than occurring at random, and by adding meaning-focused work to ERP and watching whether symptom-shifting slows — and I would drop the conflict hypothesis if the flares bear no relation to his father and respond fully to ERP alone.",
     explanation:
-      "The inverted standard gives near-zero to 'stress-dependent behavior tells us nothing'; credit goes to the real-but-not-consolidated conclusion that names a narrowing-gap-under-stress test that could refute it.",
+      "Near-zero goes to 'ERP failed' and to 'symptoms are random, nothing connects them'; top credit protects the real ERP gain, adds ERP plus meaning work for the conflict-linked new symptoms, and names a do-the-flares-track-the-father test that could refute it.",
   },
 ];
 
 export const section: SectionContent = {
-  slug: "insight-and-working-through",
-  title: "Insight and Working Through",
+  slug: "psychodynamic-meets-evidence",
+  title: "Where Psychodynamic Meets the Evidence: ERP, CBT, and Integration",
   weekNumber: 1,
   blurb:
-    "Understanding why you do something rarely changes it on its own; real change comes from working through — catching the same pattern again and again, with feeling, across many situations until it finally shifts.",
+    "OCD has genuinely effective, well-tested treatments — exposure and response prevention (ERP), cognitive behavioral therapy, and medication — and a meaning-focused, psychodynamic understanding works best when it complements those proven tools rather than replacing them. This section is about reading what the evidence actually supports for a given case, and naming the cheapest observation that would change the plan.",
   lectureTitle:
-    "1.6 Insight and Working Through: how change actually occurs",
-  body: `# Insight and Working Through
+    "1.6 Where Psychodynamic Meets the Evidence: ERP, CBT, and integration",
+  body: `# Where Psychodynamic Meets the Evidence: ERP, CBT, and Integration
 
-One of the most surprising lessons in therapy is that knowing why you do something is not the same as being able to stop. People often arrive expecting that the moment they finally understand the root of a problem, the problem will dissolve. It almost never works that way. A patient can explain his fear of commitment flawlessly and keep fleeing every relationship; a woman can name her perfectionism precisely and keep unraveling over a typo. Understanding is a beginning, not an ending. This section is about the difference between the flash of insight and the slow labor — called **working through** — that actually changes how a person lives.
+It is one thing to understand what an obsession might mean; it is another to know what actually helps a person stop washing until their skin bleeds. OCD is, happily, one of the more treatable conditions in mental health — and that is not a matter of opinion but of decades of careful study. This section is about taking the evidence seriously: knowing which treatments have the strongest track record, knowing where a meaning-focused understanding fits, and resisting two opposite temptations — the purist who dismisses proven methods as "shallow," and the defeatist who shrugs that "nothing really works." The strongest reasoning here commits to the best-supported plan for the case in front of you and names the cheap observation that would tell you to change course.
 
-## Insight is not change
+## What the evidence actually says about OCD
 
-It is tempting to treat a good explanation as a finished job. But an explanation is a map, and having a map is not the same as walking the road. The clearest sign of this gap is the patient who can narrate his pattern in detail while behaving exactly as before. The understanding is genuine, yet it floats above his life without touching it. The strongest reading of such a case is not "he's cured because he knows the cause" — the unchanged behavior defeats that — and not "the mind is unknowable, so who can say." It is the specific claim that this is **insight without change**, and the way to confirm it is to watch behavior, not narration: does anything actually shift in the next real situation?
+For OCD specifically, the research points in a clear direction. Exposure and response prevention — gradually facing the feared thing while resisting the ritual — has the strongest record of any treatment, and certain medications (SSRIs, often at higher doses than for depression) also help many people. Most patients who get a proper course of these treatments improve substantially. That is the backdrop against which every individual decision should be read: when someone has never tried the well-supported options, "nothing works for me" usually means "I haven't yet had what works."
 
-## Intellectual versus emotional insight
+## ERP: facing the fear, dropping the ritual
 
-There are two very different ways to "understand" something. **Intellectual insight** is knowing the explanation the way you know a fact — flat, tidy, often recited with a faint pride. **Emotional insight** is feeling the truth of it in the moment it matters, with the original feeling alive in the room. The two look similar on paper but behave completely differently. A man who says "I know I push people away" in a bored monotone, year after year, is showing intellectual insight; a woman who connects her people-pleasing to soothing her anxious mother *with tears* and then starts saying no is showing emotional insight. A simple test separates them: does the understanding arrive with feeling, and does it ever interrupt the pattern as it happens?
+ERP can sound harsh — why deliberately make an anxious person more anxious? But the brief, planned distress is the mechanism, not a side effect. When a person touches the doorknob and does not wash, the feared catastrophe does not come, and the anxiety, given time, falls on its own. Do that again and again, up a graded ladder of difficulty, and the whole loop weakens. The distress during a good exposure should fall across sessions; if it only ever mounts, something about the delivery — too steep a step, too little engagement — needs fixing, not abandoning.
 
-## Working through: the same lesson, many rooms
+## CBT and medication
 
-Real change usually comes not from one realization but from meeting the same pattern over and over, in situation after situation, until recognizing it becomes second nature. This is **working through**. A woman who sees that she chooses unavailable partners will catch the pull with a new date, then in a flirtation at work, then in a one-sided friendship — each time a little earlier, until one day she acts differently. The signature of working through is a pattern recognized across many separate contexts, caught sooner each time, and eventually interrupted. That is why the strongest conclusion about a promising change asks whether it shows up in **fresh, unrehearsed situations**, not just the ones already discussed.
+Cognitive and behavioral work helps people see the faulty rules driving the rituals ("a thought about harm means I am dangerous") and test them against reality. Medication can take enough edge off the anxiety that the harder work of exposure becomes possible. For many people the combination of ERP and an SSRI outperforms either alone, especially when symptoms are severe or only partly relieved by one approach. Knowing this keeps us from two errors: treating medication as a "crutch" to be refused, and treating it as a complete answer that makes therapy unnecessary.
 
-## Why change is slow
+## Where a meaning-focused view fits
 
-If insight alone could rewire a habit, therapy would take an afternoon. It doesn't, because patterns are overlearned — practiced thousands of times, automatic, tied to old feelings of safety. Undoing that takes repetition of a new kind: feeling the old pull and choosing against it, again and again, until the new response becomes the automatic one. Catharsis — a dramatic emotional release — can feel like transformation, but a single sobbing session about a cold father changes nothing by itself if daily life rolls on unchanged. Change that is real tends to be **gradual, effortful, and reported as a struggle**, not a sudden, frictionless rebirth.
+So what becomes of the psychodynamic, meaning-focused understanding this course has been building? It complements the evidence-based core; it does not compete with it. Understanding why a particular person dreads a particular thing can make exposures sharper and more personal, can strengthen the alliance so a frightened patient stays in treatment, and can address the older themes — shame, unworthiness, buried conflict — that the exposures themselves do not touch. The integration is the point: ERP to break the loop, meaning to address what the loop was carrying.
 
-## When insight becomes a defense
+## When insight should complement, not replace
 
-Strangely, understanding can itself become a way to avoid changing. A patient who arrives every few weeks with an exciting new insight, never building on the last, may be using the *production* of insights to feel like he's working while sidestepping the harder task of applying one. A man who labels his own intellectualizing in real time can use that very labeling to keep feeling at bay. When insight substitutes for change rather than leading to it, the tell is simple: lots of understanding, no movement. The strong move is to notice the defense and test it — can he ever stay with one uncomfortable theme instead of generating a fresh theory?
+The clearest sign that meaning work belongs is a residue that the symptom relief leaves behind: a man whose washing is gone but who still feels "morally dirty," a woman whose rituals lifted but who keeps choosing partners who belittle her. These older patterns have their own history, independent of the OCD, and respond to being understood and worked through. The trap is letting insight stand in for the proven treatment — three years of eloquent self-explanation while the rituals consume the day is not "deep work in progress"; it is a plan that needs ERP added to it.
 
-## Reading whether real change is happening
+## The two dodges: purism and despair
 
-So how do you tell genuine change from its convincing imitations? You commit to a specific reading and name the cheap observations that could prove you wrong. If you think change is real and consolidating, it should appear in new situations, carry feeling, and **survive stress** — and you can watch for relapse on a bad day. If you think it's only intellectual, behavior should stay flat no matter how good the explanation. If you suspect it's context-bound, it should vanish the moment the therapist isn't prompting it. The weak answers are always the same: "he understands it, so he's fixed" (an overreach the behavior defeats) and "people are too complex to say" (a refusal that ignores the evidence in front of you).
+There are two ways to go wrong here, and they look like opposites. The first is anti-evidence purism: dismissing ERP as "just symptom-suppression," insisting that only uncovering the root can truly cure, calling exposure "cruel." The second is therapeutic defeatism: "OCD is incurable," "nothing really works," "no approach beats any other." Both ignore what the evidence plainly shows, and both leave a treatable person untreated. Under this course's inverted grading, both earn near-zero — they refuse to commit where the evidence supports commitment.
+
+## Reading the evidence — and naming a test
+
+The honest move is the same as everywhere else in this course: commit to the best-supported reading and name the cheap observation that could prove you wrong. "Add ERP to her partially-effective medication" is a real claim, because it predicts her ritual time should fall once exposures begin — and you can measure that. "Keep the ERP gains and add meaning work for the leftover shame" is a real claim, because it predicts the rituals stay gone while the older theme persists on its own history — and you can check that too. The weak move is to stop at "she has OCD and should get help" (which decides nothing), and the worst move is either dodge. The strongest plan is the one that both fits the evidence and spells out the single result that would make you revise it.
 
 ## In the real world
 
-Suppose a friend has been in therapy for a year and tells you he "totally gets" why he's so defensive — yet he's just as prickly as ever at dinner. The dodge is to nod along ("at least he understands himself now") or to shrug ("people don't really change"). A better move commits to a reading and a test. Maybe this is intellectual insight that hasn't been worked through: then his defensiveness should keep showing up unchanged, the explanation should stay a recital without feeling, and naming it mid-argument shouldn't soften him. Or maybe change is genuinely starting: then you'd see him catch himself across different situations, feel the old prickle and choose otherwise, and hold the new response even on a hard day. Either way, you've traded a vague verdict for a testable one — and you know exactly which cheap observation would tell you you're wrong.`,
+Suppose a friend with disabling checking tells you she's read that OCD is a lifelong disease nothing can fix, so she won't bother trying. The dodge is to agree sympathetically — it sounds kind, but it abandons her to a treatable illness. The evidence-based move commits to a reading and a test: OCD responds well to ERP and to medication, most people improve, and she has simply never tried either — so the prediction is that a proper course should measurably reduce her checking and that her despair should ease as she sees the first gains. If well-delivered, fully-practiced treatment truly changed nothing, you'd revise. But you don't start from surrender, and you don't start from purism. You start from what the evidence supports — and you name exactly what would tell you you're wrong.`,
   homework: {
     mcq,
     hybrid,

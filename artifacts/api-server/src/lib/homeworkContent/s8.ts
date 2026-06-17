@@ -9,407 +9,407 @@ const mcq: HomeworkItem[] = [
   {
     itemType: "mc",
     prompt:
-      "Mid-session, a patient describing how no one in his family ever comforted him says, 'so I never went to my fath—... to you with anything,' correcting 'father' to 'you,' the therapist, then quickly moves on. Which conclusion best follows?",
+      "At intake, a new patient describes two hours of daily hand-washing set off by touching doorknobs, plus a fear of contaminating his baby daughter. The clinician feels tempted to start exposures in the first session. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The patient may be relating to the therapist as he once related to his father — the slip and the quick move past it suggest an out-of-awareness template is being replayed in the room; test whether he reacts to the therapist's silences the way he describes his father's, whether the same 'no one comforts me' theme appears with other authority figures, and whether gently naming the slip brings relief or a flash of anxiety.",
+        text: "Before any exposure, the strongest first move is a shared formulation — mapping the exact triggers, the feared catastrophe (harming his daughter), the rituals, and what they accomplish — because aiming exposures at the wrong link wastes the work; test whether the washing tracks the daughter-contamination fear specifically, whether avoidance has quietly spread beyond washing, and whether he can name the feared outcome the ritual is meant to prevent.",
         credit: 1.0,
       },
       {
-        text: "It's probably about his father somehow; we could keep exploring his family history.",
+        text: "It's probably contamination OCD; we could start some exposures soon.",
         credit: 0.6,
       },
       {
-        text: "He seems a little flustered by the slip.",
+        text: "He seems to wash his hands a lot.",
         credit: 0.3,
       },
       {
-        text: "The slip proves a single repressed trauma is secretly running his whole life and must be dug out before therapy can continue.",
+        text: "Since the symptom is obvious, a formulation is a waste of time and exposures should begin the first hour no matter what the details turn out to be.",
         credit: 0,
       },
     ],
     correctAnswer:
-      "The patient may be relating to the therapist as he once related to his father — the slip and the quick move past it suggest an out-of-awareness template is being replayed in the room; test whether he reacts to the therapist's silences the way he describes his father's, whether the same 'no one comforts me' theme appears with other authority figures, and whether gently naming the slip brings relief or a flash of anxiety.",
+      "Before any exposure, the strongest first move is a shared formulation — mapping the exact triggers, the feared catastrophe (harming his daughter), the rituals, and what they accomplish — because aiming exposures at the wrong link wastes the work; test whether the washing tracks the daughter-contamination fear specifically, whether avoidance has quietly spread beyond washing, and whether he can name the feared outcome the ritual is meant to prevent.",
     explanation:
-      "Top credit reads the slip as transference — an old father-template replayed with the therapist — and names checkable observations; the 'one repressed trauma running everything' reading is the lurid overreach a single slip can't support.",
+      "Top credit reads the case as sitting at the assessment-and-formulation step and names checkable mapping tasks; 'skip formulation, the symptom is obvious' is the overreach the specific harm-fear and hidden avoidance defeat.",
   },
   {
     itemType: "mc",
     prompt:
-      "A patient who has been talking freely about her week goes completely silent the moment she begins to mention her sister, looks away, and after a long pause says, 'anyway, it doesn't matter.' Which conclusion best follows?",
+      "A patient with checking compulsions says in the first session, 'I've done therapy before and they just shoved me into the scariest stuff and I quit — are you going to do that?' and watches the clinician carefully. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "She seems to have lost her train of thought about her sister.",
+        text: "He seems nervous about starting therapy.",
         credit: 0.3,
       },
       {
-        text: "The silence and 'it doesn't matter' arriving exactly at the sister suggest she is avoiding something painful tied to that relationship, not running out of things to say; test whether she reliably goes quiet only on sister-related topics, whether her body tightens as she nears it, and whether gently noting the avoidance opens the topic rather than shutting it down.",
-        credit: 1.0,
-      },
-      {
-        text: "What goes on in someone's mind during a silence is unknowable, so the pause tells us nothing.",
+        text: "His prior dropout proves he is untreatable and that no working relationship can be built with checking OCD.",
         credit: 0,
       },
       {
-        text: "It's probably an uncomfortable subject; we could come back to her sister later.",
+        text: "His question marks the case as sitting at the alliance-building stage — early exposure work will fail without a collaborative, graded plan he helps design and can trust; test whether his engagement rises when he's given a say in the pace, whether naming the past rupture lowers his guard, and whether he stays in the room once exposures are introduced gradually rather than forced.",
+        credit: 1.0,
+      },
+      {
+        text: "He's probably worried about the approach; we could reassure him it'll be fine.",
         credit: 0.6,
       },
     ],
     correctAnswer:
-      "The silence and 'it doesn't matter' arriving exactly at the sister suggest she is avoiding something painful tied to that relationship, not running out of things to say; test whether she reliably goes quiet only on sister-related topics, whether her body tightens as she nears it, and whether gently noting the avoidance opens the topic rather than shutting it down.",
+      "His question marks the case as sitting at the alliance-building stage — early exposure work will fail without a collaborative, graded plan he helps design and can trust; test whether his engagement rises when he's given a say in the pace, whether naming the past rupture lowers his guard, and whether he stays in the room once exposures are introduced gradually rather than forced.",
     explanation:
-      "Full credit reads the timed silence as avoidance of a specific painful topic and names disconfirming observations; 'a silence is unknowable' is the refusal the precise, sister-triggered timing defeats.",
+      "Full credit reads the case as needing alliance-building before exposure and names tests of engagement; 'he is untreatable' is the overreach his very willingness to ask and stay defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "Just after admitting through tears that he feels like a failure as a father, a patient abruptly brightens and starts talking in detail about last night's football game. Which conclusion best follows?",
+      "Eager to get better fast, a contamination patient insists on starting with the single hardest task on her list — sitting on a public restroom floor — before any easier steps. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The sudden swerve to football right after a painful admission looks like a defensive move away from unbearable feeling, not a real change of interest; test whether these jumps reliably follow emotional peaks, whether slowing him down brings the feeling back, and whether the topic he flees to is consistently light and impersonal.",
-        credit: 1.0,
-      },
-      {
-        text: "He probably got uncomfortable; we could ask him to stay with the feeling.",
+        text: "She probably wants to rush; we could suggest slowing down.",
         credit: 0.6,
       },
       {
-        text: "He seems to have lost interest in the topic.",
+        text: "Her wish to leap to the top of the ladder marks a planning step: a graded hierarchy is what makes exposure tolerable enough to actually complete without ritualizing, so the strong move is to build that ladder with her rather than honor the leap; test whether she can stay in an easier exposure without washing first, whether a too-hard start drives covert rituals or escape, and whether steady graded steps hold her engagement better than one overwhelming plunge.",
+        credit: 1.0,
+      },
+      {
+        text: "She seems very motivated to start.",
         credit: 0.3,
       },
       {
-        text: "People's minds wander all the time, so jumping to football means nothing about what he was feeling.",
+        text: "Since she's motivated, throw her straight into the worst exposure — hierarchies are coddling and motivated patients don't need them.",
         credit: 0,
       },
     ],
     correctAnswer:
-      "The sudden swerve to football right after a painful admission looks like a defensive move away from unbearable feeling, not a real change of interest; test whether these jumps reliably follow emotional peaks, whether slowing him down brings the feeling back, and whether the topic he flees to is consistently light and impersonal.",
+      "Her wish to leap to the top of the ladder marks a planning step: a graded hierarchy is what makes exposure tolerable enough to actually complete without ritualizing, so the strong move is to build that ladder with her rather than honor the leap; test whether she can stay in an easier exposure without washing first, whether a too-hard start drives covert rituals or escape, and whether steady graded steps hold her engagement better than one overwhelming plunge.",
     explanation:
-      "Top credit reads the timed swerve as a defense against painful feeling and names checks; 'minds wander all the time' is the dismissal the tight coupling to the emotional peak defeats.",
+      "Top credit reads the case as needing a graded hierarchy and names tests of tolerable exposure; 'skip the ladder, motivation is enough' is the overreach the risk of escape and covert ritualizing defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "Whenever the conversation turns to her loneliness, a patient cracks a quick self-deprecating joke and laughs, then watches the therapist to see if they laugh too. Which conclusion best follows?",
+      "Months into successful ERP, a man's stove-checking has nearly stopped — but a brand-new obsession, an intrusive fear of stabbing his wife, has appeared and is now consuming him. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Her constant joking proves she is secretly a deeply broken person hiding catastrophic despair.",
-        credit: 0,
-      },
-      {
-        text: "She seems to use humor a lot.",
-        credit: 0.3,
-      },
-      {
-        text: "The joke arrives exactly when loneliness comes up and is aimed at getting the therapist to laugh, which suggests humor is a defense that both blunts the feeling and manages how the therapist sees her; test whether the jokes cluster only around painful topics, whether the feeling surfaces when the therapist doesn't laugh along, and whether naming the pattern lets her stay with the loneliness a beat longer.",
+        text: "The fresh harm-obsession arriving just as checking faded suggests the work has relieved the surface ritual without touching the conflict the symptom was carrying, so the same anxiety has found a new outlet; test whether the new obsession shares the old one's emotional theme of fearing he'll damage what he loves, whether it flares in the same situations the checking used to, and whether pairing continued ERP with attention to that underlying fear stops the symptom from simply migrating again.",
         credit: 1.0,
       },
       {
-        text: "It's probably a way to cope; we could gently point out the joking.",
+        text: "It's probably related to the old symptom; we could keep doing exposures.",
         credit: 0.6,
+      },
+      {
+        text: "He seems to have a new worry now.",
+        credit: 0.3,
+      },
+      {
+        text: "The new violent thought proves he is secretly dangerous and the real risk to his wife was there all along.",
+        credit: 0,
       },
     ],
     correctAnswer:
-      "The joke arrives exactly when loneliness comes up and is aimed at getting the therapist to laugh, which suggests humor is a defense that both blunts the feeling and manages how the therapist sees her; test whether the jokes cluster only around painful topics, whether the feeling surfaces when the therapist doesn't laugh along, and whether naming the pattern lets her stay with the loneliness a beat longer.",
+      "The fresh harm-obsession arriving just as checking faded suggests the work has relieved the surface ritual without touching the conflict the symptom was carrying, so the same anxiety has found a new outlet; test whether the new obsession shares the old one's emotional theme of fearing he'll damage what he loves, whether it flares in the same situations the checking used to, and whether pairing continued ERP with attention to that underlying fear stops the symptom from simply migrating again.",
     explanation:
-      "Full credit reads the timed joke as a defense with a relational pull and names checks; the 'secretly catastrophic despair' reading is the melodramatic overreach a few well-placed jokes can't support.",
+      "Top credit reads symptom substitution as a sign the meaning needs working alongside ERP and names a shared-theme test; 'he's secretly dangerous' is the overreach that confuses an ego-dystonic OCD fear with real intent.",
   },
   {
     itemType: "mc",
     prompt:
-      "A usually polite patient snaps with surprising heat when the therapist reschedules one session, saying 'you clearly have better things to do than me' — a reaction far bigger than the small change warrants. Which conclusion best follows?",
+      "An ERP patient who had been improving keeps texting the clinician between sessions — 'Did I do the exposure right? Are you sure I'm not contaminated?' — and her progress has stalled exactly as the texts increased. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He's probably more sensitive to rejection than he lets on; we could explore it.",
-        credit: 0.6,
-      },
-      {
-        text: "The size of the reaction outstrips its trigger, which suggests the rescheduling tapped an old template about being unimportant to people he depends on, now aimed at the therapist; test whether the same out-of-proportion hurt appears with partners or bosses over small slights, whether it matches how a caregiver once treated him, and whether it cools when the therapist reliably follows through.",
-        credit: 1.0,
-      },
-      {
-        text: "He seems annoyed about the schedule change.",
+        text: "She seems to text a lot between sessions.",
         credit: 0.3,
       },
       {
-        text: "Everyone gets irritated by schedule changes, so there's nothing here worth interpreting.",
+        text: "The reassurance texts have become a new compulsion that quietly cancels the exposures — relief from the clinician's answer does the same anxiety-lowering work the old ritual did, so the plateau makes sense; test whether her gains resume when between-session reassurance is gently withheld, whether the urge to text spikes right after harder exposures, and whether she can tolerate the uncertainty when the clinician reflects the question back instead of answering it.",
+        credit: 1.0,
+      },
+      {
+        text: "She's probably seeking reassurance; we could talk about the texting.",
+        credit: 0.6,
+      },
+      {
+        text: "Answering every question fully and instantly is the caring thing to do, and refusing would just be cold and damage the relationship.",
         credit: 0,
       },
     ],
     correctAnswer:
-      "The size of the reaction outstrips its trigger, which suggests the rescheduling tapped an old template about being unimportant to people he depends on, now aimed at the therapist; test whether the same out-of-proportion hurt appears with partners or bosses over small slights, whether it matches how a caregiver once treated him, and whether it cools when the therapist reliably follows through.",
+      "The reassurance texts have become a new compulsion that quietly cancels the exposures — relief from the clinician's answer does the same anxiety-lowering work the old ritual did, so the plateau makes sense; test whether her gains resume when between-session reassurance is gently withheld, whether the urge to text spikes right after harder exposures, and whether she can tolerate the uncertainty when the clinician reflects the question back instead of answering it.",
     explanation:
-      "Top credit reads the disproportion as transference of an old 'I don't matter' template and names disconfirming tests; 'everyone gets irritated' is the refusal the size of the reaction defeats.",
+      "Full credit reads reassurance-seeking as a ritual stalling ERP and names a withhold-and-watch test; 'always answer fully or you're cold' is the dodge that mistakes accommodation for care.",
   },
   {
     itemType: "mc",
     prompt:
-      "A patient is punctual for months but starts arriving fifteen minutes late — only for the sessions that follow ones where he opened up about his marriage. Which conclusion best follows?",
+      "A patient's contamination rituals barely improve despite good in-session work; it emerges that his wife wipes down every surface, opens all doors, and handles the mail for him so he 'doesn't have to.' Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He seems to be having trouble with timing lately.",
-        credit: 0.3,
-      },
-      {
-        text: "His lateness proves he wants to quit therapy and secretly hates the therapist.",
+        text: "He's lucky to have a supportive wife, so there's nothing in the home setup worth changing.",
         credit: 0,
       },
       {
-        text: "The lateness is patterned — it follows exactly the sessions that touched his marriage — which suggests an out-of-awareness pull to retreat from material that got too close, not random scheduling trouble; test whether the lateness tracks marital-topic sessions specifically, whether he feels relief at losing the time, and whether naming the pattern surfaces anxiety about what he revealed.",
+        text: "It's probably about the home situation; we could mention it to his wife.",
+        credit: 0.6,
+      },
+      {
+        text: "The wife's helping is family accommodation that performs the avoidance for him, so the loop keeps running outside session no matter what happens inside it — the arc now needs the accommodation addressed; test whether his out-of-session anxiety has any room to extinguish given she removes every trigger, whether his symptoms ease as she gradually steps back from the rituals, and whether the couple can tolerate the distress that surfaces when she stops.",
         credit: 1.0,
       },
       {
-        text: "It's probably avoidance of something; we could ask about the timing.",
-        credit: 0.6,
+        text: "He seems to get a lot of help at home.",
+        credit: 0.3,
       },
     ],
     correctAnswer:
-      "The lateness is patterned — it follows exactly the sessions that touched his marriage — which suggests an out-of-awareness pull to retreat from material that got too close, not random scheduling trouble; test whether the lateness tracks marital-topic sessions specifically, whether he feels relief at losing the time, and whether naming the pattern surfaces anxiety about what he revealed.",
+      "The wife's helping is family accommodation that performs the avoidance for him, so the loop keeps running outside session no matter what happens inside it — the arc now needs the accommodation addressed; test whether his out-of-session anxiety has any room to extinguish given she removes every trigger, whether his symptoms ease as she gradually steps back from the rituals, and whether the couple can tolerate the distress that surfaces when she stops.",
     explanation:
-      "Full credit reads the patterned lateness as resistance to threatening material and names a topic-specificity test; 'he wants to quit and hates the therapist' is the overreach the otherwise faithful attendance defeats.",
+      "Top credit reads stalled progress as driven by family accommodation and names a step-back test; 'he's just lucky, nothing to change' is the dodge the symptom-maintaining help defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "Asked how she felt about her mother's harsh criticism, a patient says flatly, 'It's totally fine, I don't care,' while her jaw tightens and her eyes fill. Which conclusion best follows?",
+      "After his symmetry-and-counting rituals fade with ERP, a previously placid man becomes aware of a simmering anger at his father he says he 'never knew was there,' and it surfaces in the same moments the counting used to. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The mismatch between 'I don't care' and the tightening jaw and welling eyes suggests she does care and is holding the feeling out of awareness, not that the criticism is truly neutral to her; test whether the bodily signs reliably appear on this topic, whether her tone softens when the contradiction is gently named, and whether she can recall other times she insisted she was 'fine' while clearly not.",
-        credit: 1.0,
-      },
-      {
-        text: "She probably cares more than she's saying; we could note the mismatch.",
-        credit: 0.6,
-      },
-      {
-        text: "She seems a bit tense talking about her mother.",
+        text: "He seems to be feeling some anger lately.",
         credit: 0.3,
       },
       {
-        text: "If she says she's fine, then she's fine — we can't claim to know her feelings better than she does.",
+        text: "With the ritual no longer absorbing it, a feeling the counting had been managing — anger at his father — is now reaching awareness, which marks a shift from symptom relief into working through the conflict beneath it; test whether the anger arises in the very situations that used to trigger counting, whether staying with the feeling rather than re-ritualizing keeps the symptom from returning, and whether naming the conflict deepens relief rather than worsening it.",
+        credit: 1.0,
+      },
+      {
+        text: "It's probably connected to the old ritual; we could explore his family.",
+        credit: 0.6,
+      },
+      {
+        text: "The anger means the ERP backfired and made him worse, so the symptom work should be undone.",
         credit: 0,
       },
     ],
     correctAnswer:
-      "The mismatch between 'I don't care' and the tightening jaw and welling eyes suggests she does care and is holding the feeling out of awareness, not that the criticism is truly neutral to her; test whether the bodily signs reliably appear on this topic, whether her tone softens when the contradiction is gently named, and whether she can recall other times she insisted she was 'fine' while clearly not.",
+      "With the ritual no longer absorbing it, a feeling the counting had been managing — anger at his father — is now reaching awareness, which marks a shift from symptom relief into working through the conflict beneath it; test whether the anger arises in the very situations that used to trigger counting, whether staying with the feeling rather than re-ritualizing keeps the symptom from returning, and whether naming the conflict deepens relief rather than worsening it.",
     explanation:
-      "Top credit reads the body-words contradiction as feeling kept out of awareness and names checks; 'if she says she's fine, she's fine' is the refusal the welling eyes and clenched jaw defeat.",
+      "Full credit reads the emerging feeling as the working-through phase opening and names a same-trigger test; 'the ERP backfired' is the overreach the symptom relief and surfacing meaning defeat.",
   },
   {
     itemType: "mc",
     prompt:
-      "A few sessions in, a patient tells the therapist, 'You're the only person who has ever truly understood me — you're nothing like everyone else in my life.' Which conclusion best follows?",
+      "After a year of work, a checking patient now resists most urges on his own, recovers quickly from the occasional slip, and recently handled a new contamination worry by building his own exposure without calling the clinician. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He's probably idealizing the therapist a bit; we could keep an eye on it.",
+        text: "He should stay in weekly therapy indefinitely, because stopping at any point guarantees full relapse.",
+        credit: 0,
+      },
+      {
+        text: "He's probably doing well; we could think about wrapping up sometime.",
         credit: 0.6,
       },
       {
-        text: "He seems to really appreciate the therapy.",
-        credit: 0.3,
-      },
-      {
-        text: "Crowning the therapist as uniquely perfect this early, before being truly known, looks like a template of splitting people into all-good and all-bad being placed onto the therapist; test whether he tends to swing to harsh disappointment when the therapist inevitably falls short, whether his past relationships show the same idealize-then-crash arc, and whether his descriptions of others cluster at the extremes.",
+        text: "His independent use of the skills on a brand-new trigger marks the case as approaching termination readiness — he has internalized the method rather than leaning on the clinician — so the strong move is to taper while building relapse-prevention; test whether he keeps recovering from slips without help as sessions space out, whether he can plan and run an exposure unprompted, and whether his gains hold over a deliberate gap between sessions.",
         credit: 1.0,
       },
       {
-        text: "His glowing praise proves the therapy is working perfectly and that he is essentially healed.",
-        credit: 0,
+        text: "He seems to be handling things on his own.",
+        credit: 0.3,
       },
     ],
     correctAnswer:
-      "Crowning the therapist as uniquely perfect this early, before being truly known, looks like a template of splitting people into all-good and all-bad being placed onto the therapist; test whether he tends to swing to harsh disappointment when the therapist inevitably falls short, whether his past relationships show the same idealize-then-crash arc, and whether his descriptions of others cluster at the extremes.",
+      "His independent use of the skills on a brand-new trigger marks the case as approaching termination readiness — he has internalized the method rather than leaning on the clinician — so the strong move is to taper while building relapse-prevention; test whether he keeps recovering from slips without help as sessions space out, whether he can plan and run an exposure unprompted, and whether his gains hold over a deliberate gap between sessions.",
     explanation:
-      "Full credit reads premature idealization as a transference of an all-good/all-bad template and names a predicted crash; 'the praise proves he's healed' is the overreach the early, unearned idealization defeats.",
+      "Top credit reads independent skill use as termination readiness and names a session-spacing test; 'stay weekly forever or relapse' is the overreach his demonstrated independence defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "While describing yet another friendship that ended when he pushed the person away, a patient pauses and says slowly, 'Huh... I think I always do this before they can leave me first.' Which conclusion best follows?",
+      "Three sessions before the planned final exposure to his worst fear, a patient who has struggled all year suddenly announces he's 'completely cured,' feels no anxiety at all, and sees no reason to keep going. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He seems to be realizing his friendships keep ending.",
-        credit: 0.3,
-      },
-      {
-        text: "He is catching a real pattern in the moment — pushing people away preemptively to avoid being left — which is the kind of emotional insight worth building on, though noticing it once won't change it; test whether the same push-away move shows up across several relationships, whether it appears in how he treats the therapist, and whether catching it in new situations over time begins to loosen it.",
-        credit: 1.0,
-      },
-      {
-        text: "He's probably onto something; we could explore that idea.",
+        text: "He's probably feeling better; we could check whether he's really ready to stop.",
         credit: 0.6,
       },
       {
-        text: "Now that he has seen the pattern, the problem is solved and the behavior will stop on its own.",
+        text: "A total 'cure' appearing right before the hardest exposure looks more like a flight into health to avoid that feared step than a genuine, sudden resolution of a year-long struggle; test whether the timing tracks the looming exposure rather than real-world gains, whether he can actually face the avoided trigger now without ritual, and whether the 'cure' survives a concrete situation that would normally set off the obsession.",
+        credit: 1.0,
+      },
+      {
+        text: "He seems to feel a lot better suddenly.",
+        credit: 0.3,
+      },
+      {
+        text: "He says he's cured, so he is — taking his word for it is the only respectful option.",
         credit: 0,
       },
     ],
     correctAnswer:
-      "He is catching a real pattern in the moment — pushing people away preemptively to avoid being left — which is the kind of emotional insight worth building on, though noticing it once won't change it; test whether the same push-away move shows up across several relationships, whether it appears in how he treats the therapist, and whether catching it in new situations over time begins to loosen it.",
+      "A total 'cure' appearing right before the hardest exposure looks more like a flight into health to avoid that feared step than a genuine, sudden resolution of a year-long struggle; test whether the timing tracks the looming exposure rather than real-world gains, whether he can actually face the avoided trigger now without ritual, and whether the 'cure' survives a concrete situation that would normally set off the obsession.",
     explanation:
-      "Top credit reads a genuine emerging insight while flagging that insight alone won't change behavior, and names tests; 'the problem is solved' is the overreach the principle that insight needs working through defeats.",
+      "Full credit reads the timed 'cure' as avoidance of the feared exposure and names a face-the-trigger test; 'just take his word' is the dodge the suspicious timing defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A patient complains that his new boss 'controls everything and never trusts me' — the exact words he used last month about his father and the month before about a former coach. Which conclusion best follows?",
+      "Six months after a successful course of treatment ends, a patient calls in a panic: a stressful job loss has set off a flare of his old checking, and he says, 'It's all back, I've failed, the whole treatment was useless.' Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Lots of people have controlling bosses, so there's no real pattern to read into here.",
-        credit: 0,
+        text: "He seems upset that some symptoms came back.",
+        credit: 0.3,
       },
       {
-        text: "It's probably a recurring theme; we could compare these relationships.",
-        credit: 0.6,
-      },
-      {
-        text: "The identical complaint across boss, father, and coach suggests he is carrying a template about controlling authority figures into each new relationship, shaping what he notices and how he reacts; test whether others describe these same people as controlling, whether he behaves in ways that invite control, and whether the theme surfaces toward the therapist as well.",
+        text: "A stress-triggered uptick after months of stability reads as a lapse, not a collapse — exactly the situation relapse-prevention prepared him for — so the strong move is to treat it as a signal to re-deploy his skills rather than proof of failure; test whether the flare tracks the acute stressor and eases as he resumes exposures, whether he can still recover from individual urges, and whether his baseline returns once the stressor passes.",
         credit: 1.0,
       },
       {
-        text: "He seems to have problems with people in charge.",
-        credit: 0.3,
+        text: "It's probably just stress; we could remind him of his tools.",
+        credit: 0.6,
+      },
+      {
+        text: "The return of symptoms proves the treatment never worked and he is back to square one with nothing gained.",
+        credit: 0,
       },
     ],
     correctAnswer:
-      "The identical complaint across boss, father, and coach suggests he is carrying a template about controlling authority figures into each new relationship, shaping what he notices and how he reacts; test whether others describe these same people as controlling, whether he behaves in ways that invite control, and whether the theme surfaces toward the therapist as well.",
+      "A stress-triggered uptick after months of stability reads as a lapse, not a collapse — exactly the situation relapse-prevention prepared him for — so the strong move is to treat it as a signal to re-deploy his skills rather than proof of failure; test whether the flare tracks the acute stressor and eases as he resumes exposures, whether he can still recover from individual urges, and whether his baseline returns once the stressor passes.",
     explanation:
-      "Full credit reads the repeated complaint across different figures as a carried template and names disconfirming checks; 'lots of people have controlling bosses' is the dismissal the cross-relationship repetition defeats.",
+      "Top credit reads the flare as a manageable lapse and names a stressor-tracking test; 'back to square one, treatment never worked' is the overreach his months of stability and intact skills defeat.",
   },
   {
     itemType: "mc",
     prompt:
-      "Asked about his recent divorce, a patient delivers a calm, articulate lecture on 'attachment theory and the statistical realities of modern marriage,' with no visible feeling at all. Which conclusion best follows?",
+      "At assessment, a devout patient reports intrusive blasphemous images during prayer, which he neutralizes by silently repeating a 'clean' prayer a set number of times until it 'feels right.' He is ashamed and convinced the images reveal his true wickedness. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He's probably keeping his distance from the feelings; we could gently ask how it felt.",
+        text: "The case is scrupulosity OCD with a mental ritual: the unwanted images are ego-dystonic obsessions and the repeated 'clean' prayer is a covert compulsion, so formulation and exposure must target the mental ritual, not the faith; test whether the images horrify rather than please him, whether the repeating is done to undo them and 'feel right,' and whether his distress eases as he learns to allow the images without neutralizing.",
+        credit: 1.0,
+      },
+      {
+        text: "He's probably struggling with religious thoughts; we could explore his beliefs.",
         credit: 0.6,
       },
       {
-        text: "He seems very knowledgeable about relationships.",
+        text: "He seems to feel guilty about his thoughts.",
         credit: 0.3,
       },
       {
-        text: "Some people are just analytical, so his abstract talk tells us nothing about his feelings.",
+        text: "The blasphemous images show his faith is the real problem and treatment should aim to talk him out of his religion.",
         credit: 0,
-      },
-      {
-        text: "Retreating into theory and statistics about his own divorce, with the feeling drained out, looks like intellectualizing — using abstraction to keep painful emotion at arm's length; test whether affect breaks through when he's asked for concrete moments rather than concepts, whether the abstraction intensifies exactly on the most painful points, and whether naming it lets a real feeling surface.",
-        credit: 1.0,
       },
     ],
     correctAnswer:
-      "Retreating into theory and statistics about his own divorce, with the feeling drained out, looks like intellectualizing — using abstraction to keep painful emotion at arm's length; test whether affect breaks through when he's asked for concrete moments rather than concepts, whether the abstraction intensifies exactly on the most painful points, and whether naming it lets a real feeling surface.",
+      "The case is scrupulosity OCD with a mental ritual: the unwanted images are ego-dystonic obsessions and the repeated 'clean' prayer is a covert compulsion, so formulation and exposure must target the mental ritual, not the faith; test whether the images horrify rather than please him, whether the repeating is done to undo them and 'feel right,' and whether his distress eases as he learns to allow the images without neutralizing.",
     explanation:
-      "Top credit reads the feeling-free abstraction as intellectualization and names a concrete-moment test; 'some people are just analytical' is the dodge the topic-specific draining of affect defeats.",
+      "Full credit formulates scrupulosity with a covert ritual and names an ego-dystonia test; 'his religion is the problem' is the overreach that confuses the symptom's content with its cause.",
   },
   {
     itemType: "mc",
     prompt:
-      "After an unusually open and moving session, a patient 'completely forgets' the next appointment for the first time ever, then later forgets to pay. Which conclusion best follows?",
+      "A clinician must decide whether a man's worry is OCD: he frets daily about a real upcoming layoff at his company, but the worry shifts topic with the news, has no rituals, and eases when he gets accurate information. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The forgetting clusters right after she let herself be vulnerable, which suggests an out-of-awareness retreat from the closeness the breakthrough created, not simple absentmindedness; test whether such lapses reliably follow emotionally open sessions, whether she feels exposed or embarrassed recalling what she shared, and whether naming the pattern eases the next session rather than offending her.",
-        credit: 1.0,
+        text: "All worry is basically the same, so it doesn't matter whether we call it OCD or not.",
+        credit: 0,
       },
       {
-        text: "She's probably reacting to the last session; we could ask what came up.",
+        text: "It's probably just normal stress; we could keep watching it.",
         credit: 0.6,
       },
       {
-        text: "She seems to have gotten forgetful.",
-        credit: 0.3,
+        text: "The picture fits realistic, information-responsive worry rather than OCD: it lacks the trigger-specific intrusions, the ritualized neutralizing, and the immunity to reassurance that define the disorder, so formulation should not force an OCD frame; test whether any compulsion is actually present, whether accurate information genuinely settles the worry rather than feeding it, and whether the concern stays proportionate to the real-world odds.",
+        credit: 1.0,
       },
       {
-        text: "Forgetting the session proves she never cared about therapy and was faking her progress all along.",
-        credit: 0,
+        text: "He seems worried about losing his job.",
+        credit: 0.3,
       },
     ],
     correctAnswer:
-      "The forgetting clusters right after she let herself be vulnerable, which suggests an out-of-awareness retreat from the closeness the breakthrough created, not simple absentmindedness; test whether such lapses reliably follow emotionally open sessions, whether she feels exposed or embarrassed recalling what she shared, and whether naming the pattern eases the next session rather than offending her.",
+      "The picture fits realistic, information-responsive worry rather than OCD: it lacks the trigger-specific intrusions, the ritualized neutralizing, and the immunity to reassurance that define the disorder, so formulation should not force an OCD frame; test whether any compulsion is actually present, whether accurate information genuinely settles the worry rather than feeding it, and whether the concern stays proportionate to the real-world odds.",
     explanation:
-      "Full credit reads the timed lapses as a retreat from closeness and names checks; 'she was faking all along' is the overreach the genuine breakthrough that preceded the lapse defeats.",
+      "Top credit uses the absence of rituals and reassurance-immunity to rule OCD out at the formulation step; 'all worry is the same' is the dodge the clean diagnostic contrast defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "When the therapist mentions she'll be away for two weeks, a warm, engaged patient goes flat, says 'fine, whatever,' and spends the rest of the session detached. Which conclusion best follows?",
+      "Mid-treatment, a contamination patient repeatedly asks the clinician, 'Be honest — are you secretly disgusted by me?' and seems to scan her face for reassurance each time before she can settle into the session's exposure. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He seems put off by the upcoming break.",
-        credit: 0.3,
+        text: "She's probably insecure; we could reassure her we aren't disgusted.",
+        credit: 0.6,
       },
       {
-        text: "It's normal to dislike a break in routine, so his reaction means nothing in particular.",
-        credit: 0,
-      },
-      {
-        text: "The sudden coldness at news of separation suggests the break activated an old template about being abandoned by people he relies on, defended against by going numb rather than showing hurt; test whether the same shutdown appears in his accounts of past separations, whether the warmth returns when the therapist reliably comes back, and whether gently naming the hurt beneath the flatness lets it surface.",
+        text: "The repeated 'are you disgusted by me?' question is the contamination theme migrating into the relationship as a reassurance ritual aimed at the clinician, so it both feeds the OCD and shows the dynamic live in the room; test whether the urge to ask spikes right before harder exposures, whether her settling depends on the clinician's answer rather than on tolerating doubt, and whether reflecting the question back instead of answering loosens its grip.",
         credit: 1.0,
       },
       {
-        text: "He's probably upset about the break; we could talk about it.",
-        credit: 0.6,
+        text: "She seems to want the clinician's approval.",
+        credit: 0.3,
+      },
+      {
+        text: "Her question proves the clinician really has shown disgust and has damaged the patient irreparably.",
+        credit: 0,
       },
     ],
     correctAnswer:
-      "The sudden coldness at news of separation suggests the break activated an old template about being abandoned by people he relies on, defended against by going numb rather than showing hurt; test whether the same shutdown appears in his accounts of past separations, whether the warmth returns when the therapist reliably comes back, and whether gently naming the hurt beneath the flatness lets it surface.",
+      "The repeated 'are you disgusted by me?' question is the contamination theme migrating into the relationship as a reassurance ritual aimed at the clinician, so it both feeds the OCD and shows the dynamic live in the room; test whether the urge to ask spikes right before harder exposures, whether her settling depends on the clinician's answer rather than on tolerating doubt, and whether reflecting the question back instead of answering loosens its grip.",
     explanation:
-      "Top credit reads the withdrawal as an abandonment template defended by numbing and names tests; 'it means nothing in particular' is the refusal the sharp shift at the separation cue defeats.",
+      "Full credit reads the in-session reassurance question as the symptom playing out in the relationship and names a spike-before-exposure test; 'the clinician really disgusted her' is the overreach her steady stance defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "Without any prompting, a patient says, 'You probably sit there thinking I'm a pathetic, weak mess,' though the therapist has shown only steady attention. Which conclusion best follows?",
+      "A patient can explain the OCD cycle flawlessly — obsession, anxiety spike, ritual, brief relief, reinforcement — and has lectured the clinician on it for months, yet still washes for an hour each morning exactly as before. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He's probably assuming the therapist judges him; we could check that out.",
-        credit: 0.6,
+        text: "Because he understands the cycle so thoroughly, he is essentially recovered and just needs to decide to stop.",
+        credit: 0,
       },
       {
-        text: "Attributing harsh contempt to a therapist who has shown none suggests he is projecting his own self-judgment onto her — reading his inner critic as her opinion; test whether the 'you think I'm pathetic' theme tracks moments he feels most ashamed, whether the others supposedly 'judging' him echo his own self-talk, and whether his certainty about her contempt softens when he voices the self-criticism directly.",
-        credit: 1.0,
-      },
-      {
-        text: "He seems worried about what the therapist thinks.",
+        text: "He seems to understand his OCD really well.",
         credit: 0.3,
       },
       {
-        text: "We can't ever know what's in his head, so there's no way to interpret what he said.",
-        credit: 0,
+        text: "His perfect account is intellectual insight that hasn't been worked through into the moments that matter — knowing the cycle on paper hasn't reached the bathroom at 7 a.m., so the washing persists; test whether his understanding carries any real anxiety when an exposure is set up, whether he can interrupt a ritual in the actual charged moment rather than only explain it later, and whether repeated practice in real triggers slowly changes the behavior.",
+        credit: 1.0,
+      },
+      {
+        text: "His insight probably hasn't changed his behavior yet; we could try some exposures.",
+        credit: 0.6,
       },
     ],
     correctAnswer:
-      "Attributing harsh contempt to a therapist who has shown none suggests he is projecting his own self-judgment onto her — reading his inner critic as her opinion; test whether the 'you think I'm pathetic' theme tracks moments he feels most ashamed, whether the others supposedly 'judging' him echo his own self-talk, and whether his certainty about her contempt softens when he voices the self-criticism directly.",
+      "His perfect account is intellectual insight that hasn't been worked through into the moments that matter — knowing the cycle on paper hasn't reached the bathroom at 7 a.m., so the washing persists; test whether his understanding carries any real anxiety when an exposure is set up, whether he can interrupt a ritual in the actual charged moment rather than only explain it later, and whether repeated practice in real triggers slowly changes the behavior.",
     explanation:
-      "Full credit reads the unwarranted contempt as projection of his own self-judgment and names checks; 'we can't ever know what's in his head' is the refusal the mismatch between his claim and the therapist's stance defeats.",
+      "Top credit distinguishes intellectual insight from worked-through change and names a real-trigger test; 'he's essentially recovered' is the overreach the unchanged morning washing defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A patient can explain his anxiety perfectly — its origins, its triggers, the theory behind it — and has done so for a year, yet he still avoids every situation that makes him anxious. Which conclusion best follows?",
+      "In one consultation, a clinician hears that a patient avoids knives entirely, asks his wife hourly whether he 'seems dangerous,' and treats the very fact that he has violent images as proof he must be a monster. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Since he understands his anxiety so well, he must really be cured and is just choosing to avoid things.",
-        credit: 0,
-      },
-      {
-        text: "He seems to know a lot about his anxiety.",
+        text: "He seems frightened of his own thoughts.",
         credit: 0.3,
       },
       {
-        text: "His understanding probably hasn't changed his behavior; we could try having him face the situations.",
+        text: "Read together, the pieces form one harm-OCD picture sitting at the formulation stage: knife-avoidance is the avoidance arm, hourly 'am I dangerous?' questions are a reassurance compulsion, and 'having the thought proves I'm a monster' is the thought-action fusion driving it — so the plan must target the rituals and the belief, not the imagined danger; test whether the images repel rather than tempt him, whether the avoidance and questioning track the harm fear specifically, and whether challenging the 'thought equals deed' belief lowers his distress.",
+        credit: 1.0,
+      },
+      {
+        text: "It's probably harm OCD; we could look at his violent thoughts together.",
         credit: 0.6,
       },
       {
-        text: "His flawless explanation is intellectual insight that hasn't been worked through — understanding alone hasn't reached the situations where it counts, so the avoidance persists; test whether the insight carries any felt anxiety when he describes it, whether he can apply it in a real anxious moment rather than after the fact, and whether repeatedly catching it across new situations slowly shifts the behavior.",
-        credit: 1.0,
+        text: "Because he has violent images and avoids knives, he is genuinely dangerous and the priority is to protect others from him.",
+        credit: 0,
       },
     ],
     correctAnswer:
-      "His flawless explanation is intellectual insight that hasn't been worked through — understanding alone hasn't reached the situations where it counts, so the avoidance persists; test whether the insight carries any felt anxiety when he describes it, whether he can apply it in a real anxious moment rather than after the fact, and whether repeatedly catching it across new situations slowly shifts the behavior.",
+      "Read together, the pieces form one harm-OCD picture sitting at the formulation stage: knife-avoidance is the avoidance arm, hourly 'am I dangerous?' questions are a reassurance compulsion, and 'having the thought proves I'm a monster' is the thought-action fusion driving it — so the plan must target the rituals and the belief, not the imagined danger; test whether the images repel rather than tempt him, whether the avoidance and questioning track the harm fear specifically, and whether challenging the 'thought equals deed' belief lowers his distress.",
     explanation:
-      "Top credit distinguishes intellectual insight from worked-through change and names tests; 'he must be cured' is the overreach the year of unchanged avoidance directly defeats.",
+      "Full credit integrates the pieces into a harm-OCD formulation and names an ego-dystonia test; 'he is genuinely dangerous' is the overreach that mistakes a tormenting OCD fear for real intent.",
   },
 ];
 
@@ -417,425 +417,425 @@ const hybrid: HomeworkItem[] = [
   {
     itemType: "hybrid",
     prompt:
-      "After a long pause following the therapist's question about her marriage, a patient says, 'It's really coming down out there — supposed to storm all week,' and launches into a detailed discussion of the forecast. Which conclusion best follows?",
+      "At intake a young woman reports that every time she leaves home she returns three or four times to check the lock, the stove, and the taps, often making her late, and she says she 'just can't trust' that she did it. The clinician is deciding what the case needs first. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The swing to the weather right after a question about her marriage looks like a defensive flight from a loaded topic, not a genuine new interest; test whether these swerves reliably follow marital questions, whether slowing her down returns her to the feeling, and whether the topics she escapes to are consistently safe and impersonal.",
+        text: "The first task is a shared formulation of this checking loop — the doubt-trigger, the feared catastrophe, the repeated checking, and the brief relief — so exposure later targets the real driver rather than a guess; test whether the checking tracks the specific can't-trust-myself doubt, whether more checks actually lower her confidence rather than raise it, and whether the urge centers on intolerable uncertainty rather than genuine forgetfulness.",
         credit: 1.0,
       },
       {
-        text: "She probably didn't want to answer; we could redirect to the marriage.",
+        text: "It's probably checking OCD; we could start exposures soon.",
         credit: 0.6,
       },
       {
-        text: "She seems to have changed the subject to the weather.",
+        text: "She seems to check her locks a lot.",
         credit: 0.3,
       },
       {
-        text: "People chat about the weather all the time, so this tells us nothing about her marriage.",
+        text: "She just needs better memory habits, so the fix is a checklist and there's nothing to formulate.",
         credit: 0,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'defensive flight from the topic' lead from the rival 'she simply finds her marriage boring and would rather chat,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'checking loop driven by intolerable doubt' lead from the rival 'she genuinely keeps forgetting and just needs reminders,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: watch whether the swerves happen specifically right after the hardest marital questions and come with signs of tension like a pause or stiffening — a topic-locked, anxiety-linked escape points to defense, not boredom. My lead is refuted if she drifts off equally on every subject, or if she returns to the marriage easily and calmly when redirected.",
+        "Cheapest test: watch whether each extra check leaves her more uncertain rather than reassured and whether the urge centers on a feeling of not-knowing despite clear evidence she locked up — a doubt that grows with checking points to OCD, not forgetfulness. My lead is refuted if a single check or a simple reminder genuinely settles her and the doubt doesn't return.",
       yieldAnchors: [
-        "A long pause follows the marriage question",
-        "She switches abruptly to the weather",
-        "She elaborates on the safe topic in detail",
+        "She returns three or four times to check",
+        "She says she 'can't trust' she did it",
+        "The checking makes her late",
       ],
       riskAnchors: [
-        "The swerves reliably follow marital questions",
-        "Slowing her down returns her to the feeling",
-        "The escape topics are consistently impersonal",
+        "The checking tracks the can't-trust-myself doubt",
+        "More checks lower rather than raise her confidence",
+        "The urge centers on uncertainty, not real forgetting",
       ],
       defeatedBy: [
-        "She drifts off topic equally on every subject",
-        "She returns to the marriage calmly when redirected",
+        "A single check genuinely settles her",
+        "A simple reminder ends the doubt for good",
       ],
     },
     correctAnswer:
-      "The swing to the weather right after a question about her marriage looks like a defensive flight from a loaded topic, not a genuine new interest; test whether these swerves reliably follow marital questions, whether slowing her down returns her to the feeling, and whether the topics she escapes to are consistently safe and impersonal.",
+      "The first task is a shared formulation of this checking loop — the doubt-trigger, the feared catastrophe, the repeated checking, and the brief relief — so exposure later targets the real driver rather than a guess; test whether the checking tracks the specific can't-trust-myself doubt, whether more checks actually lower her confidence rather than raise it, and whether the urge centers on intolerable uncertainty rather than genuine forgetfulness.",
     explanation:
-      "Full credit reads the timed swerve as defensive avoidance with three checks and a topic-specificity test that names its refutation; 'people chat about weather' is the dismissal the precise timing defeats.",
+      "Full credit places the case at formulation and names a checking-erodes-confidence test that states its refutation; 'just needs a checklist' is the dodge the doubt-driven loop defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "Describing the day his mother died, a patient smiles and chuckles lightly throughout, as if telling an amusing anecdote. Which conclusion best follows?",
+      "A new patient with intrusive harm thoughts is visibly braced in the first session, says 'I've never told anyone this because they'll think I'm a psycho,' and waits to see how the clinician reacts. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He seems oddly cheerful about it.",
+        text: "He seems anxious about opening up.",
         credit: 0.3,
       },
       {
-        text: "The mismatch between a grief-laden memory and the light laughter suggests the laughter is keeping unbearable feeling at a distance, not that the loss was actually painless to him; test whether the smiling intensifies at the most painful details, whether the feeling breaks through when he slows down and stays with a single moment, and whether he shows the same incongruous lightness around other losses.",
+        text: "This moment is the alliance forming or failing: the case needs a safe, nonjudgmental response that normalizes intrusive thoughts before any exposure, because his willingness to engage hinges on not being seen as the monster he fears; test whether his disclosure deepens once the thoughts are met without alarm, whether his guard drops as the cycle is explained without judgment, and whether he returns and engages after the first session.",
         credit: 1.0,
       },
       {
-        text: "Everyone grieves differently, so his laughter is just his style and means nothing.",
-        credit: 0,
+        text: "He's probably scared of being judged; we could reassure him.",
+        credit: 0.6,
       },
       {
-        text: "He's probably masking sadness; we could point out the laughter.",
-        credit: 0.6,
+        text: "His secrecy proves he's hiding genuine dangerousness, so the priority is to assess him as a threat rather than build rapport.",
+        credit: 0,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'laughter is warding off grief' lead from the rival 'he has genuinely made peace with the loss,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'alliance-building moment with ego-dystonic thoughts' lead from the rival 'his secrecy signals real danger to be assessed,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: gently slow him at the most painful detail and watch whether the smile falters and feeling leaks through — grief held at bay tends to surface when the defense is paused. My lead is refuted if staying with the moment brings calm warmth rather than strain, suggesting genuine acceptance rather than warded-off pain.",
+        "Cheapest test: notice whether the thoughts horrify him and whether meeting them calmly without judgment lets him open up further — relief at being understood and revulsion at the thoughts point to OCD and an alliance taking hold. My lead is refuted if he describes the thoughts with intent or pleasure and disclosure makes him more guarded rather than more engaged.",
       yieldAnchors: [
-        "He laughs while recounting his mother's death",
-        "The lightness pervades a grief-laden story",
-        "His manner treats it like an amusing anecdote",
+        "He is braced and secretive in session one",
+        "He fears being seen as a 'psycho'",
+        "He watches the clinician's reaction",
       ],
       riskAnchors: [
-        "The smiling intensifies at the most painful details",
-        "Feeling breaks through when he slows down",
-        "The same incongruous lightness appears around other losses",
+        "Disclosure deepens once met without alarm",
+        "His guard drops as the cycle is normalized",
+        "He returns and engages after session one",
       ],
       defeatedBy: [
-        "Staying with the moment brings calm acceptance",
-        "He shows full grief elsewhere with no laughter",
+        "He describes the thoughts with intent or pleasure",
+        "Calm acceptance makes him more guarded, not less",
       ],
     },
     correctAnswer:
-      "The mismatch between a grief-laden memory and the light laughter suggests the laughter is keeping unbearable feeling at a distance, not that the loss was actually painless to him; test whether the smiling intensifies at the most painful details, whether the feeling breaks through when he slows down and stays with a single moment, and whether he shows the same incongruous lightness around other losses.",
+      "This moment is the alliance forming or failing: the case needs a safe, nonjudgmental response that normalizes intrusive thoughts before any exposure, because his willingness to engage hinges on not being seen as the monster he fears; test whether his disclosure deepens once the thoughts are met without alarm, whether his guard drops as the cycle is explained without judgment, and whether he returns and engages after the first session.",
     explanation:
-      "Full credit reads incongruous laughter as a defense against grief with three checks and a slow-down test that names its refutation; 'everyone grieves differently' is the dodge the grief–laughter mismatch defeats.",
+      "Full credit reads the disclosure as an alliance-defining moment and names a met-without-alarm test that states its refutation; 'his secrecy proves danger' is the overreach the ego-dystonic horror defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "The therapist arrives one minute late and apologizes; the patient, normally easygoing, says coldly, 'I knew it — you don't actually care about me,' and stays wounded the whole hour. Which conclusion best follows?",
+      "Partway through treatment, a 'just right' patient is doing exposures well in session but reports she still spends an hour each night re-aligning objects on her desk until they 'feel correct,' which she'd never mentioned because 'it's not really a fear of anything.' Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He's probably sensitive to feeling neglected; we could explore that.",
+        text: "She probably has another ritual; we could add it to the plan.",
         credit: 0.6,
       },
       {
-        text: "His reaction proves the therapist did something genuinely unforgivable and has ruined the relationship for good.",
-        credit: 0,
-      },
-      {
-        text: "A one-minute lateness producing deep, lasting hurt shows the reaction belongs to an old template about being uncared-for, now transferred onto the therapist, rather than to the trivial event itself; test whether the same outsized hurt appears with others over small slights, whether it echoes how a caregiver once made him feel forgotten, and whether it eases as the therapist proves reliable over time.",
+        text: "The hidden 'just right' ritual reveals the formulation was incomplete — this compulsion is driven by an intolerable not-right sensation rather than a feared catastrophe, so exposure must target tolerating the 'wrong' feeling without fixing it; test whether the urge tracks that incompleteness sensation specifically, whether leaving objects 'wrong' triggers mounting discomfort that then eases on its own, and whether her overall gains improve once this previously hidden ritual is included.",
         credit: 1.0,
       },
       {
-        text: "He seems upset that the therapist was late.",
+        text: "She seems to like her desk arranged neatly.",
         credit: 0.3,
+      },
+      {
+        text: "Without a feared catastrophe it can't be OCD, so this nightly habit is just a harmless preference to leave alone.",
+        credit: 0,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'old uncared-for template transferred onto the therapist' lead from the rival 'he is simply a stickler for punctuality,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your '\"just right\" compulsion driven by an incompleteness feeling' lead from the rival 'it's a harmless tidiness preference,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: check whether the hurt is about being unloved rather than about time itself, and whether the same wound shows up over other tiny slights from people he depends on — a relationship theme, not a scheduling one, points to transference. My lead is refuted if his reaction is purely about lost minutes, stays proportional, and never carries the 'you don't care about me' meaning elsewhere.",
+        "Cheapest test: have her deliberately leave a few objects 'wrong' and watch whether distress mounts and pulls her to fix them, then eases if she resists — a felt not-right pressure that demands correcting points to a compulsion, not a preference. My lead is refuted if leaving things 'wrong' causes no real distress and she can walk away unbothered.",
       yieldAnchors: [
-        "A one-minute lateness triggers deep hurt",
-        "He concludes the therapist doesn't care",
-        "The wound lasts the whole session",
+        "An hour nightly re-aligning objects",
+        "She fixes them until they 'feel correct'",
+        "She says it isn't a fear of anything",
       ],
       riskAnchors: [
-        "The same outsized hurt appears with others over small slights",
-        "It echoes a caregiver who made him feel forgotten",
-        "It eases as the therapist proves reliable",
+        "The urge tracks the incompleteness sensation",
+        "Leaving things 'wrong' triggers discomfort that then eases",
+        "Including the ritual improves overall gains",
       ],
       defeatedBy: [
-        "His upset is purely about lost time and stays proportional",
-        "The 'you don't care' meaning never appears elsewhere",
+        "Leaving objects 'wrong' causes no real distress",
+        "She can walk away from it unbothered",
       ],
     },
     correctAnswer:
-      "A one-minute lateness producing deep, lasting hurt shows the reaction belongs to an old template about being uncared-for, now transferred onto the therapist, rather than to the trivial event itself; test whether the same outsized hurt appears with others over small slights, whether it echoes how a caregiver once made him feel forgotten, and whether it eases as the therapist proves reliable over time.",
+      "The hidden 'just right' ritual reveals the formulation was incomplete — this compulsion is driven by an intolerable not-right sensation rather than a feared catastrophe, so exposure must target tolerating the 'wrong' feeling without fixing it; test whether the urge tracks that incompleteness sensation specifically, whether leaving objects 'wrong' triggers mounting discomfort that then eases on its own, and whether her overall gains improve once this previously hidden ritual is included.",
     explanation:
-      "Full credit reads the disproportion as transference with three checks and a meaning-not-minutes test that names its refutation; 'the therapist ruined it forever' is the overreach the trivial trigger defeats.",
+      "Full credit recognizes a 'just right' compulsion missed in the formulation and names a leave-it-wrong test that states its refutation; 'no catastrophe means not OCD' is the dodge the incompleteness-driven ritual defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "Before sharing almost anything personal, a patient prefaces it with 'this is probably stupid, but...' or 'you'll think this is dumb,' then shares something quite reasonable. Which conclusion best follows?",
+      "A patient whose washing has dropped sharply with ERP now seems oddly low and irritable, and mentions that without the rituals filling his evenings he feels 'empty, like I don't know what I was so busy avoiding.' Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The reflexive self-put-down before speaking looks like a protective move — disarming an expected judgment by beating others to it — rather than a true assessment that her thoughts are stupid; test whether the disclaimers cluster before the most vulnerable disclosures, whether they fade as she feels safer with the therapist, and whether they mirror how a critical figure once responded to her.",
-        credit: 1.0,
-      },
-      {
-        text: "She seems to lack confidence in her ideas.",
+        text: "He seems a bit down since the rituals stopped.",
         credit: 0.3,
       },
       {
-        text: "She probably expects to be judged; we could reassure her.",
+        text: "As the rituals stop consuming his evenings, a feeling they had been crowding out is surfacing, which signals the case is moving from symptom relief into working through what the washing was keeping him too busy to feel; test whether the low feeling arises in the time the rituals used to fill, whether staying with it rather than resuming washing prevents relapse, and whether naming what he was avoiding brings relief rather than a return of symptoms.",
+        credit: 1.0,
+      },
+      {
+        text: "It's probably about the change; we could ask how he's adjusting.",
         credit: 0.6,
       },
       {
-        text: "Some people are just modest, so the disclaimers don't mean anything.",
+        text: "The low mood proves the ERP harmed him and the rituals should be reinstated for his own good.",
         credit: 0,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'pre-emptive defense against expected judgment' lead from the rival 'she genuinely has a low opinion of her own thinking,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'a warded-off feeling surfacing as the ritual recedes' lead from the rival 'the ERP itself caused a depression that means it should stop,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: watch whether the disclaimers spike specifically before the most personal disclosures and ease as trust grows — judgment-anticipating self-protection is topic- and safety-dependent, not a flat trait. My lead is refuted if she disparages her thinking evenly across all topics regardless of vulnerability or rapport, suggesting a stable low self-estimate rather than a defense.",
+        "Cheapest test: see whether the empty feeling shows up precisely in the freed-up ritual time and softens when he names and stays with it rather than washing — a feeling tied to the vacated ritual space points to working-through, not iatrogenic harm. My lead is refuted if the low mood is global and unrelated to ritual time and only resuming washing relieves it.",
       yieldAnchors: [
-        "She self-deprecates before sharing",
-        "What she shares is actually reasonable",
-        "The disclaimers precede personal material",
+        "Washing dropped sharply with ERP",
+        "He now feels empty and irritable",
+        "He senses he was 'avoiding' something",
       ],
       riskAnchors: [
-        "The disclaimers cluster before vulnerable disclosures",
-        "They fade as she feels safer",
-        "They mirror a past critical figure",
+        "The feeling arises in the freed-up ritual time",
+        "Staying with it rather than washing prevents relapse",
+        "Naming what he avoided brings relief",
       ],
       defeatedBy: [
-        "She disparages her thinking evenly on every topic",
-        "The disclaimers never change with safety or topic",
+        "The low mood is global and unrelated to ritual time",
+        "Only resuming washing relieves it",
       ],
     },
     correctAnswer:
-      "The reflexive self-put-down before speaking looks like a protective move — disarming an expected judgment by beating others to it — rather than a true assessment that her thoughts are stupid; test whether the disclaimers cluster before the most vulnerable disclosures, whether they fade as she feels safer with the therapist, and whether they mirror how a critical figure once responded to her.",
+      "As the rituals stop consuming his evenings, a feeling they had been crowding out is surfacing, which signals the case is moving from symptom relief into working through what the washing was keeping him too busy to feel; test whether the low feeling arises in the time the rituals used to fill, whether staying with it rather than resuming washing prevents relapse, and whether naming what he was avoiding brings relief rather than a return of symptoms.",
     explanation:
-      "Full credit reads the disclaimer as a defense against anticipated judgment with three checks and a topic-and-safety test that names its refutation; 'some people are just modest' is the dodge the vulnerability-linked timing defeats.",
+      "Full credit reads the surfacing feeling as the working-through phase and names a freed-up-time test that states its refutation; 'the ERP harmed him, reinstate rituals' is the overreach the symptom relief defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "The morning after a session in which she cried and felt deeply understood for the first time, a patient emails to cancel the next appointment, citing a vague scheduling conflict. Which conclusion best follows?",
+      "Near the end of treatment, a recovered checking patient grows quiet and says, 'If I stop coming, what if it all comes back and I have no one?' and asks whether he can keep weekly sessions 'just in case' indefinitely. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The cancellation proves the breakthrough was fake and she has decided to quit therapy entirely.",
-        credit: 0,
-      },
-      {
-        text: "She's probably reacting to the closeness; we could gently raise it.",
-        credit: 0.6,
-      },
-      {
-        text: "The cancellation following directly on a moment of rare closeness suggests an out-of-awareness retreat from the vulnerability it stirred, not a real scheduling problem; test whether such pull-backs reliably follow her most open sessions, whether she feels exposed recalling what she shared, and whether the urge to withdraw eases once the fear of being close is named.",
+        text: "The request to keep coming 'just in case' looks like the doubt-and-reassurance dynamic of his OCD reappearing around termination — seeking the clinician as a safety crutch against uncertainty — so the strong move is to treat the wish as material and build confidence in his own skills rather than simply granting endless sessions; test whether the urge to keep coming spikes as the end nears, whether he can in fact handle a slip during a planned gap, and whether his anxiety eases once a relapse-prevention plan replaces the clinician as the safety net.",
         credit: 1.0,
       },
       {
-        text: "She seems to have a scheduling conflict.",
+        text: "He's probably nervous about stopping; we could space sessions out gradually.",
+        credit: 0.6,
+      },
+      {
+        text: "He seems worried about ending therapy.",
         credit: 0.3,
+      },
+      {
+        text: "He clearly still needs full weekly treatment forever, so the safest course is to keep him in indefinite therapy.",
+        credit: 0,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'retreat from vulnerability' lead from the rival 'she genuinely had a scheduling conflict,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'OCD doubt resurfacing as a safety-crutch wish around termination' lead from the rival 'he objectively still needs full ongoing treatment,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: notice whether cancellations specifically follow her most open, emotional sessions and whether she sounds exposed or uneasy about what she revealed — a pattern tied to closeness points to defensive retreat. My lead is refuted if cancellations fall randomly with respect to session content and she returns eager and untroubled by the previous disclosure.",
+        "Cheapest test: try a planned gap between sessions and watch whether he can ride out a slip on his own using his skills — coping well through the gap shows the wish is reassurance-seeking, not genuine ongoing need. My lead is refuted if he genuinely deteriorates and cannot manage urges during the gap despite a solid relapse-prevention plan.",
       yieldAnchors: [
-        "She cancels right after a breakthrough",
-        "The session involved rare closeness and tears",
-        "The stated reason is vague",
+        "He has recovered from checking",
+        "He fears it will 'all come back' if he stops",
+        "He asks for indefinite weekly sessions",
       ],
       riskAnchors: [
-        "Pull-backs reliably follow her most open sessions",
-        "She feels exposed recalling what she shared",
-        "The urge eases once the fear is named",
+        "The urge to keep coming spikes as the end nears",
+        "He can handle a slip during a planned gap",
+        "Anxiety eases once a relapse plan replaces the clinician",
       ],
       defeatedBy: [
-        "Cancellations fall randomly relative to session content",
-        "She returns eager and untroubled by the disclosure",
+        "He genuinely deteriorates during the gap",
+        "He cannot manage urges despite a solid plan",
       ],
     },
     correctAnswer:
-      "The cancellation following directly on a moment of rare closeness suggests an out-of-awareness retreat from the vulnerability it stirred, not a real scheduling problem; test whether such pull-backs reliably follow her most open sessions, whether she feels exposed recalling what she shared, and whether the urge to withdraw eases once the fear of being close is named.",
+      "The request to keep coming 'just in case' looks like the doubt-and-reassurance dynamic of his OCD reappearing around termination — seeking the clinician as a safety crutch against uncertainty — so the strong move is to treat the wish as material and build confidence in his own skills rather than simply granting endless sessions; test whether the urge to keep coming spikes as the end nears, whether he can in fact handle a slip during a planned gap, and whether his anxiety eases once a relapse-prevention plan replaces the clinician as the safety net.",
     explanation:
-      "Full credit reads the timed cancellation as a retreat from closeness with three checks and a session-content test that names its refutation; 'the breakthrough was fake' is the overreach the genuine closeness that preceded it defeats.",
+      "Full credit reads the 'just in case' wish as reassurance-seeking around termination and names a planned-gap test that states its refutation; 'he needs therapy forever' is the overreach his recovery defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A patient describes intense distrust of a new boss she barely knows, using almost the same words and feelings she once used about an ex who betrayed her. Which conclusion best follows?",
+      "A patient mid-treatment says her contamination fears have shrunk, but she now spends the saved time researching diseases online for hours and asking forums whether her symptoms are 'normal.' Which conclusion best follows?",
     mcOptions: [
       {
-        text: "She seems wary of her new boss.",
+        text: "She seems to spend a lot of time online.",
         credit: 0.3,
       },
       {
-        text: "It's probably connected to her ex; we could compare the two.",
+        text: "She's probably found a new worry; we could look at the internet use.",
         credit: 0.6,
       },
       {
-        text: "Importing the same distrust and language from a betraying ex onto a barely-known boss suggests she is replaying an old relationship template rather than responding to who this boss actually is; test whether coworkers experience the boss as untrustworthy, whether her wariness fits the ex's behavior better than the boss's, and whether it softens as the boss proves reliable over time.",
+        text: "The compulsion has shifted form rather than resolved — online checking and forum reassurance now do the same anxiety-relieving job the washing did, so the case needs the new ritual folded into the same response-prevention plan; test whether the searching tracks the same contamination fear, whether each search briefly relieves but then reignites doubt, and whether blocking the reassurance-seeking lets the underlying anxiety finally extinguish.",
         credit: 1.0,
       },
       {
-        text: "Bosses and exes can both be untrustworthy, so there's nothing here to interpret.",
+        text: "Researching health online is just being responsible, so there's nothing here connected to her OCD.",
         credit: 0,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'old betrayal template replayed on the boss' lead from the rival 'the boss really is untrustworthy,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'the compulsion has changed form into online reassurance' lead from the rival 'she is just doing responsible health research,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: compare her read of the boss against how coworkers experience him and against the ex's actual behavior — a fit to the past figure rather than the present one points to transference. My lead is refuted if independent observers also find the boss untrustworthy and his conduct, not her ex's, accounts for her wariness.",
+        "Cheapest test: watch whether each search gives brief relief that quickly collapses back into doubt and more searching — a relief-then-reignite loop tied to the same fear marks a migrated compulsion, not genuine research. My lead is refuted if a reasonable amount of reading actually settles her, the searching ends, and the doubt doesn't return.",
       yieldAnchors: [
-        "She barely knows the new boss",
-        "Her distrust mirrors feelings toward a betraying ex",
-        "She uses nearly the same words",
+        "Washing has shrunk",
+        "She now researches diseases for hours",
+        "She seeks reassurance on forums",
       ],
       riskAnchors: [
-        "Coworkers don't experience the boss as untrustworthy",
-        "Her wariness fits the ex better than the boss",
-        "It softens as the boss proves reliable",
+        "The searching tracks the same contamination fear",
+        "Each search relieves briefly then reignites doubt",
+        "Blocking it lets the anxiety extinguish",
       ],
       defeatedBy: [
-        "Independent observers also find the boss untrustworthy",
-        "His actual conduct fully explains her wariness",
+        "A reasonable amount of reading settles her for good",
+        "The searching ends and the doubt doesn't return",
       ],
     },
     correctAnswer:
-      "Importing the same distrust and language from a betraying ex onto a barely-known boss suggests she is replaying an old relationship template rather than responding to who this boss actually is; test whether coworkers experience the boss as untrustworthy, whether her wariness fits the ex's behavior better than the boss's, and whether it softens as the boss proves reliable over time.",
+      "The compulsion has shifted form rather than resolved — online checking and forum reassurance now do the same anxiety-relieving job the washing did, so the case needs the new ritual folded into the same response-prevention plan; test whether the searching tracks the same contamination fear, whether each search briefly relieves but then reignites doubt, and whether blocking the reassurance-seeking lets the underlying anxiety finally extinguish.",
     explanation:
-      "Full credit reads the imported distrust as transference with three checks and an observer-comparison test that names its refutation; 'both can be untrustworthy' is the dismissal the barely-known boss and borrowed language defeat.",
+      "Full credit reads online checking as a migrated compulsion and names a relief-then-reignite test that states its refutation; 'it's just responsible research' is the dodge the same-fear loop defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "Describing his close bond with his brother, a patient says, 'I really h— love my brother, we're so close,' catching what was nearly 'hate,' and laughs it off. Which conclusion best follows?",
+      "A man treated for symmetry OCD has done well, but as termination approaches he reveals that his wife still silently re-evens things he leaves crooked, and neither of them realized this was 'part of it.' Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He probably has mixed feelings; we could ask more about his brother.",
-        credit: 0.6,
-      },
-      {
-        text: "The near-slip and quick cover suggest feelings toward his brother are more mixed than the 'so close' story admits, with some resentment held out of awareness; test whether tension shows up in concrete stories about the brother despite the warm summary, whether the closeness claim is strongest right when conflict is implied, and whether gently allowing for both feelings brings relief rather than denial.",
-        credit: 1.0,
-      },
-      {
-        text: "It was just a verbal stumble, so reading anything into it is unwarranted.",
+        text: "He's lucky his wife is so considerate, so there's nothing to address before ending.",
         credit: 0,
       },
       {
-        text: "He seems to have misspoken about his brother.",
+        text: "It's probably worth mentioning to his wife before we finish.",
+        credit: 0.6,
+      },
+      {
+        text: "The wife's silent re-evening is leftover family accommodation propping up the symmetry need, so ending now would leave an active maintenance loop in the home and invite relapse — the arc isn't complete until the accommodation is dismantled; test whether his urges resurface when she stops fixing things, whether he can tolerate visibly 'crooked' surfaces himself, and whether removing her help is required for his gains to hold after termination.",
+        credit: 1.0,
+      },
+      {
+        text: "He seems to get help from his wife with the symmetry.",
         credit: 0.3,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'unacknowledged resentment alongside love' lead from the rival 'it was a meaningless slip of the tongue,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'residual accommodation that will undermine termination' lead from the rival 'his wife's tidiness is irrelevant to his recovery,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: listen for whether concrete stories about the brother carry friction even as the summary stays glowing — a gap between detailed events and the rosy headline points to split-off resentment. My lead is refuted if his specific anecdotes are consistently warm with no trace of conflict and the slip never connects to any real tension.",
+        "Cheapest test: have his wife stop re-evening things for a week and watch whether his urges and distress flare — a return of symptoms when her help stops shows the accommodation was still maintaining the loop. My lead is refuted if he stays comfortable with crooked surfaces and shows no urge or distress once she stops.",
       yieldAnchors: [
-        "He nearly says 'hate' about his brother",
-        "He corrects it to 'love'",
-        "He insists they are very close",
+        "He has done well with symmetry OCD",
+        "His wife silently re-evens crooked things",
+        "Neither saw it as part of the OCD",
       ],
       riskAnchors: [
-        "Concrete stories reveal tension despite the warm summary",
-        "The closeness claim peaks when conflict is implied",
-        "Allowing both feelings brings relief",
+        "His urges resurface when she stops fixing things",
+        "He can tolerate 'crooked' surfaces himself",
+        "Removing her help is needed for gains to hold",
       ],
       defeatedBy: [
-        "His specific stories are consistently conflict-free",
-        "The slip connects to no real tension at all",
+        "He stays comfortable with crooked surfaces",
+        "No urge or distress appears once she stops",
       ],
     },
     correctAnswer:
-      "The near-slip and quick cover suggest feelings toward his brother are more mixed than the 'so close' story admits, with some resentment held out of awareness; test whether tension shows up in concrete stories about the brother despite the warm summary, whether the closeness claim is strongest right when conflict is implied, and whether gently allowing for both feelings brings relief rather than denial.",
+      "The wife's silent re-evening is leftover family accommodation propping up the symmetry need, so ending now would leave an active maintenance loop in the home and invite relapse — the arc isn't complete until the accommodation is dismantled; test whether his urges resurface when she stops fixing things, whether he can tolerate visibly 'crooked' surfaces himself, and whether removing her help is required for his gains to hold after termination.",
     explanation:
-      "Full credit reads the near-slip as split-off resentment with three checks and a stories-versus-summary test that names its refutation; 'just a stumble' is the dismissal the near-'hate' beneath the glowing summary defeats.",
+      "Full credit reads the hidden accommodation as an unfinished part of the arc and names a stop-the-help test that states its refutation; 'he's just lucky' is the dodge the symptom-maintaining loop defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A patient agrees with every interpretation the therapist offers, thanks her warmly each time, and never once pushes back, even when an interpretation clearly doesn't fit. Which conclusion best follows?",
+      "A scrupulosity patient has stopped his out-loud confessing rituals, but the clinician notices he now pauses and silently 'checks his conscience' for several seconds before answering questions in session. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He seems very agreeable in session.",
+        text: "He seems thoughtful before he speaks.",
         credit: 0.3,
       },
       {
-        text: "His agreeableness proves the therapy is going perfectly and he has no further conflicts to address.",
-        credit: 0,
-      },
-      {
-        text: "Reflexive agreement even with interpretations that miss suggests a compliance pattern — keeping the relationship safe by never displeasing the therapist — likely a template from relationships where disagreement felt dangerous; test whether he can voice a disagreement when explicitly invited, whether the same please-the-powerful stance appears with bosses and partners, and whether his real reactions emerge once it's safe to differ.",
+        text: "The silent conscience-check is a covert mental ritual that has quietly replaced the out-loud confessing, so the visible symptom dropped while the same neutralizing continues underground — the plan must target the hidden ritual too; test whether the pauses cluster before morally charged statements, whether resisting the check raises then settles his anxiety, and whether his progress was overstated because the ritual merely went covert.",
         credit: 1.0,
       },
       {
-        text: "He's probably trying to please the therapist; we could invite disagreement.",
+        text: "He's probably still doing something mentally; we could ask about the pauses.",
         credit: 0.6,
+      },
+      {
+        text: "Since the visible confessing has stopped, the OCD is essentially resolved and the pauses are nothing.",
+        credit: 0,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'compliance to keep the relationship safe' lead from the rival 'the interpretations simply happen to be accurate,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'covert mental ritual replacing the confessing' lead from the rival 'he is simply a careful, deliberate speaker,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: offer a deliberately off-target interpretation and see whether he agrees with that too — agreement with something that clearly doesn't fit reveals compliance rather than accuracy. My lead is refuted if he readily corrects the wrong interpretation and disagrees freely, showing his assent is genuine rather than defensive.",
+        "Cheapest test: notice whether the pauses concentrate before morally loaded statements and whether stopping the silent check spikes his anxiety before it settles — a neutralizing routine tied to moral content marks a covert ritual, not ordinary care. My lead is refuted if the pauses are evenly spread across all topics and dropping them causes no anxiety.",
       yieldAnchors: [
-        "He agrees with every interpretation",
-        "He thanks the therapist each time",
-        "He accepts even interpretations that don't fit",
+        "Out-loud confessing has stopped",
+        "He silently 'checks his conscience' before answering",
+        "The pause precedes his replies",
       ],
       riskAnchors: [
-        "He can disagree when explicitly invited",
-        "The please-the-powerful stance appears elsewhere",
-        "Real reactions emerge once it's safe to differ",
+        "The pauses cluster before morally charged statements",
+        "Resisting the check raises then settles anxiety",
+        "Progress was overstated as the ritual went covert",
       ],
       defeatedBy: [
-        "He readily corrects a deliberately wrong interpretation",
-        "He disagrees freely and easily",
+        "The pauses are evenly spread across all topics",
+        "Dropping the check causes no anxiety",
       ],
     },
     correctAnswer:
-      "Reflexive agreement even with interpretations that miss suggests a compliance pattern — keeping the relationship safe by never displeasing the therapist — likely a template from relationships where disagreement felt dangerous; test whether he can voice a disagreement when explicitly invited, whether the same please-the-powerful stance appears with bosses and partners, and whether his real reactions emerge once it's safe to differ.",
+      "The silent conscience-check is a covert mental ritual that has quietly replaced the out-loud confessing, so the visible symptom dropped while the same neutralizing continues underground — the plan must target the hidden ritual too; test whether the pauses cluster before morally charged statements, whether resisting the check raises then settles his anxiety, and whether his progress was overstated because the ritual merely went covert.",
     explanation:
-      "Full credit reads total agreement as a compliance defense with three checks and a deliberately-wrong-interpretation test that names its refutation; 'therapy is going perfectly' is the overreach the agreement with interpretations that miss defeats.",
+      "Full credit reads the pause as a covert ritual that replaced the overt one and names a moral-content test that states its refutation; 'the OCD is essentially resolved' is the overreach the hidden neutralizing defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "For months a patient has eloquently described how his fear of conflict comes from his volatile childhood home, yet he still says yes to everything and never sets a limit with anyone. Which conclusion best follows?",
+      "Late in treatment, a patient who has handled exposures well suddenly snaps at the clinician, 'You keep pushing me into this stuff — you don't actually care if it's too much for me,' over a routine exposure plan he'd previously agreed to. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "His understanding probably hasn't translated to action; we could practice setting limits.",
+        text: "He's probably feeling pushed; we could ease up on the exposures.",
         credit: 0.6,
       },
       {
-        text: "He seems to understand where his fear comes from.",
-        credit: 0.3,
-      },
-      {
-        text: "His clear account is intellectual insight that hasn't been worked through into the situations that matter, which is why the yes-to-everything behavior persists; test whether the insight carries real anxiety when he describes it, whether he can hold a limit in an actual charged moment rather than only explain it afterward, and whether repeatedly catching the pattern in fresh situations gradually changes what he does.",
+        text: "His outsized 'you don't care' reaction to a plan he agreed to looks like an old template about being coerced by people who claim to help, now surfacing in the alliance as a rupture worth working through — not evidence the exposure was wrong; test whether the same coerced-and-uncared-for feeling appears with other authority figures, whether repairing the rupture by inviting his control restores the collaboration, and whether the reaction eases as he sees the plan really is shared rather than imposed.",
         credit: 1.0,
       },
       {
-        text: "Because he understands the root of his fear, the problem is essentially resolved.",
+        text: "He seems annoyed about the exposure plan.",
+        credit: 0.3,
+      },
+      {
+        text: "His anger proves the clinician has been abusive and the whole treatment was coercive and harmful.",
         credit: 0,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'insight not yet worked through' lead from the rival 'he has genuinely changed and just hasn't had the chance to show it,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'old coercion template surfacing as a workable rupture' lead from the rival 'the exposure plan really was being forced on him,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: look for whether he can actually set one small limit in a real interaction this week, not just explain why he should — worked-through change shows up as new behavior in fresh situations. My lead is refuted if he begins holding limits in real moments and the new behavior generalizes, showing the understanding has become more than intellectual.",
+        "Cheapest test: check whether the 'you don't care, you're forcing me' feeling shows up with other helpers and whether repairing it by handing him control of the pace restores collaboration — a relationship theme that travels and mends points to a transference rupture, not genuine coercion. My lead is refuted if the plan really exceeded what he agreed to and his protest resolves simply by correcting an objectively pushed pace.",
       yieldAnchors: [
-        "He explains his fear's origins clearly",
-        "He has done so for months",
-        "He still never sets a limit",
+        "He has handled exposures well before",
+        "He snaps that the clinician doesn't care",
+        "It's over a plan he had agreed to",
       ],
       riskAnchors: [
-        "The insight carries real anxiety when described",
-        "He can hold a limit in a charged moment",
-        "Catching the pattern in fresh situations changes behavior",
+        "The coerced-and-uncared-for feeling appears with other authorities",
+        "Repairing the rupture by inviting control restores collaboration",
+        "It eases as he sees the plan is shared",
       ],
       defeatedBy: [
-        "He starts setting limits in real interactions",
-        "The new behavior generalizes across situations",
+        "The plan really exceeded what he agreed to",
+        "Correcting an objectively pushed pace fully resolves it",
       ],
     },
     correctAnswer:
-      "His clear account is intellectual insight that hasn't been worked through into the situations that matter, which is why the yes-to-everything behavior persists; test whether the insight carries real anxiety when he describes it, whether he can hold a limit in an actual charged moment rather than only explain it afterward, and whether repeatedly catching the pattern in fresh situations gradually changes what he does.",
+      "His outsized 'you don't care' reaction to a plan he agreed to looks like an old template about being coerced by people who claim to help, now surfacing in the alliance as a rupture worth working through — not evidence the exposure was wrong; test whether the same coerced-and-uncared-for feeling appears with other authority figures, whether repairing the rupture by inviting his control restores the collaboration, and whether the reaction eases as he sees the plan really is shared rather than imposed.",
     explanation:
-      "Full credit distinguishes intellectual from worked-through insight with three checks and a real-limit test that names its refutation; 'the problem is essentially resolved' is the overreach the unchanged yes-to-everything behavior defeats.",
+      "Full credit reads the disproportionate snap as a transference rupture to repair and names a travels-and-mends test that states its refutation; 'the clinician was abusive' is the overreach the previously shared, agreed plan defeats.",
   },
 ];
 
@@ -843,179 +843,175 @@ const written: HomeworkItem[] = [
   {
     itemType: "written",
     prompt:
-      "Over one session, a patient is warm and open until the therapist mentions that, given her progress, they might begin planning for the end of therapy in a few months; from that moment she becomes guarded, gives one-word answers, and says at the door, 'I guess I'm just a case to wrap up.' In one paragraph, propose the strongest conclusion about what is happening dynamically and describe how you would test it.",
+      "A 28-year-old arrives for an initial consultation: she describes intrusive images of her apartment burning down, checks the stove and outlets up to twenty times before leaving, is now late to work daily, has started avoiding cooking entirely, and her roommate has begun doing the 'final check' so she can leave. In one paragraph, propose the strongest formulation of where this case sits and what the first phase of treatment should target, and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that the mention of ending activated an old template about being discarded once she's no longer useful, and her sudden guardedness and 'just a case to wrap up' remark are that abandonment fear showing up as transference toward the therapist rather than a fair read of what was said. This is a strong claim because it predicts checkable consequences: the same fear of being dropped should appear in how past relationships ended for her; the warmth should return once the therapist clarifies that ending is collaborative and gradual, not a dismissal; and similar withdrawal should follow other separation cues like breaks or vacations. I would test it by tracing how earlier relationships ended and whether she felt discarded, by watching whether naming the abandonment fear directly restores her openness, and by checking whether separation cues reliably trigger the same cold pull-back — and if instead she stays warm about ending and the remark was a one-off, the abandonment reading is wrong.",
+        "The strongest formulation is that this is a checking-type OCD loop — intrusive fire images spike anxiety, repeated stove-and-outlet checking and cooking-avoidance bring brief relief, and that relief reinforces the cycle — with the roommate's 'final check' now functioning as family accommodation that keeps the loop alive, so the case sits at the assessment-and-formulation phase and the first targets are a shared map of the loop plus a plan to wind down both the checking and the accommodation. This is a strong claim because it predicts checkable consequences: the checking should track the specific fire-catastrophe fear rather than general forgetfulness; each extra check should leave her less certain rather than reassured; and her anxiety should have no chance to extinguish as long as the roommate removes the trigger for her. I would test it by mapping whether the rituals cluster around the fire fear, by watching whether more checking erodes rather than builds her confidence, and by seeing whether her distress and avoidance shift once the roommate gradually stops doing the final check — and if the checking is actually settled by a single look, the doubt doesn't return, and the roommate's help is irrelevant to her anxiety, the OCD-loop formulation is wrong.",
       yieldAnchors: [
-        "She is warm until ending is mentioned",
-        "She becomes guarded and terse afterward",
-        "She says she's 'just a case to wrap up'",
+        "Intrusive fire images and up to twenty checks",
+        "She avoids cooking and is late daily",
+        "The roommate does the 'final check' for her",
       ],
       riskAnchors: [
-        "The same discard fear appears in how past relationships ended",
-        "Warmth returns when ending is framed as collaborative",
-        "Other separation cues trigger the same withdrawal",
+        "The checking tracks the specific fire fear",
+        "Each extra check lowers rather than raises certainty",
+        "Anxiety can't extinguish while the roommate removes the trigger",
       ],
       defeatedBy: [
-        "She stays warm and untroubled about ending",
-        "The remark was a one-off unconnected to any pattern",
+        "A single check genuinely settles her for good",
+        "The roommate's help is irrelevant to her anxiety",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that the mention of ending activated an old template about being discarded once she's no longer useful, and her sudden guardedness and 'just a case to wrap up' remark are that abandonment fear showing up as transference toward the therapist rather than a fair read of what was said. This is a strong claim because it predicts checkable consequences: the same fear of being dropped should appear in how past relationships ended for her; the warmth should return once the therapist clarifies that ending is collaborative and gradual, not a dismissal; and similar withdrawal should follow other separation cues like breaks or vacations. I would test it by tracing how earlier relationships ended and whether she felt discarded, by watching whether naming the abandonment fear directly restores her openness, and by checking whether separation cues reliably trigger the same cold pull-back — and if instead she stays warm about ending and the remark was a one-off, the abandonment reading is wrong.",
+      "The strongest formulation is that this is a checking-type OCD loop — intrusive fire images spike anxiety, repeated stove-and-outlet checking and cooking-avoidance bring brief relief, and that relief reinforces the cycle — with the roommate's 'final check' now functioning as family accommodation that keeps the loop alive, so the case sits at the assessment-and-formulation phase and the first targets are a shared map of the loop plus a plan to wind down both the checking and the accommodation. This is a strong claim because it predicts checkable consequences: the checking should track the specific fire-catastrophe fear rather than general forgetfulness; each extra check should leave her less certain rather than reassured; and her anxiety should have no chance to extinguish as long as the roommate removes the trigger for her. I would test it by mapping whether the rituals cluster around the fire fear, by watching whether more checking erodes rather than builds her confidence, and by seeing whether her distress and avoidance shift once the roommate gradually stops doing the final check — and if the checking is actually settled by a single look, the doubt doesn't return, and the roommate's help is irrelevant to her anxiety, the OCD-loop formulation is wrong.",
     explanation:
-      "The dodge — 'people dislike change, so her mood means nothing' — ignores the precise trigger; top credit commits to an abandonment template replayed as transference and names a separation-cue test that could refute it.",
+      "The dodge — 'she's just forgetful and overcautious, nothing to formulate' — ignores the loop and the accommodation; top credit commits to a checking-OCD formulation with an accommodation component and names tests that could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "A patient has described escalating fights with his partner and his boss, and today he snaps at the therapist over a minor scheduling question, then looks surprised at himself. In one paragraph, drawing on everything you've learned, propose the strongest integrated conclusion about what is happening across these relationships and describe how you would test it.",
+      "A man has done six months of ERP for contamination fears with real success: his washing is down from three hours to fifteen minutes a day and he can use public restrooms. But he now reports feeling strangely adrift and has begun picking fights with his wife, saying he 'doesn't know who he is without the routines.' In one paragraph, propose the strongest integrated conclusion about where this case now sits and what it needs next, and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that a single relationship pattern — reading others as about to control or criticize him and striking first to defend himself — is being replayed across his partner, his boss, and now the therapist, which is why a minor question drew a snap that surprised even him. This is a strong claim because it predicts checkable consequences: the same preemptive hostility should appear specifically when he feels controlled or judged, not at random; the conflicts across these very different people should share that one trigger rather than reflecting three unrelated bad relationships; and the pattern should match how a controlling or critical figure once treated him. I would test it by mapping what immediately preceded each blow-up to see whether the felt-control trigger recurs, by checking whether neutral observers find his partner and boss as hostile as he does, and by watching whether naming the pattern in the room — where it just happened live — helps him catch it next time; if the fights share no common trigger and others confirm genuinely hostile partners and bosses, the single-template reading fails.",
+        "The strongest conclusion is that the case has moved past the symptom-relief phase into working through: with the rituals no longer organizing his days and binding his anxiety, feelings and questions the washing had kept at bay — about identity, control, and his marriage — are surfacing, which is why he feels adrift and is fighting with his wife rather than relapsing. This is a strong claim because it predicts checkable consequences: the unsettledness should appear in the time and mental space the rituals used to fill; staying with the new feelings rather than resuming washing should preserve his gains; and naming what the routines were doing for him should bring relief rather than a return of symptoms. I would test it by tracing whether the adrift feeling and conflicts cluster in the vacated ritual space, by checking whether his washing stays low as he engages the feelings instead of avoiding them, and by watching whether exploring what 'who I am without the routines' means deepens his stability — and if instead the distress is global and unrelated to the freed-up time and only resuming rituals relieves it, the working-through reading is wrong.",
       yieldAnchors: [
-        "Escalating fights with partner and boss",
-        "He snaps at the therapist over something minor",
-        "He looks surprised at his own reaction",
+        "Washing dropped from three hours to fifteen minutes",
+        "He feels adrift and fights with his wife",
+        "He says he doesn't know who he is without the routines",
       ],
       riskAnchors: [
-        "The hostility appears specifically when he feels controlled or judged",
-        "The conflicts share one trigger across different people",
-        "The pattern matches a past controlling figure",
+        "The unsettledness appears in the vacated ritual space",
+        "Staying with the feelings preserves his gains",
+        "Naming what the routines did brings relief",
       ],
       defeatedBy: [
-        "The conflicts share no common trigger",
-        "Observers confirm genuinely hostile partners and bosses",
+        "The distress is global and unrelated to freed-up time",
+        "Only resuming rituals relieves it",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that a single relationship pattern — reading others as about to control or criticize him and striking first to defend himself — is being replayed across his partner, his boss, and now the therapist, which is why a minor question drew a snap that surprised even him. This is a strong claim because it predicts checkable consequences: the same preemptive hostility should appear specifically when he feels controlled or judged, not at random; the conflicts across these very different people should share that one trigger rather than reflecting three unrelated bad relationships; and the pattern should match how a controlling or critical figure once treated him. I would test it by mapping what immediately preceded each blow-up to see whether the felt-control trigger recurs, by checking whether neutral observers find his partner and boss as hostile as he does, and by watching whether naming the pattern in the room — where it just happened live — helps him catch it next time; if the fights share no common trigger and others confirm genuinely hostile partners and bosses, the single-template reading fails.",
+      "The strongest conclusion is that the case has moved past the symptom-relief phase into working through: with the rituals no longer organizing his days and binding his anxiety, feelings and questions the washing had kept at bay — about identity, control, and his marriage — are surfacing, which is why he feels adrift and is fighting with his wife rather than relapsing. This is a strong claim because it predicts checkable consequences: the unsettledness should appear in the time and mental space the rituals used to fill; staying with the new feelings rather than resuming washing should preserve his gains; and naming what the routines were doing for him should bring relief rather than a return of symptoms. I would test it by tracing whether the adrift feeling and conflicts cluster in the vacated ritual space, by checking whether his washing stays low as he engages the feelings instead of avoiding them, and by watching whether exploring what 'who I am without the routines' means deepens his stability — and if instead the distress is global and unrelated to the freed-up time and only resuming rituals relieves it, the working-through reading is wrong.",
     explanation:
-      "The dodge — 'he just has several difficult people in his life' — misses the shared trigger now visible in the room; top credit commits to one replayed template and names a same-trigger test, including the live here-and-now check, that could refute it.",
+      "The dodge — calling the unrest proof the ERP backfired and should be reversed — ignores the genuine relief; top credit commits to a working-through phase and names a vacated-space test that could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "Three weeks before a planned termination date, a patient who has struggled for a year suddenly announces that everything is completely fixed, all symptoms gone, and there's really no need for the remaining sessions. In one paragraph, propose the strongest conclusion about what is happening and describe how you would test it.",
+      "Two weeks before a planned termination, a patient who spent a year battling harm obsessions declares he is 'one hundred percent better,' wants to cancel the remaining sessions, and in particular wants to skip the final agreed exposure of holding a kitchen knife near his partner. In one paragraph, propose the strongest conclusion about what is happening and what the arc still needs, and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that the abrupt, total 'cure' arriving just before termination is more likely a defensive flight from the feelings stirred by ending — a way to leave on his own terms before he can be left — than a genuine, sudden resolution of a year-long struggle. This is a strong claim because it predicts checkable consequences: the timing should track the approach of ending rather than any real-world improvement; the gains should be claimed in sweeping all-or-nothing terms rather than shown in concrete handled situations; and the underlying difficulty should resurface if the ending is slowed down or the feelings about separating are named. I would test it by checking whether his daily life actually shows the change or only his declarations do, by asking for specific recent situations where the old problem would have flared and didn't, and by watching whether gently raising the feelings about ending deflates the sudden cure; if his behavior in real situations genuinely confirms durable change, the flight-into-health reading is wrong and the improvement is real.",
+        "The strongest conclusion is that the sudden, total 'cure' arriving exactly as the most feared exposure looms is more likely a flight into health — a way to declare victory and escape the terrifying knife exposure — than a genuine resolution, which means the arc still needs that last exposure and a careful read of whether his confidence is real or defensive. This is a strong claim because it predicts checkable consequences: the timing should track the dreaded exposure rather than any new real-world gain; he should still flinch from or avoid the specific feared situation if asked to face it now; and the 'cure' should wobble when the avoided trigger is brought concretely into the room. I would test it by checking whether his improvement shows up in real situations or only in his declarations, by inviting him to attempt the very exposure he wants to skip and watching whether he can do it without ritual or escape, and by seeing whether his certainty holds when the feared scenario is made vivid — and if he can actually face the knife exposure calmly and his gains are evident in daily life, the flight-into-health reading is wrong and he may genuinely be ready to finish.",
       yieldAnchors: [
-        "A sudden total cure is announced",
-        "It arrives three weeks before termination",
-        "A year-long struggle is declared completely fixed",
+        "He declares himself '100% better'",
+        "It arrives two weeks before termination",
+        "He wants to skip the final feared exposure",
       ],
       riskAnchors: [
-        "The timing tracks the approach of ending",
-        "Gains are sweeping rather than shown in concrete situations",
-        "The difficulty resurfaces if ending is slowed",
+        "The timing tracks the dreaded exposure",
+        "He still avoids the specific feared situation",
+        "The 'cure' wobbles when the trigger is made vivid",
       ],
       defeatedBy: [
-        "Real-life behavior confirms durable change",
-        "Specific recent situations show the problem genuinely resolved",
+        "He faces the knife exposure calmly without ritual",
+        "His gains are evident across daily life",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that the abrupt, total 'cure' arriving just before termination is more likely a defensive flight from the feelings stirred by ending — a way to leave on his own terms before he can be left — than a genuine, sudden resolution of a year-long struggle. This is a strong claim because it predicts checkable consequences: the timing should track the approach of ending rather than any real-world improvement; the gains should be claimed in sweeping all-or-nothing terms rather than shown in concrete handled situations; and the underlying difficulty should resurface if the ending is slowed down or the feelings about separating are named. I would test it by checking whether his daily life actually shows the change or only his declarations do, by asking for specific recent situations where the old problem would have flared and didn't, and by watching whether gently raising the feelings about ending deflates the sudden cure; if his behavior in real situations genuinely confirms durable change, the flight-into-health reading is wrong and the improvement is real.",
+      "The strongest conclusion is that the sudden, total 'cure' arriving exactly as the most feared exposure looms is more likely a flight into health — a way to declare victory and escape the terrifying knife exposure — than a genuine resolution, which means the arc still needs that last exposure and a careful read of whether his confidence is real or defensive. This is a strong claim because it predicts checkable consequences: the timing should track the dreaded exposure rather than any new real-world gain; he should still flinch from or avoid the specific feared situation if asked to face it now; and the 'cure' should wobble when the avoided trigger is brought concretely into the room. I would test it by checking whether his improvement shows up in real situations or only in his declarations, by inviting him to attempt the very exposure he wants to skip and watching whether he can do it without ritual or escape, and by seeing whether his certainty holds when the feared scenario is made vivid — and if he can actually face the knife exposure calmly and his gains are evident in daily life, the flight-into-health reading is wrong and he may genuinely be ready to finish.",
     explanation:
-      "The dodge — taking the announcement at face value as proof of cure — ignores the suspicious timing; top credit commits to a defensive flight from the feelings of ending and names a concrete-behavior test that could refute it.",
+      "The dodge — taking the '100% better' at face value and ending early — ignores the suspicious timing tied to the dreaded step; top credit commits to a flight into health and names a face-the-exposure test that could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "A patient mentions a recurring dream in which he is locked out of his childhood home in the cold while his family eats dinner inside, then immediately says, 'but dreams are just random nonsense, ignore it.' In one paragraph, propose the strongest conclusion about what the dream and his dismissal of it suggest, and describe how you would test it.",
+      "Eight months after finishing treatment for symmetry-and-ordering OCD, a woman returns shaken: a difficult pregnancy and move have brought back some ordering urges, and she says, 'I'm right back where I started, the therapy clearly didn't take.' Her records show she was symptom-free and functioning well for those eight months. In one paragraph, propose the strongest conclusion about what is happening and what it calls for, and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that the recurring image of being shut out in the cold while the family is warm inside likely expresses a felt theme of exclusion and not-belonging in his family, and that his quick 'it's just nonsense' is itself a defensive move to wave off a feeling that touched something real. This is a strong claim because it predicts checkable consequences: the exclusion theme should echo in his waking accounts of family life, not just the dream; the dismissal should be strongest exactly when the material gets closest to that painful feeling; and exploring the dream rather than dropping it should bring associations that converge on belonging rather than scatter randomly. I would test it by asking what the locked-out feeling reminds him of in real family memories, by noticing whether his urge to dismiss spikes as the feeling sharpens, and by following his free associations to see whether they cluster around exclusion; if the dream sparks no related feelings or memories and his associations go nowhere, the exclusion reading is unsupported.",
+        "The strongest conclusion is that this is a stress-triggered lapse, not a relapse to baseline: eight months of symptom-free functioning show the treatment did take, and a major stressor like a hard pregnancy and a move has temporarily reactivated familiar urges, so what it calls for is re-deploying her existing skills and relapse-prevention plan rather than starting over or concluding the therapy failed. This is a strong claim because it predicts checkable consequences: the uptick should track the acute stressors and stay far short of her original severity; she should still be able to resist or recover from individual urges using what she learned; and her symptoms should recede toward her recovered baseline as the stressors resolve and she resumes exposures. I would test it by comparing the current intensity against both her pre-treatment level and her recovered baseline, by checking whether she can still apply response-prevention to a single urge, and by watching whether the flare eases as the pregnancy and move settle and she re-engages her plan — and if instead she has truly returned to full pre-treatment severity and her skills no longer help at all, the simple-lapse reading would need revising toward a fuller relapse.",
       yieldAnchors: [
-        "A recurring dream of being locked out in the cold",
-        "His family eats warmly inside",
-        "He immediately dismisses the dream as random",
+        "Ordering urges returned under stress",
+        "She says the therapy 'didn't take'",
+        "She was symptom-free for eight months",
       ],
       riskAnchors: [
-        "The exclusion theme echoes in waking family accounts",
-        "The dismissal peaks as the feeling sharpens",
-        "Associations converge on belonging rather than scatter",
+        "The uptick tracks the acute stressors",
+        "She can still recover from individual urges",
+        "Symptoms recede toward baseline as stressors resolve",
       ],
       defeatedBy: [
-        "The dream sparks no related feelings or memories",
-        "His associations lead nowhere in particular",
+        "She has returned to full pre-treatment severity",
+        "Her skills no longer help at all",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that the recurring image of being shut out in the cold while the family is warm inside likely expresses a felt theme of exclusion and not-belonging in his family, and that his quick 'it's just nonsense' is itself a defensive move to wave off a feeling that touched something real. This is a strong claim because it predicts checkable consequences: the exclusion theme should echo in his waking accounts of family life, not just the dream; the dismissal should be strongest exactly when the material gets closest to that painful feeling; and exploring the dream rather than dropping it should bring associations that converge on belonging rather than scatter randomly. I would test it by asking what the locked-out feeling reminds him of in real family memories, by noticing whether his urge to dismiss spikes as the feeling sharpens, and by following his free associations to see whether they cluster around exclusion; if the dream sparks no related feelings or memories and his associations go nowhere, the exclusion reading is unsupported.",
+      "The strongest conclusion is that this is a stress-triggered lapse, not a relapse to baseline: eight months of symptom-free functioning show the treatment did take, and a major stressor like a hard pregnancy and a move has temporarily reactivated familiar urges, so what it calls for is re-deploying her existing skills and relapse-prevention plan rather than starting over or concluding the therapy failed. This is a strong claim because it predicts checkable consequences: the uptick should track the acute stressors and stay far short of her original severity; she should still be able to resist or recover from individual urges using what she learned; and her symptoms should recede toward her recovered baseline as the stressors resolve and she resumes exposures. I would test it by comparing the current intensity against both her pre-treatment level and her recovered baseline, by checking whether she can still apply response-prevention to a single urge, and by watching whether the flare eases as the pregnancy and move settle and she re-engages her plan — and if instead she has truly returned to full pre-treatment severity and her skills no longer help at all, the simple-lapse reading would need revising toward a fuller relapse.",
     explanation:
-      "The dodge — agreeing the dream is meaningless noise — adopts the patient's own defense; top credit commits to a specific exclusion theme plus a defensive dismissal and names an association test that could refute it.",
+      "The dodge — agreeing the therapy 'didn't take' and starting from scratch — ignores eight months of recovery; top credit commits to a stress-triggered lapse and names a severity-comparison test that could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "A patient who for a year has met every emotional moment with cool analysis unexpectedly stops mid-sentence one day, his eyes fill, and he says quietly, 'I think I've been talking about this so I don't have to feel it.' In one paragraph, propose the strongest conclusion about what just happened and whether real change is underway, and describe how you would test it.",
+      "A clinician is forming an overall plan for a man with severe contamination OCD who is also curious about 'the deeper meaning' of his fear of being 'dirty,' which he links to a shaming childhood. He asks whether they should do exposure work or 'figure out where it comes from' first. In one paragraph, propose the strongest conclusion about how to sequence and combine the work across his treatment arc, and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that the patient has just moved from intellectual insight to a moment of emotional insight — feeling the very defense he had until now only described — which is the kind of lived recognition that can begin real change, though one moment is not yet change worked through. This is a strong claim because it predicts checkable consequences: if it's genuine, the feeling should start surfacing in other sessions and not just this one; he should begin catching the intellectualizing in the act rather than only naming it after; and the shift should show up as new behavior outside the room, like letting himself feel something with the people in his life. I would test it by watching whether affect recurs across future sessions, whether he interrupts his own analyzing in real time, and whether emotional openness appears in his outside relationships; if he returns next week to pure cool analysis with no carryover, the moment was a flash rather than the start of worked-through change.",
+        "The strongest conclusion is that the arc should lead with the well-supported, first-line approach for severe OCD — ERP to break the contamination loop — while treating his interest in the 'deeper meaning' not as an alternative but as a complement that becomes most useful for working through once the symptoms loosen, so insight and exposure are integrated rather than pitted against each other. This is a strong claim because it predicts checkable consequences: symptom severity should drop fastest when ERP is actually doing the work, not when they only discuss origins; the childhood-shame meaning should become more accessible and more useful as the rituals stop crowding it out; and addressing that meaning during working-through should reduce the risk of the symptom simply migrating to a new form. I would test it by tracking whether his contamination symptoms fall as exposures proceed, by watching whether the shame theme can be engaged more productively after the rituals ease, and by checking whether weaving in that meaning lowers relapse and symptom-substitution compared with exposure alone — and if pure origin-talk with no exposure actually resolved a severe contamination loop, this evidence-led sequencing would be wrong.",
       yieldAnchors: [
-        "A year of meeting feeling with cool analysis",
-        "He stops mid-sentence and his eyes fill",
-        "He says he talks so he doesn't have to feel",
+        "Severe contamination OCD",
+        "He links 'dirty' to a shaming childhood",
+        "He asks whether to do exposure or origins first",
       ],
       riskAnchors: [
-        "The feeling surfaces in other sessions too",
-        "He catches the intellectualizing in real time",
-        "Emotional openness appears outside the room",
+        "Severity drops fastest when ERP does the work",
+        "The shame meaning grows accessible as rituals ease",
+        "Addressing meaning reduces symptom migration",
       ],
       defeatedBy: [
-        "He returns next week to pure analysis with no carryover",
-        "The moment leaves no trace in later behavior",
+        "Origin-talk alone resolves the severe loop",
+        "Exposure produces no symptom reduction",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that the patient has just moved from intellectual insight to a moment of emotional insight — feeling the very defense he had until now only described — which is the kind of lived recognition that can begin real change, though one moment is not yet change worked through. This is a strong claim because it predicts checkable consequences: if it's genuine, the feeling should start surfacing in other sessions and not just this one; he should begin catching the intellectualizing in the act rather than only naming it after; and the shift should show up as new behavior outside the room, like letting himself feel something with the people in his life. I would test it by watching whether affect recurs across future sessions, whether he interrupts his own analyzing in real time, and whether emotional openness appears in his outside relationships; if he returns next week to pure cool analysis with no carryover, the moment was a flash rather than the start of worked-through change.",
+      "The strongest conclusion is that the arc should lead with the well-supported, first-line approach for severe OCD — ERP to break the contamination loop — while treating his interest in the 'deeper meaning' not as an alternative but as a complement that becomes most useful for working through once the symptoms loosen, so insight and exposure are integrated rather than pitted against each other. This is a strong claim because it predicts checkable consequences: symptom severity should drop fastest when ERP is actually doing the work, not when they only discuss origins; the childhood-shame meaning should become more accessible and more useful as the rituals stop crowding it out; and addressing that meaning during working-through should reduce the risk of the symptom simply migrating to a new form. I would test it by tracking whether his contamination symptoms fall as exposures proceed, by watching whether the shame theme can be engaged more productively after the rituals ease, and by checking whether weaving in that meaning lowers relapse and symptom-substitution compared with exposure alone — and if pure origin-talk with no exposure actually resolved a severe contamination loop, this evidence-led sequencing would be wrong.",
     explanation:
-      "The dodge — calling it a one-off blip that means nothing — dismisses a real shift; top credit commits to a move from intellectual to emotional insight and names a carryover test that could refute whether change is truly underway.",
+      "The dodge — choosing meaning-only exploration over the evidence-based exposure for severe OCD — is anti-evidence purism; top credit commits to an ERP-led, meaning-integrated arc and names a symptoms-fall-with-exposure test that could refute it.",
   },
 ];
 
 export const section: SectionContent = {
-  slug: "session-start-to-finish",
-  title: "A Session, Start to Finish",
+  slug: "treatment-arc-start-to-finish",
+  title: "A Treatment Arc, Start to Finish",
   weekNumber: 1,
   blurb:
-    "A capstone that follows a single therapy session moment by moment, weaving meaning beneath the surface, unconscious patterns, defenses, transference, the therapeutic relationship, and working through into one integrated way of reading the room.",
+    "A capstone that follows a single course of OCD treatment from assessment and formulation through building the alliance, combining ERP with meaning-focused work, working through, and termination — into one integrated way of reading where a case sits and what it needs next.",
   lectureTitle:
-    "1.8 Putting It Together: a session, start to finish",
-  body: `# A Session, Start to Finish
+    "1.8 A Treatment Arc, Start to Finish",
+  body: `# A Treatment Arc, Start to Finish
 
-By now you have a toolkit: symptoms and behavior carry meaning, much of the mind runs on out-of-awareness patterns, defenses protect us at a cost, we replay old relationships through transference, the therapeutic relationship is itself the engine of change, and lasting change comes from working through rather than insight alone. This final section puts the whole kit to work in the place it actually matters — inside a single session, moment by moment. A real session doesn't announce its themes. It offers small, easy-to-miss events: a slip, a pause, a joke, a flash of irritation, a sudden "I'm completely fine." The craft is reading those moments as they happen and committing to the strongest interpretation the material warrants — while naming the cheapest observation that could prove you wrong.
+By now you have a toolkit: OCD runs as a cycle of obsession, anxiety, ritual, and brief relief that quietly reinforces itself; the content of a symptom can carry meaning; rituals serve a function as defenses; conflict and ambivalence often sit beneath them; the therapy relationship is both a tool and a place the symptom shows itself; exposure and response prevention is the well-supported core; and lasting change pairs symptom relief with working through. This final section puts the whole kit to work across one course of treatment, start to finish. A real case doesn't arrive labeled by phase. It offers signals — a hidden ritual, a stalled plateau, a sudden "cure" — and the craft is reading where in the arc a case sits and committing to the strongest next move the evidence warrants, while naming the cheapest observation that could prove you wrong.
 
-## A session is made of moments
+## Assessment and formulation
 
-Nothing important in therapy arrives labeled. It comes as a hesitation before a name, a topic dropped the instant it gets warm, a laugh in the wrong place. These micro-events are the data. Taken one at a time they look trivial; read in context they point somewhere. The discipline is the same one running through this whole course: treat the observable moment as a clue to a hidden dynamic, then ask what else should be true if your reading is right. A single slip proves little. But a slip, plus a body that tightens on the same topic, plus a pattern that repeats across sessions, builds a case. You commit to the best account of the moment and stay ready to revise it when the next moment arrives.
+The arc begins before any exposure, with understanding. A good formulation maps the specific triggers, the feared catastrophe, the rituals (overt and covert), the avoidance, and what the whole loop accomplishes. Skipping this to "just start exposures" risks aiming at the wrong link — chasing the washing while missing the reassurance-seeking that really drives it, or forcing an OCD frame onto worry that is actually realistic and information-responsive. The discipline is the same one running through the course: treat the observable symptom as a clue to a loop, then ask what else should be true if your map is right. A strong formulation binds the trigger, the ritual, and the relief into one picture and carries a test: the ritual should track the specific fear, and more checking should erode confidence rather than build it.
 
-## Reading the surface for meaning
+## Building the alliance
 
-The first move is the oldest one in the course: assume the surface has meaning. When a patient swerves from his divorce to the weather, the swerve is not noise — its timing tells you it is doing something. When someone insists "I don't care" while her eyes fill, the mismatch is the message. Reading meaning is not mind-reading or wild guessing; it is noticing that an event is patterned and tied to a feeling, and asking what it accomplishes. The strongest interpretation binds several observations at once — the timing, the body, the recurrence — rather than seizing on one detail. And it always carries a test: if this swerve is a flight from pain, it should happen on the painful topics specifically and ease when she is slowed down.
+Nothing in OCD treatment works without a working relationship, and exposure work especially can't begin on a foundation of mistrust. Many patients arrive ashamed — of intrusive harm or taboo thoughts they fear make them monsters, or burned by past treatment that pushed too hard too fast. The early phase is about safety and collaboration: normalizing intrusive thoughts, explaining the cycle without judgment, and designing a graded plan the patient helps build and can trust. The check is concrete: engagement should rise when the patient is given a real say in the pace, and guard should drop when shame is met with calm rather than alarm. Force exposure before the alliance holds and the patient quits; build it first and the hardest work becomes possible.
 
-## Defenses in real time
+## ERP combined with meaning-focused work
 
-Much of what you see in session is defense at work: the joke that arrives exactly when loneliness comes up, the lecture on attachment theory that drains all feeling from a divorce, the "this is probably stupid, but..." that disarms judgment before it can land. Spotting a defense means reading both halves — the painful feeling being kept at bay and the cost of keeping it there. The check is concrete: a defense should intensify right at the most threatening material and loosen when it is gently named. If the supposed defense shows up evenly everywhere, or vanishes the moment you point to it with no feeling underneath, you have misread it. Naming a defense too hard or too early just invites a new one, so the work is patient.
+The core engine of change for OCD is exposure and response prevention: facing the trigger while not performing the ritual, so the anxiety can finally extinguish and the loop weakens. A graded hierarchy makes this tolerable; leaping to the worst step invites escape or covert ritualizing. But exposure alone sometimes leaves the conflict the symptom carried untouched, and the anxiety migrates — checking fades and a harm obsession appears, or washing shrinks and online reassurance-seeking swells. The integrated stance is not exposure versus insight but exposure leading, with meaning-focused understanding as a complement that matters most for what comes next. The test is whether symptoms actually fall as exposures proceed, and whether attending to the underlying fear keeps the symptom from simply changing costume.
 
-## Transference in the room
+## Working through
 
-The richest moments are often aimed at the therapist. A one-minute lateness that produces lasting hurt, sudden coldness at news of a vacation, certainty that the therapist secretly finds the patient pathetic — these reactions are too big or too sourceless to belong to the present, which is the signature of transference. An old relationship template is being replayed live, where both people can watch it happen. That makes the room a uniquely good laboratory: you can test whether the same reaction appears with bosses and partners, whether it fits an old caregiver better than the present therapist, and whether it cools as the therapist proves reliable. The point isn't to take the reaction personally or to deny it, but to read it as information about the patterns the patient carries everywhere.
+As rituals stop consuming time and binding anxiety, something often surfaces: a feeling, a conflict, an emptiness the symptom had been crowding out. This marks the shift from symptom relief into working through — the slow, repeated process by which understanding reaches the moments that matter and becomes new behavior rather than a recited explanation. A patient who can flawlessly describe his cycle yet still washes for an hour each morning has intellectual insight that hasn't been worked through; the avoidance persists precisely because the knowing hasn't reached the bathroom at 7 a.m. The check is whether insight carries real feeling, whether it can be applied in the charged moment rather than after, and whether repeated practice in fresh triggers slowly changes what the person does.
 
-## The relationship as the instrument
+## Termination and relapse prevention
 
-None of this works without the relationship. The alliance is not the backdrop to the technique; it is the main instrument. A patient who feels safe will eventually let the defense down, risk a disagreement, show the transference instead of hiding it. Ruptures — the snap, the cold withdrawal, the cancelled session after a breakthrough — are not failures but opportunities, because repairing them is often where the real change happens. When a patient retreats right after a moment of closeness, the relationship itself has become the thing to work on. Tracking the bond, noticing when it frays, and mending it is not separate from the deep work; much of the time, it is the deep work.
-
-## From insight to working through
-
-Finally, beware the seductive moment of understanding. A patient can explain his anxiety flawlessly for a year and still avoid everything that frightens him; a sudden total "cure" three weeks before termination is more likely a flight from ending than a real one. Insight you can recite is cheap. Insight that carries feeling, gets caught in the act, survives stress, and shows up as new behavior in fresh situations is the real thing — and it arrives slowly, through working through. So when a patient who always intellectualizes suddenly tears up and says "I've been talking so I don't have to feel," you don't declare victory; you ask whether the feeling carries over to next week and into his life. Change is tested by what recurs, not by a single good moment.
+A course of treatment aims at its own ending. Readiness shows when a patient uses the skills independently — recovering from slips without help, building an exposure on his own for a brand-new trigger — at which point the strong move is to taper while consolidating a relapse-prevention plan. Watch for the OCD reappearing around the ending itself: a wish to keep coming "just in case" can be the doubt-and-reassurance dynamic seeking the clinician as a safety crutch. And after treatment, expect lapses, not perfection: a stress-triggered flare months into stability is a signal to re-deploy skills, not proof the work failed. The check is whether the flare tracks the stressor and stays far short of baseline, and whether the patient can still recover from individual urges on his own.
 
 ## In the real world
 
-Picture one session. A patient jokes his way past his loneliness, then snaps when you start two minutes late, then, near the end, says he is "totally fine" with his mother's criticism while his jaw clenches. The dodge is to call all this "just a bad day" that means nothing — true-sounding and useless. The integrated move reads the moments together: a defense (the joke) protecting against a feeling, a transference reaction (the snap) replaying an old template of being uncared-for, and a contradiction (the calm words, the clenched jaw) marking feeling held out of awareness. Each reading commits to a specific dynamic and names a cheap check — does the joke track painful topics, does the snap appear with others over small slights, does the body keep betraying the "I'm fine"? That is the whole course in a single hour: not a shrug at how mysterious people are, but a disciplined, testable reading of the patterns running just beneath the surface.`,
+Picture one case from first call to last. A man arrives washing three hours a day, sure his intrusive harm thoughts make him dangerous; you formulate the loop and meet the shame with calm, build a graded plan he trusts, run exposures that drop the washing while watching for the fear to migrate, and as the rituals recede a long-avoided feeling about his father surfaces to be worked through — until, recovered, he handles a new trigger himself and you taper toward an ending he can own. The dodge at every step is the shrug: "OCD is just mysterious, you can't really say where this case is or what it needs." The integrated move reads each phase for what it is and commits to the strongest next step with a test attached — does the ritual track the fear, does engagement rise with collaboration, do symptoms fall with exposure, does the flare track the stressor. That is the whole course in a single arc: not a shrug at how stubborn OCD is, but a disciplined, testable reading of where a case stands and what will move it forward.`,
   homework: {
     mcq,
     hybrid,

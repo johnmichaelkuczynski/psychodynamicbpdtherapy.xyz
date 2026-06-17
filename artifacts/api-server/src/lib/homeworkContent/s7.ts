@@ -9,407 +9,407 @@ const mcq: HomeworkItem[] = [
   {
     itemType: "mc",
     prompt:
-      "A clinic randomly assigns 200 people with long-standing depression either to start psychodynamic therapy now or to a waiting list. After six months, the therapy group has improved markedly on a standard depression questionnaire while the waiting-list group has barely changed. Which conclusion best follows?",
+      "A man finishes a course of exposure work and no longer checks the locks before bed. Within a few weeks, though, he starts silently repeating a reassuring phrase to himself every time he leaves the house — in the same situations that used to trigger checking. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The therapy likely caused real improvement, since random assignment makes the two groups comparable and only the treated group got better; test whether the waiting-list group improves the same amount once they later receive the therapy, whether the gap holds on a clinician's blind rating as well as self-report, and whether bigger improvement appears in those who attended more sessions.",
-        credit: 1.0,
-      },
-      {
-        text: "The therapy probably helped; we could follow the groups for a while longer.",
-        credit: 0.6,
-      },
-      {
-        text: "The treated group seems to be doing better.",
+        text: "He seems to have picked up a new little ritual.",
         credit: 0.3,
       },
       {
-        text: "Feelings are too personal to capture on a questionnaire, so these numbers can't tell us anything about whether therapy works.",
+        text: "The lock-checking eased without working through his underlying intolerance of doubt, so the same function has migrated into a quieter mental ritual — the surface behavior changed but its job did not; test whether the phrase appears in the exact situations checking used to, whether it spikes when he feels most uncertain about safety, and whether it fades once the fear of being responsible for a catastrophe is faced rather than soothed.",
+        credit: 1.0,
+      },
+      {
+        text: "Rituals come and go on their own for no reason, so a new one means nothing and there's nothing here to understand.",
         credit: 0,
+      },
+      {
+        text: "He's probably just swapped one habit for another; we could keep an eye on it.",
+        credit: 0.6,
       },
     ],
     correctAnswer:
-      "The therapy likely caused real improvement, since random assignment makes the two groups comparable and only the treated group got better; test whether the waiting-list group improves the same amount once they later receive the therapy, whether the gap holds on a clinician's blind rating as well as self-report, and whether bigger improvement appears in those who attended more sessions.",
+      "The lock-checking eased without working through his underlying intolerance of doubt, so the same function has migrated into a quieter mental ritual — the surface behavior changed but its job did not; test whether the phrase appears in the exact situations checking used to, whether it spikes when he feels most uncertain about safety, and whether it fades once the fear of being responsible for a catastrophe is faced rather than soothed.",
     explanation:
-      "Top credit reads the randomized gap as a real treatment effect and names three disconfirming checks; 'feelings are too personal to measure' is the refusal the orderly questionnaire difference defeats.",
+      "Top credit reads the new mental ritual as the old function migrating because relief came without working through, and names a same-situations test; \"rituals come and go for no reason\" is the dodge the exact substitution defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A study follows patients after they finish psychodynamic therapy. They are better at the end of treatment, but, unusually, they are better still one year later and better again two years out, long after the sessions stopped. Which conclusion best follows?",
+      "A woman in therapy can explain eloquently that her contamination fears trace to a wish to feel morally clean after her mother's death — yet she still washes for two hours a day and avoids her own kitchen. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Once therapy ends there is nothing left to study, so later changes don't count.",
+        text: "If she already understands the cause, the washing should be gone — so her insight must be fake and there is nothing left to do.",
         credit: 0,
       },
       {
-        text: "The therapy likely set in motion a skill or insight that patients keep applying on their own, so gains compound after treatment ends; test whether patients who report using what they learned improve most, whether the continued growth is absent in an untreated comparison group followed the same way, and whether those who got more therapy show steeper later gains.",
-        credit: 1.0,
-      },
-      {
-        text: "Patients seem to keep getting better.",
+        text: "She washes a great deal even though she understands why.",
         credit: 0.3,
       },
       {
-        text: "The benefits probably last; we could check in with them again later.",
+        text: "Her insight has outrun her symptom relief — understanding the meaning has not yet changed the behavior, so working through must pair that understanding with actually facing the feared dirt and uncertainty; test whether her washing time drops only when she practices resisting the urge rather than merely discussing it, whether the explanation she recites carries felt emotion or stays purely intellectual, and whether linking the washing to the grief in the moment of the urge reduces it.",
+        credit: 1.0,
+      },
+      {
+        text: "She gets it but still washes; we could keep exploring what it means.",
         credit: 0.6,
       },
     ],
     correctAnswer:
-      "The therapy likely set in motion a skill or insight that patients keep applying on their own, so gains compound after treatment ends; test whether patients who report using what they learned improve most, whether the continued growth is absent in an untreated comparison group followed the same way, and whether those who got more therapy show steeper later gains.",
+      "Her insight has outrun her symptom relief — understanding the meaning has not yet changed the behavior, so working through must pair that understanding with actually facing the feared dirt and uncertainty; test whether her washing time drops only when she practices resisting the urge rather than merely discussing it, whether the explanation she recites carries felt emotion or stays purely intellectual, and whether linking the washing to the grief in the moment of the urge reduces it.",
     explanation:
-      "Full credit explains the sleeper effect with a mechanism and three tests; 'later changes don't count' is the dodge the orderly post-treatment growth contradicts.",
+      "Full credit reads understanding-without-behavior-change as insight outrunning relief and names a resist-the-urge test; \"if she understands it the washing should be gone, so it's fake\" is the overreach the persistence of a real, meaningful symptom defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "Across a large dataset, patients who attended more sessions of psychodynamic therapy show greater improvement, and the relationship is orderly: each block of additional sessions adds a bit more benefit, up to a point where it levels off. Which conclusion best follows?",
+      "After treatment, a man who used to count to ward off \"bad luck\" attends a funeral, feels the old urge to count, chooses not to, and finds himself feeling plain sadness instead of anxiety. He remarks that the counting \"used to keep the sadness away.\" Which conclusion best follows?",
     mcOptions: [
       {
-        text: "More sessions seem to go with more improvement.",
+        text: "He managed not to count at the funeral.",
         credit: 0.3,
       },
       {
-        text: "Therapy dose probably matters; we could look at more patients.",
-        credit: 0.6,
+        text: "One good moment proves nothing about OCD, which is too unpredictable to read either way.",
+        credit: 0,
       },
       {
-        text: "The orderly dose-response pattern suggests the therapy itself is doing work, with benefit accumulating per session until it plateaus; test whether randomly assigning patients to longer versus shorter courses reproduces the curve, whether the plateau appears at the same point across different problems, and whether the link survives accounting for how severe each patient was at the start.",
+        text: "Change is consolidating: he can meet the trigger without the ritual and tolerate the very feeling — grief — the counting used to bind, which is the sign symptom relief and insight are joining; test whether he can repeatedly face such triggers without the urge escalating, whether the freed-up sadness stays bearable rather than driving a new compulsion, and whether dropping the ritual now reliably leaves feeling rather than a fresh symptom.",
         credit: 1.0,
       },
       {
-        text: "Sicker people obviously stay longer, so the whole pattern is meaningless and therapy can't be evaluated this way.",
-        credit: 0,
+        text: "He seems to be doing better; we could check in again later.",
+        credit: 0.6,
       },
     ],
     correctAnswer:
-      "The orderly dose-response pattern suggests the therapy itself is doing work, with benefit accumulating per session until it plateaus; test whether randomly assigning patients to longer versus shorter courses reproduces the curve, whether the plateau appears at the same point across different problems, and whether the link survives accounting for how severe each patient was at the start.",
+      "Change is consolidating: he can meet the trigger without the ritual and tolerate the very feeling — grief — the counting used to bind, which is the sign symptom relief and insight are joining; test whether he can repeatedly face such triggers without the urge escalating, whether the freed-up sadness stays bearable rather than driving a new compulsion, and whether dropping the ritual now reliably leaves feeling rather than a fresh symptom.",
     explanation:
-      "Top credit reads the dose-response curve as the therapy working and names three checks, including a severity adjustment; 'the whole pattern is meaningless' is the give-up the orderly curve defeats.",
+      "Top credit reads facing-the-trigger-while-feeling-the-bound-emotion as consolidation and names a repeatable-trigger test; \"one good moment proves nothing\" is the dodge the linked relief-plus-tolerated-grief defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "In a head-to-head randomized trial, psychodynamic therapy and an established cognitive-behavioral therapy produce about the same amount of improvement for anxiety, with no reliable difference between them at the end. Which conclusion best follows?",
+      "A woman symptom-free for a year after exposure work relapses into intense checking the month she starts a high-pressure new job — and the checking fixes entirely on \"did I make a catastrophic mistake at work today?\" Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Both active therapies likely deliver genuine benefit through partly shared ingredients, since two real treatments matching each other is different from neither working; test whether each beats a no-treatment or waitlist arm in the same trial, whether they differ on specific outcomes like insight versus symptom checklists, and whether the tie replicates in an independent sample.",
+        text: "The relapse suggests her fear of being responsible for disaster was relieved but never fully worked through, so a new stressor that loads that exact fear has reactivated the old solution; test whether the relapse content maps onto the job's specific responsibility pressures, whether it eases as she processes the dread of failing rather than only resuming exposures, and whether booster exposure paired with naming that fear settles it faster than exposure alone.",
         credit: 1.0,
       },
       {
-        text: "If two therapies come out equal, it just proves neither one actually does anything.",
-        credit: 0,
+        text: "She seems to be checking again since starting the job.",
+        credit: 0.3,
       },
       {
-        text: "The two therapies probably work about equally; we could run another comparison.",
+        text: "The new job probably set off her OCD again; we could restart treatment.",
         credit: 0.6,
       },
       {
-        text: "Neither therapy seems clearly better than the other.",
-        credit: 0.3,
+        text: "Relapse means the therapy never really worked, so there's nothing to learn from when it came back.",
+        credit: 0,
       },
     ],
     correctAnswer:
-      "Both active therapies likely deliver genuine benefit through partly shared ingredients, since two real treatments matching each other is different from neither working; test whether each beats a no-treatment or waitlist arm in the same trial, whether they differ on specific outcomes like insight versus symptom checklists, and whether the tie replicates in an independent sample.",
+      "The relapse suggests her fear of being responsible for disaster was relieved but never fully worked through, so a new stressor that loads that exact fear has reactivated the old solution; test whether the relapse content maps onto the job's specific responsibility pressures, whether it eases as she processes the dread of failing rather than only resuming exposures, and whether booster exposure paired with naming that fear settles it faster than exposure alone.",
     explanation:
-      "Full credit reads the tie as two working treatments and names a no-treatment-arm test; 'equal means neither works' is the overreach a shared control arm would defeat.",
+      "Full credit reads the job-triggered, responsibility-themed relapse as an unaddressed conflict reactivated and names a content-maps-onto-the-job test; \"relapse means the therapy never worked\" is the dodge the year of remission and specific timing defeat.",
   },
   {
     itemType: "mc",
     prompt:
-      "Several independent research teams, using different patient samples and different statistical methods, each pool dozens of trials and arrive at the same answer: psychodynamic therapy produces a moderate, reliable benefit. Which conclusion best follows?",
+      "A man completes a brief course of exposure work; his washing drops to almost nothing, but he says he has \"no idea why I ever did it\" and feels strangely uneasy, as though \"something's missing.\" Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The reviews probably agree that it helps; we could wait for more reviews.",
-        credit: 0.6,
-      },
-      {
-        text: "Different teams seem to reach similar results.",
+        text: "He seems uneasy even though the washing stopped.",
         credit: 0.3,
       },
       {
-        text: "Because independent teams with different samples and methods converge on the same moderate benefit, that conclusion is hard to explain away as one group's bias or one odd sample; test whether the effect holds when only the most rigorous trials are kept, whether it survives correction for unpublished negative studies, and whether a fresh meta-analysis by a skeptical team lands in the same range.",
+        text: "Maybe the treatment left something unfinished; we could talk it over.",
+        credit: 0.6,
+      },
+      {
+        text: "Relief without any working-through of what the washing was for can leave the original conflict untouched and the gain brittle, and his unease may mark a feeling the ritual used to manage now lacking an outlet; test whether the uneasy feeling shows up in the same situations washing used to, whether a new symptom emerges to take the washing's place, and whether briefly exploring what the ritual protected him from eases the \"something's missing\" sense.",
         credit: 1.0,
       },
       {
-        text: "Therapy is too individual to summarize with a single number, so pooling studies tells us nothing.",
+        text: "If the washing is gone, the treatment is a complete success and the uneasy feeling is irrelevant.",
         credit: 0,
       },
     ],
     correctAnswer:
-      "Because independent teams with different samples and methods converge on the same moderate benefit, that conclusion is hard to explain away as one group's bias or one odd sample; test whether the effect holds when only the most rigorous trials are kept, whether it survives correction for unpublished negative studies, and whether a fresh meta-analysis by a skeptical team lands in the same range.",
+      "Relief without any working-through of what the washing was for can leave the original conflict untouched and the gain brittle, and his unease may mark a feeling the ritual used to manage now lacking an outlet; test whether the uneasy feeling shows up in the same situations washing used to, whether a new symptom emerges to take the washing's place, and whether briefly exploring what the ritual protected him from eases the \"something's missing\" sense.",
     explanation:
-      "Top credit leans on converging meta-analyses and names three robustness tests; 'too individual to summarize' is the refusal the agreement across teams defeats.",
+      "Top credit reads symptom-gone-but-uneasy as relief without working-through leaving the conflict live, and names a watch-for-a-replacement test; \"the washing's gone so it's a complete success\" is the overreach the lingering unease defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A clinic reports that clients who signed up for psychodynamic therapy ended up much healthier a year later than people in the same city who never sought any treatment. Which conclusion best follows?",
+      "A patient announces she is \"completely over\" her harm obsessions and refuses to discuss them again, changing the subject whenever they arise. Her rituals have stopped — but she still won't go near knives or hold her baby alone. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "This shows that seeking psychodynamic therapy directly causes people to recover.",
+        text: "She says she's over it, so she's cured, and pushing further would only stir up trouble.",
         credit: 0,
       },
       {
-        text: "The people who chose therapy likely differ from those who didn't — more motivated, more resourced, perhaps less severe — so the healthier outcome can't be pinned on the therapy from this design; test by randomly assigning willing patients to immediate versus delayed therapy, by checking whether the groups already differed in severity at the start, and by seeing whether matching on baseline motivation shrinks the gap.",
+        text: "Her rituals are gone but the fear is not worked through — avoidance has simply replaced compulsion, so the relief is partly cosmetic; test whether she still steers around the feared objects and situations, whether her refusal to discuss tightens specifically when harm themes arise, and whether the avoidance shrinks once the harm thought is faced as a thought rather than treated as a danger.",
         credit: 1.0,
       },
       {
-        text: "The difference might be due to who chose treatment; we could gather more details about the clients.",
-        credit: 0.6,
+        text: "She has stopped her rituals but avoids knives and being alone with the baby.",
+        credit: 0.3,
       },
       {
-        text: "The treated clients seem to be doing better than untreated people.",
-        credit: 0.3,
+        text: "She might still be afraid underneath; we could gently revisit it.",
+        credit: 0.6,
       },
     ],
     correctAnswer:
-      "The people who chose therapy likely differ from those who didn't — more motivated, more resourced, perhaps less severe — so the healthier outcome can't be pinned on the therapy from this design; test by randomly assigning willing patients to immediate versus delayed therapy, by checking whether the groups already differed in severity at the start, and by seeing whether matching on baseline motivation shrinks the gap.",
+      "Her rituals are gone but the fear is not worked through — avoidance has simply replaced compulsion, so the relief is partly cosmetic; test whether she still steers around the feared objects and situations, whether her refusal to discuss tightens specifically when harm themes arise, and whether the avoidance shrinks once the harm thought is faced as a thought rather than treated as a danger.",
     explanation:
-      "Full credit names the selection confound and a randomization fix; 'this proves therapy causes recovery' is the overreach the self-selected comparison defeats.",
+      "Full credit reads continued avoidance as the fear surviving the ritual's end and names a does-she-still-steer-around-triggers test; \"she says she's over it so she's cured\" is the overreach her ongoing avoidance defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "Worried that earlier studies just reflected which patients chose therapy, researchers now randomly assign patients to immediate therapy or a delayed-treatment control. The immediate group improves significantly more. Which conclusion best follows?",
+      "After her solo checking rituals stop, a woman begins phoning her husband a dozen times a day to ask whether she locked the door — handing him the checking she used to do herself. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The immediate group seems to do better.",
-        credit: 0.3,
-      },
-      {
-        text: "Because randomization makes the groups comparable at the start, the added improvement is now reasonably attributed to the therapy rather than to who chose it; test whether the delayed group catches up once treated, whether the effect holds with blind outcome raters, and whether it replicates across clinics.",
-        credit: 1.0,
-      },
-      {
-        text: "Random assignment probably means the therapy helped; we could run it again.",
+        text: "She seems to lean on her husband a lot now; we could look into it.",
         credit: 0.6,
       },
       {
-        text: "No study can ever rule out every other explanation, so even a randomized trial proves nothing about therapy.",
+        text: "She calls her husband often to ask about the door.",
+        credit: 0.3,
+      },
+      {
+        text: "The compulsion has migrated from solo checking into reassurance-seeking through her husband — same function, new vehicle — so working through requires response prevention for the reassurance too and facing the doubt itself; test whether the calls cluster around the exact triggers checking used to, whether her anxiety simply transfers in full when he can't answer, and whether tolerating the uncertainty without his confirmation reduces both.",
+        credit: 1.0,
+      },
+      {
+        text: "Asking a spouse a question is normal married life, so there's nothing here worth reading into.",
         credit: 0,
       },
     ],
     correctAnswer:
-      "Because randomization makes the groups comparable at the start, the added improvement is now reasonably attributed to the therapy rather than to who chose it; test whether the delayed group catches up once treated, whether the effect holds with blind outcome raters, and whether it replicates across clinics.",
+      "The compulsion has migrated from solo checking into reassurance-seeking through her husband — same function, new vehicle — so working through requires response prevention for the reassurance too and facing the doubt itself; test whether the calls cluster around the exact triggers checking used to, whether her anxiety simply transfers in full when he can't answer, and whether tolerating the uncertainty without his confirmation reduces both.",
     explanation:
-      "Top credit pins the effect on therapy because randomization balances selection and names three tests; 'no study proves anything' is the refusal the randomized design overcomes.",
+      "Top credit reads the calls as checking outsourced to her husband and names a does-anxiety-transfer-when-he-can't-answer test; \"asking a spouse is normal\" is the dodge the dozen-times-a-day, same-trigger pattern defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "Someone notices that trials run by enthusiastic believers in psychodynamic therapy report much larger benefits than trials of the very same therapy run by neutral or skeptical teams. Which conclusion best follows?",
+      "A man recites, in a flat and detached tone, a textbook account of how his need for symmetry \"represents a wish for control\" — but he shows no feeling, and the arranging compulsions are exactly as frequent as before. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The researchers' allegiance likely inflates reported effects through subtle design and rating choices, so the truest estimate comes from independent or adversarial teams; test whether effects shrink when outcome raters are blind to condition, whether pre-registered trials show smaller gaps, and whether the same shrinkage appears when believers in rival therapies study their own.",
-        credit: 1.0,
+        text: "He plainly understands his OCD deeply, so the therapy has done its job.",
+        credit: 0,
       },
       {
-        text: "Researcher bias might be inflating the results; we could look at who ran each study.",
-        credit: 0.6,
-      },
-      {
-        text: "Believers seem to report bigger effects.",
+        text: "He can explain his compulsions but still does them.",
         credit: 0.3,
       },
       {
-        text: "Since every researcher is biased, all therapy studies are worthless and the question can't be answered.",
-        credit: 0,
+        text: "His understanding doesn't seem to have helped yet; we could keep working on it.",
+        credit: 0.6,
+      },
+      {
+        text: "The insight is intellectualized — itself a defense that lets him discuss the meaning while keeping the feeling at arm's length, so it changes nothing; working through needs the understanding to connect to live emotion at the moment of the urge; test whether any feeling surfaces when he resists arranging, whether the recited explanation ever shifts his behavior, and whether tying the urge to a felt loss of control rather than a concept finally moves it.",
+        credit: 1.0,
       },
     ],
     correctAnswer:
-      "The researchers' allegiance likely inflates reported effects through subtle design and rating choices, so the truest estimate comes from independent or adversarial teams; test whether effects shrink when outcome raters are blind to condition, whether pre-registered trials show smaller gaps, and whether the same shrinkage appears when believers in rival therapies study their own.",
+      "The insight is intellectualized — itself a defense that lets him discuss the meaning while keeping the feeling at arm's length, so it changes nothing; working through needs the understanding to connect to live emotion at the moment of the urge; test whether any feeling surfaces when he resists arranging, whether the recited explanation ever shifts his behavior, and whether tying the urge to a felt loss of control rather than a concept finally moves it.",
     explanation:
-      "Full credit names allegiance bias and a blinding test that would refute it; 'all studies are worthless' is the give-up the systematic believer-versus-skeptic gap actually lets us correct.",
+      "Full credit reads flat, behavior-free understanding as intellectualized defense and names a does-feeling-appear-when-he-resists test; \"he understands it deeply so therapy did its job\" is the overreach the unchanged compulsions defeat.",
   },
   {
     itemType: "mc",
     prompt:
-      "A glowing report says that of the patients who completed a full course of psychodynamic therapy, nearly all improved. It does not mention that a third of those who started dropped out before finishing. Which conclusion best follows?",
+      "Six months after treatment a woman has a hard week and washes \"the old way\" twice — but she catches herself, links it to a sick relative, and returns to her plan without spiraling. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "If most completers improved, that settles it: the therapy works for everyone who tries it.",
-        credit: 0,
-      },
-      {
-        text: "The patients who finished seem to have done well.",
+        text: "She washed a couple of times this week.",
         credit: 0.3,
       },
       {
-        text: "Counting only completers likely overstates the benefit, because those who dropped out — perhaps because they weren't improving — are missing from the tally; test by analyzing outcomes for everyone who started regardless of dropout, by comparing baseline severity of completers versus dropouts, and by checking whether the dropouts fared worse when later contacted.",
-        credit: 1.0,
+        text: "She slipped a little but seems okay; we could watch how it goes.",
+        credit: 0.6,
       },
       {
-        text: "Ignoring the dropouts could bias the result; we could try to track them down.",
-        credit: 0.6,
+        text: "Any return of washing means the treatment failed and she is back to square one.",
+        credit: 0,
+      },
+      {
+        text: "This looks like a lapse rather than a relapse — change is consolidating, because she can recognize the slip, tie it to a trigger, and self-correct with what she learned; test whether such slips stay brief and self-limited, whether she can name the feared feeling each time, and whether her baseline holds across months despite the occasional lapse.",
+        credit: 1.0,
       },
     ],
     correctAnswer:
-      "Counting only completers likely overstates the benefit, because those who dropped out — perhaps because they weren't improving — are missing from the tally; test by analyzing outcomes for everyone who started regardless of dropout, by comparing baseline severity of completers versus dropouts, and by checking whether the dropouts fared worse when later contacted.",
+      "This looks like a lapse rather than a relapse — change is consolidating, because she can recognize the slip, tie it to a trigger, and self-correct with what she learned; test whether such slips stay brief and self-limited, whether she can name the feared feeling each time, and whether her baseline holds across months despite the occasional lapse.",
     explanation:
-      "Top credit names the attrition confound and an all-who-started analysis as the fix; 'it works for everyone who tries' is the overreach the missing dropouts defeat.",
+      "Top credit reads recognize-link-self-correct as a consolidating lapse and names a do-slips-stay-self-limited test; \"any washing means total failure\" is the overreach her quick self-correction defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "In one trial, patients rate their own improvement after psychodynamic therapy as large, while independent clinicians who don't know who got which treatment rate the same patients' improvement as smaller but still real. Which conclusion best follows?",
+      "A teenager's counting rituals clear up with exposure work, but within two months he develops daily stomachaches — medical tests all clean — that are worst right before school exams, the very situations counting used to manage. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The two kinds of ratings probably both matter; we could collect more ratings.",
-        credit: 0.6,
-      },
-      {
-        text: "Self-reports likely run high from hope or wanting to please, so the blind clinician ratings give the more trustworthy estimate of a real but smaller effect; test whether the gap between self and blind ratings shrinks when patients are assured of anonymity, whether objective measures like return-to-work track the blind ratings, and whether the pattern repeats in other trials.",
+        text: "The performance dread the counting used to bind likely lost its outlet when the ritual stopped and has re-emerged as a bodily symptom, so the underlying conflict was not worked through; test whether the stomachaches occupy the exact trigger situations counting did, whether they ease once the fear of failing is named and faced, and whether they began only after the rituals stopped and not before.",
         credit: 1.0,
       },
       {
-        text: "Because the two ratings disagree, there is no fact of the matter about whether the patient improved.",
+        text: "The stomachaches might be linked to his old anxiety; we could keep tracking them.",
+        credit: 0.6,
+      },
+      {
+        text: "Stomachaches have countless physical causes, so connecting them to his former OCD is reading too much in.",
         credit: 0,
       },
       {
-        text: "Patients rate themselves higher than the clinicians do.",
+        text: "He gets stomachaches before exams now.",
         credit: 0.3,
       },
     ],
     correctAnswer:
-      "Self-reports likely run high from hope or wanting to please, so the blind clinician ratings give the more trustworthy estimate of a real but smaller effect; test whether the gap between self and blind ratings shrinks when patients are assured of anonymity, whether objective measures like return-to-work track the blind ratings, and whether the pattern repeats in other trials.",
+      "The performance dread the counting used to bind likely lost its outlet when the ritual stopped and has re-emerged as a bodily symptom, so the underlying conflict was not worked through; test whether the stomachaches occupy the exact trigger situations counting did, whether they ease once the fear of failing is named and faced, and whether they began only after the rituals stopped and not before.",
     explanation:
-      "Full credit treats the blind ratings as the more trustworthy estimate and names an objective-measure test; 'no fact of the matter' is the refusal the convergence with objective outcomes defeats.",
+      "Full credit reads exam-timed stomachaches in the old trigger slot as the bound dread re-emerging and names a did-they-start-only-after-rituals-stopped test; \"stomachaches have countless causes\" is the dodge the clean tests and exact trigger-matching defeat.",
   },
   {
     itemType: "mc",
     prompt:
-      "A trial compares psychodynamic therapy against a 'supportive' control where patients meet a warm listener for the same number of hours but get no interpretive work. Both improve, but the psychodynamic group improves reliably more. Which conclusion best follows?",
+      "Three weeks in, a patient wants to stop therapy the moment his visible rituals vanish, declaring \"problem solved\" — though he has never once faced his worst feared situation and still arranges his life to avoid it. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The psychodynamic group seems to do a bit better.",
+        text: "His rituals have stopped after three weeks.",
         credit: 0.3,
       },
       {
-        text: "Any attention from a kind person is all that helps, so the extra ingredients in therapy do nothing.",
+        text: "His rituals are gone, so he has recovered and continuing would just waste everyone's time.",
         credit: 0,
       },
       {
-        text: "Because the groups were matched on attention and warmth, the extra improvement likely comes from the specific interpretive work, not just from being listened to; test whether the added benefit appears mainly on outcomes the interpretation targets, whether more interpretation predicts more gain, and whether the gap holds when both therapists are equally warm and experienced.",
+        text: "Stopping now risks leaving the core fear un-worked-through, since fast surface relief that never confronts the worst trigger tends to relapse; test whether he can face the avoided situation without a ritual before terminating, whether his gains survive a deliberately provoked trigger, and whether a planned booster period prevents the return an abrupt stop would invite.",
         credit: 1.0,
       },
       {
-        text: "The specific techniques might add something; we could compare more conditions.",
+        text: "It might be early to stop; we could suggest a few more sessions.",
         credit: 0.6,
       },
     ],
     correctAnswer:
-      "Because the groups were matched on attention and warmth, the extra improvement likely comes from the specific interpretive work, not just from being listened to; test whether the added benefit appears mainly on outcomes the interpretation targets, whether more interpretation predicts more gain, and whether the gap holds when both therapists are equally warm and experienced.",
+      "Stopping now risks leaving the core fear un-worked-through, since fast surface relief that never confronts the worst trigger tends to relapse; test whether he can face the avoided situation without a ritual before terminating, whether his gains survive a deliberately provoked trigger, and whether a planned booster period prevents the return an abrupt stop would invite.",
     explanation:
-      "Top credit credits the specific interpretive ingredient because warmth was matched and names targeted tests; 'attention is all that helps' is the overreach the supportive-control gap defeats.",
+      "Top credit reads untested-worst-fear-plus-avoidance as incomplete working-through and names a can-he-face-the-avoided-situation test; \"rituals gone so he's recovered\" is the overreach his persisting avoidance defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "Patients treated for depression with psychodynamic therapy and patients treated with medication both improve by the end. But after both stop their treatment, the medication group relapses far more often over the next year than the therapy group. Which conclusion best follows?",
+      "A woman no longer performs any rituals, but she describes each day as an exhausting battle to \"hold the urges down\" by sheer willpower, dreading every trigger as much as ever. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The therapy likely teaches something patients carry forward, giving more durable protection once treatment stops, whereas the drug works only while taken; test whether the therapy group's lasting edge tracks the skills or insight they report using, whether re-starting medication restores the drug group's gains, and whether combining both yields the best long-term outcome.",
-        credit: 1.0,
-      },
-      {
-        text: "The therapy group seems to relapse less after stopping.",
-        credit: 0.3,
-      },
-      {
-        text: "Therapy might last longer than medication; we could follow them another year.",
+        text: "She's white-knuckling it a bit; we could keep supporting her.",
         credit: 0.6,
       },
       {
-        text: "Comparing therapy to pills is apples and oranges, so nothing can be concluded about either.",
+        text: "She is suppressing rather than working through — the urge and the fear beneath it are still fully charged and only held back by effort, which is brittle and apt to break under load; test whether her distress at triggers actually falls over time rather than staying maxed out, whether she can approach triggers willingly instead of gritting through them, and whether the effort eases once the feared outcome is faced and disconfirmed.",
+        credit: 1.0,
+      },
+      {
+        text: "She doesn't do rituals but finds each day a struggle.",
+        credit: 0.3,
+      },
+      {
+        text: "She has stopped all rituals, so she is fully recovered regardless of how it feels.",
         credit: 0,
       },
     ],
     correctAnswer:
-      "The therapy likely teaches something patients carry forward, giving more durable protection once treatment stops, whereas the drug works only while taken; test whether the therapy group's lasting edge tracks the skills or insight they report using, whether re-starting medication restores the drug group's gains, and whether combining both yields the best long-term outcome.",
+      "She is suppressing rather than working through — the urge and the fear beneath it are still fully charged and only held back by effort, which is brittle and apt to break under load; test whether her distress at triggers actually falls over time rather than staying maxed out, whether she can approach triggers willingly instead of gritting through them, and whether the effort eases once the feared outcome is faced and disconfirmed.",
     explanation:
-      "Full credit reads the durability gap as therapy teaching a carried-forward skill and names three tests; 'apples and oranges, nothing concluded' is the dodge the clean relapse difference defeats.",
+      "Full credit reads constant maximal effort with undiminished dread as suppression, not working-through, and names a does-distress-actually-fall test; \"no rituals means fully recovered\" is the overreach her unrelenting struggle defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "After psychodynamic therapy, patients show not only fewer symptoms but also steadier relationships and better handling of stress — changes that a symptom checklist alone would miss. Which conclusion best follows?",
+      "Months after being treated for contamination fears, a man notices he has also become less rigid about lateness and better able to sit with uncertainty at work — changes no one targeted directly. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The therapy might change more than symptoms; we could measure a few more outcomes.",
-        credit: 0.6,
+        text: "Unrelated traits can shift for any reason, so linking them to his OCD treatment is pure guesswork.",
+        credit: 0,
       },
       {
-        text: "Patients seem to be doing better in several areas.",
+        text: "He seems more relaxed in a few areas now.",
         credit: 0.3,
       },
       {
-        text: "The therapy likely produces broad changes in how patients relate and cope, not just symptom relief, so narrow checklists understate its benefit; test whether the relationship and coping gains appear even when symptoms barely move, whether they hold up at long-term follow-up, and whether an untreated comparison group shows no such broad change.",
+        text: "The working-through likely reached a general intolerance of uncertainty sitting under several rigidities, so the gains generalize beyond the treated symptom — a mark of durable, structural change rather than a narrow fix; test whether the spread tracks situations sharing the uncertainty theme, whether it holds at long-term follow-up, and whether it is absent for traits unrelated to that theme.",
         credit: 1.0,
       },
       {
-        text: "Anything beyond a symptom score is too vague to measure, so claims about 'deeper' change are empty.",
-        credit: 0,
+        text: "His treatment may have had broader effects; we could ask about other areas.",
+        credit: 0.6,
       },
     ],
     correctAnswer:
-      "The therapy likely produces broad changes in how patients relate and cope, not just symptom relief, so narrow checklists understate its benefit; test whether the relationship and coping gains appear even when symptoms barely move, whether they hold up at long-term follow-up, and whether an untreated comparison group shows no such broad change.",
+      "The working-through likely reached a general intolerance of uncertainty sitting under several rigidities, so the gains generalize beyond the treated symptom — a mark of durable, structural change rather than a narrow fix; test whether the spread tracks situations sharing the uncertainty theme, whether it holds at long-term follow-up, and whether it is absent for traits unrelated to that theme.",
     explanation:
-      "Top credit commits to broad relational change beyond symptoms and names three checks; 'anything beyond a symptom score is too vague' is the refusal the measured relationship and coping gains defeat.",
+      "Top credit reads theme-linked spread of gains as generalized structural change and names a does-it-track-the-uncertainty-theme test; \"traits shift for any reason\" is the dodge the coherent, theme-specific spread defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A clinic enrolls people at the worst moment of a crisis and reports that after a few weeks of psychodynamic therapy most feel much better. Which conclusion best follows?",
+      "After two years of meaning-focused talk therapy, a man understands his washing in rich detail — but the behavior has barely budged, and he has never done any structured exposure. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "This proves the therapy rapidly cures crises.",
-        credit: 0,
-      },
-      {
-        text: "People recruited at their worst tend to drift back toward their usual level on their own, so some of this improvement may be natural recovery rather than the therapy; test by including a comparison group enrolled at the same crisis point but not yet treated, by checking whether improvement exceeds that natural rebound, and by seeing whether earlier-treated patients improve faster than those whose start is delayed.",
-        credit: 1.0,
-      },
-      {
-        text: "The patients seem to feel better after a few weeks.",
+        text: "He understands his washing well but still washes.",
         credit: 0.3,
       },
       {
-        text: "Some of the change might just be natural recovery; we could watch them longer.",
+        text: "Talk alone hasn't shifted it; we could consider another approach.",
         credit: 0.6,
+      },
+      {
+        text: "Real change can only come from insight, so adding exposure would just paper over the symptom — there's nothing more worth trying.",
+        credit: 0,
+      },
+      {
+        text: "Insight without exposure has left the behavior intact, since understanding alone rarely dislodges an entrenched compulsion, so working through here means adding response prevention to the meaning work; test whether introducing structured exposure finally moves the washing, whether the stubbornness reflects his never having faced the feared dirt, and whether combining understanding with exposure outperforms either alone for him.",
+        credit: 1.0,
       },
     ],
     correctAnswer:
-      "People recruited at their worst tend to drift back toward their usual level on their own, so some of this improvement may be natural recovery rather than the therapy; test by including a comparison group enrolled at the same crisis point but not yet treated, by checking whether improvement exceeds that natural rebound, and by seeing whether earlier-treated patients improve faster than those whose start is delayed.",
+      "Insight without exposure has left the behavior intact, since understanding alone rarely dislodges an entrenched compulsion, so working through here means adding response prevention to the meaning work; test whether introducing structured exposure finally moves the washing, whether the stubbornness reflects his never having faced the feared dirt, and whether combining understanding with exposure outperforms either alone for him.",
     explanation:
-      "Full credit names the regression-to-the-mean confound and a same-crisis comparison group as the fix; 'this proves therapy cures crises' is the overreach the natural rebound defeats.",
+      "Full credit reads rich-understanding-with-zero-behavior-change as insight needing exposure added and names a does-adding-exposure-move-it test; \"only insight produces real change\" is the anti-evidence dodge the two unmoved years defeat.",
   },
   {
     itemType: "mc",
     prompt:
-      "A psychodynamic therapy that worked well in trials with young adults in one country is now tested, unchanged, with older adults in a very different culture — and produces a similar benefit. Which conclusion best follows?",
+      "Across three relationships since treatment, a man relapses into scrupulosity rituals each time a romance turns toward serious commitment — and at no other time. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The therapy seems to help this new group too.",
-        credit: 0.3,
-      },
-      {
-        text: "It probably travels to other groups; we could test a few more populations.",
+        text: "Commitment seems to set off his rituals; we could explore his relationships.",
         credit: 0.6,
       },
       {
-        text: "The therapy's benefit likely rests on broadly human processes rather than one culture's quirks, since it replicates in a very different group; test whether it keeps working across several more cultures and ages, whether outcomes hold when local therapists deliver it, and whether any group where it fails reveals what the active ingredient depends on.",
-        credit: 1.0,
+        text: "Relationships are complicated and relapses happen, so there's no pattern worth reading in when his rituals return.",
+        credit: 0,
       },
       {
-        text: "Every culture is unique, so a result from one place can never apply anywhere else.",
-        credit: 0,
+        text: "He starts doing rituals again when relationships get serious.",
+        credit: 0.3,
+      },
+      {
+        text: "The relapses, timed only to deepening commitment, suggest the rituals still serve a conflict about intimacy and guilt that symptom relief never worked through, reactivated whenever closeness loads it; test whether the relapses cluster precisely as commitment deepens and not otherwise, whether processing the guilt and fear around intimacy settles them better than exposures alone, and whether they fade once that conflict is named.",
+        credit: 1.0,
       },
     ],
     correctAnswer:
-      "The therapy's benefit likely rests on broadly human processes rather than one culture's quirks, since it replicates in a very different group; test whether it keeps working across several more cultures and ages, whether outcomes hold when local therapists deliver it, and whether any group where it fails reveals what the active ingredient depends on.",
+      "The relapses, timed only to deepening commitment, suggest the rituals still serve a conflict about intimacy and guilt that symptom relief never worked through, reactivated whenever closeness loads it; test whether the relapses cluster precisely as commitment deepens and not otherwise, whether processing the guilt and fear around intimacy settles them better than exposures alone, and whether they fade once that conflict is named.",
     explanation:
-      "Top credit infers broadly human active ingredients from the replication and names cross-population tests; 'a result can never apply elsewhere' is the refusal the successful replication defeats.",
+      "Top credit reads commitment-only relapses as an unaddressed intimacy conflict reactivated and names a do-they-cluster-only-at-deepening-commitment test; \"relapses just happen\" is the dodge the three-times, commitment-specific timing defeats.",
   },
 ];
 
@@ -417,425 +417,425 @@ const hybrid: HomeworkItem[] = [
   {
     itemType: "hybrid",
     prompt:
-      "A trial finds that patients given psychodynamic therapy improve over three months while a waiting-list group improves much less. A skeptic says people simply get better with time. Which conclusion best follows?",
+      "A woman's hours of bedtime checking resolve after exposure work. A month later she begins counting her keystrokes in sets of four whenever she sends an important email — a behavior she never had before. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Because both groups had the same amount of time pass and only the treated group improved much, the therapy — not the mere passage of time — likely drove the gain; test whether the waiting-list group improves once they later get the therapy, whether the treated group's edge holds on blind ratings, and whether more sessions predict more improvement.",
-        credit: 1.0,
-      },
-      {
-        text: "The treated group seems to improve more than the waiting one.",
+        text: "She seems to have a new counting habit at work.",
         credit: 0.3,
       },
       {
-        text: "Everyone recovers eventually, so the therapy added nothing.",
+        text: "The checking eased without working through her need for certainty before acting, so the same function has reappeared as counting at the moment she most fears a mistake — new form, old job; test whether the counting attaches specifically to high-stakes actions like sending an email, whether her anxiety jumps if she's stopped from counting, and whether facing the dread of an uncorrectable error reduces it rather than the count.",
+        credit: 1.0,
+      },
+      {
+        text: "People develop quirks all the time, so a new counting habit tells us nothing about her old OCD.",
         credit: 0,
       },
       {
-        text: "Time alone probably isn't the whole story; we could follow both groups longer.",
+        text: "She might be channeling the old anxiety somewhere new; we could keep watching.",
         credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'the therapy drove the gain' lead from the rival 'people simply improve with time,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your \"the counting is the old compulsion in a new form\" lead from the rival \"it's an unrelated new habit,\" and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: compare the two groups over the identical time window — the waiting-list group controls for the passage of time, so a larger improvement in the treated group points to the therapy rather than time. My lead is refuted if the waiting-list group improves just as much over the same months, which would mean time alone explains the change.",
+        "Cheapest test: check whether the counting fires specifically at high-stakes, mistake-prone moments like sending an important email — function that lands exactly where her checking used to points to the same compulsion in new clothing. My lead is refuted if the counting appears randomly across calm and charged moments alike with no tie to fear of error, which would fit an unrelated habit.",
       yieldAnchors: [
-        "Both groups experienced the same passage of time",
-        "The therapy group improved markedly",
-        "The waiting-list group improved much less",
+        "Bedtime checking resolved after exposure work",
+        "Counting began about a month later",
+        "It appears when she sends important emails",
       ],
       riskAnchors: [
-        "The waiting-list group improves once it finally gets therapy",
-        "The treated group's edge holds on blind ratings",
-        "More sessions predict more improvement",
+        "Counting attaches to high-stakes actions specifically",
+        "Anxiety jumps if she is blocked from counting",
+        "Facing the fear of an uncorrectable error reduces it",
       ],
       defeatedBy: [
-        "The waiting-list group improves just as much over the same period",
-        "Symptoms vanish on their own regardless of treatment",
+        "The counting occurs randomly with no tie to fear of error",
+        "It carries no anxiety when interrupted",
       ],
     },
     correctAnswer:
-      "Because both groups had the same amount of time pass and only the treated group improved much, the therapy — not the mere passage of time — likely drove the gain; test whether the waiting-list group improves once they later get the therapy, whether the treated group's edge holds on blind ratings, and whether more sessions predict more improvement.",
+      "The checking eased without working through her need for certainty before acting, so the same function has reappeared as counting at the moment she most fears a mistake — new form, old job; test whether the counting attaches specifically to high-stakes actions like sending an email, whether her anxiety jumps if she's stopped from counting, and whether facing the dread of an uncorrectable error reduces it rather than the count.",
     explanation:
-      "Full credit uses the waitlist control to rule out time and names three tests, with a same-window comparison that states its own refutation; 'everyone recovers eventually' is the overreach the lagging waitlist defeats.",
+      "Full credit reads the new counting as the old certainty-seeking migrated and is paired with a does-it-fire-at-high-stakes-moments test that names its refutation; \"people develop quirks\" is the dodge the same-function timing defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "Two years after finishing psychodynamic therapy, former patients are doing even better than they were at the last session. A colleague suggests they must have picked up other treatment in the meantime. Which conclusion best follows?",
+      "A man's contamination washing drops sharply after a short exposure program, but he insists the whole thing was \"just a bad habit, nothing underneath it,\" and refuses to look at what it might have meant. Six weeks later, under a family crisis, the washing roars back. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Once therapy is over, any later change is random noise we can ignore.",
+        text: "The relapse proves exposure therapy simply doesn't work for him.",
         credit: 0,
       },
       {
-        text: "The continued growth likely reflects patients applying what they learned on their own, an effect the therapy seeded rather than later treatment, provided no extra treatment occurred; test whether patients who got no further therapy still show the late gains, whether the growth is largest in those who report using their insights, and whether an untreated comparison group followed the same way shows no such climb.",
-        credit: 1.0,
-      },
-      {
-        text: "The therapy's effects might keep growing; we could ask whether they got other help.",
+        text: "Maybe the quick fix didn't hold; we could try the exposures again.",
         credit: 0.6,
       },
       {
-        text: "The former patients seem to keep improving.",
+        text: "Relief that never touched what the washing was managing left the underlying conflict live, so a crisis that reloaded it brought the symptom straight back; test whether the relapse coincides with the family stress rather than appearing at random, whether the washing again tracks the same feared contamination theme, and whether pairing renewed exposure with working through what the ritual protected him from holds better than exposure alone.",
+        credit: 1.0,
+      },
+      {
+        text: "His washing came back during the family crisis.",
         credit: 0.3,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'the therapy seeded continuing growth' lead from the rival 'they got other treatment after it ended,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your \"the conflict was never worked through, so stress reactivated it\" lead from the rival \"the exposures simply wore off on their own,\" and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: ask the follow-up patients whether they received any other treatment after therapy ended, and look only at those who got none — continued gains in that subgroup point to the original therapy seeding self-directed change. My lead is refuted if the late improvement appears only among those who later sought additional treatment.",
+        "Cheapest test: line up the relapse against the family crisis — washing that returns exactly as the stressor hits, on the same contamination theme, points to a reactivated conflict rather than a fix randomly fading. My lead is refuted if the washing crept back gradually with no tie to any stressor or feared theme, which would fit exposures merely wearing off.",
       yieldAnchors: [
-        "Patients improved during therapy",
-        "They improved further two years later",
-        "The gains grew after sessions stopped",
+        "Washing dropped after a short program",
+        "He denies any meaning beneath it",
+        "It returned under a family crisis",
       ],
       riskAnchors: [
-        "Patients with no further treatment still show late gains",
-        "Gains are largest in those using their insights",
-        "An untreated comparison group shows no such climb",
+        "Relapse coincides with the family stress",
+        "Washing tracks the same contamination theme",
+        "Exposure plus meaning-work holds better than exposure alone",
       ],
       defeatedBy: [
-        "The late gains appear only in those who got other treatment",
-        "Symptoms naturally keep improving for everyone over two years",
+        "The washing returned gradually with no stressor",
+        "The relapse bears no relation to any feared theme",
       ],
     },
     correctAnswer:
-      "The continued growth likely reflects patients applying what they learned on their own, an effect the therapy seeded rather than later treatment, provided no extra treatment occurred; test whether patients who got no further therapy still show the late gains, whether the growth is largest in those who report using their insights, and whether an untreated comparison group followed the same way shows no such climb.",
+      "Relief that never touched what the washing was managing left the underlying conflict live, so a crisis that reloaded it brought the symptom straight back; test whether the relapse coincides with the family stress rather than appearing at random, whether the washing again tracks the same feared contamination theme, and whether pairing renewed exposure with working through what the ritual protected him from holds better than exposure alone.",
     explanation:
-      "Full credit attributes the sleeper effect to seeded self-directed change with three tests and an other-treatment check that names its refutation; 'later change is just noise' is the dodge the orderly growth defeats.",
+      "Full credit reads the stress-timed return as an un-worked-through conflict reactivated and is paired with a line-it-up-against-the-crisis test that names its refutation; \"exposure just doesn't work for him\" is the dodge the clean stress-triggered timing defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "In clinic records, patients who had more psychodynamic sessions show more improvement, in an orderly step-by-step way. A reviewer warns that sicker patients might stay in treatment longer. Which conclusion best follows?",
+      "A patient whose home rituals have faded now spends much of each session asking the therapist, in slightly different words, the same question — \"You're sure these thoughts don't mean I'm dangerous, right?\" — and looks momentarily relieved each time it's answered. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The number of sessions probably matters; we could pull more records.",
+        text: "He seems to want a lot of reassurance now; we could notice that.",
         credit: 0.6,
       },
       {
-        text: "The orderly more-sessions-more-benefit pattern suggests the therapy accumulates effect per session, but the sicker-stay-longer worry must be ruled out, so the cleanest evidence is a trial that fixes the dose in advance; test whether randomly assigning patients to longer versus shorter courses reproduces the curve, whether the link survives adjusting for baseline severity, and whether the plateau falls at the same point across problems.",
+        text: "The compulsion has moved into the room — reassurance-seeking from the therapist now does the job his rituals used to, briefly relieving the doubt without resolving it, so working through means declining to answer and helping him sit with the uncertainty; test whether the questioning clusters around his core feared theme, whether the relief is brief and quickly needs renewing, and whether withholding reassurance while naming the urge reduces the seeking over time.",
         credit: 1.0,
       },
       {
-        text: "More sessions seem to go with more improvement.",
+        text: "He keeps asking the therapist the same reassuring question.",
         credit: 0.3,
       },
       {
-        text: "Because sicker patients might stay longer, dose can never be studied and the data is useless.",
+        text: "Asking a clinician questions is exactly what therapy is for, so there's nothing to interpret in it.",
         credit: 0,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'therapy accumulates benefit per session' lead from the rival 'sicker patients just stay longer, so dose only tracks severity,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your \"the questioning is a compulsion enacted with the therapist\" lead from the rival \"he's just an inquisitive, engaged patient,\" and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: randomly assign willing patients to a fixed short or long course so that dose no longer depends on how sick they are — if the longer course still yields more benefit, the dose itself is doing the work. My lead is refuted if, once severity is held constant, extra sessions add no improvement.",
+        "Cheapest test: watch what happens after an answer — if relief is brief and the same core-fear question returns soon, that cycle marks reassurance-seeking rather than genuine inquiry. My lead is refuted if his questions range widely, build on the answers, and don't circle back to the same feared theme, which would fit ordinary engagement.",
       yieldAnchors: [
-        "More sessions go with more improvement",
-        "The relationship is orderly, not random",
-        "Benefit climbs then plateaus",
+        "Home rituals have faded",
+        "He repeatedly asks the same reassuring question",
+        "He looks briefly relieved each time it's answered",
       ],
       riskAnchors: [
-        "Randomly fixing a longer dose reproduces the curve",
-        "The link survives adjusting for baseline severity",
-        "The plateau falls at the same point across problems",
+        "The questioning clusters on his core feared theme",
+        "Relief is brief and quickly needs renewing",
+        "Withholding reassurance reduces the seeking over time",
       ],
       defeatedBy: [
-        "Once severity is controlled, extra sessions add nothing",
-        "Dose only reflects how sick patients were to begin with",
+        "His questions range widely and build on answers",
+        "He needs no repetition once a question is answered",
       ],
     },
     correctAnswer:
-      "The orderly more-sessions-more-benefit pattern suggests the therapy accumulates effect per session, but the sicker-stay-longer worry must be ruled out, so the cleanest evidence is a trial that fixes the dose in advance; test whether randomly assigning patients to longer versus shorter courses reproduces the curve, whether the link survives adjusting for baseline severity, and whether the plateau falls at the same point across problems.",
+      "The compulsion has moved into the room — reassurance-seeking from the therapist now does the job his rituals used to, briefly relieving the doubt without resolving it, so working through means declining to answer and helping him sit with the uncertainty; test whether the questioning clusters around his core feared theme, whether the relief is brief and quickly needs renewing, and whether withholding reassurance while naming the urge reduces the seeking over time.",
     explanation:
-      "Full credit reads the dose-response as the therapy working while naming the severity confound and a fixed-dose trial that would refute it; 'dose can never be studied' is the give-up the orderly curve defeats.",
+      "Top credit reads the repeated same-question-for-brief-relief as a compulsion enacted with the therapist and is paired with a what-happens-after-an-answer test that names its refutation; \"asking a clinician is what therapy is for\" is the dodge the brief-relief-then-repeat cycle defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A randomized trial finds psychodynamic therapy and an established therapy improve patients equally. A critic argues this just shows both are elaborate placebos. Which conclusion best follows?",
+      "A woman delivers a polished psychological account of how her intrusive harm thoughts \"symbolize buried anger at her father,\" speaking calmly and almost proudly — yet she still avoids all knives and her mental reviewing is unchanged. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Two active treatments matching each other is not the same as neither working, so the more likely reading is that both deliver real benefit through partly shared mechanisms; test whether each beats a genuine no-treatment or attention-only control in the same trial, whether they diverge on specific targeted outcomes, and whether the tie replicates in a fresh sample.",
-        credit: 1.0,
-      },
-      {
-        text: "If they come out equal, that proves both are just placebos.",
-        credit: 0,
-      },
-      {
-        text: "The two therapies seem about equally effective.",
+        text: "She can explain her harm thoughts but still avoids knives.",
         credit: 0.3,
       },
       {
-        text: "Both probably help to a similar degree; we could add another comparison.",
+        text: "She has clearly achieved deep insight, so the work is essentially finished.",
+        credit: 0,
+      },
+      {
+        text: "Her articulate, affect-free account looks like intellectualization — a defense that lets her master the meaning in words while the feeling and the symptom stay untouched, so it moves nothing; working through needs the understanding to meet live emotion as she approaches the feared object; test whether any feeling stirs when she actually nears a knife, whether her tidy explanation ever changes her avoidance, and whether connecting the thought to felt anger in the moment shifts the reviewing.",
+        credit: 1.0,
+      },
+      {
+        text: "Her insight doesn't seem to have helped the avoidance; we could keep at it.",
         credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'both are real, partly shared mechanisms' lead from the rival 'both are placebos,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your \"her insight is intellectualized and inert\" lead from the rival \"she has genuinely worked it through and just needs time,\" and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: include a no-treatment or attention-only control arm in the same trial — if both therapies beat it, equality means both work, not that both are placebos. My lead is refuted if neither therapy outperforms the inert control.",
+        "Cheapest test: see whether any feeling appears and any behavior shifts when she actually approaches a knife — genuine working-through shows up as changed avoidance and live affect, not a polished explanation alone. My lead is refuted if her understanding is already loosening the avoidance and stirring real emotion, which would mean the insight is doing work rather than defending against feeling.",
       yieldAnchors: [
-        "Both therapies improved patients",
-        "Their outcomes matched closely",
-        "Both were delivered as real treatments",
+        "She gives a polished account of her harm thoughts",
+        "She speaks calmly and almost proudly",
+        "Avoidance and mental reviewing are unchanged",
       ],
       riskAnchors: [
-        "Each beats a no-treatment control",
-        "They diverge on specific targeted outcomes",
-        "The tie replicates in a fresh sample",
+        "Feeling stirs when she nears a knife",
+        "The explanation begins to change her avoidance",
+        "Connecting thought to felt anger shifts the reviewing",
       ],
       defeatedBy: [
-        "Neither therapy beats an inert control",
-        "Improvement appears with no treatment at all",
+        "Her understanding is already loosening the avoidance",
+        "Real emotion accompanies her account",
       ],
     },
     correctAnswer:
-      "Two active treatments matching each other is not the same as neither working, so the more likely reading is that both deliver real benefit through partly shared mechanisms; test whether each beats a genuine no-treatment or attention-only control in the same trial, whether they diverge on specific targeted outcomes, and whether the tie replicates in a fresh sample.",
+      "Her articulate, affect-free account looks like intellectualization — a defense that lets her master the meaning in words while the feeling and the symptom stay untouched, so it moves nothing; working through needs the understanding to meet live emotion as she approaches the feared object; test whether any feeling stirs when she actually nears a knife, whether her tidy explanation ever changes her avoidance, and whether connecting the thought to felt anger in the moment shifts the reviewing.",
     explanation:
-      "Full credit reads the tie as two working treatments and names a no-treatment-arm test that would refute it; 'equal means both placebos' is the overreach that very control arm defeats.",
+      "Full credit reads the calm, behavior-free explanation as intellectualization and is paired with a does-anything-change-as-she-approaches-a-knife test that names its refutation; \"she has deep insight so the work is finished\" is the overreach the unchanged avoidance defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "Effects for a psychodynamic therapy look large in studies by its developers but shrink when an independent lab repeats the trial with the same manual. Which conclusion best follows?",
+      "A man eight months out of treatment reports one rough fortnight of heavier checking after a burglary on his street, then says he \"talked himself back down\" using what he learned and is steady again. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The independent lab seems to find smaller effects.",
+        text: "Once checking returns at all, the gains are lost and he's effectively back where he started.",
+        credit: 0,
+      },
+      {
+        text: "He checked more for a couple of weeks after the burglary.",
         credit: 0.3,
       },
       {
-        text: "Allegiance might inflate the developers' results; we could compare more labs.",
-        credit: 0.6,
-      },
-      {
-        text: "The developers' allegiance likely inflated their estimates, so the independent replication gives the more trustworthy effect size; test whether blinding outcome raters shrinks the developers' effect, whether pre-registered independent trials cluster near the smaller estimate, and whether the same inflation appears when rival-therapy developers study their own method.",
+        text: "This reads as a lapse, not a relapse — a real trigger briefly raised the checking, but he could name the trigger and self-correct with his tools, which is what consolidation looks like; test whether the surge stayed time-limited and tied to the burglary, whether his baseline returned without formal treatment, and whether he can articulate the feared outcome that drove the spike.",
         credit: 1.0,
       },
       {
-        text: "Since all researchers are biased, no effect size means anything and the therapy can't be judged.",
-        credit: 0,
+        text: "He had a wobble but seems fine; we could keep an eye on it.",
+        credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'allegiance inflated the developers' results' lead from the rival 'the independent lab simply ran it badly,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your \"this is a self-corrected lapse\" lead from the rival \"this is the start of a full relapse,\" and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: have the independent lab use blind outcome raters and a pre-registered protocol, then check whether the developers' own effect also shrinks under blinding — convergence on the smaller number points to allegiance, not sloppy replication. My lead is refuted if the independent lab's small effect grows back to the developers' size once its methods are tightened.",
+        "Cheapest test: track whether the checking surge stayed brief, tied to the burglary, and resolved on its own back to baseline — a time-limited, trigger-linked, self-corrected blip is a lapse, not a relapse. My lead is refuted if the checking keeps climbing and spreading beyond the burglary despite his efforts, which would signal a genuine relapse.",
       yieldAnchors: [
-        "Developers report large effects",
-        "An independent lab using the same manual reports smaller ones",
-        "Only the research team differs",
+        "Heavier checking for one fortnight",
+        "It followed a burglary on his street",
+        "He talked himself back down with his tools",
       ],
       riskAnchors: [
-        "Blinding raters shrinks the developers' effect",
-        "Pre-registered trials cluster near the smaller estimate",
-        "Rival-therapy developers inflate their own method too",
+        "The surge stayed time-limited and trigger-linked",
+        "Baseline returned without formal treatment",
+        "He can name the feared outcome that drove it",
       ],
       defeatedBy: [
-        "The independent lab's effect grows once its methods improve",
-        "The two labs treated entirely different patients",
+        "The checking keeps climbing despite his efforts",
+        "It spreads well beyond the burglary",
       ],
     },
     correctAnswer:
-      "The developers' allegiance likely inflated their estimates, so the independent replication gives the more trustworthy effect size; test whether blinding outcome raters shrinks the developers' effect, whether pre-registered independent trials cluster near the smaller estimate, and whether the same inflation appears when rival-therapy developers study their own method.",
+      "This reads as a lapse, not a relapse — a real trigger briefly raised the checking, but he could name the trigger and self-correct with his tools, which is what consolidation looks like; test whether the surge stayed time-limited and tied to the burglary, whether his baseline returned without formal treatment, and whether he can articulate the feared outcome that drove the spike.",
     explanation:
-      "Full credit names allegiance bias and a blinding test that names its refutation; 'no effect size means anything' is the give-up the systematic developer-versus-independent gap lets us correct.",
+      "Top credit reads brief, trigger-linked, self-corrected checking as a consolidating lapse and is paired with a did-it-stay-time-limited test that names its refutation; \"any checking means total loss\" is the overreach his self-correction defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "Listening to therapy recordings, researchers find that patients improve more in sessions containing more accurate interpretive work. A skeptic says it's really just the therapist's warmth. Which conclusion best follows?",
+      "A man's hand-washing has dropped dramatically, which his family celebrates — but they don't mention that he now simply never touches doorknobs, railings, or shared surfaces, routing his whole day around them. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Interpretation might drive change; we could code more sessions.",
+        text: "He might be avoiding instead of washing; we could ask about his daily routine.",
         credit: 0.6,
       },
       {
-        text: "What happens inside a session is private and can't be measured, so this shows nothing.",
+        text: "He washes less but avoids touching shared surfaces.",
+        credit: 0.3,
+      },
+      {
+        text: "His washing is way down, so the OCD is beaten and the rest is just sensible hygiene.",
         credit: 0,
       },
       {
-        text: "The link between accurate interpretation and improvement suggests the specific interpretive work contributes beyond warmth, though warmth must be measured and held constant; test whether the interpretation-outcome link survives statistically controlling for rated warmth, whether warm but low-interpretation sessions produce less change, and whether boosting accurate interpretation experimentally increases gains.",
+        text: "The washing fell because avoidance has taken over its job — by never contacting the feared surfaces he never triggers the urge, so the contamination fear is untouched and the relief is hollow; test whether his life is now organized around dodging the very things he used to wash off, whether anxiety spikes when contact is unavoidable, and whether deliberately touching surfaces without washing is what actually brings the fear down.",
         credit: 1.0,
-      },
-      {
-        text: "More interpretation seems to go with more improvement.",
-        credit: 0.3,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'interpretation adds benefit beyond warmth' lead from the rival 'warmth alone explains it,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your \"avoidance has replaced the washing\" lead from the rival \"he has genuinely overcome the contamination fear,\" and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: rate each session's warmth separately and check whether the interpretation-improvement link survives once warmth is held constant — a surviving link points to interpretation doing its own work. My lead is refuted if the link vanishes the moment warmth is controlled, leaving warmth as the whole story.",
+        "Cheapest test: check whether he can touch a doorknob or railing and leave it unwashed without distress — genuine recovery tolerates contact, whereas avoidance simply prevents the trigger. My lead is refuted if he can readily touch shared surfaces and feel calm, which would mean the fear, not just the washing, is truly gone.",
       yieldAnchors: [
-        "Sessions vary in amount of accurate interpretation",
-        "More interpretation goes with more improvement",
-        "The pattern shows across many recordings",
+        "Hand-washing dropped dramatically",
+        "He now never touches shared surfaces",
+        "His day is routed around avoiding them",
       ],
       riskAnchors: [
-        "The link survives controlling for warmth",
-        "Warm low-interpretation sessions yield less change",
-        "Experimentally increasing interpretation raises gains",
+        "His life is organized around dodging feared surfaces",
+        "Anxiety spikes when contact is unavoidable",
+        "Touching without washing is what brings fear down",
       ],
       defeatedBy: [
-        "The link disappears once warmth is controlled",
-        "Warmth alone produces the same improvement",
+        "He can touch shared surfaces and stay calm",
+        "His avoidance is mere ordinary hygiene",
       ],
     },
     correctAnswer:
-      "The link between accurate interpretation and improvement suggests the specific interpretive work contributes beyond warmth, though warmth must be measured and held constant; test whether the interpretation-outcome link survives statistically controlling for rated warmth, whether warm but low-interpretation sessions produce less change, and whether boosting accurate interpretation experimentally increases gains.",
+      "The washing fell because avoidance has taken over its job — by never contacting the feared surfaces he never triggers the urge, so the contamination fear is untouched and the relief is hollow; test whether his life is now organized around dodging the very things he used to wash off, whether anxiety spikes when contact is unavoidable, and whether deliberately touching surfaces without washing is what actually brings the fear down.",
     explanation:
-      "Full credit credits interpretation beyond warmth while naming a control-for-warmth test that names its refutation; 'sessions can't be measured' is the refusal the recorded process-outcome link defeats.",
+      "Full credit reads the washing's drop as avoidance doing its job and is paired with a can-he-touch-and-not-wash test that names its refutation; \"washing's down so the OCD is beaten\" is the overreach his all-day avoidance defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "In a study, patients' capacity to reflect on their own feelings rises first, and their symptoms drop afterward. One might wonder whether feeling better simply makes people more reflective instead. Which conclusion best follows?",
+      "A woman treated for checking compulsions reports months later that she has also stopped re-reading her texts five times before sending and no longer needs her desk \"perfect\" before she can start work — gains nobody set out to produce. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "We can never know what causes what in the mind, so the order of changes is meaningless.",
-        credit: 0,
-      },
-      {
-        text: "Reflection and symptoms both seem to change.",
+        text: "She seems less fussy about a few things now.",
         credit: 0.3,
       },
       {
-        text: "Because the rise in reflection reliably comes before the symptom drop, it more likely drives the improvement than the reverse, though the timing must be pinned down; test whether early gains in reflection predict later symptom change but not vice versa, whether sessions that boost reflection are followed by steeper symptom drops, and whether an intervention targeting reflection alone improves symptoms.",
+        text: "The treatment may have spread to other areas; we could ask what else changed.",
+        credit: 0.6,
+      },
+      {
+        text: "The working-through likely loosened a shared driver — an intolerance of doubt and a need to forestall error — beneath several of her rigidities, so improvement generalized past the targeted checking, a sign of durable structural change; test whether the spread covers exactly the behaviors sharing that doubt-and-error theme, whether the broader gains hold at long follow-up, and whether habits unrelated to that theme are unchanged.",
         credit: 1.0,
       },
       {
-        text: "Reflection might lead to symptom relief; we could track the timing more closely.",
-        credit: 0.6,
+        text: "Different habits change for all sorts of reasons, so crediting her therapy for any of this is a stretch.",
+        credit: 0,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'reflection drives symptom relief' lead from the rival 'feeling better makes people more reflective,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your \"the gains generalized from a shared underlying driver\" lead from the rival \"these other changes are unrelated coincidences,\" and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: check the time order across patients — if early increases in reflection predict later symptom drops while early symptom drops do not predict later reflection, the causal arrow runs from reflection to relief. My lead is refuted if symptom improvement reliably comes first and reflection only rises afterward.",
+        "Cheapest test: check whether the newly eased behaviors are exactly the ones sharing her doubt-and-error theme while unrelated habits stay put — theme-coherent spread points to a generalized driver, not coincidence. My lead is refuted if the changes are scattered across unrelated behaviors with no common thread, which would fit chance.",
       yieldAnchors: [
-        "Reflection rises early in treatment",
-        "Symptoms drop afterward",
-        "The order is consistent across patients",
+        "Treated for checking compulsions",
+        "Now re-reads texts and arranges her desk far less",
+        "No one targeted these changes",
       ],
       riskAnchors: [
-        "Early reflection predicts later symptom change, not the reverse",
-        "Reflection-boosting sessions precede steeper drops",
-        "Targeting reflection alone improves symptoms",
+        "The spread covers behaviors sharing the doubt-and-error theme",
+        "The broader gains hold at long follow-up",
+        "Unrelated habits are unchanged",
       ],
       defeatedBy: [
-        "Symptom relief reliably comes before any rise in reflection",
-        "Reflection only increases after patients already feel better",
+        "The changes are scattered with no common theme",
+        "Unrelated habits changed just as much",
       ],
     },
     correctAnswer:
-      "Because the rise in reflection reliably comes before the symptom drop, it more likely drives the improvement than the reverse, though the timing must be pinned down; test whether early gains in reflection predict later symptom change but not vice versa, whether sessions that boost reflection are followed by steeper symptom drops, and whether an intervention targeting reflection alone improves symptoms.",
+      "The working-through likely loosened a shared driver — an intolerance of doubt and a need to forestall error — beneath several of her rigidities, so improvement generalized past the targeted checking, a sign of durable structural change; test whether the spread covers exactly the behaviors sharing that doubt-and-error theme, whether the broader gains hold at long follow-up, and whether habits unrelated to that theme are unchanged.",
     explanation:
-      "Full credit uses the time order to argue reflection mediates relief and names a which-comes-first test that would refute it; 'we can never know what causes what' is the dodge the reliable ordering defeats.",
+      "Top credit reads theme-coherent spread as generalization from a shared driver and is paired with a does-it-track-the-doubt-theme test that names its refutation; \"habits change for all sorts of reasons\" is the dodge the coherent, theme-specific spread defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "After a course of psychodynamic therapy, a group of frequent medical-clinic users sharply cut their number of doctor visits and sick days over the next year. A manager asks whether they would have settled down anyway. Which conclusion best follows?",
+      "After a teenager's late-night ordering rituals are eliminated, she develops trouble falling asleep that began the same week the rituals stopped and is worst on nights before big social events — the exact occasions the ordering used to precede. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The patients seem to use the clinic less afterward.",
-        credit: 0.3,
+        text: "Teenagers have sleep problems constantly, so tying her insomnia to the old rituals is overthinking it.",
+        credit: 0,
       },
       {
-        text: "The therapy may have reduced the distress that drove the excess visits, but the 'they'd settle anyway' worry means a comparison group is essential; test whether a matched untreated group of equally frequent users drops their visits as much, whether the reduction tracks how much each patient improved psychologically, and whether the savings persist into a second year.",
+        text: "The social dread the ordering used to absorb likely lost its outlet when the ritual stopped and now surfaces as insomnia, so the conflict wasn't worked through, only the behavior removed; test whether the sleeplessness occupies the same pre-social-event slot the ordering did, whether it began precisely when the rituals stopped, and whether naming and facing the social fear eases the insomnia.",
         credit: 1.0,
       },
       {
-        text: "Therapy might cut their medical use; we could check their records again later.",
+        text: "Her sleep trouble could be related to the old anxiety; we could track when it happens.",
         credit: 0.6,
       },
       {
-        text: "Health costs have nothing to do with therapy, so this tells us nothing about whether it works.",
-        credit: 0,
+        text: "She can't sleep well before big social events now.",
+        credit: 0.3,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'the therapy cut the visits' lead from the rival 'they would have settled on their own,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your \"the insomnia is the old social dread without its ritual outlet\" lead from the rival \"it's ordinary teenage sleep trouble,\" and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: follow a matched group of equally frequent users who didn't get therapy over the same year — if only the treated group's visits fall, the therapy, not natural settling, drove the drop. My lead is refuted if the untreated heavy users reduce their visits just as much.",
+        "Cheapest test: check whether the insomnia clusters on nights before big social events — the very slot the ordering used to fill — and started exactly when the rituals stopped, which points to a redirected dread rather than generic sleep trouble. My lead is refuted if her sleeplessness is spread evenly across all nights with no tie to social events or to when the rituals ended.",
       yieldAnchors: [
-        "Patients were frequent medical-clinic users",
-        "Their visits and sick days fell after therapy",
-        "The drop followed the treatment",
+        "Ordering rituals were eliminated",
+        "Insomnia began the same week",
+        "It is worst before big social events",
       ],
       riskAnchors: [
-        "A matched untreated group does not drop as much",
-        "The reduction tracks psychological improvement",
-        "The savings persist into a second year",
+        "Insomnia occupies the pre-social-event slot",
+        "It began precisely when rituals stopped",
+        "Facing the social fear eases it",
       ],
       defeatedBy: [
-        "Equally frequent untreated users cut visits just as much",
-        "The decline reflects routine year-to-year fluctuation",
+        "The insomnia is spread evenly across all nights",
+        "It predates the end of the rituals",
       ],
     },
     correctAnswer:
-      "The therapy may have reduced the distress that drove the excess visits, but the 'they'd settle anyway' worry means a comparison group is essential; test whether a matched untreated group of equally frequent users drops their visits as much, whether the reduction tracks how much each patient improved psychologically, and whether the savings persist into a second year.",
+      "The social dread the ordering used to absorb likely lost its outlet when the ritual stopped and now surfaces as insomnia, so the conflict wasn't worked through, only the behavior removed; test whether the sleeplessness occupies the same pre-social-event slot the ordering did, whether it began precisely when the rituals stopped, and whether naming and facing the social fear eases the insomnia.",
     explanation:
-      "Full credit ties reduced medical use to relieved distress while naming the natural-settling confound and a matched-group test that would refute it; 'costs have nothing to do with therapy' is the refusal the visit drop defeats.",
+      "Full credit reads event-timed insomnia in the old ritual slot as redirected social dread and is paired with a did-it-start-when-rituals-stopped test that names its refutation; \"teens have sleep problems constantly\" is the dodge the exact slot-and-onset matching defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A year after stopping treatment, patients who had psychodynamic therapy have relapsed far less than patients who had medication. A reviewer suspects the medication group may have been more severely ill to begin with. Which conclusion best follows?",
+      "A man no longer performs his mental neutralizing rituals, but he says he gets through each day by \"clamping down hard\" on every intrusive harm thought the instant it appears, and the thoughts terrify him as much as ever. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The therapy likely confers more lasting protection than medication once treatment stops, but the severity worry means baseline illness must be checked, ideally with random assignment; test whether the groups were equally severe at the start, whether the therapy group's durability holds in a randomized trial, and whether restarting medication restores the drug group's gains.",
-        credit: 1.0,
+        text: "He's stopped his mental rituals but still battles the thoughts.",
+        credit: 0.3,
       },
       {
-        text: "Therapy might last longer; we could compare how sick each group started.",
+        text: "He seems to be forcing it; we could keep checking in.",
         credit: 0.6,
       },
       {
-        text: "Two different treatments can't be compared at all, so the relapse difference means nothing.",
-        credit: 0,
+        text: "Clamping down is suppression, not working through — the intrusive thoughts and the terror beneath them are still fully charged and merely held off by effort, which tends to rebound; real change comes from letting the thoughts come without fighting them, so test whether his fear of the thoughts actually declines over time rather than staying maxed, whether he can allow a thought to pass without neutralizing or suppressing, and whether accepting the thought as just a thought lowers its charge.",
+        credit: 1.0,
       },
       {
-        text: "The therapy group seems to relapse less.",
-        credit: 0.3,
+        text: "He has stopped the rituals, so he is cured no matter how the thoughts feel to him.",
+        credit: 0,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'therapy gives more durable protection' lead from the rival 'the medication group was simply sicker to start,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your \"he's suppressing rather than working through\" lead from the rival \"he has genuinely recovered and just describes it dramatically,\" and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: compare the two groups' baseline severity, or better, randomly assign patients to therapy or medication so starting illness is balanced — an equal durability advantage under random assignment points to the therapy. My lead is refuted if the medication group was markedly sicker at baseline and the gap disappears once severity is matched.",
+        "Cheapest test: check whether his fear of the thoughts is falling over time or staying maxed out despite the effort — undiminished terror held back by constant clamping is suppression, not recovery. My lead is refuted if he can let an intrusive thought arise and pass without fighting it and his distress is genuinely low, which would mean real working-through.",
       yieldAnchors: [
-        "Both groups improved during treatment",
-        "The therapy group relapsed less after stopping",
-        "The difference emerged after treatment ended",
+        "Mental neutralizing rituals have stopped",
+        "He clamps down on every intrusive thought",
+        "The thoughts terrify him as much as ever",
       ],
       riskAnchors: [
-        "The groups were equally severe at baseline",
-        "The durability holds under random assignment",
-        "Restarting medication restores the drug group's gains",
+        "Fear of the thoughts declines over time",
+        "He can let a thought pass without neutralizing",
+        "Accepting the thought as a thought lowers its charge",
       ],
       defeatedBy: [
-        "The medication group was much sicker at the start",
-        "The gap vanishes once baseline severity is matched",
+        "He can let intrusive thoughts come and go calmly",
+        "His distress is genuinely low without effort",
       ],
     },
     correctAnswer:
-      "The therapy likely confers more lasting protection than medication once treatment stops, but the severity worry means baseline illness must be checked, ideally with random assignment; test whether the groups were equally severe at the start, whether the therapy group's durability holds in a randomized trial, and whether restarting medication restores the drug group's gains.",
+      "Clamping down is suppression, not working through — the intrusive thoughts and the terror beneath them are still fully charged and merely held off by effort, which tends to rebound; real change comes from letting the thoughts come without fighting them, so test whether his fear of the thoughts actually declines over time rather than staying maxed, whether he can allow a thought to pass without neutralizing or suppressing, and whether accepting the thought as just a thought lowers its charge.",
     explanation:
-      "Full credit reads the durability gap as lasting protection while naming the baseline-severity confound and a randomized test that would refute it; 'two treatments can't be compared' is the dodge the clean relapse difference defeats.",
+      "Top credit reads constant clamping with undiminished terror as suppression and is paired with a is-his-fear-actually-falling test that names its refutation; \"rituals stopped so he's cured\" is the overreach his unrelenting battle defeats.",
   },
 ];
 
@@ -843,179 +843,179 @@ const written: HomeworkItem[] = [
   {
     itemType: "written",
     prompt:
-      "A careful review pools dozens of randomized trials of psychodynamic therapy and finds a moderate average benefit over control conditions — and, in the trials with long follow-ups, the benefit is as large or larger years after treatment ended. In one paragraph, propose the strongest conclusion about whether and how the therapy works, and describe how you would test it.",
+      "A man completes exposure work and his compulsive door-checking disappears. Within a month, though, he develops a new routine: before he can leave any room, he must mentally picture the door locked and silently say \"it's fine\" three times. He insists this \"isn't OCD, it's just a calming thing I do.\" In one paragraph, propose the strongest conclusion about what has happened and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that psychodynamic therapy produces a genuine, moderate benefit that not only holds but often grows after treatment, suggesting it equips patients with insight or skills they keep using rather than offering only temporary relief. This is a strong claim because it predicts checkable consequences: the effect should survive when only the most rigorous, pre-registered trials are kept and when corrections are made for unpublished negative studies; the long-term growth should appear only in patients who continue to apply what they learned, not in untreated comparison groups followed the same way; and trials with active control conditions should still show added benefit beyond attention alone. I would test it by re-running the meta-analysis restricted to blinded, pre-registered trials, by checking the follow-up gains against matched untreated samples, and by examining whether the late growth tracks patients' reported use of their insights.",
+        "The strongest conclusion is that the compulsion was relieved at the surface without working through the intolerance of doubt that drove it, so the same function has migrated from physical checking into a mental ritual — picturing the lock and repeating \"it's fine\" does exactly what checking did, buying brief certainty at the cost of keeping the fear alive. This is a strong claim because it predicts checkable consequences: the new ritual should fire in the very situations checking used to (leaving a room, leaving the house) rather than at random; his anxiety should spike if he is prevented from completing the mental routine; and the urge should fade only when he faces the dread of being responsible for a catastrophe rather than soothing it. I would test it by mapping when the mental ritual appears against his old checking triggers, by having him resist completing it and watching whether anxiety surges, and by checking whether tolerating the uncertainty without the routine — not the routine itself — is what finally settles him.",
       yieldAnchors: [
-        "Dozens of randomized trials show a moderate benefit",
-        "The benefit holds at long follow-up",
-        "In some trials it grows after treatment ends",
+        "Door-checking disappeared after exposure work",
+        "A mental ritual began within a month",
+        "It occupies the same leaving-the-room situations",
       ],
       riskAnchors: [
-        "The effect survives keeping only rigorous, pre-registered trials",
-        "The late growth is absent in untreated comparison groups",
-        "Active-control trials still show added benefit",
+        "The ritual fires in the old checking situations",
+        "Anxiety spikes if he can't complete it",
+        "Facing the catastrophe fear, not the ritual, settles him",
       ],
       defeatedBy: [
-        "The benefit disappears once weak studies are excluded",
-        "Untreated people improve just as much over the same years",
+        "The mental routine appears randomly, unrelated to leaving",
+        "Blocking it causes no anxiety at all",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that psychodynamic therapy produces a genuine, moderate benefit that not only holds but often grows after treatment, suggesting it equips patients with insight or skills they keep using rather than offering only temporary relief. This is a strong claim because it predicts checkable consequences: the effect should survive when only the most rigorous, pre-registered trials are kept and when corrections are made for unpublished negative studies; the long-term growth should appear only in patients who continue to apply what they learned, not in untreated comparison groups followed the same way; and trials with active control conditions should still show added benefit beyond attention alone. I would test it by re-running the meta-analysis restricted to blinded, pre-registered trials, by checking the follow-up gains against matched untreated samples, and by examining whether the late growth tracks patients' reported use of their insights.",
+      "The strongest conclusion is that the compulsion was relieved at the surface without working through the intolerance of doubt that drove it, so the same function has migrated from physical checking into a mental ritual — picturing the lock and repeating \"it's fine\" does exactly what checking did, buying brief certainty at the cost of keeping the fear alive. This is a strong claim because it predicts checkable consequences: the new ritual should fire in the very situations checking used to (leaving a room, leaving the house) rather than at random; his anxiety should spike if he is prevented from completing the mental routine; and the urge should fade only when he faces the dread of being responsible for a catastrophe rather than soothing it. I would test it by mapping when the mental ritual appears against his old checking triggers, by having him resist completing it and watching whether anxiety surges, and by checking whether tolerating the uncertainty without the routine — not the routine itself — is what finally settles him.",
     explanation:
-      "Under the inverted standard the cautious 'therapy is too personal to measure' earns near-zero; top credit goes to the genuine-and-growing-benefit conclusion that commits to a sleeper-effect mechanism and names a rigorous-trial-only re-analysis that could refute it.",
+      "Under the inverted standard, \"it's just a calming thing, nothing to read into\" earns near-zero; top credit reads the mental routine as the old compulsion migrated and names a does-it-fire-in-the-old-triggers test that could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "In a randomized trial, patients meeting a warm clinician for supportive listening improve, but patients getting the same amount of time in psychodynamic therapy — with active interpretive work — improve reliably more, especially on measures of how they handle relationships. In one paragraph, propose the strongest conclusion about what is driving the extra benefit, and describe how you would test it.",
+      "A woman has spent two years in talk therapy and can describe, movingly, how her washing rituals grew out of guilt over a sibling's accident she always felt responsible for. Her understanding is rich and genuine — but she still washes for hours and has never done any structured exposure. In one paragraph, propose the strongest conclusion about why the symptom persists and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that the specific interpretive work, not just warmth and attention, adds real benefit, since both groups got equal time with a caring clinician yet only the interpretive group gained more, particularly in relational functioning. This is a strong claim because it predicts checkable consequences: the extra benefit should concentrate on the relational outcomes the interpretation targets rather than spreading evenly; sessions with more accurate interpretation should yield more change even within the psychodynamic group; and matching the two conditions still more tightly on therapist warmth and experience should not erase the gap. I would test it by comparing outcome profiles across the two arms, by coding session recordings to relate interpretation to improvement, and by replicating with therapists rated equally warm in both conditions.",
+        "The strongest conclusion is that insight has outrun symptom relief: understanding the guilt the washing carries is real and valuable, but understanding alone rarely dislodges an entrenched compulsion, because the behavior is maintained by the relief it brings each time she gives in, and she has never practiced facing the feared contamination without washing. This is a strong claim because it predicts checkable consequences: adding structured exposure and response prevention should finally move the washing in a way two years of talk did not; the persistence should trace to her never having tolerated the feared dirt rather than to any gap in understanding; and combining the meaning work with exposure should outperform either alone for her. I would test it by introducing a graded exposure plan and tracking whether washing time drops, by checking whether her resistance is strongest exactly where she has avoided real contact, and by comparing her progress with exposure added against her flat two-year baseline.",
       yieldAnchors: [
-        "Both groups had equal time with a warm clinician",
-        "The interpretive group improved more",
-        "The extra gain showed most in relationship measures",
+        "Two years of rich, genuine insight",
+        "Washing rituals are essentially unchanged",
+        "She has never done structured exposure",
       ],
       riskAnchors: [
-        "The added benefit concentrates on targeted relational outcomes",
-        "More accurate interpretation predicts more change",
-        "The gap survives matching therapist warmth and experience",
+        "Adding exposure finally moves the washing",
+        "The persistence traces to never facing the feared dirt",
+        "Meaning-work plus exposure beats either alone",
       ],
       defeatedBy: [
-        "The two groups improve identically once warmth is matched",
-        "Supportive listening alone produces the same relational gains",
+        "The washing was already resolving through insight alone",
+        "Exposure adds nothing to her flat baseline",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that the specific interpretive work, not just warmth and attention, adds real benefit, since both groups got equal time with a caring clinician yet only the interpretive group gained more, particularly in relational functioning. This is a strong claim because it predicts checkable consequences: the extra benefit should concentrate on the relational outcomes the interpretation targets rather than spreading evenly; sessions with more accurate interpretation should yield more change even within the psychodynamic group; and matching the two conditions still more tightly on therapist warmth and experience should not erase the gap. I would test it by comparing outcome profiles across the two arms, by coding session recordings to relate interpretation to improvement, and by replicating with therapists rated equally warm in both conditions.",
+      "The strongest conclusion is that insight has outrun symptom relief: understanding the guilt the washing carries is real and valuable, but understanding alone rarely dislodges an entrenched compulsion, because the behavior is maintained by the relief it brings each time she gives in, and she has never practiced facing the feared contamination without washing. This is a strong claim because it predicts checkable consequences: adding structured exposure and response prevention should finally move the washing in a way two years of talk did not; the persistence should trace to her never having tolerated the feared dirt rather than to any gap in understanding; and combining the meaning work with exposure should outperform either alone for her. I would test it by introducing a graded exposure plan and tracking whether washing time drops, by checking whether her resistance is strongest exactly where she has avoided real contact, and by comparing her progress with exposure added against her flat two-year baseline.",
     explanation:
-      "The inverted standard gives near-zero to 'attention is all that helps'; credit goes to the specific-ingredient conclusion that names the matched-warmth design and a targeted-outcome test as its own refutation.",
+      "The inverted standard gives near-zero to \"only insight produces real change, so exposure would be shallow\"; top credit reads insight-without-behavior-change as needing exposure added and names a does-adding-exposure-move-it test that could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "Across many patients, improvement rises steadily with the number of psychodynamic sessions and then levels off, with most of the gain arriving in the earlier sessions and little added by very long courses. In one paragraph, propose the strongest conclusion about the relationship between dose and benefit, and describe how you would test it.",
+      "A man was free of his symmetry compulsions for over a year after treatment. They have now returned, intensely, in the weeks since his first child was born — and the new compulsions center on arranging the baby's room \"exactly right\" before he can leave it. In one paragraph, propose the strongest conclusion about what the relapse reveals and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that the therapy delivers real, accumulating benefit per session up to a point of diminishing returns, where additional sessions add little — a pattern that points to the treatment itself doing graded work rather than to chance or to who happens to stay. This is a strong claim because it predicts checkable consequences: randomly assigning patients to shorter versus longer courses should reproduce the rising-then-flattening curve; the link should survive adjusting for how severe patients were at the start, ruling out the worry that sicker patients merely stay longer; and the plateau should fall near the same number of sessions across different problems. I would test it by running a randomized dose-comparison trial, by statistically controlling for baseline severity in the observational data, and by checking whether the plateau replicates across disorders.",
+        "The strongest conclusion is that symptom relief never fully worked through the conflict the compulsions served — likely an intolerance of the helplessness and high-stakes responsibility that uncertainty brings — so the arrival of a baby, which loads exactly that fear, has reactivated the old solution in a new, parenting-shaped form. This is a strong claim because it predicts checkable consequences: the relapse content should map onto the baby's safety and his responsibility for it rather than spreading randomly; it should ease as he processes the dread of being unable to protect his child rather than only redoing exposures; and booster exposure paired with naming that fear should settle it faster than exposure alone. I would test it by checking whether the new compulsions cluster around the baby's care and safety, by exploring whether his anxiety is really about responsibility and helplessness, and by comparing exposure-plus-meaning-work against exposure alone for how durably the relapse resolves.",
       yieldAnchors: [
-        "Improvement rises with number of sessions",
-        "Most gain arrives early",
-        "The curve levels off for very long courses",
+        "A year free of symmetry compulsions",
+        "They returned intensely after his child's birth",
+        "They now center on the baby's room",
       ],
       riskAnchors: [
-        "Randomly assigned dose reproduces the curve",
-        "The link survives adjusting for baseline severity",
-        "The plateau falls near the same point across problems",
+        "Relapse content maps onto the baby's safety and his responsibility",
+        "It eases as he processes fear of being unable to protect the child",
+        "Exposure plus meaning-work settles it faster than exposure alone",
       ],
       defeatedBy: [
-        "Extra sessions add nothing once severity is controlled",
-        "Dose merely reflects how sick patients were",
+        "The relapse is unrelated to the baby or to responsibility",
+        "It returned gradually with no triggering event",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that the therapy delivers real, accumulating benefit per session up to a point of diminishing returns, where additional sessions add little — a pattern that points to the treatment itself doing graded work rather than to chance or to who happens to stay. This is a strong claim because it predicts checkable consequences: randomly assigning patients to shorter versus longer courses should reproduce the rising-then-flattening curve; the link should survive adjusting for how severe patients were at the start, ruling out the worry that sicker patients merely stay longer; and the plateau should fall near the same number of sessions across different problems. I would test it by running a randomized dose-comparison trial, by statistically controlling for baseline severity in the observational data, and by checking whether the plateau replicates across disorders.",
+      "The strongest conclusion is that symptom relief never fully worked through the conflict the compulsions served — likely an intolerance of the helplessness and high-stakes responsibility that uncertainty brings — so the arrival of a baby, which loads exactly that fear, has reactivated the old solution in a new, parenting-shaped form. This is a strong claim because it predicts checkable consequences: the relapse content should map onto the baby's safety and his responsibility for it rather than spreading randomly; it should ease as he processes the dread of being unable to protect his child rather than only redoing exposures; and booster exposure paired with naming that fear should settle it faster than exposure alone. I would test it by checking whether the new compulsions cluster around the baby's care and safety, by exploring whether his anxiety is really about responsibility and helplessness, and by comparing exposure-plus-meaning-work against exposure alone for how durably the relapse resolves.",
     explanation:
-      "The cautious 'dose can never be untangled from severity' is the dodge the orderly curve strains; top credit goes to the accumulating-benefit conclusion that names a randomized dose trial and a severity adjustment that could refute it.",
+      "The cautious \"relapses just happen, there's nothing to read\" earns near-zero; top credit reads the birth-timed, baby-focused relapse as an un-worked-through responsibility conflict reactivated and names a does-it-map-onto-the-baby test that could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "An enthusiastic research group publishes a single, un-blinded study reporting an unusually large benefit from their own brand of psychodynamic therapy, measured mostly by patients' self-reports. In one paragraph, propose the strongest conclusion about how much weight to give this result, and describe how you would test it.",
+      "A year after finishing treatment, a woman tells you she had a hard stretch last month — two days of \"sliding back\" into reassurance-seeking after a health scare — but she recognized what was happening, reminded herself it was the old pattern, sat with the uncertainty, and was back to normal within days without calling anyone. In one paragraph, propose the strongest conclusion about the state of her recovery and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that this result probably overstates the true effect, because an un-blinded study run by believers and resting on self-report is exactly the design most vulnerable to allegiance and expectation, so the real effect is likely smaller. This is a strong claim because it predicts checkable consequences: an independent team using blind outcome raters should find a smaller effect; pre-registering the analysis should shrink it further; and adding objective outcomes like return-to-work or clinician ratings should pull the estimate down toward a modest benefit. I would test it by commissioning a blinded, pre-registered replication by a neutral lab, by adding objective measures alongside self-report, and by comparing the effect against the average from independent trials of similar therapies.",
+        "The strongest conclusion is that her change is genuinely consolidating rather than fragile: she met a real trigger, briefly slid toward her old compulsion, but could recognize the lapse, link it to the health scare, and self-correct using what she learned — which is exactly what durable, worked-through recovery looks like, a lapse handled rather than a relapse begun. This is a strong claim because it predicts checkable consequences: such slips should stay brief, trigger-linked, and self-limited rather than escalating; she should be able to name the feared feeling each time and tolerate it without ritual; and her baseline should hold across months despite occasional lapses under stress. I would test it by tracking whether future slips stay short and self-corrected, by checking whether she can articulate and sit with the fear each one carries, and by following her baseline over time to confirm it holds rather than eroding.",
       yieldAnchors: [
-        "A single study reports an unusually large benefit",
-        "It was un-blinded and run by enthusiasts",
-        "Outcomes rested mostly on self-report",
+        "A year out of treatment",
+        "Two days of sliding back after a health scare",
+        "She recognized it and self-corrected without calling anyone",
       ],
       riskAnchors: [
-        "An independent blinded team finds a smaller effect",
-        "Pre-registration shrinks the estimate",
-        "Objective outcomes pull the effect down",
+        "Slips stay brief, trigger-linked, and self-limited",
+        "She can name and tolerate the feared feeling",
+        "Her baseline holds across months",
       ],
       defeatedBy: [
-        "The large effect replicates under blind, pre-registered conditions",
-        "Objective measures match the enthusiastic self-reports",
+        "The slips escalate and spread instead of self-correcting",
+        "She cannot recognize or sit with the underlying fear",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that this result probably overstates the true effect, because an un-blinded study run by believers and resting on self-report is exactly the design most vulnerable to allegiance and expectation, so the real effect is likely smaller. This is a strong claim because it predicts checkable consequences: an independent team using blind outcome raters should find a smaller effect; pre-registering the analysis should shrink it further; and adding objective outcomes like return-to-work or clinician ratings should pull the estimate down toward a modest benefit. I would test it by commissioning a blinded, pre-registered replication by a neutral lab, by adding objective measures alongside self-report, and by comparing the effect against the average from independent trials of similar therapies.",
+      "The strongest conclusion is that her change is genuinely consolidating rather than fragile: she met a real trigger, briefly slid toward her old compulsion, but could recognize the lapse, link it to the health scare, and self-correct using what she learned — which is exactly what durable, worked-through recovery looks like, a lapse handled rather than a relapse begun. This is a strong claim because it predicts checkable consequences: such slips should stay brief, trigger-linked, and self-limited rather than escalating; she should be able to name the feared feeling each time and tolerate it without ritual; and her baseline should hold across months despite occasional lapses under stress. I would test it by tracking whether future slips stay short and self-corrected, by checking whether she can articulate and sit with the fear each one carries, and by following her baseline over time to confirm it holds rather than eroding.",
     explanation:
-      "The 'this proves the therapy is excellent' overreach is exactly what allegiance and un-blinded self-report defeat; top credit goes to the likely-overstated conclusion that names a blinded independent replication as its own refutation.",
+      "The overreach \"any slip means she's relapsing\" is what her recognition-and-self-correction defeats; top credit reads the brief, trigger-linked, self-corrected slide as consolidation and names a do-future-slips-stay-self-limited test that could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "Patients who complete psychodynamic therapy show, beyond fewer symptoms, steadier relationships and better stress tolerance, and the pattern repeats when the therapy is tried unchanged with a very different population in another country. In one paragraph, propose the strongest conclusion about the scope of the therapy's effects, and describe how you would test it.",
+      "A man finishes a quick, effective exposure program; his counting compulsions are gone and his therapist is pleased. But he tells a friend that he feels oddly flat and restless, \"like I lost a job I hated but don't know what to do with myself,\" and he has started snapping at people in a way that's new for him. In one paragraph, propose the strongest conclusion about what is going on and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that the therapy produces broad changes in personality and relating that go beyond symptom relief and rest on widely shared human processes, since the gains extend past checklists and reappear in a very different population. This is a strong claim because it predicts checkable consequences: the relational and coping gains should appear even in patients whose symptom scores barely move; they should hold at long-term follow-up rather than fading; and the therapy should keep working across several more cultures and age groups, especially when delivered by local therapists. I would test it by measuring relational and coping outcomes separately from symptoms, by following patients for years after treatment, and by replicating the trial across additional populations to find any setting where it fails and why.",
+        "The strongest conclusion is that the counting was removed without working through what it was managing, so the feeling the ritual used to bind — likely a tension or distress it discharged — now has no outlet and is leaking out as flatness, restlessness, and irritability; the symptom relief is real but the underlying conflict is untouched, which makes the gain brittle and risks a new symptom forming. This is a strong claim because it predicts checkable consequences: the new irritability and restlessness should track the same situations that used to trigger counting rather than appearing at random; a fresh ritual or symptom may emerge to take counting's place if nothing else absorbs the feeling; and briefly exploring what the counting protected him from should ease the \"don't know what to do with myself\" sense. I would test it by mapping his irritable moments against his old counting triggers, by watching for a replacement symptom over the coming weeks, and by checking whether naming and facing the feeling the ritual used to manage reduces the restlessness.",
       yieldAnchors: [
-        "Patients gain steadier relationships and stress tolerance",
-        "The gains exceed symptom relief",
-        "The pattern repeats in a very different population",
+        "Counting compulsions are gone after a quick program",
+        "He feels flat, restless, and newly irritable",
+        "He likens it to losing a hated job",
       ],
       riskAnchors: [
-        "Relational gains appear even when symptoms barely move",
-        "The broad changes hold at long-term follow-up",
-        "The therapy replicates across more cultures and ages",
+        "Irritability tracks the old counting triggers",
+        "A replacement symptom may emerge",
+        "Exploring what counting managed eases the restlessness",
       ],
       defeatedBy: [
-        "Only symptom scores change, with no broader effect",
-        "The benefit fails to appear in any other population",
+        "The restlessness is unrelated to his old triggers",
+        "No feeling or symptom fills the gap and he feels fine",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that the therapy produces broad changes in personality and relating that go beyond symptom relief and rest on widely shared human processes, since the gains extend past checklists and reappear in a very different population. This is a strong claim because it predicts checkable consequences: the relational and coping gains should appear even in patients whose symptom scores barely move; they should hold at long-term follow-up rather than fading; and the therapy should keep working across several more cultures and age groups, especially when delivered by local therapists. I would test it by measuring relational and coping outcomes separately from symptoms, by following patients for years after treatment, and by replicating the trial across additional populations to find any setting where it fails and why.",
+      "The strongest conclusion is that the counting was removed without working through what it was managing, so the feeling the ritual used to bind — likely a tension or distress it discharged — now has no outlet and is leaking out as flatness, restlessness, and irritability; the symptom relief is real but the underlying conflict is untouched, which makes the gain brittle and risks a new symptom forming. This is a strong claim because it predicts checkable consequences: the new irritability and restlessness should track the same situations that used to trigger counting rather than appearing at random; a fresh ritual or symptom may emerge to take counting's place if nothing else absorbs the feeling; and briefly exploring what the counting protected him from should ease the \"don't know what to do with myself\" sense. I would test it by mapping his irritable moments against his old counting triggers, by watching for a replacement symptom over the coming weeks, and by checking whether naming and facing the feeling the ritual used to manage reduces the restlessness.",
     explanation:
-      "The cautious 'anything beyond a symptom score is too vague to count' is the refusal the measured relational gains defeat; top credit goes to the broad-and-general-change conclusion that names a symptoms-barely-move test and cross-population replication that could refute it.",
+      "The inverted standard gives near-zero to \"the counting's gone so it's a complete success\"; top credit reads the new flatness and irritability as the bound feeling without its outlet and names a watch-for-a-replacement-symptom test that could refute it.",
   },
 ];
 
 export const section: SectionContent = {
-  slug: "does-it-work-evidence",
-  title: "Does It Work? The Evidence",
+  slug: "working-through-insight-relief",
+  title: "Working Through: Insight Alongside Symptom Relief",
   weekNumber: 1,
   blurb:
-    "Does psychodynamic therapy actually help? We learn to read outcome research — effect sizes, randomized trials, the sleeper effect, dose-response, and the confounds that fool the unwary — and to commit to the strongest conclusion the data supports.",
+    "Durable recovery from OCD pairs symptom relief with insight into what the ritual was for, so the meaning doesn't just resurface as a new symptom. This section is about reading when change is consolidating, when relief is brittle, and what still needs working through.",
   lectureTitle:
-    "1.7 Does It Work? Reading the evidence for psychodynamic therapy",
-  body: `# Does It Work? The Evidence
+    "1.7 Working Through: insight alongside symptom relief",
+  body: `# Working Through: Insight Alongside Symptom Relief
 
-It is one thing to describe what happens in psychodynamic therapy and another to ask whether it works. "Works" is a research question, and like any research question it has to be answered with evidence rather than enthusiasm or suspicion. This section is about reading that evidence well: knowing what a result can and cannot show, committing to the strongest conclusion the data actually supports, and naming the cheap check that would prove you wrong.
+Getting the rituals to stop is not the same as being well. A man can quit checking the locks and feel, for a few weeks, that he has won — only to find a new mental routine has quietly taken the old one's place. \"Working through\" is the name for the slower, deeper part of treatment: not just removing the behavior but settling the conflict the behavior was managing, so the relief holds and the meaning doesn't pop up somewhere else. This section is about reading that process from the evidence — telling the difference between change that is consolidating and change that is only skin-deep, and naming the cheap check that would tell you which you are looking at.
 
-## Asking the question fairly
+## When relief comes without understanding
 
-The first temptation is to settle the matter by gut feeling — true believers say it obviously transforms lives, skeptics say it is unmeasurable hand-holding. Both skip the work. A fair test compares people who got the therapy with people who didn't, measures real outcomes, and asks whether the difference is bigger than what would happen anyway. The unhelpful dodge in this whole area is "therapy is too personal and complex to measure, so the data tells us nothing." That sounds humble but it is a refusal: distress, relationships, work, and sick days are all measurable, and a refusal to look is not the same as caution.
+Exposure work can drop a compulsion fast, and that is genuinely good. But when the behavior goes and nothing else changes — the person can't say what the ritual was for, and a vague unease or new irritability creeps in — the gain can be brittle. The feeling the ritual used to bind still has to go somewhere. The tell is not that relief is suspect, but that relief with no working-through tends to leave the original conflict live, ready to be reactivated by the next stressor that loads it.
 
-## Effect sizes and control groups
+## When understanding comes without relief
 
-To say a treatment "works" you need a yardstick. An **effect size** captures how big the improvement is, not just whether it exists, and it only means something against a **control group** — people who waited, got no treatment, or got a different treatment. If a treated group improves and a waiting-list group doesn't over the same months, the gap is evidence the therapy did something, because both groups had the same time to recover on their own. The strongest conclusion commits to "the therapy caused the gain" and then names a test: the waiting-list group should catch up once it finally gets treated.
+The opposite failure is just as common. Someone can describe, beautifully and truly, how their washing grew out of guilt, and still wash for two hours a day. Insight alone rarely dislodges an entrenched compulsion, because the behavior is held in place by the relief it delivers every time the person gives in. Worse, an articulate, feeling-free account can itself become a defense — intellectualizing the symptom keeps the emotion at arm's length while the ritual rolls on. Understanding only changes things when it meets live feeling at the moment of the urge, and when it is paired with actually facing the feared situation.
 
-## The sleeper effect and durability
+## Symptom substitution and the migrating compulsion
 
-A striking finding in this literature is the **sleeper effect**: patients are better at the end of therapy, and better still a year or two later, long after the sessions stop. That pattern fits the idea that the therapy plants insight or skills people keep using on their own. It is a strong claim precisely because it is checkable — the late growth should appear only in patients who keep applying what they learned, and should be absent in an untreated comparison group followed the same way. **Durability** matters too: when therapy and medication both help but the medication group relapses faster after stopping, the natural reading is that therapy teaches something the patient carries forward.
+One of the clearest signs that working-through is unfinished is substitution: checking stops and silent reassurance phrases begin; solo washing stops and the person starts phoning a spouse a dozen times a day; a ritual stops and a bodily symptom appears in the same trigger slot. The surface form changes but the function is identical — buy brief certainty, dodge the feared feeling. The cheap check is to ask whether the new behavior fires in the very situations the old one did. When it does, you are looking at the same compulsion in new clothing, not a fresh and unrelated habit.
 
-## Dose, comparison, and convergence
+## Lapse, relapse, and what consolidation looks like
 
-Two more tools sharpen the picture. **Dose-response** asks whether more sessions bring more benefit in an orderly way; when they do, that orderliness suggests the therapy itself is doing graded work — though you must rule out that sicker patients simply stay longer. **Comparison** to an established therapy tells you where psychodynamic work stands; importantly, two active treatments coming out equal is *not* the same as neither working, especially if both beat a no-treatment arm. And **converging evidence** — independent teams, different samples, different methods, all landing on the same moderate benefit — is the hardest thing to explain away, because one biased group or one odd sample can't produce agreement across many.
+Recovery is not a straight line, and the difference between a lapse and a relapse is one of the most useful things to read. A consolidating patient can have a hard week — a slip back into the old behavior under a real trigger — and then recognize it, link it to the trigger, sit with the feeling, and self-correct without spiraling. That is a lapse handled, and it is actually a sign of durable change. A relapse, by contrast, keeps climbing and spreading. Reading the slip well means asking whether it stayed brief and trigger-linked, and whether the person could name and tolerate the fear underneath it.
 
-## Spotting confounds
+## White-knuckling versus working through
 
-Most bad conclusions in outcome research come from **confounds** — hidden differences that masquerade as treatment effects. People who *choose* therapy may be more motivated or less ill to begin with (selection). Studies run by believers tend to report bigger effects (allegiance). Counting only patients who finished hides those who quit because they weren't improving (attrition). People recruited at their worst tend to drift back toward normal on their own (regression to the mean). The expert move is not to throw up your hands but to name the specific confound and the cheap fix: randomize to balance selection, blind the raters to defeat allegiance, count everyone who started to handle dropout, and add an untreated group enrolled at the same low point to separate therapy from natural rebound.
+A person can stop all rituals and still not be well, if they are holding the urges down by sheer effort while the dread stays maxed out. Suppression is brittle: it costs enormous energy and tends to rebound under load. Genuine working-through looks different — the distress at triggers actually falls over time, the person can approach feared situations willingly rather than gritting through them, and the feared outcome has been faced and disconfirmed rather than merely resisted. The cheap check is whether fear is dropping or just being contained.
 
-## Reading a study like a scientist
+## Reading the change — and naming a test
 
-Put it together and the habit is the same one this course has trained all along. Don't stop at "patients improved." Commit to the strongest supported claim — *the therapy caused a real, lasting benefit through specific work* — and then say exactly which result would overturn it: a waiting-list group that improves just as much, an effect that vanishes once weak studies are dropped, a gap that disappears when raters are blinded. A conclusion that names its own refutation is worth far more than a cautious shrug or a triumphant overreach.
+The habit this course trains applies here too. Don't stop at \"the rituals are gone.\" Commit to the strongest supported reading of where the change really stands — *consolidating*, *brittle relief*, *insight without relief*, *substitution*, or *suppression* — and then say exactly what would tell you you're wrong. Does the new behavior fire in the old triggers? Does distress fall over time or stay pinned? Does a slip self-correct or keep climbing? Do the gains spread to behaviors sharing the same underlying fear, which would signal real structural change? A reading that names its own disconfirming check is worth far more than \"he's better\" or \"it never really worked.\"
 
 ## In the real world
 
-Suppose a friend reads a headline: "New study proves talk therapy beats medication." Before celebrating or scoffing, ask the questions this section drills. Was it randomized, or did patients choose? Who ran it, and were the raters blind? Did they count the dropouts? Was the comparison a real alternative or an empty waitlist? Did the benefit last at follow-up? Each question points to a cheap check, and each could change the verdict. That is what reading evidence buys you — not blind faith that therapy works and not lazy doubt that nothing can be known, but a testable judgment about how strong the case really is and what would change your mind.`,
+Think of someone you know who \"fixed\" a problem and then sprouted a new one in its place — quit smoking and started overeating, ended one anxious habit and grew another. The same logic governs OCD recovery. The point of working through is not to chase every symptom forever, but to settle the conflict underneath so that relief in one place doesn't quietly demand a new symptom somewhere else. When relief and insight finally join — when a person can meet the old trigger, feel the feeling the ritual used to mask, and let it pass — that is what lasting change looks like, and it is worth far more than a quiet that only holds until the next storm.`,
   homework: {
     mcq,
     hybrid,

@@ -1,6 +1,6 @@
 kind = "web"
 previewPath = "/"
-title = "Psychodynamic Therapy 101"
+title = "Psychodynamic Treatment of OCD 101"
 version = "1.0.0"
 id = "artifacts/qr-course"
 router = "path"

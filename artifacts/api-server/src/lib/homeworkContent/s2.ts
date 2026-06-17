@@ -9,407 +9,407 @@ const mcq: HomeworkItem[] = [
   {
     itemType: "mc",
     prompt:
-      "A man keeps calling his new girlfriend by his ex's name — but only with her, never with coworkers or friends, and almost always during tender or tense moments. He is mortified each time and has no idea why it happens. Which conclusion best follows?",
+      "A devoted new mother is flooded with vivid intrusive images of stabbing her baby whenever she holds a kitchen knife. She is horrified by them, has hidden the knives, and refuses to be alone with the child. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He is probably still hung up on his ex; we could talk through that breakup more.",
-        credit: 0.6,
+        text: "She seems to be having frightening thoughts about her baby.",
+        credit: 0.3,
       },
       {
-        text: "The slip likely reveals a buried, all-consuming secret passion for his ex that he is hiding from everyone, including himself.",
-        credit: 0,
-      },
-      {
-        text: "Without noticing, he is likely running an old relationship template — responding to closeness and conflict through a learned pattern from the past relationship; test whether the slips cluster specifically around moments that echo the old relationship, whether they fade as the new relationship builds its own history, and whether he repeats other carried-over habits only with her.",
+        text: "The content is the clue: harm imagery aimed at the person she loves most, met with horror, points not to a wish but to the crushing weight of total responsibility and the unspeakable mix of love and resentment a newborn stirs — the thought says what she cannot, that she is terrified of her own potential to fail or hurt; test whether the images target precisely her most-loved dependent and not strangers, whether her dread rises with how much harm she could do, and whether they ease once she can voice the ambivalence and fear of inadequacy underneath.",
         credit: 1.0,
       },
       {
-        text: "He seems to mix up names sometimes.",
-        credit: 0.3,
+        text: "It's probably anxiety about being a mother; we could keep talking about it.",
+        credit: 0.6,
+      },
+      {
+        text: "The thoughts reveal a hidden urge to harm the child, so she is right to keep herself away from the baby.",
+        credit: 0,
       },
     ],
     correctAnswer:
-      "Without noticing, he is likely running an old relationship template — responding to closeness and conflict through a learned pattern from the past relationship; test whether the slips cluster specifically around moments that echo the old relationship, whether they fade as the new relationship builds its own history, and whether he repeats other carried-over habits only with her.",
+      "The content is the clue: harm imagery aimed at the person she loves most, met with horror, points not to a wish but to the crushing weight of total responsibility and the unspeakable mix of love and resentment a newborn stirs — the thought says what she cannot, that she is terrified of her own potential to fail or hurt; test whether the images target precisely her most-loved dependent and not strangers, whether her dread rises with how much harm she could do, and whether they ease once she can voice the ambivalence and fear of inadequacy underneath.",
     explanation:
-      "Top credit names an automatic out-of-awareness template and three checks that could refute it; the 'buried all-consuming passion' option is the lurid overreach the situation-specific, mortifying slips actively defeat.",
+      "Top credit reads the ego-dystonic harm-content aimed at her most-loved as expressing dread of her own inadequacy and names a targets-the-loved-one test; 'a hidden urge to harm' is the lurid overreach her horror and avoidance defeat.",
   },
   {
     itemType: "mc",
     prompt:
-      "A woman has dated four people in a row who were charming at first but emotionally unavailable, and each time she didn't notice the pattern until the relationship was failing. Warm, steady people, she says, simply 'feel boring' to her. Which conclusion best follows?",
+      "A devout churchgoer is assaulted by obscene, blasphemous images precisely during prayer and communion — the more sacred the moment, the worse they get. He is mortified and prays harder to drive them out. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Love is too mysterious to analyze, so there is nothing to be learned from who she dates.",
+        text: "Intrusive thoughts are random electrical noise in the brain; their religious content is meaningless and not worth examining.",
         credit: 0,
       },
       {
-        text: "She likely carries an out-of-awareness template that codes distance as exciting and steadiness as boring, so she is automatically drawn to the same kind of partner; test whether 'boring' people stop feeling boring once she knows them, whether the pull toward distance matches a pattern from an important early relationship, and whether naming the template in advance changes who she notices.",
+        text: "The content tracking sacredness is the tell: blasphemy that peaks at the holiest moments likely voices a forbidden doubt or anger toward a faith he is not allowed to question, the symptom carrying the rebellion he cannot say aloud; test whether the intrusions spike specifically at the most sacred moments and not neutral ones, whether they ease when he can openly name any resentment or doubt about his religion, and whether 'praying harder' reliably makes them worse.",
         credit: 1.0,
       },
       {
-        text: "She has bad luck with partners and keeps meeting the wrong people by chance.",
+        text: "He seems to get bad thoughts when he prays.",
         credit: 0.3,
       },
       {
-        text: "She probably has a type that isn't good for her; we could list her exes and compare.",
+        text: "It might have something to do with his religion; we could explore his faith.",
         credit: 0.6,
       },
     ],
     correctAnswer:
-      "She likely carries an out-of-awareness template that codes distance as exciting and steadiness as boring, so she is automatically drawn to the same kind of partner; test whether 'boring' people stop feeling boring once she knows them, whether the pull toward distance matches a pattern from an important early relationship, and whether naming the template in advance changes who she notices.",
+      "The content tracking sacredness is the tell: blasphemy that peaks at the holiest moments likely voices a forbidden doubt or anger toward a faith he is not allowed to question, the symptom carrying the rebellion he cannot say aloud; test whether the intrusions spike specifically at the most sacred moments and not neutral ones, whether they ease when he can openly name any resentment or doubt about his religion, and whether 'praying harder' reliably makes them worse.",
     explanation:
-      "The strongest conclusion names a learned template driving repeated choices and three disconfirming tests; 'love is too mysterious to analyze' is the refusal the clear four-time pattern defeats.",
+      "Full credit reads blasphemy that peaks at the holiest moments as a disguised forbidden doubt and names a spikes-at-sacred-moments test; 'random noise, content meaningless' is the dodge the precise sacred-timing defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "An employee stays calm through layoffs and a missed promotion, but when his manager gives him a small, friendly correction on a report he flushes, his voice shakes, and he stews for days. He can't explain why something so minor hit so hard. Which conclusion best follows?",
+      "A man with no prior history suddenly feels 'dirty' and washes his hands raw, the compulsion dating from the week he had a one-time affair. He scrubs hardest before coming home to his wife. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He seems sensitive to criticism.",
-        credit: 0.3,
-      },
-      {
-        text: "The mild correction probably touched a nerve; we could ask what bothered him about it.",
+        text: "He probably feels guilty about something; we could look into the washing.",
         credit: 0.6,
       },
       {
-        text: "The reaction far bigger than its trigger likely means the correction matched an out-of-awareness template — a learned link between gentle correction from an authority and a much older sense of being found wanting; test whether the same outsized reaction appears with other mild-correction-from-authority moments, whether bigger threats like layoffs reliably produce less reaction, and whether the response eases once he can connect the feeling to its earlier source.",
+        text: "He seems to wash his hands a lot lately.",
+        credit: 0.3,
+      },
+      {
+        text: "The content literalizes a moral stain: feeling 'dirty' and scrubbing hardest before facing his wife, all dating from the affair, points to a guilt he can't put into words, the body enacting a cleansing his conscience demands; test whether the urge tracks reminders of the betrayal and of his wife specifically, whether it began at no other change but the affair, and whether it eases once the guilt is spoken rather than washed.",
         credit: 1.0,
       },
       {
-        text: "His overreaction must mean a hidden traumatic abuse he has completely repressed and that this manager somehow reawakened.",
+        text: "Hand-washing has countless causes, so connecting it to the affair is reading far too much into a hygiene habit.",
         credit: 0,
       },
     ],
     correctAnswer:
-      "The reaction far bigger than its trigger likely means the correction matched an out-of-awareness template — a learned link between gentle correction from an authority and a much older sense of being found wanting; test whether the same outsized reaction appears with other mild-correction-from-authority moments, whether bigger threats like layoffs reliably produce less reaction, and whether the response eases once he can connect the feeling to its earlier source.",
+      "The content literalizes a moral stain: feeling 'dirty' and scrubbing hardest before facing his wife, all dating from the affair, points to a guilt he can't put into words, the body enacting a cleansing his conscience demands; test whether the urge tracks reminders of the betrayal and of his wife specifically, whether it began at no other change but the affair, and whether it eases once the guilt is spoken rather than washed.",
     explanation:
-      "Full credit reads the disproportion as a matched template and names three checks; the 'hidden repressed abuse' leap is the melodramatic overreach the ordinary trigger does not support.",
+      "Top credit reads 'dirtiness' worst before facing his wife as a literalized moral guilt and names a tracks-reminders-of-the-betrayal test; 'washing has countless causes' is the dodge the exact onset and wife-specific timing defeat.",
   },
   {
     itemType: "mc",
     prompt:
-      "At every meeting, dinner, or class, a woman automatically takes the seat nearest the door, gets uneasy if she can't, and has never once thought about why. She insists it's just a habit with no meaning. Which conclusion best follows?",
+      "After her twin sister died, a woman developed an exact 'evening-up' ritual — every touch on the left must be matched on the right, every action balanced — that intensifies on the anniversary and on her sister's birthday. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The mind's habits are unknowable, so her seat choice can't tell us anything.",
-        credit: 0,
-      },
-      {
-        text: "The consistent, automatic seat choice plus the unease when blocked likely reflects an out-of-awareness pattern that keeps an exit available — a learned 'stay ready to leave' template running below notice; test whether the unease spikes specifically when escape is hard, whether it eases in settings she controls, and whether the pattern traces to situations where leaving once mattered.",
+        text: "The balancing content carries the loss: an 'evening-up' that flares on the very dates tied to her twin likely enacts a need to restore a symmetry death destroyed — perhaps to undo the loss or quiet a survivor's guilt that she remains while her twin does not; test whether the ritual spikes on anniversaries and her sister's birthday specifically, whether it began at no loss but this one, and whether it eases as the grief and any guilt are put into words.",
         credit: 1.0,
       },
       {
-        text: "She probably just likes sitting near the door; we could ask if she's always done it.",
-        credit: 0.6,
+        text: "She seems to need things balanced since her sister died.",
+        credit: 0.3,
       },
       {
-        text: "She seems to prefer certain seats.",
-        credit: 0.3,
+        text: "Some people simply like symmetry and order, so there's nothing about her sister to read into the ritual.",
+        credit: 0,
+      },
+      {
+        text: "It's probably grief-related; we could keep an eye on the ritual.",
+        credit: 0.6,
       },
     ],
     correctAnswer:
-      "The consistent, automatic seat choice plus the unease when blocked likely reflects an out-of-awareness pattern that keeps an exit available — a learned 'stay ready to leave' template running below notice; test whether the unease spikes specifically when escape is hard, whether it eases in settings she controls, and whether the pattern traces to situations where leaving once mattered.",
+      "The balancing content carries the loss: an 'evening-up' that flares on the very dates tied to her twin likely enacts a need to restore a symmetry death destroyed — perhaps to undo the loss or quiet a survivor's guilt that she remains while her twin does not; test whether the ritual spikes on anniversaries and her sister's birthday specifically, whether it began at no loss but this one, and whether it eases as the grief and any guilt are put into words.",
     explanation:
-      "Top credit reads a 'pointless' habit as a patterned template and names three tests; 'habits are unknowable' is the dodge the reliable choice and matched unease defeat.",
+      "Full credit reads an evening-up that flares on dates tied to her twin as enacting an undoing of the loss and names a spikes-on-the-anniversary test; 'some people just like symmetry' is the dodge the death-linked onset and timing defeat.",
   },
   {
     itemType: "mc",
     prompt:
-      "Saying goodbye to a close friend moving abroad, a man means to say 'I'll miss you' but instead says 'I'm so relieved you're going.' He is horrified — he loves this friend — and the friendship had recently felt strangely heavy and obligating. Which conclusion best follows?",
+      "A man began compulsively retracing his drives, certain he has run someone over without noticing, in the months after his father died of an illness the man believes he 'should have caught sooner.' The fear is always of unseen harm he failed to prevent. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "It was just a verbal slip-up that means nothing at all.",
+        text: "He seems worried about hurting people when he drives.",
         credit: 0.3,
       },
       {
-        text: "The slip plus the recent 'heaviness' likely points to a real but unacknowledged strand of feeling — some relief at being freed from an obligation he didn't let himself notice, alongside genuine love; test whether the heaviness tracked specific obligating demands, whether he feels lighter once the friend leaves, and whether other slips appear around duties he resents but won't voice.",
-        credit: 1.0,
+        text: "It might be tied to his father's death; we could discuss his guilt.",
+        credit: 0.6,
       },
       {
-        text: "The slip proves he secretly hates this friend and the whole friendship was a lie he told himself.",
+        text: "Thoughts about car accidents are common and mean nothing in particular, so there's no link to his father worth pursuing.",
         credit: 0,
       },
       {
-        text: "He probably has mixed feelings about the friend leaving; we could ask how he really feels.",
-        credit: 0.6,
+        text: "The content is specific and revealing: a dread of unseen harm he failed to prevent, arising right after a death he blames himself for not catching, points to a guilt that has migrated onto the road — the checking enacting a vigilance his conscience now demands everywhere; test whether the fear is always of harm-by-negligence rather than other dangers, whether it began with his father's death and no other change, and whether it eases as the guilt about his father is named directly.",
+        credit: 1.0,
       },
     ],
     correctAnswer:
-      "The slip plus the recent 'heaviness' likely points to a real but unacknowledged strand of feeling — some relief at being freed from an obligation he didn't let himself notice, alongside genuine love; test whether the heaviness tracked specific obligating demands, whether he feels lighter once the friend leaves, and whether other slips appear around duties he resents but won't voice.",
+      "The content is specific and revealing: a dread of unseen harm he failed to prevent, arising right after a death he blames himself for not catching, points to a guilt that has migrated onto the road — the checking enacting a vigilance his conscience now demands everywhere; test whether the fear is always of harm-by-negligence rather than other dangers, whether it began with his father's death and no other change, and whether it eases as the guilt about his father is named directly.",
     explanation:
-      "The richest conclusion ties the slip to a specific out-of-awareness feeling and names three checks; 'he secretly hates the friend, it was all a lie' is the overreach his genuine love and the narrow 'heaviness' defeat.",
+      "Top credit reads a fear specifically of negligent, unseen harm beginning at the father's death as displaced guilt and names a harm-by-negligence-specifically test; 'accident thoughts mean nothing' is the dodge the precise content and onset defeat.",
   },
   {
     itemType: "mc",
     prompt:
-      "A talented worker has quit three jobs in five years. Each time, things were going well and a boss had just praised her or offered a raise — and within weeks she picked a fight or found a reason to leave. She frames each exit as a separate, sensible decision. Which conclusion best follows?",
+      "Engaged to a man she calls wonderful, a woman is tormented by the intrusive doubt 'maybe I don't really love him,' and seeks constant reassurance. The doubts reliably strike hardest right after their warmest, most intimate moments. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "She probably gets restless at jobs; we could look at what each role lacked.",
-        credit: 0.6,
-      },
-      {
-        text: "The repeating trigger — leaving right after success and praise — likely reveals an out-of-awareness template in which approval feels unsafe, prompting her to undo it; test whether the urge to leave reliably follows praise rather than setbacks, whether the same flight-after-success shows up in non-work relationships, and whether the pattern eases once she can anticipate it.",
-        credit: 1.0,
-      },
-      {
-        text: "Each job clearly had real problems, so there is no pattern worth explaining here.",
+        text: "Doubts like these are just random worries with no pattern, so the timing after closeness is coincidence.",
         credit: 0,
       },
       {
-        text: "She seems to change jobs a lot.",
+        text: "She might be afraid of commitment; we could talk about the relationship.",
+        credit: 0.6,
+      },
+      {
+        text: "The timing decodes the content: doubt that strikes hardest right after intimacy, not after conflict, suggests the 'do I love him?' question is managing a fear of closeness itself — the doubt creating distance exactly when nearness becomes threatening; test whether the doubts reliably follow warm moments rather than distant ones, whether reassurance brings only brief relief, and whether they ease once the fear of being engulfed or trapped is named.",
+        credit: 1.0,
+      },
+      {
+        text: "She seems to keep doubting her relationship.",
         credit: 0.3,
       },
     ],
     correctAnswer:
-      "The repeating trigger — leaving right after success and praise — likely reveals an out-of-awareness template in which approval feels unsafe, prompting her to undo it; test whether the urge to leave reliably follows praise rather than setbacks, whether the same flight-after-success shows up in non-work relationships, and whether the pattern eases once she can anticipate it.",
+      "The timing decodes the content: doubt that strikes hardest right after intimacy, not after conflict, suggests the 'do I love him?' question is managing a fear of closeness itself — the doubt creating distance exactly when nearness becomes threatening; test whether the doubts reliably follow warm moments rather than distant ones, whether reassurance brings only brief relief, and whether they ease once the fear of being engulfed or trapped is named.",
     explanation:
-      "Top credit names a specific success-triggered template and three disconfirming tests; 'each job just had real problems, no pattern' is the dismissal the precise praise-then-flight repetition defeats.",
+      "Full credit reads doubt that peaks after intimacy as managing a fear of closeness and names a follows-warm-moments test; 'random worries, coincidence' is the dodge the closeness-locked timing defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "Whenever one particular friend texts her, a woman feels a flash of dread before she even opens the message, then a wave of guilt — yet she describes the friendship as 'totally fine' and can't say what's wrong. The pattern happens with no one else. Which conclusion best follows?",
+      "A polite, mild-mannered teenager is gripped by intrusive urges to shout slurs and obscenities — but only in the settings where it is most forbidden: funerals, libraries, the middle of class. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Feelings are too private and complex to ever be figured out.",
-        credit: 0,
-      },
-      {
-        text: "The automatic dread-then-guilt that fires only for this friend likely signals an out-of-awareness pattern — her body has learned this relationship as a source of demand or judgment that her conscious story denies; test whether the dread tracks specific kinds of messages from this friend, whether it is absent for everyone else, and whether it lines up with a recurring imbalance she hasn't let herself name.",
-        credit: 1.0,
-      },
-      {
-        text: "She probably has some unspoken issue with this friend; we could ask what's going on between them.",
+        text: "He's probably anxious in quiet places; we could look into it.",
         credit: 0.6,
       },
       {
-        text: "She seems a little stressed by that friend.",
+        text: "The content targets prohibition itself: an urge to blurt the forbidden precisely where decorum is strictest likely voices a strain against constraint — an anger or rebelliousness this 'good' boy isn't allowed to feel, surfacing as the very thing he'd never do; test whether the urges cluster only in the most rule-bound settings and not relaxed ones, whether they ease when he can openly voice resentment at always having to be good, and whether the more he forbids the thought the stronger it gets.",
+        credit: 1.0,
+      },
+      {
+        text: "He seems to get these urges in quiet settings.",
         credit: 0.3,
+      },
+      {
+        text: "He secretly wants to humiliate people in public and is barely holding it back.",
+        credit: 0,
       },
     ],
     correctAnswer:
-      "The automatic dread-then-guilt that fires only for this friend likely signals an out-of-awareness pattern — her body has learned this relationship as a source of demand or judgment that her conscious story denies; test whether the dread tracks specific kinds of messages from this friend, whether it is absent for everyone else, and whether it lines up with a recurring imbalance she hasn't let herself name.",
+      "The content targets prohibition itself: an urge to blurt the forbidden precisely where decorum is strictest likely voices a strain against constraint — an anger or rebelliousness this 'good' boy isn't allowed to feel, surfacing as the very thing he'd never do; test whether the urges cluster only in the most rule-bound settings and not relaxed ones, whether they ease when he can openly voice resentment at always having to be good, and whether the more he forbids the thought the stronger it gets.",
     explanation:
-      "Full credit reads the friend-specific automatic reaction as a learned pattern and names three checks; 'feelings are too private to figure out' is the refusal the clean single-friend signal defeats.",
+      "Top credit reads urges aimed at the most rule-bound settings as a strain against constraint and names a clusters-only-where-decorum-is-strictest test; 'he secretly wants to humiliate people' is the lurid overreach his mild, distressed character defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A man insists he feels 'nothing in particular' about his father's recent death — they were never close. Yet since the funeral he has reorganized his garage exactly as his father kept his, started using his father's phrases, and can't sleep. He sees no connection. Which conclusion best follows?",
+      "Since his mother died, a man cannot discard a single thing that was hers — not an expired coupon, not a worn dishrag — and is gripped by dread that throwing anything out would be 'erasing her.' He keeps his own clutter in check. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He says he feels nothing, so we should take him at his word and look no further.",
+        text: "He seems to hold on to his mother's things.",
+        credit: 0.3,
+      },
+      {
+        text: "Lots of people are sentimental pack-rats; there's nothing about mourning to read into keeping his mother's belongings.",
         credit: 0,
       },
       {
-        text: "The behavior changes — copying his father's habits and phrases while sleepless — likely reflect grief and identification operating outside his awareness, doing the work his conscious mind disowns; test whether the imitation began only after the death, whether the sleeplessness tracks reminders of his father, and whether naming the loss aloud shifts the behaviors.",
+        text: "The content names a stalled grief: an inability to part with only her things, paired with the dread of 'erasing her,' suggests the keeping substitutes for a mourning he cannot bear to begin — to discard the objects would mean admitting she is gone; test whether the difficulty applies specifically to her possessions and not his own, whether the dread is of loss rather than of needing the items, and whether it eases as he is helped to grieve her directly.",
         credit: 1.0,
       },
       {
-        text: "He's probably affected by his dad's death more than he admits; we could ask about the funeral.",
+        text: "It's probably about losing his mother; we could revisit it.",
         credit: 0.6,
-      },
-      {
-        text: "He seems a bit off since the funeral.",
-        credit: 0.3,
       },
     ],
     correctAnswer:
-      "The behavior changes — copying his father's habits and phrases while sleepless — likely reflect grief and identification operating outside his awareness, doing the work his conscious mind disowns; test whether the imitation began only after the death, whether the sleeplessness tracks reminders of his father, and whether naming the loss aloud shifts the behaviors.",
+      "The content names a stalled grief: an inability to part with only her things, paired with the dread of 'erasing her,' suggests the keeping substitutes for a mourning he cannot bear to begin — to discard the objects would mean admitting she is gone; test whether the difficulty applies specifically to her possessions and not his own, whether the dread is of loss rather than of needing the items, and whether it eases as he is helped to grieve her directly.",
     explanation:
-      "The strongest conclusion reads out-of-awareness grief from the timed behavior changes and names three tests; 'take him at his word, look no further' ignores the visible evidence his words contradict.",
+      "Full credit reads keeping only her things plus 'erasing her' dread as a substitute for mourning and names an only-her-possessions test; 'just a sentimental pack-rat' is the dodge the her-things-only selectivity and loss-themed dread defeat.",
   },
   {
     itemType: "mc",
     prompt:
-      "A new hire is friendly with peers but becomes guarded and faintly hostile the moment any senior manager is warm to him — he reads kindness from 'people in charge' as a setup. He thinks he's just 'a good judge of character.' Which conclusion best follows?",
+      "A loving new father is horrified by intrusive sexual thoughts about his infant during diaper changes and baths. He is sickened by them, and has started avoiding caregiving so as never to be alone with the baby. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He probably distrusts bosses; we could ask about his past managers.",
-        credit: 0.6,
-      },
-      {
-        text: "The pattern that fires specifically for warm authority figures likely reflects an out-of-awareness template — kindness from someone powerful has been learned as a danger sign — rather than accurate reading of each person; test whether the guardedness appears with every warm authority regardless of who they are, whether it's absent with equally warm peers, and whether it matches how an early authority figure once treated him.",
-        credit: 1.0,
-      },
-      {
-        text: "His suspicion proves these managers really are plotting against him in some hidden way.",
+        text: "The thoughts expose a hidden predatory desire, and his instinct to avoid the baby is correct.",
         credit: 0,
       },
       {
-        text: "He seems wary around managers.",
+        text: "The horror is the data: taboo content that disgusts him and drives him to avoid the child points away from desire and toward its opposite — an overwhelmed hyper-vigilance about being a good, safe father, the mind fixating on the worst imaginable violation precisely because it matters most; test whether the thoughts are ego-dystonic and revolting to him rather than arousing, whether they cluster around caregiving he badly wants to do right, and whether they ease as his anxiety about his fitness as a father is addressed.",
+        credit: 1.0,
+      },
+      {
+        text: "He's probably anxious about being a new parent; we could talk about it.",
+        credit: 0.6,
+      },
+      {
+        text: "He seems disturbed by thoughts during caregiving.",
         credit: 0.3,
       },
     ],
     correctAnswer:
-      "The pattern that fires specifically for warm authority figures likely reflects an out-of-awareness template — kindness from someone powerful has been learned as a danger sign — rather than accurate reading of each person; test whether the guardedness appears with every warm authority regardless of who they are, whether it's absent with equally warm peers, and whether it matches how an early authority figure once treated him.",
+      "The horror is the data: taboo content that disgusts him and drives him to avoid the child points away from desire and toward its opposite — an overwhelmed hyper-vigilance about being a good, safe father, the mind fixating on the worst imaginable violation precisely because it matters most; test whether the thoughts are ego-dystonic and revolting to him rather than arousing, whether they cluster around caregiving he badly wants to do right, and whether they ease as his anxiety about his fitness as a father is addressed.",
     explanation:
-      "Top credit names an authority-specific template and three checks, including the peer comparison; 'the managers really are plotting' is the overreach the indiscriminate, person-independent reaction defeats.",
+      "Top credit reads revulsion-laden taboo content driving avoidance as anxiety about being a safe father and names an ego-dystonic-not-arousing test; 'hidden predatory desire' is the lurid overreach his disgust and avoidance defeat.",
   },
   {
     itemType: "mc",
     prompt:
-      "A reliable, organized woman 'forgets' her dental appointments again and again — and only dental appointments. She never misses work meetings or doctor visits, books the dentist sincerely each time, then space out and skips. Which conclusion best follows?",
+      "A woman repeatedly confesses trivial 'sins' and fears she is secretly evil. Examined over weeks, the confession urges reliably follow ordinary moments of irritation at her domineering mother. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Memory is unreliable, so people forget things; there's nothing more to it.",
+        text: "She might feel guilty about her mother; we could explore the confessions.",
+        credit: 0.6,
+      },
+      {
+        text: "She seems to confess minor things a lot.",
         credit: 0.3,
       },
       {
-        text: "The forgetting that targets only the dentist, in someone otherwise organized, likely reflects an out-of-awareness avoidance — the 'forgetting' quietly serves to dodge something specific about that setting; test whether the lapses cluster around the dentist alone, whether anxiety or a bad past dental experience lines up with it, and whether removing the dreaded part (sedation, a trusted dentist) ends the 'forgetting.'",
+        text: "The 'evil' content decodes the trigger: a conviction of secret badness that flares right after anger at her mother likely literalizes a forbidden hostility she judges as sinful — the confession discharging a guilt for feelings she isn't permitted to have; test whether the urges follow moments of irritation at her mother specifically, whether the 'sins' she confesses are really ordinary angry feelings, and whether they ease once normal anger is allowed to be just anger.",
         credit: 1.0,
       },
       {
-        text: "The repeated lapse must mean a deeply repressed mouth trauma that her mind is violently blocking from all awareness.",
+        text: "She is simply a very moral, conscientious person, so her confessing means nothing beyond strong values.",
         credit: 0,
-      },
-      {
-        text: "She probably doesn't like the dentist; we could ask if she's anxious about it.",
-        credit: 0.6,
       },
     ],
     correctAnswer:
-      "The forgetting that targets only the dentist, in someone otherwise organized, likely reflects an out-of-awareness avoidance — the 'forgetting' quietly serves to dodge something specific about that setting; test whether the lapses cluster around the dentist alone, whether anxiety or a bad past dental experience lines up with it, and whether removing the dreaded part (sedation, a trusted dentist) ends the 'forgetting.'",
+      "The 'evil' content decodes the trigger: a conviction of secret badness that flares right after anger at her mother likely literalizes a forbidden hostility she judges as sinful — the confession discharging a guilt for feelings she isn't permitted to have; test whether the urges follow moments of irritation at her mother specifically, whether the 'sins' she confesses are really ordinary angry feelings, and whether they ease once normal anger is allowed to be just anger.",
     explanation:
-      "Full credit reads the selective forgetting as functional avoidance and names three tests; the 'deeply repressed mouth trauma' leap is the melodrama the ordinary, fixable dental dread does not warrant.",
+      "Full credit reads secret-evil convictions following anger at her mother as literalized forbidden hostility and names a follows-irritation-at-mother test; 'just very moral' is the dodge the anger-locked timing defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A man notices that in every romance he ends up having the identical argument — that his partner is 'controlling' him — even with partners who are easygoing and even when they barely made a request. The script feels new each time, but the words are nearly the same. Which conclusion best follows?",
+      "A man rigidly avoids the number 14 — refusing floors, addresses, and times that contain it — a compulsion that began the year his brother died on the 14th. No other number troubles him. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Relationships are too complicated to find any real pattern in them.",
+        text: "He seems to have a thing about the number 14.",
+        credit: 0.3,
+      },
+      {
+        text: "Plenty of people are superstitious about numbers, so there's nothing about his brother to read into avoiding 14.",
         credit: 0,
       },
       {
-        text: "The identical argument across very different partners likely reflects an out-of-awareness template — a learned sensitivity to being controlled that he projects onto small requests — rather than the partners actually being controlling; test whether the 'controlling' charge appears regardless of how easygoing the partner is, whether neutral observers see the requests as ordinary, and whether the template matches an earlier relationship where control was real.",
-        credit: 1.0,
-      },
-      {
-        text: "He probably keeps picking controlling partners; we could look at who he dates.",
+        text: "It's probably linked to his brother; we could note when it comes up.",
         credit: 0.6,
       },
       {
-        text: "He seems to argue about control a lot.",
-        credit: 0.3,
+        text: "The chosen number is the clue: dread fixed to the exact date of his brother's death, sparing all other numbers, likely binds an unbearable loss into a single avoidable symbol — magic that lets him feel he is keeping the catastrophe at bay; test whether only the death-linked number troubles him, whether the avoidance began at no loss but this one, and whether it eases as the grief over his brother is worked through directly.",
+        credit: 1.0,
       },
     ],
     correctAnswer:
-      "The identical argument across very different partners likely reflects an out-of-awareness template — a learned sensitivity to being controlled that he projects onto small requests — rather than the partners actually being controlling; test whether the 'controlling' charge appears regardless of how easygoing the partner is, whether neutral observers see the requests as ordinary, and whether the template matches an earlier relationship where control was real.",
+      "The chosen number is the clue: dread fixed to the exact date of his brother's death, sparing all other numbers, likely binds an unbearable loss into a single avoidable symbol — magic that lets him feel he is keeping the catastrophe at bay; test whether only the death-linked number troubles him, whether the avoidance began at no loss but this one, and whether it eases as the grief over his brother is worked through directly.",
     explanation:
-      "Top credit locates a portable template inside him, not the partners, and names three checks; 'too complicated to find any pattern' is the dodge the near-identical repeating script defeats.",
+      "Top credit reads dread fixed to the death-date number as bound grief and names an only-that-number test; 'plenty of people are superstitious' is the dodge the exact date-matching specificity defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "When a particular friend cancels plans, a grown woman goes silent, sulks for hours, and feels a hot, childlike sting of rejection — far more than the small letdown warrants, and far more than when anyone else cancels. She's embarrassed by how 'young' it feels. Which conclusion best follows?",
+      "A woman compulsively rereads her sent emails hunting for a cruel or insulting line she fears she slipped in. The urge reliably spikes on days she felt slighted by a colleague but said nothing. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "She seems disappointed when plans fall through.",
-        credit: 0.3,
-      },
-      {
-        text: "The childlike intensity, specific to this friend, likely means the cancellation matched an out-of-awareness template — an old, early experience of being dropped that this relationship reactivates; test whether the outsized sting appears mainly with this friend, whether it scales with how much the cancellation resembles old abandonments rather than the actual inconvenience, and whether the feeling eases once she connects it to its earlier source.",
-        credit: 1.0,
-      },
-      {
-        text: "The reaction proves she was savagely abandoned as a baby in a way she has totally erased from memory.",
+        text: "Everyone worries about their emails sometimes; reading meaning into careful proofreading is overthinking it.",
         credit: 0,
       },
       {
-        text: "She probably has some sensitivity about being let down; we could explore that.",
+        text: "She seems to check her emails over and over.",
+        credit: 0.3,
+      },
+      {
+        text: "The feared content points to disowned anger: a dread of having written something cruel, spiking exactly when she swallowed a slight, suggests the hostility she won't let herself express is being attributed to her own pen — she fears doing what she actually wishes she could do; test whether the rereading follows moments she felt angry but stayed silent, whether the dreaded line is always aggressive rather than merely mistaken, and whether it eases once she can own and voice the anger directly.",
+        credit: 1.0,
+      },
+      {
+        text: "She might have some anger she's holding in; we could discuss it.",
         credit: 0.6,
       },
     ],
     correctAnswer:
-      "The childlike intensity, specific to this friend, likely means the cancellation matched an out-of-awareness template — an old, early experience of being dropped that this relationship reactivates; test whether the outsized sting appears mainly with this friend, whether it scales with how much the cancellation resembles old abandonments rather than the actual inconvenience, and whether the feeling eases once she connects it to its earlier source.",
+      "The feared content points to disowned anger: a dread of having written something cruel, spiking exactly when she swallowed a slight, suggests the hostility she won't let herself express is being attributed to her own pen — she fears doing what she actually wishes she could do; test whether the rereading follows moments she felt angry but stayed silent, whether the dreaded line is always aggressive rather than merely mistaken, and whether it eases once she can own and voice the anger directly.",
     explanation:
-      "Full credit reads the 'too young' disproportion as a reactivated template and names three tests; the 'savagely abandoned as a baby and erased it' claim is the lurid overreach the ordinary cancellation does not support.",
+      "Full credit reads fear of a cruel line spiking after swallowed slights as disowned anger and names a follows-silent-anger test; 'everyone worries about emails' is the dodge the anger-locked timing defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "Planning a party, a man writes out invitations and 'accidentally' leaves one warm, generous friend off the list — twice now, for two events. He genuinely likes this friend and is baffled. Lately that friend's success has been a frequent topic among the group. Which conclusion best follows?",
+      "A gentle, committed animal-rights activist is tormented by vivid intrusive images of stabbing animals and people. The images always run exactly counter to her deepest values, and they revolt her. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "People forget to invite others sometimes; it doesn't mean anything.",
-        credit: 0.3,
-      },
-      {
-        text: "The repeated, selective 'forgetting' of one successful friend likely reflects an out-of-awareness sting of envy he won't consciously own, quietly steering the omission; test whether the lapse targets this friend specifically rather than being random, whether it tracks moments when the friend's success is salient, and whether owning a flicker of envy makes the 'forgetting' stop.",
-        credit: 1.0,
-      },
-      {
-        text: "He probably has some unspoken feeling about this friend; we could ask how he sees them.",
+        text: "She's probably stressed; we could keep talking about the images.",
         credit: 0.6,
       },
       {
-        text: "The omission proves he secretly despises this friend and has been faking the whole friendship for years.",
+        text: "The content's opposition to her identity is the tell: violent images that target precisely what she most cherishes and disgust her point not to a wish but to anxiety about her own ordinary aggression — feelings her gentle self-image forbids, so they return as their most shocking form; test whether the intrusions always contradict her values rather than express them, whether they revolt rather than tempt her, and whether they ease once she can accept that having aggressive feelings is normal and not the same as acting.",
+        credit: 1.0,
+      },
+      {
+        text: "Beneath the gentle image she harbors real violent desires she's suppressing.",
         credit: 0,
+      },
+      {
+        text: "She seems to have violent thoughts that upset her.",
+        credit: 0.3,
       },
     ],
     correctAnswer:
-      "The repeated, selective 'forgetting' of one successful friend likely reflects an out-of-awareness sting of envy he won't consciously own, quietly steering the omission; test whether the lapse targets this friend specifically rather than being random, whether it tracks moments when the friend's success is salient, and whether owning a flicker of envy makes the 'forgetting' stop.",
+      "The content's opposition to her identity is the tell: violent images that target precisely what she most cherishes and disgust her point not to a wish but to anxiety about her own ordinary aggression — feelings her gentle self-image forbids, so they return as their most shocking form; test whether the intrusions always contradict her values rather than express them, whether they revolt rather than tempt her, and whether they ease once she can accept that having aggressive feelings is normal and not the same as acting.",
     explanation:
-      "Top credit reads the selective lapse as out-of-awareness envy and names three checks; 'he secretly despises the friend and faked it for years' is the overreach his genuine liking and narrow omission defeat.",
+      "Top credit reads value-opposite, revolting images as anxiety about disowned ordinary aggression and names an always-contradicts-her-values test; 'real violent desires beneath' is the lurid overreach her disgust and value-opposition defeat.",
   },
   {
     itemType: "mc",
     prompt:
-      "A woman is happiest in the early, uncertain phase of dating, but the moment a partner becomes devoted and steady she feels a creeping flatness and starts looking for flaws — a sequence she's lived through five times without ever predicting it. Which conclusion best follows?",
+      "A man checks the locks dozens of times, fearing an intruder will harm his wife — but only on the nights she is away, and the compulsion began as their marriage soured and he caught himself fantasizing about leaving. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The unconscious is unknowable, so there's no way to understand why she feels this.",
+        text: "He seems to check the locks when his wife is gone.",
+        credit: 0.3,
+      },
+      {
+        text: "Checking locks is just sensible caution, so there's nothing about the marriage to read into it.",
         credit: 0,
       },
       {
-        text: "The reliable shift from delight to flatness exactly when security arrives likely reflects an out-of-awareness template in which steady love feels unfamiliar or unsafe, so she retreats just as closeness deepens; test whether the flatness reliably onsets at the point of commitment rather than at random, whether it eases when she stays through it rather than leaving, and whether the pattern matches an early bond where closeness was unreliable.",
+        text: "The protective content masks its opposite: harm-fears for his wife that appear only as the marriage sours and he imagines leaving likely bind a guilt over his own hostile wishes — the elaborate protecting undoing the wish to be rid of her; test whether the checking tracks nights linked to conflict rather than real danger, whether it began with the marital strain and his leaving fantasies, and whether it eases once the ambivalence toward his wife is named.",
         credit: 1.0,
       },
       {
-        text: "She probably gets bored once the chase is over; we could look at her past relationships.",
+        text: "He might have mixed feelings about his marriage; we could explore that.",
         credit: 0.6,
-      },
-      {
-        text: "She seems to lose interest after a while.",
-        credit: 0.3,
       },
     ],
     correctAnswer:
-      "The reliable shift from delight to flatness exactly when security arrives likely reflects an out-of-awareness template in which steady love feels unfamiliar or unsafe, so she retreats just as closeness deepens; test whether the flatness reliably onsets at the point of commitment rather than at random, whether it eases when she stays through it rather than leaving, and whether the pattern matches an early bond where closeness was unreliable.",
+      "The protective content masks its opposite: harm-fears for his wife that appear only as the marriage sours and he imagines leaving likely bind a guilt over his own hostile wishes — the elaborate protecting undoing the wish to be rid of her; test whether the checking tracks nights linked to conflict rather than real danger, whether it began with the marital strain and his leaving fantasies, and whether it eases once the ambivalence toward his wife is named.",
     explanation:
-      "Full credit names a closeness-triggered template and three disconfirming tests; 'the unconscious is unknowable' is the refusal the precise five-time onset pattern defeats.",
+      "Full credit reads protective checking that began with leaving-fantasies as undoing hostile wishes and names a tracks-conflict-not-danger test; 'just sensible caution' is the dodge the strain-linked onset and away-nights-only timing defeat.",
   },
   {
     itemType: "mc",
     prompt:
-      "Typing a thank-you email to a demanding senior colleague, a man signs off with his mother's first name instead of his own, then deletes it in shock. He notices he'd been feeling, all morning, oddly small and eager to please around this colleague. Which conclusion best follows?",
+      "A student redoes his homework until it feels 'just right,' sometimes for hours, and the ritual intensifies specifically on the college applications his demanding father picked out for him — never on work he chose himself. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "It was a random typo with no meaning whatsoever.",
-        credit: 0.3,
+        text: "He's just a perfectionist by temperament, so there's nothing about his father to read into it.",
+        credit: 0,
       },
       {
-        text: "The slip plus the 'small and eager to please' feeling likely shows an out-of-awareness template activating — the demanding colleague is being responded to through an old parent-shaped pattern, blurring the roles; test whether the deferential feeling appears specifically with parent-like authority figures, whether other slips or postures from that early relationship surface around this colleague, and whether the pull fades when he consciously separates the colleague from the old figure.",
-        credit: 1.0,
-      },
-      {
-        text: "He probably has some feeling about this colleague; we could ask what came to mind.",
+        text: "It might be about pressure from his father; we could look at his standards.",
         credit: 0.6,
       },
       {
-        text: "The slip proves his mother secretly runs his entire mind and he has no real self of his own.",
-        credit: 0,
+        text: "He seems to redo his father's chosen work a lot.",
+        credit: 0.3,
+      },
+      {
+        text: "The trigger-specific content is the clue: 'just right' rituals that flare only on his father's chosen tasks likely carry a fear of that father's judgment — and perhaps a buried wish to fail or refuse — so the perfection both placates the father and stalls the work; test whether the rituals intensify on father-linked tasks but not self-chosen ones, whether dread rather than pride accompanies finishing them, and whether they ease once the pressure and any resentment toward his father are named.",
+        credit: 1.0,
       },
     ],
     correctAnswer:
-      "The slip plus the 'small and eager to please' feeling likely shows an out-of-awareness template activating — the demanding colleague is being responded to through an old parent-shaped pattern, blurring the roles; test whether the deferential feeling appears specifically with parent-like authority figures, whether other slips or postures from that early relationship surface around this colleague, and whether the pull fades when he consciously separates the colleague from the old figure.",
+      "The trigger-specific content is the clue: 'just right' rituals that flare only on his father's chosen tasks likely carry a fear of that father's judgment — and perhaps a buried wish to fail or refuse — so the perfection both placates the father and stalls the work; test whether the rituals intensify on father-linked tasks but not self-chosen ones, whether dread rather than pride accompanies finishing them, and whether they ease once the pressure and any resentment toward his father are named.",
     explanation:
-      "Top credit reads the name-slip as a parent-shaped template intruding and names three checks; 'his mother secretly runs his entire mind' is the melodramatic overreach the situation-specific feeling does not support.",
+      "Top credit reads perfection flaring only on father-chosen tasks as fear of his judgment and names a father-linked-vs-self-chosen test; 'just a perfectionist by temperament' is the dodge the task-specific pattern defeats.",
   },
 ];
 
@@ -417,425 +417,425 @@ const hybrid: HomeworkItem[] = [
   {
     itemType: "hybrid",
     prompt:
-      "A man complains he 'can never find a good partner,' yet a friend points out that for years he has chosen people who are warm at first and then withdraw — and he passes over anyone who is openly available. He's surprised; he thought each choice was unrelated. Which conclusion best follows?",
+      "A loving mother is struck by intrusive images of pushing her toddler down the stairs — but only when standing at the top of a staircase with the child. She is horrified and now takes the elevator everywhere. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He likely carries an out-of-awareness template that steers him toward partners who eventually withdraw, so the 'unrelated' choices share a hidden rule; test whether available, steady people consistently fail to attract him, whether the partners he picks all share the warm-then-distant arc, and whether the pattern matches an early relationship that ran the same way.",
+        text: "She seems to have scary thoughts near stairs.",
+        credit: 0.3,
+      },
+      {
+        text: "The content's precision is the clue: harm imagery aimed at her own child, triggered exactly by the situation that makes such harm physically possible, and met with horror, points to a hyper-responsibility and the terror of her own power to do damage rather than any wish; test whether the images fire only where she could act and target only her child, whether her dread scales with the danger of the spot, and whether they ease once the fear of being a harmful mother is voiced.",
         credit: 1.0,
       },
       {
-        text: "He probably has a type; we could write down his exes and see.",
-        credit: 0.6,
-      },
-      {
-        text: "The pattern proves a hidden self-hatred so total that he is deliberately destroying his own life.",
+        text: "The thoughts reveal a buried wish to be rid of the child, so avoiding stairs is wise.",
         credit: 0,
       },
       {
-        text: "He seems to have trouble finding the right person.",
-        credit: 0.3,
+        text: "It's probably new-parent anxiety; we could keep discussing it.",
+        credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'out-of-awareness template steers his choices' lead from the rival 'he just has bad luck and keeps meeting withdrawers by chance,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'the images express terror of her own power to harm' lead from the rival 'they reveal a hidden wish to hurt the child,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: introduce him to several clearly available, steady people and watch whether he reliably feels no spark and drifts toward the one most likely to withdraw — a consistent pull away from availability points to an internal template, not luck. My lead is refuted if he readily connects with available partners when they're around, which would mean the past pattern was just who happened to cross his path.",
+        "Cheapest test: check whether the images horrify and repel her and drive her to protect the child rather than tempting or satisfying her — revulsion and avoidance point to feared responsibility, not desire. My lead is refuted if she finds the images gratifying or seeks out chances to act on them, which would fit a genuine wish rather than dread of her own potential.",
       yieldAnchors: [
-        "He repeatedly chooses partners who warm up then withdraw",
-        "He passes over openly available people",
-        "He experienced the choices as unrelated",
+        "Images of harming her own toddler",
+        "They fire only at the top of stairs",
+        "She is horrified and now avoids stairs",
       ],
       riskAnchors: [
-        "Available, steady people consistently fail to attract him",
-        "His partners share the same warm-then-distant arc",
-        "The pattern matches an early relationship",
+        "Images target only her child and only where she could act",
+        "Dread scales with the danger of the spot",
+        "They ease once fear of being harmful is voiced",
       ],
       defeatedBy: [
-        "He connects easily with available partners when they appear",
-        "His exes share no common pattern at all",
+        "She finds the images gratifying rather than horrifying",
+        "She seeks chances to be alone with the child to act",
       ],
     },
     correctAnswer:
-      "He likely carries an out-of-awareness template that steers him toward partners who eventually withdraw, so the 'unrelated' choices share a hidden rule; test whether available, steady people consistently fail to attract him, whether the partners he picks all share the warm-then-distant arc, and whether the pattern matches an early relationship that ran the same way.",
+      "The content's precision is the clue: harm imagery aimed at her own child, triggered exactly by the situation that makes such harm physically possible, and met with horror, points to a hyper-responsibility and the terror of her own power to do damage rather than any wish; test whether the images fire only where she could act and target only her child, whether her dread scales with the danger of the spot, and whether they ease once the fear of being a harmful mother is voiced.",
     explanation:
-      "Full credit names a choice-steering template with three checks and a cheap available-partner test that states its own refutation; 'total hidden self-hatred destroying his life' is the lurid overreach the ordinary repeated pattern defeats.",
+      "Full credit reads precise, horror-laden harm-content as terror of her own power and is paired with a revulsion-vs-gratification test that names its refutation; 'a buried wish to be rid of the child' is the lurid overreach her horror and avoidance defeat.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A calm, courteous accountant becomes shaking-furious at a parking attendant who waves him into the wrong lane — screaming, then trembling with shame for an hour. He is gentle everywhere else, and the attendant had been merely brisk and a little bossy. Which conclusion best follows?",
+      "A man feels his late father's house is 'contaminated' and cannot enter the room where his father died without scrubbing afterward, though he has no germ fears anywhere else. The compulsion began the week of the death. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He seems to have a temper about parking.",
-        credit: 0.3,
+        text: "Contamination fears are a brain glitch with no meaning, so the link to his father's death is illusory.",
+        credit: 0,
       },
       {
-        text: "The rage wildly out of scale with a brisk attendant likely means the moment matched an out-of-awareness template — being bossed around by a petty authority touched off a much older, stored anger; test whether similar 'bossed by a small authority' moments reliably trigger the rage, whether genuinely bigger provocations produce less, and whether the intensity eases once he links the feeling to its earlier source.",
+        text: "The content localizes the grief: a sense of contamination confined to the room his father died in, beginning that very week, likely binds an unbearable loss and dread to a single avoidable place — the scrubbing managing a feeling about death he can't otherwise face; test whether the contamination fear is specific to that room and absent elsewhere, whether it began at the death and no other change, and whether it eases as the grief and any fear of death are named.",
         credit: 1.0,
       },
       {
-        text: "He probably had a bad day; we could ask what set him off.",
-        credit: 0.6,
+        text: "He seems to feel his father's house is dirty.",
+        credit: 0.3,
       },
       {
-        text: "The explosion proves he is a secretly violent man wearing a polite mask that finally slipped.",
-        credit: 0,
+        text: "It's probably about his father's death; we could revisit it.",
+        credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'old template was triggered' lead from the rival 'he was simply stressed and the attendant was the last straw,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'the contamination localizes grief to the death-room' lead from the rival 'he has a general emerging germ phobia,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: track whether the disproportionate rage shows up specifically when a minor authority orders him around, even on relaxed, low-stress days — a tie to that particular trigger rather than to general stress points to a matched template. My lead is refuted if the explosions appear only on objectively stressful days and any minor annoyance, authority or not, sets them off equally.",
+        "Cheapest test: see whether the contamination feeling is confined to the room he associates with the death while every other space feels clean — place-specific dread points to grief, not a spreading phobia. My lead is refuted if he develops contamination fears across many unrelated settings, which would fit a general germ phobia rather than a feeling about his father.",
       yieldAnchors: [
-        "He is gentle in nearly every other setting",
-        "The trigger was a brisk, bossy minor authority",
-        "The rage was far larger than the provocation",
+        "Only his father's death-room feels contaminated",
+        "No germ fears anywhere else",
+        "The compulsion began the week of the death",
       ],
       riskAnchors: [
-        "Similar 'bossed by a petty authority' moments trigger the rage",
-        "Genuinely bigger provocations produce less reaction",
-        "The intensity eases once linked to an earlier source",
+        "The fear is specific to that room",
+        "It began at the death and no other change",
+        "It eases as grief is named",
       ],
       defeatedBy: [
-        "Any minor annoyance triggers equal rage regardless of authority",
-        "The outbursts occur only on objectively stressful days",
+        "He develops contamination fears in many unrelated places",
+        "The fear predates his father's death",
       ],
     },
     correctAnswer:
-      "The rage wildly out of scale with a brisk attendant likely means the moment matched an out-of-awareness template — being bossed around by a petty authority touched off a much older, stored anger; test whether similar 'bossed by a small authority' moments reliably trigger the rage, whether genuinely bigger provocations produce less, and whether the intensity eases once he links the feeling to its earlier source.",
+      "The content localizes the grief: a sense of contamination confined to the room his father died in, beginning that very week, likely binds an unbearable loss and dread to a single avoidable place — the scrubbing managing a feeling about death he can't otherwise face; test whether the contamination fear is specific to that room and absent elsewhere, whether it began at the death and no other change, and whether it eases as the grief and any fear of death are named.",
     explanation:
-      "Top credit reads the disproportion as a triggered template with three checks and a stress-versus-trigger test that names its refutation; 'a secretly violent man behind a mask' is the overreach his pervasive gentleness defeats.",
+      "Full credit reads contamination confined to the death-room as localized grief and is paired with a one-room-vs-everywhere test that names its refutation; 'a brain glitch with no meaning' is the dodge the room-specific, death-timed onset defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A graduate student handles harsh criticism with poise but freezes, stammers, and goes blank whenever a professor praises her work in front of others. She can dissect a critique calmly, yet praise leaves her flustered for the rest of the day. Which conclusion best follows?",
+      "A woman who never cared about tidiness now arranges her kitchen with rigid precision and re-does it until it's exact — a ritual that took hold as she discovered her husband's affairs and her home life turned chaotic. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "She seems uncomfortable with praise.",
+        text: "She might be coping with stress at home; we could discuss the ritual.",
+        credit: 0.6,
+      },
+      {
+        text: "She seems very particular about her kitchen now.",
         credit: 0.3,
       },
       {
-        text: "Feelings are too complex to ever explain why praise rattles someone.",
+        text: "Some people just become neat freaks; there's nothing about her marriage to read into it.",
         credit: 0,
       },
       {
-        text: "That praise — not criticism — reliably undoes her likely reflects an out-of-awareness template in which being singled out for approval feels exposing or unsafe; test whether the freeze appears specifically with public praise rather than criticism, whether private praise rattles her less, and whether the pattern matches an early setting where standing out drew trouble.",
+        text: "The content answers the chaos: a sudden need for rigid order arising exactly as her home became uncontrollable likely enacts a bid to master, in one small domain, the helplessness she feels about a marriage she cannot control — the ritual restoring a control reality has taken; test whether the ordering urge tracks the moments her home life feels most chaotic, whether it began with the affairs and no other change, and whether it eases as the helplessness about her marriage is named.",
         credit: 1.0,
-      },
-      {
-        text: "She probably isn't used to compliments; we could ask how she feels when praised.",
-        credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'praise matches an unsafe-approval template' lead from the rival 'she just has low self-esteem and any attention overwhelms her,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'the ordering restores control lost in her marriage' lead from the rival 'she simply became a tidy person,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: compare her reaction to equally public criticism versus public praise — if criticism leaves her composed while only praise undoes her, the problem is specific to approval, not attention in general. My lead is refuted if she falls apart equally under public criticism and public praise, which would fit general attention-overwhelm rather than a praise-specific template.",
+        "Cheapest test: check whether the ordering urge surges precisely when her marriage feels most out of control rather than holding steady like a settled habit — intensity that tracks the chaos points to a control function. My lead is refuted if the tidiness is constant and unrelated to events at home, which would fit an ordinary new preference for neatness.",
       yieldAnchors: [
-        "She handles harsh criticism with poise",
-        "Public praise makes her freeze and go blank",
-        "The disruption lasts the rest of the day",
+        "She never cared about tidiness before",
+        "Rigid ordering began as the affairs surfaced",
+        "Her home life turned chaotic",
       ],
       riskAnchors: [
-        "The freeze is specific to public praise, not criticism",
-        "Private praise rattles her less",
-        "The pattern matches an early standing-out experience",
+        "The urge tracks the most chaotic moments",
+        "It began with the affairs and no other change",
+        "It eases as helplessness about the marriage is named",
       ],
       defeatedBy: [
-        "She falls apart equally under public criticism",
-        "All attention, good or bad, overwhelms her the same",
+        "The tidiness is constant and event-independent",
+        "It began long before the marital chaos",
       ],
     },
     correctAnswer:
-      "That praise — not criticism — reliably undoes her likely reflects an out-of-awareness template in which being singled out for approval feels exposing or unsafe; test whether the freeze appears specifically with public praise rather than criticism, whether private praise rattles her less, and whether the pattern matches an early setting where standing out drew trouble.",
+      "The content answers the chaos: a sudden need for rigid order arising exactly as her home became uncontrollable likely enacts a bid to master, in one small domain, the helplessness she feels about a marriage she cannot control — the ritual restoring a control reality has taken; test whether the ordering urge tracks the moments her home life feels most chaotic, whether it began with the affairs and no other change, and whether it eases as the helplessness about her marriage is named.",
     explanation:
-      "Full credit names a praise-specific template with three checks and a praise-versus-criticism test that names its refutation; 'feelings are too complex to explain' is the empty refusal the clean praise-only pattern defeats.",
+      "Top credit reads sudden rigid order arising with marital chaos as a bid to restore control and is paired with a tracks-the-chaos test that names its refutation; 'just became a neat freak' is the dodge the chaos-linked onset defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A punctual woman is reliably 20 minutes late — but only when meeting one particular old friend, never for work, dates, or other friends. She always intends to be on time, leaves late 'by accident,' and feels obscurely reluctant on the way. Which conclusion best follows?",
+      "A devout teenager preparing for confirmation is plagued by blasphemous intrusive thoughts that worsen the closer the ceremony approaches and peak during religious instruction. She is ashamed and prays them away. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "She probably has some resistance to seeing this friend; we could ask how she feels about her.",
-        credit: 0.6,
-      },
-      {
-        text: "Lateness happens to everyone; there's no meaning in it.",
+        text: "She seems to get bad thoughts around church.",
         credit: 0.3,
       },
       {
-        text: "The lateness confined to one friend, in someone otherwise punctual, plus the reluctance, likely reflects an out-of-awareness reluctance that the 'accidental' lateness enacts — a quiet drag on a relationship she won't consciously question; test whether the lateness occurs only with this friend, whether it tracks a specific recurring strain in the friendship, and whether naming the reluctance makes the lateness stop.",
-        credit: 1.0,
+        text: "Intrusive thoughts are meaningless static, so their religious timing tells us nothing.",
+        credit: 0,
       },
       {
-        text: "The chronic lateness proves she has a deep buried hatred for this friend that her mind is hiding to protect her sanity.",
-        credit: 0,
+        text: "It might relate to her faith; we could keep talking about it.",
+        credit: 0.6,
+      },
+      {
+        text: "The content rising with the rite is the clue: blasphemy that intensifies as she is pushed toward a public profession of faith likely voices a doubt or reluctance she isn't allowed to feel — the symptom carrying an ambivalence about being confirmed that she can't say aloud; test whether the thoughts track proximity to the ceremony and instruction specifically, whether they ease when she can openly voice any doubt about confirming, and whether fighting them makes them worse.",
+        credit: 1.0,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'out-of-awareness reluctance enacted as lateness' lead from the rival 'this friend's gatherings just happen to be hard to get to on time,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'the blasphemy voices reluctance about confirming' lead from the rival 'this is generic anxiety unrelated to her faith,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: check whether the lateness follows the friend rather than the venue — if she's late even when they meet somewhere convenient and on-time everywhere else, the drag is about the relationship, not the logistics. My lead is refuted if she's punctual whenever the meeting place is easy to reach, which would make it a scheduling problem rather than a feeling.",
+        "Cheapest test: see whether the intrusions intensify specifically as the ceremony nears and during religious instruction rather than spreading across unrelated stressors — timing locked to the rite points to ambivalence about confirming. My lead is refuted if the thoughts are just as intense during non-religious stress and indifferent to the ceremony's approach, which would fit generic anxiety.",
       yieldAnchors: [
-        "She is otherwise reliably punctual",
-        "The lateness happens only with this one friend",
-        "She feels an obscure reluctance on the way",
+        "Blasphemous thoughts worsen as confirmation nears",
+        "They peak during religious instruction",
+        "She is ashamed and prays them away",
       ],
       riskAnchors: [
-        "The lateness occurs only with this friend",
-        "It tracks a specific recurring strain in the friendship",
-        "Naming the reluctance stops the lateness",
+        "The thoughts track proximity to the ceremony",
+        "They ease when doubt about confirming is voiced",
+        "Fighting them makes them worse",
       ],
       defeatedBy: [
-        "She is on time whenever the venue is convenient",
-        "She is equally late for many different people",
+        "The thoughts ignore the ceremony and follow unrelated stress",
+        "They are unchanged by religious context",
       ],
     },
     correctAnswer:
-      "The lateness confined to one friend, in someone otherwise punctual, plus the reluctance, likely reflects an out-of-awareness reluctance that the 'accidental' lateness enacts — a quiet drag on a relationship she won't consciously question; test whether the lateness occurs only with this friend, whether it tracks a specific recurring strain in the friendship, and whether naming the reluctance makes the lateness stop.",
+      "The content rising with the rite is the clue: blasphemy that intensifies as she is pushed toward a public profession of faith likely voices a doubt or reluctance she isn't allowed to feel — the symptom carrying an ambivalence about being confirmed that she can't say aloud; test whether the thoughts track proximity to the ceremony and instruction specifically, whether they ease when she can openly voice any doubt about confirming, and whether fighting them makes them worse.",
     explanation:
-      "Top credit reads the selective lateness as enacted reluctance with three checks and a venue-versus-friend test that names its refutation; 'deep buried hatred to protect her sanity' is the melodrama the ordinary mild reluctance defeats.",
+      "Full credit reads blasphemy rising with the rite as unspeakable reluctance to confirm and is paired with a tracks-the-ceremony test that names its refutation; 'meaningless static' is the dodge the rite-linked timing defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A man jokes constantly, and friends notice his 'jokes' nearly always land on the same theme — being abandoned or replaced ('I'll be forgotten in a week,' 'you'll all get a better friend'). He laughs them off and says he means nothing by them. Which conclusion best follows?",
+      "Shortly after he carelessly let a friend down at a crucial moment, a man began an exhausting compulsion to circle back while driving, sure he has struck a pedestrian and left them hurt. The fear is always of harm he caused and failed to face. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He's just a joker; the topics don't mean anything.",
+        text: "Worries about hitting someone are common and mean nothing, so there's no link to letting his friend down.",
+        credit: 0,
+      },
+      {
+        text: "He seems afraid he's hurt someone while driving.",
         credit: 0.3,
       },
       {
-        text: "The jokes that keep circling one theme likely voice an out-of-awareness worry about being abandoned that humor lets him air without owning it; test whether the abandonment theme dominates his jokes specifically over other topics, whether the jokes spike when a relationship feels uncertain, and whether the worry, once named directly, eases the joking.",
+        text: "The content mirrors the guilt: a dread specifically of harm he caused and didn't face, arising right after he failed a friend, likely displaces a guilt he can't tolerate onto the road, where checking lets him keep 'making sure' he isn't a person who hurts others and walks away; test whether the fear is always of caused-and-abandoned harm rather than other dangers, whether it began with the letdown and no other change, and whether it eases as the guilt toward his friend is addressed.",
         credit: 1.0,
       },
       {
-        text: "He probably has some insecurity; we could ask what's behind the jokes.",
+        text: "It might be connected to guilt; we could explore the driving fear.",
         credit: 0.6,
-      },
-      {
-        text: "The jokes prove he has already decided everyone will betray him and is plotting to leave first.",
-        credit: 0,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'jokes voice an out-of-awareness abandonment worry' lead from the rival 'he just has a dark sense of humor about everything,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'the driving fear displaces guilt about failing his friend' lead from the rival 'he has an ordinary fear of car accidents,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: tally his jokes by theme and check whether abandonment dominates while other dark topics are rare — a lopsided concentration on being left points to a specific worry, not generic dark humor. My lead is refuted if his jokes range evenly across many dark themes with no special pull toward abandonment.",
+        "Cheapest test: check whether the dread is always of harm he caused and abandoned rather than of random road dangers, and whether it began right when he let his friend down — content and timing matched to the guilt point to displacement. My lead is refuted if the fear is a general worry about crashes that predates the letdown and shows no caused-and-abandoned theme.",
       yieldAnchors: [
-        "His jokes repeatedly target abandonment and replacement",
-        "He insists he means nothing by them",
-        "The theme recurs across many occasions",
+        "The compulsion began after he failed a friend",
+        "He is sure he struck someone and left them hurt",
+        "The fear is always of harm he caused and abandoned",
       ],
       riskAnchors: [
-        "The abandonment theme dominates over other joke topics",
-        "The jokes spike when a relationship feels uncertain",
-        "Naming the worry directly eases the joking",
+        "The fear is of caused-and-abandoned harm specifically",
+        "It began with the letdown and no other change",
+        "It eases as guilt toward his friend is addressed",
       ],
       defeatedBy: [
-        "His jokes range evenly across many dark themes",
-        "The joking is unrelated to relationship uncertainty",
+        "The fear is a general worry about crashes",
+        "It predates letting his friend down",
       ],
     },
     correctAnswer:
-      "The jokes that keep circling one theme likely voice an out-of-awareness worry about being abandoned that humor lets him air without owning it; test whether the abandonment theme dominates his jokes specifically over other topics, whether the jokes spike when a relationship feels uncertain, and whether the worry, once named directly, eases the joking.",
+      "The content mirrors the guilt: a dread specifically of harm he caused and didn't face, arising right after he failed a friend, likely displaces a guilt he can't tolerate onto the road, where checking lets him keep 'making sure' he isn't a person who hurts others and walks away; test whether the fear is always of caused-and-abandoned harm rather than other dangers, whether it began with the letdown and no other change, and whether it eases as the guilt toward his friend is addressed.",
     explanation:
-      "Full credit reads the recurring joke theme as an aired-but-disowned worry with three checks and a theme-tally test that names its refutation; 'plotting to leave first' is the overreach the playful, themed joking does not support.",
+      "Top credit reads a fear of caused-and-abandoned harm arising after he failed a friend as displaced guilt and is paired with a content-and-timing test that names its refutation; 'worries about hitting someone mean nothing' is the dodge the matched content and onset defeat.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A capable woman has had three bosses she ended up working for, and each turned out to be controlling and quick to anger. Coworkers found the same managers reasonable. She insists she 'just keeps landing under tyrants' by chance. Which conclusion best follows?",
+      "A devoted granddaughter who cares daily for her frail, gentle grandmother is tormented by intrusive urges to scream something vicious at her. The urges are worst during the most tender caregiving moments. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "She probably has bad luck with bosses; we could review her job history.",
+        text: "She's probably worn out; we could talk about the caregiving.",
         credit: 0.6,
       },
       {
-        text: "The pattern is unknowable, so we can't say why she keeps ending up there.",
-        credit: 0,
-      },
-      {
-        text: "That she repeatedly ends up under (and experiences as tyrannical) bosses others find reasonable likely reflects an out-of-awareness template that both draws her toward such figures and primes her to read them as controlling; test whether she gravitates to that boss type when she has choices, whether neutral observers rate the same managers as ordinary, and whether the template matches an early controlling authority in her life.",
+        text: "The content against the tenderness is the tell: vicious urges that peak precisely in the most loving moments likely carry a resentment of the caregiving burden she isn't allowed to feel toward someone so gentle and dependent — the forbidden anger surfacing as its most shocking form; test whether the urges cluster in moments of greatest tenderness and demand, whether they revolt rather than satisfy her, and whether they ease once she can admit that resenting the burden is normal and not the same as hating her grandmother.",
         credit: 1.0,
       },
       {
-        text: "She seems to clash with her managers.",
+        text: "Deep down she despises her grandmother and the urges show her true feelings.",
+        credit: 0,
+      },
+      {
+        text: "She seems to get mean urges while caregiving.",
         credit: 0.3,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'template draws her in and shapes her reading' lead from the rival 'she has simply, by chance, had three genuinely controlling bosses,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'the urges carry forbidden resentment of the burden' lead from the rival 'she truly hates her grandmother,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: have neutral coworkers independently rate the same managers — if others reliably find them reasonable while she alone experiences tyranny, the controlling quality is partly in her template, not just the bosses. My lead is refuted if independent raters confirm the managers really are controlling, which would make her experience accurate rather than templated.",
+        "Cheapest test: check whether the urges horrify her and coexist with genuine devoted care rather than matching open hostility or neglect — revulsion alongside tenderness points to disowned resentment of the burden, not hatred. My lead is refuted if she actually treats her grandmother cruelly or feels relief and satisfaction in the urges, which would fit real hatred.",
       yieldAnchors: [
-        "Three successive bosses ended up controlling for her",
-        "Coworkers found the same managers reasonable",
-        "She frames it as pure chance",
+        "She cares daily and devotedly for her grandmother",
+        "Vicious urges peak during tender caregiving",
+        "The urges torment her",
       ],
       riskAnchors: [
-        "She gravitates to that boss type given a choice",
-        "Neutral observers rate the managers as ordinary",
-        "The template matches an early controlling authority",
+        "Urges cluster in moments of greatest tenderness and demand",
+        "They revolt rather than satisfy her",
+        "They ease once resentment is allowed as normal",
       ],
       defeatedBy: [
-        "Independent raters confirm the bosses are genuinely controlling",
-        "She avoids controlling figures whenever she can choose",
+        "She actually treats her grandmother cruelly",
+        "She feels satisfaction rather than horror at the urges",
       ],
     },
     correctAnswer:
-      "That she repeatedly ends up under (and experiences as tyrannical) bosses others find reasonable likely reflects an out-of-awareness template that both draws her toward such figures and primes her to read them as controlling; test whether she gravitates to that boss type when she has choices, whether neutral observers rate the same managers as ordinary, and whether the template matches an early controlling authority in her life.",
+      "The content against the tenderness is the tell: vicious urges that peak precisely in the most loving moments likely carry a resentment of the caregiving burden she isn't allowed to feel toward someone so gentle and dependent — the forbidden anger surfacing as its most shocking form; test whether the urges cluster in moments of greatest tenderness and demand, whether they revolt rather than satisfy her, and whether they ease once she can admit that resenting the burden is normal and not the same as hating her grandmother.",
     explanation:
-      "Top credit names a template shaping both choice and perception with three checks and a neutral-rater test that names its refutation; 'unknowable' is the dodge the others-find-them-reasonable evidence defeats.",
+      "Full credit reads vicious urges peaking in tender moments as forbidden resentment of the burden and is paired with a revulsion-amid-devotion test that names its refutation; 'deep down she despises her' is the lurid overreach her horror and daily care defeat.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "Comforting his partner after a hard day, a man means to say 'I've got you' but says 'Mom's got you,' then feels a jolt of confusion. He's noticed he often slips into a soothing, parental tone with her specifically when she's distressed. Which conclusion best follows?",
+      "A salesman who recently began pushing a product he privately believes is a scam developed a compulsion to wash his hands after every shift, feeling 'slimy.' He has no contamination fears outside of work. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Slips of the tongue are random noise and mean nothing.",
+        text: "He seems to wash up after work a lot.",
         credit: 0.3,
       },
       {
-        text: "The 'Mom' slip plus the parental tone when she's upset likely shows an out-of-awareness template — distress in a loved one cues a learned caretaker role from his family — shaping how he relates; test whether the parental shift appears specifically when she's distressed, whether the same caretaker stance shows up with others in distress, and whether it matches a role he held early in his own family.",
-        credit: 1.0,
+        text: "Hand-washing is just hygiene, so tying it to his sales job is overinterpreting.",
+        credit: 0,
       },
       {
-        text: "He probably falls into a caretaker mode; we could ask about his family role.",
+        text: "He might dislike his job; we could discuss the washing.",
         credit: 0.6,
       },
       {
-        text: "The slip proves he is romantically attracted to his own mother and his whole relationship is a disguise for that.",
-        credit: 0,
+        text: "The content literalizes the compromise: feeling 'slimy' and washing only after shifts spent deceiving customers points to a moral disgust he can't voice, the body enacting a cleansing his conscience demands of work he finds dirty; test whether the urge appears only after ethically compromising shifts and not on days off, whether it began when he started pushing the product he distrusts, and whether it eases once he can name the guilt about the work directly.",
+        credit: 1.0,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'a learned caretaker template is cued by distress' lead from the rival 'it was a meaningless one-off verbal slip,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'the washing literalizes moral disgust at his work' lead from the rival 'he is developing an ordinary contamination phobia,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: watch whether the parental tone and caretaker stance reliably switch on whenever someone close is distressed and switch off otherwise — a consistent distress-cued shift points to an activated role, not a fluke. My lead is refuted if the soothing-parental mode never recurs and shows no link to others' distress.",
+        "Cheapest test: see whether the washing urge is confined to days he spent deceiving customers and is absent on days off — an urge bounded by the ethically compromising work points to moral disgust, not germ fear. My lead is refuted if he washes compulsively regardless of work and across unrelated settings, which would fit a general contamination phobia.",
       yieldAnchors: [
-        "He slips into saying 'Mom' while comforting her",
-        "He adopts a parental tone when she's distressed",
-        "The pattern is specific to moments of distress",
+        "He pushes a product he believes is a scam",
+        "He feels 'slimy' and washes after every shift",
+        "No contamination fears outside work",
       ],
       riskAnchors: [
-        "The parental shift appears specifically with distress",
-        "The caretaker stance shows up with others in distress",
-        "It matches an early role in his own family",
+        "The urge appears only after compromising shifts",
+        "It began when he started the dishonest sales",
+        "It eases once the guilt is named",
       ],
       defeatedBy: [
-        "The caretaker mode never recurs",
-        "His tone is unrelated to whether others are distressed",
+        "He washes compulsively regardless of work",
+        "Contamination fears appear in unrelated settings",
       ],
     },
     correctAnswer:
-      "The 'Mom' slip plus the parental tone when she's upset likely shows an out-of-awareness template — distress in a loved one cues a learned caretaker role from his family — shaping how he relates; test whether the parental shift appears specifically when she's distressed, whether the same caretaker stance shows up with others in distress, and whether it matches a role he held early in his own family.",
+      "The content literalizes the compromise: feeling 'slimy' and washing only after shifts spent deceiving customers points to a moral disgust he can't voice, the body enacting a cleansing his conscience demands of work he finds dirty; test whether the urge appears only after ethically compromising shifts and not on days off, whether it began when he started pushing the product he distrusts, and whether it eases once he can name the guilt about the work directly.",
     explanation:
-      "Full credit reads the slip as a distress-cued caretaker template with three checks and a distress-on/off test that names its refutation; 'attracted to his mother and disguising it' is the lurid overreach the caretaking pattern defeats.",
+      "Top credit reads 'slimy' washing confined to dishonest shifts as literalized moral disgust and is paired with a work-days-vs-days-off test that names its refutation; 'just hygiene' is the dodge the work-bounded timing and onset defeat.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "On his daily walk a man always detours around one quiet, perfectly ordinary street, adding minutes for no reason he can state. Pressed, he just feels 'off' approaching it. He used to live near there years ago during a painful stretch he rarely thinks about. Which conclusion best follows?",
+      "A woman apologizes compulsively — 'sorry, sorry' — and replays conversations for hours certain she offended someone. The urge spikes specifically after interactions where she actually asserted herself or said no. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The unconscious can't be known, so his detour can't be explained.",
+        text: "Polite people apologize a lot; there's nothing to read into being considerate.",
         credit: 0,
       },
       {
-        text: "The consistent automatic detour plus the 'off' feeling near a street tied to a painful past period likely reflects an out-of-awareness avoidance — the place cues stored distress, and the detour quietly manages it; test whether the unease is specific to that street and its vicinity, whether it tracks reminders of the painful period, and whether deliberately walking it, with the link in mind, lessens the pull over time.",
-        credit: 1.0,
-      },
-      {
-        text: "He probably associates that street with a bad time; we could ask what happened there.",
+        text: "She might struggle with confidence; we could talk it over.",
         credit: 0.6,
       },
       {
-        text: "He seems to dislike that street.",
+        text: "The trigger decodes the content: a conviction she's given offense that flares right after she asserted herself suggests the apology is undoing a self-assertion she experiences as forbidden aggression — saying 'sorry' to take back the 'no'; test whether the apology urge follows acts of self-assertion specifically rather than real rudeness, whether the 'offense' she fears is just her having had a need, and whether it eases once she can own asserting herself as legitimate.",
+        credit: 1.0,
+      },
+      {
+        text: "She seems to apologize and replay conversations a lot.",
         credit: 0.3,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'out-of-awareness avoidance cued by the painful past' lead from the rival 'he just prefers his usual route out of habit,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'the apologizing undoes forbidden self-assertion' lead from the rival 'she is just an anxious, polite person,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: check whether the 'off' feeling and detour are specific to this particular street's area versus any equally convenient alternate route — distress tied to that location rather than to route habit points to cued avoidance. My lead is refuted if he detours around many interchangeable streets with no special unease, which would make it ordinary route preference.",
+        "Cheapest test: check whether the apology urge spikes specifically after she said no or stood her ground rather than after genuine slips — timing tied to self-assertion points to undoing forbidden aggression. My lead is refuted if she apologizes uniformly regardless of whether she asserted herself, which would fit general anxious politeness.",
       yieldAnchors: [
-        "He detours around one specific ordinary street",
-        "He feels 'off' approaching it",
-        "He once lived there during a painful period",
+        "She apologizes compulsively and replays conversations",
+        "The urge spikes after she asserted herself or said no",
+        "She is sure she gave offense",
       ],
       riskAnchors: [
-        "The unease is specific to that street's vicinity",
-        "It tracks reminders of the painful period",
-        "Deliberately walking it, with the link in mind, lessens the pull",
+        "The urge follows self-assertion specifically",
+        "The feared 'offense' is just having had a need",
+        "It eases once self-assertion is owned as legitimate",
       ],
       defeatedBy: [
-        "He detours around many streets with no special unease",
-        "The feeling is unrelated to the past period",
+        "She apologizes uniformly regardless of asserting herself",
+        "The urge tracks real rudeness, not assertion",
       ],
     },
     correctAnswer:
-      "The consistent automatic detour plus the 'off' feeling near a street tied to a painful past period likely reflects an out-of-awareness avoidance — the place cues stored distress, and the detour quietly manages it; test whether the unease is specific to that street and its vicinity, whether it tracks reminders of the painful period, and whether deliberately walking it, with the link in mind, lessens the pull over time.",
+      "The trigger decodes the content: a conviction she's given offense that flares right after she asserted herself suggests the apology is undoing a self-assertion she experiences as forbidden aggression — saying 'sorry' to take back the 'no'; test whether the apology urge follows acts of self-assertion specifically rather than real rudeness, whether the 'offense' she fears is just her having had a need, and whether it eases once she can own asserting herself as legitimate.",
     explanation:
-      "Top credit reads the detour as cued avoidance with three checks and a location-specificity test that names its refutation; 'the unconscious can't be known' is the refusal the place-specific unease defeats.",
+      "Full credit reads apology urges spiking after self-assertion as undoing forbidden aggression and is paired with an after-saying-no test that names its refutation; 'just polite' is the dodge the assertion-locked timing defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A woman reacts to her partner's small kindnesses — flowers, a packed lunch — with instant suspicion ('what does he want?'), then guilt. He has never been manipulative. She grew up where gifts always came with strings attached. Which conclusion best follows?",
+      "A man must perform actions in fours — flicking a switch, tapping a doorframe — believing that if he doesn't, his young son will die. The compulsion began the month his son was hospitalized with a frightening illness. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "She probably has trust issues; we could talk about her past.",
-        credit: 0.6,
+        text: "He seems to repeat things to protect his son.",
+        credit: 0.3,
       },
       {
-        text: "Her suspicion proves the partner really is secretly manipulating her in ways no one has caught yet.",
+        text: "Rituals like counting are meaningless tics, so the link to his son's illness is imagined.",
         credit: 0,
       },
       {
-        text: "The automatic suspicion-then-guilt toward genuine kindness, in someone whose early gifts came with strings, likely reflects an out-of-awareness template that codes generosity as a setup; test whether the suspicion fires for kindness regardless of the giver's actual intent, whether it's strongest when the gesture resembles the old strings-attached pattern, and whether it eases as repeated no-strings kindness builds new evidence.",
+        text: "The content carries the terror: a magic ritual whose sole stated stake is his son's survival, beginning the month the boy nearly died, likely binds an unbearable helplessness about a danger he couldn't control — the ritual buying an illusion of power over life and death; test whether the compulsion's feared outcome is specifically his son's death and not other harms, whether it began with the hospitalization and no other change, and whether it eases as the helplessness and fear of losing his son are named.",
         credit: 1.0,
       },
       {
-        text: "She seems wary of gifts.",
-        credit: 0.3,
+        text: "It's probably about his son's illness; we could keep noting it.",
+        credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'kindness-as-setup template' lead from the rival 'her partner is actually subtly manipulative,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'the ritual binds helplessness about his son's illness' lead from the rival 'he has a generic counting compulsion,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: see whether the suspicion fires for clearly no-strings kindness from many different, trustworthy people, not just her partner — a reaction triggered by generosity itself rather than by any real demand points to her template. My lead is refuted if neutral observers find her partner's gestures really do carry hidden conditions, which would make her suspicion accurate.",
+        "Cheapest test: check whether the ritual's feared consequence is specifically his son's death and whether it began the month of the hospitalization — a stake and onset fixed to the illness point to bound helplessness. My lead is refuted if the counting has no connection to his son, attaches to varied unrelated fears, and predates the illness, which would fit a generic compulsion.",
       yieldAnchors: [
-        "Small genuine kindnesses trigger instant suspicion",
-        "Guilt follows the suspicion",
-        "Her early gifts came with strings attached",
+        "Actions in fours to prevent his son's death",
+        "The compulsion began the month of the hospitalization",
+        "The stated stake is specifically his son",
       ],
       riskAnchors: [
-        "The suspicion fires regardless of the giver's intent",
-        "It's strongest when the gesture echoes the old pattern",
-        "Repeated no-strings kindness eases it over time",
+        "The feared outcome is his son's death specifically",
+        "It began with the hospitalization and no other change",
+        "It eases as helplessness about the illness is named",
       ],
       defeatedBy: [
-        "Observers confirm the partner's gestures carry hidden conditions",
-        "She trusts kindness easily from everyone else",
+        "The ritual is unrelated to his son",
+        "It predates the hospitalization",
       ],
     },
     correctAnswer:
-      "The automatic suspicion-then-guilt toward genuine kindness, in someone whose early gifts came with strings, likely reflects an out-of-awareness template that codes generosity as a setup; test whether the suspicion fires for kindness regardless of the giver's actual intent, whether it's strongest when the gesture resembles the old strings-attached pattern, and whether it eases as repeated no-strings kindness builds new evidence.",
+      "The content carries the terror: a magic ritual whose sole stated stake is his son's survival, beginning the month the boy nearly died, likely binds an unbearable helplessness about a danger he couldn't control — the ritual buying an illusion of power over life and death; test whether the compulsion's feared outcome is specifically his son's death and not other harms, whether it began with the hospitalization and no other change, and whether it eases as the helplessness and fear of losing his son are named.",
     explanation:
-      "Full credit names a kindness-as-setup template with three checks and a many-givers test that names its refutation; 'the partner really is secretly manipulating her' is the overreach his consistent no-strings behavior defeats.",
+      "Top credit reads a survival-ritual beginning with the hospitalization as bound helplessness and is paired with a feared-outcome-and-onset test that names its refutation; 'meaningless tics' is the dodge the son-specific stake and timing defeat.",
   },
 ];
 
@@ -843,179 +843,183 @@ const written: HomeworkItem[] = [
   {
     itemType: "written",
     prompt:
-      "A woman has had four jobs and describes every boss in nearly identical words — 'cold, withholding, always disappointed in me' — even though her coworkers experienced those same managers very differently. She is sure she simply keeps getting unlucky. In one paragraph, propose the strongest conclusion about the out-of-awareness pattern at work and describe how you would test it.",
+      "A new mother confides that she is tormented by intrusive thoughts of drowning her baby during bath time. She is appalled by them, loves her child fiercely, and has begun asking her partner to handle every bath. In one paragraph, propose the strongest conclusion about what the content of these thoughts is expressing and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that she carries an out-of-awareness template — a stored expectation, likely learned from an early withholding figure — that automatically casts each new boss as cold and disappointed in her, so the sameness lives in her, not in four coincidentally similar managers. This is a strong claim because it predicts checkable consequences: neutral coworkers should rate the same bosses as ordinary or warm; her sense of being 'disappointed in' should appear early, before a boss has done much; and the pattern should surface with other authority figures, and should match how an important early caregiver treated her. I would test it by collecting independent ratings of those managers, by tracking how quickly the 'cold and disappointed' feeling forms with a brand-new boss, and by checking whether the same reading appears with teachers, landlords, or in-laws — and whether naming the template softens it. A genuine refutation would be independent confirmation that the bosses really were uniformly cold, which would make her experience accurate rather than templated.",
+        "The strongest conclusion is that the very content — harm aimed at the child she loves most, arriving in the exact caregiving moment, and met with appalled avoidance — is saying the opposite of a wish: it expresses the crushing weight of sole responsibility and a terror of her own capacity to fail or harm, the mind fixating on the worst imaginable act precisely because protecting the baby matters more than anything. This is a strong claim because it predicts checkable consequences: the thoughts should be ego-dystonic and revolting rather than gratifying; they should cluster around the caregiving she most wants to do right and target her own child rather than strangers; and they should ease as her fear of being an inadequate or dangerous mother is named and normalized. I would test it by asking whether the images horrify or tempt her, by checking whether they track the moments of greatest responsibility, and by watching whether naming the fear of her own potential to harm loosens their grip — while staying alert to the refuting signs of genuine intent.",
       yieldAnchors: [
-        "She describes four different bosses in nearly identical terms",
-        "Coworkers experienced those managers very differently",
-        "She attributes it entirely to bad luck",
+        "Intrusive thoughts of drowning her baby at bath time",
+        "She is appalled and loves the child fiercely",
+        "She now avoids bathing the baby",
       ],
       riskAnchors: [
-        "Neutral coworkers rate the same bosses as ordinary or warm",
-        "The 'disappointed in me' feeling forms early with new bosses",
-        "The same reading appears with other authority figures",
+        "The thoughts are revolting rather than gratifying",
+        "They cluster around caregiving and target her own child",
+        "They ease as fear of being a harmful mother is named",
       ],
       defeatedBy: [
-        "Independent raters confirm the bosses were uniformly cold",
-        "One unusual workplace tells us nothing about her patterns",
+        "She finds the thoughts gratifying or arousing",
+        "She seeks chances to be alone with the baby to act",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that she carries an out-of-awareness template — a stored expectation, likely learned from an early withholding figure — that automatically casts each new boss as cold and disappointed in her, so the sameness lives in her, not in four coincidentally similar managers. This is a strong claim because it predicts checkable consequences: neutral coworkers should rate the same bosses as ordinary or warm; her sense of being 'disappointed in' should appear early, before a boss has done much; and the pattern should surface with other authority figures, and should match how an important early caregiver treated her. I would test it by collecting independent ratings of those managers, by tracking how quickly the 'cold and disappointed' feeling forms with a brand-new boss, and by checking whether the same reading appears with teachers, landlords, or in-laws — and whether naming the template softens it. A genuine refutation would be independent confirmation that the bosses really were uniformly cold, which would make her experience accurate rather than templated.",
+      "The strongest conclusion is that the very content — harm aimed at the child she loves most, arriving in the exact caregiving moment, and met with appalled avoidance — is saying the opposite of a wish: it expresses the crushing weight of sole responsibility and a terror of her own capacity to fail or harm, the mind fixating on the worst imaginable act precisely because protecting the baby matters more than anything. This is a strong claim because it predicts checkable consequences: the thoughts should be ego-dystonic and revolting rather than gratifying; they should cluster around the caregiving she most wants to do right and target her own child rather than strangers; and they should ease as her fear of being an inadequate or dangerous mother is named and normalized. I would test it by asking whether the images horrify or tempt her, by checking whether they track the moments of greatest responsibility, and by watching whether naming the fear of her own potential to harm loosens their grip — while staying alert to the refuting signs of genuine intent.",
     explanation:
-      "Under the inverted standard, 'she just keeps getting unlucky' earns near-zero; top credit goes to the template conclusion that binds the identical descriptions and others' differing views and names a neutral-rater test that could refute it.",
+      "Under the inverted standard, 'these thoughts mean she's dangerous and must be kept away' and 'thoughts are random and mean nothing' both miss; top credit reads horror-laden harm-content as terror of her own capacity to fail and names an ego-dystonic-not-gratifying test that could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "A man reports that every relationship 'mysteriously falls apart' just as it gets serious. Looking closer, the breakups always follow a moment of real closeness — a trip planned, an 'I love you' — after which he becomes critical and picks fights until the partner leaves. He sees only that he 'keeps choosing the wrong people.' In one paragraph, propose the strongest conclusion about the out-of-awareness pattern and describe how you would test it.",
+      "A lifelong believer reports obscene, blasphemous images that intrude only during his most heartfelt prayer and worsen the harder he tries to banish them. He is ashamed and tells no one. In one paragraph, propose the strongest conclusion about what the content of these intrusions is expressing and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that an out-of-awareness template makes deepening closeness feel dangerous, so without intending to he sabotages relationships precisely at the point of intimacy — the breakups are produced by him, not by repeatedly bad partners. This is a strong claim because it predicts checkable consequences: the fault-finding and fights should reliably onset right after closeness milestones rather than at random; the same withdrawal-at-intimacy pattern should appear across very different partners; and it should trace to an early bond where closeness was unsafe or punished. I would test it by mapping each relationship's timeline to see whether conflict spikes just after intimacy, by checking whether the pattern holds regardless of how kind or compatible the partner is, and by asking whether staying through the urge to fight — rather than acting on it — lets a relationship survive. The lead is refuted if his conflicts are scattered with no link to closeness, or if his partners were genuinely and independently incompatible each time.",
+        "The strongest conclusion is that blasphemy striking precisely at his most sacred, heartfelt moments is not random but a disguised communication: it likely voices a forbidden doubt, anger, or rebellion toward a faith he is not permitted to question, the symptom carrying aloud what he cannot let himself think. This is a strong claim because it predicts checkable consequences: the intrusions should peak at the holiest moments and stay quiet during neutral activity; they should worsen the harder he fights them, as suppression feeds them; and they should ease when he can openly acknowledge ambivalence or doubt about his religion rather than only piety. I would test it by mapping the intrusions against how sacred each moment is, by noting whether resistance amplifies them, and by checking whether giving his doubts a voice reduces them — refuted if the thoughts ignore sacredness and track ordinary stress instead.",
       yieldAnchors: [
-        "Breakups always follow a moment of real closeness",
-        "He becomes critical and picks fights until partners leave",
-        "He sees only that he 'chooses the wrong people'",
+        "Blasphemy intrudes only during heartfelt prayer",
+        "It worsens the harder he fights it",
+        "He is ashamed and secretive",
       ],
       riskAnchors: [
-        "Fault-finding reliably onsets right after intimacy milestones",
-        "The withdrawal-at-closeness pattern holds across different partners",
-        "It traces to an early bond where closeness was unsafe",
+        "Intrusions peak at the holiest moments",
+        "Resistance amplifies them",
+        "They ease when doubt is openly named",
       ],
       defeatedBy: [
-        "His conflicts are scattered with no link to closeness",
-        "Each partner was independently and genuinely incompatible",
+        "The thoughts ignore sacredness and track ordinary stress",
+        "They are unchanged whether he resists or not",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that an out-of-awareness template makes deepening closeness feel dangerous, so without intending to he sabotages relationships precisely at the point of intimacy — the breakups are produced by him, not by repeatedly bad partners. This is a strong claim because it predicts checkable consequences: the fault-finding and fights should reliably onset right after closeness milestones rather than at random; the same withdrawal-at-intimacy pattern should appear across very different partners; and it should trace to an early bond where closeness was unsafe or punished. I would test it by mapping each relationship's timeline to see whether conflict spikes just after intimacy, by checking whether the pattern holds regardless of how kind or compatible the partner is, and by asking whether staying through the urge to fight — rather than acting on it — lets a relationship survive. The lead is refuted if his conflicts are scattered with no link to closeness, or if his partners were genuinely and independently incompatible each time.",
+      "The strongest conclusion is that blasphemy striking precisely at his most sacred, heartfelt moments is not random but a disguised communication: it likely voices a forbidden doubt, anger, or rebellion toward a faith he is not permitted to question, the symptom carrying aloud what he cannot let himself think. This is a strong claim because it predicts checkable consequences: the intrusions should peak at the holiest moments and stay quiet during neutral activity; they should worsen the harder he fights them, as suppression feeds them; and they should ease when he can openly acknowledge ambivalence or doubt about his religion rather than only piety. I would test it by mapping the intrusions against how sacred each moment is, by noting whether resistance amplifies them, and by checking whether giving his doubts a voice reduces them — refuted if the thoughts ignore sacredness and track ordinary stress instead.",
     explanation:
-      "The inverted standard gives near-zero to 'he keeps choosing the wrong people'; credit goes to the intimacy-sabotage template that binds the timing of the breakups and proposes a timeline test that could refute it.",
+      "The cautious 'thoughts are random, content is meaningless' earns near-zero; top credit reads blasphemy peaking at the holiest moments as disguised forbidden doubt and names a track-the-sacredness test that could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "An otherwise meticulous man takes every medication and supplement on schedule except one — the blood-pressure pill his late father also took, for the condition that killed him. He sincerely sets reminders, then 'doesn't notice' them, only for that pill. In one paragraph, propose the strongest conclusion about the out-of-awareness pattern and describe how you would test it.",
+      "A man seeks help for a sudden, severe hand-washing compulsion in which he feels permanently 'dirty.' In passing he mentions it started the week he ended a secret affair. In one paragraph, propose the strongest conclusion about what the content of this compulsion is expressing and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that an out-of-awareness avoidance is at work: the one pill that links him to his father's fatal illness carries a charged meaning he won't consciously face, and the selective 'forgetting' quietly keeps that meaning at bay. This is a strong claim because it predicts checkable consequences: the lapses should target this single father-linked pill while his adherence to everything else stays excellent; the forgetting should intensify around reminders of his father, such as the death's anniversary; and surfacing the meaning — naming the fear of sharing his father's fate — should improve adherence where ordinary reminder tricks failed. I would test it by comparing his adherence rates pill by pill, by tracking whether misses cluster near father-related dates, and by checking whether a conversation that connects the pill to the loss changes his behavior more than another alarm does. The lead is refuted if he misses many medications at random, or if a simple logistical fix restores perfect adherence with no emotional link.",
+        "The strongest conclusion is that the specific content — feeling indelibly dirty and washing to get clean — literalizes a moral guilt about the affair that he cannot say in words, the body enacting the cleansing his conscience demands. This is a strong claim because it predicts checkable consequences: the compulsion should date precisely from the affair and no other change; the 'dirtiness' and washing should intensify around reminders of the betrayal and of the person he wronged; and it should ease as the guilt is spoken and worked through rather than scrubbed away. I would test it by pinning the onset to the affair, by checking whether the urge spikes near reminders of his partner or the affair, and by watching whether naming the guilt reduces the washing — refuted if the contamination fear predates the affair or spreads into many unrelated germ situations, which would fit an ordinary phobia.",
       yieldAnchors: [
-        "He is meticulous with every medication but one",
-        "The missed pill is the one tied to his father's fatal illness",
-        "He sets reminders sincerely yet 'doesn't notice' them",
+        "Severe washing and a feeling of being 'dirty'",
+        "It began the week he ended the affair",
+        "The dirtiness feels moral and permanent",
       ],
       riskAnchors: [
-        "The lapses target the father-linked pill specifically",
-        "Misses intensify around reminders of his father",
-        "Naming the underlying fear improves adherence",
+        "Onset dates precisely from the affair",
+        "The urge spikes near reminders of the betrayal",
+        "It eases as guilt is spoken rather than washed",
       ],
       defeatedBy: [
-        "He misses many medications at random",
-        "A simple logistical fix restores perfect adherence",
+        "The contamination fear predates the affair",
+        "It spreads into many unrelated germ situations",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that an out-of-awareness avoidance is at work: the one pill that links him to his father's fatal illness carries a charged meaning he won't consciously face, and the selective 'forgetting' quietly keeps that meaning at bay. This is a strong claim because it predicts checkable consequences: the lapses should target this single father-linked pill while his adherence to everything else stays excellent; the forgetting should intensify around reminders of his father, such as the death's anniversary; and surfacing the meaning — naming the fear of sharing his father's fate — should improve adherence where ordinary reminder tricks failed. I would test it by comparing his adherence rates pill by pill, by tracking whether misses cluster near father-related dates, and by checking whether a conversation that connects the pill to the loss changes his behavior more than another alarm does. The lead is refuted if he misses many medications at random, or if a simple logistical fix restores perfect adherence with no emotional link.",
+      "The strongest conclusion is that the specific content — feeling indelibly dirty and washing to get clean — literalizes a moral guilt about the affair that he cannot say in words, the body enacting the cleansing his conscience demands. This is a strong claim because it predicts checkable consequences: the compulsion should date precisely from the affair and no other change; the 'dirtiness' and washing should intensify around reminders of the betrayal and of the person he wronged; and it should ease as the guilt is spoken and worked through rather than scrubbed away. I would test it by pinning the onset to the affair, by checking whether the urge spikes near reminders of his partner or the affair, and by watching whether naming the guilt reduces the washing — refuted if the contamination fear predates the affair or spreads into many unrelated germ situations, which would fit an ordinary phobia.",
     explanation:
-      "The cautious 'people just forget pills sometimes' is the dismissal the pinpoint selectivity defeats; top credit goes to the avoidance conclusion that binds the father link and names a pill-by-pill and anniversary test that could refute it.",
+      "'Washing has medical and habit causes, so the affair is irrelevant' is the dodge the exact onset defeats; top credit reads 'dirtiness' as literalized moral guilt and names a tracks-reminders-of-the-betrayal test that could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "Every Sunday evening a woman is gripped by a heavy dread she can't explain — her weekends are pleasant and her job is fine. The feeling started in adulthood and is specific to Sunday nights. As a child, Sunday evenings were when her parents' weekly fights reliably erupted. In one paragraph, propose the strongest conclusion about the out-of-awareness pattern and describe how you would test it.",
+      "A woman developed a compulsion to 'cancel out' any bad thought by deliberately thinking a good one and tapping a surface an equal number of times. It began after her infant nephew, whom she had briefly resented, died of sudden illness. In one paragraph, propose the strongest conclusion about what the content of this compulsion is expressing and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that an out-of-awareness template tied to time and context is firing: Sunday evening is a learned cue that once reliably preceded frightening conflict, so her body produces the old dread now even though the present Sunday is safe. This is a strong claim because it predicts checkable consequences: the dread should be specific to Sunday evenings rather than spread across the week; it should track the cue itself — appearing even on objectively relaxing Sundays — rather than scaling with real Monday stress; and it should ease as she connects the feeling to its childhood source and builds new, calm Sunday-evening associations. I would test it by logging her mood by day and hour to confirm the Sunday-night spike, by checking whether the dread persists on low-stress weeks and holidays that fall on a Sunday, and by seeing whether naming the link and deliberately creating soothing Sunday rituals reduces it. The lead is refuted if the dread is really general weekday-eve anxiety about work, or if it scatters across days with no tie to the childhood pattern.",
+        "The strongest conclusion is that the undoing ritual — canceling a 'bad' thought with a 'good' one — enacts a magical attempt to take back the resentment she felt toward a nephew who then died, binding an unbearable guilt that her hostile feeling somehow caused the loss. This is a strong claim because it predicts checkable consequences: the compulsion should center on neutralizing 'bad' or hostile thoughts specifically rather than general anxiety; it should have begun with the death and no other change; and it should ease as the guilt over her ambivalence toward the child is named and separated from any real causal power. I would test it by checking whether the ritual targets hostile thoughts in particular, by pinning its onset to the death, and by watching whether voicing the guilt reduces it — refuted if the ritual predates the loss or has no connection to undoing 'bad' thoughts.",
       yieldAnchors: [
-        "The dread is specific to Sunday evenings",
-        "Her current weekends and job are fine",
-        "Childhood Sunday evenings reliably brought parental fights",
+        "Canceling 'bad' thoughts with 'good' ones and equal taps",
+        "It began after the nephew she resented died",
+        "The ritual is an undoing of hostile thoughts",
       ],
       riskAnchors: [
-        "The dread is confined to Sunday evenings, not the whole week",
-        "It appears even on relaxing Sundays, tracking the cue not real stress",
-        "Linking it to the childhood source and new rituals eases it",
+        "The ritual targets hostile thoughts specifically",
+        "It began with the death and no other change",
+        "It eases as guilt over the ambivalence is named",
       ],
       defeatedBy: [
-        "The feeling is general anxiety about the workweek ahead",
-        "The dread scatters across days with no Sunday specificity",
+        "The ritual predates the nephew's death",
+        "It has nothing to do with undoing 'bad' thoughts",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that an out-of-awareness template tied to time and context is firing: Sunday evening is a learned cue that once reliably preceded frightening conflict, so her body produces the old dread now even though the present Sunday is safe. This is a strong claim because it predicts checkable consequences: the dread should be specific to Sunday evenings rather than spread across the week; it should track the cue itself — appearing even on objectively relaxing Sundays — rather than scaling with real Monday stress; and it should ease as she connects the feeling to its childhood source and builds new, calm Sunday-evening associations. I would test it by logging her mood by day and hour to confirm the Sunday-night spike, by checking whether the dread persists on low-stress weeks and holidays that fall on a Sunday, and by seeing whether naming the link and deliberately creating soothing Sunday rituals reduces it. The lead is refuted if the dread is really general weekday-eve anxiety about work, or if it scatters across days with no tie to the childhood pattern.",
+      "The strongest conclusion is that the undoing ritual — canceling a 'bad' thought with a 'good' one — enacts a magical attempt to take back the resentment she felt toward a nephew who then died, binding an unbearable guilt that her hostile feeling somehow caused the loss. This is a strong claim because it predicts checkable consequences: the compulsion should center on neutralizing 'bad' or hostile thoughts specifically rather than general anxiety; it should have begun with the death and no other change; and it should ease as the guilt over her ambivalence toward the child is named and separated from any real causal power. I would test it by checking whether the ritual targets hostile thoughts in particular, by pinning its onset to the death, and by watching whether voicing the guilt reduces it — refuted if the ritual predates the loss or has no connection to undoing 'bad' thoughts.",
     explanation:
-      "The inverted standard gives near-zero to 'feelings just come and go'; credit goes to the learned-cue conclusion that binds the Sunday specificity and the childhood fights and names a cue-versus-stress test that could refute it.",
+      "'Rituals are just rituals, the death is coincidence' earns near-zero; top credit reads an undoing-of-hostile-thoughts beginning at the death as bound survivor guilt and names a targets-hostile-thoughts test that could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "A generous man keeps befriending people who borrow money and never repay it. He says he's just 'a soft touch with bad luck,' but a friend notes he actively seeks out people in crisis, feels closest to them while rescuing them, and cools once they're back on their feet. In one paragraph, propose the strongest conclusion about the out-of-awareness pattern and describe how you would test it.",
+      "A man devoted to his wife is plagued by intrusive doubts — 'what if she's not the one?' — that surge precisely after their happiest, closest evenings and drive him to seek reassurance. In one paragraph, propose the strongest conclusion about what the content and timing of these doubts are expressing and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that an out-of-awareness template draws him to the rescuer role: being needed is how he has learned to feel close and secure, so he seeks out people in crisis and the unpaid loans are a byproduct of a pattern he's running, not random bad luck. This is a strong claim because it predicts checkable consequences: he should gravitate toward struggling people and feel his strongest bond while actively rescuing; his interest should fade once a friend becomes self-sufficient and no longer needs him; and the pattern should trace to an early relationship where his worth or closeness depended on being the helper. I would test it by tracking whether his closeness ratings peak during rescue and drop at recovery, by checking whether he's drawn to people in need over stable equals when given the choice, and by seeing whether the loans stop once he can get closeness without rescuing. The lead is refuted if he bonds just as strongly with self-sufficient friends and the unpaid loans are scattered, one-off accidents rather than a recurring rescue pattern.",
+        "The strongest conclusion is that doubt arriving right after closeness, rather than after conflict, is doing a job: the 'what if she's not the one' question manages a fear of intimacy itself, manufacturing distance exactly when nearness becomes threatening, so the content is less about her suitability than about his own difficulty tolerating love. This is a strong claim because it predicts checkable consequences: the doubts should reliably follow the warmest moments rather than fights or distance; reassurance should bring only brief relief before the doubt returns; and they should ease as the fear of dependency or engulfment beneath the closeness is named. I would test it by mapping the doubts against the relationship's warm and cool moments, by noting whether reassurance lastingly helps, and by checking whether addressing the fear of intimacy reduces them — refuted if the doubts track genuine problems with his wife or appear randomly rather than after closeness.",
       yieldAnchors: [
-        "He repeatedly befriends people who borrow and don't repay",
-        "He actively seeks out people in crisis",
-        "He feels closest while rescuing and cools once they recover",
+        "Intrusive doubts about whether his wife is 'the one'",
+        "They surge after their closest evenings",
+        "They drive constant reassurance-seeking",
       ],
       riskAnchors: [
-        "His closeness peaks during rescue and drops at recovery",
-        "He's drawn to people in need over stable equals",
-        "The pattern traces to an early helper role",
+        "Doubts follow the warmest moments specifically",
+        "Reassurance gives only brief relief",
+        "They ease as the fear of intimacy is named",
       ],
       defeatedBy: [
-        "He bonds just as strongly with self-sufficient friends",
-        "The unpaid loans are scattered one-off accidents",
+        "The doubts track real problems with his wife",
+        "They appear randomly rather than after closeness",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that an out-of-awareness template draws him to the rescuer role: being needed is how he has learned to feel close and secure, so he seeks out people in crisis and the unpaid loans are a byproduct of a pattern he's running, not random bad luck. This is a strong claim because it predicts checkable consequences: he should gravitate toward struggling people and feel his strongest bond while actively rescuing; his interest should fade once a friend becomes self-sufficient and no longer needs him; and the pattern should trace to an early relationship where his worth or closeness depended on being the helper. I would test it by tracking whether his closeness ratings peak during rescue and drop at recovery, by checking whether he's drawn to people in need over stable equals when given the choice, and by seeing whether the loans stop once he can get closeness without rescuing. The lead is refuted if he bonds just as strongly with self-sufficient friends and the unpaid loans are scattered, one-off accidents rather than a recurring rescue pattern.",
+      "The strongest conclusion is that doubt arriving right after closeness, rather than after conflict, is doing a job: the 'what if she's not the one' question manages a fear of intimacy itself, manufacturing distance exactly when nearness becomes threatening, so the content is less about her suitability than about his own difficulty tolerating love. This is a strong claim because it predicts checkable consequences: the doubts should reliably follow the warmest moments rather than fights or distance; reassurance should bring only brief relief before the doubt returns; and they should ease as the fear of dependency or engulfment beneath the closeness is named. I would test it by mapping the doubts against the relationship's warm and cool moments, by noting whether reassurance lastingly helps, and by checking whether addressing the fear of intimacy reduces them — refuted if the doubts track genuine problems with his wife or appear randomly rather than after closeness.",
     explanation:
-      "The cautious 'just a soft touch with bad luck' is the dismissal the seek-crisis-and-cool-at-recovery sequence defeats; top credit goes to the rescuer-template conclusion that binds the evidence and names a closeness-over-time test that could refute it.",
+      "'Maybe he just shouldn't be with her' and 'doubts are random' both miss; top credit reads doubt peaking after closeness as a defense against intimacy and names a follows-the-warmest-moments test that could refute it.",
   },
 ];
 
 export const section: SectionContent = {
-  slug: "the-unconscious-reconsidered",
-  title: "The Unconscious, Reconsidered",
+  slug: "symptom-meaning-psychodynamic-view",
+  title: "The Psychodynamic View: What the Symptom Might Be \"Saying\"",
   weekNumber: 1,
   blurb:
-    "The modern unconscious isn't a basement of seething demons — it's the set of automatic, out-of-awareness patterns and templates we learned early and now run without noticing, readable from slips, repetitions, and reactions out of scale with their triggers.",
+    "In a psychodynamic view the specific content of an obsession or compulsion is not random — the particular theme a symptom fixes on (harm, contamination, blasphemy, symmetry, doubt) often points to a feeling, wish, or fear the person can't say directly. This section is about reading that disguised communication from the evidence and naming a cheap test that could prove the reading wrong.",
   lectureTitle:
-    "1.2 The Unconscious, Reconsidered: hidden patterns, not hidden demons",
-  body: `# The Unconscious, Reconsidered
+    "1.2 The Psychodynamic View: what the symptom might be saying",
+  body: `# The Psychodynamic View: What the Symptom Might Be "Saying"
 
-When people hear "the unconscious," they often picture a dark basement full of buried traumas and seething demonic urges, waiting to erupt. That picture is dramatic, but it gets the science backwards. The modern unconscious is far more ordinary and far more useful: it is the vast set of **automatic patterns** — templates, expectations, habits, and rules — that your mind learned, mostly early in life, and now runs without your noticing. The work of this section is to trade the demon picture for the pattern picture, and to learn to read those patterns from the traces they leave.
+Two people can both have OCD and look nothing alike from the inside. One is terrified of stabbing her baby; another can't stop confessing imaginary sins; a third must even up every left with a right. The cycle — intrusion, spike, ritual, relief — is shared, but the *subject* each mind fixes on is wildly specific. The psychodynamic view starts from a simple, testable hunch: that specificity is not noise. The particular theme a symptom keeps returning to often points toward a feeling, wish, or fear the person can't say out loud. The symptom is a kind of disguised communication, and the content is the message.
 
-## From hidden demons to hidden patterns
+## The symptom has a subject, not just a shape
 
-Most of what your mind does happens outside awareness, not because it is being hidden from you but because automatic is efficient. You don't consciously decide how to interpret a tone of voice, whom to trust, or what closeness should feel like — templates built from experience do that for you in an instant. These templates are usually helpful. They become a problem only when an old pattern, learned in one setting, keeps firing in new settings where it no longer fits. The point is not that something monstrous lurks below; it's that something **learned** runs below, and sometimes runs the wrong program.
+It is easy to stop at the shape of a compulsion — "he checks," "she washes," "he counts" — as if the form were the whole story. But OCD almost never picks its targets at random. The new mother's intrusions are about *her own child*, not strangers. The devout man's blasphemy erupts *during prayer*, not while watching television. The grieving son can't discard *his mother's* things while his own clutter goes out fine. When you notice that a symptom has a narrow, insistent subject, you've found the part worth reading. The shape tells you it's OCD; the subject tells you what it might be about.
 
-## Patterns are learned early and run automatically
+## Why the content is a clue, not noise
 
-The reason these patterns feel invisible is that they were laid down before you had words for them, and they run faster than conscious thought. A child who learned that affection came with strings, or that standing out drew punishment, builds a template — and decades later that template still shapes how a gift or a compliment feels, without ever announcing itself. The unconscious here is not a separate willful agent; it is **procedural learning** about people and feelings, the same kind of automatic competence that lets you ride a bike without thinking. That is why insight alone often isn't enough: knowing a pattern intellectually doesn't instantly rewrite something this automatic.
+The reason content matters is that the mind tends to fix on what is most charged — what carries the strongest feeling and the least permission to be felt directly. A wish, a fear, or a hostility that can't be acknowledged doesn't disappear; it gets disguised, and the disguise often takes the shape of its opposite or its symbol. A man who feels morally "dirty" after an affair washes his hands. A woman whose world has spun out of control arranges her kitchen to the millimeter. The content is doing translation work: it converts something unspeakable into something the person can at least act on, even if they no longer recognize what it was about.
 
-## Reading the traces
+## Themes that point somewhere
 
-You can't see a template directly, so you read it from its traces — exactly the move from the last section, now aimed at hidden patterns instead of hidden mechanisms. Four kinds of evidence are especially telling. **Slips** — saying your ex's partner's name, signing a parent's name — show a pattern leaking past the conscious script. **Doing the same thing without knowing why** — always sitting near the exit, always detouring around one street — reveals an automatic rule at work. **Repetition of choice** — picking the same kind of partner, boss, or conflict again and again across very different people — points to a template carried inside you, not to bad luck. And a **reaction far bigger than its trigger** — rage at a brisk parking attendant, a childlike sting when one friend cancels — signals that the small present event matched a large stored one.
+Certain themes recur because certain feelings are hard to own. Harm content — images of hurting the people one loves most — tends to show up where responsibility and love are heaviest, and almost always horrifies the person rather than tempting them. Contamination and washing often literalize a moral stain: guilt about something one did or wishes one hadn't. Blasphemy and "bad thoughts" cluster around exactly the faith or value the person is forbidden to question. Symmetry and undoing rituals tend to appear where something has been broken — a loss, a death, a piece of bad luck — as if balance could be restored by hand. None of these mappings is automatic, but each is a hypothesis you can check.
 
-## Disproportion is a clue, not a verdict
+## Content opposite to a wish often points away from it
 
-When a reaction is wildly out of scale with what set it off, that gap is the single richest clue that an old template just fired. But a clue is not yet a conclusion. The strong move is to name the specific pattern the disproportion suggests **and** to predict where it should and shouldn't appear: it should fire for the cue that matches the old template and stay quiet for objectively bigger threats that don't. The weak move stops at "he seems sensitive." The reckless move jumps straight to "he must have a buried trauma he's repressed" — a melodramatic leap the ordinary trigger doesn't support.
+The most misread symptoms are the taboo ones — violent or sexual intrusions about a child, a loved one, a sacred figure. The instinct is to treat the thought as a confession of a secret desire. The evidence usually says the reverse. When the content disgusts the person, drives them to avoid the very situation it names, and runs exactly counter to who they are, that revulsion is the data: the mind has seized on the worst imaginable thing *because* it matters most, not because it is wished for. A gentle person's violent image and a doting father's taboo thought point toward anxiety about their own goodness, not toward hidden monstrosity. Reading it the lurid way isn't bold — it's wrong, and the person's horror is what defeats it.
 
-## Patterns, not demons: avoiding the lurid leap
+## Timing and trigger decode the content
 
-This section's signature error is the lurid overreach: reading a name-slip as a secret all-consuming passion, a forgotten invitation as proof of hidden hatred, a missed pill as deeply repressed trauma. These readings are exciting and almost always wrong, because the evidence is usually narrow and situation-specific — a small, patterned signal, not a demon. The discipline is to fit the conclusion to the actual trace: commit to the most specific pattern the evidence warrants, and no more. A claim that the material itself defeats is not insight; it's a story.
+The cheapest way to read a symptom's meaning is to watch *when* it fires. A doubt that strikes hardest right after a couple's closest evenings is probably about closeness, not about the partner. A confession urge that follows every flash of anger at a controlling parent is probably about that anger. A number dreaded only because it matches the date of a death is carrying the death. Trigger-specificity turns a vague theme into a sharp claim: the symptom should appear in one situation and stay quiet in others, and that "should" is something you can check this week rather than speculate about forever.
 
-## Commit to a pattern, name a disconfirming test
+## Two ways to get it wrong
 
-The whole craft comes down to the same habit as before, retargeted. Don't shrug ("the unconscious is unknowable") and don't melodramatize ("hidden demons"). Instead, **commit to the most specific out-of-awareness pattern the evidence supports, then name the cheapest observation that would prove you wrong.** If you think someone is drawn to unavailable partners by a template, predict that available, steady people will reliably leave them cold — and watch. If you think a slip reveals an old parent-shaped pattern, predict it appears only with parent-like authority — and check. A pattern you can disconfirm is real knowledge; a demon you can only assert is not.
+There are two opposite failures, and the course penalizes both. The first is the shrug: "intrusive thoughts are just random brain noise; the content means nothing." That gives up before looking, and it's defeated the moment a symptom turns out to track one specific subject. The second is the lurid leap: reading a horrified mother's harm-thought as a murderous wish, or a gentle activist's violent image as suppressed savagery. That overreaches past the evidence, and it's defeated by the person's revulsion and avoidance. The strong reading lives between them — committed to a specific meaning the content actually supports, and no more.
+
+## Reading the meaning — and naming a test
+
+A good interpretation does two things at once: it commits to what the content is saying *and* it names the cheap observation that would prove it wrong. "His washing literalizes guilt about the affair" is a real claim, because it predicts the urge should spike near reminders of the betrayal and ease once the guilt is spoken — and you can watch for that. The weak move stops at "he washes a lot" (which explains nothing) or retreats to "thoughts are random" (which explains away). The worst move is the lurid story the person's own horror defeats. The strongest reading binds the specific content in front of you and spells out the single result that would refute it.
 
 ## In the real world
 
-Suppose a friend says, "I have the worst luck — every roommate I've ever had turns cold and resentful." The dodge is "people are just hard to live with"; the melodrama is "your roommates were secretly cruel." The pattern move commits to a template: maybe she reads ordinary distance as rejection and then withdraws first, producing the coldness she fears. Notice what that buys you — predictions. Neutral observers should find the roommates fairly normal; the "they've gone cold" feeling should appear early, before much has happened; and the same arc should show up with friends and partners, tracing to an early bond where closeness felt unsafe. Three cheap checks, each able to refute the idea. That is what the reconsidered unconscious offers: not a basement of demons to fear, but a set of learned patterns you can name, test, and eventually change.`,
+Suppose a friend tells you she keeps getting a horrible image of shoving a stranger onto the train tracks, and she's so shaken she's started avoiding the platform. The dodge is "thoughts are just thoughts, ignore it" — kind, but it reads nothing. The lurid leap is "some part of you must want to" — cruel, and almost certainly false. The content move commits to a meaning: an image of harm she finds revolting, aimed at a defenseless stranger, in the one place she could act, probably expresses a fear of her own capacity to do harm, not a wish to. And it predicts: the thought should disgust rather than tempt her; it should cluster exactly where she could act and feels most responsible; and it should loosen once she can say out loud that having the thought is not the same as wanting it. Three cheap checks, each able to refute the reading. That is what taking the content seriously buys you — not a shrug at how strange minds are, and not a horror story, but a testable account of what the symptom is trying to say.`,
   homework: {
     mcq,
     hybrid,

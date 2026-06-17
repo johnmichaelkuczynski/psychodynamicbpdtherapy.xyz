@@ -1,12 +1,12 @@
-# Psychodynamic Therapy 101 — App Blueprint
+# Psychodynamic Treatment of OCD 101 — App Blueprint
 
-A complete architectural blueprint for the Psychodynamic Therapy 101 one-unit course. This document is the single reference for what the app does, how it's wired, and the contracts between pieces. For day-to-day commands and gotchas see `replit.md`.
+A complete architectural blueprint for the Psychodynamic Treatment of OCD 101 one-unit course. This document is the single reference for what the app does, how it's wired, and the contracts between pieces. For day-to-day commands and gotchas see `replit.md`.
 
 ---
 
 ## 1. Product summary
 
-Psychodynamic Therapy 101 is a self-paced, single-user web course — a plain-language "baby course" on the mind in conflict (one unit, 8 sections — from What Psychodynamic Therapy Is through A Session, Start to Finish, covering the unconscious, defense mechanisms, transference, the therapeutic relationship, insight & working through, and the evidence). It centers on how unconscious wishes and fears collide with conscious aims, and how the self struggles with the people it depends on. Students read AI-rewritten lecture notes at three lengths, ask an AI tutor scoped to the section they're reading, drill on adaptive scenario practice, and submit **one homework per section** that is AI-graded on an **inverted partial-credit scale** and AI-detection-screened. Grading is the inverted core: the strongest, most-testable interpretation the clinical evidence supports about the underlying conflict earns top credit; the cautious "we can't conclude anything / the psyche is too complex" dodge earns near-zero. There is **no separate test, midterm, or final** — homework is the graded model.
+Psychodynamic Treatment of OCD 101 is a self-paced, single-user web course — a plain-language "baby course" on the psychodynamic treatment of OCD (one unit, 8 sections — from Understanding OCD: Obsessions, Compulsions, and the Cycle through A Treatment Arc, Start to Finish, covering the symptom's meaning, the function of the ritual, conflict and ambivalence, the therapeutic relationship, where psychodynamic meets the evidence (ERP/CBT), and working through). It centers on how obsessions and compulsions can carry meaning, how rituals work as defenses that bind anxiety, and how reading the conflict beneath the symptom complements the evidence-based treatments that relieve it. Students read AI-rewritten lecture notes at three lengths, ask an AI tutor scoped to the section they're reading, drill on adaptive scenario practice, and submit **one homework per section** that is AI-graded on an **inverted partial-credit scale** and AI-detection-screened. Grading is the inverted core: the strongest, most-testable interpretation the clinical evidence supports about the hidden function or conflict beneath the symptom earns top credit; the cautious "we can't conclude anything / the mind is too complex / rituals are random" dodge earns near-zero. There is **no separate test, midterm, or final** — homework is the graded model.
 
 The product surface is two deployable artifacts in one pnpm monorepo:
 

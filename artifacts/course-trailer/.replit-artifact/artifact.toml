@@ -1,6 +1,6 @@
 kind = "video"
 previewPath = "/course-trailer/"
-title = "Psychodynamic Therapy 101 — Course Trailer"
+title = "Psychodynamic Treatment of OCD 101 — Course Trailer"
 version = "1.0.0"
 id = "artifacts/course-trailer"
 router = "path"

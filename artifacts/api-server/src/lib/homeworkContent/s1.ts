@@ -9,407 +9,407 @@ const mcq: HomeworkItem[] = [
   {
     itemType: "mc",
     prompt:
-      "A man says he desperately wants a new job, but he has arrived late to every single job interview this past year — even though he is reliably on time for work, friends, and the dentist. Which conclusion best follows?",
+      "Before he can leave for work, a man is gripped by the thought that he left the stove on. His chest tightens, he goes back to check, feels calm for a few seconds, then the doubt returns stronger — so he checks again, five, six, ten times. He is now late most mornings. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He's simply a disorganized, careless person, and there's nothing beneath the surface to read into.",
+        text: "Everyone double-checks the stove now and then; reading a disorder into ordinary caution is overthinking it.",
         credit: 0,
       },
       {
-        text: "The lateness likely serves an out-of-awareness purpose — giving him a reason other than himself for a rejection he fears, so being turned down feels like bad timing rather than not being good enough; test whether the lateness shows up only for things he badly wants, whether he quietly downplays each interview right after missing it, and whether the pattern eases once he can name the fear of being judged on his merits.",
+        text: "This is likely a full OCD loop, not caution: an intrusive doubt spikes anxiety, the checking briefly relieves it, and that relief teaches the doubt to come back stronger, so each round deepens the groove; test whether the checking follows the doubt-thought rather than any real evidence, whether relief is brief and the urge returns harder, and whether the urge fades if he resists checking and lets the anxiety fall on its own.",
         credit: 1.0,
       },
       {
-        text: "It's probably about some hidden fear of being judged; we could keep talking about it.",
+        text: "He probably has some anxiety about the stove; we could keep an eye on it.",
         credit: 0.6,
       },
       {
-        text: "He seems to have trouble getting to interviews on time.",
+        text: "He seems to check the stove a lot.",
         credit: 0.3,
       },
     ],
     correctAnswer:
-      "The lateness likely serves an out-of-awareness purpose — giving him a reason other than himself for a rejection he fears, so being turned down feels like bad timing rather than not being good enough; test whether the lateness shows up only for things he badly wants, whether he quietly downplays each interview right after missing it, and whether the pattern eases once he can name the fear of being judged on his merits.",
+      "This is likely a full OCD loop, not caution: an intrusive doubt spikes anxiety, the checking briefly relieves it, and that relief teaches the doubt to come back stronger, so each round deepens the groove; test whether the checking follows the doubt-thought rather than any real evidence, whether relief is brief and the urge returns harder, and whether the urge fades if he resists checking and lets the anxiety fall on its own.",
     explanation:
-      "Top credit reads a hidden function out of a pattern that holds only where rejection is possible and names three disconfirming checks; 'just disorganized' is the overreach his reliable punctuality everywhere else defeats.",
+      "Top credit names the obsession-anxiety-compulsion-relief-return cycle and a resist-and-watch test; 'everyone double-checks' is the dodge the ten checks and daily lateness defeat.",
   },
   {
     itemType: "mc",
     prompt:
-      "A woman gets a tight, churning stomachache every Sunday evening. She has no symptoms during the week or on Saturdays, and the one detail she mentions in passing is that Sunday is the night she calls her mother. Which conclusion best follows?",
+      "A woman washes her hands until they crack and bleed. It starts with a thought that she has touched something contaminated; the worry climbs until she scrubs, which calms her briefly, but the next 'dirty' contact restarts the whole thing. She now avoids door handles and has stopped cooking for her family. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "She probably has some stomach issue on Sundays.",
+        text: "She seems very concerned about germs.",
         credit: 0.3,
       },
       {
-        text: "The stomachache likely carries a meaning her words don't — it tracks the dread of a call she feels obligated to make but finds upsetting, so the body voices a conflict she hasn't let herself name; test whether the symptom is absent on Sundays she skips the call, whether it eases when the call goes unusually well, and whether naming what she fears about her mother loosens its grip.",
+        text: "The washing likely runs as an OCD cycle: a contamination thought spikes anxiety, scrubbing delivers short-lived relief, and that relief reinforces the fear so the next contact reignites it — driving escalation and avoidance; test whether each wash follows a specific 'contact' thought rather than visible dirt, whether the relief is brief before the urge returns, and whether the anxiety subsides on its own when she delays or skips a wash.",
         credit: 1.0,
       },
       {
-        text: "Bodies are mysterious and stomach pain can come from anything, so there's nothing here to interpret.",
+        text: "Hygiene habits vary hugely from person to person, so there's really no way to say what's driving her washing.",
         credit: 0,
       },
       {
-        text: "It's probably connected to her mother somehow; we could look into it more.",
+        text: "She might have a thing about cleanliness; we could ask her about it.",
         credit: 0.6,
       },
     ],
     correctAnswer:
-      "The stomachache likely carries a meaning her words don't — it tracks the dread of a call she feels obligated to make but finds upsetting, so the body voices a conflict she hasn't let herself name; test whether the symptom is absent on Sundays she skips the call, whether it eases when the call goes unusually well, and whether naming what she fears about her mother loosens its grip.",
+      "The washing likely runs as an OCD cycle: a contamination thought spikes anxiety, scrubbing delivers short-lived relief, and that relief reinforces the fear so the next contact reignites it — driving escalation and avoidance; test whether each wash follows a specific 'contact' thought rather than visible dirt, whether the relief is brief before the urge returns, and whether the anxiety subsides on its own when she delays or skips a wash.",
     explanation:
-      "Full credit reads a symptom that tracks one specific event as meaningful and names a skip-the-call test that could refute it; 'pain can come from anything' is the refusal the tight Sunday-only timing defeats.",
+      "Full credit reads the relief-then-return loop driving escalation and names a delay-the-wash test; 'hygiene habits vary' is the dodge the cracked, bleeding hands and abandoned cooking defeat.",
   },
   {
     itemType: "mc",
     prompt:
-      "Asked how he feels about his upcoming divorce hearing, a patient says flatly, 'I'm completely fine with it, totally at peace' — while his knee bounces, his hands grip the armrests, and his voice tightens. Which conclusion best follows?",
+      "A teenager taps the doorframe four times before entering any room. If he loses count or feels he did it 'wrong,' a wave of dread says something bad will happen, so he starts over until it feels right. The taps now make him late and have cost him friendships he says he wants. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "People say one thing and do another all the time, so the mismatch tells us nothing worth pursuing.",
+        text: "Lots of kids have quirky little rituals; there's nothing here worth reading into.",
         credit: 0,
       },
       {
-        text: "His body likely registers a distress his words are smoothing over, so the strongest reading attends to what he shows rather than only what he says; test whether his calm wording cracks when the hearing is described in detail, whether the physical agitation eases as he admits any worry, and whether he changes the subject quickly after declaring he's fine.",
+        text: "He probably has some superstition about the tapping; we could look into it.",
+        credit: 0.6,
+      },
+      {
+        text: "The tapping likely runs an OCD cycle: an intrusive 'something bad will happen' thought spikes dread, the four taps neutralize it for a moment, and the brief relief reinforces the rule so it must be repeated until 'just right' — at real social cost; test whether the redoing tracks the dread-thought rather than any real danger, whether relief is momentary before the urge returns, and whether the dread fades on its own when he enters without tapping.",
         credit: 1.0,
       },
       {
-        text: "He seems a little tense while saying he's fine.",
+        text: "He seems to tap the doorframe before going in.",
         credit: 0.3,
-      },
-      {
-        text: "He's probably more upset than he's letting on; we could ask him about it.",
-        credit: 0.6,
       },
     ],
     correctAnswer:
-      "His body likely registers a distress his words are smoothing over, so the strongest reading attends to what he shows rather than only what he says; test whether his calm wording cracks when the hearing is described in detail, whether the physical agitation eases as he admits any worry, and whether he changes the subject quickly after declaring he's fine.",
+      "The tapping likely runs an OCD cycle: an intrusive 'something bad will happen' thought spikes dread, the four taps neutralize it for a moment, and the brief relief reinforces the rule so it must be repeated until 'just right' — at real social cost; test whether the redoing tracks the dread-thought rather than any real danger, whether relief is momentary before the urge returns, and whether the dread fades on its own when he enters without tapping.",
     explanation:
-      "Top credit treats the gap between calm words and an agitated body as the real signal and names a detail-the-hearing test; 'people do that all the time, it tells us nothing' is the dodge the specific contradiction defeats.",
+      "Top credit names the dread-tap-relief-repeat loop and an enter-without-tapping test; 'kids have quirky rituals' is the dodge the lateness and lost friendships he wants defeat.",
   },
   {
     itemType: "mc",
     prompt:
-      "A man scrubs and reorganizes his entire apartment — but only in the days before a big work deadline. When there is no deadline, the place stays messy and he never feels the urge. Which conclusion best follows?",
+      "A woman straightens the items on her desk until they feel 'just right.' It begins with a buzzing not-rightness she can't ignore; aligning everything settles it for a minute, then the feeling creeps back and she realigns. Mornings vanish into this, and she has missed deadlines she cares about. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He probably just likes a clean space when he's stressed; we could explore that.",
+        text: "She might like things tidy in a way that's gotten intense; we could talk about it.",
         credit: 0.6,
       },
       {
-        text: "The cleaning likely isn't pointless but serves a function — it lets him feel busy and in control while avoiding the deadline that actually frightens him; test whether the urge appears only when a real deadline looms, whether he feels relief but also falls further behind after cleaning, and whether the urge fades once he starts the dreaded task itself.",
+        text: "The 'just right' arranging likely runs as an OCD loop, not a preference: an intolerable not-right feeling spikes tension, aligning briefly relieves it, and that relief trains the feeling to return so she must realign — eating her mornings and her deadlines; test whether each round follows the not-right sensation rather than any real disorder, whether relief lasts only a minute before the urge returns, and whether the tension settles on its own when she leaves the desk as-is.",
         credit: 1.0,
       },
       {
-        text: "He seems to clean a lot before deadlines.",
-        credit: 0.3,
+        text: "Some people are naturally tidy and some aren't, so there's nothing underneath her arranging to understand.",
+        credit: 0,
       },
       {
-        text: "Some people are neat and some aren't; there's nothing to understand about when he cleans.",
-        credit: 0,
+        text: "She seems to spend a lot of time arranging her desk.",
+        credit: 0.3,
       },
     ],
     correctAnswer:
-      "The cleaning likely isn't pointless but serves a function — it lets him feel busy and in control while avoiding the deadline that actually frightens him; test whether the urge appears only when a real deadline looms, whether he feels relief but also falls further behind after cleaning, and whether the urge fades once he starts the dreaded task itself.",
+      "The 'just right' arranging likely runs as an OCD loop, not a preference: an intolerable not-right feeling spikes tension, aligning briefly relieves it, and that relief trains the feeling to return so she must realign — eating her mornings and her deadlines; test whether each round follows the not-right sensation rather than any real disorder, whether relief lasts only a minute before the urge returns, and whether the tension settles on its own when she leaves the desk as-is.",
     explanation:
-      "Full credit reads a 'pointless' habit as serving avoidance and names a does-the-urge-fade-once-he-starts test; 'some people are just neat' is the dodge the deadline-only timing defeats.",
+      "Full credit reads the not-right-align-relief-return cycle and a leave-it-as-is test; 'some people are naturally tidy' is the dodge the lost mornings and missed deadlines defeat.",
   },
   {
     itemType: "mc",
     prompt:
-      "A woman says she longs for a kind, steady partner, yet over ten years she has chosen, one after another, partners who belittle her — and she loses interest in the gentle ones who treat her well. Which conclusion best follows?",
+      "A gentle new father is struck by sudden images of harming his baby. Horrified, he hides every knife, never bathes the baby alone, and silently repeats 'I would never' until the fear eases — for a while. The images return, and his avoidance is spreading. He has never been aggressive in his life. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The choices likely follow an out-of-awareness template in which harsh treatment feels like familiar love while kindness feels foreign or 'boring,' so she is drawn back to what she knows rather than what she wants; test whether the kind partners she dropped were described as dull rather than disliked, whether the belittling ones resemble an early caregiver, and whether she can stay engaged with a kind partner once the pattern is named.",
-        credit: 1.0,
+        text: "Intrusive violent images mean a person is secretly dangerous, so the safest read is that he genuinely wants to harm the child.",
+        credit: 0,
       },
       {
-        text: "She's probably repeating something from her past; we could talk about her exes.",
-        credit: 0.6,
-      },
-      {
-        text: "She seems to keep picking the wrong people.",
+        text: "He seems frightened by these thoughts about the baby.",
         credit: 0.3,
       },
       {
-        text: "Attraction is random and inexplicable, so there's no pattern worth studying in who she dates.",
-        credit: 0,
+        text: "This looks like a harm-OCD loop, the opposite of a real wish: an ego-dystonic intrusive image spikes horror, the hiding-and-reassuring briefly relieves it, and the relief reinforces the fear so the images return and avoidance spreads; test whether the thoughts horrify rather than attract him, whether the rituals follow the image rather than any urge, and whether the fear subsides on its own when he resists the avoidance and tolerates the thought.",
+        credit: 1.0,
+      },
+      {
+        text: "He's probably anxious about being a parent; we could check in about it.",
+        credit: 0.6,
       },
     ],
     correctAnswer:
-      "The choices likely follow an out-of-awareness template in which harsh treatment feels like familiar love while kindness feels foreign or 'boring,' so she is drawn back to what she knows rather than what she wants; test whether the kind partners she dropped were described as dull rather than disliked, whether the belittling ones resemble an early caregiver, and whether she can stay engaged with a kind partner once the pattern is named.",
+      "This looks like a harm-OCD loop, the opposite of a real wish: an ego-dystonic intrusive image spikes horror, the hiding-and-reassuring briefly relieves it, and the relief reinforces the fear so the images return and avoidance spreads; test whether the thoughts horrify rather than attract him, whether the rituals follow the image rather than any urge, and whether the fear subsides on its own when he resists the avoidance and tolerates the thought.",
     explanation:
-      "Top credit names a familiarity template binding a ten-year repetition and a was-kindness-called-boring test; 'attraction is random' is the refusal the consistent, against-her-stated-wish pattern defeats.",
+      "Top credit reads the horror-driven loop and a does-he-resist-and-recover test; 'he secretly wants to harm the child' is the lurid overreach his horror and lifelong gentleness defeat.",
   },
   {
     itemType: "mc",
     prompt:
-      "A thirteen-year-old gets crushing headaches every school morning. On weekends, holidays, and the entire summer the headaches vanish, and every medical test comes back normal. Which conclusion best follows?",
+      "A man texts his partner 'are we okay?' many times a day. A doubt that she's secretly angry rises, the question calms him when she answers warmly, but within an hour the doubt is back and he asks again — sometimes rewording it to feel sure. She feels worn down and he knows it, yet can't stop. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The mind and body are too tangled to ever say why a kid gets headaches, so we shouldn't read anything into the timing.",
+        text: "Couples check in with each other all the time; there's nothing to interpret in a few extra texts.",
         credit: 0,
       },
       {
-        text: "He seems to get headaches on school days.",
-        credit: 0.3,
-      },
-      {
-        text: "The headache likely expresses something about school that he can't yet put into words — the body carrying a distress (fear, dread, or pressure) that has no other outlet; test whether the headaches stay gone on a long break and return the first school morning, whether they cluster around a specific class or social situation, and whether they ease as he can name what he dreads at school.",
+        text: "The repeated asking likely runs an OCD reassurance loop: a doubt spikes anxiety, her answer briefly relieves it, and the relief reinforces the doubt so it returns and he must ask again — at a cost to the relationship he values; test whether each round follows the doubt rather than any real sign of trouble, whether the relief is short before the urge returns, and whether the doubt fades on its own when he resists asking.",
         credit: 1.0,
       },
       {
-        text: "It probably has to do with school stress; we could keep an eye on it.",
+        text: "He probably feels insecure in the relationship; we could explore that.",
         credit: 0.6,
+      },
+      {
+        text: "He seems to text her for reassurance a lot.",
+        credit: 0.3,
       },
     ],
     correctAnswer:
-      "The headache likely expresses something about school that he can't yet put into words — the body carrying a distress (fear, dread, or pressure) that has no other outlet; test whether the headaches stay gone on a long break and return the first school morning, whether they cluster around a specific class or social situation, and whether they ease as he can name what he dreads at school.",
+      "The repeated asking likely runs an OCD reassurance loop: a doubt spikes anxiety, her answer briefly relieves it, and the relief reinforces the doubt so it returns and he must ask again — at a cost to the relationship he values; test whether each round follows the doubt rather than any real sign of trouble, whether the relief is short before the urge returns, and whether the doubt fades on its own when he resists asking.",
     explanation:
-      "Full credit reads a symptom that tracks school days as meaningful and names a return-the-first-school-morning test; 'too tangled to ever say' is the dodge the clean school-only timing and normal tests defeat.",
+      "Full credit reads reassurance-seeking as the compulsion in the loop and names a resist-asking test; 'couples check in all the time' is the dodge the many-times-daily cost defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "Whenever a group of friends goes out, one man 'forgets' his wallet — but, examined over a year, it happens only on the evenings it would have been his turn to pay, never when someone else is covering. Which conclusion best follows?",
+      "Whenever a 'bad' thought crosses her mind, a woman silently repeats a specific phrase three times to 'cancel' it. The dread that not doing so will cause harm spikes hard; the cancelling eases it briefly, then the next bad thought restarts it. The mental ritual now runs dozens of times a day and exhausts her. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Everyone forgets their wallet sometimes; reading meaning into an honest mistake is overthinking it.",
+        text: "She seems to repeat a phrase to herself when bad thoughts come.",
+        credit: 0.3,
+      },
+      {
+        text: "The mind is unknowable, so there's no real way to say what her private mental habit is doing.",
         credit: 0,
       },
       {
-        text: "The 'forgetting' is probably not random but patterned — it spares him a cost he resents while letting him feel it was an accident rather than a choice; test whether the lapses really cluster only on his turns to pay, whether he reacts with relief rather than embarrassment, and whether the pattern stops once the unfairness he feels about money is talked through.",
+        text: "This looks like a mental-ritual OCD loop: an intrusive 'bad' thought spikes dread, the silent cancelling briefly relieves it, and that relief reinforces the link so the next thought reignites it dozens of times a day; test whether the cancelling follows the intrusive thought rather than any real event, whether the relief is brief before the dread returns, and whether the dread subsides on its own when she lets a thought stand without cancelling it.",
         credit: 1.0,
       },
       {
-        text: "He's probably avoiding paying without realizing it; we could watch and see.",
+        text: "She might be using the phrase to cope with anxious thoughts; we could look into it.",
         credit: 0.6,
-      },
-      {
-        text: "He seems forgetful about his wallet.",
-        credit: 0.3,
       },
     ],
     correctAnswer:
-      "The 'forgetting' is probably not random but patterned — it spares him a cost he resents while letting him feel it was an accident rather than a choice; test whether the lapses really cluster only on his turns to pay, whether he reacts with relief rather than embarrassment, and whether the pattern stops once the unfairness he feels about money is talked through.",
+      "This looks like a mental-ritual OCD loop: an intrusive 'bad' thought spikes dread, the silent cancelling briefly relieves it, and that relief reinforces the link so the next thought reignites it dozens of times a day; test whether the cancelling follows the intrusive thought rather than any real event, whether the relief is brief before the dread returns, and whether the dread subsides on its own when she lets a thought stand without cancelling it.",
     explanation:
-      "Top credit reads a slip that lands only on his turns as serving a hidden function and names a relief-vs-embarrassment test; 'everyone forgets sometimes' is the dodge the perfectly timed pattern defeats.",
+      "Top credit recognizes a covert compulsion running the same cycle and names a let-the-thought-stand test; 'the mind is unknowable' is the dodge the dozens-a-day exhaustion defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A woman insists she is 'genuinely thrilled' her younger sister just got engaged. Then she misreads the party date, double-books herself, and ends up missing the celebration — the only family event she has skipped in years. Which conclusion best follows?",
+      "An employee rereads every email a dozen times before sending, sure he has made an embarrassing error. The fear spikes as his cursor hovers over send; rereading calms it for a moment, then the doubt returns and he rereads again. Short messages now take him an hour, and his manager has noticed the slowdown. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "She seems to have missed the party by mistake.",
-        credit: 0.3,
-      },
-      {
-        text: "Scheduling slips happen; there's no reason to connect an honest mix-up to her feelings about her sister.",
+        text: "Proofreading is good practice; calling careful editing a problem is overthinking it.",
         credit: 0,
       },
       {
-        text: "The 'accident' likely expresses a mixed feeling her words deny — alongside real gladness, an envy or hurt she can't admit, which her actions enact for her; test whether such slips cluster around her sister's milestones specifically, whether she's quick to insist she isn't jealous before anyone asks, and whether the slips ease once any rivalry is openly acknowledged.",
+        text: "He probably gets anxious about making mistakes; we could keep an eye on it.",
+        credit: 0.6,
+      },
+      {
+        text: "The rereading likely runs an OCD checking loop: a doubt about errors spikes anxiety, each reread briefly relieves it, and the relief reinforces the doubt so it returns and he rereads again — at a real cost to his work; test whether the rereading follows the doubt rather than actual found errors, whether the relief is brief before the urge returns, and whether the anxiety settles on its own when he sends after a single read.",
         credit: 1.0,
       },
       {
-        text: "She might have complicated feelings about her sister; we could ask her.",
-        credit: 0.6,
+        text: "He seems to reread his emails many times.",
+        credit: 0.3,
       },
     ],
     correctAnswer:
-      "The 'accident' likely expresses a mixed feeling her words deny — alongside real gladness, an envy or hurt she can't admit, which her actions enact for her; test whether such slips cluster around her sister's milestones specifically, whether she's quick to insist she isn't jealous before anyone asks, and whether the slips ease once any rivalry is openly acknowledged.",
+      "The rereading likely runs an OCD checking loop: a doubt about errors spikes anxiety, each reread briefly relieves it, and the relief reinforces the doubt so it returns and he rereads again — at a real cost to his work; test whether the rereading follows the doubt rather than actual found errors, whether the relief is brief before the urge returns, and whether the anxiety settles on its own when he sends after a single read.",
     explanation:
-      "Full credit reads a one-off, out-of-character miss against insistent words as enacting a denied feeling and names a milestone-clustering test; 'mix-ups happen' is the dodge the contradiction between thrilled words and the only-skipped-event defeats.",
+      "Full credit reads compulsive checking driven by doubt-not-evidence and names a send-after-one-read test; 'proofreading is good practice' is the dodge the hour-per-email cost defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "Every time the conversation drifts toward his childhood, a patient suddenly checks his phone, cracks a joke, or asks the therapist a question about her weekend — smoothly steering away each time, though he is talkative about everything else. Which conclusion best follows?",
+      "Each night a woman checks that the front door is locked. But one check never settles it: a doubt that it might be open spikes, she checks, feels relief, then doubts the relief and checks again — often twenty times before bed. She knows it's locked and still cannot stop, and she is losing sleep. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Some people just don't like talking about the past; there's nothing to make of it.",
-        credit: 0,
+        text: "She seems to check the lock several times at night.",
+        credit: 0.3,
       },
       {
-        text: "He probably finds childhood uncomfortable; we could gently revisit it later.",
-        credit: 0.6,
-      },
-      {
-        text: "The reliable swerve likely marks the childhood material as charged — the very effort to avoid it points to where the meaning is, so the avoidance is itself a clue; test whether the deflections happen only around that topic and not others, whether his manner tightens just before he changes course, and whether staying with the topic a moment longer brings up something painful he's been steering past.",
+        text: "The checking likely runs an OCD loop where the relief itself feeds the doubt: a 'maybe it's open' thought spikes anxiety, checking relieves it momentarily, and the brief relief reinforces the doubt so she can never be sure enough — twenty rounds a night; test whether the checks follow the doubt rather than any real reason, whether each relief is undone within moments, and whether the doubt fades on its own when she checks just once and resists the rest.",
         credit: 1.0,
       },
       {
-        text: "He seems to change the subject when childhood comes up.",
-        credit: 0.3,
+        text: "Home security matters and people lock up differently, so there's nothing to read into her routine.",
+        credit: 0,
+      },
+      {
+        text: "She might be anxious about safety at night; we could ask about it.",
+        credit: 0.6,
       },
     ],
     correctAnswer:
-      "The reliable swerve likely marks the childhood material as charged — the very effort to avoid it points to where the meaning is, so the avoidance is itself a clue; test whether the deflections happen only around that topic and not others, whether his manner tightens just before he changes course, and whether staying with the topic a moment longer brings up something painful he's been steering past.",
+      "The checking likely runs an OCD loop where the relief itself feeds the doubt: a 'maybe it's open' thought spikes anxiety, checking relieves it momentarily, and the brief relief reinforces the doubt so she can never be sure enough — twenty rounds a night; test whether the checks follow the doubt rather than any real reason, whether each relief is undone within moments, and whether the doubt fades on its own when she checks just once and resists the rest.",
     explanation:
-      "Top credit reads the avoidance itself as a signpost to meaning and names a topic-specificity test; 'some people just don't like the past' is the dodge the reliable, topic-locked swerve in an otherwise talkative man defeats.",
+      "Top credit shows how brief relief reinforces doubt and names a check-once test; 'home security matters' is the dodge the twenty-checks-and-lost-sleep cost defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A man recites a long list of ailments and grievances each session, but brightens whenever the therapist leans in with concern, and looks deflated whenever a complaint is actually solved. At home, his family rallies around him only when he is suffering. Which conclusion best follows?",
+      "Two roommates both keep a tidy kitchen. One simply likes it clean and feels nothing if it's messy. The other feels a contamination thought spike, must wipe every surface in a fixed order, feels brief relief, and redoes it if interrupted — skipping meals to keep the ritual intact. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "His complaints likely serve a hidden function beyond the problems themselves — they reliably draw the care and attention he doesn't know how to ask for directly, so being better would cost him that closeness; test whether his mood lifts with concern but sags when a problem is fixed, whether new complaints appear as old ones resolve, and whether he can hold the care once he asks for connection openly.",
+        text: "Both roommates clearly have a cleaning compulsion, since they both keep the kitchen spotless.",
+        credit: 0,
+      },
+      {
+        text: "Only the second roommate's cleaning likely fits the OCD cycle: a contamination thought spikes anxiety, the fixed-order ritual gives brief relief that reinforces the fear, and interruption forces a restart — at the cost of meals — whereas the first feels no anxiety and pays no cost; test whether her wiping follows the thought rather than visible mess, whether relief is brief before the urge returns, and whether the anxiety settles on its own when she leaves a surface unwiped.",
         credit: 1.0,
       },
       {
-        text: "He's probably getting something out of complaining; we could look at that.",
+        text: "The second roommate probably takes cleaning more seriously; we could look into it.",
         credit: 0.6,
       },
       {
-        text: "He seems to complain a lot.",
+        text: "The second roommate seems to clean in a very particular way.",
         credit: 0.3,
-      },
-      {
-        text: "Some people are just negative by nature, so there's no deeper function to his complaining.",
-        credit: 0,
       },
     ],
     correctAnswer:
-      "His complaints likely serve a hidden function beyond the problems themselves — they reliably draw the care and attention he doesn't know how to ask for directly, so being better would cost him that closeness; test whether his mood lifts with concern but sags when a problem is fixed, whether new complaints appear as old ones resolve, and whether he can hold the care once he asks for connection openly.",
+      "Only the second roommate's cleaning likely fits the OCD cycle: a contamination thought spikes anxiety, the fixed-order ritual gives brief relief that reinforces the fear, and interruption forces a restart — at the cost of meals — whereas the first feels no anxiety and pays no cost; test whether her wiping follows the thought rather than visible mess, whether relief is brief before the urge returns, and whether the anxiety settles on its own when she leaves a surface unwiped.",
     explanation:
-      "Full credit reads complaining as serving a connection-seeking function and names a brightens-with-concern-but-sags-when-solved test; 'just negative by nature' is the dodge the deflation-at-solutions pattern defeats.",
+      "Full credit distinguishes an OCD loop from an ordinary preference by trigger, relief-cycle, and cost, and names a leave-it-unwiped test; 'both have a compulsion' is the dodge the first roommate's no-anxiety, no-cost cleaning defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A five-year-old who was fully toilet-trained for a year suddenly starts wetting the bed again — and the relapse began the same week his baby sister came home from the hospital. Which conclusion best follows?",
+      "A devout student is plagued by blasphemous thoughts during prayer. Convinced the thought itself is a sin, he prays the passage over from the start each time one intrudes, feels briefly clean, then another thought intrudes and he restarts. A short prayer now takes an hour, and he dreads going at all. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Kids regress for no reason all the time, so the timing with the new baby is just coincidence.",
-        credit: 0,
-      },
-      {
-        text: "It's probably about the new sibling; we could give it time.",
+        text: "He probably has some religious anxiety; we could revisit it.",
         credit: 0.6,
       },
       {
-        text: "The bedwetting likely carries a meaning he can't say — a bid to reclaim the babying and attention the newborn now receives, expressed through behavior because he lacks the words; test whether the relapse tracks moments the baby gets the most attention, whether other 'little' behaviors return alongside it, and whether it fades as he's given special time and helped to voice feeling displaced.",
+        text: "Faith is deeply personal, so there's no real way to know what his praying habits mean.",
+        credit: 0,
+      },
+      {
+        text: "This looks like a scrupulosity OCD loop: an unwanted blasphemous thought spikes guilt, restarting the prayer gives brief relief, and the relief reinforces the fear so the next intrusion restarts it — turning a short prayer into an hour he now dreads; test whether the restarting follows the intrusive thought rather than any real wrongdoing, whether the 'clean' feeling is brief before guilt returns, and whether the guilt subsides on its own when he prays through without restarting.",
         credit: 1.0,
       },
       {
-        text: "He seems to have started wetting the bed again.",
+        text: "He seems to start his prayers over a lot.",
         credit: 0.3,
       },
     ],
     correctAnswer:
-      "The bedwetting likely carries a meaning he can't say — a bid to reclaim the babying and attention the newborn now receives, expressed through behavior because he lacks the words; test whether the relapse tracks moments the baby gets the most attention, whether other 'little' behaviors return alongside it, and whether it fades as he's given special time and helped to voice feeling displaced.",
+      "This looks like a scrupulosity OCD loop: an unwanted blasphemous thought spikes guilt, restarting the prayer gives brief relief, and the relief reinforces the fear so the next intrusion restarts it — turning a short prayer into an hour he now dreads; test whether the restarting follows the intrusive thought rather than any real wrongdoing, whether the 'clean' feeling is brief before guilt returns, and whether the guilt subsides on its own when he prays through without restarting.",
     explanation:
-      "Top credit reads a symptom that tracks the sibling's arrival as a meaningful bid for attention and names a tracks-the-baby's-attention test; 'kids regress for no reason' is the dodge the exact timing defeats.",
+      "Top credit names a scrupulosity loop and a pray-through-without-restarting test; 'faith is personal' is the dodge the hour-long prayer and dread he reports defeat.",
   },
   {
     itemType: "mc",
     prompt:
-      "A talented designer redrafts every project endlessly, always finding one more flaw to fix, and as a result almost never submits anything — repeatedly missing chances she says she wants. Which conclusion best follows?",
+      "After a minor headache, a man becomes sure he has a brain tumor. He googles symptoms for hours and presses on his skull to 'check,' which calms him for a few minutes until a new sensation restarts the fear. Every scan has been clean, yet the searching has taken over his evenings. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "She seems like a perfectionist.",
+        text: "He seems worried about his health.",
         credit: 0.3,
       },
       {
-        text: "The endless polishing likely serves a function beyond quality — as long as the work is 'not finished,' it can never be judged and found wanting, so perfectionism shields her from a feared verdict; test whether the redrafting intensifies precisely as a deadline or audience nears, whether she feels dread rather than pride at the point of submitting, and whether she can let work go once the fear of being judged is addressed.",
+        text: "The googling and self-checking likely run an OCD-style health loop: a catastrophic thought spikes fear, searching and checking briefly relieve it, and the relief reinforces the fear so each new sensation restarts it despite clean scans; test whether the checking follows the feared thought rather than any real finding, whether relief is brief before the fear returns, and whether the fear settles on its own when he resists googling and checking.",
         credit: 1.0,
       },
       {
-        text: "Some people are wired to be perfectionists, so there's nothing underneath it to understand.",
+        text: "Health worries are universal and bodies are unpredictable, so there's nothing specific to conclude here.",
         credit: 0,
       },
       {
-        text: "She's probably afraid of being judged; we could talk about her standards.",
+        text: "He's probably anxious about his health; we could keep track of it.",
         credit: 0.6,
       },
     ],
     correctAnswer:
-      "The endless polishing likely serves a function beyond quality — as long as the work is 'not finished,' it can never be judged and found wanting, so perfectionism shields her from a feared verdict; test whether the redrafting intensifies precisely as a deadline or audience nears, whether she feels dread rather than pride at the point of submitting, and whether she can let work go once the fear of being judged is addressed.",
+      "The googling and self-checking likely run an OCD-style health loop: a catastrophic thought spikes fear, searching and checking briefly relieve it, and the relief reinforces the fear so each new sensation restarts it despite clean scans; test whether the checking follows the feared thought rather than any real finding, whether relief is brief before the fear returns, and whether the fear settles on its own when he resists googling and checking.",
     explanation:
-      "Full credit reads perfectionism as serving avoidance of judgment and names an intensifies-as-the-deadline-nears test; 'just wired that way' is the dodge the self-defeating, against-her-wishes pattern defeats.",
+      "Full credit reads checking-as-compulsion feeding the fear and names a resist-the-search test; 'health worries are universal' is the dodge the clean scans and lost evenings defeat.",
   },
   {
     itemType: "mc",
     prompt:
-      "While describing the night her father walked out when she was eight — a memory she calls 'no big deal' — a woman smiles and even chuckles, though her eyes well up at the same moment. Which conclusion best follows?",
+      "A woman must touch both sides of every doorframe to keep things 'balanced.' If she touches one side, a lopsided dread rises until she touches the other, which settles it for a moment before the next doorway. She is often late and her hands are raw, and she says the balance is never quite enough. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "People react to memories in odd ways; the smile while tearing up doesn't tell us anything in particular.",
+        text: "People have all kinds of little habits with doorways; there's nothing to make of it.",
         credit: 0,
       },
       {
-        text: "The mismatch between her light words and her welling eyes likely marks a grief she has learned to wave off, so the feeling leaks out even as she minimizes it; test whether the tears come specifically at the abandonment detail, whether her 'no big deal' framing softens when the sadness is named, and whether other losses get the same smile-it-away treatment.",
+        text: "She might have a balancing habit that's gotten out of hand; we could look into it.",
+        credit: 0.6,
+      },
+      {
+        text: "The symmetry touching likely runs an OCD loop: a lopsided 'unbalanced' feeling spikes dread, evening it out gives brief relief, and the relief reinforces the rule so the next doorway reignites it — never quite enough; test whether the second touch follows the unbalanced feeling rather than any real need, whether relief is momentary before the urge returns, and whether the dread fades on its own when she passes through touching neither side.",
         credit: 1.0,
       },
       {
-        text: "She seems to have mixed reactions to the memory.",
+        text: "She seems to touch both sides of doorways.",
         credit: 0.3,
-      },
-      {
-        text: "There may be more feeling there than she admits; we could revisit it.",
-        credit: 0.6,
       },
     ],
     correctAnswer:
-      "The mismatch between her light words and her welling eyes likely marks a grief she has learned to wave off, so the feeling leaks out even as she minimizes it; test whether the tears come specifically at the abandonment detail, whether her 'no big deal' framing softens when the sadness is named, and whether other losses get the same smile-it-away treatment.",
+      "The symmetry touching likely runs an OCD loop: a lopsided 'unbalanced' feeling spikes dread, evening it out gives brief relief, and the relief reinforces the rule so the next doorway reignites it — never quite enough; test whether the second touch follows the unbalanced feeling rather than any real need, whether relief is momentary before the urge returns, and whether the dread fades on its own when she passes through touching neither side.",
     explanation:
-      "Top credit treats the gap between minimizing words and welling eyes as the real signal and names a tears-at-the-abandonment-detail test; 'people react in odd ways' is the dodge the precise affect-content mismatch defeats.",
+      "Top credit names the symmetry loop and a touch-neither-side test; 'people have little habits' is the dodge the raw hands and never-enough quality defeat.",
   },
   {
     itemType: "mc",
     prompt:
-      "A capable man has, four times now, quit a job abruptly within days of being told a promotion was coming — each time citing a different, plausible-sounding reason. Which conclusion best follows?",
+      "A man asks his wife to confirm, over and over, that he didn't 'accidentally say something offensive' at a party weeks ago. A doubt spikes, her reassurance calms him briefly, then he doubts her answer and asks again — recruiting friends too. No one recalls anything wrong, yet the questioning consumes his days. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He probably has some issue with success; we could explore his job history.",
-        credit: 0.6,
-      },
-      {
-        text: "Sometimes people just change jobs; four different reasons means four separate decisions, nothing more.",
+        text: "It's normal to wonder how you came across socially, so this is just ordinary self-consciousness.",
         credit: 0,
       },
       {
-        text: "He seems to leave jobs around promotion time.",
-        credit: 0.3,
+        text: "The repeated seeking of confirmation likely runs an OCD reassurance loop: a doubt spikes anxiety, each reassurance gives brief relief, and the relief reinforces the doubt so it returns and he must ask again — even doubting the answers; test whether the asking follows the doubt rather than any real evidence of offense, whether relief is brief before the doubt returns, and whether the doubt subsides on its own when he resists seeking reassurance.",
+        credit: 1.0,
       },
       {
-        text: "The repetition likely reveals an out-of-awareness conflict about rising — perhaps a fear of the exposure, expectation, or rivalry that success brings — that he resolves by leaving before he can be elevated, then explains away; test whether the exits really cluster at the moment of advancement and not at random, whether he feels relief rather than regret afterward, and whether the urge to flee softens once the fear behind it is named.",
-        credit: 1.0,
+        text: "He probably feels anxious about the party; we could revisit it.",
+        credit: 0.6,
+      },
+      {
+        text: "He seems to keep asking about the party.",
+        credit: 0.3,
       },
     ],
     correctAnswer:
-      "The repetition likely reveals an out-of-awareness conflict about rising — perhaps a fear of the exposure, expectation, or rivalry that success brings — that he resolves by leaving before he can be elevated, then explains away; test whether the exits really cluster at the moment of advancement and not at random, whether he feels relief rather than regret afterward, and whether the urge to flee softens once the fear behind it is named.",
+      "The repeated seeking of confirmation likely runs an OCD reassurance loop: a doubt spikes anxiety, each reassurance gives brief relief, and the relief reinforces the doubt so it returns and he must ask again — even doubting the answers; test whether the asking follows the doubt rather than any real evidence of offense, whether relief is brief before the doubt returns, and whether the doubt subsides on its own when he resists seeking reassurance.",
     explanation:
-      "Full credit reads four differently-explained exits at the same threshold as one patterned conflict and names a clusters-at-advancement test; 'four separate decisions, nothing more' is the dodge the identical timing defeats.",
+      "Full credit reads reassurance-seeking as the compulsion in the loop, including doubt of the answers, and names a resist-asking test; 'ordinary self-consciousness' is the dodge the days-long, recruit-friends scale defeats.",
   },
   {
     itemType: "mc",
     prompt:
-      "A woman says learning the piano is her great passion and she'd give anything for it — yet for three years she has 'never found the time,' even though she spends long evenings scrolling her phone and the rented keyboard sits untouched. Which conclusion best follows?",
+      "A college runner counts her steps in multiples of five; if a route doesn't land on a 'safe' number, a dread that a loved one will be hurt forces her to add steps until it does. The count settles her briefly, then the next walk restarts it. She now plans detours around the counting and arrives late everywhere. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "She seems too busy to practice.",
+        text: "She seems to count her steps on walks.",
         credit: 0.3,
       },
       {
-        text: "Everyone's busy and hobbies fall away; there's nothing to interpret in skipping piano.",
-        credit: 0,
-      },
-      {
-        text: "The gap between her stated passion and her untouched keyboard likely points to a hidden function in not starting — keeping the dream untested protects it (and her) from the risk of being mediocre at the thing she most prizes; test whether she avoids practice most when she has clear free time, whether she feels anxiety rather than mere indifference near the keyboard, and whether she can begin once the fear of not being good is named.",
+        text: "The step-counting likely runs an OCD loop: a magical 'someone will be hurt' thought spikes dread, hitting a safe number gives brief relief, and the relief reinforces the rule so the next walk reignites it — driving detours and lateness; test whether the adding-steps follows the dread-thought rather than any real risk, whether relief is brief before the urge returns, and whether the dread settles on its own when she walks without counting.",
         credit: 1.0,
       },
       {
-        text: "She probably has mixed feelings about starting; we could talk it over.",
+        text: "Athletes track numbers all the time, so there's nothing unusual to interpret in her counting.",
+        credit: 0,
+      },
+      {
+        text: "She might have a counting habit tied to worry; we could ask her.",
         credit: 0.6,
       },
     ],
     correctAnswer:
-      "The gap between her stated passion and her untouched keyboard likely points to a hidden function in not starting — keeping the dream untested protects it (and her) from the risk of being mediocre at the thing she most prizes; test whether she avoids practice most when she has clear free time, whether she feels anxiety rather than mere indifference near the keyboard, and whether she can begin once the fear of not being good is named.",
+      "The step-counting likely runs an OCD loop: a magical 'someone will be hurt' thought spikes dread, hitting a safe number gives brief relief, and the relief reinforces the rule so the next walk reignites it — driving detours and lateness; test whether the adding-steps follows the dread-thought rather than any real risk, whether relief is brief before the urge returns, and whether the dread settles on its own when she walks without counting.",
     explanation:
-      "Top credit reads 'no time' against hours of scrolling as a protective avoidance and names an avoids-most-when-free test; 'everyone's busy' is the dodge the available-but-unused time defeats.",
+      "Top credit reads magical counting as the compulsion in the loop and names a walk-without-counting test; 'athletes track numbers' is the dodge the harm-fear, detours, and lateness defeat.",
   },
 ];
 
@@ -417,425 +417,425 @@ const hybrid: HomeworkItem[] = [
   {
     itemType: "hybrid",
     prompt:
-      "A man is punctual for work, dates, and his commute, but has arrived ten minutes late to every therapy session for two months. He apologizes warmly each time and seems puzzled by it himself. Which conclusion best follows?",
+      "A man flips the light switch off and on until it feels 'right' before leaving any room. A not-right feeling spikes if he stops too soon; the flipping settles it briefly, then the next room restarts it. He is calm and switch-free everywhere else in life and only does this with light switches. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He seems to run late for therapy.",
+        text: "He seems particular about light switches.",
         credit: 0.3,
       },
       {
-        text: "The lateness — specific to therapy while he's punctual everywhere else — likely carries a meaning about the session itself, perhaps a wish to limit how much it can reach him by shaving time off each one; test whether the lateness eases when sessions feel safe and worsens before hard topics, whether he's relieved to have 'less time,' and whether naming the wish to keep therapy at arm's length changes the pattern.",
+        text: "The switch-flipping — specific to switches while he's otherwise ritual-free — likely runs an OCD loop: a not-right feeling spikes tension, flipping until 'right' gives brief relief, and the relief reinforces the rule so each room reignites it; test whether the flipping follows the not-right feeling rather than any real need for light, whether relief is brief before the urge returns, and whether the tension settles on its own when he leaves a switch after one flip.",
         credit: 1.0,
       },
       {
-        text: "Lateness is just a habit some people have; reading meaning into a few late arrivals is overthinking.",
+        text: "Fiddling with switches is a common habit; reading a loop into it is overthinking.",
         credit: 0,
       },
       {
-        text: "It's probably about something to do with therapy; we could keep noticing it.",
+        text: "He probably has a thing about switches; we could keep noticing it.",
         credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'lateness is specific to therapy' lead from the rival 'he's simply a chronically late person,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'this is an OCD switch-flipping loop' lead from the rival 'he's just a fidgety person who fiddles with everything,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: check his punctuality across his other commitments — work, dates, the commute — since lateness that appears only for therapy points to a meaning about the session rather than a general trait. My lead is refuted if he turns out to run late for everything equally, which would make it a habit rather than a signal about therapy.",
+        "Cheapest test: watch whether the ritual is locked to light switches and driven by a not-right feeling while he handles everything else without rituals — a loop confined to switches and triggered by the feeling points to OCD rather than general fidgeting. My lead is refuted if he fiddles compulsively with all sorts of objects equally, which would make it an all-purpose habit rather than a specific loop.",
       yieldAnchors: [
-        "He is punctual everywhere except therapy",
-        "He has been late to every session for two months",
-        "He is puzzled by his own lateness",
+        "The flipping is specific to light switches",
+        "A not-right feeling spikes if he stops too soon",
+        "He is calm and ritual-free everywhere else",
       ],
       riskAnchors: [
-        "The lateness eases when sessions feel safe",
-        "It worsens right before difficult topics",
-        "Naming the wish to keep therapy at arm's length changes it",
+        "The flipping follows the not-right feeling, not a need for light",
+        "Relief is brief before the urge returns",
+        "Tension settles on its own when he leaves after one flip",
       ],
       defeatedBy: [
-        "He is late for every appointment in his life",
-        "The lateness has no relation to what happens in session",
+        "He fiddles compulsively with all objects equally",
+        "The flipping bears no relation to a not-right feeling",
       ],
     },
     correctAnswer:
-      "The lateness — specific to therapy while he's punctual everywhere else — likely carries a meaning about the session itself, perhaps a wish to limit how much it can reach him by shaving time off each one; test whether the lateness eases when sessions feel safe and worsens before hard topics, whether he's relieved to have 'less time,' and whether naming the wish to keep therapy at arm's length changes the pattern.",
+      "The switch-flipping — specific to switches while he's otherwise ritual-free — likely runs an OCD loop: a not-right feeling spikes tension, flipping until 'right' gives brief relief, and the relief reinforces the rule so each room reignites it; test whether the flipping follows the not-right feeling rather than any real need for light, whether relief is brief before the urge returns, and whether the tension settles on its own when he leaves a switch after one flip.",
     explanation:
-      "Full credit reads therapy-specific lateness as meaningful and is paired with a check-his-other-commitments test that names its own refutation; 'lateness is just a habit' is the dodge his punctuality everywhere else defeats.",
+      "Full credit reads a trigger-specific loop and is paired with a is-it-locked-to-switches test that names its refutation; 'fiddling is common' is the dodge the switch-specific, not-right-driven pattern defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A woman's migraines began the same month her father was diagnosed with a serious illness. She says the two are unrelated — 'I'm handling Dad's news fine' — yet the headaches spike on the days she visits him in the hospital. Which conclusion best follows?",
+      "A nurse washes correctly at work without distress, but at home a contamination thought spikes whenever she touches the mail, and she scrubs to her elbows until it feels clean, only for the next 'dirty' item to restart it. The washing is confined to home and to specific 'contaminated' objects. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Migraines have medical causes, so tying them to her father's illness is reading too much in.",
+        text: "Hand-washing has real medical value, so it's a stretch to call any of her washing a problem.",
         credit: 0,
       },
       {
-        text: "She probably has some stress around her father; we could keep track of the headaches.",
+        text: "She probably has some contamination worry at home; we could track it.",
         credit: 0.6,
       },
       {
-        text: "The migraines likely voice a distress about her father's illness that her words deny, with the body carrying what she insists she's 'handling fine'; test whether the headaches spike specifically on visit days, whether they ease on days she lets herself feel the fear, and whether they began at no other life change but this one.",
+        text: "The home washing — triggered by a thought, not visible dirt, and absent in her competent work routine — likely runs an OCD loop: the contamination thought spikes anxiety, scrubbing gives brief relief, and the relief reinforces the fear so the next item reignites it; test whether each wash follows the thought rather than real soiling, whether relief is brief before the urge returns, and whether the anxiety subsides on its own when she handles the mail without washing.",
         credit: 1.0,
       },
       {
-        text: "She seems to get migraines lately.",
+        text: "She seems to wash a lot at home.",
         credit: 0.3,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'the headaches track distress about her father' lead from the rival 'this is an ordinary medical migraine pattern,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'home washing is an OCD contamination loop' lead from the rival 'she's simply a careful, hygienic nurse,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: compare headache frequency on hospital-visit days against matched ordinary days — a clean spike tied to seeing her father points to meaning rather than a random medical pattern. My lead is refuted if the migraines are spread evenly across all days regardless of whether she visits, which would fit a purely physical cause.",
+        "Cheapest test: check whether the home washing is set off by a contamination thought rather than visible dirt and is absent from her composed work routine — washing driven by the thought and confined to home points to a loop rather than professional hygiene. My lead is refuted if she only washes when something is actually soiled and shows the same calm, proportionate hygiene at home as at work.",
       yieldAnchors: [
-        "The migraines began the month of the diagnosis",
-        "They spike on hospital-visit days",
-        "She insists she is handling the news fine",
+        "She washes calmly and correctly at work",
+        "At home a contamination thought triggers scrubbing",
+        "The next 'dirty' item restarts the washing",
       ],
       riskAnchors: [
-        "Headaches cluster on visit days specifically",
-        "They ease when she lets herself feel the fear",
-        "They began at no other life change but this one",
+        "Each wash follows the thought, not real soiling",
+        "Relief is brief before the urge returns",
+        "Anxiety subsides on its own when she skips washing",
       ],
       defeatedBy: [
-        "The migraines occur evenly regardless of visits",
-        "They predate her father's diagnosis",
+        "She washes only when something is actually soiled",
+        "Her home hygiene matches her proportionate work hygiene",
       ],
     },
     correctAnswer:
-      "The migraines likely voice a distress about her father's illness that her words deny, with the body carrying what she insists she's 'handling fine'; test whether the headaches spike specifically on visit days, whether they ease on days she lets herself feel the fear, and whether they began at no other life change but this one.",
+      "The home washing — triggered by a thought, not visible dirt, and absent in her competent work routine — likely runs an OCD loop: the contamination thought spikes anxiety, scrubbing gives brief relief, and the relief reinforces the fear so the next item reignites it; test whether each wash follows the thought rather than real soiling, whether relief is brief before the urge returns, and whether the anxiety subsides on its own when she handles the mail without washing.",
     explanation:
-      "Top credit reads a symptom that tracks the father's illness as meaningful and is paired with a visit-days-vs-ordinary-days test that names its refutation; 'migraines are medical' is the dodge the visit-day spikes and exact onset defeat.",
+      "Top credit reads a thought-triggered loop that spares her work routine and is paired with a thought-vs-real-dirt test that names its refutation; 'washing has medical value' is the dodge the home-only, thought-driven scrubbing defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A man tells everyone he loves his job and feels lucky to have it. Yet he calls in sick almost every Monday, dreads Sunday nights, and lights up only when describing his weekends. Which conclusion best follows?",
+      "A driver becomes convinced he may have hit a pedestrian, though he saw nothing. The thought spikes hard, he circles back to check the road, feels relief on finding nothing, then doubts what he saw and circles again. It happens only on his evening commute and nowhere else in his day. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Lots of people dislike Mondays; there's nothing to interpret in a few sick days.",
+        text: "Driving accidents are a real danger, so checking the road carefully is just being responsible.",
         credit: 0,
       },
       {
-        text: "His Monday absences and Sunday dread likely tell the truth his words won't — that he's unhappy at work in a way he can't admit, so his behavior says what he can't; test whether the sick days cluster on work days and not weekends, whether his mood reliably drops as the work week nears, and whether his stated love of the job softens once the dread is taken seriously.",
+        text: "The circling-back — set off by a doubt, not by anything he saw, and confined to his commute — likely runs an OCD 'hit-and-run' loop: the intrusive thought spikes dread, checking gives brief relief, and the relief reinforces the doubt so he must check again; test whether the checking follows the thought rather than any real impact, whether relief is brief before the doubt returns, and whether the dread settles on its own when he drives on without circling back.",
         credit: 1.0,
       },
       {
-        text: "He seems to miss a lot of Mondays.",
+        text: "He seems to double back on his commute.",
         credit: 0.3,
       },
       {
-        text: "He might not like work as much as he says; we could ask him.",
+        text: "He's probably anxious about driving; we could look into it.",
         credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'his behavior reveals hidden unhappiness at work' lead from the rival 'he genuinely loves the job and just has bad luck with illness,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'this is a hit-and-run OCD checking loop' lead from the rival 'he's a cautious driver responding to a real near-miss,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: check whether the sick days fall specifically on work days while weekends stay symptom-free — illness that politely avoids his days off points to dread rather than a virus. My lead is refuted if his absences are scattered across weekends and weekdays alike with genuine documented illness, which would fit real bad luck rather than hidden unhappiness.",
+        "Cheapest test: note whether the circling-back follows a pure doubt with no perceived impact and recurs on the same commute regardless of conditions — checking driven by the thought rather than any event points to a loop. My lead is refuted if he only doubles back after an actual bump or near-miss he can describe, which would make it a reasonable response to real danger.",
       yieldAnchors: [
-        "He says he loves his job",
-        "He calls in sick almost every Monday",
-        "He dreads Sunday nights and lights up about weekends",
+        "He saw nothing yet is convinced he hit someone",
+        "He circles back, feels relief, then doubts and circles again",
+        "It happens only on his evening commute",
       ],
       riskAnchors: [
-        "Sick days cluster on work days, not weekends",
-        "His mood drops as the work week nears",
-        "His stated love of the job softens when dread is named",
+        "The checking follows the thought, not a real impact",
+        "Relief is brief before the doubt returns",
+        "Dread settles on its own when he drives on",
       ],
       defeatedBy: [
-        "His absences are random and medically verified",
-        "He feels just as low on weekends as on Mondays",
+        "He only doubles back after a real bump or near-miss",
+        "The checking tracks road conditions rather than the thought",
       ],
     },
     correctAnswer:
-      "His Monday absences and Sunday dread likely tell the truth his words won't — that he's unhappy at work in a way he can't admit, so his behavior says what he can't; test whether the sick days cluster on work days and not weekends, whether his mood reliably drops as the work week nears, and whether his stated love of the job softens once the dread is taken seriously.",
+      "The circling-back — set off by a doubt, not by anything he saw, and confined to his commute — likely runs an OCD 'hit-and-run' loop: the intrusive thought spikes dread, checking gives brief relief, and the relief reinforces the doubt so he must check again; test whether the checking follows the thought rather than any real impact, whether relief is brief before the doubt returns, and whether the dread settles on its own when he drives on without circling back.",
     explanation:
-      "Full credit reads the gap between loving-words and Monday-avoidance as the real signal and is paired with a work-days-vs-weekends test that names its refutation; 'lots of people dislike Mondays' is the dodge the reliable Sunday dread defeats.",
+      "Full credit reads a doubt-driven checking loop and is paired with a was-there-a-real-impact test that names its refutation; 'just a responsible driver' is the dodge the saw-nothing-yet-certain pattern defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "Over two years, a woman has 'lost' or broken nearly every gift her partner has given her — a scarf, a bracelet, a framed photo — while keeping her own possessions carefully. She feels terrible each time and calls herself clumsy. Which conclusion best follows?",
+      "A woman keeps every receipt, wrapper, and broken object, gripped by the thought that throwing something away will lead to disaster. Discarding spikes dread; keeping settles it briefly, then the next item restarts the worry. Her rooms are now impassable and she has stopped having anyone over. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "She probably has some unspoken feeling about the gifts; we could look into it.",
-        credit: 0.6,
-      },
-      {
-        text: "People lose things; calling a string of accidents meaningful is reading tea leaves.",
+        text: "Plenty of people are sentimental savers; there's nothing here to interpret.",
         credit: 0,
       },
       {
-        text: "The pattern — careful with her own things, careless only with his gifts — likely enacts a mixed feeling about the relationship or about receiving, something she can't say so her actions perform it; test whether the 'accidents' really spare her own belongings, whether they cluster after tension with her partner, and whether they stop once any ambivalence about him or about being given to is voiced.",
+        text: "She might have trouble letting go of things; we could explore it.",
+        credit: 0.6,
+      },
+      {
+        text: "The saving likely runs an OCD loop, not mere sentiment: a 'disaster if I discard' thought spikes dread, keeping the item gives brief relief, and the relief reinforces the fear so the next item reignites it — at the cost of livable rooms; test whether the keeping follows the dread-thought rather than any real value, whether relief is brief before the worry returns, and whether the dread settles on its own when she discards one item and resists retrieving it.",
         credit: 1.0,
       },
       {
-        text: "She seems to keep losing his gifts.",
+        text: "She seems to hold on to a lot of things.",
         credit: 0.3,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'the losses enact a mixed feeling toward the gifts' lead from the rival 'she is simply a clumsy, forgetful person,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'this saving is a fear-driven OCD loop' lead from the rival 'she's simply a sentimental keeper of things,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: compare how she treats his gifts versus her own equally fragile, valued possessions — damage that lands only on his gifts while hers survive points to meaning, not general clumsiness. My lead is refuted if she loses and breaks her own things just as often, which would make it ordinary carelessness rather than a signal about the relationship.",
+        "Cheapest test: watch whether discarding any item triggers a disaster fear that only keeping relieves, regardless of the item's worth — dread tied to discarding rather than affection for the object points to a loop. My lead is refuted if she keeps only genuinely meaningful things, parts easily with junk, and feels no dread when throwing wrappers away.",
       yieldAnchors: [
-        "She has lost or broken nearly every gift from her partner",
-        "She keeps her own possessions carefully",
-        "She feels terrible and calls herself clumsy",
+        "She keeps receipts, wrappers, and broken objects",
+        "Discarding spikes a disaster fear that keeping relieves",
+        "Her rooms are impassable and she has guests no more",
       ],
       riskAnchors: [
-        "The 'accidents' spare her own belongings",
-        "They cluster after tension with her partner",
-        "They stop once ambivalence about him is voiced",
+        "The keeping follows the dread-thought, not real value",
+        "Relief is brief before the worry returns",
+        "Dread settles when she discards and resists retrieving",
       ],
       defeatedBy: [
-        "She loses her own valued things just as often",
-        "The losses are unrelated to the state of the relationship",
+        "She keeps only meaningful things and discards junk easily",
+        "Throwing wrappers away produces no dread at all",
       ],
     },
     correctAnswer:
-      "The pattern — careful with her own things, careless only with his gifts — likely enacts a mixed feeling about the relationship or about receiving, something she can't say so her actions perform it; test whether the 'accidents' really spare her own belongings, whether they cluster after tension with her partner, and whether they stop once any ambivalence about him or about being given to is voiced.",
+      "The saving likely runs an OCD loop, not mere sentiment: a 'disaster if I discard' thought spikes dread, keeping the item gives brief relief, and the relief reinforces the fear so the next item reignites it — at the cost of livable rooms; test whether the keeping follows the dread-thought rather than any real value, whether relief is brief before the worry returns, and whether the dread settles on its own when she discards one item and resists retrieving it.",
     explanation:
-      "Top credit reads selectively-damaged gifts as enacting ambivalence and is paired with a his-gifts-vs-her-own test that names its refutation; 'people lose things' is the dodge the her-things-survive selectivity defeats.",
+      "Top credit reads fear-driven saving as a loop and is paired with a does-discarding-trigger-dread test that names its refutation; 'sentimental savers' is the dodge the impassable rooms and disaster-fear defeat.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A woman says she wants a close, lasting relationship more than anything. Yet each time a partner becomes warm and committed, she picks a sharp fight over something minor and pulls away — a sequence that has ended four promising relationships. Which conclusion best follows?",
+      "Every night a father checks his children's breathing many times, sure they will stop if he doesn't. The thought spikes dread, a check settles it briefly, then the doubt returns and he checks again — sometimes waking them. He is exhausted and they sleep poorly, yet he cannot stop. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "The fights — timed to moments of growing closeness — likely serve a function she doesn't intend: creating distance when intimacy starts to feel threatening, so she controls the leaving before she can be hurt; test whether the conflicts reliably erupt right as things deepen rather than randomly, whether the 'minor' triggers are pretexts she can barely recall later, and whether she can tolerate closeness once the fear under it is named.",
-        credit: 1.0,
-      },
-      {
-        text: "She seems to fight with her partners.",
+        text: "He seems to check on his kids at night.",
         credit: 0.3,
       },
       {
-        text: "Relationships are complicated and end for all sorts of reasons, so there's no pattern to read here.",
+        text: "The repeated checking likely runs an OCD loop: a 'they'll stop breathing' thought spikes dread, each check gives brief relief, and the relief reinforces the doubt so it returns and he checks again — costing everyone sleep; test whether the checking follows the thought rather than any real sign, whether relief is brief before the doubt returns, and whether the dread settles on its own when he resists a check and lets the worry pass.",
+        credit: 1.0,
+      },
+      {
+        text: "Caring parents check on their children, so this is just devoted parenting.",
         credit: 0,
       },
       {
-        text: "She might be scared of closeness; we could talk about her relationships.",
+        text: "He's probably an anxious parent; we could keep an eye on it.",
         credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'the fights create distance when intimacy threatens' lead from the rival 'her partners simply happened to become difficult,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'this is an OCD checking loop' lead from the rival 'he's an attentive parent doing a normal nighttime check,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: map the timing of each blow-up against the relationship's trajectory — fights that erupt precisely as warmth and commitment grow point to intimacy-driven distancing rather than genuine partner problems. My lead is refuted if the conflicts arise at random points or clearly track real misconduct by her partners rather than moments of closeness.",
+        "Cheapest test: see whether the checks are driven by a recurring catastrophic thought and repeated past all reassurance to the point of waking the kids — checking that can never settle and costs everyone sleep points to a loop. My lead is refuted if a single calm check satisfies him and he sleeps fine, which would fit ordinary attentive parenting.",
       yieldAnchors: [
-        "She says she wants lasting closeness most of all",
-        "She picks fights just as partners become warm and committed",
-        "The sequence has ended four promising relationships",
+        "He checks breathing many times a night",
+        "A check relieves the dread briefly before doubt returns",
+        "He is exhausted and the children sleep poorly",
       ],
       riskAnchors: [
-        "Conflicts erupt as things deepen, not randomly",
-        "The triggers are minor pretexts she barely recalls",
-        "She tolerates closeness once the fear is named",
+        "The checking follows the thought, not a real sign",
+        "Relief is brief before the doubt returns",
+        "Dread settles on its own when he resists a check",
       ],
       defeatedBy: [
-        "The fights occur at random relationship stages",
-        "Her partners genuinely behaved badly each time",
+        "A single calm check satisfies him for the night",
+        "His checking causes no cost to sleep or function",
       ],
     },
     correctAnswer:
-      "The fights — timed to moments of growing closeness — likely serve a function she doesn't intend: creating distance when intimacy starts to feel threatening, so she controls the leaving before she can be hurt; test whether the conflicts reliably erupt right as things deepen rather than randomly, whether the 'minor' triggers are pretexts she can barely recall later, and whether she can tolerate closeness once the fear under it is named.",
+      "The repeated checking likely runs an OCD loop: a 'they'll stop breathing' thought spikes dread, each check gives brief relief, and the relief reinforces the doubt so it returns and he checks again — costing everyone sleep; test whether the checking follows the thought rather than any real sign, whether relief is brief before the doubt returns, and whether the dread settles on its own when he resists a check and lets the worry pass.",
     explanation:
-      "Full credit reads closeness-timed fights as serving distance and is paired with a map-the-timing test that names its refutation; 'relationships end for all sorts of reasons' is the dodge the four-times-at-the-same-moment pattern defeats.",
+      "Full credit reads a never-settling checking loop and is paired with a does-one-check-satisfy test that names its refutation; 'devoted parenting' is the dodge the wake-the-kids, can't-stop cost defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "Whenever a charged topic comes up, a patient quietly begins lining up the pens on the table, straightening the tissue box, and smoothing his sleeves — small tidying that appears only at those moments and stops once the topic passes. Which conclusion best follows?",
+      "A woman avoids stepping on cracks in the sidewalk, certain that a misstep means harm to her mother. A near-miss spikes dread, careful stepping settles it briefly, then the next stretch of pavement restarts it. She now takes long detours and avoids walking with friends so no one will notice. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He seems fidgety when certain things come up.",
-        credit: 0.3,
-      },
-      {
-        text: "Fidgeting is just a nervous habit; there's nothing to read into a bit of tidying.",
+        text: "Avoiding cracks is a childhood game; making anything of it is overthinking.",
         credit: 0,
       },
       {
-        text: "The tidying likely serves a function — a way to manage a rising anxiety by doing something small and controllable just as an uncontrollable feeling stirs, so the habit marks where the charge is; test whether the tidying appears only around specific topics and not others, whether his speech tightens or trails off as it starts, and whether naming the feeling at that moment makes the tidying unnecessary.",
+        text: "The crack-avoidance — driven by a harm fear and paid for in detours and isolation — likely runs an OCD loop: the magical thought spikes dread, careful stepping gives brief relief, and the relief reinforces the rule so each stretch reignites it; test whether the avoidance follows the dread-thought rather than any real hazard, whether relief is brief before the urge returns, and whether the dread settles on its own when she walks normally and steps on a crack on purpose.",
         credit: 1.0,
       },
       {
-        text: "He probably tidies when he's anxious; we could watch for it.",
+        text: "She probably has a superstition about cracks; we could ask her.",
         credit: 0.6,
+      },
+      {
+        text: "She seems to avoid cracks in the pavement.",
+        credit: 0.3,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'tidying manages anxiety at charged moments' lead from the rival 'he's just a restless person who always fidgets,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'this is a magical-harm OCD loop' lead from the rival 'it's a harmless leftover childhood game,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: note whether the tidying appears only around emotionally charged topics and disappears during neutral talk — behavior locked to charged moments points to anxiety management rather than general restlessness. My lead is refuted if he tidies just as much during small talk and silence as during difficult material, which would make it an all-purpose fidget.",
+        "Cheapest test: have her deliberately step on a crack and see whether a real spike of dread about her mother follows and whether the avoidance is costing her detours and company — dread and cost point to a loop, not a game. My lead is refuted if stepping on a crack produces no anxiety and she avoids cracks only playfully without any disruption to her life.",
       yieldAnchors: [
-        "The tidying appears only at charged moments",
-        "It stops once the topic passes",
-        "It is small, controllable, repetitive behavior",
+        "She avoids cracks to prevent harm to her mother",
+        "Careful stepping relieves dread that the next stretch revives",
+        "She takes detours and avoids walking with friends",
       ],
       riskAnchors: [
-        "The tidying is topic-specific, not constant",
-        "His speech tightens or trails off as it begins",
-        "Naming the feeling makes the tidying unnecessary",
+        "The avoidance follows the dread-thought, not a hazard",
+        "Relief is brief before the urge returns",
+        "Dread settles when she steps on a crack on purpose",
       ],
       defeatedBy: [
-        "He fidgets equally during neutral conversation",
-        "The tidying bears no relation to the topic",
+        "Stepping on a crack produces no anxiety",
+        "The avoidance causes no detours or social cost",
       ],
     },
     correctAnswer:
-      "The tidying likely serves a function — a way to manage a rising anxiety by doing something small and controllable just as an uncontrollable feeling stirs, so the habit marks where the charge is; test whether the tidying appears only around specific topics and not others, whether his speech tightens or trails off as it starts, and whether naming the feeling at that moment makes the tidying unnecessary.",
+      "The crack-avoidance — driven by a harm fear and paid for in detours and isolation — likely runs an OCD loop: the magical thought spikes dread, careful stepping gives brief relief, and the relief reinforces the rule so each stretch reignites it; test whether the avoidance follows the dread-thought rather than any real hazard, whether relief is brief before the urge returns, and whether the dread settles on its own when she walks normally and steps on a crack on purpose.",
     explanation:
-      "Top credit reads topic-locked tidying as anxiety-managing and is paired with a charged-vs-neutral test that names its refutation; 'just a nervous habit' is the dodge the topic-specific timing defeats.",
+      "Top credit reads magical avoidance as a loop with real cost and is paired with a step-on-a-crack test that names its refutation; 'a childhood game' is the dodge the harm-fear, detours, and hiding-from-friends defeat.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A man's chronic back pain reliably flares in the two days before any large family gathering, then subsides afterward — the pattern holding for years, with no injury and clean scans. He says family events are 'no trouble at all.' Which conclusion best follows?",
+      "A man reads each paragraph of a contract again and again, unable to move on until he is certain he 'understood it perfectly.' A doubt spikes that he missed something; rereading settles it briefly, then the doubt returns and he rereads. A one-page document can take all afternoon, and he has missed work deadlines. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Back pain is physical; connecting it to family gatherings is grasping at straws.",
-        credit: 0,
-      },
-      {
-        text: "The flares — timed to gatherings he insists are 'no trouble' — likely carry a tension about family he hasn't let himself feel, the body voicing a dread his words deny; test whether the pain reliably precedes gatherings and eases after, whether it spikes most before the most fraught relatives, and whether it lessens once he can name what he braces for at these events.",
-        credit: 1.0,
-      },
-      {
-        text: "He seems to get back pain around family events.",
+        text: "He seems to read things very thoroughly.",
         credit: 0.3,
       },
       {
-        text: "It might be linked to family stress; we could keep an eye on the timing.",
+        text: "The rereading likely runs an OCD loop for certainty: a 'did I really understand it' doubt spikes anxiety, each reread gives brief relief, and the relief reinforces the doubt so he can never feel sure enough — costing him whole afternoons; test whether the rereading follows the doubt rather than genuine confusion, whether relief is brief before the doubt returns, and whether the anxiety settles on its own when he moves on after one careful read.",
+        credit: 1.0,
+      },
+      {
+        text: "Contracts are important and people read at different speeds, so there's nothing to conclude about his reading.",
+        credit: 0,
+      },
+      {
+        text: "He might get anxious about understanding things; we could look into it.",
         credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'the pain expresses dread of family gatherings' lead from the rival 'it's an ordinary physical back problem,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'this is an OCD certainty-checking loop' lead from the rival 'he's a slow but careful reader,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: track the pain against the calendar of gatherings — flares that reliably rise in the days before family events and fade afterward point to dread rather than a structural back problem. My lead is refuted if the pain is constant or random across the year with no relation to gatherings, which would fit a purely physical cause.",
+        "Cheapest test: check whether the rereading is driven by an unsettlable doubt that returns after each pass rather than by actual confusion he can point to — an urge that can never reach 'sure enough' points to a loop. My lead is refuted if a single careful read leaves him satisfied and he only rereads passages he genuinely didn't grasp.",
       yieldAnchors: [
-        "The pain flares before family gatherings and subsides after",
-        "There is no injury and scans are clean",
-        "He insists the events are no trouble",
+        "He rereads each paragraph until 'perfectly' understood",
+        "A doubt returns after each reread",
+        "A one-page document takes all afternoon",
       ],
       riskAnchors: [
-        "The pain reliably precedes gatherings",
-        "It spikes most before the most fraught relatives",
-        "It lessens once he names what he braces for",
+        "The rereading follows the doubt, not genuine confusion",
+        "Relief is brief before the doubt returns",
+        "Anxiety settles when he moves on after one read",
       ],
       defeatedBy: [
-        "The pain is constant regardless of gatherings",
-        "A clear physical injury fully explains the flares",
+        "A single careful read leaves him satisfied",
+        "He only rereads passages he truly didn't grasp",
       ],
     },
     correctAnswer:
-      "The flares — timed to gatherings he insists are 'no trouble' — likely carry a tension about family he hasn't let himself feel, the body voicing a dread his words deny; test whether the pain reliably precedes gatherings and eases after, whether it spikes most before the most fraught relatives, and whether it lessens once he can name what he braces for at these events.",
+      "The rereading likely runs an OCD loop for certainty: a 'did I really understand it' doubt spikes anxiety, each reread gives brief relief, and the relief reinforces the doubt so he can never feel sure enough — costing him whole afternoons; test whether the rereading follows the doubt rather than genuine confusion, whether relief is brief before the doubt returns, and whether the anxiety settles on its own when he moves on after one careful read.",
     explanation:
-      "Full credit reads a symptom that tracks family gatherings as meaningful and is paired with a track-against-the-calendar test that names its refutation; 'back pain is physical' is the dodge the gathering-timed flares and clean scans defeat.",
+      "Full credit reads a certainty-seeking loop and is paired with a doubt-vs-real-confusion test that names its refutation; 'a slow careful reader' is the dodge the all-afternoon, missed-deadline cost defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "After an unusually raw session in which she nearly cried, a patient who is normally meticulous about appointments forgets the next one entirely, then misremembers her therapist's first name in the session after that. Which conclusion best follows?",
+      "A student silently reviews every recent conversation for signs he 'might be a bad person.' The doubt spikes, mentally replaying and reassuring himself settles it briefly, then a new memory restarts it. The reviewing fills hours, and only this moral theme — never other topics — sets it off. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Everyone forgets appointments and names; making meaning of two slips is overreach.",
+        text: "Self-reflection is healthy, so examining your conduct is just being conscientious.",
         credit: 0,
       },
       {
-        text: "She probably had a reaction to the raw session; we could mention it.",
-        credit: 0.6,
-      },
-      {
-        text: "The slips — landing right after she nearly broke down — likely express a pull to retreat from a closeness that felt dangerous, putting distance between herself and the therapy by 'losing track' of it; test whether such lapses follow emotionally intense sessions specifically, whether she seems relieved to have created distance, and whether they stop once the fear stirred by getting close is talked through.",
+        text: "The mental reviewing — confined to the 'bad person' theme and driven by doubt, not events — likely runs a covert OCD loop: the moral doubt spikes anxiety, replaying-and-reassuring gives brief relief, and the relief reinforces the doubt so a new memory reignites it; test whether the reviewing follows the doubt rather than any real wrongdoing, whether relief is brief before the doubt returns, and whether the anxiety settles on its own when he lets a memory stand without reviewing it.",
         credit: 1.0,
       },
       {
-        text: "She seems to have forgotten a couple of things.",
+        text: "He probably worries about being a good person; we could revisit it.",
+        credit: 0.6,
+      },
+      {
+        text: "He seems to think over his conversations a lot.",
         credit: 0.3,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'the slips are a retreat from a session that felt too close' lead from the rival 'she's just been generally forgetful lately,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'this is a covert moral-checking OCD loop' lead from the rival 'he's just a conscientious, reflective person,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: check whether the forgetting clusters specifically after emotionally intense sessions rather than scattering randomly — lapses tied to the rawest moments point to a retreat from closeness. My lead is refuted if she's been forgetting appointments and names across all areas of life regardless of what happened in session, which would fit ordinary forgetfulness.",
+        "Cheapest test: see whether the reviewing is set off by an unsettlable 'am I bad' doubt, confined to that theme, and consuming hours without ever resolving — a self-feeding moral doubt points to a loop, not healthy reflection. My lead is refuted if his reflection is proportionate, leads to actual decisions, and stops once he has thought a matter through.",
       yieldAnchors: [
-        "She is normally meticulous about appointments",
-        "She forgot the session right after a raw one",
-        "She then misremembered the therapist's name",
+        "He reviews conversations for signs he is a bad person",
+        "Replaying relieves the doubt before a new memory revives it",
+        "Only the moral theme sets it off, for hours",
       ],
       riskAnchors: [
-        "Lapses follow emotionally intense sessions specifically",
-        "She seems relieved to have created distance",
-        "They stop once the fear of closeness is addressed",
+        "The reviewing follows the doubt, not real wrongdoing",
+        "Relief is brief before the doubt returns",
+        "Anxiety settles when he lets a memory stand",
       ],
       defeatedBy: [
-        "She has become forgetful in every area of life",
-        "The slips bear no relation to session intensity",
+        "His reflection is proportionate and leads to decisions",
+        "Thinking a matter through actually settles it",
       ],
     },
     correctAnswer:
-      "The slips — landing right after she nearly broke down — likely express a pull to retreat from a closeness that felt dangerous, putting distance between herself and the therapy by 'losing track' of it; test whether such lapses follow emotionally intense sessions specifically, whether she seems relieved to have created distance, and whether they stop once the fear stirred by getting close is talked through.",
+      "The mental reviewing — confined to the 'bad person' theme and driven by doubt, not events — likely runs a covert OCD loop: the moral doubt spikes anxiety, replaying-and-reassuring gives brief relief, and the relief reinforces the doubt so a new memory reignites it; test whether the reviewing follows the doubt rather than any real wrongdoing, whether relief is brief before the doubt returns, and whether the anxiety settles on its own when he lets a memory stand without reviewing it.",
     explanation:
-      "Top credit reads post-intensity slips in a meticulous patient as a retreat from closeness and is paired with a after-intense-sessions-specifically test that names its refutation; 'everyone forgets' is the dodge the timing right after the raw session defeats.",
+      "Top credit reads a theme-locked covert loop and is paired with a does-thinking-it-through-settle-it test that names its refutation; 'healthy self-reflection' is the dodge the hours-long, never-resolving review defeats.",
   },
   {
     itemType: "hybrid",
     prompt:
-      "A man laid off three weeks ago insists he's 'honestly relieved, not bothered at all.' Since the layoff he has been unable to sleep, snaps at his kids over trifles, and has lost his appetite — changes he says are 'probably just a bug going around.' Which conclusion best follows?",
+      "A woman re-sends the same work message after deleting and rewriting it many times, certain the wording could be 'taken the wrong way.' The doubt spikes, rewriting settles it briefly, then she rereads the sent version and the doubt returns. A two-line message can take an hour, and colleagues find her unresponsive. Which conclusion best follows?",
     mcOptions: [
       {
-        text: "He seems a bit off since the layoff.",
-        credit: 0.3,
-      },
-      {
-        text: "The insomnia, irritability, and lost appetite — all dating from the layoff he claims doesn't bother him — likely reveal a distress his words deny, the symptoms saying what he won't; test whether the symptoms began precisely with the layoff and not before, whether they ease as he admits any hurt or fear about losing the job, and whether his 'just a bug' framing gives way once the loss is named.",
-        credit: 1.0,
-      },
-      {
-        text: "Sleep and mood problems have many causes, so linking them to the layoff is a stretch.",
+        text: "Word choice matters at work, so being careful with messages is just professionalism.",
         credit: 0,
       },
       {
-        text: "He might be more affected than he admits; we could ask about the layoff.",
+        text: "She seems to fuss over her messages.",
+        credit: 0.3,
+      },
+      {
+        text: "The rewriting likely runs an OCD loop: a 'taken the wrong way' doubt spikes anxiety, each rewrite gives brief relief, and the relief reinforces the doubt so even after sending she rereads and the doubt returns — costing her an hour per note; test whether the rewriting follows the doubt rather than any real ambiguity, whether relief is brief before the doubt returns, and whether the anxiety settles on its own when she sends after a single draft.",
+        credit: 1.0,
+      },
+      {
+        text: "She might be anxious about how she comes across; we could explore it.",
         credit: 0.6,
       },
     ],
     writtenRubric: {
       prompt:
-        "In two sentences, name the single cheapest observation that would best distinguish your 'the symptoms express denied distress about the layoff' lead from the rival 'he genuinely feels fine and just caught a virus,' and say what result would refute your lead.",
+        "In two sentences, name the single cheapest observation that would best distinguish your 'this is an OCD rewriting loop' lead from the rival 'she's a careful professional communicator,' and say what result would refute your lead.",
       modelAnswer:
-        "Cheapest test: pin down whether all three symptoms started right at the layoff and not before — a cluster that begins exactly with the loss points to denied distress rather than a coincidental illness. My lead is refuted if the sleep, mood, and appetite changes predate the layoff or come with clear physical signs of infection, which would fit a real bug.",
+        "Cheapest test: check whether the rewriting is driven by an unsettlable doubt that returns even after sending and balloons a two-line note into an hour — a doubt that re-fires post-send points to a loop. My lead is refuted if she drafts once, sends, and moves on, rewriting only genuinely ambiguous messages.",
       yieldAnchors: [
-        "He says he's relieved and not bothered",
-        "Insomnia, irritability, and lost appetite began at the layoff",
-        "He attributes the changes to a bug",
+        "She rewrites and re-sends the same short message many times",
+        "The doubt returns even after she has sent it",
+        "A two-line message takes an hour",
       ],
       riskAnchors: [
-        "The symptoms began precisely with the layoff",
-        "They ease as he admits hurt about the job",
-        "His 'just a bug' framing gives way once loss is named",
+        "The rewriting follows the doubt, not real ambiguity",
+        "Relief is brief before the doubt returns",
+        "Anxiety settles when she sends after one draft",
       ],
       defeatedBy: [
-        "The symptoms predate the layoff",
-        "Clear physical illness fully explains them",
+        "She drafts once, sends, and moves on",
+        "She rewrites only genuinely ambiguous messages",
       ],
     },
     correctAnswer:
-      "The insomnia, irritability, and lost appetite — all dating from the layoff he claims doesn't bother him — likely reveal a distress his words deny, the symptoms saying what he won't; test whether the symptoms began precisely with the layoff and not before, whether they ease as he admits any hurt or fear about losing the job, and whether his 'just a bug' framing gives way once the loss is named.",
+      "The rewriting likely runs an OCD loop: a 'taken the wrong way' doubt spikes anxiety, each rewrite gives brief relief, and the relief reinforces the doubt so even after sending she rereads and the doubt returns — costing her an hour per note; test whether the rewriting follows the doubt rather than any real ambiguity, whether relief is brief before the doubt returns, and whether the anxiety settles on its own when she sends after a single draft.",
     explanation:
-      "Full credit reads symptoms that track the layoff as a denied distress and is paired with a did-they-start-exactly-at-the-layoff test that names its refutation; 'sleep problems have many causes' is the dodge the symptom onset at the layoff defeats.",
+      "Full credit reads a doubt-driven rewriting loop that re-fires after sending and is paired with a send-after-one-draft test that names its refutation; 'just professionalism' is the dodge the hour-per-message cost defeats.",
   },
 ];
 
@@ -843,183 +843,183 @@ const written: HomeworkItem[] = [
   {
     itemType: "written",
     prompt:
-      "A man describes his childhood as 'totally normal, happy, nothing to report.' But every concrete memory he offers — a birthday, a holiday, a sick day — features him alone: waiting by a window, eating in silence, entertaining himself. He notices nothing odd about this. In one paragraph, propose the strongest conclusion about what the surface 'happy childhood' is covering and describe how you would test it.",
+      "A man can't leave his apartment until he has checked the gas, the windows, and the locks in a fixed order. If interrupted, he restarts the whole sequence. A doubt that something is unsafe spikes each time; completing the order calms him for a moment before the doubt creeps back. He is now an hour late to everything and has been written up at work. In one paragraph, propose the strongest conclusion about what this routine is doing and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that his blanket 'happy, normal' label sits on top of a childhood marked by emotional aloneness he never registered as a problem, so the meaning lives in the specific memories rather than the headline — each scene quietly shows a child left to himself. This is a strong claim because it predicts checkable consequences: when asked for more memories he should keep producing solitary scenes rather than connected ones; he should struggle to name a moment of being comforted or sought out; and the 'nothing to report' framing should soften, perhaps bringing feeling, once the loneliness in his own stories is pointed out. I would test it by gathering several more concrete memories and counting how many involve closeness versus solitude, by asking directly for a memory of being soothed by someone, and by noting whether naming the pattern changes how he talks about his childhood.",
+        "The strongest conclusion is that this is a checking compulsion running the classic OCD cycle, not careful safety habits: an intrusive doubt that something is unsafe spikes anxiety, completing the fixed sequence delivers a few seconds of relief, and that relief reinforces the doubt so it returns stronger and the routine must be restarted — a loop that now costs him an hour and his standing at work. This is a strong claim because it predicts checkable consequences: the checking should follow the doubt-thought rather than any real evidence of danger; each round of relief should be brief and undone within minutes; and the doubt should actually fade on its own if he leaves after a single check and lets the anxiety crest and fall. I would test it by tracking whether the checks are triggered by the thought or by something real, by timing how long the relief lasts before the urge returns, and by having him resist the restart once to see whether the anxiety subsides without it.",
       yieldAnchors: [
-        "He labels his childhood happy and unremarkable",
-        "Every concrete memory shows him alone",
-        "He notices nothing odd about the pattern",
+        "He checks gas, windows, and locks in a fixed order",
+        "An interruption forces a full restart",
+        "He is an hour late and has been written up",
       ],
       riskAnchors: [
-        "Further memories keep coming back solitary",
-        "He can't readily name a moment of being comforted",
-        "The 'nothing to report' framing softens once the pattern is named",
+        "The checking follows the doubt, not real danger",
+        "Each relief is brief and quickly undone",
+        "The doubt fades on its own when he checks once and resists",
       ],
       defeatedBy: [
-        "His detailed memories are full of warmth and connection",
-        "The contents match the cheerful label once examined",
+        "A single check leaves him reassured and on time",
+        "The checking tracks real hazards rather than the doubt",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that his blanket 'happy, normal' label sits on top of a childhood marked by emotional aloneness he never registered as a problem, so the meaning lives in the specific memories rather than the headline — each scene quietly shows a child left to himself. This is a strong claim because it predicts checkable consequences: when asked for more memories he should keep producing solitary scenes rather than connected ones; he should struggle to name a moment of being comforted or sought out; and the 'nothing to report' framing should soften, perhaps bringing feeling, once the loneliness in his own stories is pointed out. I would test it by gathering several more concrete memories and counting how many involve closeness versus solitude, by asking directly for a memory of being soothed by someone, and by noting whether naming the pattern changes how he talks about his childhood.",
+      "The strongest conclusion is that this is a checking compulsion running the classic OCD cycle, not careful safety habits: an intrusive doubt that something is unsafe spikes anxiety, completing the fixed sequence delivers a few seconds of relief, and that relief reinforces the doubt so it returns stronger and the routine must be restarted — a loop that now costs him an hour and his standing at work. This is a strong claim because it predicts checkable consequences: the checking should follow the doubt-thought rather than any real evidence of danger; each round of relief should be brief and undone within minutes; and the doubt should actually fade on its own if he leaves after a single check and lets the anxiety crest and fall. I would test it by tracking whether the checks are triggered by the thought or by something real, by timing how long the relief lasts before the urge returns, and by having him resist the restart once to see whether the anxiety subsides without it.",
     explanation:
-      "Under the inverted standard, the cautious 'a happy childhood, nothing to interpret' earns near-zero; top credit goes to reading the meaning in the consistently solitary memories and naming a count-the-memories test that could refute it.",
+      "Under the inverted standard, 'he's just being safe, nothing to interpret' earns near-zero; top credit reads the doubt-anxiety-check-relief-return cycle and names a resist-the-restart test that could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "A woman who fought hard for a long-awaited promotion had her first panic attack the very week it came through, and the attacks have continued since. She is baffled — 'this is exactly what I wanted; I should be celebrating.' In one paragraph, propose the strongest conclusion about what the panic is expressing and describe how you would test it.",
+      "A teenager spends two hours arranging her books, pens, and clothes until each is 'exactly right.' A buzzing not-right feeling drives it; once everything aligns, she feels a brief calm before the feeling creeps back and she starts again. She has stopped inviting friends over and her grades are slipping. In one paragraph, propose the strongest conclusion about what the arranging is doing and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that the panic carries a meaning her celebration story can't hold — the promotion, however wanted, also stirs an out-of-awareness conflict (perhaps a fear of the exposure, expectation, or rivalry that rising brings), and the body sounds the alarm her words deny. This is a strong claim because it predicts checkable consequences: the attacks should cluster around moments the new role is most visible — presenting, being watched, outranking former peers — rather than at random; they should ease as she lets herself name an ambivalence about success rather than only joy; and they should not be explained by a separate stressor that began the same week. I would test it by logging when each attack strikes against what she was doing, by exploring directly whether any part of her dreads the new position, and by checking whether the timing really pins to the promotion and nothing else.",
+        "The strongest conclusion is that the arranging is a 'just right' compulsion driving an OCD loop rather than a tidy preference: an intolerable not-right sensation spikes tension, aligning everything brings a moment of calm, and that brief relief reinforces the sensation so it returns and the arranging must begin again — a cycle that now costs her friendships and grades. This is a strong claim because it predicts checkable consequences: the arranging should follow the not-right feeling rather than any real disorder in the room; the calm should be short-lived and give way to the urge again; and the tension should ease on its own if she leaves things misaligned and tolerates the feeling. I would test it by noting whether the trigger is the sensation or actual mess, by timing how long the calm lasts before the urge returns, and by having her leave one set of items unaligned to see whether the not-right feeling fades without action.",
       yieldAnchors: [
-        "The panic began the week the promotion came through",
-        "She fought hard for the promotion",
-        "She is baffled because she expected to feel only happy",
+        "She arranges for two hours until 'exactly right'",
+        "A not-right feeling drives it and creeps back after calm",
+        "She has stopped having friends over and her grades slip",
       ],
       riskAnchors: [
-        "Attacks cluster around the role's most exposing moments",
-        "They ease as she names ambivalence about success",
-        "No separate stressor began the same week",
+        "The arranging follows the not-right feeling, not real mess",
+        "The calm is brief before the urge returns",
+        "Tension eases on its own when she leaves things misaligned",
       ],
       defeatedBy: [
-        "She feels only uncomplicated joy about the promotion",
-        "An unrelated event fully explains the panic's timing",
+        "She arranges only an actually messy space and then stops",
+        "Leaving items misaligned produces no rising tension",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that the panic carries a meaning her celebration story can't hold — the promotion, however wanted, also stirs an out-of-awareness conflict (perhaps a fear of the exposure, expectation, or rivalry that rising brings), and the body sounds the alarm her words deny. This is a strong claim because it predicts checkable consequences: the attacks should cluster around moments the new role is most visible — presenting, being watched, outranking former peers — rather than at random; they should ease as she lets herself name an ambivalence about success rather than only joy; and they should not be explained by a separate stressor that began the same week. I would test it by logging when each attack strikes against what she was doing, by exploring directly whether any part of her dreads the new position, and by checking whether the timing really pins to the promotion and nothing else.",
+      "The strongest conclusion is that the arranging is a 'just right' compulsion driving an OCD loop rather than a tidy preference: an intolerable not-right sensation spikes tension, aligning everything brings a moment of calm, and that brief relief reinforces the sensation so it returns and the arranging must begin again — a cycle that now costs her friendships and grades. This is a strong claim because it predicts checkable consequences: the arranging should follow the not-right feeling rather than any real disorder in the room; the calm should be short-lived and give way to the urge again; and the tension should ease on its own if she leaves things misaligned and tolerates the feeling. I would test it by noting whether the trigger is the sensation or actual mess, by timing how long the calm lasts before the urge returns, and by having her leave one set of items unaligned to see whether the not-right feeling fades without action.",
     explanation:
-      "The inverted standard gives near-zero to 'it's just what she wanted, so the panic must be unrelated'; credit goes to reading the symptom that tracks the promotion as a conflict and naming a log-the-timing test that could refute it.",
+      "The cautious 'she's just tidy, nothing underneath' earns near-zero; top credit reads the not-right-align-relief-return loop and names a leave-it-misaligned test that could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "A patient arrives most weeks announcing 'I really don't have anything to talk about today,' fills the hour with small talk, and then, with five minutes left, drops something major — a marriage on the brink, a frightening medical result. This has happened for months. In one paragraph, propose the strongest conclusion about what this recurring shape means and describe how you would test it.",
+      "A man is gripped by intrusive thoughts that he might be 'secretly attracted' to people he finds the idea repellent about. The thought spikes panic; he mentally checks his body for any reaction and seeks reassurance online, which calms him briefly before the next thought restarts it. He has never acted on or wanted anything of the kind, and the checking now fills his day. In one paragraph, propose the strongest conclusion about what is happening and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that the 'nothing to talk about' opening and the last-minute bombshell form a single patterned way of approaching what frightens her — keeping the charged material at a safe distance until the closing minutes make it impossible to truly open it, so she both reveals and protects herself at once. This is a strong claim because it predicts checkable consequences: the genuinely important material should reliably surface near the end rather than scattering through the hour; the small talk should function as avoidance, thinning when she feels safer; and naming the pattern should shift the timing, letting heavier topics arrive earlier. I would test it by tracking when the significant disclosures land each week, by noting whether the filler eases as trust grows, and by observing whether pointing out the late-arrival pattern changes when she brings the real material.",
+        "The strongest conclusion is that this is an OCD loop built on ego-dystonic intrusive thoughts — the opposite of a real desire — in which an unwanted, repellent thought spikes panic, mental 'checking' for a reaction and online reassurance bring brief relief, and that relief reinforces the fear so the next thought reignites it and the checking devours his day. This is a strong claim because it predicts checkable consequences: the thoughts should horrify rather than attract him; the checking and reassurance should follow the thought rather than any genuine wish or action; and the panic should subside on its own if he resists checking and lets the thought sit. I would test it by asking whether the content disgusts or appeals to him, by tracking whether the rituals follow the intrusion rather than any real urge, and by having him refrain from checking once to see whether the anxiety falls without it.",
       yieldAnchors: [
-        "She opens by saying she has nothing to discuss",
-        "She fills the hour with small talk",
-        "She drops something major in the final minutes",
+        "The intrusive thoughts are about something he finds repellent",
+        "He mentally checks for a reaction and seeks reassurance",
+        "He has never wanted or acted on anything of the kind",
       ],
       riskAnchors: [
-        "Important material reliably surfaces near the end",
-        "The small talk thins as she feels safer",
-        "Naming the pattern shifts heavy topics earlier",
+        "The thoughts horrify rather than attract him",
+        "The checking follows the thought, not a real wish",
+        "Panic subsides on its own when he resists checking",
       ],
       defeatedBy: [
-        "Her major disclosures are spread evenly through the hour",
-        "The late timing is random and never shifts",
+        "The thoughts are wanted or pleasurable rather than distressing",
+        "There is a real urge or behavior, not just an intrusive thought",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that the 'nothing to talk about' opening and the last-minute bombshell form a single patterned way of approaching what frightens her — keeping the charged material at a safe distance until the closing minutes make it impossible to truly open it, so she both reveals and protects herself at once. This is a strong claim because it predicts checkable consequences: the genuinely important material should reliably surface near the end rather than scattering through the hour; the small talk should function as avoidance, thinning when she feels safer; and naming the pattern should shift the timing, letting heavier topics arrive earlier. I would test it by tracking when the significant disclosures land each week, by noting whether the filler eases as trust grows, and by observing whether pointing out the late-arrival pattern changes when she brings the real material.",
+      "The strongest conclusion is that this is an OCD loop built on ego-dystonic intrusive thoughts — the opposite of a real desire — in which an unwanted, repellent thought spikes panic, mental 'checking' for a reaction and online reassurance bring brief relief, and that relief reinforces the fear so the next thought reignites it and the checking devours his day. This is a strong claim because it predicts checkable consequences: the thoughts should horrify rather than attract him; the checking and reassurance should follow the thought rather than any genuine wish or action; and the panic should subside on its own if he resists checking and lets the thought sit. I would test it by asking whether the content disgusts or appeals to him, by tracking whether the rituals follow the intrusion rather than any real urge, and by having him refrain from checking once to see whether the anxiety falls without it.",
     explanation:
-      "The cautious 'she just runs out of time' earns near-zero; top credit goes to reading the recurring shape as a way of approaching and avoiding what frightens her and naming a track-the-timing test that could refute it.",
+      "The lurid 'the thought proves a hidden desire' is the overreach his horror and history defeat; top credit reads an ego-dystonic intrusion driving a checking loop and names a resist-the-check test that could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "A man jokes his way through every painful subject. When his divorce comes up he does a bit; when his father's death comes up he delivers a punchline; the room laughs and the topic passes. He says, 'I just like to keep things light.' In one paragraph, propose the strongest conclusion about what the joking is doing and describe how you would test it.",
+      "A woman keeps a running mental tally of whether she has 'caused harm' through small actions — a careless word, a door left open. A doubt spikes, she replays the event and apologizes or confesses to clear it, feels brief relief, then a new doubt restarts the cycle. Friends are puzzled by her constant apologies, and the replaying eats her evenings. In one paragraph, propose the strongest conclusion about what the confessing is doing and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that the humor isn't merely a personality quirk but serves a function — it lets him touch painful material while instantly discharging the feeling and steering everyone, including himself, away before it can land, so the joke marks exactly where the hurt is. This is a strong claim because it predicts checkable consequences: the jokes should cluster on the most painful topics rather than spread evenly across light and heavy ones; the laughter should arrive right at the moments feeling would otherwise surface; and if he's gently asked to stay with a topic without the joke, real emotion should appear. I would test it by noting which subjects reliably trigger humor, by watching whether the punchlines land precisely at emotional peaks, and by checking whether blocking the exit — staying with the painful point a beat longer — brings feeling rather than another joke.",
+        "The strongest conclusion is that the confessing and apologizing are compulsions in an OCD loop, not conscientiousness: a doubt that she has caused harm spikes anxiety, replaying the event and confessing to 'clear' it brings brief relief, and that relief reinforces the doubt so a new one fires and the cycle repeats — puzzling her friends and consuming her evenings. This is a strong claim because it predicts checkable consequences: the confessing should follow the doubt rather than any real harm done; the relief from each apology should be short before the next doubt arrives; and the anxiety should settle on its own if she resists confessing and lets a doubt go unaddressed. I would test it by checking whether her confessions track actual wrongdoing or just the doubt, by timing how long the relief lasts before a new doubt comes, and by having her withhold an apology once to see whether the anxiety subsides without it.",
       yieldAnchors: [
-        "He jokes through divorce and his father's death",
-        "The laughter lets each painful topic pass",
-        "He calls it just keeping things light",
+        "She tallies whether she has caused harm through small actions",
+        "She replays and confesses to clear each doubt",
+        "Friends are puzzled and her evenings are consumed",
       ],
       riskAnchors: [
-        "Jokes cluster on the most painful topics",
-        "Laughter lands right at emotional peaks",
-        "Staying with the topic without a joke brings real feeling",
+        "The confessing follows the doubt, not real harm",
+        "Relief from each apology is brief before a new doubt",
+        "Anxiety settles when she withholds an apology",
       ],
       defeatedBy: [
-        "He jokes just as much about trivial, painless things",
-        "Blocking the joke produces no feeling at all",
+        "Her apologies track genuine wrongdoing she can name",
+        "Withholding an apology brings lasting calm, not rising anxiety",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that the humor isn't merely a personality quirk but serves a function — it lets him touch painful material while instantly discharging the feeling and steering everyone, including himself, away before it can land, so the joke marks exactly where the hurt is. This is a strong claim because it predicts checkable consequences: the jokes should cluster on the most painful topics rather than spread evenly across light and heavy ones; the laughter should arrive right at the moments feeling would otherwise surface; and if he's gently asked to stay with a topic without the joke, real emotion should appear. I would test it by noting which subjects reliably trigger humor, by watching whether the punchlines land precisely at emotional peaks, and by checking whether blocking the exit — staying with the painful point a beat longer — brings feeling rather than another joke.",
+      "The strongest conclusion is that the confessing and apologizing are compulsions in an OCD loop, not conscientiousness: a doubt that she has caused harm spikes anxiety, replaying the event and confessing to 'clear' it brings brief relief, and that relief reinforces the doubt so a new one fires and the cycle repeats — puzzling her friends and consuming her evenings. This is a strong claim because it predicts checkable consequences: the confessing should follow the doubt rather than any real harm done; the relief from each apology should be short before the next doubt arrives; and the anxiety should settle on its own if she resists confessing and lets a doubt go unaddressed. I would test it by checking whether her confessions track actual wrongdoing or just the doubt, by timing how long the relief lasts before a new doubt comes, and by having her withhold an apology once to see whether the anxiety subsides without it.",
     explanation:
-      "The inverted standard gives near-zero to 'he just likes to keep things light'; credit goes to reading the joking as a feeling-discharging function and naming a stay-with-the-topic test that could refute it.",
+      "The dodge 'she's just very conscientious' earns near-zero; top credit reads confessing as a compulsion in the doubt-relief-return loop and names a withhold-the-apology test that could refute it.",
   },
   {
     itemType: "written",
     prompt:
-      "A woman has dated, over fifteen years, a long string of partners who were already married, lived overseas, or were emotionally checked out — and each relationship ended the same way. She concludes, 'I've just had terrible luck with men.' In one paragraph, propose the strongest conclusion about what is really driving the pattern and describe how you would test it.",
+      "A man showers for ninety minutes in a fixed sequence, certain that any deviation leaves him 'contaminated.' A contamination thought spikes dread, the long sequence settles it briefly, and if he loses his place he starts over from the beginning. His skin is raw, he is late to work, and he avoids public spaces entirely. In one paragraph, propose the strongest conclusion about what the shower ritual is doing and describe how you would test it.",
     writtenRubric: {
       modelAnswer:
-        "The strongest conclusion is that this is not luck but a pattern she is part of — she is repeatedly drawn to unavailable partners, which suggests an out-of-awareness pull toward relationships that can't fully arrive, perhaps because real, available closeness feels more threatening than the longing for someone out of reach. This is a strong claim because it predicts checkable consequences: looking closely, the 'unavailability' should be present from the start rather than a surprise that developed; available, interested partners should leave her cool or uninterested rather than relieved; and the pull should weaken once the fear of genuine closeness is named. I would test it by reviewing each partner for signs of unavailability that were visible early, by checking how she responds to clearly available people, and by seeing whether understanding the pattern changes who she's drawn to next.",
+        "The strongest conclusion is that the ninety-minute shower is a washing compulsion driving an OCD loop, not thorough hygiene: a contamination thought spikes dread, the fixed sequence delivers brief relief, and that relief reinforces the fear so any deviation reignites it and he must start over — at the cost of raw skin, lateness, and withdrawal from public life. This is a strong claim because it predicts checkable consequences: the showering should follow the contamination thought rather than any real dirt; the relief should be brief and undone by the next 'contaminated' contact; and the dread should fall on its own if he shortens the shower or breaks the sequence and tolerates the feeling. I would test it by checking whether the ritual is triggered by the thought or by genuine soiling, by timing how long the relief lasts, and by having him cut the sequence short once to see whether the dread subsides without completing it.",
       yieldAnchors: [
-        "Fifteen years of unavailable partners",
-        "Each relationship ended the same way",
-        "She attributes it to bad luck",
+        "He showers ninety minutes in a fixed sequence",
+        "Losing his place forces a full restart",
+        "His skin is raw, he is late, and he avoids public spaces",
       ],
       riskAnchors: [
-        "The unavailability was visible from the start each time",
-        "Available, interested partners leave her cool",
-        "The pull weakens once fear of closeness is named",
+        "The showering follows the contamination thought, not real dirt",
+        "Relief is brief before the next contact reignites it",
+        "Dread falls on its own if he breaks the sequence",
       ],
       defeatedBy: [
-        "Her partners were genuinely available and became unavailable by chance",
-        "She is equally drawn to available partners",
+        "He washes only when genuinely soiled and then stops",
+        "Breaking the sequence brings no rise in dread",
       ],
     },
     correctAnswer:
-      "The strongest conclusion is that this is not luck but a pattern she is part of — she is repeatedly drawn to unavailable partners, which suggests an out-of-awareness pull toward relationships that can't fully arrive, perhaps because real, available closeness feels more threatening than the longing for someone out of reach. This is a strong claim because it predicts checkable consequences: looking closely, the 'unavailability' should be present from the start rather than a surprise that developed; available, interested partners should leave her cool or uninterested rather than relieved; and the pull should weaken once the fear of genuine closeness is named. I would test it by reviewing each partner for signs of unavailability that were visible early, by checking how she responds to clearly available people, and by seeing whether understanding the pattern changes who she's drawn to next.",
+      "The strongest conclusion is that the ninety-minute shower is a washing compulsion driving an OCD loop, not thorough hygiene: a contamination thought spikes dread, the fixed sequence delivers brief relief, and that relief reinforces the fear so any deviation reignites it and he must start over — at the cost of raw skin, lateness, and withdrawal from public life. This is a strong claim because it predicts checkable consequences: the showering should follow the contamination thought rather than any real dirt; the relief should be brief and undone by the next 'contaminated' contact; and the dread should fall on its own if he shortens the shower or breaks the sequence and tolerates the feeling. I would test it by checking whether the ritual is triggered by the thought or by genuine soiling, by timing how long the relief lasts, and by having him cut the sequence short once to see whether the dread subsides without completing it.",
     explanation:
-      "'Terrible luck with men' is the surface story the fifteen-year repetition defeats; top credit goes to reading the consistent choice of unavailable partners as a pattern and naming a how-does-she-respond-to-available-people test that could refute it.",
+      "The cautious 'he just likes to be very clean' earns near-zero; top credit reads a contamination-driven washing loop and names a break-the-sequence test that could refute it.",
   },
 ];
 
 export const section: SectionContent = {
-  slug: "what-psychodynamic-therapy-is",
-  title: "What Psychodynamic Therapy Is",
+  slug: "understanding-ocd-the-cycle",
+  title: "Understanding OCD: Obsessions, Compulsions, and the Cycle",
   weekNumber: 1,
   blurb:
-    "Psychodynamic therapy treats symptoms and behavior as the visible result of inner conflict — unconscious wishes and fears pulling against conscious aims, and the self in friction with the people it depends on. It reads those hidden forces from observable evidence: repetitions, contradictions between words and actions, and symptoms that track a person's life.",
+    "OCD runs as a self-reinforcing loop: an intrusive thought spikes anxiety, a ritual brings brief relief, and that relief quietly teaches the fear to come back stronger. This section is about reading that cycle from the evidence — and telling a genuine OCD loop apart from an ordinary habit by its triggers, its short-lived relief, and its cost.",
   lectureTitle:
-    "1.1 What Psychodynamic Therapy Is: the mind in conflict",
-  body: `# What Psychodynamic Therapy Is
+    "1.1 Understanding OCD: obsessions, compulsions, and the cycle",
+  body: `# Understanding OCD: Obsessions, Compulsions, and the Cycle
 
-People are pulled in two directions at once far more often than they admit. A part of you wants the promotion; another part dreads it and quietly fumbles the interview. You love the person you depend on most and resent them in the same breath. Psychodynamic therapy starts from this fact: the mind is not a single voice but a set of forces in conflict — wishes, fears, and the rules we've absorbed about what we're allowed to want — and much of that conflict runs outside of awareness. Symptoms, puzzling behavior, and even "accidents" are not random noise; they are what those colliding forces produce when they can't all be satisfied at once. The work is to figure out which forces are fighting, and what compromise the behavior is striking between them.
+Obsessive-compulsive disorder is easiest to understand not as a list of strange behaviors but as a loop that feeds itself. An unwanted thought arrives, it brings a spike of anxiety or doubt, the person does something to make the feeling go away, the feeling does go away — for a moment — and that moment of relief is exactly what teaches the loop to run again. Once you can see the cycle, the behaviors that looked baffling start to make sense: the person isn't choosing the ritual freely, they're caught in a circuit where each turn deepens the groove.
 
-## Symptoms and behavior have meaning
+## The intrusive obsession
 
-The starting move is to assume that what looks pointless or puzzling often has a point we just can't see yet. A man "forgets" his wallet — but only on the nights it's his turn to pay. A woman gets a stomachache every Sunday, the one evening she calls her mother. A child starts wetting the bed the week a new sibling comes home. Taken alone, each could be a coincidence. But the timing is the tell. When a symptom appears in one specific situation and vanishes in others, the situation is part of the meaning. The behavior is the data; the hidden feeling or purpose is the explanation we build to account for it.
+It starts with a thought, image, or urge that shows up uninvited and feels wrong — "the stove is on," "my hands are contaminated," "I might harm someone," "something bad will happen if this isn't even." Everybody has odd, intrusive thoughts; the difference in OCD is not that the thoughts are stranger but that they stick, alarm, and demand a response. Crucially, these thoughts are usually the opposite of what the person wants — a gentle parent horrified by an image of harm is showing how foreign the thought is, not how secret a wish is.
 
-## Conflict between conscious aims and unconscious forces
+## The spike of anxiety and doubt
 
-People are honestly puzzled by their own patterns because the forces driving them run partly outside of awareness. The man who quits every job right before a promotion isn't lying when he says he wants to succeed; another part of him — a fear of being seen, a loyalty to a family where no one was supposed to rise too high, a guilt he could never name — pulls hard the other way, and he loses the fight without knowing it took place. This is not about hidden demons or buried curses. It is a real conflict between what a person consciously intends and what they unconsciously wish, dread, or forbid. The point of therapy isn't to accuse people of secret motives — it's to bring both sides of the conflict into the light, where the side that keeps winning in the dark finally has to make its case in the open.
+The obsession lands and the body answers: a surge of anxiety, dread, or a maddening sense of not-rightness. This is the fuel of the whole cycle. The feeling is genuinely uncomfortable and it carries a false promise — that the discomfort means something is truly wrong and must be fixed right now. Doubt is the engine's particular flavor in OCD: not "I forgot" but "I can't be sure," a certainty that no amount of checking ever quite satisfies.
 
-## Conflict between self and others
+## The compulsion or ritual
 
-We don't build these conflicts alone. The mind is assembled out of our earliest relationships and carries them forward: someone who learned that needing people gets you hurt will keep others at arm's length long after the original danger is gone, then feel baffled by their own loneliness. Much of what psychodynamic therapy studies is this friction between self and other — the wish to be close colliding with the fear of being let down, the hunger for approval fighting the urge to rebel against it. These patterns replay with bosses, partners, friends, and — tellingly — with the therapist, which is why the relationship in the room turns out to be one of the sharpest tools for seeing them.
+To quiet the spike, the person does something: checks, washes, counts, arranges, repeats a phrase, seeks reassurance, avoids the trigger entirely. The ritual can be visible (returning to the stove ten times) or entirely mental (silently cancelling a bad thought). Whatever its form, its job is the same — to make the unbearable feeling drop. And it works, which is exactly the problem.
 
-## Words versus actions
+## The short relief — and the trap inside it
 
-One of the richest sources of evidence is the gap between what someone says and what they show. A patient declares he's "completely at peace" about his divorce while his knee bounces and his voice shakes. A woman insists she's "thrilled" for her sister, then double-books herself and misses the engagement party — the only family event she's skipped in years. When words and actions disagree, the actions and the body often tell the truer story. The skill is to notice the contradiction rather than smoothing it over, and to treat it as a clue pointing toward a feeling the person can't yet say out loud.
+The ritual brings relief, but only briefly. That relief feels like proof the danger was real and the ritual saved the day, so the brain files the lesson away: when that thought comes, do that thing. The next time the obsession appears, the urge to ritualize is a little stronger, the doubt a little quicker to return. The relief is the hook. This is why telling someone "just stop" doesn't work — the cycle is reinforced by its own success at killing anxiety in the short term.
 
-## Symptoms that track a life event
+## Reinforcement that strengthens the loop
 
-Another powerful clue is timing. When a problem starts at the exact moment something changed in a person's life — panic attacks beginning the week a long-wanted promotion arrives, migraines starting the month a father gets sick, headaches that come only on school mornings and vanish all summer — that timing is rarely an accident. The symptom is often carrying a distress the person hasn't let themselves feel directly. Pinning down *when* a symptom appears and disappears is one of the cheapest, sharpest tools we have for reading what it means.
+Over weeks and months, each turn of the cycle wears the groove deeper. The rituals grow longer and more elaborate, new triggers get pulled in, and avoidance spreads to cover anything that might set off the thought. What began as one quick check becomes an hour; what began as washing after the bathroom becomes refusing to touch doorknobs. The loop doesn't stay the same size — left alone, it grows.
 
-## "Pointless" habits that serve a function
+## Telling a loop from an ordinary habit
 
-Some behaviors look useless until you ask what they accomplish. The deep-cleaning that strikes only before a dreaded deadline lets a person feel busy while avoiding the task that frightens them. The endless perfecting that means work is never submitted protects it — and the person — from ever being judged. The constant complaining that quietly draws in care and attention would cost the complainer that closeness if the problems were ever solved. The question "what does this behavior do for them?" turns a baffling habit into a readable one.
+Not every routine is OCD, and the course's whole skill is distinguishing them. Three things mark a genuine loop. First, trigger-specificity: the behavior follows a particular intrusive thought or feeling rather than a real-world cue — washing because of a contamination thought, not because hands are visibly dirty. Second, the relief-then-return pattern: the calm is brief and the urge comes back, often stronger, so the person can never get "enough." Third, the cost: the loop eats time, hurts the body, strains relationships, or wrecks work, and the person keeps going anyway. A tidy person who feels nothing if the desk is messy is not in a loop; a person who must align the desk to quiet a dread that always creeps back, at the cost of their morning, is.
 
 ## Reading the meaning — and naming a test
 
-Here is the part that keeps this honest. It's not enough to spin a clever story; a strong interpretation commits to a specific meaning *and* names the cheap observations that could prove it wrong. "He's late only to things he badly wants" is a real claim, because it predicts the lateness should vanish for low-stakes errands — and you can check that. The weak move is to stop at "he seems to run late" (which explains nothing) or to retreat into "the mind is too complex to say anything" (which gives up before looking). The worst move is the lurid overreach the evidence actually defeats. The strongest reading is the one that both binds the evidence in front of you and spells out the single observation that would refute it.
+It is not enough to say "that looks like OCD." A strong reading commits to the structure of the loop — names the obsession, the spike, the ritual, and the reinforcing relief — and then names the cheap observations that could prove it wrong. "The checking follows the doubt, not real evidence; the relief is brief; and the anxiety will fall on its own if he checks once and resists the rest" is a real claim, because each clause is checkable. The weak move stops at "he checks a lot" (which explains nothing) or retreats into "rituals are random, who can say" (which gives up before looking). The worst move is the lurid overreach the evidence defeats — reading a horrified intrusive thought as a hidden wish. The strongest reading binds the evidence in front of you and spells out the single observation that would refute it.
 
 ## In the real world
 
-Suppose a friend keeps choosing partners who treat her badly, then sighs that she has "terrible luck." The dodge is to agree — it sounds kind, but it explains nothing and points nowhere. A psychodynamic move commits to a meaning: maybe harsh treatment feels like familiar love, so the gentle ones feel "boring" and get dropped. Notice how much that opens up. It predicts the partners she leaves were called dull rather than unkind; that the difficult ones echo someone from early life; and that she could stay engaged with a kind partner once the pattern is named. Three cheap checks, each able to refute the idea. That is what reading the mind beneath the surface buys you — not a shrug at how mysterious people are, but a testable story about the meaning underneath, and a way to change it.`,
+Suppose a friend can't leave the house until she's checked the locks again and again, and shrugs that she's "just careful." The dodge is to agree — it sounds reasonable, but it explains nothing and points nowhere. A clear-eyed move commits to the loop: a doubt spikes, the check relieves it for seconds, the relief feeds the doubt, and she can never be sure enough — which is why one check never settles it and she's late and exhausted. Notice how much that opens up. It predicts the checking follows the doubt rather than any real reason; that each relief is undone within moments; and that the doubt would fade on its own if she checked once and let the anxiety crest and fall. Three cheap checks, each able to refute the idea. That is what reading the cycle buys you — not a shrug at how strange the behavior is, but a testable account of the loop, and the first foothold for breaking it.`,
   homework: {
     mcq,
     hybrid,
