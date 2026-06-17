@@ -1,8 +1,8 @@
 // ---------------------------------------------------------------------------
-// Content types for the Psychodynamic Treatment of OCD 101 curriculum.
+// Content types for the Psychodynamic Treatment of BPD 101 curriculum.
 //
 // This course grades reasoning on an INVERTED scale: it rewards drawing the
-// STRONGEST interpretation about the hidden function or conflict beneath the OCD symptom
+// STRONGEST interpretation about the hidden function or conflict beneath the symptom or behavior in BPD
 // that a body of evidence supports. Grading is therefore INVERTED relative to a normal test:
 //   - The richest, most-falsifiable, most-committed model earns TOP credit.
 //   - The cautious "you can't really conclude that" dodge earns NEAR-ZERO.
