@@ -24,7 +24,7 @@ const WEEK_TITLES: Record<number, { title: string; summary: string }> = {
   1: {
     title: "Psychodynamic Treatment of BPD 101",
     summary:
-      "A baby course on the psychodynamic treatment of BPD — how the instability of emotion, identity, and relationships can carry meaning, what an idealize-then-devalue flip or self-harm does for the affect beneath it, and how a depth understanding works alongside evidence-based DBT.",
+      "A course on the psychodynamic treatment of BPD — how the instability of emotion, identity, and relationships can carry meaning, what an idealize-then-devalue flip or self-harm does for the affect beneath it, and how a depth understanding works alongside evidence-based DBT.",
   },
 };
 

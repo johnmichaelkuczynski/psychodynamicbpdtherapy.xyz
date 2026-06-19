@@ -17,7 +17,7 @@ export function ScenePractice() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.2, duration: 1 }}
         >
-          <BrowserFrame className="aspect-video h-[65vh] app-canvas p-8 flex flex-col text-[#0f172a]">
+          <BrowserFrame className="h-[75vh] app-canvas p-8 flex flex-col text-[#0f172a]">
              <h1 className="text-2xl font-serif font-bold text-[#1b2a4a] mb-6 border-b border-[#d9e2ec] pb-4">
                Adaptive Practice Session
              </h1>

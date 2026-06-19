@@ -89,14 +89,14 @@ export default function Landing() {
         <section className="max-w-4xl mx-auto px-6 pt-20 pb-16 text-center">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary text-secondary-foreground text-xs font-medium mb-6">
             <BarChart3 className="w-3.5 h-3.5" />
-            A one-unit baby course on the psychodynamic treatment of BPD
+            A one-unit course on the psychodynamic treatment of BPD
           </div>
           <h1 className="text-4xl md:text-5xl font-serif font-bold text-primary leading-tight mb-5">
             The psychodynamic treatment of BPD — taught, tutored, drilled, and
             graded by AI.
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
-            A self-paced baby course on the psychodynamic treatment of BPD — how
+            A self-paced course on the psychodynamic treatment of BPD — how
             the instability of emotion, identity, and relationships can carry
             meaning, what a borderline pattern is really doing, and how a depth
             understanding works alongside evidence-based treatments like DBT.
@@ -168,7 +168,7 @@ export default function Landing() {
       </main>
 
       <footer className="border-t border-border px-6 py-6 text-center text-sm text-muted-foreground">
-        Psychodynamic Treatment of BPD 101 — a baby course on the psychodynamic
+        Psychodynamic Treatment of BPD 101 — a course on the psychodynamic
         treatment of BPD, taught, tutored, drilled, and graded by AI.
       </footer>
     </div>

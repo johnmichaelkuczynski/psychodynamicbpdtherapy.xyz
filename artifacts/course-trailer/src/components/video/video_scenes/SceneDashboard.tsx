@@ -40,7 +40,7 @@ export function SceneDashboard() {
           animate={{ opacity: 1, scale: 1, rotateY: 0 }}
           transition={{ delay: 0.2, duration: 1 }}
         >
-          <BrowserFrame className="aspect-video app-canvas overflow-hidden flex flex-col relative text-left p-6">
+          <BrowserFrame className="h-[80vh] app-canvas overflow-hidden flex flex-col relative text-left p-6">
              <div className="flex justify-between items-center mb-6">
                 <h1 className="text-2xl app-heading font-bold">Psychodynamic Treatment of BPD 101</h1>
                 <div className="app-card rounded-full px-4 py-1 text-sm font-semibold flex items-center gap-2">

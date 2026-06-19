@@ -1,18 +1,18 @@
 # 🧭 Psychodynamic Treatment of BPD 101
 
-**A One-Unit Baby Course on the Psychodynamic Treatment of BPD — Taught, Tutored, Drilled, and Graded by AI**
+**A One-Unit Course on the Psychodynamic Treatment of BPD — Taught, Tutored, Drilled, and Graded by AI**
 
 ---
 
 ## 🧩 Overview
 
-Psychodynamic Treatment of BPD 101 is a self-paced, single-user web course — a plain-language "baby course" on **the psychodynamic treatment of BPD (borderline personality disorder)**: a depth-oriented approach to the meaning beneath the instability of emotion, identity, and relationships in BPD — how overwhelming affect, splitting, and unstable self-image can carry meaning, how impulsive behaviors work as ways to regulate unbearable feeling and ward off abandonment, and how reading the conflict beneath the behavior complements the evidence-based treatments that help. No clinical background or jargon required.
+Psychodynamic Treatment of BPD 101 is a self-paced, single-user web course — a plain-language course on **the psychodynamic treatment of BPD (borderline personality disorder)**: a depth-oriented approach to the meaning beneath the instability of emotion, identity, and relationships in BPD — how overwhelming affect, splitting, and unstable self-image can carry meaning, how impulsive behaviors work as ways to regulate unbearable feeling and ward off abandonment, and how reading the conflict beneath the behavior complements the evidence-based treatments that help. No clinical background or jargon required.
 
 The course teaches reasoning about the mind on an **inverted grading scale**. Most "critical thinking" rewards caution: the more hedged the answer, the safer it feels. Here, hedging is the failure mode. The **strongest, most-falsifiable interpretation the clinical evidence supports about the hidden function or conflict beneath the symptom or behavior earns top credit**; the cautious *"we can't really conclude anything / the mind is too complex / everyone has mood swings"* dodge earns near-zero; florid padding that binds no evidence scores low; and a lurid overreach the evidence actively defeats (e.g. "she's just manipulative / attention-seeking") also earns zero. Every question rewards committing to the richest supported interpretation while naming the cheapest disconfirming observation.
 
 The curriculum is organized into **one unit and 8 sections**: 1.1 Understanding BPD: Emotion, Identity, and Unstable Relationships; 1.2 Splitting and the Black-and-White World; 1.3 Object Relations: How Early Bonds Become Inner Templates; 1.4 Identity Diffusion: The Unstable Sense of Self; 1.5 Mentalization: Learning to Read Minds, Including One's Own (MBT); 1.6 Transference-Focused Psychotherapy: Healing Through the Relationship (TFP); 1.7 The Evidence: Where Psychodynamic Treatment Genuinely Shines; and 1.8 A Treatment Arc, Start to Finish.
 
-Designed for **middle schoolers, curious adults wanting brief but meaningful exposure, instructors evaluating AI-taught coursework, and researchers studying AI academic integrity**, Psychodynamic Treatment of BPD 101 pairs a real curriculum with two layers of AI-authorship detection — surfacing not just *whether* the writing looks AI-generated, but whether the *act of producing it* did.
+Designed for **adults beginning a new discipline — graduate students, professors, and professionals taking up the psychodynamic treatment of BPD — as well as instructors evaluating AI-taught coursework and researchers studying AI academic integrity**, Psychodynamic Treatment of BPD 101 pairs a real curriculum with two layers of AI-authorship detection — surfacing not just *whether* the writing looks AI-generated, but whether the *act of producing it* did.
 
 ---
 
@@ -53,7 +53,7 @@ Designed for **middle schoolers, curious adults wanting brief but meaningful exp
 
 ## 📊 Designed For
 
-- **Middle Schoolers & Curious Adults:** A complete, plain-language course on the psychodynamic treatment of BPD — with on-demand tutoring and adaptive practice, no instructor required.
+- **Learners Entering a New Discipline:** A complete, plain-language course on the psychodynamic treatment of BPD — for graduate students, professors, and professionals beginning their study of the subject — with on-demand tutoring and adaptive practice, no instructor required.
 - **Instructors & Curriculum Designers:** A working reference for what AI-taught, AI-graded, AI-detection-screened coursework looks like end-to-end.
 - **Academic-Integrity Researchers:** A live testbed for layered AI-authorship detection combining text classification with behavioral keystroke evidence.
 - **Product & Engineering Teams:** A reference implementation of contract-first full-stack architecture, streaming AI UX, and self-diagnostic operator tooling in a Replit pnpm monorepo.

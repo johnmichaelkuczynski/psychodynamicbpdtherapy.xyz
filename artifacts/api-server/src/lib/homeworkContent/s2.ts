@@ -655,7 +655,7 @@ const hybrid: HomeworkItem[] = [
       "A teenager calls her friend group 'the best friends anyone could have.' After she is not invited to one weekend outing, she sobs that 'they all secretly hate me and always have.' Which conclusion best follows?",
     mcOptions: [
       {
-        text: "Kids leave each other out sometimes; there is nothing to read into it.",
+        text: "Friends leave each other out sometimes; there is nothing to read into it.",
         credit: 0,
       },
       {
@@ -694,7 +694,7 @@ const hybrid: HomeworkItem[] = [
     correctAnswer:
       "'The best friends anyone could have' becoming 'they all secretly hate me' over one missed invite is splitting: the exclusion introduced 'bad' into an all-good group she cannot hold as both loving and capable of leaving her out, so the whole group is recast as secretly hostile to keep love and rejection from coexisting; test whether the 'they hate me' verdict began precisely with the missed invite, whether every member is condemned with no exception, and whether the warm image returns the moment they include her again.",
     explanation:
-      "Top credit reads a best-friends-to-all-hate-me flip over one missed invite as splitting and is paired with a began-with-the-missed-invite test that names its refutation; 'kids leave each other out' is the dodge the no-exception condemnation of the whole group defeats.",
+      "Top credit reads a best-friends-to-all-hate-me flip over one missed invite as splitting and is paired with a began-with-the-missed-invite test that names its refutation; 'friends leave each other out' is the dodge the no-exception condemnation of the whole group defeats.",
   },
   {
     itemType: "hybrid",

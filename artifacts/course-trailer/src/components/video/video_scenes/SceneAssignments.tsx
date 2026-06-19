@@ -32,7 +32,7 @@ export function SceneAssignments() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.2, duration: 0.8 }}
         >
-          <BrowserFrame className="aspect-[4/3] app-canvas p-8 flex flex-col text-[#0f172a] relative overflow-hidden">
+          <BrowserFrame className="h-[82vh] app-canvas p-7 flex flex-col text-[#0f172a] relative overflow-hidden">
              <div className="flex justify-between items-center mb-6 border-b border-[#d9e2ec] pb-4">
                <h1 className="text-xl font-serif font-bold text-[#1b2a4a]">1.2 Homework — Hybrid format</h1>
                <div className="text-sm font-semibold text-amber-700 bg-amber-50 border border-amber-200 px-3 py-1 rounded">🔒 Single attempt</div>

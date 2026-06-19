@@ -29,7 +29,7 @@ export function SceneReasoning() {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.2, duration: 1 }}
         >
-          <BrowserFrame className="aspect-[4/3] h-[70vh] app-canvas flex flex-col p-8 text-[#0f172a]">
+          <BrowserFrame className="h-[76vh] app-canvas flex flex-col p-8 text-[#0f172a]">
             <h1 className="text-2xl font-serif font-bold text-[#1b2a4a] mb-8 border-b border-[#d9e2ec] pb-4">Reasoning Diagnostic</h1>
             
             <div className="grid grid-cols-4 gap-4 mb-8">
@@ -55,7 +55,7 @@ export function SceneReasoning() {
                 <strong>What specific clinical observation would most efficiently falsify this hypothesis?</strong>
               </p>
 
-              <div className="w-full h-32 border-2 border-dashed border-slate-300 rounded-lg bg-white p-4 text-slate-400 font-mono text-sm flex items-start">
+              <div className="w-full h-24 border-2 border-dashed border-slate-300 rounded-lg bg-white p-4 text-slate-400 font-mono text-sm flex items-start">
                 <motion.span
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}

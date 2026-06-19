@@ -23,7 +23,7 @@ export function SceneAnalytics() {
       </motion.div>
       
       <motion.div 
-        className="w-[90vw] h-[65vh]"
+        className="w-[90vw] h-[70vh]"
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.2, duration: 1 }}
