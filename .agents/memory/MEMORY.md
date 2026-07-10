@@ -12,3 +12,4 @@
 - [Course rebrand hotspots](rebrand-hotspots.md) — in-place rebrands leave stale branding in logo SVG aria-label, demo sidebar initials, hardcoded demo problem counts, and every artifact.toml title; fresh DB needs `db push` before reseed.
 - [Format-weighted course rollup](format-weighted-rollup.md) — course aggregate must weight each section's bestScore by the chosen format's configurable point value; unsubmitted sections use the neutral mean weight.
 - [Trailer scene cutoff & BrowserFrame flex](trailer-frame-cutoff.md) — BrowserFrame children render in an inner non-flex div (flex on its className is a no-op); avoid aspect-* frames that clip; top-caption scenes ≤70vh, side-caption 72–82vh.
+- [connect-pg-simple table.sql bundling](connect-pg-simple-bundling.md) — esbuild bundling breaks its runtime table.sql read; disable createTableIfMissing, create the session table yourself instead.

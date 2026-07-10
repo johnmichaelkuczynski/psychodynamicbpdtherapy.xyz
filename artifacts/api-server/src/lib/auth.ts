@@ -48,11 +48,34 @@ export function setupAuth(app: Express) {
 
   app.set("trust proxy", 1);
 
+  // connect-pg-simple's createTableIfMissing reads a table.sql file that
+  // esbuild does not copy into the bundled production build (ENOENT at
+  // runtime), which silently prevented session persistence in production.
+  // Create the table ourselves with the same schema up front instead.
+  pool
+    .query(`
+      CREATE TABLE IF NOT EXISTS "user_sessions" (
+        "sid" varchar NOT NULL COLLATE "default",
+        "sess" json NOT NULL,
+        "expire" timestamp(6) NOT NULL
+      )
+      WITH (OIDS=FALSE);
+      ALTER TABLE "user_sessions" DROP CONSTRAINT IF EXISTS "session_pkey";
+      ALTER TABLE "user_sessions" ADD CONSTRAINT "session_pkey" PRIMARY KEY ("sid") NOT DEFERRABLE INITIALLY IMMEDIATE;
+      CREATE INDEX IF NOT EXISTS "IDX_user_sessions_expire" ON "user_sessions" ("expire");
+    `)
+    .then(() => {
+      logger.info("Session table ready");
+    })
+    .catch((error) => {
+      logger.error({ error }, "Failed to ensure session table");
+    });
+
   const PgSession = connectPgSimple(session);
   const pgStore = new PgSession({
     pool,
     tableName: "user_sessions",
-    createTableIfMissing: true,
+    createTableIfMissing: false,
     errorLog: (...args) => logger.error(args, "Session store error"),
   });
 
